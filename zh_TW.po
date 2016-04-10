@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-10 11:30+0800\n"
+"PO-Revision-Date: 2016-04-10 15:40+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2698,7 +2698,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3692
 msgid "Keymap Selection"
-msgstr "Keymap 選擇"
+msgstr "鍵盤對映表選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2748,7 +2748,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3738
 msgid "Enhanced Keymap Menu"
-msgstr "改進後的 Keymap 選單"
+msgstr "改進後的鍵盤對映表選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4596,7 +4596,7 @@ msgstr "接下來的這一章將涵蓋 FreeBSD 作業系統的基本指令及功
 #. (itstool) path: listitem/para
 #: book.translate.xml:5486
 msgid "How to use and configure virtual consoles."
-msgstr "如何使用 FreeBSD 的 Virtual console。"
+msgstr "如何使用 FreeBSD 的虛擬 Console。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5490
@@ -4696,7 +4696,7 @@ msgstr "FreeBSD 是一個多使用者的系統，需要一套可以分辨不同�
 #. (itstool) path: sect1/para
 #: book.translate.xml:5571
 msgid "To log into the system console, type the username that was configured during system installation, as described in <xref linkend=\"bsdinstall-addusers\"/>, and press <keycap>Enter</keycap>. Then enter the password associated with the username and press <keycap>Enter</keycap>. The password is <emphasis>not echoed</emphasis> for security reasons."
-msgstr ""
+msgstr "要登入系統 Console 需輸入在系統安裝時設定的使用者名稱，請參考 <xref linkend=\"bsdinstall-addusers\"/>，並按下 <keycap>Enter</keycap>。 接著輸入該使用者名稱的密碼按下 <keycap>Enter</keycap>。 輸入的密碼為了安全起見<emphasis>不會顯示</emphasis>在畫面上。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5579
@@ -4731,12 +4731,12 @@ msgstr "當您從一個 Console 切換到下一個的時候，FreeBSD 會切換�
 #. (itstool) path: sect2/para
 #: book.translate.xml:5630
 msgid "Refer to <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> for a more technical description of the FreeBSD console and its keyboard drivers."
-msgstr ""
+msgstr "請參考 <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得更多有關 FreeBSD console 及鍵盤驅動程式的技術說明。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5635
 msgid "In FreeBSD, the number of available virtual consoles is configured in this section of <filename>/etc/ttys</filename>:"
-msgstr ""
+msgstr "FreeBSD 中虛擬 Console 的數量設定在 <filename>/etc/ttys</filename> 檔案中的下列章節:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5639
@@ -4759,7 +4759,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5653
 msgid "To disable a virtual console, put a comment symbol (<literal>#</literal>) at the beginning of the line representing that virtual console. For example, to reduce the number of available virtual consoles from eight to four, put a <literal>#</literal> in front of the last four lines representing virtual consoles <filename>ttyv5</filename> through <filename>ttyv8</filename>. <emphasis>Do not</emphasis> comment out the line for the system console <filename>ttyv0</filename>. Note that the last virtual console (<filename>ttyv8</filename>) is used to access the graphical environment if <application>Xorg</application> has been installed and configured as described in <xref linkend=\"x11\"/>."
-msgstr ""
+msgstr "要關閉虛擬 Console 只要在指定的虛擬 Console 該行設定的一開始加上註解符號 (<literal>#</literal>)。 例如要將虛擬 Console 的數量由 8 個改為 4 個，則可將 <literal>#</literal> 加在代表虛擬 Console 的 <filename>ttyv5</filename> 到 <filename>ttyv8</filename> 的最後四行一開始。 <emphasis>請勿</emphasis>將系統 Console <filename>ttyv0</filename> 加上註解符號。 注意，若有依照 <xref linkend=\"x11\"/> 安裝並設定 <application>Xorg</application> 時，會用到最後一個虛擬 Console (<filename>ttyv8</filename>)。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5667
@@ -4769,17 +4769,17 @@ msgstr "有關各欄位的設定以及其他選項，請參閱 <citerefentry><re
 #. (itstool) path: sect2/title
 #: book.translate.xml:5673
 msgid "Single User Mode"
-msgstr "單使用者模組"
+msgstr "單使用者模式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5675
 msgid "The FreeBSD boot menu provides an option labelled as <quote>Boot Single User</quote>. If this option is selected, the system will boot into a special mode known as <quote>single user mode</quote>. This mode is typically used to repair a system that will not boot or to reset the <systemitem class=\"username\">root</systemitem> password when it is not known. While in single user mode, networking and other virtual consoles are not available. However, full <systemitem class=\"username\">root</systemitem> access to the system is available, and by default, the <systemitem class=\"username\">root</systemitem> password is not needed. For these reasons, physical access to the keyboard is needed to boot into this mode and determining who has physical access to the keyboard is something to consider when securing a FreeBSD system."
-msgstr ""
+msgstr "FreeBSD 開機選單會提供一個選項為 <quote>Boot Single User</quote>，若選擇該項目，系統將會進入所謂 <quote>單使用者模式</quote> 的特殊模式。 此模式通常用在修復系統無法開機或重設已忘掉的 <systemitem class=\"username\">root</systemitem> 密碼。 在當使用者模式中無法使用網路及其他虛擬 Console，但有完整 <systemitem class=\"username\">root</systemitem> 對系統的存取權限，而且預設是不須要輸入 <systemitem class=\"username\">root</systemitem> 密碼。 也因此，要能透過實體鍵盤操作才能進入此模式，在考量 FreeBSD 系統安全時須要限制可操作實體鍵盤的人員。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5691
 msgid "The settings which control single user mode are found in this section of <filename>/etc/ttys</filename>:"
-msgstr ""
+msgstr "有關單使用者模式的設定可在 <filename>/etc/ttys</filename> 中的以下章節中找到:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5694
@@ -4795,12 +4795,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5700
 msgid "By default, the status is set to <literal>secure</literal>. This assumes that who has physical access to the keyboard is either not important or it is controlled by a physical security policy. If this setting is changed to <literal>insecure</literal>, the assumption is that the environment itself is insecure because anyone can access the keyboard. When this line is changed to <literal>insecure</literal>, FreeBSD will prompt for the <systemitem class=\"username\">root</systemitem> password when a user selects to boot into single user mode."
-msgstr ""
+msgstr "預設狀態為安全 (<literal>secure</literal>)，這代表誰能夠操作實體鍵盤不是不重要就是已受到實體安全規範管制。 若設定更該為不安全(<literal>insecure</literal>) 則代表主機所在的環境不安全，因為任何人皆可接觸鍵盤。 當此行設定更改為不安全 (<literal>insecure</literal>) 時，當使用擇選擇單使用者模式時，FreeBSD 將會要求輸入 <systemitem class=\"username\">root</systemitem> 的密碼。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:5712
 msgid "<emphasis>Be careful when changing this setting to <literal>insecure</literal></emphasis>! If the <systemitem class=\"username\">root</systemitem> password is forgotten, booting into single user mode is still possible, but may be difficult for someone who is not familiar with the FreeBSD booting process."
-msgstr "<emphasis>請審慎考慮是否要改為 <literal>insecure</literal></emphasis>！ 因為萬一忘記 <systemitem class=\"username\">root</systemitem> 密碼的話，還是有辦法可以登入單使用者模式，只是對不熟 FreeBSD 開機程序的人而言就有些麻煩了。"
+msgstr "<emphasis>請審慎考慮是否要改為 <literal>insecure</literal></emphasis>！ 因為萬一忘記 <systemitem class=\"username\">root</systemitem> 密碼的話，雖然還是有其他辦法可以登入單使用者模式，只是對不熟 FreeBSD 開機程序的人可就麻煩了。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5722
@@ -4821,7 +4821,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5731
 msgid "To determine which video modes are supported by the hardware, use <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>. To get a list of supported video modes issue the following:"
-msgstr ""
+msgstr "要偵測硬體支援的影像模式，可使用 <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 要取得支援的影像模式清單可輸入以下指令："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5735
@@ -4832,7 +4832,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5737
 msgid "The output of this command lists the video modes that are supported by the hardware. To select a new video mode, specify the mode using <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> as the <systemitem class=\"username\">root</systemitem> user:"
-msgstr ""
+msgstr "該指令會顯示硬體所支援的影像模式清單，要採用新的影像模式需以 <systemitem class=\"username\">root</systemitem> 使用者執行 <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5742
@@ -4843,7 +4843,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5744
 msgid "If the new video mode is acceptable, it can be permanently set on boot by adding it to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "若可接受新的影像模式，可以在 <filename>/etc/rc.conf</filename> 加入設定，讓每次重開機後會自動生效："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5748
@@ -5703,17 +5703,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6601
 msgid "Value"
-msgstr ""
+msgstr "數值"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6602
 msgid "Permission"
-msgstr ""
+msgstr "權限"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6603
 msgid "Directory Listing"
-msgstr ""
+msgstr "目錄標示"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6609
@@ -5723,7 +5723,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6610
 msgid "No read, no write, no execute"
-msgstr ""
+msgstr "不可讀取, 不可寫入, 不可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6611
@@ -5739,7 +5739,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6616
 msgid "No read, no write, execute"
-msgstr ""
+msgstr "不可讀取, 不可寫入, 可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6617
@@ -5756,7 +5756,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6622
 msgid "No read, write, no execute"
-msgstr ""
+msgstr "不可讀取, 可寫入, 不可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6623
@@ -5773,7 +5773,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6628
 msgid "No read, write, execute"
-msgstr ""
+msgstr "不可讀取, 可寫入, 可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6629
@@ -5791,7 +5791,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6634
 msgid "Read, no write, no execute"
-msgstr ""
+msgstr "可讀取, 不可寫入, 不可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6635
@@ -5808,7 +5808,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6640
 msgid "Read, no write, execute"
-msgstr ""
+msgstr "可讀取, 不可寫入, 可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6641
@@ -5825,7 +5825,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6646
 msgid "Read, write, no execute"
-msgstr ""
+msgstr "可讀取, 可寫入, 不可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6647
@@ -5842,7 +5842,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6652
 msgid "Read, write, execute"
-msgstr ""
+msgstr "可讀取, 可寫入, 可執行"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6653
@@ -5862,7 +5862,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:6666
 msgid "Use the <option>-l</option> argument to <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> to view a long directory listing that includes a column of information about a file's permissions for the owner, group, and everyone else. For example, a <command>ls -l</command> in an arbitrary directory may show:"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令時，可以加上 <option>-l</option> 參數， 來檢視詳細的目錄清單。 清單中欄位的資訊包含檔案對所有者、群組及其他人的權限。 在任一個目錄底下執行 <command>ls -l</command>，會顯示如下的結果:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:6672
@@ -5878,32 +5878,32 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:6678
 msgid "The first (leftmost) character in the first column indicates whether this file is a regular file, a directory, a special character device, a socket, or any other special pseudo-file device. In this example, the <literal>-</literal> indicates a regular file. The next three characters, <literal>rw-</literal> in this example, give the permissions for the owner of the file. The next three characters, <literal>r--</literal>, give the permissions for the group that the file belongs to. The final three characters, <literal>r--</literal>, give the permissions for the rest of the world. A dash means that the permission is turned off. In this example, the permissions are set so the owner can read and write to the file, the group can read the file, and the rest of the world can only read the file. According to the table above, the permissions for this file would be <literal>644</literal>, where each digit represents the three parts of the file's permission."
-msgstr ""
+msgstr "第一個 (最左邊) 的字元用來表示這個檔案的類型為何，除標準檔案以外，尚有目錄、特殊字元裝置、Socket 及其他特殊虛擬檔案裝置， 在此例當中，<literal>-</literal> 表示該檔案為一個標準的檔案。 範例中接下來的三個字元中，<literal>rw-</literal> 代表所有者對檔案擁有的權限。 再接下來的三個字元， <literal>r--</literal> 則代表群組對檔案擁有的權限， 最後三個字元，<literal>r--</literal> 則代表其他人對檔案擁有的權限。 破折號 (-) 表示沒有權限，範例中的這個檔案的權限， 只允許所有者讀取、寫入檔案，群組以及其他人僅能讀取檔案。 根據以上的表格，此種權限的檔案可以使用 <literal>644</literal> 來表示， 每組數字分別代表檔案的三種權限。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6695
 msgid "How does the system control permissions on devices? FreeBSD treats most hardware devices as a file that programs can open, read, and write data to. These special device files are stored in <filename>/dev/</filename>."
-msgstr ""
+msgstr "那系統如何控制裝置的權限？ 實際上 FreeBSD 對大多的硬碟裝置就如同檔案，程式可以開啟、讀取以及寫入資料如一般檔案。 這些特殊裝置檔案都儲存於 <filename>/dev/</filename> 目錄中。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6700
 msgid "Directories are also treated as files. They have read, write, and execute permissions. The executable bit for a directory has a slightly different meaning than that of files. When a directory is marked executable, it means it is possible to change into that directory using <citerefentry><refentrytitle>cd</refentrytitle><manvolnum>1</manvolnum></citerefentry>. This also means that it is possible to access the files within that directory, subject to the permissions on the files themselves."
-msgstr ""
+msgstr "目錄也同如檔案，擁有讀取、寫入及執行的權限， 但在執行權限上與檔案有明顯的差異。 當目錄被標示為可執行時，代表可以使用 <citerefentry><refentrytitle>cd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令切換進入該目錄。 也代表能夠存取在此目錄之中的已知檔名的檔案，但仍會受限於檔案本身所設定的權限。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6709
 msgid "In order to perform a directory listing, the read permission must be set on the directory. In order to delete a file that one knows the name of, it is necessary to have write <emphasis>and</emphasis> execute permissions to the directory containing the file."
-msgstr ""
+msgstr "要能夠列出目錄內容，必須擁有目錄的讀取權限。 要刪除已知檔名的檔案，必須擁有檔案所在目錄的寫入 <emphasis>以及</emphasis> 執行的權限。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6715
 msgid "There are more permission bits, but they are primarily used in special circumstances such as setuid binaries and sticky directories. For more information on file permissions and how to set them, refer to <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "還有一些權限位元，但這些權限主要在特殊情況使用，如 setuid binaries 及 sticky directories。 如果您還想知道更多檔案權限的資訊及使用方法，請務必參閱 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:6722
 msgid "Symbolic Permissions"
-msgstr ""
+msgstr "權限符號"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:6725 book.translate.xml:6860 book.translate.xml:6911
@@ -5921,28 +5921,28 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:6740
 msgid "Symbolic permissions use characters instead of octal values to assign permissions to files or directories. Symbolic permissions use the syntax of (who) (action) (permissions), where the following values are available:"
-msgstr ""
+msgstr "權限符號可稱做符號表示，使用字元的方式來取代使用數值來設定檔案或目錄的權限。 符號表示的格式依序為 (某人)(動作)(權限)，可使用的符號如下:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6750 book.translate.xml:23119
 msgid "Option"
-msgstr ""
+msgstr "項目"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6751
 msgid "Letter"
-msgstr ""
+msgstr "字母"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6752
 msgid "Represents"
-msgstr ""
+msgstr "代表意義"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6758 book.translate.xml:6764 book.translate.xml:6770
 #: book.translate.xml:6776
 msgid "(who)"
-msgstr ""
+msgstr "(某人)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6759
@@ -5952,7 +5952,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6760
 msgid "User"
-msgstr ""
+msgstr "使用者"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6765
@@ -5962,7 +5962,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6766
 msgid "Group owner"
-msgstr ""
+msgstr "群組所有者"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6771
@@ -5972,7 +5972,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6772
 msgid "Other"
-msgstr ""
+msgstr "其他"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6777
@@ -5982,12 +5982,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6778
 msgid "All (<quote>world</quote>)"
-msgstr ""
+msgstr "全部 (<quote>world</quote>)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6782 book.translate.xml:6788 book.translate.xml:6794
 msgid "(action)"
-msgstr ""
+msgstr "(動作)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6783 book.translate.xml:31163 book.translate.xml:38887
@@ -5997,7 +5997,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6784
 msgid "Adding permissions"
-msgstr ""
+msgstr "\t增加權限"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6789 book.translate.xml:31168 book.translate.xml:38892
@@ -6007,7 +6007,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6790
 msgid "Removing permissions"
-msgstr ""
+msgstr "移除權限"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6795
@@ -6017,13 +6017,13 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6796
 msgid "Explicitly set permissions"
-msgstr ""
+msgstr "指定權限"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6800 book.translate.xml:6806 book.translate.xml:6812
 #: book.translate.xml:6818 book.translate.xml:6824
 msgid "(permissions)"
-msgstr ""
+msgstr "(權限)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6801
@@ -6033,7 +6033,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6802
 msgid "Read"
-msgstr ""
+msgstr "讀取"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6807
@@ -6053,7 +6053,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6814
 msgid "Execute"
-msgstr ""
+msgstr "寫入"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6819
@@ -6073,12 +6073,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6826
 msgid "Set UID or GID"
-msgstr ""
+msgstr "\tSet UID 或 GID"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6832
 msgid "These values are used with <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>, but with letters instead of numbers. For example, the following command would block other users from accessing <replaceable>FILE</replaceable>:"
-msgstr ""
+msgstr "如先前同樣使用 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令來設定，但使用的參數為這些字元。 例如，您可以使用下列指令禁止其他使用者存取檔案 <replaceable>FILE</replaceable>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6837
@@ -6089,7 +6089,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:6839
 msgid "A comma separated list can be provided when more than one set of changes to a file must be made. For example, the following command removes the group and <quote>world</quote> write permission on <replaceable>FILE</replaceable>, and adds the execute permissions for everyone:"
-msgstr ""
+msgstr "若有兩個以上的符號表示可以使用逗號 (,) 區隔。 例如，下列指令將會移除群組及其他人對檔案 <replaceable>FILE</replaceable> 的寫入權限， 並使全部人 (<quote>world</quote>) 對該檔有執行權限。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6846
@@ -6100,17 +6100,17 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:6857
 msgid "FreeBSD File Flags"
-msgstr ""
+msgstr "FreeBSD 檔案旗標"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6870
 msgid "In addition to file permissions, FreeBSD supports the use of <quote>file flags</quote>. These flags add an additional level of security and control over files, but not directories. With file flags, even <systemitem class=\"username\">root</systemitem> can be prevented from removing or altering files."
-msgstr ""
+msgstr "除了前面提到的檔案權限外，FreeBSD 支援使用 <quote>檔案旗標</quote>。 這些旗標增加了檔案的安全性及管理性，但不包含目錄。有了檔案旗標可確保在某些時候 <systemitem class=\"username\">root</systemitem> 不會意外將檔案修改或移除。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6877
 msgid "File flags are modified using <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry>. For example, to enable the system undeletable flag on the file <filename>file1</filename>, issue the following command:"
-msgstr ""
+msgstr "修改的檔案 flag 僅需要使用擁有簡易的介面的 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> 工具。 例如，標示系統禁止刪除的旗標於檔案 <filename>file1</filename>，使用下列指令："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6882
@@ -6121,7 +6121,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:6884
 msgid "To disable the system undeletable flag, put a <quote>no</quote> in front of the <option>sunlink</option>:"
-msgstr ""
+msgstr "若要移除系統禁止刪除的旗標，只需要簡單在 <option>sunlink</option> 前加上 <quote>no</quote>，例如："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6888
@@ -6132,7 +6132,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:6890
 msgid "To view the flags of a file, use <option>-lo</option> with <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 及參數 <option>-lo</option> 可檢視檔案目前的旗標："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6893
@@ -6149,7 +6149,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:6897
 msgid "Several file flags may only be added or removed by the <systemitem class=\"username\">root</systemitem> user. In other cases, the file owner may set its file flags. Refer to <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>2</manvolnum></citerefentry> for more information."
-msgstr ""
+msgstr "多數的旗標僅能由 <systemitem class=\"username\">root</systemitem> 使用者來標示或移除，而部份旗標可由檔案所有者設定。 我們建議系統管理者可閱讀 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>2</manvolnum></citerefentry> 說明以瞭解相關細節。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:6906

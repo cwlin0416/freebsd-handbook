@@ -2988,7 +2988,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	the menu shown in <xref linkend="bsdinstall-keymap-select-default"/>.</para>
 
       <figure xml:id="bsdinstall-keymap-select-default">
-	<title>Keymap 選擇</title>
+	<title>鍵盤對映表選擇</title>
 
 	<mediaobject>
 	  <imageobject>
@@ -3034,7 +3034,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	keymap and ensure it is correct before proceeding.</para>
 
       <figure xml:id="bsdinstall-keymap-10">
-	<title>改進後的 Keymap 選單</title>
+	<title>改進後的鍵盤對映表選單</title>
 
 	<mediaobject>
 	  <imageobject>
@@ -4776,7 +4776,7 @@ Starting sshd.</screen>
 
     <itemizedlist>
       <listitem>
-	<para>如何使用 FreeBSD 的 Virtual console。</para>
+	<para>如何使用 FreeBSD 的虛擬 Console。</para>
       </listitem>
 
       <listitem>
@@ -4845,13 +4845,7 @@ login:</screen>
 
     <para>FreeBSD 是一個多使用者的系統，需要一套可以分辨不同使用者的方法。因此所有的使用者在執行程式之前必須先“登入”系統以取得系統內程式的存取權限。每個使用者都有一組獨特的帳號名稱 (<quote>username</quote>) 及個人密碼 (<quote>password</quote>)。</para>
 
-    <para xml:lang="en">To log into the system console, type the username that
-      was configured during system installation, as described in
-      <xref linkend="bsdinstall-addusers"/>, and press
-      <keycap>Enter</keycap>.  Then enter the password associated
-      with the username and press <keycap>Enter</keycap>.  The
-      password is <emphasis>not echoed</emphasis> for security
-      reasons.</para>
+    <para>要登入系統 Console 需輸入在系統安裝時設定的使用者名稱，請參考 <xref linkend="bsdinstall-addusers"/>，並按下 <keycap>Enter</keycap>。 接著輸入該使用者名稱的密碼按下 <keycap>Enter</keycap>。 輸入的密碼為了安全起見<emphasis>不會顯示</emphasis>在畫面上。</para>
 
     <para>如果您輸入了正確的密碼，您應該會看到今日訊息 (Message of the day, <acronym>MOTD</acronym>)，後面接著顯示指令提示字元，依使用者建立時所選擇的 Shell 會有不同的提示字元可能為 <literal>#</literal>, <literal>$</literal> 或者 <literal>%</literal>。 看到指令提示代表使用者現在已經登入 FreeBSD 系統 Console 且已經準備好可以下指令。</para>
 
@@ -4864,16 +4858,11 @@ login:</screen>
 
       <para>組合鍵 <keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> 至  <keycombo><keycap>Alt</keycap><keycap>F8</keycap></keycombo> 被 FreeBSD 保留用來切換虛擬 Console，使用 <keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> 可切換至系統 Console (<filename>ttyv0</filename>)，<keycombo><keycap>Alt</keycap><keycap>F2</keycap></keycombo> 可存取第一個虛擬 Console (<filename>ttyv1</filename>)，<keycombo><keycap>Alt</keycap><keycap>F3</keycap></keycombo> 可存取第二個虛擬 Console (<filename>ttyv2</filename>)，以此類推。</para>
 
-      <para>當您從一個 Console 切換到下一個的時候，FreeBSD 會處理螢幕輸出的儲存及回復。 這就好像有很多虛擬的螢幕和鍵盤可以讓您輸入指令到 FreeBSD 執行。 在某一個虛擬 Console 上執行的程式並不會因為使用者切到別的 Console 而停止執行。</para>
+      <para>當您從一個 Console 切換到下一個的時候，FreeBSD 會切換畫面顯示的內容， 這就好像有很多虛擬的螢幕和鍵盤可以讓您輸入指令到 FreeBSD 執行。 在某一個虛擬 Console 上執行的程式並不會因為使用者切到別的 Console 而停止執行。</para>
 
-      <para xml:lang="en">Refer to <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>,
-	<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> for a more
-	technical description of the FreeBSD console and its keyboard
-	drivers.</para>
+      <para>請參考 <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得更多有關 FreeBSD console 及鍵盤驅動程式的技術說明。</para>
 
-      <para xml:lang="en">In FreeBSD, the number of available virtual consoles is
-	configured in this section of
-	<filename>/etc/ttys</filename>:</para>
+      <para>FreeBSD 中虛擬 Console 的數量設定在 <filename>/etc/ttys</filename> 檔案中的下列章節:</para>
 
       <programlisting xml:lang="en"># name    getty                         type  status comments
 #
@@ -4889,44 +4878,17 @@ ttyv7   "/usr/libexec/getty Pc"         xterm   on  secure
 ttyv8   "/usr/X11R6/bin/xdm -nodaemon"  xterm   off secure</programlisting>
 
 
-      <para xml:lang="en">To disable a virtual console, put a comment symbol
-	(<literal>#</literal>) at the beginning of the line
-	representing that virtual console.  For example, to reduce the
-	number of available virtual consoles from eight to four, put a
-	<literal>#</literal> in front of the last four lines
-	representing virtual consoles <filename>ttyv5</filename>
-	through <filename>ttyv8</filename>.
-	<emphasis>Do not</emphasis> comment out the line for the
-	system console <filename>ttyv0</filename>.  Note that the last
-	virtual console (<filename>ttyv8</filename>) is used to access
-	the graphical environment if <application>Xorg</application>
-	has been installed and configured as described in
-	<xref linkend="x11"/>.</para>
+      <para>要關閉虛擬 Console 只要在指定的虛擬 Console 該行設定的一開始加上註解符號 (<literal>#</literal>)。 例如要將虛擬 Console 的數量由 8 個改為 4 個，則可將 <literal>#</literal> 加在代表虛擬 Console 的 <filename>ttyv5</filename> 到 <filename>ttyv8</filename> 的最後四行一開始。 <emphasis>請勿</emphasis>將系統 Console <filename>ttyv0</filename> 加上註解符號。 注意，若有依照 <xref linkend="x11"/> 安裝並設定 <application>Xorg</application> 時，會用到最後一個虛擬 Console (<filename>ttyv8</filename>)。</para>
 
       <para>有關各欄位的設定以及其他選項，請參閱 <citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</manvolnum></citerefentry> 說明。</para>
     </sect2>
 
     <sect2 xml:id="consoles-singleuser">
-      <title>單使用者模組</title>
+      <title>單使用者模式</title>
 
-      <para xml:lang="en">The FreeBSD boot menu provides an option labelled as
-	<quote>Boot Single User</quote>.  If this option is selected,
-	the system will boot into a special mode known as
-	<quote>single user mode</quote>.  This mode is typically used
-	to repair a system that will not boot or to reset the
-	<systemitem class="username">root</systemitem> password when
-	it is not known.  While in single user mode, networking and
-	other virtual consoles are not available.  However, full
-	<systemitem class="username">root</systemitem> access to the
-	system is available, and by default, the
-	<systemitem class="username">root</systemitem> password is not
-	needed.  For these reasons, physical access to the keyboard is
-	needed to boot into this mode and determining who has physical
-	access to the keyboard is something to consider when securing
-	a FreeBSD system.</para>
+      <para>FreeBSD 開機選單會提供一個選項為 <quote>Boot Single User</quote>，若選擇該項目，系統將會進入所謂 <quote>單使用者模式</quote> 的特殊模式。 此模式通常用在修復系統無法開機或重設已忘掉的 <systemitem class="username">root</systemitem> 密碼。 在當使用者模式中無法使用網路及其他虛擬 Console，但有完整 <systemitem class="username">root</systemitem> 對系統的存取權限，而且預設是不須要輸入 <systemitem class="username">root</systemitem> 密碼。 也因此，要能透過實體鍵盤操作才能進入此模式，在考量 FreeBSD 系統安全時須要限制可操作實體鍵盤的人員。</para>
 
-      <para xml:lang="en">The settings which control single user mode are found in
-	this section of <filename>/etc/ttys</filename>:</para>
+      <para>有關單使用者模式的設定可在 <filename>/etc/ttys</filename> 中的以下章節中找到:</para>
 
       <programlisting xml:lang="en"># name  getty                           type  status  comments
 #
@@ -4934,19 +4896,10 @@ ttyv8   "/usr/X11R6/bin/xdm -nodaemon"  xterm   off secure</programlisting>
 # when going to single-user mode.
 console none                            unknown  off  secure</programlisting>
 
-      <para xml:lang="en">By default, the status is set to
-	<literal>secure</literal>.  This assumes that who has physical
-	access to the keyboard is either not important or it is
-	controlled by a physical security policy.  If this setting is
-	changed to <literal>insecure</literal>, the assumption is that
-	the environment itself is insecure because anyone can access
-	the keyboard.  When this line is changed to
-	<literal>insecure</literal>, FreeBSD will prompt for the
-	<systemitem class="username">root</systemitem> password when a
-	user selects to boot into single user mode.</para>
+      <para>預設狀態為安全 (<literal>secure</literal>)，這代表誰能夠操作實體鍵盤不是不重要就是已受到實體安全規範管制。 若設定更該為不安全(<literal>insecure</literal>) 則代表主機所在的環境不安全，因為任何人皆可接觸鍵盤。 當此行設定更改為不安全 (<literal>insecure</literal>) 時，當使用擇選擇單使用者模式時，FreeBSD 將會要求輸入 <systemitem class="username">root</systemitem> 的密碼。</para>
 
       <note>
-	<para><emphasis>請審慎考慮是否要改為 <literal>insecure</literal></emphasis>！ 因為萬一忘記 <systemitem class="username">root</systemitem> 密碼的話，還是有辦法可以登入單使用者模式，只是對不熟 FreeBSD 開機程序的人而言就有些麻煩了。</para>
+	<para><emphasis>請審慎考慮是否要改為 <literal>insecure</literal></emphasis>！ 因為萬一忘記 <systemitem class="username">root</systemitem> 密碼的話，雖然還是有其他辦法可以登入單使用者模式，只是對不熟 FreeBSD 開機程序的人可就麻煩了。</para>
       </note>
     </sect2>
 
@@ -4957,22 +4910,15 @@ console none                            unknown  off  secure</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload vesa</userinput></screen>
 
-      <para xml:lang="en">To determine which video modes are supported by the
-	hardware, use <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  To get a list of supported
-	video modes issue the following:</para>
+      <para>要偵測硬體支援的影像模式，可使用 <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 要取得支援的影像模式清單可輸入以下指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>vidcontrol -i mode</userinput></screen>
 
-      <para xml:lang="en">The output of this command lists the video modes that are
-	supported by the hardware.  To select a new video mode,
-	specify the mode using <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> as the
-	<systemitem class="username">root</systemitem> user:</para>
+      <para>該指令會顯示硬體所支援的影像模式清單，要採用新的影像模式需以 <systemitem class="username">root</systemitem> 使用者執行 <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>vidcontrol MODE_279</userinput></screen>
 
-      <para xml:lang="en">If the new video mode is acceptable, it can be permanently
-	set on boot by adding it to
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>若可接受新的影像模式，可以在 <filename>/etc/rc.conf</filename> 加入設定，讓每次重開機後會自動生效：</para>
 
       <programlisting xml:lang="en">allscreens_flags="MODE_279"</programlisting>
     </sect2>
@@ -5827,58 +5773,58 @@ uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)</screen>
       <tgroup cols="3">
 	<thead>
 	  <row>
-	    <entry xml:lang="en">Value</entry>
-	    <entry xml:lang="en">Permission</entry>
-	    <entry xml:lang="en">Directory Listing</entry>
+	    <entry>數值</entry>
+	    <entry>權限</entry>
+	    <entry>目錄標示</entry>
 	  </row>
 	</thead>
 
 	<tbody>
 	  <row>
 	    <entry xml:lang="en">0</entry>
-	    <entry xml:lang="en">No read, no write, no execute</entry>
+	    <entry>不可讀取, 不可寫入, 不可執行</entry>
 	    <entry xml:lang="en"><literal>---</literal></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en">1</entry>
-	    <entry xml:lang="en">No read, no write, execute</entry>
+	    <entry>不可讀取, 不可寫入, 可執行</entry>
 	    <entry xml:lang="en"><literal>--x</literal></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en">2</entry>
-	    <entry xml:lang="en">No read, write, no execute</entry>
+	    <entry>不可讀取, 可寫入, 不可執行</entry>
 	    <entry xml:lang="en"><literal>-w-</literal></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en">3</entry>
-	    <entry xml:lang="en">No read, write, execute</entry>
+	    <entry>不可讀取, 可寫入, 可執行</entry>
 	    <entry xml:lang="en"><literal>-wx</literal></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en">4</entry>
-	    <entry xml:lang="en">Read, no write, no execute</entry>
+	    <entry>可讀取, 不可寫入, 不可執行</entry>
 	    <entry xml:lang="en"><literal>r--</literal></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en">5</entry>
-	    <entry xml:lang="en">Read, no write, execute</entry>
+	    <entry>可讀取, 不可寫入, 可執行</entry>
 	    <entry xml:lang="en"><literal>r-x</literal></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en">6</entry>
-	    <entry xml:lang="en">Read, write, no execute</entry>
+	    <entry>可讀取, 可寫入, 不可執行</entry>
 	    <entry xml:lang="en"><literal>rw-</literal></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en">7</entry>
-	    <entry xml:lang="en">Read, write, execute</entry>
+	    <entry>可讀取, 可寫入, 可執行</entry>
 	    <entry xml:lang="en"><literal>rwx</literal></entry>
 	  </row>
 	</tbody>
@@ -5892,11 +5838,7 @@ uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)</screen>
       <primary>directories</primary>
     </indexterm>
 
-    <para xml:lang="en">Use the <option>-l</option> argument to <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> to view a
-      long directory listing that includes a column of information
-      about a file's permissions for the owner, group, and everyone
-      else.  For example, a <command>ls -l</command> in an arbitrary
-      directory may show:</para>
+    <para>使用 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令時，可以加上 <option>-l</option> 參數， 來檢視詳細的目錄清單。 清單中欄位的資訊包含檔案對所有者、群組及其他人的權限。 在任一個目錄底下執行 <command>ls -l</command>，會顯示如下的結果:</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>ls -l</userinput>
 total 530
@@ -5904,51 +5846,19 @@ total 530
 -rw-r--r--  1 root  wheel     512 Sep  5 12:31 otherfile
 -rw-r--r--  1 root  wheel    7680 Sep  5 12:31 email.txt</screen>
 
-    <para xml:lang="en">The first (leftmost) character in the first column indicates
-      whether this file is a regular file, a directory, a special
-      character device, a socket, or any other special pseudo-file
-      device.  In this example, the <literal>-</literal> indicates a
-      regular file.  The next three characters, <literal>rw-</literal>
-      in this example, give the permissions for the owner of the file.
-      The next three characters, <literal>r--</literal>, give the
-      permissions for the group that the file belongs to.  The final
-      three characters, <literal>r--</literal>, give the permissions
-      for the rest of the world.  A dash means that the permission is
-      turned off.  In this example, the permissions are set so the
-      owner can read and write to the file, the group can read the
-      file, and the rest of the world can only read the file.
-      According to the table above, the permissions for this file
-      would be <literal>644</literal>, where each digit represents the
-      three parts of the file's permission.</para>
+    <para>第一個 (最左邊) 的字元用來表示這個檔案的類型為何，除標準檔案以外，尚有目錄、特殊字元裝置、Socket 及其他特殊虛擬檔案裝置， 在此例當中，<literal>-</literal> 表示該檔案為一個標準的檔案。 範例中接下來的三個字元中，<literal>rw-</literal> 代表所有者對檔案擁有的權限。 再接下來的三個字元， <literal>r--</literal> 則代表群組對檔案擁有的權限， 最後三個字元，<literal>r--</literal> 則代表其他人對檔案擁有的權限。 破折號 (-) 表示沒有權限，範例中的這個檔案的權限， 只允許所有者讀取、寫入檔案，群組以及其他人僅能讀取檔案。 根據以上的表格，此種權限的檔案可以使用 <literal>644</literal> 來表示， 每組數字分別代表檔案的三種權限。</para>
 
-    <para xml:lang="en">How does the system control permissions on devices? FreeBSD
-      treats most hardware devices as a file that programs can open,
-      read, and write data to.  These special device files are
-      stored in <filename>/dev/</filename>.</para>
+    <para>那系統如何控制裝置的權限？ 實際上 FreeBSD 對大多的硬碟裝置就如同檔案，程式可以開啟、讀取以及寫入資料如一般檔案。 這些特殊裝置檔案都儲存於 <filename>/dev/</filename> 目錄中。</para>
 
-    <para xml:lang="en">Directories are also treated as files.  They have read,
-      write, and execute permissions.  The executable bit for a
-      directory has a slightly different meaning than that of files.
-      When a directory is marked executable, it means it is possible
-      to change into that directory using <citerefentry><refentrytitle>cd</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  This also
-      means that it is possible to access the files within that
-      directory, subject to the permissions on the files
-      themselves.</para>
+    <para>目錄也同如檔案，擁有讀取、寫入及執行的權限， 但在執行權限上與檔案有明顯的差異。 當目錄被標示為可執行時，代表可以使用 <citerefentry><refentrytitle>cd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令切換進入該目錄。 也代表能夠存取在此目錄之中的已知檔名的檔案，但仍會受限於檔案本身所設定的權限。</para>
 
-    <para xml:lang="en">In order to perform a directory listing, the read permission
-      must be set on the directory.  In order to delete a file that
-      one knows the name of, it is necessary to have write
-      <emphasis>and</emphasis> execute permissions to the directory
-      containing the file.</para>
+    <para>要能夠列出目錄內容，必須擁有目錄的讀取權限。 要刪除已知檔名的檔案，必須擁有檔案所在目錄的寫入 <emphasis>以及</emphasis> 執行的權限。</para>
 
-    <para xml:lang="en">There are more permission bits, but they are primarily used
-      in special circumstances such as setuid binaries and sticky
-      directories.  For more information on file permissions and how
-      to set them, refer to <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+    <para>還有一些權限位元，但這些權限主要在特殊情況使用，如 setuid binaries 及 sticky directories。 如果您還想知道更多檔案權限的資訊及使用方法，請務必參閱 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
     <sect2>
       <info>
-	<title xml:lang="en">Symbolic Permissions</title>
+	<title>權限符號</title>
 
 	<authorgroup>
 	  <author xml:lang="en">
@@ -5976,101 +5886,93 @@ total 530
 	<tgroup cols="3">
 	  <thead>
 	    <row>
-	      <entry xml:lang="en">Option</entry>
-	      <entry xml:lang="en">Letter</entry>
-	      <entry xml:lang="en">Represents</entry>
+	      <entry>項目</entry>
+	      <entry>字母</entry>
+	      <entry>代表意義</entry>
 	    </row>
 	  </thead>
 
 	  <tbody>
 	    <row>
-	      <entry xml:lang="en">(who)</entry>
+	      <entry>(某人)</entry>
 	      <entry xml:lang="en">u</entry>
-	      <entry xml:lang="en">User</entry>
+	      <entry>使用者</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(who)</entry>
+	      <entry>(某人)</entry>
 	      <entry xml:lang="en">g</entry>
-	      <entry xml:lang="en">Group owner</entry>
+	      <entry>群組所有者</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(who)</entry>
+	      <entry>(某人)</entry>
 	      <entry xml:lang="en">o</entry>
-	      <entry xml:lang="en">Other</entry>
+	      <entry>其他</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(who)</entry>
+	      <entry>(某人)</entry>
 	      <entry xml:lang="en">a</entry>
-	      <entry xml:lang="en">All (<quote>world</quote>)</entry>
+	      <entry>全部 (<quote>world</quote>)</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(action)</entry>
+	      <entry>(動作)</entry>
 	      <entry xml:lang="en">+</entry>
-	      <entry xml:lang="en">Adding permissions</entry>
+	      <entry>	增加權限</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(action)</entry>
+	      <entry>(動作)</entry>
 	      <entry xml:lang="en">-</entry>
-	      <entry xml:lang="en">Removing permissions</entry>
+	      <entry>移除權限</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(action)</entry>
+	      <entry>(動作)</entry>
 	      <entry xml:lang="en">=</entry>
-	      <entry xml:lang="en">Explicitly set permissions</entry>
+	      <entry>指定權限</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(permissions)</entry>
+	      <entry>(權限)</entry>
 	      <entry xml:lang="en">r</entry>
-	      <entry xml:lang="en">Read</entry>
+	      <entry>讀取</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(permissions)</entry>
+	      <entry>(權限)</entry>
 	      <entry xml:lang="en">w</entry>
 	      <entry xml:lang="en">Write</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(permissions)</entry>
+	      <entry>(權限)</entry>
 	      <entry xml:lang="en">x</entry>
-	      <entry xml:lang="en">Execute</entry>
+	      <entry>寫入</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(permissions)</entry>
+	      <entry>(權限)</entry>
 	      <entry xml:lang="en">t</entry>
 	      <entry xml:lang="en">Sticky bit</entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">(permissions)</entry>
+	      <entry>(權限)</entry>
 	      <entry xml:lang="en">s</entry>
-	      <entry xml:lang="en">Set UID or GID</entry>
+	      <entry>	Set UID 或 GID</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
       </informaltable>
 
-      <para xml:lang="en">These values are used with <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>, but with
-	letters instead of numbers.  For example, the following
-	command would block other users from accessing
-	<replaceable>FILE</replaceable>:</para>
+      <para>如先前同樣使用 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令來設定，但使用的參數為這些字元。 例如，您可以使用下列指令禁止其他使用者存取檔案 <replaceable>FILE</replaceable>:</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>chmod go= FILE</userinput></screen>
 
-      <para xml:lang="en">A comma separated list can be provided when more than one
-	set of changes to a file must be made.  For example, the
-	following command removes the group and
-	<quote>world</quote> write permission on
-	<replaceable>FILE</replaceable>, and adds the execute
-	permissions for everyone:</para>
+      <para>若有兩個以上的符號表示可以使用逗號 (,) 區隔。 例如，下列指令將會移除群組及其他人對檔案 <replaceable>FILE</replaceable> 的寫入權限， 並使全部人 (<quote>world</quote>) 對該檔有執行權限。</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>chmod go-w,a+x <replaceable>FILE</replaceable></userinput></screen>
 
@@ -6083,7 +5985,7 @@ total 530
 
     <sect2>
       <info>
-	<title xml:lang="en">FreeBSD File Flags</title>
+	<title>FreeBSD 檔案旗標</title>
 
 	<authorgroup>
 	  <author xml:lang="en">
@@ -6096,38 +5998,23 @@ total 530
 	</authorgroup>
       </info>
 
-      <para xml:lang="en">In addition to file permissions, FreeBSD supports the use of
-	<quote>file flags</quote>.  These flags add an additional
-	level of security and control over files, but not directories.
-	With file flags, even
-	<systemitem class="username">root</systemitem> can be
-	prevented from removing or altering files.</para>
+      <para>除了前面提到的檔案權限外，FreeBSD 支援使用 <quote>檔案旗標</quote>。 這些旗標增加了檔案的安全性及管理性，但不包含目錄。有了檔案旗標可確保在某些時候 <systemitem class="username">root</systemitem> 不會意外將檔案修改或移除。</para>
 
-      <para xml:lang="en">File flags are modified using <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  For
-	example, to enable the system undeletable flag on the file
-	<filename>file1</filename>, issue the following
-	command:</para>
+      <para>修改的檔案 flag 僅需要使用擁有簡易的介面的 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> 工具。 例如，標示系統禁止刪除的旗標於檔案 <filename>file1</filename>，使用下列指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>chflags sunlink file1</userinput></screen>
 
-      <para xml:lang="en">To disable the system undeletable flag, put a
-	<quote>no</quote> in front of the
-	<option>sunlink</option>:</para>
+      <para>若要移除系統禁止刪除的旗標，只需要簡單在 <option>sunlink</option> 前加上 <quote>no</quote>，例如：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>chflags nosunlink file1</userinput></screen>
 
-      <para xml:lang="en">To view the flags of a file, use <option>-lo</option> with
-	<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry>:</para>
+      <para>使用 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 及參數 <option>-lo</option> 可檢視檔案目前的旗標：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ls -lo file1</userinput></screen>
 
       <programlisting xml:lang="en">-rw-r--r--  1 trhodes  trhodes  sunlnk 0 Mar  1 05:54 file1</programlisting>
 
-      <para xml:lang="en">Several file flags may only be added or removed by the
-	<systemitem class="username">root</systemitem> user.  In other
-	cases, the file owner may set its file flags.  Refer to
-	<citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>2</manvolnum></citerefentry> for more
-	information.</para>
+      <para>多數的旗標僅能由 <systemitem class="username">root</systemitem> 使用者來標示或移除，而部份旗標可由檔案所有者設定。 我們建議系統管理者可閱讀 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>2</manvolnum></citerefentry> 說明以瞭解相關細節。</para>
     </sect2>
 
     <sect2>
@@ -22326,7 +22213,7 @@ boot:</screen>
 	<tgroup cols="2">
 	  <thead>
 	    <row>
-	      <entry xml:lang="en">Option</entry>
+	      <entry>項目</entry>
 	      <entry xml:lang="en">Description</entry>
 	    </row>
 	  </thead>
