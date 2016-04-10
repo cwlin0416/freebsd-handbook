@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-09 19:51+0800\n"
+"PO-Revision-Date: 2016-04-10 11:30+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1195,7 +1195,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:1968
 msgid "FreeBSD's advanced features, proven security, predictable release cycle, and permissive license have led to its use as a platform for building many commercial and open source appliances, devices, and products. Many of the world's largest IT companies use FreeBSD:"
-msgstr ""
+msgstr "FreeBSD's advanced features, proven security, predictable release cycle, and permissive license have led to its use as a platform for building many commercial and open source appliances, devices, and products. 許多 Internet 上的大型網站都是以 FreeBSD 作為它的作業系統，如："
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect1/indexterm
@@ -1863,7 +1863,7 @@ msgstr "<_:indexterm-1/> <_:indexterm-2/> <_:indexterm-3/> <_:indexterm-4/> <_:i
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2648
 msgid "The committers list<anchor xml:id=\"development-committers\"/>"
-msgstr "提交者清單<anchor xml:id=\"development-committers\"/>"
+msgstr "提交者名單<anchor xml:id=\"development-committers\"/>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2652
@@ -1933,7 +1933,7 @@ msgstr "我們對於那些想要加入 FreeBSD 開發者的期待是： 請保�
 #. (itstool) path: sect2/title
 #: book.translate.xml:2745
 msgid "Third Party Programs"
-msgstr ""
+msgstr "第三方程式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2747
@@ -1943,7 +1943,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:2768
 msgid "Additional Documentation"
-msgstr ""
+msgstr "其他文件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2770
@@ -2114,12 +2114,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2986
 msgid "Almost all i386-compatible processors with a floating point unit are supported. All <trademark class=\"registered\">Intel</trademark> processors 486 or higher are supported."
-msgstr ""
+msgstr "幾乎所有有浮點運算裝置的 i386 相容處理器都有支援。所有 <trademark class=\"registered\">Intel</trademark> 486 或是更新的處理器也有支援。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2990
 msgid "FreeBSD will take advantage of Physical Address Extensions (<acronym>PAE</acronym>) support on <acronym>CPU</acronym>s that support this feature. A kernel with the <acronym>PAE</acronym> feature enabled will detect memory above 4 GB and allow it to be used by the system. This feature places constraints on the device drivers and other features of FreeBSD which may be used; refer to <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "如果 <acronym>CPU</acronym>，FreeBSD 會利用實體位址延伸(<acronym>PAE</acronym>)，有開啟 <acronym>PAE</acronym> 支援的核心會偵測超過 4 GB 的記憶體，讓他能被系統使用。 這項功能為 FreeBSD 的驅動程式與部分功能帶來一些限制，詳情請見 <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry>。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3002
@@ -2129,7 +2129,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:3004
 msgid "Currently supported processors are the <trademark class=\"registered\">Itanium</trademark> and the <trademark class=\"registered\">Itanium</trademark> 2. Supported chipsets include the HP zx1, <trademark class=\"registered\">Intel</trademark> 460GX, and <trademark class=\"registered\">Intel</trademark> E8870. Both Uniprocessor (<acronym>UP</acronym>) and Symmetric Multi-processor (<acronym>SMP</acronym>) configurations are supported."
-msgstr ""
+msgstr "目前支援的處理器是 <trademark class=\"registered\">Itanium</trademark> 和 <trademark class=\"registered\">Itanium</trademark> 2。支援的晶片組包括 HP zx1， <trademark class=\"registered\">Intel</trademark> 460GX 和 <trademark class=\"registered\">Intel</trademark> E8870。 單處理器 (Uniprocessor, <acronym>UP</acronym>) 和對稱多處理器 (Symmetric Multi-processor, <acronym>SMP</acronym>)的設定都有支援。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3014
@@ -2139,12 +2139,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:3016
 msgid "NEC PC-9801/9821 series with almost all i386-compatible processors, including 80486, <trademark class=\"registered\">Pentium</trademark>, <trademark class=\"registered\">Pentium</trademark> Pro, and <trademark class=\"registered\">Pentium</trademark> II, are all supported. All i386-compatible processors by AMD, Cyrix, IBM, and IDT are also supported. EPSON PC-386/486/586 series, which are compatible with NEC PC-9801 series, are supported. The NEC FC-9801/9821 and NEC SV-98 series should be supported."
-msgstr ""
+msgstr "NEC PC-9801/9821 系列幾乎所有 i386 相容處理器包括 80486、<trademark class=\"registered\">Pentium</trademark>、 <trademark class=\"registered\">Pentium</trademark> Pro 和 <trademark class=\"registered\">Pentium</trademark> II 都有支援。 所有 AMD, Cyrix, IBM, 及 IDT 的i386 相容處理器都有支援。 相容 NEC PC-9801 的 EPSON PC-386/486/586 系列都有支援。 NEC FC-9801/9821 及 NEC SV-98 系列也有支援。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3025
 msgid "High-resolution mode is not supported. NEC PC-98XA/XL/RL/XL^2, and NEC PC-H98 series are supported in normal (PC-9801 compatible) mode only. The <acronym>SMP</acronym>-related features of FreeBSD are not supported. The New Extend Standard Architecture (<acronym>NESA</acronym>) bus used in the PC-H98, SV-H98, and FC-H98 series, is not supported."
-msgstr ""
+msgstr "高解析度模式並不支援。NEC PC-98XA/XL/RL/XL^2 和 NEC PC-H98 系列只支援正常 (PC-9801 相容) 模式。 FreeBSD 對稱多處理器 <acronym>SMP</acronym> 相關功能並不支援。 PC-H98， SV-H98 和FC-H98 新延伸標準架構 (<acronym>NESA</acronym>) 匯流排不支援。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3036
@@ -2154,12 +2154,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:3038
 msgid "All New World <acronym>ROM</acronym> <trademark class=\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</trademark> systems with built-in <acronym>USB</acronym> are supported. <acronym>SMP</acronym> is supported on machines with multiple <acronym>CPU</acronym>s."
-msgstr ""
+msgstr "所有內建 <acronym>USB</acronym> 的 New World <acronym>ROM</acronym> <trademark class=\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</trademark> 系統都有支援。 <acronym>SMP</acronym> 在多 <acronym>CPU</acronym> 的機器都有支援。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3043
 msgid "A 32-bit kernel can only use the first 2 GB of <acronym>RAM</acronym>."
-msgstr ""
+msgstr "32 位元的核心只能使用前 2 GB 的 <acronym>RAM</acronym>。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3049
@@ -2169,12 +2169,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:3051
 msgid "Systems supported by FreeBSD/sparc64 are listed at the FreeBSD/sparc64 Project (<link xlink:href=\"@@URL_RELPREFIX@@/platforms/sparc.html\">http://www.freebsd.org/platforms/sparc.html</link>)."
-msgstr ""
+msgstr "FreeBSD/sparc64 支援的系統列在 FreeBSD/sparc64 計劃 (<link xlink:href=\"@@URL_RELPREFIX@@/platforms/sparc.html\">http://www.freebsd.org/platforms/sparc.html</link>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3054
 msgid "<acronym>SMP</acronym> is supported on all systems with more than 1 processor. A dedicated disk is required as it is not possible to share a disk with another operating system at this time."
-msgstr ""
+msgstr "所有超過一個處理器的系統都有支援 <acronym>SMP</acronym>。需要專用的磁碟系統，因為此時無法和其他作業系統共用磁碟。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3064
@@ -2184,123 +2184,123 @@ msgstr "安裝前準備工作"
 #. (itstool) path: sect1/para
 #: book.translate.xml:3066
 msgid "Once it has been determined that the system meets the minimum hardware requirements for installing FreeBSD, the installation file should be downloaded and the installation media prepared. Before doing this, check that the system is ready for an installation by verifying the items in this checklist:"
-msgstr ""
+msgstr "一旦確定系統符合安裝 FreeBSD 的最低硬體需求，就可以下載安裝檔案並準備安裝的媒體。 做這些之前，先檢查以下核對清單的項目是否準備好了："
 
 #. (itstool) path: step/title
 #: book.translate.xml:3075
 msgid "Back Up Important Data"
-msgstr ""
+msgstr "備份重要資料"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3077
 msgid "Before installing any operating system, <emphasis>always</emphasis> backup all important data first. Do not store the backup on the system being installed. Instead, save the data to a removable disk such as a <acronym>USB</acronym> drive, another system on the network, or an online backup service. Test the backup before starting the installation to make sure it contains all of the needed files. Once the installer formats the system's disk, all data stored on that disk will be lost."
-msgstr ""
+msgstr "安裝任何作業系統前， <emphasis>總是</emphasis> 要先備份所有重要資料。 不要儲存備份在即將安裝的系統上。改為將資料儲存在可移除磁碟，像是 <acronym>USB</acronym> 隨身碟，網路上的另一個系統或是線上備份服務上。 開始安裝前，要測試備份，確定它含有所有需要的檔案。 一旦安裝程式格式化系統的磁碟，所有儲存在上面的資料都會遺失。"
 
 #. (itstool) path: step/title
 #: book.translate.xml:3089
 msgid "Decide Where to Install FreeBSD"
-msgstr ""
+msgstr "決定 FreeBSD 安裝在哪裡"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3091
 msgid "If FreeBSD will be the only operating system installed, this step can be skipped. But if FreeBSD will share the disk with another operating system, decide which disk or partition will be used for FreeBSD."
-msgstr ""
+msgstr "如果 FreeBSD 是唯一要安裝的作業系統，這個步驟可以略過。 但是假如 FreeBSD 將和其他作業系統分享磁碟空間的話，要決定 FreeBSD 要安裝在哪個磁碟或是哪個分割區。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3096
 msgid "In the i386 and amd64 architectures, disks can be divided into multiple partitions using one of two partitioning schemes. A traditional <firstterm>Master Boot Record</firstterm> (<acronym>MBR</acronym>) holds a partition table defining up to four <firstterm>primary partitions</firstterm>. For historical reasons, FreeBSD calls these primary partition <firstterm>slices</firstterm>. One of these primary partitions can be made into an <firstterm>extended partition</firstterm> containing multiple <firstterm>logical partitions</firstterm>. The <firstterm>GUID Partition Table</firstterm> (<acronym>GPT</acronym>) is a newer and simpler method of partitioning a disk. Common <acronym>GPT</acronym> implementations allow up to 128 partitions per disk, eliminating the need for logical partitions."
-msgstr ""
+msgstr "在 i386 和 amd64 平台，磁碟可以使用兩種分割區配置之一來分割成多個分割區。 傳統的<firstterm>主開機紀錄</firstterm> (Master Boot Record, <acronym>MBR</acronym>) 有一個分割區表定義最多到 <firstterm>主分割區</firstterm>。 因為歷史性的理由， FreeBSD 稱這些主分割區為 <firstterm>slices</firstterm>。 其中一個主分割區可以分成一個 延伸分割區 ，他包含多個 邏輯分割區。 <firstterm>GUID 分割區表</firstterm> (GUID Partition Table, <acronym>GPT</acronym>) 是較新和較簡單的分割磁碟的方法，一般 <acronym>GPT</acronym> 實作允許每個磁碟最多達 128 個分割區，減少使用邏輯分割區的需要。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:3114
 msgid "Some older operating systems, like <trademark class=\"registered\">Windows</trademark> XP, are not compatible with the <acronym>GPT</acronym> partition scheme. If FreeBSD will be sharing a disk with such an operating system, <acronym>MBR</acronym> partitioning is required."
-msgstr ""
+msgstr "一些比較舊的作業系統，像是 <trademark class=\"registered\">Windows</trademark> XP 不相容 <acronym>GPT</acronym> 分割區配置。 如果 FreeBSD 將和這樣的作業系統共享一個磁碟，那就需要用 <acronym>MBR</acronym> 分割。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3121
 msgid "The FreeBSD boot loader requires either a primary or <acronym>GPT</acronym> partition. If all of the primary or <acronym>GPT</acronym> partitions are already in use, one must be freed for FreeBSD. To create a partition without deleting existing data, use a partition resizing tool to shrink an existing partition and create a new partition using the freed space."
-msgstr ""
+msgstr "FreeBSD 開機啟動程式需要主分割區或是 <acronym>GPT</acronym> 分割區。如果所有的主分割區或 <acronym>GPT</acronym> 分割區都已使用，必須釋放其中一個分割區讓 FreeBSD 使用。如果要建立一個分割區而不刪除原有的資料，可以使用磁碟分割工具來縮小現有的分割區，並使用多出的空間來建立新分割區。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3129
 msgid "A variety of free and commercial partition resizing tools are listed at <link xlink:href=\"http://en.wikipedia.org/wiki/List_of_disk_partitioning_software\">http://en.wikipedia.org/wiki/List_of_disk_partitioning_software</link>. <application>GParted Live</application> (<link xlink:href=\"http://gparted.sourceforge.net/livecd.php\">http://gparted.sourceforge.net/livecd.php</link>) is a free live <acronym>CD</acronym> which includes the <application>GParted</application> partition editor. <application>GParted</application> is also included with many other Linux live <acronym>CD</acronym> distributions."
-msgstr ""
+msgstr "各種自由的和商業化的磁碟分割工具列於 <link xlink:href=\"http://en.wikipedia.org/wiki/List_of_disk_partitioning_software\">http://en.wikipedia.org/wiki/List_of_disk_partitioning_software</link>。<application>GParted Live</application> (<link xlink:href=\"http://gparted.sourceforge.net/livecd.php\">http://gparted.sourceforge.net/livecd.php</link>) 是包含分割編輯工具 <application>GParted</application> 的自由的 live <acronym>CD</acronym>。 GParted 也包含在許多 Linux live <acronym>CD</acronym> 套件裡。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:3139
 msgid "When used properly, disk shrinking utilities can safely create space for creating a new partition. Since the possibility of selecting the wrong partition exists, always backup any important data and verify the integrity of the backup before modifying disk partitions."
-msgstr ""
+msgstr "當正確地使用，磁碟分割工具可以安全地建立空間讓新的分割區使用。 因為有可能會誤選已經存在的分割區，所以在修改磁碟分割區前， 一定要備份重要資料，並確認備份的完整性。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3146
 msgid "Disk partitions containing different operating systems make it possible to install multiple operating systems on one computer. An alternative is to use virtualization (<xref linkend=\"virtualization\"/>) which allows multiple operating systems to run at the same time without modifying any disk partitions."
-msgstr ""
+msgstr "包含不同作業系統的磁碟分割區可以讓一台電腦安裝多重作業系統。 另一種作法是使用虛擬機器 (<xref linkend=\"virtualization\"/>) ，可以讓多重作業系統同時間執行而不需要改變任何磁碟分割區。"
 
 #. (itstool) path: step/title
 #: book.translate.xml:3155
 msgid "Collect Network Information"
-msgstr ""
+msgstr "收集網路資訊"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3157
 msgid "Some FreeBSD installation methods require a network connection in order to download the installation files. After any installation, the installer will offer to setup the system's network interfaces."
-msgstr ""
+msgstr "有些 FreeBSD 安裝方法為了下載安裝檔案需要網路連線。 在系統安裝之後，安裝程式將會讓您設定系統的網路介面。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3162
 msgid "If the network has a <acronym>DHCP</acronym> server, it can be used to provide automatic network configuration. If <acronym>DHCP</acronym> is not available, the following network information for the system must be obtained from the local network administrator or Internet service provider:"
-msgstr ""
+msgstr "如果網路有 <acronym>DHCP</acronym> 伺服器，可以自動設定網路。 如果沒有 <acronym>DHCP</acronym> ， 需要從區域網路管理者或是網際網路服務商取得以下系統的網路資訊："
 
 #. (itstool) path: orderedlist/title
 #: book.translate.xml:3170
 msgid "Required Network Information"
-msgstr ""
+msgstr "需要的網路資訊"
 
 #. (itstool) path: listitem/para
 #. (itstool) path: row/entry
 #: book.translate.xml:3173 book.translate.xml:53237
 msgid "<acronym>IP</acronym> address"
-msgstr ""
+msgstr "<acronym>IP</acronym> 位址"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3177
 msgid "Subnet mask"
-msgstr ""
+msgstr "子網路遮罩"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3181
 msgid "<acronym>IP</acronym> address of default gateway"
-msgstr ""
+msgstr "預設閘道器 <acronym>IP</acronym> 位址"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3186
 msgid "Domain name of the network"
-msgstr ""
+msgstr "網路的網域名稱"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3190
 msgid "<acronym>IP</acronym> addresses of the network's <acronym>DNS</acronym> servers"
-msgstr ""
+msgstr "網路 <acronym>DNS</acronym> 伺服器 <acronym>IP</acronym> 位址"
 
 #. (itstool) path: step/title
 #: book.translate.xml:3197
 msgid "Check for FreeBSD Errata"
-msgstr ""
+msgstr "檢查 FreeBSD 勘誤表"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3199
 msgid "Although the FreeBSD Project strives to ensure that each release of FreeBSD is as stable as possible, bugs occasionally creep into the process. On very rare occasions those bugs affect the installation process. As these problems are discovered and fixed, they are noted in the FreeBSD Errata (<link xlink:href=\"@@URL_RELPREFIX@@/releases/10.2R/errata.html\">http://www.freebsd.org/releases/10.2R/errata.html</link>) on the FreeBSD web site. Check the errata before installing to make sure that there are no problems that might affect the installation."
-msgstr ""
+msgstr "儘管 FreeBSD Project 努力確保每個 FreeBSD 發行版能夠儘可能地穩定，錯誤偶爾還是會悄悄出現。 有極小的機會錯誤會影響安裝過程。 當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href=\"@@URL_RELPREFIX@@/releases/10.2R/errata.html\">http://www.freebsd.org/releases/10.2R/errata.html</link>)。 安裝前要檢查勘誤表，確保沒有會影響到安裝的問題。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3209
 msgid "Information and errata for all the releases can be found on the release information section of the FreeBSD web site (<link xlink:href=\"@@URL_RELPREFIX@@/releases/index.html\">http://www.freebsd.org/releases/index.html</link>)."
-msgstr ""
+msgstr "所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href=\"@@URL_RELPREFIX@@/releases/index.html\">http://www.freebsd.org/releases/index.html</link>)。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:3216
 msgid "Prepare the Installation Media"
-msgstr ""
+msgstr "準備安裝的媒體"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3218
@@ -2402,7 +2402,7 @@ msgstr ""
 #. (itstool) path: procedure/title
 #: book.translate.xml:3352
 msgid "Using <trademark class=\"registered\">Windows</trademark> to Write the Image"
-msgstr ""
+msgstr "使用 <trademark class=\"registered\">Windows</trademark> 來寫入映象檔"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:3355
@@ -2412,27 +2412,27 @@ msgstr ""
 #. (itstool) path: step/title
 #: book.translate.xml:3361
 msgid "Obtaining <application>Image Writer for <trademark class=\"registered\">Windows</trademark></application>"
-msgstr ""
+msgstr "取得 <application>Image Writer <trademark class=\"registered\">Windows</trademark> 版</application>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3364
 msgid "<application>Image Writer for <trademark class=\"registered\">Windows</trademark></application> is a free application that can correctly write an image file to a memory stick. Download it from <uri xlink:href=\"https://launchpad.net/win32-image-writer/\">https://launchpad.net/win32-image-writer/</uri> and extract it into a folder."
-msgstr ""
+msgstr "<application>Image Writer <trademark class=\"registered\">Windows</trademark> 版</application> 是一個免費的應用程式，可以正確地將映像檔寫入隨身碟。 從 <uri xlink:href=\"https://launchpad.net/win32-image-writer/\">https://launchpad.net/win32-image-writer/</uri> 下載，並解壓縮到一個資料夾。"
 
 #. (itstool) path: step/title
 #: book.translate.xml:3372
 msgid "Writing the Image with Image Writer"
-msgstr ""
+msgstr "用 Image Writer 寫入映象檔"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3374
 msgid "Double-click the <application>Win32DiskImager</application> icon to start the program. Verify that the drive letter shown under <computeroutput>Device</computeroutput> is the drive with the memory stick. Click the folder icon and select the image to be written to the memory stick. Click <guibutton>[ Save ]</guibutton> to accept the image file name. Verify that everything is correct, and that no folders on the memory stick are open in other windows. When everything is ready, click <guibutton>[ Write ]</guibutton> to write the image file to the memory stick."
-msgstr ""
+msgstr "雙擊 <application>Win32DiskImager</application> 圖示啟動程式。 確認 <computeroutput>Device</computeroutput> 顯示的磁碟機代號是隨身碟的磁碟機代號。 按下資料夾圖示選擇要寫入隨身碟的映像檔。 按下 <guibutton>[ Save ]</guibutton> 按鈕確定映像檔名。 確認所有東西都正確，隨身碟的資料夾並沒有在其他視窗開啟。 所有東西準備好後，按下 <guibutton>[ Write ]</guibutton> 將映像檔寫入隨身碟。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:3389
 msgid "You are now ready to start installing FreeBSD."
-msgstr ""
+msgstr "您現在可以開始安裝 FreeBSD 。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3395
@@ -2558,7 +2558,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3525
 msgid "FreeBSD Boot Loader Menu"
-msgstr ""
+msgstr "FreeBSD 開機載入器選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2603,7 +2603,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3579
 msgid "FreeBSD Boot Options Menu"
-msgstr ""
+msgstr "FreeBSD 開機選項選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2653,7 +2653,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3639
 msgid "Welcome Menu"
-msgstr ""
+msgstr "歡迎選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2698,7 +2698,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3692
 msgid "Keymap Selection"
-msgstr ""
+msgstr "Keymap 選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2718,7 +2718,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3710
 msgid "Selecting Keyboard Menu"
-msgstr ""
+msgstr "選擇鍵盤選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2748,7 +2748,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3738
 msgid "Enhanced Keymap Menu"
-msgstr ""
+msgstr "改進後的 Keymap 選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2764,7 +2764,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3750 book.translate.xml:3757
 msgid "Setting the Hostname"
-msgstr ""
+msgstr "設定主機名稱"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3752
@@ -2790,7 +2790,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3771 book.translate.xml:3777
 msgid "Selecting Components to Install"
-msgstr ""
+msgstr "選擇要安裝的元件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3773
@@ -2846,7 +2846,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3845 book.translate.xml:3856
 msgid "Installing from the Network"
-msgstr ""
+msgstr "從網路安裝"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3847
@@ -2871,7 +2871,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3874
 msgid "Choosing a Mirror"
-msgstr ""
+msgstr "選擇鏡像站"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2901,7 +2901,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3896
 msgid "Partitioning Choices on FreeBSD 9.x"
-msgstr ""
+msgstr "FreeBSD 9.x 的磁區選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2916,7 +2916,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3906
 msgid "Partitioning Choices on FreeBSD 10.x and Higher"
-msgstr ""
+msgstr "FreeBSD 10.x 或更新版本的磁區選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3026,7 +3026,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4032
 msgid "Selecting from Multiple Disks"
-msgstr ""
+msgstr "自多個磁碟選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3046,7 +3046,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4051
 msgid "Selecting Entire Disk or Partition"
-msgstr ""
+msgstr "選擇完整磁碟或磁區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3066,7 +3066,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4071
 msgid "Review Created Partitions"
-msgstr ""
+msgstr "確認已建立的磁區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3091,7 +3091,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4087 book.translate.xml:4102 book.translate.xml:4173
 msgid "Manually Create Partitions"
-msgstr ""
+msgstr "手動建立磁區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3420,7 +3420,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4369
 msgid "<acronym>ZFS</acronym> Partitioning Menu"
-msgstr ""
+msgstr "<acronym>ZFS</acronym> 磁區選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3440,7 +3440,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4395
 msgid "<acronym>ZFS</acronym> Pool Type"
-msgstr ""
+msgstr "<acronym>ZFS</acronym> Pool 類型"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3460,7 +3460,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4414
 msgid "Disk Selection"
-msgstr ""
+msgstr "磁碟選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3475,7 +3475,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4424
 msgid "Invalid Selection"
-msgstr ""
+msgstr "無效的選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3495,7 +3495,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4444
 msgid "Analyzing a Disk"
-msgstr ""
+msgstr "分析磁碟"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3520,7 +3520,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4468
 msgid "Disk Encryption Password"
-msgstr ""
+msgstr "磁碟加密密碼"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3540,7 +3540,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4482
 msgid "Last Chance"
-msgstr ""
+msgstr "最後修改"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3580,7 +3580,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4525
 msgid "Final Confirmation"
-msgstr ""
+msgstr "最後確認"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3610,7 +3610,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4547
 msgid "Fetching Distribution Files"
-msgstr ""
+msgstr "取得發佈版本檔案"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3630,7 +3630,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4561
 msgid "Verifying Distribution Files"
-msgstr ""
+msgstr "檢驗發佈版本檔案"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3650,7 +3650,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4574
 msgid "Extracting Distribution Files"
-msgstr ""
+msgstr "解開發佈版本檔案"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3686,7 +3686,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4606 book.translate.xml:4617
 msgid "Setting the <systemitem class=\"username\">root</systemitem> Password"
-msgstr ""
+msgstr "設定 <systemitem class=\"username\">root</systemitem> 密碼"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4610
@@ -3721,7 +3721,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4640
 msgid "Choose a Network Interface"
-msgstr ""
+msgstr "選擇網路介面"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3741,7 +3741,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4655
 msgid "Scanning for Wireless Access Points"
-msgstr ""
+msgstr "掃描無線網路存取點"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3761,7 +3761,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4676
 msgid "Choosing a Wireless Network"
-msgstr ""
+msgstr "選擇無線網路"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3781,7 +3781,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4695
 msgid "WPA2 Setup"
-msgstr ""
+msgstr "WPA2 設定"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3801,7 +3801,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4709
 msgid "Choose <acronym>IPv4</acronym> Networking"
-msgstr ""
+msgstr "選擇 <acronym>IPv4</acronym> 網路"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3831,7 +3831,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4741
 msgid "Choose <acronym>IPv4</acronym> <acronym>DHCP</acronym> Configuration"
-msgstr ""
+msgstr "選擇 <acronym>IPv4</acronym> <acronym>DHCP</acronym> 設定"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3851,7 +3851,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4756
 msgid "<acronym>IPv4</acronym> Static Configuration"
-msgstr ""
+msgstr "<acronym>IPv4</acronym> 靜態位置設定"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3886,7 +3886,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4791
 msgid "Choose IPv6 Networking"
-msgstr ""
+msgstr "選擇 IPv6 網路"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3911,7 +3911,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4815
 msgid "Choose IPv6 SLAAC Configuration"
-msgstr ""
+msgstr "選擇 IPv6 SLAAC 設定"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3931,7 +3931,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4829
 msgid "IPv6 Static Configuration"
-msgstr ""
+msgstr "IPv6 靜態位置設定"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3961,7 +3961,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4867
 msgid "DNS Configuration"
-msgstr ""
+msgstr "DNS 設定"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3986,7 +3986,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4886
 msgid "Select Local or UTC Clock"
-msgstr ""
+msgstr "選擇本地或 UTC 時鐘"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4011,7 +4011,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4907
 msgid "Select a Region"
-msgstr ""
+msgstr "選擇區域"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4031,7 +4031,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4920
 msgid "Select a Country"
-msgstr ""
+msgstr "選擇城市"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4051,7 +4051,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4933
 msgid "Select a Time Zone"
-msgstr ""
+msgstr "選擇時區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4071,7 +4071,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4946
 msgid "Confirm Time Zone"
-msgstr ""
+msgstr "確認時區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4101,7 +4101,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4969
 msgid "Selecting Additional Services to Enable"
-msgstr ""
+msgstr "選擇要開啟的其他服務"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4142,7 +4142,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:5012 book.translate.xml:5020
 msgid "Enabling Crash Dumps"
-msgstr ""
+msgstr "開啟 Crash Dumps"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5014
@@ -4177,7 +4177,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:5044
 msgid "Add User Accounts"
-msgstr ""
+msgstr "新增使用者帳號"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4197,7 +4197,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:5057
 msgid "Enter User Information"
-msgstr ""
+msgstr "輸入使用者資訊"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4297,7 +4297,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:5168
 msgid "Exit User and Group Management"
-msgstr ""
+msgstr "離開使用者與群組管理"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4323,7 +4323,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:5187 book.translate.xml:5193
 msgid "Final Configuration"
-msgstr ""
+msgstr "最後設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5189
@@ -4389,7 +4389,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:5240 book.translate.xml:11345
 msgid "Manual Configuration"
-msgstr ""
+msgstr "手動設定"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4409,7 +4409,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:5258
 msgid "Complete the Installation"
-msgstr ""
+msgstr "完成安裝"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4591,12 +4591,12 @@ msgstr "UNIX 基礎概念"
 #. (itstool) path: sect1/para
 #: book.translate.xml:5477
 msgid "This chapter covers the basic commands and functionality of the FreeBSD operating system. Much of this material is relevant for any <trademark class=\"registered\">UNIX</trademark>-like operating system. New FreeBSD users are encouraged to read through this chapter carefully."
-msgstr ""
+msgstr "接下來的這一章將涵蓋 FreeBSD 作業系統的基本指令及功能。 大部份的內容在 <trademark class=\"registered\">UNIX</trademark>-like 作業系統中都是相通的。 如果您對這些內容熟悉的話，可以放心的跳過。 如果您剛接觸 FreeBSD，那您一定要仔細的讀完這章。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5486
 msgid "How to use and configure virtual consoles."
-msgstr ""
+msgstr "如何使用 FreeBSD 的 Virtual console。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5490
@@ -4606,52 +4606,52 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:5495
 msgid "How <trademark class=\"registered\">UNIX</trademark> file permissions and FreeBSD file flags work."
-msgstr ""
+msgstr "<trademark class=\"registered\">UNIX</trademark> 檔案權限以及 FreeBSD 檔案標記的運作方式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5500
 msgid "The default FreeBSD file system layout."
-msgstr ""
+msgstr "預設的 FreeBSD 檔案系統配置。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5504
 msgid "The FreeBSD disk organization."
-msgstr ""
+msgstr "FreeBSD 的磁碟組織。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5508
 msgid "How to mount and unmount file systems."
-msgstr ""
+msgstr "如何掛載(mount)、卸載(umount)檔案系統。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5512
 msgid "What processes, daemons, and signals are."
-msgstr ""
+msgstr "什麼是程序、Daemon 以及 Signal。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5516
 msgid "What a shell is, and how to change the default login environment."
-msgstr ""
+msgstr "什麼是 Shell，以及如何變更您預設的登入環境。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5521
 msgid "How to use basic text editors."
-msgstr ""
+msgstr "如何使用基本的文字編輯器。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5525
 msgid "What devices and device nodes are."
-msgstr ""
+msgstr "什麼是 Devices 和 Device node 。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5529
 msgid "How to read manual pages for more information."
-msgstr ""
+msgstr "如何閱讀操作手冊以獲得更多的資訊。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:5535
 msgid "Virtual Consoles and Terminals"
-msgstr "Virtual Consoles 與終端機"
+msgstr "虛擬 Console 與終端機"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:5537
@@ -4672,7 +4672,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:5547
 msgid "Unless FreeBSD has been configured to automatically start a graphical environment during startup, the system will boot into a command line login prompt, as seen in this example:"
-msgstr ""
+msgstr "如果您沒有將 FreeBSD 設定成開機時自動進入圖形化模式，系統會進入指令登入提示像是這樣的東西："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:5552
@@ -4686,12 +4686,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:5556
 msgid "The first line contains some information about the system. The <literal>amd64</literal> indicates that the system in this example is running a 64-bit version of FreeBSD. The hostname is <systemitem>pc3.example.org</systemitem>, and <filename>ttyv0</filename> indicates that this is the <quote>system console</quote>. The second line is the login prompt."
-msgstr ""
+msgstr "第一行包含了剛開機完系統的資訊，<literal>amd64</literal> 代表此範例所使用的系統是執行 64-位元版本的 FreeBSD，這台主機的名稱是 <systemitem>pc3.example.org</systemitem>，<filename>ttyv0</filename> 代表這是個 <quote>系統 Console</quote>。第二行則是登人的提示訊息。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5564
 msgid "Since FreeBSD is a multiuser system, it needs some way to distinguish between different users. This is accomplished by requiring every user to log into the system before gaining access to the programs on the system. Every user has a unique name <quote>username</quote> and a personal <quote>password</quote>."
-msgstr ""
+msgstr "FreeBSD 是一個多使用者的系統，需要一套可以分辨不同使用者的方法。因此所有的使用者在執行程式之前必須先“登入”系統以取得系統內程式的存取權限。每個使用者都有一組獨特的帳號名稱 (<quote>username</quote>) 及個人密碼 (<quote>password</quote>)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5571
@@ -4701,32 +4701,32 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:5579
 msgid "Once the correct password is input, the message of the day (<acronym>MOTD</acronym>) will be displayed followed by a command prompt. Depending upon the shell that was selected when the user was created, this prompt will be a <literal>#</literal>, <literal>$</literal>, or <literal>%</literal> character. The prompt indicates that the user is now logged into the FreeBSD system console and ready to try the available commands."
-msgstr ""
+msgstr "如果您輸入了正確的密碼，您應該會看到今日訊息 (Message of the day, <acronym>MOTD</acronym>)，後面接著顯示指令提示字元，依使用者建立時所選擇的 Shell 會有不同的提示字元可能為 <literal>#</literal>, <literal>$</literal> 或者 <literal>%</literal>。 看到指令提示代表使用者現在已經登入 FreeBSD 系統 Console 且已經準備好可以下指令。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5589
 msgid "Virtual Consoles"
-msgstr ""
+msgstr "虛擬 Console"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5591
 msgid "While the system console can be used to interact with the system, a user working from the command line at the keyboard of a FreeBSD system will typically instead log into a virtual console. This is because system messages are configured by default to display on the system console. These messages will appear over the command or file that the user is working on, making it difficult to concentrate on the work at hand."
-msgstr ""
+msgstr "雖然系統 Console 已經可以用來與系統互動，但使用鍵盤來下指令使用 FreeBSD 系統的使用者通常會使用虛擬 Console 登入。 因為系統訊息預設會顯示在系統 Console，這些訊些會在使用者作業的過程中不斷出現，讓使用者難以專心作業。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5600
 msgid "By default, FreeBSD is configured to provide several virtual consoles for inputting commands. Each virtual console has its own login prompt and shell and it is easy to switch between virtual consoles. This essentially provides the command line equivalent of having several windows open at the same time in a graphical environment."
-msgstr ""
+msgstr "FreeBSD 預設提供多個虛擬 Console 可輸入指令，每個虛擬 Console 都有自己的登入提示及 Shell 並且可以輕易的在虛擬 Console 間切換。 這實際上讓指令輸入有了類似於圖型化環境中可以同時開啟多個視窗的功能。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5607
 msgid "The key combinations <keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> through <keycombo><keycap>Alt</keycap><keycap>F8</keycap></keycombo> have been reserved by FreeBSD for switching between virtual consoles. Use <keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> to switch to the system console (<filename>ttyv0</filename>), <keycombo><keycap>Alt</keycap><keycap>F2</keycap></keycombo> to access the first virtual console (<filename>ttyv1</filename>), <keycombo><keycap>Alt</keycap><keycap>F3</keycap></keycombo> to access the second virtual console (<filename>ttyv2</filename>), and so on."
-msgstr ""
+msgstr "組合鍵 <keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> 至  <keycombo><keycap>Alt</keycap><keycap>F8</keycap></keycombo> 被 FreeBSD 保留用來切換虛擬 Console，使用 <keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> 可切換至系統 Console (<filename>ttyv0</filename>)，<keycombo><keycap>Alt</keycap><keycap>F2</keycap></keycombo> 可存取第一個虛擬 Console (<filename>ttyv1</filename>)，<keycombo><keycap>Alt</keycap><keycap>F3</keycap></keycombo> 可存取第二個虛擬 Console (<filename>ttyv2</filename>)，以此類推。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5623
 msgid "When switching from one console to the next, FreeBSD manages the screen output. The result is an illusion of having multiple virtual screens and keyboards that can be used to type commands for FreeBSD to run. The programs that are launched in one virtual console do not stop running when the user switches to a different virtual console."
-msgstr ""
+msgstr "當您從一個 Console 切換到下一個的時候，FreeBSD 會切換畫面顯示的內容， 這就好像有很多虛擬的螢幕和鍵盤可以讓您輸入指令到 FreeBSD 執行。 在某一個虛擬 Console 上執行的程式並不會因為使用者切到別的 Console 而停止執行。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5630
@@ -4764,12 +4764,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5667
 msgid "For a detailed description of every column in this file and the available options for the virtual consoles, refer to <citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
-msgstr ""
+msgstr "有關各欄位的設定以及其他選項，請參閱 <citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</manvolnum></citerefentry> 說明。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5673
 msgid "Single User Mode"
-msgstr ""
+msgstr "單使用者模組"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5675
@@ -4800,17 +4800,17 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:5712
 msgid "<emphasis>Be careful when changing this setting to <literal>insecure</literal></emphasis>! If the <systemitem class=\"username\">root</systemitem> password is forgotten, booting into single user mode is still possible, but may be difficult for someone who is not familiar with the FreeBSD booting process."
-msgstr ""
+msgstr "<emphasis>請審慎考慮是否要改為 <literal>insecure</literal></emphasis>！ 因為萬一忘記 <systemitem class=\"username\">root</systemitem> 密碼的話，還是有辦法可以登入單使用者模式，只是對不熟 FreeBSD 開機程序的人而言就有些麻煩了。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5722
 msgid "Changing Console Video Modes"
-msgstr ""
+msgstr "更改 Console 影像模式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5724
 msgid "The FreeBSD console default video mode may be adjusted to 1024x768, 1280x1024, or any other size supported by the graphics chip and monitor. To use a different video mode load the <literal>VESA</literal> module:"
-msgstr ""
+msgstr "FreeBSD Console 預設顯示大小可以調整為 1024x768、1280x1024 或其他顯示卡與螢幕有支援的解析度大小。 要使用不同的影像模式需載入 <literal>VESA</literal> 模組："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5729
@@ -62497,7 +62497,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:65535
 msgid "<acronym>PXE</acronym> Booting Process with <acronym>NFS</acronym> Root Mount"
-msgstr ""
+msgstr "使用 <acronym>NFS</acronym> Root Mount 進行 <acronym>PXE</acronym> 開機程序"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
