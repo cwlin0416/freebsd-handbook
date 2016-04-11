@@ -39,8 +39,18 @@ pkg install poedit
 # 翻譯名詞對照表
 | 原文  | 譯文 |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Committer | 提交者 |
+| Audit | 稽查 | 
+| Disk | 磁碟 |
+| Drive | 磁碟機 |
+| CD-ROM, DVD Drive | CD-ROM, DVD 光碟機 |
+| Slice  | TBD |
+| Partition  | TBD |
+| Partitioning | TBD |
+| Swap Space | TBD |
+| Ports Collection | TBD |
+| Shell | (不翻譯) |
+| Daemon | (不翻譯) |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
