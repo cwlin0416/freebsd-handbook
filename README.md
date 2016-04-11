@@ -15,7 +15,10 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 
 第一階段目標是將既有的舊版翻譯移植至 GNU gettext 的 PO 格式，舊版翻譯請參考 [book.ori.html](book.ori.html)。
 由於 PO 檔所參照是最新版本的原文，因此，若舊有譯文與新版原有出入之部份需要予以修正，需盡可能保留先前翻譯人員的成果。
+
 欲協助翻譯的人員可使用 git 下載最新修訂版本 [zh_TW.po](zh_TW.po) 檔案並採用以下 PO 檔編輯器進行翻譯，翻譯完的最終版本會統一提交至 FreeBSD Documentation Project。
+
+要查看轉文成文件的翻譯成果可將所有檔案以 zip 格式下載至電腦並使用瀏覽器開啟 book.html。
 
 # 官方文件
 https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/po-translations.html
