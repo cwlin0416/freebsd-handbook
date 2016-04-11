@@ -7,11 +7,13 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 - [ ] 同步及匯整舊有翻譯至最新的原文翻譯版本以跟上目前的文件版本
 - [ ] 統整文件內目錄標題以及相關名詞
 
+# 如何翻譯?
+欲協助翻譯的人員可使用 git 下載最新修訂版本 [zh_TW.po](zh_TW.po) 檔案並採用以下 PO 檔編輯器進行翻譯，翻譯完的最終版本會統一提交至 FreeBSD Documentation Project。
+
 # 官方文件
 https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/po-translations.html
 
 # PO 檔編輯器
-欲協助翻譯的人員可使用 git 下載最新修訂版本 [zh_TW.po](zh_TW.po) 檔案並採用以下 PO 檔編輯器進行翻譯
 
 ##### Windows, Mac OS X
 https://poedit.net/
