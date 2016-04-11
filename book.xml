@@ -6220,7 +6220,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/periodic/</filename></entry>
-	      <entry>日、每週、每月透過 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>，執行的定期排程 script，詳情請參閱 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
+	      <entry>每日、每週、每月透過 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>，執行的定期排程 script，詳情請參閱 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
 	    </row>
 
 	    <row>
@@ -6681,35 +6681,15 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
   <sect1 xml:id="mount-unmount">
     <title>掛載與缷載檔案系組</title>
 
-    <para xml:lang="en">The file system is best visualized as a tree, rooted, as it
-      were, at <filename>/</filename>.
-      <filename>/dev</filename>,
-      <filename>/usr</filename>, and the other
-      directories in the root directory are branches, which may have
-      their own branches, such as
-      <filename>/usr/local</filename>, and so
-      on.</para>
+    <para>檔案系統就像一顆樹。<filename>/</filename> 就像是樹根，而 <filename>/dev</filename>，<filename>/usr</filename> 以及其他在根目錄下的目錄就像是樹枝，而這些樹枝上面又還有分支，像是 <filename>/usr/local</filename> 等。</para>
 
     <indexterm xml:lang="en">
       <primary>root file system</primary>
     </indexterm>
 
-    <para xml:lang="en">There are various reasons to house some of these
-      directories on separate file systems.
-      <filename>/var</filename> contains the
-      directories <filename>log/</filename>,
-      <filename>spool/</filename>, and various types
-      of temporary files, and as such, may get filled up.  Filling up
-      the root file system is not a good idea, so splitting
-      <filename>/var</filename> from
-      <filename>/</filename> is often
-      favorable.</para>
+    <para>因為某些原因，我們會將一些目錄分別放在不同的檔案系統上。 如 <filename>/var</filename> 包含了可能會滿出來的 <filename>log/</filename>，<filename>spool/</filename> 等目錄以及各式各樣的暫存檔。 把根檔案系統塞到滿出來顯然不是個好主意，所以我們往往會比較傾向把 <filename>/var</filename> 從 <filename>/</filename> 中拉出來。</para>
 
-    <para xml:lang="en">Another common reason to contain certain directory trees on
-      other file systems is if they are to be housed on separate
-      physical disks, or are separate virtual disks, such as Network
-      File System mounts, described in <xref linkend="network-nfs"/>,
-      or CDROM drives.</para>
+    <para>另一個常見到把某些目錄放在不同檔案系統上的理由是： 這些檔案在不同的實體或虛擬磁碟機上。 像是網路檔案系統 (Network File System) 詳情可參考 <xref linkend="network-nfs"/> 或是光碟機。</para>
 
     <sect2 xml:id="disks-fstab">
       <title xml:lang="en">The <filename>fstab</filename> File</title>
@@ -6719,11 +6699,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	<secondary>mounted with fstab</secondary>
       </indexterm>
 
-      <para xml:lang="en">During the boot process (<xref linkend="boot"/>), file
-	systems listed in <filename>/etc/fstab</filename> are
-	automatically mounted except for the entries containing
-	<option>noauto</option>.  This file contains entries in the
-	following format:</para>
+      <para>在 <filename>/etc/fstab</filename> 裡面有設定的檔案系統會在開機(<xref linkend="boot"/>)的過程中自動地被掛載 (除非該檔案系統有被加上 <option>noauto</option> 參數)。檔案內容的格式如下：</para>
 
       <programlisting xml:lang="en"><replaceable>device</replaceable>       <replaceable>/mount-point</replaceable> <replaceable>fstype</replaceable>     <replaceable>options</replaceable>      <replaceable>dumpfreq</replaceable>     <replaceable>passno</replaceable></programlisting>
 
@@ -6731,8 +6707,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	<varlistentry>
 	  <term xml:lang="en"><literal>device</literal></term>
 	  <listitem>
-	    <para xml:lang="en">An existing device name as explained in
-	      <xref linkend="disks-naming"/>.</para>
+	    <para>已存在的裝置名稱，詳情請參閱 <xref linkend="disks-naming"/>。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6740,8 +6715,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><literal>mount-point</literal></term>
 
 	  <listitem>
-	    <para xml:lang="en">An existing directory on which to mount the file
-	      system.</para>
+	    <para>檔案系統要掛載到的目錄 (該目錄必須存在)。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6749,9 +6723,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><literal>fstype</literal></term>
 
 	  <listitem>
-	    <para xml:lang="en">The file system type to pass to <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  The
-	      default FreeBSD file system is
-	      <literal>ufs</literal>.</para>
+	    <para>檔案系統類型，這是要傳給 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的參數。 FreeBSD 預設的檔案系統是 <literal>ufs</literal>。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6759,13 +6731,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><literal>options</literal></term>
 
 	  <listitem>
-	    <para xml:lang="en">Either <option>rw</option> for read-write file
-	      systems, or <option>ro</option> for read-only file
-	      systems, followed by any other options that may be
-	      needed.  A common option is <option>noauto</option> for
-	      file systems not normally mounted during the boot
-	      sequence.  Other options are listed in
-	      <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+	    <para>可讀可寫(Read-Write)的檔案系統用 <option>rw</option>，而唯讀(Read-Only)的檔案系統則是用 <option>ro</option>，後面視需要還可以加其他選項。 常見的選項如 <option>noauto</option> 是用在不要於開機過程中自動的掛載的檔案系統。 其他選項可參閱 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 說明。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6773,9 +6739,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><literal>dumpfreq</literal></term>
 
 	  <listitem>
-	    <para xml:lang="en">Used by <citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</manvolnum></citerefentry> to determine which file systems
-	      require dumping.  If the field is missing, a value of
-	      zero is assumed.</para>
+	    <para><citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</manvolnum></citerefentry> 由此項目決定那些檔案系統需要傾印。 如果這格空白則以零為預設值。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6783,54 +6747,38 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><literal>passno</literal></term>
 
 	  <listitem>
-	    <para xml:lang="en">Determines the order in which file systems should be
-	      checked.  File systems that should be skipped should
-	      have their <literal>passno</literal> set to zero.  The
-	      root file system needs to be checked before everything
-	      else and should have its <literal>passno</literal> set
-	      to one.  The other file systems should be set to
-	      values greater than one.  If more than one file system
-	      has the same <literal>passno</literal>, <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	      will attempt to check file systems in parallel if
-	      possible.</para>
+	    <para>這個項目決定檔案系統檢查的順序。 對於要跳過檢查的檔案系統，它們的 <literal>passno</literal> 值要設為零。 根檔案系統的 <literal>passno</literal> 值應設為一 (因為需要比所有其他的還要先檢查)，而其他的檔案系統的 <literal>passno</literal> 值應該要設得比一大。 若有多個檔案系統具有相同的 <literal>passno</literal> 值，則 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> 會試著平行地 (如果可能的話) 檢查這些檔案系統。</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
 
-      <para xml:lang="en">Refer to <citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more information on the format
-	of <filename>/etc/fstab</filename> and its options.</para>
+      <para>更多關於 <filename>/etc/fstab</filename> 檔案格式及選項的資訊請參閱 <citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry> 說明文件。</para>
     </sect2>
 
     <sect2 xml:id="disks-mount">
-      <title xml:lang="en">Using <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry></title>
+      <title>使用 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry></title>
 
       <indexterm xml:lang="en">
 	<primary>file systems</primary>
 	<secondary>mounting</secondary>
       </indexterm>
 
-      <para xml:lang="en">File systems are mounted using <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  The most
-	basic syntax is as follows:</para>
+      <para><citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指令是拿來掛載檔案系統用的。基本的操作指令格式如下:</para>
 
       <informalexample>
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>mount <replaceable>device</replaceable> <replaceable>mountpoint</replaceable></userinput></screen>
       </informalexample>
 
-      <para xml:lang="en">This command provides many options which are described in
-	<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry>, The most commonly used options include:</para>
+      <para>在 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 裡面有提到一大堆的選項，不過最常用的就是這些：</para>
 
       <variablelist>
-	<title xml:lang="en">Mount Options</title>
+	<title>掛載選項</title>
 
 	<varlistentry>
 	  <term xml:lang="en"><option>-a</option></term>
 
 	  <listitem>
-	    <para xml:lang="en">Mount all the file systems listed in
-	      <filename>/etc/fstab</filename>, except those marked as
-	      <quote>noauto</quote>, excluded by the
-	      <option>-t</option> flag, or those that are already
-	      mounted.</para>
+	    <para>把 /etc/fstab 裡面所有還沒有被掛載、沒有被標記成 <filename>/etc/fstab</filename> 而且沒有用 <option>-t</option> 排除的檔案系統掛載起來。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6839,10 +6787,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	  <listitem>
 
-	    <para xml:lang="en">Do everything except for the actual mount system
-	      call.  This option is useful in conjunction with the
-	      <option>-v</option> flag to determine what <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	      is actually trying to do.</para>
+	    <para>執行所有的動作，但是不真的去呼叫掛載的 system call。 這個選項和 <option>-v</option> 搭配拿來推測 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 將要做什麼動作時很好用。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6850,10 +6795,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><option>-f</option></term>
 
 	  <listitem>
-	    <para xml:lang="en">Force the mount of an unclean file system
-	      (dangerous), or the revocation of write access when
-	      downgrading a file system's mount status from read-write
-	      to read-only.</para>
+	    <para>強迫掛載不乾淨的檔案系統 (危險)，或是用來強制取消寫入權限 (把檔案系統的掛載狀態從可存取變成唯讀)。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6861,8 +6803,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><option>-r</option></term>
 
 	  <listitem>
-	    <para xml:lang="en">Mount the file system read-only.  This is identical
-	      to using <option>-o ro</option>.</para>
+	    <para>用唯讀的方式掛載檔案系統。 這個選項和在 -o 選項中指定 ro 參數是一樣的。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6871,10 +6812,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	    <replaceable>fstype</replaceable></term>
 
 	  <listitem>
-	    <para xml:lang="en">Mount the specified file system type or mount only
-	      file systems of the given type, if <option>-a</option>
-	      is included.  <quote>ufs</quote> is the default file
-	      system type.</para>
+	    <para>用指定的檔案系統型態來掛載指定的檔案系統，或是在有 <option>-a</option> 選項時只掛載指定型態的檔案系統。預設的檔案系統類型為 <quote>ufs</quote>。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6882,7 +6820,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><option>-u</option></term>
 
 	  <listitem>
-	    <para xml:lang="en">Update mount options on the file system.</para>
+	    <para>更新檔案系統的掛載選項。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6890,7 +6828,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><option>-v</option></term>
 
 	  <listitem>
-	    <para xml:lang="en">Be verbose.</para>
+	    <para>顯示詳細資訊。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -6898,143 +6836,68 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><option>-w</option></term>
 
 	  <listitem>
-	    <para xml:lang="en">Mount the file system read-write.</para>
+	    <para>以可讀寫的模式掛載檔案系統。</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
 
-      <para xml:lang="en">The following options can be passed to <option>-o</option>
-	as a comma-separated list:</para>
+      <para><option>-o</option> 選項後面會接著以逗號分隔的參數：</para>
 
       <variablelist>
 	<varlistentry>
 	  <term xml:lang="en">nosuid</term>
 
 	  <listitem>
-	    <para xml:lang="en">Do not interpret setuid or setgid flags on the
-	      file system.  This is also a useful security
-	      option.</para>
+	    <para>不解析檔案系統上的 setuid 或 setgid 旗標， 這也是一個蠻有用的安全選項。</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
     </sect2>
 
     <sect2 xml:id="disks-umount">
-      <title xml:lang="en">Using <citerefentry><refentrytitle>umount</refentrytitle><manvolnum>8</manvolnum></citerefentry></title>
+      <title>使用 <citerefentry><refentrytitle>umount</refentrytitle><manvolnum>8</manvolnum></citerefentry></title>
 
       <indexterm xml:lang="en">
 	<primary>file systems</primary>
 	<secondary>unmounting</secondary>
       </indexterm>
 
-      <para xml:lang="en">To unmount a file system use <citerefentry><refentrytitle>umount</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  This command
-	takes one parameter which can be a mountpoint, device name,
-	<option>-a</option> or <option>-A</option>.</para>
+      <para>要缺載檔案系統可使用 umount(8) 指令。該指令需要一個參數可以是掛載點 (mountpoint)，裝置名稱，以及 -a 或是 -A 等選項。 </para>
 
-      <para xml:lang="en">All forms take <option>-f</option> to force unmounting,
-	and <option>-v</option> for verbosity.  Be warned that
-	<option>-f</option> is not generally a good idea as it might
-	crash the computer or damage data on the file system.</para>
+      <para>加上 <option>-f</option> 可以強制卸載，加上 <option>-v</option> 則是會顯示詳細資訊。 要注意的是一般來說用 <option>-f</option> 並不是個好主意，強制卸載檔案系統有可能會造成電腦當機， 或者損壞檔案系統內的資料。</para>
 
-      <para xml:lang="en">To unmount all mounted file systems, or just the file
-	system types listed after <option>-t</option>, use
-	<option>-a</option> or <option>-A</option>.  Note that
-	<option>-A</option> does not attempt to unmount the root file
-	system.</para>
+      <para><option>-a</option> 和 <option>-A</option> 是用來卸載所有已掛載的檔案系統，另外還可以用 <option>-t</option> 來指定要卸載的是哪些種類的檔案系統。 要注意的是 <option>-A</option> 並不會試圖卸載根檔案系統。</para>
     </sect2>
   </sect1>
 
   <sect1 xml:id="basics-processes">
     <title>程序與 Daemon</title>
 
-    <para xml:lang="en">FreeBSD is a multi-tasking operating system.  Each program
-      running at any one time is called a
-      <firstterm>process</firstterm>.  Every running command starts
-      at least one new process and there are a number of system
-      processes that are run by FreeBSD.</para>
+    <para>FreeBSD 是一個多工的作業系統，也就是說在同一時間內可以跑超過一個程式。 每一個正在花時間跑的程式就叫做 <firstterm>程序</firstterm> (process)。 您下的每個指令都至少會開啟一個新的程序， 而有些系統程序是一直在跑以維持系統正常運作的。</para>
 
-    <para xml:lang="en">Each process is uniquely identified by a number called a
-      <firstterm>process ID</firstterm> (<acronym>PID</acronym>).
-      Similar to files, each process has one owner and group, and
-      the owner and group permissions are used to determine which
-      files and devices the process can open.  Most processes also
-      have a parent process that started them.  For example, the
-      shell is a process, and any command started in the shell is a
-      process which has the shell as its parent process.  The
-      exception is a special process called <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> which is
-      always the first process to start at boot time and which always
-      has a <acronym>PID</acronym> of <literal>1</literal>.</para>
+    <para>每一個程序都有一個獨一無二的數字叫做 <firstterm>程序代號</firstterm> (Rrocess ID, PID)，而且就像檔案一樣，每一個程序也有擁有者及群組。 擁有者及群組的資訊是用來決定什麼檔案或裝置是這個程序可以開啟的 (前面有提到過檔案權限)。 大部份的程序都有父程序。 父程序是開啟這個程序的程序，例如：您對 shell 輸入指令，shell 本身就是一個程序，而您執行的指令也是程序。 每一個您用這種方式跑的程序的父程序都是 shell。 有一個特別的程序叫做 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是個例外，在 FreeBSD 開機的時候 init 會自動地被開啟，init 永遠是第一個程序，所以他的 <acronym>PID</acronym> 一直都會是 <literal>1</literal>。</para>
 
-    <para xml:lang="en">Some programs are not designed to be run with continuous
-      user input and disconnect from the terminal at the first
-      opportunity.  For example, a web server responds to web
-      requests, rather than user input.  Mail servers are another
-      example of this type of application.  These types of programs
-      are known as <firstterm>daemons</firstterm>.  The term daemon
-      comes from Greek mythology and represents an entity that is
-      neither good nor evil, and which invisibly performs useful
-      tasks.  This is why the BSD mascot is the cheerful-looking
-      daemon with sneakers and a pitchfork.</para>
+    <para>有些程式並不是設計成一直在接收使用者的輸入的， 而是在開始執行的時候就從中斷與終端機的連線。 例如說， 網頁伺服器整天都在回應網頁方面的要求，它通常不需要您輸入任何東西。 另外，像是把信從一個站傳送到另一個站的程式，也是這種類型的應用程式。我們把這種程式稱作 <firstterm>Daemon</firstterm>。 Daemon 一詞是來自是希臘神話中的角色：祂們既不屬於善良陣營或邪惡陣營，祂們在背地裡做一些有用的事情。這也就是為何 BSD 的吉祥物，是一隻穿著帆布鞋拿著三叉耙的快樂小惡魔的原因。</para>
 
-    <para xml:lang="en">There is a convention to name programs that normally run as
-      daemons with a trailing <quote>d</quote>.  For example,
-      <application>BIND</application> is the Berkeley Internet Name
-      Domain, but the actual program that executes is
-      <command>named</command>.  The
-      <application>Apache</application> web server program is
-      <command>httpd</command> and the line printer spooling daemon
-      is <command>lpd</command>.  This is only a naming convention.
-      For example, the main mail daemon for the
-      <application>Sendmail</application> application is
-      <command>sendmail</command>, and not
-      <literal>maild</literal>.</para>
+    <para>通常來說做為 Deamon 執行的程式名字後面都會加一個字母 <quote>d</quote>。 <application>BIND</application> 是 Berkeley Internet Name Domain 的縮寫，但實際上執行的程式名稱是 <command>named</command>、<application>Apache</application> 網頁伺服器的程式名稱是 <command>httpd</command>、行列式印表機暫存服務(Line Printer Spooling) Daemon 是 <command>lpd</command>，依此類推。 但這是習慣用法，並沒有硬性規定，例如 <application>Sendmail</application> 主要的寄信 Daemon 是叫做 <command>sendmail</command> 而不是 <literal>maild</literal>。</para>
 
     <sect2>
-      <title xml:lang="en">Viewing Processes</title>
+      <title>檢視程序</title>
 
-      <para xml:lang="en">To see the processes running on the system, use <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry>
-	or <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry>.   To display a static list of the currently
-	running processes, their <acronym>PID</acronym>s, how much
-	memory they are using, and the command they were started with,
-	use <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  To display all the running processes and
-	update the display every few seconds in order to interactively
-	see what the computer is doing, use <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+      <para>要看系統執行中的程序，有兩個相當有用的指令可用： <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry>。<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令是用來列出正在執行之程序，而且可以顯示它們的 <acronym>PID</acronym>、用了多少記憶體、執行的指令名稱及其後之參數是什麼等等。 <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令則是顯示所有正在執行的程序， 並且數秒鐘更新一次。因此您可以互動式的觀看您的電腦正在做什麼。</para>
 
-      <para xml:lang="en">By default, <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> only shows the commands that are
-	running and owned by the user.  For example:</para>
+      <para>在預設的情況下，<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令只會顯示使用者所擁有的的程序。 例如：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>ps</userinput>
  PID TT  STAT    TIME COMMAND
 8203  0  Ss   0:00.59 /bin/csh
 8895  0  R+   0:00.00 ps</screen>
 
-      <para xml:lang="en">The output from <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> is organized into a number of
-	columns.  The <literal>PID</literal> column displays the
-	process ID.  <acronym>PID</acronym>s are assigned starting at
-	1, go up to 99999, then wrap around back to the beginning.
-	However, a <acronym>PID</acronym> is not reassigned if it is
-	already in use.  The <literal>TT</literal> column shows the
-	tty the program is running on and <literal>STAT</literal>
-	shows the program's state.  <literal>TIME</literal> is the
-	amount of time the program has been running on the CPU.  This
-	is usually not the elapsed time since the program was started,
-	as most programs spend a lot of time waiting for things to
-	happen before they need to spend time on the CPU.  Finally,
-	<literal>COMMAND</literal> is the command that was used to
-	start the program.</para>
+      <para>在這個範例裡可以看到 <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的輸出分成好幾個欄位。 <literal>PID</literal> 就是前面有提到的程序代號。 <literal>PID</literal> 的分配是從 1 開始一直到 99999，如果用完的話又會繞回來重頭開始分配 (若該 <acronym>PID</acronym> 已經在用了，則 PID 不會重新分配)。 <literal>TT</literal> 欄位是指這個程式在哪個 Console (tty) 上執行，在這裡可以先忽略不管。<literal>STAT</literal> 是程式的狀態，也可以先不要管。<literal>TIME</literal> 是這個程式在 CPU 上執行的時間—這通常不是程式總共花的時間， 因為當您開始執行程式後，大部份的程式在 CPU 上執行前會先花上不少時間等待 。 最後，<literal>COMMAND</literal> 是執行這個程式的指令。</para>
 
-      <para xml:lang="en">A number of different options are available to change the
-	information that is displayed.  One of the most useful sets is
-	<literal>auxww</literal>, where  <option>a</option> displays
-	information about all the running processes of all users,
-	<option>u</option> displays the username and memory usage of
-	the process' owner, <option>x</option> displays
-	information about daemon processes, and <option>ww</option>
-	causes <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> to display the full command line for each
-	process, rather than truncating it once it gets too long to
-	fit on the screen.</para>
+      <para>有幾個不同的選項組合可以用來變更顯示出來的資訊，其中一個最有用的組合是 <literal>auxww</literal>。 <option>a</option> 可以顯示所有正在跑的程序的指令，不只是您自已的。 <option>u</option> 則是顯示程序的擁有者名稱以及記憶體使用情況。 <option>x</option> 可以把 daemon 程序顯示出來， 而 <option>ww</option> 可讓 <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 顯示出每個程序完整的內容， 而不致因過長而被螢幕截掉了。</para>
 
-      <para xml:lang="en">The output from <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry> is similar:</para>
+      <para><citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry> 也有類似的輸出。 一般的情況看像是這樣：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>top</userinput>
 last pid:  9609;  load averages:  0.56,  0.45,  0.36              up 0+00:20:03  10:21:46
@@ -7057,105 +6920,35 @@ Swap: 2048M Total, 2048M Free
  2338 dru           1  20    0   440M 84532K select  1   0:06  0.00% kwin
  1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% kdeinit4</screen>
 
-      <para xml:lang="en">The output is split into two sections.  The header (the
-	first five or six lines) shows the <acronym>PID</acronym> of
-	the last process to run, the system load averages (which are a
-	measure of how busy the system is), the system uptime (time
-	since the last reboot) and the current time.  The other
-	figures in the header relate to how many processes are
-	running, how much memory and swap space has been used, and how
-	much time the system is spending in different CPU states.  If
-	the <acronym>ZFS</acronym> file system module has been loaded,
-	an <literal>ARC</literal> line indicates how much data was
-	read from the memory cache instead of from disk.</para>
+      <para>輸出的資訊分成兩個部份。開頭 (前五行或六行) 顯示出最近一個程序的 <acronym>PID</acronym>、系統平均負載 (系統有多忙錄的測試)、系統的開機時間 (從上次重開算起) 以及現在的時間等。 在開頭裡面的其他數字分別是在講有多少程序正在執行、有多少記憶體及 swap 空間被占用了，還有就是系統分別花了多少時間在不同的 CPU 狀態上。If the <acronym>ZFS</acronym> file system module has been loaded, an <literal>ARC</literal> line indicates how much data was read from the memory cache instead of from disk.</para>
 
-      <para xml:lang="en">Below the header is a series of columns containing similar
-	information to the output from <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry>, such as the
-	<acronym>PID</acronym>, username, amount of CPU time, and the
-	command that started the process.  By default, <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry>
-	also displays the amount of memory space taken by the process.
-	This is split into two columns: one for total size and one for
-	resident size.  Total size is how much memory the application
-	has needed and the resident size is how much it is actually
-	using now.</para>
+      <para>接下來的部份是由好幾個欄位所構成，和 <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 輸出的資訊類似。 就如同前例，您可以看到 <acronym>PID</acronym>、使用者名稱、CPU 花費的時間以及正在執行的指令。 <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry> 在預設的情況下還會告訴您程序用掉了多少的記憶體空間。 在這邊會分成兩欄，一個是總用量 (total size)，另一個是實際用量 (resident size)——總用量是指這個應用程式需要的記憶體空間，而實際用量則是指目前實際上該程式的記憶體使用量。</para>
 
-      <para xml:lang="en"><citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry> automatically updates the display every two
-	seconds.  A different interval can be specified with
-	<option>-s</option>.</para>
+      <para>top(1) 每隔 2 秒鐘會自動更新顯示內容，可用 <option>-s</option> 選項來改變間隔的時間。</para>
     </sect2>
 
     <sect2 xml:id="basics-daemons">
-      <title xml:lang="en">Killing Processes</title>
+      <title>終止程序</title>
 
-      <para xml:lang="en">One way to communicate with any running process or daemon
-	is to send a <firstterm>signal</firstterm> using <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry>.
-	There are a number of different signals; some have a specific
-	meaning while others are described in the application's
-	documentation.  A user can only send a signal to a process
-	they own and sending a signal to someone else's process will
-	result in a permission denied error.  The exception is the
-	<systemitem class="username">root</systemitem> user, who can
-	send signals to anyone's processes.</para>
+      <para>要與執行中的程序或 Daemon 溝通唯一的方法是透過 <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令傳送<firstterm>信號</firstterm> (signal)。 信號有很多種，有些有特定的意義，有些則是會由應用程式來解讀，應用程式的說明文件會告訴您該程式是如何解讀信號。 使用者只能送信號給自己所擁有的程序，送信號給其他人的程序會出現權限不足的錯誤。 唯一的例外是 <systemitem class="username">root</systemitem>使用者，他可以送信號給任何人的程序。</para>
 
-      <para xml:lang="en">The operating system can also send a signal to a process.
-	If an application is badly written and tries to access memory
-	that it is not supposed to, FreeBSD will send the process the
-	<quote>Segmentation Violation</quote> signal
-	(<literal>SIGSEGV</literal>).  If an application has been
-	written to use the <citerefentry><refentrytitle>alarm</refentrytitle><manvolnum>3</manvolnum></citerefentry> system call to be alerted
-	after a period of time has elapsed, it will be sent the
-	<quote>Alarm</quote> signal
-	(<literal>SIGALRM</literal>).</para>
+      <para>作業系統在某些情況也會送信號給應用程式。 假設有個應用程式寫得不好，企圖要存取它不該碰的記憶體的時候，FreeBSD 會送一個 <quote>Segmentation Violation</quote> 信號 (<literal>SIGSEGV</literal>) 給這個程序。 如果有一個應用程式用了 <citerefentry><refentrytitle>alarm</refentrytitle><manvolnum>3</manvolnum></citerefentry> 的 system call 要求系統在過一段時間之後發出通知，時間到了的時候系統就會發出通知信號 (SIGALRM) 給該程式。</para>
 
-      <para xml:lang="en">Two signals can be used to stop a process:
-	<literal>SIGTERM</literal> and <literal>SIGKILL</literal>.
-	<literal>SIGTERM</literal> is the polite way to kill a process
-	as the process can read the signal, close any log files it may
-	have open, and attempt to finish what it is doing before
-	shutting down.  In some cases, a process may ignore
-	<literal>SIGTERM</literal> if it is in the middle of some task
-	that cannot be interrupted.</para>
+      <para><literal>SIGTERM</literal> 與 <literal>SIGKILL</literal> 這兩個信號可以拿來終止程序。 用 <literal>SIGTERM</literal> 結束程序是比較有禮貌的方式，該程序收到信號後可以把自已所使用的日誌檔關閉及其他要在結束前要做的事完成， 然後在關掉程序之前結束掉手邊的工作。 在某些情況下程序有可能會忽略 <literal>SIGTERM</literal>，如它正在做一些不能中斷的工作的話。</para>
 
-      <para xml:lang="en"><literal>SIGKILL</literal> cannot be ignored by a
-	process.  Sending a <literal>SIGKILL</literal> to a
-	process will usually stop that process there and then.
-	<footnote><para xml:lang="en">There are a few tasks that cannot be
-	    interrupted.  For example, if the process is trying to
-	    read from a file that is on another computer on the
-	    network, and the other computer is unavailable, the
-	    process is said to be <quote>uninterruptible</quote>.
-	    Eventually the process will time out, typically after two
-	    minutes.  As soon as this time out occurs the process will
-	    be killed.</para></footnote>.</para>
+      <para><literal>SIGKILL</literal> 就沒有辦法被程序忽略。 傳送 <literal>SIGKILL</literal> 信號給程序通常會將程序直接中止<footnote><para>還是有少數東西不能被中斷。 例如有個程序正在從網路上的別的電腦讀一個檔案， 而那部電腦因為某些理由連不到，那這個程序就是一個 <quote>不能中斷的</quote> 程序。 通常在經過 2 分鐘左右之後這個程序會逾時。 當發生逾時的時候這個程序就會被結束掉了。</para></footnote>。</para>
 
-      <para xml:lang="en">Other commonly used signals are <literal>SIGHUP</literal>,
-	<literal>SIGUSR1</literal>, and <literal>SIGUSR2</literal>.
-	Since these are general purpose signals, different
-	applications will respond differently.</para>
+      <para>其他常用的信號有：<literal>SIGHUP</literal>, <literal>SIGUSR1</literal> 及 <literal>SIGUSR2</literal>。 這些是通用的信號，對不同的應用程式會有不同的反應。</para>
 
-      <para xml:lang="en">For example, after changing a web server's configuration
-	file, the web server needs to be told to re-read its
-	configuration.  Restarting <command>httpd</command> would
-	result in a brief outage period on the web server.  Instead,
-	send the daemon the <literal>SIGHUP</literal> signal.  Be
-	aware that different daemons will have different behavior, so
-	refer to the documentation for the daemon to determine if
-	<literal>SIGHUP</literal> will achieve the desired
-	results.</para>
+      <para>舉例來說，當您更動了網頁伺服器的設定檔，您想要叫網頁伺服器去重新讀取設定。 重新啟動 <command>httpd</command> 會造成網頁伺服器暫停服務一段時間，我們可以傳送 <literal>SIGHUP</literal> 信號來取代關掉重開。 不同的 Daemon 會有不同的行為，所以使用前請先參考 Deamon 的說明文件查看是否可以達到想要的結果。</para>
 
       <procedure>
-	<title xml:lang="en">Sending a Signal to a Process</title>
+	<title>送信號給程序</title>
 
-	<para xml:lang="en">This example shows how to send a signal to
-	  <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  The <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> configuration file is
-	  <filename>/etc/inetd.conf</filename>, and <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> will
-	  re-read this configuration file when it is sent a
-	  <literal>SIGHUP</literal>.</para>
+	<para>這個範例將會示範如何送一個信號給 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry>。<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的設定檔是 <filename>/etc/inetd.conf</filename>，而 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 會在收到 <literal>SIGHUP</literal> 的時候重新讀取這個設定檔。</para>
 
 	<step>
-	  <para xml:lang="en">Find the <acronym>PID</acronym> of the process to send
-	    the signal to using <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  In this example, the
-	    <acronym>PID</acronym> for <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> is 198:</para>
+	  <para>使用 <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查詢要傳送訊號的目標程序。 在這個例子中 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的 <acronym>PID</acronym> 為 198：</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>pgrep -l inetd</userinput>
 198  inetd -wW</screen>
@@ -7163,56 +6956,26 @@ Swap: 2048M Total, 2048M Free
 	</step>
 
 	<step>
-	  <para xml:lang="en">Use <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> to send the signal.  Because
-	    <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> is owned by
-	    <systemitem class="username">root</systemitem>, use
-	    <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> to become
-	    <systemitem class="username">root</systemitem>
-	    first.</para>
+	  <para>使用 <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來發送信號。因為 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是 <systemitem class="username">root</systemitem> 所有，因此必須先用 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 切換成 <systemitem class="username">root</systemitem> 先。</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>su</userinput>
 <prompt>Password:</prompt>
 <prompt>#</prompt> <userinput>/bin/kill -s HUP 198</userinput></screen>
 
-	  <para xml:lang="en">Like most <trademark class="registered">UNIX</trademark> commands, <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> will not print
-	    any output if it is successful.  If a signal is sent to a
-	    process not owned by that user, the message
-	    <errorname>kill: <replaceable>PID</replaceable>: Operation
-	      not permitted</errorname> will be displayed.  Mistyping
-	    the <acronym>PID</acronym> will either send the signal to
-	    the wrong process, which could have negative results, or
-	    will send the signal to a <acronym>PID</acronym> that is
-	    not currently in use, resulting in the error
-	    <errorname>kill: <replaceable>PID</replaceable>: No such
-	      process</errorname>.</para>
+	  <para>對大多數 <trademark class="registered">UNIX</trademark> 指令來講，<citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> 執行成功時並不會輸出任何訊息。 假設您送一個信號給某個不是使用者所擁有的程序， 那麼就會顯示這個錯誤訊息： <errorname>kill: <replaceable>PID</replaceable>: Operation not permitted</errorname>。 若打錯 <acronym>PID</acronym> 的話，那就會把信號送給錯誤的程序，並把該程序關閉，或者是把信號送給一個非使用中的 <acronym>PID</acronym>，那您就會看到錯誤：<errorname>kill: <replaceable>PID</replaceable>: No such process</errorname>。</para>
 
 	  <note>
-	    <title xml:lang="en">Why Use <command>/bin/kill</command>?</title>
+	    <title>為何要使用 <command>/bin/kill</command>？ </title>
 
-	    <para xml:lang="en">Many shells provide <command>kill</command> as a
-	      built in command, meaning that the shell will send the
-	      signal directly, rather than running
-	      <filename>/bin/kill</filename>.  Be aware that different
-	      shells have a different syntax for specifying the name
-	      of the signal to send.  Rather than try to learn all of
-	      them, it can be simpler to specify
-	      <command>/bin/kill</command>.</para>
+	    <para>多數 shell 都有提供內建的 <command>kill</command> 指令。 也就是說這種 shell 會直接發送信號，而不是執行 <filename>/bin/kill</filename>。 但要小心不同的 shell 會有不同的語法來指定信號的名稱等。 與其嘗試去把它們通通學會，不如就單純的直接用 <command>/bin/kill</command>。</para>
 	  </note>
 	</step>
       </procedure>
 
-      <para xml:lang="en">When sending other signals, substitute
-	<literal>TERM</literal> or <literal>KILL</literal> with the
-	name of the signal.</para>
+      <para>要送其他的信號的話也是非常類似，就視需要把指令中的 <literal>TERM</literal> 或 <literal>KILL</literal> 替換成其他信號的名稱即可。</para>
 
       <important>
-	<para xml:lang="en">Killing a random process on the system is a bad idea.
-	  In particular, <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <acronym>PID</acronym> 1, is
-	  special.  Running <command>/bin/kill -s KILL 1</command> is
-	  a quick, and unrecommended, way to shutdown the system.
-	  <emphasis>Always</emphasis> double check the arguments to
-	  <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> <emphasis>before</emphasis> pressing
-	  <keycap>Return</keycap>.</para>
+	<para>隨便抓一個系統中的程序然後把他砍掉並不是個好主意。 特別是 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>， <acronym>PID</acronym> 1 是一個非常特別的程序。 執行 <command>/bin/kill -s KILL 1</command> 的結果就是系統立刻關機。 因此在您按下 <keycap>Return</keycap> 要執行 <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> 之前， 請<emphasis>一定要</emphasis>記得再次確認您下的參數。</para>
       </important>
     </sect2>
   </sect1>
