@@ -47,6 +47,7 @@ pkg install poedit
 | Mount | 掛載 |
 | Unmount | 卸載 |
 | Home directory | 家目錄 |
+| Signal | 信號 |
 | Slice  | TBD |
 | Partition  | TBD |
 | Partitioning | TBD |
