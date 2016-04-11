@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-10 15:40+0800\n"
+"PO-Revision-Date: 2016-04-11 13:13+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3140,7 +3140,7 @@ msgstr ""
 #: book.translate.xml:52579 book.translate.xml:53086 book.translate.xml:53845
 #: book.translate.xml:53886 book.translate.xml:55212 book.translate.xml:65535
 msgid "Description"
-msgstr ""
+msgstr "說明"
 
 #. (itstool) path: row/entry
 #. (itstool) path: glossentry/glossterm
@@ -6323,28 +6323,28 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:7048
 msgid "The FreeBSD directory hierarchy is fundamental to obtaining an overall understanding of the system. The most important directory is root or, <quote>/</quote>. This directory is the first one mounted at boot time and it contains the base system necessary to prepare the operating system for multi-user operation. The root directory also contains mount points for other file systems that are mounted during the transition to multi-user operation."
-msgstr ""
+msgstr "認識 FreeBSD 的目錄架構，就可對系統有概略的基礎理解。 最重要的莫過於整個目錄的根目錄，就是 <quote>/</quote> 目錄， 該目錄會在開機時最先掛載 (mount)，裡面會有開機所會用到必備檔案。 此外，根目錄還有紀錄其他檔案系統的掛載點相關設定。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7057
 msgid "A mount point is a directory where additional file systems can be grafted onto a parent file system (usually the root file system). This is further described in <xref linkend=\"disk-organization\"/>. Standard mount points include <filename>/usr/</filename>, <filename>/var/</filename>, <filename>/tmp/</filename>, <filename>/mnt/</filename>, and <filename>/cdrom/</filename>. These directories are usually referenced to entries in <filename>/etc/fstab</filename>. This file is a table of various file systems and mount points and is read by the system. Most of the file systems in <filename>/etc/fstab</filename> are mounted automatically at boot time from the script <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> unless their entry includes <option>noauto</option>. Details can be found in <xref linkend=\"disks-fstab\"/>."
-msgstr ""
+msgstr "「掛載點」就是讓新增的檔案系統，能接到上層的檔案系統 (通常就是「根目錄」檔案系統) 的目錄。 在 <xref linkend=\"disk-organization\"/> 這邊對此有更詳細介紹。 標準的掛載點包括了 <filename>/usr/</filename>, <filename>/var/</filename>, <filename>/tmp/</filename>, <filename>/mnt/</filename> 以及 <filename>/cdrom/</filename>。 這些目錄通常會記錄在 <filename>/etc/fstab</filename> 設定檔內。 <filename>/etc/fstab</filename> 是記錄各檔案系統及相關掛載點的表格。 大部分在 <filename>/etc/fstab</filename> 有記錄的檔案系統，會在開機時由 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> Script 來自動掛載，除非它們有設定 <option>noauto</option> 選項。 其中細節說明可參閱 <xref linkend=\"disks-fstab\"/>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7072
 msgid "A complete description of the file system hierarchy is available in <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry>. The following table provides a brief overview of the most common directories."
-msgstr ""
+msgstr "有關檔案系統架構的完整說明可參閱 <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry>。 現在呢，讓我們大致先一窺常見的目錄有哪些吧。"
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect3/title
 #: book.translate.xml:7081 book.translate.xml:10864
 msgid "Directory"
-msgstr ""
+msgstr "目錄"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7088
 msgid "Root directory of the file system."
-msgstr ""
+msgstr "檔案系統的根目錄。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7092
@@ -6354,7 +6354,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7093
 msgid "User utilities fundamental to both single-user and multi-user environments."
-msgstr ""
+msgstr "single-user、multi-user 兩種模式皆可使用的基本工具 。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7098
@@ -6364,7 +6364,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7099
 msgid "Programs and configuration files used during operating system bootstrap."
-msgstr ""
+msgstr "作業系統開機過程會用到的程式、設定檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7104
@@ -6374,7 +6374,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7105
 msgid "Default boot configuration files. Refer to <citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "預設的開機啟動設定檔，詳情請參閱 <citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7110
@@ -6384,7 +6384,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7111
 msgid "Device nodes. Refer to <citerefentry><refentrytitle>intro</refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "Device nodes，詳情請參閱 <citerefentry><refentrytitle>intro</refentrytitle><manvolnum>4</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7116
@@ -6394,7 +6394,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7117
 msgid "System configuration files and scripts."
-msgstr ""
+msgstr "系統設定檔及一些 script 檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7121
@@ -6404,7 +6404,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7122
 msgid "Default system configuration files. Refer to <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "預設的系統設定檔，詳情請參閱 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7127
@@ -6414,7 +6414,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7128
 msgid "Configuration files for mail transport agents such as <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
-msgstr ""
+msgstr "MTA(Mail Transport Agent)的相關設定檔，像是 <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7133
@@ -6424,7 +6424,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7134
 msgid "<citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> configuration files."
-msgstr ""
+msgstr "<citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> 設定檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7138
@@ -6434,7 +6434,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7139
 msgid "Scripts that run daily, weekly, and monthly, via <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Refer to <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "日、每週、每月透過 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>，執行的定期排程 script，詳情請參閱 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7145
@@ -6444,7 +6444,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7146
 msgid "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> configuration files."
-msgstr ""
+msgstr "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> 設定檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7150
@@ -6454,7 +6454,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7151
 msgid "Empty directory commonly used by system administrators as a temporary mount point."
-msgstr ""
+msgstr "系統管理者慣用充當臨時掛載點的空目錄。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7156
@@ -6464,7 +6464,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7157
 msgid "Process file system. Refer to <citerefentry><refentrytitle>procfs</refentrytitle><manvolnum>5</manvolnum></citerefentry>, <citerefentry><refentrytitle>mount_procfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "Process 檔案系統，詳情請參閱 <citerefentry><refentrytitle>procfs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>mount_procfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7162
@@ -6474,7 +6474,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7163
 msgid "Statically linked programs for emergency recovery as described in <citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
-msgstr ""
+msgstr "緊急救援用途的一些 statically linked 程式，詳情請參閱 <citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7168
@@ -6484,7 +6484,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7169
 msgid "Home directory for the <systemitem class=\"username\">root</systemitem> account."
-msgstr ""
+msgstr "<systemitem class=\"username\">root</systemitem> 帳號的家目錄。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7175
@@ -6494,7 +6494,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7176
 msgid "System programs and administration utilities fundamental to both single-user and multi-user environments."
-msgstr ""
+msgstr "供 single-user 及 multi-user 環境使用的系統程式及管理工具 。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7182
@@ -6504,7 +6504,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7183
 msgid "Temporary files which are usually <emphasis>not</emphasis> preserved across a system reboot. A memory-based file system is often mounted at <filename>/tmp</filename>. This can be automated using the tmpmfs-related variables of <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> or with an entry in <filename>/etc/fstab</filename>; refer to <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "臨時檔案。 一般而言，重開機之後 /tmp 內的東西會被<emphasis>清除</emphasis>掉。 而通常會將 memory-based 檔案系統掛載在 <filename>/tmp</filename> 上。 這些瑣事可透過 tmpmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成 。(或是在 <filename>/etc/fstab</filename> 內做設定， 詳情請參閱 <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7193
@@ -6514,7 +6514,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7194
 msgid "The majority of user utilities and applications."
-msgstr ""
+msgstr "主要是使用者所安裝的工具程式、應用程式存放處。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7199
@@ -6524,7 +6524,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7200
 msgid "Common utilities, programming tools, and applications."
-msgstr ""
+msgstr "常用工具、開發工具、應用軟體。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7205
@@ -6534,7 +6534,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7206
 msgid "Standard C include files."
-msgstr ""
+msgstr "標準 C include 檔案。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7210
@@ -6544,7 +6544,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7211
 msgid "Archive libraries."
-msgstr ""
+msgstr "函式庫存放處。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7216
@@ -6554,7 +6554,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7217
 msgid "Miscellaneous utility data files."
-msgstr ""
+msgstr "其他各式工具的資料檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7221
@@ -6564,7 +6564,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7222
 msgid "System daemons and system utilities executed by other programs."
-msgstr ""
+msgstr "系統 Daemon 及系統工具程式 (透過其他程式來執行)。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7227
@@ -6574,7 +6574,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7228
 msgid "Local executables and libraries. Also used as the default destination for the FreeBSD ports framework. Within <filename>/usr/local</filename>, the general layout sketched out by <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry> for <filename>/usr</filename> should be used. Exceptions are the man directory, which is directly under <filename>/usr/local</filename> rather than under <filename>/usr/local/share</filename>, and the ports documentation is in <filename>share/doc/<replaceable>port</replaceable></filename>."
-msgstr ""
+msgstr "存放一些自行安裝的執行檔、函式庫等等。 同時，也是 FreeBSD ports 架構的預設安裝目錄。 <filename>/usr/local</filename> 內的目錄架構大致與 <filename>/usr</filename> 相同，詳情請參閱 <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry> 說明。 但 man 目錄例外，它們是直接放在 <filename>/usr/local</filename> 底下，而非 <filename>/usr/local/share</filename>，而 ports 所安裝的說明文件則在 <filename>share/doc/<replaceable>port</replaceable></filename>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7241
@@ -6584,7 +6584,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7242
 msgid "Architecture-specific target tree produced by building the <filename>/usr/src</filename> tree."
-msgstr ""
+msgstr "在編譯 <filename>/usr/src</filename> 目錄時所產生的相關架構目地檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7248
@@ -6594,7 +6594,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7249
 msgid "The FreeBSD Ports Collection (optional)."
-msgstr ""
+msgstr "FreeBSD Port 套件集 (選用)。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7253
@@ -6604,7 +6604,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7254
 msgid "System daemons and system utilities executed by users."
-msgstr ""
+msgstr "由使用者執行的系統 Daemon 及系統工具。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7259
@@ -6614,7 +6614,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7260
 msgid "Architecture-independent files."
-msgstr ""
+msgstr "各架構皆共通的檔案。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7264
@@ -6624,7 +6624,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7265
 msgid "BSD and/or local source files."
-msgstr ""
+msgstr "BSD 原始碼 (或自行新增的)。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7269
@@ -6634,7 +6634,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7270
 msgid "Multi-purpose log, temporary, transient, and spool files. A memory-based file system is sometimes mounted at <filename>/var</filename>. This can be automated using the varmfs-related variables in <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> or with an entry in <filename>/etc/fstab</filename>; refer to <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "存放各種用途的日誌(log)檔、臨時或暫時存放、列印或郵件的 spool 檔案。有時候，memory-based 檔案系統也會掛載在 <filename>/var</filename>。 這些瑣事可透過 varmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成。(或是在 <filename>/etc/fstab</filename> 內做設定，相關細節請參閱 <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7281
@@ -6644,7 +6644,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7282
 msgid "Miscellaneous system log files."
-msgstr ""
+msgstr "各項系統記錄的日誌(log)檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7286
@@ -6654,7 +6654,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7287
 msgid "User mailbox files."
-msgstr ""
+msgstr "各使用者的郵件(mailbox)檔案。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7291
@@ -6664,7 +6664,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7292
 msgid "Miscellaneous printer and mail system spooling directories."
-msgstr ""
+msgstr "各種印表機、郵件系統的 spool 目錄。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7297
@@ -6674,7 +6674,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7298
 msgid "Temporary files which are usually preserved across a system reboot, unless <filename>/var</filename> is a memory-based file system."
-msgstr ""
+msgstr "臨時檔案。 這些檔案在重開機後通常仍會保留，除非 <filename>/var</filename> 是屬於 memory-based 檔案系統。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7305
@@ -6684,7 +6684,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7306
 msgid "NIS maps."
-msgstr ""
+msgstr "NIS 對映表(maps)。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7314
@@ -6694,32 +6694,32 @@ msgstr "磁碟組織"
 #. (itstool) path: sect1/para
 #: book.translate.xml:7316
 msgid "The smallest unit of organization that FreeBSD uses to find files is the filename. Filenames are case-sensitive, which means that <filename>readme.txt</filename> and <filename>README.TXT</filename> are two separate files. FreeBSD does not use the extension of a file to determine whether the file is a program, document, or some other form of data."
-msgstr ""
+msgstr "FreeBSD 用來尋找檔案的最小單位就是檔案的名稱了。 檔案的名稱有大小寫之分，所以說 <filename>readme.txt</filename> 和 <filename>README.TXT</filename> 是兩個不同的檔案。 FreeBSD 並不使用副檔名 (.txt) 來判別這是一個程式檔、文件檔或是其他類型的檔案。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7323
 msgid "Files are stored in directories. A directory may contain no files, or it may contain many hundreds of files. A directory can also contain other directories, allowing a hierarchy of directories within one another in order to organize data."
-msgstr ""
+msgstr "檔案存在目錄裡面。 一個目錄中可能沒有任何檔案，也可能有好幾百個檔案。 目錄之中也可以包含其他的目錄； 您可以建立階層式的目錄以便資料的管理。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7329
 msgid "Files and directories are referenced by giving the file or directory name, followed by a forward slash, <literal>/</literal>, followed by any other directory names that are necessary. For example, if the directory <filename>foo</filename> contains a directory <filename>bar</filename> which contains the file <filename>readme.txt</filename>, the full name, or <firstterm>path</firstterm>, to the file is <filename>foo/bar/readme.txt</filename>. Note that this is different from <trademark class=\"registered\">Windows</trademark> which uses <literal>\\</literal> to separate file and directory names. FreeBSD does not use drive letters, or other drive names in the path. For example, one would not type <filename>c:\\foo\\bar\\readme.txt</filename> on FreeBSD."
-msgstr ""
+msgstr "檔案或目錄的對應是藉由給定的檔案或目錄名稱，然後加上正斜線符號 (<literal>/</literal>)；之後再視需要加上其他的目錄名稱。 如果您有一個目錄 <filename>foo</filename> ，裡面有一個目錄叫作 <filename>bar</filename>，這個目錄中又包含了一個叫 <filename>readme.txt</filename> 的檔案，那麼這個檔案的全名，或者說檔案的<firstterm>路徑</firstterm>就是 <filename>foo/bar/readme.txt</filename>。Note that this is different from <trademark class=\"registered\">Windows</trademark> which uses <literal>\\</literal> to separate file and directory names. FreeBSD does not use drive letters, or other drive names in the path. For example, one would not type <filename>c:\\foo\\bar\\readme.txt</filename> on FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7344
 msgid "Directories and files are stored in a file system. Each file system contains exactly one directory at the very top level, called the <firstterm>root directory</firstterm> for that file system. This root directory can contain other directories. One file system is designated the <firstterm>root file system</firstterm> or <literal>/</literal>. Every other file system is <firstterm>mounted</firstterm> under the root file system. No matter how many disks are on the FreeBSD system, every directory appears to be part of the same disk."
-msgstr ""
+msgstr "目錄及檔案儲存在檔案系統之中。 每個檔案系統都有唯一一個最上層的目錄，叫做<firstterm>根目錄</firstterm> (root directory)。 然後在這個根目錄下面才能有其他的目錄。One file system is designated the <firstterm>root file system</firstterm> or <literal>/</literal>. Every other file system is <firstterm>mounted</firstterm> under the root file system. No matter how many disks are on the FreeBSD system, every directory appears to be part of the same disk."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7355
 msgid "Consider three file systems, called <literal>A</literal>, <literal>B</literal>, and <literal>C</literal>. Each file system has one root directory, which contains two other directories, called <literal>A1</literal>, <literal>A2</literal> (and likewise <literal>B1</literal>, <literal>B2</literal> and <literal>C1</literal>, <literal>C2</literal>)."
-msgstr ""
+msgstr "假設您有三個檔案系統，分別叫作 <literal>A</literal>, <literal>B</literal> 及 <literal>C</literal>。 每個檔案系統都包含兩個目錄，叫做 <literal>A1</literal>, <literal>A2</literal> (依此類推得 <literal>B1</literal>, <literal>B2</literal> 及 <literal>C1</literal>, <literal>C2</literal>)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7362
 msgid "Call <literal>A</literal> the root file system. If <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> is used to view the contents of this directory, it will show two subdirectories, <literal>A1</literal> and <literal>A2</literal>. The directory tree looks like this:"
-msgstr ""
+msgstr "稱 <literal>A</literal> 為主要的檔案系統；如果您用 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令查看此目錄的內容，您會看到兩個子目錄： <literal>A1</literal> 及 <literal>A2</literal>，如下所示："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -6745,7 +6745,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:7382
 msgid "A file system must be mounted on to a directory in another file system. When mounting file system <literal>B</literal> on to the directory <literal>A1</literal>, the root directory of <literal>B</literal> replaces <literal>A1</literal>, and the directories in <literal>B</literal> appear accordingly:"
-msgstr ""
+msgstr "一個檔案系統必須以目錄形式掛載於另一個檔案系統上。 因此，假設您將 <literal>B</literal> 掛載於 <literal>A1</literal> 之上，則 <literal>B</literal> 的根目錄就變成了 <literal>A1</literal>，而在 <literal>B</literal> 之下的任何目錄的路徑也隨之改變:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -6775,12 +6775,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:7407
 msgid "Any files that are in the <literal>B1</literal> or <literal>B2</literal> directories can be reached with the path <filename>/A1/B1</filename> or <filename>/A1/B2</filename> as necessary. Any files that were in <filename>/A1</filename> have been temporarily hidden. They will reappear if <literal>B</literal> is <firstterm>unmounted</firstterm> from <literal>A</literal>."
-msgstr ""
+msgstr "在 <literal>B1</literal> 或 <literal>B2</literal> 目錄中的任何檔案必須經由路徑 <filename>/A1/B1</filename> 或 <filename>/A1/B2</filename> 才能達到。 所有原來在 <filename>/A1</filename> 中的檔案會暫時被隱藏起來，直到 <literal>B</literal> 被<firstterm>移除</firstterm>後才會再顯現出來。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7416
 msgid "If <literal>B</literal> had been mounted on <literal>A2</literal> then the diagram would look like this:"
-msgstr ""
+msgstr "如果 <literal>B</literal> 掛載在 <literal>A2</literal> 之上，則會變成："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -6810,12 +6810,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:7438
 msgid "and the paths would be <filename>/A2/B1</filename> and <filename>/A2/B2</filename> respectively."
-msgstr ""
+msgstr "上面的路徑分別為 <filename>/A2/B1</filename> 及 <filename>/A2/B2</filename>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7443
 msgid "File systems can be mounted on top of one another. Continuing the last example, the <literal>C</literal> file system could be mounted on top of the <literal>B1</literal> directory in the <literal>B</literal> file system, leading to this arrangement:"
-msgstr ""
+msgstr "檔案系統可以掛在其他檔案系統的目錄之上。 延續之前的例子，<literal>C</literal> 檔案系統可以掛在檔案系統 <literal>B</literal> 的 <literal>B1</literal> 目錄之上，如圖所示："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -6849,7 +6849,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:7471
 msgid "Or <literal>C</literal> could be mounted directly on to the <literal>A</literal> file system, under the <literal>A1</literal> directory:"
-msgstr ""
+msgstr "或者 <literal>C</literal> 直接掛載於 <literal>A</literal> 的 <literal>A1</literal> 目錄之上："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -6883,67 +6883,67 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:7497
 msgid "It is entirely possible to have one large root file system, and not need to create any others. There are some drawbacks to this approach, and one advantage."
-msgstr ""
+msgstr "您完全可以使用單一的一個大的根檔案系統 (root file system) 而不建立其他的檔案系統。 這樣有好處也有有壞處。"
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7502
 msgid "Benefits of Multiple File Systems"
-msgstr ""
+msgstr "使用多個檔案系統的好處"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7505
 msgid "Different file systems can have different <firstterm>mount options</firstterm>. For example, the root file system can be mounted read-only, making it impossible for users to inadvertently delete or edit a critical file. Separating user-writable file systems, such as <filename>/home</filename>, from other file systems allows them to be mounted <firstterm>nosuid</firstterm>. This option prevents the <firstterm>suid</firstterm>/<firstterm>guid</firstterm> bits on executables stored on the file system from taking effect, possibly improving security."
-msgstr ""
+msgstr "不同的檔案系統在掛上的時候可以有不同的 <firstterm>掛載參數</firstterm>。 舉例來說，為求謹慎您可以將根檔案系統設成唯讀， 以避免不小心刪除或修改掉重要的檔案。 將使用者可寫入的檔案系統 (例如 <filename>/home</filename>) 獨立出來也可以讓他們用 <firstterm>nosuid</firstterm> 的參數掛載，此選項可以讓在這個檔案系統中執行檔的 <firstterm>suid</firstterm>/<firstterm>guid</firstterm> bits 失效，也許可以讓系統更安全。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7519
 msgid "FreeBSD automatically optimizes the layout of files on a file system, depending on how the file system is being used. So a file system that contains many small files that are written frequently will have a different optimization to one that contains fewer, larger files. By having one big file system this optimization breaks down."
-msgstr ""
+msgstr "FreeBSD 會自動根據您檔案系統的使用方式來做最佳的檔案配置方式。 因此，一個有很多小檔案、 常常寫入的檔案系統跟只有幾個較大的檔案的檔案系統配置是不一樣的。 如果您只有單一一個大的檔案系統，這部分就沒用了。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7528
 msgid "FreeBSD's file systems are robust if power is lost. However, a power loss at a critical point could still damage the structure of the file system. By splitting data over multiple file systems it is more likely that the system will still come up, making it easier to restore from backup as necessary."
-msgstr ""
+msgstr "FreeBSD 的檔案系統在停電的時候很穩固。 然而，在某些重要的時候停電仍然會對檔案系統結構造成損害。 分割成許多個檔案系統的話在系統在停電後比較能夠正常啟動， 以便您在需要的時候將備份資料回存回來。"
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7538
 msgid "Benefit of a Single File System"
-msgstr ""
+msgstr "使用單一檔案系統的好處"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7541
 msgid "File systems are a fixed size. If you create a file system when you install FreeBSD and give it a specific size, you may later discover that you need to make the partition bigger. This is not easily accomplished without backing up, recreating the file system with the new size, and then restoring the backed up data."
-msgstr ""
+msgstr "檔案系統的大小是固定的。 您當初安裝 FreeBSD 的時候應該會給定一個大小，可是後來您可能會想把空間加大。 如果沒有備份的話是很難達成的； 您必須將檔案系統重新建立為您需要的大小，然後將備份回存回來。"
 
 #. (itstool) path: important/para
 #: book.translate.xml:7549
 msgid "FreeBSD features the <citerefentry><refentrytitle>growfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> command, which makes it possible to increase the size of file system on the fly, removing this limitation."
-msgstr ""
+msgstr "FreeBSD 的 <citerefentry><refentrytitle>growfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指令可以突破此限制直接變更檔案系統的大小。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7556
 msgid "File systems are contained in partitions. This does not have the same meaning as the common usage of the term partition (for example, <trademark class=\"registered\">MS-DOS</trademark> partition), because of FreeBSD's <trademark class=\"registered\">UNIX</trademark> heritage. Each partition is identified by a letter from <literal>a</literal> through to <literal>h</literal>. Each partition can contain only one file system, which means that file systems are often described by either their typical mount point in the file system hierarchy, or the letter of the partition they are contained in."
-msgstr ""
+msgstr "檔案系統包含在分割區裡面。 因為 FreeBSD 承襲 <trademark class=\"registered\">UNIX</trademark> 架構，這邊講的分割區和一般提到的分割區 (例如 <trademark class=\"registered\">MS-DOS</trademark> 分割區) 不同。 每一個分割區由一個代號(字母)表示，從 <literal>a</literal> 到 <literal>h</literal>。 每個分割區只能包含一個檔案系統。 因此除了說常見到用檔案系統同的掛載點來表示檔案系統外， 也可以用包含他的分割區代號來表示。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7566
 msgid "FreeBSD also uses disk space for <firstterm>swap space</firstterm> to provide <firstterm>virtual memory</firstterm>. This allows your computer to behave as though it has much more memory than it actually does. When FreeBSD runs out of memory, it moves some of the data that is not currently being used to the swap space, and moves it back in (moving something else out) when it needs it."
-msgstr ""
+msgstr "FreeBSD 也會拿磁碟空間來當 <firstterm>swap space</firstterm>。 Swap space 給 FreeBSD 當作<firstterm>虛擬記憶體</firstterm>用。 這讓您的電腦好像擁有比實際更多的記憶體。 當 FreeBSD 的記憶體用完的時候，它會把一些目前沒用到的資料移到 swap space，然後在用到的時候移回去 (同時移出部份沒用到的)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7575
 msgid "Some partitions have certain conventions associated with them."
-msgstr ""
+msgstr "某些分割區有慣例的使用方式如下："
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7585
 msgid "Partition"
-msgstr ""
+msgstr "分割區"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7586
 msgid "Convention"
-msgstr ""
+msgstr "慣例"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7592
@@ -6953,7 +6953,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7593
 msgid "Normally contains the root file system."
-msgstr ""
+msgstr "通常包含根檔案系統 (root file system)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7597
@@ -6963,7 +6963,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7598
 msgid "Normally contains swap space."
-msgstr ""
+msgstr "通常是 swap space"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7602
@@ -6973,7 +6973,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7603
 msgid "Normally the same size as the enclosing slice. This allows utilities that need to work on the entire slice, such as a bad block scanner, to work on the <literal>c</literal> partition. A file system would not normally be created on this partition."
-msgstr ""
+msgstr "通常和整個 slice 的大小一樣，給一些會用到整個 slice 的工具程式 (例如硬碟壞軌檢查工具) 來使用。 一般來說您應該不會把檔案系統建立在這個分割區。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7611
@@ -6983,12 +6983,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7612
 msgid "Partition <literal>d</literal> used to have a special meaning associated with it, although that is now gone and <literal>d</literal> may work as any normal partition."
-msgstr ""
+msgstr "分割區 <literal>d</literal> 曾經有代表特殊意義，但是已經不再使用。 所以現在 <literal>d</literal> 就和其他一般的分割區相同了。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7621
 msgid "Disks in FreeBSD are divided into slices, referred to in <trademark class=\"registered\">Windows</trademark> as partitions, which are numbered from 1 to 4. These are then divided into partitions, which contain file systems, and are labeled using letters."
-msgstr ""
+msgstr "每個包含有檔案系統的分割區是存在所謂的 slice 裡面。 FreeBSD 的 slice 就是指平常我們在 <trademark class=\"registered\">Windows</trademark> 稱為分割區 (partition) 的東西一樣有自己的檔案系統，用單字標示，編號從 1 號到 4 號。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7626
@@ -7008,62 +7008,62 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:7636
 msgid "Slice numbers follow the device name, prefixed with an <literal>s</literal>, starting at 1. So <quote>da0<emphasis>s1</emphasis></quote> is the first slice on the first SCSI drive. There can only be four physical slices on a disk, but there can be logical slices inside physical slices of the appropriate type. These extended slices are numbered starting at 5, so <quote>ada0<emphasis>s5</emphasis></quote> is the first extended slice on the first SATA disk. These devices are used by file systems that expect to occupy a slice."
-msgstr ""
+msgstr "slice 號碼跟在裝置名稱後面，先接一個字母 <literal>s</literal>，然後從 1 號開始編下去。 因此 <quote>da0<emphasis>s1</emphasis></quote> 就是指第一個 SCSI 硬碟的第一個 slice。 一個磁碟上只能有四個實體的 slice，但是在實體的 slice 中您可以塞進適當類型的邏輯 slice。 這些延伸的 slice 編號從 5 開始，所以 <quote>ada0<emphasis>s5</emphasis></quote> 是第一個 SATA 硬碟上的第一個延伸 slice。 檔案系統在裝置 (device) 裡就是在一個 slice 之中。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7646
 msgid "Slices, <quote>dangerously dedicated</quote> physical drives, and other drives contain <firstterm>partitions</firstterm>, which are represented as letters from <literal>a</literal> to <literal>h</literal>. This letter is appended to the device name, so <quote>da0<emphasis>a</emphasis></quote> is the <literal>a</literal> partition on the first <literal>da</literal> drive, which is <quote>dangerously dedicated</quote>. <quote>ada1s3<emphasis>e</emphasis></quote> is the fifth partition in the third slice of the second SATA disk drive."
-msgstr ""
+msgstr "Slices、<quote>dangerously dedicated</quote> 模式的實體磁碟機，以及其他包含<firstterm>分割區</firstterm>(partition) 的磁碟都是以字母 <literal>a</literal> 到 <literal>h</literal> 的編號來表示。 編號是接在裝置名稱的後面的，因此 <quote>da0<emphasis>a</emphasis></quote> is the <literal>a</literal> 是磁碟機 <literal>da</literal> 上的第一個 <quote>dangerously dedicated</quote> 模式之分割區。 而 <quote>ada1s3<emphasis>e</emphasis></quote> 則是第二顆 SATA 硬碟上第三個 slice 的第五個分割區。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7659
 msgid "Finally, each disk on the system is identified. A disk name starts with a code that indicates the type of disk, and then a number, indicating which disk it is. Unlike slices, disk numbering starts at 0. Common codes are listed in <xref linkend=\"disks-naming\"/>."
-msgstr ""
+msgstr "最後，我們就可以把系統上的每個磁碟都區分出來了。 一個磁碟的名稱會有一個代碼來表示這個磁碟的類型，接著是一個數字， 表示這是哪一個磁碟。 這邊跟 slice 每個磁碟編號從 0 開始不一樣。 常見的代碼可以參考 表格 <xref linkend=\"disks-naming\"/>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7665
 msgid "When referring to a partition, include the disk name, <literal>s</literal>, the slice number, and then the partition letter. Examples are shown in <xref linkend=\"basics-disk-slice-part\"/>."
-msgstr ""
+msgstr "當要參照一個分割區的時候，需包含磁碟機名稱 <literal>s</literal> 加上 slice 編號，最後再輸入分割區字母代號。 範例可以參考 <xref linkend=\"basics-disk-slice-part\"/>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7670
 msgid "<xref linkend=\"basics-concept-disk-model\"/> shows a conceptual model of a disk layout."
-msgstr ""
+msgstr "<xref linkend=\"basics-concept-disk-model\"/> 示範了一個基本的磁碟配置，相信對您有些幫助。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7673
 msgid "When installing FreeBSD, configure the disk slices, create partitions within the slice to be used for FreeBSD, create a file system or swap space in each partition, and decide where each file system will be mounted."
-msgstr ""
+msgstr "要安裝 FreeBSD，您必須先建置磁碟的 slice，接著於 slice 中建立要給 FreeBSD 用的分割區。 最後在這些分割區中建立檔案系統 (或 swap space) 並決定要將這些檔案系統掛載於哪裡。"
 
 #. (itstool) path: table/title
 #: book.translate.xml:7679
 msgid "Disk Device Names"
-msgstr ""
+msgstr "磁碟裝置名稱"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7687
 msgid "Drive Type"
-msgstr ""
+msgstr "磁碟機類型"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7688
 msgid "Drive Device Name"
-msgstr ""
+msgstr "磁碟機裝置稱"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7694
 msgid "<acronym>SATA</acronym> and <acronym>IDE</acronym> hard drives"
-msgstr ""
+msgstr "<acronym>SATA</acronym> 及<acronym>IDE</acronym> 硬碟"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7696
 msgid "<literal>ada</literal> or <literal>ad</literal>"
-msgstr ""
+msgstr "<literal>ada</literal> 或 <literal>ad</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7701
 msgid "<acronym>SCSI</acronym> hard drives and <acronym>USB</acronym> storage devices"
-msgstr ""
+msgstr "<acronym>SCSI</acronym> 硬碟與 <acronym>USB</acronym> 儲存裝置"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7703
@@ -7073,17 +7073,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7707
 msgid "<acronym>SATA</acronym> and <acronym>IDE</acronym> <acronym>CD-ROM</acronym> drives"
-msgstr ""
+msgstr "<acronym>SATA</acronym> 與 <acronym>IDE</acronym> <acronym>CD-ROM</acronym> 光碟機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7709
 msgid "<literal>cd</literal> or <literal>acd</literal>"
-msgstr ""
+msgstr "<literal>cd</literal> 或 <literal>acd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7714
 msgid "<acronym>SCSI</acronym> <acronym>CD-ROM</acronym> drives"
-msgstr ""
+msgstr "<acronym>SCSI</acronym> <acronym>CD-ROM</acronym> 光碟機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7716
@@ -7093,7 +7093,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7720
 msgid "Floppy drives"
-msgstr ""
+msgstr "軟碟機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7721
@@ -7103,17 +7103,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7725
 msgid "Assorted non-standard <acronym>CD-ROM</acronym> drives"
-msgstr ""
+msgstr "各種非標準 <acronym>CD-ROM</acronym> 光碟機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7727
 msgid "<literal>mcd</literal> for Mitsumi <acronym>CD-ROM</acronym> and <literal>scd</literal> for Sony <acronym>CD-ROM</acronym> devices"
-msgstr ""
+msgstr "<literal>mcd</literal> 代表 Mitsumi <acronym>CD-ROM</acronym> 以及 <literal>scd</literal> 代表 Sony <acronym>CD-ROM</acronym> 光碟機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7733
 msgid "<acronym>SCSI</acronym> tape drives"
-msgstr ""
+msgstr "<acronym>SCSI</acronym> 磁帶機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7734
@@ -7123,7 +7123,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7738
 msgid "<acronym>IDE</acronym> tape drives"
-msgstr ""
+msgstr "<acronym>IDE</acronym> 磁帶機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7739
@@ -7133,27 +7133,27 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7743
 msgid "RAID drives"
-msgstr ""
+msgstr "RAID 磁碟機"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7744
 msgid "Examples include <literal>aacd</literal> for <trademark class=\"registered\">Adaptec</trademark> AdvancedRAID, <literal>mlxd</literal> and <literal>mlyd</literal> for <trademark class=\"registered\">Mylex</trademark>, <literal>amrd</literal> for AMI <trademark class=\"registered\">MegaRAID</trademark>, <literal>idad</literal> for Compaq Smart RAID, <literal>twed</literal> for <trademark class=\"registered\">3ware</trademark> RAID."
-msgstr ""
+msgstr "範例包含 <literal>aacd</literal> 代表 <trademark class=\"registered\">Adaptec</trademark> AdvancedRAID，<literal>mlxd</literal> 及 <literal>mlyd</literal> 代表 <trademark class=\"registered\">Mylex</trademark>，<literal>amrd</literal> 代表 AMI <trademark class=\"registered\">MegaRAID</trademark>，<literal>idad</literal> 代表 Compaq Smart RAID，<literal>twed</literal> 代表 <trademark class=\"registered\">3ware</trademark> RAID."
 
 #. (itstool) path: example/title
 #: book.translate.xml:7756
 msgid "Sample Disk, Slice, and Partition Names"
-msgstr ""
+msgstr "磁碟、slice 及分割區命名範例"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7765
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7766 book.translate.xml:62370
 msgid "Meaning"
-msgstr ""
+msgstr "意義"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7772
@@ -7163,7 +7163,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7773
 msgid "The first partition (<literal>a</literal>) on the first slice (<literal>s1</literal>) on the first <acronym>SATA</acronym> disk (<literal>ada0</literal>)."
-msgstr ""
+msgstr "第一個 SATA 硬碟 (<literal>ada0</literal>) 上第一個 slice (<literal>s1</literal>)的第一個分割區(<literal>a</literal>) 。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7780
@@ -7173,22 +7173,22 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7781
 msgid "The fifth partition (<literal>e</literal>) on the second slice (<literal>s2</literal>) on the second SCSI disk (<literal>da1</literal>)."
-msgstr ""
+msgstr "第二個 SCSI 硬碟 (<literal>da1</literal>) 上第二個 slice (<literal>s2</literal>) 的第五個分割區 (<literal>e</literal>) 。"
 
 #. (itstool) path: example/title
 #: book.translate.xml:7791
 msgid "Conceptual Model of a Disk"
-msgstr ""
+msgstr "磁碟的概念模型"
 
 #. (itstool) path: example/para
 #: book.translate.xml:7793
 msgid "This diagram shows FreeBSD's view of the first <acronym>SATA</acronym> disk attached to the system. Assume that the disk is 250 GB in size, and contains an 80 GB slice and a 170 GB slice (<trademark class=\"registered\">MS-DOS</trademark> partitions). The first slice contains a <trademark class=\"registered\">Windows</trademark> <acronym>NTFS</acronym> file system, <filename>C:</filename>, and the second slice contains a FreeBSD installation. This example FreeBSD installation has four data partitions and a swap partition."
-msgstr ""
+msgstr "此圖顯示 FreeBSD 中接到系統的第一個 <acronym>SATA</acronym> 磁碟機內部配置圖。 假設這個磁碟的容量是 250 GB，並且包含了一個 80 GB 的 slice 及一個 170 GB 的 slice (<trademark class=\"registered\">MS-DOS</trademark> 的分割區)。 第一個 slice 是 <trademark class=\"registered\">Windows</trademark> <acronym>NTFS</acronym> 檔案系統的 <filename>C:</filename> 磁碟機，第二個則安裝了 FreeBSD。 本範例的 FreeBSD 有三個分割區以及一個 swap 分割區。"
 
 #. (itstool) path: example/para
 #: book.translate.xml:7803
 msgid "The four partitions each hold a file system. Partition <literal>a</literal> is used for the root file system, <literal>d</literal> for <filename>/var/</filename>, <literal>e</literal> for <filename>/tmp/</filename>, and <literal>f</literal> for <filename>/usr/</filename>. Partition letter <literal>c</literal> refers to the entire slice, and so is not used for ordinary partitions."
-msgstr ""
+msgstr "這四個分割區每個都是一個檔案系統。 <literal>a</literal> 分割是根 (root) 檔案系統；分割 <literal>d</literal> 是 <filename>/var/</filename>；分割 <literal>e</literal> 是 <filename>/tmp/</filename>，而 <literal>f</literal> 分割是 <filename>/usr/</filename> 目錄結構。Partition letter <literal>c</literal> refers to the entire slice, and so is not used for ordinary partitions."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
