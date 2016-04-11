@@ -44,6 +44,9 @@ pkg install poedit
 | Disk | 磁碟 |
 | Drive | 磁碟機 |
 | CD-ROM, DVD Drive | CD-ROM, DVD 光碟機 |
+| Mount | 掛載 |
+| Unmount | 卸載 |
+| Home directory | 家目錄 |
 | Slice  | TBD |
 | Partition  | TBD |
 | Partitioning | TBD |
@@ -51,6 +54,7 @@ pkg install poedit
 | Ports Collection | TBD |
 | Shell | (不翻譯) |
 | Daemon | (不翻譯) |
+| Console | (不翻譯) |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
