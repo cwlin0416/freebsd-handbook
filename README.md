@@ -48,6 +48,7 @@ pkg install poedit
 | Unmount | 卸載 |
 | Home directory | 家目錄 |
 | Signal | 信號 |
+| Common Address Redundancy Protocol | 共用位址備援協定 |
 | Spool, Spooling | 暫存 (需附註原文) |
 | Slice  | TBD |
 | Partition  | TBD |
