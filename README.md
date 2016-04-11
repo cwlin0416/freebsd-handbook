@@ -49,6 +49,7 @@ pkg install poedit
 | Home directory | 家目錄 |
 | Signal | 信號 |
 | Common Address Redundancy Protocol | 共用位址備援協定 |
+| Line Printer | 行列式印表機 |
 | Spool, Spooling | 暫存 (需附註原文) |
 | Slice  | TBD |
 | Partition  | TBD |
