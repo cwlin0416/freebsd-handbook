@@ -13,7 +13,8 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 * [zh_TW.po](zh_TW.po) 為 GNU gettext 的翻譯檔
 * [book.xml](book.xml) 為使用 GNU gettext 翻譯檔所產生的 Docbook 文件
 
-第一階段目標是將既有的舊版翻譯移植至 GNU gettext 的 PO 格式，由於 PO 檔所參照是最新版本的原文，因此，若舊有譯文與新版原有出入之部份需要予以修正，需盡可能保留先前翻譯人員的成果。
+第一階段目標是將既有的舊版翻譯移植至 GNU gettext 的 PO 格式，舊版翻譯請參考 [book.ori.html](book.ori.html)。
+由於 PO 檔所參照是最新版本的原文，因此，若舊有譯文與新版原有出入之部份需要予以修正，需盡可能保留先前翻譯人員的成果。
 欲協助翻譯的人員可使用 git 下載最新修訂版本 [zh_TW.po](zh_TW.po) 檔案並採用以下 PO 檔編輯器進行翻譯，翻譯完的最終版本會統一提交至 FreeBSD Documentation Project。
 
 # 官方文件
