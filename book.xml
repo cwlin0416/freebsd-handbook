@@ -2821,7 +2821,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	similar to the following will be displayed:</para>
 
       <figure xml:id="bsdinstall-newboot-loader-menu">
-	<title>FreeBSD 開機載入器選單</title>
+	<title>FreeBSD 開機載入程式選單</title>
 
 	<mediaobject>
 	  <imageobject>
@@ -5262,7 +5262,7 @@ Password:
 	for more details and usage examples.</para>
 
       <table frame="none" pgwide="1" xml:id="users-modifying-utilities">
-	<title xml:lang="en">Utilities for Managing User Accounts</title>
+	<title>管理使用者帳號的工具</title>
 
 	<tgroup cols="2">
 	  <colspec colwidth="1*"/>
@@ -5768,7 +5768,7 @@ uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)</screen>
     </indexterm>
 
     <table frame="none" pgwide="1">
-      <title xml:lang="en"><trademark class="registered">UNIX</trademark> Permissions</title>
+      <title><trademark class="registered">UNIX</trademark> 權限</title>
 
       <tgroup cols="3">
 	<thead>
@@ -6875,7 +6875,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
     <para>FreeBSD 是一個多工的作業系統，也就是說在同一時間內可以跑超過一個程式。 每一個正在花時間跑的程式就叫做 <firstterm>程序</firstterm> (process)。 您下的每個指令都至少會開啟一個新的程序， 而有些系統程序是一直在跑以維持系統正常運作的。</para>
 
-    <para>每一個程序都有一個獨一無二的數字叫做 <firstterm>程序代號</firstterm> (Rrocess ID, PID)，而且就像檔案一樣，每一個程序也有擁有者及群組。 擁有者及群組的資訊是用來決定什麼檔案或裝置是這個程序可以開啟的 (前面有提到過檔案權限)。 大部份的程序都有父程序。 父程序是開啟這個程序的程序，例如：您對 shell 輸入指令，shell 本身就是一個程序，而您執行的指令也是程序。 每一個您用這種方式跑的程序的父程序都是 shell。 有一個特別的程序叫做 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是個例外，在 FreeBSD 開機的時候 init 會自動地被開啟，init 永遠是第一個程序，所以他的 <acronym>PID</acronym> 一直都會是 <literal>1</literal>。</para>
+    <para>每一個程序都有一個獨一無二的數字叫做 <firstterm>程序代號</firstterm> (Process ID, PID)，而且就像檔案一樣，每一個程序也有擁有者及群組。 擁有者及群組的資訊是用來決定什麼檔案或裝置是這個程序可以開啟的 (前面有提到過檔案權限)。 大部份的程序都有父程序。 父程序是開啟這個程序的程序，例如：您對 shell 輸入指令，shell 本身就是一個程序，而您執行的指令也是程序。 每一個您用這種方式跑的程序的父程序都是 shell。 有一個特別的程序叫做 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是個例外，在 FreeBSD 開機的時候 init 會自動地被開啟，init 永遠是第一個程序，所以他的 <acronym>PID</acronym> 一直都會是 <literal>1</literal>。</para>
 
     <para>有些程式並不是設計成一直在接收使用者的輸入的， 而是在開始執行的時候就從中斷與終端機的連線。 例如說， 網頁伺服器整天都在回應網頁方面的要求，它通常不需要您輸入任何東西。 另外，像是把信從一個站傳送到另一個站的程式，也是這種類型的應用程式。我們把這種程式稱作 <firstterm>Daemon</firstterm>。 Daemon 一詞是來自是希臘神話中的角色：祂們既不屬於善良陣營或邪惡陣營，祂們在背地裡做一些有用的事情。這也就是為何 BSD 的吉祥物，是一隻穿著帆布鞋拿著三叉耙的快樂小惡魔的原因。</para>
 
@@ -6948,7 +6948,7 @@ Swap: 2048M Total, 2048M Free
 	<para>這個範例將會示範如何送一個信號給 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry>。<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的設定檔是 <filename>/etc/inetd.conf</filename>，而 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 會在收到 <literal>SIGHUP</literal> 的時候重新讀取這個設定檔。</para>
 
 	<step>
-	  <para>使用 <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查詢要傳送訊號的目標程序。 在這個例子中 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的 <acronym>PID</acronym> 為 198：</para>
+	  <para>使用 <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查詢要傳送信號的目標程序。 在這個例子中 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的 <acronym>PID</acronym> 為 198：</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>pgrep -l inetd</userinput>
 198  inetd -wW</screen>
@@ -6981,7 +6981,7 @@ Swap: 2048M Total, 2048M Free
   </sect1>
 
   <sect1 xml:id="shells">
-    <title xml:lang="en">Shells</title>
+    <title>Shell</title>
 
     <indexterm xml:lang="en">
       <primary>shells</primary>
@@ -6990,63 +6990,27 @@ Swap: 2048M Total, 2048M Free
       <primary>command line</primary>
     </indexterm>
 
-    <para xml:lang="en">A <firstterm>shell</firstterm> provides a command line
-      interface for interacting with the operating system.  A shell
-      receives commands from the input channel and executes them.
-      Many shells provide built in functions to help with everyday
-      tasks such as file management, file globbing, command line
-      editing, command macros, and environment variables.  FreeBSD comes
-      with several shells, including the Bourne shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>) and
-      the extended C shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>).  Other shells are available
-      from the FreeBSD Ports Collection, such as
-      <command>zsh</command> and <command>bash</command>.</para>
+    <para><firstterm>Shell</firstterm> 提供了指令列介面可用來與作業系統互動，Shell 負責從輸入的頻道接收指令並執行它們。 多數 Shell 也內建一些有助於日常工作的功能，像是檔案管理、檔案搜尋、指令列編輯、指令巨集以及環境變數等。 FreeBSD 有內附了幾個 Shell，包含 Bourne Shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)，與改良版的 C-shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)。 還有許多其他的 Shell 可以從 FreeBSD Ports Collection 中取得，像是 <command>zsh</command> 以及 <command>bash</command> 等。</para>
 
-    <para xml:lang="en">The shell that is used is really a matter of taste.  A C
-      programmer might feel more comfortable with a C-like shell such
-      as <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  A <trademark class="registered">Linux</trademark> user might prefer
-      <command>bash</command>.  Each shell has unique properties that
-      may or may not work with a user's preferred working environment,
-      which is why there is a choice of which shell to use.</para>
+    <para>要用哪個 Shell 牽涉到每個人的喜好。 如果您是一個 C 程式設計師，那對於使用像是 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 這種 C-like 的 shell 可能會感到較容易上手。 如果是 <trademark class="registered">Linux</trademark> 的使用者，那您也許會想要用 <command>bash</command>。 每一個 Shell 都有自已獨特之處，至於這些特點能不能符合使用者的喜好，就是您選擇 shell 的重點了。</para>
 
-    <para xml:lang="en">One common shell feature is filename completion.  After a
-      user types the first few letters of a command or filename and
-      presses <keycap>Tab</keycap>, the shell completes the rest of
-      the command or filename.  Consider two files called
-      <filename>foobar</filename> and <filename>football</filename>.
-      To delete <filename>foobar</filename>, the user might type
-      <command>rm foo</command> and press <keycap>Tab</keycap> to
-      complete the filename.</para>
+    <para>常見的 Shell 功能之一就是檔名自動補齊。 首先輸入指令或檔案的前幾個字母，然後按下 <keycap>Tab</keycap> 鍵，Shell 就會自動把指令或是檔案名稱剩餘的部份補齊。 假設您有兩個檔案分別叫作 <filename>foobar</filename> 及 <filename>football</filename>。 要刪掉 <filename>foobar</filename>，那麼可以輸入 <command>rm foo</command> 然後按下 <keycap>Tab</keycap> 來補齊檔名。</para>
 
-    <para xml:lang="en">But the shell only shows <command>rm foo</command>.  It was
-      unable to complete the filename because both
-      <filename>foobar</filename> and <filename>football</filename>
-      start with <literal>foo</literal>.  Some shells sound a beep or
-      show all the choices if more than one name matches.  The user
-      must then type more characters to identify the desired filename.
-      Typing a <literal>t</literal> and pressing <keycap>Tab</keycap>
-      again is enough to let the shell determine which filename is
-      desired and fill in the rest.</para>
+    <para>但 Shell 只顯示了 <command>rm foo</command>，這代表它沒有辦法完全自動補齊檔名，因為有不只一個檔名符合條件。 <filename>foobar</filename> 和 <filename>football</filename> 都是 <literal>foo</literal> 開頭的檔名。 有一些 Shell 會有嗶的音效或者顯示所有符符條件的檔名。 使用者只需要多打幾個字元來分辦想要的檔名。 輸入 <literal>t</literal> 然後再按 <keycap>Tab</keycap> 一次，那 Shell 就能夠替您把剩下的檔名填滿了。</para>
 
     <indexterm xml:lang="en">
       <primary>environment variables</primary>
     </indexterm>
 
-    <para xml:lang="en">Another feature of the shell is the use of environment
-      variables.  Environment variables are a variable/key pair stored
-      in the shell's environment.  This environment can be read by any
-      program invoked by the shell, and thus contains a lot of program
-      configuration.  <xref linkend="shell-env-vars"/> provides a list
-      of common environment variables and their meanings.  Note that
-      the names of environment variables are always in
-      uppercase.</para>
+    <para>Shell 的另一項特點是使用了環境變數。 環境變數是以變數與鍵值 (variable/key) 的對應關係儲存於 Shell 的環境，任何由該 Shell 所產生的程序都可以讀取此環境變數， 因此環境變數儲存了許多程序的設定。 <xref linkend="shell-env-vars"/> 提供了常見的環境變數與其涵義的清單。 請注意環境變數的名稱永遠以大寫表示。</para>
 
     <table xml:id="shell-env-vars" frame="none" pgwide="1">
-      <title xml:lang="en">Common Environment Variables</title>
+      <title>常用環境變數</title>
 
       <tgroup cols="2">
 	<thead>
 	  <row>
-	    <entry xml:lang="en">Variable</entry>
+	    <entry>變數</entry>
 	    <entry>說明</entry>
 	  </row>
 	</thead>
@@ -7054,32 +7018,28 @@ Swap: 2048M Total, 2048M Free
 	<tbody>
 	  <row>
 	    <entry xml:lang="en"><envar>USER</envar></entry>
-	    <entry xml:lang="en">Current logged in user's name.</entry>
+	    <entry>目前登入的使用者名稱。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>PATH</envar></entry>
-	    <entry xml:lang="en">Colon-separated list of directories to search for
-	      binaries.</entry>
+	    <entry>以冒號 (:) 隔開的目錄列表，用以搜尋執行檔的路徑。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>DISPLAY</envar></entry>
-	    <entry xml:lang="en">Network name of the
-	      <application>Xorg</application>
-	      display to connect to, if available.</entry>
+	    <entry>若存在這個環境變數，則代表 <application>Xorg</application> 顯示器的網路名稱。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>SHELL</envar></entry>
-	    <entry xml:lang="en">The current shell.</entry>
+	    <entry>目前使用的 Shell。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>TERM</envar></entry>
 
-	    <entry xml:lang="en">The name of the user's type of terminal.  Used to
-	      determine the capabilities of the terminal.</entry>
+	    <entry>使用者終端機類型的名稱，用來判斷終端機有那些功能。</entry>
 	  </row>
 
 	  <row>
@@ -7091,29 +7051,27 @@ Swap: 2048M Total, 2048M Free
 
 	  <row>
 	    <entry xml:lang="en"><envar>OSTYPE</envar></entry>
-	    <entry xml:lang="en">Type of operating system.</entry>
+	    <entry>作業系統的類型。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>MACHTYPE</envar></entry>
-	    <entry xml:lang="en">The system's CPU architecture.</entry>
+	    <entry>系統的 CPU 架構。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>EDITOR</envar></entry>
-	    <entry xml:lang="en">The user's preferred text editor.</entry>
+	    <entry>使用者偏好的文字編輯器。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>PAGER</envar></entry>
-	    <entry xml:lang="en">The user's preferred utility for viewing text one
-	      page at a time.</entry>
+	    <entry>使用者偏好的文字分頁檢視工具。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><envar>MANPATH</envar></entry>
-	    <entry xml:lang="en">Colon-separated list of directories to search for
-	      manual pages.</entry>
+	    <entry>以冒號 (:) 隔開的目錄列表，用以搜尋使用手冊的路徑。</entry>
 	  </row>
 	</tbody>
       </tgroup>
@@ -7123,44 +7081,19 @@ Swap: 2048M Total, 2048M Free
       <primary>Bourne shells</primary>
     </indexterm>
 
-    <para xml:lang="en">How to set an environment variable differs between shells.
-      In <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>, use
-      <command>setenv</command> to set environment variables.  In
-      <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <command>bash</command>, use
-      <command>export</command> to set the current environment
-      variables.  This example sets the default <envar>EDITOR</envar>
-      to <filename>/usr/local/bin/emacs</filename> for the
-      <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> shell:</para>
+    <para>在不同的 shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 setenv 來設定環境變數。 在 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <command>bash</command>, use <command>export</command>，則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>setenv EDITOR /usr/local/bin/emacs</userinput></screen>
 
-    <para xml:lang="en">The equivalent command for <command>bash</command>
-      would be:</para>
+    <para>相同功能的指令在 <command>bash</command> 下則是：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>export EDITOR="/usr/local/bin/emacs"</userinput></screen>
 
-    <para xml:lang="en">To expand an environment variable in order to see its
-      current setting, type a <literal>$</literal> character in front
-      of its name on the command line.  For example,
-      <command>echo $TERM</command> displays the current
-      <envar>$TERM</envar> setting.</para>
+    <para>要展開以顯示目前環境變數中的值，只要在指令列輸入環境變數之前加上 <literal>$</literal> 字元。 舉例來說，<command>echo $TERM</command> 會顯示出目前 <envar>$TERM</envar> 的設定值。</para>
 
-    <para xml:lang="en">Shells treat special characters, known as meta-characters,
-      as special representations of data.  The most common
-      meta-character is <literal>*</literal>, which represents any
-      number of characters in a filename.  Meta-characters can be used
-      to perform filename globbing.  For example, <command>echo
-	*</command> is equivalent to <command>ls</command> because
-      the shell takes all the files that match <literal>*</literal>
-      and <command>echo</command> lists them on the command
-      line.</para>
+    <para>Shell 中有特殊字元用來表示特殊資料，我們將其稱作 Ｍeta-characters。 其中最常見的 Ｍeta-characters 是 <literal>*</literal> 字元，它代表了檔名中的任意字元。 Meta-characters 可以用在搜尋檔名，舉例來說，輸入 <command>echo *</command> 會和輸入 <command>ls</command> 得到幾乎相同的結果，這是因為 shell 會將所有符合 <literal>*</literal> 字元的檔案由 <command>echo</command> 顯示出來。</para>
 
-    <para xml:lang="en">To prevent the shell from interpreting a special character,
-      escape it from the shell by starting it with a backslash
-      (<literal>\</literal>).  For example, <command>echo
-	$TERM</command> prints the terminal setting whereas
-      <command>echo \$TERM</command> literally prints the string
-      <literal>$TERM</literal>.</para>
+    <para>為了避免 Shell 轉譯這些特殊字元，我們可以在這些特殊字元前放一個反斜線 (<literal>\</literal>) 字元使他們跳脫(escape) Shell 的轉譯。舉例來說，<command>echo $TERM</command> 會印出你目前終端機的設定， <command>echo \$TERM</command> 則會直接印出 <literal>$TERM</literal> 這幾個字。</para>
 
     <sect2 xml:id="changing-shells">
       <title xml:lang="en">Changing the Shell</title>
@@ -10363,7 +10296,7 @@ EndSection</programlisting>
 	described in <citerefentry vendor="xfree86"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
 
       <table frame="none" pgwide="1" xml:id="xdm-config-files">
-	<title xml:lang="en">XDM Configuration Files</title>
+	<title>XDM 設定檔</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -12686,7 +12619,7 @@ pcm2: &lt;Conexant CX20590 (Analog 2.0+HP/2.0)&gt; (play/rec) default</screen>
 	lists some common error messages and their solutions:</para>
 
       <table xml:id="multimedia-sound-common-error-messages" frame="none" pgwide="1">
-	<title xml:lang="en">Common Error Messages</title>
+	<title>常見錯誤訊息</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -15758,7 +15691,7 @@ Starting lpd.</screen>
   </sect1>
 
   <sect1 xml:id="printing-lpd">
-    <title xml:lang="en"><acronym>LPD</acronym> (Line Printer Daemon)</title>
+    <title><acronym>LPD</acronym> (行列式印表機 Daemon)</title>
 
     <para xml:lang="en">Printing a file in the background is called
       <emphasis>spooling</emphasis>.  A spooler allows the user to
@@ -21538,12 +21471,12 @@ boot:</screen>
 	<citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
 
       <table xml:id="boot-loader-commands" frame="none" pgwide="1">
-	<title xml:lang="en">Loader Built-In Commands</title>
+	<title>載入程式內建指令</title>
 
 	<tgroup cols="2">
 	  <thead>
 	    <row>
-	      <entry xml:lang="en">Variable</entry>
+	      <entry>變數</entry>
 	      <entry>說明</entry>
 	    </row>
 	  </thead>
@@ -29007,7 +28940,7 @@ test: biba/low</screen>
   </sect1>
 
   <sect1 xml:id="mac-implementing">
-    <title xml:lang="en">Nagios in a MAC Jail</title>
+    <title>在 MAC Jail 中使用 Nagios</title>
 
     <indexterm xml:lang="en">
       <primary>Nagios in a MAC Jail</primary>
@@ -29588,7 +29521,7 @@ requirements. -->
 	audit event classes:</para>
 
       <table xml:id="event-selection" frame="none" pgwide="1">
-	<title xml:lang="en">Default Audit Event Classes</title>
+	<title>預設稽查事件類別</title>
 
 	<tgroup cols="3">
 	  <thead>
@@ -29753,7 +29686,7 @@ requirements. -->
 	the available prefixes:</para>
 
       <table xml:id="event-prefixes" frame="none" pgwide="1">
-	<title xml:lang="en">Prefixes for Audit Event Classes</title>
+	<title>稽查事件類別字首</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -30289,7 +30222,7 @@ fi</programlisting>
 
   <sect1 xml:id="disks-growing">
     <info>
-      <title xml:lang="en">Resizing and Growing Disks</title>
+      <title>重設大小與擴增磁碟</title>
 
       <authorgroup>
 	<author xml:lang="en">
@@ -41299,7 +41232,7 @@ ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</r
 	<replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable>:</para>
 
       <table xml:id="locale-lang-country" frame="none" pgwide="1">
-	<title xml:lang="en">Common Language and Country Codes</title>
+	<title>常用語言及城市代碼</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -41615,7 +41548,7 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 	available terminal types.:</para>
 
       <table xml:id="locale-charset" frame="none" pgwide="1">
-	<title xml:lang="en">Defined Terminal Types for Character Sets</title>
+	<title>已定義供特定字元集使用的終端機類型</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -41675,7 +41608,7 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 	configuration and usage instructions.</para>
 
       <table xml:id="locale-console" frame="none" pgwide="1">
-	<title xml:lang="en">Available Console from Ports Collection</title>
+	<title>Ports Collection 中可用的 Console</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -41754,7 +41687,7 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 	applications are also available.</para>
 
       <table xml:id="locale-xim" frame="none" pgwide="1">
-	<title xml:lang="en">Available Input Methods</title>
+	<title>可用的輸入法</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -44968,7 +44901,7 @@ Elapsed Times for processes csh,
       </indexterm>
 
       <table frame="none" pgwide="1" xml:id="serialcomms-signal-names">
-	<title xml:lang="en"><acronym>RS-232C</acronym> Signal Names</title>
+	<title><acronym>RS-232C</acronym> 信號名稱</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -51660,7 +51593,7 @@ Exports list on foobar:
       </indexterm>
 
       <table frame="none" pgwide="1">
-	<title xml:lang="en"><acronym>NIS</acronym> Terminology</title>
+	<title><acronym>NIS</acronym> 術語</title>
 
 	<tgroup cols="2">
 	  <colspec colwidth="1*"/>
@@ -53553,7 +53486,7 @@ dhcpd_ifaces="dc0"</programlisting>
       with <acronym>DNS</acronym>:</para>
 
     <table frame="none" pgwide="1">
-      <title xml:lang="en"><acronym>DNS</acronym> Terminology</title>
+      <title><acronym>DNS</acronym> 術語</title>
 
       <tgroup cols="2">
 	<colspec colwidth="1*"/>
@@ -60287,7 +60220,7 @@ host2.example.com link#1            UC          0        0
 	summarizes some of these flags and their meanings:</para>
 
       <table xml:id="routeflags" frame="none" pgwide="1">
-	<title xml:lang="en">Commonly Seen Routing Table Flags</title>
+	<title>常見路由表標記</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -64493,7 +64426,7 @@ Received 264951 bytes in 0.1 seconds</screen>
 	summary of these reserved addresses is seen in <xref linkend="reservedip6"/>:</para>
 
       <table xml:id="reservedip6" frame="none">
-	<title xml:lang="en">Reserved <acronym>IPv6</acronym> Addresses</title>
+	<title>已保留的 <acronym>IPv6</acronym> 位址</title>
 
 	<tgroup cols="4">
 	  <thead>

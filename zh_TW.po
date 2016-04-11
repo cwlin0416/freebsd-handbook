@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-11 16:30+0800\n"
+"PO-Revision-Date: 2016-04-11 18:43+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2558,7 +2558,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3525
 msgid "FreeBSD Boot Loader Menu"
-msgstr "FreeBSD 開機載入器選單"
+msgstr "FreeBSD 開機載入程式選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -5147,7 +5147,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:6090
 msgid "Utilities for Managing User Accounts"
-msgstr ""
+msgstr "管理使用者帳號的工具"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6098 book.translate.xml:58186 book.translate.xml:61713
@@ -5698,7 +5698,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:6596
 msgid "<trademark class=\"registered\">UNIX</trademark> Permissions"
-msgstr ""
+msgstr "<trademark class=\"registered\">UNIX</trademark> 權限"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6601
@@ -7477,7 +7477,7 @@ msgstr "FreeBSD 是一個多工的作業系統，也就是說在同一時間內�
 #. (itstool) path: sect1/para
 #: book.translate.xml:8094
 msgid "Each process is uniquely identified by a number called a <firstterm>process ID</firstterm> (<acronym>PID</acronym>). Similar to files, each process has one owner and group, and the owner and group permissions are used to determine which files and devices the process can open. Most processes also have a parent process that started them. For example, the shell is a process, and any command started in the shell is a process which has the shell as its parent process. The exception is a special process called <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> which is always the first process to start at boot time and which always has a <acronym>PID</acronym> of <literal>1</literal>."
-msgstr "每一個程序都有一個獨一無二的數字叫做 <firstterm>程序代號</firstterm> (Rrocess ID, PID)，而且就像檔案一樣，每一個程序也有擁有者及群組。 擁有者及群組的資訊是用來決定什麼檔案或裝置是這個程序可以開啟的 (前面有提到過檔案權限)。 大部份的程序都有父程序。 父程序是開啟這個程序的程序，例如：您對 shell 輸入指令，shell 本身就是一個程序，而您執行的指令也是程序。 每一個您用這種方式跑的程序的父程序都是 shell。 有一個特別的程序叫做 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是個例外，在 FreeBSD 開機的時候 init 會自動地被開啟，init 永遠是第一個程序，所以他的 <acronym>PID</acronym> 一直都會是 <literal>1</literal>。"
+msgstr "每一個程序都有一個獨一無二的數字叫做 <firstterm>程序代號</firstterm> (Process ID, PID)，而且就像檔案一樣，每一個程序也有擁有者及群組。 擁有者及群組的資訊是用來決定什麼檔案或裝置是這個程序可以開啟的 (前面有提到過檔案權限)。 大部份的程序都有父程序。 父程序是開啟這個程序的程序，例如：您對 shell 輸入指令，shell 本身就是一個程序，而您執行的指令也是程序。 每一個您用這種方式跑的程序的父程序都是 shell。 有一個特別的程序叫做 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是個例外，在 FreeBSD 開機的時候 init 會自動地被開啟，init 永遠是第一個程序，所以他的 <acronym>PID</acronym> 一直都會是 <literal>1</literal>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8106
@@ -7623,7 +7623,7 @@ msgstr "這個範例將會示範如何送一個信號給 <citerefentry><refentry
 #. (itstool) path: step/para
 #: book.translate.xml:8294
 msgid "Find the <acronym>PID</acronym> of the process to send the signal to using <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></citerefentry>. In this example, the <acronym>PID</acronym> for <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> is 198:"
-msgstr "使用 <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查詢要傳送訊號的目標程序。 在這個例子中 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的 <acronym>PID</acronym> 為 198："
+msgstr "使用 <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查詢要傳送信號的目標程序。 在這個例子中 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的 <acronym>PID</acronym> 為 198："
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8298
@@ -7675,7 +7675,7 @@ msgstr "隨便抓一個系統中的程序然後把他砍掉並不是個好主意
 #. (itstool) path: sect1/title
 #: book.translate.xml:8359
 msgid "Shells"
-msgstr ""
+msgstr "Shell"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8361
@@ -7690,22 +7690,22 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8368
 msgid "A <firstterm>shell</firstterm> provides a command line interface for interacting with the operating system. A shell receives commands from the input channel and executes them. Many shells provide built in functions to help with everyday tasks such as file management, file globbing, command line editing, command macros, and environment variables. FreeBSD comes with several shells, including the Bourne shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>) and the extended C shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>). Other shells are available from the FreeBSD Ports Collection, such as <command>zsh</command> and <command>bash</command>."
-msgstr ""
+msgstr "<firstterm>Shell</firstterm> 提供了指令列介面可用來與作業系統互動，Shell 負責從輸入的頻道接收指令並執行它們。 多數 Shell 也內建一些有助於日常工作的功能，像是檔案管理、檔案搜尋、指令列編輯、指令巨集以及環境變數等。 FreeBSD 有內附了幾個 Shell，包含 Bourne Shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)，與改良版的 C-shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)。 還有許多其他的 Shell 可以從 FreeBSD Ports Collection 中取得，像是 <command>zsh</command> 以及 <command>bash</command> 等。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8379
 msgid "The shell that is used is really a matter of taste. A C programmer might feel more comfortable with a C-like shell such as <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>. A <trademark class=\"registered\">Linux</trademark> user might prefer <command>bash</command>. Each shell has unique properties that may or may not work with a user's preferred working environment, which is why there is a choice of which shell to use."
-msgstr ""
+msgstr "要用哪個 Shell 牽涉到每個人的喜好。 如果您是一個 C 程式設計師，那對於使用像是 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 這種 C-like 的 shell 可能會感到較容易上手。 如果是 <trademark class=\"registered\">Linux</trademark> 的使用者，那您也許會想要用 <command>bash</command>。 每一個 Shell 都有自已獨特之處，至於這些特點能不能符合使用者的喜好，就是您選擇 shell 的重點了。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8386
 msgid "One common shell feature is filename completion. After a user types the first few letters of a command or filename and presses <keycap>Tab</keycap>, the shell completes the rest of the command or filename. Consider two files called <filename>foobar</filename> and <filename>football</filename>. To delete <filename>foobar</filename>, the user might type <command>rm foo</command> and press <keycap>Tab</keycap> to complete the filename."
-msgstr ""
+msgstr "常見的 Shell 功能之一就是檔名自動補齊。 首先輸入指令或檔案的前幾個字母，然後按下 <keycap>Tab</keycap> 鍵，Shell 就會自動把指令或是檔案名稱剩餘的部份補齊。 假設您有兩個檔案分別叫作 <filename>foobar</filename> 及 <filename>football</filename>。 要刪掉 <filename>foobar</filename>，那麼可以輸入 <command>rm foo</command> 然後按下 <keycap>Tab</keycap> 來補齊檔名。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8395
 msgid "But the shell only shows <command>rm foo</command>. It was unable to complete the filename because both <filename>foobar</filename> and <filename>football</filename> start with <literal>foo</literal>. Some shells sound a beep or show all the choices if more than one name matches. The user must then type more characters to identify the desired filename. Typing a <literal>t</literal> and pressing <keycap>Tab</keycap> again is enough to let the shell determine which filename is desired and fill in the rest."
-msgstr ""
+msgstr "但 Shell 只顯示了 <command>rm foo</command>，這代表它沒有辦法完全自動補齊檔名，因為有不只一個檔名符合條件。 <filename>foobar</filename> 和 <filename>football</filename> 都是 <literal>foo</literal> 開頭的檔名。 有一些 Shell 會有嗶的音效或者顯示所有符符條件的檔名。 使用者只需要多打幾個字元來分辦想要的檔名。 輸入 <literal>t</literal> 然後再按 <keycap>Tab</keycap> 一次，那 Shell 就能夠替您把剩下的檔名填滿了。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8405
@@ -7715,17 +7715,17 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8409
 msgid "Another feature of the shell is the use of environment variables. Environment variables are a variable/key pair stored in the shell's environment. This environment can be read by any program invoked by the shell, and thus contains a lot of program configuration. <xref linkend=\"shell-env-vars\"/> provides a list of common environment variables and their meanings. Note that the names of environment variables are always in uppercase."
-msgstr ""
+msgstr "Shell 的另一項特點是使用了環境變數。 環境變數是以變數與鍵值 (variable/key) 的對應關係儲存於 Shell 的環境，任何由該 Shell 所產生的程序都可以讀取此環境變數， 因此環境變數儲存了許多程序的設定。 <xref linkend=\"shell-env-vars\"/> 提供了常見的環境變數與其涵義的清單。 請注意環境變數的名稱永遠以大寫表示。"
 
 #. (itstool) path: table/title
 #: book.translate.xml:8419
 msgid "Common Environment Variables"
-msgstr ""
+msgstr "常用環境變數"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8424 book.translate.xml:22940
 msgid "Variable"
-msgstr ""
+msgstr "變數"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8431
@@ -7735,7 +7735,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8432
 msgid "Current logged in user's name."
-msgstr ""
+msgstr "目前登入的使用者名稱。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8436
@@ -7745,7 +7745,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8437
 msgid "Colon-separated list of directories to search for binaries."
-msgstr ""
+msgstr "以冒號 (:) 隔開的目錄列表，用以搜尋執行檔的路徑。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8442
@@ -7755,7 +7755,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8443
 msgid "Network name of the <application>Xorg</application> display to connect to, if available."
-msgstr ""
+msgstr "若存在這個環境變數，則代表 <application>Xorg</application> 顯示器的網路名稱。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8449
@@ -7765,7 +7765,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8450
 msgid "The current shell."
-msgstr ""
+msgstr "目前使用的 Shell。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8454
@@ -7775,7 +7775,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8456
 msgid "The name of the user's type of terminal. Used to determine the capabilities of the terminal."
-msgstr ""
+msgstr "使用者終端機類型的名稱，用來判斷終端機有那些功能。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8461
@@ -7795,7 +7795,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8469
 msgid "Type of operating system."
-msgstr ""
+msgstr "作業系統的類型。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8473
@@ -7805,7 +7805,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8474
 msgid "The system's CPU architecture."
-msgstr ""
+msgstr "系統的 CPU 架構。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8478
@@ -7815,7 +7815,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8479
 msgid "The user's preferred text editor."
-msgstr ""
+msgstr "使用者偏好的文字編輯器。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8483
@@ -7825,7 +7825,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8484
 msgid "The user's preferred utility for viewing text one page at a time."
-msgstr ""
+msgstr "使用者偏好的文字分頁檢視工具。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8489
@@ -7835,7 +7835,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:8490
 msgid "Colon-separated list of directories to search for manual pages."
-msgstr ""
+msgstr "以冒號 (:) 隔開的目錄列表，用以搜尋使用手冊的路徑。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8497
@@ -7845,7 +7845,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8501
 msgid "How to set an environment variable differs between shells. In <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>, use <command>setenv</command> to set environment variables. In <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <command>bash</command>, use <command>export</command> to set the current environment variables. This example sets the default <envar>EDITOR</envar> to <filename>/usr/local/bin/emacs</filename> for the <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> shell:"
-msgstr ""
+msgstr "在不同的 shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 setenv 來設定環境變數。 在 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <command>bash</command>, use <command>export</command>，則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8510
@@ -7856,7 +7856,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8512
 msgid "The equivalent command for <command>bash</command> would be:"
-msgstr ""
+msgstr "相同功能的指令在 <command>bash</command> 下則是："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8515
@@ -7867,17 +7867,17 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8517
 msgid "To expand an environment variable in order to see its current setting, type a <literal>$</literal> character in front of its name on the command line. For example, <command>echo $TERM</command> displays the current <envar>$TERM</envar> setting."
-msgstr ""
+msgstr "要展開以顯示目前環境變數中的值，只要在指令列輸入環境變數之前加上 <literal>$</literal> 字元。 舉例來說，<command>echo $TERM</command> 會顯示出目前 <envar>$TERM</envar> 的設定值。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8523
 msgid "Shells treat special characters, known as meta-characters, as special representations of data. The most common meta-character is <literal>*</literal>, which represents any number of characters in a filename. Meta-characters can be used to perform filename globbing. For example, <command>echo *</command> is equivalent to <command>ls</command> because the shell takes all the files that match <literal>*</literal> and <command>echo</command> lists them on the command line."
-msgstr ""
+msgstr "Shell 中有特殊字元用來表示特殊資料，我們將其稱作 Ｍeta-characters。 其中最常見的 Ｍeta-characters 是 <literal>*</literal> 字元，它代表了檔名中的任意字元。 Meta-characters 可以用在搜尋檔名，舉例來說，輸入 <command>echo *</command> 會和輸入 <command>ls</command> 得到幾乎相同的結果，這是因為 shell 會將所有符合 <literal>*</literal> 字元的檔案由 <command>echo</command> 顯示出來。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8533
 msgid "To prevent the shell from interpreting a special character, escape it from the shell by starting it with a backslash (<literal>\\</literal>). For example, <command>echo $TERM</command> prints the terminal setting whereas <command>echo \\$TERM</command> literally prints the string <literal>$TERM</literal>."
-msgstr ""
+msgstr "為了避免 Shell 轉譯這些特殊字元，我們可以在這些特殊字元前放一個反斜線 (<literal>\\</literal>) 字元使他們跳脫(escape) Shell 的轉譯。舉例來說，<command>echo $TERM</command> 會印出你目前終端機的設定， <command>echo \\$TERM</command> 則會直接印出 <literal>$TERM</literal> 這幾個字。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8541
@@ -11278,7 +11278,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:11743
 msgid "XDM Configuration Files"
-msgstr ""
+msgstr "XDM 設定檔"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11748 book.translate.xml:55211
@@ -13988,7 +13988,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:14076
 msgid "Common Error Messages"
-msgstr ""
+msgstr "常見錯誤訊息"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14081
@@ -16354,7 +16354,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:17148
 msgid "<acronym>LPD</acronym> (Line Printer Daemon)"
-msgstr ""
+msgstr "<acronym>LPD</acronym> (行列式印表機 Daemon)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:17150
@@ -21047,7 +21047,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:22935
 msgid "Loader Built-In Commands"
-msgstr ""
+msgstr "載入程式內建指令"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:22947
@@ -28318,7 +28318,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:30405
 msgid "Nagios in a MAC Jail"
-msgstr ""
+msgstr "在 MAC Jail 中使用 Nagios"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:30407
@@ -28850,7 +28850,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:30986
 msgid "Default Audit Event Classes"
-msgstr ""
+msgstr "預設稽查事件類別"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:30991
@@ -29165,7 +29165,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:31151
 msgid "Prefixes for Audit Event Classes"
-msgstr ""
+msgstr "稽查事件類別字首"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:31156
@@ -29696,7 +29696,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:31687
 msgid "Resizing and Growing Disks"
-msgstr ""
+msgstr "重設大小與擴增磁碟"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:31690
@@ -40708,7 +40708,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:42706
 msgid "Common Language and Country Codes"
-msgstr ""
+msgstr "常用語言及城市代碼"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:42711
@@ -41113,7 +41113,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:43022
 msgid "Defined Terminal Types for Character Sets"
-msgstr ""
+msgstr "已定義供特定字元集使用的終端機類型"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43027
@@ -41208,7 +41208,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:43082
 msgid "Available Console from Ports Collection"
-msgstr ""
+msgstr "Ports Collection 中可用的 Console"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43087 book.translate.xml:43166
@@ -41305,7 +41305,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:43161
 msgid "Available Input Methods"
-msgstr ""
+msgstr "可用的輸入法"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43167
@@ -44239,7 +44239,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:46381
 msgid "<acronym>RS-232C</acronym> Signal Names"
-msgstr ""
+msgstr "<acronym>RS-232C</acronym> 信號名稱"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46386
@@ -50306,7 +50306,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:53077
 msgid "<acronym>NIS</acronym> Terminology"
-msgstr ""
+msgstr "<acronym>NIS</acronym> 術語"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:53085 book.translate.xml:54980
@@ -52204,7 +52204,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:54972
 msgid "<acronym>DNS</acronym> Terminology"
-msgstr ""
+msgstr "<acronym>DNS</acronym> 術語"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:54981
@@ -58709,7 +58709,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:61708
 msgid "Commonly Seen Routing Table Flags"
-msgstr ""
+msgstr "常見路由表標記"
 
 #. (itstool) path: row/entry
 #. (itstool) path: glossdiv/title
@@ -62725,7 +62725,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:65535
 msgid "Reserved <acronym>IPv6</acronym> Addresses"
-msgstr ""
+msgstr "已保留的 <acronym>IPv6</acronym> 位址"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:65535
