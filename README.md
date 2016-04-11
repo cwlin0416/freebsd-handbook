@@ -48,6 +48,7 @@ pkg install poedit
 | Unmount | 卸載 |
 | Home directory | 家目錄 |
 | Signal | 信號 |
+| Spool, Spooling | 暫存 (需附註原文) |
 | Slice  | TBD |
 | Partition  | TBD |
 | Partitioning | TBD |
