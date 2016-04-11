@@ -59,6 +59,7 @@ pkg install poedit
 | Shell | (不翻譯) |
 | Daemon | (不翻譯) |
 | Console | (不翻譯) |
+| Binary | (不翻譯) |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
