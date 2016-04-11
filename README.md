@@ -50,12 +50,15 @@ pkg install poedit
 | Signal | 信號 |
 | Common Address Redundancy Protocol | 共用位址備援協定 |
 | Line Printer | 行列式印表機 |
+| Serial | 序列 |
 | Spool, Spooling | 暫存 (需附註原文) |
+| Log | 日誌 (需附註原文) |
 | Slice  | TBD |
 | Partition  | TBD |
 | Partitioning | TBD |
-| Swap Space | TBD |
+| Swap Space | 交換空間 |
 | Ports Collection | TBD |
+| Journaling | TBD | 
 | Shell | (不翻譯) |
 | Daemon | (不翻譯) |
 | Console | (不翻譯) |
