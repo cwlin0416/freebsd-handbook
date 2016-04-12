@@ -43,6 +43,7 @@ pkg install poedit
 | Audit | 稽查 | 
 | Disk | 磁碟 |
 | Drive | 磁碟機 |
+| Device | 裝置 |
 | CD-ROM, DVD Drive | CD-ROM, DVD 光碟機 |
 | Mount | 掛載 |
 | Unmount | 卸載 |
@@ -53,11 +54,13 @@ pkg install poedit
 | Serial | 序列 |
 | Spool, Spooling | 暫存 (需附註原文) |
 | Log | 日誌 (需附註原文) |
+| System call | 系統呼叫 (需附註原文) |
 | Slice  | TBD |
 | Partition  | TBD |
 | Partitioning | TBD |
 | Swap Space | 交換空間 |
-| Ports Collection | TBD |
+| Ports Collection | TBD, 移植集 |
+| Package | TBD, 套件 |
 | Journaling | TBD | 
 | Shell | (不翻譯) |
 | Daemon | (不翻譯) |
