@@ -776,7 +776,7 @@
     </listitem>
 
     <listitem>
-      <para><xref linkend="advanced-networking"/> 新增有關在 FreeBSD 中使用<trademark class="registered">藍芽</trademark>設備、設定無線網路以及使用非同步傳輸模式 (Asynchronous Transfer Mode, ATM)  網路的介紹。</para>
+      <para><xref linkend="advanced-networking"/> 新增有關在 FreeBSD 中使用<trademark class="registered">藍芽</trademark>裝置、設定無線網路以及使用非同步傳輸模式 (Asynchronous Transfer Mode, ATM)  網路的介紹。</para>
     </listitem>
 
     <listitem>
@@ -1236,7 +1236,7 @@
       <term><literal>等寬字</literal></term>
 
       <listitem>
-	<para><literal>等寬字</literal>用於： 錯誤訊息、指令、環境變數、Port 名稱、主機名稱、帳號、群組、設備名稱、變數、程式碼等。</para>
+	<para><literal>等寬字</literal>用於： 錯誤訊息、指令、環境變數、Port 名稱、主機名稱、帳號、群組、裝置名稱、變數、程式碼等。</para>
       </listitem>
     </varlistentry>
 
@@ -1421,7 +1421,7 @@
 	<listitem>
 	  <para>業界標準的 <emphasis>X Window 系統</emphasis><indexterm>
 		<primary>X Window System</primary>
-	      </indexterm> (X11R7)可以在常見的便宜 VGA 顯示卡/螢幕， 提供了圖形化的使用者介面(GUI)，並且包括了完整的原始程式碼。</para>
+	      </indexterm> (X11R7) 可以在常見的便宜 VGA 顯示卡/螢幕， 提供了圖形化的使用者介面 (GUI)，並且包括了完整的原始程式碼。</para>
 	</listitem>
 
 	<listitem>
@@ -2335,7 +2335,7 @@
     <para>一般來說，本章所寫的安裝說明是針對 <trademark>i386</trademark> 和 <acronym>AMD64</acronym> 架構。如果可以用於其他平台，將會列表說明。 安裝程式和本章所敘述的內容可能會有些微差異，所以請將本章視為通用的指引，而不是完全照著來做。</para>
 
     <note>
-      <para>喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 PC-BSD 計畫所使用的。 他可以用來安裝圖形化桌面 (PC-BSD) 或是命令列版本的 FreeBSD。 細節請參考 PC-BSD 使用者 Handbook (<link xlink:href="http://wiki.pcbsd.org/index.php/Colophon">http://wiki.pcbsd.org/index.php/Colophon</link>。</para>
+      <para>喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 PC-BSD 計畫所使用的。 他可以用來安裝圖形化桌面 (PC-BSD) 或是命令列版本的 FreeBSD。 細節請參考 PC-BSD 使用者 Handbook (<link xlink:href="http://wiki.pcbsd.org/index.php/Colophon">http://wiki.pcbsd.org/index.php/Colophon</link>)。</para>
     </note>
 
     <para>讀完這章，您將了解︰</para>
@@ -7096,32 +7096,20 @@ Swap: 2048M Total, 2048M Free
     <para>為了避免 Shell 轉譯這些特殊字元，我們可以在這些特殊字元前放一個反斜線 (<literal>\</literal>) 字元使他們跳脫(escape) Shell 的轉譯。舉例來說，<command>echo $TERM</command> 會印出你目前終端機的設定， <command>echo \$TERM</command> 則會直接印出 <literal>$TERM</literal> 這幾個字。</para>
 
     <sect2 xml:id="changing-shells">
-      <title xml:lang="en">Changing the Shell</title>
+      <title>變更 Shell</title>
 
-      <para xml:lang="en">The easiest way to permanently change the default shell is
-	to use <command>chsh</command>.  Running this command will
-	open the editor that is configured in the
-	<envar>EDITOR</envar> environment variable, which by default
-	is set to <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  Change the <literal>Shell:</literal>
-	line to the full path of the new shell.</para>
+      <para>永久變更 Shell 最簡單的方法就是透過 <command>chsh</command> 命令。 執行 <command>chsh</command> 將會使用環境變數中 <envar>EDITOR</envar> 指定的文字編輯器，如果沒有設定，則預設是 <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 請修改 <literal>Shell:</literal> 為新的 Shell 的完整路徑。</para>
 
-      <para xml:lang="en">Alternately, use <command>chsh -s</command> which will set
-	the specified shell without opening an editor.  For example,
-	to change the shell to <command>bash</command>:</para>
+      <para>或者，使用 <command>chsh -s</command>， 來直接設定 Shell 而不開啟文字編輯器。 例如， 假設想把 Shell 更改為 <command>bash</command>：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>chsh -s /usr/local/bin/bash</userinput></screen>
 
       <note>
-	<para xml:lang="en">The new shell <emphasis>must</emphasis> be present in
-	  <filename>/etc/shells</filename>.  If the shell was
-	  installed from the FreeBSD Ports Collection as described in
-	  <xref linkend="ports"/>, it should be automatically added
-	  to this file.  If it is missing, add it using this command,
-	  replacing the path with the path of the shell:</para>
+	<para>新的 Shell <emphasis>必須</emphasis>已列於 <filename>/etc/shells</filename> 裡頭。 若是依 <xref linkend="ports"/> 說明由 Ports Collection 來裝的 Shell， 那就會自動列入至該檔案裡。 若仍缺少，請使用以下指令加入檔案 (請將路徑替換為新的 Shell 的路徑)：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>echo <replaceable>/usr/local/bin/bash</replaceable> &gt;&gt; /etc/shells</userinput></screen>
 
-	<para xml:lang="en">Then, rerun <citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+	<para>然後重新執行 <citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
       </note>
     </sect2>
 
@@ -7210,10 +7198,7 @@ Swap: 2048M Total, 2048M Free
       <primary>editors</primary>
     </indexterm>
 
-    <para xml:lang="en">Most FreeBSD configuration is done by editing text files.
-      Because of this, it is a good idea to become familiar with a
-      text editor.  FreeBSD comes with a few as part of the base system,
-      and many more are available in the Ports Collection.</para>
+    <para>在 FreeBSD 中有許多設定必須透過編輯文字檔完成。 因此，若能熟悉文字編輯器是再好不過的。 FreeBSD 本身就內建幾種文字編輯器， 您也可以透過 Ports Collection 來安裝其他的文字編輯器。</para>
 
     <indexterm xml:lang="en">
       <primary><command>ee</command></primary>
@@ -7223,21 +7208,7 @@ Swap: 2048M Total, 2048M Free
       <secondary><citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry></secondary>
     </indexterm>
 
-    <para xml:lang="en">A simple editor to learn is <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>, which stands for
-      easy editor.  To start this editor, type <command>ee
-	<replaceable>filename</replaceable></command> where
-      <replaceable>filename</replaceable> is the name of the file to
-      be edited.  Once inside the editor, all of the commands for
-      manipulating the editor's functions are listed at the top of the
-      display.  The caret (<literal>^</literal>) represents
-      <keycap>Ctrl</keycap>, so <literal>^e</literal> expands to
-      <keycombo action="simul">
-	<keycap>Ctrl</keycap>
-	<keycap>e</keycap>
-      </keycombo>.  To leave <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>, press <keycap>Esc</keycap>,
-      then choose the <quote>leave editor</quote> option from the main
-      menu.  The editor will prompt to save any changes if the file
-      has been modified.</para>
+    <para>最簡單易學的文字編輯器叫做 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，意為簡易的編輯器(Easy Editor)。 要開始使用這個編輯器， 只需輸入 <command>ee <replaceable>filename</replaceable></command>，其中 <replaceable>filename</replaceable> 代表你想要編輯的檔案名稱。 在編輯器中， 所有編輯器的功能與操作都顯示在螢幕的上方。 其中的插入符號 (<literal>^</literal>) 代表鍵盤上的 <keycap>Ctrl</keycap> 鍵，所以 <literal>^e</literal> 代表的是  <keycombo action="simul"> <keycap>Ctrl</keycap> <keycap>e</keycap> </keycombo>。 若要結束 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，請按下 <keycap>Esc</keycap> 鍵，接著選擇 <quote>leave editor</quote> 即可。 此時如果該檔案有修改過，編輯器會提醒你是否要存檔。</para>
 
     <indexterm xml:lang="en">
       <primary><command>vi</command></primary>
@@ -7249,15 +7220,7 @@ Swap: 2048M Total, 2048M Free
       <primary><command>emacs</command></primary>
     </indexterm>
 
-    <para xml:lang="en">FreeBSD also comes with more powerful text editors, such as
-      <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>, as part of the base system.  Other editors, like
-      <package>editors/emacs</package> and
-      <package>editors/vim</package>, are part of the
-      FreeBSD Ports Collection.  These editors offer more functionality
-      at the expense of being more complicated to learn.  Learning a
-      more powerful editor such as <application>vim</application> or
-      <application>Emacs</application> can save more time in the long
-      run.</para>
+    <para>FreeBSD 同時也內建功能強大的文字編輯器，像是<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 其他編輯器如 <package>editors/emacs</package> 及 <package>editors/vim</package> 則由 FreeBSD Ports Collection 提供。 這些編輯器提供更強的功能，但是也比較難學習。 長期來看學習 <application>vim</application> 或 <application>Emacs</application> 會在日後為您省下更多的時間。</para>
 
     <para xml:lang="en">Many applications which modify files or require typed input
       will automatically open a text editor.  To change the default
@@ -7266,23 +7229,13 @@ Swap: 2048M Total, 2048M Free
   </sect1>
 
   <sect1 xml:id="basics-devices">
-    <title>設備及設備節點</title>
+    <title>裝置及裝置節點</title>
 
-    <para xml:lang="en">A device is a term used mostly for hardware-related
-      activities in a system, including disks, printers, graphics
-      cards, and keyboards.  When FreeBSD boots, the majority of the boot
-      messages refer to devices being detected.  A copy of the boot
-      messages are saved to
-      <filename>/var/run/dmesg.boot</filename>.</para>
+    <para>裝置(Device)一詞大多是跟硬體比較有關的術語，包括磁碟、印表機、顯示卡和鍵盤。 FreeBSD 開機過程當中，開機訊息(Boot Message)中主要是會列出偵測到的硬體裝置，開機訊息的複本也會存放在 <filename>/var/run/dmesg.boot</filename>。</para>
 
-    <para xml:lang="en">Each device has a device name and number.  For example,
-      <filename>ada0</filename> is the first SATA hard drive,
-      while <filename>kbd0</filename> represents the
-      keyboard.</para>
+    <para>每一個裝置都有一個裝置名稱及編號，舉例來說 <filename>ada0</filename> 是第一台 SATA 硬碟，而 <filename>kbd0</filename> 則代表鍵盤。</para>
 
-    <para xml:lang="en">Most devices in a FreeBSD must be accessed through special
-      files called device nodes, which are located in
-      <filename>/dev</filename>.</para>
+    <para>在 FreeBSD 中大多數的裝置必須透過裝置節點(Device Node)的特殊檔案來存取，這些檔案會放置在 <filename>/dev</filename>。</para>
   </sect1>
 
   <sect1 xml:id="basics-more-information">
@@ -7292,67 +7245,55 @@ Swap: 2048M Total, 2048M Free
       <primary>manual pages</primary>
     </indexterm>
 
-    <para xml:lang="en">The most comprehensive documentation on FreeBSD is in the form
-      of manual pages.  Nearly every program on the system comes with
-      a short reference manual explaining the basic operation and
-      available arguments.  These manuals can be viewed using
-      <command>man</command>:</para>
+    <para>在 FreeBSD 中，最詳細的文件莫過於操作手冊。 幾乎在系統上所有程式都會有簡短的操作手冊來介紹該程式的基本操作以及可用的參數。 這些操作手冊可以使用 <command>man</command> 指令來檢視：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>man <replaceable>command</replaceable></userinput></screen>
 
-    <para xml:lang="en">where <replaceable>command</replaceable> is the name of the
-      command to learn about.  For example, to learn more about
-      <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry>, type:</para>
+    <para>其中 <replaceable>command</replaceable> 想要瞭解指令的名稱。 舉例，要知道 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的詳細用法，就可以打：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>man ls</userinput></screen>
 
-    <para xml:lang="en">Manual pages are divided into sections which represent the
-      type of topic.  In FreeBSD, the following sections are
-      available:</para>
+    <para>操作手冊被分成很多個章節，每個章節有不同的主題。 在 FreeBSD 中操作手冊有以下章節：</para>
 
     <orderedlist>
       <listitem>
-	<para xml:lang="en">User commands.</para>
+	<para>使用者指令。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">System calls and error numbers.</para>
+	<para>系統呼叫(System call)與錯誤編號。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Functions in the C libraries.</para>
+	<para>C 函式庫函數。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Device drivers.</para>
+	<para>裝置驅動程式。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">File formats.</para>
+	<para>檔案格式。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Games and other diversions.</para>
+	<para>遊戲及其他程式。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Miscellaneous information.</para>
+	<para>其他資訊。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">System maintenance and operation commands.</para>
+	<para>系統維護與操作指令。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">System kernel interfaces.</para>
+	<para>系統核心介面。</para>
       </listitem>
     </orderedlist>
 
-    <para xml:lang="en">In some cases, the same topic may appear in more than one
-      section of the online manual.  For example, there is a
-      <command>chmod</command> user command and a
-      <function>chmod()</function> system call.  To tell <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry>
-      which section to display, specify the section number:</para>
+    <para>有些情況會有同樣主題會同時出現在不同章節。 舉個例子，系統內會有 <command>chmod</command> 使用者指令，但同時也有 <function>chmod()</function> 系統呼叫。 在這種情況，要告訴 <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> 要查詢的章節編號：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>man 1 chmod</userinput></screen>
 
@@ -7362,23 +7303,18 @@ Swap: 2048M Total, 2048M Free
       written documentation, so <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> refers to the user
       command and <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></citerefentry> refers to the system call.</para>
 
-    <para xml:lang="en">If the name of the manual page is unknown, use <command>man
-	-k</command> to search for keywords in the manual page
-      descriptions:</para>
+    <para>若不曉得操作手冊的名稱，可以使用 <command>man -k</command> 來以關鍵字查詢所有操作手冊的描述：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>man -k <replaceable>mail</replaceable></userinput></screen>
 
-    <para xml:lang="en">This command displays a list of commands that have the
-      keyword <quote>mail</quote> in their descriptions.  This is
-      equivalent to using <citerefentry><refentrytitle>apropos</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+    <para>這個指令會顯示所有描述中有使用到關鍵字 <quote>mail</quote> 的指令。 這等同使用 <citerefentry><refentrytitle>apropos</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
-    <para xml:lang="en">To read the descriptions for all of the commands in
-      <filename>/usr/bin</filename>, type:</para>
+    <para>想要閱讀所有在 <filename>/usr/bin</filename> 底下的指令說明則可輸入：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>cd /usr/bin</userinput>
 <prompt>%</prompt> <userinput>man -f * | more</userinput></screen>
 
-    <para xml:lang="en">or</para>
+    <para>或</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>cd /usr/bin</userinput>
 <prompt>%</prompt> <userinput>whatis * |more</userinput></screen>
@@ -47714,7 +47650,7 @@ set nbns 203.14.100.5</programlisting>
 
 		<programlisting xml:lang="en">16      accept PAP</programlisting>
 
-		<para xml:lang="en">or</para>
+		<para>或</para>
 
 		<programlisting xml:lang="en">16      accept CHAP</programlisting>
 

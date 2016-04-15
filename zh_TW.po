@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-11 18:43+0800\n"
+"PO-Revision-Date: 2016-04-12 18:22+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -324,7 +324,7 @@ msgstr "<xref linkend=\"network-servers\"/> 是該版中全新的一章。這一
 #. (itstool) path: listitem/para
 #: book.translate.xml:895
 msgid "<xref linkend=\"advanced-networking\"/> has been expanded with new information about using <trademark class=\"registered\">Bluetooth</trademark> devices with FreeBSD, setting up wireless networks, and Asynchronous Transfer Mode (ATM) networking."
-msgstr "<xref linkend=\"advanced-networking\"/> 新增有關在 FreeBSD 中使用<trademark class=\"registered\">藍芽</trademark>設備、設定無線網路以及使用非同步傳輸模式 (Asynchronous Transfer Mode, ATM)  網路的介紹。"
+msgstr "<xref linkend=\"advanced-networking\"/> 新增有關在 FreeBSD 中使用<trademark class=\"registered\">藍芽</trademark>裝置、設定無線網路以及使用非同步傳輸模式 (Asynchronous Transfer Mode, ATM)  網路的介紹。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:902
@@ -643,7 +643,7 @@ msgstr "<literal>等寬字</literal>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:1411
 msgid "A <literal>monospaced</literal> font is used for error messages, commands, environment variables, names of ports, hostnames, user names, group names, device names, variables, and code fragments."
-msgstr "<literal>等寬字</literal>用於： 錯誤訊息、指令、環境變數、Port 名稱、主機名稱、帳號、群組、設備名稱、變數、程式碼等。"
+msgstr "<literal>等寬字</literal>用於： 錯誤訊息、指令、環境變數、Port 名稱、主機名稱、帳號、群組、裝置名稱、變數、程式碼等。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1419
@@ -928,7 +928,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1676
 msgid "The industry standard <emphasis>X Window System</emphasis><_:indexterm-1/> (X11R7) can provide a graphical user interface (GUI) on any machine and comes with full sources."
-msgstr "業界標準的 <emphasis>X Window 系統</emphasis><_:indexterm-1/> (X11R7)可以在常見的便宜 VGA 顯示卡/螢幕， 提供了圖形化的使用者介面(GUI)，並且包括了完整的原始程式碼。"
+msgstr "業界標準的 <emphasis>X Window 系統</emphasis><_:indexterm-1/> (X11R7) 可以在常見的便宜 VGA 顯示卡/螢幕， 提供了圖形化的使用者介面 (GUI)，並且包括了完整的原始程式碼。"
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect1/indexterm
@@ -2013,7 +2013,7 @@ msgstr "一般來說，本章所寫的安裝說明是針對 <trademark>i386</tra
 #. (itstool) path: note/para
 #: book.translate.xml:2889
 msgid "Users who prefer to install FreeBSD using a graphical installer may be interested in <application>pc-sysinstall</application>, the installer used by the PC-BSD Project. It can be used to install either a graphical desktop (PC-BSD) or a command line version of FreeBSD. Refer to the PC-BSD Users Handbook for details (<link xlink:href=\"http://wiki.pcbsd.org/index.php/Colophon\">http://wiki.pcbsd.org/index.php/Colophon</link>)."
-msgstr "喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 PC-BSD 計畫所使用的。 他可以用來安裝圖形化桌面 (PC-BSD) 或是命令列版本的 FreeBSD。 細節請參考 PC-BSD 使用者 Handbook (<link xlink:href=\"http://wiki.pcbsd.org/index.php/Colophon\">http://wiki.pcbsd.org/index.php/Colophon</link>。"
+msgstr "喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 PC-BSD 計畫所使用的。 他可以用來安裝圖形化桌面 (PC-BSD) 或是命令列版本的 FreeBSD。 細節請參考 PC-BSD 使用者 Handbook (<link xlink:href=\"http://wiki.pcbsd.org/index.php/Colophon\">http://wiki.pcbsd.org/index.php/Colophon</link>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2901
@@ -7882,17 +7882,17 @@ msgstr "為了避免 Shell 轉譯這些特殊字元，我們可以在這些特�
 #. (itstool) path: sect2/title
 #: book.translate.xml:8541
 msgid "Changing the Shell"
-msgstr ""
+msgstr "變更 Shell"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8543
 msgid "The easiest way to permanently change the default shell is to use <command>chsh</command>. Running this command will open the editor that is configured in the <envar>EDITOR</envar> environment variable, which by default is set to <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>. Change the <literal>Shell:</literal> line to the full path of the new shell."
-msgstr ""
+msgstr "永久變更 Shell 最簡單的方法就是透過 <command>chsh</command> 命令。 執行 <command>chsh</command> 將會使用環境變數中 <envar>EDITOR</envar> 指定的文字編輯器，如果沒有設定，則預設是 <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 請修改 <literal>Shell:</literal> 為新的 Shell 的完整路徑。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8550
 msgid "Alternately, use <command>chsh -s</command> which will set the specified shell without opening an editor. For example, to change the shell to <command>bash</command>:"
-msgstr ""
+msgstr "或者，使用 <command>chsh -s</command>， 來直接設定 Shell 而不開啟文字編輯器。 例如， 假設想把 Shell 更改為 <command>bash</command>："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8554
@@ -7903,7 +7903,7 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:8557
 msgid "The new shell <emphasis>must</emphasis> be present in <filename>/etc/shells</filename>. If the shell was installed from the FreeBSD Ports Collection as described in <xref linkend=\"ports\"/>, it should be automatically added to this file. If it is missing, add it using this command, replacing the path with the path of the shell:"
-msgstr ""
+msgstr "新的 Shell <emphasis>必須</emphasis>已列於 <filename>/etc/shells</filename> 裡頭。 若是依 <xref linkend=\"ports\"/> 說明由 Ports Collection 來裝的 Shell， 那就會自動列入至該檔案裡。 若仍缺少，請使用以下指令加入檔案 (請將路徑替換為新的 Shell 的路徑)："
 
 #. (itstool) path: note/screen
 #: book.translate.xml:8564
@@ -7914,7 +7914,7 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:8566
 msgid "Then, rerun <citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "然後重新執行 <citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:8572
@@ -8010,7 +8010,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8655
 msgid "Most FreeBSD configuration is done by editing text files. Because of this, it is a good idea to become familiar with a text editor. FreeBSD comes with a few as part of the base system, and many more are available in the Ports Collection."
-msgstr ""
+msgstr "在 FreeBSD 中有許多設定必須透過編輯文字檔完成。 因此，若能熟悉文字編輯器是再好不過的。 FreeBSD 本身就內建幾種文字編輯器， 您也可以透過 Ports Collection 來安裝其他的文字編輯器。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8660
@@ -8025,7 +8025,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8668
 msgid "A simple editor to learn is <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>, which stands for easy editor. To start this editor, type <command>ee <replaceable>filename</replaceable></command> where <replaceable>filename</replaceable> is the name of the file to be edited. Once inside the editor, all of the commands for manipulating the editor's functions are listed at the top of the display. The caret (<literal>^</literal>) represents <keycap>Ctrl</keycap>, so <literal>^e</literal> expands to <keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>e</keycap> </keycombo>. To leave <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>, press <keycap>Esc</keycap>, then choose the <quote>leave editor</quote> option from the main menu. The editor will prompt to save any changes if the file has been modified."
-msgstr ""
+msgstr "最簡單易學的文字編輯器叫做 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，意為簡易的編輯器(Easy Editor)。 要開始使用這個編輯器， 只需輸入 <command>ee <replaceable>filename</replaceable></command>，其中 <replaceable>filename</replaceable> 代表你想要編輯的檔案名稱。 在編輯器中， 所有編輯器的功能與操作都顯示在螢幕的上方。 其中的插入符號 (<literal>^</literal>) 代表鍵盤上的 <keycap>Ctrl</keycap> 鍵，所以 <literal>^e</literal> 代表的是  <keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>e</keycap> </keycombo>。 若要結束 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，請按下 <keycap>Esc</keycap> 鍵，接著選擇 <quote>leave editor</quote> 即可。 此時如果該檔案有修改過，編輯器會提醒你是否要存檔。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8684
@@ -8040,7 +8040,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8694
 msgid "FreeBSD also comes with more powerful text editors, such as <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>, as part of the base system. Other editors, like <package>editors/emacs</package> and <package>editors/vim</package>, are part of the FreeBSD Ports Collection. These editors offer more functionality at the expense of being more complicated to learn. Learning a more powerful editor such as <application>vim</application> or <application>Emacs</application> can save more time in the long run."
-msgstr ""
+msgstr "FreeBSD 同時也內建功能強大的文字編輯器，像是<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 其他編輯器如 <package>editors/emacs</package> 及 <package>editors/vim</package> 則由 FreeBSD Ports Collection 提供。 這些編輯器提供更強的功能，但是也比較難學習。 長期來看學習 <application>vim</application> 或 <application>Emacs</application> 會在日後為您省下更多的時間。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8704
@@ -8050,22 +8050,22 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8711
 msgid "Devices and Device Nodes"
-msgstr "設備及設備節點"
+msgstr "裝置及裝置節點"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8713
 msgid "A device is a term used mostly for hardware-related activities in a system, including disks, printers, graphics cards, and keyboards. When FreeBSD boots, the majority of the boot messages refer to devices being detected. A copy of the boot messages are saved to <filename>/var/run/dmesg.boot</filename>."
-msgstr ""
+msgstr "裝置(Device)一詞大多是跟硬體比較有關的術語，包括磁碟、印表機、顯示卡和鍵盤。 FreeBSD 開機過程當中，開機訊息(Boot Message)中主要是會列出偵測到的硬體裝置，開機訊息的複本也會存放在 <filename>/var/run/dmesg.boot</filename>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8720
 msgid "Each device has a device name and number. For example, <filename>ada0</filename> is the first SATA hard drive, while <filename>kbd0</filename> represents the keyboard."
-msgstr ""
+msgstr "每一個裝置都有一個裝置名稱及編號，舉例來說 <filename>ada0</filename> 是第一台 SATA 硬碟，而 <filename>kbd0</filename> 則代表鍵盤。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8725
 msgid "Most devices in a FreeBSD must be accessed through special files called device nodes, which are located in <filename>/dev</filename>."
-msgstr ""
+msgstr "在 FreeBSD 中大多數的裝置必須透過裝置節點(Device Node)的特殊檔案來存取，這些檔案會放置在 <filename>/dev</filename>。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8731
@@ -8080,7 +8080,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8737
 msgid "The most comprehensive documentation on FreeBSD is in the form of manual pages. Nearly every program on the system comes with a short reference manual explaining the basic operation and available arguments. These manuals can be viewed using <command>man</command>:"
-msgstr ""
+msgstr "在 FreeBSD 中，最詳細的文件莫過於操作手冊。 幾乎在系統上所有程式都會有簡短的操作手冊來介紹該程式的基本操作以及可用的參數。 這些操作手冊可以使用 <command>man</command> 指令來檢視："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8743
@@ -8091,7 +8091,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8745
 msgid "where <replaceable>command</replaceable> is the name of the command to learn about. For example, to learn more about <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry>, type:"
-msgstr ""
+msgstr "其中 <replaceable>command</replaceable> 想要瞭解指令的名稱。 舉例，要知道 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的詳細用法，就可以打："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8749
@@ -8102,57 +8102,57 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8751
 msgid "Manual pages are divided into sections which represent the type of topic. In FreeBSD, the following sections are available:"
-msgstr ""
+msgstr "操作手冊被分成很多個章節，每個章節有不同的主題。 在 FreeBSD 中操作手冊有以下章節："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8757
 msgid "User commands."
-msgstr ""
+msgstr "使用者指令。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8761
 msgid "System calls and error numbers."
-msgstr ""
+msgstr "系統呼叫(System call)與錯誤編號。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8765
 msgid "Functions in the C libraries."
-msgstr ""
+msgstr "C 函式庫函數。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8769
 msgid "Device drivers."
-msgstr ""
+msgstr "裝置驅動程式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8773
 msgid "File formats."
-msgstr ""
+msgstr "檔案格式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8777
 msgid "Games and other diversions."
-msgstr ""
+msgstr "遊戲及其他程式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8781
 msgid "Miscellaneous information."
-msgstr ""
+msgstr "其他資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8785
 msgid "System maintenance and operation commands."
-msgstr ""
+msgstr "系統維護與操作指令。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8789
 msgid "System kernel interfaces."
-msgstr ""
+msgstr "系統核心介面。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8793
 msgid "In some cases, the same topic may appear in more than one section of the online manual. For example, there is a <command>chmod</command> user command and a <function>chmod()</function> system call. To tell <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> which section to display, specify the section number:"
-msgstr ""
+msgstr "有些情況會有同樣主題會同時出現在不同章節。 舉個例子，系統內會有 <command>chmod</command> 使用者指令，但同時也有 <function>chmod()</function> 系統呼叫。 在這種情況，要告訴 <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> 要查詢的章節編號："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8799
@@ -8163,12 +8163,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8801
 msgid "This will display the manual page for the user command <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>. References to a particular section of the online manual are traditionally placed in parenthesis in written documentation, so <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> refers to the user command and <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></citerefentry> refers to the system call."
-msgstr ""
+msgstr "如此一來就會查詢使用者指令 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 通常在寫文件時會把有參考到特定章節的號碼寫在括號內。 所以 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> 就是指使用者指令 <citerefentry><refentrytitle>chmod</refentrytitle>，而 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></citerefentry> 則是指系統呼叫。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8807
 msgid "If the name of the manual page is unknown, use <command>man -k</command> to search for keywords in the manual page descriptions:"
-msgstr ""
+msgstr "若不曉得操作手冊的名稱，可以使用 <command>man -k</command> 來以關鍵字查詢所有操作手冊的描述："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8811
@@ -8179,12 +8179,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8813
 msgid "This command displays a list of commands that have the keyword <quote>mail</quote> in their descriptions. This is equivalent to using <citerefentry><refentrytitle>apropos</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "這個指令會顯示所有描述中有使用到關鍵字 <quote>mail</quote> 的指令。 這等同使用 <citerefentry><refentrytitle>apropos</refentrytitle><manvolnum>1</manvolnum></citerefentry>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8817
 msgid "To read the descriptions for all of the commands in <filename>/usr/bin</filename>, type:"
-msgstr ""
+msgstr "想要閱讀所有在 <filename>/usr/bin</filename> 底下的指令說明則可輸入："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8820
@@ -8198,7 +8198,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:8823 book.translate.xml:49194
 msgid "or"
-msgstr ""
+msgstr "或"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8825
