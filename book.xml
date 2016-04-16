@@ -7512,7 +7512,7 @@ subversion-static-<replaceable>1.8.8_2</replaceable>
 subversion16-<replaceable>1.6.23_4</replaceable>
 subversion17-<replaceable>1.7.16_2</replaceable></screen>
 
-	<para>套件名稱會包含版本編號，且若 Ports 使用 Python 為基礎，也會包含用來編譯該套件的 Python 版本。有些 Ports 會有多個版本可使用，如 <application>subversion</application> ，因編譯選項不同，有多個版本可用。這個例子當中即靜態連結版本的 <application>subversion</application>。在指定要安裝的套件時，最好使用 Ports 來源來指定該應用程式，Ports 來源是指應用程式在 Ports 樹中的路徑。再輸入一次 <command>pkg search</command> 並加上 <option>-o</option> 來列出每個套件來源：</para>
+	<para>套件名稱包含版本編號，且若 Ports 使用 Python 為基礎，也會包含用來編譯該套件的 Python 版本。有些 Ports 會有多個版本可使用，如 <application>subversion</application> ，因編譯選項不同，有多個版本可用，這個例子中即指靜態連結版本的 <application>subversion</application>。在指定要安裝的套件時，最好使用 Ports 來源來指定該應用程式，Ports 來源是指應用程式在 Ports 樹中的路徑。再輸入一次 <command>pkg search</command> 並加上 <option>-o</option> 來列出每個套件來源：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg search -o <replaceable>subversion</replaceable></userinput>
 devel/git-subversion
@@ -7581,106 +7581,59 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
   <sect1 xml:id="pkgng-intro">
     <title>使用 <application>pkg</application> 管理 Binary 套件</title>
 
-    <para xml:lang="en"><application>pkg</application> is the next generation
-      replacement for the traditional FreeBSD package management tools,
-      offering many features that make dealing with binary packages
-      faster and easier.</para>
+    <para><application>pkg</application> 是新一代套件管理工具用來取代舊版工具，提供許多功能讓處理 Binary 套件更快更簡單。</para>
 
-    <para xml:lang="en"><application>pkg</application> is not a replacement for
-      port management tools like
-      <package>ports-mgmt/portmaster</package> or
-      <package>ports-mgmt/portupgrade</package>.  These tools can be
-      used to install third-party software from both binary packages
-      and the Ports Collection, while
-      <application>pkg</application> installs only binary
-      packages.</para>
+    <para><application>pkg</application> 並不是用來取代 Port 管理工具如 <package>ports-mgmt/portmaster</package> 或 <package>ports-mgmt/portupgrade</package>，這些工具可用來安裝來自 Binary 與 Ports 套件集的第三方軟體，而 <application>pkg</application> 僅能安裝 Binary 套件。</para>
 
     <sect2 xml:id="pkgng-initial-setup">
-      <title xml:lang="en">Getting Started with
-	<application>pkg</application></title>
+      <title>開始使用 <application>pkg</application></title>
 
-      <para xml:lang="en">FreeBSD includes a bootstrap utility which can be used to
-	download and install <application>pkg</application>, along
-	with its manual pages.</para>
+      <para>FreeBSD 內建啟動(Bootstrap)工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。</para>
 
-      <para xml:lang="en">To bootstrap the system, run:</para>
+      <para>要啟動(Bootstrap)系統請執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput></screen>
 
-      <para xml:lang="en">For earlier FreeBSD versions,
-	<application>pkg</application> must instead be installed
-	from the Ports Collection or as a binary package.</para>
+      <para>對較舊的 FreeBSD 版本，<application>pkg</application> 必須改透過 Ports 套件集或者 Binary 套件來安裝。</para>
 
-      <para xml:lang="en">To install the port, run:</para>
+      <para>要安裝 Port 套件，請執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/pkg</userinput>
 <prompt>#</prompt> <userinput>make</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">When upgrading an existing system that originally used the
-	older package system, the database must be converted to the
-	new format, so that the new tools are aware of the already
-	installed packages.  Once <application>pkg</application> has
-	been installed, the
-	package database must be converted from the traditional format
-	to the new format by running this command:</para>
+      <para>當升級原使用舊版套件系統的既有系統時，必須將資料庫轉換成新的格式，因此新的工具才會知道有那些已安裝過的套件。一旦 <application>pkg</application> 已安裝，必須執行以下指令將套件資料庫從舊版格式轉換到新版格式：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg2ng</userinput></screen>
 
-      <note><para xml:lang="en">This step is not required for new installations that
-	do not yet have any third-party software
-	installed.</para></note>
+      <note><para>新安裝的版本因尚未安裝任何第三方軟體因此不須做這個步驟。</para></note>
 
       <important>
-	<para xml:lang="en">This step is not reversible.  Once the package database
-	  has been converted to the <application>pkg</application>
-	  format, the traditional <literal>pkg_*</literal> tools
-	  should no longer be used.</para>
+	<para>這個步驟無法還原。一旦套件資料庫轉為成 <application>pkg</application> 的格式，舊版 <literal>pkg_*</literal> 工具就不該再繼續使用。</para>
       </important>
 
       <note>
-	<para xml:lang="en">The package database conversion may emit errors as the
-	  contents are converted to the new version.  Generally, these
-	  errors can be safely ignored.  However, a list of
-	  third-party software that was not successfully converted
-	  will be listed after <command>pkg2ng</command> has finished
-	  and these applications must be manually reinstalled.</para>
+	<para>套件資料庫轉換的過程可能會因內容轉換為新版本產生錯誤。通常，這些錯誤皆可安全忽略，不論如何，仍有在執行 <command>pkg2ng</command> 後無法成功轉換的第三方軟體清單，這些應用程式則必須手動重新安裝。</para>
       </note>
 
-      <para xml:lang="en">To ensure that the FreeBSD Ports Collection registers
-	new software with <application>pkg</application>, and not
-	the traditional packages format, FreeBSD versions earlier than
-	10.<replaceable>X</replaceable> require this line in
-	<filename>/etc/make.conf</filename>:</para>
+      <para>為了確保 FreeBSD Ports 套件集會將新軟體的資訊註冊到 <application>pkg</application> 而非舊版套件格式，FreeBSD 版本 10.<replaceable>X</replaceable> 之前需要在 <filename>/etc/make.conf</filename> 加入此行：</para>
 
       <programlisting xml:lang="en">WITH_PKGNG=	yes</programlisting>
 
-      <para xml:lang="en">By default <application>pkg</application> uses the FreeBSD
-	package mirrors.  For information about building a custom
-	package repository, see <xref linkend="ports-poudriere"/></para>
+      <para>預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站。若要取得有關編譯自訂套件儲存庫的資訊，請參考 
+<xref linkend="ports-poudriere"/></para>
 
-      <para xml:lang="en">Additional <application>pkg</application> configuration
-	options are described in <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+      <para>其他 <application>pkg</application> 設定選項說明請參考 <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
 
-      <para xml:lang="en">Usage information for <application>pkg</application> is
-	available in the <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> manual page or by running
-	<command>pkg</command> without additional arguments.</para>
+      <para><application>pkg</application> 的用法資訊可在 <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊或不加任何參數執行 <command>pkg</command> 來取得。</para>
 
-      <para xml:lang="en">Each <application>pkg</application> command argument is
-	documented in a command-specific manual page.  To read the
-	manual page for <command>pkg install</command>, for example,
-	run either of these commands:</para>
+      <para>每個 <application>pkg</application> 指令參數皆記庫在指令操件手冊。要閱讀 <command>pkg install</command> 的操作手冊，可執行以下指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg help install</userinput></screen>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>man pkg-install</userinput></screen>
 
-      <para xml:lang="en">The rest of this section demonstrates common binary
-	package management tasks which can be performed using
-	<application>pkg</application>.  Each demonstrated command
-	provides many switches to customize its use.  Refer to a
-	command's help or man page for details and more
-	examples.</para>
+      <para>本章節剩餘的部份將會示範使用 <application>pkg</application> 執行常用的 Binary 套件管理工作。每個示範的指令皆會提供多個參數可使用，請參考指令的說明或操作手冊以取得詳細資訊或更多範例。</para>
     </sect2>
 
     <sect2 xml:id="pkgng-pkg-info">

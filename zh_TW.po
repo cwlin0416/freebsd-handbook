@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-17 00:37+0800\n"
+"PO-Revision-Date: 2016-04-17 01:10+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -8616,27 +8616,27 @@ msgstr "使用 <application>pkg</application> 管理 Binary 套件"
 #. (itstool) path: sect1/para
 #: book.translate.xml:9242
 msgid "<application>pkg</application> is the next generation replacement for the traditional FreeBSD package management tools, offering many features that make dealing with binary packages faster and easier."
-msgstr ""
+msgstr "<application>pkg</application> 是新一代套件管理工具用來取代舊版工具，提供許多功能讓處理 Binary 套件更快更簡單。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9247
 msgid "<application>pkg</application> is not a replacement for port management tools like <package>ports-mgmt/portmaster</package> or <package>ports-mgmt/portupgrade</package>. These tools can be used to install third-party software from both binary packages and the Ports Collection, while <application>pkg</application> installs only binary packages."
-msgstr ""
+msgstr "<application>pkg</application> 並不是用來取代 Port 管理工具如 <package>ports-mgmt/portmaster</package> 或 <package>ports-mgmt/portupgrade</package>，這些工具可用來安裝來自 Binary 與 Ports 套件集的第三方軟體，而 <application>pkg</application> 僅能安裝 Binary 套件。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9257
 msgid "Getting Started with <application>pkg</application>"
-msgstr ""
+msgstr "開始使用 <application>pkg</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9260
 msgid "FreeBSD includes a bootstrap utility which can be used to download and install <application>pkg</application>, along with its manual pages."
-msgstr ""
+msgstr "FreeBSD 內建啟動(Bootstrap)工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9264
 msgid "To bootstrap the system, run:"
-msgstr ""
+msgstr "要啟動(Bootstrap)系統請執行："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9266
@@ -8647,12 +8647,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:9268
 msgid "For earlier FreeBSD versions, <application>pkg</application> must instead be installed from the Ports Collection or as a binary package."
-msgstr ""
+msgstr "對較舊的 FreeBSD 版本，<application>pkg</application> 必須改透過 Ports 套件集或者 Binary 套件來安裝。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9272
 msgid "To install the port, run:"
-msgstr ""
+msgstr "要安裝 Port 套件，請執行："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9274
@@ -8666,7 +8666,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:9278
 msgid "When upgrading an existing system that originally used the older package system, the database must be converted to the new format, so that the new tools are aware of the already installed packages. Once <application>pkg</application> has been installed, the package database must be converted from the traditional format to the new format by running this command:"
-msgstr ""
+msgstr "當升級原使用舊版套件系統的既有系統時，必須將資料庫轉換成新的格式，因此新的工具才會知道有那些已安裝過的套件。一旦 <application>pkg</application> 已安裝，必須執行以下指令將套件資料庫從舊版格式轉換到新版格式："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9286
@@ -8677,22 +8677,22 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:9288
 msgid "This step is not required for new installations that do not yet have any third-party software installed."
-msgstr ""
+msgstr "新安裝的版本因尚未安裝任何第三方軟體因此不須做這個步驟。"
 
 #. (itstool) path: important/para
 #: book.translate.xml:9293
 msgid "This step is not reversible. Once the package database has been converted to the <application>pkg</application> format, the traditional <literal>pkg_*</literal> tools should no longer be used."
-msgstr ""
+msgstr "這個步驟無法還原。一旦套件資料庫轉為成 <application>pkg</application> 的格式，舊版 <literal>pkg_*</literal> 工具就不該再繼續使用。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9300
 msgid "The package database conversion may emit errors as the contents are converted to the new version. Generally, these errors can be safely ignored. However, a list of third-party software that was not successfully converted will be listed after <command>pkg2ng</command> has finished and these applications must be manually reinstalled."
-msgstr ""
+msgstr "套件資料庫轉換的過程可能會因內容轉換為新版本產生錯誤。通常，這些錯誤皆可安全忽略，不論如何，仍有在執行 <command>pkg2ng</command> 後無法成功轉換的第三方軟體清單，這些應用程式則必須手動重新安裝。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9308
 msgid "To ensure that the FreeBSD Ports Collection registers new software with <application>pkg</application>, and not the traditional packages format, FreeBSD versions earlier than 10.<replaceable>X</replaceable> require this line in <filename>/etc/make.conf</filename>:"
-msgstr ""
+msgstr "為了確保 FreeBSD Ports 套件集會將新軟體的資訊註冊到 <application>pkg</application> 而非舊版套件格式，FreeBSD 版本 10.<replaceable>X</replaceable> 之前需要在 <filename>/etc/make.conf</filename> 加入此行："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:9314
@@ -8704,21 +8704,23 @@ msgstr ""
 #: book.translate.xml:9316
 msgid "By default <application>pkg</application> uses the FreeBSD package mirrors. For information about building a custom package repository, see <xref linkend=\"ports-poudriere\"/>"
 msgstr ""
+"預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站。若要取得有關編譯自訂套件儲存庫的資訊，請參考 \n"
+"<xref linkend=\"ports-poudriere\"/>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9320
 msgid "Additional <application>pkg</application> configuration options are described in <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
-msgstr ""
+msgstr "其他 <application>pkg</application> 設定選項說明請參考 <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9323
 msgid "Usage information for <application>pkg</application> is available in the <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> manual page or by running <command>pkg</command> without additional arguments."
-msgstr ""
+msgstr "<application>pkg</application> 的用法資訊可在 <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊或不加任何參數執行 <command>pkg</command> 來取得。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9327
 msgid "Each <application>pkg</application> command argument is documented in a command-specific manual page. To read the manual page for <command>pkg install</command>, for example, run either of these commands:"
-msgstr ""
+msgstr "每個 <application>pkg</application> 指令參數皆記庫在指令操件手冊。要閱讀 <command>pkg install</command> 的操作手冊，可執行以下指令："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:9332
@@ -8735,7 +8737,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:9336
 msgid "The rest of this section demonstrates common binary package management tasks which can be performed using <application>pkg</application>. Each demonstrated command provides many switches to customize its use. Refer to a command's help or man page for details and more examples."
-msgstr ""
+msgstr "本章節剩餘的部份將會示範使用 <application>pkg</application> 執行常用的 Binary 套件管理工作。每個示範的指令皆會提供多個參數可使用，請參考指令的說明或操作手冊以取得詳細資訊或更多範例。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9345
