@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-12 18:22+0800\n"
+"PO-Revision-Date: 2016-04-17 00:37+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6594,7 +6594,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7249
 msgid "The FreeBSD Ports Collection (optional)."
-msgstr "FreeBSD Port 套件集 (選用)。"
+msgstr "FreeBSD Ports 套件集 (選用)。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7253
@@ -7690,7 +7690,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8368
 msgid "A <firstterm>shell</firstterm> provides a command line interface for interacting with the operating system. A shell receives commands from the input channel and executes them. Many shells provide built in functions to help with everyday tasks such as file management, file globbing, command line editing, command macros, and environment variables. FreeBSD comes with several shells, including the Bourne shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>) and the extended C shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>). Other shells are available from the FreeBSD Ports Collection, such as <command>zsh</command> and <command>bash</command>."
-msgstr "<firstterm>Shell</firstterm> 提供了指令列介面可用來與作業系統互動，Shell 負責從輸入的頻道接收指令並執行它們。 多數 Shell 也內建一些有助於日常工作的功能，像是檔案管理、檔案搜尋、指令列編輯、指令巨集以及環境變數等。 FreeBSD 有內附了幾個 Shell，包含 Bourne Shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)，與改良版的 C-shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)。 還有許多其他的 Shell 可以從 FreeBSD Ports Collection 中取得，像是 <command>zsh</command> 以及 <command>bash</command> 等。"
+msgstr "<firstterm>Shell</firstterm> 提供了指令列介面可用來與作業系統互動，Shell 負責從輸入的頻道接收指令並執行它們。 多數 Shell 也內建一些有助於日常工作的功能，像是檔案管理、檔案搜尋、指令列編輯、指令巨集以及環境變數等。 FreeBSD 有內附了幾個 Shell，包含 Bourne Shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)，與改良版的 C-shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)。 還有許多其他的 Shell 可以從 FreeBSD Ports 套件集中取得，像是 <command>zsh</command> 以及 <command>bash</command> 等。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8379
@@ -7903,7 +7903,7 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:8557
 msgid "The new shell <emphasis>must</emphasis> be present in <filename>/etc/shells</filename>. If the shell was installed from the FreeBSD Ports Collection as described in <xref linkend=\"ports\"/>, it should be automatically added to this file. If it is missing, add it using this command, replacing the path with the path of the shell:"
-msgstr "新的 Shell <emphasis>必須</emphasis>已列於 <filename>/etc/shells</filename> 裡頭。 若是依 <xref linkend=\"ports\"/> 說明由 Ports Collection 來裝的 Shell， 那就會自動列入至該檔案裡。 若仍缺少，請使用以下指令加入檔案 (請將路徑替換為新的 Shell 的路徑)："
+msgstr "新的 Shell <emphasis>必須</emphasis>已列於 <filename>/etc/shells</filename> 裡頭。 若是依 <xref linkend=\"ports\"/> 說明由 Ports 套件集來裝的 Shell， 那就會自動列入至該檔案裡。 若仍缺少，請使用以下指令加入檔案 (請將路徑替換為新的 Shell 的路徑)："
 
 #. (itstool) path: note/screen
 #: book.translate.xml:8564
@@ -8010,7 +8010,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8655
 msgid "Most FreeBSD configuration is done by editing text files. Because of this, it is a good idea to become familiar with a text editor. FreeBSD comes with a few as part of the base system, and many more are available in the Ports Collection."
-msgstr "在 FreeBSD 中有許多設定必須透過編輯文字檔完成。 因此，若能熟悉文字編輯器是再好不過的。 FreeBSD 本身就內建幾種文字編輯器， 您也可以透過 Ports Collection 來安裝其他的文字編輯器。"
+msgstr "在 FreeBSD 中有許多設定必須透過編輯文字檔完成。 因此，若能熟悉文字編輯器是再好不過的。 FreeBSD 本身就內建幾種文字編輯器， 您也可以透過 Ports 套件集來安裝其他的文字編輯器。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8660
@@ -8040,7 +8040,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8694
 msgid "FreeBSD also comes with more powerful text editors, such as <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>, as part of the base system. Other editors, like <package>editors/emacs</package> and <package>editors/vim</package>, are part of the FreeBSD Ports Collection. These editors offer more functionality at the expense of being more complicated to learn. Learning a more powerful editor such as <application>vim</application> or <application>Emacs</application> can save more time in the long run."
-msgstr "FreeBSD 同時也內建功能強大的文字編輯器，像是<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 其他編輯器如 <package>editors/emacs</package> 及 <package>editors/vim</package> 則由 FreeBSD Ports Collection 提供。 這些編輯器提供更強的功能，但是也比較難學習。 長期來看學習 <application>vim</application> 或 <application>Emacs</application> 會在日後為您省下更多的時間。"
+msgstr "FreeBSD 同時也內建功能強大的文字編輯器，像是<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 其他編輯器如 <package>editors/emacs</package> 及 <package>editors/vim</package> 則由 FreeBSD Ports 套件集提供。 這些編輯器提供更強的功能，但是也比較難學習。 長期來看學習 <application>vim</application> 或 <application>Emacs</application> 會在日後為您省下更多的時間。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8704
@@ -8163,7 +8163,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8801
 msgid "This will display the manual page for the user command <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>. References to a particular section of the online manual are traditionally placed in parenthesis in written documentation, so <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> refers to the user command and <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></citerefentry> refers to the system call."
-msgstr "如此一來就會查詢使用者指令 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 通常在寫文件時會把有參考到特定章節的號碼寫在括號內。 所以 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> 就是指使用者指令 <citerefentry><refentrytitle>chmod</refentrytitle>，而 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></citerefentry> 則是指系統呼叫。"
+msgstr "如此一來就會查詢使用者指令 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 通常在寫文件時會把有參考到特定章節的號碼寫在括號內。 所以 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> 就是指使用者指令，而 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></citerefentry> 則是指系統呼叫。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8807
@@ -8211,17 +8211,17 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:8829
 msgid "GNU Info Files"
-msgstr ""
+msgstr "GNU Info 檔"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8835
 msgid "FreeBSD includes several applications and utilities produced by the Free Software Foundation (FSF). In addition to manual pages, these programs may include hypertext documents called <literal>info</literal> files. These can be viewed using <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></citerefentry> or, if <package>editors/emacs</package> is installed, the info mode of <application>emacs</application>."
-msgstr ""
+msgstr "FreeBSD 有許多應用程式與工具來自自由軟體基金會(Free Software Foundation, FSF)。 除了操作手冊之外，這些程式提供了另外一種更具有彈性的超文字文件叫做 <literal>info</literal> 檔。 這些檔案可以使用 <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令來閱讀，或者若有裝 <package>editors/emacs</package> 亦可透過 <application>emacs</application> 的 info 模式閱讀。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8843
 msgid "To use <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></citerefentry>, type:"
-msgstr ""
+msgstr "要使用 <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令，只需輸入："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8845
@@ -8232,7 +8232,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:8847
 msgid "For a brief introduction, type <literal>h</literal>. For a quick command reference, type <literal>?</literal>."
-msgstr ""
+msgstr "要查詢簡單說明請按 <literal>h</literal> 鍵，若要查訊快速指令參考請按 <literal>?</literal> 鍵。"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:8861
@@ -8252,37 +8252,37 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:8868
 msgid "FreeBSD is bundled with a rich collection of system tools as part of the base system. In addition, FreeBSD provides two complementary technologies for installing third-party software: the FreeBSD Ports Collection, for installing from source, and packages, for installing from pre-built binaries. Either method may be used to install software from local media or from the network."
-msgstr ""
+msgstr "FreeBSD 已內建豐富的系統工具，此外 FreeBSD 提供了 2 種安裝第三方軟體的套件管理技術︰由原始碼安的 FreeBSD Ports 套件集，以及由預先編譯好的 Binary 安裝的 Binary  套件集。 無論要用哪一種方式，都可由本地的媒體或網路來安裝軟體。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8880
 msgid "The difference between binary packages and ports."
-msgstr ""
+msgstr "Binary 套件集與 Ports 的差別。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8884
 msgid "How to find third-party software that has been ported to FreeBSD."
-msgstr ""
+msgstr "如何找到已移植到 FreeBSD 的第三方軟體。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8889
 msgid "How to manage binary packages using <application>pkg</application>."
-msgstr ""
+msgstr "如何使用 <application>pkg</application> 管理 Binary 套件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8894
 msgid "How to build third-party software from source using the Ports Collection."
-msgstr ""
+msgstr "如何編譯來自 Ports 套件集的第三方軟體原始碼。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8899
 msgid "How to find the files installed with the application for post-installation configuration."
-msgstr ""
+msgstr "如何找到應用程式已安裝的檔案來完成安裝後的設定。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8904
 msgid "What to do if a software installation fails."
-msgstr ""
+msgstr "若軟體安裝失敗要如何處理。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8910
@@ -8292,132 +8292,132 @@ msgstr "安裝軟體的概要"
 #. (itstool) path: sect1/para
 #: book.translate.xml:8912
 msgid "The typical steps for installing third-party software on a <trademark class=\"registered\">UNIX</trademark> system include:"
-msgstr ""
+msgstr "通常要在 <trademark class=\"registered\">UNIX</trademark> 系統上安裝第三方軟體時，有幾個步驟要作："
 
 #. (itstool) path: step/para
 #: book.translate.xml:8917
 msgid "Find and download the software, which might be distributed in source code format or as a binary."
-msgstr ""
+msgstr "找到並且下載軟體，該軟體有可能以原始碼或 Binary 格式發佈。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8922
 msgid "Unpack the software from its distribution format. This is typically a tarball compressed with <citerefentry><refentrytitle>compress</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></citerefentry>, or <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "解壓縮軟體。 發佈的格式通常會使用 tarball 並以 <citerefentry><refentrytitle>compress</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></citerefentry> 或 <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></citerefentry> 壓縮。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8928
 msgid "Locate the documentation in <filename>INSTALL</filename>, <filename>README</filename> or some file in a <filename>doc/</filename> subdirectory and read up on how to install the software."
-msgstr ""
+msgstr "找到位於 <filename>INSTALL</filename>, <filename>README</filename> 或者 <filename>doc/</filename> 子目錄底下的檔案閱讀如何安裝該軟體。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8935
 msgid "If the software was distributed in source format, compile it. This may involve editing a <filename>Makefile</filename> or running a <command>configure</command> script."
-msgstr ""
+msgstr "若軟體是以原始碼的格式發佈則需要編譯該軟體。 這可能會需要修改 <filename>Makefile</filename> 或執行 <command>configure</command> Script。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8942
 msgid "Test and install the software."
-msgstr ""
+msgstr "測試並安裝該軟體。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8946
 msgid "If the software package was not deliberately ported, or tested to work, on FreeBSD, the source code may need editing in order for it to install and run properly. At the time of this writing, over 24,000 third-party applications have been ported to FreeBSD."
-msgstr ""
+msgstr "如果軟體套件未被特意移植到 FreeBSD 或測試是否可運作。 那可能需要修改一下該軟體的原始碼才能正常使用。 在搛寫此篇文章時候， 已經有超過 24,000 個第三方應用程式已經被移植到 FreeBSD。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8952
 msgid "A FreeBSD package contains pre-compiled copies of all the commands for an application, as well as any configuration files and documentation. A package can be manipulated with the <application>pkg</application> commands, such as <command>pkg install</command>."
-msgstr ""
+msgstr "FreeBSD Binary 套件中包含了應用程式預先編譯好的指令、設定檔及文件。 套件可以使用 <application>pkg</application> 指令來管理，如 <command>pkg install</command>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8958
 msgid "A FreeBSD port is a collection of files designed to automate the process of compiling an application from source code. The files that comprise a port contain all the necessary information to automatically download, extract, patch, compile, and install the application."
-msgstr ""
+msgstr "FreeBSD Port 套件則包含了已設計好從原始碼編譯成應用程式的自動化程序。 Port 套件中的檔案包含自動下載、解壓縮、修補、編譯及安裝應用程式流程中所有需要的資訊。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8964
 msgid "The ports system can also be used to generate packages which can be manipulated with the FreeBSD package management commands."
-msgstr ""
+msgstr "Ports 系統可以透過 FreeBSD 套件管理指令來產生套件。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8968
 msgid "Both packages and ports understand dependencies. If a package or port is used to install an application and a dependent library is not already installed, the library will automatically be installed first."
-msgstr ""
+msgstr "不論是 Binary 套件或者 Ports 套件都有相依的功能，若以 Binary 或 Port 套件安裝應用程式，且該應用程式有相依的函式庫尚未被安裝，則會自動先安裝該函式庫。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8973
 msgid "While the two technologies are similar, packages and ports each have their own strengths. Select the technology that meets your requirements for installing a particular application."
-msgstr ""
+msgstr "雖然兩種技術非常相似，但 Binary 套件及 Ports 套件有各自的優點。 要視您要安裝的應用程式需求來選擇。"
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:8979
 msgid "Package Benefits"
-msgstr ""
+msgstr "Binary 套件優點"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8982
 msgid "A compressed package tarball is typically smaller than the compressed tarball containing the source code for the application."
-msgstr ""
+msgstr "應用程式壓縮 Binary 套件的 tarball 會比壓縮原始碼的 tarball 還要小。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8988
 msgid "Packages do not require compilation time. For large applications, such as <application>Mozilla</application>, <application>KDE</application>, or <application>GNOME</application>, this can be important on a slow system."
-msgstr ""
+msgstr "安裝 Binary 套件不需要編譯的時間，對於較慢的電腦要安裝大型的應用程式如 <application>Mozilla</application>, <application>KDE</application> 或 <application>GNOME</application> 這點顯的相當重要。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8996
 msgid "Packages do not require any understanding of the process involved in compiling software on FreeBSD."
-msgstr ""
+msgstr "Binary 套件不需要了解在 FreeBSD 上編譯軟體的流程。"
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:9002
 msgid "Port Benefits"
-msgstr ""
+msgstr "Port 套件優點"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9005
 msgid "Packages are normally compiled with conservative options because they have to run on the maximum number of systems. By compiling from the port, one can change the compilation options."
-msgstr ""
+msgstr "由於 Binary 套件必須盡可能在大多數系統上執行，通常會採用較通用的編譯選項來編譯，由 Port 來編輯可更改編譯選項。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9012
 msgid "Some applications have compile-time options relating to which features are installed. For example, <application>Apache</application> can be configured with a wide variety of different built-in options."
-msgstr ""
+msgstr "部份應用程式編譯期選項會與要安裝的功能有關，舉例來說 <application>Apache</application> 便有大量不同的內建選項可以設定。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9017
 msgid "In some cases, multiple packages will exist for the same application to specify certain settings. For example, <application>Ghostscript</application> is available as a <filename>ghostscript</filename> package and a <filename>ghostscript-nox11</filename> package, depending on whether or not <application>Xorg</application> is installed. Creating multiple packages rapidly becomes impossible if an application has more than one or two different compile-time options."
-msgstr ""
+msgstr "在某些情況，同樣的應用程式會存在多個不同的 Binary 套件，如 <application>Ghostscript</application> 有 <filename>ghostscript</filename> 及 <filename>ghostscript-nox11</filename> 兩種 Binary 套件，用來區別是否有安裝 <application>Xorg</application>。 若應用程式有一個以上的編譯期選項便無法用這個方式來區別 Binary 套件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9029
 msgid "The licensing conditions of some software forbid binary distribution. Such software must be distributed as source code which must be compiled by the end-user."
-msgstr ""
+msgstr "部份軟體的授權條款中禁止以 Binary 格式發佈。 這種軟體必須以原始碼發佈並由終端使用者編譯。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9035
 msgid "Some people do not trust binary distributions or prefer to read through source code in order to look for potential problems."
-msgstr ""
+msgstr "部份人並不相信 Binary 發佈版本，寧願閱讀原始碼來查看是否潛藏的問題。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9041
 msgid "Source code is needed in order to apply custom patches."
-msgstr ""
+msgstr "原始碼可套用自訂的修補。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9046
 msgid "To keep track of updated ports, subscribe to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD ports mailing list</link> and the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs\">FreeBSD ports bugs mailing list</link>."
-msgstr ""
+msgstr "要持續追蹤 Ports 的更新可以訂閱 <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports\">FreeBSD Ports 郵遞論壇</link> 與 <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs\">FreeBSD Ports 問題郵遞論壇</link>。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:9050
 msgid "Before installing any application, check <link xlink:href=\"http://vuxml.freebsd.org/\"/> for security issues related to the application or type <command>pkg audit -F</command> to check all installed applications for known vulnerabilities."
-msgstr ""
+msgstr "在安裝任何應用程式之前，請先查看 <link xlink:href=\"http://vuxml.freebsd.org/\"/> 是否有與該應用程式相關的安全性問題或輸入 <command>pkg audit -F</command> 來檢查所有已安裝的應用程式是否有已知的漏洞。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9056
 msgid "The remainder of this chapter explains how to use packages and ports to install and manage third-party software on FreeBSD."
-msgstr ""
+msgstr "本章接下來的部份將說明如何在 FreeBSD 使用 Binary 套件及 Ports 套件安裝與管理第三方軟體。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9062
@@ -8427,12 +8427,12 @@ msgstr "搜尋軟體"
 #. (itstool) path: sect1/para
 #: book.translate.xml:9064
 msgid "FreeBSD's list of available applications is growing all the time. There are a number of ways to find software to install:"
-msgstr ""
+msgstr "FreeBSD 上可安裝的軟體清單不斷在增加， 有幾種方式可以來找你想安裝的軟體："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9070
 msgid "The FreeBSD web site maintains an up-to-date searchable list of all the available applications, at <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">http://www.FreeBSD.org/ports/</link>. The ports can be searched by application name or by software category."
-msgstr ""
+msgstr "FreeBSD 網站有維護一份可搜尋的最新應用程式清單，在 <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">http://www.FreeBSD.org/ports/</link>。 可以依應用程式名稱或軟體分類來搜尋 Ports。"
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9077
@@ -8442,7 +8442,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9079
 msgid "Dan Langille maintains <link xlink:href=\"http://www.FreshPorts.org/\">FreshPorts.org</link> which provides a comprehensive search utility and also tracks changes to the applications in the Ports Collection. Registered users can create a customized watch list in order to receive an automated email when their watched ports are updated."
-msgstr ""
+msgstr "由 Dan Langille 維護的 <link xlink:href=\"http://www.FreshPorts.org/\">FreshPorts.org</link>，提供完整的搜尋工具並且可追蹤在 Ports 套件集中的應用程式變更。註冊的使用者可以建立自訂的監視清單會自動寄發電子郵件通知 Ports 的更新資訊。"
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9088
@@ -8452,7 +8452,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9090
 msgid "If finding a particular application becomes challenging, try searching a site like <link xlink:href=\"http://www.sourceforge.net/\">SourceForge.net</link> or <link xlink:href=\"http://www.github.com/\">GitHub.com</link> then check back at the <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">FreeBSD site</link> to see if the application has been ported."
-msgstr ""
+msgstr "若找不到指定的應用程式，可以先到網站 <link xlink:href=\"http://www.sourceforge.net/\">SourceForge.net</link> 或 <link xlink:href=\"http://www.github.com/\">GitHub.com</link> 搜尋，後然再回到 <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">FreeBSD 網站</link> 檢查該應用程式是否已被移植。"
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9098
@@ -8463,7 +8463,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#pkg-search
 #: book.translate.xml:9103
 msgid "To search the binary package repository for an application:"
-msgstr ""
+msgstr "要搜尋 Binary 套件儲存庫中的應用程式可："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9106
@@ -8486,7 +8486,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9119
 msgid "Package names include the version number and in case of ports based on python, the version number of the version of python the package was built with. Some ports also have multiple versions available. In case of <application>subversion</application> there are different versions available, as well as different compile options. In this case, the statically linked version of <application>subversion</application>. When indicating which package to install, it is best to specify the application by the port origin, which is the path in the ports tree. Repeat the <command>pkg search</command> with <option>-o</option> to list the origin of each package:"
-msgstr ""
+msgstr "套件名稱包含版本編號，且若 Ports 使用 Python 為基礎，也會包含用來編譯該套件的 Python 版本。有些 Ports 會有多個版本可使用，如 <application>subversion</application> ，因編譯選項不同，有多個版本可用，這個例子中即指靜態連結版本的 <application>subversion</application>。在指定要安裝的套件時，最好使用 Ports 來源來指定該應用程式，Ports 來源是指應用程式在 Ports 樹中的路徑。再輸入一次 <command>pkg search</command> 並加上 <option>-o</option> 來列出每個套件來源："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9133
@@ -8509,12 +8509,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9146
 msgid "Searching by shell globs, regular expressions, exact match, by description, or any other field in the repository database is also supported by <command>pkg search</command>. After installing <package>ports-mgmt/pkg</package> or <package>ports-mgmt/pkg-devel</package>, see <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> for more details."
-msgstr ""
+msgstr "<command>pkg search</command> 支援使用 Shell 萬手字元(globs)、正規表示法、描述或儲存庫中的其他其他內容。在安裝 <package>ports-mgmt/pkg</package> 或 <package>ports-mgmt/pkg-devel</package> 之後，可參考 <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多詳細資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9155
 msgid "If the Ports Collection is already installed, there are several methods to query the local version of the ports tree. To find out which category a port is in, type <command>whereis <replaceable>file</replaceable></command>, where <replaceable>file</replaceable> is the program to be installed:"
-msgstr ""
+msgstr "若 Ports 套件集已安裝，有數個方法可以查詢 Ports 樹中的本地版本。要找到 Port 所在的分類，可輸入 <command>whereis <replaceable>file</replaceable></command>，其中 <replaceable>file</replaceable> 是要安裝的程式："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9162
@@ -8527,7 +8527,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9165
 msgid "Alternately, an <citerefentry><refentrytitle>echo</refentrytitle><manvolnum>1</manvolnum></citerefentry> statement can be used:"
-msgstr ""
+msgstr "或者，也可使用 <citerefentry><refentrytitle>echo</refentrytitle><manvolnum>1</manvolnum></citerefentry>："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9168
@@ -8540,12 +8540,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9171
 msgid "Note that this will also return any matched files downloaded into the <filename>/usr/ports/distfiles</filename> directory."
-msgstr ""
+msgstr "請注意，這也會顯示已下載至 <filename>/usr/ports/distfiles</filename> 目錄中任何已符合條件的檔案。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9177
 msgid "Another way to find software is by using the Ports Collection's built-in search mechanism. To use the search feature, <application>cd</application> to <filename>/usr/ports</filename> then run <command>make search name=program-name</command> where <replaceable>program-name</replaceable> is the name of the software. For example, to search for <command>lsof</command>:"
-msgstr ""
+msgstr "另一個方法是使用 Ports 套件集內建的搜尋機制來找軟體。要使用搜尋的功能需先 <application>cd</application> 到 <filename>/usr/ports</filename> 然後執行 <command>make search name=program-name</command>，其中 <replaceable>program-name</replaceable> 代表軟體的名稱。舉例搜尋 <command>lsof</command>："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9186
@@ -8565,17 +8565,17 @@ msgstr ""
 #. (itstool) path: tip/para
 #: book.translate.xml:9197
 msgid "The built-in search mechanism uses a file of index information. If a message indicates that the <filename>INDEX</filename> is required, run <command>make fetchindex</command> to download the current index file. With the <filename>INDEX</filename> present, <command>make search</command> will be able to perform the requested search."
-msgstr ""
+msgstr "內建的搜尋機制會使用索引檔內的資訊。若出現訊息指出需要 <filename>INDEX</filename> 檔，可執行 <command>make fetchindex</command> 來下載最新的索引檔。當 <filename>INDEX</filename> 檔存在時，<command>make search</command> 方可執行請求的搜尋動作。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9206
 msgid "The <quote>Path:</quote> line indicates where to find the port."
-msgstr ""
+msgstr "<quote>Path:</quote> 此行代表 Ports 的所在位置。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9209
 msgid "To receive less information, use the <command>quicksearch</command> feature:"
-msgstr ""
+msgstr "若不要接受這麼多資訊，可使用 <command>quicksearch</command> 功能："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9212
@@ -8591,7 +8591,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9218
 msgid "For more in-depth searching, use <command>make search key=<replaceable>string</replaceable></command> or <command>make quicksearch key=<replaceable>string</replaceable></command>, where <replaceable>string</replaceable> is some text to search for. The text can be in comments, descriptions, or dependencies in order to find ports which relate to a particular subject when the name of the program is unknown."
-msgstr ""
+msgstr "若要進行更有深度的搜尋，使用 <command>make search key=<replaceable>string</replaceable></command> 或 <command>make quicksearch key=<replaceable>string</replaceable></command> 其中 <replaceable>string</replaceable> 是要搜尋的文字。該文字可以是一部份的註解、描述或相依套件，當不清楚程式的名稱時可以找到與特定主題相關的 Ports。"
 
 #. (itstool) path: para/buildtarget
 #: book.translate.xml:9229
@@ -8606,7 +8606,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9229
 msgid "When using <_:buildtarget-1/> or <_:buildtarget-2/>, the search string is case-insensitive. Searching for <quote>LSOF</quote> will yield the same results as searching for <quote>lsof</quote>."
-msgstr ""
+msgstr "當使用 <_:buildtarget-1/> 或 <_:buildtarget-2/> 時，搜尋的字串不分大小寫。 搜尋 <quote>LSOF</quote> 會與搜尋 <quote>lsof</quote> 產生相同的結果。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9239
@@ -9031,7 +9031,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:9557
 msgid "Using the Ports Collection"
-msgstr "使用 Ports 管理套件"
+msgstr "使用 Ports 套件集"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9559
