@@ -56,6 +56,7 @@ pkg install poedit
 | Log | 日誌 (需附註原文) |
 | System call | 系統呼叫 (需附註原文) |
 | Slice  | TBD |
+| third-party software | 第三方軟體 |
 | Partition  | TBD |
 | Partitioning | TBD |
 | Swap Space | 交換空間 |
