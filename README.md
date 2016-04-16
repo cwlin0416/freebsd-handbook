@@ -60,6 +60,7 @@ pkg install poedit
 | Partitioning | TBD |
 | Swap Space | 交換空間 |
 | Ports Collection | TBD, Ports 套件集 |
+| Base System | TBD |
 | Package | TBD, 套件 |
 | Journaling | TBD | 
 | Shell | (不翻譯) |
