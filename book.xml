@@ -10883,67 +10883,52 @@ EndSection</programlisting>
       <secondary>web</secondary>
     </indexterm>
 
-    <para xml:lang="en">FreeBSD does not come with a pre-installed web browser.
-      Instead, the <link xlink:href="http://www.FreeBSD.org/ports/www.html">www</link>
-      category of the Ports Collection contains many browsers which
-      can be installed as a package or compiled from the Ports
-      Collection.</para>
+    <para>在 FreeBSD 中並未預先安裝好網頁瀏覽器。 但在 Ports 套件集中的 <link xlink:href="http://www.FreeBSD.org/ports/www.html">www</link> 分類中有許多瀏覽器可以採 Binary 套件安裝或自 Ports 套件集編譯的方式安裝。</para>
 
-    <para xml:lang="en">The <application>KDE</application> and
-      <application>GNOME</application> desktop environments include
-      their own HTML browser.  Refer to <xref linkend="x11-wm"/>
-      for more information on how to set up these complete
-      desktops.</para>
+    <para><application>KDE</application> 和 <application>GNOME</application> 桌面環境都有提供自有的 HTML 瀏覽器。請參考 <xref linkend="x11-wm"/> 來了解更多有關如何設定完整桌面環境的資訊。</para>
 
-    <para xml:lang="en">Some lightweight browsers include
-      <package>www/dillo2</package>, <package>www/links</package>, and
-      <package>www/w3m</package>.</para>
+    <para>有一些輕量化的瀏覽器可使用，包含 <package>www/dillo2</package>, <package>www/links</package> 以及 <package>www/w3m</package>。</para>
 
-    <para xml:lang="en">This section demonstrates how to install the following
-      popular web browsers and indicates if the application is
-      resource-heavy, takes time to compile from ports, or has any
-      major dependencies.</para>
+    <para>本章節將示範如何安裝下列常見的網頁瀏覽器並說明該應用程式是否需要用到大量資源、花費大量時間自 Ports 編譯或何主要的相依套件。</para>
 
     <informaltable frame="none" pgwide="1">
       <tgroup cols="4">
 	<thead>
 	  <row>
-	    <entry xml:lang="en">Application Name</entry>
-	    <entry xml:lang="en">Resources Needed</entry>
-	    <entry xml:lang="en">Installation from Ports</entry>
-	    <entry xml:lang="en">Notes</entry>
+	    <entry>應用程式名稱</entry>
+	    <entry>所需資源</entry>
+	    <entry>自 Ports 安裝時間</entry>
+	    <entry>說明</entry>
 	  </row>
 	</thead>
 
 	<tbody>
 	  <row>
 	    <entry xml:lang="en"><application>Firefox</application></entry>
-	    <entry xml:lang="en">medium</entry>
-	    <entry xml:lang="en">heavy</entry>
-	    <entry xml:lang="en">FreeBSD, <trademark class="registered">Linux</trademark>, and localized versions are
-	      available</entry>
+	    <entry>中</entry>
+	    <entry>多</entry>
+	    <entry>有 FreeBSD 、 <trademark class="registered">Linux</trademark> 及在地化版本</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>Opera</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">FreeBSD and <trademark class="registered">Linux</trademark> versions are available</entry>
+	    <entry>少</entry>
+	    <entry>少</entry>
+	    <entry>有 FreeBSD 、 <trademark class="registered">Linux</trademark> 版本</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>Konqueror</application></entry>
-	    <entry xml:lang="en">medium</entry>
-	    <entry xml:lang="en">heavy</entry>
-	    <entry xml:lang="en">Requires <application>KDE</application>
-	      libraries</entry>
+	    <entry>中</entry>
+	    <entry>多</entry>
+	    <entry>需要 <application>KDE</application> 函式庫</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>Chromium</application></entry>
-	    <entry xml:lang="en">medium</entry>
-	    <entry xml:lang="en">heavy</entry>
-	    <entry xml:lang="en">Requires <application>Gtk+</application></entry>
+	    <entry>中</entry>
+	    <entry>多</entry>
+	    <entry>需要 <application>Gtk+</application> 函式庫</entry>
 	  </row>
 	</tbody>
       </tgroup>
@@ -10956,59 +10941,34 @@ EndSection</programlisting>
 	<primary><application>Firefox</application></primary>
       </indexterm>
 
-      <para xml:lang="en"><application>Firefox</application> is an open source
-	browser that is fully ported to FreeBSD.  It features a
-	standards-compliant HTML display engine, tabbed browsing,
-	popup blocking, extensions, improved security, and more.
-	<application>Firefox</application> is based on the
-	<application>Mozilla</application> codebase.</para>
+      <para><application>Firefox</application> 是一套已完整植到 FreeBSD 的開放源始碼瀏覽器，它具備符合 HTML 標準的顯示引擎、頁籤瀏覽、彈出視窗封鎖、擴充套件、強化安全性及其他更多功能。<application>Firefox</application> 的基礎使用了 <application>Mozilla</application> 的程式庫。</para>
 
-      <para xml:lang="en">To install the package of the latest release version of
-	<application>Firefox</application>, type:</para>
+      <para>要安裝最新釋出版本的 <application>Firefox</application> 套件可輸入：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install firefox</userinput></screen>
 
-      <para xml:lang="en">To instead install <application>Firefox</application>
-	Extended Support Release (ESR) version, use:</para>
+      <para>要安裝延長支援發佈 (Extended Support Release, ESR) 版本的 <application>Firefox</application>，可使用：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install firefox-esr</userinput></screen>
 
-      <para xml:lang="en">Localized versions are available in
-	<package>www/firefox-i18n</package> and
-	<package>www/firefox-esr-i18n</package>.</para>
+      <para>在地化的版本可在 <package>www/firefox-i18n</package> 及 <package>www/firefox-esr-i18n</package> 取得。</para>
 
-      <para xml:lang="en">The Ports Collection can instead be used to compile the
-	desired version of <application>Firefox</application> from
-	source code.  This example builds
-	<package>www/firefox</package>, where
-	<literal>firefox</literal> can be replaced with the ESR or
-	localized version to install.</para>
+      <para>使用 Ports 套件地可以用原始碼編譯成您想要的 <application>Firefox</application> 版本。此範例編譯 <package>www/firefox</package>，其中 <literal>firefox</literal> 可替換為 ESR 或在地化版本來安裝。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/firefox</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
     <sect3 xml:id="moz-java-plugin">
-      <title xml:lang="en">Firefox and <trademark>Java</trademark> Plugin</title>
+      <title>Firefox 與 <trademark>Java</trademark> 附加元件</title>
 
-      <para xml:lang="en">The installation of
-	<application>Firefox</application> does not include <trademark>Java</trademark>
-	support.  However, <package>java/icedtea-web</package>
-	provides a free software web browser plugin for running Java
-	applets.  It can be installed as a package.  To alternately
-	compile the port:</para>
+      <para>安裝 <application>Firefox</application> 並不包含 <trademark>Java</trademark> 支援，雖然如此 <package>java/icedtea-web</package> 提供了免費的網頁瀏覽器附加元件來執行 Java applet，此附加元件可以用 Binary  套件安裝或者自 Port 編譯：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/java/icedtea-web</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">Keep the default configuration options when compiling the
-	port.</para>
+      <para>編譯 Port 時使用預設設定選項。</para>
 
-      <para xml:lang="en">Once installed, start <application>firefox</application>,
-	enter <literal>about:plugins</literal> in the location bar and
-	press <keycap>Enter</keycap>.  A page listing the installed
-	plugins will be displayed.  The
-	<application><trademark>Java</trademark></application> plugin should be
-	listed.</para>
+      <para>安裝完成時，啟動 <application>firefox</application>，在網址列輸入 <literal>about:plugins</literal> 並按 <keycap>Enter</keycap> 鍵。 會出現一個頁面列出已安裝的附加元件。 <application><trademark>Java</trademark></application> 附加元件應該會列在其中。</para>
 
       <para xml:lang="en">If the browser is unable to find the plugin, each user
 	will have to run the following command and relaunch the
@@ -11020,49 +10980,35 @@ EndSection</programlisting>
 
     <sect3 xml:id="moz-flash-plugin">
 
-      <title xml:lang="en">Firefox and <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> Plugin</title>
+      <title>Firefox 與 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加元件</title>
 
       <indexterm xml:lang="en">
 	<primary>Flash</primary>
       </indexterm>
 
-      <para xml:lang="en">A native <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> plugin is not available for FreeBSD.
-	However, a software wrapper for running the <trademark class="registered">Linux</trademark> version
-	of the plugin is available.  This wrapper also provides
-	support for other browser plugins such as <trademark class="registered">RealPlayer</trademark>.</para>
+      <para>FreeBSD 並沒有原生的 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加原件。不論如何，可以使用軟體包裝程式來執行 <trademark class="registered">Linux</trademark> 版本 的附加元件。該包裝程式也提供其他瀏覽器附加元件的支援，如 <trademark class="registered">RealPlayer</trademark>。</para>
 
-      <para xml:lang="en">To install and enable this plugin, perform these
-	steps:</para>
+      <para>要安裝並開啟此附加元件，可執行以下步驟：</para>
 
       <procedure>
 	<step>
-	  <para xml:lang="en">Install <package role="port">www/nspluginwrapper</package> from the port.
-	    Due to licensing restrictions, a package is not available.
-	    This port requires
-	    <package>emulators/linux_base-c6</package>.</para>
+	  <para>自 Port 安裝 <package role="port">www/nspluginwrapper</package> ，受到授權條款的限制，該套件無 Binary 版本。此 Port 需安裝 <package>emulators/linux_base-c6</package>。</para>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Install <package role="port">www/linux-c6-flashplugin11</package> from
-	    the port.  Due to licensing restrictions, a package is not
-	    available.</para>
+	  <para>自 Port 安裝 <package role="port">www/linux-c6-flashplugin11</package> ，受到授權條款的限制，該套件無 Binary 版本。</para>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Before the plugin is first used, each user must
-	    run:</para>
+	  <para>第一次使用附加元件前，每位使用者需要先執行：</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>nspluginwrapper -v -a -i</userinput></screen>
 
-	  <para xml:lang="en">When the plugin port has been updated and reinstalled,
-	    each user must run:</para>
+	  <para>當附加元件 Port 完成更新並且重新安裝後，每位使用者需要執行：</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>nspluginwrapper -v -a -u</userinput></screen>
 
-	  <para xml:lang="en">Start the browser, enter
-	    <literal>about:plugins</literal> in the location bar and
-	    press <keycap>Enter</keycap>.  A list of all the currently
-	    available plugins will be shown.</para>
+	  <para>開啟瀏覽器並在網址列輸入 <literal>about:plugins</literal> 並按 <keycap>Enter</keycap> 鍵，目前可用的附加元件清單中應會顯示該附加元件。</para>
 	</step>
 
       </procedure>
@@ -11077,7 +11023,7 @@ EndSection</programlisting>
 	<application>Firefox</application> browsers that uses the
 	Swfdec library for playing SWF files.</para>
 
-      <para xml:lang="en">To install the package:</para>
+      <para>要安裝套件可：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install swfdec-plugin</userinput></screen>
 
@@ -11098,49 +11044,29 @@ EndSection</programlisting>
 	<primary><application>Opera</application></primary>
       </indexterm>
 
-      <para xml:lang="en"><application>Opera</application> is a full-featured and
-	standards-compliant browser which is still lightweight and
-	fast.  It comes with a built-in mail and news reader, an IRC
-	client, an RSS/Atom feeds reader, and more.  It is available
-	as a native FreeBSD version and as a version that runs under
-	<trademark class="registered">Linux</trademark> emulation.</para>
+      <para><application>Opera</application> 是個具備完整功能、符合標準且輕量、執行速度快的瀏覽器。 它同時也具備了內建的郵件、新聞閱讀器、IRC 客戶端、RSS/Atom 來源閱讀器等。 可用的版本有兩種原生的 FreeBSD 版本及 <trademark class="registered">Linux</trademark> 模擬模式下執行的版本。</para>
 
-      <para xml:lang="en">This command installs the package of the FreeBSD version of
-	<application>Opera</application>.  Replace
-	<literal>opera</literal> with <literal>linux-opera</literal>
-	to instead install the <trademark class="registered">Linux</trademark> version.</para>
+      <para>以下指令可安裝 FreeBSD Binary 套件版本的 Opera，替換 <literal>opera</literal> 為 <literal>linux-opera</literal> 則可改安裝 <trademark class="registered">Linux</trademark> 版本。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install opera</userinput></screen>
 
-      <para xml:lang="en">Alternately, install either version through the Ports
-	Collection.  This example compiles the native version:</para>
+      <para>或者，可安裝 Ports 套件集中的版本，以下範例會編譯原生的版本。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/opera</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">To install the <trademark class="registered">Linux</trademark> version, substitute
-	<literal>linux-opera</literal> in place of
-	<literal>opera</literal>.</para>
+      <para>要安裝 <trademark class="registered">Linux</trademark> 則替換 <literal>opera</literal> 為 <literal>linux-opera</literal>。</para>
 
-      <para xml:lang="en">To install <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> plugin support, first compile
-	the <package role="port">www/linux-c6-flashplugin11</package>
-	port.  Licensing restrictions prevent making a package
-	available.  Then install <package role="port">www/opera-linuxplugins</package>.  This example
-	compiles both applications from ports:</para>
+      <para>要安裝 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加元件，需先編譯 <package role="port">www/linux-c6-flashplugin11</package> Port，因受到授權條款限制無法事先做為 Binary 套件。然後安裝 <package role="port">www/opera-linuxplugins</package>。以下範例示範編譯 Port 中的這兩個應用程式。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/linux-c6-flashplugin11</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput>
 <prompt>#</prompt> <userinput>cd /usr/ports/www/opera-linuxplugins</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">Once installed, check the presence of the plugin by
-	starting the browser, entering
-	<literal>opera:plugins</literal> in the location bar and
-	pressing <keycap>Enter</keycap>.  A list should appear with
-	all the currently available plugins.</para>
+      <para>安裝完成後，開啟瀏覽器檢查附加元件是否存在，在網址列輸入 <literal>opera:plugins</literal> 並按下 <keycap>Enter</keycap> 鍵，便會有清單顯示目前可用的附加元件。</para>
 
-      <para xml:lang="en">To add the <application><trademark>Java</trademark></application> plugin,
-	follow the instructions in <xref linkend="moz-java-plugin"/>.</para>
+      <para>若要安裝 <application><trademark>Java</trademark></application> 附加元件請依照 <xref linkend="moz-java-plugin"/> 中的指示。</para>
     </sect2>
 
     <sect2>
@@ -11150,33 +11076,16 @@ EndSection</programlisting>
 	<primary><application>Konqueror</application></primary>
       </indexterm>
 
-      <para xml:lang="en"><application>Konqueror</application> is more than a web
-	browser as it is also a file manager and a multimedia
-	viewer.  It is included in the
-	<package>x11/kde4-baseapps</package> package or port.</para>
+      <para><application>Konqueror</application> 不只是個網頁瀏覽器， 它同時也是檔案管理器和多媒體瀏覽器。它包含在 <package>x11/kde4-baseapps</package> 套件或 Port 中。</para>
 
-      <para xml:lang="en"><application>Konqueror</application> supports WebKit as
-	well as its own KHTML.  WebKit is a rendering engine used by
-	many modern browsers including Chromium.  To use WebKit with
-	<application>Konqueror</application> on FreeBSD, install the
-	<package>www/kwebkitpart</package> package
-	or port.  This example compiles the port:</para>
+      <para><application>Konqueror</application> 使用支援 WebKit 以及它自有的 KTHML。WebKit  是一套被許多現代瀏覽器所使用的繪圖引擎，包含 Chromium。要在 FreeBSD 的 <application>Konqueror</application> 使用 WebKit 需安裝 <package>www/kwebkitpart</package> 套件或 Port。此範例示範使用 Port 編譯：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/kwebkitpart</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">To enable WebKit within
-	<application>Konqueror</application>, click
-	<quote>Settings</quote>, <quote>Configure Konqueror</quote>.
-	In the <quote>General</quote> settings page, click the
-	drop-down menu next to <quote>Default web browser
-	engine</quote> and change <quote>KHTML</quote> to
-	<quote>WebKit</quote>.</para>
+      <para>要啟動 <application>Konqueror</application> 中的 WebKit 點選 <quote>Settings</quote>、<quote>Configure Konqueror</quote>。在 <quote>General</quote> 設定頁面內點選 <quote>Default web browser engine</quote> 旁的下拉示選單並變更 <quote>KHTML</quote> 為 <quote>WebKit</quote>。</para>
 
-      <para xml:lang="en"><application>Konqueror</application> also supports
-	<application><trademark class="registered">Flash</trademark></application>.  A <quote>How To</quote>
-	guide for getting <application><trademark class="registered">Flash</trademark></application> support
-	on <application>Konqueror</application> is available at <uri xlink:href="http://freebsd.kde.org/howtos/konqueror-flash.php">http://freebsd.kde.org/howtos/konqueror-flash.php</uri>.</para>
+      <para><application>Konqueror</application> 也支援 <application><trademark class="registered">Flash</trademark></application>，<quote>如何</quote>在 <application>Konqueror</application> 上安裝 <application><trademark class="registered">Flash</trademark></application> 的說明可參考 <uri xlink:href="http://freebsd.kde.org/howtos/konqueror-flash.php">http://freebsd.kde.org/howtos/konqueror-flash.php</uri>。</para>
     </sect2>
 
     <sect2>
@@ -11250,70 +11159,56 @@ EndSection</programlisting>
   <sect1 xml:id="desktop-productivity">
     <title>生產力工具</title>
 
-    <para xml:lang="en">When it comes to productivity, new users often look for an
-      office suite or an easy-to-use word processor.  While some
-      <link linkend="x11-wm">desktop environments</link> like
-      <application>KDE</application> provide an office suite, there
-      is no default productivity package.  Several office suites and
-      graphical word processors are available for FreeBSD, regardless
-      of the installed window manager.</para>
+    <para>當開始進行辦公，新的使用者通常會去找好用的辦公室軟體或是好上手的文件處理程式。 雖然有些 <link linkend="x11-wm">桌面環境</link> 像是 <application>KDE</application> 已經提供了辦公軟體組合的套件，FreeBSD 預設未提供任何生產力工具。 不論是否有安裝視窗管理程式，FreeBSD 可安裝多套辦公軟體以及圖型化文件處理程式。</para>
 
-    <para xml:lang="en">This section demonstrates how to install the following
-      popular productivity software and indicates if the application
-      is resource-heavy, takes time to compile from ports, or has any
-      major dependencies.</para>
+    <para>本章節元範如何安裝以下熱門的生產力軟體以及說明該應用程式所需的資源、自 Ports 編譯的時間或者是否有其他主要相依套件。</para>
 
     <informaltable frame="none" pgwide="1">
       <tgroup cols="4">
 	<thead>
 	  <row>
-	    <entry xml:lang="en">Application Name</entry>
-	    <entry xml:lang="en">Resources Needed</entry>
-	    <entry xml:lang="en">Installation from Ports</entry>
-	    <entry xml:lang="en">Major Dependencies</entry>
+	    <entry>應用程式名稱</entry>
+	    <entry>所需資源</entry>
+	    <entry>自 Ports 安裝時間</entry>
+	    <entry>主要相依套件</entry>
 	  </row>
 	</thead>
 
 	<tbody>
 	  <row>
 	    <entry xml:lang="en"><application>Calligra</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">heavy</entry>
+	    <entry>少</entry>
+	    <entry>多</entry>
 	    <entry xml:lang="en"><application>KDE</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>AbiWord</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en"><application>Gtk+</application> or
-	      <application>GNOME</application></entry>
+	    <entry>少</entry>
+	    <entry>少</entry>
+	    <entry><application>Gtk+</application> 或 <application>GNOME</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>The Gimp</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">heavy</entry>
+	    <entry>少</entry>
+	    <entry>多</entry>
 	    <entry xml:lang="en"><application>Gtk+</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>Apache
 		OpenOffice</application></entry>
-	    <entry xml:lang="en">heavy</entry>
-	    <entry xml:lang="en">huge</entry>
-	    <entry xml:lang="en"><application><trademark>JDK</trademark></application> and
-	      <application>Mozilla</application></entry>
+	    <entry>多</entry>
+	    <entry>非常多</entry>
+	    <entry><application><trademark>JDK</trademark></application> 及 <application>Mozilla</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>LibreOffice</application></entry>
-	    <entry xml:lang="en">somewhat heavy</entry>
-	    <entry xml:lang="en">huge</entry>
-	    <entry xml:lang="en"><application>Gtk+</application>, or
-	      <application>KDE</application>/
-	      <application>GNOME</application>, or
-	      <application><trademark>JDK</trademark></application></entry>
+	    <entry>有點多</entry>
+	    <entry>非常多</entry>
+	    <entry><application>Gtk+</application> 或 <application>KDE</application>/ <application>GNOME</application> 或 <application><trademark>JDK</trademark></application></entry>
 	  </row>
 	</tbody>
       </tgroup>
@@ -11361,56 +11256,39 @@ EndSection</programlisting>
 	<primary><application>AbiWord</application></primary>
       </indexterm>
 
-      <para xml:lang="en"><application>AbiWord</application> is a free word
-	processing program similar in look and feel to
-	<application><trademark class="registered">Microsoft</trademark> Word</application>.  It is fast,
-	contains many features, and is user-friendly.</para>
+      <para><application>AbiWord</application> 是一個免費的文件處理軟體，外觀和感覺都近似於 <application><trademark class="registered">Microsoft</trademark> Word</application>。 它非常快速，包含了許多功能而且非常容易上手。</para>
 
-      <para xml:lang="en"><application>AbiWord</application> can import or export
-	many file formats, including some proprietary ones like
-	<trademark class="registered">Microsoft</trademark> <filename>.rtf</filename>.</para>
+      <para><application>AbiWord</application> 可以輸入或輸出許多檔案格式， 包括一些有專利的格式，例如 <trademark class="registered">Microsoft</trademark> <filename>.rtf</filename> 格式。</para>
 
-      <para xml:lang="en">To install the <application>AbiWord</application>
-	package:</para>
+      <para>要安裝 <application>AbiWord</application> Binary 套件，可使用下列指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install abiword</userinput></screen>
 
-      <para xml:lang="en">If the package is not available, it can be compiled from
-	the Ports Collection:</para>
+      <para>若沒有 Binary 套件版本，也可以從 Ports 套件集中編譯安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/editors/abiword</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
     </sect2>
 
     <sect2>
-      <title xml:lang="en">The GIMP</title>
+      <title>The GIMP</title>
 
       <indexterm xml:lang="en">
 	<primary><application>The GIMP</application></primary>
       </indexterm>
 
-      <para xml:lang="en">For image authoring or picture retouching,
-	<application>The GIMP</application> provides a sophisticated
-	image manipulation program.  It can be used as a simple paint
-	program or as a quality photo retouching suite.  It supports a
-	large number of plugins and features a scripting interface.
-	<application>The GIMP</application> can read and write a wide
-	range of file formats and supports interfaces with scanners
-	and tablets.</para>
+      <para>對於影像的編輯及修改來說，<application>The GIMP</application> 是非常精緻的影像處理軟體。 它可以當作簡單的繪圖軟體或是高品質的相片處理軟體。 它支援為數眾多的外掛程式及指令稿 (script-fu) 介面。 <application>The GIMP</application> 可以讀寫許多檔案格式。 它也支援掃描器和手寫板。</para>
 
-      <para xml:lang="en">To install the package:</para>
+      <para>要安裝套件可：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gimp</userinput></screen>
 
-      <para xml:lang="en">Alternately, use the Ports Collection:</para>
+      <para>或使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/gimp</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">The graphics category (<link xlink:href="http://www.FreeBSD.org/ports/graphics.html">freebsd.org/ports/graphics.html</link>)
-	of the Ports Collection contains several
-	<application>GIMP</application>-related plugins, help files,
-	and user manuals.</para>
+      <para> 在 Ports 套件集的 graphics 分類 (<link xlink:href="http://www.FreeBSD.org/ports/graphics.html">freebsd.org/ports/graphics.html</link>) 下也包含了許多 <application>GIMP</application> 相關的附加元件，說明檔及使用手冊。</para>
 
     </sect2>
 
@@ -11429,66 +11307,31 @@ EndSection</programlisting>
 	</secondary>
       </indexterm>
 
-      <para xml:lang="en"><application>Apache OpenOffice</application> is an open
-	source office suite which is developed under the wing of the
-	Apache Software Foundation's Incubator.  It includes all of
-	the applications found in a complete office productivity
-	suite: a word processor, spreadsheet, presentation manager,
-	and drawing program.  Its user interface is similar to other
-	office suites, and it can import and export in various popular
-	file formats.  It is available in a number of different
-	languages and internationalization has been extended to
-	interfaces, spell checkers, and dictionaries.</para>
+      <para><application>Apache OpenOffice</application> 是開放原始碼的辦工室軟體，由 Apache Software Foundation's Incubator 底下的團隊所開發。 它包含了所有完整的辦公軟體組合： 文字處理器、試算表、簡報軟體還有繪圖軟體。 除了它的使用者介面非常類似其他的辦公軟體， 他還能夠輸入和輸出許多熱門的檔案格式。 它也包含了不同語言的使用者介面、拼字檢查和字典。</para>
 
-      <para xml:lang="en">The word processor of <application>Apache
-	  OpenOffice</application> uses a native XML file format for
-	increased portability and flexibility.  The spreadsheet
-	program features a macro language which can be interfaced
-	with external databases.  <application>Apache
-	  OpenOffice</application> is stable and runs natively on
-	<trademark class="registered">Windows</trademark>, <trademark>Solaris</trademark>, <trademark class="registered">Linux</trademark>, FreeBSD, and <trademark class="registered">Mac OS</trademark> X.
-	More information about <application>Apache
-	  OpenOffice</application> can be found at <link xlink:href="http://openoffice.org/">openoffice.org</link>.
-	For FreeBSD specific information refer to <link xlink:href="http://porting.openoffice.org/freebsd/">porting.openoffice.org/freebsd/</link>.</para>
+      <para><application>Apache OpenOffice</application> 的文字處理器使用原生的 XML 檔案格式來增加移植性及彈性。 試算表程式支援巨集 (Macro) 功能而且能夠使用外來的資料庫介面。 <application>Apache OpenOffice</application> 已經十分穩定， 並且能夠在 <trademark class="registered">Windows</trademark>, <trademark>Solaris</trademark>, <trademark class="registered">Linux</trademark>, FreeBSD 及 <trademark class="registered">Mac OS</trademark> X 等作業系統上面執行。 想知道更多關於 <application>Apache OpenOffice</application> 的資訊可以在 <link xlink:href="http://openoffice.org/">openoffice.org</link> 網頁上查詢。在 FreeBSD 特定的資訊可參考 <link xlink:href="http://porting.openoffice.org/freebsd/">porting.openoffice.org/freebsd/</link>。</para>
 
-      <para xml:lang="en">To install the <application>Apache
-	  OpenOffice</application> package:</para>
+      <para>要安裝 <application>Apache OpenOffice</application> 套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install apache-openoffice</userinput></screen>
 
-      <para xml:lang="en">Once the package is installed, type the following command
-	to launch <application>Apache OpenOffice</application>:</para>
+      <para>當套件安裝完成之後，只要輸入下面的指令就能執行 <application>Apache OpenOffice</application>：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>openoffice-<replaceable>X.Y.Z</replaceable></userinput></screen>
 
-      <para xml:lang="en">where <replaceable>X.Y.Z</replaceable> is the version
-	number of the installed version of <application>Apache
-	  OpenOffice</application>.  The first time
-	<application>Apache OpenOffice</application> launches, some
-	questions will be asked and a
-	<filename>.openoffice.org</filename> folder will be created in
-	the user's home directory.</para>
+      <para>其中 <replaceable>X.Y.Z</replaceable> 是已安裝的 <application>Apache OpenOffice</application> 的版本編號。第一次執行 <application>Apache OpenOffice</application> 會詢問一些問題且會在使用者的家目錄建立一個 <filename>.openoffice.org</filename> 資料夾。</para>
 
-      <para xml:lang="en">If the desired <application>Apache
-	  OpenOffice</application> package is not available, compiling
-	the port is still an option.  However, this requires a lot of
-	disk space and a fairly long time to compile:</para>
+      <para>若無法由套件取得想要的 <application>Apache OpenOffice</application>，仍可選擇從 Port 編譯。 不過必須注意：編譯的過程會需要大量的磁碟空間與時間：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/editors/openoffice-4</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
       <note>
-	<para xml:lang="en">To build a localized version, replace the previous
-	  command with:</para>
+	<para>如果想要編譯在地化的版本，將前面的指令替換成為：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>make LOCALIZED_LANG=<replaceable>your_language</replaceable> install clean</userinput></screen>
 
-	<para xml:lang="en">Replace
-	  <replaceable>your_language</replaceable> with the correct
-	  language ISO-code.  A list of supported language codes is
-	  available in
-	  <filename>files/Makefile.localized</filename>, located in
-	  the port's directory.</para>
+	<para>替換 <replaceable>your_language</replaceable> 為正確的語言 ISO 編碼。支援的語言編碼清單在 <filename>files/Makefile.localized</filename>，位於該 Port 的目錄。</para>
       </note>
     </sect2>
 
@@ -11577,47 +11420,46 @@ EndSection</programlisting>
       <tgroup cols="4">
 	<thead>
 	  <row>
-	    <entry xml:lang="en">Application Name</entry>
-	    <entry xml:lang="en">Resources Needed</entry>
-	    <entry xml:lang="en">Installation from Ports</entry>
-	    <entry xml:lang="en">Major Dependencies</entry>
+	    <entry>應用程式名稱</entry>
+	    <entry>所需資源</entry>
+	    <entry>自 Ports 安裝時間</entry>
+	    <entry>主要相依套件</entry>
 	  </row>
 	</thead>
 
 	<tbody>
 	  <row>
 	    <entry xml:lang="en"><application>Xpdf</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">light</entry>
+	    <entry>少</entry>
+	    <entry>少</entry>
 	    <entry xml:lang="en"><application>FreeType</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>gv</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">light</entry>
+	    <entry>少</entry>
+	    <entry>少</entry>
 	    <entry xml:lang="en"><application>Xaw3d</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>GQview</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en"><application>Gtk+</application> or
-	      <application>GNOME</application></entry>
+	    <entry>少</entry>
+	    <entry>少</entry>
+	    <entry><application>Gtk+</application> 或 <application>GNOME</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>ePDFView</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">light</entry>
+	    <entry>少</entry>
+	    <entry>少</entry>
 	    <entry xml:lang="en"><application>Gtk+</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>Okular</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">heavy</entry>
+	    <entry>少</entry>
+	    <entry>多</entry>
 	    <entry xml:lang="en"><application>KDE</application></entry>
 	  </row>
 	</tbody>
@@ -11635,26 +11477,18 @@ EndSection</programlisting>
 	<secondary>viewing</secondary>
       </indexterm>
 
-      <para xml:lang="en">For users that prefer a small FreeBSD PDF viewer,
-	<application>Xpdf</application> provides a light-weight and
-	efficient viewer which requires few resources.  It uses the
-	standard X fonts and does not require any additional
-	toolkits.</para>
+      <para>如果你想要一個小型的 FreeBSD PDF 閱覽軟體， <application>Xpdf</application> 是個輕量級而且有效率的閱覽器。 它只需要非常少的資源而且十分穩定。 它只使用標準的 X 字型且不需要額外的工具包(Toolkit)。</para>
 
-      <para xml:lang="en">To install the <application>Xpdf</application>
-	package:</para>
+      <para>安裝 <application>Xpdf</application> 套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install xpdf</userinput></screen>
 
-      <para xml:lang="en">If the package is not available, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/xpdf</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">Once the installation is complete, launch
-	<command>xpdf</command> and use the right mouse button to
-	activate the menu.</para>
+      <para>完成安裝後，執行 <command>xpdf</command> 並使用滑鼠右鍵開啟選單。</para>
     </sect2>
 
     <sect2>
@@ -11672,22 +11506,13 @@ EndSection</programlisting>
 	<secondary>viewing</secondary>
       </indexterm>
 
-      <para xml:lang="en"><application>gv</application> is a <trademark class="registered">PostScript</trademark> and PDF
-	viewer.  It is based on <application>ghostview</application>,
-	but has a nicer look as it is based on the
-	<application>Xaw3d</application> widget toolkit.
-	<application>gv</application> has many configurable features,
-	such as orientation, paper size, scale, and anti-aliasing.
-	Almost any operation can be performed with either the
-	keyboard or the mouse.</para>
+      <para><application>gv</application> 是 <trademark class="registered">PostScript</trademark> 和 PDF 的閱覽器。 它建構於 <application>ghostview</application> 的基礎上，不過因為使用 <application>Xaw3d</application> 視窗元件工具包，所以外觀看起來比較漂亮。 <application>gv</application> 有許多可設定的功能，比如說紙張方向、紙張大小、縮放比例、和反鋸齒(Anti-aliasing)等。 而且幾乎所有的使用都可以從鍵盤或滑鼠來完成。</para>
 
-      <para xml:lang="en">To install <application>gv</application> as a
-	package:</para>
+      <para>安裝 <application>gv</application> 套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gv</userinput></screen>
 
-      <para xml:lang="en">If a package is unavailable, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/print/gv</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -11700,21 +11525,13 @@ EndSection</programlisting>
 	<primary><application>GQview</application></primary>
       </indexterm>
 
-      <para xml:lang="en"><application>GQview</application> is an image manager
-	which supports viewing a file with a single click, launching
-	an external editor, and thumbnail previews.  It also features
-	a slideshow mode and some basic file operations, making it
-	easy to manage image collections and to find duplicate files.
-	<application>GQview</application> supports full screen viewing
-	and internationalization.</para>
+      <para><application>GQview</application> 是影像管理軟體。 你可以用單鍵來閱覽檔案、啟動額外的編輯器、縮圖預覽等功能。 它也有幻燈片播放(slideshow)及一些基本的檔案操作功能。 你可用 <application>GQview</application> 管理影像集並能輕鬆地找出重複的檔案。 GQview 能夠使用全螢幕觀看並支援國際化。</para>
 
-      <para xml:lang="en">To install the <application>GQview</application>
-	package:</para>
+      <para>安裝 <application>GQview</application> 套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gqview</userinput></screen>
 
-      <para xml:lang="en">If the package is not available, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/gqview</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -11745,8 +11562,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install epdfview</userinput></screen>
 
-      <para xml:lang="en">If a package is unavailable, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/epdfview</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -11775,8 +11591,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install okular</userinput></screen>
 
-      <para xml:lang="en">If a package is unavailable, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/okular</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -11786,44 +11601,40 @@ EndSection</programlisting>
   <sect1 xml:id="desktop-finance">
     <title>財務</title>
 
-    <para xml:lang="en">For managing personal finances on a FreeBSD desktop, some
-      powerful and easy-to-use applications can be installed.  Some
-      are compatible with widespread file formats, such as the formats
-      used by <application>Quicken</application> and
-      <application>Excel</application>.</para>
+    <para>如果有任何理由你想要在你的 FreeBSD 桌面環境上管理你的個人財務， 這裡有一些功能強大、使用簡單的應用程式可供安裝。 這些財務管理軟體之中有些是相容於流行的 <application>Quicken</application> 或 <application>Excel</application> 文件。</para>
 
-    <para xml:lang="en">This section covers these programs:</para>
+    <para>這節涵蓋了下面這些軟體：</para>
 
     <informaltable frame="none" pgwide="1">
       <tgroup cols="4">
 	<thead>
 	  <row>
-	    <entry xml:lang="en">Application Name</entry>
-	    <entry xml:lang="en">Resources Needed</entry>
-	    <entry xml:lang="en">Installation from Ports</entry>
-	    <entry xml:lang="en">Major Dependencies</entry>
+	    <entry>應用程式名稱</entry>
+	    <entry>所需資源</entry>
+	    <entry>自 Ports 安裝時間</entry>
+	    <entry>主要相依套件</entry>
 	  </row>
 	</thead>
 
 	<tbody>
 	  <row>
 	    <entry xml:lang="en"><application>GnuCash</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">heavy</entry>
+	    <entry>少</entry>
+	    <entry>多</entry>
 	    <entry xml:lang="en"><application>GNOME</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>Gnumeric</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">heavy</entry>
+	    <entry>少</entry>
+	    <entry>多</entry>
 	    <entry xml:lang="en"><application>GNOME</application></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><application>KMyMoney</application></entry>
-	    <entry xml:lang="en">light</entry>
-	    <entry xml:lang="en">heavy</entry>
+	    <entry>少</entry>
+	    <entry>多</entry>
 	    <entry xml:lang="en"><application>KDE</application></entry>
 	  </row>
 	</tbody>
@@ -11837,29 +11648,15 @@ EndSection</programlisting>
 	<primary><application>GnuCash</application></primary>
       </indexterm>
 
-      <para xml:lang="en"><application>GnuCash</application> is part of the
-	<application>GNOME</application> effort to provide
-	user-friendly, yet powerful, applications to end-users.
-	<application>GnuCash</application> can be used to keep track
-	of income and expenses, bank accounts, and stocks.  It
-	features an intuitive interface while remaining
-	professional.</para>
+      <para><application>GnuCash</application> 是 <application>GNOME</application> 團隊努力成果中的一部分， <application>GNOME</application> 團隊主要提供親切而強大的桌面應用程式給終端使用者。使用 <application>GnuCash</application> 可以持續追蹤記錄收入與花費、銀行帳戶以及股票證券等。 它的特性是介面直覺但功能仍非常專業。</para>
 
-      <para xml:lang="en"><application>GnuCash</application> provides a smart
-	register, a hierarchical system of accounts, and many keyboard
-	accelerators and auto-completion methods.  It can split a
-	single transaction into several more detailed pieces.
-	<application>GnuCash</application> can import and merge
-	<application>Quicken</application> QIF files.  It also handles
-	most international date and currency formats.</para>
+      <para><application>GnuCash</application> 提供了智慧的計數器、多階層帳戶系統以及快速鍵及自動完成功能。 它也能分開單一的報表至數個詳細的部份。 <application>GnuCash</application> 也能夠匯入及合併 <application>Quicken</application> QIF 檔案。 它也能處理大部分國際的日期及通用貨幣之格式。</para>
 
-      <para xml:lang="en">To install the <application>GnuCash</application>
-	package:</para>
+      <para>安裝 <application>GnuCash</application> 套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gnucash</userinput></screen>
 
-      <para xml:lang="en">If the package is not available, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/finance/gnucash</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -11876,24 +11673,13 @@ EndSection</programlisting>
 	<secondary><application>Gnumeric</application></secondary>
       </indexterm>
 
-      <para xml:lang="en"><application>Gnumeric</application> is a spreadsheet
-	program developed by the <application>GNOME</application>
-	community.  It features convenient automatic guessing of user
-	input according to the cell format with an autofill system
-	for many sequences.  It can import files in a number of
-	popular formats, including <application>Excel</application>,
-	<application>Lotus 1-2-3</application>, and
-	<application>Quattro Pro</application>.  It has a large number
-	of built-in functions and allows all of the usual cell formats
-	such as number, currency, date, time, and much more.</para>
+      <para><application>Gnumeric</application> 是 <application>GNOME</application> 社群所開發的試算表程式。 它的特點是擁有能夠根據儲存格格式 「猜出」使用者的輸入來自動補齊的系統。 它也能夠匯入許多熱門的檔案格式，像是 <application>Excel</application>, <application>Lotus 1-2-3</application> 以及 <application>Quattro Pro</application>。 它有大量內建的函數而且能夠使用常用的儲存格格式，像是：數字、貨幣、日期、時間及其他格式等。</para>
 
-      <para xml:lang="en">To install <application>Gnumeric</application> as a
-	package:</para>
+      <para>安裝 <application>Gnumeric</application> 套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gnumeric</userinput></screen>
 
-      <para xml:lang="en">If the package is not available, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/math/gnumeric</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -11925,8 +11711,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install kmymoney-kde4</userinput></screen>
 
-      <para xml:lang="en">If the package is not available, use the Ports
-	Collection:</para>
+      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/finance/kmymoney-kde4</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -11959,72 +11744,56 @@ EndSection</programlisting>
   <sect1 xml:id="multimedia-synopsis">
     <title>概述</title>
 
-    <para xml:lang="en">FreeBSD supports a wide variety of sound cards, allowing users
-      to enjoy high fidelity output from a FreeBSD system.  This includes
-      the ability to record and playback audio in the MPEG Audio Layer
-      3 (<acronym>MP3</acronym>), Waveform Audio File
-      (<acronym>WAV</acronym>), Ogg Vorbis, and other formats.  The
-      FreeBSD Ports Collection contains many applications for editing
-      recorded audio, adding sound effects, and controlling attached
-      MIDI devices.</para>
+    <para>FreeBSD 廣泛地支援各種音效卡， 讓您可以享受來自電腦上的高傳真音質(Hi-Fi)， 此外還包括了錄製和播放 MPEG Audio Layer 3 (<acronym>MP3</acronym>)、 Waveform Audio File (<acronym>WAV</acronym>)、Ogg Vorbis 以及其他許多種格式聲音的能力。同時 FreeBSD Ports 套件集也包含了許多可讓您可以錄音、編修音效以及控制 MIDI 配備的應用程式。</para>
 
-    <para xml:lang="en">FreeBSD also supports the playback of video files and
-      <acronym>DVD</acronym>s.  The FreeBSD Ports Collection contains
-      applications to encode, convert, and playback various video
-      media.</para>
+    <para> FreeBSD 也能播放一般的視訊檔和 <acronym>DVD</acronym>。 FreeBSD Ports 套件集中含有可編碼、轉換以及播放格種影像媒體的應用程式。</para>
 
-    <para xml:lang="en">This chapter describes how to configure sound cards, video
-      playback, TV tuner cards, and scanners on FreeBSD.  It also
-      describes some of the applications which are available for
-      using these devices.</para>
+    <para>本章會說明如何設定 FreeBSD 上的音效卡、影像播放器、電視卡及掃描器。同時會說明有那些應用程式可以使用這些裝置。</para>
 
-    <para xml:lang="en">After reading this chapter, you will know how to:</para>
+    <para>讀完這章，您將了解：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Configure a sound card on FreeBSD.</para>
+	<para>設定 FreeBSD 上的音效卡。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Troubleshoot the sound setup.</para>
+	<para>音效設定疑難排解。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Playback and encode MP3s and other audio.</para>
+	<para>播放、錄製 MP3 及其他聲音檔案格式。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Prepare a FreeBSD system for video playback.</para>
+	<para>FreeBSD 系統播放影像的準備工具。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Play <acronym>DVD</acronym>s, <filename>.mpg</filename>,
-	  and <filename>.avi</filename> files.</para>
+	<para>播放 <acronym>DVD</acronym> 的 <filename>.mpg</filename> 及 <filename>.avi</filename> 檔。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Rip <acronym>CD</acronym> and <acronym>DVD</acronym>
-	  content into files.</para>
+	<para>擷取(Rip) <acronym>CD</acronym> 和 <acronym>DVD</acronym>的內容至檔案。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Configure a TV card.</para>
+	<para>設定電視卡。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Install and setup MythTV on FreeBSD</para>
+	<para>在 FreeBSD 安裝 MythTV 。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Configure an image scanner.</para>
+	<para>設定影像掃描機。</para>
       </listitem>
     </itemizedlist>
 
     <para>在開始閱讀這章之前，您需要︰</para>
 
     <itemizedlist>
-      <listitem><para xml:lang="en">Know how to install applications as described in
-	<xref linkend="ports"/>.</para></listitem>
+      <listitem><para>知道如何安裝應用程式如 <xref linkend="ports"/> 所敘述。</para></listitem>
     </itemizedlist>
   </sect1>
 
@@ -12055,48 +11824,28 @@ EndSection</programlisting>
 
     <indexterm xml:lang="en"><primary>PCI</primary></indexterm>
     <indexterm xml:lang="en"><primary>sound cards</primary></indexterm>
-    <para xml:lang="en">Before beginning the configuration, determine the model of
-      the sound card and the chip it uses.  FreeBSD supports a wide
-      variety of sound cards.  Check the supported audio devices
-      list of the <link xlink:href="http://www.FreeBSD.org/releases/10.2R/hardware.html">Hardware
-	Notes</link> to see if the card is supported and which FreeBSD
-      driver it uses.</para>
+    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="http://www.FreeBSD.org/releases/10.2R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
 
     <indexterm xml:lang="en">
       <primary>kernel</primary>
       <secondary>configuration</secondary>
     </indexterm>
 
-    <para xml:lang="en">In order to use the sound device, its device driver must be
-      loaded.  The easiest way is to load a kernel module for the
-      sound card with <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  This example loads the driver
-      for a built-in audio chipset based on the Intel
-      specification:</para>
+    <para>要使用音效裝置，必須要載入正確的驅動程式才行。最簡單方式就是以 <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來載入核心模組。以下範例示範載入 Intel 規格內建的音效晶片驅動程式。</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload snd_hda</userinput></screen>
 
-    <para xml:lang="en">To automate the loading of this driver at boot time, add the
-      driver to <filename>/boot/loader.conf</filename>.  The line for
-      this driver is:</para>
+    <para>要開機時自動載入驅動程式，需將驅動程式加到 <filename>/boot/loader.conf</filename> 檔，以此驅動程式為例：</para>
 
     <programlisting xml:lang="en">snd_hda_load="YES"</programlisting>
 
-    <para xml:lang="en">Other available sound modules are listed in
-      <filename>/boot/defaults/loader.conf</filename>.  When unsure
-      which driver to use, load the <filename>snd_driver</filename>
-      module:</para>
+    <para>其他可用的音效卡模組清單列於 <filename>/boot/defaults/loader.conf</filename>。當不確認要使用何種驅動程式時，可載入 <filename>snd_driver</filename> 模組：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload snd_driver</userinput></screen>
 
-    <para xml:lang="en">This is a metadriver which loads all of the most common
-      sound drivers and can be used to speed up the search for the
-      correct driver.  It is also possible to load all sound drivers
-      by adding the metadriver to
-      <filename>/boot/loader.conf</filename>.</para>
+    <para>它是 metadriver 會載入所有最通用的音效驅動程式並且用來加速尋找正確的驅動程式。也可以把 metadriver 加入 <filename>/boot/loader.conf</filename> 檔來載入所有音效驅動程式。</para>
 
-    <para xml:lang="en">To determine which driver was selected for the sound card
-      after loading the <filename>snd_driver</filename> metadriver,
-      type <command>cat /dev/sndstat</command>.</para>
+    <para>要知道載入 <filename>snd_driver</filename> metadriver 後使用了那個音效卡驅動程式，請輸入 <command>cat /dev/sndstat</command>。</para>
 
     <sect2>
       <title xml:lang="en">Configuring a Custom Kernel with Sound Support</title>
@@ -15211,7 +14960,7 @@ Starting lpd.</screen>
 	      <entry align="left" xml:lang="en">Output
 		<acronym>PDL</acronym></entry>
 	      <entry align="left" xml:lang="en">Generated By</entry>
-	      <entry align="left" xml:lang="en">Notes</entry>
+	      <entry align="left">說明</entry>
 	    </row>
 	  </thead>
 
@@ -64046,7 +63795,7 @@ Received 264951 bytes in 0.1 seconds</screen>
 	      <entry xml:lang="en"><acronym>IPv6</acronym> address</entry>
 	      <entry xml:lang="en">Prefixlength (Bits)</entry>
 	      <entry>說明</entry>
-	      <entry xml:lang="en">Notes</entry>
+	      <entry>說明</entry>
 	    </row>
 	  </thead>
 
