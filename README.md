@@ -8,6 +8,7 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 - [ ] 統整文件內目錄標題以及相關名詞
 
 # 如何翻譯?
+* [FreeBSD Handbook - EN](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) 為操作手冊原文
 * [book.html](book.html) 為採用 GNU gettext 翻譯所產生的新版文件
 * [book.ori.html](book.ori.html) 為舊版本用 Docbook 翻譯所產生的舊版文件
 * [zh_TW.po](zh_TW.po) 為 GNU gettext 的翻譯檔
