@@ -71,6 +71,7 @@ pkg install poedit
 | Console | (不翻譯) |
 | Binary | (不翻譯) |
 | Plugin | 附加元件 |
+| Productivity Tools | 辦工工具 |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
