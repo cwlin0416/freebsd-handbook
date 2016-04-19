@@ -82,7 +82,7 @@ pkg install poedit
 | Mixer Channels | 混音器頻道 ||
 | Ripping | 擷取 ||
 | Audio Tracks | 音軌 ||
-| Library, Libraries | 函式庫 | |
+| Library, Libraries | 程式庫 | |
 | Log Rotation | 日誌循環 ||
 | Bandwidth Delay Product | 頻寬延遲乘積 ||
 | Suspend, Hibernate, Resume | 待機, 休眠, 喚醒 ||
@@ -94,6 +94,8 @@ pkg install poedit
 | Pool, Storage Pool | 儲存池 | ZFS |
 | Snapshot | 快照 |  |
 | Considerations | 注意事項 | |
+| NAT, Network Address Translation | 網路位址轉譯 ||
+
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
 * https://translatewiki.net/
