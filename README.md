@@ -61,6 +61,7 @@ pkg install poedit
 | third-party software | 第三方軟體 |
 | Partition  | 分割區 |
 | Partitioning | 磁碟分割 |
+| Volume | 磁碟區 |
 | Swap Space | 交換空間 |
 | Ports Collection | TBD, Ports 套件集 |
 | Binary Package | TBD, Binary 套件 |
