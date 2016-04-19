@@ -85,6 +85,7 @@ pkg install poedit
 | Log Rotation | 日誌循環 |
 | Bandwidth Delay Product | 頻寬延遲乘積 |
 | Suspend, Hibernate, Resume | 待機, 休眠, 喚醒 |
+| System Hangs | TBD, 系統無回應 |
 
 
 # PO 線上協同翻譯平台
