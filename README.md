@@ -91,6 +91,7 @@ pkg install poedit
 | Process Accounting | 程序追蹤 ||
 | Policy | 政策, 管理政策 ||
 | Scrubbing | 清潔 | ZFS |
+| Pool, Storage Pool | 儲存池 | ZFS |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
