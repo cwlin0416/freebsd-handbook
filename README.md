@@ -59,7 +59,7 @@ pkg install poedit
 | System call | 系統呼叫 (需附註原文) ||
 | Slice  | TBD ||
 | third-party software | 第三方軟體 ||
-| Partition  | 分割區 ||
+| Partition, Slice | 分割區 ||
 | Partitioning | 磁碟分割 ||
 | Volume | 磁碟區 ||
 | Swap Space | 交換空間 ||
