@@ -93,7 +93,7 @@ pkg install poedit
 | Scrubbing | 清潔 | ZFS |
 | Pool, Storage Pool | 儲存池 | ZFS |
 | Snapshot | 快照 |  |
-
+| Considerations | 注意事項 | |
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
 * https://translatewiki.net/
