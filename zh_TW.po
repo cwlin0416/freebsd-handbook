@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-18 19:07+0800\n"
+"PO-Revision-Date: 2016-04-19 17:13+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -314,7 +314,7 @@ msgstr "<xref linkend=\"ppp-and-slip\"/> 增加了疑難排解的章節。"
 #. (itstool) path: listitem/para
 #: book.translate.xml:877
 msgid "<xref linkend=\"mail\"/> has been expanded with new information about using alternative transport agents, SMTP authentication, UUCP, <application>fetchmail</application>, <application>procmail</application>, and other advanced topics."
-msgstr "<xref linkend=\"mail\"/> 新增有關如何使用其它的傳輸代理程式、SMTP 認証、UUCP、<application>fetchmail</application>、<application>procmail</application> 的運用以及其它進階主題。"
+msgstr "<xref linkend=\"mail\"/> 新增有關如何使用其它的傳輸代理程式、SMTP 認證、UUCP、<application>fetchmail</application>、<application>procmail</application> 的運用以及其它進階主題。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:885
@@ -324,7 +324,7 @@ msgstr "<xref linkend=\"network-servers\"/> 是該版中全新的一章。這一
 #. (itstool) path: listitem/para
 #: book.translate.xml:895
 msgid "<xref linkend=\"advanced-networking\"/> has been expanded with new information about using <trademark class=\"registered\">Bluetooth</trademark> devices with FreeBSD, setting up wireless networks, and Asynchronous Transfer Mode (ATM) networking."
-msgstr "<xref linkend=\"advanced-networking\"/> 新增有關在 FreeBSD 中使用<trademark class=\"registered\">藍芽</trademark>裝置、設定無線網路以及使用非同步傳輸模式 (Asynchronous Transfer Mode, ATM)  網路的介紹。"
+msgstr "<xref linkend=\"advanced-networking\"/> 新增有關在 FreeBSD 中使用<trademark class=\"registered\">藍牙</trademark>裝置、設定無線網路以及使用非同步傳輸模式 (Asynchronous Transfer Mode, ATM)  網路的介紹。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:902
@@ -1821,7 +1821,7 @@ msgstr "無論是單獨開發者或者封閉式的團隊合作，多瞭解 FreeB
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2596
 msgid "The SVN repositories<anchor xml:id=\"development-cvs-repository\"/>"
-msgstr "SVN 儲存庫<anchor xml:id=\"development-cvs-repository\"/>"
+msgstr "SVN 儲藏庫<anchor xml:id=\"development-cvs-repository\"/>"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2600
@@ -1873,7 +1873,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2651
 msgid "The <firstterm>committers</firstterm> <_:indexterm-1/> are the people who have <emphasis>write</emphasis> access to the Subversion tree, and are authorized to make modifications to the FreeBSD source (the term <quote>committer</quote> comes from <command>commit</command>, the source control command which is used to bring new changes into the repository). Anyone can submit a bug to the <link xlink:href=\"https://bugs.FreeBSD.org/submit/\">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug."
-msgstr "所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion tree 有 <emphasis>寫入</emphasis> 權限， 並依不同授權部分，而有不同權限可修改 FreeBSD source。 (<quote>committer</quote> 這詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給儲存庫)。 Anyone can submit a bug to the <link xlink:href=\"https://bugs.FreeBSD.org/submit/\">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug."
+msgstr "所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion tree 有 <emphasis>寫入</emphasis> 權限， 並依不同授權部分，而有不同權限可修改 FreeBSD source。 (<quote>committer</quote> 這詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給儲藏庫)。 Anyone can submit a bug to the <link xlink:href=\"https://bugs.FreeBSD.org/submit/\">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2668
@@ -2013,7 +2013,7 @@ msgstr "一般來說，本章所寫的安裝說明是針對 <trademark>i386</tra
 #. (itstool) path: note/para
 #: book.translate.xml:2889
 msgid "Users who prefer to install FreeBSD using a graphical installer may be interested in <application>pc-sysinstall</application>, the installer used by the PC-BSD Project. It can be used to install either a graphical desktop (PC-BSD) or a command line version of FreeBSD. Refer to the PC-BSD Users Handbook for details (<link xlink:href=\"http://wiki.pcbsd.org/index.php/Colophon\">http://wiki.pcbsd.org/index.php/Colophon</link>)."
-msgstr "喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 PC-BSD 計畫所使用的。 他可以用來安裝圖形化桌面 (PC-BSD) 或是命令列版本的 FreeBSD。 細節請參考 PC-BSD 使用者 Handbook (<link xlink:href=\"http://wiki.pcbsd.org/index.php/Colophon\">http://wiki.pcbsd.org/index.php/Colophon</link>)。"
+msgstr "喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 PC-BSD 計畫所使用的。 他可以用來安裝圖形化桌面 (PC-BSD) 或是指令列版本的 FreeBSD。 細節請參考 PC-BSD 使用者 Handbook (<link xlink:href=\"http://wiki.pcbsd.org/index.php/Colophon\">http://wiki.pcbsd.org/index.php/Colophon</link>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2901
@@ -2467,7 +2467,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3424
 msgid "Booting on <trademark>i386</trademark> and amd64"
-msgstr ""
+msgstr "在 <trademark>i386</trademark> 及 amd64 開機"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3426
@@ -2497,7 +2497,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3464
 msgid "Booting on <trademark class=\"registered\">PowerPC</trademark>"
-msgstr ""
+msgstr "在 <trademark class=\"registered\">PowerPC</trademark> 開機"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3466
@@ -2513,7 +2513,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3486
 msgid "Booting on <trademark class=\"registered\">SPARC64</trademark>"
-msgstr ""
+msgstr "在 <trademark class=\"registered\">SPARC64</trademark> 開機"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3488
@@ -2548,7 +2548,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3519
 msgid "FreeBSD Boot Menu"
-msgstr ""
+msgstr "FreeBSD 開機選單"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3521
@@ -2688,7 +2688,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3685
 msgid "Selecting the Keymap Menu"
-msgstr ""
+msgstr "選擇鍵盤對應表選單"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3687
@@ -2698,7 +2698,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3692
 msgid "Keymap Selection"
-msgstr "鍵盤對映表選擇"
+msgstr "鍵盤對應表選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2748,7 +2748,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3738
 msgid "Enhanced Keymap Menu"
-msgstr "改進後的鍵盤對映表選單"
+msgstr "改進後的鍵盤對應表選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2901,7 +2901,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3896
 msgid "Partitioning Choices on FreeBSD 9.x"
-msgstr "FreeBSD 9.x 的磁區選擇"
+msgstr "FreeBSD 9.x 的分割區選擇"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2916,7 +2916,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:3906
 msgid "Partitioning Choices on FreeBSD 10.x and Higher"
-msgstr "FreeBSD 10.x 或更新版本的磁區選擇"
+msgstr "FreeBSD 10.x 或更新版本的磁碟分割選項"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -2941,7 +2941,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:3931
 msgid "Designing the Partition Layout"
-msgstr ""
+msgstr "規劃分割區配置"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3933
@@ -3016,7 +3016,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4025
 msgid "Guided Partitioning"
-msgstr ""
+msgstr "引導式磁碟分割"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4027
@@ -3046,7 +3046,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4051
 msgid "Selecting Entire Disk or Partition"
-msgstr "選擇完整磁碟或磁區"
+msgstr "選擇完整磁碟或分割區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3066,7 +3066,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4071
 msgid "Review Created Partitions"
-msgstr "確認已建立的磁區"
+msgstr "確認已建立的分割區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3081,7 +3081,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4082
 msgid "Manual Partitioning"
-msgstr ""
+msgstr "手動磁碟分割"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4084
@@ -3091,7 +3091,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4087 book.translate.xml:4102 book.translate.xml:4173
 msgid "Manually Create Partitions"
-msgstr "手動建立磁區"
+msgstr "手動建立分割區"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3126,12 +3126,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:4118
 msgid "Partitioning Schemes"
-msgstr ""
+msgstr "磁碟分割格式"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4123
 msgid "Abbreviation"
-msgstr ""
+msgstr "縮寫"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4124 book.translate.xml:7082 book.translate.xml:8425
@@ -3279,7 +3279,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:4260
 msgid "Creating Traditional Split File System Partitions"
-msgstr ""
+msgstr "建立傳統分割的檔案系統分割區"
 
 #. (itstool) path: example/para
 #: book.translate.xml:4263
@@ -3405,7 +3405,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4343
 msgid "Root-on-ZFS Automatic Partitioning"
-msgstr ""
+msgstr "Root-on-ZFS 自動磁碟分割"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4345
@@ -3420,7 +3420,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4369
 msgid "<acronym>ZFS</acronym> Partitioning Menu"
-msgstr "<acronym>ZFS</acronym> 磁區選單"
+msgstr "<acronym>ZFS</acronym> 分割區選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3560,7 +3560,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4496
 msgid "Shell Mode Partitioning"
-msgstr ""
+msgstr "Shell 模式磁碟分割"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4498
@@ -3706,7 +3706,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4628
 msgid "Configuring Network Interfaces"
-msgstr ""
+msgstr "設定網路介面"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4630
@@ -3976,7 +3976,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4878
 msgid "Setting the Time Zone"
-msgstr ""
+msgstr "設定時區"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4880
@@ -4091,7 +4091,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:4961
 msgid "Enabling Services"
-msgstr ""
+msgstr "開啟服務"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4963
@@ -4162,7 +4162,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:5031
 msgid "Add Users"
-msgstr ""
+msgstr "新增使用者"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5033
@@ -4889,7 +4889,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:5798
 msgid "Account Types"
-msgstr ""
+msgstr "帳號類型"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5800
@@ -4904,7 +4904,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:5808
 msgid "System Accounts"
-msgstr ""
+msgstr "系統帳號"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5810
@@ -4944,7 +4944,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:5850
 msgid "User Accounts"
-msgstr ""
+msgstr "使用者帳號"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5852
@@ -5069,7 +5069,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:6005
 msgid "The Superuser Account"
-msgstr ""
+msgstr "超級使用者帳號"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6007
@@ -5109,7 +5109,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6054
 msgid "Install a Program As the Superuser"
-msgstr ""
+msgstr "以超級使用者的身份安裝程式"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6056
@@ -5132,7 +5132,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:6076
 msgid "Managing Accounts"
-msgstr ""
+msgstr "管理帳號"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6078
@@ -5249,7 +5249,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6175
 msgid "Adding a User on FreeBSD"
-msgstr ""
+msgstr "在 FreeBSD 新增使用者"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6177
@@ -5365,7 +5365,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6285
 msgid "<command>rmuser</command> Interactive Account Removal"
-msgstr ""
+msgstr "<command>rmuser</command> 互動式帳號移除"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6288
@@ -5413,7 +5413,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6330
 msgid "Using <command>chpass</command> as Superuser"
-msgstr ""
+msgstr "以超級使用者的身份使用 <command>chpass</command>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6333
@@ -5439,7 +5439,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6351
 msgid "Using <command>chpass</command> as Regular User"
-msgstr ""
+msgstr "以一般使用者的身份使用 <command>chpass</command>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6354
@@ -5482,7 +5482,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6390
 msgid "Changing Your Password"
-msgstr ""
+msgstr "更改您的密碼"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6392
@@ -5505,7 +5505,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6409
 msgid "Changing Another User's Password as the Superuser"
-msgstr ""
+msgstr "以超級使用者的身份更改其他使用者的密碼"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6412
@@ -5543,7 +5543,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:6445
 msgid "Managing Groups"
-msgstr ""
+msgstr "管理群組"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6447
@@ -5578,7 +5578,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6480
 msgid "Adding a Group Using <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 新增群組"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6482
@@ -5597,7 +5597,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6496
 msgid "Adding User Accounts to a New Group Using <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 加入使用者帳號到新的群組"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6499
@@ -5616,7 +5616,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6518
 msgid "Adding a New Member to a Group Using <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 加入新成員到群組"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6520
@@ -5635,7 +5635,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:6532
 msgid "Using <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></citerefentry> to Determine Group Membership"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查看所屬群組"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6534
@@ -6154,7 +6154,7 @@ msgstr "多數的旗標僅能由 <systemitem class=\"username\">root</systemitem
 #. (itstool) path: info/title
 #: book.translate.xml:6906
 msgid "The <literal>setuid</literal>, <literal>setgid</literal>, and <literal>sticky</literal> Permissions"
-msgstr ""
+msgstr "<literal>setuid</literal> 、<literal>setgid</literal> 與 <literal>sticky</literal> 權限"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6921
@@ -6544,7 +6544,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7211
 msgid "Archive libraries."
-msgstr "函式庫存放處。"
+msgstr "程式庫存放處。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7216
@@ -6574,7 +6574,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7228
 msgid "Local executables and libraries. Also used as the default destination for the FreeBSD ports framework. Within <filename>/usr/local</filename>, the general layout sketched out by <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry> for <filename>/usr</filename> should be used. Exceptions are the man directory, which is directly under <filename>/usr/local</filename> rather than under <filename>/usr/local/share</filename>, and the ports documentation is in <filename>share/doc/<replaceable>port</replaceable></filename>."
-msgstr "存放一些自行安裝的執行檔、函式庫等等。 同時，也是 FreeBSD ports 架構的預設安裝目錄。 <filename>/usr/local</filename> 內的目錄架構大致與 <filename>/usr</filename> 相同，詳情請參閱 <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry> 說明。 但 man 目錄例外，它們是直接放在 <filename>/usr/local</filename> 底下，而非 <filename>/usr/local/share</filename>，而 ports 所安裝的說明文件則在 <filename>share/doc/<replaceable>port</replaceable></filename>。"
+msgstr "存放一些自行安裝的執行檔、程式庫等等。 同時，也是 FreeBSD ports 架構的預設安裝目錄。 <filename>/usr/local</filename> 內的目錄架構大致與 <filename>/usr</filename> 相同，詳情請參閱 <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry> 說明。 但 man 目錄例外，它們是直接放在 <filename>/usr/local</filename> 底下，而非 <filename>/usr/local/share</filename>，而 ports 所安裝的說明文件則在 <filename>share/doc/<replaceable>port</replaceable></filename>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7241
@@ -6684,7 +6684,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7306
 msgid "NIS maps."
-msgstr "NIS 對映表(maps)。"
+msgstr "NIS 對應表。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7314
@@ -7143,7 +7143,7 @@ msgstr "範例包含 <literal>aacd</literal> 代表 <trademark class=\"registere
 #. (itstool) path: example/title
 #: book.translate.xml:7756
 msgid "Sample Disk, Slice, and Partition Names"
-msgstr "磁碟、slice 及分割區命名範例"
+msgstr "磁碟、Slice 及分割區命名範例"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7765
@@ -7228,7 +7228,7 @@ msgstr "另一個常見到把某些目錄放在不同檔案系統上的理由是
 #. (itstool) path: sect2/title
 #: book.translate.xml:7853
 msgid "The <filename>fstab</filename> File"
-msgstr ""
+msgstr "<filename>fstab</filename> 檔"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:7855
@@ -7919,7 +7919,7 @@ msgstr "然後重新執行 <citerefentry><refentrytitle>chsh</refentrytitle><man
 #. (itstool) path: info/title
 #: book.translate.xml:8572
 msgid "Advanced Shell Techniques"
-msgstr ""
+msgstr "進階 Shell 技巧"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:8575 book.translate.xml:30778 book.translate.xml:35164
@@ -8117,7 +8117,7 @@ msgstr "系統呼叫(System call)與錯誤編號。"
 #. (itstool) path: listitem/para
 #: book.translate.xml:8765
 msgid "Functions in the C libraries."
-msgstr "C 函式庫函數。"
+msgstr "C 程式庫函數。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8769
@@ -8342,7 +8342,7 @@ msgstr "Ports 系統可以透過 FreeBSD 套件管理指令來產生套件。"
 #. (itstool) path: sect1/para
 #: book.translate.xml:8968
 msgid "Both packages and ports understand dependencies. If a package or port is used to install an application and a dependent library is not already installed, the library will automatically be installed first."
-msgstr "不論是 Binary 套件或者 Ports 套件都有相依的功能，若以 Binary 或 Port 套件安裝應用程式，且該應用程式有相依的函式庫尚未被安裝，則會自動先安裝該函式庫。"
+msgstr "不論是 Binary 套件或者 Ports 套件都有相依的功能，若以 Binary 或 Port 套件安裝應用程式，且該應用程式有相依的程式庫尚未被安裝，則會自動先安裝該程式庫。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8973
@@ -8463,7 +8463,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#pkg-search
 #: book.translate.xml:9103
 msgid "To search the binary package repository for an application:"
-msgstr "要搜尋 Binary 套件儲存庫中的應用程式可："
+msgstr "要搜尋 Binary 套件儲藏庫中的應用程式可："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:9106
@@ -8509,7 +8509,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:9146
 msgid "Searching by shell globs, regular expressions, exact match, by description, or any other field in the repository database is also supported by <command>pkg search</command>. After installing <package>ports-mgmt/pkg</package> or <package>ports-mgmt/pkg-devel</package>, see <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> for more details."
-msgstr "<command>pkg search</command> 支援使用 Shell 萬手字元(globs)、正規表示法、描述或儲存庫中的其他其他內容。在安裝 <package>ports-mgmt/pkg</package> 或 <package>ports-mgmt/pkg-devel</package> 之後，可參考 <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多詳細資訊。"
+msgstr "<command>pkg search</command> 支援使用 Shell 萬手字元(globs)、正規表示法、描述或儲藏庫中的其他其他內容。在安裝 <package>ports-mgmt/pkg</package> 或 <package>ports-mgmt/pkg-devel</package> 之後，可參考 <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多詳細資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9155
@@ -8704,7 +8704,7 @@ msgstr ""
 #: book.translate.xml:9316
 msgid "By default <application>pkg</application> uses the FreeBSD package mirrors. For information about building a custom package repository, see <xref linkend=\"ports-poudriere\"/>"
 msgstr ""
-"預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站。若要取得有關編譯自訂套件儲存庫的資訊，請參考 \n"
+"預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站。若要取得有關編譯自訂套件儲藏庫的資訊，請參考 \n"
 "<xref linkend=\"ports-poudriere\"/>"
 
 #. (itstool) path: sect2/para
@@ -8742,7 +8742,7 @@ msgstr "本章節剩餘的部份將會示範使用 <application>pkg</application
 #. (itstool) path: sect2/title
 #: book.translate.xml:9345
 msgid "Obtaining Information About Installed Packages"
-msgstr ""
+msgstr "取得有關已安裝套件的資訊"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9347
@@ -8765,7 +8765,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9361
 msgid "Installing and Removing Packages"
-msgstr ""
+msgstr "安裝與移除套件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9363
@@ -8848,7 +8848,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9420
 msgid "Upgrading Installed Packages"
-msgstr ""
+msgstr "升級已安裝套件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9422
@@ -8869,7 +8869,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9433
 msgid "Auditing Installed Packages"
-msgstr ""
+msgstr "稽查已安裝套件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9435
@@ -8886,7 +8886,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9446
 msgid "Automatically Removing Leaf Dependencies"
-msgstr ""
+msgstr "自動移除不使用的相依"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9448
@@ -8910,7 +8910,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9464
 msgid "Restoring the Package Database"
-msgstr ""
+msgstr "還原套件資料庫"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9466
@@ -8952,7 +8952,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9499
 msgid "Removing Stale Packages"
-msgstr ""
+msgstr "移除過時的套件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9501
@@ -8979,7 +8979,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9516
 msgid "Modifying Package Metadata"
-msgstr ""
+msgstr "修改套件 Metadata"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9518
@@ -9199,7 +9199,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9706
 msgid "Installing Ports"
-msgstr ""
+msgstr "安裝 Ports"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:9708
@@ -9296,7 +9296,7 @@ msgstr "若想要少做這個額外的步驟，可以編譯 Port 時使用 <comm
 #. (itstool) path: sect3/title
 #: book.translate.xml:9806
 msgid "Customizing Ports Installation"
-msgstr ""
+msgstr "自訂 Ports 安裝內容"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9808
@@ -9393,7 +9393,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9904
 msgid "Removing Installed Ports"
-msgstr ""
+msgstr "移除已安裝的 Ports"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:9906
@@ -9434,7 +9434,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:9938
 msgid "Upgrading Ports"
-msgstr ""
+msgstr "升級 Ports"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:9940
@@ -9481,7 +9481,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:9987
 msgid "Upgrading Ports Using <application>Portmaster</application>"
-msgstr ""
+msgstr "使用 <application>Portmaster</application> 升級 Ports"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:9990
@@ -9599,7 +9599,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:10089
 msgid "Upgrading Ports Using Portupgrade"
-msgstr ""
+msgstr "使用 Portupgrade 升級 Ports"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:10091
@@ -9665,7 +9665,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:10149
 msgid "Ports and Disk Space"
-msgstr ""
+msgstr "Ports 與磁碟空間"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:10151
@@ -9754,7 +9754,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:10242
 msgid "Initialize Jails and Port Trees"
-msgstr ""
+msgstr "初始化 Jails 與 Port 樹"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10244
@@ -9883,7 +9883,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:10354
 msgid "Configuring pkg Clients to Use a Poudriere Repository"
-msgstr ""
+msgstr "設定 pkg 客戶端使用 Poudriere 儲藏庫"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10357
@@ -10257,7 +10257,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:10825
 msgid "User Group for Accelerated Video"
-msgstr ""
+msgstr "用來加速影像處理的使用者群組"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10827
@@ -10273,7 +10273,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:10841
 msgid "Kernel Mode Setting (<acronym>KMS</acronym>)"
-msgstr ""
+msgstr "核心模式設定 (Kernel Mode Setting, <acronym>KMS</acronym>)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10843
@@ -10312,7 +10312,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:10880
 msgid "Single or Multiple Files"
-msgstr ""
+msgstr "單檔或多檔"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10882
@@ -10332,7 +10332,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:10901
 msgid "Video Cards"
-msgstr ""
+msgstr "顯示卡"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10905
@@ -10447,7 +10447,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11013
 msgid "Select <trademark class=\"registered\">Intel</trademark> Video Driver in a File"
-msgstr ""
+msgstr "在單檔中選擇 <trademark class=\"registered\">Intel</trademark> 影像驅動程式"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11015
@@ -10478,7 +10478,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11035
 msgid "Select Radeon Video Driver in a File"
-msgstr ""
+msgstr "在單檔中選擇 Radeon 影像驅動程式"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11037
@@ -10503,7 +10503,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11049
 msgid "Select <acronym>VESA</acronym> Video Driver in a File"
-msgstr ""
+msgstr "在單檔中選擇 <acronym>VESA</acronym> 影像驅動程式"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11052
@@ -10523,7 +10523,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11065
 msgid "Monitors"
-msgstr ""
+msgstr "顯示器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11067
@@ -10655,7 +10655,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11183
 msgid "Set Screen Resolution in a File"
-msgstr ""
+msgstr "在單檔中設定螢幕解析度"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11185
@@ -10683,7 +10683,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11203
 msgid "Manually Setting Monitor Frequencies"
-msgstr ""
+msgstr "手動設定顯示器頻率"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11205
@@ -10704,12 +10704,12 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11219
 msgid "Input Devices"
-msgstr ""
+msgstr "輸入裝置"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11222
 msgid "Keyboards"
-msgstr ""
+msgstr "鍵盤"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11226
@@ -10734,7 +10734,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11245
 msgid "Setting a Keyboard Layout"
-msgstr ""
+msgstr "設定鍵盤配置"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11247
@@ -10757,7 +10757,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11259
 msgid "Setting Multiple Keyboard Layouts"
-msgstr ""
+msgstr "設定多個鍵盤配置"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11261
@@ -10793,7 +10793,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11296
 msgid "Enabling Keyboard Exit from X"
-msgstr ""
+msgstr "開啟鍵盤離開 X 功能"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11298
@@ -10815,7 +10815,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:11313
 msgid "Mice and Pointing Devices"
-msgstr ""
+msgstr "滑鼠與指標裝置"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11315
@@ -10835,7 +10835,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:11329
 msgid "Setting the Number of Mouse Buttons"
-msgstr ""
+msgstr "設定滑鼠按鍵編號"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11331
@@ -10897,7 +10897,7 @@ msgstr "在 <application>Xorg</application> 使用字型"
 #. (itstool) path: sect2/title
 #: book.translate.xml:11388
 msgid "Type1 Fonts"
-msgstr ""
+msgstr "Type1 字型"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11390
@@ -10949,7 +10949,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11440
 msgid "<trademark class=\"registered\">TrueType</trademark> Fonts"
-msgstr ""
+msgstr "<trademark class=\"registered\">TrueType</trademark> 字型"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11442
@@ -11022,7 +11022,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11512
 msgid "Anti-Aliased Fonts"
-msgstr ""
+msgstr "反鋸齒字型"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11514
@@ -11254,7 +11254,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11718
 msgid "Configuring <application>XDM</application>"
-msgstr ""
+msgstr "設定 <application>XDM</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11720
@@ -11285,7 +11285,7 @@ msgstr "XDM 設定檔"
 #. (itstool) path: row/entry
 #: book.translate.xml:11748 book.translate.xml:55211
 msgid "File"
-msgstr ""
+msgstr "檔案"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11755
@@ -11370,7 +11370,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:11833
 msgid "Configuring Remote Access"
-msgstr ""
+msgstr "設定遠端存取"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11835
@@ -11688,7 +11688,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12102
 msgid "Setting up the FreeBSD nVidia Driver"
-msgstr ""
+msgstr "設定 FreeBSD nVidia 驅動程式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12104
@@ -11767,7 +11767,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12155
 msgid "Configuring xorg.conf for Desktop Effects"
-msgstr ""
+msgstr "設定 xorg.conf 來啟動桌面特效"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12157
@@ -11880,7 +11880,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12222
 msgid "Installing and Configuring Compiz Fusion"
-msgstr ""
+msgstr "安裝與設定 Compiz Fusion"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12224
@@ -12129,7 +12129,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12446
 msgid "Configuration with <trademark class=\"registered\">Intel</trademark> <literal>i810</literal> Graphics Chipsets"
-msgstr ""
+msgstr "設定 <trademark class=\"registered\">Intel</trademark> <literal>i810</literal> 繪圖晶片組"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12449
@@ -12149,7 +12149,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12468
 msgid "Adding a Widescreen Flatpanel to the Mix"
-msgstr ""
+msgstr "加入寬螢幕平板顯示器到設定檔"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12470
@@ -12271,7 +12271,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:12566
 msgid "Troubleshooting Compiz Fusion"
-msgstr ""
+msgstr "Compiz Fusion 疑難排解"
 
 #. (itstool) path: question/para
 #: book.translate.xml:12571
@@ -12322,7 +12322,7 @@ msgstr "既然基礎的部分已經提過了，接下來的這個部分將會討
 #. (itstool) path: listitem/para
 #: book.translate.xml:12631
 msgid "Introduce popular and useful desktop applications: browsers, productivity tools, document viewers, and more."
-msgstr "介紹給您常見且實用的桌面應用軟體：瀏覽器、生產力工具、文件閱覽程式等。"
+msgstr "介紹給您常見且實用的桌面應用軟體：瀏覽器、辦工工具、文件閱覽程式等。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12637
@@ -12488,7 +12488,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:12780
 msgid "Requires <application>KDE</application> libraries"
-msgstr "需要 <application>KDE</application> 函式庫"
+msgstr "需要 <application>KDE</application> 程式庫"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:12785
@@ -12498,7 +12498,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:12788
 msgid "Requires <application>Gtk+</application>"
-msgstr "需要 <application>Gtk+</application> 函式庫"
+msgstr "需要 <application>Gtk+</application> 程式庫"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12795
@@ -12656,7 +12656,7 @@ msgstr "開啟瀏覽器並在網址列輸入 <literal>about:plugins</literal> �
 #. (itstool) path: sect3/title
 #: book.translate.xml:12914
 msgid "Firefox and Swfdec <trademark class=\"registered\">Flash</trademark> Plugin"
-msgstr ""
+msgstr "Firefox 與 Swfdec <trademark class=\"registered\">Flash</trademark> 附加元件"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:12916
@@ -12847,7 +12847,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:13057
 msgid "Chromium and <trademark>Java</trademark> Plugin"
-msgstr ""
+msgstr "Chromium 與 <trademark>Java</trademark> 附加元件"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13059
@@ -12876,7 +12876,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:13080
 msgid "Chromium and <trademark class=\"registered\">Adobe</trademark> <trademark class=\"registered\">Flash</trademark> Plugin"
-msgstr ""
+msgstr "Chromium 與 <trademark class=\"registered\">Adobe</trademark> <trademark class=\"registered\">Flash</trademark> 附加元件"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:13082
@@ -12886,17 +12886,17 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:13093
 msgid "Productivity"
-msgstr "生產力工具"
+msgstr "辦工工具"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13095
 msgid "When it comes to productivity, new users often look for an office suite or an easy-to-use word processor. While some <link linkend=\"x11-wm\">desktop environments</link> like <application>KDE</application> provide an office suite, there is no default productivity package. Several office suites and graphical word processors are available for FreeBSD, regardless of the installed window manager."
-msgstr "當開始進行辦公，新的使用者通常會去找好用的辦公室軟體或是好上手的文件處理程式。 雖然有些 <link linkend=\"x11-wm\">桌面環境</link> 像是 <application>KDE</application> 已經提供了辦公軟體組合的套件，FreeBSD 預設未提供任何生產力工具。 不論是否有安裝視窗管理程式，FreeBSD 可安裝多套辦公軟體以及圖型化文件處理程式。"
+msgstr "當開始進行辦公，新的使用者通常會去找好用的辦公室軟體或是好上手的文件處理程式。 雖然有些 <link linkend=\"x11-wm\">桌面環境</link> 像是 <application>KDE</application> 已經提供了辦公軟體組合的套件，FreeBSD 預設未提供任何辦工工具。 不論是否有安裝視窗管理程式，FreeBSD 可安裝多套辦公軟體以及圖型化文件處理程式。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13103
 msgid "This section demonstrates how to install the following popular productivity software and indicates if the application is resource-heavy, takes time to compile from ports, or has any major dependencies."
-msgstr "本章節元範如何安裝以下熱門的生產力軟體以及說明該應用程式所需的資源、自 Ports 編譯的時間或者是否有其他主要相依套件。"
+msgstr "本章節元範如何安裝以下熱門的辦工軟體以及說明該應用程式所需的資源、自 Ports 編譯的時間或者是否有其他主要相依套件。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13115 book.translate.xml:13425 book.translate.xml:13646
@@ -13801,7 +13801,7 @@ msgstr "要知道載入 <filename>snd_driver</filename> metadriver 後使用了�
 #. (itstool) path: sect2/title
 #: book.translate.xml:13944
 msgid "Configuring a Custom Kernel with Sound Support"
-msgstr ""
+msgstr "設定自訂核心支援音效"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13946
@@ -13877,7 +13877,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14000
 msgid "Testing Sound"
-msgstr ""
+msgstr "測試音效"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14002
@@ -13960,7 +13960,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14065
 msgid "Troubleshooting Sound"
-msgstr ""
+msgstr "疑難排解音效"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:14067
@@ -13995,12 +13995,12 @@ msgstr "常見錯誤訊息"
 #. (itstool) path: row/entry
 #: book.translate.xml:14081
 msgid "Error"
-msgstr ""
+msgstr "錯誤"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14082
 msgid "Solution"
-msgstr ""
+msgstr "解決方式"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14088
@@ -14095,7 +14095,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:14169
 msgid "Utilizing Multiple Sound Sources"
-msgstr ""
+msgstr "使用多個音效來源"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:14172
@@ -14139,7 +14139,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:14219
 msgid "Setting Default Values for Mixer Channels"
-msgstr ""
+msgstr "設定混音器頻道的預設值"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:14222
@@ -14180,7 +14180,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14270
 msgid "MP3 Players"
-msgstr ""
+msgstr "MP3 播放器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14272
@@ -14213,7 +14213,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14301
 msgid "Ripping <acronym>CD</acronym> Audio Tracks"
-msgstr ""
+msgstr "擷取 <acronym>CD</acronym> 音軌"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14303
@@ -14282,7 +14282,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14354
 msgid "Encoding and Decoding MP3s"
-msgstr ""
+msgstr "MP3 編碼與解碼"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14356
@@ -14452,7 +14452,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14522
 msgid "Determining Video Capabilities"
-msgstr ""
+msgstr "偵測影像處理能力"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:14524
@@ -14626,7 +14626,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14681
 msgid "Ports and Packages Dealing with Video"
-msgstr ""
+msgstr "可處理影像的 Ports 與套件"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:14683
@@ -14646,7 +14646,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:14691
 msgid "<application>MPlayer</application> and <application>MEncoder</application>"
-msgstr ""
+msgstr "<application>MPlayer</application> 與 <application>MEncoder</application>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:14694
@@ -14836,7 +14836,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:14850
 msgid "The <application>xine</application> Video Player"
-msgstr ""
+msgstr "<application>xine</application> 影像播放器"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:14853
@@ -14872,7 +14872,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:14879
 msgid "The <application>Transcode</application> Utilities"
-msgstr ""
+msgstr "<application>Transcode</application> 工具"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:14882
@@ -14940,7 +14940,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:14962
 msgid "Loading the Driver"
-msgstr ""
+msgstr "載入驅動程式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14964
@@ -15020,7 +15020,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:15013
 msgid "Useful Applications"
-msgstr ""
+msgstr "好用的應用程式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15015
@@ -15080,7 +15080,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:15079
 msgid "Hardware"
-msgstr ""
+msgstr "硬體"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15081
@@ -15095,7 +15095,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:15105
 msgid "Setting up the MythTV Backend"
-msgstr ""
+msgstr "設定 MythTV 後端"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15107
@@ -15178,7 +15178,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:15166
 msgid "Checking the Scanner"
-msgstr ""
+msgstr "檢查掃描器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15168
@@ -15278,7 +15278,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:15239
 msgid "<application>SANE</application> Configuration"
-msgstr ""
+msgstr "<application>SANE</application> 設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15241
@@ -15387,7 +15387,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:15340
 msgid "Scanner Permissions"
-msgstr ""
+msgstr "掃描器權限"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:15342
@@ -16239,7 +16239,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17039
 msgid "Converting <trademark class=\"registered\">PostScript</trademark> to Other <acronym>PDL</acronym>s"
-msgstr ""
+msgstr "轉換 <trademark class=\"registered\">PostScript</trademark> 至其他 <acronym>PDL</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17042
@@ -16249,7 +16249,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:17048
 msgid "Output <acronym>PDL</acronym>s"
-msgstr ""
+msgstr "輸出 <acronym>PDL</acronym> 格式"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17053
@@ -16371,7 +16371,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17159 book.translate.xml:28457
 msgid "Initial Setup"
-msgstr ""
+msgstr "初始設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17161
@@ -16518,7 +16518,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17296
 msgid "Printing with <citerefentry><refentrytitle>lpr</refentrytitle><manvolnum>1</manvolnum></citerefentry>"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>lpr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 列印"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17298
@@ -16547,7 +16547,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17315
 msgid "Filters"
-msgstr ""
+msgstr "過濾器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17317
@@ -16606,7 +16606,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:17374
 msgid "Preventing Stairstepping on Plain Text Printers"
-msgstr ""
+msgstr "避免在純文字印表機階梯狀列印"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:17376
@@ -16667,7 +16667,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:17409
 msgid "Fancy Plain Text on <trademark class=\"registered\">PostScript</trademark> Printers with <package>print/enscript</package>"
-msgstr ""
+msgstr "使用 <package>print/enscript</package> 在 <trademark class=\"registered\">PostScript</trademark> 印表機美化純文字內容"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:17412
@@ -16707,7 +16707,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:17442
 msgid "Printing <trademark class=\"registered\">PostScript</trademark> to <acronym>PCL</acronym> Printers"
-msgstr ""
+msgstr "列印 <trademark class=\"registered\">PostScript</trademark> 到 <acronym>PCL</acronym> 印表機"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:17445
@@ -16770,7 +16770,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:17482
 msgid "Smart Filters"
-msgstr ""
+msgstr "智慧過濾器"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:17484
@@ -16822,7 +16822,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:17529
 msgid "Other Smart Filters"
-msgstr ""
+msgstr "其他智慧過濾器"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:17531
@@ -16832,7 +16832,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17543
 msgid "Multiple Queues"
-msgstr ""
+msgstr "多序列"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17545
@@ -16877,7 +16877,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17588
 msgid "Monitoring and Controlling Printing"
-msgstr ""
+msgstr "監視與控制列印"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17590
@@ -17093,7 +17093,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17723
 msgid "Shared Printers"
-msgstr ""
+msgstr "分享印表機"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17725
@@ -17103,7 +17103,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:17730
 msgid "Aliases"
-msgstr ""
+msgstr "別名"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:17732
@@ -17146,7 +17146,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:17760
 msgid "Header Pages"
-msgstr ""
+msgstr "頁首"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:17762
@@ -17171,7 +17171,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17796 book.translate.xml:22596
 msgid "References"
-msgstr ""
+msgstr "參考文獻"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17798
@@ -17367,7 +17367,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:17995
 msgid "Installing Additional Libraries Manually"
-msgstr ""
+msgstr "手動安裝其他程式庫"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:17997
@@ -17466,7 +17466,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:18073
 msgid "Installing <trademark class=\"registered\">Linux</trademark> <acronym>ELF</acronym> Binaries"
-msgstr ""
+msgstr "安裝 <trademark class=\"registered\">Linux</trademark> <acronym>ELF</acronym> Binary"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:18076
@@ -17511,7 +17511,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:18105
 msgid "Installing a <trademark class=\"registered\">Linux</trademark> <acronym>RPM</acronym> Based Application"
-msgstr ""
+msgstr "安裝以 <trademark class=\"registered\">Linux</trademark> <acronym>RPM</acronym> 為基礎的應用程式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18108
@@ -17534,7 +17534,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:18124
 msgid "Configuring the Hostname Resolver"
-msgstr ""
+msgstr "設定主機名稱解析器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18126
@@ -17686,7 +17686,7 @@ msgstr "這些章節是讓您在需要查資料的時候翻閱用的。 您不�
 #. (itstool) path: info/title
 #: book.translate.xml:19113
 msgid "Configuration and Tuning"
-msgstr "設定與調效"
+msgstr "設定與調校"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:19116
@@ -17782,7 +17782,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:19241
 msgid "Extended Application Configuration"
-msgstr ""
+msgstr "延伸應用程式設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19243
@@ -17842,7 +17842,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:19295
 msgid "Using Services to Start Services"
-msgstr ""
+msgstr "使用服務來啟動其他服務"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19297
@@ -17933,7 +17933,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:19434
 msgid "Creating a User Crontab"
-msgstr ""
+msgstr "建立使用者的 Crontab"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19436
@@ -18160,7 +18160,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:19648
 msgid "Managing System-Specific Configuration"
-msgstr ""
+msgstr "管理特定系統的設定"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:19650
@@ -18244,7 +18244,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:19736
 msgid "Locating the Correct Driver"
-msgstr ""
+msgstr "找到正確的驅動程式"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:19738
@@ -18304,7 +18304,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:19814
 msgid "Using <trademark class=\"registered\">Windows</trademark> <acronym>NDIS</acronym> Drivers"
-msgstr ""
+msgstr "使用 <trademark class=\"registered\">Windows</trademark> <acronym>NDIS</acronym> 驅動程式"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:19816
@@ -18446,7 +18446,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:19937
 msgid "Configuring the Network Card"
-msgstr ""
+msgstr "設定網路卡"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19944
@@ -18634,7 +18634,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:20117
 msgid "Testing and Troubleshooting"
-msgstr ""
+msgstr "測試與疑難排解"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:20119
@@ -18667,7 +18667,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:20140
 msgid "Testing the Ethernet Card"
-msgstr ""
+msgstr "測試乙太網路卡"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:20142
@@ -18879,7 +18879,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:20379
 msgid "Configuring Local Logging"
-msgstr ""
+msgstr "設定本地日誌"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:20381
@@ -18991,7 +18991,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:20518
 msgid "Log Management and Rotation"
-msgstr ""
+msgstr "日誌管理與循環"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:20520
@@ -19081,7 +19081,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:20615
 msgid "Configuring Remote Logging"
-msgstr ""
+msgstr "設定遠端日誌"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:20628
@@ -19096,7 +19096,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:20645
 msgid "Log Server Configuration"
-msgstr ""
+msgstr "日誌伺服器設定"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:20647
@@ -19121,7 +19121,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:20680
 msgid "Sample Log Server Configuration"
-msgstr ""
+msgstr "日誌伺服器設定範例"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:20682
@@ -19191,7 +19191,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:20727
 msgid "Log Client Configuration"
-msgstr ""
+msgstr "日誌客戶端設定"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:20729
@@ -19257,7 +19257,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:20773
 msgid "Debugging Log Servers"
-msgstr ""
+msgstr "日誌伺服器除錯"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:20775
@@ -19327,7 +19327,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:20841 book.translate.xml:52452
 msgid "Security Considerations"
-msgstr ""
+msgstr "安全注意事項"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:20843
@@ -19342,7 +19342,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:20871
 msgid "<filename>/etc</filename> Layout"
-msgstr ""
+msgstr "<filename>/etc</filename> 配置"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:20874
@@ -19432,7 +19432,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:20938
 msgid "Hostnames"
-msgstr ""
+msgstr "主機名稱"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:20940
@@ -19708,7 +19708,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:21141
 msgid "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> Read-only"
-msgstr ""
+msgstr "唯讀 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:21154
@@ -19746,7 +19746,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:21190
 msgid "Sysctl Variables"
-msgstr ""
+msgstr "Sysctl 變數"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:21193
@@ -19856,7 +19856,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:21351
 msgid "Soft Updates"
-msgstr ""
+msgstr "軟更新"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:21353
@@ -19894,7 +19894,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:21381
 msgid "More Details About Soft Updates"
-msgstr ""
+msgstr "有關軟更新的更多詳細資訊"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:21383
@@ -19934,7 +19934,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:21521
 msgid "Tuning Kernel Limits"
-msgstr "調效核心限制"
+msgstr "調校核心限制"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:21523
@@ -19944,7 +19944,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:21529
 msgid "File/Process Limits"
-msgstr ""
+msgstr "檔案/程序限制"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:21532
@@ -20009,7 +20009,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:21647
 msgid "Network Limits"
-msgstr ""
+msgstr "網路限制"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:21649
@@ -20049,7 +20049,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:21738
 msgid "<literal>TCP</literal> Bandwidth Delay Product"
-msgstr ""
+msgstr "<literal>TCP</literal> 頻寬延遲乘積"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:21740
@@ -20074,7 +20074,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:21794
 msgid "Virtual Memory"
-msgstr ""
+msgstr "虛擬記憶體"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:21797
@@ -20135,7 +20135,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:21843
 msgid "Swap on a New Hard Drive or Existing Partition"
-msgstr ""
+msgstr "使用新硬碟或既有分割區增加交換空間"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:21845
@@ -20177,7 +20177,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:21876
 msgid "Creating a Swap File"
-msgstr ""
+msgstr "建立交換檔"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:21878
@@ -20192,7 +20192,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:21889
 msgid "Creating a Swap File on FreeBSD 10.<replaceable>X</replaceable> and Later"
-msgstr ""
+msgstr "建立交換檔於 FreeBSD 10.<replaceable>X</replaceable> 及以後版本"
 
 #. (itstool) path: step/para
 #: book.translate.xml:21894
@@ -20246,7 +20246,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:21926
 msgid "Creating a Swap File on FreeBSD 9.<replaceable>X</replaceable> and Earlier"
-msgstr ""
+msgstr "建立交換檔於 FreeBSD 9.<replaceable>X</replaceable> 及先前版本"
 
 #. (itstool) path: step/para
 #: book.translate.xml:21931
@@ -20333,7 +20333,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:22061
 msgid "Configuring <acronym>ACPI</acronym>"
-msgstr ""
+msgstr "設定 <acronym>ACPI</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:22063
@@ -20358,7 +20358,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:22097
 msgid "Common Problems"
-msgstr ""
+msgstr "常見問題"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:22099
@@ -20393,7 +20393,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:22151
 msgid "Mouse Issues"
-msgstr ""
+msgstr "滑鼠問題"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:22153
@@ -20403,7 +20403,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:22160
 msgid "Suspend/Resume"
-msgstr ""
+msgstr "待機/喚醒"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:22162
@@ -20475,7 +20475,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:22261
 msgid "System Hangs"
-msgstr ""
+msgstr "系統無回應"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:22263
@@ -20505,7 +20505,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:22299
 msgid "Panics"
-msgstr ""
+msgstr "當機"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:22301
@@ -20520,7 +20520,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:22320
 msgid "System Powers Up After Suspend or Shutdown"
-msgstr ""
+msgstr "系統在待機或關機後仍開機"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:22322
@@ -20530,7 +20530,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:22333
 msgid "BIOS Contains Buggy Bytecode"
-msgstr ""
+msgstr "BIOS 含有有問題的 Bytecode"
 
 #. (itstool) path: sect3/indexterm
 #. (itstool) path: sect2/indexterm
@@ -20559,7 +20559,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:22357
 msgid "Overriding the Default <acronym>AML</acronym>"
-msgstr ""
+msgstr "覆蓋預設的 <acronym>AML</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:22359
@@ -20624,7 +20624,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:22436
 msgid "Getting and Submitting Debugging Info"
-msgstr ""
+msgstr "取得與回報除錯資訊"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:22439
@@ -20902,7 +20902,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:22785
 msgid "The Boot Manager"
-msgstr ""
+msgstr "開機管理程式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:22792
@@ -20917,7 +20917,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:22807
 msgid "<filename>boot0</filename> Screenshot"
-msgstr ""
+msgstr "<filename>boot0</filename> 螢幕截圖"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:22809
@@ -20948,7 +20948,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:22834
 msgid "Stage One and Stage Two"
-msgstr ""
+msgstr "階段一與階段二"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:22836
@@ -20973,7 +20973,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:22865
 msgid "<filename>boot2</filename> Screenshot"
-msgstr ""
+msgstr "<filename>boot2</filename> 螢幕截圖"
 
 #. (itstool) path: example/screen
 #. (itstool) path: step/screen
@@ -21004,7 +21004,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:22892
 msgid "Stage Three"
-msgstr ""
+msgstr "階段三"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:22894
@@ -21250,7 +21250,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:23094
 msgid "Last Stage"
-msgstr ""
+msgstr "最終階段"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23100
@@ -21265,7 +21265,7 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:23114
 msgid "Kernel Interaction During Boot"
-msgstr ""
+msgstr "開機時核心互動參數"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:23127
@@ -21310,7 +21310,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:23167
 msgid "Single-User Mode"
-msgstr ""
+msgstr "單使用者模式"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:23172
@@ -21346,7 +21346,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:23210
 msgid "Configuring an Insecure Console in <filename>/etc/ttys</filename>"
-msgstr ""
+msgstr "在 <filename>/etc/ttys</filename> 設定不安全的 Console"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:23213
@@ -21367,7 +21367,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:23227
 msgid "Multi-User Mode"
-msgstr ""
+msgstr "多使用者模式"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:23229
@@ -21763,7 +21763,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:23696
 msgid "Preventing Logins"
-msgstr ""
+msgstr "防止登入"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23698
@@ -21800,7 +21800,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:23721
 msgid "Permitted Account Escalation"
-msgstr ""
+msgstr "帳號升級授權"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23723
@@ -21829,7 +21829,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:23757
 msgid "Password Hashes"
-msgstr ""
+msgstr "密碼編碼方式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23759
@@ -21889,7 +21889,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:23829
 msgid "Password Policy Enforcement"
-msgstr ""
+msgstr "強制密碼政策"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23831
@@ -21987,7 +21987,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:23922
 msgid "Detecting Rootkits"
-msgstr ""
+msgstr "偵測 Rootkits"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23924
@@ -22023,7 +22023,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:23969
 msgid "Binary Verification"
-msgstr ""
+msgstr "Binary 檢驗"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:23971
@@ -22131,7 +22131,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24082
 msgid "System Tuning for Security"
-msgstr ""
+msgstr "系統安全性調校"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24084
@@ -22221,7 +22221,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24235
 msgid "Initializing <acronym>OPIE</acronym>"
-msgstr ""
+msgstr "初始化 <acronym>OPIE</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24237
@@ -22264,7 +22264,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24278
 msgid "Insecure Connection Initialization"
-msgstr ""
+msgstr "不安全連線初始化"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24280
@@ -22314,7 +22314,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24319
 msgid "Generating a Single One-time Password"
-msgstr ""
+msgstr "產生單組一次性密碼"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24321
@@ -22375,7 +22375,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24366
 msgid "Generating Multiple One-time Passwords"
-msgstr ""
+msgstr "產生多組一次性密碼"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24368
@@ -22405,7 +22405,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24394
 msgid "Restricting Use of <trademark class=\"registered\">UNIX</trademark> Passwords"
-msgstr ""
+msgstr "限制使用 <trademark class=\"registered\">UNIX</trademark> 密碼"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24396
@@ -22463,7 +22463,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24445
 msgid "Initial Configuration"
-msgstr ""
+msgstr "初始設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24447
@@ -22525,7 +22525,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24499 book.translate.xml:49103
 msgid "Advanced Configuration"
-msgstr ""
+msgstr "進階設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:24501
@@ -22669,7 +22669,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24694
 msgid "Setting up a Heimdal <acronym>KDC</acronym>"
-msgstr ""
+msgstr "設定 Heimdal <acronym>KDC</acronym>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:24696
@@ -22849,7 +22849,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24844
 msgid "Configuring a Server to Use <application>Kerberos</application>"
-msgstr ""
+msgstr "設定伺服器使用 <application>Kerberos</application>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:24847
@@ -22929,7 +22929,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:24953
 msgid "Configuring a Client to Use <application>Kerberos</application>"
-msgstr ""
+msgstr "設定客戶端使用 <application>Kerberos</application>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:24956
@@ -22992,7 +22992,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:25024
 msgid "<acronym>MIT</acronym> Differences"
-msgstr ""
+msgstr "與 <acronym>MIT</acronym> 的差異"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25026
@@ -23023,7 +23023,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:25056
 msgid "<application>Kerberos</application> Tips, Tricks, and Troubleshooting"
-msgstr ""
+msgstr "<application>Kerberos</application> 提示、技巧與疑難排解"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25059
@@ -23078,7 +23078,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:25169
 msgid "Mitigating <application>Kerberos</application> Limitations"
-msgstr ""
+msgstr "減輕 <application>Kerberos</application> 的限制"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25172
@@ -23113,7 +23113,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:25221
 msgid "Resources and Further Information"
-msgstr ""
+msgstr "相關資源與延伸資訊"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25223
@@ -23203,7 +23203,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:25341
 msgid "Generating Certificates"
-msgstr ""
+msgstr "產生憑証"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:25343
@@ -23307,7 +23307,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:25441
 msgid "Using Certificates"
-msgstr ""
+msgstr "使用憑證"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:25443
@@ -23530,7 +23530,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:25677
 msgid "Configuring a <acronym>VPN</acronym> on FreeBSD"
-msgstr ""
+msgstr "在 FreeBSD 上設定 <acronym>VPN</acronym>"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:25686
@@ -23925,7 +23925,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:25999
 msgid "Using the SSH Client Utilities"
-msgstr ""
+msgstr "使用 SSH 客戶端工具"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:26001
@@ -24003,7 +24003,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:26081
 msgid "Key-based Authentication"
-msgstr ""
+msgstr "以金鑰為基礎的認證"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:26083
@@ -24086,7 +24086,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:26178
 msgid "<acronym>SSH</acronym> Tunneling"
-msgstr ""
+msgstr "<acronym>SSH</acronym> 通道"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:26180
@@ -24174,7 +24174,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:26266
 msgid "Create a Secure Tunnel for <acronym>SMTP</acronym>"
-msgstr ""
+msgstr "建立供 <acronym>SMTP</acronym> 使用的安全通道"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:26269
@@ -24197,7 +24197,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:26286
 msgid "Secure Access of a <acronym>POP3</acronym> Server"
-msgstr ""
+msgstr "安全存取 <acronym>POP3</acronym> 伺服器"
 
 #. (itstool) path: example/para
 #: book.translate.xml:26289
@@ -24220,7 +24220,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:26308
 msgid "Bypassing a Firewall"
-msgstr ""
+msgstr "跳過防火牆"
 
 #. (itstool) path: example/para
 #: book.translate.xml:26310
@@ -24248,7 +24248,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:26335
 msgid "Enabling the SSH Server"
-msgstr ""
+msgstr "開啟 SSH 伺服器"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:26337
@@ -24311,7 +24311,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:26380
 msgid "SSH Server Security"
-msgstr ""
+msgstr "SSH 伺服器安全性"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26382
@@ -24428,7 +24428,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:26490
 msgid "Enabling <acronym>ACL</acronym> Support"
-msgstr ""
+msgstr "開啟 <acronym>ACL</acronym> 支援"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26492
@@ -24474,7 +24474,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:26555
 msgid "Using <acronym>ACL</acronym>s"
-msgstr ""
+msgstr "使用 <acronym>ACL</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26557
@@ -24622,7 +24622,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:26712
 msgid "Format of a Security Advisory"
-msgstr ""
+msgstr "安全報告的格式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:26714
@@ -24894,7 +24894,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:27025
 msgid "Enabling and Utilizing Process Accounting"
-msgstr ""
+msgstr "開啟並使用程序追蹤"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27027
@@ -24980,7 +24980,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:27110
 msgid "Configuring Login Classes"
-msgstr ""
+msgstr "設定登入類別"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:27112
@@ -25074,12 +25074,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:27196
 msgid "Login Class Resource Limits"
-msgstr ""
+msgstr "登入類別限制資源類型"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27201
 msgid "Resource Limit"
-msgstr ""
+msgstr "限制資源"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:27208
@@ -25204,7 +25204,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:27342
 msgid "Enabling and Configuring Resource Limits"
-msgstr ""
+msgstr "開啟並設定資源限制"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27344
@@ -25678,7 +25678,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:27806
 msgid "System Tools for Jail Tuning in FreeBSD"
-msgstr ""
+msgstr "在 FreeBSD 中調校 Jail 的系統工具"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27808
@@ -25749,7 +25749,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:27894
 msgid "High-Level Administrative Tools in the FreeBSD Ports Collection"
-msgstr ""
+msgstr "在 FreeBSD Ports 套件集中的高層級管理工具"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27897
@@ -25759,7 +25759,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:27907
 msgid "Keeping Jails Patched and up to Date"
-msgstr ""
+msgstr "持續 Jail 的修補與更新"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:27909
@@ -25892,7 +25892,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28060
 msgid "Creating the Template"
-msgstr ""
+msgstr "建立範本"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28062
@@ -26004,7 +26004,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28154
 msgid "Creating Jails"
-msgstr ""
+msgstr "建立 Jail"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28156
@@ -26133,7 +26133,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28268
 msgid "Upgrading"
-msgstr ""
+msgstr "升級"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28270
@@ -26265,7 +26265,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28392
 msgid "Installing <application>ezjail</application>"
-msgstr ""
+msgstr "安裝 <application>ezjail</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28394
@@ -26413,7 +26413,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28527
 msgid "Creating and Starting a New Jail"
-msgstr ""
+msgstr "建立並啟動新的 Jail"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28529
@@ -26558,12 +26558,12 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28659
 msgid "Updating Jails"
-msgstr ""
+msgstr "更新 Jail"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:28662
 msgid "Updating the Operating System"
-msgstr ""
+msgstr "更新作業系統"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28664
@@ -26645,7 +26645,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:28717
 msgid "<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> on Untrusted Jail"
-msgstr ""
+msgstr "在不信任的 Jail 做 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:28719
@@ -26700,7 +26700,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:28749
 msgid "<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> on Trusted Jail"
-msgstr ""
+msgstr "在信任的 Jail 做 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/para
 #: book.translate.xml:28751
@@ -26716,7 +26716,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:28759
 msgid "Updating Ports"
-msgstr ""
+msgstr "更新 Ports"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28761
@@ -26737,12 +26737,12 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28773
 msgid "Controlling Jails"
-msgstr ""
+msgstr "控制 Jail"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:28776
 msgid "Stopping and Starting Jails"
-msgstr ""
+msgstr "停止與啟動 Jail"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28778
@@ -26787,7 +26787,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:28802
 msgid "Archiving and Restoring Jails"
-msgstr ""
+msgstr "封存與還原 Jail"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:28804
@@ -26829,7 +26829,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:28839
 msgid "Full Example: <application>BIND</application> in a Jail"
-msgstr ""
+msgstr "完整範例：在 Jail 中安裝 <application>BIND</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:28842
@@ -26859,7 +26859,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:28872
 msgid "Running BIND in a Jail"
-msgstr ""
+msgstr "在 Jail 中執行 BIND"
 
 #. (itstool) path: example/para
 #: book.translate.xml:28874
@@ -27148,7 +27148,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:29135 book.translate.xml:30877
 msgid "Key Terms"
-msgstr "關鍵字"
+msgstr "關鍵詞"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:29137
@@ -27279,7 +27279,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29333
 msgid "Label Configuration"
-msgstr ""
+msgstr "標籤設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29335
@@ -27326,7 +27326,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29389
 msgid "Predefined Labels"
-msgstr ""
+msgstr "預先定義的標籤"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29391
@@ -27356,7 +27356,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29425
 msgid "Numeric Labels"
-msgstr ""
+msgstr "數值標籤"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29427
@@ -27392,7 +27392,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29465
 msgid "User Labels"
-msgstr ""
+msgstr "使用者標籤"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29467
@@ -27451,7 +27451,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29528
 msgid "Network Interface Labels"
-msgstr ""
+msgstr "網路介面標籤"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:29530
@@ -27552,7 +27552,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:29670
 msgid "Available MAC Policies"
-msgstr "可用的 MAC 方針"
+msgstr "可用的 MAC 管理政策"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:29672
@@ -27567,7 +27567,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29688
 msgid "The MAC See Other UIDs Policy"
-msgstr ""
+msgstr "MAC See Other UIDs 政策"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:29690
@@ -27617,7 +27617,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29744
 msgid "The MAC BSD Extended Policy"
-msgstr ""
+msgstr "MAC BSD Extended 政策"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:29746
@@ -27699,7 +27699,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29813
 msgid "The MAC Interface Silencing Policy"
-msgstr ""
+msgstr "MAC Interface Silencing 政策"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:29815
@@ -27754,7 +27754,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29865
 msgid "The MAC Port Access Control List Policy"
-msgstr ""
+msgstr "MAC Port Access Control 政策"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:29867
@@ -27856,7 +27856,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:29954
 msgid "The MAC Partition Policy"
-msgstr ""
+msgstr "MAC Partition 政策"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:29956
@@ -27934,7 +27934,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30015
 msgid "The MAC Multi-Level Security Module"
-msgstr ""
+msgstr "MAC Multi-Level Security 模組"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:30017
@@ -28076,7 +28076,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30161
 msgid "The MAC Biba Module"
-msgstr ""
+msgstr "MAC Biba 模組"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:30163
@@ -28205,7 +28205,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30307
 msgid "The MAC Low-watermark Module"
-msgstr ""
+msgstr "MAC Low-watermark 模組"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:30309
@@ -28340,7 +28340,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30427
 msgid "Create an Insecure User Class"
-msgstr ""
+msgstr "建立不安全的使用者類別"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:30429
@@ -28395,7 +28395,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30468
 msgid "Configure Users"
-msgstr ""
+msgstr "設定使用者"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:30470
@@ -28437,7 +28437,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30491
 msgid "Create the Contexts File"
-msgstr ""
+msgstr "建立關聯檔 (Context File)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:30493
@@ -28509,7 +28509,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30546
 msgid "Loader Configuration"
-msgstr ""
+msgstr "載入程式設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:30548
@@ -28539,7 +28539,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30565
 msgid "Testing the Configuration"
-msgstr ""
+msgstr "測試設定"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:30567
@@ -28837,7 +28837,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:30973
 msgid "Event Selection Expressions"
-msgstr ""
+msgstr "事件選擇表示法"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:30975
@@ -28857,12 +28857,12 @@ msgstr "預設稽查事件類別"
 #. (itstool) path: row/entry
 #: book.translate.xml:30991
 msgid "Class Name"
-msgstr ""
+msgstr "類別名稱"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:30993 book.translate.xml:31157
 msgid "Action"
-msgstr ""
+msgstr "動作"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:30999 book.translate.xml:31000
@@ -29172,7 +29172,7 @@ msgstr "稽查事件類別字首"
 #. (itstool) path: row/entry
 #: book.translate.xml:31156
 msgid "Prefix"
-msgstr ""
+msgstr "字首"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:31164
@@ -29430,7 +29430,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:31419
 msgid "Live Monitoring Using Audit Pipes"
-msgstr ""
+msgstr "使用 Audit Pipes 即時監視"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:31421
@@ -29467,7 +29467,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:31459
 msgid "Rotating and Compressing Audit Trail Files"
-msgstr ""
+msgstr "循環與壓縮 Audit Trail 檔"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:31461
@@ -29916,7 +29916,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:31897
 msgid "Device Configuration"
-msgstr ""
+msgstr "裝置設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:31899
@@ -30096,7 +30096,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32024
 msgid "Automounting Removable Media"
-msgstr ""
+msgstr "自動掛載可移除的媒體"
 
 #. (itstool) path: note/para
 #: book.translate.xml:32027
@@ -30239,7 +30239,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:32137
 msgid "Supported Devices"
-msgstr ""
+msgstr "支援的裝置"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:32150
@@ -30349,7 +30349,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32224
 msgid "Burning a <acronym>CD</acronym>"
-msgstr ""
+msgstr "燒錄 <acronym>CD</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32226
@@ -30430,7 +30430,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32290
 msgid "Writing Data to an <acronym>ISO</acronym> File System"
-msgstr ""
+msgstr "寫入資料到一個 <acronym>ISO</acronym> 檔案系統"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32293
@@ -30521,7 +30521,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32390
 msgid "Using Data <acronym>CD</acronym>s"
-msgstr ""
+msgstr "使用資料 <acronym>CD</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32392
@@ -30605,7 +30605,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32473
 msgid "Duplicating Audio <acronym>CD</acronym>s"
-msgstr ""
+msgstr "複製音樂 <acronym>CD</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32475
@@ -30717,7 +30717,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32609 book.translate.xml:56853 book.translate.xml:57006
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32611
@@ -30753,7 +30753,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32642
 msgid "Burning Data <acronym>DVD</acronym>s"
-msgstr ""
+msgstr "燒錄資料 <acronym>DVD</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32644
@@ -30837,7 +30837,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32714
 msgid "Burning a <acronym>DVD</acronym>-Video"
-msgstr ""
+msgstr "燒錄 <acronym>DVD</acronym>-Video"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:32716
@@ -30868,7 +30868,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32743
 msgid "Using a <acronym>DVD+RW</acronym>"
-msgstr ""
+msgstr "使用 <acronym>DVD+RW</acronym>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:32745
@@ -30942,7 +30942,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32799
 msgid "Using a <acronym>DVD-RW</acronym>"
-msgstr ""
+msgstr "使用 <acronym>DVD-RW</acronym>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:32801
@@ -31025,7 +31025,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32871
 msgid "Multi-Session"
-msgstr ""
+msgstr "多階段燒錄 (Multi-Session)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32873
@@ -31050,7 +31050,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32905 book.translate.xml:65535
 msgid "For More Information"
-msgstr ""
+msgstr "取得更多資訊"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32907
@@ -31070,7 +31070,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:32926
 msgid "Using a <acronym>DVD-RAM</acronym>"
-msgstr ""
+msgstr "使用 <acronym>DVD-RAM</acronym>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:32928
@@ -31233,7 +31233,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33101
 msgid "File System Backups"
-msgstr ""
+msgstr "檔案系統備份"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:33103
@@ -31317,7 +31317,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33186
 msgid "Directory Backups"
-msgstr ""
+msgstr "目錄備份"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:33188
@@ -31347,7 +31347,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:33212
 msgid "Backing Up the Current Directory with <command>tar</command>"
-msgstr ""
+msgstr "使用 <command>tar</command> 備份目前目錄"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:33215
@@ -31363,7 +31363,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:33226
 msgid "Restoring Up the Current Directory with <command>tar</command>"
-msgstr ""
+msgstr "使用 <command>tar</command> 還原目前目錄"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:33229
@@ -31394,7 +31394,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:33257
 msgid "Using <command>ls</command> and <command>cpio</command> to Make a Recursive Backup of the Current Directory"
-msgstr ""
+msgstr "使用 <command>ls</command> 與 <command>cpio</command> 來製作目前目錄的遞迴備份"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:33260
@@ -31436,7 +31436,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:33284
 msgid "Backing Up the Current Directory with <command>pax</command>"
-msgstr ""
+msgstr "使用 <command>pax</command> 備份目前目錄"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:33287
@@ -31447,7 +31447,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33292
 msgid "Using Data Tapes for Backups"
-msgstr ""
+msgstr "使用資料磁帶備份"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:33294
@@ -31527,7 +31527,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33352
 msgid "Third-Party Backup Utilities"
-msgstr ""
+msgstr "第三方備份工具"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:33354
@@ -31547,7 +31547,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33373
 msgid "Emergency Recovery"
-msgstr ""
+msgstr "緊急還原"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:33375
@@ -31633,7 +31633,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33460
 msgid "Attaching and Detaching Existing Images"
-msgstr ""
+msgstr "連接與解除連接既有的映象檔"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:33462
@@ -31684,7 +31684,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33506
 msgid "Creating a File- or Memory-Backed Memory Disk"
-msgstr ""
+msgstr "建立以檔案或記憶體為基底的磁碟"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:33508
@@ -31913,7 +31913,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33716
 msgid "Enabling Disk Quotas"
-msgstr ""
+msgstr "開啟磁碟配額"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:33718
@@ -32006,7 +32006,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33783
 msgid "Setting Quota Limits"
-msgstr ""
+msgstr "設定配額限制"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:33785
@@ -32111,7 +32111,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33868
 msgid "Checking Quota Limits and Disk Usage"
-msgstr ""
+msgstr "檢查配額限制與磁碟使用狀況"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:33875
@@ -32146,7 +32146,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33905
 msgid "Quotas over NFS"
-msgstr ""
+msgstr "NFS 上的配額"
 
 #. (itstool) path: sect2/indexterm
 #. (itstool) path: sect1/indexterm
@@ -32178,7 +32178,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:33930
 msgid "Encrypting Disk Partitions"
-msgstr "磁碟磁區加密"
+msgstr "磁碟分割區加密"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:33940
@@ -32217,7 +32217,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:33979
 msgid "Disk Encryption with <application>gbde</application>"
-msgstr ""
+msgstr "使用 <application>gbde</application> 做磁碟加密"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:33982
@@ -32453,7 +32453,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:34195
 msgid "Disk Encryption with <command>geli</command>"
-msgstr ""
+msgstr "使用 <command>geli</command> 做磁碟加密"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:34208
@@ -32714,7 +32714,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:34429
 msgid "Configuring Encrypted Swap"
-msgstr ""
+msgstr "設定已加密的交換空間"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:34431
@@ -32814,7 +32814,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:34507
 msgid "Encrypted Swap Verification"
-msgstr ""
+msgstr "加密的交換空間檢驗"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:34509
@@ -32957,7 +32957,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:34674
 msgid "HAST Operation"
-msgstr ""
+msgstr "HAST 運作模式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:34676
@@ -33012,7 +33012,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:34754
 msgid "HAST Configuration"
-msgstr ""
+msgstr "HAST 設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:34756
@@ -33165,7 +33165,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:34892
 msgid "Failover Configuration"
-msgstr ""
+msgstr "容錯移轉設定"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:34894
@@ -33389,7 +33389,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:35128
 msgid "Recovering from the Split-brain Condition"
-msgstr ""
+msgstr "自 Split-brain 情況復原"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:35130
@@ -33470,7 +33470,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:35241
 msgid "RAID0 - Striping"
-msgstr "RAID0 - 分散"
+msgstr "RAID0 - 分散 (Striping)"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:35252 book.translate.xml:36026 book.translate.xml:62043
@@ -33624,7 +33624,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:35400
 msgid "RAID1 - Mirroring"
-msgstr "RAID1 - 鏡像"
+msgstr "RAID1 - 鏡射 (Mirroring)"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:35405
@@ -33664,7 +33664,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:35452
 msgid "Metadata Issues"
-msgstr ""
+msgstr "Metadata 問題"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:35454
@@ -33712,7 +33712,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:35490
 msgid "Creating a Mirror with Two New Disks"
-msgstr ""
+msgstr "使用兩個新磁碟建立鏡射"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:35492
@@ -33884,7 +33884,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:35614
 msgid "Creating a Mirror with an Existing Drive"
-msgstr ""
+msgstr "使用既有磁碟建立鏡射"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:35616
@@ -34284,7 +34284,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:35946
 msgid "Recovering from Disk Failure"
-msgstr ""
+msgstr "自磁碟故障復原"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:35948
@@ -34376,7 +34376,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36074
 msgid "Creating a Dedicated <acronym>RAID</acronym>3 Array"
-msgstr ""
+msgstr "建立 Dedicated <acronym>RAID</acronym>3 陣列"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36077
@@ -34522,7 +34522,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36213
 msgid "Creating an Array"
-msgstr ""
+msgstr "建立陣列"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36215
@@ -34590,7 +34590,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36272
 msgid "Multiple Volumes"
-msgstr ""
+msgstr "多磁碟區"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36274
@@ -34618,7 +34618,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36298
 msgid "Converting a Single Drive to a Mirror"
-msgstr ""
+msgstr "轉換單一磁碟為鏡射"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36300
@@ -34665,7 +34665,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36342
 msgid "Inserting New Drives into the Array"
-msgstr ""
+msgstr "插入新磁碟到陣列"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36344
@@ -34691,7 +34691,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36363
 msgid "Removing Drives from the Array"
-msgstr ""
+msgstr "從陣列移除磁碟"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36365
@@ -34711,7 +34711,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36375
 msgid "Stopping the Array"
-msgstr ""
+msgstr "停止陣列"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36377
@@ -34727,7 +34727,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36385
 msgid "Checking Array Status"
-msgstr ""
+msgstr "檢查陣列狀態"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36387
@@ -34761,7 +34761,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36407
 msgid "Deleting Arrays"
-msgstr ""
+msgstr "刪除陣列"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36409
@@ -34778,7 +34778,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36417
 msgid "Deleting Unexpected Arrays"
-msgstr ""
+msgstr "刪除預期之外的陣列"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36419
@@ -34943,7 +34943,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36596
 msgid "Label Types and Examples"
-msgstr ""
+msgstr "標籤類型與範例"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36598
@@ -35022,7 +35022,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:36658
 msgid "Labeling Partitions on the Boot Disk"
-msgstr ""
+msgstr "在開機磁碟標記分割區標籤"
 
 #. (itstool) path: example/para
 #: book.translate.xml:36660
@@ -35311,7 +35311,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36984
 msgid "Single Disk Pool"
-msgstr ""
+msgstr "單磁碟儲存池"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36986
@@ -35662,7 +35662,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37221
 msgid "Recovering <acronym>RAID-Z</acronym>"
-msgstr ""
+msgstr "復原 <acronym>RAID-Z</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37223
@@ -35770,7 +35770,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37293
 msgid "Data Verification"
-msgstr ""
+msgstr "資料檢驗"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37295
@@ -35841,7 +35841,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37359
 msgid "Creating and Destroying Storage Pools"
-msgstr ""
+msgstr "建立與摧毀儲存池"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37361
@@ -35942,7 +35942,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37465
 msgid "Adding and Removing Devices"
-msgstr ""
+msgstr "加入與移除裝置"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37467
@@ -36126,7 +36126,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37654
 msgid "Checking the Status of a Pool"
-msgstr ""
+msgstr "檢查儲存池狀態"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37656
@@ -36159,7 +36159,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37684
 msgid "Clearing Errors"
-msgstr ""
+msgstr "清除錯誤"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37686
@@ -36169,7 +36169,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37697
 msgid "Replacing a Functioning Device"
-msgstr ""
+msgstr "替換運作中的裝置"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37699
@@ -36247,7 +36247,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37773
 msgid "Dealing with Failed Devices"
-msgstr ""
+msgstr "處理故障裝置"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37775
@@ -36329,7 +36329,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37860
 msgid "Scrubbing a Pool"
-msgstr ""
+msgstr "清潔儲存池"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37862
@@ -36370,7 +36370,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:37899
 msgid "Self-Healing"
-msgstr ""
+msgstr "自我修復"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37901
@@ -36583,7 +36583,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38106
 msgid "Growing a Pool"
-msgstr ""
+msgstr "擴增儲存池"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38108
@@ -36598,7 +36598,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38129
 msgid "Importing and Exporting Pools"
-msgstr ""
+msgstr "匯入與匯出儲存池"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38131
@@ -36660,7 +36660,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38184
 msgid "Upgrading a Storage Pool"
-msgstr ""
+msgstr "升級儲存儲存池"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38186
@@ -36791,7 +36791,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38307
 msgid "Displaying Recorded Pool History"
-msgstr ""
+msgstr "顯示已記錄的儲存池歷史日誌"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38309
@@ -36865,7 +36865,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38381
 msgid "Performance Monitoring"
-msgstr ""
+msgstr "監視效能"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38383
@@ -36911,7 +36911,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38430
 msgid "Splitting a Storage Pool"
-msgstr ""
+msgstr "分割儲存儲存池"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38432
@@ -36931,7 +36931,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38452
 msgid "Creating and Destroying Datasets"
-msgstr ""
+msgstr "建立與摧毀資料集"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38454
@@ -37037,7 +37037,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38573
 msgid "Creating and Destroying Volumes"
-msgstr ""
+msgstr "建立與摧毀磁碟區"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38575
@@ -37074,7 +37074,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38612
 msgid "Renaming a Dataset"
-msgstr ""
+msgstr "重新命名資料集"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38614
@@ -37146,7 +37146,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38677
 msgid "Setting Dataset Properties"
-msgstr ""
+msgstr "設定資料集屬性"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38679
@@ -37188,7 +37188,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:38718
 msgid "Managing Snapshots"
-msgstr ""
+msgstr "管理快照 (Snapshot)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38720
@@ -37203,7 +37203,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:38765
 msgid "Creating Snapshots"
-msgstr ""
+msgstr "建立快照"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:38767
@@ -37302,7 +37302,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:38856
 msgid "Comparing Snapshots"
-msgstr ""
+msgstr "比對快照"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:38858
@@ -37398,7 +37398,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:38942
 msgid "Snapshot Rollback"
-msgstr ""
+msgstr "使用快照還原"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:38944
@@ -37488,7 +37488,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:39041
 msgid "Restoring Individual Files from Snapshots"
-msgstr ""
+msgstr "自快照還原單一檔案"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39043
@@ -37559,7 +37559,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:39122
 msgid "Managing Clones"
-msgstr ""
+msgstr "管理複本 (Clone)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39124
@@ -37649,7 +37649,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:39220
 msgid "Replication"
-msgstr ""
+msgstr "備援"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39222
@@ -37745,7 +37745,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:39317
 msgid "Incremental Backups"
-msgstr ""
+msgstr "漸進式備份"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39319
@@ -37813,7 +37813,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:39390
 msgid "Sending Encrypted Backups over <application>SSH</application>"
-msgstr ""
+msgstr "透過 <application>SSH</application> 傳送已加密的備份"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39393
@@ -37889,7 +37889,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:39490
 msgid "Dataset, User, and Group Quotas"
-msgstr ""
+msgstr "資料集、使用者以及群組配額"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39492
@@ -38032,7 +38032,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:39603
 msgid "Reservations"
-msgstr ""
+msgstr "保留空間"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39605
@@ -38084,7 +38084,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-compression
 #: book.translate.xml:39638 book.translate.xml:40757
 msgid "Compression"
-msgstr ""
+msgstr "壓縮"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39640
@@ -38133,7 +38133,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-deduplication
 #: book.translate.xml:39706 book.translate.xml:40850
 msgid "Deduplication"
-msgstr ""
+msgstr "去重複資料"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39708
@@ -38238,7 +38238,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:39806
 msgid "<acronym>ZFS</acronym> and Jails"
-msgstr ""
+msgstr "<acronym>ZFS</acronym> 與 Jail"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39808
@@ -38278,7 +38278,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:39874
 msgid "Tuning"
-msgstr ""
+msgstr "調校"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39876
@@ -38393,7 +38393,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:40139
 msgid "<acronym>ZFS</acronym> on i386"
-msgstr ""
+msgstr "i386 上的 <acronym>ZFS</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:40141
@@ -38403,7 +38403,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:40147
 msgid "Memory"
-msgstr ""
+msgstr "記憶體"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:40149
@@ -38413,7 +38413,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:40164 book.translate.xml:62224
 msgid "Kernel Configuration"
-msgstr ""
+msgstr "核心設定"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:40166
@@ -38434,7 +38434,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:40184
 msgid "Loader Tunables"
-msgstr ""
+msgstr "載入程式可調參數"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:40186
@@ -39161,7 +39161,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:41379
 msgid "FreeBSD as a Guest on <application>Parallels</application> for <trademark class=\"registered\">Mac OS</trademark> X"
-msgstr "在 <trademark class=\"registered\">Mac OS</trademark> X 的 <application>Parallels</application> 以 FreeBSD 作為 Guest"
+msgstr "在 <trademark class=\"registered\">Mac OS</trademark> X 的 <application>Parallels</application> 安裝 FreeBSD 為 Guest"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:41382
@@ -39171,7 +39171,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:41391
 msgid "Installing FreeBSD on Parallels/<trademark class=\"registered\">Mac OS</trademark> X"
-msgstr ""
+msgstr "在 Parallels/<trademark class=\"registered\">Mac OS</trademark> X 安裝 FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:41393
@@ -39346,7 +39346,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:41519
 msgid "Configuring FreeBSD on <application>Parallels</application>"
-msgstr ""
+msgstr "在 <application>Parallels</application> 設定 FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:41522
@@ -39397,7 +39397,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:41573
 msgid "FreeBSD as a Guest on <application>Virtual PC</application> for <trademark class=\"registered\">Windows</trademark>"
-msgstr "在 <trademark class=\"registered\">Windows</trademark> 的 <application>Virtual PC</application> 以 FreeBSD 作為 Guest"
+msgstr "在 <trademark class=\"registered\">Windows</trademark> 的 <application>Virtual PC</application> 安裝 FreeBSD 為 Guest"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:41576
@@ -39407,7 +39407,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:41585
 msgid "Installing FreeBSD on <application>Virtual PC</application>"
-msgstr ""
+msgstr "在 <application>Virtual PC</application> 安裝 FreeBSD "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:41588
@@ -39582,7 +39582,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:41723
 msgid "Configuring FreeBSD on <application>Virtual PC</application>"
-msgstr ""
+msgstr "在 <application>Virtual PC</application> 設定 FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:41726
@@ -39612,7 +39612,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:41779
 msgid "FreeBSD as a Guest on <application>VMware Fusion</application> for <trademark class=\"registered\">Mac OS</trademark>"
-msgstr "在 <trademark class=\"registered\">Mac OS</trademark> 的 <application>VMware Fusion</application> 以 FreeBSD 作為 Guest"
+msgstr "在 <trademark class=\"registered\">Mac OS</trademark> 的 <application>VMware Fusion</application> 安裝 FreeBSD 為 Guest"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:41782
@@ -39622,7 +39622,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:41791
 msgid "Installing FreeBSD on <application>VMware Fusion</application>"
-msgstr ""
+msgstr "在 <application>VMware Fusion</application> 安裝 FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:41794
@@ -39817,7 +39817,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:41928
 msgid "Configuring FreeBSD on <application>VMware Fusion</application>"
-msgstr ""
+msgstr "在 <application>VMware Fusion</application> 設定 FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:41931
@@ -40002,7 +40002,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:42094
 msgid "FreeBSD as a Host with <application>VirtualBox</application>"
-msgstr "在 <application>VirtualBox</application> 以 FreeBSD 作為 Host"
+msgstr "以 FreeBSD 作為 Host 安裝 <application>VirtualBox</application> "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42097
@@ -40012,7 +40012,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42110
 msgid "Installing <trademark>VirtualBox</trademark>"
-msgstr ""
+msgstr "安裝 <trademark>VirtualBox</trademark>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42112
@@ -40121,7 +40121,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42187
 msgid "<trademark>VirtualBox</trademark> USB Support"
-msgstr ""
+msgstr "<trademark>VirtualBox</trademark> USB 支援"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42189
@@ -40177,7 +40177,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42217
 msgid "<trademark>VirtualBox</trademark> Host <acronym>DVD</acronym>/<acronym>CD</acronym> Access"
-msgstr ""
+msgstr "<trademark>VirtualBox</trademark> Host <acronym>DVD</acronym>/<acronym>CD</acronym> 存取"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42220
@@ -40218,7 +40218,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:42264
 msgid "FreeBSD as a Host with <application>bhyve</application>"
-msgstr "在 <application>bhyve</application> 以 FreeBSD 作為 Host "
+msgstr "以 FreeBSD 作為 Host 安裝 <application>bhyve</application>  "
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42267
@@ -40233,7 +40233,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42303
 msgid "Preparing the Host"
-msgstr ""
+msgstr "準備 Host"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42305
@@ -40266,7 +40266,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42329
 msgid "Creating a FreeBSD Guest"
-msgstr ""
+msgstr "建立 FreeBSD Guest"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42331
@@ -40333,7 +40333,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42387
 msgid "Creating a <trademark class=\"registered\">Linux</trademark> Guest"
-msgstr ""
+msgstr "建立 <trademark class=\"registered\">Linux</trademark> Guest"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42389
@@ -40461,7 +40461,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42475
 msgid "Using <acronym>ZFS</acronym> with <application>bhyve</application> Guests"
-msgstr ""
+msgstr "在 <application>bhyve</application> Guests 使用 <acronym>ZFS</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42478
@@ -40490,7 +40490,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42494
 msgid "Virtual Machine Consoles"
-msgstr ""
+msgstr "虛擬機器 Console"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42496
@@ -40515,7 +40515,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42525
 msgid "Managing Virtual Machines"
-msgstr ""
+msgstr "管理虛擬機器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42527
@@ -40549,7 +40549,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42546
 msgid "Persistent Configuration"
-msgstr ""
+msgstr "Persistent 設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42548
@@ -40715,7 +40715,7 @@ msgstr "常用語言及城市代碼"
 #. (itstool) path: row/entry
 #: book.translate.xml:42711
 msgid "LanguageCode_Country Code"
-msgstr ""
+msgstr "語言代號_城市代號"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:42718
@@ -40802,7 +40802,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42774
 msgid "Setting Locale for Login Shell"
-msgstr ""
+msgstr "設定登入 Shell 的語系"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42776
@@ -40848,7 +40848,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:42817
 msgid "Login Classes Method"
-msgstr ""
+msgstr "登入類別法"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:42819
@@ -41004,7 +41004,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:42932
 msgid "Shell Startup File Method"
-msgstr ""
+msgstr "Shell 啟動檔法"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:42934
@@ -41052,7 +41052,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:42972
 msgid "Console Setup"
-msgstr ""
+msgstr "Console 設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42974
@@ -41120,12 +41120,12 @@ msgstr "已定義供特定字元集使用的終端機類型"
 #. (itstool) path: row/entry
 #: book.translate.xml:43027
 msgid "Character Set"
-msgstr ""
+msgstr "字元集"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43028
 msgid "Terminal Type"
-msgstr ""
+msgstr "終端機類型"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43034
@@ -41210,17 +41210,17 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:43082
 msgid "Available Console from Ports Collection"
-msgstr "Ports Collection 中可用的 Console"
+msgstr "Ports 套件集中可用的 Console"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43087 book.translate.xml:43166
 msgid "Language"
-msgstr ""
+msgstr "語言"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43088
 msgid "Port Location"
-msgstr ""
+msgstr "Port 位置"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43094
@@ -41256,7 +41256,7 @@ msgstr ""
 #: book.translate.xml:43269 book.translate.xml:43274 book.translate.xml:43279
 #: book.translate.xml:43284 book.translate.xml:43289 book.translate.xml:43294
 msgid "Japanese"
-msgstr ""
+msgstr "日文"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43110
@@ -41287,7 +41287,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:43139
 msgid "Xorg Setup"
-msgstr ""
+msgstr "Xorg 設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43141
@@ -41312,14 +41312,14 @@ msgstr "可用的輸入法"
 #. (itstool) path: row/entry
 #: book.translate.xml:43167
 msgid "Input Method"
-msgstr ""
+msgstr "輸入法"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43174 book.translate.xml:43179 book.translate.xml:43184
 #: book.translate.xml:43189 book.translate.xml:43194 book.translate.xml:43199
 #: book.translate.xml:43204
 msgid "Chinese"
-msgstr ""
+msgstr "中文"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43175
@@ -41450,7 +41450,7 @@ msgstr ""
 #: book.translate.xml:43299 book.translate.xml:43304 book.translate.xml:43309
 #: book.translate.xml:43314 book.translate.xml:43319
 msgid "Korean"
-msgstr ""
+msgstr "韓文"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43300
@@ -41480,7 +41480,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:43324 book.translate.xml:43329
 msgid "Vietnamese"
-msgstr ""
+msgstr "越南文"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43325
@@ -41525,7 +41525,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:43408
 msgid "Russian Language (KOI8-R Encoding)"
-msgstr ""
+msgstr "俄語 (KOI8-R 編碼)"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:43411
@@ -41681,7 +41681,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:43529
 msgid "Additional Language-Specific Resources"
-msgstr ""
+msgstr "其他特定語言資源"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43531
@@ -41978,7 +41978,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:43885
 msgid "Applying Security Patches"
-msgstr ""
+msgstr "套用安全性修補"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43887
@@ -42060,7 +42060,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:43975
 msgid "Performing Major and Minor Version Upgrades"
-msgstr ""
+msgstr "執行主要及次要版號升級"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43977
@@ -42198,7 +42198,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:44112
 msgid "Custom Kernels with FreeBSD 9.X and Later"
-msgstr ""
+msgstr "在 FreeBSD 9.X 及之後版本自訂核心"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44114
@@ -42245,7 +42245,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:44154
 msgid "Upgrading Packages After a Major Version Upgrade"
-msgstr ""
+msgstr "主要版號升級後的套件升級"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44157
@@ -42291,7 +42291,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:44205
 msgid "System State Comparison"
-msgstr ""
+msgstr "比對系統狀態"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44207
@@ -42368,7 +42368,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:44288
 msgid "Updating Documentation from Source"
-msgstr ""
+msgstr "自原始碼更新說明文件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44290
@@ -42505,7 +42505,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:44389
 msgid "Updating Documentation from Ports"
-msgstr ""
+msgstr "自 Ports 更新說明文件"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:44392
@@ -42678,7 +42678,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:44555
 msgid "Using FreeBSD-CURRENT"
-msgstr ""
+msgstr "使用 FreeBSD-CURRENT"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44557
@@ -42773,7 +42773,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:44678
 msgid "Using FreeBSD-STABLE"
-msgstr ""
+msgstr "使用 FreeBSD-STABLE"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44680
@@ -42928,7 +42928,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:44902
 msgid "Overview of Process"
-msgstr ""
+msgstr "流程概述"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44904
@@ -43204,7 +43204,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:45172
 msgid "Variables and Targets"
-msgstr ""
+msgstr "變數與目標"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:45174
@@ -43320,7 +43320,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:45266
 msgid "Merging Configuration Files"
-msgstr ""
+msgstr "合併設定檔"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:45279
@@ -43381,7 +43381,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:45435
 msgid "Deleting Obsolete Files and Libraries"
-msgstr ""
+msgstr "刪除過時的檔案及程式庫"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:45438
@@ -43502,7 +43502,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:45542
 msgid "Common Questions"
-msgstr ""
+msgstr "常見問題"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:45546
@@ -44210,7 +44210,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:46344
 msgid "Serial Cables and Ports"
-msgstr ""
+msgstr "序列線與埠"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46346
@@ -44246,7 +44246,7 @@ msgstr "<acronym>RS-232C</acronym> 信號名稱"
 #. (itstool) path: row/entry
 #: book.translate.xml:46386
 msgid "Acronyms"
-msgstr ""
+msgstr "縮寫"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46387
@@ -44341,19 +44341,19 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:46436
 msgid "DB-25 to DB-25 Null-Modem Cable"
-msgstr ""
+msgstr "DB-25 對 DB-25 Null-Modem 線"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46441 book.translate.xml:46445 book.translate.xml:46531
 #: book.translate.xml:46535 book.translate.xml:46621 book.translate.xml:46625
 msgid "Signal"
-msgstr ""
+msgstr "信號"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:46442 book.translate.xml:46444 book.translate.xml:46532
 #: book.translate.xml:46534 book.translate.xml:46622 book.translate.xml:46624
 msgid "Pin #"
-msgstr ""
+msgstr "針腳 #"
 
 #. (itstool) path: row/entry
 #. (itstool) path: glossentry/glossterm
@@ -44454,12 +44454,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:46526
 msgid "DB-9 to DB-9 Null-Modem Cable"
-msgstr ""
+msgstr "DB-9 對 DB-9 Null-Modem 線"
 
 #. (itstool) path: table/title
 #: book.translate.xml:46616
 msgid "DB-9 to DB-25 Null-Modem Cable"
-msgstr ""
+msgstr "DB-9 對 DB-25 Null-Modem 線"
 
 #. (itstool) path: note/para
 #: book.translate.xml:46706
@@ -44499,7 +44499,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:46783
 msgid "Serial Port Configuration"
-msgstr ""
+msgstr "序列埠設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46785
@@ -44689,7 +44689,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:46980
 msgid "Terminal Configuration"
-msgstr ""
+msgstr "終端機設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:46982
@@ -44729,7 +44729,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:47030
 msgid "Configuring Terminal Entries"
-msgstr ""
+msgstr "設定終端機項目"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:47032
@@ -44793,7 +44793,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47119
 msgid "Troubleshooting the Connection"
-msgstr ""
+msgstr "連線疑難排解"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47121
@@ -44916,7 +44916,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47273
 msgid "Modem Configuration"
-msgstr ""
+msgstr "數據機設定"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:47275
@@ -45147,7 +45147,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47684
 msgid "Using a Stock Hayes Modem"
-msgstr ""
+msgstr "使用 Stock Hayes 數據機"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47686
@@ -45167,7 +45167,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47704
 msgid "Using <literal>AT</literal> Commands"
-msgstr ""
+msgstr "使用 <literal>AT</literal> 指令"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:47706
@@ -45209,7 +45209,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47734
 msgid "The <literal>@</literal> Sign Does Not Work"
-msgstr ""
+msgstr "<literal>@</literal> 符號無法運作"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47736
@@ -45225,7 +45225,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47747
 msgid "Dialing from the Command Line"
-msgstr ""
+msgstr "從指令列撥號"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47749
@@ -45280,7 +45280,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47774
 msgid "Setting the <acronym>bps</acronym> Rate"
-msgstr ""
+msgstr "設定 <acronym>bps</acronym> 率"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47776
@@ -45290,7 +45290,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47786
 msgid "Accessing a Number of Hosts Through a Terminal Server"
-msgstr ""
+msgstr "透過終端伺服器存取多個主機"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47789
@@ -45312,7 +45312,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47809
 msgid "Using More Than One Line with <command>tip</command>"
-msgstr ""
+msgstr "在 <command>tip</command> 使用超過一行"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47812
@@ -45357,7 +45357,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47840
 msgid "Using the Force Character"
-msgstr ""
+msgstr "使用強制字元"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47842
@@ -45383,7 +45383,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47879
 msgid "Upper Case Characters"
-msgstr ""
+msgstr "大寫字元"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47881
@@ -45411,7 +45411,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47913
 msgid "File Transfers with <command>tip</command>"
-msgstr ""
+msgstr "使用 <command>tip</command> 傳輸檔案"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47915
@@ -45436,7 +45436,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47938
 msgid "Using <application>zmodem</application> with <command>tip</command>?"
-msgstr ""
+msgstr "在 <application>zmodem</application> 使用 <command>tip</command>?"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47941
@@ -45486,7 +45486,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:47997
 msgid "Quick Serial Console Configuration"
-msgstr ""
+msgstr "快速序列 Console 設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:47999
@@ -45532,7 +45532,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:48042
 msgid "In-Depth Serial Console Configuration"
-msgstr ""
+msgstr "深入序列 Console 設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:48044
@@ -45783,7 +45783,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:48350
 msgid "Setting a Faster Serial Port Speed"
-msgstr ""
+msgstr "設定使用更快的序列埠速度"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:48352
@@ -45839,7 +45839,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:48401
 msgid "Entering the DDB Debugger from the Serial Line"
-msgstr ""
+msgstr "從序列線路 (Serial Line) 進入 DDB 除錯程式"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:48403
@@ -45989,7 +45989,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:48623 book.translate.xml:50984
 msgid "Basic Configuration"
-msgstr ""
+msgstr "基礎設定"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:48625
@@ -46296,7 +46296,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:49147
 msgid "PAP and CHAP Authentication"
-msgstr ""
+msgstr "PAP 與 CHAP 認證"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:49149
@@ -46382,7 +46382,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:49218
 msgid "Using <acronym>PPP</acronym> Network Address Translation Capability"
-msgstr ""
+msgstr "使用 <acronym>PPP</acronym> 網路位址轉譯功能"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:49221
@@ -46432,7 +46432,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49252
 msgid "Final System Configuration"
-msgstr ""
+msgstr "最終系統設定"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:49254
@@ -46554,7 +46554,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49342
 msgid "Using <command>ppp</command>"
-msgstr ""
+msgstr "使用 <command>ppp</command>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49344
@@ -46602,7 +46602,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49378
 msgid "Configuring Dial-in Services"
-msgstr ""
+msgstr "設定撥入服務"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:49380
@@ -46732,7 +46732,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49502
 msgid "Check the Device Nodes"
-msgstr ""
+msgstr "檢查裝置節點"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49504
@@ -46764,7 +46764,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49528
 msgid "Connecting Manually"
-msgstr ""
+msgstr "手動連線"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49530
@@ -46933,7 +46933,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49642
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49644
@@ -47071,7 +47071,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49770
 msgid "Using a PPPoE Service Tag"
-msgstr ""
+msgstr "使用 PPPoE 服務標籤"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49772
@@ -47117,7 +47117,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49809
 msgid "PPPoE with a <trademark class=\"registered\">3Com</trademark> <trademark class=\"registered\">HomeConnect</trademark> ADSL Modem Dual Link"
-msgstr ""
+msgstr "在 <trademark class=\"registered\">3Com</trademark> <trademark class=\"registered\">HomeConnect</trademark> ADSL Modem Dual Link 使用 PPPoE"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49813
@@ -47174,7 +47174,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:49905
 msgid "Using mpd"
-msgstr ""
+msgstr "使用 mpd"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:49907
@@ -47290,7 +47290,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:50005
 msgid "Using pptpclient"
-msgstr ""
+msgstr "使用 pptpclient"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50007
@@ -47872,7 +47872,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:50700
 msgid "Disable <application>Sendmail</application>"
-msgstr ""
+msgstr "關閉 <application>Sendmail</application>"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:50703
@@ -47913,7 +47913,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:50735
 msgid "Replace the Default <acronym>MTA</acronym>"
-msgstr ""
+msgstr "替換預設的 <acronym>MTA</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50737
@@ -48291,7 +48291,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:51086
 msgid "Mail for a Domain"
-msgstr ""
+msgstr "網域中的郵件"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:51088
@@ -48535,7 +48535,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:51317
 msgid "SMTP Authentication"
-msgstr "SMTP 驗證"
+msgstr "SMTP 認證"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:51320
@@ -49329,7 +49329,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:52154
 msgid "Configuration File"
-msgstr ""
+msgstr "設定檔"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52156
@@ -49368,7 +49368,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:52184
 msgid "Reloading the <application>inetd</application> Configuration File"
-msgstr ""
+msgstr "重新庫入 <application>inetd</application> 設定檔"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:52187
@@ -49584,7 +49584,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:52377
 msgid "Command-Line Options"
-msgstr ""
+msgstr "指令列選項"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52379
@@ -49785,7 +49785,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:52611
 msgid "Configuring the Server"
-msgstr ""
+msgstr "設定伺服哭"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:52613
@@ -49929,7 +49929,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:52729
 msgid "Configuring the Client"
-msgstr ""
+msgstr "設定客戶端"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52731
@@ -49993,7 +49993,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:52771
 msgid "Locking"
-msgstr ""
+msgstr "鎖定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:52773
@@ -50029,7 +50029,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:52795
 msgid "Automating Mounts with <citerefentry><refentrytitle>amd</refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>amd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 自動掛載"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:52798
@@ -50064,7 +50064,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:52848
 msgid "Mounting an Export with <application>amd</application>"
-msgstr ""
+msgstr "使用 <application>amd</application> 掛載 Export"
 
 #. (itstool) path: example/para
 #: book.translate.xml:52851
@@ -50133,7 +50133,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:52898
 msgid "Automating Mounts with <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry>"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 自動掛載"
 
 #. (itstool) path: note/para
 #: book.translate.xml:52901
@@ -50178,7 +50178,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:52957
 msgid "Mounting an Export with <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry>"
-msgstr ""
+msgstr "使用 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 掛載 Export"
 
 #. (itstool) path: example/para
 #: book.translate.xml:52959
@@ -50293,7 +50293,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53064
 msgid "<acronym>NIS</acronym> Terms and Processes"
-msgstr ""
+msgstr "<acronym>NIS</acronym> 術語與程序"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53066
@@ -50313,7 +50313,7 @@ msgstr "<acronym>NIS</acronym> 術語"
 #. (itstool) path: row/entry
 #: book.translate.xml:53085 book.translate.xml:54980
 msgid "Term"
-msgstr ""
+msgstr "術語"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:53092
@@ -50368,7 +50368,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53153
 msgid "Machine Types"
-msgstr ""
+msgstr "主機類型"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:53155
@@ -50428,7 +50428,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53219
 msgid "Planning Considerations"
-msgstr ""
+msgstr "規劃注意事項"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53221
@@ -50533,7 +50533,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:53283
 msgid "Choosing a <acronym>NIS</acronym> Domain Name"
-msgstr ""
+msgstr "選擇 <acronym>NIS</acronym> 網域名稱"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:53285
@@ -50558,7 +50558,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:53316
 msgid "Physical Server Requirements"
-msgstr ""
+msgstr "實體伺服器需求"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:53318
@@ -50568,7 +50568,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53334
 msgid "Configuring the <acronym>NIS</acronym> Master Server"
-msgstr ""
+msgstr "設定 <acronym>NIS</acronym> Master 伺服器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53337
@@ -50646,7 +50646,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:53416
 msgid "Initializing the <acronym>NIS</acronym> Maps"
-msgstr ""
+msgstr "初始化 <acronym>NIS</acronym> 對應表"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:53418
@@ -50725,7 +50725,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:53491
 msgid "Adding New Users"
-msgstr ""
+msgstr "新增使用者"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:53493
@@ -50749,7 +50749,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53513
 msgid "Setting up a <acronym>NIS</acronym> Slave Server"
-msgstr ""
+msgstr "設定 <acronym>NIS</acronym> Slave 伺服器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53519
@@ -50844,7 +50844,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53610
 msgid "Setting Up an <acronym>NIS</acronym> Client"
-msgstr ""
+msgstr "設定 <acronym>NIS</acronym> 客戶端"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53612
@@ -50923,7 +50923,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53694
 msgid "<acronym>NIS</acronym> Security"
-msgstr ""
+msgstr "<acronym>NIS</acronym> 安全性"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53696
@@ -50968,7 +50968,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:53759
 msgid "Barring Some Users"
-msgstr ""
+msgstr "阻擋部份使用者"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:53761
@@ -51009,7 +51009,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:53819
 msgid "Using Netgroups"
-msgstr ""
+msgstr "使用 Netgroups"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:53821 book.translate.xml:53987
@@ -51034,12 +51034,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:53839
 msgid "Additional Users"
-msgstr ""
+msgstr "其他使用者"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:53844
 msgid "User Name(s)"
-msgstr ""
+msgstr "使用者名稱"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:53851
@@ -51084,12 +51084,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:53880
 msgid "Additional Systems"
-msgstr ""
+msgstr "其他系統"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:53885
 msgid "Machine Name(s)"
-msgstr ""
+msgstr "機器名稱"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:53894
@@ -51395,7 +51395,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:54175
 msgid "Password Formats"
-msgstr ""
+msgstr "密碼格式"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:54177
@@ -51461,7 +51461,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:54259
 msgid "<acronym>LDAP</acronym> Terminology and Structure"
-msgstr ""
+msgstr "<acronym>LDAP</acronym> 術語與結構"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:54261
@@ -51514,7 +51514,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:54316
 msgid "Configuring an <acronym>LDAP</acronym> Server"
-msgstr ""
+msgstr "設定 <acronym>LDAP</acronym> 伺服器"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:54318
@@ -51872,7 +51872,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:54600
 msgid "Configuring a <acronym>DHCP</acronym> Client"
-msgstr ""
+msgstr "設定 <acronym>DHCP</acronym> 客戶端"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:54602
@@ -51984,7 +51984,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:54711
 msgid "Installing and Configuring a <acronym>DHCP</acronym> Server"
-msgstr ""
+msgstr "安裝並設定 <acronym>DHCP</acronym> 伺服器"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:54714
@@ -52211,7 +52211,7 @@ msgstr "<acronym>DNS</acronym> 術語"
 #. (itstool) path: row/entry
 #: book.translate.xml:54981
 msgid "Definition"
-msgstr ""
+msgstr "定義"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:54987
@@ -52321,7 +52321,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:55075
 msgid "Reasons to Run a Name Server"
-msgstr ""
+msgstr "要執行名稱伺服器的原因"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:55077
@@ -52371,7 +52371,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:55128
 msgid "<acronym>DNS</acronym> Server Configuration in FreeBSD 10.0 and Later"
-msgstr ""
+msgstr "<acronym>DNS</acronym> 伺服器設定於 FreeBSD 10.0 及之後版本"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:55131
@@ -52454,7 +52454,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:55201
 msgid "DNS Server Configuration in FreeBSD 9.<replaceable>X</replaceable>"
-msgstr ""
+msgstr "DNS 伺服器設定於 FreeBSD 9.<replaceable>X</replaceable>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:55204
@@ -52505,7 +52505,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:55252
 msgid "Starting BIND"
-msgstr ""
+msgstr "啟動 BIND"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:55254
@@ -53202,7 +53202,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:55904
 msgid "Caching Name Server"
-msgstr ""
+msgstr "快取名稱伺服器"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:55906
@@ -53530,7 +53530,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:56313
 msgid "Further Reading"
-msgstr ""
+msgstr "延伸閱讀"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:56315
@@ -53620,7 +53620,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:56426
 msgid "Configuring and Starting Apache"
-msgstr ""
+msgstr "設定並啟動 Apache"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:56428
@@ -53739,7 +53739,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:56549
 msgid "Virtual Hosting"
-msgstr ""
+msgstr "虛擬主機"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:56551
@@ -53779,7 +53779,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:56590
 msgid "Apache Modules"
-msgstr ""
+msgstr "Apache 模組"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:56592
@@ -53901,7 +53901,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:56734
 msgid "Dynamic Websites"
-msgstr ""
+msgstr "動態網站"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:56736
@@ -54139,7 +54139,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:57026
 msgid "Using the Samba Web Administration Tool (SWAT)"
-msgstr ""
+msgstr "使用 Samba 網頁管理工具 (SWAT)"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:57028
@@ -54170,7 +54170,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:57059
 msgid "Global Settings"
-msgstr ""
+msgstr "全域設定"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:57061
@@ -54210,7 +54210,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:57101
 msgid "Security Settings"
-msgstr ""
+msgstr "安全性設定"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:57103
@@ -54282,7 +54282,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:57175
 msgid "Starting <application>Samba</application>"
-msgstr ""
+msgstr "啟動 <application>Samba</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:57177
@@ -54381,7 +54381,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:57266
 msgid "<acronym>NTP</acronym> Configuration"
-msgstr ""
+msgstr "<acronym>NTP</acronym> 設定"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:57268
@@ -54401,7 +54401,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:57287
 msgid "Sample <filename>/etc/ntp.conf</filename>"
-msgstr ""
+msgstr "<filename>/etc/ntp.conf</filename> 範例"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:57289
@@ -54475,7 +54475,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:57362
 msgid "Using <acronym>NTP</acronym> with a <acronym>PPP</acronym> Connection"
-msgstr ""
+msgstr "在 <acronym>PPP</acronym> 連線使用 <acronym>NTP</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:57365
@@ -54534,7 +54534,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:57438
 msgid "Configuring an <acronym>iSCSI</acronym> Target"
-msgstr ""
+msgstr "設定 <acronym>iSCSI</acronym> Target"
 
 #. (itstool) path: note/para
 #: book.translate.xml:57441
@@ -54634,7 +54634,7 @@ msgstr ""
 #. (itstool) path: sect5/title
 #: book.translate.xml:57543 book.translate.xml:62500
 msgid "Authentication"
-msgstr ""
+msgstr "認證"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:57545
@@ -54694,7 +54694,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:57598
 msgid "Configuring an <acronym>iSCSI</acronym> Initiator"
-msgstr ""
+msgstr "設定 <acronym>iSCSI</acronym> Initiator"
 
 #. (itstool) path: note/para
 #: book.translate.xml:57601
@@ -54731,7 +54731,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:57623
 msgid "Connecting to a Target Without a Configuration File"
-msgstr ""
+msgstr "不使用設定檔連線到 Target "
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:57626
@@ -54834,7 +54834,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:57683
 msgid "Connecting to a Target with a Configuration File"
-msgstr ""
+msgstr "使用設定檔連線到 Target "
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:57686
@@ -55117,7 +55117,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:58056
 msgid "Enabling <application>PF</application>"
-msgstr ""
+msgstr "開啟 <application>PF</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:58058
@@ -55218,12 +55218,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:58181
 msgid "Useful <command>pfctl</command> Options"
-msgstr ""
+msgstr "有用的 <command>pfctl</command> 選項"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:58187 book.translate.xml:61714 book.translate.xml:65535
 msgid "Purpose"
-msgstr ""
+msgstr "用途"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:58193
@@ -55288,7 +55288,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:58246
 msgid "Enabling <application>ALTQ</application>"
-msgstr ""
+msgstr "開啟 <application>ALTQ</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:58248
@@ -55380,7 +55380,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:58333
 msgid "<application>PF</application> Rulesets"
-msgstr ""
+msgstr "<application>PF</application> 規則集"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:58336
@@ -55486,7 +55486,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:58433
 msgid "A Simple Gateway with NAT"
-msgstr ""
+msgstr "使用 NAT 的簡單閘道器"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:58435
@@ -55668,7 +55668,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:58578
 msgid "Creating an <acronym>FTP</acronym> Proxy"
-msgstr ""
+msgstr "建立 <acronym>FTP</acronym> Proxy"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:58580
@@ -55779,7 +55779,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:58681
 msgid "Managing <acronym>ICMP</acronym>"
-msgstr ""
+msgstr "管理 <acronym>ICMP</acronym>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:58683
@@ -55895,7 +55895,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:58795
 msgid "Using Tables"
-msgstr ""
+msgstr "使用 Tables"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:58797
@@ -55968,7 +55968,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:58850
 msgid "Using Overload Tables to Protect <acronym>SSH</acronym>"
-msgstr ""
+msgstr "使用 Overload Tables 保護 <acronym>SSH</acronym>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:58853
@@ -56119,7 +56119,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:58979
 msgid "Protecting Against <acronym>SPAM</acronym>"
-msgstr ""
+msgstr "<acronym>SPAM</acronym> 防護"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:58981
@@ -56347,7 +56347,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:59204
 msgid "Network Hygiene"
-msgstr ""
+msgstr "網路保健"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:59206
@@ -56418,7 +56418,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:59266
 msgid "Handling Non-Routable Addresses"
-msgstr ""
+msgstr "處理不可路由 (Non-Routable) 的位址"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:59268
@@ -56470,7 +56470,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:59326
 msgid "Enabling <application>IPFW</application>"
-msgstr ""
+msgstr "開啟 <application>IPFW</application>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:59328
@@ -56639,7 +56639,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:59458
 msgid "<application>IPFW</application> Rule Syntax"
-msgstr ""
+msgstr "<application>IPFW</application> 規則語法"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:59460
@@ -56829,7 +56829,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:59700 book.translate.xml:60773
 msgid "Example Ruleset"
-msgstr ""
+msgstr "範例規則集"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:59702
@@ -57008,7 +57008,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:59846 book.translate.xml:60927
 msgid "Configuring <acronym>NAT</acronym>"
-msgstr ""
+msgstr "設定 <acronym>NAT</acronym>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:59858
@@ -57161,7 +57161,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:60031
 msgid "Port Redirection"
-msgstr ""
+msgstr "Port 重新導向"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:60033
@@ -57223,7 +57223,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:60083
 msgid "Address Redirection"
-msgstr ""
+msgstr "位址重新導向"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:60085
@@ -57292,7 +57292,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:60153
 msgid "The <application>IPFW</application> Command"
-msgstr ""
+msgstr "<application>IPFW</application> 指令"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:60155
@@ -57389,7 +57389,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:60209
 msgid "Logging Firewall Messages"
-msgstr ""
+msgstr "記錄防火牆訊息"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:60211
@@ -57425,7 +57425,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:60257
 msgid "Building a Rule Script"
-msgstr ""
+msgstr "建立規則 Script"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:60259
@@ -57540,7 +57540,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:60365
 msgid "Enabling <application>IPF</application>"
-msgstr ""
+msgstr "開啟 <application>IPF</application>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:60367
@@ -57664,7 +57664,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:60475
 msgid "<application>IPF</application> Rule Syntax"
-msgstr ""
+msgstr "<application>IPF</application> 規則語法"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:60477
@@ -58273,7 +58273,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:61234
 msgid "Viewing <application>IPF</application> Statistics"
-msgstr ""
+msgstr "檢視 <application>IPF</application> 統計資訊"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:61236
@@ -58354,7 +58354,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:61306
 msgid "<application>IPF</application> Logging"
-msgstr ""
+msgstr "<application>IPF</application> 日誌"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:61308
@@ -58591,7 +58591,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:61570
 msgid "Routing Basics"
-msgstr ""
+msgstr "路由基礎概念"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:61572
@@ -58819,7 +58819,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:61781
 msgid "Configuring a Router with Static Routes"
-msgstr ""
+msgstr "設定路由器使用靜態路由"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:61784
@@ -59023,7 +59023,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:61988
 msgid "Multicast Considerations"
-msgstr ""
+msgstr "群播 (Multicast) 注意事項"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:61990
@@ -59084,7 +59084,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:62061
 msgid "Wireless Networking Basics"
-msgstr ""
+msgstr "無線網路基礎"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:62063
@@ -59183,7 +59183,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:62221
 msgid "Basic Setup"
-msgstr ""
+msgstr "基礎設定"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:62226
@@ -59278,7 +59278,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:62320
 msgid "Infrastructure Mode"
-msgstr ""
+msgstr "主從式 (Infrastructure)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:62322
@@ -59288,7 +59288,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:62330
 msgid "FreeBSD Clients"
-msgstr ""
+msgstr "FreeBSD 客戶端"
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:62333
@@ -59324,12 +59324,12 @@ msgstr ""
 #. (itstool) path: table/title
 #: book.translate.xml:62364
 msgid "Station Capability Codes"
-msgstr ""
+msgstr "站台功能代號"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:62369
 msgid "Capability Code"
-msgstr ""
+msgstr "功能代號"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:62376
@@ -59401,7 +59401,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:62434 book.translate.xml:63262
 msgid "Basic Settings"
-msgstr ""
+msgstr "基礎設定"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:62436
@@ -60072,7 +60072,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:63197
 msgid "Ad-hoc Mode"
-msgstr ""
+msgstr "對等式 (Ad-hoc)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:63199
@@ -60150,7 +60150,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:63253
 msgid "FreeBSD Host Access Points"
-msgstr ""
+msgstr "FreeBSD 主機存取點"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:63255
@@ -60253,7 +60253,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:63334
 msgid "Host-based Access Point Without Authentication or Encryption"
-msgstr ""
+msgstr "無認證或加密的 Host-based 存取點"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:63337
@@ -60300,7 +60300,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:63369
 msgid "<acronym>WPA2</acronym> Host-based Access Point"
-msgstr ""
+msgstr "<acronym>WPA2</acronym> Host-based 存取點"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:63371
@@ -60446,7 +60446,7 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:63517
 msgid "<acronym>WEP</acronym> Host-based Access Point"
-msgstr ""
+msgstr "<acronym>WEP</acronym> Host-based 存取點"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:63519
@@ -60520,7 +60520,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:63583
 msgid "Using Both Wired and Wireless Connections"
-msgstr ""
+msgstr "同時使用有線及無線連線"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:63585
@@ -60637,7 +60637,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:63712
 msgid "Bluetooth"
-msgstr "藍芽"
+msgstr "藍牙"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:63715
@@ -60662,7 +60662,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:63744
 msgid "Loading Bluetooth Support"
-msgstr ""
+msgstr "載入藍牙支援"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:63746
@@ -60732,7 +60732,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:63800
 msgid "Finding Other Bluetooth Devices"
-msgstr ""
+msgstr "尋找其他藍牙裝置"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:63802
@@ -60820,7 +60820,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:63879
 msgid "Device Pairing"
-msgstr ""
+msgstr "裝置配對"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:63881
@@ -60880,7 +60880,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:63944
 msgid "Network Access with <acronym>PPP</acronym> Profiles"
-msgstr ""
+msgstr "使用 <acronym>PPP</acronym> Profile 存取網路 "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:63947
@@ -60927,7 +60927,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:64003
 msgid "Bluetooth Protocols"
-msgstr ""
+msgstr "藍牙通訊協定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:64005
@@ -61363,7 +61363,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:64461
 msgid "Enabling the Bridge"
-msgstr ""
+msgstr "開啟橋接"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:64463
@@ -61452,7 +61452,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:64538
 msgid "Enabling Spanning Tree"
-msgstr ""
+msgstr "開啟 Spanning Tree"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:64540
@@ -61522,7 +61522,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:64605
 msgid "Bridge Interface Parameters"
-msgstr ""
+msgstr "橋接介面參數"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:64607
@@ -61631,7 +61631,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:64713
 msgid "<acronym>SNMP</acronym> Monitoring"
-msgstr ""
+msgstr "<acronym>SNMP</acronym> 監視"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:64715
@@ -61758,7 +61758,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:64810
 msgid "Link Aggregation and Failover"
-msgstr "Link Aggregation 與容錯"
+msgstr "Link Aggregation 與容錯移轉"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:64823
@@ -61848,7 +61848,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:64925
 msgid "Configuration Examples"
-msgstr ""
+msgstr "設定範例"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:64927
@@ -61858,7 +61858,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:64935
 msgid "<acronym>LACP</acronym> Aggregation with a <trademark class=\"registered\">Cisco</trademark> Switch"
-msgstr ""
+msgstr "<trademark class=\"registered\">Cisco</trademark> 交換器上設定 <acronym>LACP</acronym> Aggregation"
 
 #. (itstool) path: example/para
 #: book.translate.xml:64938
@@ -61975,7 +61975,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:65030
 msgid "Failover Mode"
-msgstr ""
+msgstr "容錯移轉模式"
 
 #. (itstool) path: example/para
 #: book.translate.xml:65032
@@ -62036,7 +62036,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:65079
 msgid "Failover Mode Between Ethernet and Wireless Interfaces"
-msgstr ""
+msgstr "乙太網路與無線介面間的容錯移轉模式"
 
 #. (itstool) path: example/para
 #: book.translate.xml:65082
@@ -62209,7 +62209,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:65259
 msgid "Setting Up the <acronym>PXE</acronym> Environment"
-msgstr ""
+msgstr "設定 <acronym>PXE</acronym> 環境"
 
 #. (itstool) path: affiliation/address
 #: book.translate.xml:65269
@@ -62399,7 +62399,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65440
 msgid "Configuring the <acronym>DHCP</acronym> Server"
-msgstr ""
+msgstr "設定 <acronym>DHCP</acronym> 伺服器"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:65442
@@ -62479,7 +62479,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Debugging <acronym>PXE</acronym> Problems"
-msgstr ""
+msgstr "<acronym>PXE</acronym> 問題除錯"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -62639,7 +62639,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Background on <acronym>IPv6</acronym> Addresses"
-msgstr ""
+msgstr "<acronym>IPv6</acronym> 位址的背景知識"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -62892,7 +62892,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Configuring <acronym>IPv6</acronym>"
-msgstr ""
+msgstr "設定 <acronym>IPv6</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -62937,7 +62937,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Connecting to a Provider"
-msgstr ""
+msgstr "連線到 Provider"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -63027,7 +63027,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Router Advertisement and Host Auto Configuration"
-msgstr ""
+msgstr "Router Advertisement 與 Host Auto Configuration"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -63082,7 +63082,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "<acronym>IPv6</acronym> and <acronym>IPv6</acronym> Address Mapping"
-msgstr ""
+msgstr "<acronym>IPv6</acronym> 與 <acronym>IPv6</acronym> 位址對應表"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -63153,7 +63153,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Using <acronym>CARP</acronym> on FreeBSD 10 and Later"
-msgstr ""
+msgstr "使用 <acronym>CARP</acronym> 於 FreeBSD 10 及之後版本"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -63260,7 +63260,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Using <acronym>CARP</acronym> on FreeBSD 9 and Earlier"
-msgstr ""
+msgstr "使用 <acronym>CARP</acronym> 於 FreeBSD 9 及先前版本"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -64403,7 +64403,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Getting Deltas"
-msgstr ""
+msgstr "取得 Deltas"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -64473,7 +64473,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "<application>CTM</application> Usage"
-msgstr ""
+msgstr "<application>CTM</application> 用法"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -64526,7 +64526,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Keeping Local Changes"
-msgstr ""
+msgstr "保留本地變更"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -64541,7 +64541,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Other <application>CTM</application> Options"
-msgstr ""
+msgstr "其他 <application>CTM</application> 選項"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:65535
@@ -64614,7 +64614,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Root <acronym>SSL</acronym> Certificates"
-msgstr ""
+msgstr "根 <acronym>SSL</acronym> 憑證"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -64658,7 +64658,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Installation"
-msgstr ""
+msgstr "安裝"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -64678,7 +64678,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Running <application>Subversion</application>"
-msgstr ""
+msgstr "執行 <application>Subversion</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -64778,7 +64778,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "<application>Subversion</application> Mirror Sites"
-msgstr ""
+msgstr "<application>Subversion</application> 鏡像站"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:65535
@@ -65515,7 +65515,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:65535
 msgid "Mailing Lists"
-msgstr "郵遞論壇"
+msgstr "郵遞論壇 (Mailing List)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:65535
@@ -65550,7 +65550,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "List Summary"
-msgstr ""
+msgstr "論壇摘要"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -66953,7 +66953,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "How to Subscribe"
-msgstr ""
+msgstr "如何訂閱"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -66978,7 +66978,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "List Charters"
-msgstr ""
+msgstr "論壇章程"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -67863,7 +67863,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Filtering on the Mailing Lists"
-msgstr ""
+msgstr "郵遞論壇過濾項目"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:65535
@@ -67958,7 +67958,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "BSD Specific Newsgroups"
-msgstr ""
+msgstr "BSD 專屬新聞群組"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
@@ -67988,7 +67988,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "Other <trademark class=\"registered\">UNIX</trademark> Newsgroups of Interest"
-msgstr ""
+msgstr "其他相關的 <trademark class=\"registered\">UNIX</trademark> 新聞群組"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
@@ -68028,7 +68028,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
 msgid "X Window System"
-msgstr ""
+msgstr "X 視窗系統"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
