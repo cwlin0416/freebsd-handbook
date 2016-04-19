@@ -92,6 +92,7 @@ pkg install poedit
 | Policy | 政策, 管理政策 ||
 | Scrubbing | 清潔 | ZFS |
 | Pool, Storage Pool | 儲存池 | ZFS |
+| Snapshot | 快照 |  |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
