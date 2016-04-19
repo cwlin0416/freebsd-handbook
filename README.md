@@ -95,6 +95,7 @@ pkg install poedit
 | Snapshot | 快照 |  |
 | Considerations | 注意事項 | |
 | NAT, Network Address Translation | 網路位址轉譯 ||
+| Failover | 容錯移轉 ||
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
