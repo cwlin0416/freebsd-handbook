@@ -76,6 +76,7 @@ pkg install poedit
 | Repository | 儲藏庫 |
 | Video Cards | 顯示卡 |
 | Monitors | 顯示器 |
+| Chipsets | 晶片組 |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
