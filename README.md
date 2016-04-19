@@ -75,8 +75,17 @@ pkg install poedit
 | Productivity Tools | 辦工工具 |
 | Repository | 儲藏庫 |
 | Video Cards | 顯示卡 |
+| Video | 影像 |
 | Monitors | 顯示器 |
 | Chipsets | 晶片組 |
+| Mixer Channels | 混音器頻道 |
+| Ripping | 擷取 |
+| Audio Tracks | 音軌 |
+| Library, Libraries | 函式庫 | 
+| Log Rotation | 日誌循環 |
+| Bandwidth Delay Product | 頻寬延遲乘積 |
+| Suspend, Hibernate, Resume | 待機, 休眠, 喚醒 |
+
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
