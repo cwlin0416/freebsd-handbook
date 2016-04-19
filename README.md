@@ -38,59 +38,59 @@ pkg install poedit
 ```
 
 # 翻譯名詞對照表
-| 原文  | 譯文 |
-| ------------- | ------------- |
-| Committer | 提交者 |
-| Audit | 稽查 | 
-| Disk | 磁碟 |
-| Drive | 磁碟機 |
-| Device | 裝置 |
-| CD-ROM, DVD Drive | CD-ROM, DVD 光碟機 |
-| Mount | 掛載 |
-| Unmount | 卸載 |
-| Home directory | 家目錄 |
-| Signal | 信號 |
-| Common Address Redundancy Protocol | 共用位址備援協定 |
-| Line Printer | 行列式印表機 |
-| Serial | 序列 |
-| Spool, Spooling | 暫存 (需附註原文) |
-| Script | (不翻譯) |
-| Log | 日誌 (需附註原文) |
-| System call | 系統呼叫 (需附註原文) |
-| Slice  | TBD |
-| third-party software | 第三方軟體 |
-| Partition  | 分割區 |
-| Partitioning | 磁碟分割 |
-| Volume | 磁碟區 |
-| Swap Space | 交換空間 |
-| Ports Collection | TBD, Ports 套件集 |
-| Binary Package | TBD, Binary 套件 |
-| Base System | TBD |
-| Package | TBD, 套件 |
-| Journaling | TBD | 
-| Shell | (不翻譯) |
-| Daemon | (不翻譯) |
-| Console | (不翻譯) |
-| Binary | (不翻譯) |
-| Plugin | 附加元件 |
-| Productivity Tools | 辦工工具 |
-| Repository | 儲藏庫 |
-| Video Cards | 顯示卡 |
-| Video | 影像 |
-| Monitors | 顯示器 |
-| Chipsets | 晶片組 |
-| Mixer Channels | 混音器頻道 |
-| Ripping | 擷取 |
-| Audio Tracks | 音軌 |
-| Library, Libraries | 函式庫 | 
-| Log Rotation | 日誌循環 |
-| Bandwidth Delay Product | 頻寬延遲乘積 |
-| Suspend, Hibernate, Resume | 待機, 休眠, 喚醒 |
-| System Hangs | TBD, 系統無回應 |
-| Tuning | 調校 |
-| Process Accounting | 程序追蹤 |
-| Policy | 政策, 管理政策 |
-
+| 原文  | 譯文 | 使用章節 |
+| ------------- | ------------- | ------------ |
+| Committer | 提交者 ||
+| Audit | 稽查 | |
+| Disk | 磁碟 ||
+| Drive | 磁碟機 ||
+| Device | 裝置 ||
+| CD-ROM, DVD Drive | CD-ROM, DVD 光碟機 ||
+| Mount | 掛載 ||
+| Unmount | 卸載 ||
+| Home directory | 家目錄 ||
+| Signal | 信號 ||
+| Common Address Redundancy Protocol | 共用位址備援協定 |||
+| Line Printer | 行列式印表機 ||
+| Serial | 序列 ||
+| Spool, Spooling | 暫存 (需附註原文) ||
+| Script | (不翻譯) ||
+| Log | 日誌 (需附註原文) ||
+| System call | 系統呼叫 (需附註原文) ||
+| Slice  | TBD ||
+| third-party software | 第三方軟體 ||
+| Partition  | 分割區 ||
+| Partitioning | 磁碟分割 ||
+| Volume | 磁碟區 ||
+| Swap Space | 交換空間 ||
+| Ports Collection | TBD, Ports 套件集 ||
+| Binary Package | TBD, Binary 套件 ||
+| Base System | TBD ||
+| Package | TBD, 套件 ||
+| Journaling | TBD | |
+| Shell | (不翻譯) ||
+| Daemon | (不翻譯) ||
+| Console | (不翻譯) ||
+| Binary | (不翻譯) ||
+| Plugin | 附加元件 ||
+| Productivity Tools | 辦工工具 ||
+| Repository | 儲藏庫 ||
+| Video Cards | 顯示卡 ||
+| Video | 影像 ||
+| Monitors | 顯示器 ||
+| Chipsets | 晶片組 ||
+| Mixer Channels | 混音器頻道 ||
+| Ripping | 擷取 ||
+| Audio Tracks | 音軌 ||
+| Library, Libraries | 函式庫 | |
+| Log Rotation | 日誌循環 ||
+| Bandwidth Delay Product | 頻寬延遲乘積 ||
+| Suspend, Hibernate, Resume | 待機, 休眠, 喚醒 ||
+| System Hangs | TBD, 系統無回應 ||
+| Tuning | 調校 ||
+| Process Accounting | 程序追蹤 ||
+| Policy | 政策, 管理政策 ||
+| Scrubbing | 清潔 | ZFS |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
