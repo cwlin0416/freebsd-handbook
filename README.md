@@ -74,6 +74,8 @@ pkg install poedit
 | Plugin | 附加元件 |
 | Productivity Tools | 辦工工具 |
 | Repository | 儲藏庫 |
+| Video Cards | 顯示卡 |
+| Monitors | 顯示器 |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
