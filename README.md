@@ -88,6 +88,7 @@ pkg install poedit
 | System Hangs | TBD, 系統無回應 |
 | Tuning | 調校 |
 | Process Accounting | 程序追蹤 |
+| Policy | 政策, 管理政策 |
 
 
 # PO 線上協同翻譯平台
