@@ -87,6 +87,7 @@ pkg install poedit
 | Suspend, Hibernate, Resume | 待機, 休眠, 喚醒 |
 | System Hangs | TBD, 系統無回應 |
 | Tuning | 調校 |
+| Process Accounting | 程序追蹤 |
 
 
 # PO 線上協同翻譯平台
