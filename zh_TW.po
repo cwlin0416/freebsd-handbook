@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-19 17:13+0800\n"
+"PO-Revision-Date: 2016-04-20 20:14+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -253,27 +253,27 @@ msgstr "您目前看到的這本手冊代表著上百位貢獻者歷時 10 年�
 #. (itstool) path: listitem/para
 #: book.translate.xml:808
 msgid "<xref linkend=\"dtrace\"/> has been added with information about the powerful DTrace performance analysis tool."
-msgstr ""
+msgstr "<xref linkend=\"dtrace\"/> 增加說明有關強大的 DTrace 效能分析工具的資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:813
 msgid "<xref linkend=\"filesystems\"/> has been added with information about non-native file systems in FreeBSD, such as ZFS from <trademark>Sun</trademark>."
-msgstr ""
+msgstr "<xref linkend=\"filesystems\"/> 增加有關 FreeBSD 非原生檔案系統的資訊，如：來自 <trademark>Sun</trademark> 的 ZSF。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:819
 msgid "<xref linkend=\"audit\"/> has been added to cover the new auditing capabilities in FreeBSD and explain its use."
-msgstr ""
+msgstr "<xref linkend=\"audit\"/> 增加的內容涵蓋 FreeBSD 的新稽查功能及其使用說明。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:824
 msgid "<xref linkend=\"virtualization\"/> has been added with information about installing FreeBSD on virtualization software."
-msgstr ""
+msgstr "<xref linkend=\"virtualization\"/> 增加有關在虛擬化軟體安裝 FreeBSD  的資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:830
 msgid "<xref linkend=\"bsdinstall\"/> has been added to cover installation of FreeBSD using the new installation utility, <application>bsdinstall</application>."
-msgstr ""
+msgstr "<xref linkend=\"bsdinstall\"/> 增加的內容涵蓋使用新安裝工具 <application>bsdinstall</application> 來安裝 FreeBSD。"
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-changes-from2
@@ -451,17 +451,17 @@ msgstr "向新手介紹 FreeBSD。該篇說明了 FreeBSD 計劃的歷史、目�
 #. (itstool) path: listitem/para
 #: book.translate.xml:1057
 msgid "Walks a user through the entire installation process of FreeBSD 9.<replaceable>x</replaceable> and later using <application>bsdinstall</application>."
-msgstr ""
+msgstr "帶領使用者走一次使用 <application>bsdinstall</application> 在 FreeBSD 9.<replaceable>x</replaceable> 及之後版本的完整安裝流程。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1067
 msgid "Covers the basic commands and functionality of the FreeBSD operating system. If you are familiar with <trademark class=\"registered\">Linux</trademark> or another flavor of <trademark class=\"registered\">UNIX</trademark> then you can probably skip this chapter."
-msgstr ""
+msgstr "涵蓋 FreeBSD 作業系統的基礎指令及功能。若您熟悉 <trademark class=\"registered\">Linux</trademark> 或其他類 UNIX® 系統，您則可跳過此章。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1078
 msgid "Covers the installation of third-party software with both FreeBSD's innovative <quote>Ports Collection</quote> and standard binary packages."
-msgstr ""
+msgstr "涵蓋如何使用 FreeBSD 獨創的 <quote>Ports 套件集</quote> 與標準 Binary 套件安裝第三方軟體。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1088
@@ -1044,7 +1044,7 @@ msgstr "FreeBSD 的運用範圍無限，其實完全限制在你的想像力上�
 #. (itstool) path: sect2/para
 #: book.translate.xml:1808
 msgid "Because the source code for FreeBSD itself is generally available, the system can also be customized to an almost unheard of degree for special applications or projects, and in ways not generally possible with operating systems from most major commercial vendors. Here is just a sampling of some of the applications in which people are currently using FreeBSD:"
-msgstr "由於每個人都可以取得 FreeBSD 的原始程式碼， 這個系統可以被調整而能執行任何原本完全無法想像的功能或計劃， 而對於從各廠商取得的作業系統通常沒有辦法這樣地被修改。 以下提供一些人們使用 FreeBSD 的例子："
+msgstr "由於每個人都可以取得 FreeBSD 的原始程式碼， 這個系統可以被量身訂做成能執行任何原本完全無法想像的功能或計劃， 而對於從各廠商取得的作業系統通常沒有辦法這樣地被修改。 以下提供一些人們使用 FreeBSD 的例子："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1818
@@ -10007,32 +10007,32 @@ msgstr "X Window 系統"
 #. (itstool) path: sect1/para
 #: book.translate.xml:10530
 msgid "An installation of FreeBSD using <application>bsdinstall</application> does not automatically install a graphical user interface. This chapter describes how to install and configure <application>Xorg</application>, which provides the open source X Window System used to provide a graphical environment. It then describes how to find and install a desktop environment or window manager."
-msgstr ""
+msgstr "使用 <application>bsdinstall</application> 安裝 FreeBSD 並不會自動安裝圖型化使用者介面。本章將說明如何安裝並設定 <application>Xorg</application>，該應用程式提供開放源碼的 X Window 系統來提供圖型化環境。接著會說明如何找到並安裝桌面環境或視窗管理程式。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:10539
 msgid "Users who prefer an installation method that automatically configures the <application>Xorg</application> and offers a choice of window managers during installation should refer to the <link xlink:href=\"http://www.pcbsd.org/\">pcbsd.org</link> website."
-msgstr ""
+msgstr "偏好安裝時會自動設定 <application>Xorg</application> 並且在安裝過程提供視窗管理程式選項的使用者請參考 <link xlink:href=\"http://www.pcbsd.org/\">pcbsd.org</link> 網站。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10546
 msgid "For more information on the video hardware that <application>Xorg</application> supports, refer to the <link xlink:href=\"http://www.x.org/\">x.org</link> website."
-msgstr ""
+msgstr "更多有關 <application>Xorg</application> 支援影像硬體資訊，請參考 <link xlink:href=\"http://www.x.org/\">x.org</link> 網站。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10553
 msgid "The various components of the X Window System, and how they interoperate."
-msgstr "X Window 系統的各組成部份，以及它們是如何相互運作。"
+msgstr "組成 X Window 系統的各種元件以及它們是如何相互運作。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10558
 msgid "How to install and configure <application>Xorg</application>."
-msgstr "如何安裝、設定 <application>Xorg</application>。"
+msgstr "如何安裝並設定 <application>Xorg</application>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10563
 msgid "How to install and configure several window managers and desktop environments."
-msgstr "如何安裝並使用不同的視窗管理程式與桌面環境。"
+msgstr "如何安裝並設定各種視窗管理程式與桌面環境。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10568
@@ -10042,7 +10042,7 @@ msgstr "如何在 <application>Xorg</application> 上使用 <trademark class=\"r
 #. (itstool) path: listitem/para
 #: book.translate.xml:10573
 msgid "How to set up your system for graphical logins (<application>XDM</application>)."
-msgstr "如何設定系統以使用圖形化登入介面 (<application>XDM</application>)。"
+msgstr "如何設定系統以使用圖形化登入 (<application>XDM</application>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10582
@@ -12332,7 +12332,7 @@ msgstr "介紹給您眾多 FreeBSD 上可用的多媒體工具。"
 #. (itstool) path: listitem/para
 #: book.translate.xml:12642
 msgid "Explain the process of building a customized FreeBSD kernel to enable extra functionality."
-msgstr "解釋如何編譯自訂 FreeBSD 核心以增加額外系統功能的流程。"
+msgstr "解釋如何編譯量身訂做的 FreeBSD 核心以增加額外系統功能的流程。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12647
@@ -12357,12 +12357,12 @@ msgstr "桌面應用程式"
 #. (itstool) path: sect1/para
 #: book.translate.xml:12685
 msgid "While FreeBSD is popular as a server for its performance and stability, it is also suited for day-to-day use as a desktop. With over 24,000 applications available as FreeBSD packages or ports, it is easy to build a customized desktop that runs a wide variety of desktop applications. This chapter demonstrates how to install numerous desktop applications, including web browsers, productivity software, document viewers, and financial software."
-msgstr ""
+msgstr "隨著 FreeBSD 優越的效能及穩定性越來越熱門，它同時適合作為每日使用的桌面系統。FreeBSD 套件或 Ports 有超過 24,000 個可用的應用程式，可以簡單的建立一個自訂的桌面環境來執行各種不同的桌面應用程式。本章將示範如何安裝數個桌面應用程式，包含網頁瀏覽器、辦工軟體、文件閱覽程式以及財務軟體。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:12695
 msgid "Users who prefer to install a pre-built desktop version of FreeBSD rather than configuring one from scratch should refer to the <link xlink:href=\"http://www.pcbsd.org/\">pcbsd.org website.</link>"
-msgstr ""
+msgstr "比起重頭設定，更偏好安裝預先編譯好桌面環境的 FreeBSD 版本的使用者可參考 <link xlink:href=\"http://www.pcbsd.org/\">pcbsd.org 網站</link>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12702
@@ -14930,12 +14930,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:14950
 msgid "TV cards can be used to watch broadcast or cable TV on a computer. Most cards accept composite video via an <acronym>RCA</acronym> or S-video input and some cards include a <acronym>FM</acronym> radio tuner."
-msgstr ""
+msgstr "電視卡(TV card)可以讓您用電腦來看無線、有線電視節目。許多卡都是透過 <acronym>RCA</acronym> 或 S-video 輸入端子來接收視訊，而且有些卡還可接收 <acronym>FM</acronym> 廣播的功能。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14955
 msgid "FreeBSD provides support for PCI-based TV cards using a Brooktree Bt848/849/878/879 video capture chip with the <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver. This driver supports most Pinnacle PCTV video cards. Before purchasing a TV card, consult <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> for a list of supported tuners."
-msgstr ""
+msgstr "FreeBSD 可透過 <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式，來支援 PCI 介面的電視卡，只要這些卡使用的是 Brooktree Bt848/849/878/879 或 Conexant CN-878/Fusion 878a 視訊擷取晶片。此外，要再確認哪些卡上所附的選台功能是否有支援，可以參考 <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> 說明，以查看所支援的硬體清單。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14962
@@ -14945,7 +14945,7 @@ msgstr "載入驅動程式"
 #. (itstool) path: sect2/para
 #: book.translate.xml:14964
 msgid "In order to use the card, the <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver must be loaded. To automate this at boot time, add the following line to <filename>/boot/loader.conf</filename>:"
-msgstr ""
+msgstr "要用電視卡的話，就要載入 <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式，這個可以透過在 <filename>/boot/loader.conf</filename> 檔加上下面這一行就可以了："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14968
@@ -14956,7 +14956,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:14970
 msgid "Alternatively, one can statically compile support for the TV card into a custom kernel. In that case, add the following lines to the custom kernel configuration file:"
-msgstr ""
+msgstr "或者可以將電視卡支援靜態編譯到自訂的核心當中，若要這麼做則可在自訂核心設定檔加入以下行："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14975
@@ -14971,12 +14971,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:14980
 msgid "These additional devices are necessary as the card components are interconnected via an I2C bus. Then, build and install a new kernel."
-msgstr ""
+msgstr "之所以要加上這些額外的驅動程式，是因為卡的各組成部分都是透過 I2C 匯流排而相互連接的。接下來，請編譯、安裝新的核心 。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14984
 msgid "To test that the tuner is correctly detected, reboot the system. The TV card should appear in the boot messages, as seen in this example:"
-msgstr ""
+msgstr "要測試調諧器 (Tuner) 是否被正確的偵測，請先重新啟動系統。電視卡應該會出現在開機訊息檔中，如同此範例："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14988
@@ -14993,7 +14993,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:14995
 msgid "The messages will differ according to the hardware. If necessary, it is possible to override some of the detected parameters using <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> or custom kernel configuration options. For example, to force the tuner to a Philips SECAM tuner, add the following line to a custom kernel configuration file:"
-msgstr ""
+msgstr "該訊息會依硬體不同而有所不同。若必要，可以使用 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 系統偵測的參數或者自訂核心設定選項。例如要強制使用 Philips SECAM 調諧器則可加入下列行至自訂核心設定檔："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:15002
@@ -15004,7 +15004,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:15004
 msgid "or, use <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry>:"
-msgstr ""
+msgstr "或使用 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry>："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:15006
@@ -15015,7 +15015,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:15008
 msgid "Refer to <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> for a description of the available <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> parameters and kernel options."
-msgstr ""
+msgstr "請參考 <citerefentry><refentrytitle>bktr</refentrytitle><manvolnum>4</manvolnum></citerefentry> 查看 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 可用的參數說明及核心選項。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:15013
@@ -15448,42 +15448,42 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15415
 msgid "The kernel is the core of the FreeBSD operating system. It is responsible for managing memory, enforcing security controls, networking, disk access, and much more. While much of FreeBSD is dynamically configurable, it is still occasionally necessary to configure and compile a custom kernel."
-msgstr ""
+msgstr "核心 (Kernel) 是 FreeBSD 作業系統最重要的部份之一。它負責記憶體管理、安全控管、網路、硬碟存取等等。 儘管目前 FreeBSD 大多可以用動態設定， 但有時仍需要設定並編譯自訂的核心。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15425
 msgid "When to build a custom kernel."
-msgstr ""
+msgstr "何時需要編譯自訂核心。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15429
 msgid "How to take a hardware inventory."
-msgstr ""
+msgstr "如何取得硬體資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15433
 msgid "How to customize a kernel configuration file."
-msgstr ""
+msgstr "如何量身訂做核心設定檔。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15437
 msgid "How to use the kernel configuration file to create and build a new kernel."
-msgstr ""
+msgstr "如何使用核心設定檔來建立並編譯新的核心。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15442
 msgid "How to install the new kernel."
-msgstr ""
+msgstr "如何安裝新的核心。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15446
 msgid "How to troubleshoot if things go wrong."
-msgstr ""
+msgstr "發生錯誤時如何排除問題。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15450
 msgid "All of the commands listed in the examples in this chapter should be executed as <systemitem class=\"username\">root</systemitem>."
-msgstr ""
+msgstr "所有在本章所列出的指令均應以 <systemitem class=\"username\">root</systemitem> 來執行。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:15455
@@ -15493,37 +15493,37 @@ msgstr "為何要編譯自訂的核心?"
 #. (itstool) path: sect1/para
 #: book.translate.xml:15457
 msgid "Traditionally, FreeBSD used a monolithic kernel. The kernel was one large program, supported a fixed list of devices, and in order to change the kernel's behavior, one had to compile and then reboot into a new kernel."
-msgstr ""
+msgstr "早期的 FreeBSD 的核心 (Kernel) 被戲稱為 “巨石”。因為當時的核心是一個非常大的程式，且只支援固定的硬體裝置，如果您想改變核心的設定，就必須編譯一個新核心並重新開機，才能使用。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15462
 msgid "Today, most of the functionality in the FreeBSD kernel is contained in modules which can be dynamically loaded and unloaded from the kernel as necessary. This allows the running kernel to adapt immediately to new hardware or for new functionality to be brought into the kernel. This is known as a modular kernel."
-msgstr ""
+msgstr "現在，大多數在 FreeBSD 核心的功能已採用模組 (Module) 的方式包裝，可以依據需求動態在核心載入或卸載。 這使得核心能夠快速採用新硬體環境的新功能，就叫做模組化核心 (Modular Kernel)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15469
 msgid "Occasionally, it is still necessary to perform static kernel configuration. Sometimes the needed functionality is so tied to the kernel that it can not be made dynamically loadable. Some security environments prevent the loading and unloading of kernel modules and require that only needed functionality is statically compiled into the kernel."
-msgstr ""
+msgstr "儘管如此，還是有一些功能因使用到靜態的核心設定須要編譯，因為這些功能與核心緊密結合，無法將做成可動態載入的模組。且部份強調安全性的環境會盡量避免載入與卸載核心模組，且只要將需要的功能靜態的編譯到核心當中。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15476
 msgid "Building a custom kernel is often a rite of passage for advanced BSD users. This process, while time consuming, can provide benefits to the FreeBSD system. Unlike the <filename>GENERIC</filename> kernel, which must support a wide range of hardware, a custom kernel can be stripped down to only provide support for that computer's hardware. This has a number of benefits, such as:"
-msgstr ""
+msgstr "編譯自訂的核心幾乎是每位進階的 BSD 使用者所必須經歷的過程。儘管這項工作可能比較耗時，但在 FreeBSD 的使用上會有許多好處。 跟必須支援大多數各式硬體的 <filename>GENERIC</filename> 核心相比的話， 自訂的核心可以更『體貼』，只支援『自己硬體』的部分就好。 自訂核心有許多項優點，如︰"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15486
 msgid "Faster boot time. Since the kernel will only probe the hardware on the system, the time it takes the system to boot can decrease."
-msgstr ""
+msgstr "加速開機，因為自訂的核心只需要偵測您系統上存在的硬體，所以讓啟動所花的過程更流暢快速。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15492
 msgid "Lower memory usage. A custom kernel often uses less memory than the <filename>GENERIC</filename> kernel by omitting unused features and device drivers. This is important because the kernel code remains resident in physical memory at all times, preventing that memory from being used by applications. For this reason, a custom kernel is useful on a system with a small amount of RAM."
-msgstr ""
+msgstr "減少記憶體使用，自訂的核心通常會比 <filename>GENERIC</filename> 核心使用更少的記憶體，這很重要，因為核心必須一直存放在實體記憶體內，會讓其他應用程式無法使用。因此，自訂核心對於記憶體較小的系統來說，發揮很大的作用。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15503
 msgid "Additional hardware support. A custom kernel can add support for devices which are not present in the <filename>GENERIC</filename> kernel."
-msgstr ""
+msgstr "支援額外的硬體，自訂的核心可以增加一些 <filename>GENERIC</filename> 核心沒有提供的硬體支援。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15509
@@ -15563,17 +15563,17 @@ msgstr "偵測系統硬體"
 #. (itstool) path: sect1/para
 #: book.translate.xml:15547
 msgid "Before editing the kernel configuration file, it is recommended to perform an inventory of the machine's hardware. On a dual-boot system, the inventory can be created from the other operating system. For example, <trademark class=\"registered\">Microsoft</trademark>'s <application>Device Manager</application> contains information about installed devices."
-msgstr ""
+msgstr "在編輯核心設定檔之前，建議先調查清楚機器各項硬體資訊。在雙作業系統的環境，也可透過其他作業系統來了解目前機器上的硬體資訊。 舉例來說，<trademark class=\"registered\">Microsoft</trademark> 的 <application>裝置管理員</application> (Device Manager) 內會有目前已安裝的硬體資訊。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:15555
 msgid "Some versions of <trademark class=\"registered\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark> have a <application>System</application> icon which can be used to access <application>Device Manager</application>."
-msgstr ""
+msgstr "某些版本的 <trademark class=\"registered\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark> 會有<application>系統</application> (System) 圖示可用來進入 <application>裝置管理員</application>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15560
 msgid "If FreeBSD is the only installed operating system, use <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></citerefentry> to determine the hardware that was found and listed during the boot probe. Most device drivers on FreeBSD have a manual page which lists the hardware supported by that driver. For example, the following lines indicate that the <citerefentry><refentrytitle>psm</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver found a mouse:"
-msgstr ""
+msgstr "若 FreeBSD 是唯一安裝的作業系統，則可使用 <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來查看開時時系統偵測到的硬體資訊 。FreeBSD 上大多硬體驅動程式都有操作手冊會列出支援的硬體。例如，以下幾行是說 <citerefentry><refentrytitle>psm</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式偵測到了一隻滑鼠："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15567
@@ -15588,17 +15588,17 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15572
 msgid "Since this hardware exists, this driver should not be removed from a custom kernel configuration file."
-msgstr ""
+msgstr "因為該硬體存在，此驅動程式便不應該從自訂核心設定檔中移除。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15575
 msgid "If the output of <command>dmesg</command> does not display the results of the boot probe output, instead read the contents of <filename>/var/run/dmesg.boot</filename>."
-msgstr ""
+msgstr "若 <command>dmesg</command> 輸出的結果未顯示開機偵測硬體的部份，則可改閱讀 <filename>/var/run/dmesg.boot</filename> 檔案的內容。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15579
 msgid "Another tool for finding hardware is <citerefentry><refentrytitle>pciconf</refentrytitle><manvolnum>8</manvolnum></citerefentry>, which provides more verbose output. For example:"
-msgstr ""
+msgstr "另外，也可以透過 <citerefentry><refentrytitle>pciconf</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具可用來查詢硬體資訊，該工具會列出更詳細的硬體資訊如："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15582
@@ -15615,12 +15615,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15589
 msgid "This output shows that the <filename>ath</filename> driver located a wireless Ethernet device."
-msgstr ""
+msgstr "以上輸出資訊說明 <filename>ath</filename> 驅動程式已經找到一個無線乙太網路裝置。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15592
 msgid "The <option>-k</option> flag of <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> can be used to provide useful information. For example, to display a list of manual pages which contain the specified word:"
-msgstr ""
+msgstr "在 <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令加上 <option>-k</option> 參數，可提供有用的資訊，例如，列出有包含指定關鍵字的手冊頁面清單："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15596
@@ -15639,7 +15639,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15601
 msgid "Once the hardware inventory list is created, refer to it to ensure that drivers for installed hardware are not removed as the custom kernel configuration is edited."
-msgstr ""
+msgstr "準備好硬體清單之後，參考該清單來確認已安裝的硬體驅動程式在編輯自訂核心設定時沒有被移除。"
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
@@ -15650,22 +15650,22 @@ msgstr "設定檔"
 #. (itstool) path: sect1/para
 #: book.translate.xml:15620
 msgid "In order to create a custom kernel configuration file and build a custom kernel, the full FreeBSD source tree must first be installed."
-msgstr ""
+msgstr "為了要建立自訂核心設定檔並編譯自訂核心，必須先安裝完整的 FreeBSD 原始碼樹。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15624
 msgid "If <filename>/usr/src/</filename> does not exist or it is empty, source has not been installed. Source can be installed using <application>Subversion</application> and the instructions in <xref linkend=\"svn\"/>."
-msgstr ""
+msgstr "若 <filename>/usr/src/</filename> 目錄不存在或者是空的，代表尚未安裝。原始碼可以使用 <application>Subversion</application> 並依據 <xref linkend=\"svn\"/> 中的操作說明來安裝。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15629
 msgid "Once source is installed, review the contents of <filename>/usr/src/sys</filename>. This directory contains a number of subdirectories, including those which represent the following supported architectures: <filename>amd64</filename>, <filename>i386</filename>, <filename>ia64</filename>, <filename>pc98</filename>, <filename>powerpc</filename>, and <filename>sparc64</filename>. Everything inside a particular architecture's directory deals with that architecture only and the rest of the code is machine independent code common to all platforms. Each supported architecture has a <filename>conf</filename> subdirectory which contains the <filename>GENERIC</filename> kernel configuration file for that architecture."
-msgstr ""
+msgstr "完成原始碼完成後，需檢查 <filename>/usr/src/sys</filename> 內的檔案。該目錄內包含數個子目錄，這些子目錄中包了支援的硬體架構 (Architecture) 如下：<filename>amd64</filename>, <filename>i386</filename>, <filename>ia64</filename>, <filename>pc98</filename>, <filename>powerpc</filename> 以及 <filename>sparc64</filename>。在指定架構目錄中的內容只對該架構有效，其餘部份的程式碼與硬體架構無關，可通用所有平台。每個支援的硬體架構中會有 <filename>conf</filename> 子目錄，裡面含有供該架構使用的 <filename>GENERIC</filename> 核心設定檔。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15643
 msgid "Do not make edits to <filename>GENERIC</filename>. Instead, copy the file to a different name and make edits to the copy. The convention is to use a name with all capital letters. When maintaining multiple FreeBSD machines with different hardware, it is a good idea to name it after the machine's hostname. This example creates a copy, named <filename>MYKERNEL</filename>, of the <filename>GENERIC</filename> configuration file for the <literal>amd64</literal> architecture:"
-msgstr ""
+msgstr "請不要直接對 <filename>GENERIC</filename> 檔案做編輯。複製該檔案為另一個名稱，並對複製出來的檔案做編輯，習慣上檔名會全部使用大寫字元。當維護多台安裝不同的硬體的 FreeBSD 機器時，將檔名後方加上機器的主機名稱 (Host name) 是個不錯的方法。以下範例使用 <literal>amd64</literal> 架構的 <filename>GENERIC</filename> 設定檔建立了一個複本名稱為 <filename>MYKERNEL</filename>："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15652
@@ -15678,7 +15678,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15655
 msgid "<filename><replaceable>MYKERNEL</replaceable></filename> can now be customized with any <acronym>ASCII</acronym> text editor. The default editor is <application>vi</application>, though an easier editor for beginners, called <application>ee</application>, is also installed with FreeBSD."
-msgstr ""
+msgstr "現在可以使用任何 <acronym>ASCII</acronym> 文字編輯器來自訂 <filename><replaceable>MYKERNEL</replaceable></filename>。預設的編輯器為 <application>vi</application>，在 FreeBSD 也內建一個易於初學者使用的編輯器叫做 <application>ee</application>。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:15662
@@ -15698,27 +15698,27 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15672
 msgid "The format of the kernel configuration file is simple. Each line contains a keyword that represents a device or subsystem, an argument, and a brief description. Any text after a <literal>#</literal> is considered a comment and ignored. To remove kernel support for a device or subsystem, put a <literal>#</literal> at the beginning of the line representing that device or subsystem. Do not add or remove a <literal>#</literal> for any line that you do not understand."
-msgstr ""
+msgstr "核心設定檔的格式很簡單，每一行會含有代表裝置 (Device) 或子系統 (Subsystem) 的關鍵字、參數以及簡短的說明。任何在 <literal>#</literal> 符號之後的文字會被當做註解並且略過。要移除核心對某個裝置或子系統的支援，僅需要在代表該裝置或子系統的行前加上 <literal>#</literal> 符號。請不要在您還不了解用途的行前加上或移除 <literal>#</literal> 符號。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:15683
 msgid "It is easy to remove support for a device or option and end up with a broken kernel. For example, if the <citerefentry><refentrytitle>ata</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver is removed from the kernel configuration file, a system using <acronym>ATA</acronym> disk drivers may not boot. When in doubt, just leave support in the kernel."
-msgstr ""
+msgstr "移除對裝置或選項的支援很容易會造成核心損壞。例如，若從核心設定檔 <citerefentry><refentrytitle>ata</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式，那麼使用 <acronym>ATA</acronym> 磁碟驅動程式的系統便會無法開機。因此當您不確定時，請在核心保留該項目的支援。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15690
 msgid "In addition to the brief descriptions provided in this file, additional descriptions are contained in <filename>NOTES</filename>, which can be found in the same directory as <filename>GENERIC</filename> for that architecture. For architecture independent options, refer to <filename>/usr/src/sys/conf/NOTES</filename>."
-msgstr ""
+msgstr "除了在設定檔中提供的簡短說明之外，尚有其他的說明在 <filename>NOTES</filename> 檔案中，可在與該架構 <filename>GENERIC</filename> 相同的目錄底下找到。要查看所有架構通用的選項，請參考 <filename>/usr/src/sys/conf/NOTES</filename>。"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:15698
 msgid "When finished customizing the kernel configuration file, save a backup copy to a location outside of <filename>/usr/src</filename>."
-msgstr ""
+msgstr "當完成自訂的核心設定檔，請備份到 <filename>/usr/src</filename> 位置之外。"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:15702
 msgid "Alternately, keep the kernel configuration file elsewhere and create a symbolic link to the file:"
-msgstr ""
+msgstr "或者，將核心設定檔放在其他地方，然後建立一個符號連結 (Symbolic link) 至該檔案："
 
 #. (itstool) path: tip/screen
 #: book.translate.xml:15705
@@ -15733,7 +15733,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15711
 msgid "An <literal>include</literal> directive is available for use in configuration files. This allows another configuration file to be included in the current one, making it easy to maintain small changes relative to an existing file. If only a small number of additional options or drivers are required, this allows a delta to be maintained with respect to <filename>GENERIC</filename>, as seen in this example:"
-msgstr ""
+msgstr "設定檔中可以使用 <literal>include</literal> 指令 (Directive)。該指令可以引用其他設定檔到目前的設定檔，這讓只需根據現有檔案設定做些微調整時更簡單。若只有少量的額外選項或驅動程式需要設定，該指令可引用 <filename>GENERIC</filename> 並設定額外增加的選項，如範例所示："
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:15719
@@ -15751,12 +15751,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:15727
 msgid "Using this method, the local configuration file expresses local differences from a <filename>GENERIC</filename> kernel. As upgrades are performed, new features added to <filename>GENERIC</filename> will also be added to the local kernel unless they are specifically prevented using <literal>nooptions</literal> or <literal>nodevice</literal>. A comprehensive list of configuration directives and their descriptions may be found in <citerefentry><refentrytitle>config</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
-msgstr ""
+msgstr "使用此方法，設定檔只含有與 <filename>GENERIC</filename> 核心不同的部份。當升級有新功能加入 <filename>GENERIC</filename> 時，也可一併引用，除非特別使用 <literal>nooptions</literal> 或 <literal>nodevice</literal> 選項來排除設定。更詳細的設定檔指令及其說明可在 <citerefentry><refentrytitle>config</refentrytitle><manvolnum>5</manvolnum></citerefentry> 找到。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:15737
 msgid "To build a file which contains all available options, run the following command as <systemitem class=\"username\">root</systemitem>:"
-msgstr ""
+msgstr "要產生含有所有可用選項的設定檔，可以 <systemitem class=\"username\">root</systemitem> 執行以下指令："
 
 #. (itstool) path: note/screen
 #: book.translate.xml:15740
@@ -15772,12 +15772,12 @@ msgstr "編譯與安裝自訂核心"
 #. (itstool) path: sect1/para
 #: book.translate.xml:16558
 msgid "Once the edits to the custom configuration file have been saved, the source code for the kernel can be compiled using the following steps:"
-msgstr ""
+msgstr "完成自訂設定檔的編輯並儲存之後，便可依據以下步驟編譯核心的原始碼："
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:16563
 msgid "Building a Kernel"
-msgstr ""
+msgstr "編譯核心"
 
 #. (itstool) path: procedure/indexterm
 #: book.translate.xml:16565
@@ -15787,7 +15787,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:16571
 msgid "Change to this directory:"
-msgstr ""
+msgstr "切換至此目錄："
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16573
@@ -15798,7 +15798,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:16577
 msgid "Compile the new kernel by specifying the name of the custom kernel configuration file:"
-msgstr ""
+msgstr "指定自訂核心設定檔的名稱來編譯新的核心："
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16580
@@ -15809,7 +15809,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:16584
 msgid "Install the new kernel associated with the specified kernel configuration file. This command will copy the new kernel to <filename>/boot/kernel/kernel</filename> and save the old kernel to <filename>/boot/kernel.old/kernel</filename>:"
-msgstr ""
+msgstr "安裝使用指定核心設定檔所編譯的新核心。此指令將會複製新核心到 <filename>/boot/kernel/kernel</filename> 並將舊核心備份到 <filename>/boot/kernel.old/kernel</filename>："
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16590
@@ -15820,17 +15820,17 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:16594
 msgid "Shutdown the system and reboot into the new kernel. If something goes wrong, refer to <xref linkend=\"kernelconfig-noboot\"/>."
-msgstr ""
+msgstr "關機並重新開機載入新的核心，若發生錯誤請參考 <xref linkend=\"kernelconfig-noboot\"/>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16599
 msgid "By default, when a custom kernel is compiled, all kernel modules are rebuilt. To update a kernel faster or to build only custom modules, edit <filename>/etc/make.conf</filename> before starting to build the kernel."
-msgstr ""
+msgstr "預設在自訂核心編譯完成後，所有核心模組也同被重新編譯。要快速更新核心或只編譯自訂的模組，需在開始編譯之前先編輯 <filename>/etc/make.conf</filename>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16604
 msgid "For example, this variable specifies the list of modules to build instead of using the default of building all modules:"
-msgstr ""
+msgstr "例如，使用以下變數可指定要編譯的模組清單來替代預設編譯所有模組的設定："
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:16608
@@ -15841,7 +15841,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:16610
 msgid "Alternately, this variable lists which modules to exclude from the build process:"
-msgstr ""
+msgstr "或者，可使用以下變數來從編譯程序中排除要編譯的模組："
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:16613
@@ -15852,7 +15852,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:16615
 msgid "Additional variables are available. Refer to <citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for details."
-msgstr ""
+msgstr "尚有其他可用的變數，請參考 <citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 取得詳細資訊。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:16618
@@ -15867,17 +15867,17 @@ msgstr "如果發生錯誤"
 #. (itstool) path: sect1/para
 #: book.translate.xml:16626
 msgid "There are four categories of trouble that can occur when building a custom kernel:"
-msgstr ""
+msgstr "當編譯自訂核心時可能發生以下四種類型的問題："
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16631
 msgid "<command>config</command> fails"
-msgstr ""
+msgstr "<command>config</command> 失敗"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16634
 msgid "If <command>config</command> fails, it will print the line number that is incorrect. As an example, for the following message, make sure that line 17 is typed correctly by comparing it to <filename>GENERIC</filename> or <filename>NOTES</filename>:"
-msgstr ""
+msgstr "若 <command>config</command> 失敗，會列出不正確的行號。使用以下訊息為例子，需要與 <filename>GENERIC</filename> 或 <filename>NOTES</filename> 比對來確認第 17 行輸入的內容正確："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:16640
@@ -15888,32 +15888,32 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16645
 msgid "<command>make</command> fails"
-msgstr ""
+msgstr "<command>make</command> 失敗"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16648
 msgid "If <command>make</command> fails, it is usually due to an error in the kernel configuration file which is not severe enough for <command>config</command> to catch. Review the configuration, and if the problem is not apparent, send an email to the <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general questions mailing list</link> which contains the kernel configuration file."
-msgstr ""
+msgstr "若 <command>make</command> 失敗，通常是因為核心設定檔未提供足夠的資訊讓 <command>config</command> 找到問題。請仔細檢查設定檔，若仍不清楚問題，請寄發電子郵件給 <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions\">FreeBSD general questions mailing list</link> 並附上核心設定檔。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16658
 msgid "The kernel does not boot"
-msgstr ""
+msgstr "無法使用核心開機"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16661
 msgid "If the new kernel does not boot or fails to recognize devices, do not panic! Fortunately, FreeBSD has an excellent mechanism for recovering from incompatible kernels. Simply choose the kernel to boot from at the FreeBSD boot loader. This can be accessed when the system boot menu appears by selecting the <quote>Escape to a loader prompt</quote> option. At the prompt, type <command>boot <replaceable>kernel.old</replaceable></command>, or the name of any other kernel that is known to boot properly."
-msgstr ""
+msgstr "若新核心無法開機或無法辨識裝置並不要恐慌！幸好，FreeBSD 有良好的機制可以從不相容的核心復原。只需要在 FreeBSD 開機載入程式 (Boot loader) 選擇要用來開機的核心便可，當系統開機選單出現時選擇 <quote>Escape to a loader prompt</quote> 選項，並在指令提示後輸入 <command>boot <replaceable>kernel.old</replaceable></command> 或替換為任何其他已經知道可以正常開機的核心名稱。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16673
 msgid "After booting with a good kernel, check over the configuration file and try to build it again. One helpful resource is <filename>/var/log/messages</filename> which records the kernel messages from every successful boot. Also, <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></citerefentry> will print the kernel messages from the current boot."
-msgstr ""
+msgstr "使用好的核心開機之後，檢查設定檔並嘗試再編譯一次。<filename>/var/log/messages</filename> 是有用的資源，它在每次成功開機時會記錄核心訊息。同樣的，<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 也會印出自本次開機後的核心訊息。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:16681
 msgid "When troubleshooting a kernel, make sure to keep a copy of <filename>GENERIC</filename>, or some other kernel that is known to work, as a different name that will not get erased on the next build. This is important because every time a new kernel is installed, <filename>kernel.old</filename> is overwritten with the last installed kernel, which may or may not be bootable. As soon as possible, move the working kernel by renaming the directory containing the good kernel:"
-msgstr ""
+msgstr "在排除核心問題時，請確定留有 <filename>GENERIC</filename> 的複本，或者其他已知可以運作的核心，並使用不同的名稱來確保下次編譯時不會被刪除，這很重要，因此每當新的核心被安裝之後，<filename>kernel.old</filename> 都會被最後安裝的核心覆寫，有可能會無法開機。盡快，透過重新命名將可運作的核心目錄移動到目前運作的核心目錄。"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:16691
@@ -15926,12 +15926,12 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16698
 msgid "The kernel works, but <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> does not"
-msgstr ""
+msgstr "核心可運作，但 <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 無法運作"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16701
 msgid "If the kernel version differs from the one that the system utilities have been built with, for example, a kernel built from -CURRENT sources is installed on a -RELEASE system, many system status commands like <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>vmstat</refentrytitle><manvolnum>8</manvolnum></citerefentry> will not work. To fix this, <link linkend=\"makeworld\">recompile and install a world</link> built with the same version of the source tree as the kernel. It is never a good idea to use a different version of the kernel than the rest of the operating system."
-msgstr ""
+msgstr "若核心版本與系統工具所編譯的版本不同，例如，有一個核心使用 -CURRENT 的原始碼編譯並安裝在 -RELEASE 的系統上，許多系統狀態指令如 <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>vmstat</refentrytitle><manvolnum>8</manvolnum></citerefentry> 將會無法運作。要修正此問題，請使用與核心相同版本的原始碼樹 (Source tree) <link linkend=\"makeworld\">重新編譯並安裝 World</link>。使用與作業系統其他部份版本不同的核心永遠不會是個好主意。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:16726
@@ -17256,37 +17256,37 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:17900
 msgid "FreeBSD provides 32-bit binary compatibility with <trademark class=\"registered\">Linux</trademark>, allowing users to install and run most 32-bit <trademark class=\"registered\">Linux</trademark> binaries on a FreeBSD system without having to first modify the binary. It has even been reported that, in some situations, 32-bit <trademark class=\"registered\">Linux</trademark> binaries perform better on FreeBSD than they do on <trademark class=\"registered\">Linux</trademark>."
-msgstr ""
+msgstr "FreeBSD 提供和 32 位元 <trademark class=\"registered\">Linux</trademark> Binary 的相容性，允許使用者在 FreeBSD 不需要修改就可以安裝和執行大部份 32 位元 <trademark class=\"registered\">Linux</trademark> Binary。 曾經有報告指出，在某些情況下，32 位元 <trademark class=\"registered\">Linux</trademark> Binary 在 FreeBSD 的表現比在 <trademark class=\"registered\">Linux</trademark> 好。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:17906
 msgid "However, some <trademark class=\"registered\">Linux</trademark>-specific operating system features are not supported under FreeBSD. For example, <trademark class=\"registered\">Linux</trademark> binaries will not work on FreeBSD if they overly use <trademark>i386</trademark> specific calls, such as enabling virtual 8086 mode. In addition, 64-bit <trademark class=\"registered\">Linux</trademark> binaries are not supported at this time."
-msgstr ""
+msgstr "然而，部份 <trademark class=\"registered\">Linux</trademark> 作業系統的特色在 FreeBSD 並未支援。 例如，如果 <trademark class=\"registered\">Linux</trademark> Binary 過度使用 <trademark>i386</trademark> 特定的呼叫，像是啟動虛擬 8086 模式，將無法在 FreeBSD 執行。此外，64 位元 <trademark class=\"registered\">Linux</trademark> Binary 目前也尚未支援。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17916
 msgid "How to enable <trademark class=\"registered\">Linux</trademark> binary compatibility on a FreeBSD system."
-msgstr ""
+msgstr "如何在 FreeBSD 系統啟用 <trademark class=\"registered\">Linux</trademark> Binary 相容模式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17921
 msgid "How to install additional <trademark class=\"registered\">Linux</trademark> shared libraries."
-msgstr ""
+msgstr "如何安裝其他的 <trademark class=\"registered\">Linux</trademark> 共用程式庫。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17926
 msgid "How to install <trademark class=\"registered\">Linux</trademark> applications on a FreeBSD system."
-msgstr ""
+msgstr "如何在 FreeBSD 系統安裝 <trademark class=\"registered\">Linux</trademark> 應用程式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17931
 msgid "The implementation details of <trademark class=\"registered\">Linux</trademark> compatibility in FreeBSD."
-msgstr ""
+msgstr "在 FreeBSD 中 <trademark class=\"registered\">Linux</trademark> 相容性的實作細節。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17940
 msgid "Know how to install <link linkend=\"ports\">additional third-party software</link>."
-msgstr ""
+msgstr "知道如何安裝 <link linkend=\"ports\">其他的第三方軟體</link>。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:17948
@@ -17716,48 +17716,48 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:19156
 msgid "One of the important aspects of FreeBSD is proper system configuration. This chapter explains much of the FreeBSD configuration process, including some of the parameters which can be set to tune a FreeBSD system."
-msgstr ""
+msgstr "在 FreeBSD 使用過程中，相當重要的環節之一就是如何正確設定系統。 本章著重於介紹 FreeBSD 的設定流程，包括一些可以調整 FreeBSD 效能的參數設定。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19165
 msgid "The basics of <filename>rc.conf</filename> configuration and <filename>/usr/local/etc/rc.d</filename> startup scripts."
-msgstr ""
+msgstr "<filename>rc.conf</filename> 設定的基礎概念及 <filename>/usr/local/etc/rc.d</filename> 啟動 Script。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19171
 msgid "How to configure and test a network card."
-msgstr ""
+msgstr "如何設定並測試網路卡。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19175
 msgid "How to configure virtual hosts on network devices."
-msgstr ""
+msgstr "如何在網路裝置上設定虛擬主機。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19180
 msgid "How to use the various configuration files in <filename>/etc</filename>."
-msgstr ""
+msgstr "如何使用在 <filename>/etc</filename> 中的各種設定檔。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19185
 msgid "How to tune FreeBSD using <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> variables."
-msgstr ""
+msgstr "如何使用 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 變數調校 FreeBSD。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19189
 msgid "How to tune disk performance and modify kernel limitations."
-msgstr ""
+msgstr "如何調校磁碟效能及修改核心限制。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19198 book.translate.xml:29095 book.translate.xml:30842
 #: book.translate.xml:34655 book.translate.xml:45911
 msgid "Understand <trademark class=\"registered\">UNIX</trademark> and FreeBSD basics (<xref linkend=\"basics\"/>)."
-msgstr ""
+msgstr "了解 <trademark class=\"registered\">UNIX</trademark> 及 FreeBSD 基礎 (<xref linkend=\"basics\"/>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19203
 msgid "Be familiar with the basics of kernel configuration and compilation (<xref linkend=\"kernelconfig\"/>)."
-msgstr ""
+msgstr "熟悉核心設定與編譯的基礎 (<xref linkend=\"kernelconfig\"/>)。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:19211
@@ -20769,47 +20769,47 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:22637
 msgid "The process of starting a computer and loading the operating system is referred to as <quote>the bootstrap process</quote>, or <quote>booting</quote>. FreeBSD's boot process provides a great deal of flexibility in customizing what happens when the system starts, including the ability to select from different operating systems installed on the same computer, different versions of the same operating system, or a different installed kernel."
-msgstr ""
+msgstr "從開啟電腦到載入作業系統的這段流程稱為<quote>開機程序</quote> (Bootstrap process) 或<quote>開機</quote> (booting)。FreeBSD 的開機程序提供大量的客製化彈性，包含可選擇安裝在同電腦的其他的作業系統、不同版本的作業系統或不同核心的作業系統的功能。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22646
 msgid "This chapter details the configuration options that can be set. It demonstrates how to customize the FreeBSD boot process, including everything that happens until the FreeBSD kernel has started, probed for devices, and started <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>. This occurs when the text color of the boot messages changes from bright white to grey."
-msgstr ""
+msgstr "本章會詳細說明可以設定的選項。示範如何自訂 FreeBSD 開機流程，包含其中所有會發生的事，直到啟動 FreeBSD 核心、偵測裝置及啟動 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>。這些事會發生在開機訊息的文字顏色會從亮白變成灰色之間。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22653
 msgid "After reading this chapter, you will recognize:"
-msgstr ""
+msgstr "在閱讀本章之後，您會了解："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22657
 msgid "The components of the FreeBSD bootstrap system and how they interact."
-msgstr ""
+msgstr "FreeBSD 開機系統的元件以及它們如何互動。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22662
 msgid "The options that can be passed to the components in the FreeBSD bootstrap in order to control the boot process."
-msgstr ""
+msgstr "FreeBSD 開機程式中各元件可使用的選項，用來控制開機程序。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22667
 msgid "How to configure a customized boot splash screen."
-msgstr ""
+msgstr "如何設定自訂的開機啟動畫面 (Splash screen)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22671
 msgid "The basics of setting device hints."
-msgstr ""
+msgstr "設定 Device Hints 的基礎。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:22675
 msgid "How to boot into single- and multi-user mode and how to properly shut down a FreeBSD system."
-msgstr ""
+msgstr "如何開機進入單人及多人模式以及如何正確關閉 FreeBSD 系統。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:22681
 msgid "This chapter only describes the boot process for FreeBSD running on x86 and amd64 systems."
-msgstr ""
+msgstr "本章僅說明 FreeBSD 在 x86 及 amd64 系統上執行的開機流程。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:22687
@@ -21648,82 +21648,82 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:23547
 msgid "Security, whether physical or virtual, is a topic so broad that an entire industry has evolved around it. Hundreds of standard practices have been authored about how to secure systems and networks, and as a user of FreeBSD, understanding how to protect against attacks and intruders is a must."
-msgstr ""
+msgstr "不論實體或虛擬，安全性這個主題大到有整個產業圍繞著它，上百個標準案例已經被用來搛寫如何確保系統與網路的安全性。身為 FreeBSD 必須了解如何避免攻擊與入侵。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:23553
 msgid "In this chapter, several fundamentals and techniques will be discussed. The FreeBSD system comes with multiple layers of security, and many more third party utilities may be added to enhance security."
-msgstr ""
+msgstr "在此章會討論幾個基本原理及技術。FreeBSD 系統的安全性有許多層面，且有許多第三方工具可以用來增加安全性。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23562
 msgid "Basic FreeBSD system security concepts."
-msgstr ""
+msgstr "基礎 FreeBSD 系統安全概念。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23566
 msgid "The various crypt mechanisms available in FreeBSD."
-msgstr ""
+msgstr "FreeBSD 中的幾種加密 (Crypt) 機制。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23570
 msgid "How to set up one-time password authentication."
-msgstr ""
+msgstr "如何設定一次性密碼認證。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23574
 msgid "How to configure <application>TCP Wrapper</application> for use with <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry>."
-msgstr ""
+msgstr "如何設定 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 中的 <application>TCP Wrapper</application>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23579
 msgid "How to set up <application>Kerberos</application> on FreeBSD."
-msgstr ""
+msgstr "如何在 FreeBSD 設定 <application>Kerberos</application>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23584
 msgid "How to configure <acronym>IPsec</acronym> and create a <acronym>VPN</acronym>."
-msgstr ""
+msgstr "如何設定 <acronym>IPsec</acronym> 並且建立 <acronym>VPN</acronym>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23589
 msgid "How to configure and use <application>OpenSSH</application> on FreeBSD."
-msgstr ""
+msgstr "如何在 FreeBSD 設定並使用 <application>OpenSSH</application>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23594
 msgid "How to use file system <acronym>ACL</acronym>s."
-msgstr ""
+msgstr "如何使用檔案系統 <acronym>ACL</acronym>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23598
 msgid "How to use <application>pkg</application> to audit third party software packages installed from the Ports Collection."
-msgstr ""
+msgstr "如何使用 <application>pkg</application> 來稽查從 Ports 套件集安裝的第三方軟體套件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23604
 msgid "How to utilize FreeBSD security advisories."
-msgstr ""
+msgstr "如何利用 FreeBSD 安全報告。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23608
 msgid "What Process Accounting is and how to enable it on FreeBSD."
-msgstr ""
+msgstr "什麼是程序追蹤 (Process Accounting) 以及如何在 FreeBSD 開啟。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23613
 msgid "How to control user resources using login classes or the resource limits database."
-msgstr ""
+msgstr "如何使用登入類別或資源限制資料庫控制使用者資源。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:23622 book.translate.xml:57859
 msgid "Understand basic FreeBSD and Internet concepts."
-msgstr ""
+msgstr "了解 FreeBSD 基礎及網路概念。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:23626
 msgid "Additional security topics are covered elsewhere in this Handbook. For example, Mandatory Access Control is discussed in <xref linkend=\"mac\"/> and Internet firewalls are discussed in <xref linkend=\"firewalls\"/>."
-msgstr ""
+msgstr "其他的安全性議題會在本操作手冊的其他處說明。例如 強制存取控制 (Mandatory Access Control, MAC) 會在 <xref linkend=\"mac\"/> 討論及網路防火牆會在 <xref linkend=\"firewalls\"/> 討論。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:23635
@@ -25323,77 +25323,77 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:27437
 msgid "Since system administration is a difficult task, many tools have been developed to make life easier for the administrator. These tools often enhance the way systems are installed, configured, and maintained. One of the tools which can be used to enhance the security of a FreeBSD system is <firstterm>jails</firstterm>. Jails have been available since FreeBSD 4.X and continue to be enhanced in their usefulness, performance, reliability, and security."
-msgstr ""
+msgstr "由於系統管理是一項困難的工作，許多工具開發來讓系統管理者能夠更輕鬆。這些工具通常可以強化系統安裝、設定以及維護的方式。這些工具之可以用來強化 FreeBSD 系統的安全性之一的就是 <firstterm>jails</firstterm>。Jails 早在 FreeBSD 4.X 便可使用並持續強化它的功能、效率、穩定性以及安全性。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27446
 msgid "Jails build upon the <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> concept, which is used to change the root directory of a set of processes. This creates a safe environment, separate from the rest of the system. Processes created in the chrooted environment can not access files or resources outside of it. For that reason, compromising a service running in a chrooted environment should not allow the attacker to compromise the entire system. However, a chroot has several limitations. It is suited to easy tasks which do not require much flexibility or complex, advanced features. Over time, many ways have been found to escape from a chrooted environment, making it a less than ideal solution for securing services."
-msgstr ""
+msgstr "Jails 建立在 <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> 概念之上，會更改一系列程序的根目錄。這可以創造一個安全的環境，將程序與系統的其他部份分隔。在 chroot 的環境所建立的程序不能存取該環境以外的檔案或資源。也因此，滲透一個在 chroot 的環境執行的服務並不會讓整個系統被攻擊者滲透。但 chroot 有許多限制，只適合用在簡單的工作，不需要許多彈性或複雜性、進階功能的工作。隨著時間推移，許多可以逃離 chroot 的環境的方法已經被找到，讓這個方法不再是確保服務安全的理想方案。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27459
 msgid "Jails improve on the concept of the traditional chroot environment in several ways. In a traditional chroot environment, processes are only limited in the part of the file system they can access. The rest of the system resources, system users, running processes, and the networking subsystem are shared by the chrooted processes and the processes of the host system. Jails expand this model by virtualizing access to the file system, the set of users, and the networking subsystem. More fine-grained controls are available for tuning the access of a jailed environment. Jails can be considered as a type of operating system-level virtualization."
-msgstr ""
+msgstr "Jails 用許多方式改進了傳統 chroot 環境的概念。在傳統 chroot 環境，程序僅限制在一部份檔案系統可存取的地方。其餘的系統資源、系統使用者、執行的程序以及網路子系統被chroot 的程序及主機系統的程序所共享。Jails 透過虛擬化存取檔案系統、使用者及網路子系統來擴展這個模型，可使用更多細微的控制參數來調校 Jail 的環境存取方式，Jails 可算是一種作業系統層級的虛擬化。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27471
 msgid "A jail is characterized by four elements:"
-msgstr ""
+msgstr "Jail 的特點有四個要素："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27475
 msgid "A directory subtree: the starting point from which a jail is entered. Once inside the jail, a process is not permitted to escape outside of this subtree."
-msgstr ""
+msgstr "一個子樹狀目錄：進入 jail 的起點目錄，一但在 jail 中，程序便沒有權限離開此目錄之外。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27481
 msgid "A hostname: which will be used by the jail."
-msgstr ""
+msgstr "一個主機名稱：將會由 jail 所使用。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27485
 msgid "An <acronym>IP</acronym> address: which is assigned to the jail. The <acronym>IP</acronym> address of a jail is often an alias address for an existing network interface."
-msgstr ""
+msgstr "一個 <acronym>IP</acronym> 位址：用來分配給 jail。jail 的 <acronym>IP</acronym> 位址通常是現有網路介面的別名位址。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27492
 msgid "A command: the path name of an executable to run inside the jail. The path is relative to the root directory of the jail environment."
-msgstr ""
+msgstr "一個指令：要在 jail 中可執行的執行檔路徑名稱。該路徑是 jail 環境根目錄的相對路徑。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27498
 msgid "Jails have their own set of users and their own <systemitem class=\"username\">root</systemitem> account which are limited to the jail environment. The <systemitem class=\"username\">root</systemitem> account of a jail is not allowed to perform operations to the system outside of the associated jail environment."
-msgstr ""
+msgstr "Jails 有自己使用者及自己的 <systemitem class=\"username\">root</systemitem> 帳號，皆受到 jail 環境的限制。jail 中的 <systemitem class=\"username\">root</systemitem> 帳號不允許對指定 jail 環境之外的系統執行操作。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27503
 msgid "This chapter provides an overview of the terminology and commands for managing FreeBSD jails. Jails are a powerful tool for both system administrators, and advanced users."
-msgstr ""
+msgstr "本章將提供 FreeBSD jails 術語及管理指令的概述，Jails 對系統管理者及進階的使用者來二者來說皆是強大的工具。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27511
 msgid "What a jail is and what purpose it may serve in FreeBSD installations."
-msgstr ""
+msgstr "jail 是什麼及它在 FreeBSD 中提供的目的。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27516
 msgid "How to build, start, and stop a jail."
-msgstr ""
+msgstr "如何建立、啟動及停止 jail。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27520
 msgid "The basics of jail administration, both from inside and outside the jail."
-msgstr ""
+msgstr "jail 管理基礎，不論從內部或外部。"
 
 #. (itstool) path: important/para
 #: book.translate.xml:27526
 msgid "Jails are a powerful tool, but they are not a security panacea. While it is not possible for a jailed process to break out on its own, there are several ways in which an unprivileged user outside the jail can cooperate with a privileged user inside the jail to obtain elevated privileges in the host environment."
-msgstr ""
+msgstr "Jails 是強大的工具，但它不是安全性問題的萬靈丹。雖然 jail 的程序不可能自己獨自打破規則，但有許多方法可以讓在 jail 之外無權限的使用者與在 jail 之內有權限的使用者串通來取得主機環境的更高權限。"
 
 #. (itstool) path: important/para
 #: book.translate.xml:27533
 msgid "Most of these attacks can be mitigated by ensuring that the jail root is not accessible to unprivileged users in the host environment. As a general rule, untrusted users with privileged access to a jail should not be given access to the host environment."
-msgstr ""
+msgstr "大多數這類型的攻擊者可以由確保 jail 根目錄不會被無權限使用者存取來減少。基本上，不受信任的使用者有 jail 的存取權限並不會讓其可存取主機環境。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:27542
@@ -27073,7 +27073,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: book.translate.xml:29019 book.translate.xml:65535
 msgid "Mandatory Access Control"
-msgstr "強制存取控制(MAC)"
+msgstr "強制存取控制 (MAC)"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:29030
@@ -70852,4 +70852,4 @@ msgstr ""
 #. (itstool) path: colophon/para
 #: book.translate.xml:65535
 msgid "This book is the combined work of hundreds of contributors to <quote>The FreeBSD Documentation Project</quote>. The text is authored in XML according to the DocBook DTD and is formatted from XML into many different presentation formats using XSLT. The printed version of this document would not be possible without Donald Knuth's <application>TeX</application> typesetting language, Leslie Lamport's <application>LaTeX</application>, or Sebastian Rahtz's <application>JadeTeX</application> macro package."
-msgstr ""
+msgstr "本手冊是由數以百計 <quote>FreeBSD 文件計劃</quote> 的志願工作者所合作而成。 這些文字是由依據 DocBook DTD 規範的 XML 所寫， 並由 XSLT 將 XML 轉換成其他不同格式。 要是沒有 Donald Knuth 的 <application>TeX</application> 排版語言， Leslie Lamport 的 <application>LaTeX</application> 或 Sebastian Rahtz 的 <application>JadeTeX</application> 巨集套件的重要貢獻，本文件的印刷版本將無以完成。"
