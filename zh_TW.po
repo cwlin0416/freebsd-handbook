@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-20 20:14+0800\n"
+"PO-Revision-Date: 2016-04-21 18:58+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25338,7 +25338,7 @@ msgstr "Jails 用許多方式改進了傳統 chroot 環境的概念。在傳統 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27471
 msgid "A jail is characterized by four elements:"
-msgstr "Jail 的特點有四個要素："
+msgstr "Jail 的四個要素："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27475
@@ -25403,57 +25403,57 @@ msgstr "Jail 相關術語"
 #. (itstool) path: sect1/para
 #: book.translate.xml:27544
 msgid "To facilitate better understanding of parts of the FreeBSD system related to jails, their internals and the way they interact with the rest of FreeBSD, the following terms are used further in this chapter:"
-msgstr ""
+msgstr "為協助更容易理解 FreeBSD 系統有關 jail 部份， 以及它們與 FreeBSD 其他部分的相互作用關係， 以下列出本章將使用的術語："
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:27551
 msgid "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></citerefentry> (command)"
-msgstr ""
+msgstr "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></citerefentry> (指令)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27553
 msgid "Utility, which uses <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> FreeBSD system call to change the root directory of a process and all its descendants."
-msgstr ""
+msgstr "工具，用來使用 <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> FreeBSD 系統呼叫 (System call) 來更改程予及其衍伸程序的根目錄。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:27560
 msgid "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> (environment)"
-msgstr ""
+msgstr "<citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> (環境)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27562
 msgid "The environment of processes running in a <quote>chroot</quote>. This includes resources such as the part of the file system which is visible, user and group IDs which are available, network interfaces and other IPC mechanisms, etc."
-msgstr ""
+msgstr "指程序在 <quote>chroot</quote> 中執行的環境。包含的資源如：一部份可見的檔案系統、可用的使用者及群組 ID、網路介面及其他 IPC 機制等。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:27571
 msgid "<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> (command)"
-msgstr ""
+msgstr "<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> (指令)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27573
 msgid "The system administration utility which allows launching of processes within a jail environment."
-msgstr ""
+msgstr "允許在 jail 環境下執行程序的系統管理工具。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:27579
 msgid "host (system, process, user, etc.)"
-msgstr ""
+msgstr "主機 (系統、程序、使用者等)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27581
 msgid "The controlling system of a jail environment. The host system has access to all the hardware resources available, and can control processes both outside of and inside a jail environment. One of the important differences of the host system from a jail is that the limitations which apply to superuser processes inside a jail are not enforced for processes of the host system."
-msgstr ""
+msgstr "jail 環境的控制系統。 主機系統可以存取所有可用的硬體資源，並能控制 jail 環境內外的程序。主機系統與 jail 最大的差別在於：在主機系統中的超級使用者程序並不像在 jail 環境那樣受到限制。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:27593
 msgid "hosted (system, process, user, etc.)"
-msgstr ""
+msgstr "託管 (主機、程序、使用者等)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:27595
 msgid "A process, user or other entity, whose access to resources is restricted by a FreeBSD jail."
-msgstr ""
+msgstr "存取資源受到 FreeBSD jail 限制的託管程序、使用者或其他實體。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:27603
@@ -29536,62 +29536,62 @@ msgstr "儲存設備"
 #. (itstool) path: sect1/para
 #: book.translate.xml:31532
 msgid "This chapter covers the use of disks and storage media in FreeBSD. This includes <acronym>SCSI</acronym> and <acronym>IDE</acronym> disks, <acronym>CD</acronym> and <acronym>DVD</acronym> media, memory-backed disks, and <acronym>USB</acronym> storage devices."
-msgstr ""
+msgstr "本章涵蓋如何在 FreeBSD 下使用磁碟及儲存媒體，這包含 <acronym>SCSI</acronym> 及 <acronym>IDE</acronym> 磁碟、<acronym>CD</acronym> 及 <acronym>DVD</acronym> 媒體、記憶體磁碟及 <acronym>USB</acronym> 儲存裝置。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31542
 msgid "How to add additional hard disks to a FreeBSD system."
-msgstr ""
+msgstr "如何在 FreeBSD 系統加入額外的硬碟。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31547
 msgid "How to grow the size of a disk's partition on FreeBSD."
-msgstr ""
+msgstr "如何在 FreeBSD 擴增磁碟分割區的大小。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31552
 msgid "How to configure FreeBSD to use <acronym>USB</acronym> storage devices."
-msgstr ""
+msgstr "如何設定 FreeBSD 使用 <acronym>USB</acronym> 儲存裝置。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31557
 msgid "How to use <acronym>CD</acronym> and <acronym>DVD</acronym> media on a FreeBSD system."
-msgstr ""
+msgstr "如何在 FreeBSD 系統使用 <acronym>CD</acronym> 及 <acronym>DVD</acronym> 媒體。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31562
 msgid "How to use the backup programs available under FreeBSD."
-msgstr ""
+msgstr "如何使用在 FreeBSD 下可用的備份程式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31567
 msgid "How to set up memory disks."
-msgstr ""
+msgstr "如何設定記憶體磁碟。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31571
 msgid "What file system snapshots are and how to use them efficiently."
-msgstr ""
+msgstr "什麼是檔案系統快照 (Snapshot) 以及如何有效使用。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31576
 msgid "How to use quotas to limit disk space usage."
-msgstr ""
+msgstr "如何使用配額 (Quota) 來限制磁碟空間使用量。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31580
 msgid "How to encrypt disks and swap to secure them against attackers."
-msgstr ""
+msgstr "如何加密磁碟及交換空間來防範攻擊者。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31585
 msgid "How to configure a highly available storage network."
-msgstr ""
+msgstr "如何設定高可用性 (Highly available) 的儲存網路。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:31594
 msgid "Know how to <link linkend=\"kernelconfig\">configure and install a new FreeBSD kernel</link>."
-msgstr ""
+msgstr "了解如何 <link linkend=\"kernelconfig\">設定並安裝新的 FreeBSD 核心</link>。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:31602
@@ -40613,7 +40613,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:42619
 msgid "FreeBSD is a distributed project with users and contributors located all over the world. As such, FreeBSD supports localization into many languages, allowing users to view, input, or process data in non-English languages. One can choose from most of the major languages, including, but not limited to: Chinese, German, Japanese, Korean, French, Russian, and Vietnamese."
-msgstr ""
+msgstr "FreeBSD 計劃的使用者及貢獻者分佈在世界各地，也因此 FreeBSD 支援多語系，讓使用者可以使用非英文語言來檢視、輸入或處理資料。使用者可以選擇大多數主要語言，包含但不限於以下語言：中文、德文、日文、韓文、法文、俄文及越南文。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:42627
@@ -40628,47 +40628,47 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:42633
 msgid "The term internationalization has been shortened to <acronym>i18n</acronym>, which represents the number of letters between the first and the last letters of <literal>internationalization</literal>. <acronym>L10n</acronym> uses the same naming scheme, but from <literal>localization</literal>. The <acronym>i18n</acronym>/<acronym>L10n</acronym> methods, protocols, and applications allow users to use languages of their choice."
-msgstr ""
+msgstr "<literal>國際化</literal> (Internationalization) 一詞可以縮寫為 <acronym>i18n</acronym>，即  第一個字母到最後一個字母間的字母數量。<acronym>L10n</acronym> 也使用同樣的命名規則，但原自 <literal>在地化</literal> (Localization)。 <acronym>i18n</acronym>/<acronym>L10n</acronym> 的方法、協定及應用程式讓使用者可以自己選擇使用的語言。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42643
 msgid "This chapter discusses the internationalization and localization features of FreeBSD. After reading this chapter, you will know:"
-msgstr ""
+msgstr "本章會討論 FreeBSD 的國際化及在地化功能。在閱讀本章之後，您會了解："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42649
 msgid "How locale names are constructed."
-msgstr ""
+msgstr "語系名稱如何組成。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42653
 msgid "How to set the locale for a login shell."
-msgstr ""
+msgstr "如何設定登入 Shell 的語系。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42657
 msgid "How to configure the console for non-English languages."
-msgstr ""
+msgstr "如何設定 Console 給非英文語言的使用者。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42662
 msgid "How to configure <application>Xorg</application> for different languages."
-msgstr ""
+msgstr "如果設定 <application>Xorg</application> 使用不同語言。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42667
 msgid "How to find <acronym>i18n</acronym>-compliant applications."
-msgstr ""
+msgstr "如何找到支援 <acronym>i18n</acronym> 的應用程式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42672
 msgid "Where to find more information for configuring specific languages."
-msgstr ""
+msgstr "那裡可以找到更多設定特定語言的資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42680
 msgid "Know how to <link linkend=\"ports\">install additional third-party applications</link>."
-msgstr ""
+msgstr "了解如何 <link linkend=\"ports\">安裝其他第三方應用程式</link>。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:42687
@@ -41796,47 +41796,47 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:43670
 msgid "FreeBSD is under constant development between releases. Some people prefer to use the officially released versions, while others prefer to keep in sync with the latest developments. However, even official releases are often updated with security and other critical fixes. Regardless of the version used, FreeBSD provides all the necessary tools to keep the system updated, and allows for easy upgrades between versions. This chapter describes how to track the development system and the basic tools for keeping a FreeBSD system up-to-date."
-msgstr ""
+msgstr "FreeBSD 在每次的發佈之間持續在開發。有些人喜歡官方發佈的版本，有些人則喜歡持續同步使用最新的開發版本。不論如何，即使是官方發佈的版本仍時常會有安全性與其他緊急修復的更新。無論使用哪種版本，FreeBSD 都提供所有必要的工具來讓系統保持最新版，而且可以輕易升級不同版本。本章將說明如何追蹤開發版本的系統及保持 FreeBSD 系統維持新版的基本工具。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43684
 msgid "How to keep a FreeBSD system up-to-date with <application>freebsd-update</application>, <application>Subversion</application>, or <application>CTM</application>."
-msgstr ""
+msgstr "如何使用 <application>freebsd-update</application>, <application>Subversion</application> 或 <application>CTM</application> 來讓 FreeBSD 系統保持新版。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43691
 msgid "How to compare the state of an installed system against a known pristine copy."
-msgstr ""
+msgstr "如何比對已安裝系統與已知原始複本間的狀態。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43696
 msgid "How to keep the installed documentation up-to-date with <application>Subversion</application> or documentation ports."
-msgstr ""
+msgstr "如何使用 <application>Subversion</application> 或說明文件 Ports 來維持已安裝的文件為新版。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43702
 msgid "The difference between the two development branches: FreeBSD-STABLE and FreeBSD-CURRENT."
-msgstr ""
+msgstr "兩種開發分支間的差異：FreeBSD-STABLE 與 FreeBSD-CURRENT。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43707
 msgid "How to rebuild and reinstall the entire base system."
-msgstr ""
+msgstr "如何重新編譯及重新安裝整個基礎系統 (Base system)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43716
 msgid "Properly set up the network connection (<xref linkend=\"advanced-networking\"/>)."
-msgstr ""
+msgstr "正確的設定網路連線 (<xref linkend=\"advanced-networking\"/>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43721 book.translate.xml:50196 book.translate.xml:61519
 msgid "Know how to install additional third-party software (<xref linkend=\"ports\"/>)."
-msgstr ""
+msgstr "了解如何安裝其他第三方軟體 (<xref linkend=\"ports\"/>)。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:43727
 msgid "Throughout this chapter, <command>svn</command> is used to obtain and update FreeBSD sources. To use it, first install the <package>devel/subversion</package> port or package."
-msgstr ""
+msgstr "本章會經常使用 <command>svn</command> 來取得與更新 FreeBSD 原始碼。要使用該指令請先安裝 <package>devel/subversion</package> Port 或套件。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:43736
@@ -44095,42 +44095,42 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:46241
 msgid "<trademark class=\"registered\">UNIX</trademark> has always had support for serial communications as the very first <trademark class=\"registered\">UNIX</trademark> machines relied on serial lines for user input and output. Things have changed a lot from the days when the average terminal consisted of a 10-character-per-second serial printer and a keyboard. This chapter covers some of the ways serial communications can be used on FreeBSD."
-msgstr ""
+msgstr "<trademark class=\"registered\">UNIX</trademark> 從最早的第一台 <trademark class=\"registered\">UNIX</trademark> 仰賴序列線路來讓使用者輸入與輸出以來一直都支援序列通訊，雖與每秒 10 個字元的序列印表機及鍵盤組成的終端機時代比起已改變很多。本章將說明幾種可在 FreeBSD 使用的序列通訊方式。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:46252
 msgid "How to connect terminals to a FreeBSD system."
-msgstr ""
+msgstr "如何連線終端機到 FreeBSD 系統。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:46255
 msgid "How to use a modem to dial out to remote hosts."
-msgstr ""
+msgstr "如何使用數據機撥號給遠端主機。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:46258
 msgid "How to allow remote users to login to a FreeBSD system with a modem."
-msgstr ""
+msgstr "如何允許遠端使用者透過數據機來登入 FreeBSD 系統。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:46262
 msgid "How to boot a FreeBSD system from a serial console."
-msgstr ""
+msgstr "如何從序列 Console 啟動 FreeBSD 系統。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:46270
 msgid "Know how to <link linkend=\"kernelconfig\"> configure and install a custom kernel</link>."
-msgstr ""
+msgstr "了解如何 <link linkend=\"kernelconfig\">設定並安裝自訂核心</link>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:46274
 msgid "Understand <link linkend=\"basics\"> FreeBSD permissions and processes</link>."
-msgstr ""
+msgstr "了解 <link linkend=\"basics\"> FreeBSD 的權限與程序</link>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:46278
 msgid "Have access to the technical manual for the serial hardware to be used with FreeBSD."
-msgstr ""
+msgstr "能夠取得要在 FreeBSD 使用的序列硬體的技術手冊。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:46285
@@ -45868,22 +45868,22 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:48446
 msgid "FreeBSD supports the Point-to-Point (<acronym>PPP</acronym>) protocol which can be used to establish a network or Internet connection using a dial-up modem. This chapter describes how to configure modem-based communication services in FreeBSD."
-msgstr ""
+msgstr "FreeBSD 支援點對點 (Point-to-Point, <acronym>PPP</acronym>) 通訊協定，可透過撥號數據機用來建立網路或網際網路連線。本章將說明如何設定在 FreeBSD 中以數據機為基礎的通訊服務。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:48455
 msgid "How to configure, use, and troubleshoot a <acronym>PPP</acronym> connection."
-msgstr ""
+msgstr "如何設定、使用 <acronym>PPP</acronym> 連線及排除問題。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:48459
 msgid "How to set up <acronym>PPP</acronym> over Ethernet (<acronym>PPPoE</acronym>)."
-msgstr ""
+msgstr "如何設定在乙太網路 (Ethernet) 上的 <acronym>PPP</acronym> (<acronym>PPPoE</acronym>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:48463
 msgid "How to set up <acronym>PPP</acronym> over <acronym>ATM</acronym> (<acronym>PPPoA</acronym>)."
-msgstr ""
+msgstr "如何設定在 <acronym>ATM</acronym> 上的 <acronym>PPP</acronym> (<acronym>PPPoA</acronym>)。"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:48472 book.translate.xml:49733
@@ -45893,12 +45893,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:48481 book.translate.xml:61510
 msgid "Be familiar with basic network terminology."
-msgstr ""
+msgstr "熟悉基本網路術語。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:48484
 msgid "Understand the basics and purpose of a dial-up connection and <acronym>PPP</acronym>."
-msgstr ""
+msgstr "了解撥號連線及 <acronym>PPP</acronym> 的基礎及目的。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:48525
@@ -47388,77 +47388,77 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:50112
 msgid "<quote>Electronic Mail</quote>, better known as email, is one of the most widely used forms of communication today. This chapter provides a basic introduction to running a mail server on FreeBSD, as well as an introduction to sending and receiving email using FreeBSD. For more complete coverage of this subject, refer to the books listed in <xref linkend=\"bibliography\"/>."
-msgstr ""
+msgstr "<quote>電子郵件</quote> 或稱 email，是現今使用最廣泛的溝通方式之一。本章主要介紹如何在 FreeBSD 上執行郵件伺服器，以及如何使用 FreeBSD 收發信件，若欲瞭解細節請參閱 <xref linkend=\"bibliography\"/> 內的參考書籍。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50123
 msgid "Which software components are involved in sending and receiving electronic mail."
-msgstr ""
+msgstr "哪些軟體元件與收發電子郵件有關。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50128
 msgid "Where basic <application>Sendmail</application> configuration files are located in FreeBSD."
-msgstr ""
+msgstr "FreeBSD 內的 <application>Sendmail</application> 設定檔在哪。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50133
 msgid "The difference between remote and local mailboxes."
-msgstr ""
+msgstr "遠端信箱 (Mailbox) 與本機信箱的差異。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50138
 msgid "How to block spammers from illegally using a mail server as a relay."
-msgstr ""
+msgstr "如何阻擋垃圾郵件寄件者 (Spammer) 非法使用郵件伺服器作為中繼站。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50143
 msgid "How to install and configure an alternate Mail Transfer Agent, replacing <application>Sendmail</application>."
-msgstr ""
+msgstr "如何安裝與設定其他的郵件傳輸代理程式 (Mail Transfer Agent) 來取代 <application>Sendmail</application>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50149
 msgid "How to troubleshoot common mail server problems."
-msgstr ""
+msgstr "如何排除常見的郵件伺服器問題。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50153
 msgid "How to set up the system to send mail only."
-msgstr ""
+msgstr "如何設定系統只能寄送郵件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50157
 msgid "How to use mail with a dialup connection."
-msgstr ""
+msgstr "如何在撥號連線上使用郵件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50161
 msgid "How to configure SMTP authentication for added security."
-msgstr ""
+msgstr "如何設定 SMTP 認証來增加安全性。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50166
 msgid "How to install and use a Mail User Agent, such as <application>mutt</application>, to send and receive email."
-msgstr ""
+msgstr "如何安裝並使用郵件使用者代理程式 (Mail User Agent) 如 <application>mutt</application> 來寄發與接收電子郵件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50172
 msgid "How to download mail from a remote <acronym>POP</acronym> or <acronym>IMAP</acronym> server."
-msgstr ""
+msgstr "如何從遠端的 <acronym>POP</acronym> 或 <acronym>IMAP</acronym> 伺服器下載郵件。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50178
 msgid "How to automatically apply filters and rules to incoming email."
-msgstr ""
+msgstr "如何自動套用過濾器及規則在收到的電子郵件上。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50187
 msgid "Properly set up a network connection (<xref linkend=\"advanced-networking\"/>)."
-msgstr ""
+msgstr "正確的設定網路連線 (<xref linkend=\"advanced-networking\"/>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:50191
 msgid "Properly set up the <acronym>DNS</acronym> information for a mail host (<xref linkend=\"network-servers\"/>)."
-msgstr ""
+msgstr "正確的設定郵件主機的 <acronym>DNS</acronym> 資訊 (<xref linkend=\"network-servers\"/>)。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:50203
@@ -49224,87 +49224,87 @@ msgstr "網路伺服器"
 #. (itstool) path: sect1/para
 #: book.translate.xml:52023
 msgid "This chapter covers some of the more frequently used network services on <trademark class=\"registered\">UNIX</trademark> systems. This includes installing, configuring, testing, and maintaining many different types of network services. Example configuration files are included throughout this chapter for reference."
-msgstr ""
+msgstr "本章節涵蓋一些在 <trademark class=\"registered\">UNIX</trademark> 系統常用的網路服務，包含安裝、設定、測試及維護各種不同類型的網路服務。本章會提供範例設定檔以供參考。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52029
 msgid "By the end of this chapter, readers will know:"
-msgstr ""
+msgstr "讀完本章，您將了解："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52033
 msgid "How to manage the <application>inetd</application> daemon."
-msgstr ""
+msgstr "如何管理 <application>inetd</application> Daemon。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52038
 msgid "How to set up the Network File System (<acronym>NFS</acronym>)."
-msgstr ""
+msgstr "如何設定網路檔案系統 (Network File System, <acronym>NFS</acronym>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52043
 msgid "How to set up the Network Information Server (<acronym>NIS</acronym>) for centralizing and sharing user accounts."
-msgstr ""
+msgstr "如何設定網路資訊伺服器 (Network Information Server, <acronym>NIS</acronym>) 來集中管理及共用使用者帳號。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52049
 msgid "How to set FreeBSD up to act as an <acronym>LDAP</acronym> server or client"
-msgstr ""
+msgstr "如何設定 FreeBSD 成為 <acronym>LDAP</acronym> 伺服器或客戶端。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52054
 msgid "How to set up automatic network settings using <acronym>DHCP</acronym>."
-msgstr ""
+msgstr "如何設定使用 <acronym>DHCP</acronym> 自動網路設定。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52059
 msgid "How to set up a Domain Name Server (<acronym>DNS</acronym>)."
-msgstr ""
+msgstr "如何設定網域名稱伺服器 (Domain Name Server, <acronym>DNS</acronym>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52064
 msgid "How to set up the <application>Apache</application> <acronym>HTTP</acronym> Server."
-msgstr ""
+msgstr "如何設定 <application>Apache</application> <acronym>HTTP</acronym> 伺服器。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52069
 msgid "How to set up a File Transfer Protocol (<acronym>FTP</acronym>) server."
-msgstr ""
+msgstr "如何設定檔案傳輸協定 (File Transfer Protocol, <acronym>FTP</acronym>) 伺服器。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52074
 msgid "How to set up a file and print server for <trademark class=\"registered\">Windows</trademark> clients using <application>Samba</application>."
-msgstr ""
+msgstr "如何設定 <application>Samba</application> 檔案與列印伺服器供 <trademark class=\"registered\">Windows</trademark> 客戶端使用。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52079
 msgid "How to synchronize the time and date, and set up a time server using the Network Time Protocol (<acronym>NTP</acronym>)."
-msgstr ""
+msgstr "如何同步時間與日期，並使用網路時間協定 (Network Time Protocol, <acronym>NTP</acronym>) 設定時間伺服器。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52085
 msgid "How to set up <acronym>iSCSI</acronym>."
-msgstr ""
+msgstr "如何設定 <acronym>iSCSI</acronym>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52089
 msgid "This chapter assumes a basic knowledge of:"
-msgstr ""
+msgstr "本章假設您有以下基礎知識："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52093
 msgid "<filename>/etc/rc</filename> scripts."
-msgstr ""
+msgstr "<filename>/etc/rc</filename> Script。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52097
 msgid "Network terminology."
-msgstr ""
+msgstr "網路術語。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52101
 msgid "Installation of additional third-party software (<xref linkend=\"ports\"/>)."
-msgstr ""
+msgstr "安裝其他第三方軟體 (<xref linkend=\"ports\"/>)。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:52108
