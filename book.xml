@@ -3675,7 +3675,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	configuration.</para>
 
       <figure xml:id="bsdinstall-zfs-vdev_type">
-	<title><acronym>ZFS</acronym> Pool 類型</title>
+	<title><acronym>ZFS</acronym> 儲存池類型</title>
 
 	<mediaobject>
 	  <imageobject>
@@ -8830,7 +8830,7 @@ ports-mgmt/pkg
 	<term>視窗管理程式(Window Manager)</term>
 
 	<listitem>
-	  <para>X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href="http://xwinman.org/">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有　<quote>開始</quote>　鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Ports 套件集的 <filename>x11-wm</filename> 分類找到。</para>
+	  <para>X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href="http://xwinman.org/">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有 <quote>開始</quote> 鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Ports 套件集的 <filename>x11-wm</filename> 分類找到。</para>
 
 	  <para>每個視窗管理程式也各有其不同的設定機制，有些需要手動修改設定檔， 而有的則可透過圖型化工具來完成大部分的設定工作。</para>
 	</listitem>
@@ -38795,38 +38795,29 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
   <sect1 xml:id="virtualization-synopsis">
     <title>概述</title>
 
-    <para xml:lang="en">Virtualization software allows multiple operating systems to
-      run simultaneously on the same computer.  Such software systems
-      for <acronym>PC</acronym>s often involve a host operating system
-      which runs the virtualization software and supports any number
-      of guest operating systems.</para>
+    <para>虛擬機器軟體可以讓同一台機器得以同時執行多種作業系統。在 <acronym>PC</acronym> 上的這類軟體系統通常涉及的角色有執行虛擬機器軟體的主機端 (Host) 作業系統以及數個安裝在其中的客戶端 (Guest) 作業系統。</para>
 
     <para>讀完這章，您將了解︰</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">The difference between a host operating system and a
-	  guest operating system.</para>
+	<para>主機端作業系統及客戶端作業系統的差別。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">How to install FreeBSD on an <trademark class="registered">Intel</trademark>-based <trademark class="registered">Apple</trademark>
-	  <trademark class="registered">Mac</trademark> computer.</para>
+	<para>如何在 <trademark class="registered">Intel</trademark>-based <trademark class="registered">Apple</trademark> <trademark class="registered">Mac</trademark> 電腦安裝 FreeBSD 。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">How to install FreeBSD on <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> with
-	  <application>Virtual PC</application>.</para>
+	<para>如何在 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 使用 <application>Virtual PC</application> 安裝 FreeBSD。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">How to install FreeBSD as a guest in
-	  <application>bhyve</application>.</para>
+	<para>如何以 FreeBSD 作為 Guest 安裝在 <application>bhyve</application>。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">How to tune a FreeBSD system for best performance under
-	  virtualization.</para>
+	<para>如何調校 FreeBSD 系統來取得虛擬化的最佳效能。</para>
       </listitem>
 
     </itemizedlist>
@@ -38835,23 +38826,19 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Understand the <link linkend="basics">basics of <trademark class="registered">UNIX</trademark>
-	    and FreeBSD</link>.</para>
+	<para>了解<link linkend="basics"><trademark class="registered">UNIX</trademark> 與 FreeBSD 的基礎</link>。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Know how to <link linkend="bsdinstall">install
-	    FreeBSD</link>.</para>
+	<para>知道如何<link linkend="bsdinstall">安裝 FreeBSD</link>。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Know how to <link linkend="advanced-networking">set up a
-	    network connection</link>.</para>
+	<para>知道如何<link linkend="advanced-networking">設定網路連線</link>。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Know how to <link linkend="ports">install additional
-	    third-party software</link>.</para>
+	<para>知道如何<link linkend="ports">安裝其他第三方軟體</link>。</para>
       </listitem>
     </itemizedlist>
   </sect1>
@@ -38859,22 +38846,12 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
   <sect1 xml:id="virtualization-guest-parallels">
     <title>在 <trademark class="registered">Mac OS</trademark> X 的 <application>Parallels</application> 安裝 FreeBSD 為 Guest</title>
 
-    <para xml:lang="en"><application>Parallels Desktop</application> for <trademark class="registered">Mac</trademark> is
-      a commercial software product available for <trademark class="registered">Intel</trademark> based
-      <trademark class="registered">Apple</trademark> <trademark class="registered">Mac</trademark> computers running <trademark class="registered">Mac OS</trademark> 10.4.6 or higher.  FreeBSD
-      is a fully supported guest operating system.  Once
-      <application>Parallels</application> has been installed on
-      <trademark class="registered">Mac OS</trademark> X, the user must configure a virtual machine and then
-      install the desired guest operating system.</para>
+    <para><trademark class="registered">Mac</trademark> 的 <application>Parallels Desktop</application> 是一套商業軟體可在 <trademark class="registered">Intel</trademark> 為基礎的 <trademark class="registered">Apple</trademark> <trademark class="registered">Mac</trademark> 的<trademark class="registered">Mac OS</trademark> 10.4.6 或更新版本上執行。 該軟體完全支援使用 FreeBSD 作為客戶端作業系統。 在 <trademark class="registered">Mac OS</trademark> X 裝好 <application>Parallels</application> 後，使用者必先完成虛擬機器的設定後才可安裝想使用的客戶端作業系統。</para>
 
     <sect2 xml:id="virtualization-guest-parallels-install">
       <title>在 Parallels/<trademark class="registered">Mac OS</trademark> X 安裝 FreeBSD</title>
 
-      <para xml:lang="en">The first step in installing FreeBSD on
-	<application>Parallels</application> is to create a new
-	virtual machine for installing FreeBSD.  Select
-	<guimenuitem>FreeBSD</guimenuitem> as the
-	<guimenu>Guest OS Type</guimenu> when prompted:</para>
+      <para>在 <application>Parallels</application> 上安裝 FreeBSD 的第一步是建立供安裝 FreeBSD 使用的新虛擬機器。提示出現後請選擇 <guimenu>Guest OS Type</guimenu> 為 <guimenuitem>FreeBSD</guimenuitem>：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38882,10 +38859,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Choose a reasonable amount of disk and memory
-	depending on the plans for this virtual FreeBSD instance.
-	4GB of disk space and 512MB of RAM work well for most uses
-	of FreeBSD under <application>Parallels</application>:</para>
+      <para>根據您對此虛擬 FreeBSD 作業系統的規畫選擇合理的磁碟及記憶體空間，對大多數在 <application>Parallels</application> 下的 FreeBSD 使用者來講 4GB 的磁碟空間與 512MB 的 RAM 便足夠：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38911,8 +38885,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Select the type of networking and a network
-	interface:</para>
+      <para>選擇網路類型以及網路介面：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38926,7 +38899,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Save and finish the configuration:</para>
+      <para>儲存並完成設定：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38940,20 +38913,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">After the FreeBSD virtual machine has been created, FreeBSD
-	can be installed on it.  This is best done with an official
-	FreeBSD <acronym>CD</acronym>/<acronym>DVD</acronym> or with an
-	<acronym>ISO</acronym> image downloaded from an official
-	<acronym>FTP</acronym> site.  Copy the appropriate
-	<acronym>ISO</acronym> image to the local <trademark class="registered">Mac</trademark> filesystem or
-	insert a <acronym>CD</acronym>/<acronym>DVD</acronym> in the
-	<trademark class="registered">Mac</trademark>'s <acronym>CD-ROM</acronym> drive.  Click on the disc
-	icon in the bottom right corner of the FreeBSD
-	<application>Parallels</application> window.  This will bring
-	up a window that can be used to associate the
-	<acronym>CD-ROM</acronym> drive in the virtual machine with
-	the <acronym>ISO</acronym> file on disk or with the real
-	<acronym>CD-ROM</acronym> drive.</para>
+      <para>在 FreeBSD 虛擬機器新增後，就可以繼續以其安裝 FreeBSD。 安裝方面，比較好的作法是使用官方的 FreeBSD <acronym>CD</acronym>/<acronym>DVD</acronym> 或者是自官方 <acronym>FTP</acronym> 站下載的 <acronym>ISO</acronym> 映像檔。 複製適合的 <acronym>ISO</acronym> 映像檔到 <trademark class="registered">Mac</trademark> 檔案系統本地端或放入 <acronym>CD</acronym>/<acronym>DVD</acronym> 到 <trademark class="registered">Mac</trademark> 的 <acronym>CD-ROM</acronym> 磁碟機。在 FreeBSD <application>Parallels</application> 視窗的右下角點選磁碟圖示後會出現一個視窗，可用來建立虛擬機器內的 <acronym>CD-ROM</acronym> 磁碟機與磁碟上 <acronym>ISO</acronym> 檔案或實際 <acronym>CD-ROM</acronym> 磁碟機的關聯。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38961,12 +38921,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Once this association with the <acronym>CD-ROM</acronym>
-	source has been made, reboot the FreeBSD virtual machine by
-	clicking the reboot icon.
-	<application>Parallels</application> will reboot with a
-	special <acronym>BIOS</acronym> that first checks if there is
-	a <acronym>CD-ROM</acronym>.</para>
+      <para>建立與 <acronym>CD-ROM</acronym> 來源的關聯後，點選重新開機圖示重新開啟 FreeBSD 虛擬機器。<application>Parallels</application> 會重新開機進入一個特殊的 <acronym>BIOS</acronym> 畫面並檢查是否有 <acronym>CD-ROM</acronym>。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38974,10 +38929,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">In this case it will find the FreeBSD installation media and
-	begin a normal FreeBSD installation.  Perform the installation,
-	but do not attempt to configure
-	<application>Xorg</application> at this time.</para>
+      <para>在此處會找到 FreeBSD 安裝媒體並開始正常的 FreeBSD 安裝程序。完成安裝，但不要在此時嘗試設定 <application>Xorg</application>。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38985,8 +38937,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">When the installation is finished, reboot into the newly
-	installed FreeBSD virtual machine.</para>
+      <para>當安裝完成後，重新開機將會進入新安裝的 FreeBSD 虛擬機器。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38998,51 +38949,29 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
     <sect2 xml:id="virtualization-guest-parallels-configure">
       <title>在 <application>Parallels</application> 設定 FreeBSD</title>
 
-      <para xml:lang="en">After FreeBSD has been successfully installed on <trademark class="registered">Mac OS</trademark> X
-	with <application>Parallels</application>, there are a number
-	of configuration steps that can be taken to optimize the
-	system for virtualized operation.</para>
+      <para>在成功將 FreeBSD 安裝到 <trademark class="registered">Mac OS</trademark> X 的 <application>Parallels</application> 後，有數個設定步驟要完成來最佳化系統在虛擬機器上的運作。</para>
 
       <procedure>
 	<step>
-	  <title xml:lang="en">Set Boot Loader Variables</title>
+	  <title>設定 Boot Loader 變數</title>
 
-	  <para xml:lang="en">The most important step is to reduce the
-	    <option>kern.hz</option> tunable to reduce the CPU
-	    utilization of FreeBSD under the
-	    <application>Parallels</application> environment.  This is
-	    accomplished by adding the following line to
-	    <filename>/boot/loader.conf</filename>:</para>
+	  <para>最重要的一個步驟是減少 <option>kern.hz</option> 參數來減少 FreeBSD 在 <application>Parallels</application> 環境下對 CPU 的使用率。加入以下行到 <filename>/boot/loader.conf</filename> 來完成這個動作：</para>
 
 	  <programlisting xml:lang="en">kern.hz=100</programlisting>
 
-	  <para xml:lang="en">Without this setting, an idle FreeBSD
-	    <application>Parallels</application> guest will use
-	    roughly 15% of the CPU of a single processor <trademark class="registered">iMac</trademark>.
-	    After this change the usage will be closer to 5%.</para>
+	  <para>若沒有完成此設定，閒置的 FreeBSD <application>Parallels</application>客戶端將會消耗掉單處理器 <trademark class="registered">iMac</trademark> 將近 15% 的 CPU。完成此更改後使用率會減至接近 5%。</para>
 	</step>
 
 	<step>
-	  <title xml:lang="en">Create a New Kernel Configuration File</title>
+	  <title>建立新核心設定檔</title>
 
-	  <para xml:lang="en">All of the SCSI, FireWire, and USB device drivers
-	    can be removed from a custom kernel configuration file.
-	    <application>Parallels</application> provides a virtual
-	    network adapter used by the <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver, so all
-	    network devices except for <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</manvolnum></citerefentry>
-	    can be removed from the kernel.</para>
+	  <para>所有的 SCSI, FireWire 及 USB 裝置可以從自訂的核心設定檔中移除。<application>Parallels</application> 提供的虛擬網路卡使用 <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式，所以除了 <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</manvolnum></citerefentry> 外的所有網路裝置可以自核心中移除。</para>
 	</step>
 
 	<step>
-	  <title xml:lang="en">Configure Networking</title>
+	  <title>設定網路</title>
 
-	  <para xml:lang="en">The most basic networking setup uses DHCP to connect
-	    the virtual machine to the same local area network as the
-	    host <trademark class="registered">Mac</trademark>.  This can be accomplished by adding
-	    <literal>ifconfig_ed0="DHCP"</literal> to
-	    <filename>/etc/rc.conf</filename>.  More advanced
-	    networking setups are described in
-	    <xref linkend="advanced-networking"/>.</para>
+	  <para>最基本的網路設定是使用 DHCP 來讓虛擬機器連線到與主機端 <trademark class="registered">Mac</trademark> 相同的區域網路，這可以透過加入 <literal>ifconfig_ed0="DHCP"</literal> 到 <filename>/etc/rc.conf</filename> 來完成。更進階的網路設定在 <xref linkend="advanced-networking"/> 中描述。</para>
 	</step>
       </procedure>
     </sect2>
@@ -39107,7 +39036,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Save and finish the configuration:</para>
+      <para>儲存並完成設定：</para>
 
       <mediaobject>
 	<imageobject>
@@ -39207,7 +39136,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 
       <procedure>
 	<step>
-	  <title xml:lang="en">Set Boot Loader Variables</title>
+	  <title>設定 Boot Loader 變數</title>
 
 	  <para xml:lang="en">The most important step is to reduce the
 	    <option>kern.hz</option> tunable to reduce the CPU
@@ -39226,7 +39155,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</step>
 
 	<step>
-	  <title xml:lang="en">Create a New Kernel Configuration File</title>
+	  <title>建立新核心設定檔</title>
 
 	  <para xml:lang="en">All of the SCSI, FireWire, and USB device drivers can
 	    be removed from a custom kernel configuration file.
@@ -39237,7 +39166,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</step>
 
 	<step>
-	  <title xml:lang="en">Configure Networking</title>
+	  <title>設定網路</title>
 
 	  <para xml:lang="en">The most basic networking setup uses DHCP to connect
 	    the virtual machine to the same local area network as the
@@ -39408,7 +39337,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 
       <procedure>
 	<step>
-	  <title xml:lang="en">Set Boot Loader Variables</title>
+	  <title>設定 Boot Loader 變數</title>
 
 	  <para xml:lang="en">The most important step is to reduce the
 	    <option>kern.hz</option> tunable to reduce the CPU
@@ -39426,7 +39355,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</step>
 
 	<step>
-	  <title xml:lang="en">Create a New Kernel Configuration File</title>
+	  <title>建立新核心設定檔</title>
 
 	  <para xml:lang="en">All of the FireWire, and USB device drivers can be
 	    removed from a custom kernel configuration file.
@@ -39437,7 +39366,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</step>
 
 	<step>
-	  <title xml:lang="en">Configure Networking</title>
+	  <title>設定網路</title>
 
 	  <para xml:lang="en">The most basic networking setup uses DHCP to connect
 	    the virtual machine to the same local area network as the
@@ -40091,7 +40020,7 @@ ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</r
     </indexterm>
     <indexterm xml:lang="en"><primary>localization</primary></indexterm>
 
-    <para><literal>國際化</literal> (Internationalization) 一詞可以縮寫為 <acronym>i18n</acronym>，即  第一個字母到最後一個字母間的字母數量。<acronym>L10n</acronym> 也使用同樣的命名規則，但原自 <literal>在地化</literal> (Localization)。 <acronym>i18n</acronym>/<acronym>L10n</acronym> 的方法、協定及應用程式讓使用者可以自己選擇使用的語言。</para>
+    <para><literal>國際化</literal> (Internationalization) 一詞可以縮寫為 <acronym>i18n</acronym>，即  第一個字母到最後一個字母間的字母數量。<acronym>L10n</acronym> 也使用同樣的命名規則，但源自 <literal>在地化</literal> (Localization)。 <acronym>i18n</acronym>/<acronym>L10n</acronym> 的方法、協定及應用程式讓使用者可以自己選擇使用的語言。</para>
 
     <para>本章會討論 FreeBSD 的國際化及在地化功能。在閱讀本章之後，您會了解：</para>
 
@@ -40133,19 +40062,14 @@ ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</r
 
     <indexterm xml:lang="en"><primary>locale</primary></indexterm>
 
-    <para xml:lang="en">Localization settings are based on three components:
-      the language code, country code, and encoding.  Locale names are
-      constructed from these parts as follows:</para>
+    <para>語系設定值由三個元件所組成：語言代號、城市代號及編碼。語系名稱組成的方式如下：</para>
 
     <programlisting xml:lang="en"><replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable>.<replaceable>Encoding</replaceable></programlisting>
 
       <indexterm xml:lang="en"><primary>language codes</primary></indexterm>
       <indexterm xml:lang="en"><primary>country codes</primary></indexterm>
 
-      <para xml:lang="en">The <replaceable>LanguageCode</replaceable> and
-	<replaceable>CountryCode</replaceable> are used to determine
-	the country and the specific language variation.  <xref linkend="locale-lang-country"/> provides some examples of
-	<replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable>:</para>
+      <para><replaceable>LanguageCode</replaceable> 與 <replaceable>CountryCode</replaceable> 用來表示城市及特定語言。<xref linkend="locale-lang-country"/> 提供了幾個 <replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable> 的範例：</para>
 
       <table xml:id="locale-lang-country" frame="none" pgwide="1">
 	<title>常用語言及城市代碼</title>
@@ -40161,116 +40085,76 @@ ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</r
 	  <tbody>
 	    <row>
 	      <entry xml:lang="en">en_US</entry>
-	      <entry xml:lang="en">English, United States</entry>
+	      <entry>英文，美國</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">ru_RU</entry>
-	      <entry xml:lang="en">Russian, Russia</entry>
+	      <entry>俄文，俄國</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">zh_TW</entry>
-	      <entry xml:lang="en">Traditional Chinese, Taiwan</entry>
+	      <entry>繁體中文，台灣</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
       </table>
 
-      <para xml:lang="en">A complete listing of available locales can be found by
-	typing:</para>
+      <para>完整可用的語系清單可用以下指令查詢：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>locale -a | more</userinput></screen>
 
-      <para xml:lang="en">To determine the current locale setting:</para>
+      <para>查詢目前使用的語系設定：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>locale</userinput></screen>
 
       <indexterm xml:lang="en"><primary>encodings</primary></indexterm>
       <indexterm xml:lang="en"><primary>ASCII</primary></indexterm>
 
-      <para xml:lang="en">Language specific character sets, such as ISO8859-1,
-	ISO8859-15, KOI8-R, and CP437, are described in
-	<citerefentry><refentrytitle>multibyte</refentrytitle><manvolnum>3</manvolnum></citerefentry>.  The active list of character sets can be
-	found at the <link xlink:href="http://www.iana.org/assignments/character-sets">IANA
-	  Registry</link>.</para>
+      <para>語言特定的字元集如 ISO8859-1, ISO8859-15, KOI8-R 及 CP437 在 <citerefentry><refentrytitle>multibyte</refentrytitle><manvolnum>3</manvolnum></citerefentry> 有詳細說明。可用的字元集可在 <link xlink:href="http://www.iana.org/assignments/character-sets">IANA Registry</link> 查詢。</para>
 
-      <para xml:lang="en">Some languages, such as Chinese or Japanese, cannot be
-	represented using <acronym>ASCII</acronym> characters and
-	require an extended language encoding using either wide or
-	multibyte characters.  Examples of wide or multibyte encodings
-	include EUC and Big5.  Older applications may mistake these
-	encodings for control characters while newer applications
-	usually recognize these characters.  Depending on the
-	implementation, users may be required to compile an
-	application with wide or multibyte character support, or to
-	configure it correctly.</para>
+      <para>某些語言，如中文或日文，無法使用 <acronym>ASCII</acronym> 字元表示，會需要使用寬 (Wide) 字元或多位元組 (Multibyte) 字元來擴充的語言編碼。EUC 與 Big5 即是使用寬子元或多位元組字元的例子。舊的應用程式會誤判這些字元為控制字元，新的應用程式則通常可以辨識這些字元，依實作的需要，使用者可能需要開啟寬字元或多位元組字元支援或者使用正確的字元設定來編譯應用程式。</para>
 
       <note>
-	<para xml:lang="en">FreeBSD uses Xorg-compatible locale encodings.</para>
+	<para>FreeBSD 使用 Xorg 相容的語系編碼。</para>
       </note>
 
-      <para xml:lang="en">The rest of this section describes the various methods for
-	configuring the locale on a FreeBSD system.  The next section
-	will discuss the considerations for finding and compiling
-	applications with <acronym>i18n</acronym> support.</para>
+      <para>本節剩餘的部份將說明各種在 FreeBSD 系統上設定語系的方法。下一節將會探討如何尋找以及編譯使用 <acronym>i18n</acronym> 支援的應用程式。</para>
 
     <sect2 xml:id="setting-locale">
       <title>設定登入 Shell 的語系</title>
 
-      <para xml:lang="en">Locale settings are configured either in a user's
-	<filename>~/.login_conf</filename>
-	or in the startup file of the user's shell:
-	<filename>~/.profile</filename>,
-	<filename>~/.bashrc</filename>, or
-	<filename>~/.cshrc</filename>.</para>
+      <para>語系設定可在使用者的 <filename>~/.login_conf</filename> 或使用者的 Shell 的啟動檔設定：<filename>~/.profile</filename>, <filename>~/.bashrc</filename> 或 <filename>~/.cshrc</filename>。</para>
 
-      <para xml:lang="en">Two environment
-	variables should be set:</para>
+      <para>有兩個環境變數需要設定：</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><envar>LANG</envar>, which sets the locale<indexterm xml:lang="en">
+	  <para><envar>LANG</envar> 用來設定語系<indexterm>
 	    <primary>POSIX</primary></indexterm></para>
 	</listitem>
 
 	<listitem>
 	  <indexterm xml:lang="en"><primary>MIME</primary></indexterm>
 
-	  <para xml:lang="en"><envar>MM_CHARSET</envar>, which sets the
-	    <acronym>MIME</acronym> character set used by
-	    applications</para>
+	  <para><envar>MM_CHARSET</envar> 用來設定應用程式所使用的 <acronym>MIME</acronym> 字元集</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">In addition to the user's shell configuration, these
-	variables should also be set for specific application
-	configuration and <application>Xorg</application>
-	configuration.</para>
+      <para>除了使用者的 Shell 設定外，這些變數也應針對特定應用程式設定以及 <application>Xorg</application> 設定。</para>
 
       <indexterm xml:lang="en"><primary>locale</primary></indexterm>
       <indexterm xml:lang="en"><primary>login class</primary></indexterm>
 
-      <para xml:lang="en">Two methods are available for making the needed variable
-	assignments: the <link linkend="login-class">login
-	  class</link> method, which is the recommended method, and
-	the <link linkend="startup-file">startup file</link> method.
-	The next two sections demonstrate how to use both
-	methods.</para>
+      <para>兩種可以完成所需變數設定的方法有：<link linkend="login-class">登入類別 (Login class)</link> 法 (較建議) 及 <link linkend="startup-file">啟動檔 (Startup file) </link> 法。以下兩節將示範如何使用這兩個方法。</para>
 
       <sect3 xml:id="login-class">
-	<title>登入類別法</title>
+	<title>登入類別 (Login Class) 法</title>
 
-	<para xml:lang="en">This first method is the recommended method as it
-	  assigns the required environment variables for locale name
-	  and <acronym>MIME</acronym> character sets for every
-	  possible shell.  This setup can either be performed by each
-	  user or it can be configured for all users by the
-	  superuser.</para>
+	<para>第一種方式，同時也是建議使用的方法，它可以對任何可能的 Shell 設定需要的語系及 MIME 字元集變數。此設定也可由每位使用者自行設定或者由超級管理者為所有使用者設定。</para>
 
-	<para xml:lang="en">This minimal example sets both variables for Latin-1
-	  encoding in the <filename>.login_conf</filename> of an
-	  individual user's home directory:</para>
+	<para>以下精簡範例示範在一個使用者的家目錄中的 <filename>.login_conf</filename> 設定 Latin-1 編碼使用的兩個環境變數：</para>
 
 	<programlisting xml:lang="en">me:\
 	:charset=ISO-8859-1:\
@@ -40279,12 +40163,7 @@ ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</r
 	<indexterm xml:lang="en"><primary>Traditional Chinese</primary>
 	  <secondary>BIG-5 encoding</secondary></indexterm>
 
-	<para xml:lang="en">Here is an example of a user's
-	  <filename>~/.login_conf</filename> that sets the variables
-	  for Traditional Chinese in BIG-5 encoding.  More variables
-	  are needed because some applications do not correctly
-	  respect locale variables for Chinese, Japanese, and
-	  Korean:</para>
+	<para>以下使用者的 <filename>~/.login_conf</filename> 範例設定了繁體中文於 BIG-5 編碼使用到的環境變數。有一部份應用程式無法正確處理中文、日文及韓文的語系變數，因此需要額外多做一些設定：</para>
 
 	<programlisting xml:lang="en">#Users who do not wish to use monetary units or time formats
 #of Taiwan can manually change each variable
@@ -40294,48 +40173,36 @@ me:\
 	:charset=big5:\
 	:xmodifiers="@im=gcin": #Set gcin as the XIM Input Server</programlisting>
 
-	<para xml:lang="en">Alternately, the superuser can configure all users of
-	  the system for localization.  The following variables in
-	  <filename>/etc/login.conf</filename> are used to set the
-	  locale and <acronym>MIME</acronym> character set:</para>
+	<para>或者，超級使用者可以設定所有系統使用者的語系。以下在 <filename>/etc/login.conf</filename> 中的變數可用來設定語系及 <acronym>MIME</acronym> 字元集：</para>
 
 	<programlisting xml:lang="en"><replaceable>language_name</replaceable>|<replaceable>Account Type Description</replaceable>:\
 	:charset=<replaceable>MIME_charset</replaceable>:\
 	:lang=<replaceable>locale_name</replaceable>:\
 	:tc=default:</programlisting>
 
-	<para xml:lang="en">So, the previous Latin-1 example would look like
-	  this:</para>
+	<para>若套用之前的 Latin-1 編碼範例如下：</para>
 
 	<programlisting xml:lang="en">german|German Users Accounts:\
 	:charset=ISO-8859-1:\
 	:lang=de_DE.ISO8859-1:\
 	:tc=default:</programlisting>
 
-	<para xml:lang="en">See <citerefentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more details about these
-	  variables.</para>
+	<para>請參考 <citerefentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 以取得更多有關這些變數的詳細資訊。</para>
 
-	<para xml:lang="en">Whenever <filename>/etc/login.conf</filename> is edited,
-	  remember to execute the following command to update the
-	  capability database:</para>
+	<para>每次編輯 <filename>/etc/login.conf</filename> 之後，請記得要執行以下指令來更新登入類別的能力資料庫(Capability database)：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cap_mkdb /etc/login.conf</userinput></screen>
 
 	<sect4>
-	  <title xml:lang="en">Utilities Which Change Login Classes</title>
+	  <title>變更登入類別的工具</title>
 
 	  <indexterm xml:lang="en">
 	    <primary><command>vipw</command></primary>
 	  </indexterm>
 
-	  <para xml:lang="en">In addition to manually editing
-	    <filename>/etc/login.conf</filename>, several utilities
-	    are available for setting the locale for newly created
-	    users.</para>
+	  <para>除了手動編輯 <filename>/etc/login.conf</filename> 之外，尚有需多工具可用來為新建立的使用者設定語系。</para>
 
-	  <para xml:lang="en">When using <command>vipw</command> to add new users,
-	    specify the <replaceable>language</replaceable> to set the
-	    locale:</para>
+	  <para>當使用 <command>vipw</command> 來新增使用者時，可指定 <replaceable>language</replaceable> 來設定語系：</para>
 
 	  <programlisting xml:lang="en">user:password:1111:11:<replaceable>language</replaceable>:0:0:User Name:/home/user:/bin/sh</programlisting>
 
@@ -40344,21 +40211,15 @@ me:\
 	  </indexterm>
 	  <indexterm xml:lang="en"><primary>login class</primary></indexterm>
 
-	  <para xml:lang="en">When using <command>adduser</command> to add new
-	    users, the default language can be pre-configured for all
-	    new users or specified for an individual user.</para>
+	  <para>當使用 <command>adduser</command> 來新增使用者時，可對所有使用者或指定的使用者事先設定預設的語言。</para>
 
-	  <para xml:lang="en">If all new users use the same language, set
-	    <literal>defaultclass=<replaceable>language</replaceable></literal> in
-	    <filename>/etc/adduser.conf</filename>.</para>
+	  <para>若所有新的使用者都使用同樣的語言，可在 <filename>/etc/adduser.conf</filename> 設定 <literal>defaultclass=<replaceable>language</replaceable></literal>。</para>
 
-	  <para xml:lang="en">To override this setting when creating a user, either
-	    input the required locale at this prompt:</para>
+	  <para>要在建立使用者時覆蓋預設的設定，可在出現此提示時輸入需要的語系：</para>
 
 	  <screen xml:lang="en"><prompt>Enter login class: default []:</prompt></screen>
 
-	  <para xml:lang="en">or specify the locale to set when invoking
-	    <command>adduser</command>:</para>
+	  <para>或執行 <command>adduser</command> 時指定語系：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>adduser -class <replaceable>language</replaceable></userinput></screen>
 
@@ -40366,46 +40227,26 @@ me:\
 	    <primary><command>pw</command></primary>
 	  </indexterm>
 
-	  <para xml:lang="en">If <command>pw</command> is used to add new users,
-	    specify the locale as follows:</para>
+	  <para>若使用 <command>pw</command> 來新增使用者，則可指定語系如下：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>pw useradd <replaceable>user_name</replaceable> -L <replaceable>language</replaceable></userinput></screen>
 	  </sect4>
 	</sect3>
 
 	<sect3 xml:id="startup-file">
-	  <title>Shell 啟動檔法</title>
+	  <title>Shell 啟動檔 (Startup File) 法</title>
 
-	  <para xml:lang="en">This second method is not recommended as each shell
-	    that is used requires manual configuration, where each
-	    shell has a different configuration file and differing
-	    syntax.  As an example, to set the German language for the
-	    <command>sh</command> shell, these lines could be added to
-	    <filename>~/.profile</filename> to set the shell for that
-	    user only.  These lines could also be added to
-	    <filename>/etc/profile</filename> or
-	    <filename>/usr/share/skel/dot.profile</filename> to set
-	    that shell for all users:</para>
+	  <para>第二種方法，較不建議使用，因每一種使用到的 Shell 都需要手動設定，而每一種 Shell 都有不同的設定檔以及語法。例如將一位使用者的 <command>sh</command> shell 設定為德語，需要將下列行加到 <filename>~/.profile</filename>，若要設定給使用該 Shell 的所有使用者則必須將下列行加到 <filename>/etc/profile</filename> 或 <filename>/usr/share/skel/dot.profile</filename>：</para>
 
 	  <programlisting xml:lang="en"><envar>LANG</envar>=de_DE.ISO8859-1; export <envar>LANG</envar>
 <envar>MM_CHARSET</envar>=ISO-8859-1; export <envar>MM_CHARSET</envar></programlisting>
 
-	  <para xml:lang="en">However, the name of the configuration file and the
-	    syntax used differs for the <command>csh</command> shell.
-	    These are the equivalent settings for
-	    <filename>~/.csh.login</filename>,
-	    <filename>/etc/csh.login</filename>, or
-	    <filename>/usr/share/skel/dot.login</filename>:</para>
+	  <para>然而，在 <command>csh</command> shell 所使用的設定檔名稱及語法不同。同樣的設定需加入下列行至 <filename>~/.csh.login</filename>, <filename>/etc/csh.login</filename> 或 <filename>/usr/share/skel/dot.login</filename>：</para>
 
 	  <programlisting xml:lang="en">setenv <envar>LANG</envar> de_DE.ISO8859-1
 setenv <envar>MM_CHARSET</envar> ISO-8859-1</programlisting>
 
-	  <para xml:lang="en">To complicate matters, the syntax needed to configure
-	    <application>Xorg</application> in
-	    <filename>~/.xinitrc</filename> also depends upon the
-	    shell.  The first example is for the <command>sh</command>
-	    shell and the second is for the <command>csh</command>
-	    shell:</para>
+	  <para>更複雜一點的情況，<application>Xorg</application> 的 <filename>~/.xinitrc</filename> 語系設定會依使用的 Shell 而有所不同。第一個例子是針對 <command>sh</command> shell 而第二個則是針對 <command>csh</command> shell：</para>
 
 	  <programlisting xml:lang="en"><envar>LANG</envar>=de_DE.ISO8859-1; export <envar>LANG</envar></programlisting>
 
@@ -40416,13 +40257,7 @@ setenv <envar>MM_CHARSET</envar> ISO-8859-1</programlisting>
     <sect2 xml:id="setting-console">
       <title>Console 設定</title>
 
-      <para xml:lang="en">Several localized fonts are available for the console.  To
-	see a listing of available fonts, type
-	<command>ls /usr/share/syscons/fonts</command>.  To configure
-	the console font, specify the
-	<replaceable>font_name</replaceable>,
-	without the <filename>.fnt</filename> suffix, in
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>已有許多語系的字型可在 Console 使用，要查看可用的字型清單，可輸入 <command>ls /usr/share/syscons/fonts</command>。要設定 Console 的字型，可在 <filename>/etc/rc.conf</filename> 指定去掉 <filename>.fnt</filename> 字尾的字型名稱 <replaceable>font_name</replaceable>：</para>
 
       <programlisting xml:lang="en">font8x16=<replaceable>font_name</replaceable>
 font8x14=<replaceable>font_name</replaceable>
@@ -40430,38 +40265,19 @@ font8x8=<replaceable>font_name</replaceable></programlisting>
 
       <indexterm xml:lang="en"><primary>keymap</primary></indexterm>
       <indexterm xml:lang="en"><primary>screenmap</primary></indexterm>
-      <para xml:lang="en">The keymap and screenmap  can be set by adding the
-	following to <filename>/etc/rc.conf</filename>:</para>
+      <para>鍵盤對應表 (Keymap) 及螢幕對應表 (Screenmap) 用可加入下行到 <filename>/etc/rc.conf</filename> 來設定：</para>
 
       <programlisting xml:lang="en">scrnmap=<replaceable>screenmap_name</replaceable>
 keymap=<replaceable>keymap_name</replaceable>
 keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 
-      <para xml:lang="en">To see the list of available screenmaps, type
-	<command>ls /usr/share/syscons/scrnmaps</command>.  Do not
-	include the <filename>.scm</filename> suffix when specifying
-	<replaceable>screenmap_name</replaceable>.  A screenmap with a
-	corresponding mapped font is usually needed as a workaround
-	for expanding bit 8 to bit 9 on a VGA adapter's font character
-	matrix so that letters are moved out of the pseudographics
-	area if the screen font uses a bit 8 column.</para>
+      <para>要查看可用的螢幕對應表，可輸入 <command>ls /usr/share/syscons/scrnmaps</command>。在設定螢幕對應表 <replaceable>screenmap_name</replaceable> 時請去掉 <filename>.scm</filename> 字尾。在 VGA Adapter 的字型字元矩陣擴充位元 8 到位元 9 時會需要使用螢幕對應表與相關的字型對應來解決，因此若螢幕字型使用位元 8 的欄位，字母會移出虛擬繪圖區 (Pseudographics area)。</para>
 
-      <para xml:lang="en">To see the list of available keymaps, type
-	<command>ls /usr/share/syscons/keymaps</command>.  When
-	specifying the <replaceable>keymap_name</replaceable>, do not
-	include the <filename>.kbd</filename> suffix.  To test
-	keymaps without rebooting,
-	use <citerefentry><refentrytitle>kbdmap</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+      <para>要查看可用的鍵盤對應表，可輸入 <command>ls /usr/share/syscons/keymaps</command>。在設定鍵盤對應表 <replaceable>keymap_name</replaceable> 時請去掉 <filename>.kbd</filename> 字尾。若要不重開機測試鍵盤對應用可使用 <citerefentry><refentrytitle>kbdmap</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
-      <para xml:lang="en">The <literal>keychange</literal> entry is usually needed
-	to program function keys to match the selected terminal type
-	because function key sequences cannot be defined in the
-	keymap.</para>
+      <para><literal>keychange</literal> 項目用在當功能鍵序列無法定義在鍵盤對應表時，可設定對應選擇終對機類型的功能鍵。</para>
 
-      <para xml:lang="en">Next, set the correct console terminal type in
-	<filename>/etc/ttys</filename> for all virtual terminal
-	entries.  <xref linkend="locale-charset"/> summarizes the
-	available terminal types.:</para>
+      <para>接下來，在 <filename>/etc/ttys</filename> 為所有虛擬終端機項目設定正確的 Console 終端機類型。<xref linkend="locale-charset"/> 摘要了可用的終端機類型：</para>
 
       <table xml:id="locale-charset" frame="none" pgwide="1">
 	<title>已定義供特定字元集使用的終端機類型</title>
@@ -40501,7 +40317,7 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">CP437 (VGA default)</entry>
+	      <entry>CP437 (VGA 預設值)</entry>
 	      <entry xml:lang="en"><literal>cons25</literal></entry>
 	    </row>
 
@@ -40517,11 +40333,7 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 	<primary><application>moused</application></primary>
       </indexterm>
 
-      <para xml:lang="en">For languages with wide or multibyte characters, install a
-	console for that language from the FreeBSD Ports Collection.  The
-	available ports are summarized in <xref linkend="locale-console"/>.  Once installed, refer to the
-	port's <filename>pkg-message</filename> or man pages for
-	configuration and usage instructions.</para>
+      <para>對於使用寬字元或多位元組字元的語言，需從 Ports 套件集安裝支援該語言的 Console。 可用的 Ports 摘要在 <xref linkend="locale-console"/>。安裝完成之後，請參考 Port 的 <filename>pkg-message</filename> 或操作手冊來取得設定及使用說明。</para>
 
       <table xml:id="locale-console" frame="none" pgwide="1">
 	<title>Ports 套件集中可用的 Console</title>
@@ -40536,17 +40348,17 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 
 	  <tbody>
 	    <row>
-	      <entry xml:lang="en">Traditional Chinese (BIG-5)</entry>
+	      <entry>繁體中文 (BIG-5)</entry>
 	      <entry xml:lang="en"><package>chinese/big5con</package></entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">Chinese/Japanese/Korean</entry>
+	      <entry>中文/日文/韓文</entry>
 	      <entry xml:lang="en"><package>chinese/cce</package></entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">Chinese/Japanese/Korean</entry>
+	      <entry>中文/日文/韓文</entry>
 	      <entry xml:lang="en"><package>chinese/zhcon</package></entry>
 	    </row>
 
@@ -40568,14 +40380,7 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 	</tgroup>
       </table>
 
-      <para xml:lang="en">If <application>moused</application> is enabled in
-	<filename>/etc/rc.conf</filename>, additional configuration
-	may be required.  By default, the mouse cursor of the
-	<citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver occupies the
-	<literal>0xd0</literal>-<literal>0xd3</literal> range in the
-	character set.  If the language uses this range, move the
-	cursor's range by adding the
-	following line to <filename>/etc/rc.conf</filename>:</para>
+      <para>若在 <filename>/etc/rc.conf</filename> 有開啟 <application>moused</application>，可能會需要額外的設定。預設 <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式的滑鼠游標會佔用字元集 <literal>0xd0</literal>-<literal>0xd3</literal> 的範圍，若語言有使用到此範圍，可加入以下行到 <filename>/etc/rc.conf</filename> 來移動游標的範圍：</para>
 
       <programlisting xml:lang="en">mousechar_start=3</programlisting>
     </sect2>
@@ -40583,24 +40388,11 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
     <sect2>
       <title>Xorg 設定</title>
 
-      <para xml:lang="en"><xref linkend="x11"/> describes how to install and
-	configure <application>Xorg</application>.  When configuring
-	<application>Xorg</application> for localization, additional
-	fonts and input methods are available from the FreeBSD Ports
-	Collection.  Application specific <acronym>i18n</acronym>
-	settings such as fonts and menus can be tuned in
-	<filename>~/.Xresources</filename> and should allow users to
-	view their selected language in graphical application
-	menus.</para>
+      <para><xref linkend="x11"/> 會說明如何安裝並設定 <application>Xorg</application>。當要設定 <application>Xorg</application> 在地化時，可從 FreeBSD Ports 套件集中取得其他可用的字型及輸入法。應用程式特定的 <acronym>i18n</acronym> 設定像是字型與選單，可以在 <filename>~/.Xresources</filename> 中調校且可允許使用者在圖型化應用程式選單檢視其所選擇的語言。</para>
 
       <indexterm xml:lang="en"><primary>X Input Method (XIM)</primary></indexterm>
 
-      <para xml:lang="en">The X Input Method (<acronym>XIM</acronym>) protocol is an
-	<application>Xorg</application> standard for  inputting
-	non-English characters.  <xref linkend="locale-xim"/>
-	summarizes the input method applications which are available
-	in the FreeBSD Ports Collection.  Additional Fcitx and Uim
-	applications are also available.</para>
+      <para>X 輸入法 (X Input Method, <acronym>XIM</acronym>) 協定是 <application>Xorg</application> 針對輸入非英語字元的標準。<xref linkend="locale-xim"/> 摘要了在 FreeBSD 套件集中可用的輸入法應用程式。也可使用其他如 Fcitx 及 Uim 應用程式。</para>
 
       <table xml:id="locale-xim" frame="none" pgwide="1">
 	<title>可用的輸入法</title>
@@ -40818,27 +40610,11 @@ Not sure where to put this section, perhaps as a note in the File system chapter
   <sect1 xml:id="l10n-compiling">
     <title>尋找 <acronym>i18n</acronym> 應用程式</title>
 
-    <para xml:lang="en"><acronym>i18n</acronym> applications are programmed using
-      <acronym>i18n</acronym> kits under libraries.  These allow
-      developers to write a simple file and translate displayed menus
-      and texts to each language.</para>
+    <para><acronym>i18n</acronym> 應用程式會使用 <acronym>i18n</acronym> 工具包做為程式庫開發。這讓開發人員可以寫一個簡單的檔案並翻譯顯示的選單及文字至各種語言。</para>
 
-    <para xml:lang="en">The <link xlink:href="@@URL_RELPREFIX@@/ports/index.html">FreeBSD
-	Ports Collection</link> contains many applications with
-      built-in support for wide or multibyte characters for several
-      languages.  Such applications include <literal>i18n</literal> in
-      their names for easy identification.  However, they do not
-      always support the language needed.</para>
+    <para><link xlink:href="@@URL_RELPREFIX@@/ports/index.html">FreeBSD Ports 套件集</link>中含有許多內建支援寬字元或多位元組字元的應用程式可支援各種語言。該類型的應用程式在名稱上會註明 <literal>i18n</literal> 以易於辨識。雖然如此，但不一定支援您所需要的語言。</para>
 
-    <para xml:lang="en">Some applications can be compiled with the specific
-      charset.  This is usually done in the port's
-      <filename>Makefile</filename> or by passing a value to
-      <application>configure</application>.  Refer to the
-      <acronym>i18n</acronym> documentation in the respective FreeBSD
-      port's source for more information on how to determine the
-      needed <application>configure</application> value  or the port's
-      <filename>Makefile</filename> to determine which compile options
-      to use when building the port.</para>
+    <para>有一部份應用程式可以使用指定的字元集來編譯。通常會在 Port 的 <filename>Makefile</filename> 中設定，或者傳送參數給 <application>configure</application>。請參考各 FreeBSD Ports 原始碼中的 <acronym>i18n</acronym> 說明文件以取得更多有關需要的設定值資訊或 Port 的 <filename>Makefile</filename> 來了解在編譯時有那些可以使用的編譯選項。</para>
   </sect1>
 
   <sect1 xml:id="lang-setup">
@@ -41188,107 +40964,52 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
       <see>updating-upgrading</see>
     </indexterm>
 
-    <para xml:lang="en">Applying security patches in a timely manner and upgrading
-      to a newer release of an operating system are important aspects
-      of ongoing system administration.  FreeBSD includes a utility
-      called <command>freebsd-update</command> which can be used to
-      perform both these tasks.</para>
+    <para>即時套用安全性更新與升級作業系統到新的發行版本對管理一個持續運作的系統是重要的。FreeBSD 內含可以執行這兩項任務的工具程式，叫做 <command>freebsd-update</command>。</para>
 
-    <para xml:lang="en">This utility supports binary security and errata updates to
-      FreeBSD, without the need to manually compile and install the patch
-      or a  new kernel.  Binary updates are available for all
-      architectures and releases currently supported by the security
-      team.  The list of supported releases and their estimated
-      end-of-life dates are listed at <uri xlink:href="http://www.FreeBSD.org/security/">http://www.FreeBSD.org/security/</uri>.</para>
+    <para>這個工具程式支援使用 Binary 對 FreeBSD 做安全性與和錯誤更新，不需要手動編譯和安裝修補 (Patch) 或新核心。目前由安全性團隊提供支援的 Binary 更新可用於所有的架構和發行版。支援的發行版清單及各自的支援期限列於 <uri xlink:href="http://www.FreeBSD.org/security/">http://www.FreeBSD.org/security/</uri>。</para>
 
-    <para xml:lang="en">This utility also supports operating system upgrades to
-      minor point releases as well as upgrades to another release
-      branch.  Before upgrading to a new release, review its release
-      announcement as it contains important information pertinent to
-      the release.  Release announcements are available from <uri xlink:href="http://www.FreeBSD.org/releases/">http://www.FreeBSD.org/releases/</uri>.</para>
+    <para>這個工具程式也支援升級作業系統到次要的發行版本以及升級到另一個發行版分支。在升級到新的發行版本前，需先查看該版本的發行公告，因為發行公告中包含了該發行版本的相關重要資訊。發行公告可自 <uri xlink:href="http://www.FreeBSD.org/releases/">http://www.FreeBSD.org/releases/</uri> 取得。</para>
 
     <note>
-      <para xml:lang="en">If a <command>crontab</command> utilizing the features of
-	<citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</manvolnum></citerefentry> exists, it must be disabled before
-	upgrading the operating system.</para>
+      <para>如果有使用 <command>crontab</command> 來執行 <citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</manvolnum></citerefentry>，則必須在升級作業系統前先關閉。</para>
     </note>
 
-    <para xml:lang="en">This section describes the configuration file used by
-      <command>freebsd-update</command>, demonstrates how to apply a
-      security patch and how to upgrade to a minor or major operating
-      system release, and discusses some of the considerations when
-      upgrading the operating system.</para>
+    <para>本節將說明 <command>freebsd-update</command> 使用的設定檔， 示範如何套用安全性修補及如何升級到主要或次要的作業系統發行版，並討論升級作業系統的需要考量的事項。</para>
 
     <sect2 xml:id="freebsdupdate-config-file">
       <title>設定檔</title>
 
-      <para xml:lang="en">The default configuration file for
-	<command>freebsd-update</command> works as-is.  Some users may
-	wish to tweak the default configuration in
-	<filename>/etc/freebsd-update.conf</filename>, allowing
-	better control of the process.  The comments in this file
-	explain the available options, but the following may require a
-	bit more explanation:</para>
+      <para><command>freebsd-update</command> 預設的設定檔不需變更即可運作。 部份使用者可能會想要調校位於 <filename>/etc/freebsd-update.conf</filename> 的預設設定檔來對程序有更好的控制。該設定檔中的註解均有說明可用的選項，但以下幾個項目可能需要進一步的說明：</para>
 
       <programlisting xml:lang="en"># Components of the base system which should be kept updated.
 Components world kernel</programlisting>
 
-      <para xml:lang="en">This parameter controls which parts of FreeBSD will be kept
-	up-to-date.  The default is to update the entire base system
-	and the kernel.  Individual components can instead be
-	specified, such as <literal>src/base</literal> or
-	<literal>src/sys</literal>.  However, the best option is to
-	leave this at the default as changing it to include specific
-	items requires every needed item to be listed.  Over time,
-	this could have disastrous consequences as source code and
-	binaries may become out of sync.</para>
+      <para>這個參數控制 FreeBSD 要保持最新版本的部份。 預設是更新整個基礎系統 (Base system) 和核心。 可指定個別元件，例如：<literal>src/base</literal> 或 <literal>src/sys</literal>。 不論如何，最好的選項是維持預設值，因為更改指定特定項目時需列出每一個需要的項目。時間一久可能會因為原始碼和 Binary 檔案沒有更新而造成慘重的後果。</para>
 
       <programlisting xml:lang="en"># Paths which start with anything matching an entry in an IgnorePaths
 # statement will be ignored.
 IgnorePaths /boot/kernel/linker.hints</programlisting>
 
-      <para xml:lang="en">To leave specified directories, such as
-	<filename>/bin</filename> or <filename>/sbin</filename>,
-	untouched during the update process, add their paths to this
-	statement.  This option may be used to prevent
-	<command>freebsd-update</command> from overwriting local
-	modifications.</para>
+      <para>要保持特定的目錄在更新過程不被更動，例如 <filename>/bin</filename> 或 <filename>/sbin</filename>，可以將他們的路徑加到此敘述中。 這個選項可以防止 <command>freebsd-update</command> 覆蓋本地的修改。</para>
 
       <programlisting xml:lang="en"># Paths which start with anything matching an entry in an UpdateIfUnmodified
 # statement will only be updated if the contents of the file have not been
 # modified by the user (unless changes are merged; see below).
 UpdateIfUnmodified /etc/ /var/ /root/ /.cshrc /.profile</programlisting>
 
-      <para xml:lang="en">This option will only update unmodified configuration
-	files in the specified directories.  Any changes made by the
-	user will prevent the automatic updating of these files.
-	There is another option,
-	<literal>KeepModifiedMetadata</literal>, which will instruct
-	<command>freebsd-update</command> to save the changes during
-	the merge.</para>
+      <para>這個選項只會更新特定目錄中未修改的設定檔。任何使用者修改的檔案都不會自動更新。 有另一個選項 <literal>KeepModifiedMetadata</literal> 可讓 <command>freebsd-update</command> 在合併時儲存使用者做的變更。</para>
 
       <programlisting xml:lang="en"># When upgrading to a new FreeBSD release, files which match MergeChanges
 # will have any local changes merged into the version from the new release.
 MergeChanges /etc/ /var/named/etc/ /boot/device.hints</programlisting>
 
-      <para xml:lang="en">List of directories with configuration files that
-	<command>freebsd-update</command> should attempt to merge.
-	The file merge process is a series of <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> patches
-	similar to <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry>, but with fewer options.
-	Merges are either accepted, open an editor, or cause
-	<command>freebsd-update</command> to abort.  When in doubt,
-	backup <filename>/etc</filename> and just accept the merges.
-	See <xref linkend="mergemaster"/> for more information about
-	<command>mergemaster</command>.</para>
+      <para>列出 <command>freebsd-update</command> 應嘗試合併的設定檔目錄。 檔案合併程序是指一系列類似 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 做的 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 修補動作， 但是選項比較少。 合併的動作包含接受、開啟編輯器，或讓 <command>freebsd-update</command> 中止。 如果有疑慮，請先備份 <filename>/etc</filename>，然後再接受合併。 更多關於 <command>mergemaster</command> 的資訊， 參見 <xref linkend="mergemaster"/>。</para>
 
       <programlisting xml:lang="en"># Directory in which to store downloaded updates and temporary
 # files used by FreeBSD Update.
 # WorkDir /var/db/freebsd-update</programlisting>
 
-      <para xml:lang="en">This directory is where all patches and temporary files
-	are placed.  In cases where the user is doing a version
-	upgrade, this location should have at least a gigabyte of disk
-	space available.</para>
+      <para>這個目錄是所有修補檔和暫存檔的存放處。當使用者進行版本升級時，這個位置應該要有至少 1GB 的可用磁碟空間。</para>
 
       <programlisting xml:lang="en"># When upgrading between releases, should the list of Components be
 # read strictly (StrictComponents yes) or merely as a list of components
@@ -41296,137 +41017,59 @@ MergeChanges /etc/ /var/named/etc/ /boot/device.hints</programlisting>
 # which actually are installed and upgrade those (StrictComponents no)?
 # StrictComponents no</programlisting>
 
-      <para xml:lang="en">When this option is set to <literal>yes</literal>,
-	<command>freebsd-update</command> will assume that the
-	<literal>Components</literal> list is complete and will not
-	attempt to make changes outside of the list.  Effectively,
-	<command>freebsd-update</command> will attempt to update
-	every file which belongs to the <literal>Components</literal>
-	list.</para>
+      <para>當這個選項設定為 <literal>yes</literal> 時，<command>freebsd-update</command> 將會假設 <literal>Components</literal> 清單已完成，將不會對清單之外的項目做變更。 實際上 <command>freebsd-update</command> 會將嘗試更新每一個屬於 <literal>Components</literal> 清單中的檔案。</para>
     </sect2>
 
     <sect2 xml:id="freebsdupdate-security-patches">
       <title>套用安全性修補</title>
 
-      <para xml:lang="en">The process of applying FreeBSD security patches has been
-	simplified, allowing an administrator to keep a system fully
-	patched using <command>freebsd-update</command>.  More
-	information about FreeBSD security advisories can be found in
-	<xref linkend="security-advisories"/>.</para>
+      <para>套用 FreeBSD 安全性修補的過程已經被簡化，讓系統管理員可使用 <command>freebsd-update</command> 來保持系統更新。更多有關 FreeBSD 安全性報告的資訊可以參考 <xref linkend="security-advisories"/>。</para>
 
-      <para xml:lang="en">FreeBSD security patches may be downloaded and installed
-	using the following commands.  The first command will
-	determine if any outstanding patches are available, and if so,
-	will list the files that will be modifed if the patches are
-	applied.  The second command will apply the patches.</para>
+      <para>FreeBSD 安全性修補可以使用以下指令下載並安裝。 第一個指令會偵測是否有可用的修補，如果有，將列出若執行修補後會變更的檔案清單。第二個指令將會套用修補。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>freebsd-update fetch</userinput>
 <prompt>#</prompt> <userinput>freebsd-update install</userinput></screen>
 
-      <para xml:lang="en">If the update applies any kernel patches, the system will
-	need a reboot in order to boot into the patched kernel.  If
-	the patch was applied to any running binaries, the affected
-	applications should be restarted so that the patched version
-	of the binary is used.</para>
+      <para>如果更新套用了任何核心修補，系統將會需要重新開機以使用修補過的核心。如果修補套用在任何執行中的 Binary，受影響的應用程式應重新啟動來使用修補過的 Binary 版本。</para>
 
-      <para xml:lang="en">The system can be configured to automatically check for
-	updates once every day by adding this entry to
-	<filename>/etc/crontab</filename>:</para>
+      <para>加入以下項目至 <filename>/etc/crontab</filename> 可設定系統每天自動檢查更新一次：</para>
 
       <programlisting xml:lang="en">@daily                                  root    freebsd-update cron</programlisting>
 
-      <para xml:lang="en">If patches exist, they will automatically be downloaded
-	but will not be applied.  The <systemitem class="username">root</systemitem> user will be sent an
-	email so that the patches may be reviewed and manually
-	installed with
-	<command>freebsd-update install</command>.</para>
+      <para>如果有新的修補，該程式會會自動下載，但不會執行。<systemitem class="username">root</systemitem> 使用者會收到電子郵件通知複查該修補並手動執行 <command>freebsd-update install</command> 安裝。</para>
 
-      <para xml:lang="en">If anything goes wrong, <command>freebsd-update</command>
-	has the ability to roll back the last set of changes with the
-	following command:</para>
+      <para>如果有發生任何錯誤，<command>freebsd-update</command> 可以使用以下指令還原最後所做的變更：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>freebsd-update rollback</userinput>
 Uninstalling updates... done.</screen>
 
-      <para xml:lang="en">Again, the system should be restarted if the kernel or any
-	kernel modules were modified and any affected binaries should
-	be restarted.</para>
+      <para>再次強調，若核心或任何核心模組有做過修改應重新啟動系統，以及任何受影響的 Binary 應重新執行。</para>
 
-      <para xml:lang="en">Only the <filename>GENERIC</filename> kernel can be
-	automatically updated by <command>freebsd-update</command>.
-	If a custom kernel is installed, it will have to be rebuilt
-	and reinstalled after <command>freebsd-update</command>
-	finishes installing the updates.  However,
-	<command>freebsd-update</command> will detect and update the
-	<filename>GENERIC</filename> kernel if
-	<filename>/boot/GENERIC</filename> exists, even if it is not
-	the current running kernel of the system.</para>
+      <para>只有 <filename>GENERIC</filename> 核心可使用 <command>freebsd-update</command> 自動更新。 如果有安裝自訂的核心，在 <command>freebsd-update</command> 完成安裝更新後，需要重新編譯和重新安裝。 不論如何，如果 <filename>/boot/GENERIC</filename> 存在，<command>freebsd-update</command> 會偵測並更新 <filename>GENERIC</filename> 核心，即使該核心並非目前系統正在執行的核心。</para>
 
       <note>
-	<para xml:lang="en">Always keep a copy of the <filename>GENERIC</filename>
-	  kernel in <filename>/boot/GENERIC</filename>.  It will be
-	  helpful in diagnosing a variety of problems and in
-	  performing version upgrades.  Refer to <xref linkend="freebsd-update-custom-kernel-9x"/> for
-	  instructions on how to get a copy of the
-	  <filename>GENERIC</filename> kernel.</para>
+	<para>隨時在 <filename>/boot/GENERIC</filename> 保留一份 <filename>GENERIC</filename> 核心的複本將有助於診斷各種問題及執行版本升級。請參考 <xref linkend="freebsd-update-custom-kernel-9x"/> 來了解有關如何取得 <filename>GENERIC</filename> 核心的複本說明。</para>
       </note>
 
-      <para xml:lang="en">Unless the default configuration in
-	<filename>/etc/freebsd-update.conf</filename> has been
-	changed, <command>freebsd-update</command> will install the
-	updated kernel sources along with the rest of the updates.
-	Rebuilding and reinstalling a new custom kernel can then be
-	performed in the usual way.</para>
+      <para>除非在 <filename>/etc/freebsd-update.conf</filename> 的預設設定檔被修改，否則 <command>freebsd-update</command> 將會安裝更新後的核心原始碼和其餘的更新，可依平常的方式執行重新編譯與重新安裝核心。</para>
 
-      <para xml:lang="en">The updates distributed by
-	<command>freebsd-update</command> do not always involve the
-	kernel.  It is not necessary to rebuild a custom kernel if the
-	kernel sources have not been modified by
-	<command>freebsd-update install</command>.  However,
-	<command>freebsd-update</command> will always update
-	<filename>/usr/src/sys/conf/newvers.sh</filename>.  The
-	current patch level, as indicated by the <literal>-p</literal>
-	number reported by <command>uname -r</command>, is obtained
-	from this file.  Rebuilding a custom kernel, even if nothing
-	else changed, allows <command>uname</command> to accurately
-	report the current patch level of the system.  This is
-	particularly helpful when maintaining multiple systems, as it
-	allows for a quick assessment of the updates installed in each
-	one.</para>
+      <para>以 <command>freebsd-update</command> 發行的更新並非總是會更新核心。若核心的原始碼沒有被 <command>freebsd-update install</command> 修改則不需要重新編譯自訂的核心。不論如何 <command>freebsd-update</command> 總是會更新 <filename>/usr/src/sys/conf/newvers.sh</filename>，目前修補的版本如 <command>uname -r</command> 執行結果中的 <literal>-p</literal> 數字，便是由該檔取得。即使沒有做任何其他變更，重新編譯自訂核心可讓 <command>uname</command> 準確的回報系統目前的修補版本。當維護多個系統時這會特別有用，因其可讓你快速評估每個系統安裝的更新。</para>
     </sect2>
 
     <sect2 xml:id="freebsdupdate-upgrade">
       <title>執行主要及次要版號升級</title>
 
-      <para xml:lang="en">Upgrades from one minor version of FreeBSD to another, like
-	from FreeBSD 9.0 to FreeBSD 9.1, are called
-	<firstterm>minor version</firstterm> upgrades.
-	<firstterm>Major version</firstterm> upgrades occur when FreeBSD
-	is upgraded from one major version to another, like from
-	FreeBSD 9.X to FreeBSD 10.X.  Both types of upgrades can
-	be performed by providing <command>freebsd-update</command>
-	with a release version target.</para>
+      <para>從 FreeBSD 的次要版本升級到另一個版本，例如從 FreeBSD 9.0 到 FreeBSD 9.1, 叫作 <firstterm>次要版本</firstterm>更新。 <firstterm>主要版本</firstterm>更新發生在當 FreeBSD 從一個主要版本升級到主要版本升級到另一個主要版本時，例如從 FreeBSD 9.X 到 FreeBSD 10.X。 兩種更新都可以透過提供 <command>freebsd-update</command> 目標的發行版本來執行。</para>
 
       <note>
-	<para xml:lang="en">If the system is running a custom kernel, make sure that
-	  a copy of the <filename>GENERIC</filename> kernel exists in
-	  <filename>/boot/GENERIC</filename> before starting the
-	  upgrade.  Refer to <xref linkend="freebsd-update-custom-kernel-9x"/> for
-	  instructions on how to get a copy of the
-	  <filename>GENERIC</filename> kernel.</para>
+	<para>如果系統正在執行自訂的核心，請在開始升級前，確定有保留一份 <filename>GENERIC</filename> 核心的複本在 <filename>/boot/GENERIC</filename>。 請參考 <xref linkend="freebsd-update-custom-kernel-9x"/> 關於如何取得 <filename>GENERIC</filename> 核心複本的說明。</para>
       </note>
 
-      <para xml:lang="en">The following command, when run on a FreeBSD 9.0 system,
-	will upgrade it to FreeBSD 9.1:</para>
+      <para>在 FreeBSD 9.0 系統執行以下指令，將會把系統升級至 FreeBSD 9.1：</para>
 
        <screen xml:lang="en"><prompt>#</prompt> <userinput>freebsd-update -r 9.1-RELEASE upgrade</userinput></screen>
 
-      <para xml:lang="en">After the command has been received,
-	<command>freebsd-update</command> will evaluate the
-	configuration file and current system in an attempt to gather
-	the information necessary to perform the upgrade.  A screen
-	listing will display which components have and have not been
-	detected.  For example:</para>
+      <para>收到這個指令後，<command>freebsd-update</command> 會開始評估設定檔和目前的系統來收集升級所需的資訊。 螢幕會顯示偵測到或沒偵測到的元件清單。例如：</para>
 
       <screen xml:lang="en">Looking up update.FreeBSD.org mirrors... 1 mirrors found.
 Fetching metadata signature for 9.0-RELEASE from update1.FreeBSD.org... done.
@@ -41445,182 +41088,90 @@ world/proflibs
 
 Does this look reasonable (y/n)? <userinput>y</userinput></screen>
 
-      <para xml:lang="en">At this point, <command>freebsd-update</command> will
-	attempt to download all files required for the upgrade.  In
-	some cases, the user may be prompted with questions regarding
-	what to install or how to proceed.</para>
+      <para>此時，<command>freebsd-update</command> 將會嘗試下載所有升級需要的檔案。 在某些情況，會詢問使用者一些關於要安裝什麼或要如何繼續。</para>
 
-      <para xml:lang="en">When using a custom kernel, the above step will produce a
-	warning similar to the following:</para>
+      <para>當使用自訂核心，上述的步驟將會產生如下的警告：</para>
 
       <screen xml:lang="en">WARNING: This system is running a "<replaceable>MYKERNEL</replaceable>" kernel, which is not a
 kernel configuration distributed as part of FreeBSD 9.0-RELEASE.
 This kernel will not be updated: you MUST update the kernel manually
 before running "/usr/sbin/freebsd-update install"</screen>
 
-      <para xml:lang="en">This warning may be safely ignored at this point.  The
-	updated <filename>GENERIC</filename> kernel will be used as an
-	intermediate step in the upgrade process.</para>
+      <para>這時的警告可以安全地忽略，升級過程將會使用更新過的 <filename>GENERIC</filename> 核心來進行。</para>
 
-      <para xml:lang="en">Once all the patches have been downloaded to the local
-	system, they will be applied.  This process may take a while,
-	depending on the speed and workload of the machine.
-	Configuration files will then be merged.  The merging process
-	requires some user intervention as a file may be merged or an
-	editor may appear on screen for a manual merge.  The results
-	of every successful merge will be shown to the user as the
-	process continues.  A failed or ignored merge will cause the
-	process to abort.  Users may wish to make a backup of
-	<filename>/etc</filename> and manually merge important files,
-	such as <filename>master.passwd</filename> or
-	<filename>group</filename> at a later time.</para>
+      <para>所有的修補都下載到本地系統之後， 將會開始套用更新。這個過程可能會花點時間，取決於機器的速度和工作量。設定檔將會被合併。 合併的過程中當檔案被合併或是手動合併畫面上出現編輯器時需要使用者操作。 每一個成功合併的結果將會顯示給使用者並繼續程序，失敗或忽略合併將會使程序中斷。使用者可能想要備份 <filename>/etc</filename> 並稍後手動合併重要的檔案，例如：<filename>master.passwd</filename> 或 <filename>group</filename>。</para>
 
       <note>
-	<para xml:lang="en">The system is not being altered yet as all patching and
-	  merging is happening in another directory.  Once all patches
-	  have been applied successfully, all configuration files have
-	  been merged and it seems the process will go smoothly, the
-	  changes can be committed to disk by the user using the
-	  following command:</para>
+	<para>所有的修補與合併動作會在另一個目錄進行，並不會直接修改。當成功套用所有修補，所有設定檔已合併且過程順利，使用者可使用以下指令將變更安裝到磁碟：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>freebsd-update install</userinput></screen>
       </note>
 
-      <para xml:lang="en">The kernel and kernel modules will be patched first.  If
-	the system is running with a custom kernel, use
-	<citerefentry><refentrytitle>nextboot</refentrytitle><manvolnum>8</manvolnum></citerefentry> to set the kernel for the next boot to the
-	updated <filename>/boot/GENERIC</filename>:</para>
+      <para>核心與核心模組會先修補，若系統正在執行自訂的核心，使用 <citerefentry><refentrytitle>nextboot</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來設定下次開機使用更新過的 <filename>/boot/GENERIC</filename>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>nextboot -k GENERIC</userinput></screen>
 
       <warning>
-	<para xml:lang="en">Before rebooting with the <filename>GENERIC</filename>
-	  kernel, make sure it contains all the drivers required for
-	  the system to boot properly and connect to the network, if
-	  the machine being updated is accessed remotely.  In
-	  particular, if the running custom kernel contains built-in
-	  functionality usually provided by kernel modules, make sure
-	  to temporarily load these modules into the
-	  <filename>GENERIC</filename> kernel using the
-	  <filename>/boot/loader.conf</filename> facility.  It is
-	  recommended to disable non-essential services as well as any
-	  disk and network mounts until the upgrade process is
-	  complete.</para>
+	<para>若機器在遠端進行更新，請在使用 <filename>GENERIC</filename> 核心重新開機前，請確定該核心含有所有系統所需的驅動程式以正常開機並連線至網路。特別是在執行的自訂核心有使用到由核心模組提供內建功能，請確定將這些模組已暫時使用 <filename>/boot/loader.conf</filename> 設定檔載入到 <filename>GENERIC</filename> 核心。建議關閉非必須的服務和磁碟與網路掛載直到升級程序完成。</para>
       </warning>
 
-      <para xml:lang="en">The machine should now be restarted with the updated
-	kernel:</para>
+      <para>機器現在應使用更新過的核心重新開機：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>shutdown -r now</userinput></screen>
 
-      <para xml:lang="en">Once the system has come back online, restart
-	<command>freebsd-update</command> using the following command.
-	Since the state of the process has been saved,
-	<command>freebsd-update</command> will not start from the
-	beginning, but will instead move on to the next phase and
-	remove all old shared libraries and object files.</para>
+      <para>一旦系統重新上線，使用以下指令繼續 <command>freebsd-update</command>。 由於程序的狀態已被儲存，<command>freebsd-update</command> 不會重頭開始，但會進行下一個階段並移除所有舊的共用程式庫和目標檔。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>freebsd-update install</userinput></screen>
 
       <note>
-	<para xml:lang="en">Depending upon whether any library version numbers were
-	  bumped, there may only be two install phases instead of
-	  three.</para>
+	<para>取決於是否有任何程式庫版本編號衝突，也可能只有兩個而不是三個安裝階段。</para>
       </note>
 
-      <para xml:lang="en">The upgrade is now complete.  If this was a major version
-	upgrade, reinstall all ports and packages as described in
-	<xref linkend="freebsdupdate-portsrebuild"/>.</para>
+      <para>升級程序現在完成了。如果所做的是主要的版本升級，則需依 <xref linkend="freebsdupdate-portsrebuild"/> 的說明重新安裝所有的 Ports 和套件。</para>
 
       <sect3 xml:id="freebsd-update-custom-kernel-9x">
 	<title>在 FreeBSD 9.X 及之後版本自訂核心</title>
 
-	<para xml:lang="en">Before using <command>freebsd-update</command>, ensure
-	  that a copy of the <filename>GENERIC</filename> kernel
-	  exists in <filename>/boot/GENERIC</filename>.  If a custom
-	  kernel has only been built once, the kernel in
-	  <filename>/boot/kernel.old</filename> is the
-	  <literal>GENERIC</literal> kernel.  Simply rename this
-	  directory to <filename>/boot/kernel</filename>.</para>
+	<para>在使用 <command>freebsd-update</command> 前，請確定已有 <filename>GENERIC</filename> 核心的複本於 <filename>/boot/GENERIC</filename>。若只編譯過一次自訂核心，那麼 <filename>/boot/kernel.old</filename> 就是 <literal>GENERIC</literal> 核心，只需要將該目錄重新命名為 <filename>/boot/kernel</filename>。</para>
 
-	<para xml:lang="en">If a custom kernel has been built more than once or if
-	  it is unknown how many times the custom kernel has been
-	  built, obtain a copy of the <literal>GENERIC</literal>
-	  kernel that matches the current version of the operating
-	  system.  If physical access to the system is available, a
-	  copy of the <literal>GENERIC</literal> kernel can be
-	  installed from the installation media:</para>
+	<para>若有編譯自訂核心過超過一次，或已經不曉得編譯自訂核心的次數，則需取得與目前作業系統版本相符的 <literal>GENERIC</literal> 核心複本。若可直接操作實體系統，則可以從安裝媒體取得 <literal>GENERIC</literal> 核心複本：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>mount /cdrom</userinput>
 <prompt>#</prompt> <userinput>cd /cdrom/usr/freebsd-dist</userinput>
 <prompt>#</prompt> <userinput>tar -C/ -xvf kernel.txz boot/kernel/kernel</userinput></screen>
 
-	<para xml:lang="en">Alternately, the <literal>GENERIC</literal> kernel may
-	  be rebuilt and installed from source:</para>
+	<para>或者，可以從原始碼重新編譯 <literal>GENERIC</literal> 核心：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
 <prompt>#</prompt> <userinput>make kernel __MAKE_CONF=/dev/null SRCCONF=/dev/null</userinput></screen>
 
-	<para xml:lang="en">For this kernel to be identified as the
-	  <literal>GENERIC</literal> kernel by
-	  <command>freebsd-update</command>, the
-	  <filename>GENERIC</filename> configuration file must not
-	  have been modified in any way.  It is also suggested that
-	  the kernel is built without any other special
-	  options.</para>
+	<para>這個核心要被 <command>freebsd-update</command> 認做 <literal>GENERIC</literal> 核心，<filename>GENERIC</filename> 設定檔必須不能做任何修改，也建議在編譯核心時不要使用其他特殊選項。</para>
 
-	<para xml:lang="en">Rebooting into the <filename>GENERIC</filename> kernel
-	  is not required as <command>freebsd-update</command> only
-	  needs <filename>/boot/GENERIC</filename> to exist.</para>
+	<para><command>freebsd-update</command> 僅需要 <filename>/boot/GENERIC</filename> 存在便可，因此不須重新開機進入 <filename>GENERIC</filename>。</para>
       </sect3>
 
       <sect3 xml:id="freebsdupdate-portsrebuild">
 	<title>主要版號升級後的套件升級</title>
 
-	<para xml:lang="en">Generally, installed applications will continue to work
-	  without problems after minor version upgrades.  Major
-	  versions use different Application Binary Interfaces
-	  (<acronym>ABI</acronym>s), which will break most
-	  third-party applications.  After a major version upgrade,
-	  all installed packages and ports need to be upgraded.
-	  Packages can be upgraded using <command>pkg
-	    upgrade</command>.  To upgrade installed ports, use a
-	  utility such as
-	  <package>ports-mgmt/portmaster</package>.</para>
+	<para>一般來說，已安裝的應用程式在次要版本升級仍可沒問題的正常執行。但主要版本升級會採用不同的應用程式 Binary 介面 (Application Binary Interfaces, <acronym>ABI</acronym>s)，會導致大部份第三方應用程式無法正常執行。 因此在主要版本升級後，需要升及所有已安裝的套件和 Ports，套件可以使用 <command>pkg upgrade</command> 來升級，而 Ports 則需使用 <package>ports-mgmt/portmaster</package> 工具。</para>
 
-	<para xml:lang="en">A forced upgrade of all installed packages will replace
-	  the packages with fresh versions from the repository even if
-	  the version number has not increased.  This is required
-	  because of the ABI version change when upgrading between
-	  major versions of FreeBSD.  The forced upgrade can be
-	  accomplished by performing:</para>
+	<para>強制升級所有已安裝的套件會使用檔案庫中新版本的套件來取得目前套件，即使該版號沒有增加。由於在升級 FreeBSD 主要版本時會變更 ABI 版本，因此這是必要動作。強制升級可以執行以下指令來完成：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg-static upgrade -f</userinput></screen>
 
-	<para xml:lang="en">A rebuild of all installed applications can be
-	  accomplished with this command:</para>
+	<para>重新編譯所有已安裝的應用程式可以執行以下指令來完成：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster -af</userinput></screen>
 
-	<para xml:lang="en">This command will display the configuration screens for
-	  each application that has configurable options and wait for
-	  the user to interact with those screens.  To prevent this
-	  behavior, and use only the default options, include
-	  <option>-G</option> in the above command.</para>
+	<para>這個指令會在安裝每個應用程式有可設定選項時顯示設定畫面，並會等待使用者操作該畫面，要避免這種情況並使用預設的設定選項，可在上述指令加上 <option>-G</option> 參數。</para>
 
-	<para xml:lang="en">Once the software upgrades are complete, finish the
-	  upgrade process with a final call to
-	  <command>freebsd-update</command> in order to tie up all the
-	  loose ends in the upgrade process:</para>
+	<para>完成軟體升級後，最後需執行 <command>freebsd-update</command> 來完成最後的升級動作：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>freebsd-update install</userinput></screen>
 
-	<para xml:lang="en">If the <filename>GENERIC</filename> kernel was
-	  temporarily used, this is the time to build and install a
-	  new custom kernel using the instructions in <xref linkend="kernelconfig"/>.</para>
+	<para>若有使用臨時 <filename>GENERIC</filename> 核心，便應在此時依據 <xref linkend="kernelconfig"/> 的說明編譯並安裝新的自訂核心。</para>
 
-	<para xml:lang="en">Reboot the machine into the new FreeBSD version.  The
-	  upgrade process is now complete.</para>
+	<para>重新開機使用新的 FreeBSD 版本後，升級程序便正式完成。</para>
       </sect3>
     </sect2>
 

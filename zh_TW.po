@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-04-21 18:58+0800\n"
+"PO-Revision-Date: 2016-05-25 17:18+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3440,7 +3440,7 @@ msgstr ""
 #. (itstool) path: figure/title
 #: book.translate.xml:4395
 msgid "<acronym>ZFS</acronym> Pool Type"
-msgstr "<acronym>ZFS</acronym> Pool 類型"
+msgstr "<acronym>ZFS</acronym> 儲存池類型"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10092,7 +10092,7 @@ msgstr "視窗管理程式(Window Manager)"
 #. (itstool) path: listitem/para
 #: book.translate.xml:10643
 msgid "X does not dictate what windows should look like on-screen, how to move them around with the mouse, which keystrokes should be used to move between windows, what the title bars on each window should look like, whether or not they have close buttons on them, and so on. Instead, X delegates this responsibility to a separate window manager application. There are <link xlink:href=\"http://xwinman.org/\">dozens of window managers</link> available. Each window manager provides a different look and feel: some support virtual desktops, some allow customized keystrokes to manage the desktop, some have a <quote>Start</quote> button, and some are themeable, allowing a complete change of the desktop's look-and-feel. Window managers are available in the <filename>x11-wm</filename> category of the Ports Collection."
-msgstr "X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href=\"http://xwinman.org/\">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有　<quote>開始</quote>　鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Ports 套件集的 <filename>x11-wm</filename> 分類找到。"
+msgstr "X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href=\"http://xwinman.org/\">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有 <quote>開始</quote> 鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Ports 套件集的 <filename>x11-wm</filename> 分類找到。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10659
@@ -39111,52 +39111,52 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:41317
 msgid "Virtualization software allows multiple operating systems to run simultaneously on the same computer. Such software systems for <acronym>PC</acronym>s often involve a host operating system which runs the virtualization software and supports any number of guest operating systems."
-msgstr ""
+msgstr "虛擬機器軟體可以讓同一台機器得以同時執行多種作業系統。在 <acronym>PC</acronym> 上的這類軟體系統通常涉及的角色有執行虛擬機器軟體的主機端 (Host) 作業系統以及數個安裝在其中的客戶端 (Guest) 作業系統。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41327
 msgid "The difference between a host operating system and a guest operating system."
-msgstr ""
+msgstr "主機端作業系統及客戶端作業系統的差別。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41332
 msgid "How to install FreeBSD on an <trademark class=\"registered\">Intel</trademark>-based <trademark class=\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</trademark> computer."
-msgstr ""
+msgstr "如何在 <trademark class=\"registered\">Intel</trademark>-based <trademark class=\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</trademark> 電腦安裝 FreeBSD 。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41337
 msgid "How to install FreeBSD on <trademark class=\"registered\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark> with <application>Virtual PC</application>."
-msgstr ""
+msgstr "如何在 <trademark class=\"registered\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark> 使用 <application>Virtual PC</application> 安裝 FreeBSD。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41342
 msgid "How to install FreeBSD as a guest in <application>bhyve</application>."
-msgstr ""
+msgstr "如何以 FreeBSD 作為 Guest 安裝在 <application>bhyve</application>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41347
 msgid "How to tune a FreeBSD system for best performance under virtualization."
-msgstr ""
+msgstr "如何調校 FreeBSD 系統來取得虛擬化的最佳效能。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41357
 msgid "Understand the <link linkend=\"basics\">basics of <trademark class=\"registered\">UNIX</trademark> and FreeBSD</link>."
-msgstr ""
+msgstr "了解<link linkend=\"basics\"><trademark class=\"registered\">UNIX</trademark> 與 FreeBSD 的基礎</link>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41362
 msgid "Know how to <link linkend=\"bsdinstall\">install FreeBSD</link>."
-msgstr ""
+msgstr "知道如何<link linkend=\"bsdinstall\">安裝 FreeBSD</link>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41367
 msgid "Know how to <link linkend=\"advanced-networking\">set up a network connection</link>."
-msgstr ""
+msgstr "知道如何<link linkend=\"advanced-networking\">設定網路連線</link>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41372
 msgid "Know how to <link linkend=\"ports\">install additional third-party software</link>."
-msgstr ""
+msgstr "知道如何<link linkend=\"ports\">安裝其他第三方軟體</link>。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:41379
@@ -39166,7 +39166,7 @@ msgstr "在 <trademark class=\"registered\">Mac OS</trademark> X 的 <applicati
 #. (itstool) path: sect1/para
 #: book.translate.xml:41382
 msgid "<application>Parallels Desktop</application> for <trademark class=\"registered\">Mac</trademark> is a commercial software product available for <trademark class=\"registered\">Intel</trademark> based <trademark class=\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</trademark> computers running <trademark class=\"registered\">Mac OS</trademark> 10.4.6 or higher. FreeBSD is a fully supported guest operating system. Once <application>Parallels</application> has been installed on <trademark class=\"registered\">Mac OS</trademark> X, the user must configure a virtual machine and then install the desired guest operating system."
-msgstr ""
+msgstr "<trademark class=\"registered\">Mac</trademark> 的 <application>Parallels Desktop</application> 是一套商業軟體可在 <trademark class=\"registered\">Intel</trademark> 為基礎的 <trademark class=\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</trademark> 的<trademark class=\"registered\">Mac OS</trademark> 10.4.6 或更新版本上執行。 該軟體完全支援使用 FreeBSD 作為客戶端作業系統。 在 <trademark class=\"registered\">Mac OS</trademark> X 裝好 <application>Parallels</application> 後，使用者必先完成虛擬機器的設定後才可安裝想使用的客戶端作業系統。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:41391
@@ -39176,7 +39176,7 @@ msgstr "在 Parallels/<trademark class=\"registered\">Mac OS</trademark> X 安�
 #. (itstool) path: sect2/para
 #: book.translate.xml:41393
 msgid "The first step in installing FreeBSD on <application>Parallels</application> is to create a new virtual machine for installing FreeBSD. Select <guimenuitem>FreeBSD</guimenuitem> as the <guimenu>Guest OS Type</guimenu> when prompted:"
-msgstr ""
+msgstr "在 <application>Parallels</application> 上安裝 FreeBSD 的第一步是建立供安裝 FreeBSD 使用的新虛擬機器。提示出現後請選擇 <guimenu>Guest OS Type</guimenu> 為 <guimenuitem>FreeBSD</guimenuitem>："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39191,7 +39191,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41405
 msgid "Choose a reasonable amount of disk and memory depending on the plans for this virtual FreeBSD instance. 4GB of disk space and 512MB of RAM work well for most uses of FreeBSD under <application>Parallels</application>:"
-msgstr ""
+msgstr "根據您對此虛擬 FreeBSD 作業系統的規畫選擇合理的磁碟及記憶體空間，對大多數在 <application>Parallels</application> 下的 FreeBSD 使用者來講 4GB 的磁碟空間與 512MB 的 RAM 便足夠："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39236,7 +39236,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41434
 msgid "Select the type of networking and a network interface:"
-msgstr ""
+msgstr "選擇網路類型以及網路介面："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39261,7 +39261,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41449 book.translate.xml:41633
 msgid "Save and finish the configuration:"
-msgstr ""
+msgstr "儲存並完成設定："
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39286,7 +39286,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41463
 msgid "After the FreeBSD virtual machine has been created, FreeBSD can be installed on it. This is best done with an official FreeBSD <acronym>CD</acronym>/<acronym>DVD</acronym> or with an <acronym>ISO</acronym> image downloaded from an official <acronym>FTP</acronym> site. Copy the appropriate <acronym>ISO</acronym> image to the local <trademark class=\"registered\">Mac</trademark> filesystem or insert a <acronym>CD</acronym>/<acronym>DVD</acronym> in the <trademark class=\"registered\">Mac</trademark>'s <acronym>CD-ROM</acronym> drive. Click on the disc icon in the bottom right corner of the FreeBSD <application>Parallels</application> window. This will bring up a window that can be used to associate the <acronym>CD-ROM</acronym> drive in the virtual machine with the <acronym>ISO</acronym> file on disk or with the real <acronym>CD-ROM</acronym> drive."
-msgstr ""
+msgstr "在 FreeBSD 虛擬機器新增後，就可以繼續以其安裝 FreeBSD。 安裝方面，比較好的作法是使用官方的 FreeBSD <acronym>CD</acronym>/<acronym>DVD</acronym> 或者是自官方 <acronym>FTP</acronym> 站下載的 <acronym>ISO</acronym> 映像檔。 複製適合的 <acronym>ISO</acronym> 映像檔到 <trademark class=\"registered\">Mac</trademark> 檔案系統本地端或放入 <acronym>CD</acronym>/<acronym>DVD</acronym> 到 <trademark class=\"registered\">Mac</trademark> 的 <acronym>CD-ROM</acronym> 磁碟機。在 FreeBSD <application>Parallels</application> 視窗的右下角點選磁碟圖示後會出現一個視窗，可用來建立虛擬機器內的 <acronym>CD-ROM</acronym> 磁碟機與磁碟上 <acronym>ISO</acronym> 檔案或實際 <acronym>CD-ROM</acronym> 磁碟機的關聯。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39301,7 +39301,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41484
 msgid "Once this association with the <acronym>CD-ROM</acronym> source has been made, reboot the FreeBSD virtual machine by clicking the reboot icon. <application>Parallels</application> will reboot with a special <acronym>BIOS</acronym> that first checks if there is a <acronym>CD-ROM</acronym>."
-msgstr ""
+msgstr "建立與 <acronym>CD-ROM</acronym> 來源的關聯後，點選重新開機圖示重新開啟 FreeBSD 虛擬機器。<application>Parallels</application> 會重新開機進入一個特殊的 <acronym>BIOS</acronym> 畫面並檢查是否有 <acronym>CD-ROM</acronym>。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39316,7 +39316,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41497
 msgid "In this case it will find the FreeBSD installation media and begin a normal FreeBSD installation. Perform the installation, but do not attempt to configure <application>Xorg</application> at this time."
-msgstr ""
+msgstr "在此處會找到 FreeBSD 安裝媒體並開始正常的 FreeBSD 安裝程序。完成安裝，但不要在此時嘗試設定 <application>Xorg</application>。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39331,7 +39331,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41508
 msgid "When the installation is finished, reboot into the newly installed FreeBSD virtual machine."
-msgstr ""
+msgstr "當安裝完成後，重新開機將會進入新安裝的 FreeBSD 虛擬機器。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -39351,17 +39351,17 @@ msgstr "在 <application>Parallels</application> 設定 FreeBSD"
 #. (itstool) path: sect2/para
 #: book.translate.xml:41522
 msgid "After FreeBSD has been successfully installed on <trademark class=\"registered\">Mac OS</trademark> X with <application>Parallels</application>, there are a number of configuration steps that can be taken to optimize the system for virtualized operation."
-msgstr ""
+msgstr "在成功將 FreeBSD 安裝到 <trademark class=\"registered\">Mac OS</trademark> X 的 <application>Parallels</application> 後，有數個設定步驟要完成來最佳化系統在虛擬機器上的運作。"
 
 #. (itstool) path: step/title
 #: book.translate.xml:41529 book.translate.xml:41734 book.translate.xml:41938
 msgid "Set Boot Loader Variables"
-msgstr ""
+msgstr "設定 Boot Loader 變數"
 
 #. (itstool) path: step/para
 #: book.translate.xml:41531
 msgid "The most important step is to reduce the <option>kern.hz</option> tunable to reduce the CPU utilization of FreeBSD under the <application>Parallels</application> environment. This is accomplished by adding the following line to <filename>/boot/loader.conf</filename>:"
-msgstr ""
+msgstr "最重要的一個步驟是減少 <option>kern.hz</option> 參數來減少 FreeBSD 在 <application>Parallels</application> 環境下對 CPU 的使用率。加入以下行到 <filename>/boot/loader.conf</filename> 來完成這個動作："
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:41538 book.translate.xml:41743 book.translate.xml:41947
@@ -39372,27 +39372,27 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:41540
 msgid "Without this setting, an idle FreeBSD <application>Parallels</application> guest will use roughly 15% of the CPU of a single processor <trademark class=\"registered\">iMac</trademark>. After this change the usage will be closer to 5%."
-msgstr ""
+msgstr "若沒有完成此設定，閒置的 FreeBSD <application>Parallels</application>客戶端將會消耗掉單處理器 <trademark class=\"registered\">iMac</trademark> 將近 15% 的 CPU。完成此更改後使用率會減至接近 5%。"
 
 #. (itstool) path: step/title
 #: book.translate.xml:41547 book.translate.xml:41753 book.translate.xml:41956
 msgid "Create a New Kernel Configuration File"
-msgstr ""
+msgstr "建立新核心設定檔"
 
 #. (itstool) path: step/para
 #: book.translate.xml:41549
 msgid "All of the SCSI, FireWire, and USB device drivers can be removed from a custom kernel configuration file. <application>Parallels</application> provides a virtual network adapter used by the <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver, so all network devices except for <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</manvolnum></citerefentry> can be removed from the kernel."
-msgstr ""
+msgstr "所有的 SCSI, FireWire 及 USB 裝置可以從自訂的核心設定檔中移除。<application>Parallels</application> 提供的虛擬網路卡使用 <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式，所以除了 <citerefentry><refentrytitle>ed</refentrytitle><manvolnum>4</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</manvolnum></citerefentry> 外的所有網路裝置可以自核心中移除。"
 
 #. (itstool) path: step/title
 #: book.translate.xml:41558 book.translate.xml:41764 book.translate.xml:41967
 msgid "Configure Networking"
-msgstr ""
+msgstr "設定網路"
 
 #. (itstool) path: step/para
 #: book.translate.xml:41560
 msgid "The most basic networking setup uses DHCP to connect the virtual machine to the same local area network as the host <trademark class=\"registered\">Mac</trademark>. This can be accomplished by adding <literal>ifconfig_ed0=\"DHCP\"</literal> to <filename>/etc/rc.conf</filename>. More advanced networking setups are described in <xref linkend=\"advanced-networking\"/>."
-msgstr ""
+msgstr "最基本的網路設定是使用 DHCP 來讓虛擬機器連線到與主機端 <trademark class=\"registered\">Mac</trademark> 相同的區域網路，這可以透過加入 <literal>ifconfig_ed0=\"DHCP\"</literal> 到 <filename>/etc/rc.conf</filename> 來完成。更進階的網路設定在 <xref linkend=\"advanced-networking\"/> 中描述。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:41573
@@ -40628,7 +40628,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:42633
 msgid "The term internationalization has been shortened to <acronym>i18n</acronym>, which represents the number of letters between the first and the last letters of <literal>internationalization</literal>. <acronym>L10n</acronym> uses the same naming scheme, but from <literal>localization</literal>. The <acronym>i18n</acronym>/<acronym>L10n</acronym> methods, protocols, and applications allow users to use languages of their choice."
-msgstr "<literal>國際化</literal> (Internationalization) 一詞可以縮寫為 <acronym>i18n</acronym>，即  第一個字母到最後一個字母間的字母數量。<acronym>L10n</acronym> 也使用同樣的命名規則，但原自 <literal>在地化</literal> (Localization)。 <acronym>i18n</acronym>/<acronym>L10n</acronym> 的方法、協定及應用程式讓使用者可以自己選擇使用的語言。"
+msgstr "<literal>國際化</literal> (Internationalization) 一詞可以縮寫為 <acronym>i18n</acronym>，即  第一個字母到最後一個字母間的字母數量。<acronym>L10n</acronym> 也使用同樣的命名規則，但源自 <literal>在地化</literal> (Localization)。 <acronym>i18n</acronym>/<acronym>L10n</acronym> 的方法、協定及應用程式讓使用者可以自己選擇使用的語言。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42643
@@ -40684,7 +40684,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:42691
 msgid "Localization settings are based on three components: the language code, country code, and encoding. Locale names are constructed from these parts as follows:"
-msgstr ""
+msgstr "語系設定值由三個元件所組成：語言代號、城市代號及編碼。語系名稱組成的方式如下："
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:42695
@@ -40705,7 +40705,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:42700
 msgid "The <replaceable>LanguageCode</replaceable> and <replaceable>CountryCode</replaceable> are used to determine the country and the specific language variation. <xref linkend=\"locale-lang-country\"/> provides some examples of <replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable>:"
-msgstr ""
+msgstr "<replaceable>LanguageCode</replaceable> 與 <replaceable>CountryCode</replaceable> 用來表示城市及特定語言。<xref linkend=\"locale-lang-country\"/> 提供了幾個 <replaceable>LanguageCode</replaceable>_<replaceable>CountryCode</replaceable> 的範例："
 
 #. (itstool) path: table/title
 #: book.translate.xml:42706
@@ -40725,7 +40725,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:42719
 msgid "English, United States"
-msgstr ""
+msgstr "英文，美國"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:42723
@@ -40735,7 +40735,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:42724
 msgid "Russian, Russia"
-msgstr ""
+msgstr "俄文，俄國"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:42728
@@ -40745,12 +40745,12 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:42729
 msgid "Traditional Chinese, Taiwan"
-msgstr ""
+msgstr "繁體中文，台灣"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42735
 msgid "A complete listing of available locales can be found by typing:"
-msgstr ""
+msgstr "完整可用的語系清單可用以下指令查詢："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:42738
@@ -40761,7 +40761,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:42740
 msgid "To determine the current locale setting:"
-msgstr ""
+msgstr "查詢目前使用的語系設定："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:42742
@@ -40782,22 +40782,22 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:42747
 msgid "Language specific character sets, such as ISO8859-1, ISO8859-15, KOI8-R, and CP437, are described in <citerefentry><refentrytitle>multibyte</refentrytitle><manvolnum>3</manvolnum></citerefentry>. The active list of character sets can be found at the <link xlink:href=\"http://www.iana.org/assignments/character-sets\">IANA Registry</link>."
-msgstr ""
+msgstr "語言特定的字元集如 ISO8859-1, ISO8859-15, KOI8-R 及 CP437 在 <citerefentry><refentrytitle>multibyte</refentrytitle><manvolnum>3</manvolnum></citerefentry> 有詳細說明。可用的字元集可在 <link xlink:href=\"http://www.iana.org/assignments/character-sets\">IANA Registry</link> 查詢。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42753
 msgid "Some languages, such as Chinese or Japanese, cannot be represented using <acronym>ASCII</acronym> characters and require an extended language encoding using either wide or multibyte characters. Examples of wide or multibyte encodings include EUC and Big5. Older applications may mistake these encodings for control characters while newer applications usually recognize these characters. Depending on the implementation, users may be required to compile an application with wide or multibyte character support, or to configure it correctly."
-msgstr ""
+msgstr "某些語言，如中文或日文，無法使用 <acronym>ASCII</acronym> 字元表示，會需要使用寬 (Wide) 字元或多位元組 (Multibyte) 字元來擴充的語言編碼。EUC 與 Big5 即是使用寬子元或多位元組字元的例子。舊的應用程式會誤判這些字元為控制字元，新的應用程式則通常可以辨識這些字元，依實作的需要，使用者可能需要開啟寬字元或多位元組字元支援或者使用正確的字元設定來編譯應用程式。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:42765
 msgid "FreeBSD uses Xorg-compatible locale encodings."
-msgstr ""
+msgstr "FreeBSD 使用 Xorg 相容的語系編碼。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:42768
 msgid "The rest of this section describes the various methods for configuring the locale on a FreeBSD system. The next section will discuss the considerations for finding and compiling applications with <acronym>i18n</acronym> support."
-msgstr ""
+msgstr "本節剩餘的部份將說明各種在 FreeBSD 系統上設定語系的方法。下一節將會探討如何尋找以及編譯使用 <acronym>i18n</acronym> 支援的應用程式。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:42774
@@ -40807,17 +40807,17 @@ msgstr "設定登入 Shell 的語系"
 #. (itstool) path: sect2/para
 #: book.translate.xml:42776
 msgid "Locale settings are configured either in a user's <filename>~/.login_conf</filename> or in the startup file of the user's shell: <filename>~/.profile</filename>, <filename>~/.bashrc</filename>, or <filename>~/.cshrc</filename>."
-msgstr ""
+msgstr "語系設定可在使用者的 <filename>~/.login_conf</filename> 或使用者的 Shell 的啟動檔設定：<filename>~/.profile</filename>, <filename>~/.bashrc</filename> 或 <filename>~/.cshrc</filename>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42783
 msgid "Two environment variables should be set:"
-msgstr ""
+msgstr "有兩個環境變數需要設定："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:42788
 msgid "<envar>LANG</envar>, which sets the locale<_:indexterm-1/>"
-msgstr ""
+msgstr "<envar>LANG</envar> 用來設定語系<_:indexterm-1/>"
 
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:42793
@@ -40827,12 +40827,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:42795
 msgid "<envar>MM_CHARSET</envar>, which sets the <acronym>MIME</acronym> character set used by applications"
-msgstr ""
+msgstr "<envar>MM_CHARSET</envar> 用來設定應用程式所使用的 <acronym>MIME</acronym> 字元集"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:42801
 msgid "In addition to the user's shell configuration, these variables should also be set for specific application configuration and <application>Xorg</application> configuration."
-msgstr ""
+msgstr "除了使用者的 Shell 設定外，這些變數也應針對特定應用程式設定以及 <application>Xorg</application> 設定。"
 
 #. (itstool) path: sect2/indexterm
 #. (itstool) path: sect4/indexterm
@@ -40843,22 +40843,22 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:42809
 msgid "Two methods are available for making the needed variable assignments: the <link linkend=\"login-class\">login class</link> method, which is the recommended method, and the <link linkend=\"startup-file\">startup file</link> method. The next two sections demonstrate how to use both methods."
-msgstr ""
+msgstr "兩種可以完成所需變數設定的方法有：<link linkend=\"login-class\">登入類別 (Login class)</link> 法 (較建議) 及 <link linkend=\"startup-file\">啟動檔 (Startup file) </link> 法。以下兩節將示範如何使用這兩個方法。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:42817
 msgid "Login Classes Method"
-msgstr "登入類別法"
+msgstr "登入類別 (Login Class) 法"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:42819
 msgid "This first method is the recommended method as it assigns the required environment variables for locale name and <acronym>MIME</acronym> character sets for every possible shell. This setup can either be performed by each user or it can be configured for all users by the superuser."
-msgstr ""
+msgstr "第一種方式，同時也是建議使用的方法，它可以對任何可能的 Shell 設定需要的語系及 MIME 字元集變數。此設定也可由每位使用者自行設定或者由超級管理者為所有使用者設定。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:42826
 msgid "This minimal example sets both variables for Latin-1 encoding in the <filename>.login_conf</filename> of an individual user's home directory:"
-msgstr ""
+msgstr "以下精簡範例示範在一個使用者的家目錄中的 <filename>.login_conf</filename> 設定 Latin-1 編碼使用的兩個環境變數："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:42830
@@ -40877,7 +40877,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:42837
 msgid "Here is an example of a user's <filename>~/.login_conf</filename> that sets the variables for Traditional Chinese in BIG-5 encoding. More variables are needed because some applications do not correctly respect locale variables for Chinese, Japanese, and Korean:"
-msgstr ""
+msgstr "以下使用者的 <filename>~/.login_conf</filename> 範例設定了繁體中文於 BIG-5 編碼使用到的環境變數。有一部份應用程式無法正確處理中文、日文及韓文的語系變數，因此需要額外多做一些設定："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:42844
@@ -40895,7 +40895,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:42852
 msgid "Alternately, the superuser can configure all users of the system for localization. The following variables in <filename>/etc/login.conf</filename> are used to set the locale and <acronym>MIME</acronym> character set:"
-msgstr ""
+msgstr "或者，超級使用者可以設定所有系統使用者的語系。以下在 <filename>/etc/login.conf</filename> 中的變數可用來設定語系及 <acronym>MIME</acronym> 字元集："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:42857
@@ -40910,7 +40910,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:42862
 msgid "So, the previous Latin-1 example would look like this:"
-msgstr ""
+msgstr "若套用之前的 Latin-1 編碼範例如下："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:42865
@@ -40925,17 +40925,17 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:42870
 msgid "See <citerefentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more details about these variables."
-msgstr ""
+msgstr "請參考 <citerefentry><refentrytitle>login.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 以取得更多有關這些變數的詳細資訊。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:42873
 msgid "Whenever <filename>/etc/login.conf</filename> is edited, remember to execute the following command to update the capability database:"
-msgstr ""
+msgstr "每次編輯 <filename>/etc/login.conf</filename> 之後，請記得要執行以下指令來更新登入類別的能力資料庫(Capability database)："
 
 #. (itstool) path: sect4/title
 #: book.translate.xml:42880
 msgid "Utilities Which Change Login Classes"
-msgstr ""
+msgstr "變更登入類別的工具"
 
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:42882
@@ -40945,12 +40945,12 @@ msgstr ""
 #. (itstool) path: sect4/para
 #: book.translate.xml:42886
 msgid "In addition to manually editing <filename>/etc/login.conf</filename>, several utilities are available for setting the locale for newly created users."
-msgstr ""
+msgstr "除了手動編輯 <filename>/etc/login.conf</filename> 之外，尚有需多工具可用來為新建立的使用者設定語系。"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:42891
 msgid "When using <command>vipw</command> to add new users, specify the <replaceable>language</replaceable> to set the locale:"
-msgstr ""
+msgstr "當使用 <command>vipw</command> 來新增使用者時，可指定 <replaceable>language</replaceable> 來設定語系："
 
 #. (itstool) path: sect4/programlisting
 #: book.translate.xml:42895
@@ -40961,17 +40961,17 @@ msgstr ""
 #. (itstool) path: sect4/para
 #: book.translate.xml:42902
 msgid "When using <command>adduser</command> to add new users, the default language can be pre-configured for all new users or specified for an individual user."
-msgstr ""
+msgstr "當使用 <command>adduser</command> 來新增使用者時，可對所有使用者或指定的使用者事先設定預設的語言。"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:42906
 msgid "If all new users use the same language, set <literal>defaultclass=<replaceable>language</replaceable></literal> in <filename>/etc/adduser.conf</filename>."
-msgstr ""
+msgstr "若所有新的使用者都使用同樣的語言，可在 <filename>/etc/adduser.conf</filename> 設定 <literal>defaultclass=<replaceable>language</replaceable></literal>。"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:42910
 msgid "To override this setting when creating a user, either input the required locale at this prompt:"
-msgstr ""
+msgstr "要在建立使用者時覆蓋預設的設定，可在出現此提示時輸入需要的語系："
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:42913
@@ -40982,7 +40982,7 @@ msgstr ""
 #. (itstool) path: sect4/para
 #: book.translate.xml:42915
 msgid "or specify the locale to set when invoking <command>adduser</command>:"
-msgstr ""
+msgstr "或執行 <command>adduser</command> 時指定語系："
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:42918
@@ -40993,7 +40993,7 @@ msgstr ""
 #. (itstool) path: sect4/para
 #: book.translate.xml:42924
 msgid "If <command>pw</command> is used to add new users, specify the locale as follows:"
-msgstr ""
+msgstr "若使用 <command>pw</command> 來新增使用者，則可指定語系如下："
 
 #. (itstool) path: sect4/screen
 #: book.translate.xml:42927
@@ -41004,12 +41004,12 @@ msgstr ""
 #. (itstool) path: sect3/title
 #: book.translate.xml:42932
 msgid "Shell Startup File Method"
-msgstr "Shell 啟動檔法"
+msgstr "Shell 啟動檔 (Startup File) 法"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:42934
 msgid "This second method is not recommended as each shell that is used requires manual configuration, where each shell has a different configuration file and differing syntax. As an example, to set the German language for the <command>sh</command> shell, these lines could be added to <filename>~/.profile</filename> to set the shell for that user only. These lines could also be added to <filename>/etc/profile</filename> or <filename>/usr/share/skel/dot.profile</filename> to set that shell for all users:"
-msgstr ""
+msgstr "第二種方法，較不建議使用，因每一種使用到的 Shell 都需要手動設定，而每一種 Shell 都有不同的設定檔以及語法。例如將一位使用者的 <command>sh</command> shell 設定為德語，需要將下列行加到 <filename>~/.profile</filename>，若要設定給使用該 Shell 的所有使用者則必須將下列行加到 <filename>/etc/profile</filename> 或 <filename>/usr/share/skel/dot.profile</filename>："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:42945
@@ -41022,7 +41022,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:42948
 msgid "However, the name of the configuration file and the syntax used differs for the <command>csh</command> shell. These are the equivalent settings for <filename>~/.csh.login</filename>, <filename>/etc/csh.login</filename>, or <filename>/usr/share/skel/dot.login</filename>:"
-msgstr ""
+msgstr "然而，在 <command>csh</command> shell 所使用的設定檔名稱及語法不同。同樣的設定需加入下列行至 <filename>~/.csh.login</filename>, <filename>/etc/csh.login</filename> 或 <filename>/usr/share/skel/dot.login</filename>："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:42955
@@ -41035,7 +41035,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:42958
 msgid "To complicate matters, the syntax needed to configure <application>Xorg</application> in <filename>~/.xinitrc</filename> also depends upon the shell. The first example is for the <command>sh</command> shell and the second is for the <command>csh</command> shell:"
-msgstr ""
+msgstr "更複雜一點的情況，<application>Xorg</application> 的 <filename>~/.xinitrc</filename> 語系設定會依使用的 Shell 而有所不同。第一個例子是針對 <command>sh</command> shell 而第二個則是針對 <command>csh</command> shell："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:42965
@@ -41057,7 +41057,7 @@ msgstr "Console 設定"
 #. (itstool) path: sect2/para
 #: book.translate.xml:42974
 msgid "Several localized fonts are available for the console. To see a listing of available fonts, type <command>ls /usr/share/syscons/fonts</command>. To configure the console font, specify the <replaceable>font_name</replaceable>, without the <filename>.fnt</filename> suffix, in <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "已有許多語系的字型可在 Console 使用，要查看可用的字型清單，可輸入 <command>ls /usr/share/syscons/fonts</command>。要設定 Console 的字型，可在 <filename>/etc/rc.conf</filename> 指定去掉 <filename>.fnt</filename> 字尾的字型名稱 <replaceable>font_name</replaceable>："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:42982
@@ -41081,7 +41081,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:42988
 msgid "The keymap and screenmap can be set by adding the following to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "鍵盤對應表 (Keymap) 及螢幕對應表 (Screenmap) 用可加入下行到 <filename>/etc/rc.conf</filename> 來設定："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:42991
@@ -41095,22 +41095,22 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:42995
 msgid "To see the list of available screenmaps, type <command>ls /usr/share/syscons/scrnmaps</command>. Do not include the <filename>.scm</filename> suffix when specifying <replaceable>screenmap_name</replaceable>. A screenmap with a corresponding mapped font is usually needed as a workaround for expanding bit 8 to bit 9 on a VGA adapter's font character matrix so that letters are moved out of the pseudographics area if the screen font uses a bit 8 column."
-msgstr ""
+msgstr "要查看可用的螢幕對應表，可輸入 <command>ls /usr/share/syscons/scrnmaps</command>。在設定螢幕對應表 <replaceable>screenmap_name</replaceable> 時請去掉 <filename>.scm</filename> 字尾。在 VGA Adapter 的字型字元矩陣擴充位元 8 到位元 9 時會需要使用螢幕對應表與相關的字型對應來解決，因此若螢幕字型使用位元 8 的欄位，字母會移出虛擬繪圖區 (Pseudographics area)。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43004
 msgid "To see the list of available keymaps, type <command>ls /usr/share/syscons/keymaps</command>. When specifying the <replaceable>keymap_name</replaceable>, do not include the <filename>.kbd</filename> suffix. To test keymaps without rebooting, use <citerefentry><refentrytitle>kbdmap</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "要查看可用的鍵盤對應表，可輸入 <command>ls /usr/share/syscons/keymaps</command>。在設定鍵盤對應表 <replaceable>keymap_name</replaceable> 時請去掉 <filename>.kbd</filename> 字尾。若要不重開機測試鍵盤對應用可使用 <citerefentry><refentrytitle>kbdmap</refentrytitle><manvolnum>1</manvolnum></citerefentry>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43011
 msgid "The <literal>keychange</literal> entry is usually needed to program function keys to match the selected terminal type because function key sequences cannot be defined in the keymap."
-msgstr ""
+msgstr "<literal>keychange</literal> 項目用在當功能鍵序列無法定義在鍵盤對應表時，可設定對應選擇終對機類型的功能鍵。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43016
 msgid "Next, set the correct console terminal type in <filename>/etc/ttys</filename> for all virtual terminal entries. <xref linkend=\"locale-charset\"/> summarizes the available terminal types.:"
-msgstr ""
+msgstr "接下來，在 <filename>/etc/ttys</filename> 為所有虛擬終端機項目設定正確的 Console 終端機類型。<xref linkend=\"locale-charset\"/> 摘要了可用的終端機類型："
 
 #. (itstool) path: table/title
 #: book.translate.xml:43022
@@ -41180,7 +41180,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:43059
 msgid "CP437 (VGA default)"
-msgstr ""
+msgstr "CP437 (VGA 預設值)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43060
@@ -41205,7 +41205,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43075
 msgid "For languages with wide or multibyte characters, install a console for that language from the FreeBSD Ports Collection. The available ports are summarized in <xref linkend=\"locale-console\"/>. Once installed, refer to the port's <filename>pkg-message</filename> or man pages for configuration and usage instructions."
-msgstr ""
+msgstr "對於使用寬字元或多位元組字元的語言，需從 Ports 套件集安裝支援該語言的 Console。 可用的 Ports 摘要在 <xref linkend=\"locale-console\"/>。安裝完成之後，請參考 Port 的 <filename>pkg-message</filename> 或操作手冊來取得設定及使用說明。"
 
 #. (itstool) path: table/title
 #: book.translate.xml:43082
@@ -41225,7 +41225,7 @@ msgstr "Port 位置"
 #. (itstool) path: row/entry
 #: book.translate.xml:43094
 msgid "Traditional Chinese (BIG-5)"
-msgstr ""
+msgstr "繁體中文 (BIG-5)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43095
@@ -41235,7 +41235,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:43099 book.translate.xml:43104
 msgid "Chinese/Japanese/Korean"
-msgstr ""
+msgstr "中文/日文/韓文"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:43100
@@ -41276,7 +41276,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43126
 msgid "If <application>moused</application> is enabled in <filename>/etc/rc.conf</filename>, additional configuration may be required. By default, the mouse cursor of the <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver occupies the <literal>0xd0</literal>-<literal>0xd3</literal> range in the character set. If the language uses this range, move the cursor's range by adding the following line to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "若在 <filename>/etc/rc.conf</filename> 有開啟 <application>moused</application>，可能會需要額外的設定。預設 <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式的滑鼠游標會佔用字元集 <literal>0xd0</literal>-<literal>0xd3</literal> 的範圍，若語言有使用到此範圍，可加入以下行到 <filename>/etc/rc.conf</filename> 來移動游標的範圍："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43135
@@ -41292,7 +41292,7 @@ msgstr "Xorg 設定"
 #. (itstool) path: sect2/para
 #: book.translate.xml:43141
 msgid "<xref linkend=\"x11\"/> describes how to install and configure <application>Xorg</application>. When configuring <application>Xorg</application> for localization, additional fonts and input methods are available from the FreeBSD Ports Collection. Application specific <acronym>i18n</acronym> settings such as fonts and menus can be tuned in <filename>~/.Xresources</filename> and should allow users to view their selected language in graphical application menus."
-msgstr ""
+msgstr "<xref linkend=\"x11\"/> 會說明如何安裝並設定 <application>Xorg</application>。當要設定 <application>Xorg</application> 在地化時，可從 FreeBSD Ports 套件集中取得其他可用的字型及輸入法。應用程式特定的 <acronym>i18n</acronym> 設定像是字型與選單，可以在 <filename>~/.Xresources</filename> 中調校且可允許使用者在圖型化應用程式選單檢視其所選擇的語言。"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:43151
@@ -41302,7 +41302,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43153
 msgid "The X Input Method (<acronym>XIM</acronym>) protocol is an <application>Xorg</application> standard for inputting non-English characters. <xref linkend=\"locale-xim\"/> summarizes the input method applications which are available in the FreeBSD Ports Collection. Additional Fcitx and Uim applications are also available."
-msgstr ""
+msgstr "X 輸入法 (X Input Method, <acronym>XIM</acronym>) 協定是 <application>Xorg</application> 針對輸入非英語字元的標準。<xref linkend=\"locale-xim\"/> 摘要了在 FreeBSD 套件集中可用的輸入法應用程式。也可使用其他如 Fcitx 及 Uim 應用程式。"
 
 #. (itstool) path: table/title
 #: book.translate.xml:43161
@@ -41500,17 +41500,17 @@ msgstr "尋找 <acronym>i18n</acronym> 應用程式"
 #. (itstool) path: sect1/para
 #: book.translate.xml:43376
 msgid "<acronym>i18n</acronym> applications are programmed using <acronym>i18n</acronym> kits under libraries. These allow developers to write a simple file and translate displayed menus and texts to each language."
-msgstr ""
+msgstr "<acronym>i18n</acronym> 應用程式會使用 <acronym>i18n</acronym> 工具包做為程式庫開發。這讓開發人員可以寫一個簡單的檔案並翻譯顯示的選單及文字至各種語言。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43381
 msgid "The <link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">FreeBSD Ports Collection</link> contains many applications with built-in support for wide or multibyte characters for several languages. Such applications include <literal>i18n</literal> in their names for easy identification. However, they do not always support the language needed."
-msgstr ""
+msgstr "<link xlink:href=\"@@URL_RELPREFIX@@/ports/index.html\">FreeBSD Ports 套件集</link>中含有許多內建支援寬字元或多位元組字元的應用程式可支援各種語言。該類型的應用程式在名稱上會註明 <literal>i18n</literal> 以易於辨識。雖然如此，但不一定支援您所需要的語言。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43388
 msgid "Some applications can be compiled with the specific charset. This is usually done in the port's <filename>Makefile</filename> or by passing a value to <application>configure</application>. Refer to the <acronym>i18n</acronym> documentation in the respective FreeBSD port's source for more information on how to determine the needed <application>configure</application> value or the port's <filename>Makefile</filename> to determine which compile options to use when building the port."
-msgstr ""
+msgstr "有一部份應用程式可以使用指定的字元集來編譯。通常會在 Port 的 <filename>Makefile</filename> 中設定，或者傳送參數給 <application>configure</application>。請參考各 FreeBSD Ports 原始碼中的 <acronym>i18n</acronym> 說明文件以取得更多有關需要的設定值資訊或 Port 的 <filename>Makefile</filename> 來了解在編譯時有那些可以使用的編譯選項。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:43400
@@ -41862,32 +41862,32 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:43767
 msgid "Applying security patches in a timely manner and upgrading to a newer release of an operating system are important aspects of ongoing system administration. FreeBSD includes a utility called <command>freebsd-update</command> which can be used to perform both these tasks."
-msgstr ""
+msgstr "即時套用安全性更新與升級作業系統到新的發行版本對管理一個持續運作的系統是重要的。FreeBSD 內含可以執行這兩項任務的工具程式，叫做 <command>freebsd-update</command>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43773
 msgid "This utility supports binary security and errata updates to FreeBSD, without the need to manually compile and install the patch or a new kernel. Binary updates are available for all architectures and releases currently supported by the security team. The list of supported releases and their estimated end-of-life dates are listed at <uri xlink:href=\"http://www.FreeBSD.org/security/\">http://www.FreeBSD.org/security/</uri>."
-msgstr ""
+msgstr "這個工具程式支援使用 Binary 對 FreeBSD 做安全性與和錯誤更新，不需要手動編譯和安裝修補 (Patch) 或新核心。目前由安全性團隊提供支援的 Binary 更新可用於所有的架構和發行版。支援的發行版清單及各自的支援期限列於 <uri xlink:href=\"http://www.FreeBSD.org/security/\">http://www.FreeBSD.org/security/</uri>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43780
 msgid "This utility also supports operating system upgrades to minor point releases as well as upgrades to another release branch. Before upgrading to a new release, review its release announcement as it contains important information pertinent to the release. Release announcements are available from <uri xlink:href=\"http://www.FreeBSD.org/releases/\">http://www.FreeBSD.org/releases/</uri>."
-msgstr ""
+msgstr "這個工具程式也支援升級作業系統到次要的發行版本以及升級到另一個發行版分支。在升級到新的發行版本前，需先查看該版本的發行公告，因為發行公告中包含了該發行版本的相關重要資訊。發行公告可自 <uri xlink:href=\"http://www.FreeBSD.org/releases/\">http://www.FreeBSD.org/releases/</uri> 取得。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:43787
 msgid "If a <command>crontab</command> utilizing the features of <citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</manvolnum></citerefentry> exists, it must be disabled before upgrading the operating system."
-msgstr ""
+msgstr "如果有使用 <command>crontab</command> 來執行 <citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</manvolnum></citerefentry>，則必須在升級作業系統前先關閉。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:43792
 msgid "This section describes the configuration file used by <command>freebsd-update</command>, demonstrates how to apply a security patch and how to upgrade to a minor or major operating system release, and discusses some of the considerations when upgrading the operating system."
-msgstr ""
+msgstr "本節將說明 <command>freebsd-update</command> 使用的設定檔， 示範如何套用安全性修補及如何升級到主要或次要的作業系統發行版，並討論升級作業系統的需要考量的事項。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43801
 msgid "The default configuration file for <command>freebsd-update</command> works as-is. Some users may wish to tweak the default configuration in <filename>/etc/freebsd-update.conf</filename>, allowing better control of the process. The comments in this file explain the available options, but the following may require a bit more explanation:"
-msgstr ""
+msgstr "<command>freebsd-update</command> 預設的設定檔不需變更即可運作。 部份使用者可能會想要調校位於 <filename>/etc/freebsd-update.conf</filename> 的預設設定檔來對程序有更好的控制。該設定檔中的註解均有說明可用的選項，但以下幾個項目可能需要進一步的說明："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43809
@@ -41900,7 +41900,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43812
 msgid "This parameter controls which parts of FreeBSD will be kept up-to-date. The default is to update the entire base system and the kernel. Individual components can instead be specified, such as <literal>src/base</literal> or <literal>src/sys</literal>. However, the best option is to leave this at the default as changing it to include specific items requires every needed item to be listed. Over time, this could have disastrous consequences as source code and binaries may become out of sync."
-msgstr ""
+msgstr "這個參數控制 FreeBSD 要保持最新版本的部份。 預設是更新整個基礎系統 (Base system) 和核心。 可指定個別元件，例如：<literal>src/base</literal> 或 <literal>src/sys</literal>。 不論如何，最好的選項是維持預設值，因為更改指定特定項目時需列出每一個需要的項目。時間一久可能會因為原始碼和 Binary 檔案沒有更新而造成慘重的後果。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43822
@@ -41914,7 +41914,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43826
 msgid "To leave specified directories, such as <filename>/bin</filename> or <filename>/sbin</filename>, untouched during the update process, add their paths to this statement. This option may be used to prevent <command>freebsd-update</command> from overwriting local modifications."
-msgstr ""
+msgstr "要保持特定的目錄在更新過程不被更動，例如 <filename>/bin</filename> 或 <filename>/sbin</filename>，可以將他們的路徑加到此敘述中。 這個選項可以防止 <command>freebsd-update</command> 覆蓋本地的修改。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43833
@@ -41929,7 +41929,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43838
 msgid "This option will only update unmodified configuration files in the specified directories. Any changes made by the user will prevent the automatic updating of these files. There is another option, <literal>KeepModifiedMetadata</literal>, which will instruct <command>freebsd-update</command> to save the changes during the merge."
-msgstr ""
+msgstr "這個選項只會更新特定目錄中未修改的設定檔。任何使用者修改的檔案都不會自動更新。 有另一個選項 <literal>KeepModifiedMetadata</literal> 可讓 <command>freebsd-update</command> 在合併時儲存使用者做的變更。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43846
@@ -41943,7 +41943,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43850
 msgid "List of directories with configuration files that <command>freebsd-update</command> should attempt to merge. The file merge process is a series of <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> patches similar to <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry>, but with fewer options. Merges are either accepted, open an editor, or cause <command>freebsd-update</command> to abort. When in doubt, backup <filename>/etc</filename> and just accept the merges. See <xref linkend=\"mergemaster\"/> for more information about <command>mergemaster</command>."
-msgstr ""
+msgstr "列出 <command>freebsd-update</command> 應嘗試合併的設定檔目錄。 檔案合併程序是指一系列類似 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 做的 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 修補動作， 但是選項比較少。 合併的動作包含接受、開啟編輯器，或讓 <command>freebsd-update</command> 中止。 如果有疑慮，請先備份 <filename>/etc</filename>，然後再接受合併。 更多關於 <command>mergemaster</command> 的資訊， 參見 <xref linkend=\"mergemaster\"/>。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43860
@@ -41957,7 +41957,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43864
 msgid "This directory is where all patches and temporary files are placed. In cases where the user is doing a version upgrade, this location should have at least a gigabyte of disk space available."
-msgstr ""
+msgstr "這個目錄是所有修補檔和暫存檔的存放處。當使用者進行版本升級時，這個位置應該要有至少 1GB 的可用磁碟空間。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43869
@@ -41973,7 +41973,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43875
 msgid "When this option is set to <literal>yes</literal>, <command>freebsd-update</command> will assume that the <literal>Components</literal> list is complete and will not attempt to make changes outside of the list. Effectively, <command>freebsd-update</command> will attempt to update every file which belongs to the <literal>Components</literal> list."
-msgstr ""
+msgstr "當這個選項設定為 <literal>yes</literal> 時，<command>freebsd-update</command> 將會假設 <literal>Components</literal> 清單已完成，將不會對清單之外的項目做變更。 實際上 <command>freebsd-update</command> 會將嘗試更新每一個屬於 <literal>Components</literal> 清單中的檔案。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:43885
@@ -41983,12 +41983,12 @@ msgstr "套用安全性修補"
 #. (itstool) path: sect2/para
 #: book.translate.xml:43887
 msgid "The process of applying FreeBSD security patches has been simplified, allowing an administrator to keep a system fully patched using <command>freebsd-update</command>. More information about FreeBSD security advisories can be found in <xref linkend=\"security-advisories\"/>."
-msgstr ""
+msgstr "套用 FreeBSD 安全性修補的過程已經被簡化，讓系統管理員可使用 <command>freebsd-update</command> 來保持系統更新。更多有關 FreeBSD 安全性報告的資訊可以參考 <xref linkend=\"security-advisories\"/>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43893
 msgid "FreeBSD security patches may be downloaded and installed using the following commands. The first command will determine if any outstanding patches are available, and if so, will list the files that will be modifed if the patches are applied. The second command will apply the patches."
-msgstr ""
+msgstr "FreeBSD 安全性修補可以使用以下指令下載並安裝。 第一個指令會偵測是否有可用的修補，如果有，將列出若執行修補後會變更的檔案清單。第二個指令將會套用修補。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43899
@@ -42001,12 +42001,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43902
 msgid "If the update applies any kernel patches, the system will need a reboot in order to boot into the patched kernel. If the patch was applied to any running binaries, the affected applications should be restarted so that the patched version of the binary is used."
-msgstr ""
+msgstr "如果更新套用了任何核心修補，系統將會需要重新開機以使用修補過的核心。如果修補套用在任何執行中的 Binary，受影響的應用程式應重新啟動來使用修補過的 Binary 版本。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43908
 msgid "The system can be configured to automatically check for updates once every day by adding this entry to <filename>/etc/crontab</filename>:"
-msgstr ""
+msgstr "加入以下項目至 <filename>/etc/crontab</filename> 可設定系統每天自動檢查更新一次："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:43912
@@ -42017,12 +42017,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43914
 msgid "If patches exist, they will automatically be downloaded but will not be applied. The <systemitem class=\"username\">root</systemitem> user will be sent an email so that the patches may be reviewed and manually installed with <command>freebsd-update install</command>."
-msgstr ""
+msgstr "如果有新的修補，該程式會會自動下載，但不會執行。<systemitem class=\"username\">root</systemitem> 使用者會收到電子郵件通知複查該修補並手動執行 <command>freebsd-update install</command> 安裝。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43920
 msgid "If anything goes wrong, <command>freebsd-update</command> has the ability to roll back the last set of changes with the following command:"
-msgstr ""
+msgstr "如果有發生任何錯誤，<command>freebsd-update</command> 可以使用以下指令還原最後所做的變更："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43924
@@ -42035,27 +42035,27 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43927
 msgid "Again, the system should be restarted if the kernel or any kernel modules were modified and any affected binaries should be restarted."
-msgstr ""
+msgstr "再次強調，若核心或任何核心模組有做過修改應重新啟動系統，以及任何受影響的 Binary 應重新執行。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43931
 msgid "Only the <filename>GENERIC</filename> kernel can be automatically updated by <command>freebsd-update</command>. If a custom kernel is installed, it will have to be rebuilt and reinstalled after <command>freebsd-update</command> finishes installing the updates. However, <command>freebsd-update</command> will detect and update the <filename>GENERIC</filename> kernel if <filename>/boot/GENERIC</filename> exists, even if it is not the current running kernel of the system."
-msgstr ""
+msgstr "只有 <filename>GENERIC</filename> 核心可使用 <command>freebsd-update</command> 自動更新。 如果有安裝自訂的核心，在 <command>freebsd-update</command> 完成安裝更新後，需要重新編譯和重新安裝。 不論如何，如果 <filename>/boot/GENERIC</filename> 存在，<command>freebsd-update</command> 會偵測並更新 <filename>GENERIC</filename> 核心，即使該核心並非目前系統正在執行的核心。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:43942
 msgid "Always keep a copy of the <filename>GENERIC</filename> kernel in <filename>/boot/GENERIC</filename>. It will be helpful in diagnosing a variety of problems and in performing version upgrades. Refer to <xref linkend=\"freebsd-update-custom-kernel-9x\"/> for instructions on how to get a copy of the <filename>GENERIC</filename> kernel."
-msgstr ""
+msgstr "隨時在 <filename>/boot/GENERIC</filename> 保留一份 <filename>GENERIC</filename> 核心的複本將有助於診斷各種問題及執行版本升級。請參考 <xref linkend=\"freebsd-update-custom-kernel-9x\"/> 來了解有關如何取得 <filename>GENERIC</filename> 核心的複本說明。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43950
 msgid "Unless the default configuration in <filename>/etc/freebsd-update.conf</filename> has been changed, <command>freebsd-update</command> will install the updated kernel sources along with the rest of the updates. Rebuilding and reinstalling a new custom kernel can then be performed in the usual way."
-msgstr ""
+msgstr "除非在 <filename>/etc/freebsd-update.conf</filename> 的預設設定檔被修改，否則 <command>freebsd-update</command> 將會安裝更新後的核心原始碼和其餘的更新，可依平常的方式執行重新編譯與重新安裝核心。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43957
 msgid "The updates distributed by <command>freebsd-update</command> do not always involve the kernel. It is not necessary to rebuild a custom kernel if the kernel sources have not been modified by <command>freebsd-update install</command>. However, <command>freebsd-update</command> will always update <filename>/usr/src/sys/conf/newvers.sh</filename>. The current patch level, as indicated by the <literal>-p</literal> number reported by <command>uname -r</command>, is obtained from this file. Rebuilding a custom kernel, even if nothing else changed, allows <command>uname</command> to accurately report the current patch level of the system. This is particularly helpful when maintaining multiple systems, as it allows for a quick assessment of the updates installed in each one."
-msgstr ""
+msgstr "以 <command>freebsd-update</command> 發行的更新並非總是會更新核心。若核心的原始碼沒有被 <command>freebsd-update install</command> 修改則不需要重新編譯自訂的核心。不論如何 <command>freebsd-update</command> 總是會更新 <filename>/usr/src/sys/conf/newvers.sh</filename>，目前修補的版本如 <command>uname -r</command> 執行結果中的 <literal>-p</literal> 數字，便是由該檔取得。即使沒有做任何其他變更，重新編譯自訂核心可讓 <command>uname</command> 準確的回報系統目前的修補版本。當維護多個系統時這會特別有用，因其可讓你快速評估每個系統安裝的更新。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:43975
@@ -42065,17 +42065,17 @@ msgstr "執行主要及次要版號升級"
 #. (itstool) path: sect2/para
 #: book.translate.xml:43977
 msgid "Upgrades from one minor version of FreeBSD to another, like from FreeBSD 9.0 to FreeBSD 9.1, are called <firstterm>minor version</firstterm> upgrades. <firstterm>Major version</firstterm> upgrades occur when FreeBSD is upgraded from one major version to another, like from FreeBSD 9.X to FreeBSD 10.X. Both types of upgrades can be performed by providing <command>freebsd-update</command> with a release version target."
-msgstr ""
+msgstr "從 FreeBSD 的次要版本升級到另一個版本，例如從 FreeBSD 9.0 到 FreeBSD 9.1, 叫作 <firstterm>次要版本</firstterm>更新。 <firstterm>主要版本</firstterm>更新發生在當 FreeBSD 從一個主要版本升級到主要版本升級到另一個主要版本時，例如從 FreeBSD 9.X 到 FreeBSD 10.X。 兩種更新都可以透過提供 <command>freebsd-update</command> 目標的發行版本來執行。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:43987
 msgid "If the system is running a custom kernel, make sure that a copy of the <filename>GENERIC</filename> kernel exists in <filename>/boot/GENERIC</filename> before starting the upgrade. Refer to <xref linkend=\"freebsd-update-custom-kernel-9x\"/> for instructions on how to get a copy of the <filename>GENERIC</filename> kernel."
-msgstr ""
+msgstr "如果系統正在執行自訂的核心，請在開始升級前，確定有保留一份 <filename>GENERIC</filename> 核心的複本在 <filename>/boot/GENERIC</filename>。 請參考 <xref linkend=\"freebsd-update-custom-kernel-9x\"/> 關於如何取得 <filename>GENERIC</filename> 核心複本的說明。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:43995
 msgid "The following command, when run on a FreeBSD 9.0 system, will upgrade it to FreeBSD 9.1:"
-msgstr ""
+msgstr "在 FreeBSD 9.0 系統執行以下指令，將會把系統升級至 FreeBSD 9.1："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:43998
@@ -42086,7 +42086,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44000
 msgid "After the command has been received, <command>freebsd-update</command> will evaluate the configuration file and current system in an attempt to gather the information necessary to perform the upgrade. A screen listing will display which components have and have not been detected. For example:"
-msgstr ""
+msgstr "收到這個指令後，<command>freebsd-update</command> 會開始評估設定檔和目前的系統來收集升級所需的資訊。 螢幕會顯示偵測到或沒偵測到的元件清單。例如："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:44007
@@ -42113,12 +42113,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44024
 msgid "At this point, <command>freebsd-update</command> will attempt to download all files required for the upgrade. In some cases, the user may be prompted with questions regarding what to install or how to proceed."
-msgstr ""
+msgstr "此時，<command>freebsd-update</command> 將會嘗試下載所有升級需要的檔案。 在某些情況，會詢問使用者一些關於要安裝什麼或要如何繼續。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44029
 msgid "When using a custom kernel, the above step will produce a warning similar to the following:"
-msgstr ""
+msgstr "當使用自訂核心，上述的步驟將會產生如下的警告："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:44032
@@ -42133,17 +42133,17 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44037
 msgid "This warning may be safely ignored at this point. The updated <filename>GENERIC</filename> kernel will be used as an intermediate step in the upgrade process."
-msgstr ""
+msgstr "這時的警告可以安全地忽略，升級過程將會使用更新過的 <filename>GENERIC</filename> 核心來進行。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44041
 msgid "Once all the patches have been downloaded to the local system, they will be applied. This process may take a while, depending on the speed and workload of the machine. Configuration files will then be merged. The merging process requires some user intervention as a file may be merged or an editor may appear on screen for a manual merge. The results of every successful merge will be shown to the user as the process continues. A failed or ignored merge will cause the process to abort. Users may wish to make a backup of <filename>/etc</filename> and manually merge important files, such as <filename>master.passwd</filename> or <filename>group</filename> at a later time."
-msgstr ""
+msgstr "所有的修補都下載到本地系統之後， 將會開始套用更新。這個過程可能會花點時間，取決於機器的速度和工作量。設定檔將會被合併。 合併的過程中當檔案被合併或是手動合併畫面上出現編輯器時需要使用者操作。 每一個成功合併的結果將會顯示給使用者並繼續程序，失敗或忽略合併將會使程序中斷。使用者可能想要備份 <filename>/etc</filename> 並稍後手動合併重要的檔案，例如：<filename>master.passwd</filename> 或 <filename>group</filename>。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:44055
 msgid "The system is not being altered yet as all patching and merging is happening in another directory. Once all patches have been applied successfully, all configuration files have been merged and it seems the process will go smoothly, the changes can be committed to disk by the user using the following command:"
-msgstr ""
+msgstr "所有的修補與合併動作會在另一個目錄進行，並不會直接修改。當成功套用所有修補，所有設定檔已合併且過程順利，使用者可使用以下指令將變更安裝到磁碟："
 
 #. (itstool) path: note/screen
 #. (itstool) path: sect2/screen
@@ -42156,7 +42156,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44065
 msgid "The kernel and kernel modules will be patched first. If the system is running with a custom kernel, use <citerefentry><refentrytitle>nextboot</refentrytitle><manvolnum>8</manvolnum></citerefentry> to set the kernel for the next boot to the updated <filename>/boot/GENERIC</filename>:"
-msgstr ""
+msgstr "核心與核心模組會先修補，若系統正在執行自訂的核心，使用 <citerefentry><refentrytitle>nextboot</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來設定下次開機使用更新過的 <filename>/boot/GENERIC</filename>："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:44070
@@ -42167,12 +42167,12 @@ msgstr ""
 #. (itstool) path: warning/para
 #: book.translate.xml:44073
 msgid "Before rebooting with the <filename>GENERIC</filename> kernel, make sure it contains all the drivers required for the system to boot properly and connect to the network, if the machine being updated is accessed remotely. In particular, if the running custom kernel contains built-in functionality usually provided by kernel modules, make sure to temporarily load these modules into the <filename>GENERIC</filename> kernel using the <filename>/boot/loader.conf</filename> facility. It is recommended to disable non-essential services as well as any disk and network mounts until the upgrade process is complete."
-msgstr ""
+msgstr "若機器在遠端進行更新，請在使用 <filename>GENERIC</filename> 核心重新開機前，請確定該核心含有所有系統所需的驅動程式以正常開機並連線至網路。特別是在執行的自訂核心有使用到由核心模組提供內建功能，請確定將這些模組已暫時使用 <filename>/boot/loader.conf</filename> 設定檔載入到 <filename>GENERIC</filename> 核心。建議關閉非必須的服務和磁碟與網路掛載直到升級程序完成。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44087
 msgid "The machine should now be restarted with the updated kernel:"
-msgstr ""
+msgstr "機器現在應使用更新過的核心重新開機："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:44090
@@ -42183,17 +42183,17 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44092
 msgid "Once the system has come back online, restart <command>freebsd-update</command> using the following command. Since the state of the process has been saved, <command>freebsd-update</command> will not start from the beginning, but will instead move on to the next phase and remove all old shared libraries and object files."
-msgstr ""
+msgstr "一旦系統重新上線，使用以下指令繼續 <command>freebsd-update</command>。 由於程序的狀態已被儲存，<command>freebsd-update</command> 不會重頭開始，但會進行下一個階段並移除所有舊的共用程式庫和目標檔。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:44102
 msgid "Depending upon whether any library version numbers were bumped, there may only be two install phases instead of three."
-msgstr ""
+msgstr "取決於是否有任何程式庫版本編號衝突，也可能只有兩個而不是三個安裝階段。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44107
 msgid "The upgrade is now complete. If this was a major version upgrade, reinstall all ports and packages as described in <xref linkend=\"freebsdupdate-portsrebuild\"/>."
-msgstr ""
+msgstr "升級程序現在完成了。如果所做的是主要的版本升級，則需依 <xref linkend=\"freebsdupdate-portsrebuild\"/> 的說明重新安裝所有的 Ports 和套件。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:44112
@@ -42203,12 +42203,12 @@ msgstr "在 FreeBSD 9.X 及之後版本自訂核心"
 #. (itstool) path: sect3/para
 #: book.translate.xml:44114
 msgid "Before using <command>freebsd-update</command>, ensure that a copy of the <filename>GENERIC</filename> kernel exists in <filename>/boot/GENERIC</filename>. If a custom kernel has only been built once, the kernel in <filename>/boot/kernel.old</filename> is the <literal>GENERIC</literal> kernel. Simply rename this directory to <filename>/boot/kernel</filename>."
-msgstr ""
+msgstr "在使用 <command>freebsd-update</command> 前，請確定已有 <filename>GENERIC</filename> 核心的複本於 <filename>/boot/GENERIC</filename>。若只編譯過一次自訂核心，那麼 <filename>/boot/kernel.old</filename> 就是 <literal>GENERIC</literal> 核心，只需要將該目錄重新命名為 <filename>/boot/kernel</filename>。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44122
 msgid "If a custom kernel has been built more than once or if it is unknown how many times the custom kernel has been built, obtain a copy of the <literal>GENERIC</literal> kernel that matches the current version of the operating system. If physical access to the system is available, a copy of the <literal>GENERIC</literal> kernel can be installed from the installation media:"
-msgstr ""
+msgstr "若有編譯自訂核心過超過一次，或已經不曉得編譯自訂核心的次數，則需取得與目前作業系統版本相符的 <literal>GENERIC</literal> 核心複本。若可直接操作實體系統，則可以從安裝媒體取得 <literal>GENERIC</literal> 核心複本："
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:44130
@@ -42222,7 +42222,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:44134
 msgid "Alternately, the <literal>GENERIC</literal> kernel may be rebuilt and installed from source:"
-msgstr ""
+msgstr "或者，可以從原始碼重新編譯 <literal>GENERIC</literal> 核心："
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:44137
@@ -42235,12 +42235,12 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:44140
 msgid "For this kernel to be identified as the <literal>GENERIC</literal> kernel by <command>freebsd-update</command>, the <filename>GENERIC</filename> configuration file must not have been modified in any way. It is also suggested that the kernel is built without any other special options."
-msgstr ""
+msgstr "這個核心要被 <command>freebsd-update</command> 認做 <literal>GENERIC</literal> 核心，<filename>GENERIC</filename> 設定檔必須不能做任何修改，也建議在編譯核心時不要使用其他特殊選項。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44148
 msgid "Rebooting into the <filename>GENERIC</filename> kernel is not required as <command>freebsd-update</command> only needs <filename>/boot/GENERIC</filename> to exist."
-msgstr ""
+msgstr "<command>freebsd-update</command> 僅需要 <filename>/boot/GENERIC</filename> 存在便可，因此不須重新開機進入 <filename>GENERIC</filename>。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:44154
@@ -42250,12 +42250,12 @@ msgstr "主要版號升級後的套件升級"
 #. (itstool) path: sect3/para
 #: book.translate.xml:44157
 msgid "Generally, installed applications will continue to work without problems after minor version upgrades. Major versions use different Application Binary Interfaces (<acronym>ABI</acronym>s), which will break most third-party applications. After a major version upgrade, all installed packages and ports need to be upgraded. Packages can be upgraded using <command>pkg upgrade</command>. To upgrade installed ports, use a utility such as <package>ports-mgmt/portmaster</package>."
-msgstr ""
+msgstr "一般來說，已安裝的應用程式在次要版本升級仍可沒問題的正常執行。但主要版本升級會採用不同的應用程式 Binary 介面 (Application Binary Interfaces, <acronym>ABI</acronym>s)，會導致大部份第三方應用程式無法正常執行。 因此在主要版本升級後，需要升及所有已安裝的套件和 Ports，套件可以使用 <command>pkg upgrade</command> 來升級，而 Ports 則需使用 <package>ports-mgmt/portmaster</package> 工具。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44168
 msgid "A forced upgrade of all installed packages will replace the packages with fresh versions from the repository even if the version number has not increased. This is required because of the ABI version change when upgrading between major versions of FreeBSD. The forced upgrade can be accomplished by performing:"
-msgstr ""
+msgstr "強制升級所有已安裝的套件會使用檔案庫中新版本的套件來取得目前套件，即使該版號沒有增加。由於在升級 FreeBSD 主要版本時會變更 ABI 版本，因此這是必要動作。強制升級可以執行以下指令來完成："
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:44175
@@ -42266,27 +42266,27 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:44177
 msgid "A rebuild of all installed applications can be accomplished with this command:"
-msgstr ""
+msgstr "重新編譯所有已安裝的應用程式可以執行以下指令來完成："
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44182
 msgid "This command will display the configuration screens for each application that has configurable options and wait for the user to interact with those screens. To prevent this behavior, and use only the default options, include <option>-G</option> in the above command."
-msgstr ""
+msgstr "這個指令會在安裝每個應用程式有可設定選項時顯示設定畫面，並會等待使用者操作該畫面，要避免這種情況並使用預設的設定選項，可在上述指令加上 <option>-G</option> 參數。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44188
 msgid "Once the software upgrades are complete, finish the upgrade process with a final call to <command>freebsd-update</command> in order to tie up all the loose ends in the upgrade process:"
-msgstr ""
+msgstr "完成軟體升級後，最後需執行 <command>freebsd-update</command> 來完成最後的升級動作："
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44195
 msgid "If the <filename>GENERIC</filename> kernel was temporarily used, this is the time to build and install a new custom kernel using the instructions in <xref linkend=\"kernelconfig\"/>."
-msgstr ""
+msgstr "若有使用臨時 <filename>GENERIC</filename> 核心，便應在此時依據 <xref linkend=\"kernelconfig\"/> 的說明編譯並安裝新的自訂核心。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:44199
 msgid "Reboot the machine into the new FreeBSD version. The upgrade process is now complete."
-msgstr ""
+msgstr "重新開機使用新的 FreeBSD 版本後，升級程序便正式完成。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:44205
