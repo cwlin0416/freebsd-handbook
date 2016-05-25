@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-04-08 15:36+0800\n"
-"PO-Revision-Date: 2016-05-25 17:18+0800\n"
+"PO-Revision-Date: 2016-05-25 19:33+0800\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42296,17 +42296,17 @@ msgstr "比對系統狀態"
 #. (itstool) path: sect2/para
 #: book.translate.xml:44207
 msgid "The state of the installed FreeBSD version against a known good copy can be tested using <command>freebsd-update IDS</command>. This command evaluates the current version of system utilities, libraries, and configuration files and can be used as a built-in Intrusion Detection System (<acronym>IDS</acronym>)."
-msgstr ""
+msgstr "已安裝的 FreeBSD 版本狀態可以使用 <command>freebsd-update IDS</command> 與另一個已知良好的複本來做比對測試。 這個指令會評估目前版本的系統工具，程式庫和設定檔，可做為內建的入侵偵測系統來使用 (Intrusion Detection System, <acronym>IDS</acronym>)。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:44215
 msgid "This command is not a replacement for a real <acronym>IDS</acronym> such as <package>security/snort</package>. As <command>freebsd-update</command> stores data on disk, the possibility of tampering is evident. While this possibility may be reduced using <varname>kern.securelevel</varname> and by storing the <command>freebsd-update</command> data on a read-only file system when not in use, a better solution would be to compare the system against a secure disk, such as a <acronym>DVD</acronym> or securely stored external <acronym>USB</acronym> disk device. An alternative method for providing <acronym>IDS</acronym> functionality using a built-in utility is described in <xref linkend=\"security-ids\"/>"
-msgstr ""
+msgstr "這個指令並非用來取代真正的 <acronym>IDS</acronym>，如 <package>security/snort</package>。由於 <command>freebsd-update</command> 儲存在磁碟上，被竄改的可能性是顯而易見的，雖然這個可能性會因使用 <varname>kern.securelevel</varname> 以及將 <command>freebsd-update</command> 在不使用時以唯讀儲存而降低，最好的解決方案是能夠與安全的磁碟，如 <acronym>DVD</acronym> 或儲存在外部的 <acronym>USB</acronym> 磁碟裝置比對系統。替代的方式是使用內建工具的 <acronym>IDS</acronym> 功能，在 <xref linkend=\"security-ids\"/> 有詳細說明。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44230
 msgid "To begin the comparison, specify the output file to save the results to:"
-msgstr ""
+msgstr "要開始比對，需指定輸出的檔案來儲存結果："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:44233
@@ -42317,12 +42317,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44235
 msgid "The system will now be inspected and a lengthy listing of files, along with the <acronym>SHA256</acronym> hash values for both the known value in the release and the current installation, will be sent to the specified output file."
-msgstr ""
+msgstr "系統將會開始檢查並且會產生相當長的檔案清單，內容包含發行版本已知的與目前安裝版本的 <acronym>SHA256</acronym> 雜湊值會儲存到指定的輸出檔。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:44241
 msgid "The entries in the listing are extremely long, but the output format may be easily parsed. For instance, to obtain a list of all files which differ from those in the release, issue the following command:"
-msgstr ""
+msgstr "清單中的項目會相當的多，但輸出的格式可以很簡單的用來分析。例如，要取得與發行版本不同的檔案清單，可使用以下指令："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:44246
@@ -42338,7 +42338,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44252
 msgid "This sample output has been truncated as many more files exist. Some files have natural modifications. For example, <filename>/etc/passwd</filename> will be modified if users have been added to the system. Kernel modules may differ as <command>freebsd-update</command> may have updated them. To exclude specific files or directories, add them to the <literal>IDSIgnorePaths</literal> option in <filename>/etc/freebsd-update.conf</filename>."
-msgstr ""
+msgstr "實際的檔案會更多，此範例的輸出已精簡。部份檔案可能本來就會被修改。例如 <filename>/etc/passwd</filename> 在新增使用者到系統時會被修改，核心模組也有可能因使用 <command>freebsd-update</command> 更新而有所不同。要排除特定的檔案或目錄可將這些檔案或目錄加入到 <filename>/etc/freebsd-update.conf</filename> 中的 <literal>IDSIgnorePaths</literal> 選項。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:44264
