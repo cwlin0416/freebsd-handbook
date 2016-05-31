@@ -687,7 +687,13 @@
     </legalnotice>
 
     <abstract>
-      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 9.3-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.2-RELEASE</emphasis>。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中。 許多章節仍未完成，已完成的部份也有些需要更新。 如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
+      <para xml:lang="en">Welcome to FreeBSD! This handbook covers the installation
+	and day to day use of
+	<emphasis>FreeBSD 9.3-RELEASE</emphasis> and
+	<emphasis>FreeBSD 10.3-RELEASE</emphasis>.  This book is
+	the result of ongoing work by many individuals.  Some sections
+	might be outdated.  Those interested in helping to update and
+	expand this document should send email to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD documentation project mailing list</link>.</para>
 
       <para>在 <link xlink:href="http://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到這份文件的最新版本，舊版文件可從 <uri xlink:href="http://docs.FreeBSD.org/doc/">http://docs.FreeBSD.org/doc/</uri> 取得，也可以從 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/doc/">FreeBSD FTP 伺服器</link> 或是眾多 <link linkend="mirrors-ftp">鏡像網站</link> 下載不同格式的資料。 如果比較偏好實體書面資料，那可以在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
@@ -1373,7 +1379,7 @@
 
     <indexterm xml:lang="en"><primary>4.4BSD-Lite</primary></indexterm>
 
-    <para>FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class="registered">Itanium</trademark>), AMD64, Sun <trademark class="registered">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend="history">FreeBSD 歷史</link>， 對於 FreeBSD 的最新版本介紹，請看 <link xlink:href="@@URL_RELPREFIX@@/releases">最新的發行版本</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、金費)， 請看 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributing/index.html">如何對 FreeBSD 有貢獻</link>。</para>
+    <para>FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class="registered">Itanium</trademark>), AMD64, Sun <trademark class="registered">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend="history">FreeBSD 歷史</link>， 對於 FreeBSD 的最新版本介紹，請看 <link xlink:href="@@URL_RELPREFIX@@/releases">最新的發行版本</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、金費)， 請看 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html">如何對 FreeBSD 有貢獻</link>。</para>
 
     <sect2 xml:id="os-overview">
       <title>FreeBSD 能做什麼？</title>
@@ -2117,13 +2123,13 @@
 	<secondary>development model</secondary>
       </indexterm>
 
-      <para>FreeBSD 的開發是一個非常開放且具彈性的過程，就像從 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributors/article.html">貢獻者名單</link> 所看到的，是由全世界成千上萬的貢獻者發展起來的。 FreeBSD 的開發基礎架構允許數以百計的開發者透過網際網路協同工作。 我們也經常關注著那些對我們的計畫感興趣的新開發者和新的創意， 那些有興趣更進一步參與計劃的人只需要在 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">FreeBSD 技術討論郵遞論壇</link> 連繫我們。 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-announce">FreeBSD 公告郵遞論壇</link> 對那些希望了解我們進度的人也是相當有用的。</para>
+      <para>FreeBSD 的開發是一個非常開放且具彈性的過程，就像從 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributors/article.html">貢獻者名單</link> 所看到的，是由全世界成千上萬的貢獻者發展起來的。 FreeBSD 的開發基礎架構允許數以百計的開發者透過網際網路協同工作。 我們也經常關注著那些對我們的計畫感興趣的新開發者和新的創意， 那些有興趣更進一步參與計劃的人只需要在 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">FreeBSD 技術討論郵遞論壇</link> 連繫我們。 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-announce">FreeBSD 公告郵遞論壇</link> 對那些希望了解我們進度的人也是相當有用的。</para>
 
       <para>無論是單獨開發者或者封閉式的團隊合作，多瞭解 FreeBSD 計劃和它的開發過程會是不錯的︰</para>
 
       <variablelist>
 	<varlistentry>
-	  <term>SVN 儲藏庫<anchor xml:id="development-cvs-repository"/></term>
+	  <term>SVN 檔案庫<anchor xml:id="development-cvs-repository"/></term>
 
 	  <listitem>
 	    <para><indexterm>
@@ -2148,7 +2154,7 @@
 	  <term>提交者名單<anchor xml:id="development-committers"/></term>
 
 	  <listitem>
-	    <para>所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion tree 有 <emphasis>寫入</emphasis> 權限， 並依不同授權部分，而有不同權限可修改 FreeBSD source。 (<quote>committer</quote> 這詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給儲藏庫)。 Anyone can submit a bug to the <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug.</para>
+	    <para>所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion tree 有 <emphasis>寫入</emphasis> 權限， 並依不同授權部分，而有不同權限可修改 FreeBSD source。 (<quote>committer</quote> 這詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 Anyone can submit a bug to the <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug.</para>
 	  </listitem>
 	</varlistentry>
 
@@ -2172,7 +2178,7 @@
 	  <listitem>
 	    <para>最後一點，但這點絕非最不重要的， 最大的開發者團隊就是持續為我們提供回饋以及錯誤修正的使用者自己。 與 FreeBSD 非核心開發者互動的主要方式，便是透過訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">FreeBSD 技術討論郵遞論壇</link> 來進行溝通，這方面可參考，請參閱 <xref linkend="eresources"/> 以瞭解各式不同的 FreeBSD 郵遞論壇。</para>
 
-	    <para><citetitle><link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributors/article.html">FreeBSD 貢獻者名單</link></citetitle> <indexterm>
+	    <para><citetitle><link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributors/article.html">FreeBSD 貢獻者名單</link></citetitle> <indexterm>
 		<primary>contributors</primary>
 	      </indexterm> 相當長且不斷成長中， 只要有貢獻就會被列入其中， 要不要立即考慮貢獻 FreeBSD 一些回饋呢？</para>
 
@@ -2506,7 +2512,15 @@
       <step>
 	<title>檢查 FreeBSD 勘誤表</title>
 
-	<para>儘管 FreeBSD Project 努力確保每個 FreeBSD 發行版能夠儘可能地穩定，錯誤偶爾還是會悄悄出現。 有極小的機會錯誤會影響安裝過程。 當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/10.2R/errata.html">http://www.freebsd.org/releases/10.2R/errata.html</link>)。 安裝前要檢查勘誤表，確保沒有會影響到安裝的問題。</para>
+	<para xml:lang="en">Although the FreeBSD Project strives to ensure that
+	  each release of FreeBSD is as stable as possible, bugs
+	  occasionally creep into the process.  On very rare occasions
+	  those bugs affect the installation process.  As these
+	  problems are discovered and fixed, they are noted in the
+	  FreeBSD Errata (<link xlink:href="@@URL_RELPREFIX@@/releases/10.3R/errata.html">http://www.freebsd.org/releases/10.3R/errata.html</link>)
+	  on the FreeBSD web site.  Check the errata before installing to
+	  make sure that there are no problems that might affect the
+	  installation.</para>
 
 	<para>所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">http://www.freebsd.org/releases/index.html</link>)。</para>
       </step>
@@ -2596,7 +2610,7 @@
 	is corrupt and must be downloaded again.</para>
 
       <sect3 xml:id="bsdinstall-usb">
-	<title xml:lang="en">Writing an Image File to <acronym>USB</acronym></title>
+	<title>寫入映象檔到 <acronym>USB</acronym></title>
 
 	<para xml:lang="en">The <filename>*.img</filename> file is an
 	  <emphasis>image</emphasis> of the complete contents of a
@@ -7474,7 +7488,7 @@ Swap: 2048M Total, 2048M Free
 	  <secondary>search</secondary>
 	</indexterm>
 
-	<para xml:id="pkg-search">要搜尋 Binary 套件儲藏庫中的應用程式可：</para>
+	<para xml:id="pkg-search">要搜尋 Binary 套件檔案庫中的應用程式可：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg search <replaceable>subversion</replaceable></userinput>
 git-subversion-<replaceable>1.9.2</replaceable>
@@ -7504,7 +7518,7 @@ devel/subversion
 devel/subversion-book
 devel/subversion-static</screen>
 
-	<para><command>pkg search</command> 支援使用 Shell 萬手字元(globs)、正規表示法、描述或儲藏庫中的其他其他內容。在安裝 <package>ports-mgmt/pkg</package> 或 <package>ports-mgmt/pkg-devel</package> 之後，可參考 <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多詳細資訊。</para>
+	<para><command>pkg search</command> 支援使用 Shell 萬手字元(globs)、正規表示法、描述或檔案庫中的其他其他內容。在安裝 <package>ports-mgmt/pkg</package> 或 <package>ports-mgmt/pkg-devel</package> 之後，可參考 <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多詳細資訊。</para>
       </listitem>
 
       <listitem>
@@ -7597,7 +7611,7 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
 
       <programlisting xml:lang="en">WITH_PKGNG=	yes</programlisting>
 
-      <para>預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站。若要取得有關編譯自訂套件儲藏庫的資訊，請參考 
+      <para>預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站。若要取得有關編譯自訂套件檔案庫的資訊，請參考 
 <xref linkend="ports-poudriere"/></para>
 
       <para>其他 <application>pkg</application> 設定選項說明請參考 <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
@@ -7828,61 +7842,39 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
   <sect1 xml:id="ports-using">
     <title>使用 Ports 套件集</title>
 
-    <para xml:lang="en">The Ports Collection is a set of
-      <filename>Makefiles</filename>, patches, and description files
-      stored in <filename>/usr/ports</filename>.  This set of files is
-      used to compile and install applications on FreeBSD.  Before an
-      application can be compiled using a port, the Ports Collection
-      must first be installed.  If it was not installed during the
-      installation of FreeBSD, use one of the following methods to
-      install it:</para>
+    <para>Ports 套件集是指一系列儲存在 <filename>/usr/ports</filename> 的 <filename>Makefiles</filename>、修補及描述檔，這一系列檔案用來編譯與安裝在 FreeBSD 上的應用程式。在使用 Port 安裝應用程式前，必須先安裝 Ports 套件集，若未在安裝 FreeBSD 的過程式中安裝，可使用下列其中一種方法來安裝：</para>
 
     <procedure xml:id="ports-using-portsnap-method">
-      <title xml:lang="en">Portsnap Method</title>
+      <title>Portsnap 方法</title>
 
-      <para xml:lang="en">The base system of FreeBSD includes
-	<application>Portsnap</application>.  This is a fast and
-	user-friendly tool for retrieving the Ports Collection and
-	is the recommended choice for most users.  This utility
-	connects to a FreeBSD site, verifies the secure key, and
-	downloads a new copy of the Ports Collection.  The key is used
-	to verify the integrity of all downloaded files.</para>
+      <para>FreeBSD 的基礎系統內含 <application>Portsnap</application>，這是一個可用來取得 Ports 套件集簡單又快速的工具，較建議多數使用者使用這個方式。此工具會連線到 FreeBSD 的網站，驗証密鑰，然後下載 Ports 套件集的新複本。該金鑰是要用來檢驗所有已下載檔案的完整性。</para>
 
       <step>
-	<para xml:lang="en">To download a compressed snapshot of the Ports
-	  Collection into
-	  <filename>/var/db/portsnap</filename>:</para>
+	<para>要下載壓縮後的 Ports 套件集快照 (Snapshot) 到 <filename>/var/db/portsnap</filename>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portsnap fetch</userinput></screen>
       </step>
 
       <step>
-	<para xml:lang="en">When running <application>Portsnap</application> for the
-	  first time, extract the snapshot into
-	  <filename>/usr/ports</filename>:</para>
+	<para>當第一次執行 <application>Portsnap</application> 時，要先解壓縮快照到 <filename>/usr/ports</filename>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portsnap extract</userinput></screen>
       </step>
 
       <step>
-	<para xml:lang="en">After the first use of
-	  <application>Portsnap</application> has been completed as
-	  shown above, <filename>/usr/ports</filename> can be updated
-	  as needed by running:</para>
+	<para>在完成上述第一次使用 <application>Portsnap</application> 的動作之後，往後可隨需要執行以下指令來更新 <filename>/usr/ports</filename> ：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portsnap fetch</userinput>
 <prompt>#</prompt> <userinput>portsnap update</userinput></screen>
 
-	<para xml:lang="en">When using <literal>fetch</literal>, the
-	  <literal>extract</literal> or the <literal>update</literal>
-	  operation may be run consecutively, like so:</para>
+	<para>當使用 <literal>fetch</literal> 時也可同時執行 <literal>extract</literal> 或 <literal>update</literal> 如：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portsnap fetch update</userinput></screen>
       </step>
     </procedure>
 
     <procedure xml:id="ports-using-subversion-method">
-      <title xml:lang="en">Subversion Method</title>
+      <title>Subversion 方法</title>
 
       <para xml:lang="en">If more control over the ports tree is needed or if local
 	changes need to be maintained,
@@ -7924,55 +7916,33 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </step>
     </procedure>
 
-    <para xml:lang="en">The Ports Collection installs a series of directories
-      representing software categories with each category having
-      a subdirectory for each application.  Each subdirectory, also
-      referred to as a ports skeleton, contains a set of files that
-      tell FreeBSD how to compile and install that program.  Each port
-      skeleton includes these files and directories:</para>
+    <para>Ports 套件集會安裝一系列代表軟體分類的目錄，每個分類底下的子目錄代表每隻應用程式。 這些子目錄又稱做 Ports Skeleton，裡面檔案是用來告訴 FreeBSD 如何編譯與安裝該程式，每個 Port Skeleton 會含有以下檔案及目錄：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en"><filename>Makefile</filename>: contains statements that
-	  specify how the application should be compiled and where
-	  its components should be installed.</para>
+	<para><filename>Makefile</filename>: 內含用來說明應用程式要如何編譯、要安裝該程式到那的敘述句。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><filename>distinfo</filename>: contains the names and
-	  checksums of the files that must be downloaded to build the
-	  port.</para>
+	<para><filename>distinfo</filename>: 內含編譯 Port 必須下載的檔案名稱以及校驗碼 (Checksums)。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><filename>files/</filename>: this directory contains
-	  any patches needed for the program to compile and install
-	  on FreeBSD.  This directory may also contain other files used
-	  to build the port.</para>
+	<para><filename>files/</filename>: 此目錄含有編譯與安裝程式到 FreeBSD 時所需的修補檔。此目錄也可能含有其他用來編譯 Ports 的檔案。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><filename>pkg-descr</filename>: provides a more detailed
-	  description of the program.</para>
+	<para><filename>pkg-descr</filename>: 提供程式更詳細的說明。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><filename>pkg-plist</filename>:  a list of all the
-	  files that will be installed by the port.  It also tells
-	  the ports system which files to remove upon
-	  deinstallation.</para>
+	<para><filename>pkg-plist</filename>: Port 安裝的所有檔案清單，也同時會告訴 Ports 系統解除安裝時要移除那一些檔案。</para>
       </listitem>
     </itemizedlist>
 
-    <para xml:lang="en">Some ports include <filename>pkg-message</filename> or
-      other files to handle special situations.  For more details
-      on these files, and on ports in general, refer to the <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/index.html">FreeBSD
-	Porter's Handbook</link>.</para>
+    <para>部份 Ports 含有 <filename>pkg-message</filename> 或其他檔案用來處理特殊情況。要取得有關這些檔案的詳細資訊，以及 Ports 的概要可參考 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/index.html">FreeBSD Porter's Handbook</link>。</para>
 
-    <para xml:lang="en">The port does not include the actual source code, also
-      known as a <filename>distfile</filename>.  The extract portion
-      of building a port will automatically save the downloaded
-      source to <filename>/usr/ports/distfiles</filename>.</para>
+    <para>Port 中並不含實際的原始碼，即為 <filename>distfile</filename>，在編譯 Port 解壓縮時會自動下載的原始碼到 <filename>/usr/ports/distfiles</filename>。</para>
 
     <sect2 xml:id="ports-skeleton">
       <title>安裝 Ports</title>
@@ -8040,100 +8010,41 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </note>
 
       <sect3>
-	<title>自訂 Ports 安裝內容</title>
+	<title>自訂 Ports 安裝</title>
 
-	<para xml:lang="en">Some ports provide build options which can be used to
-	  enable or disable application components, provide security
-	  options, or allow for other customizations.  Examples
-	  include <package>www/firefox</package>,
-	  <package>security/gpgme</package>, and
-	  <package>mail/sylpheed-claws</package>.
-	  If the port depends upon other ports which have configurable
-	  options, it may pause several times for user interaction
-	  as the default behavior is to prompt the user to select
-	  options from a menu.  To avoid this, run <command>make
-	    config-recursive</command> within the port skeleton to do
-	  this configuration in one batch.  Then, run <command>make
-	    install [clean]</command> to compile and install the
-	  port.</para>
+	<para>部份 Ports 提供編譯選項，可用來開啟或關閉應用程式中的元件、安全選項、或其他允許自訂的項目。這類的應用程式例子包括 <package>www/firefox</package>, <package>security/gpgme</package> 以及 <package>mail/sylpheed-claws</package>。若 Port 相依的其他 Port 有可設定的選項時，預設的模式會提示使用者選擇選單中的選項，這可能會讓安裝的過程暫停讓使用者操作數次。要避免這個情況，可在 Port skeleton 中執行 <command>make config-recursive</command> 來一次設定所有選項。然後再執行 <command>make install [clean]</command> 編譯與安裝該 Port。</para>
 
 	<tip>
-	  <para xml:lang="en">When using
-	    <buildtarget xml:lang="en">config-recursive</buildtarget>, the list of
-	    ports to configure are gathered by the
-	    <buildtarget xml:lang="en">all-depends-list</buildtarget> target.  It is
-	    recommended to run <command>make
-	      config-recursive</command> until all dependent ports
-	    options have been defined, and ports options screens no
-	    longer appear, to be certain that all dependency options
-	    have been configured.</para>
+	  <para>使用 <buildtarget>config-recursive</buildtarget> 時，會使用 <buildtarget>all-depends-list</buildtarget> Target 來收集所有要設定 Port 清單。建議執行 <command>make config-recursive</command> 直到所有相依的 Port 選項都已定義，直到 Ports 的選項畫面不會再出現，來確定所有相依的選項都已經設定。</para>
 	</tip>
 
-	<para xml:lang="en">There are several ways to revisit a port's build options
-	  menu in order to add, remove, or change these options after
-	  a port has been built.  One method is to
-	  <command>cd</command> into the directory containing the
-	  port and type <command>make config</command>.  Another
-	  option is to use <command>make showconfig</command>.
-	  Another option is to execute <command>make
-	    rmconfig</command> which will remove all selected options
-	  and allow you to start over.  All of these options, and
-	  others, are explained in great detail in
-	  <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry>.</para>
+	<para>有許多方式可以重新進入 Port 的編譯選項清單，以便在編譯 Port 之後加入、移除或更改這些選項。方法之一是 <command>cd</command> 進入含有 Port 的目錄並輸入 <command>make config</command>。還有另一個方法是使用 <command>make showconfig</command>。最後一個方法是執行 <command>make rmconfig</command> 來移除所有曾選擇過的選項，讓您能夠重新設定。這些方法在 <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry> 中都有詳細的說明。</para>
 
-	<para xml:lang="en">The ports system uses <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>1</manvolnum></citerefentry> to download the
-	  source files, which supports various environment variables.
-	  The <envar>FTP_PASSIVE_MODE</envar>,
-	  <envar>FTP_PROXY</envar>, and <envar>FTP_PASSWORD</envar>
-	  variables may need to be set if the FreeBSD system is behind
-	  a firewall or FTP/HTTP proxy.  See <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>3</manvolnum></citerefentry> for the
-	  complete list of supported variables.</para>
+	<para>Ports 系統使用 <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來下載檔案，它支援許多的環境變數可設定。若 FreeBSD 系統在防火牆或 FTP/HTTP 代理伺服器後面，可以設定 <envar>FTP_PASSIVE_MODE</envar>, <envar>FTP_PROXY</envar> 以及 <envar>FTP_PASSWORD</envar> 變數。請參考 <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>3</manvolnum></citerefentry> 取得完整支援的變數清單。</para>
 
-	<para xml:lang="en">For users who cannot be connected to the Internet all
-	  the time, <command>make fetch</command> can be run within
-	  <filename>/usr/ports</filename>, to fetch all distfiles, or
-	  within a category, such as
-	  <filename>/usr/ports/net</filename>, or within the specific
-	  port skeleton.  Note that if a port has any dependencies,
-	  running this command in a category or ports skeleton will
-	  <emphasis>not</emphasis> fetch the distfiles of ports from
-	  another category.  Instead, use <command>make
-	    fetch-recursive</command> to also fetch the distfiles for
-	  all the dependencies of a port.</para>
+	<para>對於那些無法一直連線到網際網路的使用者，可在 <filename>/usr/ports</filename> 下執行 <command>make fetch</command> 來下載所有的 distfiles，或是可在某個分類的目錄中，例如 <filename>/usr/ports/net</filename>，或指定的 Port Skeleton 中執行。要注意的是，若 Port 有任何的相依，在分類或 Ports Skeleton 中執行此指令並 <emphasis>不會</emphasis> 下載相依在其他分類的 Port distfiles。可使用 <command>make fetch-recursive</command> 來下載所有相依 Port 的 distfiles。</para>
 
-	<para xml:lang="en">In rare cases, such as when an organization has a local
-	  distfiles repository, the <varname>MASTER_SITES</varname>
-	  variable can be used to override the download locations
-	  specified in the <filename>Makefile</filename>.  When using,
-	  specify the alternate location:</para>
+	<para>在部份少數情況，例如當公司或組織有自己的本地 distfiles 檔案庫，可使用 <varname>MASTER_SITES</varname> 變數來覆蓋在 <filename>Makefile</filename> 中指定的下載位址。當要指定替代的位址時可：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/<replaceable>directory</replaceable></userinput>
 <prompt>#</prompt> <userinput>make MASTER_SITE_OVERRIDE= \
 <replaceable>ftp://ftp.organization.org/pub/FreeBSD/ports/distfiles/</replaceable> fetch</userinput></screen>
 
-	<para xml:lang="en">The <varname>WRKDIRPREFIX</varname> and
-	  <varname>PREFIX</varname> variables can override the default
-	  working and target directories.  For example:</para>
+	<para>也可使用 <varname>WRKDIRPREFIX</varname> 及 <varname>PREFIX</varname> 變數來覆蓋預設的工作及目標目錄。例如：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>make WRKDIRPREFIX=/usr/home/example/ports install</userinput></screen>
 
-	<para xml:lang="en">will compile the port in
-	  <filename>/usr/home/example/ports</filename> and install
-	  everything under <filename>/usr/local</filename>.</para>
+	<para>會編譯在 <filename>/usr/home/example/ports</filename> 的 Port 並安裝所有東西到 <filename>/usr/local</filename> 下。</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>make PREFIX=/usr/home/example/local install</userinput></screen>
 
-	<para xml:lang="en">will compile the port in <filename>/usr/ports</filename>
-	  and install it in
-	  <filename>/usr/home/example/local</filename>.  And:</para>
+	<para>會編譯在 <filename>/usr/ports</filename> Port 並安裝到 <filename>/usr/home/example/local</filename>。然後：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>make WRKDIRPREFIX=../ports PREFIX=../local install</userinput></screen>
 
-	<para xml:lang="en">will combine the two.</para>
+	<para>來同時設定工作及目標目錄。</para>
 
-	<para xml:lang="en">These can also be set as environmental variables.  Refer
-	  to the manual page for your shell for instructions on how to
-	  set an environmental variable.</para>
+	<para>這些變數也可做為環境變數設定，請參考您使用的 Shell 操作手冊來取得如何設定環境變數的說明。</para>
       </sect3>
     </sect2>
 
@@ -8145,12 +8056,9 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
 	<secondary>removing</secondary>
       </indexterm>
 
-      <para xml:lang="en">Installed ports can be uninstalled using <command>pkg
-	  delete</command>.  Examples for using this command can be
-	found in the <citerefentry><refentrytitle>pkg-delete</refentrytitle><manvolnum>8</manvolnum></citerefentry> manual page.</para>
+      <para>安裝的 Ports 可以使用 <command>pkg delete</command> 解除安裝。 使用這個指令的範例可以在 <citerefentry><refentrytitle>pkg-delete</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊找到。</para>
 
-      <para xml:lang="en">Alternately, <command>make deinstall</command> can be
-	run in the port's directory:</para>
+      <para>或者，可在 Port 的目錄下執行 <command>make deinstall</command>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/sysutils/lsof</userinput>
 <userinput>make deinstall</userinput>
@@ -8163,12 +8071,7 @@ Deinstallation has been requested for the following 1 packages:
 The deinstallation will free 229 kB
 [1/1] Deleting lsof-4.88.d,8... done</screen>
 
-      <para xml:lang="en">It is recommended to read the messages as the port is
-	uninstalled.  If the port has any applications that depend
-	upon it, this information will be displayed but the
-	uninstallation will proceed.  In such cases, it may be better
-	to reinstall the application in order to prevent broken
-	dependencies.</para>
+      <para>建議閱讀 Port 解除安裝後的訊息，若有任何相依該 Port 的應用程式，這些資訊會被顯示出來，但解除安裝的程序仍會繼續。在這種情況下最好重新安裝應用程式來避免破壞相依性。</para>
     </sect2>
 
     <sect2 xml:id="ports-upgrading">
@@ -8179,46 +8082,21 @@ The deinstallation will free 229 kB
 	<secondary>upgrading</secondary>
       </indexterm>
 
-      <para xml:lang="en">Over time, newer versions of software become available
-	in the Ports Collection.  This section describes how to
-	determine which software can be upgraded and how to perform
-	the upgrade.</para>
+      <para>隨著時間推移，Ports 套件集中會有新版的軟體可用。本節將說明如何檢查是否有可以升級的軟體及如何升級。</para>
 
-      <para xml:lang="en">To determine if newer versions of installed ports are
-	available, ensure that the latest version of the ports tree is
-	installed, using the updating command described in either
-	<xref linkend="ports-using-portsnap-method"/> or
-	<xref linkend="ports-using-subversion-method"/>.  On FreeBSD 10
-	and later, or if the system has been converted to
-	<application>pkg</application>, the following command will
-	list the installed ports which are out of date:</para>
+      <para>要檢查已安裝 Ports 是否有新版可用，請先確定已安裝最新版本的 Ports 樹，使用 <xref linkend="ports-using-portsnap-method"/> 或 <xref linkend="ports-using-subversion-method"/> 中說明的指令來更新。在 FreeBSD 10 與更新的版本，或若套件系統已轉換為 <application>pkg</application>，可以使用下列指令列出已經安裝的 Ports 中有那些已過時：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg version -l "&lt;"</userinput></screen>
 
-      <para xml:lang="en">For FreeBSD 9.<replaceable>X</replaceable> and lower, the
-	following command will list the installed ports that are out
-	of date:</para>
+      <para>在 FreeBSD 9.<replaceable>X</replaceable> 與較舊的版本，可以使用下列指令列出已經安裝的 Ports 中有那些已過時：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg_version -l "&lt;"</userinput></screen>
 
       <important>
-	<para xml:lang="en">Before
-	  attempting an upgrade, read
-	  <filename>/usr/ports/UPDATING</filename> from the top of
-	  the file to the date closest to the last time ports were
-	  upgraded or the system was installed.  This file describes
-	  various issues and additional steps users may encounter and
-	  need to perform when updating a port, including such things
-	  as file format changes, changes in locations of
-	  configuration files, or any incompatibilities with previous
-	  versions.  Make note of any instructions which match any of
-	  the ports that need upgrading and follow these instructions
-	  when performing the upgrade.</para>
+	<para>在嘗試升級之前，請先從檔首閱讀 <filename>/usr/ports/UPDATING</filename> 來取得最近有那些 Ports 已升級或系統已安裝。這個檔案中會說明各種問題及在升級 Port 時可能會需要使用者執行的額外步驟，例如檔案格式更改、設定檔位置更改、或任何與先前版本不相容的問題。留意那些與您要升級 Ports 相關的指示，並依照這些指示執行升級。</para>
       </important>
 
-      <para xml:lang="en">To perform the actual upgrade, use either
-	<application>Portmaster</application> or
-	<application>Portupgrade</application>.</para>
+      <para>要執行實際的升級，可使用 <application>Portmaster</application> 或 <application>Portupgrade</application>。</para>
 
       <sect3 xml:id="portmaster">
 	<title>使用 <application>Portmaster</application> 升級 Ports</title>
@@ -8227,42 +8105,32 @@ The deinstallation will free 229 kB
 	  <primary>portmaster</primary>
 	</indexterm>
 
-	<para xml:lang="en"><package>ports-mgmt/portmaster</package> is a very
-	  small utility for upgrading installed ports.
-	  It is designed to use the tools installed with FreeBSD
-	  without depending on other ports or databases.
-	  To install this utility
-	  as a port:</para>
+	<para><package>ports-mgmt/portmaster</package> 是可用來升級已安裝 Port 的小巧工具，它可不需要相依其他 Ports 或資料庫便可在 FreeBSD 使用，要使用 Port 安裝此工具可：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/portmaster</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-	<para xml:lang="en"><application>Portmaster</application> defines four
-	  categories of ports:</para>
+	<para><application>Portmaster</application> 將 Ports 定義成四種類型：</para>
 
 	<itemizedlist>
 	  <listitem>
-	    <para xml:lang="en">Root port: has no dependencies and is not a
-	      dependency of any other ports.</para>
+	    <para>根 Port：沒有相依且也不被任何其他 Ports 相依。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para xml:lang="en">Trunk port: has no dependencies, but other ports
-	      depend upon it.</para>
+	    <para>主幹 Port：沒有相依，但被其他 Ports 相依。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para xml:lang="en">Branch port: has dependencies and other ports
-	      depend upon it.</para>
+	    <para>分支 Port：有相依，且其被其他 Ports 相依。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para xml:lang="en">Leaf port: has dependencies but no other ports
-	      depend upon it.</para>
+	    <para>枝 Port：有相依，但沒有被其他 Ports 相依。</para>
 	  </listitem>
 	</itemizedlist>
 
-	<para xml:lang="en">To list these categories and search for updates:</para>
+	<para>要列出這幾個分類並搜尋是否有新版：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster -L</userinput>
 ===&gt;&gt;&gt; Root ports (No dependencies, not depended on)
@@ -8286,37 +8154,19 @@ The deinstallation will free 229 kB
 ===&gt;&gt;&gt; 137 total installed ports
         ===&gt;&gt;&gt; 83 have new versions available</screen>
 
-	<para xml:lang="en">This command is used to upgrade all outdated
-	  ports:</para>
+	<para>此指令用來升級所有過時的 Port：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster -a</userinput></screen>
 
 	<note>
-	  <para xml:lang="en">By default, <application>Portmaster</application>
-	    makes a backup package before deleting the existing port.
-	    If the installation of the new version is successful,
-	    <application>Portmaster</application> deletes the
-	    backup.  Using <option>-b</option> instructs
-	    <application>Portmaster</application> not to automatically
-	    delete the backup.  Adding <option>-i</option> starts
-	    <application>Portmaster</application> in interactive mode,
-	    prompting for confirmation before upgrading each port.
-	    Many other options are available.  Read through the
-	    manual page for <citerefentry vendor="ports"><refentrytitle>portmaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> for details regarding
-	    their usage.</para>
+	  <para>預設 <application>Portmaster</application> 會在刪除已存在的 Port 前備份套件，若成功安裝新版 <application>Portmaster</application> 會刪除該備份。使用 <option>-b</option> 來讓 <application>Portmaster</application> 不會自動刪除備份。加入 <option>-i</option> 可啟動 <application>Portmaster</application> 的互動模式，會在升級每個 Port 前提示訊息。尚有許多可用的其他選項，請閱讀 <citerefentry vendor="ports"><refentrytitle>portmaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的操作手冊來取得詳細的用法。</para>
 	</note>
 
-	<para xml:lang="en">If errors are encountered during the upgrade process,
-	  add <option>-f</option> to upgrade and rebuild all
-	  ports:</para>
+	<para>若升級的過程發生錯誤，可加入 <option>-f</option> 來升級並重新編譯所有 Ports：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster -af</userinput></screen>
 
-	<para xml:lang="en"><application>Portmaster</application> can also be used
-	  to install new ports on the system, upgrading all
-	  dependencies before building and installing the new
-	  port.  To use this function, specify the location of the
-	  port in the Ports Collection:</para>
+	<para><application>Portmaster</application> 也可用來安裝新的 Ports 到系統，在編譯及安裝新 Port 前升級所有相依模組。要使用這個功能，要指定 Port 位於 Ports 套件集中的位置：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster <replaceable>shells/bash</replaceable></userinput></screen>
       </sect3>
@@ -8328,56 +8178,26 @@ The deinstallation will free 229 kB
 	  <primary>portupgrade</primary>
 	</indexterm>
 
-	<para xml:lang="en">Another utility that can be used to upgrade ports is
-	  <application>Portupgrade</application>, which is available
-	  as the <package>ports-mgmt/portupgrade</package> package
-	  or port.  This utility installs a suite of applications
-	  which can be used to manage ports.  However, it is dependent
-	  upon Ruby.  To install the port:</para>
+	<para>另一個可以用來升級 Ports 的工具是 <application>Portupgrade</application>，可在 <package>ports-mgmt/portupgrade</package> 取得套件或 Ports，此工具會安裝一套可以用來管理 Ports 的應用程式，但是它需要相依 Ruby。要安裝該 Port：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/portupgrade</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-	<para xml:lang="en">Before performing an upgrade using this utility, it is
-	  recommended to scan the list of installed ports using
-	  <command>pkgdb -F</command> and to fix all the
-	  inconsistencies it reports.</para>
+	<para>在執行升級之前使用此工具，建議使用 <command>pkgdb -F</command> 掃描已安裝的 Ports 並修正該指令回報的所有資訊不一致的套件。</para>
 
-	<para xml:lang="en">To upgrade all the outdated ports installed on the
-	  system, use <command>portupgrade -a</command>.  Alternately,
-	  include <option>-i</option> to be asked for confirmation
-	  of every individual upgrade:</para>
+	<para>要升級所有安裝在系統上過時的 Ports，可使用 <command>portupgrade -a</command>，或者加上 <option>-i</option> 會在每個套件升級時詢問確認：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portupgrade -ai</userinput></screen>
 
-	<para xml:lang="en">To upgrade only a specified application instead of all
-	  available ports, use <command>portupgrade
-	    <replaceable>pkgname</replaceable></command>.  It is very
-	  important to include <option>-R</option> to first upgrade
-	  all the ports required by the given application:</para>
+	<para>要升級指定的應用程式而非所有可用 Ports 可使用 <command>portupgrade <replaceable>pkgname</replaceable></command>，非常重要的是，要加上 <option>-R</option> 來先升級指定應用程式所有相依的 Ports：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portupgrade -R firefox</userinput></screen>
 
-	<para xml:lang="en">If
-	  <option>-P</option> is included,
-	  <application>Portupgrade</application> searches for
-	  available packages in the local directories listed in
-	  <envar>PKG_PATH</envar>.  If none are available locally, it
-	  then fetches packages from a remote site.  If packages can
-	  not be found locally or fetched remotely,
-	  <application>Portupgrade</application> will use ports.  To
-	  avoid using ports entirely, specify <option>-PP</option>.
-	  This last set of options tells
-	  <application>Portupgrade</application> to abort if no
-	  packages are available:</para>
+	<para>若使用 <option>-P</option>，<application>Portupgrade</application> 會先在 <envar>PKG_PATH</envar> 清單中的本地目錄中搜尋可用的套件。若本地沒有可用的套件，則會從遠端下載。若套件無法在本地或遠端找到，<application>Portupgrade</application> 則會使用 Ports 來安裝。要避免完全使用 Ports 安裝，可使用 <option>-PP</option>，這個選項會告訴 <application>Portupgrade</application> 若沒有套件可用時放棄安裝：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portupgrade -PP gnome3</userinput></screen>
 
-	<para xml:lang="en">To just fetch the port distfiles, or packages, if
-	  <option>-P</option> is specified, without building or
-	  installing anything, use <option>-F</option>.  For further
-	  information on all of the available switches, refer to the
-	  manual page for <command>portupgrade</command>.</para>
+	<para>若只想要下載 Port distfiles 或套件，使用 <option>-P</option> 參數。若不要編譯或安裝任何東西，使用 <option>-F</option>。請參考 <command>portupgrade</command> 的操作手冊來取得所有可用選項的更多資訊。</para>
       </sect3>
     </sect2>
 
@@ -8389,45 +8209,25 @@ The deinstallation will free 229 kB
 	<secondary>disk-space</secondary>
       </indexterm>
 
-      <para xml:lang="en">Using the Ports Collection will use up disk space over
-	time.  After building and installing a port, running
-	<command>make clean</command> within the ports skeleton will
-	clean up the temporary <filename>work</filename> directory.
-	If <application>Portmaster</application> is used to install a
-	port, it will automatically remove this directory unless
-	<option>-K</option> is specified.  If
-	<application>Portupgrade</application> is installed, this
-	command will remove all <filename>work</filename> directories
-	found within the local copy of the Ports Collection:</para>
+      <para>使用 Ports 套件集會隨著時間消耗磁碟空間。在編譯與安裝 Port 完之後，在 Ports Skeleton 中執行 <command>make clean</command> 可清除暫存的 <filename>work</filename> 目錄。若使用 <application>Portmaster</application> 來安裝 Port，則會自動移除該目錄，除非使用 <option>-K</option>。若有安裝 <application>Portupgrade</application>，此指令將會移除所有在 Ports 套件集的本地複本中找到的 <filename>work</filename> 目錄：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -C</userinput></screen>
 
-      <para xml:lang="en">In addition, a lot of out-dated source distribution files
-	will collect in <filename>/usr/ports/distfiles</filename> over
-	time.  If <application>Portupgrade</application> is installed,
-	this command will delete all the distfiles that are no longer
-	referenced by any ports:</para>
+      <para>除此之外，許多過時的原始碼發行檔案會儲存在 <filename>/usr/ports/distfiles</filename>。若有安裝 <application>Portupgrade</application>，此指令將會刪除所有不再被任何 Ports 所引用的 distfiles：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -D</userinput></screen>
 
-      <para xml:lang="en">To use <application>Portupgrade</application> to remove
-	all distfiles not referenced by any port currently installed
-	on the system:</para>
+      <para>要使用 <application>Portupgrade</application> 來移除所有未被任何安裝在系統上的 Port 所引用的 distfiles：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -DD</userinput></screen>
 
-      <para xml:lang="en">If <application>Portmaster</application> is installed,
-	use:</para>
+      <para>若有安裝 <application>Portmaster</application>，則可使用：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster --clean-distfiles</userinput></screen>
 
-      <para xml:lang="en">By default, this command is interactive and will prompt
-	the user to confirm if a distfile should be deleted.</para>
+      <para>預設這個指令會互動的方式詢問使用者確認是否要刪除 distfile。</para>
 
-      <para xml:lang="en">In addition to these commands, the
-	<package>ports-mgmt/pkg_cutleaves</package> package or port
-	automates the task of removing installed ports that are no
-	longer needed.</para>
+      <para>除了以上指令外，<package>ports-mgmt/pkg_cutleaves</package> 套件或 Port 可自動移除不再需要使用的 Ports。</para>
     </sect2>
   </sect1>
 
@@ -8586,7 +8386,7 @@ ports-mgmt/pkg
 	and the main web site, <link xlink:href="https://github.com/freebsd/poudriere/wiki"/>.</para>
     </sect2>
     <sect2>
-      <title>設定 pkg 客戶端使用 Poudriere 儲藏庫</title>
+      <title>設定 pkg 客戶端使用 Poudriere 檔案庫</title>
 
       <para xml:lang="en">While it is possible to use both a custom repository along
 	side of the official repository, sometimes it is useful to
@@ -8623,52 +8423,27 @@ ports-mgmt/pkg
   <sect1 xml:id="ports-nextsteps">
     <title>安裝後的注意事項</title>
 
-    <para xml:lang="en">Regardless of whether the software was installed from a
-      binary package or port, most third-party applications require
-      some level of configuration after installation.  The following
-      commands and locations can be used to help determine what was
-      installed with the application.</para>
+    <para>不論軟體是從套件或 Port 安裝，大部份的第三方應用程式安裝完後需要做某種程度的設定，下列指令與位置可以用來協助找到應用程式安裝了什麼。</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Most applications install at least one default
-	  configuration file in <filename>/usr/local/etc</filename>.
-	  In the case where an application has a large number of
-	  configuration files, a subdirectory will be created to hold
-	  them.  Often, sample configuration files are installed which
-	  end with a suffix such as <filename>.sample</filename>.  The
-	  configuration files should be reviewed and possibly
-	  edited to meet the system's needs.  To edit a sample file,
-	  first copy it without the <filename>.sample</filename>
-	  extension.</para>
+	<para>大部份應用程式安裝會在 <filename>/usr/local/etc</filename> 安裝至少一個預設的設定檔，在應用程式有大量設定檔的情況會建立一個子目錄來存放這些設定檔。範例的設定檔名通常會使用 <filename>.sample</filename> 結尾，應要檢查這些檔案的內容，並可能要做一些編輯讓設定檔符合系統的需求，要編輯設定檔範本前需先複製該檔案並去除 <filename>.sample</filename> 副檔名。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Applications which provide documentation will install
-	  it into <filename>/usr/local/share/doc</filename> and many
-	  applications also install manual pages.  This documentation
-	  should be consulted before continuing.</para>
+	<para>應用程式提供的文件會安裝到 <filename>/usr/local/share/doc</filename>，且許多應用程式也同時會安裝操作手冊，在繼續使用應用程式前應先查看這些文件。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Some applications run services which must be added
-	  to <filename>/etc/rc.conf</filename> before starting the
-	  application.  These applications usually install a startup
-	  script in <filename>/usr/local/etc/rc.d</filename>.  See
-	  <link linkend="configtuning-starting-services">Starting
-	    Services</link> for more information.</para>
+	<para>部份應用程式會以服務的方式執行，在啟動應用程式前前需要加入設定到 <filename>/etc/rc.conf</filename>。這些應用程式通常會安裝啟動 Script 到 <filename>/usr/local/etc/rc.d</filename>，請參考 <link linkend="configtuning-starting-services">啟動服務</link> 來取得更多資訊。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Users of <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry> should run
-	  <command>rehash</command> to rebuild the known binary list
-	  in the shells <envar>PATH</envar>.</para>
+	<para><citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的使用者應要執行 <command>rehash</command> 來更新已知 Binary 清單到 Shell 的 <envar>PATH</envar>。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Use <command>pkg info</command> to determine which
-	  files, man pages, and binaries were installed with the
-	  application.</para>
+	<para>使用 <command>pkg info</command> 來了解應用程式安裝了那些檔案、操作手冊以及 Binary。</para>
       </listitem>
     </itemizedlist>
   </sect1>
@@ -8676,58 +8451,31 @@ ports-mgmt/pkg
   <sect1 xml:id="ports-broken">
     <title>處理損壞的 Ports</title>
 
-    <para xml:lang="en">When a port does not build or
-      install, try the following:</para>
+    <para>當發現某個 Port 無法順利編譯或安裝，可以嘗試以下幾種方法解決：</para>
 
     <orderedlist>
       <listitem>
-	<para xml:lang="en">Search to see if there is a fix pending for the port in
-	  the <link xlink:href="@@URL_RELPREFIX@@/support.html">Problem
-	    Report database</link>.  If so, implementing the proposed
-	  fix may fix the issue.</para>
+	<para>搜尋 <link xlink:href="@@URL_RELPREFIX@@/support.html">問題回報資料庫</link> 看該 Port 有沒有待審核的修正，若有的話可以使用該修正來修正問題。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Ask the maintainer of the port for help.  Type
-	  <command>make maintainer</command>
-	  in the ports skeleton or read the port's
-	  <filename>Makefile</filename> to find the maintainer's
-	  email address.  Remember to include the
-	  <literal>$FreeBSD:</literal> line from the port's
-	  <filename>Makefile</filename> and the output leading up to
-	  the error in the email to the maintainer.</para>
+	<para>尋求維護人員的協助，在 Ports Skeleton 目錄中輸入 <command>make maintainer</command> 或閱讀 Port 的 <filename>Makefile</filename> 來取得維護人員的電子郵件位址。寄給維護人員的郵件內容請記得要包含 Port 的 <filename>Makefile</filename> 中的 <literal>$FreeBSD:</literal> 一整行及輸出的錯誤訊息。</para>
 
 	<note>
-	  <para xml:lang="en">Some ports are not maintained by an individual but
-	    instead by a <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/mailing-list-faq/article.html">mailing
-	      list</link>.  Many, but not all, of these addresses look
-	    like <email role="nolink">freebsd-listname@FreeBSD.org</email>.
-	    Take this into account when sending an email.</para>
+	  <para>有一些 Port 並非由個人維護，而是由 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/mailing-list-faq/article.html">郵遞論壇</link> 維護，只要郵件地址長的像 <email role="nolink">freebsd-listname@FreeBSD.org</email> 都是，寄信時記得代入實際的論壇名稱。</para>
 
-	  <para xml:lang="en">In particular, ports shown as maintained by
-	    <email role="nolink">ports@FreeBSD.org</email> are not
-	    maintained by a specific individual.  Instead, any fixes
-	    and support come from the general community who subscribe
-	    to that mailing list.  More volunteers are always
-	    needed!</para>
+	  <para>尤其是顯示 <email role="nolink">ports@FreeBSD.org</email> 的  Port  都不是由特定個人維護，該 Ports 的修正與支援來自訂閱該郵遞論壇的一般社群所提供，我們非常歡迎志工參與。</para>
 	</note>
 
-	<para xml:lang="en">If there is no response to the email, use
-	  Bugzilla to submit a bug report using the
-	  instructions in <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-reports/article.html">Writing
-	    FreeBSD Problem Reports</link>.</para>
+	<para>若寄信後沒有取得任何回應，可以依照 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-reports/article.html">撰寫 FreeBSD 問題回報</link> 的說明使用 Bugzilla 提出問題回報。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Fix it!  The <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/index.html">Porter's
-	    Handbook</link> includes detailed information on the
-	  ports infrastructure so that you can fix the occasional
-	  broken port or even submit your own!</para>
+	<para>自行修正看看! <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/index.html">Porter's Handbook</link> 中含有 Port 基礎架構的詳細資訊，可提供資訊讓您可修正偶然損壞的 Port 或甚至您可以提交之自己的 Port。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Install the package instead of the port using the
-	  instructions in <xref linkend="pkgng-intro"/>.</para>
+	<para>依照 <xref linkend="pkgng-intro"/> 中的說明安裝 Binary 套件，替代使用 Port 安裝。</para>
       </listitem>
     </orderedlist>
   </sect1>
@@ -8737,7 +8485,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 48673 2016-04-19 00:49:10Z wblock $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -9188,6 +8936,21 @@ EndSection</programlisting>
 	      <programlisting xml:lang="en">Section "Device"
 	Identifier "Card0"
 	Driver     "vesa"
+EndSection</programlisting>
+	    </example>
+
+	    <para xml:lang="en">To set the <literal>scfb</literal> driver for use
+	      with a <acronym>UEFI</acronym> or <trademark class="registered">ARM</trademark> computer:</para>
+
+	    <example xml:id="x-config-video-cards-file-scfb">
+	      <title xml:lang="en">Select <literal>scfb</literal> Video Driver in a
+		File</title>
+
+	      <para xml:lang="en"><filename>/usr/local/etc/X11/xorg.conf.d/driver-scfb.conf</filename></para>
+
+	      <programlisting xml:lang="en">Section "Device"
+	Identifier "Card0"
+	Driver     "scfb"
 EndSection</programlisting>
 	    </example>
 	  </listitem>
@@ -10785,7 +10548,7 @@ EndSection</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 48658 2016-04-17 11:28:39Z bcr $
 -->
 <chapter version="5.0" xml:id="desktop">
   <!--
@@ -11394,7 +11157,7 @@ EndSection</programlisting>
 	  </row>
 
 	  <row>
-	    <entry xml:lang="en"><application>GQview</application></entry>
+	    <entry xml:lang="en"><application>Geeqie</application></entry>
 	    <entry>少</entry>
 	    <entry>少</entry>
 	    <entry><application>Gtk+</application> 或 <application>GNOME</application></entry>
@@ -11470,21 +11233,31 @@ EndSection</programlisting>
     </sect2>
 
     <sect2>
-      <title xml:lang="en">GQview</title>
+      <title xml:lang="en">Geeqie</title>
 
       <indexterm xml:lang="en">
-	<primary><application>GQview</application></primary>
+	<primary><application>Geeqie</application></primary>
       </indexterm>
 
-      <para><application>GQview</application> 是影像管理軟體。 你可以用單鍵來閱覽檔案、啟動額外的編輯器、縮圖預覽等功能。 它也有幻燈片播放(slideshow)及一些基本的檔案操作功能。 你可用 <application>GQview</application> 管理影像集並能輕鬆地找出重複的檔案。 GQview 能夠使用全螢幕觀看並支援國際化。</para>
+      <para xml:lang="en"><application>Geeqie</application> is a fork from the
+	unmaintained <application>GQView</application> project, in an
+	effort to move development forward and integrate the existing
+	patches.  <application>Geeqie</application> is an image
+	manager which supports viewing a file with a single click,
+	launching an external editor, and thumbnail previews.  It also
+	features a slideshow mode and some basic file operations,
+	making it easy to manage image collections and to find
+	duplicate files.  <application>Geeqie</application> supports
+	full screen viewing and internationalization.</para>
 
-      <para>安裝 <application>GQview</application> 套件：</para>
+      <para xml:lang="en">To install the <application>Geeqie</application>
+	package:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gqview</userinput></screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install geeqie</userinput></screen>
 
       <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/gqview</userinput>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/geeqie</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
     </sect2>
 
@@ -11775,7 +11548,12 @@ EndSection</programlisting>
 
     <indexterm xml:lang="en"><primary>PCI</primary></indexterm>
     <indexterm xml:lang="en"><primary>sound cards</primary></indexterm>
-    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="http://www.FreeBSD.org/releases/10.2R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
+    <para xml:lang="en">Before beginning the configuration, determine the model of
+      the sound card and the chip it uses.  FreeBSD supports a wide
+      variety of sound cards.  Check the supported audio devices
+      list of the <link xlink:href="http://www.FreeBSD.org/releases/10.3R/hardware.html">Hardware
+	Notes</link> to see if the card is supported and which FreeBSD
+      driver it uses.</para>
 
     <indexterm xml:lang="en">
       <primary>kernel</primary>
@@ -21122,7 +20900,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 48670 2016-04-18 18:10:51Z trhodes $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -21300,7 +21078,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 	attempt to login.</para>
     </sect2>
 
-    <sect2 xml:id="security-sudo">
+    <sect2 xml:id="security-accountmgmt">
       <title>帳號升級授權</title>
 
       <para xml:lang="en">In some cases, system administration needs to be shared
@@ -24986,6 +24764,187 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
       <para xml:lang="en">Many other resources exist which can be used to exert
 	additional control over various <literal>subjects</literal>.
 	See <citerefentry><refentrytitle>rctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> to learn about them.</para>
+    </sect2>
+  </sect1>
+
+  <sect1 xml:id="security-sudo">
+    <info>
+      <title xml:lang="en">Shared Administration with Sudo</title>
+
+      <authorgroup>
+	<author xml:lang="en"><personname><firstname>Tom</firstname><surname>Rhodes</surname></personname><contrib>Contributed
+	  by </contrib></author>
+      </authorgroup>
+    </info>
+
+    <indexterm xml:lang="en">
+      <primary>Security</primary>
+      <secondary>Sudo</secondary>
+    </indexterm>
+
+    <para xml:lang="en">System administrators often need the ability to grant
+      enhanced permissions to users so they may perform privileged
+      tasks.  The idea that team members are provided access
+      to a FreeBSD system to perform their specific tasks opens up unique
+      challenges to every administrator.  These team members only
+      need a subset of access beyond normal end user levels; however,
+      they almost always tell management they are unable to
+      perform their tasks without superuser access.  Thankfully, there
+      is no reason to provide such access to end users because tools
+      exist to manage this exact requirement.</para>
+
+    <para xml:lang="en">Up to this point, the security chapter has covered permitting
+      access to authorized users and attempting to prevent unauthorized
+      access.  Another problem arises once authorized users have access
+      to the system resources.  In many cases, some users may need
+      access to application startup scripts, or a team of
+      administrators need to maintain the system.  Traditionally, the
+      standard users and groups, file permissions, and even the
+      <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> command would manage this access.  And as applications
+      required more access, as more users needed to use system
+      resources, a better solution was required.  The most used
+      application is currently <application>Sudo</application>.</para>
+
+    <para xml:lang="en"><application>Sudo</application> allows administrators
+      to configure more rigid access to system commands
+      and provide for some advanced logging features.
+      As a tool, it is available from the Ports Collection as
+      <package role="port">security/sudo</package> or by use of
+      the <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> utility.  To use the <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> tool:</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install sudo</userinput></screen>
+
+    <para xml:lang="en">After the installation is complete, the installed
+      <command>visudo</command> will open the configuration file with
+      a text editor.  Using <command>visudo</command> is highly
+      recommended as it comes with a built in syntax checker to verify
+      there are no errors before the file is saved.</para>
+
+    <para xml:lang="en">The configuration file is made up of several small sections
+      which allow for extensive configuration.  In the following
+      example, web application maintainer, user1, needs to start,
+      stop, and restart the web application known as
+      <replaceable>webservice</replaceable>.  To
+      grant this user permission to perform these tasks, add
+      this line to the end of
+      <filename>/usr/local/etc/sudoers</filename>:</para>
+
+    <programlisting xml:lang="en">user1   ALL=(ALL)       /usr/sbin/service webservice *</programlisting>
+
+    <para xml:lang="en">The user may now start <replaceable>webservice</replaceable>
+      using this command:</para>
+
+    <screen xml:lang="en"><prompt>%</prompt> <userinput>sudo /usr/sbin/service <replaceable>webservice</replaceable> start</userinput></screen>
+
+    <para xml:lang="en">While this configuration allows a single user access to the
+      <application>webservice</application> service; however, in most
+      organizations, there is an entire web team in charge of managing
+      the service.  A single line can also give access to an entire
+      group.  These steps will create a web group, add a user to this
+      group, and allow all members of the group to manage the
+      service:</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupadd -g 6001 -n webteam</userinput></screen>
+
+    <para xml:lang="en">Using the same <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> command, the user is added to
+      the webteam group:</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod -m user1 -n webteam</userinput></screen>
+
+    <para xml:lang="en">Finally, this line in
+      <filename>/usr/local/etc/sudoers</filename> allows any
+      member of the webteam group to manage
+      <replaceable>webservice</replaceable>:</para>
+
+    <programlisting xml:lang="en">%webteam   ALL=(ALL)       /usr/sbin/service webservice *</programlisting>
+
+    <para xml:lang="en">Unlike <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <application>Sudo</application>
+      only requires the end user password.  This adds an advantage where
+      users will not need shared passwords, a finding in most security
+      audits and just bad all the way around.</para>
+
+    <para xml:lang="en">Users permitted to run applications with
+      <application>Sudo</application> only enter their own passwords.
+      This is more secure and gives better control than <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+      where the <systemitem class="username">root</systemitem>
+      password is entered and the user acquires all
+      <systemitem class="username">root</systemitem>
+      permissions.</para>
+
+    <tip>
+      <para xml:lang="en">Most organizations are moving or have moved toward a two
+	factor authentication model.  In these cases, the user may
+	not have a password to enter.  <application>Sudo</application>
+	provides for these cases with the <literal>NOPASSWORD</literal>
+	variable.  Adding it to the configuration above
+	will allow all members of the <replaceable>webteam</replaceable>
+	group to manage the service without the password
+	requirement:</para>
+
+      <programlisting xml:lang="en">%webteam   ALL=(ALL)       NOPASSWORD: /usr/sbin/service webservice *</programlisting>
+    </tip>
+
+    <sect2 xml:id="security-sudo-loggin">
+      <title xml:lang="en">Logging Output</title>
+
+      <para xml:lang="en">An advantage to implementing
+	<application>Sudo</application> is the ability to enable
+	session logging.  Using the built in log mechanisms
+	and the included <application>sudoreplay</application>
+	command, all commands initiated through
+	<application>Sudo</application> are logged for later
+	verification.  To enable this feature, add a default log
+	directory entry, this example uses a user variable.
+	Several other log filename conventions exist, consult the
+	manual page for <application>sudoreplay</application> for
+	additional information.</para>
+
+      <programlisting xml:lang="en">Defaults iolog_dir=/var/log/sudo-io/%{user}</programlisting>
+
+      <tip>
+	<para xml:lang="en">This directory will be created automatically after the
+	  logging is configured.  It is best to let the system create
+	  directory with default permissions just to be safe.  In
+	  addition, this entry will also log administrators who use the
+	  <application>sudoreplay</application> command.  To change
+	  this behavior, read and uncomment the logging options inside
+	  <filename>sudoers</filename>.</para>
+      </tip>
+
+      <para xml:lang="en">Once this directive has been added to the
+	<filename>sudoers</filename> file, any user configuration
+	can be updated with the request to log access.  In the
+	example shown, the updated <replaceable>webteam</replaceable>
+	entry would have the following additional changes:</para>
+
+      <programlisting xml:lang="en">%webteam ALL=(ALL) NOPASSWD: LOG_INPUT: LOG_OUTPUT: /usr/sbin/service webservice *</programlisting>
+
+      <para xml:lang="en">From this point on, all <replaceable>webteam</replaceable>
+	members altering the status of the
+	<replaceable>webservice</replaceable> application
+	will be logged.  The list of previous and current sessions
+	can be displayed with:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>sudoreplay -l</userinput></screen>
+
+      <para xml:lang="en">In the output, to replay a specific session, search for the
+	<literal>TSID=</literal> entry, and pass that to
+	<application>sudoreplay</application> with no other options to
+	replay the session at normal speed.  For example:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>sudoreplay user1/00/00/02</userinput></screen>
+
+      <warning>
+	<para xml:lang="en">While sessions are logged, any administrator is
+	  able to remove sessions and leave only a question of why they
+	  had done so.  It is worthwhile to add a daily check
+	  through an intrusion detection system (<acronym>IDS</acronym>)
+	  or similar software so that other administrators are alerted
+	  to manual alterations.</para>
+      </warning>
+
+      <para xml:lang="en">The <command>sudoreplay</command> is extremely extendable.
+	Consult the documentation for more information.</para>
     </sect2>
   </sect1>
 </chapter>
@@ -29023,7 +28982,7 @@ fi</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 48568 2016-04-12 17:30:23Z wblock $
 -->
 
 <chapter version="5.0" xml:id="disks">
@@ -29151,7 +29110,16 @@ fi</programlisting>
       See <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> for options to create partitions smaller than
       a whole disk.</para>
 
-    <para xml:lang="en">A file system is created on the new blank disk:</para>
+    <para xml:lang="en">The disk partition information can be viewed with
+      <command>gpart show</command>:</para>
+
+    <screen xml:lang="en"><prompt>%</prompt> <userinput>gpart show ada1</userinput>
+=&gt;        34  1465146988  ada1  GPT  (699G)
+          34        2014        - free -  (1.0M)
+        2048  1465143296     1  freebsd-ufs  (699G)
+  1465145344        1678        - free -  (839K)</screen>
+
+    <para xml:lang="en">A file system is created in the new partition on the new disk:</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>newfs -U /dev/ada1p1</userinput></screen>
 
@@ -29532,8 +29500,7 @@ da0: &lt;STECH Simple Drive 1.04&gt; s/n WD-WXE508CAN263          detached
 	match "system" "GEOM";
 	match "subsystem" "DEV";
 	action "/usr/sbin/automount -c";
-};
-</screen>
+};</screen>
 
       <para xml:lang="en">Reload the configuration if <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry>
 	and <citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry> are already running:</para>
@@ -40834,7 +40801,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 48637 2016-04-14 21:52:30Z wblock $
 -->
 <chapter version="5.0" xml:id="updating-upgrading">
 
@@ -40894,7 +40861,9 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 
     <itemizedlist>
       <listitem>
-	<para>如何使用 <application>freebsd-update</application>, <application>Subversion</application> 或 <application>CTM</application> 來讓 FreeBSD 系統保持新版。</para>
+	<para xml:lang="en">How to keep a FreeBSD system up-to-date with
+	  <application>freebsd-update</application> or
+	  <application>Subversion</application>.</para>
       </listitem>
 
       <listitem>
@@ -41212,90 +41181,58 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <see>Updating and Upgrading</see>
     </indexterm>
 
-    <para xml:lang="en">Documentation is an integral part of the FreeBSD operating
-      system.  While an up-to-date version of the FreeBSD documentation
-      is always available on the FreeBSD web site (<link xlink:href="@@URL_RELPREFIX@@/doc/">http://www.freebsd.org/doc/</link>),
-      it can be handy to have an up-to-date, local copy of the FreeBSD
-      website, handbooks, <acronym>FAQ</acronym>, and articles.</para>
+    <para>文件是 FreeBSD 作業系統不可或缺的一部份。在最新版本的 FreeBSD 文件可在 FreeBSD 網站 (<link xlink:href="@@URL_RELPREFIX@@/doc/">http://www.freebsd.org/doc/</link>) 取得的同時，也可很簡單的取得 FreeBSD 網站、使用手冊、<acronym>FAQ</acronym> 及文章的本地複本。</para>
 
-    <para xml:lang="en">This section describes how to use either source or the FreeBSD
-      Ports Collection to keep a local copy of the FreeBSD documentation
-      up-to-date.</para>
+    <para>本節將說明如何使用原始碼與 FreeBSD Ports 套件集來取得最新版本 FreeBSD 文件本地複本。</para>
 
-    <para xml:lang="en">For information on editing and submitting corrections to the
-      documentation, refer to the FreeBSD Documentation Project Primer
-      for New Contributors (<link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/fdp-primer">http://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/</link>).</para>
+    <para>要取得編輯與提出修正文件相關的資訊請參考 FreeBSD 文件計畫入門書 (<link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/books/fdp-primer">http://www.freebsd.org/doc/zh_TW.UTF-8/books/fdp-primer/</link>)。</para>
 
     <sect2 xml:id="updating-installed-documentation">
       <title>自原始碼更新說明文件</title>
 
-      <para xml:lang="en">Rebuilding the FreeBSD documentation from source requires a
-	collection of tools which are not part of the FreeBSD base
-	system.  The required tools, including
-	<application>svn</application>, can be installed from the
-	<package>textproc/docproj</package> package or port developed
-	by the FreeBSD Documentation Project.</para>
+      <para>從原始碼重新編譯 FreeBSD 文件需要一些不屬於 FreeBSD 基礎系統的工具。需要的工具包括 <application>svn</application> 可透過由 FreeBSD 文件計劃所開發的 <package>textproc/docproj</package> 套件或 Port 安裝。</para>
 
-      <para xml:lang="en">Once installed, use <application>svn</application> to
-	fetch a clean copy of the documentation source:</para>
+      <para>安裝完成之後，可使用 <application>svn</application> 來取得乾淨的文件原始碼複本：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/doc/head /usr/doc</userinput></screen>
 
-      <para xml:lang="en">The initial download of the documentation sources may take
-	a while.  Let it run until it completes.</para>
+      <para>第一次下載文件原始碼需要一些時間，請耐心等候執行完畢。</para>
 
-      <para xml:lang="en">Future updates of the documentation sources may be fetched
-	by running:</para>
+      <para>往後更新文件原始碼可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>svn update /usr/doc</userinput></screen>
 
-      <para xml:lang="en">Once an up-to-date snapshot of the documentation sources
-	has been fetched to <filename>/usr/doc</filename>, everything
-	is ready for an update of the installed documentation.</para>
+      <para>下載最新的文件原始碼到 <filename>/usr/doc</filename> 之後，便完成要更新已安裝文件的準備動作。</para>
 
-      <para xml:lang="en">A full update of all available languages may be performed
-	by typing:</para>
+      <para>完整更新所有可用的語言可以執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/doc</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">If an update of only a specific language is desired,
-	<command>make</command> can be invoked in a language-specific
-	subdirectory of
-	<filename>/usr/doc</filename>:</para>
+      <para>若只想要更新特定語言，可對 <filename>/usr/doc</filename> 中特定語言的子目錄執行 <command>make</command>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/doc/en_US.ISO8859-1</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">An alternative way of updating the documentation is to run
-	this command from <filename>/usr/doc</filename> or the desired
-	language-specific subdirectory:</para>
+      <para>另一個更新文件的方式是在 <filename>/usr/doc</filename> 或特定的語言子目錄下執行此指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>make update</userinput></screen>
 
-      <para xml:lang="en">The output formats that will be installed may be specified
-	by setting <varname>FORMATS</varname>:</para>
+      <para>要指定安裝的輸出格式可使用 <varname>FORMATS</varname> 來設定：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/doc</userinput>
 <prompt>#</prompt> <userinput>make FORMATS='html html-split' install clean</userinput></screen>
 
-      <para xml:lang="en">Several options are available to ease the process of
-	updating only parts of the documentation, or the build of
-	specific translations.  These options can be set either as
-	system-wide options in <filename>/etc/make.conf</filename>, or
-	as command-line options passed to
-	<command>make</command>.</para>
+      <para>有數個選項可更新部份文件或只編譯特定翻譯來簡化更新程序。這些選項可在 <filename>/etc/make.conf</filename> 設為系統全域的預設選項，或是透過指令傳送給 <command>make</command>。</para>
 
-      <para xml:lang="en">The options include:</para>
+      <para>選項有：</para>
 
       <variablelist>
 	<varlistentry>
 	  <term xml:lang="en"><varname>DOC_LANG</varname></term>
 
 	  <listitem>
-	    <para xml:lang="en">The list of languages and encodings to build and
-	      install, such as <literal>en_US.ISO8859-1</literal> for
-	      English documentation.</para>
+	    <para>要編譯與安裝的語言及編碼清單，例如 <literal>en_US.ISO8859-1</literal> 代表英語文件。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -41303,11 +41240,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	  <term xml:lang="en"><varname>FORMATS</varname></term>
 
 	  <listitem>
-	    <para xml:lang="en">A single format or a list of output formats to be
-	      built.  Currently, <literal>html</literal>,
-	      <literal>html-split</literal>, <literal>txt</literal>,
-	      <literal>ps</literal>, and <literal>pdf</literal> are
-	      supported.</para>
+	    <para>要編譯的輸出格式清單，目前支援 <literal>html</literal>, <literal>html-split</literal>, <literal>txt</literal>, <literal>ps</literal> 以及 <literal>pdf</literal>。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -41315,15 +41248,12 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	  <term xml:lang="en"><varname>DOCDIR</varname></term>
 
 	  <listitem>
-	    <para xml:lang="en">Where to install the documentation.  It defaults to
-	      <filename>/usr/share/doc</filename>.</para>
+	    <para>要安裝文件的位置，預設為 <filename>/usr/share/doc</filename>。</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
 
-      <para xml:lang="en">For more <command>make</command> variables supported as
-	system-wide options in FreeBSD, refer to
-	<citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+      <para>要取得更多可做為 FreeBSD 系統全域選項的 <command>make</command> 變數，請參考 <citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
     </sect2>
 
     <sect2 xml:id="doc-ports-install-package">
@@ -41350,95 +41280,59 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	<see>Updating and Upgrading</see>
       </indexterm>
 
-      <para xml:lang="en">The previous section presented a method for updating the
-	FreeBSD documentation from sources.  This section describes an
-	alternative method which uses the Ports Collection and makes
-	it possible to:</para>
+      <para>前一節介紹了由原始碼更新 FreeBSD 文件的方法，本節將說明使用 Ports 套件集的替代方法，可由以下方式達成：</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en">Install pre-built packages of the documentation,
-	    without having to locally build anything or install the
-	    documentation toolchain.</para>
+	  <para>安裝事先編譯好的文件套件，無須在本地編譯任何東西或安裝文件工具集。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Build the documentation sources through the ports
-	    framework, making the checkout and build steps a bit
-	    easier.</para>
+	  <para>使用 Ports 框架來編譯文件原始碼，可讓取得與編譯文件的步驟更簡單。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">This method of updating the FreeBSD documentation is
-	supported by a set of documentation ports and packages which
-	are updated by the Documentation Engineering Team <email>doceng@FreeBSD.org</email> on a monthly basis.  These are
-	listed in the FreeBSD Ports Collection, under the docs
-	category (<link xlink:href="http://www.freshports.org/docs/">http://www.freshports.org/docs/</link>).</para>
+      <para>這個更新 FreeBSD 文件的方法，會使用到一系列由文件工程團隊 <email>doceng@FreeBSD.org</email> 每月更新的文件 Ports 與套件。這些套件列於 FreeBSD Ports 套件集的 docs 分類下 (<link xlink:href="http://www.freshports.org/docs/">http://www.freshports.org/docs/</link>)。</para>
 
-      <para xml:lang="en">Organization of the documentation ports is as
-	follows:</para>
+      <para>文件 Ports 的組織方式如下：</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en">The <package>misc/freebsd-doc-en</package> package or
-	    port installs all of the English documentation.</para>
+	  <para><package>misc/freebsd-doc-en</package> 套件或 Port 會安裝所有英語的文件。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">The <package>misc/freebsd-doc-all</package>
-	    meta-package or port installs all documentation in all
-	    available languages.</para>
+	  <para><package>misc/freebsd-doc-all</package> 套件或 Port 會安裝所有可用語言的文件。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">There is a package and port for each translation, such
-	    as <package>misc/freebsd-doc-hu</package> for the
-	    Hungarian documentation.</para>
+	  <para>每個翻譯語言都有套件與 Port，如 <package>misc/freebsd-doc-hu</package> 為匈牙利語文件。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">When binary packages are used, the FreeBSD documentation will
-	be installed in all available formats for the given language.
-	For example, the following command will install the latest
-	package of the Hungarian documentation:</para>
+      <para>當使用 Binary 套件時，會安裝指定語言 FreeBSD 文件的所有可用格式。例如以下指令會安裝最新的匈牙利語文件套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install hu-freebsd-doc</userinput></screen>
 
       <note>
-	<para xml:lang="en">Packages use a format that differs from the
-	  corresponding port's name:
-	  <literal><replaceable>lang</replaceable>-freebsd-doc</literal>,
-	  where <replaceable>lang</replaceable> is the short format of
-	  the language code, such as <literal>hu</literal> for
-	  Hungarian, or <literal>zh_cn</literal> for Simplified
-	  Chinese.</para>
+	<para>套件使用的名稱格式與 Ports 的名稱不同：<literal><replaceable>lang</replaceable>-freebsd-doc</literal>，其中 <replaceable>lang</replaceable> 是語言代碼的縮寫，例如 <literal>hu</literal> 代表匈牙利語，<literal>zh_cn</literal> 代表簡體中文。</para>
       </note>
 
-      <para xml:lang="en">To specify the format of the documentation, build the port
-	instead of installing the package.  For example, to build and
-	install the English documentation:</para>
+      <para>要指定文件的格式，需以編譯 Port 來代替安裝套件。例如要編譯並安裝英語文件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/misc/freebsd-doc-en</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">The port provides a configuration menu where the format to
-	build and install can be specified.  By default, split
-	<acronym>HTML</acronym>, similar to the format used on <uri xlink:href="http://www.FreeBSD.org">http://www.FreeBSD.org</uri>,
-	and <acronym>PDF</acronym> are selected.</para>
+      <para>Ports 提供設定選單來指定要編譯與安裝的格式，預設為分頁的 <acronym>HTML</acronym>　(類似 <uri xlink:href="http://www.FreeBSD.org">http://www.FreeBSD.org</uri> 使用的格式) 以及 <acronym>PDF</acronym>。</para>
 
-      <para xml:lang="en">Alternately, several <command>make</command> options can
-	be specified when building a documentation port,
-	including:</para>
+      <para>此外，編譯文件 Ports 時也可指定數個 <command>make</command> 選項，包括：</para>
 
       <variablelist>
 	<varlistentry>
 	  <term xml:lang="en"><varname>WITH_HTML</varname></term>
 
 	  <listitem>
-	    <para xml:lang="en">Builds the HTML format with a single HTML file per
-	      document.  The formatted documentation is saved to a
-	      file called <filename>article.html</filename>, or
-	      <filename>book.html</filename>.</para>
+	    <para>編譯一份文件使用一個 HTML 檔的 HTML 格式。格式化後的文件會儲存至名稱為 <filename>article.html</filename> 或 <filename>book.html</filename> 的檔案。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -41446,9 +41340,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	  <term xml:lang="en"><varname>WITH_PDF</varname></term>
 
 	  <listitem>
-	    <para xml:lang="en">The formatted documentation is saved to a file
-	      called <filename>article.pdf</filename> or
-	      <filename>book.pdf</filename>.</para>
+	    <para>格式化的文件會儲存至名稱為 <filename>article.pdf</filename> 或 <filename>book.pdf</filename> 的檔案。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -41456,25 +41348,17 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	  <term xml:lang="en"><varname>DOCBASE</varname></term>
 
 	  <listitem>
-	    <para xml:lang="en">Specifies where to install the documentation.  It
-	      defaults to
-	      <filename>/usr/local/share/doc/freebsd</filename>.</para>
+	    <para>指定要安裝文件的位置，預設為 <filename>/usr/local/share/doc/freebsd</filename>。</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
 
-      <para xml:lang="en">This example uses variables to install the Hungarian
-	documentation as a <acronym>PDF</acronym> in the specified
-	directory:</para>
+      <para>以下範例使用變數來安裝 <acronym>PDF</acronym> 的匈牙利語文件到特定目錄：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> cd /usr/ports/misc/freebsd-doc-hu
 <prompt>#</prompt> make -DWITH_PDF DOCBASE=share/doc/freebsd/hu install clean</screen>
 
-      <para xml:lang="en">Documentation packages or ports can be updated using the
-	instructions in <xref linkend="ports"/>.  For example, the
-	following command updates the installed Hungarian
-	documentation using <package>ports-mgmt/portmaster</package>
-	by using packages only:</para>
+      <para>文件套件或 Ports 可以依 <xref linkend="ports"/> 的說明更新。例如以下指令會使用 <package>ports-mgmt/portmaster</package> 更新已安裝的匈牙利語文件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster -PP hu-freebsd-doc</userinput></screen>
     </sect2>
@@ -41486,132 +41370,66 @@ before running "/usr/sbin/freebsd-update install"</screen>
     <indexterm xml:lang="en"><primary>-CURRENT</primary></indexterm>
     <indexterm xml:lang="en"><primary>-STABLE</primary></indexterm>
 
-    <para xml:lang="en">FreeBSD has two development branches: FreeBSD-CURRENT and
-      FreeBSD-STABLE.</para>
+    <para>FreeBSD 有兩個開發分支：FreeBSD-CURRENT 及 FreeBSD-STABLE。</para>
 
-    <para xml:lang="en">This section provides an explanation of each branch and its
-      intended audience, as well as how to keep a system up-to-date
-      with each respective branch.</para>
+    <para>本節將說明每個分支及其的特定使用者，也會說明如何在各別分支維持系統為最新版。</para>
 
     <sect2 xml:id="current">
       <title>使用 FreeBSD-CURRENT</title>
 
-      <para xml:lang="en">FreeBSD-CURRENT is the <quote>bleeding edge</quote> of FreeBSD
-	development and  FreeBSD-CURRENT users are expected to have a
-	high degree of technical skill.  Less technical users who wish
-	to track a development branch should track FreeBSD-STABLE
-	instead.</para>
+      <para>FreeBSD-CURRENT 是 FreeBSD 開發的 <quote>最前線</quote>，FreeBSD-CURRENT 的使用者需具備較強的技術能力。技術能力較弱的使用者應改追蹤 FreeBSD-STABLE 開發分支。</para>
 
-      <para xml:lang="en">FreeBSD-CURRENT is the very latest source code for FreeBSD and
-	includes works in progress, experimental changes, and
-	transitional mechanisms that might or might not be present in
-	the next official release.  While many FreeBSD developers compile
-	the FreeBSD-CURRENT source code daily, there are short periods of
-	time when the source may not be buildable.  These problems are
-	resolved as quickly as possible, but whether or not
-	FreeBSD-CURRENT brings disaster or new functionality can be a
-	matter of when the source code was synced.</para>
+      <para>FreeBSD-CURRENT 是 FreeBSD 最新的原始碼，其中包括正在進行的開發工作、實驗性的變更以及不一定會在下一個官方發行版出現的過渡機制。 雖然 FreeBSD 開發者每天編譯 FreeBSD-CURRENT 原始碼，但仍可能有短暫時間原始碼是無法編譯的。雖然這些問題會儘快被解決，但是無論 FreeBSD-CURRENT 帶來災難或是新功能，同步原始碼時都要考量這個問題。</para>
 
-      <para xml:lang="en">FreeBSD-CURRENT is made available for three primary interest
-	groups:</para>
+      <para>FreeBSD-CURRENT 主要給下以三種族群：</para>
 
       <orderedlist>
 	<listitem>
-	  <para xml:lang="en">Members of the FreeBSD community who are actively
-	    working on some part of the source tree.</para>
+	  <para>致力於開發某一部份原始碼樹的 FreeBSD 社群成員。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Members of the FreeBSD community who are active testers.
-	    They are willing to spend time solving problems, making
-	    topical suggestions on changes and the general direction
-	    of FreeBSD, and submitting patches.</para>
+	  <para>FreeBSD 社群成員中活耀的測試人員。 他們願意花時間解決問題，對 FreeBSD 的變更及大方向提出專業建議並送交修補。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Users who wish to keep an eye on things, use the
-	    current source for reference purposes, or make the
-	    occasional comment or code contribution.</para>
+	  <para>隨時關注的使用者，使用目前原始碼做為參考用途，或是偶爾提供意見或貢獻原始碼。</para>
 	</listitem>
       </orderedlist>
 
-      <para xml:lang="en">FreeBSD-CURRENT should <emphasis>not</emphasis> be
-	considered a fast-track to getting new features before the
-	next release as pre-release features are not yet fully tested
-	and most likely contain bugs.  It is not a quick way of
-	getting bug fixes as any given commit is just as likely to
-	introduce new bugs as to fix existing ones.  FreeBSD-CURRENT is
-	not in any way <quote>officially supported</quote>.</para>
+      <para><emphasis>不應</emphasis>將 FreeBSD-CURRENT 當做下一個發行版前取得新功能的快速途徑，因為尚未發行的功能並未被完整測試，很可能有問題。這也不是一個快速取得問題修正的方式，因為任何已知的問題修正有可能產生新的問題。 使用 FreeBSD-CURRENT 不在 <quote>官方支援</quote> 的範圍內。</para>
 
       <indexterm xml:lang="en">
 	<primary>-CURRENT</primary>
 	<secondary>using</secondary>
       </indexterm>
 
-      <para xml:lang="en">To track FreeBSD-CURRENT:</para>
+      <para>若要追蹤 FreeBSD-CURRENT：</para>
 
       <orderedlist>
 	<listitem>
-	  <para xml:lang="en">Join the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">freebsd-current</link> and the
-	    <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-head">svn-src-head</link> lists.  This is
-	    <emphasis>essential</emphasis> in order to see the
-	    comments that people are making about the current state
-	    of the system and to receive important bulletins about
-	    the current state of FreeBSD-CURRENT.</para>
+	  <para>加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">freebsd-current</link> 和 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-head">svn-src-head</link> 郵遞論壇。這是 <emphasis>重要</emphasis> 的，是為了要了解目前人們對於系統目前狀態的評論並接收有關 FreeBSD-CURRENT 目前狀態的重要公告。</para>
 
-	  <para xml:lang="en">The <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-head">svn-src-head</link> list records the commit log
-	    entry for each change as it is made, along with any
-	    pertinent information on possible side effects.</para>
+	  <para><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-head">svn-src-head</link> 郵遞論壇會記錄每一次修改的提交項目，以及可能產生的副作用的相關資訊。</para>
 
-	  <para xml:lang="en">To join these lists, go to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link>,
-	    click on the list to subscribe to, and follow the
-	    instructions.  In order to track changes to the whole
-	    source tree, not just the changes to FreeBSD-CURRENT,
-	    subscribe to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link> list.</para>
+	  <para>要加入這兩個郵遞論壇，請前往 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link> 點選要訂閱的郵遞論壇，並依照網頁指示的步驟操作。要追蹤整個原始碼樹，不單只有 FreeBSD-CURRENT 的變更，可訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link> 郵遞論壇。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Synchronize with the FreeBSD-CURRENT sources.  Typically,
-	    <link linkend="svn">svn</link> is used to check out the
-	    -CURRENT code from the <literal>head</literal> branch of
-	    one of the Subversion mirror sites listed in
-	    <xref linkend="svn-mirrors"/>.</para>
-
-	  <para xml:lang="en">Users with very slow or limited Internet connectivity
-	    can instead use CTM as described in <xref linkend="ctm"/>,
-	    but it is not as reliable as
-	    <application>svn</application> and
-	    <application>svn</application> is the recommended method
-	    for synchronizing source.</para>
+	  <para>同步 FreeBSD-CURRENT 原始碼。 通常會使用 <link linkend="svn">svn</link> 自列於 <xref linkend="svn-mirrors"/> 中的其中一個 Subversion 鏡像站的 <literal>head</literal> 分支中取出 -CURRENT 的程式碼。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"> Due to the size of the repository, some users choose
-	    to only synchronize the sections of source that interest
-	    them  or which they are contributing patches to.  However,
-	    users that plan to compile the operating system from
-	    source must download <emphasis>all</emphasis> of
-	    FreeBSD-CURRENT, not just selected portions.</para>
+	  <para>考量到檔案庫的大小，部份使用者選擇只同步他們有興趣或貢獻修補的部份原始碼。然而， 計劃要從原始碼編譯整個作業系統的使用者須下載 <emphasis>全部</emphasis> 的 FreeBSD-CURRENT，不可只有選擇的部份。</para>
 
-	  <para xml:lang="en">Before compiling FreeBSD-CURRENT
-	    <indexterm xml:lang="en">
+	  <para>編譯 FreeBSD-CURRENT <indexterm>
 	      <primary>-CURRENT</primary>
 		<secondary>compiling</secondary>
-	    </indexterm>, read <filename>/usr/src/Makefile</filename>
-	    very carefully and follow the instructions in
-	    <xref linkend="makeworld"/>.
-	    Read the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">FreeBSD-CURRENT mailing list</link> and
-	    <filename>/usr/src/UPDATING</filename> to stay
-	    up-to-date on other bootstrapping procedures that
-	    sometimes become necessary on the road to the next
-	    release.</para>
+	    </indexterm> 前，請仔細地閱讀 <filename>/usr/src/Makefile</filename> 並依照 <xref linkend="makeworld"/> 的指示操作。 閱讀 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">FreeBSD-CURRENT 郵遞論壇</link> 以及 <filename>/usr/src/UPDATING</filename> 來了解升級的相關資訊，有時會含有升級下一個發行版的必要資訊。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Be active! FreeBSD-CURRENT users are encouraged to
-	    submit their suggestions for enhancements or bug fixes.
-	    Suggestions with accompanying code are always
-	    welcome.</para>
+	  <para>積極！很鼓勵 FreeBSD-CURRENT 使用者發表他們對加強哪些功能或是修復哪些錯誤的建議。 如果您在建議時能附上相關程式碼的話， 那真是太棒了！</para>
 	</listitem>
       </orderedlist>
     </sect2>
@@ -41619,32 +41437,13 @@ before running "/usr/sbin/freebsd-update install"</screen>
     <sect2 xml:id="stable">
       <title>使用 FreeBSD-STABLE</title>
 
-      <para xml:lang="en">FreeBSD-STABLE is the development branch from which major
-	releases are made.  Changes go into this branch at a slower
-	pace and with the general assumption that they have first been
-	tested in FreeBSD-CURRENT.  This is <emphasis>still</emphasis> a
-	development branch and, at any given time, the sources for
-	FreeBSD-STABLE may or may not be suitable for general use.  It is
-	simply another engineering development track, not a resource
-	for end-users.  Users who do not have the resources to perform
-	testing should instead run the most recent release of
-	FreeBSD.</para>
+      <para>主要發行版便是使用 FreeBSD-STABLE 這個開發分支所產生。變更進入這個分支的速度比較慢，並假設這些變更已經先在 FreeBSD-CURRENT 測試過。但這 <emphasis>仍然</emphasis> 是一個開發分支，而且 FreeBSD-STABLE 的原始碼在任何時候都有可能不適合一般的使用。它只是另一個開發分支，並非專門提供給終端使用者使用。若沒有替代資源可供測試的使用者應該改使用最新的 FreeBSD 發行版。</para>
 
-      <para xml:lang="en">Those interested in tracking or contributing to the FreeBSD
-	development process, especially as it relates to the next
-	release of FreeBSD, should consider following FreeBSD-STABLE.</para>
+      <para>有興趣追蹤或對 FreeBSD 開發流程貢獻的人，尤其是對 FreeBSD 接下來的發行版相關內容有興趣的人，應該考慮追蹤 FreeBSD-STABLE。</para>
 
-      <para xml:lang="en">While the FreeBSD-STABLE branch should compile and run at all
-	times, this cannot be guaranteed.  Since more people run
-	FreeBSD-STABLE than FreeBSD-CURRENT, it is inevitable that bugs and
-	corner cases will sometimes be found in FreeBSD-STABLE that were
-	not apparent in FreeBSD-CURRENT.  For this reason, one should not
-	blindly track FreeBSD-STABLE.  It is particularly important
-	<emphasis>not</emphasis> to update any production servers to
-	FreeBSD-STABLE without thoroughly testing the code in a
-	development or testing environment.</para>
+      <para>儘管 FreeBSD-STABLE 分支應該在任何時候均能正確編譯、執行，但是並不保証不會有問題。因為使用 FreeBSD-STABLE 的人比 FreeBSD-CURRENT 多，有時無可避免地會在 FreeBSD-STABLE 發現在 FreeBSD-CURRENT 並非顯而易見的錯誤和極端的狀況。也因此，我們並不建議盲目追蹤 FreeBSD-STABLE。 特別重要的是 <emphasis>不要</emphasis> 在尚未使用開發或測試環境對程式碼做完整的測試之前，升級任何上線的伺服器為 FreeBSD-STABLE。</para>
 
-      <para xml:lang="en">To track FreeBSD-STABLE:</para>
+      <para>若要追蹤 FreeBSD-STABLE：</para>
 
       <indexterm xml:lang="en">
 	<primary>-STABLE</primary>
@@ -41652,34 +41451,15 @@ before running "/usr/sbin/freebsd-update install"</screen>
       </indexterm>
       <orderedlist>
 	<listitem>
-	  <para xml:lang="en">Join the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> list in order to stay
-	    informed of build dependencies that may appear in
-	    FreeBSD-STABLE or any other issues requiring special
-	    attention.  Developers will also make announcements in
-	    this mailing list when they are contemplating some
-	    controversial fix or update, giving the users a chance to
-	    respond if they have any issues to raise concerning the
-	    proposed change.</para>
+	  <para>加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> 郵遞論壇來隨時瞭解 FreeBSD-STABLE 編譯的相依關係或是任何其他需特別注意的議題。開發者在評估一些有爭議的修正或更新時，也會先在這裡發信公告，讓使用者有機會可以對提案的更改提出問題。</para>
 
-	  <para xml:lang="en">Join the relevant <application>svn</application> list
-	    for the branch being tracked.  For example, users
-	    tracking the 9-STABLE branch should join the
-	    <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> list.  This list records the
-	    commit log entry for each change as it is made, along
-	    with any pertinent information on possible
-	    side effects.</para>
+	  <para>加入 <application>svn</application>相關郵遞論壇來追蹤該分支的修訂。 例如，要追蹤 9-STABLE 分支的使用者應該加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> 郵遞論壇。這個郵遞論壇會記錄每一次修改的提交項目，以及可能產生的副作用的相關資訊。</para>
 
-	  <para xml:lang="en">To join these lists, go to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link>,
-	    click on the list to subscribe to, and follow the
-	    instructions.  In order to track changes for the whole
-	    source tree, subscribe to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link>.</para>
+	  <para>要加入這兩個郵遞論壇，請前往 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link> 點選要訂閱的郵遞論壇，並依照網頁指示的步驟操作。要追蹤整個原始碼樹，不單只有 FreeBSD-CURRENT 的變更，可訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link> 郵遞論壇。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">To install a new FreeBSD-STABLE system, install the most
-	    recent FreeBSD-STABLE release from the <link linkend="mirrors">FreeBSD mirror sites</link> or use a
-	    monthly snapshot built from FreeBSD-STABLE.  Refer to <link xlink:href="@@URL_RELPREFIX@@/snapshots/">www.freebsd.org/snapshots</link>
-	    for more information about snapshots.</para>
+	  <para>要安裝新的 FreeBSD-STABLE 系統， 可從 <link linkend="mirrors">FreeBSD 鏡像站</link> 或從 FreeBSD-STABLE 每個月的快照 (Snapshot) 來安裝最新的 FreeBSD-STABLE 發行版。請參考 <link xlink:href="@@URL_RELPREFIX@@/snapshots/">www.freebsd.org/snapshots</link> 來取得更多有關快照的資訊。</para>
 
 	  <para xml:lang="en">To compile or upgrade to an existing FreeBSD system to
 	    FreeBSD-STABLE, use <link linkend="svn">svn</link>
@@ -41687,21 +41467,14 @@ before running "/usr/sbin/freebsd-update install"</screen>
 		<primary>Subversion</primary>
 	      </indexterm> to check out the source for the desired
 	    branch.  Branch names, such as
-	    <literal>stable/9</literal>, are listed at <link xlink:href="@@URL_RELPREFIX@@/releng/">www.freebsd.org/releng</link>.
-	    CTM (<xref linkend="ctm"/>) can be used if a reliable
-	    Internet connection is not available.</para>
+	    <literal>stable/9</literal>, are listed at <link xlink:href="@@URL_RELPREFIX@@/releng/">www.freebsd.org/releng</link>.</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Before compiling or upgrading to FreeBSD-STABLE
-	    <indexterm xml:lang="en">
+	  <para>在編譯或升級到 FreeBSD-STABLE <indexterm>
 	      <primary>-STABLE</primary>
 		<secondary>compiling</secondary>
-	    </indexterm>, read <filename>/usr/src/Makefile</filename>
-	    carefully and follow the instructions in <xref linkend="makeworld"/>.  Read <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">FreeBSD-STABLE mailing list</link> and
-	    <filename>/usr/src/UPDATING</filename> to keep up-to-date
-	    on other bootstrapping procedures that sometimes become
-	    necessary on the road to the next release.</para>
+	    </indexterm> 之前 ， 請仔細閱讀 <filename>/usr/src/Makefile</filename> 並依照 <xref linkend="makeworld"/> 的指示操作。閱讀 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">FreeBSD-STABLE 郵遞論壇</link> 以及 <filename>/usr/src/UPDATING</filename> 來了解升級的相關資訊，有時會含有升級下一個發行版的必要資訊。</para>
 	</listitem>
       </orderedlist>
     </sect2>
@@ -41711,19 +41484,11 @@ before running "/usr/sbin/freebsd-update install"</screen>
     <title>同步原始碼</title>
 
     <para xml:lang="en">There are various methods for staying up-to-date with the
-      FreeBSD sources.  This section compares the primary services,
-      <application>Subversion</application> and
-      <application>CTM</application>.</para>
+      FreeBSD sources.  This section describes the primary service,
+      <application>Subversion</application>.</para>
 
     <warning>
-      <para xml:lang="en">While it is possible to update only parts of the source
-	tree, the only supported update procedure is to update the
-	entire tree and recompile all the programs that run in user
-	space, such as those in <filename>/bin</filename> and
-	<filename>/sbin</filename>, and kernel sources.  Updating only
-	part of the source tree, only the kernel, or only the userland
-	programs will often result in problems ranging from compile
-	errors to kernel panics or data corruption.</para>
+      <para>雖然有可能只更新部份原始碼樹，但是正式支援的更新步驟是更新整個樹並重新編譯所有在使用者空間 (User space) 中的程式，例如在 <filename>/bin</filename> 和 <filename>/sbin</filename> 中的程式及核心原始碼。只更新部份的原始碼樹，例如：只更新核心或使用者空間的程式的做法經常會導致編譯錯誤、核心錯誤或資料損毀的問題。</para>
     </warning>
 
     <indexterm xml:lang="en">
@@ -41742,33 +41507,9 @@ before running "/usr/sbin/freebsd-update install"</screen>
       by the server.  How to synchronize source using
       <application>Subversion</application> is described in <xref linkend="svn"/>.</para>
 
-    <indexterm xml:lang="en">
-      <primary><application>CTM</application></primary>
-    </indexterm>
-    <para xml:lang="en"><application>CTM</application> does not interactively
-      compare the local sources with those on the master archive or
-      otherwise pull them across.  Instead, a script which identifies
-      changes in files since its previous run is executed several
-      times a day on the master CTM machine.  Any detected changes are
-      compressed, stamped with a sequence-number, and encoded for
-      transmission over email in printable <acronym>ASCII</acronym>
-      only.  Once downloaded, these <firstterm>deltas</firstterm> can
-      be run through <command>ctm.rmail</command> which will
-      automatically decode, verify, and apply the changes to the
-      user's copy of the sources.  This process is more efficient than
-      <application>Subversion</application> and places less strain on
-      server resources since it is a <emphasis>push</emphasis>, rather
-      than a <emphasis>pull</emphasis>, model.  Instructions for using
-      <application>CTM</application> to synchronize source can be
-      found at <xref linkend="ctm"/>.</para>
-
     <para xml:lang="en">If a user inadvertently wipes out portions of the local
       archive, <application>Subversion</application> will detect and
-      rebuild the damaged portions.  <application>CTM</application>
-      will not, and if a user deletes some portion of the source tree
-      and does not have a backup, they will have to start from scratch
-      from the most recent <firstterm>base delta</firstterm> and
-      rebuild it all with <application>CTM</application>.</para>
+      rebuild the damaged portions during an update.</para>
   </sect1>
 
   <sect1 xml:id="makeworld">
@@ -41777,277 +41518,151 @@ before running "/usr/sbin/freebsd-update install"</screen>
     <indexterm xml:lang="en">
       <primary>Rebuilding <quote>world</quote></primary>
     </indexterm>
-    <para xml:lang="en">Once the local source tree is synchronized against a
-      particular version of FreeBSD such as FreeBSD-STABLE or FreeBSD-CURRENT,
-      the source tree can be used to rebuild the system.  This process
-      is known as rebuilding world.</para>
+    <para>當本地的原始碼樹已與特定版本的 FreeBSD 如 FreeBSD-STABLE 或 FreeBSD-CURRENT 同步以後，便可使用原始碼樹來重新編譯系統。這個程序即為重新編譯 World。</para>
 
-    <para xml:lang="en"><emphasis>Before</emphasis> rebuilding world, be sure to
-      perform the following tasks:</para>
+    <para>在重新編譯 World <emphasis>之前</emphasis>，請確定已完成以下工作：</para>
 
     <procedure>
-      <title xml:lang="en">Perform These Tasks <emphasis>Before</emphasis>
-	Building World</title>
+      <title>編譯 World <emphasis>之前</emphasis> 要完成的工作</title>
 
       <step>
-	<para xml:lang="en">Backup all important data to another system or removable
-	  media, verify the integrity of the backup, and have a
-	  bootable installation media at hand.  It cannot be stressed
-	  enough how important it is to make a backup of the system
-	  <emphasis>before</emphasis> rebuilding the system.  While
-	  rebuilding world is an easy task, there will inevitably be
-	  times when mistakes in the source tree render the system
-	  unbootable.  You will probably never have to use the backup,
-	  but it is better to be safe than sorry!</para>
+	<para>備份所有重要的資料到另一個系統或可卸除的媒體，檢查備份的完整性並在手中保留一份可開機的安裝媒體。如何強調都不足夠說明在重新編譯系統 <emphasis>之前</emphasis> 備份系統的重要性。即便重新編譯 World 已變成簡單的一件事，也難免會有原始碼樹失誤導致系統無法開機的時候。您可能永遠都用不上備份，但最好確保安全而非後悔。</para>
       </step>
 
       <step>
 	<indexterm xml:lang="en"><primary>mailing list</primary></indexterm>
-	<para xml:lang="en">Review the recent <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> or <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">freebsd-current</link>
-	  entries, depending upon the branch being tracked.  Be aware
-	  of any known problems and which systems are affected.  If a
-	  known issue affects the version of synchronized code, wait
-	  for an <quote>all clear</quote> announcement to be posted
-	  stating that the problem has been solved.  Resynchronize the
-	  sources to ensure that the local version of source has the
-	  needed fix.</para>
+	<para>回顧最近 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> 或 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">freebsd-current</link> 中的項目，依您所追蹤的分支決定。注意任何已知的問題以及會被影響的系統。若已知的問題影響您已同步的原始碼版本，請等候表明問題已被解決的 <quote>全部解決 (all clear)</quote> 公告發佈，然後重新同步原始碼並確認本地的原始碼版本已含有所需的修正。</para>
       </step>
 
       <step>
-	<para xml:lang="en">Read <filename>/usr/src/UPDATING</filename> for any
-	  extra steps necessary for that version of the source.  This
-	  file contains important information about potential problems
-	  and may specify the order to run certain commands.  Many
-	  upgrades require specific additional steps such as renaming
-	  or deleting specific files prior to installing the new
-	  world.  These will be listed at the end of this file where
-	  the currently recommended upgrade sequence is explicitly
-	  spelled out.  If <filename>UPDATING</filename> contradicts
-	  any steps in this chapter, the instructions in
-	  <filename>UPDATING</filename> take precedence and should be
-	  followed.</para>
+	<para>閱讀 <filename>/usr/src/UPDATING</filename> 了解該版本的原始碼是否有必要的額外步驟要完成。 這個檔案中會包含有關潛藏問題的重要資訊，並且可能會要求執行某些指令。大多升級需要完成指定的額外步驟，例如：在安裝新 World 前重新命名或刪除指定檔案，這些步驟會列在檔案最後，明確說明目前建議的升級順序。若 <filename>UPDATING</filename> 中有與本章相矛盾的步驟，請以 <filename>UPDATING</filename> 為準並應遵循其內容。</para>
       </step>
     </procedure>
 
     <warning>
-      <title xml:lang="en">Do Not Use <command>make world</command></title>
+      <title>不要使用 <command>make world</command></title>
 
-      <para xml:lang="en">Some older documentation recommends using <command>make
-	  world</command>.  However, that command skips some important
-	steps and should only be used by experts.  For almost all
-	circumstances <command>make world</command> is the wrong thing
-	to do, and the procedure described here should be used
-	instead.</para>
+      <para>部份舊版的文件建議使用 <command>make world</command>。然而該指令跳過了部份重要的步驟，應僅供專家使用。大多數的情況使用 <command>make world</command> 都是錯的，並應使用此處說明的程序。</para>
     </warning>
 
     <sect2 xml:id="canonical-build">
       <title>流程概述</title>
 
-      <para xml:lang="en">The build world process assumes an upgrade from an older
-	FreeBSD version using the source of a newer version that was
-	obtained using the instructions in <xref linkend="synching"/>.</para>
+      <para>編譯 World 流程會假設您是依照 <xref linkend="synching"/> 指示取得最近版本的原始碼來升級舊版的 FreeBSD。</para>
 
-      <para xml:lang="en">In FreeBSD, the term <quote>world</quote> includes the
-	kernel, core system binaries, libraries, programming files,
-	and built-in compiler.  The order in which these components
-	are built and installed is important.</para>
+      <para>在 FreeBSD，<quote>world</quote> 一詞包含了核心，核心系統 Binary，程式庫，原始碼以及內建的編譯器。這些元件編譯與安裝的順序非常重要。</para>
 
-      <para xml:lang="en">For example, the old compiler might have a bug and not be
-	able to compile the new kernel.  Since the new kernel should
-	be built with the new compiler, the new compiler must be
-	built, but not necessarily installed, before the new kernel is
-	built.</para>
+      <para>舉例來說，舊的編譯器可能有問題而無法編譯新的核心。新的核心需使用新的編譯器來編譯，因此新的編譯器必需先編譯，但在新核心編譯前並不一定要安裝。</para>
 
-      <para xml:lang="en">The new world might rely on new kernel features, so the
-	new kernel must be installed before the new world is
-	installed.  The old world might not run correctly on the new
-	kernel, so the new world must be installed immediately upon
-	installing the new kernel.</para>
+      <para>新的 World 可能需要使用新的核心功能，所以必須在新的 World 安裝之前先安裝新的核心。舊的 World 也可能在新的核心上無法正常執行，所以必須在新的核心安裝完之後
+馬上安裝新的 World。</para>
 
-      <para xml:lang="en">Some configuration changes must be made before the new
-	world is installed, but others might break the old world.
-	Hence, two different configuration upgrade steps are used.
-	For the most part, the update process only replaces or adds
-	files and existing old files are not deleted.  Since this can
-	cause problems, <filename>/usr/src/UPDATING</filename> will
-	indicate if any files need to be manually deleted and at which
-	step to do so.</para>
+      <para>有一部份設定必須在新的 World 安裝前變更，但其他的部份在之前變更則可能會破壞舊的 World。因此會使用到兩種不同的設定升級步驟。大部份情況，更新程序只會取代或新增檔案，不會刪除已存在的舊檔案。當這可能會造成問題時 <filename>/usr/src/UPDATING</filename> 便會說明需要手動刪除的檔案以及操作的步驟。</para>
 
-      <para xml:lang="en">These concerns have led to the recommended upgrade
-	sequence described in the following procedure.</para>
+      <para>這些問題會影響接下來的建議升級順序。</para>
 
       <note>
-	<para xml:lang="en">It is a good idea to save the output from running
-	  <command>make</command> to a file.  If something goes wrong,
-	  a copy of the error message can be posted to one of the FreeBSD
-	  mailing lists.</para>
+	<para>將執行 <command>make</command> 的輸出儲存到檔案是不錯的辦法，若發生錯誤時，便可複製錯誤訊息張貼到 FreeBSD 郵遞論壇。</para>
 
-	<para xml:lang="en">The easiest way to do this is to use
-	  <command>script</command> with a parameter that specifies
-	  the name of the file to save all output to.  Do not save the
-	  output to <filename>/tmp</filename> as this directory may be
-	  cleared at next reboot.  A better place to save the file is
-	  <filename>/var/tmp</filename>.  Run this command immediately
-	  before rebuilding the world, and then type
-	  <userinput>exit</userinput> when the process has
-	  finished:</para>
+	<para>最簡單的方式是使用 <command>script</command> 並透過參數指定要儲存所有輸出的檔案名稱。請不要儲存輸出到 <filename>/tmp</filename>，因這個目錄可能在下次重新開機後被清除。儲存檔案最好的地方是 <filename>/var/tmp</filename>。在重新編譯 World 之前執行這個指令，並在流程完成後輸入 <userinput>exit</userinput>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>script <replaceable>/var/tmp/mw.out</replaceable></userinput>
 Script started, output file is /var/tmp/mw.out</screen>
       </note>
 
       <procedure>
-	<title xml:lang="en">Overview of Build World Process</title>
+	<title>編譯 World 流程概述</title>
 
-	<para xml:lang="en">The commands used in the build world process should be
-	  run in the order specified here.  This section summarizes
-	  the function of each command.</para>
+	<para>編譯 World 流程中使用的指令應依此處指定的順序執行。本節將摘要各指令的功能。</para>
 
 	<step>
-	  <para xml:lang="en">If the build world process has previously been run on
-	    this system, a copy of the previous build may still exist
-	    in <filename>/usr/obj</filename>.  To
-	    speed up the new build world process, and possibly save
-	    some dependency headaches, remove this directory if it
-	    already exists:</para>
+	  <para>若編譯 World 流程先前已在系統執行過，先前編譯的結果可能遺留在 <filename>/usr/obj</filename>。要加速新的編譯 World 流程及節省處理相依問題的時間，若此目錄存在，請移除此目錄：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>chflags -R noschg /usr/obj/*</userinput>
 <prompt>#</prompt> <userinput>rm -rf /usr/obj</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Compile the new compiler and a few related tools, then
-	    use the new compiler to compile the rest of the new world.
-	    The result is saved to <filename>/usr/obj</filename>.</para>
+	  <para>編譯新的編譯器及一些相關工具，然後使用新的編譯器編譯新的 World。編譯的結果會儲存到 <filename>/usr/obj</filename>。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
 <prompt>#</prompt> <userinput>make buildworld</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Use the new compiler residing in <filename>/usr/obj</filename> to build the new
-	    kernel, in order to protect against compiler-kernel
-	    mismatches.  This is necessary, as certain memory
-	    structures may have changed, and programs like
-	    <command>ps</command> and <command>top</command> will fail
-	    to work if the kernel and source code versions are not the
-	    same.</para>
+	  <para>使用在 <filename>/usr/obj</filename> 中的新編譯器來編譯新的核心，來確保不會發生編譯器與核心不相容的問題。因某些記憶體結構可能有修改，這個步驟是必要的，若核心與原始碼的版本不同，<command>ps</command> 及 <command>top</command> 這類的程式會無法運作。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make buildkernel</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Install the new kernel and kernel modules, making it
-	    possible to boot with the newly updated kernel.  If
-	    <varname>kern.securelevel</varname> has been raised above
-	    <literal>1</literal> <emphasis>and</emphasis>
-	    <literal>noschg</literal> or similar flags have been set
-	    on the kernel binary, drop the system into single-user
-	    mode first.  Otherwise, this command can be run from
-	    multi-user mode without problems.  See <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> for
-	    details about <varname>kern.securelevel</varname> and
-	    <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> for details about the various file
-	    flags.</para>
+	  <para>安裝新的核心與新的核心模組，讓開機時可以使用新的核心。這個指令可在多使用者模式執行，除非 <varname>kern.securelevel</varname> 設定在 <literal>1</literal> 以上 <emphasis>且</emphasis> 在核心 Binary 有設定 <literal>noschg</literal> 或類似的旗標 (Flag)，請先讓系統進入單使用者模式。請參考 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得有關 <varname>kern.securelevel</varname>  的詳細資訊以及 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> 取得有關各種檔案旗標的詳細資訊。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make installkernel</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Drop the system into single-user mode in order to
-	    minimize problems from updating any binaries that are
-	    already running.  It also minimizes any problems from
-	    running the old world on a new kernel.</para>
+	  <para>讓系統進入單使用者模組來減少升級任何已在執行中的 Binary 所產生的問題，同樣也可減少在新核心上執行舊 World 的問題。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>shutdown now</userinput></screen>
 
-	  <para xml:lang="en">Once in single-user mode, run these commands if the
-	    system is formatted with UFS:</para>
+	  <para>進入單使用者模式後，若系統磁碟格式為 UFS 請執行以下指令：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>mount -u /</userinput>
 <prompt>#</prompt> <userinput>mount -a -t ufs</userinput>
 <prompt>#</prompt> <userinput>swapon -a</userinput></screen>
 
-	  <para xml:lang="en">If the system is instead formatted with ZFS, run these
-	    two commands.  This example assumes a zpool name of
-	    <literal>zroot</literal>:</para>
+	  <para>若系統磁碟格式為 ZFS，則需執行以下兩個指令。此範例假設 zpool 名稱為 <literal>zroot</literal>：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs set readonly=off zroot</userinput>
 <prompt>#</prompt> <userinput>zfs mount -a</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Optional: If a keyboard mapping other than the default
-	    US English is desired, it can be changed with
-	    <citerefentry><refentrytitle>kbdmap</refentrytitle><manvolnum>1</manvolnum></citerefentry>:</para>
+	  <para>選用：若想要使用 US 英文以外的鍵盤對應表，可以使用 <citerefentry><refentrytitle>kbdmap</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來變更：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>kbdmap</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Then, for either file system, if the
-	    <acronym>CMOS</acronym> clock is set to local time (this
-	    is true if the output of <citerefentry><refentrytitle>date</refentrytitle><manvolnum>1</manvolnum></citerefentry> does not show the
-	    correct time and zone), run:</para>
+	  <para>接著，不論那一種檔案系統，若 <acronym>CMOS</acronym> 時鐘設定為本地時間 (若 <citerefentry><refentrytitle>date</refentrytitle><manvolnum>1</manvolnum></citerefentry> 顯示不正確的時間與時區)，請執行：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>adjkerntz -i</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Remaking the world will not update certain
-	    directories, such as <filename>/etc</filename>,
-	    <filename>/var</filename> and <filename>/usr</filename>,
-	    with new or changed configuration files.  The next step is
-	    to perform some initial configuration file updates
-	    to <filename>/etc</filename> in
-	    preparation for the new world.  The following command
-	    compares only those files that are essential for the
-	    success of <buildtarget xml:lang="en">installworld</buildtarget>.  For
-	    instance, this step may add new groups, system accounts,
-	    or startup scripts which have been added to FreeBSD since the
-	    last update.  This is necessary so that the
-	    <buildtarget xml:lang="en">installworld</buildtarget> step will be able
-	    to use any new system accounts, groups, and scripts.
-	    Refer to <xref linkend="mergemaster"/> for more detailed
-	    instructions about this command:</para>
+	  <para>重新編譯 World 不會直接更新某些目錄中的設定檔，如 <filename>/etc</filename>, <filename>/var</filename> 以及 <filename>/usr</filename>。接下來的步驟是更新一部份的設定檔到 <filename>/etc</filename> 來準備安裝新的 World。以下指令只會比對影響 <buildtarget>installworld</buildtarget> 是否成功執行的必要檔案。例如，這個步驟會可能會加入新版 FreeBSD 的新群組、系統帳號或啟動 Script。為了讓 <buildtarget>installworld</buildtarget> 步驟可以使用任何新的系統帳號、群組與 Script，這是個必要的步驟。請參考 <xref linkend="mergemaster"/> 來取得更多有關此指令的詳細操作說明：</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>mergemaster -p</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Install the new world and system binaries from
-	    <filename>/usr/obj</filename>.</para>
+	  <para>從 <filename>/usr/obj</filename> 安裝新 World 與系統 Binary。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
 <prompt>#</prompt> <userinput>make installworld</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Update any remaining configuration files.</para>
+	  <para>更新任何剩下的設定檔。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>mergemaster -iF</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Delete any obsolete files.  This is important as they
-	    may cause problems if left on the disk.</para>
+	  <para>刪除任何過時的檔案。這很重要，因為若檔案遺留在磁碟上可能會造成問題。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">A full reboot is now needed to load the new kernel and
-	    new world with the new configuration files.</para>
+	  <para>現在需要完整重新啟動來載入新的核心、新的 World 與新的設定檔。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>reboot</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Make sure that all installed ports have first been
-	    rebuilt before old libraries are removed using the
-	    instructions in  <xref linkend="ports-upgrading"/>.  When
-	    finished, remove any obsolete libraries to avoid conflicts
-	    with newer ones.  For a more detailed description of this
-	    step, refer to <xref linkend="make-delete-old"/>.</para>
+	  <para>確認所有已安裝的 Ports 在舊的程式庫移除前已依照 <xref linkend="ports-upgrading"/> 的說明重新編譯。當重新編譯完成後，移除過時的程式庫來避免與新的程式庫發生衝突。有關此步驟更詳細的說明請參考 <xref linkend="make-delete-old"/>。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old-libs</userinput></screen>
 	</step>
@@ -42055,14 +41670,7 @@ Script started, output file is /var/tmp/mw.out</screen>
 
       <indexterm xml:lang="en"><primary>single-user mode</primary></indexterm>
 
-      <para xml:lang="en">If the system can have a window of down-time, consider
-	compiling the system in single-user mode instead of compiling
-	the system in multi-user mode, and then dropping into
-	single-user mode for the installation.  Reinstalling the
-	system touches a lot of important system files, all the
-	standard system binaries, libraries, and include files.
-	Changing these on a running system, particularly one with
-	active users, is asking for trouble.</para>
+      <para>若系統允許停機一小段時間，請考慮以單使用者模式編譯系統來替代在多使用者模組編譯系統，然後進入單使用者模式來完成安裝。重新安裝系統會觸及到很多重要的系統檔案，所有的標準系統 Binary、程式庫以及引用檔。在執行中的系統更換這些檔案，特別是有使用者在使用時，是自找麻煩。</para>
     </sect2>
 
     <sect2 xml:id="src-updating">
@@ -42485,8 +42093,7 @@ a good job of merging.
 
       <variablelist>
 	<varlistentry>
-	  <term xml:lang="en">Do I need to re-make the world for every
-	      change?</term>
+	  <term>每個變更是否都需要重新編譯 World?</term>
 
 	  <listitem>
 	    <para xml:lang="en">It depends upon the nature of the change.  For
@@ -42516,11 +42123,9 @@ a good job of merging.
 	</varlistentry>
 
 	<varlistentry>
-	  <term xml:lang="en">What would cause a compile to fail with lots of
-	    signal 11<indexterm xml:lang="en">
+	  <term>什麼會造成有很多信號 11<indexterm>
 	      <primary>signal 11</primary>
-	    </indexterm>
-	    (or other signal number) errors?</term>
+	    </indexterm> (或其他信號) 錯誤的編譯失敗?</term>
 
 	  <listitem>
 	    <para xml:lang="en">This normally indicates a hardware problem.
@@ -42537,8 +42142,7 @@ a good job of merging.
 	</varlistentry>
 
 	<varlistentry>
-	  <term xml:lang="en">Can <filename>/usr/obj</filename>
-	      be removed when finished?</term>
+	  <term>完成編譯後是可否移除 <filename>/usr/obj</filename>?</term>
 
 	  <listitem>
 	    <para xml:lang="en">This directory contains all the object files that
@@ -42553,7 +42157,7 @@ a good job of merging.
 	</varlistentry>
 
 	<varlistentry>
-	  <term xml:lang="en">Can interrupted builds be resumed?</term>
+	  <term>是否能繼續中斷的編譯?</term>
 
 	  <listitem>
 	    <para xml:lang="en">This depends on how far into the process the
@@ -42588,7 +42192,7 @@ Building everything..
 	</varlistentry>
 
 	<varlistentry>
-	  <term xml:lang="en">Is it possible to speed up making the world?</term>
+	  <term>有可能加速編譯 World 的速度嗎?</term>
 
 	  <listitem>
 	    <para xml:lang="en">Several actions can speed up the build world
@@ -42643,7 +42247,7 @@ Building everything..
 	</varlistentry>
 
 	<varlistentry>
-	  <term xml:lang="en">What if something goes wrong?</term>
+	  <term>若發生錯誤時該怎麼辦?</term>
 
 	  <listitem>
 	    <para xml:lang="en">First, make absolutely sure that the environment has
@@ -63461,7 +63065,7 @@ ifconfig_carp1="vhid <replaceable>2</replaceable> advskew <replaceable>100</repl
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml 47746 2015-11-06 07:57:09Z remko $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml 48637 2016-04-14 21:52:30Z wblock $
 -->
 <appendix version="5.0" xml:id="mirrors">
   <title>取得 FreeBSD</title>
@@ -64250,288 +63854,6 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </varlistentry>
 </variablelist>
 
-  </sect1>
-
-  <sect1 xml:id="ctm">
-    <title>使用 CTM</title>
-
-    <indexterm xml:lang="en">
-      <primary>CTM</primary>
-    </indexterm>
-
-    <para xml:lang="en"><application>CTM</application> is a method for keeping a
-      remote directory tree in sync with a central one.  It is built
-      into FreeBSD and can be used to synchronize a system with FreeBSD's
-      source repositories.  It supports synchronization of an entire
-      repository or just a specified set of branches.</para>
-
-    <para xml:lang="en"><application>CTM</application> is specifically designed for
-      use on lousy or non-existent TCP/IP connections and provides
-      the ability for changes to be automatically sent by email.  It
-      requires the user to obtain up to three deltas per day for the
-      most active branches.  Update sizes are always kept as small as
-      possible and are typically less than 5K.  About one in every ten
-      updates is 10-50K in size, and there will occasionally be an
-      update larger than 100K+.</para>
-
-    <para xml:lang="en">When using <application>CTM</application> to track FreeBSD
-      development, refer to the caveats related to working directly
-      from the development sources rather than a pre-packaged release.
-      These are discussed in <link linkend="current-stable">Tracking
-	a Development Branch</link>.</para>
-
-    <para xml:lang="en">Little documentation exists on the process of creating
-      deltas or using <application>CTM</application> for other
-      purposes.  Contact the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/ctm-users">ctm-users</link> mailing list for
-      answers to questions on using
-      <application>CTM</application>.</para>
-
-    <sect2 xml:id="mirrors-ctm">
-      <title>取得 Deltas</title>
-
-      <para xml:lang="en">The <quote>deltas</quote> used by
-	<application>CTM</application> can be obtained either through
-	anonymous <acronym>FTP</acronym> or email.</para>
-
-      <para xml:lang="en"><acronym>FTP</acronym> deltas can be obtained from the
-	following mirror sites.  When using anonymous
-	<acronym>FTP</acronym> to obtain
-	<application>CTM</application> deltas, select a mirror that is
-	geographically nearby.  In case of problems, contact the
-	<link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/ctm-users">ctm-users</link> mailing list.</para>
-
-      <variablelist>
-	<varlistentry>
-	  <term xml:lang="en">Global mirror</term>
-
-	  <listitem>
-	    <itemizedlist>
-	      <listitem>
-		<para xml:lang="en"><uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/development/CTM/">ftp://ftp.FreeBSD.org/pub/FreeBSD/development/CTM/</uri></para>
-	      </listitem>
-	    </itemizedlist>
-	  </listitem>
-	</varlistentry>
-
-	<varlistentry>
-	  <term xml:lang="en">South Africa, backup server for old deltas</term>
-
-	  <listitem>
-	    <itemizedlist>
-	      <listitem>
-		<para xml:lang="en"><uri xlink:href="ftp://ftp.za.FreeBSD.org/pub/FreeBSD/CTM/">ftp://ftp.za.FreeBSD.org/pub/FreeBSD/CTM/</uri></para>
-	      </listitem>
-	    </itemizedlist>
-	  </listitem>
-	</varlistentry>
-
-	<varlistentry>
-	  <term xml:lang="en">Taiwan/R.O.C.</term>
-
-	  <listitem>
-	    <itemizedlist>
-	      <listitem>
-		<para xml:lang="en"><uri xlink:href="ftp://ctm.tw.FreeBSD.org/pub/FreeBSD/development/CTM/">ftp://ctm.tw.FreeBSD.org/pub/FreeBSD/development/CTM/</uri></para>
-	      </listitem>
-
-	      <listitem>
-		<para xml:lang="en"><uri xlink:href="ftp://ctm2.tw.FreeBSD.org/pub/FreeBSD/development/CTM/">ftp://ctm2.tw.FreeBSD.org/pub/FreeBSD/development/CTM/</uri></para>
-	      </listitem>
-
-	      <listitem>
-		<para xml:lang="en"><uri xlink:href="ftp://ctm3.tw.FreeBSD.org/pub/FreeBSD/development/CTM/">ftp://ctm3.tw.FreeBSD.org/pub/FreeBSD/development/CTM/</uri></para>
-	      </listitem>
-	    </itemizedlist>
-	  </listitem>
-	</varlistentry>
-      </variablelist>
-
-      <para xml:lang="en">To instead receive deltas through email, subscribe to one
-	of the <literal>ctm-src</literal> distribution lists available
-	from <uri xlink:href="http://lists.freebsd.org/mailman/listinfo">http://lists.freebsd.org/mailman/listinfo</uri>.
-	For example, <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/ctm-src-cur">ctm-src-cur</link> supports the head
-	development branch and  <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/ctm-src-9">ctm-src-9</link> supports the 9.X
-	release branch.</para>
-
-      <para xml:lang="en">As <application>CTM</application> updates arrive through
-	email, use <command>ctm_rmail</command> to unpack and apply
-	them.  This command can be run directly from an entry in
-	<filename>/etc/aliases</filename> in order to automate this
-	process.  Refer to <citerefentry><refentrytitle>ctm_rmail</refentrytitle><manvolnum>1</manvolnum></citerefentry> for more details.</para>
-
-      <note>
-	<para xml:lang="en">Regardless of the method which is used to get deltas,
-	  <application>CTM</application> users should subscribe
-	  to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/ctm-announce">ctm-announce</link> mailing list as this is the
-	  only mechanism by which <application>CTM</application>
-	  announcements are posted.</para>
-      </note>
-    </sect2>
-
-    <sect2>
-      <title><application>CTM</application> 用法</title>
-
-      <para xml:lang="en">Before <application>CTM</application> deltas can be used
-	for the first time, a starting point must be produced.</para>
-
-      <para xml:lang="en">One method is to apply a <quote>starter</quote> delta to
-	an empty directory.  A  starter delta can be recognized by the
-	<filename>XEmpty</filename> in its name, such as
-	<filename>src-cur.3210XEmpty.gz</filename>.  The designation
-	following the <literal>X</literal> corresponds to the origin
-	of the initial <quote>seed</quote>, where
-	<filename>Empty</filename> is an empty directory.  As a rule,
-	a base transition from <literal>Empty</literal> is produced
-	every 100 deltas.  Be aware that starter deltas are large and
-	70 to 80 Megabytes of <command>gzip</command>'d data is common
-	for the <filename>XEmpty</filename> deltas.</para>
-
-      <para xml:lang="en">Another method is to copy or extract an initial source
-	from  a RELEASE media as this can  save a significant transfer
-	of data from the Internet.</para>
-
-      <para xml:lang="en">Once a base delta has been created, apply all deltas with
-	higher numbers.  To apply the deltas:</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /directory/to/store/the/stuff</userinput>
-<prompt>#</prompt> <userinput>ctm -v -v /directory/which/stores/the/deltas/src-xxx.*</userinput></screen>
-
-      <para xml:lang="en">Multiple deltas can be applied with a single command as
-	they will be processed one at a time and any deltas that are
-	already applied will be ignored.
-	<application>CTM</application> understands
-	<command>gzip</command> compressed deltas, which saves disk
-	space.</para>
-
-      <para xml:lang="en">To verify a delta without applying it, include
-	<option>-c</option> in the command line.
-	<application>CTM</application> will not actually modify the
-	local tree but will instead verify the integrity of the delta
-	to see if it would apply cleanly.  Refer to <citerefentry><refentrytitle>ctm</refentrytitle><manvolnum>1</manvolnum></citerefentry> for
-	more information about available options and an overview of
-	the process <application>CTM</application> uses when applying
-	deltas.</para>
-
-      <para xml:lang="en">To keep the local source tree up-to-date, every time a
-	new delta becomes available, apply it through
-	<application>CTM</application>.</para>
-
-      <para xml:lang="en">Once applied, it is recommended to not delete the deltas
-	if it is a burden to download them again.  This way, a local
-	copy is available in case it is needed for future disaster
-	recovery.</para>
-    </sect2>
-
-    <sect2>
-      <title>保留本地變更</title>
-
-      <para xml:lang="en">Developers often experiment with and
-	change files in their local source tree.
-	<application>CTM</application> supports local modifications in
-	a limited way: before checking for the presence of a file,
-	it first looks for a file with the same name and a
-	<filename>.ctm</filename> extension.  If this file exists,
-	<application>CTM</application> will operate on it instead of
-	the original filename.</para>
-
-      <para xml:lang="en">This behavior provides a simple way to maintain local
-	changes.  Before modifying a file, make a copy with a
-	<filename>.ctm</filename> suffix.  Make any changes to the
-	original filename, knowing that
-	<application>CTM</application> will only apply updates to the
-	file with the <filename>.ctm</filename> suffix.</para>
-    </sect2>
-
-    <sect2>
-      <title>其他 <application>CTM</application> 選項</title>
-
-      <variablelist>
-	<varlistentry>
-	  <term xml:lang="en">Finding Out Exactly What Would Be Touched by an
-	    Update</term>
-
-	  <listitem>
-	    <para xml:lang="en">To determine the list of changes that
-	      <application>CTM</application> will make to the local
-	      source repository, use <option>-l</option>.  This option
-	      is useful for creating logs of the changes or when
-	      performing pre- or post-processing on any of the
-	      modified files.</para>
-	  </listitem>
-	</varlistentry>
-
-	<varlistentry>
-	  <term xml:lang="en">Making Backups Before Updating</term>
-
-	  <listitem>
-	    <para xml:lang="en">To backup all of the files that would be changed by
-	      a <application>CTM</application> update, specify
-	      <option>-B
-		<replaceable>backup-file</replaceable></option>.  This
-	      option tells <application>CTM</application> to backup
-	      all files touched by the applied
-	      <application>CTM</application> delta to
-	      <filename>backup-file</filename>.</para>
-	  </listitem>
-	</varlistentry>
-
-	<varlistentry>
-	  <term xml:lang="en">Restricting the Files Touched by an Update</term>
-
-	  <listitem>
-	    <para xml:lang="en">To restrict the scope of a given
-	      <application>CTM</application> update, or to extract
-	      just a few files from a sequence of deltas, filtering
-	      regular expressions can be specified using
-	      <option>-e</option>, which specifies which files to
-	      process, or <option>-x</option>, which specifies which
-	      files to ignore.</para>
-
-	    <para xml:lang="en">For example, to extract an up-to-date copy of
-	      <filename>lib/libc/Makefile</filename> from a collection
-	      of saved <application>CTM</application> deltas:</para>
-
-	    <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /directory/to/extract/to/</userinput>
-<prompt>#</prompt> <userinput>ctm -e '^lib/libc/Makefile' /directory/which/stores/the/deltas/src-xxx.*</userinput></screen>
-
-	    <para xml:lang="en">For every file specified in a
-	      <application>CTM</application> delta,
-	      <option>-e</option> and <option>-x</option> are
-	      applied in the order given on the command line.  A file
-	      is processed by <application>CTM</application> only if
-	      it is marked as eligible after all <option>-e</option>
-	      and <option>-x</option> options are applied.</para>
-	  </listitem>
-	</varlistentry>
-      </variablelist>
-    </sect2>
-<!--
-Comment out for now until these can be verified.
-    <sect2>
-      <title>Future Plans for <application>CTM</application></title>
-
-      <para>Tons of them:</para>
-
-      <itemizedlist>
-	<listitem>
-	  <para>Use some kind of authentication into the
-	    <application>CTM</application> system, so as to allow
-	    detection of spoofed <application>CTM</application>
-	    updates.</para>
-	</listitem>
-
-	<listitem>
-	  <para>Clean up the options to
-	    <application>CTM</application>, they became confusing and
-	    counter intuitive.</para>
-	</listitem>
-      </itemizedlist>
-
-      <para>There is a sequence of deltas for the
-	<literal>ports</literal> collection too, but interest has not
-	been all that high yet.</para>
-    </sect2>
-    -->
   </sect1>
 
   <sect1 xml:id="svn">
