@@ -2613,14 +2613,11 @@
 	  these utilities.</para>
 
 	<important>
-	  <para xml:lang="en">Before proceeding, back up any important data on the
-	    <acronym>USB</acronym> stick.  This procedure will erase
-	    the existing data on the stick.</para>
+	  <para>在繼續之前，請先備份 <acronym>USB</acronym> 上的重要資料，這個程序會清除在隨身碟上既有的資料。</para>
 	</important>
 
 	<procedure xml:id="bsdinstall-usb-dd">
-	  <title xml:lang="en">Using <command>dd</command> to Write the
-	    Image</title>
+	  <title>使用 <command>dd</command> 來寫入映像檔</title>
 
 	  <warning>
 	    <para xml:lang="en">This example uses <filename>/dev/da0</filename> as
@@ -2685,19 +2682,14 @@
     <title>開始安裝</title>
 
     <important>
-      <para xml:lang="en">By default, the installation will not make any changes to
-	the disk(s) before the following message:</para>
+      <para>預設安裝程式在下列訊息顯示之前不會對磁碟做任何更動：</para>
 
       <programlisting xml:lang="en">Your changes will now be written to disk.  If you
 have chosen to overwrite existing data, it will
 be PERMANENTLY ERASED. Are you sure you want to
 commit your changes?</programlisting>
 
-      <para xml:lang="en">The install can be exited at any time prior to this
-	warning.  If
-	there is a concern that something is incorrectly configured,
-	just turn the computer off before this point and no changes
-	will be made to the system's disks.</para>
+      <para>在這個警告訊息之前可以隨時中止安裝，若有任何設定錯誤的疑慮，只需在此時關閉電腦，將不會對系統磁碟做任何更改。</para>
     </important>
 
     <para xml:lang="en">This section describes how to boot the system from the
@@ -4850,7 +4842,7 @@ login:</screen>
 
       <para>當您從一個 Console 切換到下一個的時候，FreeBSD 會切換畫面顯示的內容， 這就好像有很多虛擬的螢幕和鍵盤可以讓您輸入指令到 FreeBSD 執行。 在某一個虛擬 Console 上執行的程式並不會因為使用者切到別的 Console 而停止執行。</para>
 
-      <para>請參考 <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, and <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> 來取得更多有關 FreeBSD Console 及鍵盤驅動程式的技術說明。</para>
+      <para>請參考 <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> 來取得更多有關 FreeBSD Console 及鍵盤驅動程式的技術說明。</para>
 
       <para>FreeBSD 中虛擬 Console 的數量設定在 <filename>/etc/ttys</filename> 檔案中的下列章節:</para>
 
@@ -7596,7 +7588,7 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
       </important>
 
       <note>
-	<para>套件資料庫轉換的過程可能會因內容轉換為新版本產生錯誤。通常，這些錯誤皆可安全忽略，不論如何，仍有在執行 <command>pkg2ng</command> 後無法成功轉換的第三方軟體清單，這些應用程式則必須手動重新安裝。</para>
+	<para>套件資料庫轉換的過程可能會因內容轉換為新版本產生錯誤。通常，這些錯誤皆可安全忽略，雖然如此，仍然有在執行 <command>pkg2ng</command> 後無法成功轉換的第三方軟體清單，這些應用程式則必須手動重新安裝。</para>
       </note>
 
       <para>為了確保 FreeBSD Ports 套件集會將新軟體的資訊註冊到 <application>pkg</application> 而非舊版套件格式，FreeBSD 版本 10.<replaceable>X</replaceable> 之前需要在 <filename>/etc/make.conf</filename> 加入此行：</para>
@@ -10605,7 +10597,7 @@ EndSection</programlisting>
 	<primary>Flash</primary>
       </indexterm>
 
-      <para>FreeBSD 並沒有原生的 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加原件。不論如何，可以使用軟體包裝程式來執行 <trademark class="registered">Linux</trademark> 版本 的附加元件。該包裝程式也提供其他瀏覽器附加元件的支援，如 <trademark class="registered">RealPlayer</trademark>。</para>
+      <para>FreeBSD 並沒有原生的 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加原件。雖然如此，仍可以使用軟體包裝程式來執行 <trademark class="registered">Linux</trademark> 版本 的附加元件。該包裝程式也提供其他瀏覽器附加元件的支援，如 <trademark class="registered">RealPlayer</trademark>。</para>
 
       <para>要安裝並開啟此附加元件，可執行以下步驟：</para>
 
@@ -24773,7 +24765,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
     </tip>
 
     <sect2 xml:id="security-sudo-loggin">
-      <title xml:lang="en">Logging Output</title>
+      <title>記錄輸出</title>
 
       <para xml:lang="en">An advantage to implementing
 	<application>Sudo</application> is the ability to enable
@@ -28909,7 +28901,7 @@ fi</programlisting>
       <para>若新加入的磁碟不是空白的，可以使用 <command>gpart delete</command> 來移除舊的分割區資訊。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得詳細資訊。</para>
     </note>
 
-    <para>建立完分割區結構後接著加入一個分隔區，要在新的磁碟增進效能可使用較大的硬體磁區大小，此分割區會對齊 1 MB 的邊界：</para>
+    <para>建立完分割區結構後接著加入一個分隔區，要在新的磁碟增進效能可使用較大的硬體區塊大小 (Block size)，此分割區會對齊 1 MB 的邊界：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart create -s GPT ada1</userinput>
 <prompt>#</prompt> <userinput>gpart add -t freebsd-ufs -a 1M ada1</userinput></screen>
@@ -29007,7 +28999,7 @@ ada0p3 deleted
    79691810   22708157        - free -  (10G)</screen>
 
     <warning>
-      <para>在掛載的檔案系統上修改分割區表可能會造成資料遺失。最好的方式是在未掛載檔案系統的情況下 (使用 Live <acronym>CD-ROM</acronym> 或 <acronym>USB</acronym> 裝置) 執行以下步驟。不論如何，若必須如此的話，在關閉 GEOM 安全性功能之後可以在掛載的檔案系統上修改分隔區表：</para>
+      <para>在掛載的檔案系統上修改分割區表可能會造成資料遺失。最好的方式是在未掛載檔案系統的情況下 (使用 Live <acronym>CD-ROM</acronym> 或 <acronym>USB</acronym> 裝置) 執行以下步驟。雖然如此，若仍要這樣做的話，在關閉 GEOM 安全性功能之後可以在掛載的檔案系統上修改分隔區表：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl kern.geom.debugflags=16</userinput></screen>
     </warning>
@@ -30915,33 +30907,23 @@ Filesystem 1K-blocks Used Avail Capacity  Mounted on
     </indexterm>
     <indexterm xml:lang="en"><primary>disk quotas</primary></indexterm>
 
-    <para xml:lang="en">Disk quotas can be used to limit the amount of disk space or
-      the number of files a user or members of a group may allocate on
-      a per-file system basis.  This prevents one user or group of
-      users from consuming all of the available disk space.</para>
+    <para>磁碟配額可以用來限制使用者或群組成員能夠在各別檔案系統上使用的磁碟空間量或檔案數量。這個可避免一個使用者或群組成員耗盡所有磁碟的可用空間。</para>
 
-    <para xml:lang="en">This section describes how to configure disk quotas for the
-      <acronym>UFS</acronym> file system.  To configure quotas on the
-      <acronym>ZFS</acronym> file system, refer to <xref linkend="zfs-zfs-quota"/></para>
+    <para>本節將說明如何設定 <acronym>UFS</acronym> 檔案系統的磁碟配額。要在 <acronym>ZFS</acronym> 檔案系統上設定配額，請參考 <xref linkend="zfs-zfs-quota"/></para>
 
     <sect2>
       <title>開啟磁碟配額</title>
 
-      <para xml:lang="en">To determine if the FreeBSD kernel provides support for disk
-	quotas:</para>
+      <para>查看 FreeBSD 核心是否支援磁碟配額：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>sysctl kern.features.ufs_quota</userinput>
 kern.features.ufs_quota: 1</screen>
 
-      <para xml:lang="en">In this example, the <literal>1</literal> indicates quota
-	support.  If the value is instead <literal>0</literal>, add
-	the following line to a custom kernel configuration file and
-	rebuild the kernel using the instructions in <xref linkend="kernelconfig"/>:</para>
+      <para>在本例中，數值 <literal>1</literal> 代表支援磁碟配額，若為 <literal>0</literal>，則需加入下列設定到自訂核心設定檔然後依照 <xref linkend="kernelconfig"/> 的指示重新編譯核心：</para>
 
       <programlisting xml:lang="en">options QUOTA</programlisting>
 
-      <para xml:lang="en">Next, enable disk quotas in
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>接著，在 <filename>/etc/rc.conf</filename> 開啟磁碟配額：</para>
 
       <programlisting xml:lang="en">quota_enable="YES"</programlisting>
 
@@ -30949,46 +30931,23 @@ kern.features.ufs_quota: 1</screen>
 	<primary>disk quotas</primary>
 	<secondary>checking</secondary>
       </indexterm>
-      <para xml:lang="en">Normally on bootup, the quota integrity of each file
-	system is checked by <citerefentry><refentrytitle>quotacheck</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  This program insures
-	that the data in the quota database properly reflects the data
-	on the file system.  This is a time consuming process that
-	will significantly affect the time the system takes to boot.
-	To skip this step, add this variable to
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>正常在開機時，會使用 <citerefentry><refentrytitle>quotacheck</refentrytitle><manvolnum>8</manvolnum></citerefentry> 檢查每個檔案系統的配額完整性，這個程式會確保在配額資料庫中的資料正確的反映了檔案系統上的資料。這是一個耗費時間的程序，會明顯的影響系統開機的時間，要跳過這個步驟可以加入此變數到 <filename>/etc/rc.conf</filename>：</para>
 
       <programlisting xml:lang="en">check_quotas="NO"</programlisting>
 
-      <para xml:lang="en">Finally, edit <filename>/etc/fstab</filename> to enable
-	disk quotas on a per-file system basis.  To enable per-user
-	quotas on a file system, add <option>userquota</option> to the
-	options field in the <filename>/etc/fstab</filename> entry for
-	the file system to enable quotas on.  For example:</para>
+      <para>最後，編輯 <filename>/etc/fstab</filename> 來開啟在各個檔案系統上的磁碟配額。要開啟在檔案系統上對每個使用者的配額要加入 <option>userquota</option> 選項到  <filename>/etc/fstab</filename> 要開啟配額的檔案系統的項目中。例如：</para>
 
       <programlisting xml:lang="en">/dev/da1s2g   /home    ufs rw,userquota 1 2</programlisting>
 
-      <para xml:lang="en">To enable group quotas, use <option>groupquota</option>
-	instead.  To enable both user and group quotas, separate the
-	options with a comma:</para>
+      <para>要開啟群組配額，則使用 <option>groupquota</option>。要同時開啟使用者及群組配額，可使用逗號隔開選項：</para>
 
       <programlisting xml:lang="en">/dev/da1s2g    /home    ufs rw,userquota,groupquota 1 2</programlisting>
 
-      <para xml:lang="en">By default, quota files are stored in the root directory
-	of the file system as <filename>quota.user</filename> and
-	<filename>quota.group</filename>.  Refer to <citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry> for
-	more information.  Specifying an alternate location for the
-	quota files is not recommended.</para>
+      <para>預設配額檔案會儲存在檔案系統的根目錄的 <filename>quota.user</filename> 及 <filename>quota.group</filename>，請參考 <citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry> 來取得更多資訊，較不建議指定其他位置來儲存配額檔案。</para>
 
-      <para xml:lang="en">Once the configuration is complete, reboot the system and
-	<filename>/etc/rc</filename> will automatically run the
-	appropriate commands to create the initial quota files for all
-	of the quotas enabled in
-	<filename>/etc/fstab</filename>.</para>
+      <para>設定完成之後，重新啟動系統，<filename>/etc/rc</filename> 會自動執行適當的指令對所有在 <filename>/etc/fstab</filename> 中開啟配磁的檔案系統建立初始的配額檔。</para>
 
-      <para xml:lang="en">In the normal course of operations, there should be no
-	need to manually run <citerefentry><refentrytitle>quotacheck</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <citerefentry><refentrytitle>quotaon</refentrytitle><manvolnum>8</manvolnum></citerefentry>, or
-	<citerefentry><refentrytitle>quotaoff</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  However, one should read these manual pages
-	to be familiar with their operation.</para>
+      <para>在一般的操作中，並不需要手動執行 <citerefentry><refentrytitle>quotacheck</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <citerefentry><refentrytitle>quotaon</refentrytitle><manvolnum>8</manvolnum></citerefentry> 或是 <citerefentry><refentrytitle>quotaoff</refentrytitle><manvolnum>8</manvolnum></citerefentry>，雖然如此，仍應閱讀這些指令的操作手冊來熟悉這些指令的操作。</para>
     </sect2>
 
     <sect2>
@@ -30999,47 +30958,23 @@ kern.features.ufs_quota: 1</screen>
 	<secondary>limits</secondary>
       </indexterm>
 
-      <para xml:lang="en">To
-	verify that quotas are enabled, run:</para>
+      <para>要確認配額已經開啟，可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>quota -v</userinput></screen>
 
-      <para xml:lang="en">There should be a one line summary of disk usage and
-	current quota limits for each file system that quotas are
-	enabled on.</para>
+      <para>每個有開啟配額的檔案系統應該會有一行磁碟用量及目前配額限制的摘要。</para>
 
-      <para xml:lang="en">The system is now ready to be assigned quota limits with
-	<command>edquota</command>.</para>
+      <para>現在系統已準備好可以使用 <command>edquota</command> 分配配額限制。</para>
 
-      <para xml:lang="en">Several options are available to enforce limits on the
-	amount of disk space a user or group may allocate, and how
-	many files they may create.  Allocations can be limited based
-	on disk space (block quotas), number of files (inode quotas),
-	or a combination of both.  Each limit is further broken down
-	into two categories: hard and soft limits.</para>
+      <para>有數個選項可以強制限制使用者或群組對磁碟空間的使用量以及可以建立多少檔案。可以用磁碟空間 (block 配額)，檔案數量 (inode 配額) 或同時使用來分配。每種限制又可進一步細分為兩個類型：硬性 (Hard) 及軟性 (Soft) 限制。</para>
 
       <indexterm xml:lang="en"><primary>hard limit</primary></indexterm>
-      <para xml:lang="en">A hard limit may not be exceeded.  Once a user reaches a
-	hard limit, no further allocations can be made on that file
-	system by that user.  For example, if the user has a hard
-	limit of 500 kbytes on a file system and is currently using
-	490 kbytes, the user can only allocate an additional 10
-	kbytes.  Attempting to allocate an additional 11 kbytes will
-	fail.</para>
+      <para>硬性限制無法被超額使用。一旦使用者超出了硬性限制，該使用者在該檔案系統將無法再使用任何空間。舉例來說，若一個使用者在一個檔案系統上有 500 KB 的硬性限制，且目前已經使用了  490 KB，該使用者只能再使用 10 KB 的空間，若嘗試使用 11 KB 的空間將會失敗。</para>
 
       <indexterm xml:lang="en"><primary>soft limit</primary></indexterm>
-      <para xml:lang="en">Soft limits can be exceeded for a limited amount of time,
-	known as the grace period, which is one week by default.  If a
-	user stays over their limit longer than the grace period, the
-	soft limit turns into a hard limit and no further allocations
-	are allowed.  When the user drops back below the soft limit,
-	the grace period is reset.</para>
+      <para>軟性限制在有限的時間內可以被超額使用，即為寬限期 (Grace period)，預設為一週。若一個使用者超出限制並超過寬限期，則軟性限制將轉為硬性限制並且將不允許再使用空間。當使用者使用的空間回到低於軟性限制內，寬限期就會被重置。</para>
 
-      <para xml:lang="en">In the following example, the quota for the <systemitem class="username">test</systemitem> account is being edited.
-	When <command>edquota</command> is invoked, the editor
-	specified by <envar>EDITOR</envar> is opened in order to edit
-	the quota limits.  The default editor is set to
-	<application>vi</application>.</para>
+      <para>在下面的例子中，會編輯 <systemitem class="username">test</systemitem> 的配額。當執行 <command>edquota</command> 時，將會使用 <envar>EDITOR</envar> 指定的編輯器來編輯配額限制。預設的編輯器為 <application>vi</application>。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>edquota -u test</userinput>
 Quotas for user test:
@@ -31048,32 +30983,17 @@ Quotas for user test:
 /usr/var: kbytes in use: 0, limits (soft = 50, hard = 75)
         inodes in use: 0, limits (soft = 50, hard = 60)</screen>
 
-      <para xml:lang="en">There are normally two lines for each file system that has
-	quotas enabled.  One line represents the block limits and the
-	other represents the inode limits.  Change the value to modify
-	the quota limit.  For example, to raise the block limit on
-	<filename>/usr</filename> to a soft limit of
-	<literal>500</literal> and a hard limit of
-	<literal>600</literal>, change the values in that line as
-	follows:</para>
+      <para>正常每個開啟配額的檔案系統會有兩行需要設定，一行代表區塊限制 (Block limit) 而另一行代表節點限制 (inode limit)，更改行內的值來修改配額限制。舉例來說，要在 <filename>/usr</filename> 提高區塊的軟性限制到 <literal>500</literal> 以及硬性限制到 <literal>600</literal>，可更改行內的值如下：</para>
 
       <programlisting xml:lang="en">/usr: kbytes in use: 65, limits (soft = 500, hard = 600)</programlisting>
 
-      <para xml:lang="en">The new quota limits take affect upon exiting the
-	editor.</para>
+      <para>新的配額限制將在離開編輯器後生效。</para>
 
-      <para xml:lang="en">Sometimes it is desirable to set quota limits on a range
-	of users.  This can be done by first assigning the desired
-	quota limit to a user.  Then, use <option>-p</option> to
-	duplicate that quota to a specified range of user IDs
-	(<acronym>UID</acronym>s).  The following command will
-	duplicate those quota limits for <acronym>UID</acronym>s
-	<literal>10,000</literal> through
-	<literal>19,999</literal>:</para>
+      <para>有時會想要針對一群使用者設定配額限，這時可以透過指定想要的配額給第一個使用者，若然後使用 <option>-p</option> 來複製配額到指定範圍的使用者 ID  (<acronym>UID</acronym>)。以下指定將複製配額限制給 <acronym>UID</acronym> <literal>10,000</literal> 到 <literal>19,999</literal> 的使用者：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>edquota -p test 10000-19999</userinput></screen>
 
-      <para xml:lang="en">For more information, refer to <citerefentry><refentrytitle>edquota</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>要取得更多資訊，請參考 <citerefentry><refentrytitle>edquota</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
     </sect2>
 
     <sect2>
@@ -31084,20 +31004,9 @@ Quotas for user test:
 	<secondary>checking</secondary>
       </indexterm>
 
-      <para xml:lang="en">To check individual user or group quotas and disk usage,
-	use <citerefentry><refentrytitle>quota</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  A user may only examine their own quota
-	and the quota of a group they are a member of.  Only the
-	superuser may view all user and group quotas.  To get a
-	summary of all quotas and disk usage for file systems with
-	quotas enabled, use <citerefentry><refentrytitle>repquota</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>要檢查各別使用者或群組的配額與磁碟用量可使用 <citerefentry><refentrytitle>quota</refentrytitle><manvolnum>1</manvolnum></citerefentry>。使用者僅可查看自己的配額以及所屬群組的配額，只有使超級使用者可以檢視所有使用者及群組的配額。要取得某個有開啟配額的檔案系統的所有配額及磁碟用量摘要，可使用 <citerefentry><refentrytitle>repquota</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
 
-      <para xml:lang="en">Normally, file systems that the user is not using any disk
-	space on will not show in the output of
-	<command>quota</command>, even if the user has a quota limit
-	assigned for that file system.  Use <option>-v</option> to
-	display those file systems.  The following is sample output
-	from <command>quota -v</command> for a user that has quota
-	limits on two file systems.</para>
+      <para>正常情況，使用者未使用任何磁碟空間的檔案系統並不會顯示在 <command>quota</command> 的輸出結果中，即使該使用者有在該檔案系統設定配額限制，使用 <option>-v</option> 可以顯示這些檔案系統。以下是使用使用 <command>quota -v</command> 查詢某個使用者在兩個檔案系統上的配額限制的範例輸出。</para>
 
       <programlisting xml:lang="en">Disk quotas for user test (uid 1002):
      Filesystem  usage    quota   limit   grace   files   quota   limit   grace
@@ -31106,11 +31015,7 @@ Quotas for user test:
 
       <indexterm xml:lang="en"><primary>grace period</primary></indexterm>
 
-      <para xml:lang="en">In this example, the user is currently 15 kbytes over the
-	soft limit of 50 kbytes on <filename>/usr</filename> and has 5
-	days of grace period left.  The asterisk <literal>*</literal>
-	indicates that the user is currently over the quota
-	limit.</para>
+      <para>在這個例子當中，使用者在 <filename>/usr</filename> 的軟性限制 50 KB 已經超出了 15 KB 並已經過了 5 天寬限期。星號 <literal>*</literal> 代表該使用者目前已超出配額限制。</para>
     </sect2>
 
     <sect2>
@@ -31118,20 +31023,13 @@ Quotas for user test:
 
       <indexterm xml:lang="en"><primary>NFS</primary></indexterm>
 
-      <para xml:lang="en">Quotas are enforced by the quota subsystem on the
-	<acronym>NFS</acronym> server.  The <citerefentry><refentrytitle>rpc.rquotad</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon
-	makes quota information available to <command>quota</command>
-	on <acronym>NFS</acronym> clients, allowing users on those
-	machines to see their quota statistics.</para>
+      <para>在 <acronym>NFS</acronym> 伺服器上，配額會由配額子系統強制執行，<citerefentry><refentrytitle>rpc.rquotad</refentrytitle><manvolnum>8</manvolnum></citerefentry> Daemon 會提供配額資訊給 <acronym>NFS</acronym> 客戶端的 <command>quota</command>，讓在那些主機的使用者可以查看它們的配額統計資訊。</para>
 
-      <para xml:lang="en">On the <acronym>NFS</acronym> server, enable
-	<command>rpc.rquotad</command> by removing the
-	<literal>#</literal> from this line in
-	<filename>/etc/inetd.conf</filename>:</para>
+      <para>在 <acronym>NFS</acronym> 伺服器上將 <filename>/etc/inetd.conf</filename> 中 <command>rpc.rquotad</command> 行前的 <literal>#</literal> 移除來開啟：</para>
 
       <programlisting xml:lang="en">rquotad/1      dgram rpc/udp wait root /usr/libexec/rpc.rquotad rpc.rquotad</programlisting>
 
-      <para xml:lang="en">Then, restart <command>inetd</command>:</para>
+      <para>然後重新啟動 <command>inetd</command>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service inetd restart</userinput></screen>
     </sect2>
@@ -40613,7 +40511,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
   <sect1 xml:id="updating-upgrading-synopsis">
     <title>概述</title>
 
-    <para>FreeBSD 在每次的發佈之間持續在開發。有些人喜歡官方發佈的版本，有些人則喜歡持續同步使用最新的開發版本。不論如何，即使是官方發佈的版本仍時常會有安全性與其他緊急修復的更新。無論使用哪種版本，FreeBSD 都提供所有必要的工具來讓系統保持最新版，而且可以輕易升級不同版本。本章將說明如何追蹤開發版本的系統及保持 FreeBSD 系統維持新版的基本工具。</para>
+    <para>FreeBSD 在每次的發佈之間持續在開發。有些人喜歡官方發佈的版本，有些人則喜歡持續同步使用最新的開發版本。雖然如此，即使是官方發佈的版本仍時常會有安全性與其他緊急修復的更新。無論使用哪種版本，FreeBSD 都提供所有必要的工具來讓系統保持最新版，而且可以輕易升級不同版本。本章將說明如何追蹤開發版本的系統及保持 FreeBSD 系統維持新版的基本工具。</para>
 
     <para>讀完這章，您將了解︰</para>
 
@@ -40709,7 +40607,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
       <programlisting xml:lang="en"># Components of the base system which should be kept updated.
 Components world kernel</programlisting>
 
-      <para>這個參數控制 FreeBSD 要保持最新版本的部份。 預設是更新整個基礎系統 (Base system) 和核心。 可指定個別元件，例如：<literal>src/base</literal> 或 <literal>src/sys</literal>。 不論如何，最好的選項是維持預設值，因為更改指定特定項目時需列出每一個需要的項目。時間一久可能會因為原始碼和 Binary 檔案沒有更新而造成慘重的後果。</para>
+      <para>這個參數控制 FreeBSD 要保持最新版本的部份。 預設是更新整個基礎系統 (Base system) 和核心。 可指定個別元件，例如：<literal>src/base</literal> 或 <literal>src/sys</literal>。 雖然如此，最好的選項是維持預設值，因為更改指定特定項目時需列出每一個需要的項目。時間一久可能會因為原始碼和 Binary 檔案沒有更新而造成慘重的後果。</para>
 
       <programlisting xml:lang="en"># Paths which start with anything matching an entry in an IgnorePaths
 # statement will be ignored.
@@ -40770,7 +40668,7 @@ Uninstalling updates... done.</screen>
 
       <para>再次強調，若核心或任何核心模組有做過修改應重新啟動系統，以及任何受影響的 Binary 應重新執行。</para>
 
-      <para>只有 <filename>GENERIC</filename> 核心可使用 <command>freebsd-update</command> 自動更新。 如果有安裝自訂的核心，在 <command>freebsd-update</command> 完成安裝更新後，需要重新編譯和重新安裝。 不論如何，如果 <filename>/boot/GENERIC</filename> 存在，<command>freebsd-update</command> 會偵測並更新 <filename>GENERIC</filename> 核心，即使該核心並非目前系統正在執行的核心。</para>
+      <para>只有 <filename>GENERIC</filename> 核心可使用 <command>freebsd-update</command> 自動更新。 如果有安裝自訂的核心，在 <command>freebsd-update</command> 完成安裝更新後，需要重新編譯和重新安裝。 雖然如此，如果 <filename>/boot/GENERIC</filename> 存在，<command>freebsd-update</command> 仍會偵測並更新 <filename>GENERIC</filename> 核心，即使該核心並非目前系統正在執行的核心。</para>
 
       <note>
 	<para>隨時在 <filename>/boot/GENERIC</filename> 保留一份 <filename>GENERIC</filename> 核心的複本將有助於診斷各種問題及執行版本升級。請參考 <xref linkend="freebsd-update-custom-kernel-9x"/> 來了解有關如何取得 <filename>GENERIC</filename> 核心的複本說明。</para>
@@ -40778,7 +40676,7 @@ Uninstalling updates... done.</screen>
 
       <para>除非在 <filename>/etc/freebsd-update.conf</filename> 的預設設定檔被修改，否則 <command>freebsd-update</command> 將會安裝更新後的核心原始碼和其餘的更新，可依平常的方式執行重新編譯與重新安裝核心。</para>
 
-      <para>以 <command>freebsd-update</command> 發行的更新並非總是會更新核心。若核心的原始碼沒有被 <command>freebsd-update install</command> 修改則不需要重新編譯自訂的核心。不論如何 <command>freebsd-update</command> 總是會更新 <filename>/usr/src/sys/conf/newvers.sh</filename>，目前修補的版本如 <command>uname -r</command> 執行結果中的 <literal>-p</literal> 數字，便是由該檔取得。即使沒有做任何其他變更，重新編譯自訂核心可讓 <command>uname</command> 準確的回報系統目前的修補版本。當維護多個系統時這會特別有用，因其可讓你快速評估每個系統安裝的更新。</para>
+      <para>以 <command>freebsd-update</command> 發行的更新並非總是會更新核心。若核心的原始碼沒有被 <command>freebsd-update install</command> 修改則不需要重新編譯自訂的核心。雖然如此 <command>freebsd-update</command> 總是會更新 <filename>/usr/src/sys/conf/newvers.sh</filename>，目前修補的版本如 <command>uname -r</command> 執行結果中的 <literal>-p</literal> 數字，便是由該檔取得。即使沒有做任何其他變更，重新編譯自訂核心可讓 <command>uname</command> 準確的回報系統目前的修補版本。當維護多個系統時這會特別有用，因其可讓你快速評估每個系統安裝的更新。</para>
     </sect2>
 
     <sect2 xml:id="freebsdupdate-upgrade">
@@ -53353,7 +53251,7 @@ directory mask = 0755</programlisting>
       </sect3>
 
       <sect3>
-	<title xml:lang="en"><application>Samba</application> Users</title>
+	<title><application>Samba</application> 使用者</title>
 
 	<para xml:lang="en">FreeBSD user accounts must be mapped to the
 	  <literal>SambaSAMAccount</literal> database for
