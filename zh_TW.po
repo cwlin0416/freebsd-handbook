@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-06-24 12:42+0800\n"
-"PO-Revision-Date: 2016-06-24 12:49+0800\n"
+"PO-Revision-Date: 2016-06-24 13:22+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -5001,13 +5001,12 @@ msgstr "當您從一個 Console 切換到下一個的時候，FreeBSD 會切換�
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5636
-#, fuzzy
 msgid ""
 "Refer to <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>syscons</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry>, and <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> for a more technical description of the FreeBSD console and its keyboard drivers."
 msgstr ""
-"請參考 <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>kbdcontrol</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得更多有關 FreeBSD console 及鍵盤驅動程式的技術說明。"
+"請參考 <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>syscons</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>, and <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> 來取得更多有關 FreeBSD Console 及鍵盤驅動程式的技術說明。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5641
@@ -11189,9 +11188,8 @@ msgstr ""
 
 #. (itstool) path: example/title
 #: book.translate.xml:11070
-#, fuzzy
 msgid "Select <literal>scfb</literal> Video Driver in a File"
-msgstr "在單檔中選擇 Radeon 影像驅動程式"
+msgstr "在單檔中選擇 <literal>scfb</literal> 影像驅動程式"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11073
@@ -14068,9 +14066,8 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13466
-#, fuzzy
 msgid "<application>Geeqie</application>"
-msgstr "<application>粗體字</application>"
+msgstr "<application>Geeqie</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:13474
@@ -14181,23 +14178,22 @@ msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:13562
-#, fuzzy
 msgid "<primary><application>Geeqie</application></primary>"
-msgstr "關閉 <application>Sendmail</application>"
+msgstr "<primary><application>Geeqie</application></primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13566
-#, fuzzy
 msgid ""
 "<application>Geeqie</application> is a fork from the unmaintained <application>GQView</application> project, in an effort to move development forward and integrate the existing patches. <application>Geeqie</application> is an image manager which supports viewing a file with a single click, launching an external editor, and thumbnail "
 "previews. It also features a slideshow mode and some basic file operations, making it easy to manage image collections and to find duplicate files. <application>Geeqie</application> supports full screen viewing and internationalization."
-msgstr "<application>GQview</application> 是影像管理軟體。 你可以用單鍵來閱覽檔案、啟動額外的編輯器、縮圖預覽等功能。 它也有幻燈片播放(slideshow)及一些基本的檔案操作功能。 你可用 <application>GQview</application> 管理影像集並能輕鬆地找出重複的檔案。 GQview 能夠使用全螢幕觀看並支援國際化。"
+msgstr ""
+"<application>Geeqie</application> 是由已經停止維護的 <application>GQView</application> 專案所衍伸出來的分支，並致力開發新功能並整合已有的修補。<application>Geeqie</application> 是一套影像管理軟體，支援單鍵閱覽檔案、啟動外部編輯器、縮圖預覽等功能。 它也有幻燈片模式及一些基本的檔案操作的功能，能輕鬆的管理大量影像並找出重複的檔案。 "
+"<application>Geeqie</application> 也支援使用全螢幕閱覽以及國際化。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13577
-#, fuzzy
 msgid "To install the <application>Geeqie</application> package:"
-msgstr "安裝 <application>GQview</application> 套件："
+msgstr "安裝 <application>Geeqie</application> 套件："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13580
@@ -26990,9 +26986,8 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27518
-#, fuzzy
 msgid "Using the same <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> command, the user is added to the webteam group:"
-msgstr "使用 <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查看所屬群組"
+msgstr ""
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:27521
@@ -27018,13 +27013,10 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:27535
-#, fuzzy
 msgid ""
 "Users permitted to run applications with <application>Sudo</application> only enter their own passwords. This is more secure and gives better control than <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>, where the <systemitem class=\"username\">root</systemitem> password is entered and the user "
 "acquires all <systemitem class=\"username\">root</systemitem> permissions."
 msgstr ""
-"使用 <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來發送信號。因為 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是 <systemitem class=\"username\">root</systemitem> 所有，因此必須先用 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> 切換成 <systemitem class=\"username\">root</systemitem> 先。"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:27544
@@ -35730,9 +35722,8 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35464
-#, fuzzy
 msgid "Know how to configure and install a new kernel (<xref linkend=\"kernelconfig\"/>)."
-msgstr "熟悉核心設定與編譯的基礎 (<xref linkend=\"kernelconfig\"/>)。"
+msgstr "了解如何設定並安裝新的核心 (<xref linkend=\"kernelconfig\"/>)。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:35471
@@ -44574,9 +44565,8 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43913
-#, fuzzy
 msgid "How to keep a FreeBSD system up-to-date with <application>freebsd-update</application> or <application>Subversion</application>."
-msgstr "如何使用 <application>freebsd-update</application>, <application>Subversion</application> 或 <application>CTM</application> 來讓 FreeBSD 系統保持新版。"
+msgstr "如何使用 <application>freebsd-update</application>, <application>Subversion</application> 來讓 FreeBSD 系統保持新版。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:43919
@@ -45680,9 +45670,8 @@ msgstr "要安裝新的 FreeBSD-STABLE 系統， 可從 <link linkend=\"mirrors\
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:44963
-#, fuzzy
 msgid "To compile or upgrade to an existing FreeBSD system to FreeBSD-STABLE, use <link linkend=\"svn\">svn</link> <_:indexterm-1/> to check out the source for the desired branch. Branch names, such as <literal>stable/9</literal>, are listed at <link xlink:href=\"@@URL_RELPREFIX@@/releng/\">www.freebsd.org/releng</link>."
-msgstr "要編譯或升級已經安裝的 FreeBSD 系統至 FreeBSD-STABLE，可使用 <link linkend=\"svn\">svn</link> <_:indexterm-1/> 來取得欲安裝分支的原始碼。分支的名稱列在 <link xlink:href=\"@@URL_RELPREFIX@@/releng/\">www.freebsd.org/releng</link>，例如 <literal>stable/9</literal>。 如果沒有可靠的網際網路連線可以使用 CTM (<xref linkend=\"ctm\"/>)。"
+msgstr "要編譯或升級已經安裝的 FreeBSD 系統至 FreeBSD-STABLE，可使用 <link linkend=\"svn\">svn</link> <_:indexterm-1/> 來取得欲安裝分支的原始碼。分支的名稱列在 <link xlink:href=\"@@URL_RELPREFIX@@/releng/\">www.freebsd.org/releng</link>，例如 <literal>stable/9</literal>。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:44974
@@ -45705,9 +45694,8 @@ msgstr "同步原始碼"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:44990
-#, fuzzy
 msgid "There are various methods for staying up-to-date with the FreeBSD sources. This section describes the primary service, <application>Subversion</application>."
-msgstr "有多許方法可以更新 FreeBSD 的原始碼，本節將比較兩個主要的方法：<application>Subversion</application> 以及 <application>CTM</application>。"
+msgstr "有多許方法可以更新 FreeBSD 的原始碼，本節將說明主要的方法 <application>Subversion</application>。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:44995
@@ -55320,9 +55308,8 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:54926
-#, fuzzy
 msgid "The installation of <package>net/isc-dhcp43-server</package> installs a sample configuration file. Copy <filename>/usr/local/etc/dhcpd.conf.example</filename> to <filename>/usr/local/etc/dhcpd.conf</filename> and make any edits to this new file."
-msgstr "<application>Poudriere</application> 可使用 <package role=\"port\">ports-mgmt/poudriere</package> 套件或 Ports 安裝。安裝完成後會有一個範例的設定檔 <filename>/usr/local/etc/poudriere.conf.sample</filename>。複製此檔案到 <filename>/usr/local/etc/poudriere.conf</filename>，編輯複製的檔案來配合本地的設定。"
+msgstr ""
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:54933
@@ -57565,9 +57552,8 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:57194
-#, fuzzy
 msgid "Server Configuration"
-msgstr "日誌伺服器設定"
+msgstr "伺服器設定"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:57196
@@ -57648,9 +57634,8 @@ msgstr ""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:57266
-#, fuzzy
 msgid "<literal>wins support</literal>"
-msgstr "<literal>等寬字</literal>"
+msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:57269
@@ -57708,9 +57693,8 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:57333
-#, fuzzy
 msgid "<application>Samba</application> Users"
-msgstr "<application>CTM</application> 用法"
+msgstr "<application>Samba</application> 使用者"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:57335
@@ -57772,9 +57756,8 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:57374
-#, fuzzy
 msgid "<application>Samba</application> can be stopped at any time by typing:"
-msgstr "<application>Portmaster</application> 將 Ports 定義成四種類型："
+msgstr ""
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:57377

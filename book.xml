@@ -4850,10 +4850,7 @@ login:</screen>
 
       <para>當您從一個 Console 切換到下一個的時候，FreeBSD 會切換畫面顯示的內容， 這就好像有很多虛擬的螢幕和鍵盤可以讓您輸入指令到 FreeBSD 執行。 在某一個虛擬 Console 上執行的程式並不會因為使用者切到別的 Console 而停止執行。</para>
 
-      <para xml:lang="en">Refer to <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
-	<citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, and <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> for a more
-	technical description of the FreeBSD console and its keyboard
-	drivers.</para>
+      <para>請參考 <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, and <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> 來取得更多有關 FreeBSD Console 及鍵盤驅動程式的技術說明。</para>
 
       <para>FreeBSD 中虛擬 Console 的數量設定在 <filename>/etc/ttys</filename> 檔案中的下列章節:</para>
 
@@ -8852,8 +8849,7 @@ EndSection</programlisting>
 	      with a <acronym>UEFI</acronym> or <trademark class="registered">ARM</trademark> computer:</para>
 
 	    <example xml:id="x-config-video-cards-file-scfb">
-	      <title xml:lang="en">Select <literal>scfb</literal> Video Driver in a
-		File</title>
+	      <title>在單檔中選擇 <literal>scfb</literal> 影像驅動程式</title>
 
 	      <para xml:lang="en"><filename>/usr/local/etc/X11/xorg.conf.d/driver-scfb.conf</filename></para>
 
@@ -11066,7 +11062,7 @@ EndSection</programlisting>
 	  </row>
 
 	  <row>
-	    <entry xml:lang="en"><application>Geeqie</application></entry>
+	    <entry><application>Geeqie</application></entry>
 	    <entry>少</entry>
 	    <entry>少</entry>
 	    <entry><application>Gtk+</application> 或 <application>GNOME</application></entry>
@@ -11144,23 +11140,11 @@ EndSection</programlisting>
     <sect2>
       <title xml:lang="en">Geeqie</title>
 
-      <indexterm xml:lang="en">
-	<primary><application>Geeqie</application></primary>
-      </indexterm>
+      <indexterm><primary><application>Geeqie</application></primary></indexterm>
 
-      <para xml:lang="en"><application>Geeqie</application> is a fork from the
-	unmaintained <application>GQView</application> project, in an
-	effort to move development forward and integrate the existing
-	patches.  <application>Geeqie</application> is an image
-	manager which supports viewing a file with a single click,
-	launching an external editor, and thumbnail previews.  It also
-	features a slideshow mode and some basic file operations,
-	making it easy to manage image collections and to find
-	duplicate files.  <application>Geeqie</application> supports
-	full screen viewing and internationalization.</para>
+      <para><application>Geeqie</application> 是由已經停止維護的 <application>GQView</application> 專案所衍伸出來的分支，並致力開發新功能並整合已有的修補。<application>Geeqie</application> 是一套影像管理軟體，支援單鍵閱覽檔案、啟動外部編輯器、縮圖預覽等功能。 它也有幻燈片模式及一些基本的檔案操作的功能，能輕鬆的管理大量影像並找出重複的檔案。 <application>Geeqie</application> 也支援使用全螢幕閱覽以及國際化。</para>
 
-      <para xml:lang="en">To install the <application>Geeqie</application>
-	package:</para>
+      <para>安裝 <application>Geeqie</application> 套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install geeqie</userinput></screen>
 
@@ -30408,7 +30392,7 @@ scsibus1:
 	<acronym>SSH</acronym> connection:</para>
 
       <example>
-	<title>在 <application>ssh</application> 使用 <command>dump</command> 與 <envar>RSH</envar> 設定</title>
+	<title>在 <application>ssh</application> 使用 <command>dump</command> 透過 <envar>RSH</envar> 設定</title>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>env RSH=/usr/bin/ssh /sbin/dump -0uan -f targetuser@targetmachine.example.com:/dev/sa0 /usr</userinput></screen>
       </example>
@@ -32457,7 +32441,7 @@ esac</programlisting>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Know how to configure and install a new kernel (<xref linkend="kernelconfig"/>).</para>
+	<para>了解如何設定並安裝新的核心 (<xref linkend="kernelconfig"/>)。</para>
       </listitem>
     </itemizedlist>
   </sect1>
@@ -40635,9 +40619,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">How to keep a FreeBSD system up-to-date with
-	  <application>freebsd-update</application> or
-	  <application>Subversion</application>.</para>
+	<para>如何使用 <application>freebsd-update</application>, <application>Subversion</application> 來讓 FreeBSD 系統保持新版。</para>
       </listitem>
 
       <listitem>
@@ -41235,13 +41217,9 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	<listitem>
 	  <para>要安裝新的 FreeBSD-STABLE 系統， 可從 <link linkend="mirrors">FreeBSD 鏡像站</link> 或從 FreeBSD-STABLE 每個月的快照 (Snapshot) 來安裝最新的 FreeBSD-STABLE 發行版。請參考 <link xlink:href="@@URL_RELPREFIX@@/snapshots/">www.freebsd.org/snapshots</link> 來取得更多有關快照的資訊。</para>
 
-	  <para xml:lang="en">To compile or upgrade to an existing FreeBSD system to
-	    FreeBSD-STABLE, use <link linkend="svn">svn</link>
-	      <indexterm xml:lang="en">
+	  <para>要編譯或升級已經安裝的 FreeBSD 系統至 FreeBSD-STABLE，可使用 <link linkend="svn">svn</link> <indexterm>
 		<primary>Subversion</primary>
-	      </indexterm> to check out the source for the desired
-	    branch.  Branch names, such as
-	    <literal>stable/9</literal>, are listed at <link xlink:href="@@URL_RELPREFIX@@/releng/">www.freebsd.org/releng</link>.</para>
+	      </indexterm> 來取得欲安裝分支的原始碼。分支的名稱列在 <link xlink:href="@@URL_RELPREFIX@@/releng/">www.freebsd.org/releng</link>，例如 <literal>stable/9</literal>。</para>
 	</listitem>
 
 	<listitem>
@@ -41257,9 +41235,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
   <sect1 xml:id="synching">
     <title>同步原始碼</title>
 
-    <para xml:lang="en">There are various methods for staying up-to-date with the
-      FreeBSD sources.  This section describes the primary service,
-      <application>Subversion</application>.</para>
+    <para>有多許方法可以更新 FreeBSD 的原始碼，本節將說明主要的方法 <application>Subversion</application>。</para>
 
     <warning>
       <para>雖然有可能只更新部份原始碼樹，但是正式支援的更新步驟是更新整個樹並重新編譯所有在使用者空間 (User space) 中的程式，例如在 <filename>/bin</filename> 和 <filename>/sbin</filename> 中的程式及核心原始碼。只更新部份的原始碼樹，例如：只更新核心或使用者空間的程式的做法經常會導致編譯錯誤、核心錯誤或資料損毀的問題。</para>
@@ -53238,7 +53214,7 @@ AddModule mod_php5.c
       client libraries.</para>
 
     <sect2>
-      <title xml:lang="en">Server Configuration</title>
+      <title>伺服器設定</title>
 
       <para xml:lang="en"><application>Samba</application> is configured in
 	<filename>/usr/local/etc/smb4.conf</filename>.  This file must
