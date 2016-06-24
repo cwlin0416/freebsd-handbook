@@ -5,9 +5,9 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 
 - [x] 將既有 Docbook 格式轉換為 GNU gettext 的 PO 格式以讓未來可以有更多人可參與翻譯工作
 - [ ] 同步及匯整舊有翻譯至最新的原文翻譯版本以跟上目前的文件版本
-  - [ ] 4. 軟體套件管理篇：Packages 及 Ports 機制
-  - [ ] 9. 列印
-  - [ ] 14. Jails
+  - [X] 4. 軟體套件管理篇：Packages 及 Ports 機制
+  - [X] 9. 列印
+  - [X] 14. Jails
   - [ ] 17. 儲存設備篇
   - [ ] 10. Linux® 二進位檔的相容性
   - [ ] 21. Virtualization(虛擬機器)
