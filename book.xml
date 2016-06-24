@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 48341 2016-03-05 19:07:50Z anish $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 48967 2016-06-19 23:06:43Z karels $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -254,6 +254,7 @@
 <!ENTITY pgpkey.kaiw SYSTEM "kaiw.key">
 <!ENTITY pgpkey.kami SYSTEM "kami.key">
 <!ENTITY pgpkey.kan SYSTEM "kan.key">
+<!ENTITY pgpkey.karels SYSTEM "karels.key">
 <!ENTITY pgpkey.kato SYSTEM "kato.key">
 <!ENTITY pgpkey.ken SYSTEM "ken.key">
 <!ENTITY pgpkey.kensmith SYSTEM "kensmith.key">
@@ -267,6 +268,7 @@
 <!ENTITY pgpkey.kris SYSTEM "kris.key">
 <!ENTITY pgpkey.kuriyama SYSTEM "kuriyama.key">
 <!ENTITY pgpkey.kwm SYSTEM "kwm.key">
+<!ENTITY pgpkey.landonf SYSTEM "landonf.key">
 <!ENTITY pgpkey.laszlof SYSTEM "laszlof.key">
 <!ENTITY pgpkey.lawrance SYSTEM "lawrance.key">
 <!ENTITY pgpkey.lbr SYSTEM "lbr.key">
@@ -294,6 +296,7 @@
 <!ENTITY pgpkey.makc SYSTEM "makc.key">
 <!ENTITY pgpkey.mandree SYSTEM "mandree.key">
 <!ENTITY pgpkey.manolis SYSTEM "manolis.key">
+<!ENTITY pgpkey.manu SYSTEM "manu.key">
 <!ENTITY pgpkey.marcel SYSTEM "marcel.key">
 <!ENTITY pgpkey.marck SYSTEM "marck.key">
 <!ENTITY pgpkey.marcus SYSTEM "marcus.key">
@@ -398,6 +401,7 @@
 <!ENTITY pgpkey.rees SYSTEM "rees.key">
 <!ENTITY pgpkey.remko SYSTEM "remko.key">
 <!ENTITY pgpkey.rene SYSTEM "rene.key">
+<!ENTITY pgpkey.rgrimes SYSTEM "rgrimes.key">
 <!ENTITY pgpkey.rich SYSTEM "rich.key">
 <!ENTITY pgpkey.riggs SYSTEM "riggs.key">
 <!ENTITY pgpkey.rik SYSTEM "rik.key">
@@ -482,6 +486,7 @@
 <!ENTITY pgpkey.truckman SYSTEM "truckman.key">
 <!ENTITY pgpkey.tuexen SYSTEM "tuexen.key">
 <!ENTITY pgpkey.twinterg SYSTEM "twinterg.key">
+<!ENTITY pgpkey.tz SYSTEM "tz.key">
 <!ENTITY pgpkey.ue SYSTEM "ue.key">
 <!ENTITY pgpkey.ume SYSTEM "ume.key">
 <!ENTITY pgpkey.ups SYSTEM "ups.key">
@@ -506,6 +511,7 @@
 <!ENTITY pgpkey.wkoszek SYSTEM "wkoszek.key">
 <!ENTITY pgpkey.wma SYSTEM "wma.key">
 <!ENTITY pgpkey.wollman SYSTEM "wollman.key">
+<!ENTITY pgpkey.woodsb02 SYSTEM "woodsb02.key">
 <!ENTITY pgpkey.wosch SYSTEM "wosch.key">
 <!ENTITY pgpkey.wxs SYSTEM "wxs.key">
 <!ENTITY pgpkey.xmj SYSTEM "xmj.key">
@@ -687,13 +693,7 @@
     </legalnotice>
 
     <abstract>
-      <para xml:lang="en">Welcome to FreeBSD! This handbook covers the installation
-	and day to day use of
-	<emphasis>FreeBSD 9.3-RELEASE</emphasis> and
-	<emphasis>FreeBSD 10.3-RELEASE</emphasis>.  This book is
-	the result of ongoing work by many individuals.  Some sections
-	might be outdated.  Those interested in helping to update and
-	expand this document should send email to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD documentation project mailing list</link>.</para>
+      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 9.3-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.3-RELEASE</emphasis>。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中。 許多章節仍未完成，已完成的部份也有些需要更新。 如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
 
       <para>在 <link xlink:href="http://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到這份文件的最新版本，舊版文件可從 <uri xlink:href="http://docs.FreeBSD.org/doc/">http://docs.FreeBSD.org/doc/</uri> 取得，也可以從 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/doc/">FreeBSD FTP 伺服器</link> 或是眾多 <link linkend="mirrors-ftp">鏡像網站</link> 下載不同格式的資料。 如果比較偏好實體書面資料，那可以在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
@@ -2474,7 +2474,7 @@
 	  <para>當正確地使用，磁碟分割工具可以安全地建立空間讓新的分割區使用。 因為有可能會誤選已經存在的分割區，所以在修改磁碟分割區前， 一定要備份重要資料，並確認備份的完整性。</para>
 	</warning>
 
-	<para>包含不同作業系統的磁碟分割區可以讓一台電腦安裝多重作業系統。 另一種作法是使用虛擬機器 (<xref linkend="virtualization"/>) ，可以讓多重作業系統同時間執行而不需要改變任何磁碟分割區。</para>
+	<para>包含不同作業系統的磁碟分割區可以讓一台電腦安裝多重作業系統。 另一種作法是使用虛擬化 (<xref linkend="virtualization"/>) ，可以讓多重作業系統同時間執行而不需要改變任何磁碟分割區。</para>
       </step>
 
       <step>
@@ -2512,15 +2512,7 @@
       <step>
 	<title>檢查 FreeBSD 勘誤表</title>
 
-	<para xml:lang="en">Although the FreeBSD Project strives to ensure that
-	  each release of FreeBSD is as stable as possible, bugs
-	  occasionally creep into the process.  On very rare occasions
-	  those bugs affect the installation process.  As these
-	  problems are discovered and fixed, they are noted in the
-	  FreeBSD Errata (<link xlink:href="@@URL_RELPREFIX@@/releases/10.3R/errata.html">http://www.freebsd.org/releases/10.3R/errata.html</link>)
-	  on the FreeBSD web site.  Check the errata before installing to
-	  make sure that there are no problems that might affect the
-	  installation.</para>
+	<para>儘管 FreeBSD Project 努力確保每個 FreeBSD 發行版能夠儘可能地穩定，錯誤偶爾還是會悄悄出現。 有極小的機會錯誤會影響安裝過程。 當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/10.3R/errata.html">http://www.freebsd.org/releases/10.3R/errata.html</link>)。 安裝前要檢查勘誤表，確保沒有會影響到安裝的問題。</para>
 
 	<para>所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">http://www.freebsd.org/releases/index.html</link>)。</para>
       </step>
@@ -4749,7 +4741,7 @@ Starting sshd.</screen>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 48512 2016-03-30 21:12:08Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 48973 2016-06-21 13:11:57Z emaste $
 -->
 <chapter version="5.0" xml:id="basics">
   <!--
@@ -4858,7 +4850,10 @@ login:</screen>
 
       <para>當您從一個 Console 切換到下一個的時候，FreeBSD 會切換畫面顯示的內容， 這就好像有很多虛擬的螢幕和鍵盤可以讓您輸入指令到 FreeBSD 執行。 在某一個虛擬 Console 上執行的程式並不會因為使用者切到別的 Console 而停止執行。</para>
 
-      <para>請參考 <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得更多有關 FreeBSD console 及鍵盤驅動程式的技術說明。</para>
+      <para xml:lang="en">Refer to <citerefentry><refentrytitle>kbdcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+	<citerefentry><refentrytitle>atkbd</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</manvolnum></citerefentry>, and <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> for a more
+	technical description of the FreeBSD console and its keyboard
+	drivers.</para>
 
       <para>FreeBSD 中虛擬 Console 的數量設定在 <filename>/etc/ttys</filename> 檔案中的下列章節:</para>
 
@@ -7630,14 +7625,9 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
     <sect2 xml:id="pkgng-pkg-info">
       <title>取得有關已安裝套件的資訊</title>
 
-      <para xml:lang="en">Information about the packages installed on a system
-	can be viewed by running <command>pkg info</command> which,
-	when run without any switches, will list the package version
-	for either all installed packages or the specified
-	package.</para>
+      <para>有關已安裝在系統的套件資訊可透過執行 <command>pkg info</command> 來檢視，若執行時未指定任何參數，將會列出所有已安裝或指定的套件版本。</para>
 
-      <para xml:lang="en">For example, to see which version of
-	<application>pkg</application> is installed, run:</para>
+      <para>例如，要查看已安裝的 <application>pkg</application> 版本可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg info pkg</userinput>
 pkg-1.1.4_1</screen>
@@ -7646,16 +7636,11 @@ pkg-1.1.4_1</screen>
     <sect2 xml:id="pkgng-installing-deinstalling">
       <title>安裝與移除套件</title>
 
-      <para xml:lang="en">To install a binary package use the following command,
-	where <replaceable>packagename</replaceable> is the name of
-	the package to install:</para>
+      <para>要安裝 Binary 套件可使用以下指令，其中 <replaceable>packagename</replaceable> 為要安裝的套件名稱：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install <replaceable>packagename</replaceable></userinput></screen>
 
-      <para xml:lang="en">This command uses repository data to determine which
-	version of the software to install and if it has any
-	uninstalled dependencies.  For example, to install
-	<application>curl</application>:</para>
+      <para>這個指令會使用檔案庫的資料來決定要安裝的軟體版本以及是否有任何未安裝的相依。例如，要安裝 <application>curl</application>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install curl</userinput>
 Updating repository catalogue
@@ -7679,17 +7664,14 @@ Checking integrity... done
 [2/2] Installing curl-7.31.0_1... done
 Cleaning up cache files...Done</screen>
 
-	<para xml:lang="en">The new package and any additional packages that were
-	  installed as dependencies can be seen in the installed
-	  packages list:</para>
+	<para>新的套件以及任何做為相依安裝的額外套件可在已安裝的套件清單中看到：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg info</userinput>
 ca_root_nss-3.15.1_1	The root certificate bundle from the Mozilla Project
 curl-7.31.0_1	Non-interactive tool to get files from FTP, GOPHER, HTTP(S) servers
 pkg-1.1.4_6	New generation package manager</screen>
 
-	<para xml:lang="en">Packages that are no longer needed can be removed with
-	  <command>pkg delete</command>.  For example:</para>
+	<para>不再需要的套件可以使用 <command>pkg delete</command> 來移除，例如：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg delete curl</userinput>
 The following packages will be deleted:
@@ -7705,25 +7687,17 @@ Proceed with deleting packages [y/N]: <userinput>y</userinput>
     <sect2 xml:id="pkgng-upgrading">
       <title>升級已安裝套件</title>
 
-      <para xml:lang="en">Installed packages can be upgraded to their latest
-	versions by running:</para>
+      <para>執行以下指令，可將已安裝的套件升級到最新版本：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg upgrade</userinput></screen>
 
-      <para xml:lang="en">This command will compare the installed versions with
-	those available in the repository catalogue and upgrade them
-	from the repository.</para>
+      <para>這個指令將會比對已安裝的版本與在檔案庫分類中的版本，並從檔案庫升級這些套件。</para>
     </sect2>
 
     <sect2 xml:id="pkgng-auditing">
       <title>稽查已安裝套件</title>
 
-      <para xml:lang="en">Occasionally, software vulnerabilities may be discovered
-	in third-party applications.  To address this,
-	<application>pkg</application> includes a built-in auditing
-	mechanism.  To determine if there are any known
-	vulnerabilities for the software installed on the system,
-	run:</para>
+      <para>偶爾可能會在第三方的應用程式中發現軟體漏洞，要找出這些程式，可使用 <application>pkg</application> 內建的稽查機制。要查詢已安裝在系統上的軟體是否有任何已知的漏洞可執行：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg audit -F</userinput></screen>
     </sect2>
@@ -7731,10 +7705,7 @@ Proceed with deleting packages [y/N]: <userinput>y</userinput>
     <sect2 xml:id="pkgng-autoremove">
       <title>自動移除不使用的相依</title>
 
-      <para xml:lang="en">Removing a package may leave behind dependencies which
-	are no longer required.  Unneeded packages that were installed
-	as dependencies can be automatically detected and removed
-	using:</para>
+      <para>移除一個套件可能會留下不再需要使用的相依套件。不再需要的相依套件可以使用以下指令自動偵測並移除：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg autoremove</userinput>
 Packages to be autoremoved:
@@ -7749,34 +7720,21 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
     <sect2 xml:id="pkgng-backup">
       <title>還原套件資料庫</title>
 
-      <para xml:lang="en">Unlike the traditional package management system,
-	<application>pkg</application> includes its own package
-	database backup mechanism.  This functionality is enabled by
-	default.</para>
+      <para>不如傳統的套件管理系統，<application>pkg</application> 有自己的套件資料庫備份機制，此功能預設是開啟的。</para>
 
       <tip>
-	<para xml:lang="en">To disable the periodic script from backing up the
-	  package database, set
-	  <literal>daily_backup_pkgdb_enable="NO"</literal> in
-	  <citerefentry><refentrytitle>periodic.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+	<para>要停止週期的 Script 備份套件資料庫可在 <citerefentry><refentrytitle>periodic.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 設定 <literal>daily_backup_pkgdb_enable="NO"</literal>。</para>
       </tip>
 
-      <para xml:lang="en">To restore the contents of a previous package database
-	backup, run the following command replacing
-	<replaceable>/path/to/pkg.sql</replaceable> with the location
-	of the backup:</para>
+      <para>要還原先前套件資料庫的備份，可執行以下指令並將 <replaceable>/path/to/pkg.sql</replaceable> 替換為備份的位置：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg backup -r <replaceable>/path/to/pkg.sql</replaceable></userinput></screen>
 
       <note>
-	<para xml:lang="en">If restoring a backup taken by the periodic script,
-	  it must be decompressed prior to being restored.</para>
+	<para>若要還原有週期 Script 所產生的備份必須在還原前先解壓縮。</para>
       </note>
 
-      <para xml:lang="en">To run a manual backup of the
-	<application>pkg</application> database, run the following
-	command, replacing <replaceable>/path/to/pkg.sql</replaceable>
-	with a suitable file name and location:</para>
+      <para>要手動備份 <application>pkg</application> 資料庫，可執行以下指令，並替換 <replaceable>/path/to/pkg.sql</replaceable> 為適當的檔案名稱與位置：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg backup -d <replaceable>/path/to/pkg.sql</replaceable></userinput></screen>
     </sect2>
@@ -7784,16 +7742,11 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
     <sect2 xml:id="pkgng-clean">
       <title>移除過時的套件</title>
 
-      <para xml:lang="en">By default, <application>pkg</application> stores
-	binary packages in a cache directory defined by
-	<envar>PKG_CACHEDIR</envar> in <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.  Only copies
-	of the latest installed packages are kept.  Older versions of
-	<application>pkg</application> kept all previous packages.  To
-	remove these outdated binary packages, run:</para>
+      <para>預設 <application>pkg</application> 會儲存 Binary 套件在快取目錄定義在  <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中的 <envar>PKG_CACHEDIR</envar>，只會保留最後安裝的套件複本。較舊版的 <application>pkg</application>  會保留所有先前的套件，若要移除這些過時的  Binary 套件，可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg clean</userinput></screen>
 
-      <para xml:lang="en">The entire cache may be cleared by running:</para>
+      <para>使用以下指令可清空全部的快取：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg clean -a</userinput></screen>
     </sect2>
@@ -7801,38 +7754,22 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
     <sect2 xml:id="pkgng-set">
       <title>修改套件 Metadata</title>
 
-      <para xml:lang="en">Software within the FreeBSD Ports Collection can
-	undergo major version number changes.  To address this,
-	<application>pkg</application> has a built-in command to
-	update package origins.  This can be useful, for example, if
-	<package>lang/php5</package> is renamed to
-	<package>lang/php53</package> so that
-	<package>lang/php5</package> can now
-	represent version <literal>5.4</literal>.</para>
+      <para>在 FreeBSD Ports 套件集中的軟體可能會經歷主要版號的修改，要解決這個問題可使用 <application>pkg</application> 內建的指令來更新套件來源。這非常有用，例如 <package>lang/php5</package> 重新命名為 <package>lang/php53</package> 因此 <package>lang/php5</package> 從此之後代表版本 <literal>5.4</literal>。</para>
 
-      <para xml:lang="en">To change the package origin for the above example,
-	run:</para>
+      <para>要更改上述例子中的套件來源，可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg set -o lang/php5:lang/php53</userinput></screen>
 
-      <para xml:lang="en">As another example, to update
-	<package>lang/ruby18</package> to
-	<package>lang/ruby19</package>, run:</para>
+      <para>再一個例子，要更新 <package>lang/ruby18</package> 為 <package>lang/ruby19</package>，可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg set -o lang/ruby18:lang/ruby19</userinput></screen>
 
-      <para xml:lang="en">As a final example, to change the origin of the
-	<filename>libglut</filename> shared libraries from
-	<package>graphics/libglut</package> to
-	<package>graphics/freeglut</package>, run:</para>
+      <para>最後一個例子，要更改 <filename>libglut</filename> 共用程式庫的來源從 <package>graphics/libglut</package> 改成 <package>graphics/freeglut</package> 可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg set -o graphics/libglut:graphics/freeglut</userinput></screen>
 
       <note>
-	<para xml:lang="en">When changing package origins, it is important to
-	  reinstall packages that are dependent on the package with
-	  the modified origin.  To force a reinstallation of dependent
-	  packages, run:</para>
+	<para>在更改套件來源之後，很重要的一件事是要重新安裝套件，來讓相依的套件也同時使用修改後的來源。要強制重新安裝相依套件，可執行：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install -Rf <replaceable>graphics/freeglut</replaceable></userinput></screen>
       </note>
@@ -7876,41 +7813,28 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
     <procedure xml:id="ports-using-subversion-method">
       <title>Subversion 方法</title>
 
-      <para xml:lang="en">If more control over the ports tree is needed or if local
-	changes need to be maintained,
-	<application>Subversion</application> can be used to obtain
-	the Ports Collection.  Refer to <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/subversion-primer.html">the
-	  Subversion Primer</link> for a detailed description of
-	<application>Subversion</application>.</para>
+      <para>若要取得更多對 Ports 樹的控制，或若有本地的變更需要維護，可以使用 <application>Subversion</application> 來取得 Ports 套件集。請參考 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/subversion-primer.html">Subversion Primer</link> 來取得 <application>Subversion</application> 的詳細說明。</para>
 
       <step>
-	<para xml:lang="en"><application>Subversion</application> must be installed
-	  before it can be used to check out the ports tree.  If a
-	  copy of the ports tree is already present, install
-	  <application>Subversion</application> like this:</para>
+	<para>必須安裝 <application>Subversion</application> 才可用來取出 (Check out) Ports 樹。若已存在 Ports 樹的複本，可使用此方式安裝 <application>Subversion</application>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/devel/subversion</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-	<para xml:lang="en">If the ports tree is not available, or
-	  <application>pkg</application> is being used to manage
-	  packages, <application>Subversion</application> can be
-	  installed as a package:</para>
+	<para>若尚無法使用 Ports 樹，或已經使用 <application>pkg</application> 來管理套件，可使用套件來安裝 <application>Subversion</application>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install subversion</userinput></screen>
 
       </step>
 
       <step>
-	<para xml:lang="en">Check out a copy of the ports tree:</para>
+	<para>取出 Ports 樹的複本：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/ports/head /usr/ports</userinput></screen>
       </step>
 
       <step>
-	<para xml:lang="en">As needed, update <filename>/usr/ports</filename> after
-	  the initial <application>Subversion</application>
-	  checkout:</para>
+	<para>若需要，在第一次 <application>Subversion</application> 取出後可使用以下指令更新 <filename>/usr/ports</filename>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>svn update /usr/ports</userinput></screen>
       </step>
@@ -8234,24 +8158,9 @@ The deinstallation will free 229 kB
   <sect1 xml:id="ports-poudriere">
     <title>使用 <application>Poudriere</application> 編譯套件</title>
 
-    <para xml:lang="en"><application>Poudriere</application> is a
-      <acronym>BSD</acronym>-licensed utility for creating and testing
-      FreeBSD packages.  It uses FreeBSD jails to set up isolated
-      compilation environments.  These jails can be used to build
-      packages for versions of FreeBSD that are different from the system
-      on which it is installed, and also to build packages for i386 if
-      the host is an amd64 system.  Once the packages are
-      built, they are in a layout identical to the official mirrors.
-      These packages are usable by <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> and other package
-      management tools.</para>
+    <para><application>Poudriere</application> 是一個使用 <acronym>BSD</acronym> 授權條款用來建立與測試 FreeBSD 套件的工具。它使用 FreeBSD Jail 來建置獨立的編譯環境，這些 Jail 可以用來編譯與目前所在系統不同 FreeBSD 版本的套件，也同樣可以在主機為 amd64 的系統上編譯供 i386 使用的套件。套件編譯完成後的目錄配置會與官方鏡像站完全相同。這些套件可由 <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及其他套件管理工具使用。</para>
 
-    <para xml:lang="en"><application>Poudriere</application> is installed using
-      the <package role="port">ports-mgmt/poudriere</package> package
-      or port.  The installation includes a sample configuration
-      file <filename>/usr/local/etc/poudriere.conf.sample</filename>.
-      Copy this file to
-      <filename>/usr/local/etc/poudriere.conf</filename>.  Edit the
-      copied file to suit the local configuration.</para>
+    <para><application>Poudriere</application> 可使用 <package role="port">ports-mgmt/poudriere</package> 套件或 Ports 安裝。安裝完成後會有一個範例的設定檔 <filename>/usr/local/etc/poudriere.conf.sample</filename>。複製此檔案到 <filename>/usr/local/etc/poudriere.conf</filename>，編輯複製的檔案來配合本地的設定。</para>
 
     <para xml:lang="en">While <acronym>ZFS</acronym> is not required on the system
       running <application>poudriere</application>, it is beneficial.
@@ -8485,7 +8394,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 48673 2016-04-19 00:49:10Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 48719 2016-04-23 20:46:04Z bjk $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -9792,7 +9701,7 @@ DisplayManager.requestPort:     0</screen>
       <para xml:lang="en">This desktop environment can be installed from a
 	package:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gnome2</userinput></screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gnome3</userinput></screen>
 
       <para xml:lang="en">To instead build <application>GNOME</application> from
 	ports, use the following command.
@@ -9800,7 +9709,7 @@ DisplayManager.requestPort:     0</screen>
 	will take some time to compile, even on a fast
 	computer.</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/x11/gnome2</userinput>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/x11/gnome3</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
       <para xml:lang="en"><application>GNOME</application>
@@ -11548,12 +11457,7 @@ EndSection</programlisting>
 
     <indexterm xml:lang="en"><primary>PCI</primary></indexterm>
     <indexterm xml:lang="en"><primary>sound cards</primary></indexterm>
-    <para xml:lang="en">Before beginning the configuration, determine the model of
-      the sound card and the chip it uses.  FreeBSD supports a wide
-      variety of sound cards.  Check the supported audio devices
-      list of the <link xlink:href="http://www.FreeBSD.org/releases/10.3R/hardware.html">Hardware
-	Notes</link> to see if the card is supported and which FreeBSD
-      driver it uses.</para>
+    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="http://www.FreeBSD.org/releases/10.3R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
 
     <indexterm xml:lang="en">
       <primary>kernel</primary>
@@ -16514,7 +16418,7 @@ export PATH</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 48532 2016-04-03 22:16:21Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 48892 2016-06-04 11:45:17Z bhd $
 -->
 <chapter version="5.0" xml:id="config-tuning">
 
@@ -19717,7 +19621,7 @@ hw.acpi.s4bios: 0</screen>
 
 	<para xml:lang="en">First, try setting
 	  <literal>hw.acpi.disable_on_poweroff="0"</literal> in
-	  <filename>/boot/loader</filename>.  This keeps
+	  <filename>/boot/loader.conf</filename>.  This keeps
 	  <acronym>ACPI</acronym> from disabling various events during
 	  the shutdown process.  Some systems need this value set to
 	  <literal>1</literal> (the default) for the same reason.
@@ -20900,7 +20804,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 48670 2016-04-18 18:10:51Z trhodes $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 48921 2016-06-12 17:03:55Z jgh $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -24696,9 +24600,9 @@ UWWemqWuz3lAZuORQ9KX
     <sect2>
       <title>開啟並設定資源限制</title>
 
-      <para xml:lang="en">By default, kernel support for <command>rctl</command> is
-	not built-in, meaning that the kernel will first need to be
-	recompiled using the instructions in <xref linkend="kernelconfig"/>.  Add these lines to either
+      <para xml:lang="en">As of FreeBSD 10.2, <command>rctl</command> support is
+	built into the kernel.  Previous supported releases will
+	need to be recompiled using the instructions in <xref linkend="kernelconfig"/>.  Add these lines to either
 	<filename>GENERIC</filename> or a custom kernel configuration
 	file, then rebuild the kernel:</para>
 
@@ -24769,7 +24673,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 
   <sect1 xml:id="security-sudo">
     <info>
-      <title xml:lang="en">Shared Administration with Sudo</title>
+      <title>使用 Sudo 分享管理權限</title>
 
       <authorgroup>
 	<author xml:lang="en"><personname><firstname>Tom</firstname><surname>Rhodes</surname></personname><contrib>Contributed
@@ -24953,7 +24857,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 <!--
     The FreeBSD Documentation Project
 
-    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 48482 2016-03-27 19:17:51Z jgh $
+    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 48843 2016-05-23 16:25:18Z wblock $
 -->
 <chapter version="5.0" xml:id="jails">
   <info>
@@ -24970,63 +24874,63 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
   <sect1 xml:id="jails-synopsis">
     <title>概述</title>
 
-    <para>由於系統管理是一項困難的工作，許多工具開發來讓系統管理者能夠更輕鬆。這些工具通常可以強化系統安裝、設定以及維護的方式。這些工具之可以用來強化 FreeBSD 系統的安全性之一的就是 <firstterm>jails</firstterm>。Jails 早在 FreeBSD 4.X 便可使用並持續強化它的功能、效率、穩定性以及安全性。</para>
+    <para>由於系統管理是一項困難的工作，許多工具開發來讓系統管理者能夠更輕鬆。這些工具通常可以強化系統安裝、設定以及維護的方式。這些工具之可以用來強化 FreeBSD 系統的安全性之一的就是 <firstterm>Jail</firstterm>。Jail 早在 FreeBSD 4.X 便可使用並持續強化它的功能、效率、穩定性以及安全性。</para>
 
-    <para>Jails 建立在 <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> 概念之上，會更改一系列程序的根目錄。這可以創造一個安全的環境，將程序與系統的其他部份分隔。在 chroot 的環境所建立的程序不能存取該環境以外的檔案或資源。也因此，滲透一個在 chroot 的環境執行的服務並不會讓整個系統被攻擊者滲透。但 chroot 有許多限制，只適合用在簡單的工作，不需要許多彈性或複雜性、進階功能的工作。隨著時間推移，許多可以逃離 chroot 的環境的方法已經被找到，讓這個方法不再是確保服務安全的理想方案。</para>
+    <para>Jail 建立在 <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>2</manvolnum></citerefentry> 概念之上，會更改一系列程序的根目錄。這可以創造一個安全的環境，將程序與系統的其他部份分隔。在 chroot 的環境所建立的程序不能存取該環境以外的檔案或資源。也因此，滲透一個在 chroot 的環境執行的服務並不會讓整個系統被攻擊者滲透。但 chroot 有許多限制，只適合用在簡單的工作，不需要許多彈性或複雜性、進階功能的工作。隨著時間推移，許多可以逃離 chroot 的環境的方法已經被找到，讓這個方法不再是確保服務安全的理想方案。</para>
 
-    <para>Jails 用許多方式改進了傳統 chroot 環境的概念。在傳統 chroot 環境，程序僅限制在一部份檔案系統可存取的地方。其餘的系統資源、系統使用者、執行的程序以及網路子系統被chroot 的程序及主機系統的程序所共享。Jails 透過虛擬化存取檔案系統、使用者及網路子系統來擴展這個模型，可使用更多細微的控制參數來調校 Jail 的環境存取方式，Jails 可算是一種作業系統層級的虛擬化。</para>
+    <para>Jail 用許多方式改進了傳統 chroot 環境的概念。在傳統 chroot 環境，程序僅限制在一部份檔案系統可存取的地方。其餘的系統資源、系統使用者、執行的程序以及網路子系統被 chroot 的程序及主機系統的程序所共享。Jail 透過虛擬化存取檔案系統、使用者及網路子系統來擴展這個模型，可使用更多細微的控制參數來調校 Jail 的環境存取方式，Jail 可算是一種作業系統層級的虛擬化。</para>
 
     <para>Jail 的四個要素：</para>
 
     <itemizedlist>
       <listitem>
-	<para>一個子樹狀目錄：進入 jail 的起點目錄，一但在 jail 中，程序便沒有權限離開此目錄之外。</para>
+	<para>一個子樹狀目錄：進入 Jail 的起點目錄，一但在 Jail 中，程序便沒有權限離開此目錄之外。</para>
       </listitem>
 
       <listitem>
-	<para>一個主機名稱：將會由 jail 所使用。</para>
+	<para>一個主機名稱：將會由 Jail 所使用。</para>
       </listitem>
 
       <listitem>
-	<para>一個 <acronym>IP</acronym> 位址：用來分配給 jail。jail 的 <acronym>IP</acronym> 位址通常是現有網路介面的別名位址。</para>
+	<para>一個 <acronym>IP</acronym> 位址：用來分配給 Jail。Jail 的 <acronym>IP</acronym> 位址通常是現有網路介面的別名位址。</para>
       </listitem>
 
       <listitem>
-	<para>一個指令：要在 jail 中可執行的執行檔路徑名稱。該路徑是 jail 環境根目錄的相對路徑。</para>
+	<para>一個指令：要在 Jail 中可執行的執行檔路徑名稱。該路徑是 Jail 環境根目錄的相對路徑。</para>
       </listitem>
     </itemizedlist>
 
-    <para>Jails 有自己使用者及自己的 <systemitem class="username">root</systemitem> 帳號，皆受到 jail 環境的限制。jail 中的 <systemitem class="username">root</systemitem> 帳號不允許對指定 jail 環境之外的系統執行操作。</para>
+    <para>Jail 有自己使用者及自己的 <systemitem class="username">root</systemitem> 帳號，皆受到 Jail 環境的限制。Jail 中的 <systemitem class="username">root</systemitem> 帳號不允許對指定 Jail 環境之外的系統執行操作。</para>
 
-    <para>本章將提供 FreeBSD jails 術語及管理指令的概述，Jails 對系統管理者及進階的使用者來二者來說皆是強大的工具。</para>
+    <para>本章將提供 FreeBSD Jail 術語及管理指令的概述，Jail 對系統管理者及進階的使用者來二者來說皆是強大的工具。</para>
 
     <para>讀完這章，您將了解︰</para>
 
     <itemizedlist>
       <listitem>
-	<para>jail 是什麼及它在 FreeBSD 中提供的目的。</para>
+	<para>Jail 是什麼及它在 FreeBSD 中提供的目的。</para>
       </listitem>
 
       <listitem>
-	<para>如何建立、啟動及停止 jail。</para>
+	<para>如何建立、啟動及停止 Jail。</para>
       </listitem>
 
       <listitem>
-	<para>jail 管理基礎，不論從內部或外部。</para>
+	<para>Jail 管理基礎，不論從內部或外部。</para>
       </listitem>
     </itemizedlist>
 
     <important>
-      <para>Jails 是強大的工具，但它不是安全性問題的萬靈丹。雖然 jail 的程序不可能自己獨自打破規則，但有許多方法可以讓在 jail 之外無權限的使用者與在 jail 之內有權限的使用者串通來取得主機環境的更高權限。</para>
+      <para>Jail 是強大的工具，但它不是安全性問題的萬靈丹。雖然 Jail 的程序不可能自己獨自打破規則，但有許多方法可以讓在 Jail 之外無權限的使用者與在 Jail 之內有權限的使用者串通來取得主機環境的更高權限。</para>
 
-      <para>大多數這類型的攻擊者可以由確保 jail 根目錄不會被無權限使用者存取來減少。基本上，不受信任的使用者有 jail 的存取權限並不會讓其可存取主機環境。</para>
+      <para>大多數這類型的攻擊者可以由確保 Jail 根目錄不會被無權限使用者存取來減少。基本上，不受信任的使用者有 Jail 的存取權限並不會讓其可存取主機環境。</para>
     </important>
   </sect1>
 
   <sect1 xml:id="jails-terms">
     <title>Jail 相關術語</title>
 
-    <para>為協助更容易理解 FreeBSD 系統有關 jail 部份， 以及它們與 FreeBSD 其他部分的相互作用關係， 以下列出本章將使用的術語：</para>
+    <para>為協助更容易理解 FreeBSD 系統有關 Jail 部份， 以及它們與 FreeBSD 其他部分的相互作用關係， 以下列出本章將使用的術語：</para>
 
     <variablelist>
       <varlistentry>
@@ -25046,21 +24950,21 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
       <varlistentry>
 	<term><citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> (指令)</term>
 	<listitem>
-	  <para>允許在 jail 環境下執行程序的系統管理工具。</para>
+	  <para>允許在 Jail 環境下執行程序的系統管理工具。</para>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
 	<term>主機 (系統、程序、使用者等)</term>
 	<listitem>
-	  <para>jail 環境的控制系統。 主機系統可以存取所有可用的硬體資源，並能控制 jail 環境內外的程序。主機系統與 jail 最大的差別在於：在主機系統中的超級使用者程序並不像在 jail 環境那樣受到限制。</para>
+	  <para>Jail 環境的控制系統。 主機系統可以存取所有可用的硬體資源，並能控制 Jail 環境內外的程序。主機系統與 Jail 最大的差別在於：在主機系統中的超級使用者程序並不像在 Jail 環境那樣受到限制。</para>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
 	<term>託管 (主機、程序、使用者等)</term>
 	<listitem>
-	  <para>存取資源受到 FreeBSD jail 限制的託管程序、使用者或其他實體。</para>
+	  <para>存取資源受到 FreeBSD Jail 限制的託管程序、使用者或其他實體。</para>
 	</listitem>
       </varlistentry>
     </variablelist>
@@ -25069,46 +24973,30 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
   <sect1 xml:id="jails-build">
     <title>建立和控制 Jail</title>
 
-    <para xml:lang="en">Some administrators divide jails into the following two
-      types: <quote>complete</quote> jails, which resemble a real FreeBSD
-      system, and <quote>service</quote> jails, dedicated to one
-      application or service, possibly running with privileges.  This
-      is only a conceptual division and the process of building a jail
-      is not affected by it.  When creating a <quote>complete</quote>
-      jail there are two options for the source of the userland: use
-      prebuilt binaries (such as those supplied on an install media)
-      or build from source.</para>
+    <para>部份管理者將 Jail 分成兩種類型：<quote>完整的</quote> Jail，它像一個真正的 FreeBSD 系統以及 <quote>服務的</quote> Jail，專門用於某個應用程式或服務，可能使用管理權限執行。但這些只是概念上的區分，建立 Jail 的程序並不受這個概念的影響。當要建立一個 <quote>完整的</quote> Jail，Userland 有兩個來源選項：使用預先編譯的 Binary (如安裝媒體上提供的 Binary) 或從原始碼編譯。</para>
 
-    <para xml:lang="en">To install the userland from installation media, first
-      create the root directory for the jail.  This can be done by
-      setting the <varname>DESTDIR</varname> variable to the proper
-      location.</para>
+    <para>要從安裝媒體安裝 Userland，需要先建立根目錄供 Jail 使用。這個動作可以透過設定 <varname>DESTDIR</varname> 來到適當的位置來完成。</para>
 
-    <para xml:lang="en">Start a shell and define <varname>DESTDIR</varname>:</para>
+    <para>啟動 Shell 並定義 <varname>DESTDIR</varname>：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>sh</userinput>
 <prompt>#</prompt> <userinput>export DESTDIR=<replaceable>/here/is/the/jail</replaceable></userinput></screen>
 
-    <para xml:lang="en">Mount the install media as covered in <citerefentry><refentrytitle>mdconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-      when using the install ISO:</para>
+    <para>當使用安裝 ISO 時，可依 <citerefentry><refentrytitle>mdconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> 中的說明掛載安裝媒體：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>mount -t cd9660 /dev/`mdconfig -f cdimage.iso` /mnt</userinput></screen>
 
-    <para xml:lang="en">Extract the binaries from the tarballs on the install media
-      into the declared destination.  Minimally, only the base set
-      needs to be extracted, but a complete install can be performed
-      when preferred.</para>
+    <para>從安裝媒體上的 Tarball 中取出 Binary 並放到宣告的位置，至少需要取出 Base set 的部份，若需要也可完整安裝。</para>
 
-    <para xml:lang="en">To install just the base system:</para>
+    <para>只安裝基礎系統 (Base system)：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>tar -xf /mnt/usr/freebsd-dist/base.txz -C $DESTDIR</userinput></screen>
 
-    <para xml:lang="en">To install everything except the kernel:</para>
+    <para>安裝全部不含核心：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>for <replaceable>sets</replaceable> in BASE PORTS; do tar -xf /mnt/FREEBSD_INSTALL/USR/FREEBSD_DIST/$<replaceable>sets</replaceable>.TXZ -C $DESTDIR ; done</userinput></screen>
 
-    <para xml:lang="en">The <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> manual page explains the procedure for
-      building a jail:</para>
+    <para>依 <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊說明的程序建置 Jail：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>setenv D <replaceable>/here/is/the/jail</replaceable></userinput>
 <prompt>#</prompt> <userinput>mkdir -p $D</userinput>      <co xml:id="jailpath"/>
@@ -25120,139 +25008,77 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 
     <calloutlist>
       <callout arearefs="jailpath">
-	<para xml:lang="en">Selecting a location for a jail is the best starting
-	  point.  This is where the jail will physically reside within
-	  the file system of the jail's host.  A good choice can be
-	  <filename>/usr/jail/<replaceable>jailname</replaceable></filename>,
-	  where <replaceable>jailname</replaceable> is the hostname
-	  identifying the jail.  Usually, <filename>/usr/</filename>
-	  has enough space for the jail file system, which for
-	  <quote>complete</quote> jails is, essentially, a replication
-	  of every file present in a default installation of the FreeBSD
-	  base system.</para>
+	<para>選擇 Jail 的位置是建置 Jail 最好的起點，這是在 Jail 主機上儲存 Jail 的實體位置。較好的選擇是 <filename>/usr/jail/<replaceable>jailname</replaceable></filename>，其中 <replaceable>jailname</replaceable> 是用來辦識 Jail 的主機名稱。通常在 <filename>/usr/</filename> 會有足夠的空間供 Jail 檔案系統使用，對 <quote>完整的</quote> Jail 來說，便是複製 FreeBSD 基礎系統預設安裝的每一個檔案。</para>
       </callout>
 
       <callout arearefs="jailbuildworld">
-	<para xml:lang="en">If you have already rebuilt your userland using
-	  <command>make world</command> or
-	  <command>make buildworld</command>, you can skip this step
-	  and install your existing userland into the new jail.</para>
+	<para>若您已經使用 <command>make world</command> 或 <command>make buildworld</command> 重新編譯您的 Userland，您可以跳過這個步驟並安裝您已存在的 Userland 到新的 Jail。</para>
       </callout>
 
       <callout arearefs="jailinstallworld">
-	<para xml:lang="en">This command will populate the directory subtree chosen
-	  as jail's physical location on the file system with the
-	  necessary binaries, libraries, manual pages and so
-	  on.</para>
+	<para>這個指令將會在檔案系統中 Jail 所在的實體位置產生樹狀目錄及必要的 Binary、程式庫、操作手冊與相關檔案。</para>
       </callout>
 
       <callout arearefs="jaildistrib">
-	<para xml:lang="en">The <buildtarget xml:lang="en">distribution</buildtarget> target for
-	  <application>make</application> installs every needed
-	  configuration file.  In simple words, it installs every
-	  installable file of
-	  <filename>/usr/src/etc/</filename> to the
-	  <filename>/etc</filename> directory of the
-	  jail environment:
-	  <filename>$D/etc/</filename>.</para>
+	<para><application>make</application> 的 <buildtarget>distribution</buildtarget> 目標會安裝所有需要的設定檔。簡單來說，它會安裝所有 <filename>/usr/src/etc/</filename> 中可安裝的檔案到 Jail 環境的 <filename>/etc</filename>目錄：<filename>$D/etc/</filename>。</para>
       </callout>
 
       <callout arearefs="jaildevfs">
-	<para xml:lang="en">Mounting the <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> file system inside a jail is
-	  not required.  On the other hand, any, or almost any
-	  application requires access to at least one device,
-	  depending on the purpose of the given application.  It is
-	  very important to control access to devices from inside a
-	  jail, as improper settings could permit an attacker to do
-	  nasty things in the jail.  Control over <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> is
-	  managed through rulesets which are described in the
-	  <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> and <citerefentry><refentrytitle>devfs.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> manual pages.</para>
+	<para>在 Jail 中掛載 <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> 檔案系統並非必要的動作。從另一個角度來說，任何或大部份的應用程式會依該程式的目的會需要存取至少一個裝置，在 Jail 中控制存取的裝置非常重要，不恰當的設定可能會讓攻擊者可以在 Jail 中做不軌的事。對 <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的控制是透過  Ruleset，在 <citerefentry><refentrytitle>devfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>devfs.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 操作手冊中有詳細說明。</para>
       </callout>
     </calloutlist>
 
-    <para xml:lang="en">Once a jail is installed, it can be started by using the
-      <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> utility.  The <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> utility takes four
-      mandatory arguments which are described in the <xref linkend="jails-synopsis"/>.  Other arguments may be specified
-      too, e.g., to run the jailed process with the credentials of a
-      specific user.  The
-      <option><replaceable>command</replaceable></option> argument
-      depends on the type of the jail; for a
-      <emphasis>virtual system</emphasis>,
-      <filename>/etc/rc</filename> is a good choice, since it will
-      replicate the startup sequence of a real FreeBSD system.  For a
-      <emphasis>service</emphasis> jail, it depends on the service or
-      application that will run within the jail.</para>
+    <para>Jail 安裝完成之後，便可使用 <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具來啟動。<citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具需要四個必要參數，在 <xref linkend="jails-synopsis"/> 有說明。其他參數也可能需要指定，例如要使用特定使用者的身份來執行要 Jail 的程序。<option><replaceable>command</replaceable></option> 參數依 Jail 的類型所需而定，對一個 <emphasis>虛擬系統</emphasis> 來說，<filename>/etc/rc</filename> 是不錯的選擇，因為該檔案可以模仿真實 FreeBSD 的啟動順序。對於 <emphasis>服務的</emphasis> Jail 來說，則看在 Jail 中要執行的服務或應用程式來決定。</para>
 
-    <para xml:lang="en">Jails are often started at boot time and the FreeBSD
-      <filename>rc</filename> mechanism provides an easy way to do
-      this.</para>
+    <para>Jail 通常會需要隨著開機執行，使用 FreeBSD <filename>rc</filename> 機制可讓以簡單的達成這件事。</para>
 
     <procedure>
       <step>
-	<para xml:lang="en">A list of the jails which are enabled to start at boot
-	  time should be added to the <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> file:</para>
+	<para>要在開機時啟動的 Jail 應加入到 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 檔案中：</para>
 
 	<programlisting xml:lang="en">jail_enable="YES"   # Set to NO to disable starting of any jails
 jail_list="<replaceable>www</replaceable>"     # Space separated list of names of jails</programlisting>
 
 	<note>
-	  <para xml:lang="en">Jail names in <varname>jail_list</varname> should
-	    contain alphanumeric characters only.</para>
+	  <para>在 <varname>jail_list</varname> 中的 Jail 名稱只允許使用英數字元。</para>
 	</note>
       </step>
 
       <step>
-	<para xml:lang="en">For each jail listed in <varname>jail_list</varname>, a
-	  group of <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> settings, which describe the
-	  particular jail, should be added:</para>
+	<para>針對每個列在 <varname>jail_list</varname> 中的 Jail 圴需加入一組 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 設定來描述指定的 Jail：</para>
 
 	<programlisting xml:lang="en">jail_<replaceable>www</replaceable>_rootdir="/usr/jail/www"     # jail's root directory
 jail_<replaceable>www</replaceable>_hostname="<replaceable>www</replaceable>.example.org"  # jail's hostname
 jail_<replaceable>www</replaceable>_ip="192.168.0.10"           # jail's IP address
 jail_<replaceable>www</replaceable>_devfs_enable="YES"          # mount devfs in the jail</programlisting>
 
-	<para xml:lang="en">The default startup of jails configured in
-	  <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>, will run the <filename>/etc/rc</filename>
-	  script of the jail, which assumes the jail is a complete
-	  virtual system.  For service jails, the default startup
-	  command of the jail should be changed, by setting the
-	  <varname>jail_<replaceable>jailname</replaceable>_exec_start</varname>
-	  option appropriately.</para>
+	<para><citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>中會假設 Jail 是完整的虛擬系統，預設會啟動 Jail 的 <filename>/etc/rc</filename> Script。針對服務的 Jail 則需設定適當的 <varname>jail_<replaceable>jailname</replaceable>_exec_start</varname> 選項來修改預設啟動的指令。</para>
 
 	<note>
-	  <para xml:lang="en">For a full list of available options, please see the
-	    <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> manual page.</para>
+	  <para>要取得完整可用選項的清單，請參考 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 操作手冊。</para>
 	</note>
       </step>
     </procedure>
 
-    <para xml:lang="en"><citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> can be used to start or stop a jail by hand,
-      if an entry for it exists in
-      <filename>rc.conf</filename>:</para>
+    <para>若該 Jail 已經在 <filename>rc.conf</filename> 中設定，可以用 <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來啟動或停止 Jail：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service jail start <replaceable>www</replaceable></userinput>
 <prompt>#</prompt> <userinput>service jail stop <replaceable>www</replaceable></userinput></screen>
 
-    <para xml:lang="en">Jails can be shut down with <citerefentry><refentrytitle>jexec</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Use <citerefentry><refentrytitle>jls</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-      to identify the jail's <varname>JID</varname>, then use
-      <citerefentry><refentrytitle>jexec</refentrytitle><manvolnum>8</manvolnum></citerefentry> to run the shutdown script in that jail.</para>
+    <para>Jail 可以使用 <citerefentry><refentrytitle>jexec</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來關機。先使用 <citerefentry><refentrytitle>jls</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來辦識 Jail 的 <varname>JID</varname>，然後使用 <citerefentry><refentrytitle>jexec</refentrytitle><manvolnum>8</manvolnum></citerefentry> 在該 Jail 中執行關機 Script。</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>jls</userinput>
    JID  IP Address      Hostname                      Path
      3  192.168.0.10    www                           /usr/jail/www
 <prompt>#</prompt> <userinput>jexec <replaceable>3</replaceable> /etc/rc.shutdown</userinput></screen>
 
-    <para xml:lang="en">More information about this can be found in the <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-      manual page.</para>
+    <para>更多有關 Jail 的資訊可在 <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊取得。</para>
   </sect1>
 
   <sect1 xml:id="jails-tuning">
     <title>調校與管理</title>
 
-    <para xml:lang="en">There are several options which can be set for any jail, and
-      various ways of combining a host FreeBSD system with jails, to
-      produce higher level applications.  This section
-      presents:</para>
+    <para>還有許多選項可以對所有 Jail 做設定，以及各種可讓 Jail 與主機 FreeBSD 系統結合的方法來提供更高層級的應用程式使用。 本節將介紹：</para>
 
     <itemizedlist>
       <listitem>
@@ -25593,9 +25419,9 @@ jail_<replaceable>www</replaceable>_devfs_enable="YES"          # mount devfs in
 <prompt>#</prompt> <userinput>ln -s s/etc etc</userinput>
 <prompt>#</prompt> <userinput>ln -s s/home home</userinput>
 <prompt>#</prompt> <userinput>ln -s s/root root</userinput>
-<prompt>#</prompt> <userinput>ln -s s/usr-local usr/local</userinput>
-<prompt>#</prompt> <userinput>ln -s s/usr-X11R6 usr/X11R6</userinput>
-<prompt>#</prompt> <userinput>ln -s s/distfiles usr/ports/distfiles</userinput>
+<prompt>#</prompt> <userinput>ln -s ../s/usr-local usr/local</userinput>
+<prompt>#</prompt> <userinput>ln -s ../s/usr-X11R6 usr/X11R6</userinput>
+<prompt>#</prompt> <userinput>ln -s ../../s/distfiles usr/ports/distfiles</userinput>
 <prompt>#</prompt> <userinput>ln -s s/tmp tmp</userinput>
 <prompt>#</prompt> <userinput>ln -s s/var var</userinput></screen>
 	</step>
@@ -25986,6 +25812,22 @@ Created clone interfaces: lo1.</screen>
 	  jail.  <filename>/var/ports</filename> inside each jail is
 	  also used as a work directory when building ports.</para>
       </tip>
+
+      <tip>
+	<para xml:lang="en">The <acronym>FTP</acronym> protocol is used by default
+	  to download packages for the installation of the basejail.
+	  Firewall or proxy configurations can prevent or interfere
+	  with <acronym>FTP</acronym> transfers.  The
+	  <acronym>HTTP</acronym> protocol works differently and
+	  avoids these problems.  It can be chosen by specifying a
+	  full <acronym>URL</acronym> for a particular download mirror
+	  in <filename>/usr/local/etc/ezjail.conf</filename>:</para>
+
+	<programlisting xml:lang="en">ezjail_ftphost=http://<replaceable>ftp.FreeBSD.org</replaceable></programlisting>
+
+	<para xml:lang="en">See <xref linkend="mirrors-ftp"/> for a list of
+	  sites.</para>
+      </tip>
     </sect2>
 
     <sect2 xml:id="jails-ezjail-create">
@@ -26328,7 +26170,8 @@ wwwserver-201407271153.13.tar.gz</screen>
 
 	<listitem>
 	  <para xml:lang="en">The basejail has already been created and a ports tree
-	    installed.</para>
+	    installed as shown in
+	    <xref linkend="jails-ezjail-initialsetup"/>.</para>
 	</listitem>
       </itemizedlist>
 
@@ -29067,51 +28910,29 @@ fi</programlisting>
       <secondary>adding</secondary>
     </indexterm>
 
-    <para xml:lang="en">This section describes how to add a new
-      <acronym>SATA</acronym> disk to a machine that currently only
-      has a single drive.  First, turn off the computer and install
-      the drive in the computer following the instructions of the
-      computer, controller, and drive manufacturers.  Reboot the
-      system and become
-      <systemitem class="username">root</systemitem>.</para>
+    <para>本節將說明如何加入新的 <acronym>SATA</acronym> 磁碟到目前只有一個磁碟的機器上。 首先要關閉電腦並依照電腦、控制器及磁碟製造商的操作指南將磁碟安裝到電腦。重新啟動系統並登入 <systemitem class="username">root</systemitem>。</para>
 
-    <para xml:lang="en">Inspect <filename>/var/run/dmesg.boot</filename> to ensure
-      the new disk was found.  In this example, the newly added
-      <acronym>SATA</acronym> drive will appear as
-      <filename>ada1</filename>.</para>
+    <para>查看 <filename>/var/run/dmesg.boot</filename> 來確認已經找到新的磁碟。在本例中，會以 <filename>ada1</filename> 代表新加入的 <acronym>SATA</acronym> 磁碟。</para>
 
     <indexterm xml:lang="en"><primary>partitions</primary></indexterm>
     <indexterm xml:lang="en">
       <primary><command>gpart</command></primary>
     </indexterm>
 
-    <para xml:lang="en">For this example, a single large partition will be created
-      on the new disk.  The <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table">
-	<acronym>GPT</acronym></link> partitioning scheme will be
-      used in preference to the older and less versatile
-      <acronym>MBR</acronym> scheme.</para>
+    <para>在本例中，會在新的磁碟上建立單一大型分割區，使用 <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table"> <acronym>GPT</acronym></link> 分割區結構而非較舊與通用性較差的 <acronym>MBR</acronym> 結構。</para>
 
     <note>
-      <para xml:lang="en">If the disk to be added is not blank, old partition
-	information can be removed with
-	<command>gpart delete</command>.  See <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> for
-	details.</para>
+      <para>若新加入的磁碟不是空白的，可以使用 <command>gpart delete</command> 來移除舊的分割區資訊。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得詳細資訊。</para>
     </note>
 
-    <para xml:lang="en">The partition scheme is created, and then a single partition
-      is added.  To improve performance on newer disks with larger
-      hardware block sizes, the partition is aligned to one megabyte
-      boundaries:</para>
+    <para>建立完分割區結構後接著加入一個分隔區，要在新的磁碟增進效能可使用較大的硬體磁區大小，此分割區會對齊 1 MB 的邊界：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart create -s GPT ada1</userinput>
 <prompt>#</prompt> <userinput>gpart add -t freebsd-ufs -a 1M ada1</userinput></screen>
 
-    <para xml:lang="en">Depending on use, several smaller partitions may be desired.
-      See <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> for options to create partitions smaller than
-      a whole disk.</para>
+    <para>依據使用情況，也可以使用較小的分割區。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來取得建立較小分割區的選項。</para>
 
-    <para xml:lang="en">The disk partition information can be viewed with
-      <command>gpart show</command>:</para>
+    <para>磁碟分割區資訊可以使用 <command>gpart show</command> 檢視：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>gpart show ada1</userinput>
 =&gt;        34  1465146988  ada1  GPT  (699G)
@@ -29119,24 +28940,19 @@ fi</programlisting>
         2048  1465143296     1  freebsd-ufs  (699G)
   1465145344        1678        - free -  (839K)</screen>
 
-    <para xml:lang="en">A file system is created in the new partition on the new disk:</para>
+    <para>在新磁碟的新分割區上建立檔案系統：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>newfs -U /dev/ada1p1</userinput></screen>
 
-    <para xml:lang="en">An empty directory is created as a
-      <emphasis>mountpoint</emphasis>, a location for mounting the new
-      disk in the original disk's file system:</para>
+    <para>建立一個空的目錄做來做為<emphasis>掛載點 (mountpoint)</emphasis>，一個在原有磁碟的檔案系統上可用來掛載新磁碟的位置：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>mkdir /newdisk</userinput></screen>
 
-    <para xml:lang="en">Finally, an entry is added to
-      <filename>/etc/fstab</filename> so the new disk will be mounted
-      automatically at startup:</para>
+    <para>最後，將磁碟項目加入到 <filename>/etc/fstab</filename>，讓啟動時會自動掛載新的磁碟：</para>
 
     <programlisting xml:lang="en">/dev/ada1p1	/newdisk	ufs	rw	2	2</programlisting>
 
-    <para xml:lang="en">The new disk can be mounted manually, without restarting the
-      system:</para>
+    <para>新的磁碟也可手動掛載，無須重新啟動系統：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>mount /newdisk</userinput></screen>
   </sect1>
@@ -29161,28 +28977,16 @@ fi</programlisting>
       <secondary>resizing</secondary>
     </indexterm>
 
-    <para xml:lang="en">A disk's capacity can increase without any changes to the
-      data already present.  This happens commonly with virtual
-      machines, when the virtual disk turns out to be too small and is
-      enlarged.  Sometimes a disk image is written to a
-      <acronym>USB</acronym> memory stick, but does not use the full
-      capacity.  Here we describe how to resize or
-      <emphasis>grow</emphasis> disk contents to take advantage of
-      increased capacity.</para>
+    <para>磁碟的容量可以增加且不需要更動任何已存在的資料。這時常會用在虛擬機器，當虛擬磁碟太小且需要增加時。有時磁碟映像檔會被寫入到 <acronym>USB</acronym> 隨身碟，但卻沒有使用全部的容量。此節我們將說明如合重設大小或 <emphasis>擴增</emphasis> 磁碟內容來使用增加的容量。</para>
 
-    <para xml:lang="en">Determine the device name of the disk to be resized by
-      inspecting <filename>/var/run/dmesg.boot</filename>.  In this
-      example, there is only one <acronym>SATA</acronym> disk in the
-      system, so the drive will appear as
-      <filename>ada0</filename>.</para>
+    <para>要取得要重設大小的磁碟的代號可以查看 <filename>/var/run/dmesg.boot</filename>。在本例中，在系統上只有一個 <acronym>SATA</acronym> 磁碟，該磁碟會以 <filename>ada0</filename> 表示。</para>
 
     <indexterm xml:lang="en"><primary>partitions</primary></indexterm>
     <indexterm xml:lang="en">
       <primary><command>gpart</command></primary>
     </indexterm>
 
-    <para xml:lang="en">List the partitions on the disk to see the current
-      configuration:</para>
+    <para>列出在磁碟上的分割區來查看目前的設定：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart show <replaceable>ada0</replaceable></userinput>
 =&gt;      34  83886013  ada0  GPT  (48G) [CORRUPT]
@@ -29192,21 +28996,13 @@ fi</programlisting>
   83886046         1        - free -  (512B)</screen>
 
     <note>
-      <para xml:lang="en">If the disk was formatted with the <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table">
-	<acronym>GPT</acronym></link> partitioning scheme, it may show
-	as <quote>corrupted</quote> because the <acronym>GPT</acronym>
-	backup partition table is no longer at the end of the
-	drive.  Fix the backup
-	partition table with
-	<command>gpart</command>:</para>
+      <para>若磁碟已使用 <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table"> <acronym>GPT</acronym></link> 分割區結構格式化，可能會顯示為 <quote>已損壞 (corrupted)</quote> 因為 <acronym>GPT</acronym> 備份分割區已不存在於磁碟結尾。 使用 <command>gpart</command> 來修正備份分割區：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart recover <replaceable>ada0</replaceable></userinput>
 ada0 recovered</screen>
     </note>
 
-    <para xml:lang="en">Now the additional space on the disk is available for
-      use by a new partition, or an existing partition can be
-      expanded:</para>
+    <para>現在在磁碟上的額外空間已經可以被新的分割區使用，或者可以拿來擴充既有的分割區：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart show <replaceable>ada0</replaceable></userinput>
 =&gt;       34  102399933  ada0  GPT  (48G)
@@ -29215,12 +29011,7 @@ ada0 recovered</screen>
    79691810    4194236     3  freebsd-swap  (2G)
    83886046   18513921        - free -  (8.8G)</screen>
 
-    <para xml:lang="en">Partitions can only be resized into contiguous free space.
-      Here, the last partition on the disk is the swap partition, but
-      the second partition is the one that needs to be resized.  Swap
-      partitions only contain temporary data, so it can safely be
-      unmounted, deleted, and then recreated after resizing other
-      partitions.</para>
+    <para>分割區只能重設大小到連續的未使用空間。在這個例子磁碟上最後的分割區為交換 (Swap) 分割區，而第二個分割區才是需要重設大小的分割區。交換分割區中只會有暫存的資料，所以可以安全的解除掛載、刪除，然後在重設其他分割區大小之後再重建。</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>swapoff <replaceable>/dev/ada0p3</replaceable></userinput>
 <prompt>#</prompt> <userinput>gpart delete -i <replaceable>3</replaceable> <replaceable>ada0</replaceable></userinput>
@@ -29232,21 +29023,12 @@ ada0p3 deleted
    79691810   22708157        - free -  (10G)</screen>
 
     <warning>
-      <para xml:lang="en">There is risk of data loss when modifying the partition
-	table of a mounted file system.  It is best to perform the
-	following steps on an unmounted file system while running from
-	a live <acronym>CD-ROM</acronym> or <acronym>USB</acronym>
-	device.  However, if absolutely necessary, a mounted file
-	system can be  resized after disabling GEOM safety
-	features:</para>
+      <para>在掛載的檔案系統上修改分割區表可能會造成資料遺失。最好的方式是在未掛載檔案系統的情況下 (使用 Live <acronym>CD-ROM</acronym> 或 <acronym>USB</acronym> 裝置) 執行以下步驟。不論如何，若必須如此的話，在關閉 GEOM 安全性功能之後可以在掛載的檔案系統上修改分隔區表：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl kern.geom.debugflags=16</userinput></screen>
     </warning>
 
-    <para xml:lang="en">Resize the partition, leaving room to recreate a swap
-      partition of the desired size.  This only modifies the size of
-      the partition.  The file system in the partition will be
-      expanded in a separate step.</para>
+    <para>重設分割區大小，保留要用來重建交換分割區的大小。這個動作只會修改分割區大小，分割區中的檔案系統會在另一個步驟擴增。</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart resize -i <replaceable>2</replaceable> -a 4k -s <replaceable>47G</replaceable> <replaceable>ada0</replaceable></userinput>
 ada0p2 resized
@@ -29256,7 +29038,7 @@ ada0p2 resized
         162   98566144     2  freebsd-ufs  (47G)
    98566306    3833661        - free -  (1.8G)</screen>
 
-    <para xml:lang="en">Recreate the swap partition:</para>
+    <para>重新建立交換分割區：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart add -t freebsd-swap -a 4k <replaceable>ada0</replaceable></userinput>
 ada0p3 added
@@ -29267,13 +29049,10 @@ ada0p3 added
    98566306    3833661     3  freebsd-swap  (1.8G)
 <prompt>#</prompt> <userinput>swapon <replaceable>/dev/ada0p3</replaceable></userinput></screen>
 
-    <para xml:lang="en">Grow the <acronym>UFS</acronym> file system to use the new
-      capacity of the resized partition:</para>
+    <para>擴增 <acronym>UFS</acronym> 檔案系統來使用重設分割區大小之後的新容量：</para>
 
     <note>
-      <para xml:lang="en">Growing a live <acronym>UFS</acronym> file system is only
-	possible in FreeBSD 10.0-RELEASE and later.  For earlier
-	versions, the file system must not be mounted.</para>
+      <para>只能在 FreeBSD 10.0-RELEASE 或之後的版本擴增運作中的 <acronym>UFS</acronym> 檔案系統，較先前的版本必須將檔案系統解除掛載。</para>
     </note>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>growfs <replaceable>/dev/ada0p2</replaceable></userinput>
@@ -29284,8 +29063,7 @@ super-block backups (for fsck -b #) at:
  80781312, 82063552, 83345792, 84628032, 85910272, 87192512, 88474752,
  89756992, 91039232, 92321472, 93603712, 94885952, 96168192, 97450432</screen>
 
-    <para xml:lang="en">Both the partition and the file system on it have now been
-      resized to use the newly-available disk space.</para>
+    <para>現在分割區與檔案系統已透過重設大小來使用新增加的磁碟空間。</para>
   </sect1>
 
   <sect1 xml:id="usb-disks">
@@ -30619,8 +30397,7 @@ scsibus1:
 	<acronym>SSH</acronym> connection.</para>
 
       <example>
-	<title xml:lang="en">Using <command>dump</command> over
-	  <application>ssh</application></title>
+	<title>在 <application>ssh</application> 使用 <command>dump</command></title>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>/sbin/dump -0uan -f - /usr | gzip -2 | ssh -c blowfish \
           targetuser@targetmachine.example.com dd of=/mybigfiles/dump-usr-l0.gz</userinput></screen>
@@ -30631,9 +30408,7 @@ scsibus1:
 	<acronym>SSH</acronym> connection:</para>
 
       <example>
-	<title xml:lang="en">Using <command>dump</command> over
-	  <application>ssh</application> with <envar>RSH</envar>
-	  Set</title>
+	<title>在 <application>ssh</application> 使用 <command>dump</command> 與 <envar>RSH</envar> 設定</title>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>env RSH=/usr/bin/ssh /sbin/dump -0uan -f targetuser@targetmachine.example.com:/dev/sa0 /usr</userinput></screen>
       </example>
@@ -32603,7 +32378,7 @@ esac</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/geom/chapter.xml 48356 2016-03-07 19:00:54Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/geom/chapter.xml 48893 2016-06-04 11:47:58Z bhd $
 
 -->
 <chapter version="5.0" xml:id="geom">
@@ -32682,7 +32457,7 @@ esac</programlisting>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Know how to configure and install a new kernel (<xref linkend="kernelconfig"/>.</para>
+	<para xml:lang="en">Know how to configure and install a new kernel (<xref linkend="kernelconfig"/>).</para>
       </listitem>
     </itemizedlist>
   </sect1>
@@ -34290,7 +34065,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 47795 2015-11-21 12:43:33Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 48889 2016-06-03 18:20:29Z wblock $
 -->
 
 <chapter version="5.0" xml:id="zfs">
@@ -36545,7 +36320,7 @@ passwd          vi.recover
 cp: /var/tmp/.zfs/snapshot/after_cp/rc.conf: Read-only file system</screen>
 
 	<para xml:lang="en">The error reminds the user that snapshots are read-only
-	  and can not be changed after creation.  No files can be
+	  and cannot be changed after creation.  Files cannot be
 	  copied into or removed from snapshot directories because
 	  that would change the state of the dataset they
 	  represent.</para>
@@ -36595,7 +36370,7 @@ camino/home/joe@backup    0K      -    87K  -</screen>
 
       <para xml:lang="en">A typical use for clones is to experiment with a specific
 	dataset while keeping the snapshot around to fall back to in
-	case something goes wrong.  Since snapshots can not be
+	case something goes wrong.  Since snapshots cannot be
 	changed, a read/write clone of a snapshot is created.  After
 	the desired result is achieved in the clone, the clone can be
 	promoted to a dataset and the old file system removed.  This
@@ -37704,7 +37479,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
       combining the traditionally separate roles,
       <acronym>ZFS</acronym> is able to overcome previous limitations
       that prevented <acronym>RAID</acronym> groups being able to
-      grow.  Each top level device in a zpool is called a
+      grow.  Each top level device in a pool is called a
       <emphasis>vdev</emphasis>, which can be a simple disk or a
       <acronym>RAID</acronym> transformation such as a mirror or
       <acronym>RAID-Z</acronym> array.  <acronym>ZFS</acronym> file
@@ -37719,7 +37494,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
       <tgroup cols="2">
 	<tbody valign="top">
 	  <row>
-	    <entry xml:id="zfs-term-zpool" xml:lang="en">zpool</entry>
+	    <entry xml:id="zfs-term-pool" xml:lang="en">pool</entry>
 
 	    <entry xml:lang="en">A storage <emphasis>pool</emphasis> is the most
 	      basic building block of <acronym>ZFS</acronym>.  A pool
@@ -37775,7 +37550,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 		    pools can be backed by regular files, this is
 		    especially useful for testing and experimentation.
 		    Use the full path to the file as the device path
-		    in the zpool create command.  All vdevs must be
+		    in <command>zpool create</command>.  All vdevs must be
 		    at least 128 MB in size.</para>
 		</listitem>
 
@@ -37875,7 +37650,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 
 		<listitem>
 		  <para xml:id="zfs-term-vdev-cache" xml:lang="en"><emphasis>Cache</emphasis>
-		    - Adding a cache vdev to a zpool will add the
+		    - Adding a cache vdev to a pool will add the
 		    storage of the cache to the <link linkend="zfs-term-l2arc"><acronym>L2ARC</acronym></link>.
 		    Cache devices cannot be mirrored.  Since a cache
 		    device only stores additional copies of existing
@@ -38539,7 +38314,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/filesystems/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/filesystems/chapter.xml 48720 2016-04-23 22:16:23Z bcr $
 -->
 <chapter version="5.0" xml:id="filesystems">
   <info>
@@ -38650,9 +38425,8 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
       <note>
 	<para xml:lang="en">
 	  This driver can also be used to access ext3 and ext4 file
-	  systems.  However, ext3 journaling, extended attributes, and
-	  inodes greater than 128-bytes are not supported.  Support
-	  for ext4 is read-only.</para>
+	  systems.  However, ext3 journaling and extended attributes
+	  are not supported.  Support for ext4 is read-only.</para>
       </note>
 
       <para xml:lang="en">To access an ext file system, first
@@ -38736,7 +38510,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <chapter version="5.0" xml:id="virtualization">
 
   <info>
-    <title>虛擬機器</title>
+    <title>虛擬化</title>
 
     <authorgroup>
       <author xml:lang="en">
@@ -38762,7 +38536,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
   <sect1 xml:id="virtualization-synopsis">
     <title>概述</title>
 
-    <para>虛擬機器軟體可以讓同一台機器得以同時執行多種作業系統。在 <acronym>PC</acronym> 上的這類軟體系統通常涉及的角色有執行虛擬機器軟體的主機端 (Host) 作業系統以及數個安裝在其中的客戶端 (Guest) 作業系統。</para>
+    <para>虛擬化軟體可以讓同一台機器得以同時執行多種作業系統。在 <acronym>PC</acronym> 上的這類軟體系統通常涉及的角色有執行虛擬化軟體的主機端 (Host) 作業系統以及數個安裝在其中的客戶端 (Guest) 作業系統。</para>
 
     <para>讀完這章，您將了解︰</para>
 
@@ -48495,7 +48269,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 48920 2016-06-12 15:38:23Z jgh $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -51186,7 +50960,7 @@ result: 0 Success
 	Systems Consortium (<acronym>ISC</acronym>) implementation of
 	the <acronym>DHCP</acronym> server.  This implementation and
 	its documentation can be installed using the
-	<package>net/isc-dhcp42-server</package> package or
+	<package>net/isc-dhcp43-server</package> package or
 	port.</para>
 
       <indexterm xml:lang="en">
@@ -51200,7 +50974,7 @@ result: 0 Success
       </indexterm>
 
       <para xml:lang="en">The installation of
-	<package>net/isc-dhcp42-server</package> installs a sample
+	<package>net/isc-dhcp43-server</package> installs a sample
 	configuration file.  Copy
 	<filename>/usr/local/etc/dhcpd.conf.example</filename> to
 	<filename>/usr/local/etc/dhcpd.conf</filename> and make any
@@ -51373,7 +51147,7 @@ dhcpd_ifaces="dc0"</programlisting>
 	    <acronym>DHCP</acronym> server forwards a request from a
 	    client to another <acronym>DHCP</acronym> server on a
 	    separate network.  If this functionality is required,
-	    install the <package>net/isc-dhcp42-relay</package>
+	    install the <package>net/isc-dhcp43-relay</package>
 	    package or port.  The installation includes dhcrelay(8)
 	    which provides more detail.</para>
 	</listitem>
@@ -53034,15 +52808,15 @@ $include Kexample.com.+005+nnnnn.ZSK.key    ; ZSK</programlisting>
 	add the following entries to
 	<filename>httpd.conf</filename>:</para>
 
-      <screen xml:lang="en">&lt;VirtualHost *&gt;
-ServerName <replaceable>www.domain.tld</replaceable>
-DocumentRoot <replaceable>/www/domain.tld</replaceable>
+      <programlisting xml:lang="en">&lt;VirtualHost *&gt;
+    ServerName <replaceable>www.domain.tld</replaceable>
+    DocumentRoot <replaceable>/www/domain.tld</replaceable>
 &lt;/VirtualHost&gt;
 
 &lt;VirtualHost *&gt;
-ServerName <replaceable>www.someotherdomain.tld</replaceable>
-DocumentRoot <replaceable>/www/someotherdomain.tld</replaceable>
-&lt;/VirtualHost&gt;</screen>
+    ServerName <replaceable>www.someotherdomain.tld</replaceable>
+    DocumentRoot <replaceable>/www/someotherdomain.tld</replaceable>
+&lt;/VirtualHost&gt;</programlisting>
 
       <para xml:lang="en">For each virtual host, replace the values for
 	<literal>ServerName</literal> and
@@ -53256,14 +53030,14 @@ AddModule mod_php5.c
 	  <filename>httpd.conf</filename>, specifying the full path to
 	  the project directory:</para>
 
-	<screen xml:lang="en">&lt;Location "/"&gt;
+	<programlisting xml:lang="en">&lt;Location "/"&gt;
     SetHandler python-program
     PythonPath "['<replaceable>/dir/to/the/django/packages/</replaceable>'] + sys.path"
     PythonHandler django.core.handlers.modpython
     SetEnv DJANGO_SETTINGS_MODULE mysite.settings
     PythonAutoReload On
     PythonDebug On
-&lt;/Location&gt;</screen>
+&lt;/Location&gt;</programlisting>
 
 	<para xml:lang="en">Refer to <uri xlink:href="https://docs.djangoproject.com/en/1.6/">https://docs.djangoproject.com/en/1.6/</uri>
 	  for more information on how to use
@@ -53456,87 +53230,60 @@ AddModule mod_php5.c
       network.</para>
 
     <para xml:lang="en">A FreeBSD system can also be configured to act as a
-      <application>Samba</application> server.  This allows the
-      administrator to create <acronym>SMB/CIFS</acronym> shares on
+      <application>Samba</application> server by installing the
+      <package>net/samba43</package> port or package.  This allows the
+      administrator to create <acronym>SMB</acronym>/<acronym>CIFS</acronym>shares on
       the FreeBSD system which can be accessed by clients running
       <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> or the <application>Samba</application>
-      client libraries.  In order to configure a
-      <application>Samba</application> server on FreeBSD, the
-      <package>net/samba36</package> port or package must first be
-      installed.  The rest of this section provides an overview of how
-      to configure a <application>Samba</application> server on
-      FreeBSD.</para>
-
-<!-- mention LDAP, Active Directory, WinBIND, ACL, Quotas, PAM, .. -->
+      client libraries.</para>
 
     <sect2>
-      <title>設定</title>
+      <title xml:lang="en">Server Configuration</title>
 
-      <para xml:lang="en">A default <application>Samba</application> configuration
-	file is installed as
-	<filename>/usr/local/share/examples/samba36/smb.conf.default</filename>.
-	This file must be copied to
-	<filename>/usr/local/etc/smb.conf</filename> and customized
-	before <application>Samba</application> can be used.</para>
+      <para xml:lang="en"><application>Samba</application> is configured in
+	<filename>/usr/local/etc/smb4.conf</filename>.  This file must
+	be created before <application>Samba</application>
+	can be used.</para>
 
-      <para xml:lang="en">Runtime configuration information for
-	<application>Samba</application> is found in
-	<filename>smb.conf</filename>, such as definitions of the
-	printers and <quote>file system shares</quote> that will
-	be shared with <trademark class="registered">Windows</trademark> clients.  The
-	<application>Samba</application> package includes a web based
-	tool called <application>swat</application> which provides a
-	simple way for configuring
-	<filename>smb.conf</filename>.</para>
+      <para xml:lang="en">A simple <filename>smb4.conf</filename> to share
+	directories and printers  with <trademark class="registered">Windows</trademark> clients in a
+	workgroup is shown here.  For more complex setups
+	involving LDAP or Active Directory, it is easier to use
+	<citerefentry><refentrytitle>samba-tool</refentrytitle><manvolnum>8</manvolnum></citerefentry> to create the initial
+	<filename>smb4.conf</filename>.</para>
 
-      <sect3>
-	<title>使用 Samba 網頁管理工具 (SWAT)</title>
+      <programlisting xml:lang="en">[global]
+workgroup = WORKGROUP
+server string = Samba Server Version %v
+netbios name = ExampleMachine
+wins support = Yes
+security = user
+passdb backend = tdbsam
 
-	<para xml:lang="en">The Samba Web Administration Tool (SWAT) runs as a
-	  daemon from <application>inetd</application>.  Therefore,
-	  <application>inetd</application> must be enabled as shown in
-	  <xref linkend="network-inetd"/>.  To enable
-	  <application>swat</application>, uncomment the following
-	  line in <filename>/etc/inetd.conf</filename>:</para>
-
-	<programlisting xml:lang="en">swat   stream  tcp     nowait/400      root    /usr/local/sbin/swat    swat</programlisting>
-
-	<para xml:lang="en">As explained in <xref linkend="network-inetd-reread"/>,
-	  the <application>inetd</application> configuration must be
-	  reloaded after this configuration file is changed.</para>
-
-	<para xml:lang="en">Once <application>swat</application> has been enabled,
-	  use a web browser to connect to <uri xlink:href="http://localhost:901">http://localhost:901</uri>.
-	  At first login, enter the credentials for <systemitem class="username">root</systemitem>.</para>
-
-<!-- XXX screenshots go here, loader is creating them
-     XXXTR: I'll believe it when I see it.  -->
-
-	<para xml:lang="en">Once logged in, the main
-	  <application>Samba</application> configuration page and the
-	  system documentation will be available.  Begin configuration
-	  by clicking on the <guimenu>Globals</guimenu> tab.  The
-	  <guimenu>Globals</guimenu> section corresponds to the
-	  variables that are set in the <literal>[global]</literal>
-	  section of
-	  <filename>/usr/local/etc/smb.conf</filename>.</para>
-      </sect3>
+# Example: share /usr/src accessible only to 'developer' user
+[src]
+path = /usr/src
+valid users = developer
+writable  = yes
+browsable = yes
+read only = no
+guest ok = no
+public = no
+create mask = 0666
+directory mask = 0755</programlisting>
 
       <sect3>
 	<title>全域設定</title>
 
-	<para xml:lang="en">Whether <application>swat</application> is used or
-	  <filename>/usr/local/etc/smb.conf</filename> is edited
-	  directly, the first directives encountered when configuring
-	  <application>Samba</application> are:</para>
+	<para xml:lang="en">Settings that describe the network are added in
+	  <filename>/usr/local/etc/smb4.conf</filename>:</para>
 
 	<variablelist>
 	  <varlistentry>
 	    <term xml:lang="en"><literal>workgroup</literal></term>
 
 	    <listitem>
-	      <para xml:lang="en">The domain name or workgroup name for the
-		computers that will be accessing this server.</para>
+	      <para xml:lang="en">The name of the workgroup to be served.</para>
 	    </listitem>
 	  </varlistentry>
 
@@ -53546,7 +53293,7 @@ AddModule mod_php5.c
 	    <listitem>
 	      <para xml:lang="en">The NetBIOS name by which a
 		<application>Samba</application> server is known.  By
-		default it is the same as the first component of the
+		default, it is the same as the first component of the
 		host's <acronym>DNS</acronym> name.</para>
 	    </listitem>
 	  </varlistentry>
@@ -53561,24 +53308,34 @@ AddModule mod_php5.c
 		about the server.</para>
 	    </listitem>
 	  </varlistentry>
+
+	  <varlistentry>
+	    <term xml:lang="en"><literal>wins support</literal></term>
+
+	    <listitem>
+	      <para xml:lang="en">Whether <application>Samba</application> will
+		act as a <acronym>WINS</acronym> server.  Do not
+		enable support for <acronym>WINS</acronym> on more than
+		one server on the network.</para>
+	    </listitem>
+	  </varlistentry>
 	</variablelist>
       </sect3>
 
       <sect3>
 	<title>安全性設定</title>
 
-	<para xml:lang="en">Two of the most important settings in
-	  <filename>/usr/local/etc/smb.conf</filename> are the
-	  security model and the backend password format for client
-	  users.  The following directives control these
-	  options:</para>
+	<para xml:lang="en">The most important settings in
+	  <filename>/usr/local/etc/smb4.conf</filename> are the
+	  security model and the backend password format.  These
+	  directives control the options:</para>
 
 	<variablelist>
 	  <varlistentry>
 	    <term xml:lang="en"><literal>security</literal></term>
 
 	    <listitem>
-	      <para xml:lang="en">The two most common options are
+	      <para xml:lang="en">The most common settings are
 		<literal>security = share</literal> and
 		<literal>security = user</literal>.  If the clients
 		use usernames that are the same as their usernames on
@@ -53606,30 +53363,29 @@ AddModule mod_php5.c
 	      <para xml:lang="en"><application>Samba</application> has several
 		different backend authentication models.  Clients may
 		be authenticated with LDAP, NIS+, an SQL database,
-		or a modified password file.  The default
-		authentication method is <literal>smbpasswd</literal>,
-		and that is all that will be covered here.</para>
+		or a modified password file.  The recommended
+		authentication method, <literal>tdbsam</literal>,
+		is ideal for simple networks and is covered here.
+		For larger or more complex networks,
+		<literal>ldapsam</literal> is recommended.
+		<literal>smbpasswd</literal>
+		was the former default and is now obsolete.</para>
 	    </listitem>
 	  </varlistentry>
 	</variablelist>
 
-	<para xml:lang="en">Assuming that the default <literal>smbpasswd</literal>
-	  backend is used,
-	  <filename>/usr/local/etc/samba/smbpasswd</filename>
-	  must be created to allow <application>Samba</application> to
-	  authenticate clients.  To provide <trademark class="registered">UNIX</trademark> user accounts
-	  access from <trademark class="registered">Windows</trademark> clients, use the following command to
-	  add each required user to that file:</para>
+      </sect3>
 
-	<screen xml:lang="en"><prompt>#</prompt> <userinput>smbpasswd -a <replaceable>username</replaceable></userinput></screen>
+      <sect3>
+	<title xml:lang="en"><application>Samba</application> Users</title>
 
-	<note>
-	  <para xml:lang="en">The recommended backend is now
-	    <literal>tdbsam</literal>.  If this backend is selected,
-	    use the following command to add user accounts:</para>
+	<para xml:lang="en">FreeBSD user accounts must be mapped to the
+	  <literal>SambaSAMAccount</literal> database for
+	  <trademark class="registered">Windows</trademark> clients to access the share.
+	  Map existing FreeBSD user accounts using
+	  <citerefentry><refentrytitle>pdbedit</refentrytitle><manvolnum>8</manvolnum></citerefentry>:</para>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>pdbedit -a -u <replaceable>username</replaceable></userinput></screen>
-	</note>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>pdbedit -a <replaceable>username</replaceable></userinput></screen>
 
 	<para xml:lang="en">This section has only mentioned the most commonly used
 	  settings.  Refer to the <link xlink:href="http://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/">Official
@@ -53647,13 +53403,6 @@ AddModule mod_php5.c
 
       <programlisting xml:lang="en">samba_enable="YES"</programlisting>
 
-      <para xml:lang="en">Alternately, its services can be started
-	separately:</para>
-
-      <programlisting xml:lang="en">nmbd_enable="YES"</programlisting>
-
-      <programlisting xml:lang="en">smbd_enable="YES"</programlisting>
-
       <para xml:lang="en">To start <application>Samba</application> now:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service samba start</userinput>
@@ -53665,11 +53414,11 @@ Starting smbd.</screen>
 	separate daemons.  Both the <application>nmbd</application>
 	and <application>smbd</application> daemons are started by
 	<varname>samba_enable</varname>.  If winbind name resolution
-	services are enabled in <filename>smb.conf</filename>, the
-	<application>winbindd</application> daemon is started as
-	well.</para>
+	is also required, set:</para> 
 
-      <para xml:lang="en"><application>Samba</application> may be stopped at any
+	<programlisting xml:lang="en">winbindd_enable="YES"</programlisting>
+
+      <para xml:lang="en"><application>Samba</application> can be stopped at any
 	time by typing:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service samba stop</userinput></screen>
@@ -57912,7 +57661,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 48482 2016-03-27 19:17:51Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 48922 2016-06-13 15:29:17Z jgh $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -62911,7 +62660,7 @@ route_hostD="192.168.173.4 hatm0 0 102 llc/snap ubr"</programlisting>
 
       <programlisting xml:lang="en">hostname="<replaceable>hosta.example.org</replaceable>"
 ifconfig_<replaceable>em0</replaceable>="inet <replaceable>192.168.1.3</replaceable> netmask <replaceable>255.255.255.0</replaceable>"
-ifconfig_<replaceable>em0</replaceable>_alias0="vhid <replaceable>1</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.50</replaceable>/32"</programlisting>
+ifconfig_<replaceable>em0</replaceable>_alias0="inet vhid <replaceable>1</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.50</replaceable>/32"</programlisting>
 
       <para xml:lang="en">The next set of entries are for
 	<systemitem>hostb.example.org</systemitem>.  Since it
@@ -62924,7 +62673,7 @@ ifconfig_<replaceable>em0</replaceable>_alias0="vhid <replaceable>1</replaceable
 
       <programlisting xml:lang="en">hostname="<replaceable>hostb.example.org</replaceable>"
 ifconfig_<replaceable>em0</replaceable>="inet <replaceable>192.168.1.4</replaceable> netmask <replaceable>255.255.255.0</replaceable>"
-ifconfig_<replaceable>em0</replaceable>_alias0="vhid <replaceable>2</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.51</replaceable>/32"</programlisting>
+ifconfig_<replaceable>em0</replaceable>_alias0="inet vhid <replaceable>2</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.51</replaceable>/32"</programlisting>
 
       <para xml:lang="en">The third machine,
 	<systemitem>hostc.example.org</systemitem>, is configured to
@@ -62940,8 +62689,8 @@ ifconfig_<replaceable>em0</replaceable>_alias0="vhid <replaceable>2</replaceable
 
       <programlisting xml:lang="en">hostname="hostc.example.org"
 ifconfig_<replaceable>em0</replaceable>="inet <replaceable>192.168.1.5</replaceable> netmask <replaceable>255.255.255.0</replaceable>"
-ifconfig_<replaceable>em0</replaceable>_alias0="vhid <replaceable>1</replaceable> advskew <replaceable>100</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.50</replaceable>/32"
-ifconfig_<replaceable>em0</replaceable>_alias1="vhid <replaceable>2</replaceable> advskew <replaceable>100</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.51</replaceable>/32"</programlisting>
+ifconfig_<replaceable>em0</replaceable>_alias0="inet vhid <replaceable>1</replaceable> advskew <replaceable>100</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.50</replaceable>/32"
+ifconfig_<replaceable>em0</replaceable>_alias1="inet vhid <replaceable>2</replaceable> advskew <replaceable>100</replaceable> pass <replaceable>testpass</replaceable> alias <replaceable>192.168.1.51</replaceable>/32"</programlisting>
 
       <para xml:lang="en">Having two <acronym>CARP</acronym>
 	<acronym>VHID</acronym>s configured means that
@@ -68244,17 +67993,15 @@ g9NgaY6PRozzy5ZAdWM36ylnwFyz48fgUWHFhDc7fMCHjwqDtP62K1TbRvFM
 
     <sect2 xml:id="pgpkey-portmgr-secretary">
       <title xml:lang="en">Ports Management Team Secretary <email>portmgr-secretary@FreeBSD.org</email></title>
-      <!-- $FreeBSD: head/share/pgpkeys/portmgr-secretary.key 43126 2013-11-07 16:37:11Z gabor $ -->
+      <!-- $FreeBSD: head/share/pgpkeys/portmgr-secretary.key 48904 2016-06-09 20:16:47Z rene $ -->
 <!--
 sh addkey.sh portmgr-secretary D8294EC3BBC4D7D5 ;
 -->
 <programlisting role="pgpfingerprint" xml:lang="en"><![CDATA[
-pub   2048R/D8294EC3BBC4D7D5 2012-07-24
+pub   rsa2048/D8294EC3BBC4D7D5 2012-07-24 [SC]
       Key fingerprint = FB37 45C8 6F15 E8ED AC81  32FC D829 4EC3 BBC4 D7D5
-uid                          FreeBSD Ports Management Team Secretary <portmgr-secretary@FreeBSD.org>
-sub   2048R/5CC117965F65CFE7 2012-07-24
-sub   4096R/CA20328577064EB7 2013-10-05
-sub   4096R/8B114B3613867E00 2013-10-05
+uid                            FreeBSD Ports Management Team Secretary <portmgr-secretary@FreeBSD.org>
+sub   rsa2048/5CC117965F65CFE7 2012-07-24 [E]
 
 ]]></programlisting>
 <programlisting role="pgpkey" xml:lang="en"><![CDATA[
@@ -68273,79 +68020,58 @@ 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
-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
-pDN9ZUgVOk/c+0+5u+G3JBRYu6P1
-=fyjO
+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
+O8MgMjzGhlE=
+=iw7d
 -----END PGP PUBLIC KEY BLOCK-----
 ]]></programlisting>
 
