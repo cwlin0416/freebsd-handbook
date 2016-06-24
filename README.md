@@ -69,6 +69,7 @@ pkg install poedit
 | Partition, Slice | 分割區 ||
 | Partitioning | 磁碟分割 ||
 | Volume | 磁碟區 ||
+| Block, Block size, Bad block | 區塊, 磁碟區塊 ||
 | Swap Space | 交換空間 ||
 | Ports Collection | TBD, Ports 套件集 ||
 | Binary Package | TBD, Binary 套件 ||
