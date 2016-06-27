@@ -15247,34 +15247,26 @@ lp:
 
     <indexterm xml:lang="en"><primary>Ports Collection</primary></indexterm>
 
-    <para xml:lang="en">By default, <trademark class="registered">Linux</trademark> libraries are not installed and <trademark class="registered">Linux</trademark>
-      binary compatibility is not enabled.  <trademark class="registered">Linux</trademark> libraries can
-      either be installed manually or from the FreeBSD Ports
-      Collection.</para>
+    <para><trademark class="registered">Linux</trademark> 程式庫預設並不會安裝，且並不會開啟 <trademark class="registered">Linux</trademark> Binary 相容性。 <trademark class="registered">Linux</trademark> 程式庫可以手動安裝或是從 FreeBSD Ports 套件集安裝。</para>
 
-    <para xml:lang="en">Before attempting to build the port, load the <trademark class="registered">Linux</trademark> kernel
-      module, otherwise the build will fail:</para>
+    <para>在嘗試編譯 Port 前，要載入 <trademark class="registered">Linux</trademark> 核心模組，否則編譯會失敗：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload linux</userinput></screen>
 
-    <para xml:lang="en">To verify that the module is loaded:</para>
+    <para>確認模組已載入：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>kldstat</userinput>
       Id Refs Address    Size     Name
       1    2 0xc0100000 16bdb8   kernel
       7    1 0xc24db000 d000     linux.ko</screen>
 
-    <para xml:lang="en">The <package>emulators/linux_base-c6</package> package or
-      port is the easiest way to install a base set of <trademark class="registered">Linux</trademark>
-      libraries and binaries on a FreeBSD system.  To install the
-      port:</para>
+    <para>在 FreeBSD 安裝基本的 <trademark class="registered">Linux</trademark>  程式庫和 Binary 最簡單的方式是安裝 <package>emulators/linux_base-c6</package> 套件或是 Port 。要安裝 Port：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>printf "compat.linux.osrelease=2.6.18\n" &gt;&gt; /etc/sysctl.conf</userinput>
 <prompt>#</prompt> <userinput>sysctl compat.linux.osrelease=2.6.18</userinput>
 <prompt>#</prompt> <userinput>pkg install emulators/linux_base-c6</userinput></screen>
 
-    <para xml:lang="en">For <trademark class="registered">Linux</trademark> compatibility to be enabled at boot time,
-      add this line to <filename>/etc/rc.conf</filename>:</para>
+    <para>要在開機時開啟 <trademark class="registered">Linux</trademark> 相容性，可以加入這行到 <filename>/etc/rc.conf</filename>：</para>
 
     <programlisting xml:lang="en">linux_enable="YES"</programlisting>
 
@@ -15283,11 +15275,7 @@ lp:
       <secondary>COMPAT_LINUX</secondary>
     </indexterm>
 
-    <para xml:lang="en">Users who prefer to statically link <trademark class="registered">Linux</trademark> binary
-      compatibility into a custom kernel should add
-      <literal>options COMPAT_LINUX</literal> to their custom kernel
-      configuration file.  Compile and install the new kernel as
-      described in <xref linkend="kernelconfig"/>.</para>
+    <para>想要靜態連結 <trademark class="registered">Linux</trademark> Binary 相容性到自訂核心的使用者應加入 <literal>options COMPAT_LINUX</literal> 到自訂核心設定檔。 編譯並安裝新核心的方法，如 <xref linkend="kernelconfig"/> 所述。</para>
 
     <sect2 xml:id="linuxemu-libs-manually">
       <title>手動安裝其他程式庫</title>
@@ -15296,17 +15284,9 @@ lp:
 	<primary>shared libraries</primary>
       </indexterm>
 
-      <para xml:lang="en">If a <trademark class="registered">Linux</trademark> application complains about missing shared
-	libraries after configuring <trademark class="registered">Linux</trademark> binary compatibility,
-	determine which shared libraries the <trademark class="registered">Linux</trademark> binary needs and
-	install them manually.</para>
+      <para>若有 <trademark class="registered">Linux</trademark> 應用程式在設定 <trademark class="registered">Linux</trademark> Binary 相容性後出現缺少共用程式庫的情況，確認這個 <trademark class="registered">Linux</trademark> Binary 需要哪個共用程式庫並手動安裝。</para>
 
-      <para xml:lang="en">From a <trademark class="registered">Linux</trademark> system, <command>ldd</command> can be used
-	to determine which shared libraries the application needs.
-	For example, to check which shared libraries
-	<command>linuxdoom</command> needs, run this command from a
-	<trademark class="registered">Linux</trademark> system that has <application>Doom</application>
-	installed:</para>
+      <para>在 <trademark class="registered">Linux</trademark> 系統，可使用 <command>ldd</command> 來找出應用程式需要哪個共用程式庫。 例如，檢查 <command>linuxdoom</command> 需要哪個共用程式庫，在有安裝 <application>Doom</application> 的 <trademark class="registered">Linux</trademark> 系統執行這個指令：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>ldd linuxdoom</userinput>
 libXt.so.3 (DLL Jump 3.1) =&gt; /usr/X11/lib/libXt.so.3.1.0
@@ -15317,12 +15297,7 @@ libc.so.4 (DLL Jump 4.5pl26) =&gt; /lib/libc.so.4.6.29</screen>
 	<primary>symbolic links</primary>
       </indexterm>
 
-      <para xml:lang="en">Then, copy all the files in the last column of the output
-	from the <trademark class="registered">Linux</trademark> system into
-	<filename>/compat/linux</filename> on the FreeBSD system.  Once
-	copied, create symbolic links to the names in the first
-	column.  This example will result in the following files on
-	the FreeBSD system:</para>
+      <para>然後，複製所有 <trademark class="registered">Linux</trademark> 系統輸出結果中最後一欄的檔案到 FreeBSD 系統的 <filename>/compat/linux</filename>。 複製完後，建立符號連結 (Symbolic link) 至輸出結果第一欄的名稱。以這個例子會在 FreeBSD 系統產生以下檔案：</para>
 
       <screen xml:lang="en">/compat/linux/usr/X11/lib/libXt.so.3.1.0
 /compat/linux/usr/X11/lib/libXt.so.3 -&gt; libXt.so.3.1.0
@@ -15331,40 +15306,23 @@ libc.so.4 (DLL Jump 4.5pl26) =&gt; /lib/libc.so.4.6.29</screen>
 /compat/linux/lib/libc.so.4.6.29
 /compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.29</screen>
 
-      <para xml:lang="en">If a <trademark class="registered">Linux</trademark> shared library already exists with a
-	matching major revision number to the first column of the
-	<command>ldd</command> output, it does not need to be copied
-	to the file named in the last column, as the existing library
-	should work.  It is advisable to copy the shared library if it
-	is a newer version, though.  The old one can be removed, as
-	long as the symbolic link points to the new one.</para>
+      <para>若 <trademark class="registered">Linux</trademark> 共用程式庫已經存在，並符合 <command>ldd</command> 輸出結果第一欄的主要修訂版號，則不需要複製該行最後一欄的檔案，使用既有的程式庫應可運作。若有較新的版本建議仍要複製共用程式庫，只要符號連結指向新版的程式庫，舊版便可移除。</para>
 
-      <para xml:lang="en">For example, these libraries already exist on the FreeBSD
-	system:</para>
+      <para>例如，以下程式庫已存在 FreeBSD 系統：</para>
 
       <screen xml:lang="en">/compat/linux/lib/libc.so.4.6.27
 /compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.27</screen>
 
-      <para xml:lang="en">and <command>ldd</command> indicates that a binary
-	requires a later version:</para>
+      <para>且 <command>ldd</command> 顯示 Binary 需要使用較新的版本：</para>
 
       <screen xml:lang="en">libc.so.4 (DLL Jump 4.5pl26) -&gt; libc.so.4.6.29</screen>
 
-      <para xml:lang="en">Since the existing library is only one or two versions out
-	of date in the last digit, the program should still work with
-	the slightly older version.  However, it is safe to replace
-	the existing <filename>libc.so</filename> with the newer
-	version:</para>
+      <para>雖然既有的程式庫只有在最後一碼過時一或兩個版本，程式應該仍可使用稍微舊的版本執行，雖然如此，保險起見還替換既有的 <filename>libc.so</filename> 為較新的版本：</para>
 
       <screen xml:lang="en">/compat/linux/lib/libc.so.4.6.29
 /compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.29</screen>
 
-      <para xml:lang="en">Generally, one will need to look for the shared libraries
-	that <trademark class="registered">Linux</trademark> binaries depend on only the first few times that
-	a <trademark class="registered">Linux</trademark> program is installed on FreeBSD.  After a while, there
-	will be a sufficient set of <trademark class="registered">Linux</trademark> shared libraries on the
-	system to be able to run newly installed <trademark class="registered">Linux</trademark> binaries
-	without any extra work.</para>
+      <para>一般來說，只有在安裝 <trademark class="registered">Linux</trademark> 程式到 FreeBSD 完的前幾次會需要查看 <trademark class="registered">Linux</trademark> Binary 相依的共用程式庫。之後系統便有足夠的 <trademark class="registered">Linux</trademark> 共用程式庫能夠執行新安裝的 <trademark class="registered">Linux</trademark> Binary，便不再需要額外的動作。</para>
     </sect2>
 
     <sect2>
@@ -15375,17 +15333,13 @@ libc.so.4 (DLL Jump 4.5pl26) =&gt; /lib/libc.so.4.6.29</screen>
 	<secondary>ELF binaries</secondary>
       </indexterm>
 
-      <para xml:lang="en"><acronym>ELF</acronym> binaries sometimes require an extra
-	step.  When an unbranded <acronym>ELF</acronym> binary is
-	executed, it will generate an error message:</para>
+      <para><acronym>ELF</acronym> Binary 有時候需要額外的步驟。當執行無商標 (Unbranded) 的 <acronym>ELF</acronym> Binary，會產生錯誤訊息：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>./my-linux-elf-binary</userinput>
 ELF binary type not known
 Abort</screen>
 
-      <para xml:lang="en">To help the FreeBSD kernel distinguish between a FreeBSD
-	<acronym>ELF</acronym> binary and a <trademark class="registered">Linux</trademark> binary, use
-	<citerefentry><refentrytitle>brandelf</refentrytitle><manvolnum>1</manvolnum></citerefentry>:</para>
+      <para>要協助 FreeBSD 核心區別是 FreeBSD <acronym>ELF</acronym> Binary 還是 <trademark class="registered">Linux</trademark> Binary，可使用 <citerefentry><refentrytitle>brandelf</refentrytitle><manvolnum>1</manvolnum></citerefentry>：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>brandelf -t Linux my-linux-elf-binary</userinput></screen>
 
@@ -15393,52 +15347,34 @@ Abort</screen>
 	<primary>GNU toolchain</primary>
       </indexterm>
 
-      <para xml:lang="en">Since the GNU toolchain places the appropriate branding
-	information into <acronym>ELF</acronym> binaries
-	automatically, this step is usually not necessary.</para>
+      <para>由於 GNU 工具鏈會自動放置適當的商標資訊到 <acronym>ELF</acronym> Binary，通常不需要這個步驟。</para>
     </sect2>
 
     <sect2>
       <title>安裝以 <trademark class="registered">Linux</trademark> <acronym>RPM</acronym> 為基礎的應用程式</title>
 
-      <para xml:lang="en">To install a <trademark class="registered">Linux</trademark> <acronym>RPM</acronym>-based
-	application, first install the
-	<package>archivers/rpm4</package> package or port.  Once
-	installed, <systemitem class="username">root</systemitem> can
-	use this command to install a
-	<filename>.rpm</filename>:</para>
+      <para>要安裝 <trademark class="registered">Linux</trademark> <acronym>RPM</acronym> 為基礎的應用程式，需先安裝 <package>archivers/rpm4</package> 套件或 Port。安裝完成之後，<systemitem class="username">root</systemitem> 可以使用這個指令安裝 <filename>.rpm</filename>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /compat/linux</userinput>
 <prompt>#</prompt> <userinput>rpm2cpio &lt; /path/to/linux.archive.rpm | cpio -id</userinput></screen>
 
-      <para xml:lang="en">If necessary, <command>brandelf</command> the installed
-	<acronym>ELF</acronym> binaries.  Note that this will prevent
-	a clean uninstall.</para>
+      <para>如果需要， <command>brandelf</command> 已安裝的 <acronym>ELF</acronym> Binary。注意，這將會無法乾淨地解除安裝。</para>
     </sect2>
 
     <sect2>
       <title>設定主機名稱解析器</title>
 
-      <para xml:lang="en">If <acronym>DNS</acronym> does not work or this error
-	appears:</para>
+      <para>如果 <acronym>DNS</acronym> 無法運作或出現這個錯誤：</para>
 
       <screen xml:lang="en">resolv+: "bind" is an invalid keyword resolv+:
 "hosts" is an invalid keyword</screen>
 
-      <para xml:lang="en">configure <filename>/compat/linux/etc/host.conf</filename>
-	as follows:</para>
+      <para>將 <filename>/compat/linux/etc/host.conf</filename> 設定如下：</para>
 
       <programlisting xml:lang="en">order hosts, bind
 multi on</programlisting>
 
-      <para xml:lang="en">This specifies that <filename>/etc/hosts</filename> is
-	searched first and <acronym>DNS</acronym> is searched second.
-	When <filename>/compat/linux/etc/host.conf</filename> does not
-	exist, <trademark class="registered">Linux</trademark> applications use
-	<filename>/etc/host.conf</filename> and complain about the
-	incompatible FreeBSD syntax.  Remove <literal>bind</literal> if a
-	name server is not configured using
-	<filename>/etc/resolv.conf</filename>.</para>
+      <para>這指定先搜尋 <filename>/etc/hosts</filename>，其次為 <acronym>DNS</acronym>。 當 <filename>/compat/linux/etc/host.conf</filename> 不存在， <trademark class="registered">Linux</trademark> 應用程式會使用 <filename>/etc/host.conf</filename> 並會警告不相容的 FreeBSD 語法。如果名稱伺服器未設定使用 <filename>/etc/resolv.conf</filename> 的話，則可移除 <literal>bind</literal>。</para>
     </sect2>
   </sect1>
 
@@ -28901,7 +28837,7 @@ fi</programlisting>
       <para>若新加入的磁碟不是空白的，可以使用 <command>gpart delete</command> 來移除舊的分割區資訊。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得詳細資訊。</para>
     </note>
 
-    <para>建立完分割區結構後接著加入一個分隔區，要在新的磁碟增進效能可使用較大的硬體區塊大小 (Block size)，此分割區會對齊 1 MB 的邊界：</para>
+    <para>建立完分割區結構後接著加入一個分割區，要在新的磁碟增進效能可使用較大的硬體區塊大小 (Block size)，此分割區會對齊 1 MB 的邊界：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart create -s GPT ada1</userinput>
 <prompt>#</prompt> <userinput>gpart add -t freebsd-ufs -a 1M ada1</userinput></screen>
@@ -28999,7 +28935,7 @@ ada0p3 deleted
    79691810   22708157        - free -  (10G)</screen>
 
     <warning>
-      <para>在掛載的檔案系統上修改分割區表可能會造成資料遺失。最好的方式是在未掛載檔案系統的情況下 (使用 Live <acronym>CD-ROM</acronym> 或 <acronym>USB</acronym> 裝置) 執行以下步驟。雖然如此，若仍要這樣做的話，在關閉 GEOM 安全性功能之後可以在掛載的檔案系統上修改分隔區表：</para>
+      <para>在掛載的檔案系統上修改分割區表可能會造成資料遺失。最好的方式是在未掛載檔案系統的情況下 (使用 Live <acronym>CD-ROM</acronym> 或 <acronym>USB</acronym> 裝置) 執行以下步驟。雖然如此，若仍要這樣做的話，在關閉 GEOM 安全性功能之後可以在掛載的檔案系統上修改分割區表：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl kern.geom.debugflags=16</userinput></screen>
     </warning>
