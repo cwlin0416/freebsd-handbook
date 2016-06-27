@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-06-24 12:42+0800\n"
-"PO-Revision-Date: 2016-06-24 15:37+0800\n"
+"PO-Revision-Date: 2016-06-27 14:58+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -31957,16 +31957,18 @@ msgstr ""
 #: book.translate.xml:32083
 msgid "Many external storage solutions, such as hard drives, <acronym>USB</acronym> thumbdrives, and <acronym>CD</acronym> and <acronym>DVD</acronym> burners, use the Universal Serial Bus (<acronym>USB</acronym>). FreeBSD provides support for <acronym>USB</acronym> 1.x, 2.0, and 3.0 devices."
 msgstr ""
+"許多外部儲存裝置的解決方案，例如硬碟、<acronym>USB</acronym> 隨身碟及\n"
+"<acronym>CD</acronym> 與 <acronym>DVD</acronym> 燒錄機皆使用通用序列匯流排 (Universal Serial Bus, <acronym>USB</acronym>)，FreeBSD 提供了對 <acronym>USB</acronym> 1.x, 2.0 及 3.0 裝置的支援。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:32090
 msgid "<acronym>USB</acronym> 3.0 support is not compatible with some hardware, including Haswell (Lynx point) chipsets. If FreeBSD boots with a <errorname>failed with error 19</errorname> message, disable xHCI/USB3 in the system <acronym>BIOS</acronym>."
-msgstr ""
+msgstr "部份硬體尚不相容 <acronym>USB</acronym> 3.0，包含 Haswell (Lynx point) 晶片組，若 FreeBSD 開機出現 <errorname>failed with error 19</errorname> 訊息，請在系統 <acronym>BIOS</acronym> 關閉 xHCI/USB3。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:32097
 msgid "Support for <acronym>USB</acronym> storage devices is built into the <filename>GENERIC</filename> kernel. For a custom kernel, be sure that the following lines are present in the kernel configuration file:"
-msgstr ""
+msgstr "對 <acronym>USB</acronym> 儲存裝置的支援已內建於 <filename>GENERIC</filename> 核心，若為自訂的核心，請確定在核心設定檔中有下列幾行設定："
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:32102
@@ -31990,11 +31992,13 @@ msgid ""
 "FreeBSD uses the <citerefentry><refentrytitle>umass</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver which uses the <acronym>SCSI</acronym> subsystem to access <acronym>USB</acronym> storage devices. Since any <acronym>USB</acronym> device will be seen as a <acronym>SCSI</acronym> device by the system, if the <acronym>USB</"
 "acronym> device is a <acronym>CD</acronym> or <acronym>DVD</acronym> burner, do <emphasis>not</emphasis> include <option>device atapicam</option> in a custom kernel configuration file."
 msgstr ""
+"FreeBSD 使用 <citerefentry><refentrytitle>umass</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式透過 <acronym>SCSI</acronym> 子系統來存取 <acronym>USB</acronym> 儲存裝置，因此任何在系統的 <acronym>USB</acronym> 裝置都會以 <acronym>SCSI</acronym> 裝置呈現，若 <acronym>USB</acronym> 裝置是 <acronym>CD</acronym> 或 "
+"<acronym>DVD</acronym> 燒錄機，請<emphasis>不要</emphasis>在自訂核心設定檔中引用 <option>device atapicam</option>。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:32123
 msgid "The rest of this section demonstrates how to verify that a <acronym>USB</acronym> storage device is recognized by FreeBSD and how to configure the device so that it can be used."
-msgstr ""
+msgstr "本節後續的部份將示範如何檢查 FreeBSD 能夠辦識 <acronym>USB</acronym> 儲存裝置以及如何設定該裝置。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:32128
@@ -32004,7 +32008,7 @@ msgstr "裝置設定"
 #. (itstool) path: sect2/para
 #: book.translate.xml:32130
 msgid "To test the <acronym>USB</acronym> configuration, plug in the <acronym>USB</acronym> device. Use <command>dmesg</command> to confirm that the drive appears in the system message buffer. It should look something like this:"
-msgstr ""
+msgstr "要測試 <acronym>USB</acronym> 設定，請先插入 <acronym>USB</acronym> 裝置，然後使用 <command>dmesg</command> 來確認系統訊息緩衝區中有出現該磁碟，該訊息如下："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32136
@@ -32024,12 +32028,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32146
 msgid "The brand, device node (<filename>da0</filename>), speed, and size will differ according to the device."
-msgstr ""
+msgstr "不同的裝置會有不同的廠牌、裝置節點 (<filename>da0</filename>)、速度與大小。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32149
 msgid "Since the <acronym>USB</acronym> device is seen as a <acronym>SCSI</acronym> one, <command>camcontrol</command> can be used to list the <acronym>USB</acronym> storage devices attached to the system:"
-msgstr ""
+msgstr "當 <acronym>USB</acronym> 裝置可以做為 <acronym>SCSI</acronym> 檢視時，便可使用 <command>camcontrol</command> 來列出連接到系統的 <acronym>USB</acronym> 儲存裝置："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32154
@@ -32042,7 +32046,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32157
 msgid "Alternately, <command>usbconfig</command> can be used to list the device. Refer to <citerefentry vendor=\"current\"><refentrytitle>usbconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> for more information about this command."
-msgstr ""
+msgstr "或者，可以使用 <command>usbconfig</command> 來列出裝置，請參考 <citerefentry vendor=\"current\"><refentrytitle>usbconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來取得更多有關此指令的資訊。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32161
@@ -32057,12 +32061,12 @@ msgstr ""
 msgid ""
 "If the device has not been formatted, refer to <xref linkend=\"disks-adding\"/> for instructions on how to format and create partitions on the <acronym>USB</acronym> drive. If the drive comes with a file system, it can be mounted by <systemitem class=\"username\">root</systemitem> using the instructions in <xref linkend=\"mount-unmount"
 "\"/>."
-msgstr ""
+msgstr "若該裝置尚未被格式化，請參考 <xref linkend=\"disks-adding\"/> 中有關如何在 <acronym>USB</acronym> 磁碟格式化與建立分割區的說明。若磁碟中有檔案系統，可由 <systemitem class=\"username\">root</systemitem> 依據 <xref linkend=\"mount-unmount\"/> 中的說明掛載磁碟。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:32171
 msgid "Allowing untrusted users to mount arbitrary media, by enabling <varname>vfs.usermount</varname> as described below, should not be considered safe from a security point of view. Most file systems were not built to safeguard against malicious devices."
-msgstr ""
+msgstr "要允許未被信任的使用者掛載任意媒體，可開啟 <varname>vfs.usermount</varname>，詳細說明如下。從安全性的角度來看這並不是安全的，大多的檔案系統並不會防範惡意裝置。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32178
@@ -32070,6 +32074,8 @@ msgid ""
 "To make the device mountable as a normal user, one solution is to make all users of the device a member of the <systemitem class=\"groupname\">operator</systemitem> group using <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Next, ensure that <systemitem class=\"groupname\">operator</systemitem> "
 "is able to read and write the device by adding these lines to <filename>/etc/devfs.rules</filename>:"
 msgstr ""
+"要讓裝置可讓一般使用者掛載，其中一個解決方案便是使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 讓所有裝置的使用者成為 <systemitem class=\"groupname\">operator</systemitem> 群組的成員。接著，將下列幾行加入 <filename>/etc/devfs.rules</filename> 來確保 <systemitem class=\"groupname\">operator</"
+"systemitem> 能夠讀取與寫入裝置："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:32185
@@ -32082,7 +32088,7 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:32189
 msgid "If internal <acronym>SCSI</acronym> disks are also installed in the system, change the second line as follows:"
-msgstr ""
+msgstr "若系統也同時安裝了內建 <acronym>SCSI</acronym> 磁碟，請更改第二行如下："
 
 #. (itstool) path: note/programlisting
 #: book.translate.xml:32193
@@ -32096,11 +32102,13 @@ msgid ""
 "This will exclude the first three <acronym>SCSI</acronym> disks (<filename>da0</filename> to <filename>da2</filename>)from belonging to the <systemitem class=\"groupname\">operator</systemitem> group. Replace <replaceable>3</replaceable> with the number of internal <acronym>SCSI</acronym> disks. Refer to "
 "<citerefentry><refentrytitle>devfs.rules</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more information about this file."
 msgstr ""
+"這會從 <systemitem class=\"groupname\">operator</systemitem> 群組中排除前三個 <acronym>SCSI</acronym> 磁碟 (<filename>da0</filename> 到 <filename>da2</filename>)，接著取代 <replaceable>3</replaceable> 為內部 <acronym>SCSI</acronym> 磁碟的編號。請參考 <citerefentry><refentrytitle>devfs.rules</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry> 來取得更多有關此檔案的資訊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32203
 msgid "Next, enable the ruleset in <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "接著，在 <filename>/etc/rc.conf</filename> 開啟規則："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:32206
@@ -32111,7 +32119,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32208
 msgid "Then, instruct the system to allow regular users to mount file systems by adding the following line to <filename>/etc/sysctl.conf</filename>:"
-msgstr ""
+msgstr "然後，加入以下行到 <filename>/etc/sysctl.conf</filename> 指示系統允許正常使用者掛載檔案系統："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:32212
@@ -32122,7 +32130,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32214
 msgid "Since this only takes effect after the next reboot, use <command>sysctl</command> to set this variable now:"
-msgstr ""
+msgstr "這樣只會在下次重新開機時生效，可使用 <command>sysctl</command> 來立即設定這個變數："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32217
@@ -32138,6 +32146,8 @@ msgid ""
 "The final step is to create a directory where the file system is to be mounted. This directory needs to be owned by the user that is to mount the file system. One way to do that is for <systemitem class=\"username\">root</systemitem> to create a subdirectory owned by that user as <filename>/mnt/<replaceable>username</replaceable></"
 "filename>. In the following example, replace <replaceable>username</replaceable> with the login name of the user and <replaceable>usergroup</replaceable> with the user's primary group:"
 msgstr ""
+"最後一個步驟是建立要掛載檔案系統要的目錄，要掛載檔案系統的使用者需要擁有這個目錄。其中一個辦法是讓 <systemitem class=\"username\">root</systemitem> 建立由該使用者擁有的子目錄 <filename>/mnt/<replaceable>username</replaceable></filename>。在下面的例子，將 <replaceable>username</replaceable> 替換為該使用者的登入名稱並將 "
+"<replaceable>usergroup</replaceable> 替換為該使用者的主要群組："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32230
@@ -32150,7 +32160,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32233
 msgid "Suppose a <acronym>USB</acronym> thumbdrive is plugged in, and a device <filename>/dev/da0s1</filename> appears. If the device is formatted with a <acronym>FAT</acronym> file system, the user can mount it using:"
-msgstr ""
+msgstr "假如已經插入 <acronym>USB</acronym> 隨身碟，且已出現 <filename>/dev/da0s1</filename> 裝置。若裝置使用 <acronym>FAT</acronym> 格式的檔案系統，則使用者可使用以下指令掛載該檔案系統："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32238
@@ -32161,7 +32171,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32240
 msgid "Before the device can be unplugged, it <emphasis>must</emphasis> be unmounted first:"
-msgstr ""
+msgstr "在裝置可以被拔除前，<emphasis>必須</emphasis>先解除掛載："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32243
@@ -32172,7 +32182,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32245
 msgid "After device removal, the system message buffer will show messages similar to the following:"
-msgstr ""
+msgstr "裝置移除之後，系統訊息緩衝區會顯示如下的訊息："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32248
@@ -32192,12 +32202,12 @@ msgstr "自動掛載可移除的媒體"
 #. (itstool) path: note/para
 #: book.translate.xml:32258
 msgid "<citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> supports automatic mounting of removable media starting with FreeBSD 10.2-RELEASE."
-msgstr ""
+msgstr "自 FreeBSD 10.2-RELEASE 開始 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 支援自動掛載可移除的媒體。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32262
 msgid "<acronym>USB</acronym> devices can be automatically mounted by uncommenting this line in <filename>/etc/auto_master</filename>:"
-msgstr ""
+msgstr "可以取消註解在 <filename>/etc/auto_master</filename> 中的下行來自動掛載 <acronym>USB</acronym> 裝置："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32266
@@ -32208,7 +32218,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32268
 msgid "Then add these lines to <filename>/etc/devd.conf</filename>:"
-msgstr ""
+msgstr "然後加入這些行到 <filename>/etc/devd.conf</filename>："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32271
@@ -32224,7 +32234,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32277
 msgid "Reload the configuration if <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> and <citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry> are already running:"
-msgstr ""
+msgstr "若 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 已經正在執行，則需重新載入設定："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32280
@@ -32237,7 +32247,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32283
 msgid "<citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> can be set to start at boot by adding this line to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "要設定讓 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 在開機時啟動可以加入此行到 <filename>/etc/rc.conf</filename>："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:32286 book.translate.xml:53176
@@ -32248,12 +32258,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32288
 msgid "<citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> requires <citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry> to be enabled, as it is by default."
-msgstr ""
+msgstr "<citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 需要開啟 <citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry>，預設已經開啟。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32291
 msgid "Start the services immediately with:"
-msgstr ""
+msgstr "立即啟動服務："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32293
@@ -32268,12 +32278,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32298
 msgid "Each file system that can be automatically mounted appears as a directory in <filename>/media/</filename>. The directory is named after the file system label. If the label is missing, the directory is named after the device node."
-msgstr ""
+msgstr "可以被自動掛載的檔案系統會在 <filename>/media/</filename> 中以目錄呈現，會以檔案系統的標籤來命名目錄，若標籤遺失，則會以裝置節點命名。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:32303
 msgid "The file system is transparently mounted on the first access, and unmounted after a period of inactivity. Automounted drives can also be unmounted manually:"
-msgstr ""
+msgstr "檔案系統會在第一次存取時自動掛載，並在一段時間未使用後自動解除掛載。自動掛載的磁碟也可手動解除掛載："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:32307
@@ -32284,7 +32294,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:32309
 msgid "This mechanism is typically used for memory cards and <acronym>USB</acronym> memory sticks. It can be used with any block device, including optical drives or <acronym>iSCSI</acronym> <acronym>LUN</acronym>s."
-msgstr ""
+msgstr "這個機制一般會用在記憶卡與 <acronym>USB</acronym> 隨身碟，也可用在任何 Block 裝置，包含光碟機或 <acronym>iSCSI</acronym> <acronym>LUN</acronym>。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:32318
