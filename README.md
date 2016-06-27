@@ -9,7 +9,7 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
   - [X] 9. 列印
   - [X] 14. Jails
   - [X] 17. 儲存設備篇
-  - [ ] 10. Linux® 二進位檔的相容性
+  - [X] 10. Linux® 二進位檔的相容性
   - [ ] 21. Virtualization(虛擬機器)
   - [ ] 29. 防火牆
 - [ ] 統整文件內目錄標題以及相關名詞
