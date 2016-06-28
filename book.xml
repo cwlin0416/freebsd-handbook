@@ -29025,7 +29025,7 @@ device cd	# needed for CD and DVD burners</programlisting>
     <sect2>
       <title>裝置設定</title>
 
-      <para>要測試 <acronym>USB</acronym> 設定，請先插入 <acronym>USB</acronym> 裝置，然後使用 <command>dmesg</command> 來確認系統訊息緩衝區中有出現該磁碟，該訊息如下：</para>
+      <para>要測試 <acronym>USB</acronym> 設定，請先插入 <acronym>USB</acronym> 裝置，然後使用 <command>dmesg</command> 來確認系統訊息緩衝區中有出現該磁碟機，該訊息如下：</para>
 
       <screen xml:lang="en">umass0: &lt;STECH Simple Drive, class 0/0, rev 2.00/1.04, addr 3&gt; on usbus0
 umass0:  SCSI over Bulk-Only; quirks = 0x0100
@@ -38272,13 +38272,13 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
   <sect1 xml:id="virtualization-synopsis">
     <title>概述</title>
 
-    <para>虛擬化軟體可以讓同一台機器得以同時執行多種作業系統。在 <acronym>PC</acronym> 上的這類軟體系統通常涉及的角色有執行虛擬化軟體的主機端 (Host) 作業系統以及數個安裝在其中的客戶端 (Guest) 作業系統。</para>
+    <para>虛擬化軟體可以讓同一台機器得以同時執行多種作業系統。在 <acronym>PC</acronym> 上的這類軟體系統通常涉及的角色有執行虛擬化軟體的主端 (Host) 作業系統以及數個安裝在其中的客端 (Guest) 作業系統。</para>
 
     <para>讀完這章，您將了解︰</para>
 
     <itemizedlist>
       <listitem>
-	<para>主機端作業系統及客戶端作業系統的差別。</para>
+	<para>主端作業系統及客端作業系統的差別。</para>
       </listitem>
 
       <listitem>
@@ -38290,7 +38290,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
       </listitem>
 
       <listitem>
-	<para>如何以 FreeBSD 作為 Guest 安裝在 <application>bhyve</application>。</para>
+	<para>如何以 FreeBSD 作為客端安裝在 <application>bhyve</application>。</para>
       </listitem>
 
       <listitem>
@@ -38321,9 +38321,9 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
   </sect1>
 
   <sect1 xml:id="virtualization-guest-parallels">
-    <title>在 <trademark class="registered">Mac OS</trademark> X 的 <application>Parallels</application> 安裝 FreeBSD 為 Guest</title>
+    <title>在 <trademark class="registered">Mac OS</trademark> X 的 <application>Parallels</application> 安裝 FreeBSD 為客端</title>
 
-    <para><trademark class="registered">Mac</trademark> 的 <application>Parallels Desktop</application> 是一套商業軟體可在 <trademark class="registered">Intel</trademark> 為基礎的 <trademark class="registered">Apple</trademark> <trademark class="registered">Mac</trademark> 的<trademark class="registered">Mac OS</trademark> 10.4.6 或更新版本上執行。 該軟體完全支援使用 FreeBSD 作為客戶端作業系統。 在 <trademark class="registered">Mac OS</trademark> X 裝好 <application>Parallels</application> 後，使用者必先完成虛擬機器的設定後才可安裝想使用的客戶端作業系統。</para>
+    <para><trademark class="registered">Mac</trademark> 的 <application>Parallels Desktop</application> 是一套商業軟體可在 <trademark class="registered">Intel</trademark> 為基礎的 <trademark class="registered">Apple</trademark> <trademark class="registered">Mac</trademark> 的 <trademark class="registered">Mac OS</trademark> 10.4.6 或更新版本上執行。 該軟體完全支援使用 FreeBSD 作為客端作業系統。 在 <trademark class="registered">Mac OS</trademark> X 裝好 <application>Parallels</application> 後，使用者必先完成虛擬機器的設定後才可安裝想使用的客端作業系統。</para>
 
     <sect2 xml:id="virtualization-guest-parallels-install">
       <title>在 Parallels/<trademark class="registered">Mac OS</trademark> X 安裝 FreeBSD</title>
@@ -38336,7 +38336,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para>根據您對此虛擬 FreeBSD 作業系統的規畫選擇合理的磁碟及記憶體空間，對大多數在 <application>Parallels</application> 下的 FreeBSD 使用者來講 4GB 的磁碟空間與 512MB 的 RAM 便足夠：</para>
+      <para>根據您對此虛擬 FreeBSD 作業系統的規畫選擇合理的磁碟及記憶體空間，對大多數在 <application>Parallels</application> 下的 FreeBSD 使用來講 4GB 的磁碟空間與 512MB 的 RAM 便足夠：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38436,7 +38436,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 
 	  <programlisting xml:lang="en">kern.hz=100</programlisting>
 
-	  <para>若沒有完成此設定，閒置的 FreeBSD <application>Parallels</application>客戶端將會消耗掉單處理器 <trademark class="registered">iMac</trademark> 將近 15% 的 CPU。完成此更改後使用率會減至接近 5%。</para>
+	  <para>若沒有完成此設定，閒置的 FreeBSD <application>Parallels</application> 客端將會消耗掉單一處理器的 <trademark class="registered">iMac</trademark> 將近 15% 的 CPU。完成此更改後使用率會減至接近 5%。</para>
 	</step>
 
 	<step>
@@ -38448,31 +38448,21 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	<step>
 	  <title>設定網路</title>
 
-	  <para>最基本的網路設定是使用 DHCP 來讓虛擬機器連線到與主機端 <trademark class="registered">Mac</trademark> 相同的區域網路，這可以透過加入 <literal>ifconfig_ed0="DHCP"</literal> 到 <filename>/etc/rc.conf</filename> 來完成。更進階的網路設定在 <xref linkend="advanced-networking"/> 中描述。</para>
+	  <para>最基本的網路設定是使用 DHCP 來讓虛擬機器連線到與主端 <trademark class="registered">Mac</trademark> 相同的區域網路，這可以透過加入 <literal>ifconfig_ed0="DHCP"</literal> 到 <filename>/etc/rc.conf</filename> 來完成。更進階的網路設定在 <xref linkend="advanced-networking"/> 中描述。</para>
 	</step>
       </procedure>
     </sect2>
   </sect1>
 
   <sect1 xml:id="virtualization-guest-virtualpc">
-    <title>在 <trademark class="registered">Windows</trademark> 的 <application>Virtual PC</application> 安裝 FreeBSD 為 Guest</title>
+    <title>在 <trademark class="registered">Windows</trademark> 的 <application>Virtual PC</application> 安裝 FreeBSD 為客端</title>
 
-    <para xml:lang="en"><application>Virtual PC</application> for <trademark class="registered">Windows</trademark> is a
-      <trademark class="registered">Microsoft</trademark> software product available for free download.  See
-      this website for the <link xlink:href="http://www.microsoft.com/windows/downloads/virtualpc/sysreq.mspx">system
-	requirements</link>.  Once
-      <application>Virtual PC</application> has been installed on
-      <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark>, the user can configure a virtual machine
-      and then install the desired guest operating system.</para>
+    <para>給 <trademark class="registered">Windows</trademark> 使用的 <application>Virtual PC</application> 是一套可免費下載的 <trademark class="registered">Microsoft</trademark> 軟體產品，請參考此網站取得<link xlink:href="http://www.microsoft.com/windows/downloads/virtualpc/sysreq.mspx">系統需求</link>。<application>Virtual PC</application> 在 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 上安裝完成之後，使用者可以設定一台虛擬機器然後安裝想要的客端作業系統。</para>
 
     <sect2 xml:id="virtualization-guest-virtualpc-install">
       <title>在 <application>Virtual PC</application> 安裝 FreeBSD </title>
 
-      <para xml:lang="en">The first step in installing FreeBSD on
-	<application>Virtual PC</application> is to create a new
-	virtual machine for installing FreeBSD.  Select
-	<guimenuitem>Create a virtual machine</guimenuitem> when
-	prompted:</para>
+      <para>安裝 FreeBSD 到 <application>Virtual PC</application> 的第一個步驟是建立新的虛擬機器來安裝 FreeBSD。當提示畫面出現時，請選擇 <guimenuitem>Create a virtual machine</guimenuitem>：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38486,9 +38476,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Select <guimenuitem>Other</guimenuitem> as the
-	<guimenuitem>Operating system</guimenuitem> when
-	prompted:</para>
+      <para>當提示畫面出現時，選擇 <guimenuitem>Operating system</guimenuitem> 為 <guimenuitem>Other</guimenuitem>：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38496,10 +38484,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Then, choose a reasonable amount of disk and memory
-	depending on the plans for this virtual FreeBSD instance.
-	4GB of disk space and 512MB of RAM work well for most uses
-	of FreeBSD under <application>Virtual PC</application>:</para>
+      <para>然後，根據您對此虛擬 FreeBSD 作業系統的規畫選擇合理的磁碟及記憶體空間，對大多數在 <application>Virtual PC</application> 下的 FreeBSD 使用來講 4GB 的磁碟空間與 512MB 的 RAM 便足夠：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38521,9 +38506,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Select the FreeBSD virtual machine and click
-	<guimenu>Settings</guimenu>, then set the type of networking
-	and a network interface:</para>
+      <para>選擇 FreeBSD 虛擬機器然後點選 <guimenu>Settings</guimenu>，接著設定網路類型及網路介面卡：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38537,21 +38520,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">After the FreeBSD virtual machine has been created, FreeBSD can
-	be installed on it.  This is best done with an official FreeBSD
-	<acronym>CD</acronym>/<acronym>DVD</acronym> or with an
-	<acronym>ISO</acronym> image downloaded from an official
-	<acronym>FTP</acronym> site.  Copy the appropriate
-	<acronym>ISO</acronym> image to the local <trademark class="registered">Windows</trademark> filesystem
-	or insert a <acronym>CD</acronym>/<acronym>DVD</acronym> in
-	the <acronym>CD</acronym> drive, then double click on the FreeBSD
-	virtual machine to boot.  Then, click <guimenu>CD</guimenu>
-	and choose <guimenu>Capture ISO Image...</guimenu> on the
-	<application>Virtual PC</application> window.  This will bring
-	up a window where the <acronym>CD-ROM</acronym> drive in the
-	virtual machine can be associated with an
-	<acronym>ISO</acronym> file on disk or with the real
-	<acronym>CD-ROM</acronym> drive.</para>
+      <para>FreeBSD 虛擬機器建立完成之後，便可安裝 FreeBSD 到該虛擬機器。安裝最好使用官方 FreeBSD <acronym>CD</acronym>/<acronym>DVD</acronym> 或使用自官方 <acronym>FTP</acronym> 站下載的 <acronym>ISO</acronym> 映像檔。複製適當的 <acronym>ISO</acronym> 映像檔到本地 <trademark class="registered">Windows</trademark> 檔案系統或插入 <acronym>CD</acronym>/<acronym>DVD</acronym> 到 <acronym>CD</acronym> 磁碟機，然後雙擊點選 FreeBSD 虛擬機器來開機。接著，點選 <guimenu>CD</guimenu> 並在 <application>Virtual PC</application> 視窗選擇 <guimenu>Capture ISO Image...</guimenu>，這將會顯示一個視窗可以建立虛擬機器中的 <acronym>CD-ROM</acronym> 與 <acronym>ISO</acronym> 檔或磁碟或實體 <acronym>CD-ROM</acronym> 磁碟機之間的關聯。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38565,13 +38534,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Once this association with the <acronym>CD-ROM</acronym>
-	source has been made, reboot the FreeBSD virtual machine by
-	clicking <guimenu>Action</guimenu> and
-	<guimenu>Reset</guimenu>.
-	<application>Virtual PC</application> will reboot with a
-	special <acronym>BIOS</acronym> that first checks for a
-	<acronym>CD-ROM</acronym>.</para>
+      <para>建立與 <acronym>CD-ROM</acronym> 來源的關聯後，點選 <guimenu>Action</guimenu> 及 <guimenu>Reset</guimenu> 重新開機 FreeBSD 虛擬機器。<application>Virtual PC</application> 會重新開始並進入特殊的 <acronym>BIOS</acronym> 來做 <acronym>CD-ROM</acronym> 的第一次檢查。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38579,10 +38542,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">In this case it will find the FreeBSD installation media
-	and begin a normal FreeBSD installation.  Continue with the
-	installation, but do not attempt to configure
-	<application>Xorg</application> at this time.</para>
+      <para>在這個情況下會找到 FreeBSD 安裝媒體然後開始正常的 FreeBSD 安裝。接著繼續安裝，但此時請不要嘗試設定 <application>Xorg</application>。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38590,10 +38550,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">When the installation is finished, remember to eject the
-	<acronym>CD</acronym>/<acronym>DVD</acronym> or release the
-	<acronym>ISO</acronym> image.  Finally, reboot into the newly
-	installed FreeBSD virtual machine.</para>
+      <para>當安裝完成之後，記得退出 <acronym>CD</acronym>/<acronym>DVD</acronym> 或釋放 <acronym>ISO</acronym> 映像檔。最後，重新開機進入新安裝的 FreeBSD 虛擬機器。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38605,76 +38562,43 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
     <sect2 xml:id="virtualization-guest-virtualpc-configure">
       <title>在 <application>Virtual PC</application> 設定 FreeBSD</title>
 
-      <para xml:lang="en">After FreeBSD has been successfully installed on
-	<trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> with
-	<application>Virtual PC</application>, there are a number of
-	configuration steps that can be taken to optimize the system
-	for virtualized operation.</para>
+      <para>在成功將 FreeBSD 安裝到 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 的 <application>Virtual PC</application> 後，有數個設定步驟要完成來最佳化系統在虛擬機器上的運作。</para>
 
       <procedure>
 	<step>
 	  <title>設定 Boot Loader 變數</title>
 
-	  <para xml:lang="en">The most important step is to reduce the
-	    <option>kern.hz</option> tunable to reduce the CPU
-	    utilization of FreeBSD under the
-	    <application>Virtual PC</application> environment.  This
-	    is accomplished by adding the following line to
-	    <filename>/boot/loader.conf</filename>:</para>
+	  <para>最重要的一個步驟是減少 <option>kern.hz</option>，來減少 FreeBSD 在 <application>Virtual PC</application> 環境下 CPU 的使用量。這可以透過加入下列幾行到 <filename>/boot/loader.conf</filename> 來完成：</para>
 
 	  <programlisting xml:lang="en">kern.hz=100</programlisting>
 
-	  <para xml:lang="en">Without this setting, an idle FreeBSD
-	    <application>Virtual PC</application> guest OS will
-	    use roughly 40% of the CPU of a single processor
-	    computer.  After this change, the usage will be
-	    closer to 3%.</para>
+	  <para>若沒有完成此設定，閒置的 FreeBSD <application>Virtual PC</application> 客端 OS 會消耗掉單一處理器的電腦 40% 的 CPU。完成此更改後使用率會減至接近 3%。</para>
 	</step>
 
 	<step>
 	  <title>建立新核心設定檔</title>
 
-	  <para xml:lang="en">All of the SCSI, FireWire, and USB device drivers can
-	    be removed from a custom kernel configuration file.
-	    <application>Virtual PC</application> provides a virtual
-	    network adapter used by the <citerefentry><refentrytitle>de</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver, so all
-	    network devices except for <citerefentry><refentrytitle>de</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</manvolnum></citerefentry>
-	    can be removed from the kernel.</para>
+	  <para>所有的 SCSI, FireWire 及 USB 裝置可以從自訂的核心設定檔中移除。<application>Virtual PC</application> 提供的虛擬網路卡使用 <citerefentry><refentrytitle>de</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式，所以除了 <citerefentry><refentrytitle>de</refentrytitle><manvolnum>4</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>miibus</refentrytitle><manvolnum>4</manvolnum></citerefentry> 外的所有網路裝置可以自核心中移除。</para>
 	</step>
 
 	<step>
 	  <title>設定網路</title>
 
-	  <para xml:lang="en">The most basic networking setup uses DHCP to connect
-	    the virtual machine to the same local area network as the
-	    <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> host.  This can be accomplished by
-	    adding <literal>ifconfig_de0="DHCP"</literal> to
-	    <filename>/etc/rc.conf</filename>.  More advanced
-	    networking setups are described in
-	    <xref linkend="advanced-networking"/>.</para>
+	  <para>最基本的網路設定是使用 DHCP 來讓虛擬機器連線到與主端 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 相同的區域網路，這可以透過加入 <literal>ifconfig_de0="DHCP"</literal> 到 <filename>/etc/rc.conf</filename> 來完成。更進階的網路設定在 <xref linkend="advanced-networking"/> 中描述。</para>
 	</step>
       </procedure>
     </sect2>
   </sect1>
 
   <sect1 xml:id="virtualization-guest-vmware">
-    <title>在 <trademark class="registered">Mac OS</trademark> 的 <application>VMware Fusion</application> 安裝 FreeBSD 為 Guest</title>
+    <title>在 <trademark class="registered">Mac OS</trademark> 的 <application>VMware Fusion</application> 安裝 FreeBSD 為客端</title>
 
-    <para xml:lang="en"><application>VMware Fusion</application> for <trademark class="registered">Mac</trademark> is a
-      commercial software product available for <trademark class="registered">Intel</trademark> based <trademark class="registered">Apple</trademark>
-      <trademark class="registered">Mac</trademark> computers running <trademark class="registered">Mac OS</trademark> 10.4.9 or higher.  FreeBSD is a
-      fully supported guest operating system.  Once
-      <application>VMware Fusion</application> has been installed on
-      <trademark class="registered">Mac OS</trademark> X, the user can configure a virtual machine and then
-      install the desired guest operating system.</para>
+    <para><application>VMware Fusion</application> 是一套商業軟體可在 <trademark class="registered">Intel</trademark> 為基礎的 <trademark class="registered">Apple</trademark> <trademark class="registered">Mac</trademark> 的 <trademark class="registered">Mac OS</trademark> 10.4.9 或更新版本上執行。 該軟體完全支援使用 FreeBSD 作為客端作業系統。 在 <trademark class="registered">Mac OS</trademark> X 裝好 <application>VMware Fusion</application> 後，使用者必先完成虛擬機器的設定後才可安裝想使用的客端作業系統。</para>
 
     <sect2 xml:id="virtualization-guest-vmware-install">
       <title>在 <application>VMware Fusion</application> 安裝 FreeBSD</title>
 
-      <para xml:lang="en">The first step is to start
-	<application>VMware Fusion</application> which will load the
-	Virtual Machine Library.  Click <guimenuitem>New</guimenuitem>
-	to create the virtual machine:</para>
+      <para>第一個步驟是啟動 <application>VMware Fusion</application> 載入 Virtual Machine Library，點選 <guimenuitem>New</guimenuitem> 建立虛擬機器：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38682,8 +38606,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">This will load the New Virtual Machine Assistant.  Click
-	<guimenuitem>Continue</guimenuitem> to proceed:</para>
+      <para>這個動做會載入 New Virtual Machine Assistant，點選 <guimenuitem>Continue</guimenuitem> 繼續：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38691,11 +38614,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Select <guimenuitem>Other</guimenuitem> as the
-	<guimenuitem>Operating System</guimenuitem> and either
-	<guimenuitem>FreeBSD</guimenuitem> or
-	<guimenuitem>FreeBSD 64-bit</guimenuitem>, as the
-	<guimenu>Version</guimenu> when prompted:</para>
+      <para>選擇 <guimenuitem>Operating System</guimenuitem> 為 <guimenuitem>Other</guimenuitem> 以及在 <guimenu>Version</guimenu> 提示出現時選擇 <guimenuitem>FreeBSD</guimenuitem> 或 <guimenuitem>FreeBSD 64-bit</guimenuitem>：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38703,8 +38622,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Choose the name of the virtual machine and the directory
-	where it should be saved:</para>
+      <para>選擇虛擬機器要使用的名稱以及要儲存目錄位置：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38712,8 +38630,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Choose the size of the Virtual Hard Disk for the virtual
-	machine:</para>
+      <para>選擇虛擬機器的 Virtual Hard Disk 大小：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38721,9 +38638,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Choose the method to install the virtual machine, either
-	from an <acronym>ISO</acronym> image or from a
-	<acronym>CD</acronym>/<acronym>DVD</acronym>:</para>
+      <para>選擇安裝虛擬機器的方式，可從 <acronym>ISO</acronym> 映像檔或從 <acronym>CD</acronym>/<acronym>DVD</acronym>：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38731,8 +38646,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Click <guimenuitem>Finish</guimenuitem> and the virtual
-	machine will boot:</para>
+      <para>點選 <guimenuitem>Finish</guimenuitem> 接著虛擬機器會開機：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38740,7 +38654,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Install FreeBSD as usual:</para>
+      <para>照往常方式安裝 FreeBSD：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38748,13 +38662,10 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">Once the install is complete, the settings of the virtual
-	machine can be modified, such as memory usage:</para>
+      <para>安裝完成後，可以修改虛擬機器的設定，例如記憶體使用量：</para>
 
       <note>
-	<para xml:lang="en">The System Hardware settings of the virtual machine
-	  cannot be modified while the virtual machine is
-	  running.</para>
+	<para>虛擬機器的 System Hardware 設定無法在虛擬機器執行時修改。</para>
       </note>
 
       <mediaobject>
@@ -38763,8 +38674,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">The number of CPUs the virtual machine will have access
-	to:</para>
+      <para>虛擬機器要使用的 CPU 數量：</para>
 
       <mediaobject>
 	<imageobject>
@@ -38772,11 +38682,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">The status of the <acronym>CD-ROM</acronym> device.
-	Normally the
-	<acronym>CD</acronym>/<acronym>DVD</acronym>/<acronym>ISO</acronym>
-	is disconnected from the virtual machine when it is no longer
-	needed.</para>
+      <para><acronym>CD-ROM</acronym> 裝置的狀態，正常情況 <acronym>CD</acronym>/<acronym>DVD</acronym>/<acronym>ISO</acronym> 在不需要時會中斷與虛擬機器的連線。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38784,15 +38690,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">The last thing to change is how the virtual machine will
-	connect to the network.  To allow connections to the virtual
-	machine from other machines besides the host, choose
-	<guimenuitem>Connect directly to the physical network
-	  (Bridged)</guimenuitem>.  Otherwise,
-	<guimenuitem>Share the host's internet connection
-	  (NAT)</guimenuitem> is preferred so that the virtual machine
-	can have access to the Internet, but the network cannot access
-	the virtual machine.</para>
+      <para>最後一件事是更改虛擬機器連線到網路的方式，要允許除了主端以外的機器連線到虛擬機器，請選擇 <guimenuitem>Connect directly to the physical network (Bridged)</guimenuitem>。否則會偏好使用 <guimenuitem>Share the host's internet connection (NAT)</guimenuitem> 來讓虛擬機器可以存取網際網路，但外部網路無法連線到虛擬機器。</para>
 
       <mediaobject>
 	<imageobject>
@@ -38800,65 +38698,42 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 	</imageobject>
       </mediaobject>
 
-      <para xml:lang="en">After modifying the settings, boot the newly installed
-	FreeBSD virtual machine.</para>
+      <para>在修改設定之後，開機進入新安裝的 FreeBSD 虛擬機器。</para>
     </sect2>
 
     <sect2 xml:id="virtualization-guest-vmware-configure">
       <title>在 <application>VMware Fusion</application> 設定 FreeBSD</title>
 
-      <para xml:lang="en">After FreeBSD has been successfully installed on <trademark class="registered">Mac OS</trademark> X
-	with <application>VMware Fusion</application>, there are a
-	number of configuration steps that can be taken to optimize
-	the system for virtualized operation.</para>
+      <para>在成功將 FreeBSD 安裝到 <trademark class="registered">Mac OS</trademark> X 的 <application>VMware Fusion</application> 後，有數個設定步驟要完成來最佳化系統在虛擬機器上的運作。</para>
 
       <procedure>
 	<step>
 	  <title>設定 Boot Loader 變數</title>
 
-	  <para xml:lang="en">The most important step is to reduce the
-	    <option>kern.hz</option> tunable to reduce the CPU
-	    utilization of FreeBSD under the
-	    <application>VMware Fusion</application> environment.
-	    This is accomplished by adding the following line to
-	    <filename>/boot/loader.conf</filename>:</para>
+	  <para>最重要的一個步驟是減少 <option>kern.hz</option>，來減少 FreeBSD 在 <application>VMware Fusion</application> 環境下 CPU 的使用量。這可以透過加入下列幾行到 <filename>/boot/loader.conf</filename> 來完成：</para>
 
 	  <programlisting xml:lang="en">kern.hz=100</programlisting>
 
-	  <para xml:lang="en">Without this setting, an idle FreeBSD
-	    <application>VMware Fusion</application> guest will use
-	    roughly 15% of the CPU of a single processor <trademark class="registered">iMac</trademark>.
-	    After this change, the usage will be closer to 5%.</para>
+	  <para>若沒有完成此設定，閒置的 FreeBSD <application>VMware Fusion</application> 客端將會消耗掉單一處理器的 <trademark class="registered">iMac</trademark> 將近 15% 的 CPU。完成此更改後使用率會減至接近 5%。</para>
 	</step>
 
 	<step>
 	  <title>建立新核心設定檔</title>
 
-	  <para xml:lang="en">All of the FireWire, and USB device drivers can be
-	    removed from a custom kernel configuration file.
-	    <application>VMware Fusion</application> provides a
-	    virtual network adapter used by the <citerefentry><refentrytitle>em</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver, so
-	    all network devices except for <citerefentry><refentrytitle>em</refentrytitle><manvolnum>4</manvolnum></citerefentry> can be removed
-	    from the kernel.</para>
+	  <para>所有的 SCSI, FireWire 及 USB 裝置可以從自訂的核心設定檔中移除。<application>VMware Fusion</application> 提供的虛擬網路卡使用 <citerefentry><refentrytitle>em</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式，所以除了 <citerefentry><refentrytitle>em</refentrytitle><manvolnum>4</manvolnum></citerefentry> 外的所有網路裝置可以自核心中移除。</para>
 	</step>
 
 	<step>
 	  <title>設定網路</title>
 
-	  <para xml:lang="en">The most basic networking setup uses DHCP to connect
-	    the virtual machine to the same local area network as the
-	    host <trademark class="registered">Mac</trademark>.  This can be accomplished by adding
-	    <literal>ifconfig_em0="DHCP"</literal> to
-	    <filename>/etc/rc.conf</filename>.  More advanced
-	    networking setups are described in
-	    <xref linkend="advanced-networking"/>.</para>
+	  <para>最基本的網路設定是使用 DHCP 來讓虛擬機器連線到與主端 <trademark class="registered">Mac</trademark> 相同的區域網路，這可以透過加入 <literal>ifconfig_em0="DHCP"</literal> 到 <filename>/etc/rc.conf</filename> 來完成。更進階的網路設定在 <xref linkend="advanced-networking"/> 中描述。</para>
 	</step>
       </procedure>
     </sect2>
   </sect1>
 
   <sect1 xml:id="virtualization-guest-virtualbox-guest-additions">
-    <title>安裝 <trademark>VirtualBox</trademark> Guest Additions 於 FreeBSD Guest</title>
+    <title>安裝 <trademark>VirtualBox</trademark> Guest Additions 於 FreeBSD 客端</title>
 
     <para xml:lang="en">FreeBSD works well as a guest in
       <application><trademark>VirtualBox</trademark></application>.  The virtualization
@@ -38970,7 +38845,7 @@ EndSection</programlisting>
   </sect1>
 
   <sect1 xml:id="virtualization-host-virtualbox">
-    <title>以 FreeBSD 作為 Host 安裝 <application>VirtualBox</application> </title>
+    <title>以 FreeBSD 作為主端安裝 <application>VirtualBox</application> </title>
 
     <para xml:lang="en"><application><trademark>VirtualBox</trademark></application> is an actively
       developed, complete virtualization package, that is available
@@ -39138,7 +39013,7 @@ perm pass* 0660</programlisting>
   </sect1>
 
   <sect1 xml:id="virtualization-host-bhyve">
-    <title>以 FreeBSD 作為 Host 安裝 <application>bhyve</application>  </title>
+    <title>以 FreeBSD 作為主端安裝 <application>bhyve</application>  </title>
 
     <para xml:lang="en">The <application>bhyve</application>
       <acronym>BSD</acronym>-licensed hypervisor became part of the
@@ -39176,7 +39051,7 @@ perm pass* 0660</programlisting>
       <literal>VT-x</literal> line for <trademark class="registered">Intel</trademark> processors.</para>
 
     <sect2 xml:id="virtualization-bhyve-prep">
-      <title>準備 Host</title>
+      <title>準備主端</title>
 
       <para xml:lang="en">The first step to creating a virtual machine in
 	<application>bhyve</application> is configuring the host
@@ -39202,7 +39077,7 @@ net.link.tap.up_on_open: 0 -&gt; 1
     </sect2>
 
     <sect2 xml:id="virtualization-bhyve-freebsd">
-      <title>建立 FreeBSD Guest</title>
+      <title>建立 FreeBSD 客端</title>
 
       <para xml:lang="en">Create a file to use as the virtual disk for the guest
 	machine.  Specify the size and name of the virtual
@@ -39260,7 +39135,7 @@ FreeBSD-10.2-RELEASE-amd64-bootonly.iso       100% of  230 MB  570 kBps 06m17s</
     </sect2>
 
     <sect2 xml:id="virtualization-bhyve-linux">
-      <title>建立 <trademark class="registered">Linux</trademark> Guest</title>
+      <title>建立 <trademark class="registered">Linux</trademark> 客端</title>
 
       <para xml:lang="en">In order to boot operating systems other than FreeBSD, the
 	<package>sysutils/grub2-bhyve</package> port must be first
