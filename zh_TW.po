@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-06-24 12:42+0800\n"
-"PO-Revision-Date: 2016-06-28 13:41+0800\n"
+"PO-Revision-Date: 2016-06-28 15:31+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -1198,6 +1198,8 @@ msgid ""
 "<emphasis>Embedded:</emphasis> FreeBSD makes an excellent platform to build embedded systems upon. <_:indexterm-1/> With support for the <trademark class=\"registered\">ARM</trademark>, <trademark class=\"registered\">MIPS</trademark> and <trademark class=\"registered\">PowerPC</trademark> platforms, coupled with a robust network "
 "stack, cutting edge features and the permissive <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/introduction.html#bsd-license-restrictions\">BSD license</link> FreeBSD makes an excellent foundation for building embedded routers, firewalls, and other devices."
 msgstr ""
+"<emphasis>嵌入式：</emphasis> FreeBSD 是一套可用來建立嵌入式系統的傑出平台。 <_:indexterm-1/> 支援 <trademark class=\"registered\">ARM</trademark>, <trademark class=\"registered\">MIPS</trademark> 以及 <trademark class=\"registered\">PowerPC</trademark> 平台，再加上健全的網路環境、尖端的功能以及自由的 <link xlink:href="
+"\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/introduction.html#bsd-license-restrictions\">BSD 授權條款</link>，FreeBSD 成為用來建置嵌入式路由器、防火牆及其他裝置的絕佳基礎。"
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect2/indexterm
@@ -1217,6 +1219,8 @@ msgid ""
 "<_:indexterm-1/> <_:indexterm-2/> <_:indexterm-3/> <emphasis>Desktop:</emphasis> FreeBSD makes a fine choice for an inexpensive desktop solution using the freely available X11 server. FreeBSD offers a choice from many open-source desktop environments, including the standard <application>GNOME</application> and <application>KDE</"
 "application> graphical user interfaces. FreeBSD can even boot <quote>diskless</quote> from a central server, making individual workstations even cheaper and easier to administer."
 msgstr ""
+"<_:indexterm-1/> <_:indexterm-2/> <_:indexterm-3/> <emphasis>桌面:</emphasis> FreeBSD 同時也是低成本桌面解決方案中不錯的選擇，使用了免費的 X11 伺服器。FreeBSD 提供許多開源桌面環境可選擇，包含了標準 <application>GNOME</application> 及 <application>KDE</application> 圖型化使用者介面。FreeBSD 甚至可以透過中央伺服器做 <quote>無磁碟</quote> "
+"開機，讓個人工作站變的更便宜、更易於管理。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1951
@@ -1246,7 +1250,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:1974
 msgid "FreeBSD's advanced features, proven security, predictable release cycle, and permissive license have led to its use as a platform for building many commercial and open source appliances, devices, and products. Many of the world's largest IT companies use FreeBSD:"
-msgstr "FreeBSD's advanced features, proven security, predictable release cycle, and permissive license have led to its use as a platform for building many commercial and open source appliances, devices, and products. 許多 Internet 上的大型網站都是以 FreeBSD 作為它的作業系統，如："
+msgstr "FreeBSD 先進的功能、成熟的安全性、可預測的發佈週期以及自由的授權條款，讓 FreeBSD 已經被用來做為建立許多商業、開源應用、裝置以及產品的平台，有許多世界上最大的資訊公司使用 FreeBSD："
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect1/indexterm
@@ -1471,7 +1475,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2213
 msgid "FreeBSD has also spawned a number of related open source projects:"
-msgstr ""
+msgstr "FreeBSD 也催生了數個相關的開源計劃："
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2220
@@ -1570,7 +1574,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2304
 msgid "FreeBSD is also used to power some of the biggest sites on the Internet, including:"
-msgstr ""
+msgstr "FreeBSD 也同時被用來驅動一些網際網路上的大型網站，包括："
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2310
@@ -1680,7 +1684,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2390
 msgid "and many more. Wikipedia also maintains a <link xlink:href=\"http://en.wikipedia.org/wiki/List_of_products_based_on_FreeBSD\">list of products based on FreeBSD</link>."
-msgstr ""
+msgstr "還有許多的應用。維基百科也維護了一份 <link xlink:href=\"http://en.wikipedia.org/wiki/List_of_products_based_on_FreeBSD\">以 FreeBSD 為基礎的產品</link>。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2396
@@ -1829,7 +1833,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2505
 msgid "Since that time, FreeBSD has made a series of releases each time improving the stability, speed, and feature set of the previous version."
-msgstr ""
+msgstr "自那時以來，FreeBSD 在每一次對先前版本改進穩定性、速度及功能時便會發佈一個新的發佈版本。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2509
@@ -1956,10 +1960,9 @@ msgid ""
 "Ports Collection repositories also moved from <application>CVS</application> to <application>SVN</application> in May 2012 and July 2012, respectively. Please refer to the <link linkend=\"synching\">Synchronizing your source tree</link> section for more information on obtaining the FreeBSD <literal>src/</literal> repository and <link "
 "linkend=\"ports-using\">Using the Ports Collection</link> for details on obtaining the FreeBSD Ports Collection."
 msgstr ""
-"<_:indexterm-1/> <_:indexterm-2/> <_:indexterm-3/> <_:indexterm-4/> <_:indexterm-5/> <_:indexterm-6/>過去數年來 FreeBSD 的中央 source tree 一直是以 <link xlink:href=\"http://www.nongnu.org/cvs/\">CVS</link> (Concurrent Versions System) 來維護的， 它是個自由軟體，可用來做為版本控制，一裝完 FreeBSD 內就有附了。 然而在 2008 年 6 月起， "
-"FreeBSD 版本控制系統改用 <link xlink:href=\"http://subversion.tigris.org\">SVN</link> (Subversion)。 這切換動作我們認為是有必要，因為 <application>CVS</application> 先天的技術限制，導致 source tree 以及歷史版本數量不斷快速擴張。 The Documentation Project and Ports Collection repositories also moved from <application>CVS</application> "
-"to <application>SVN</application> in May 2012 and July 2012, respectively. Please refer to the <link linkend=\"synching\">Synchronizing your source tree</link> section for more information on obtaining the FreeBSD <literal>src/</literal> repository and <link linkend=\"ports-using\">Using the Ports Collection</link> for details on "
-"obtaining the FreeBSD Ports Collection."
+"<_:indexterm-1/> <_:indexterm-2/> <_:indexterm-3/> <_:indexterm-4/> <_:indexterm-5/> <_:indexterm-6/>過去數年來 FreeBSD 的中央原始碼樹 (Source tree) 一直是以 <link xlink:href=\"http://www.nongnu.org/cvs/\">CVS</link> (Concurrent Versions System) 來維護的， 它是一套免費的原始碼控管工具。 從 2008 年 6 月起， FreeBSD 計劃開始改用 <link "
+"xlink:href=\"http://subversion.tigris.org\">SVN</link> (Subversion)。 這是一個必要的更換動作，因為隨著原始碼樹及歷史版本儲存的數量不斷快速擴張，<application>CVS</application> 先天的技術限制越來越明顯。 文件計劃與 Ports 套件集檔案庫也同樣於 2012 年 5 月及 2012 年 7 月由 <application>CVS</application> 改為 <application>SVN</application>。"
+"請參考 <link linkend=\"synching\">同步您的原始碼樹</link> 一節來取得有關如何取得 FreeBSD <literal>src/</literal> 檔案庫的更多資訊，以及 <link linkend=\"ports-using\">使用 Ports 套件集</link> 了解如何取得 FreeBSD Ports 套件集。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2654
@@ -1977,8 +1980,8 @@ msgid ""
 "The <firstterm>committers</firstterm> <_:indexterm-1/> are the people who have <emphasis>write</emphasis> access to the Subversion tree, and are authorized to make modifications to the FreeBSD source (the term <quote>committer</quote> comes from <command>commit</command>, the source control command which is used to bring new changes "
 "into the repository). Anyone can submit a bug to the <link xlink:href=\"https://bugs.FreeBSD.org/submit/\">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug."
 msgstr ""
-"所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion tree 有 <emphasis>寫入</emphasis> 權限， 並依不同授權部分，而有不同權限可修改 FreeBSD source。 (<quote>committer</quote> 這詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 Anyone can submit a bug to the <link xlink:href="
-"\"https://bugs.FreeBSD.org/submit/\">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug."
+"所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion 原始碼樹有 <emphasis>寫入</emphasis> 權限的人， 並且被授予修改 FreeBSD 原始碼的權限。 (<quote>committer</quote> 一詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 任何人都可以回報問題到 <link xlink:href=\"https://bugs."
+"FreeBSD.org/submit/\">Bug Database</link>，在回報問題之前，可以使用 FreeBSD 郵遞清單、IRC 頻道或論壇來確認問題真的是一個錯誤 (Bug)。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2674
@@ -1996,8 +1999,8 @@ msgid ""
 "The <firstterm>FreeBSD core team</firstterm> <_:indexterm-1/> would be equivalent to the board of directors if the FreeBSD Project were a company. The primary task of the core team is to make sure the project, as a whole, is in good shape and is heading in the right directions. Inviting dedicated and responsible developers to join our "
 "group of committers is one of the functions of the core team, as is the recruitment of new core team members as others move on. The current core team was elected from a pool of committer candidates in July 2014. Elections are held every 2 years."
 msgstr ""
-"如果把 FreeBSD 看成是一家公司的話， <firstterm>FreeBSD core team</firstterm><_:indexterm-1/> 就相當於董事會。 core team 的主要職責在於確保此計劃有良好的架構，以朝著正確的方向發展。 此外，邀請熱血且負責的軟體開發者加入 committers 行列， 以在若干成員離去時得以補充新血。 目前的 core team 是在 2014 年 7 月 committers 候選人中選出來的，每兩"
-"年會舉辦一次選舉。"
+"如果把 FreeBSD 看成是一家公司的話， <firstterm>FreeBSD 核心團隊</firstterm><_:indexterm-1/> 就相當於董事會。 核心團隊的主要職責在於確保此計劃有良好的架構，以朝著正確的方向發展。 此外，邀請熱血且負責的軟體開發者加入提交者的行列， 以在若干成員離去時得以補充新血。 目前的核心團隊是在 2014 年 7 月從提交者候選人之中選出來的，這個選舉每兩年會"
+"舉辦一次。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:2693
@@ -2005,8 +2008,8 @@ msgid ""
 "Like most developers, most members of the core team are also volunteers when it comes to FreeBSD development and do not benefit from the project financially, so <quote>commitment</quote> should also not be misconstrued as meaning <quote>guaranteed support.</quote> The <quote>board of directors</quote> analogy above is not very "
 "accurate, and it may be more suitable to say that these are the people who gave up their lives in favor of FreeBSD against their better judgement!"
 msgstr ""
-"如同多數的開發者，core team 大部分成員加入 FreeBSD 開發都是志工性質而已， 並未從本計劃中獲得任何薪酬，所以不該把 <quote>commitment</quote> 誤解為 <quote>guaranteed support</quote> 才對。 剛前面所講的<quote>董事會</quote>可能是不恰當的類推，或許我們應該說： 他們是一群自願放棄原本的優渥生活、個人其他領域成就， 而選擇投入 FreeBSD 開發的熱"
-"血有為者才對！"
+"如同多數的開發者，核心團隊大部分成員加入 FreeBSD 開發都是志工性質而已， 並未從本計劃中獲得任何薪酬，所以這只是一個 <quote>承諾</quote> 不應該被誤解為 <quote>保證支援</quote> 才對。 前面用 <quote>董事會</quote> 來舉例可能不是很恰當，或許我們應該說： 他們是一群自願放棄原本的優渥生活、個人其他領域成就， 而選擇投入 FreeBSD 開發的熱血有為者"
+"才對！"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2708
@@ -2035,14 +2038,16 @@ msgstr "<citetitle><link xlink:href=\"@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles
 #. (itstool) path: listitem/para
 #: book.translate.xml:2727
 msgid "Providing code is not the only way of contributing to the project; for a more complete list of things that need doing, please refer to the <link xlink:href=\"@@URL_RELPREFIX@@/index.html\">FreeBSD Project web site</link>."
-msgstr "然而，提供原始碼並非為這個計劃做貢獻的唯一方式； 還需要大家投入的完整工作列表、說明，請參閱 <link xlink:href=\"@@URL_RELPREFIX@@/index.html\">FreeBSD 計畫網站</link>。"
+msgstr "提供原始碼並非為這個計劃做貢獻的唯一方式； 需要大家投入的完整工作清單請參閱 <link xlink:href=\"@@URL_RELPREFIX@@/index.html\">FreeBSD 計畫網站</link>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2735
 msgid ""
 "In summary, our development model is organized as a loose set of concentric circles. The centralized model is designed for the convenience of the <emphasis>users</emphasis> of FreeBSD, who are provided with an easy way of tracking one central code base, not to keep potential contributors out! Our desire is to present a stable operating "
 "system with a large set of coherent <link linkend=\"ports\">application programs</link> that the users can easily install and use — this model works very well in accomplishing that."
-msgstr "簡單的說，我們的開發模式就像是一組沒有拘束的同心圓。 這種集中開發模式是以 <emphasis>使用者</emphasis>， 同時讓他們能很容易地共同維護軟體，而不會把潛在的貢獻者排除在外！ 我們的目標是提供含有大量一致性的 <link linkend=\"ports\">應用程式</link> ，以便讓使用者輕鬆安裝、使用的作業系統 — 而這開發模式相當符合此一目標。"
+msgstr ""
+"總而言之，我們的開發模式像是由鬆散的同心圓所組織。這個集中模式的設計為的是讓 FreeBSD 的<emphasis>使用者</emphasis>更便利，可以很容易的追蹤同一個中央的程式庫，避免把潛在的貢獻者排除在外！而我們的目標是提供一個穩定的作業系統，並有大量相關的 <link linkend=\"ports\">應用程式</link>，讓使用者能夠輕鬆的安裝與使用 — 而這個開發模式對我們要完成"
+"這個目標來說運作的非常好。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2745
@@ -2215,17 +2220,17 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2970
 msgid "This is the most common type of processor desktop and laptop computers will have. Other vendors may call this architecture <acronym>x86-64</acronym>."
-msgstr ""
+msgstr "這桌上型電腦與筆記型電腦是最常見的處理器類型，有些廠商可能會稱之為 <acronym>x86-64</acronym>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2974
 msgid "There are two primary vendors of amd64 processors: <trademark class=\"registered\">Intel</trademark> (which produces <acronym>Intel64</acronym> class processors) and AMD (which produces <acronym>AMD64</acronym>)."
-msgstr ""
+msgstr "主要有兩個廠商提供 amd64 處理器：<trademark class=\"registered\">Intel</trademark> (生產 <acronym>Intel64</acronym> 級處理器) 以及 AMD (生產 <acronym>AMD64</acronym>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2979
 msgid "Examples of amd64 compatible processsors include: <trademark>AMD Athlon</trademark>64, <trademark>AMD Opteron</trademark>, multi-core <trademark class=\"registered\">Intel</trademark> <trademark>Xeon</trademark>, and <trademark class=\"registered\">Intel</trademark> <trademark>Core</trademark> 2 and later processors."
-msgstr ""
+msgstr "與 amd64 相容的處理器包含：<trademark>AMD Athlon</trademark>64, <trademark>AMD Opteron</trademark>, 多核心 <trademark class=\"registered\">Intel</trademark> <trademark>Xeon</trademark> 以及 <trademark class=\"registered\">Intel</trademark> <trademark>Core</trademark> 2 與之後的處理器。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2987
@@ -2235,19 +2240,21 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2989
 msgid "This architecture is the 32-bit x86 architecture."
-msgstr ""
+msgstr "這個架構即為 32-bit x86 架構。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2992
 msgid "Almost all i386-compatible processors with a floating point unit are supported. All <trademark class=\"registered\">Intel</trademark> processors 486 or higher are supported."
-msgstr "幾乎所有有浮點運算裝置的 i386 相容處理器都有支援。所有 <trademark class=\"registered\">Intel</trademark> 486 或是更新的處理器也有支援。"
+msgstr "幾乎所有含浮點運算單元的 i386 相容處理器都有支援。所有 <trademark class=\"registered\">Intel</trademark> 486 或是更高階的處理器也有支援。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2996
 msgid ""
 "FreeBSD will take advantage of Physical Address Extensions (<acronym>PAE</acronym>) support on <acronym>CPU</acronym>s that support this feature. A kernel with the <acronym>PAE</acronym> feature enabled will detect memory above 4 GB and allow it to be used by the system. This feature places constraints on the device drivers and other "
 "features of FreeBSD which may be used; refer to <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
-msgstr "如果 <acronym>CPU</acronym>，FreeBSD 會利用實體位址延伸(<acronym>PAE</acronym>)，有開啟 <acronym>PAE</acronym> 支援的核心會偵測超過 4 GB 的記憶體，讓他能被系統使用。 這項功能為 FreeBSD 的驅動程式與部分功能帶來一些限制，詳情請見 <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry>。"
+msgstr ""
+"若 <acronym>CPU</acronym> 有支援實體位址延伸(<acronym>PAE</acronym>) 功能，FreeBSD 可以運用這項功能的所帶來優點。有開啟 <acronym>PAE</acronym> 支援的核心會偵測超過 4 GB 的記憶體，並讓這些記憶體能夠被系統使用。 這項功能會限制驅動程式以及 FreeBSD 可能使用的其他功能，詳情請見 <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry>。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3008
@@ -2282,7 +2289,7 @@ msgstr ""
 msgid ""
 "High-resolution mode is not supported. NEC PC-98XA/XL/RL/XL^2, and NEC PC-H98 series are supported in normal (PC-9801 compatible) mode only. The <acronym>SMP</acronym>-related features of FreeBSD are not supported. The New Extend Standard Architecture (<acronym>NESA</acronym>) bus used in the PC-H98, SV-H98, and FC-H98 series, is not "
 "supported."
-msgstr "高解析度模式並不支援。NEC PC-98XA/XL/RL/XL^2 和 NEC PC-H98 系列只支援正常 (PC-9801 相容) 模式。 FreeBSD 對稱多處理器 <acronym>SMP</acronym> 相關功能並不支援。 PC-H98， SV-H98 和FC-H98 新延伸標準架構 (<acronym>NESA</acronym>) 匯流排不支援。"
+msgstr "不支援高解析度模式。NEC PC-98XA/XL/RL/XL^2 和 NEC PC-H98 系列只支援正常 (PC-9801 相容) 模式。 FreeBSD 對稱多處理器 <acronym>SMP</acronym> 相關功能並不支援。 PC-H98， SV-H98 和FC-H98 新延伸標準架構 (<acronym>NESA</acronym>) 匯流排不支援。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3042
@@ -40607,7 +40614,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-compression
 #: book.translate.xml:39868 book.translate.xml:40987
 msgid "Compression"
-msgstr "壓縮"
+msgstr "壓縮 (Compression)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39870
@@ -40664,7 +40671,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-deduplication
 #: book.translate.xml:39936 book.translate.xml:41080
 msgid "Deduplication"
-msgstr "去重複資料"
+msgstr "去重複 (Deduplication)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39938

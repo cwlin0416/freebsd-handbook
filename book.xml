@@ -1548,40 +1548,19 @@
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><emphasis>Embedded:</emphasis> FreeBSD makes an
-	    excellent platform to build embedded systems upon.
-	    <indexterm xml:lang="en">
+	  <para><emphasis>嵌入式：</emphasis> FreeBSD 是一套可用來建立嵌入式系統的傑出平台。 <indexterm>
 	      <primary>embedded</primary>
-	    </indexterm>
-	    With support for the <trademark class="registered">ARM</trademark>, <trademark class="registered">MIPS</trademark> and <trademark class="registered">PowerPC</trademark>
-	    platforms, coupled with a robust network stack, cutting
-	    edge features and the permissive <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/introduction.html#bsd-license-restrictions">BSD
-	      license</link> FreeBSD makes an excellent foundation for
-	    building embedded routers, firewalls, and other
-	    devices.</para>
+	    </indexterm> 支援 <trademark class="registered">ARM</trademark>, <trademark class="registered">MIPS</trademark> 以及 <trademark class="registered">PowerPC</trademark> 平台，再加上健全的網路環境、尖端的功能以及自由的 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/introduction.html#bsd-license-restrictions">BSD 授權條款</link>，FreeBSD 成為用來建置嵌入式路由器、防火牆及其他裝置的絕佳基礎。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">
-	    <indexterm xml:lang="en">
+	  <para><indexterm>
 	      <primary>X Window System</primary>
-	    </indexterm>
-	    <indexterm xml:lang="en">
+	    </indexterm> <indexterm>
 	      <primary>GNOME</primary>
-	    </indexterm>
-	    <indexterm xml:lang="en">
+	    </indexterm> <indexterm>
 	      <primary>KDE</primary>
-	    </indexterm>
-	    <emphasis>Desktop:</emphasis> FreeBSD makes a
-	    fine choice for an inexpensive desktop solution
-	    using the freely available X11 server.
-	    FreeBSD offers a choice from many open-source desktop
-	    environments, including the standard
-	    <application>GNOME</application> and
-	    <application>KDE</application> graphical user interfaces.
-	    FreeBSD can even boot <quote>diskless</quote> from
-	    a central server, making individual workstations
-	    even cheaper and easier to administer.</para>
+	    </indexterm> <emphasis>桌面:</emphasis> FreeBSD 同時也是低成本桌面解決方案中不錯的選擇，使用了免費的 X11 伺服器。FreeBSD 提供許多開源桌面環境可選擇，包含了標準 <application>GNOME</application> 及 <application>KDE</application> 圖型化使用者介面。FreeBSD 甚至可以透過中央伺服器做 <quote>無磁碟</quote> 開機，讓個人工作站變的更便宜、更易於管理。</para>
 	</listitem>
 
 	<listitem>
@@ -1602,7 +1581,7 @@
 	<secondary>large sites running FreeBSD</secondary>
       </indexterm>
 
-      <para>FreeBSD's advanced features, proven security, predictable release cycle, and permissive license have led to its use as a platform for building many commercial and open source appliances, devices, and products. 許多 Internet 上的大型網站都是以 FreeBSD 作為它的作業系統，如：</para>
+      <para>FreeBSD 先進的功能、成熟的安全性、可預測的發佈週期以及自由的授權條款，讓 FreeBSD 已經被用來做為建立許多商業、開源應用、裝置以及產品的平台，有許多世界上最大的資訊公司使用 FreeBSD：</para>
 
       <itemizedlist>
 	<listitem>
@@ -1837,8 +1816,7 @@
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">FreeBSD has also spawned a number of related open source
-	projects:</para>
+      <para>FreeBSD 也催生了數個相關的開源計劃：</para>
 
       <itemizedlist>
 	<listitem>
@@ -1928,8 +1906,7 @@
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">FreeBSD is also used to power some of the biggest sites on
-	the Internet, including:</para>
+      <para>FreeBSD 也同時被用來驅動一些網際網路上的大型網站，包括：</para>
 
       <itemizedlist>
 	<listitem>
@@ -2014,8 +1991,7 @@
 
       </itemizedlist>
 
-      <para xml:lang="en">and many more.  Wikipedia also maintains a <link xlink:href="http://en.wikipedia.org/wiki/List_of_products_based_on_FreeBSD">list
-	  of products based on FreeBSD</link>.</para>
+      <para>還有許多的應用。維基百科也維護了一份 <link xlink:href="http://en.wikipedia.org/wiki/List_of_products_based_on_FreeBSD">以 FreeBSD 為基礎的產品</link>。</para>
     </sect2>
   </sect1>
 
@@ -2065,9 +2041,7 @@
 
       <para>FreeBSD 便開始了這宛如『重新發明輪子』的艱鉅工作 -- 從全新的且不完整的 4.4BSD-Lite 重新整合。 這個 <quote>Lite</quote> 版本是不完整的，因為 Berkeley 的 CSRG 已經刪除了大量在建立一個可以開機執行的系統所需要的程式碼 (基於若干法律上的要求)，且該版本在 Intel 平台的移植是非常不完整的。 直到 1994 年 11 月本計劃才完成了這個轉移， 同時在該年 12 月底以 CD-ROM 以及網路的形式發行了 FreeBSD 2.0。 雖然該份版本在當時有點匆促粗糙，但仍是富有意義的成功。 隨之於 1995 年 6 月又發行了更容易安裝，更好的 FreeBSD 2.0.5。</para>
 
-      <para xml:lang="en">Since that time, FreeBSD has made a series of releases each
-	time improving the stability, speed, and feature set of the
-	previous version.</para>
+      <para>自那時以來，FreeBSD 在每一次對先前版本改進穩定性、速度及功能時便會發佈一個新的發佈版本。</para>
 
       <para>目前，長期的開發計畫繼續在 10.X-CURRENT (trunk) 分支中進行，而 10.X 的 snapshot 版本可以在 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/snapshots/">Snapshot 伺服器</link> 取得。</para>
     </sect2>
@@ -2146,7 +2120,7 @@
 	      </indexterm> <indexterm>
 		<primary>SVN</primary>
 		<see>Subversion</see>
-	      </indexterm>過去數年來 FreeBSD 的中央 source tree 一直是以 <link xlink:href="http://www.nongnu.org/cvs/">CVS</link> (Concurrent Versions System) 來維護的， 它是個自由軟體，可用來做為版本控制，一裝完 FreeBSD 內就有附了。 然而在 2008 年 6 月起， FreeBSD 版本控制系統改用 <link xlink:href="http://subversion.tigris.org">SVN</link> (Subversion)。 這切換動作我們認為是有必要，因為 <application>CVS</application> 先天的技術限制，導致 source tree 以及歷史版本數量不斷快速擴張。 The Documentation Project and Ports Collection repositories also moved from <application>CVS</application> to <application>SVN</application> in May 2012 and July 2012, respectively. Please refer to the <link linkend="synching">Synchronizing your source tree</link> section for more information on obtaining the FreeBSD <literal>src/</literal> repository and <link linkend="ports-using">Using the Ports Collection</link> for details on obtaining the FreeBSD Ports Collection.</para>
+	      </indexterm>過去數年來 FreeBSD 的中央原始碼樹 (Source tree) 一直是以 <link xlink:href="http://www.nongnu.org/cvs/">CVS</link> (Concurrent Versions System) 來維護的， 它是一套免費的原始碼控管工具。 從 2008 年 6 月起， FreeBSD 計劃開始改用 <link xlink:href="http://subversion.tigris.org">SVN</link> (Subversion)。 這是一個必要的更換動作，因為隨著原始碼樹及歷史版本儲存的數量不斷快速擴張，<application>CVS</application> 先天的技術限制越來越明顯。 文件計劃與 Ports 套件集檔案庫也同樣於 2012 年 5 月及 2012 年 7 月由 <application>CVS</application> 改為 <application>SVN</application>。請參考 <link linkend="synching">同步您的原始碼樹</link> 一節來取得有關如何取得 FreeBSD <literal>src/</literal> 檔案庫的更多資訊，以及 <link linkend="ports-using">使用 Ports 套件集</link> 了解如何取得 FreeBSD Ports 套件集。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -2154,7 +2128,7 @@
 	  <term>提交者名單<anchor xml:id="development-committers"/></term>
 
 	  <listitem>
-	    <para>所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion tree 有 <emphasis>寫入</emphasis> 權限， 並依不同授權部分，而有不同權限可修改 FreeBSD source。 (<quote>committer</quote> 這詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 Anyone can submit a bug to the <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>. Before submitting a bug report, the FreeBSD mailing lists, IRC channels, or forums can be used to help verify that an issue is actually a bug.</para>
+	    <para>所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion 原始碼樹有 <emphasis>寫入</emphasis> 權限的人， 並且被授予修改 FreeBSD 原始碼的權限。 (<quote>committer</quote> 一詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 任何人都可以回報問題到 <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>，在回報問題之前，可以使用 FreeBSD 郵遞清單、IRC 頻道或論壇來確認問題真的是一個錯誤 (Bug)。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -2162,12 +2136,12 @@
 	  <term>FreeBSD 核心團隊<anchor xml:id="development-core"/></term>
 
 	  <listitem>
-	    <para>如果把 FreeBSD 看成是一家公司的話， <firstterm>FreeBSD core team</firstterm><indexterm>
+	    <para>如果把 FreeBSD 看成是一家公司的話， <firstterm>FreeBSD 核心團隊</firstterm><indexterm>
 		<primary>core team</primary>
-	      </indexterm> 就相當於董事會。 core team 的主要職責在於確保此計劃有良好的架構，以朝著正確的方向發展。 此外，邀請熱血且負責的軟體開發者加入 committers 行列， 以在若干成員離去時得以補充新血。 目前的 core team 是在 2014 年 7 月 committers 候選人中選出來的，每兩年會舉辦一次選舉。</para>
+	      </indexterm> 就相當於董事會。 核心團隊的主要職責在於確保此計劃有良好的架構，以朝著正確的方向發展。 此外，邀請熱血且負責的軟體開發者加入提交者的行列， 以在若干成員離去時得以補充新血。 目前的核心團隊是在 2014 年 7 月從提交者候選人之中選出來的，這個選舉每兩年會舉辦一次。</para>
 
 	    <note>
-	      <para>如同多數的開發者，core team 大部分成員加入 FreeBSD 開發都是志工性質而已， 並未從本計劃中獲得任何薪酬，所以不該把 <quote>commitment</quote> 誤解為 <quote>guaranteed support</quote> 才對。 剛前面所講的<quote>董事會</quote>可能是不恰當的類推，或許我們應該說： 他們是一群自願放棄原本的優渥生活、個人其他領域成就， 而選擇投入 FreeBSD 開發的熱血有為者才對！</para>
+	      <para>如同多數的開發者，核心團隊大部分成員加入 FreeBSD 開發都是志工性質而已， 並未從本計劃中獲得任何薪酬，所以這只是一個 <quote>承諾</quote> 不應該被誤解為 <quote>保證支援</quote> 才對。 前面用 <quote>董事會</quote> 來舉例可能不是很恰當，或許我們應該說： 他們是一群自願放棄原本的優渥生活、個人其他領域成就， 而選擇投入 FreeBSD 開發的熱血有為者才對！</para>
 	    </note>
 	  </listitem>
 	</varlistentry>
@@ -2182,12 +2156,12 @@
 		<primary>contributors</primary>
 	      </indexterm> 相當長且不斷成長中， 只要有貢獻就會被列入其中， 要不要立即考慮貢獻 FreeBSD 一些回饋呢？</para>
 
-	    <para>然而，提供原始碼並非為這個計劃做貢獻的唯一方式； 還需要大家投入的完整工作列表、說明，請參閱 <link xlink:href="@@URL_RELPREFIX@@/index.html">FreeBSD 計畫網站</link>。</para>
+	    <para>提供原始碼並非為這個計劃做貢獻的唯一方式； 需要大家投入的完整工作清單請參閱 <link xlink:href="@@URL_RELPREFIX@@/index.html">FreeBSD 計畫網站</link>。</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
 
-      <para>簡單的說，我們的開發模式就像是一組沒有拘束的同心圓。 這種集中開發模式是以 <emphasis>使用者</emphasis>， 同時讓他們能很容易地共同維護軟體，而不會把潛在的貢獻者排除在外！ 我們的目標是提供含有大量一致性的 <link linkend="ports">應用程式</link> ，以便讓使用者輕鬆安裝、使用的作業系統 — 而這開發模式相當符合此一目標。</para>
+      <para>總而言之，我們的開發模式像是由鬆散的同心圓所組織。這個集中模式的設計為的是讓 FreeBSD 的<emphasis>使用者</emphasis>更便利，可以很容易的追蹤同一個中央的程式庫，避免把潛在的貢獻者排除在外！而我們的目標是提供一個穩定的作業系統，並有大量相關的 <link linkend="ports">應用程式</link>，讓使用者能夠輕鬆的安裝與使用 — 而這個開發模式對我們要完成這個目標來說運作的非常好。</para>
 
       <para>我們對於那些想要加入 FreeBSD 開發者的期待是： 請保持如同前人一樣的投入，以確保繼續成功！</para>
     </sect2>
@@ -2379,31 +2353,22 @@
       <varlistentry>
 	<term xml:lang="en">amd64</term>
 	<listitem>
-	  <para xml:lang="en">This is the most common type of processor desktop and
-	    laptop computers will have.  Other vendors may call this
-	    architecture <acronym>x86-64</acronym>.</para>
+	  <para>這桌上型電腦與筆記型電腦是最常見的處理器類型，有些廠商可能會稱之為 <acronym>x86-64</acronym>。</para>
 
-	  <para xml:lang="en">There are two primary vendors of amd64
-	    processors: <trademark class="registered">Intel</trademark> (which produces
-	    <acronym>Intel64</acronym> class processors) and AMD
-	    (which produces <acronym>AMD64</acronym>).</para>
+	  <para>主要有兩個廠商提供 amd64 處理器：<trademark class="registered">Intel</trademark> (生產 <acronym>Intel64</acronym> 級處理器) 以及 AMD (生產 <acronym>AMD64</acronym>)。</para>
 
-	  <para xml:lang="en">Examples of amd64 compatible processsors
-	    include: <trademark>AMD Athlon</trademark>64, <trademark>AMD Opteron</trademark>,
-	    multi-core <trademark class="registered">Intel</trademark> <trademark>Xeon</trademark>, and
-	    <trademark class="registered">Intel</trademark> <trademark>Core</trademark> 2 and later processors.</para>
+	  <para>與 amd64 相容的處理器包含：<trademark>AMD Athlon</trademark>64, <trademark>AMD Opteron</trademark>, 多核心 <trademark class="registered">Intel</trademark> <trademark>Xeon</trademark> 以及 <trademark class="registered">Intel</trademark> <trademark>Core</trademark> 2 與之後的處理器。</para>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
 	<term xml:lang="en">i386</term>
 	<listitem>
-	  <para xml:lang="en">This architecture is the 32-bit x86
-	    architecture.</para>
+	  <para>這個架構即為 32-bit x86 架構。</para>
 
-	  <para>幾乎所有有浮點運算裝置的 i386 相容處理器都有支援。所有 <trademark class="registered">Intel</trademark> 486 或是更新的處理器也有支援。</para>
+	  <para>幾乎所有有浮點運算單元的 i386 相容處理器都有支援。所有 <trademark class="registered">Intel</trademark> 486 或是更高階的處理器也有支援。</para>
 
-	  <para>如果 <acronym>CPU</acronym>，FreeBSD 會利用實體位址延伸(<acronym>PAE</acronym>)，有開啟 <acronym>PAE</acronym> 支援的核心會偵測超過 4 GB 的記憶體，讓他能被系統使用。 這項功能為 FreeBSD 的驅動程式與部分功能帶來一些限制，詳情請見 <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</para>
+	  <para>若 <acronym>CPU</acronym> 有支援實體位址延伸(<acronym>PAE</acronym>) 功能，FreeBSD 可以運用這項功能的所帶來優點。有開啟 <acronym>PAE</acronym> 支援的核心會偵測超過 4 GB 的記憶體，並讓這些記憶體能夠被系統使用。 這項功能會限制驅動程式以及 FreeBSD 可能使用的其他功能，詳情請見 <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</para>
 	</listitem>
       </varlistentry>
 
@@ -36594,7 +36559,7 @@ vfs.usermount: 0 -&gt; 1
     </sect2>
 
     <sect2 xml:id="zfs-zfs-compression">
-      <title>壓縮</title>
+      <title>壓縮 (Compression)</title>
 
       <para xml:lang="en"><acronym>ZFS</acronym> provides transparent compression.
 	Compressing data at the block level as it is written not only
@@ -36662,7 +36627,7 @@ mypool/compressed_dataset  logicalused       496G      -</screen>
     </sect2>
 
     <sect2 xml:id="zfs-zfs-deduplication">
-      <title>去重複資料</title>
+      <title>去重複 (Deduplication)</title>
 
       <para xml:lang="en">When enabled,
 	<link linkend="zfs-term-deduplication">deduplication</link>
@@ -37713,7 +37678,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  </row>
 
 	  <row>
-	    <entry xml:id="zfs-term-compression">壓縮</entry>
+	    <entry xml:id="zfs-term-compression">壓縮 (Compression)</entry>
 
 	    <entry xml:lang="en">Each dataset has a compression property, which
 	      defaults to off.  This property can be set to one of a
@@ -37806,7 +37771,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  </row>
 
 	  <row>
-	    <entry xml:id="zfs-term-deduplication">去重複資料</entry>
+	    <entry xml:id="zfs-term-deduplication">去重複 (Deduplication)</entry>
 
 	    <entry xml:lang="en">Checksums make it possible to detect duplicate
 	      blocks of data as they are written.  With deduplication,
