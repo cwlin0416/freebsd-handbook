@@ -1945,18 +1945,18 @@
 	<secondary>history</secondary>
       </indexterm>
 
-      <para>FreeBSD 計畫的想法是在 1993 年初所形成的， 那是源自於維護一組『非官方 386BSD 的修正工具』計劃的三個協調維護人 Nate Williams，Rod Grimes 和 Jordan Hubbard。</para>
+      <para>FreeBSD 計畫起源於 1993 年初， 那是源自於維護一組『非官方 386BSD 修正工具』計劃的最後三個協調人 Nate Williams，Rod Grimes 和 Jordan Hubbard。</para>
 
       <indexterm xml:lang="en"><primary>386BSD</primary></indexterm>
-      <para>最初的目標是做出一份 386BSD 綜合修正的快照 (Snapshot) 版本，以便修正當時一堆 patchkit 都不容易解決的問題。有些人可能還記得早期的計劃名稱叫做 386BSD 0.5 或 386BSD Interim 就是這個原因。</para>
+      <para>最初的目標是做出一份 386BSD 的中間版本的快照 (Snapshot) 來修正使用修正工具 (Patchkit) 機制無法解決的數個問題，也因此早期的計劃名稱叫做 386BSD 0.5 或 386BSD Interim 便是這個原因。</para>
 
       <indexterm xml:lang="en"><primary>Jolitz, Bill</primary></indexterm>
-      <para>386BSD 是 Bill Jolitz 的作業系統，在當時就已有約一年的分裂討論。 當該修正工具 (patchkit) 日漸龐雜得令人不舒服，我們無異議地同意要作一些事了， 並決定提供一份臨時性的 <quote>簡潔版 (cleanup)</quote> 來幫助 Bill。 然而，由於 Bill Jolitz 忽然決定取消其對該計劃的認可，且沒有明確指出未來的打算， 所以該計劃便突然面臨斷炊危機。</para>
+      <para>386BSD 是 Bill Jolitz 的作業系統，在當時就已經忍受了將近一年的忽視，隨著修正工具日漸龐大的令人不舒服，他們決定提供一份過渡性的 <quote>簡潔</quote> 快照來幫助 Bill。 然而，由於 Bill Jolitz 忽然決定取消其對該計劃的認可，且沒有明確指出未來的打算，所以該計劃便突然面臨中止。</para>
 
       <indexterm xml:lang="en"><primary>Greenman, David</primary></indexterm>
       <indexterm xml:lang="en"><primary>Walnut Creek CDROM</primary></indexterm>
 
-      <para>不久我們便決定在即使沒有 Bill 的支持下，讓該計劃仍然繼續下去， 最後我們採用 David Greenman 丟銅板決定的名字，也就是『FreeBSD』。 在詢問了當時的一些使用者意見之後，就開始決定了最初的目標， 當該計劃開始實施一切就要成真時，一切就變得更清楚了。 我跟 Walnut Creek CD-ROM 討論發行 CD-ROM 這樣子不便上網的人就可以用比較簡單的方式取得 FreeBSD。 Walnut Creek CD-ROM 不只贊成以 CD-ROM 來發行 FreeBSD 的想法，同時提供了一台機器以及快速的網際網路的頻寬。 如果不是 Walnut Creek CD-ROM 幾乎是空前的信任這個剛開始還是完全默默無聞的計劃， 那麼很可能 FreeBSD 不會如此快速的成長到今日這樣的規模。</para>
+      <para>這三人認為這個目標即始沒有 Bill 的支持仍有保留的價值，最後他們採用 David Greenman 丟銅板決定的名字，也就是 "FreeBSD"。在詢問了當時的一些使用者意見之後決定了最初的目標，隨著目標越來越明確便開始著手進行。Jordan 找了 Walnut Creek CD-ROM 商討，著眼於如何改進 FreeBSD 的發行通路，讓那些不便上網的人可簡單的取得。 Walnut Creek CD-ROM 不只贊成以 CD 來發行 FreeBSD 的想法，同時提供了一台機器以及快速的網路。 若不是 Walnut Creek CD-ROM 在那個時間上史無前例的信任，這個默默無名的計劃很可能不會成為現在的 FreeBSD 快速的成長到今日這樣的規模。</para>
 
       <indexterm xml:lang="en"><primary>4.3BSD-Lite</primary></indexterm>
       <indexterm xml:lang="en"><primary>Net/2</primary></indexterm>
@@ -1964,13 +1964,13 @@
       <indexterm xml:lang="en"><primary>386BSD</primary></indexterm>
       <indexterm xml:lang="en"><primary>Free Software
 	  Foundation</primary></indexterm>
-      <para>第一張以 CD-ROM (及網路) 發行的 FreeBSD 1.0 是在 1993 年十二月。 該版本是基於由 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>)以及許多來自於 386BSD 和自由軟體基金會的軟體。對於第一次發行而言還算成功， 我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。</para>
+      <para>第一張以 CD-ROM (及網路) 發行的 FreeBSD 1.0 是在 1993 年十二月。 該版本是以 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>) 以及許多來自於 386BSD 和自由軟體基金會的元件為基礎。對於第一次發行而言還算成功，我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。</para>
 
       <indexterm xml:lang="en"><primary>Novell</primary></indexterm>
       <indexterm xml:lang="en"><primary>U.C. Berkeley</primary></indexterm>
       <indexterm xml:lang="en"><primary>Net/2</primary></indexterm>
       <indexterm xml:lang="en"><primary>AT&amp;T</primary></indexterm>
-      <para>然而此後不久，另一個意外的風暴在 Novell 和 U.C. Berkeley 關於 Berkeley Net/2 磁帶之法律地位的訴訟確定之後形成。 U.C. Berkeley 接受大部份的 Net/2 的程式碼都是<quote>侵佔來的</quote>且是屬於 Novell 的財產 -- 事實上是當時不久前從 AT&amp;T 取得的。 Berkeley 得到的是 Novell 對於 4.4BSD-Lite 的<quote>祝福</quote>，最後當 4.4BSD-Lite 終於發行之後，便不再是侵佔行為。 而所有現有 Net/2 使用者都被強烈建議更換新版本，這包括了 FreeBSD。 於是，我們被要求於 1994 年 6 月底前停止散佈基於 Net/2 的產品。在此前提之下，本計劃被允許在期限以前作最後一次發行，也就是 FreeBSD 1.1.5.1。</para>
+      <para>然而此後不久，另一個意外的風暴在 Novell 與 U.C. Berkeley 關於 Berkeley Net/2 磁帶之法律地位的訴訟確定之後形成。 U.C. Berkeley 承認大部份的 Net/2 的程式碼都是<quote>侵佔來的</quote>且是屬於 Novell 的財產 -- 事實上是當時不久前從 AT&amp;T 取得的。 Berkeley 得到的是 Novell 對於 4.4BSD-Lite 的<quote>祝福</quote>，最後當 4.4BSD-Lite 終於發行之後，便不再是侵佔行為。 而所有現有 Net/2 使用者都被強烈建議更換新版本，這包括了 FreeBSD。 於是，我們被要求於 1994 年 6 月底前停止散佈以 Net/2 為基礎的產品。在此前提之下，本計劃被允許在期限以前作最後一次發行，也就是 FreeBSD 1.1.5.1。</para>
 
       <para>FreeBSD 便開始了這宛如『重新發明輪子』的艱鉅工作 -- 從全新的且不完整的 4.4BSD-Lite 重新整合。 這個 <quote>Lite</quote> 版本是不完整的，因為 Berkeley 的 CSRG 已經刪除了大量在建立一個可以開機執行的系統所需要的程式碼 (基於若干法律上的要求)，且該版本在 Intel 平台的移植是非常不完整的。 直到 1994 年 11 月本計劃才完成了這個轉移， 同時在該年 12 月底以 CD-ROM 以及網路的形式發行了 FreeBSD 2.0。 雖然該份版本在當時有點匆促粗糙，但仍是富有意義的成功。 隨之於 1995 年 6 月又發行了更容易安裝，更好的 FreeBSD 2.0.5。</para>
 
@@ -2000,7 +2000,7 @@
       <indexterm><primary>GNU 通用公共授權條款 (GPL)</primary></indexterm>
       <indexterm><primary>GNU 較寬鬆通用公共授權條款 (LGPL)</primary></indexterm>
       <indexterm><primary>BSD 版權</primary></indexterm>
-      <para>我們程式碼樹中，有若干是以 GNU 通用公共授權條款 (GPL) 或者 GNU Lesser General Public License (LGPL) 發佈的那些程式碼帶有少許的附加限制，還好只是強制性的要求開放程式碼而不是別的。 由於使用 GPL 的軟體在商業用途上會增加若干複雜性，因此，如果可以選擇的話， 我們會比較喜歡使用限制相對更寬鬆的 BSD 版權來發佈軟體。</para>
+      <para>我們程式碼樹中，有若干是以 GNU 通用公共授權條款 (GPL) 或者 GNU 較寬鬆通用公共授權條款 (LGPL) 發佈的那些程式碼帶有少許的附加限制，還好只是強制性的要求開放程式碼而不是別的。 由於使用 GPL 的軟體在商業用途上會增加若干複雜性，因此，如果可以選擇的話， 我們會比較喜歡使用限制相對更寬鬆的 BSD 版權來發佈軟體。</para>
     </sect2>
 
     <sect2 xml:id="development">
@@ -2092,38 +2092,13 @@
     <sect2 xml:id="third-party-programs">
       <title>第三方程式</title>
 
-      <para xml:lang="en">In addition to the base distributions, FreeBSD offers a
-	ported software collection with thousands of commonly
-	sought-after programs.  At the time of this writing, there
-	were over 24,000 ports!  The list of ports ranges from
-	http servers, to games, languages, editors, and almost
-	everything in between.  The entire Ports Collection requires
-	approximately 500 MB.  To compile a port, you simply
-	change to the directory of the program you wish to install,
-	type <command>make install</command>, and let the system do
-	the rest.  The full original distribution for each port you
-	build is retrieved dynamically so you need only enough disk
-	space to build the ports you want.  Almost every port is also
-	provided as a pre-compiled <quote>package</quote>, which can
-	be installed with a simple command
-	(<command>pkg install</command>) by those who do not wish to
-	compile their own ports from source.  More information on
-	packages and ports can be found in
-	<xref linkend="ports"/>.</para>
+      <para>除了基礎發行版之外，FreeBSD 提供了擁有上千個常用的程式的移植軟體的套件集，在搛寫本文的同時，已有超過 24,000 個 Port! Port 的範圍從 HTTP 伺服器到遊戲、語系、編輯器，幾乎所有東西都在裡面。完整的 Ports 套件集需要將近 500 MB。要編譯一個 Port 您只需要切換目錄到您想安裝的程式目錄，然後輸入 <command>make install</command>，接著系統便會處理剩下的動作。您編譯的每個 Port 完整原始發行版內容是動態下載的，所以您只需要有足夠的磁碟空間來編譯您想要的 Ports。幾乎所有 Ports 都提供以預先編譯好的<quote>套件</quote>，您可以透過簡單的指令來安裝 (<command>pkg install</command>)，提供那些不想要自行從原始碼編譯的人使用。更多有關套件與 Ports 的資訊可於 <xref linkend="ports"/> 取得。</para>
     </sect2>
 
     <sect2>
       <title>其他文件</title>
 
-      <para xml:lang="en">All recent FreeBSD versions provide an option in the
-	installer (either <citerefentry><refentrytitle>sysinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry> or <citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry>) to
-	install additional documentation under
-	<filename>/usr/local/share/doc/freebsd</filename> during the
-	initial system setup.  Documentation may also be installed at
-	any later time using packages as described in
-	<xref linkend="doc-ports-install-package"/>.  You may view the
-	locally installed manuals with any HTML capable browser using
-	the following URLs:</para>
+      <para>所有最近的 FreeBSD 版本在安裝程式 (不是 <citerefentry><refentrytitle>sysinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry> 就是 <citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry>) 都有提供一個選項在初始系統安裝時可安裝額外的說明文件到 <filename>/usr/local/share/doc/freebsd</filename>。說明文件也可在往後使用套件安裝，詳細說明於 <xref linkend="doc-ports-install-package"/>。您可以使用任何支援 HTML 的瀏覽器進入下列 URL 檢視已安裝在本機的操作手冊：</para>
 
       <variablelist>
 	<varlistentry>
@@ -2505,15 +2480,7 @@ commit your changes?</programlisting>
       <para>在這個警告訊息之前可以隨時中止安裝，若有任何設定錯誤的疑慮，只需在此時關閉電腦，將不會對系統磁碟做任何更改。</para>
     </important>
 
-    <para xml:lang="en">This section describes how to boot the system from the
-      installation media which was prepared using the instructions in
-      <xref linkend="bsdinstall-installation-media"/>.  When using a
-      bootable USB stick, plug in the <acronym>USB</acronym> stick
-      before turning on the computer.  When booting from
-      <acronym>CD</acronym> or <acronym>DVD</acronym>, turn on the
-      computer and insert the media at the first opportunity.  How to
-      configure the system to boot from the inserted media depends
-      upon the architecture.</para>
+    <para>本節將介紹如何使用根據 <xref linkend="bsdinstall-installation-media"/> 指示所準備的安裝媒體來開機。要使用可開機的 USB，請在開啟電腦前插入 <acronym>USB</acronym> 隨身碟。要使用 <acronym>CD</acronym> 或<acronym>DVD</acronym>，則可開啟電腦後在第一時間插入媒體。如何設定系統使用插入的媒體開機依不同的系統架構會有所不同。</para>
 
     <sect2 xml:id="bsdinstall-starting-i386">
       <title>在 <trademark>i386</trademark> 及 amd64 開機</title>
