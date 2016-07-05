@@ -750,7 +750,7 @@
     </listitem>
 
     <listitem>
-      <para><xref linkend="security"/> 增加了虛擬私人網路(VPN)、檔案系統的存取控制(ACL)，以及安全報告。</para>
+      <para><xref linkend="security"/> 增加了虛擬私人網路 (VPN)、檔案系統的存取控制 (ACL)，以及安全報告。</para>
     </listitem>
 
     <listitem>
@@ -758,7 +758,7 @@
     </listitem>
 
     <listitem>
-      <para><xref linkend="disks"/> 新增了像是：USB 隨身碟、檔案系統快照(snapshot)、檔案系統配額(quota) 、檔案及網路的備援檔案系統、以及如何對硬碟分割區作加密等詳解。</para>
+      <para><xref linkend="disks"/> 新增了像是：USB 隨身碟、檔案系統快照 (Snapshot)、檔案系統配額 (Quota) 、檔案及網路的備援檔案系統、以及如何對硬碟分割區作加密等詳解。</para>
     </listitem>
 
     <listitem>
@@ -908,10 +908,7 @@
       <term><emphasis><xref linkend="x11"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes the X Window System in general and using X11
-	  on FreeBSD in particular.  Also describes common desktop
-	  environments such as <application>KDE</application> and
-	  <application>GNOME</application>.</para>
+	<para>介紹 X Windows 系統概要及在 FreeBSD 上使用 X11，同時也會介紹常用的桌面環境如 <application>KDE</application> 與 <application>GNOME</application>。</para>
       </listitem>
     </varlistentry>
 
@@ -921,18 +918,14 @@
       <term><emphasis><xref linkend="desktop"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Lists some common desktop applications, such as web
-	  browsers and productivity suites, and describes how to
-	  install them on FreeBSD.</para>
+	<para>列出一些常用的桌面應用程式，例如：網頁瀏覽器、辦工工具並介紹如何安裝這些應用程式到 FreeBSD。</para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
       <term><emphasis><xref linkend="multimedia"/></emphasis></term>
       <listitem>
-	<para xml:lang="en">Shows how to set up sound and video playback support
-	  for your system.  Also describes some sample audio and video
-	  applications.</para>
+	<para>示範如何在您的系統設定音效及影像播放支援，同時會介紹幾個代表性的音訊及視訊應用程式。</para>
       </listitem>
     </varlistentry>
 
@@ -940,9 +933,7 @@
       <term><emphasis><xref linkend="kernelconfig"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Explains why you might need to configure a new kernel
-	  and provides detailed instructions for configuring,
-	  building, and installing a custom kernel.</para>
+	<para>說明為何需要設定新的核心並會提供設定、編譯與安裝的詳細操作說明。</para>
       </listitem>
     </varlistentry>
 
@@ -950,9 +941,7 @@
       <term><emphasis><xref linkend="printing"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes managing printers on FreeBSD, including
-	  information about banner pages, printer accounting, and
-	  initial setup.</para>
+	<para>介紹如何在 FreeBSD 管理印表機，包含橫幅頁面、列印帳務以及初始設定等資訊。</para>
       </listitem>
     </varlistentry>
 
@@ -960,11 +949,7 @@
       <term><emphasis><xref linkend="linuxemu"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes the <trademark class="registered">Linux</trademark> compatibility features of FreeBSD.
-	  Also provides detailed installation instructions for many
-	  popular <trademark class="registered">Linux</trademark> applications such as
-	  <application><trademark class="registered">Oracle</trademark></application> and
-	  <application><trademark class="registered">Mathematica</trademark></application>.</para>
+	<para>介紹 FreeBSD 的 <trademark class="registered">Linux</trademark> 相容性功能，同時提供許多熱門的 <trademark class="registered">Linux</trademark> 應用程式詳細的安裝操作說明，例如 <application><trademark class="registered">Oracle</trademark></application> 及 <application><trademark class="registered">Mathematica</trademark></application>。</para>
       </listitem>
     </varlistentry>
 
@@ -974,10 +959,7 @@
       <term><emphasis><xref linkend="config-tuning"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes the parameters available for system
-	  administrators to tune a FreeBSD system for optimum
-	  performance.  Also describes the various configuration files
-	  used in FreeBSD and where to find them.</para>
+	<para>介紹可供系統管理者用來調校 FreeBSD 系統的可用參數來最佳化效率，同時也介紹 FreeBSD 用到的各種設定檔以及到何處尋找這些設定檔。</para>
       </listitem>
     </varlistentry>
 
@@ -985,8 +967,7 @@
       <term><emphasis><xref linkend="boot"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes the FreeBSD boot process and explains how to
-	  control this process with configuration options.</para>
+	<para>介紹 FreeBSD 開機流程並說明如何使用設定選項控制開機流程。</para>
       </listitem>
     </varlistentry>
 
@@ -994,9 +975,7 @@
       <term><emphasis><xref linkend="security"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes many different tools available to help keep
-	  your FreeBSD system secure, including Kerberos, IPsec and
-	  OpenSSH.</para>
+	<para>介紹許多可讓您的  FreeBSD 系統更安全的各種工具，包含 Kerberos, IPsec 及 OpenSSH。</para>
       </listitem>
     </varlistentry>
 
@@ -1004,8 +983,7 @@
       <term><emphasis><xref linkend="jails"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes the jails framework, and the improvements of
-	  jails over the traditional chroot support of FreeBSD.</para>
+	<para>介紹 Jail Framework，以及 Jail 改進那些 FreeBSD 傳統 chroot 不足的地方。</para>
       </listitem>
     </varlistentry>
 
@@ -1013,9 +991,7 @@
       <term><emphasis><xref linkend="mac"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Explains what Mandatory Access Control (MAC) is and
-	  how this mechanism can be used to secure a FreeBSD
-	  system.</para>
+	<para>說明什麼是強制存取控制 (Mandatory Access Control, MAC) 及這個機制如何用來確保 FreeBSD 系統的安全。</para>
       </listitem>
     </varlistentry>
 
@@ -1023,9 +999,7 @@
       <term><emphasis><xref linkend="audit"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes what FreeBSD Event Auditing is, how it can be
-	  installed, configured, and how audit trails can be inspected
-	  or monitored.</para>
+	<para>介紹什麼事 FreeBSD 事件稽查，如何安裝與設定，以及如何檢查與監控稽查線索。</para>
       </listitem>
     </varlistentry>
 
@@ -1033,10 +1007,7 @@
       <term><emphasis><xref linkend="disks"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes how to manage storage media and filesystems
-	  with FreeBSD.  This includes physical disks, RAID arrays,
-	  optical and tape media, memory-backed disks, and network
-	  filesystems.</para>
+	<para>介紹如何在 FreeBSD 管理儲存媒體及檔案系統，這包含了實體磁碟、RAID 陣列、光碟與磁帶媒體、記憶體為基礎的磁碟以及網路檔案系統。</para>
       </listitem>
     </varlistentry>
 
@@ -1044,8 +1015,7 @@
       <term><emphasis><xref linkend="geom"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes what the GEOM framework in FreeBSD is and how
-	  to configure various supported RAID levels.</para>
+	<para>介紹在 FreeBSD 中的 GEOM Framework 是什麼，以及如何設定各種支援的 RAID 階層。</para>
       </listitem>
     </varlistentry>
 
@@ -1053,8 +1023,7 @@
       <term><emphasis><xref linkend="filesystems"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Examines support of non-native file systems in FreeBSD,
-	  like the Z File System from <trademark>Sun</trademark>.</para>
+	<para>查看 FreeBSD 還支援那些非原生檔案系統，如 <trademark>Sun</trademark> 的 Z 檔案系統。</para>
       </listitem>
     </varlistentry>
 
@@ -1062,8 +1031,7 @@
       <term><emphasis><xref linkend="virtualization"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes what virtualization systems offer, and how
-	  they can be used with FreeBSD.</para>
+	<para>介紹虛擬化系統提供了那些功能，以及如何在 FreeBSD 上使用。</para>
       </listitem>
     </varlistentry>
 
@@ -1071,9 +1039,7 @@
       <term><emphasis><xref linkend="l10n"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes how to use FreeBSD in languages other than
-	  English.  Covers both system and application level
-	  localization.</para>
+	<para>介紹如何在 FreeBSD 使用非英文的語言，這涵蓋了系統及應用層的在地化。</para>
       </listitem>
     </varlistentry>
 
@@ -1081,12 +1047,7 @@
       <term><emphasis><xref linkend="updating-upgrading"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Explains the differences between FreeBSD-STABLE,
-	  FreeBSD-CURRENT, and FreeBSD releases.  Describes which users
-	  would benefit from tracking a development system and
-	  outlines that process.  Covers the methods users may take
-	  to update their system to the latest security
-	  release.</para>
+	<para>說明 FreeBSD-STABLE、FreeBSD-CURRENT 以及 FreeBSD 發佈版之間的差異，並介紹那些使用者適何追蹤開發系統以及程序的概述，這涵蓋了使用者更新系統到最新安全性發佈版本的方法。</para>
       </listitem>
     </varlistentry>
 
@@ -1094,10 +1055,7 @@
       <term><emphasis><xref linkend="dtrace"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes how to configure and use the DTrace tool
-	  from <trademark>Sun</trademark> in FreeBSD.  Dynamic tracing can help locate
-	  performance issues, by performing real time system
-	  analysis.</para>
+	<para>介紹如何在 FreeBSD 設定及使用 <trademark>Sun</trademark> 的 DTrace 工具，動態追蹤可以透過執行真實時間系統分析來協助定位效能問題。</para>
       </listitem>
     </varlistentry>
 
@@ -1107,9 +1065,7 @@
       <term><emphasis><xref linkend="serialcomms"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Explains how to connect terminals and modems to your
-	  FreeBSD system for both dial in and dial out
-	  connections.</para>
+	<para>介紹如何使用撥入及撥出連線到您的 FreeBSD 系統的終端機與數據機。</para>
       </listitem>
     </varlistentry>
 
@@ -1117,8 +1073,7 @@
       <term><emphasis><xref linkend="ppp-and-slip"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes how to use PPP to connect to remote systems
-	  with FreeBSD.</para>
+	<para>介紹如何在 FreeBSD 使用 PPP 來連線遠端的系統。</para>
       </listitem>
     </varlistentry>
 
@@ -1126,10 +1081,7 @@
       <term><emphasis><xref linkend="mail"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Explains the different components of an email server
-	  and dives into simple configuration topics for the most
-	  popular mail server software:
-	  <application>sendmail</application>.</para>
+	<para>說明組成電子郵件伺服器的各種元件，並深入說明如何設定最熱門的郵件伺服器軟體：<application>sendmail</application>。</para>
       </listitem>
     </varlistentry>
 
@@ -1137,10 +1089,7 @@
       <term><emphasis><xref linkend="network-servers"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Provides detailed instructions and example configuration
-	  files to set up your FreeBSD machine as a network filesystem
-	  server, domain name server, network information system
-	  server, or time synchronization server.</para>
+	<para>提供詳細的操作說明與範例設定檔，讓您可安裝您的 FreeBSD 機器為網路檔案伺服器、網域名稱伺服器、網路資訊系統伺服器或時間同步伺服器。</para>
       </listitem>
     </varlistentry>
 
@@ -1148,9 +1097,7 @@
       <term><emphasis><xref linkend="firewalls"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Explains the philosophy behind software-based firewalls
-	  and provides detailed information about the configuration
-	  of the different firewalls available for FreeBSD.</para>
+	<para>說明軟體為基礎的防火牆背後的理念，並提供可用於 FreeBSD 中不同的防火牆設定的詳細資訊。</para>
       </listitem>
     </varlistentry>
 
@@ -1158,10 +1105,7 @@
       <term><emphasis><xref linkend="advanced-networking"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes many networking topics, including sharing an
-	  Internet connection with other computers on your LAN,
-	  advanced routing topics, wireless networking, <trademark class="registered">Bluetooth</trademark>,
-	  ATM, IPv6, and much more.</para>
+	<para>介紹許多網路主題，包含在您的區域網路 (LAN) 分享網際網路連線給其他電腦、進階路由主題、無線網路、<trademark class="registered">Bluetooth</trademark>、ATM、IPv6 以及更多相關主題。</para>
       </listitem>
     </varlistentry>
 
@@ -1171,9 +1115,7 @@
       <term><emphasis><xref linkend="mirrors"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Lists different sources for obtaining FreeBSD media on
-	  CDROM or DVD as well as different sites on the Internet
-	  that allow you to download and install FreeBSD.</para>
+	<para>列出取得 FreeBSD CDROM 或 DVD 媒體的各種來源，以及在網際網路上的各種網站，讓您可以下載並安裝 FreeBSD。</para>
       </listitem>
     </varlistentry>
 
@@ -1181,10 +1123,7 @@
       <term><emphasis><xref linkend="bibliography"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">This book touches on many different subjects that may
-	  leave you hungry for a more detailed explanation.  The
-	  bibliography lists many excellent books that are referenced
-	  in the text.</para>
+	<para>本書觸及許多不同主題，可能會讓您想更深入的了解，參考書目列出了在文中引用的許多優秀書籍。</para>
       </listitem>
     </varlistentry>
 
@@ -1192,9 +1131,7 @@
       <term><emphasis><xref linkend="eresources"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Describes the many forums available for FreeBSD users to
-	  post questions and engage in technical conversations about
-	  FreeBSD.</para>
+	<para>介紹了可讓 FreeBSD 使用者提出問題以及參與有關 FreeBSD 技術會談的許多論壇。</para>
       </listitem>
     </varlistentry>
 
@@ -1202,8 +1139,7 @@
       <term><emphasis><xref linkend="pgpkeys"/></emphasis></term>
 
       <listitem>
-	<para xml:lang="en">Lists the PGP fingerprints of several FreeBSD
-	  Developers.</para>
+	<para>列出了數個 FreeBSD 開發人員的 PGP 指紋。</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1219,7 +1155,7 @@
       <term><emphasis>斜體字</emphasis></term>
 
       <listitem>
-	<para><emphasis>斜體字</emphasis>用於：檔名、目錄、網址(URL)、 強調語氣、以及第一次提及的技術詞彙。</para>
+	<para><emphasis>斜體字</emphasis>用於：檔名、目錄、網址 (URL)、 強調語氣、以及第一次提及的技術詞彙。</para>
       </listitem>
     </varlistentry>
 
@@ -1253,7 +1189,7 @@
 
   <para>是說，一起按 <keycap>Ctrl</keycap>、 <keycap>Alt</keycap> 以及 <keycap>Del</keycap> 鍵。</para>
 
-  <para>若要逐一按鍵，那麼會以逗號(,)來表示，像是：</para>
+  <para>若要逐一按鍵，那麼會以逗號 (,) 來表示，像是：</para>
 
   <para xml:lang="en">
     <keycombo action="simul">
@@ -1269,7 +1205,7 @@
 <!-- How to type in key stokes, etc.. -->
   <bridgehead xml:id="preface-conv-examples" renderas="sect2">範例</bridgehead>
 
-  <para>範例以  <filename>C:\&gt;</filename> 為開頭代表 <trademark class="registered">MS-DOS</trademark> 的指令。 若沒有特殊情況的話，這些指令應該是在 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 環境的 <quote>命令提示字元(Command Prompt)</quote> 視窗內執行。</para>
+  <para>範例以  <filename>C:\&gt;</filename> 為開頭代表 <trademark class="registered">MS-DOS</trademark> 的指令。 若沒有特殊情況的話，這些指令應該是在 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 環境的 <quote>命令提示字元 (Command Prompt)</quote> 視窗內執行。</para>
 
   <screen xml:lang="en"><prompt>E:\&gt;</prompt> <userinput>tools\fdimage floppies\kern.flp A:</userinput></screen>
 
@@ -1379,7 +1315,7 @@
 
     <indexterm xml:lang="en"><primary>4.4BSD-Lite</primary></indexterm>
 
-    <para>FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class="registered">Itanium</trademark>), AMD64, Sun <trademark class="registered">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend="history">FreeBSD 歷史</link>， 對於 FreeBSD 的最新版本介紹，請看 <link xlink:href="@@URL_RELPREFIX@@/releases">最新的發行版本</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、金費)， 請看 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html">如何對 FreeBSD 有貢獻</link>。</para>
+    <para>FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class="registered">Itanium</trademark>), AMD64, Sun <trademark class="registered">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend="history">FreeBSD 歷史</link>， 對於 FreeBSD 的最新版本介紹，請看 <link xlink:href="@@URL_RELPREFIX@@/releases">最新的發行版本</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、經費)， 請看 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html">如何對 FreeBSD 有貢獻</link>。</para>
 
     <sect2 xml:id="os-overview">
       <title>FreeBSD 能做什麼？</title>
@@ -1400,9 +1336,9 @@
 	</listitem>
 
 	<listitem>
-	  <para>好用的 <emphasis>TCP/IP 網路功能</emphasis><indexterm>
+	  <para>強大的 <emphasis>TCP/IP 網路</emphasis><indexterm>
 	      <primary>TCP/IP networking</primary>
-	    </indexterm> 可支援許多業界標準，如：SCTP、DHCP、NFS、NIS、PPP、SLIP、IPSec、IPv6 的支援，也就是說 FreeBSD 可以容易地跟其他作業系統透過網路共同運作，或是當作企業的伺服器用途 ，例如提供遠端檔案共享(NFS)及電子郵件等服務， 或是讓您的企業連上網際網路並提供 WWW、FTP、路由及防火牆 (安全性) 等必備服務。</para>
+	    </indexterm> 功能可支援許多業界標準，如：SCTP、DHCP、NFS、NIS、PPP、SLIP、IPSec、IPv6 的支援，也就是說 FreeBSD 可以容易地跟其他作業系統透過網路共同運作，或是當作企業的伺服器用途 ，例如提供遠端檔案共享 (NFS) 及電子郵件等服務， 或是讓您的企業連上網際網路並提供 WWW、FTP、路由及防火牆 (安全性) 等必備服務。</para>
 	</listitem>
 
 	<listitem>
@@ -1439,7 +1375,7 @@
 	</listitem>
 
 	<listitem>
-	  <para>在網路上有數以千計 <emphasis>易於移植</emphasis> 的應用程式。FreeBSD 的原始程式碼與許多常見的商業版 <trademark class="registered">UNIX</trademark> 系統都相容， 所以大部分的程式都只需要很少的修改(或根本不用修改) ，就可以編譯執行。</para>
+	  <para>在網路上有數以千計 <emphasis>易於移植</emphasis> 的應用程式。FreeBSD 的原始程式碼與許多常見的商業版 <trademark class="registered">UNIX</trademark> 系統都相容， 所以大部分的程式都只需要很少的修改 (或根本不用修改) ，就可以編譯執行。</para>
 	</listitem>
 	<listitem>
 	  <para>需要時才置換的 <emphasis>虛擬記憶體</emphasis><indexterm>
@@ -1448,7 +1384,7 @@
 	</listitem>
 
 	<listitem>
-	  <para>支援 CPU 的<emphasis>對稱多工處理(SMP)</emphasis><indexterm>
+	  <para>支援 CPU 的<emphasis>對稱多工處理 (SMP)</emphasis><indexterm>
 	      <primary>Symmetric Multi-Processing
 		(SMP)</primary>
 	    </indexterm>：可以支援多 CPU 的電腦系統。</para>
@@ -1479,7 +1415,7 @@
 	</listitem>
       </itemizedlist>
 
-      <para>FreeBSD 系統乃是基於美國加州大學柏克萊分校的電腦系統研究群 (Computer Systems Research Group 也就是 CSRG) 所發行的 4.4BSD-Lite<indexterm>
+      <para>FreeBSD 系統乃是基於美國加州大學柏克萊分校的電腦系統研究組 (Computer Systems Research Group 也就是 CSRG) 所發行的 4.4BSD-Lite<indexterm>
 	  <primary>4.4BSD-Lite</primary>
 	</indexterm>，以及基於 BSD 系統開發的優良傳統。 除了由 CSRG 所提供的高品質的成果， 為了提供可處理真正具負荷的工作， FreeBSD 計劃也投入了數千小時以上的細部調整， 以能獲得最好的執行效率以及系統的穩定度。 正當許多商業上的巨人正努力地希望能提供效能及穩定時，FreeBSD 已經具備這樣的特質，並具有其他地方沒有的尖端功能。</para>
 
@@ -1489,7 +1425,7 @@
 
       <itemizedlist>
 	<listitem>
-	  <para><emphasis>網路服務：</emphasis> FreeBSD 內建強勁的網路功能使它成為網路服務(如下例)的理想平台：</para>
+	  <para><emphasis>網際網路服務：</emphasis> FreeBSD 內建強勁的網路功能使它成為網路服務 (如下例) 的理想平台：</para>
 
 	  <itemizedlist>
 	    <listitem>
@@ -1576,10 +1512,7 @@
     <sect2 xml:id="introduction-nutshell-users">
       <title>誰在用 FreeBSD？</title>
 
-      <indexterm xml:lang="en">
-	<primary>users</primary>
-	<secondary>large sites running FreeBSD</secondary>
-      </indexterm>
+      <indexterm><primary>使用者</primary> <secondary>執行 FreeBSD 的大型站台</secondary></indexterm>
 
       <para>FreeBSD 先進的功能、成熟的安全性、可預測的發佈週期以及自由的授權條款，讓 FreeBSD 已經被用來做為建立許多商業、開源應用、裝置以及產品的平台，有許多世界上最大的資訊公司使用 FreeBSD：</para>
 
@@ -2015,10 +1948,10 @@
       <para>FreeBSD 計畫的想法是在 1993 年初所形成的， 那是源自於維護一組『非官方 386BSD 的修正工具』計劃的三個協調維護人 Nate Williams，Rod Grimes 和 Jordan Hubbard。</para>
 
       <indexterm xml:lang="en"><primary>386BSD</primary></indexterm>
-      <para>最初的目標是做出一份 386BSD 綜合修正的 snapshot 版，以便修正當時一堆 patchkit 都不容易解決的問題。有些人可能還記得早期的計劃名稱叫做 386BSD 0.5 或 386BSD Interim 就是這個原因。</para>
+      <para>最初的目標是做出一份 386BSD 綜合修正的快照 (Snapshot) 版本，以便修正當時一堆 patchkit 都不容易解決的問題。有些人可能還記得早期的計劃名稱叫做 386BSD 0.5 或 386BSD Interim 就是這個原因。</para>
 
       <indexterm xml:lang="en"><primary>Jolitz, Bill</primary></indexterm>
-      <para>386BSD 是 Bill Jolitz 的作業系統，在當時就已有約一年的分裂討論。 當該修正工具 (patchkit) 日漸龐雜得令人不舒服，我們無異議地同意要作一些事了， 並決定提供一份臨時性的 <quote>淨化版(cleanup)</quote> 來幫助 Bill。 然而，由於 Bill Jolitz 忽然決定取消其對該計劃的認可，且沒有明確指出未來的打算， 所以該計劃便突然面臨斷炊危機。</para>
+      <para>386BSD 是 Bill Jolitz 的作業系統，在當時就已有約一年的分裂討論。 當該修正工具 (patchkit) 日漸龐雜得令人不舒服，我們無異議地同意要作一些事了， 並決定提供一份臨時性的 <quote>簡潔版 (cleanup)</quote> 來幫助 Bill。 然而，由於 Bill Jolitz 忽然決定取消其對該計劃的認可，且沒有明確指出未來的打算， 所以該計劃便突然面臨斷炊危機。</para>
 
       <indexterm xml:lang="en"><primary>Greenman, David</primary></indexterm>
       <indexterm xml:lang="en"><primary>Walnut Creek CDROM</primary></indexterm>
@@ -2031,7 +1964,7 @@
       <indexterm xml:lang="en"><primary>386BSD</primary></indexterm>
       <indexterm xml:lang="en"><primary>Free Software
 	  Foundation</primary></indexterm>
-      <para>第一張以 CD-ROM (及網路)發行的 FreeBSD 1.0 是在 1993 年十二月。 該版本是基於由 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>)以及許多來自於 386BSD 和自由軟體基金會的軟體。對於第一次發行而言還算成功， 我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。</para>
+      <para>第一張以 CD-ROM (及網路) 發行的 FreeBSD 1.0 是在 1993 年十二月。 該版本是基於由 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>)以及許多來自於 386BSD 和自由軟體基金會的軟體。對於第一次發行而言還算成功， 我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。</para>
 
       <indexterm xml:lang="en"><primary>Novell</primary></indexterm>
       <indexterm xml:lang="en"><primary>U.C. Berkeley</primary></indexterm>
@@ -2043,7 +1976,7 @@
 
       <para>自那時以來，FreeBSD 在每一次對先前版本改進穩定性、速度及功能時便會發佈一個新的發佈版本。</para>
 
-      <para>目前，長期的開發計畫繼續在 10.X-CURRENT (trunk) 分支中進行，而 10.X 的 snapshot 版本可以在 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/snapshots/">Snapshot 伺服器</link> 取得。</para>
+      <para>目前，長期的開發計畫繼續在 10.X-CURRENT (trunk) 分支中進行，而 10.X 的快照 (Snapshot) 版本可以在 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/snapshots/">快照伺服器</link> 取得。</para>
     </sect2>
 
     <sect2 xml:id="goals">
@@ -2061,20 +1994,13 @@
 	</authorgroup>
       </info>
 
-      <indexterm xml:lang="en">
-	<primary>FreeBSD Project</primary>
-	<secondary>goals</secondary>
-      </indexterm>
+      <indexterm><primary>FreeBSD 計劃</primary> <secondary>目標</secondary></indexterm>
       <para>FreeBSD 計劃的目標在於提供可作任意用途的軟體而不附帶任何限制條文。 我們之中許多人對程式碼 (以及計畫本身) 都有非常大的投入， 因此，當然不介意偶爾有一些資金上的補償，但我們並沒打算堅決地要求得到這類資助。 我們認為我們的首要<quote>使命</quote>是為任何人提供程式碼， 不管他們打算用這些程式碼做什麼， 因為這樣程式碼將能夠被更廣泛地使用，從而發揮其價值。 我認為這是自由軟體最基本的，同時也是我們所倡導的一個目標。</para>
 
-      <indexterm xml:lang="en">
-	<primary>GNU General Public License (GPL)</primary>
-      </indexterm>
-      <indexterm xml:lang="en">
-	<primary>GNU Lesser General Public License (LGPL)</primary>
-      </indexterm>
-      <indexterm xml:lang="en"><primary>BSD Copyright</primary></indexterm>
-      <para>我們程式碼樹中，有若干是以 GNU General Public License (GPL) 或者 Library General Public License (LGPL) 發佈的那些程式碼帶有少許的附加限制，還好只是強制性的要求開放程式碼而不是別的。 由於使用 GPL 的軟體在商業用途上會增加若干複雜性，因此，如果可以選擇的話， 我們會比較喜歡使用限制相對更寬鬆的 BSD 版權來發佈軟體。</para>
+      <indexterm><primary>GNU 通用公共授權條款 (GPL)</primary></indexterm>
+      <indexterm><primary>GNU 較寬鬆通用公共授權條款 (LGPL)</primary></indexterm>
+      <indexterm><primary>BSD 版權</primary></indexterm>
+      <para>我們程式碼樹中，有若干是以 GNU 通用公共授權條款 (GPL) 或者 GNU Lesser General Public License (LGPL) 發佈的那些程式碼帶有少許的附加限制，還好只是強制性的要求開放程式碼而不是別的。 由於使用 GPL 的軟體在商業用途上會增加若干複雜性，因此，如果可以選擇的話， 我們會比較喜歡使用限制相對更寬鬆的 BSD 版權來發佈軟體。</para>
     </sect2>
 
     <sect2 xml:id="development">
@@ -2092,10 +2018,7 @@
 	</authorgroup>
       </info>
 
-      <indexterm xml:lang="en">
-	<primary>FreeBSD Project</primary>
-	<secondary>development model</secondary>
-      </indexterm>
+      <indexterm><primary>FreeBSD 專案</primary> <secondary>開發模式</secondary></indexterm>
 
       <para>FreeBSD 的開發是一個非常開放且具彈性的過程，就像從 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributors/article.html">貢獻者名單</link> 所看到的，是由全世界成千上萬的貢獻者發展起來的。 FreeBSD 的開發基礎架構允許數以百計的開發者透過網際網路協同工作。 我們也經常關注著那些對我們的計畫感興趣的新開發者和新的創意， 那些有興趣更進一步參與計劃的人只需要在 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">FreeBSD 技術討論郵遞論壇</link> 連繫我們。 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-announce">FreeBSD 公告郵遞論壇</link> 對那些希望了解我們進度的人也是相當有用的。</para>
 
@@ -2128,7 +2051,7 @@
 	  <term>提交者名單<anchor xml:id="development-committers"/></term>
 
 	  <listitem>
-	    <para>所謂的 <firstterm>提交者(committers)</firstterm> 指的是對 Subversion 原始碼樹有 <emphasis>寫入</emphasis> 權限的人， 並且被授予修改 FreeBSD 原始碼的權限。 (<quote>committer</quote> 一詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 任何人都可以回報問題到 <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>，在回報問題之前，可以使用 FreeBSD 郵遞清單、IRC 頻道或論壇來確認問題真的是一個錯誤 (Bug)。</para>
+	    <para>所謂的 <firstterm>提交者 (Committers)</firstterm> 指的是對 Subversion 原始碼樹有 <emphasis>寫入</emphasis> 權限的人， 並且被授予修改 FreeBSD 原始碼的權限。 (<quote>committer</quote> 一詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 任何人都可以回報問題到 <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>，在回報問題之前，可以使用 FreeBSD 郵遞清單、IRC 頻道或論壇來確認問題真的是一個錯誤 (Bug)。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -2293,7 +2216,7 @@
   <sect1 xml:id="bsdinstall-synopsis">
     <title>概述</title>
 
-    <indexterm xml:lang="en"><primary>installation</primary></indexterm>
+    <indexterm><primary>安裝</primary></indexterm>
 
     <para>自從 FreeBSD 9.0-RELEASE 開始, FreeBSD 提供一個易用，文字介面的安裝程式 <application>bsdinstall</application>。 本章描述如何用 <application>bsdinstall</application> 來安裝 FreeBSD。</para>
 
@@ -2366,16 +2289,16 @@
 	<listitem>
 	  <para>這個架構即為 32-bit x86 架構。</para>
 
-	  <para>幾乎所有有浮點運算單元的 i386 相容處理器都有支援。所有 <trademark class="registered">Intel</trademark> 486 或是更高階的處理器也有支援。</para>
+	  <para>幾乎所有含浮點運算單元的 i386 相容處理器都有支援。所有 <trademark class="registered">Intel</trademark> 486 或是更高階的處理器也有支援。</para>
 
-	  <para>若 <acronym>CPU</acronym> 有支援實體位址延伸(<acronym>PAE</acronym>) 功能，FreeBSD 可以運用這項功能的所帶來優點。有開啟 <acronym>PAE</acronym> 支援的核心會偵測超過 4 GB 的記憶體，並讓這些記憶體能夠被系統使用。 這項功能會限制驅動程式以及 FreeBSD 可能使用的其他功能，詳情請見 <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</para>
+	  <para>若 <acronym>CPU</acronym> 有支援實體位址延伸 (<acronym>PAE</acronym>) 功能，FreeBSD 可以運用這項功能的所帶來優點。有開啟 <acronym>PAE</acronym> 支援的核心會偵測超過 4 GB 的記憶體，並讓這些記憶體能夠被系統使用。 這項功能會限制驅動程式以及 FreeBSD 可能使用的其他功能，詳情請見 <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</para>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
 	<term xml:lang="en">ia64</term>
 	<listitem>
-	  <para>目前支援的處理器是 <trademark class="registered">Itanium</trademark> 和 <trademark class="registered">Itanium</trademark> 2。支援的晶片組包括 HP zx1， <trademark class="registered">Intel</trademark> 460GX 和 <trademark class="registered">Intel</trademark> E8870。 單處理器 (Uniprocessor, <acronym>UP</acronym>) 和對稱多處理器 (Symmetric Multi-processor, <acronym>SMP</acronym>)的設定都有支援。</para>
+	  <para>目前支援的處理器是 <trademark class="registered">Itanium</trademark> 和 <trademark class="registered">Itanium</trademark> 2。支援的晶片組包括 HP zx1， <trademark class="registered">Intel</trademark> 460GX 和 <trademark class="registered">Intel</trademark> E8870。 單處理器 (Uniprocessor, <acronym>UP</acronym>) 和對稱多處理器 (Symmetric Multi-processor, <acronym>SMP</acronym>) 的設定都有支援。</para>
 	</listitem>
       </varlistentry>
 
@@ -2384,7 +2307,7 @@
 	<listitem>
 	  <para>NEC PC-9801/9821 系列幾乎所有 i386 相容處理器包括 80486、<trademark class="registered">Pentium</trademark>、 <trademark class="registered">Pentium</trademark> Pro 和 <trademark class="registered">Pentium</trademark> II 都有支援。 所有 AMD, Cyrix, IBM, 及 IDT 的i386 相容處理器都有支援。 相容 NEC PC-9801 的 EPSON PC-386/486/586 系列都有支援。 NEC FC-9801/9821 及 NEC SV-98 系列也有支援。</para>
 
-	  <para>高解析度模式並不支援。NEC PC-98XA/XL/RL/XL^2 和 NEC PC-H98 系列只支援正常 (PC-9801 相容) 模式。 FreeBSD 對稱多處理器 <acronym>SMP</acronym> 相關功能並不支援。 PC-H98， SV-H98 和FC-H98 新延伸標準架構 (<acronym>NESA</acronym>) 匯流排不支援。</para>
+	  <para>不支援高解析度模式。NEC PC-98XA/XL/RL/XL^2 和 NEC PC-H98 系列只支援正常 (PC-9801 相容) 模式。 FreeBSD 對稱多處理器 <acronym>SMP</acronym> 相關功能並不支援。 PC-H98， SV-H98 和FC-H98 新延伸標準架構 (<acronym>NESA</acronym>) 匯流排不支援。</para>
 	</listitem>
       </varlistentry>
 
@@ -2417,37 +2340,37 @@
       <step>
 	<title>備份重要資料</title>
 
-	<para>安裝任何作業系統前， <emphasis>總是</emphasis> 要先備份所有重要資料。 不要儲存備份在即將安裝的系統上。改為將資料儲存在可移除磁碟，像是 <acronym>USB</acronym> 隨身碟，網路上的另一個系統或是線上備份服務上。 開始安裝前，要測試備份，確定它含有所有需要的檔案。 一旦安裝程式格式化系統的磁碟，所有儲存在上面的資料都會遺失。</para>
+	<para>安裝任何作業系統前， <emphasis>總是</emphasis> 要先備份所有重要資料。 不要儲存備份在即將安裝的系統上，而是將資料儲存在可移除磁碟，像是 <acronym>USB</acronym> 隨身碟、網路上的另一個系統或是線上備份服務上。 開始安裝前要檢查備份，確定備份含有所有需要的檔案，一旦安裝程式格式化系統的磁碟，所有儲存在上面的資料都會遺失。</para>
       </step>
 
       <step>
 	<title>決定 FreeBSD 安裝在哪裡</title>
 
-	<para>如果 FreeBSD 是唯一要安裝的作業系統，這個步驟可以略過。 但是假如 FreeBSD 將和其他作業系統分享磁碟空間的話，要決定 FreeBSD 要安裝在哪個磁碟或是哪個分割區。</para>
+	<para>如果 FreeBSD 是唯一一套要安裝到電腦的作業系統，這個步驟可以略過。 但是假如 FreeBSD 要和其他作業系統共享磁碟空間的話，就要決定 FreeBSD 要安裝在哪個磁碟或是哪個分割區。</para>
 
-	<para>在 i386 和 amd64 平台，磁碟可以使用兩種分割區配置之一來分割成多個分割區。 傳統的<firstterm>主開機紀錄</firstterm> (Master Boot Record, <acronym>MBR</acronym>) 有一個分割區表定義最多到 <firstterm>主分割區</firstterm>。 因為歷史性的理由， FreeBSD 稱這些主分割區為 <firstterm>slices</firstterm>。 其中一個主分割區可以分成一個 延伸分割區 ，他包含多個 邏輯分割區。 <firstterm>GUID 分割區表</firstterm> (GUID Partition Table, <acronym>GPT</acronym>) 是較新和較簡單的分割磁碟的方法，一般 <acronym>GPT</acronym> 實作允許每個磁碟最多達 128 個分割區，減少使用邏輯分割區的需要。</para>
-
-	<warning>
-	  <para>一些比較舊的作業系統，像是 <trademark class="registered">Windows</trademark> XP 不相容 <acronym>GPT</acronym> 分割區配置。 如果 FreeBSD 將和這樣的作業系統共享一個磁碟，那就需要用 <acronym>MBR</acronym> 分割。</para>
-	</warning>
-
-	<para>FreeBSD 開機啟動程式需要主分割區或是 <acronym>GPT</acronym> 分割區。如果所有的主分割區或 <acronym>GPT</acronym> 分割區都已使用，必須釋放其中一個分割區讓 FreeBSD 使用。如果要建立一個分割區而不刪除原有的資料，可以使用磁碟分割工具來縮小現有的分割區，並使用多出的空間來建立新分割區。</para>
-
-	<para>各種自由的和商業化的磁碟分割工具列於 <link xlink:href="http://en.wikipedia.org/wiki/List_of_disk_partitioning_software">http://en.wikipedia.org/wiki/List_of_disk_partitioning_software</link>。<application>GParted Live</application> (<link xlink:href="http://gparted.sourceforge.net/livecd.php">http://gparted.sourceforge.net/livecd.php</link>) 是包含分割編輯工具 <application>GParted</application> 的自由的 live <acronym>CD</acronym>。 GParted 也包含在許多 Linux live <acronym>CD</acronym> 套件裡。</para>
+	<para>在 i386 和 amd64 架構，可將磁碟分割成多個分割區，可以選擇下列兩種分割區結構 (Partitioning scheme) 的其中一種達成。 傳統的<firstterm>主開機紀錄</firstterm> (Master Boot Record, <acronym>MBR</acronym>) 的一個分割區表定義最多可有四個<firstterm>主分割區</firstterm> (Primary partition)，因一些歷史淵源，FreeBSD 稱這些主分割區為 <firstterm>slice</firstterm>，其中一個主分割區可作為<firstterm>延伸分割區</firstterm> (Extended partition)，延伸分割區又可分割成多個<firstterm>邏輯分割區</firstterm> (Logical partition)。 <firstterm>GUID 分割區表</firstterm> (GUID Partition Table, <acronym>GPT</acronym>) 是較新和較簡單的分割磁碟的方法，一般 <acronym>GPT</acronym> 實作允許每個磁碟多達 128 個分割區，不再需要使用邏輯分割區。</para>
 
 	<warning>
-	  <para>當正確地使用，磁碟分割工具可以安全地建立空間讓新的分割區使用。 因為有可能會誤選已經存在的分割區，所以在修改磁碟分割區前， 一定要備份重要資料，並確認備份的完整性。</para>
+	  <para>一些比較舊的作業系統，像是 <trademark class="registered">Windows</trademark> XP 並不相容 <acronym>GPT</acronym> 分割區配置。 如果 FreeBSD 將和這類作業系統共用一個磁碟，則需要用 <acronym>MBR</acronym> 分割結構。</para>
 	</warning>
 
-	<para>包含不同作業系統的磁碟分割區可以讓一台電腦安裝多重作業系統。 另一種作法是使用虛擬化 (<xref linkend="virtualization"/>) ，可以讓多重作業系統同時間執行而不需要改變任何磁碟分割區。</para>
+	<para>FreeBSD 開機啟動程式需要主分割區或是 <acronym>GPT</acronym> 分割區。如果所有的主分割區或 <acronym>GPT</acronym> 分割區都已使用，必須釋放其中一個分割區讓 FreeBSD 使用。如果要建立一個分割區而不刪除原有的資料，可以使用磁碟重設大小的工具來縮小現有的分割區，並使用釋放出來的空間建立新分割區。</para>
+
+	<para>各種免費和付費的磁碟重設大小工具列於 <link xlink:href="http://en.wikipedia.org/wiki/List_of_disk_partitioning_software">http://en.wikipedia.org/wiki/List_of_disk_partitioning_software</link>。<application>GParted Live</application> (<link xlink:href="http://gparted.sourceforge.net/livecd.php">http://gparted.sourceforge.net/livecd.php</link>) 是內含分割區編輯程式 <application>GParted</application> 的免費 Live <acronym>CD</acronym>。 GParted 同時也被許多 Linux Live <acronym>CD</acronym> 發行版所收錄。</para>
+
+	<warning>
+	  <para>在正確使用的情況下，磁碟重設大小的工具可以安全的建立讓新的分割區使用的空間。 但因仍有可能會誤選已經存在的分割區，所以在修改磁碟分割區前， 一定要備份重要資料，並確認備份的完整性。</para>
+	</warning>
+
+	<para>在磁碟分割區中儲存不同的作業系統讓一台電腦可以安裝多個作業系統，另一種作法是使用虛擬化技術 (<xref linkend="virtualization"/>) ，可讓多個作業系統同時間執行而不需要改變任何磁碟分割區。</para>
       </step>
 
       <step>
 	<title>收集網路資訊</title>
 
-	<para>有些 FreeBSD 安裝方法為了下載安裝檔案需要網路連線。 在系統安裝之後，安裝程式將會讓您設定系統的網路介面。</para>
+	<para>部份 FreeBSD 安裝方式需要網路連線來下載安裝檔，因此安裝完系統之後，安裝程式進入設定系統網路的介面。</para>
 
-	<para>如果網路有 <acronym>DHCP</acronym> 伺服器，可以自動設定網路。 如果沒有 <acronym>DHCP</acronym> ， 需要從區域網路管理者或是網際網路服務商取得以下系統的網路資訊：</para>
+	<para>如果網路中有 <acronym>DHCP</acronym> 伺服器，則可透過該伺服器自動設定網路，若無法使用 <acronym>DHCP</acronym>，則需要從區域網路管理者或是網際網路服務商取得以的網路資訊供系統使用：</para>
 
 	<orderedlist xml:id="bsdinstall-collect-network-information">
 	  <title>需要的網路資訊</title>
@@ -2486,96 +2409,42 @@
     <sect2 xml:id="bsdinstall-installation-media">
       <title>準備安裝的媒體</title>
 
-      <para xml:lang="en">The FreeBSD installer is not an application that can be run
-	from within another operating system.  Instead, download a
-	FreeBSD installation file, burn it to the media associated with
-	its file type and size (<acronym>CD</acronym>,
-	<acronym>DVD</acronym>, or <acronym>USB</acronym>), and boot
-	the system to install from the inserted media.</para>
+      <para>FreeBSD 安裝程式並不是一個可以在其他作業系統上執行的應用程式，反而您需要下載 FreeBSD 安裝檔，燒錄安裝檔到符合其檔案類型與大小的媒體 (<acronym>CD</acronym>, <acronym>DVD</acronym> 或 <acronym>USB</acronym>)，然後開機從插入的媒體來安裝。</para>
 
-      <para xml:lang="en">FreeBSD installation files are available at <link xlink:href="@@URL_RELPREFIX@@/where.html#download">www.freebsd.org/where.html#download</link>.
-	Each installation file's name includes the release version of
-	FreeBSD, the architecture, and the type of file.  For example, to
-	install FreeBSD 10.2 on an amd64 system from a
-	<acronym>DVD</acronym>, download
-	<filename>FreeBSD-10.2-RELEASE-amd64-dvd1.iso</filename>, burn
-	this file to a <acronym>DVD</acronym>, and boot the system
-	with the <acronym>DVD</acronym> inserted.</para>
+      <para>FreeBSD 的安裝檔可於 <link xlink:href="@@URL_RELPREFIX@@/where.html#download">www.freebsd.org/where.html#download</link> 取得。安裝檔的名稱由 FreeBSD 發佈版本、架構、以及檔案類型所組成，舉例，要從 <acronym>DVD</acronym> 安裝 FreeBSD 10.2 到 amd64 的系統，需下載 <filename>FreeBSD-10.2-RELEASE-amd64-dvd1.iso</filename>，並燒錄這個檔案到 <acronym>DVD</acronym>，然後使用插入 <acronym>DVD</acronym> 來開機。</para>
 
-      <para xml:lang="en">Installation files are available in several formats.
-	The formats vary depending on computer architecture and media
-	type.</para>
+      <para>安裝檔有許多種可用的格式，格式會依據電腦架構及媒體類型的不同而異。</para>
 
-      <para xml:id="bsdinstall-installation-media-uefi" xml:lang="en">Additional
-	installation files are included for computers that boot with
-	<acronym>UEFI</acronym> (Unified Extensible Firmware
-	Interface).  The names of these files include the string
-	<filename>uefi</filename>.</para>
+      <para xml:id="bsdinstall-installation-media-uefi">還有另一種安裝檔是給使用 <acronym>UEFI</acronym> (Unified Extensible Firmware Interface) 開機的電腦使用，這些安裝檔的名稱會含有 <filename>uefi</filename>。</para>
 
-      <para xml:lang="en">File types:</para>
+      <para>檔案類型:</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>-bootonly.iso</literal>: This is the smallest
-	    installation file as it only contains the installer.  A
-	    working Internet connection is required during
-	    installation as the installer will download the files it
-	    needs to complete the FreeBSD installation.  This file should
-	    be burned to a <acronym>CD</acronym> using a
-	    <acronym>CD</acronym> burning application.</para>
+	  <para><literal>-bootonly.iso</literal>: 這最精簡的安裝檔，檔案中只含安裝程式。 安裝時需要網際網路連線來下載所需的檔案以完成 FreeBSD 安裝。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>-disc1.iso</literal>: This file contains all
-	    of the files needed to install FreeBSD, its source, and the
-	    Ports Collection.  It should be burned to a
-	    <acronym>CD</acronym> using a <acronym>CD</acronym>
-	    burning application.</para>
+	  <para><literal>-disc1.iso</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>-dvd1.iso</literal>: This file contains all
-	    of the files needed to install FreeBSD, its source, and the
-	    Ports Collection.  It also contains a set of popular
-	    binary packages for installing a window manager and some
-	    applications so that a complete system can be installed
-	    from media without requiring a connection to the Internet.
-	    This file should be burned to a <acronym>DVD</acronym>
-	    using a <acronym>DVD</acronym> burning application.</para>
+	  <para><literal>-dvd1.iso</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集，也內含熱門的 Binary 套件可安裝視窗管理程式以及一些應用程式，如此便可從媒體安裝完整的系統，無須連線到網際網路。這個檔案應使用 <acronym>DVD</acronym> 燒錄應用程式燒錄到 <acronym>DVD</acronym> 使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>-memstick.img</literal>: This file contains
-	    all of the files needed to install FreeBSD, its source, and
-	    the Ports Collection.  It should be burned to a
-	    <acronym>USB</acronym> stick using the instructions
-	    below.</para>
+	  <para><literal>-memstick.img</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集。這個檔案應依據以下操作指示燒錄到 <acronym>USB</acronym> 隨身碟使用。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">After downloading the image file, download
-	<filename>CHECKSUM.SHA256</filename> from
-	the same directory.  Calculate a
-	<firstterm>checksum</firstterm> for the image file.
-	FreeBSD provides <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> for this, used as <command>sha256
-	  <replaceable>imagefilename</replaceable></command>.
-	Other operating systems have similar programs.</para>
+      <para>映像檔下載完成之後，下載同一個目錄之中的 <filename>CHECKSUM.SHA256</filename>。FreeBSD 提供 <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可用來計算映像檔的 <firstterm>checksum</firstterm>，使用方式為 <command>sha256 <replaceable>imagefilename</replaceable></command>，其他作業系統也會有類似的程式。</para>
 
-      <para xml:lang="en">Compare the calculated checksum with the one shown in
-	<filename>CHECKSUM.SHA256</filename>.  The checksums must
-	match exactly.  If the checksums do not match, the image file
-	is corrupt and must be downloaded again.</para>
+      <para>比對計算後的 checksum 與 <filename>CHECKSUM.SHA256</filename> 檔案中的值，checksum 應該要完全相符，若 checksum 不相符，則代表該映像檔是損壞的，必須再下載一次。</para>
 
       <sect3 xml:id="bsdinstall-usb">
 	<title>寫入映象檔到 <acronym>USB</acronym></title>
 
-	<para xml:lang="en">The <filename>*.img</filename> file is an
-	  <emphasis>image</emphasis> of the complete contents of a
-	  memory stick.  It <emphasis>cannot</emphasis> be copied to
-	  the target device as a file.  Several applications are
-	  available for writing the <filename>*.img</filename> to a
-	  <acronym>USB</acronym> stick.  This section describes two of
-	  these utilities.</para>
+	<para><filename>*.img</filename> 檔案是隨身碟的完整內容的<emphasis>映像檔 (image)</emphasis>，該檔案<emphasis>不能</emphasis>直接用檔案的方式複製到目標裝置。有許多應用程式可用來寫入 <filename>*.img</filename> 到 <acronym>USB</acronym> 隨身碟，本節會介紹其中兩種。</para>
 
 	<important>
 	  <para>在繼續之前，請先備份 <acronym>USB</acronym> 上的重要資料，這個程序會清除在隨身碟上既有的資料。</para>
@@ -2585,34 +2454,15 @@
 	  <title>使用 <command>dd</command> 來寫入映像檔</title>
 
 	  <warning>
-	    <para xml:lang="en">This example uses <filename>/dev/da0</filename> as
-	      the target device where the image will be written.  Be
-	      <emphasis>very careful</emphasis> that the correct
-	      device is used as this command will destroy the existing
-	      data on the specified target device.</para>
+	    <para>本範例使用 <filename>/dev/da0</filename> 做為目標裝置，是映像檔將會寫入的位置。 務必<emphasis>十分小心</emphasis>確認要使用的裝置正確，因為這個指示會摧毀所有在指定目標裝置上已存在的資料。</para>
 	  </warning>
 
 	  <step>
-	    <para xml:lang="en">The <citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></citerefentry> command-line utility is
-	      available on BSD, <trademark class="registered">Linux</trademark>, and <trademark class="registered">Mac OS</trademark> systems.  To burn
-	      the image using <command>dd</command>, insert the
-	      <acronym>USB</acronym> stick and determine its device
-	      name.  Then, specify the name of the downloaded
-	      installation file and the device name for the
-	      <acronym>USB</acronym> stick.  This example burns the
-	      amd64 installation image to the first
-	      <acronym>USB</acronym> device on an existing FreeBSD
-	      system.</para>
+	    <para><citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令列工具在 BSD, <trademark class="registered">Linux</trademark> 以及<trademark class="registered">Mac OS</trademark> 系統皆可使用。要使用 <command>dd</command> 燒錄映像檔需先插入 <acronym>USB</acronym> 隨身碟，然後確認隨身碟的裝置名稱。然後指定已下載的安裝檔名稱以及 <acronym>USB</acronym> 隨身碟的裝置名稱。本例示範在已有的 FreeBSD 系統燒錄 amd64 安裝程式映像檔到第一個 <acronym>USB</acronym> 裝置。</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>dd if=<replaceable>FreeBSD-10.2-RELEASE-amd64-memstick.img</replaceable> of=/dev/<replaceable>da0</replaceable> bs=1M conv=sync</userinput></screen>
 
-	    <para xml:lang="en">If this command fails, verify that the
-	      <acronym>USB</acronym> stick is not mounted and that the
-	      device name is for the disk, not a partition.  Some
-	      operating systems might require this command to be run
-	      with <citerefentry><refentrytitle>sudo</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Systems like <trademark class="registered">Linux</trademark> might buffer
-	      writes.  To force all writes to complete, use
-	      <citerefentry><refentrytitle>sync</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+	    <para>若這個指示執行失敗，請確認 <acronym>USB</acronym> 隨身碟是否未掛載，以及該裝置名稱是否為這個隨身碟，而非一個分割區。部份作業系統可能需要使用 <citerefentry><refentrytitle>sudo</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來執行這個指令。像 <trademark class="registered">Linux</trademark> 這類的系統可能會暫存寫入動作，要強制完成所有寫入動作，可使用 <citerefentry><refentrytitle>sync</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
 	  </step>
 	</procedure>
 
@@ -2620,9 +2470,7 @@
 	  <title>使用 <trademark class="registered">Windows</trademark> 來寫入映象檔</title>
 
 	  <warning>
-	    <para xml:lang="en">Be sure to give the correct drive letter as the
-	      existing data on the specified drive will be overwritten
-	      and destroyed.</para>
+	    <para>務必確認指定的磁碟機代號正確，因在指定磁碟上的既有資料將會被覆蓋與摧毀。</para>
 	  </warning>
 
 	  <step>
@@ -3177,7 +3025,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
     <sect2 xml:id="configtuning-initial">
       <title>規劃分割區配置</title>
 
-      <indexterm xml:lang="en"><primary>partition layout</primary></indexterm>
+      <indexterm><primary>分割區配置</primary></indexterm>
       <indexterm xml:lang="en">
 	<primary><filename>/etc</filename></primary>
       </indexterm>
@@ -4698,7 +4546,7 @@ Starting sshd.</screen>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 48973 2016-06-21 13:11:57Z emaste $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 49033 2016-07-03 19:27:03Z brd $
 -->
 <chapter version="5.0" xml:id="basics">
   <!--
@@ -4712,7 +4560,7 @@ Starting sshd.</screen>
     </authorgroup>
   </chapterinfo>
   -->
-  <title>UNIX 基礎概念</title>
+  <title>FreeBSD 基礎</title>
 
   <sect1 xml:id="basics-synopsis">
     <title>概述</title>
@@ -4744,7 +4592,7 @@ Starting sshd.</screen>
       </listitem>
 
       <listitem>
-	<para>如何掛載(mount)、卸載(umount)檔案系統。</para>
+	<para>如何掛載 (mount)、卸載 (umount) 檔案系統。</para>
       </listitem>
 
       <listitem>
@@ -7287,7 +7135,7 @@ Swap: 2048M Total, 2048M Free
     <title>概述</title>
 
     <indexterm xml:lang="en"><primary>ports</primary></indexterm>
-    <indexterm xml:lang="en"><primary>packages</primary></indexterm>
+    <indexterm><primary>套件</primary></indexterm>
     <para>FreeBSD 已內建豐富的系統工具，此外 FreeBSD 提供了 2 種安裝第三方軟體的套件管理技術︰由原始碼安的 FreeBSD Ports 套件集，以及由預先編譯好的 Binary 安裝的 Binary  套件集。 無論要用哪一種方式，都可由本地的媒體或網路來安裝軟體。</para>
 
     <para>讀完這章，您將了解︰</para>
@@ -8137,7 +7985,7 @@ The deinstallation will free 229 kB
       down, resulting in weird error messages.</para>
 
     <sect2 xml:id="poudriere-initialization">
-      <title>初始化 Jails 與 Port 樹</title>
+      <title>初始化 Jail 與 Port 樹</title>
 
       <para xml:lang="en">After configuration, initialize
 	<application>poudriere</application> so that it installs a
@@ -11242,10 +11090,7 @@ EndSection</programlisting>
       <indexterm xml:lang="en">
 	<primary><application>Gnumeric</application></primary>
       </indexterm>
-      <indexterm xml:lang="en">
-	<primary>spreadsheet</primary>
-	<secondary><application>Gnumeric</application></secondary>
-      </indexterm>
+      <indexterm><primary>試算表</primary> <secondary><application>Gnumeric</application></secondary></indexterm>
 
       <para><application>Gnumeric</application> 是 <application>GNOME</application> 社群所開發的試算表程式。 它的特點是擁有能夠根據儲存格格式 「猜出」使用者的輸入來自動補齊的系統。 它也能夠匯入許多熱門的檔案格式，像是 <application>Excel</application>, <application>Lotus 1-2-3</application> 以及 <application>Quattro Pro</application>。 它有大量內建的函數而且能夠使用常用的儲存格格式，像是：數字、貨幣、日期、時間及其他格式等。</para>
 
@@ -11264,10 +11109,7 @@ EndSection</programlisting>
 
       <indexterm xml:lang="en"><primary><application>KMyMoney</application></primary></indexterm>
 
-      <indexterm xml:lang="en">
-	<primary>spreadsheet</primary>
-	<secondary><application>KMyMoney</application></secondary>
-      </indexterm>
+      <indexterm><primary>試算表</primary> <secondary><application>KMyMoney</application></secondary></indexterm>
 
       <para xml:lang="en"><application>KMyMoney</application> is a personal finance
 	application created by the <application>KDE</application>
@@ -15168,10 +15010,7 @@ lp:
     <indexterm xml:lang="en">
       <primary>Linux binary compatibility</primary>
     </indexterm>
-    <indexterm xml:lang="en">
-      <primary>binary compatibility</primary>
-      <secondary>Linux</secondary>
-    </indexterm>
+    <indexterm><primary>Binary 相容性</primary> <secondary>Linux</secondary></indexterm>
 
     <para>FreeBSD 提供和 32 位元 <trademark class="registered">Linux</trademark> Binary 的相容性，允許使用者在 FreeBSD 不需要修改就可以安裝和執行大部份 32 位元 <trademark class="registered">Linux</trademark> Binary。 曾經有報告指出，在某些情況下，32 位元 <trademark class="registered">Linux</trademark> Binary 在 FreeBSD 的表現比在 <trademark class="registered">Linux</trademark> 好。</para>
 
@@ -15235,10 +15074,7 @@ lp:
 
     <programlisting xml:lang="en">linux_enable="YES"</programlisting>
 
-    <indexterm xml:lang="en">
-      <primary>kernel options</primary>
-      <secondary>COMPAT_LINUX</secondary>
-    </indexterm>
+    <indexterm><primary>核心選項</primary> <secondary>COMPAT_LINUX</secondary></indexterm>
 
     <para>想要靜態連結 <trademark class="registered">Linux</trademark> Binary 相容性到自訂核心的使用者應加入 <literal>options COMPAT_LINUX</literal> 到自訂核心設定檔。 編譯並安裝新核心的方法，如 <xref linkend="kernelconfig"/> 所述。</para>
 
@@ -18506,10 +18342,7 @@ device_probe_and_attach: cbb0 attach returned 12</screen>
 	  <primary><varname>kern.cam.scsi_delay</varname></primary>
 	</indexterm>
 
-	<indexterm xml:lang="en">
-	  <primary>kernel options</primary>
-	  <secondary><literal>SCSI DELAY</literal></secondary>
-	</indexterm>
+	<indexterm><primary>核心選項</primary> <secondary><literal>SCSI DELAY</literal></secondary></indexterm>
 
 	<para xml:lang="en">The <literal>SCSI_DELAY</literal> kernel configuration
 	  option may be used to reduce system boot times.  The
@@ -22760,18 +22593,12 @@ Connection closed by foreign host.</screen>
       the following options to the custom kernel configuration file
       and rebuild the kernel using the instructions in <xref linkend="kernelconfig"/>:</para>
 
-    <indexterm xml:lang="en">
-      <primary>kernel options</primary>
-      <secondary>IPSEC</secondary>
-    </indexterm>
+    <indexterm><primary>核心選項</primary> <secondary>IPSEC</secondary></indexterm>
 
     <screen xml:lang="en">options   IPSEC        #IP security
 device    crypto</screen>
 
-    <indexterm xml:lang="en">
-      <primary>kernel options</primary>
-      <secondary>IPSEC_DEBUG</secondary>
-    </indexterm>
+    <indexterm><primary>核心選項</primary> <secondary>IPSEC_DEBUG</secondary></indexterm>
 
     <para xml:lang="en">If <acronym>IPsec</acronym> debugging support is desired,
       the following kernel option should also be added:</para>
@@ -24738,7 +24565,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 -->
 <chapter version="5.0" xml:id="jails">
   <info>
-    <title xml:lang="en">Jails</title>
+    <title>Jail</title>
 
     <authorgroup>
       <author xml:lang="en"><personname><firstname>Matteo</firstname><surname>Riondato</surname></personname><contrib>Contributed
@@ -39335,7 +39162,7 @@ ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</r
       <primary>internationalization</primary>
 	<see>localization</see>
     </indexterm>
-    <indexterm xml:lang="en"><primary>localization</primary></indexterm>
+    <indexterm><primary>在地化</primary></indexterm>
 
     <para><literal>國際化</literal> (Internationalization) 一詞可以縮寫為 <acronym>i18n</acronym>，即  第一個字母到最後一個字母間的字母數量。<acronym>L10n</acronym> 也使用同樣的命名規則，但源自 <literal>在地化</literal> (Localization)。 <acronym>i18n</acronym>/<acronym>L10n</acronym> 的方法、協定及應用程式讓使用者可以自己選擇使用的語言。</para>
 
@@ -40747,10 +40574,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 
       <para><emphasis>不應</emphasis>將 FreeBSD-CURRENT 當做下一個發行版前取得新功能的快速途徑，因為尚未發行的功能並未被完整測試，很可能有問題。這也不是一個快速取得問題修正的方式，因為任何已知的問題修正有可能產生新的問題。 使用 FreeBSD-CURRENT 不在 <quote>官方支援</quote> 的範圍內。</para>
 
-      <indexterm xml:lang="en">
-	<primary>-CURRENT</primary>
-	<secondary>using</secondary>
-      </indexterm>
+      <indexterm><primary>-CURRENT</primary> <secondary>使用</secondary></indexterm>
 
       <para>若要追蹤 FreeBSD-CURRENT：</para>
 
@@ -53540,7 +53364,7 @@ iscsictl_flags="-Aa"</programlisting>
     </authorgroup>
   </info>
 
-  <indexterm xml:lang="en"><primary>firewall</primary></indexterm>
+  <indexterm><primary>防火牆</primary></indexterm>
 
   <indexterm xml:lang="en">
     <primary>security</primary>
@@ -53551,17 +53375,9 @@ iscsictl_flags="-Aa"</programlisting>
   <sect1 xml:id="firewalls-intro">
     <title>概述</title>
 
-    <para xml:lang="en">Firewalls make it possible to filter the incoming and
-      outgoing traffic that flows through a system.  A firewall can
-      use one or more sets of <quote>rules</quote> to inspect network
-      packets as they come in or go out of network connections and
-      either allows the traffic through or blocks it.  The rules of
-      a firewall can inspect one or more characteristics of the
-      packets such as the protocol type, source or destination host
-      address, and source or destination port.</para>
+    <para>防火牆能夠過濾透過系統進出的流量，防火牆可使用一組或多組 <quote>規則 (Rules)</quote> 來檢查網路連線中進出的網路封包(Network packets)，並且能允許或阻擋其通過。 而防火牆規則可以檢查封包中一個或數個特徵，例如通訊協定類型、來源或目的主機位址，以及來源及目地的連接埠 (Port)。</para>
 
-    <para xml:lang="en">Firewalls can enhance the security of a host or a network.
-      They can be used to do one or more of the following:</para>
+    <para>防火牆可以加強主機或網路的安全性，它可以用來完成下列事情：</para>
 
     <itemizedlist>
       <listitem>
@@ -55115,23 +54931,11 @@ block drop out quick on $ext_if from any to $martians</programlisting>
 	custom kernel is not needed in order to enable
 	<application>IPFW</application>.</para>
 
-      <indexterm xml:lang="en">
-	<primary>kernel options</primary>
+      <indexterm><primary>核心選項</primary> <secondary>IPFIREWALL</secondary></indexterm>
 
-	<secondary>IPFIREWALL</secondary>
-      </indexterm>
+      <indexterm><primary>核心選項</primary> <secondary>IPFIREWALL_VERBOSE</secondary></indexterm>
 
-      <indexterm xml:lang="en">
-	<primary>kernel options</primary>
-
-	<secondary>IPFIREWALL_VERBOSE</secondary>
-      </indexterm>
-
-      <indexterm xml:lang="en">
-	<primary>kernel options</primary>
-
-	<secondary>IPFIREWALL_VERBOSE_LIMIT</secondary>
-      </indexterm>
+      <indexterm><primary>核心選項</primary> <secondary>IPFIREWALL_VERBOSE_LIMIT</secondary></indexterm>
 
       <indexterm xml:lang="en">
 	<primary><application>IPFW</application></primary>
@@ -56154,23 +55958,11 @@ $cmd 00611 allow udp from any to $odns 53 out via $oif $ks
 	custom kernel is not needed in order to enable
 	<application>IPF</application>.</para>
 
-      <indexterm xml:lang="en">
-	<primary>kernel options</primary>
+      <indexterm><primary>核心選項</primary> <secondary><application>IPFILTER</application></secondary></indexterm>
 
-	<secondary><application>IPFILTER</application></secondary>
-      </indexterm>
+      <indexterm><primary>核心選項</primary> <secondary>IPFILTER_LOG</secondary></indexterm>
 
-      <indexterm xml:lang="en">
-	<primary>kernel options</primary>
-
-	<secondary>IPFILTER_LOG</secondary>
-      </indexterm>
-
-      <indexterm xml:lang="en">
-	<primary>kernel options</primary>
-
-	<secondary>IPFILTER_DEFAULT_BLOCK</secondary>
-      </indexterm>
+      <indexterm><primary>核心選項</primary> <secondary>IPFILTER_DEFAULT_BLOCK</secondary></indexterm>
 
       <indexterm xml:lang="en">
 	<primary><application>IPFILTER</application></primary>
@@ -57582,9 +57374,7 @@ host2.example.com link#1            UC          0        0
 	aliasing can be used to bind multiple addresses, each on a
 	different subnet, to one physical interface.</para>
 
-      <indexterm xml:lang="en">
-	<primary>router</primary>
-      </indexterm>
+      <indexterm><primary>路由器</primary></indexterm>
 
       <para xml:lang="en">In order for the system to forward packets between
 	interfaces, FreeBSD must be configured as a router.  Internet
@@ -57768,10 +57558,7 @@ route_net2="-net 192.168.1.0/24 192.168.1.1"</programlisting>
       <indexterm xml:lang="en">
 	<primary>multicast routing</primary>
       </indexterm>
-      <indexterm xml:lang="en">
-	<primary>kernel options</primary>
-	<secondary>MROUTING</secondary>
-      </indexterm>
+      <indexterm><primary>核心選項</primary> <secondary>MROUTING</secondary></indexterm>
 
       <para xml:lang="en">FreeBSD natively supports both multicast applications and
 	multicast routing.  Multicast applications do not require any
@@ -57827,13 +57614,8 @@ route_net2="-net 192.168.1.0/24 192.168.1.1"</programlisting>
       </authorgroup>
     </info>
 
-    <indexterm xml:lang="en">
-      <primary>wireless networking</primary>
-    </indexterm>
-    <indexterm xml:lang="en">
-      <primary>802.11</primary>
-      <see>wireless networking</see>
-    </indexterm>
+    <indexterm><primary>無線網路</primary></indexterm>
+    <indexterm><primary>802.11</primary> <see>無線網路</see></indexterm>
 
     <sect2>
       <title>無線網路基礎</title>
@@ -59500,9 +59282,7 @@ freebsdap       00:11:95:c3:0d:ac    1   54M 22:1   100 EPS</screen>
       </authorgroup>
     </info>
 
-    <indexterm xml:lang="en">
-      <primary>Bluetooth</primary>
-    </indexterm>
+    <indexterm><primary>藍牙</primary></indexterm>
 
     <para xml:lang="en">Bluetooth is a wireless technology for creating personal
       networks operating in the 2.4 GHz unlicensed band, with a
@@ -60135,12 +59915,8 @@ cu -l $PTS</programlisting>
       </authorgroup>
     </info>
 
-    <indexterm xml:lang="en">
-      <primary><acronym>IP</acronym> subnet</primary>
-    </indexterm>
-    <indexterm xml:lang="en">
-      <primary>bridge</primary>
-    </indexterm>
+    <indexterm><primary><acronym>IP</acronym> 子網段</primary></indexterm>
+    <indexterm><primary>橋接</primary></indexterm>
 
     <para xml:lang="en">It is sometimes useful to divide a network, such as an
       Ethernet segment, into network segments without having to
@@ -60599,9 +60375,7 @@ BEGEMOT-BRIDGE-MIB::begemotBridgeDefaultBridgeIf.0 s bridge2</screen>
     <indexterm xml:lang="en">
       <primary>lagg</primary>
     </indexterm>
-    <indexterm xml:lang="en">
-      <primary>failover</primary>
-    </indexterm>
+    <indexterm><primary>容錯移轉</primary></indexterm>
     <indexterm xml:lang="en">
       <primary><acronym>FEC</acronym></primary>
     </indexterm>
@@ -60963,12 +60737,8 @@ ifconfig_<literal>lagg<replaceable>0</replaceable></literal>="laggproto failover
       </authorgroup>
     </info>
 
-    <indexterm xml:lang="en">
-      <primary>diskless workstation</primary>
-    </indexterm>
-    <indexterm xml:lang="en">
-      <primary>diskless operation</primary>
-    </indexterm>
+    <indexterm><primary>無磁碟工作站</primary></indexterm>
+    <indexterm><primary>無磁碟作業</primary></indexterm>
 
     <para xml:lang="en">The <trademark class="registered">Intel</trademark> Preboot eXecution Environment
       (<acronym>PXE</acronym>) allows an operating system to boot over
