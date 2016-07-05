@@ -107,7 +107,7 @@ pkg install poedit
 | Manual Page | 操作手冊 ||
 | Host OS | 主端作業系統 ||
 | Guest OS | 客端作業系統 ||
-
+| Partitioning scheme | 分割區結構 | 例如 MBR, GPT 等 |
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
 * https://translatewiki.net/
