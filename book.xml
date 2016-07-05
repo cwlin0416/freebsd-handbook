@@ -2421,7 +2421,7 @@
 
       <itemizedlist>
 	<listitem>
-	  <para><literal>-bootonly.iso</literal>: 這最精簡的安裝檔，檔案中只含安裝程式。 安裝時需要網際網路連線來下載所需的檔案以完成 FreeBSD 安裝。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。</para>
+	  <para><literal>-bootonly.iso</literal>: 這是最精簡的安裝檔，檔案中只含安裝程式。 安裝時需要網際網路連線來下載所需的檔案以完成 FreeBSD 安裝。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。</para>
 	</listitem>
 
 	<listitem>

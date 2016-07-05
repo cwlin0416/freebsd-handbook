@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-07-05 12:26+0800\n"
-"PO-Revision-Date: 2016-07-05 14:53+0800\n"
+"PO-Revision-Date: 2016-07-05 14:58+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -2503,7 +2503,7 @@ msgstr "檔案類型:"
 msgid ""
 "<literal>-bootonly.iso</literal>: This is the smallest installation file as it only contains the installer. A working Internet connection is required during installation as the installer will download the files it needs to complete the FreeBSD installation. This file should be burned to a <acronym>CD</acronym> using a <acronym>CD</"
 "acronym> burning application."
-msgstr "<literal>-bootonly.iso</literal>: 這最精簡的安裝檔，檔案中只含安裝程式。 安裝時需要網際網路連線來下載所需的檔案以完成 FreeBSD 安裝。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。"
+msgstr "<literal>-bootonly.iso</literal>: 這是最精簡的安裝檔，檔案中只含安裝程式。 安裝時需要網際網路連線來下載所需的檔案以完成 FreeBSD 安裝。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3264
