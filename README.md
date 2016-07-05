@@ -108,6 +108,9 @@ pkg install poedit
 | Host OS | 主端作業系統 ||
 | Guest OS | 客端作業系統 ||
 | Partitioning scheme | 分割區結構 | 例如 MBR, GPT 等 |
+| Distribution | 發行版 | 用來發行用的版本 |
+| Release | 發佈, 發佈版 | |
+
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
 * https://translatewiki.net/
