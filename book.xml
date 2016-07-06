@@ -708,7 +708,7 @@
 
   <bridgehead xml:id="preface-audience" renderas="sect1">給讀者的話</bridgehead>
 
-  <para>若您是第一次接觸 FreeBSD 的新手，可以在本書第一部分找到 FreeBSD 的安裝方法，同時會逐步介紹 <trademark class="registered">UNIX</trademark> 的基礎概念與一些常用、共通的東西。而閱讀這部分並不難，只需要您有探索的精神和接受新概念。</para>
+  <para>若您是第一次接觸 FreeBSD 的新手，可以在本書第一部分找到 FreeBSD 的安裝程序，同時會逐步介紹 <trademark class="registered">UNIX</trademark> 的基礎概念與一些常用、共通的東西。而閱讀這部分並不難，只需要您有探索的精神和接受新概念。</para>
 
   <para>讀完這些之後，手冊中的第二部分花很長篇幅介紹的各種廣泛主題，相當值得系統管理者去注意。 在閱讀這些章節的內容時所需要的背景知識，都註釋在該章的大綱裡面，若不熟的話，可在閱讀前先預習一番。</para>
 
@@ -1315,7 +1315,7 @@
 
     <indexterm xml:lang="en"><primary>4.4BSD-Lite</primary></indexterm>
 
-    <para>FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class="registered">Itanium</trademark>), AMD64, Sun <trademark class="registered">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend="history">FreeBSD 歷史</link>， 對於 FreeBSD 的最新版本介紹，請看 <link xlink:href="@@URL_RELPREFIX@@/releases">最新的發行版本</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、經費)， 請看 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html">如何對 FreeBSD 有貢獻</link>。</para>
+    <para>FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class="registered">Itanium</trademark>), AMD64, Sun <trademark class="registered">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend="history">FreeBSD 歷史</link>， 對於 FreeBSD 的最新版本介紹，請看 <link xlink:href="@@URL_RELPREFIX@@/releases">最新的發行版</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、經費)， 請看 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html">如何對 FreeBSD 有貢獻</link>。</para>
 
     <sect2 xml:id="os-overview">
       <title>FreeBSD 能做什麼？</title>
@@ -1964,7 +1964,7 @@
       <indexterm xml:lang="en"><primary>386BSD</primary></indexterm>
       <indexterm xml:lang="en"><primary>Free Software
 	  Foundation</primary></indexterm>
-      <para>第一張以 CD-ROM (及網路) 發行的 FreeBSD 1.0 是在 1993 年十二月。 該版本是以 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>) 以及許多來自於 386BSD 和自由軟體基金會的元件為基礎。對於第一次發行而言還算成功，我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。</para>
+      <para>第一張以 CD-ROM (及網路) 的發行版為 FreeBSD 1.0，是在 1993 年十二月發佈。 該版本是以 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>) 以及許多來自於 386BSD 和自由軟體基金會的元件為基礎。對於第一次發行而言還算成功，我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。</para>
 
       <indexterm xml:lang="en"><primary>Novell</primary></indexterm>
       <indexterm xml:lang="en"><primary>U.C. Berkeley</primary></indexterm>
@@ -2092,7 +2092,7 @@
     <sect2 xml:id="third-party-programs">
       <title>第三方程式</title>
 
-      <para>除了基礎發行版之外，FreeBSD 提供了擁有上千個常用的程式的移植軟體的套件集，在搛寫本文的同時，已有超過 24,000 個 Port! Port 的範圍從 HTTP 伺服器到遊戲、語系、編輯器，幾乎所有東西都在裡面。完整的 Ports 套件集需要將近 500 MB。要編譯一個 Port 您只需要切換目錄到您想安裝的程式目錄，然後輸入 <command>make install</command>，接著系統便會處理剩下的動作。您編譯的每個 Port 完整原始發行版內容是動態下載的，所以您只需要有足夠的磁碟空間來編譯您想要的 Ports。幾乎所有 Ports 都提供以預先編譯好的<quote>套件</quote>，您可以透過簡單的指令來安裝 (<command>pkg install</command>)，提供那些不想要自行從原始碼編譯的人使用。更多有關套件與 Ports 的資訊可於 <xref linkend="ports"/> 取得。</para>
+      <para>除了基礎發行版之外，FreeBSD 提供了擁有上千個常用的程式的移植軟體的套件集，在撰寫本文的同時，已有超過 24,000 個 Port! Port 的範圍從 HTTP 伺服器到遊戲、語系、編輯器，幾乎所有東西都在裡面。完整的 Ports 套件集需要將近 500 MB。要編譯一個 Port 您只需要切換目錄到您想安裝的程式目錄，然後輸入 <command>make install</command>，接著系統便會處理剩下的動作。您編譯的每個 Port 完整原始發行版內容是動態下載的，所以您只需要有足夠的磁碟空間來編譯您想要的 Ports。幾乎所有 Ports 都提供以預先編譯好的<quote>套件</quote>，您可以透過簡單的指令來安裝 (<command>pkg install</command>)，提供那些不想要自行從原始碼編譯的人使用。更多有關套件與 Ports 的資訊可於 <xref linkend="ports"/> 取得。</para>
     </sect2>
 
     <sect2>
@@ -2243,7 +2243,7 @@
 
     <para>安裝 FreeBSD 的硬體需求隨 FreeBSD 的版本和硬體架構而不同。 FreeBSD 發行版支援的硬體架構和裝置可在 FreeBSD 網站 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">http://www.FreeBSD.org/releases/index.html</link>)的發行資訊頁面找到。</para>
 
-    <para>FreeBSD 最小安裝需要至少 64 MB 的 <acronym>RAM</acronym> 和 1.5 GB 的可用硬碟空間 但是這真的是 <emphasis>最小</emphasis>，幾乎沒有剩下多餘的空間。 RAM 的需求視實際使用而訂，經特殊處理過後的 FreeBSD 系統可只使用 128MB RAM，圖形化環境最少需要 4 GB 的 <acronym>RAM</acronym>。</para>
+    <para>FreeBSD 最小安裝需要至少 64 MB 的 <acronym>RAM</acronym> 和 1.5 GB 的可用硬碟空間，但是這真的是 <emphasis>最小</emphasis>，幾乎沒有剩下多餘的空間。 RAM 的需求視實際使用而訂，經特殊處理過後的 FreeBSD 系統可只使用 128MB RAM，圖形化環境最少需要 4 GB 的 <acronym>RAM</acronym>。</para>
 
     <para>每一種架構的處理器需求概述如下：</para>
 
@@ -2315,18 +2315,18 @@
       <step>
 	<title>備份重要資料</title>
 
-	<para>安裝任何作業系統前， <emphasis>總是</emphasis> 要先備份所有重要資料。 不要儲存備份在即將安裝的系統上，而是將資料儲存在可移除磁碟，像是 <acronym>USB</acronym> 隨身碟、網路上的另一個系統或是線上備份服務上。 開始安裝前要檢查備份，確定備份含有所有需要的檔案，一旦安裝程式格式化系統的磁碟，所有儲存在上面的資料都會遺失。</para>
+	<para>安裝任何作業系統前， <emphasis>總是</emphasis> 要先備份所有重要資料。 不要儲存備份在即將安裝的系統上，而是將資料儲存在可移除磁碟，像是 <acronym>USB</acronym> 隨身碟、網路上的另一個系統或是線上備份服務上。 開始安裝程序前要檢查備份，確定備份含有所有需要的檔案，一旦安裝程式格式化系統的磁碟，所有儲存在上面的資料都會遺失。</para>
       </step>
 
       <step>
 	<title>決定 FreeBSD 安裝在哪裡</title>
 
-	<para>如果 FreeBSD 是唯一一套要安裝到電腦的作業系統，這個步驟可以略過。 但是假如 FreeBSD 要和其他作業系統共享磁碟空間的話，就要決定 FreeBSD 要安裝在哪個磁碟或是哪個分割區。</para>
+	<para>如果 FreeBSD 是唯一一套要安裝到電腦的作業系統，這個步驟可以略過。 但是假如 FreeBSD 要和其他作業系統共用磁碟空間的話，就要決定 FreeBSD 要安裝在哪個磁碟或是哪個分割區 (Partition)。</para>
 
-	<para>在 i386 和 amd64 架構，可將磁碟分割成多個分割區，可以選擇下列兩種分割區結構 (Partitioning scheme) 的其中一種達成。 傳統的<firstterm>主開機紀錄</firstterm> (Master Boot Record, <acronym>MBR</acronym>) 的一個分割區表定義最多可有四個<firstterm>主分割區</firstterm> (Primary partition)，因一些歷史淵源，FreeBSD 稱這些主分割區為 <firstterm>slice</firstterm>，其中一個主分割區可作為<firstterm>延伸分割區</firstterm> (Extended partition)，延伸分割區又可分割成多個<firstterm>邏輯分割區</firstterm> (Logical partition)。 <firstterm>GUID 分割區表</firstterm> (GUID Partition Table, <acronym>GPT</acronym>) 是較新和較簡單的分割磁碟的方法，一般 <acronym>GPT</acronym> 實作允許每個磁碟多達 128 個分割區，不再需要使用邏輯分割區。</para>
+	<para>在 i386 和 amd64 架構，可將磁碟分割成多個分割區，可以選擇下列兩種分割表格式 (Partitioning scheme) 的其中一種達成。 傳統的<firstterm>主開機紀錄</firstterm> (Master Boot Record, <acronym>MBR</acronym>) 的一個分割區表定義最多可有四個<firstterm>主分割區</firstterm> (Primary partition)，因一些歷史淵源，FreeBSD 稱這些主分割區為 <firstterm>slice</firstterm>，其中一個主分割區可作為<firstterm>延伸分割區</firstterm> (Extended partition)，延伸分割區又可分割成多個<firstterm>邏輯分割區</firstterm> (Logical partition)。 <firstterm>GUID 分割區表</firstterm> (GUID Partition Table, <acronym>GPT</acronym>) 是較新和較簡單的分割磁碟的方法，一般 <acronym>GPT</acronym> 實作允許每個磁碟多達 128 個分割區，不再需要使用邏輯分割區。</para>
 
 	<warning>
-	  <para>一些比較舊的作業系統，像是 <trademark class="registered">Windows</trademark> XP 並不相容 <acronym>GPT</acronym> 分割區配置。 如果 FreeBSD 將和這類作業系統共用一個磁碟，則需要用 <acronym>MBR</acronym> 分割結構。</para>
+	  <para>一些比較舊的作業系統，像是 <trademark class="registered">Windows</trademark> XP 並不相容 <acronym>GPT</acronym> 分割表格式。 如果 FreeBSD 將和這類作業系統共用一個磁碟，則需要用 <acronym>MBR</acronym> 分割表格式。</para>
 	</warning>
 
 	<para>FreeBSD 開機啟動程式需要主分割區或是 <acronym>GPT</acronym> 分割區。如果所有的主分割區或 <acronym>GPT</acronym> 分割區都已使用，必須釋放其中一個分割區讓 FreeBSD 使用。如果要建立一個分割區而不刪除原有的資料，可以使用磁碟重設大小的工具來縮小現有的分割區，並使用釋放出來的空間建立新分割區。</para>
@@ -2343,9 +2343,9 @@
       <step>
 	<title>收集網路資訊</title>
 
-	<para>部份 FreeBSD 安裝方式需要網路連線來下載安裝檔，因此安裝完系統之後，安裝程式進入設定系統網路的介面。</para>
+	<para>部份 FreeBSD 安裝方式需要網路連線來下載安裝檔，因此之後的安裝程序，安裝程式進入設定系統網路的介面。</para>
 
-	<para>如果網路中有 <acronym>DHCP</acronym> 伺服器，則可透過該伺服器自動設定網路，若無法使用 <acronym>DHCP</acronym>，則需要從區域網路管理者或是網際網路服務商取得以的網路資訊供系統使用：</para>
+	<para>如果網路中有 <acronym>DHCP</acronym> 伺服器，則可透過該伺服器自動設定網路，若無法使用 <acronym>DHCP</acronym>，則需要從區域網路管理者或是網際網路服務供應商 ( Internet Service Provider, ISP) 取得以的網路資訊供系統使用：</para>
 
 	<orderedlist xml:id="bsdinstall-collect-network-information">
 	  <title>需要的網路資訊</title>
@@ -2408,7 +2408,7 @@
 	</listitem>
 
 	<listitem>
-	  <para><literal>-memstick.img</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集。這個檔案應依據以下操作指示燒錄到 <acronym>USB</acronym> 隨身碟使用。</para>
+	  <para><literal>-memstick.img</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集。這個檔案應依據以下操作指示寫入到 <acronym>USB</acronym> 隨身碟使用。</para>
 	</listitem>
       </itemizedlist>
 
@@ -2433,7 +2433,7 @@
 	  </warning>
 
 	  <step>
-	    <para><citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令列工具在 BSD, <trademark class="registered">Linux</trademark> 以及<trademark class="registered">Mac OS</trademark> 系統皆可使用。要使用 <command>dd</command> 燒錄映像檔需先插入 <acronym>USB</acronym> 隨身碟，然後確認隨身碟的裝置名稱。然後指定已下載的安裝檔名稱以及 <acronym>USB</acronym> 隨身碟的裝置名稱。本例示範在已有的 FreeBSD 系統燒錄 amd64 安裝程式映像檔到第一個 <acronym>USB</acronym> 裝置。</para>
+	    <para><citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令列工具在 BSD, <trademark class="registered">Linux</trademark> 以及<trademark class="registered">Mac OS</trademark> 系統皆可使用。要使用 <command>dd</command> 燒錄映像檔需先插入 <acronym>USB</acronym> 隨身碟，然後確認隨身碟的裝置名稱。然後指定已下載的安裝檔名稱以及 <acronym>USB</acronym> 隨身碟的裝置名稱。本例示範在已有的 FreeBSD 系統燒錄 amd64 安裝映像檔到第一個 <acronym>USB</acronym> 裝置。</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>dd if=<replaceable>FreeBSD-10.2-RELEASE-amd64-memstick.img</replaceable> of=/dev/<replaceable>da0</replaceable> bs=1M conv=sync</userinput></screen>
 
@@ -2445,7 +2445,7 @@
 	  <title>使用 <trademark class="registered">Windows</trademark> 來寫入映象檔</title>
 
 	  <warning>
-	    <para>務必確認指定的磁碟機代號正確，因在指定磁碟上的既有資料將會被覆蓋與摧毀。</para>
+	    <para>務必確認指定的磁碟機代號正確，因在指定磁碟機上的既有資料將會被覆蓋與摧毀。</para>
 	  </warning>
 
 	  <step>
@@ -2470,7 +2470,7 @@
     <title>開始安裝</title>
 
     <important>
-      <para>預設安裝程式在下列訊息顯示之前不會對磁碟做任何更動：</para>
+      <para>預設安裝程序在下列訊息顯示之前不會對磁碟做任何更動：</para>
 
       <programlisting xml:lang="en">Your changes will now be written to disk.  If you
 have chosen to overwrite existing data, it will
@@ -2580,8 +2580,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
     <sect2 xml:id="bsdinstall-view-probe">
       <title>FreeBSD 開機選單</title>
 
-      <para xml:lang="en">Once the system boots from the installation media, a menu
-	similar to the following will be displayed:</para>
+      <para>從安裝媒體開機之後，會顯示如下的選單：</para>
 
       <figure xml:id="bsdinstall-newboot-loader-menu">
 	<title>FreeBSD 開機載入程式選單</title>
@@ -2593,47 +2592,27 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">By default, the menu will wait ten seconds for user input
-	before booting into the FreeBSD installer or, if FreeBSD is already
-	installed, before booting into FreeBSD.  To pause the boot timer
-	in order to review the selections, press
-	<keycap>Space</keycap>.  To select an option, press its
-	highlighted number, character, or key.  The following options
-	are available.</para>
+      <para>預設在開機進入 FreeBSD 安裝程式前選單會等候使用者輸入 10 秒鐘，若已經安裝 FreeBSD，則會在開機進入 FreeBSD 前等候。要暫停開機計時器來仔細查看選項，請按 <keycap>Space</keycap> 鍵。要選擇選項，按下明顯標示的數字、字元或按鍵。選單有以下選項可選。</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>Boot Multi User</literal>: This will
-	    continue the FreeBSD boot process.  If the boot timer has
-	    been paused, press <keycap>1</keycap>, upper- or
-	    lower-case <keycap>B</keycap>, or
-	    <keycap>Enter</keycap>.</para>
+	  <para>啟動多使用者模式 (<literal>Boot Multi User</literal>): 這個選項會繼續 FreeBSD 開機程序，若開機計時器已經暫停，可按 <keycap>1</keycap>、大寫或小寫 <keycap>B</keycap> 或 <keycap>Enter</keycap> 鍵。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Boot Single User</literal>: This mode can be
-	    used to fix an existing FreeBSD installation as described in
-	    <xref linkend="boot-singleuser"/>.  Press
-	    <keycap>2</keycap> or the upper- or lower-case
-	    <keycap>S</keycap> to enter this mode.</para>
+	  <para>啟動單使用者模式 (<literal>Boot Single User</literal>): 這個模式用來修正已安裝的 FreeBSD，如 <xref linkend="boot-singleuser"/> 所述。可按 <keycap>2</keycap>、大寫或小寫 <keycap>S</keycap> 進入這個模式。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Escape to loader prompt</literal>: This will
-	    boot the system into a repair prompt that contains a
-	    limited number of low-level commands.  This prompt is
-	    described in <xref linkend="boot-loader"/>.  Press
-	    <keycap>3</keycap> or <keycap>Esc</keycap> to boot into
-	    this prompt.</para>
+	  <para>離開到載入程式提示 (<literal>Escape to loader prompt</literal>): 這個選項會開機進入修復提示，這個模式含有有限數量的低階指令，這個模式詳細說明於 <xref linkend="boot-loader"/>。可按 <keycap>3</keycap> 或 <keycap>Esc</keycap> 進入這個提示。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Reboot</literal>: Reboots the system.</para>
+	  <para>重新開機 (<literal>Reboot</literal>): 重新開啟系統。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Configure Boot Options</literal>: Opens the
-	    menu shown in, and described under, <xref linkend="bsdinstall-boot-options-menu"/>.</para>
+	  <para>設定開機選項 (<literal>Configure Boot Options</literal>): 開啟內部選單，詳細說明於 <xref linkend="bsdinstall-boot-options-menu"/>。</para>
 	</listitem>
       </itemizedlist>
 
@@ -2647,55 +2626,29 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">The boot options menu is divided into two sections.  The
-	first section can be used to either return to the main boot
-	menu or to reset any toggled options back to their
-	defaults.</para>
+      <para>開機選項選單分成兩個部份。第一個部份用來返回主開機選單或重設任何已切換的選項回預設值。</para>
 
-      <para xml:lang="en">The next section is used to toggle the available options
-	to <literal>On</literal> or <literal>Off</literal> by pressing
-	the option's highlighted number or character.  The system will
-	always boot using the settings for these options until they
-	are modified.  Several options can be toggled using this
-	menu:</para>
+      <para>第二個部份用來切換可用的選項為開 (<literal>On</literal>) 或關 (<literal>Off</literal>)，透過按下選項明顯標示的編號或字元。系統將會一直使用這些選項開機，直到選項被修改。有數個選項可以在這個選單做切換：</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>ACPI Support</literal>: If the system hangs
-	    during boot, try toggling this option to
-	    <literal>Off</literal>.</para>
+	  <para>ACPI 支援 (<literal>ACPI Support</literal>): 若系統在開機時卡住，可嘗試切換這個選項為關 (<literal>Off</literal>)。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Safe Mode</literal>: If the system still
-	    hangs during boot even with <literal>ACPI
-	      Support</literal> set to <literal>Off</literal>, try
-	    setting this option to <literal>On</literal>.</para>
+	  <para>安全模式 (<literal>Safe Mode</literal>): 若系統在 ACPI 支援 (<literal>ACPI Support</literal>) 設為關 (<literal>Off</literal>) 時開機時仍然會卡住，可嘗試將此選項設為開 (<literal>On</literal>)。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Single User</literal>: Toggle this option to
-	    <literal>On</literal> to fix an existing FreeBSD installation
-	    as described in <xref linkend="boot-singleuser"/>.  Once
-	    the problem is fixed, set it back to
-	    <literal>Off</literal>.</para>
+	  <para>單使用者 (<literal>Single User</literal>): 切換這個選項為開 (<literal>On</literal>) 來修正已存在的 FreeBSD 如 <xref linkend="boot-singleuser"/> 所述，問題修正後，將其設回關 (<literal>Off</literal>)。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Verbose</literal>: Toggle this option to
-	    <literal>On</literal> to see more detailed messages during
-	    the boot process.  This can be useful when troubleshooting
-	    a piece of hardware.</para>
+	  <para>詳細資訊 (<literal>Verbose</literal>): 切換這個選項為開 (<literal>On</literal>) 來查看開機程序中更詳細的訊息，這在診斷硬體問題時非常有用。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">After making the needed selections, press
-	<keycap>1</keycap> or <keycap>Backspace</keycap> to return to
-	the main boot menu, then press <keycap>Enter</keycap> to
-	continue booting into FreeBSD.  A series of boot messages will
-	appear as FreeBSD carries out its hardware device probes and
-	loads the installation program.  Once the boot is complete,
-	the welcome menu shown in <xref linkend="bsdinstall-choose-mode"/> will be displayed.</para>
+      <para>在做完所需的選擇後，按下 <keycap>1</keycap> 或 <keycap>Backspace</keycap> 返回主開機選單，然後按下 <keycap>Enter</keycap> 繼續開機進入 FreeBSD。FreeBSD 執行裝置偵測及載入安裝程式時會顯示一系列的開機訊息，開機完成之後，會顯示歡迎選單如 <xref linkend="bsdinstall-choose-mode"/>。</para>
 
       <figure xml:id="bsdinstall-choose-mode">
 	<title>歡迎選單</title>
@@ -2707,27 +2660,10 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Press <keycap>Enter</keycap> to select the default of
-	<guibutton>[ Install ]</guibutton> to enter the
-	installer.  The rest of this chapter describes how to use this
-	installer.  Otherwise, use the right or left arrows or the
-	colorized letter to select the desired menu item.  The
-	<guibutton>[ Shell ]</guibutton> can be used to
-	access a FreeBSD shell in order to use command line utilities to
-	prepare the disks before installation.  The
-	<guibutton>[ Live CD ]</guibutton> option can be
-	used to try out FreeBSD before installing it.  The live version
-	is described in <xref linkend="using-live-cd"/>.</para>
+      <para>按下 <keycap>Enter</keycap> 選擇預設的 <guibutton>[ Install ]</guibutton> 進入安裝程式，接下來本章將介紹如何使用這個安裝程式。 若要選擇其他項目，可使用右或左方向鍵或顏色標示的字母選擇想要的選單項目。<guibutton>[ Shell ]</guibutton> 可用來進入 FreeBSD 的 Shell 使用指令列工具在安裝之前準備磁碟。<guibutton>[ Live CD ]</guibutton> 選項可用來在安裝之前試用 FreeBSD，Live 版本的詳細說明於 <xref linkend="using-live-cd"/>。</para>
 
       <tip>
-	<para xml:lang="en">To review the boot messages, including the hardware
-	  device probe, press the upper- or lower-case
-	  <keycap>S</keycap> and then <keycap>Enter</keycap> to access
-	  a shell.  At the shell prompt, type <command>more
-	    /var/run/dmesg.boot</command> and use the space bar to
-	  scroll through the messages.  When finished, type
-	  <command>exit</command> to return to the welcome
-	  menu.</para>
+	<para>要重新檢視開機訊息，包含硬體裝置偵測，請按大寫或小寫 <keycap>S</keycap> 然後再按 <keycap>Enter</keycap> 進入 Shell。在 Shell 提示之後輸入 <command>more /var/run/dmesg.boot</command> 然後使用空白鍵來捲動訊息。當查看完畢後輸入 <command>exit</command> 返回歡迎選單。</para>
       </tip>
     </sect2>
   </sect1>
@@ -2735,20 +2671,12 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
   <sect1 xml:id="using-bsdinstall">
     <title>使用 <application>bsdinstall</application></title>
 
-    <para xml:lang="en">This section shows the order of the
-      <application>bsdinstall</application> menus and the type of
-      information that will be asked before the system is installed.
-      Use the arrow keys to highlight a menu option, then
-      <keycap>Space</keycap> to select or deselect that menu item.
-      When finished, press <keycap>Enter</keycap> to save the
-      selection and move onto the next screen.</para>
+    <para>本節將告訴您在系統安裝之前 <application>bsdinstall</application> 選單的順序以及會詢問的資訊類型，可使用方向鍵來選擇選單的選項，然後按下 <keycap>Space</keycap> 選擇或取消選擇選單項目。當完成之後，按下 <keycap>Enter</keycap> 儲存選項然後進入下一個畫面。</para>
 
     <sect2 xml:id="bsdinstall-keymap">
       <title>選擇鍵盤對應表選單</title>
 
-      <para xml:lang="en">Depending on the system console being used,
-	<application>bsdinstall</application> may initially display
-	the menu shown in <xref linkend="bsdinstall-keymap-select-default"/>.</para>
+      <para>依據使用的系統 Console，<application>bsdinstall</application> 可能一開始顯示的選單會如 <xref linkend="bsdinstall-keymap-select-default"/>。</para>
 
       <figure xml:id="bsdinstall-keymap-select-default">
 	<title>鍵盤對應表選擇</title>
@@ -2760,13 +2688,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">To configure the keyboard layout, press
-	<keycap>Enter</keycap> with
-	<guibutton>[ YES ]</guibutton> selected, which will
-	display the menu shown in <xref linkend="bsdinstall-config-keymap"/>.  To instead use the
-	default layout, use the arrow key to select
-	<guibutton>[ NO ]</guibutton> and press
-	<keycap>Enter</keycap> to skip this menu screen.</para>
+      <para>要設定鍵盤配置，請選擇 <guibutton>[ YES ]</guibutton> 按下 <keycap>Enter</keycap>，接著會顯示選單如 <xref linkend="bsdinstall-config-keymap"/>。若要使用預設的配置，則可使用方向鍵選擇 <guibutton>[ NO ]</guibutton> 然後按下 <keycap>Enter</keycap> 跳過這個選單畫面。</para>
 
       <figure xml:id="bsdinstall-config-keymap">
 	<title>選擇鍵盤選單</title>
@@ -2778,23 +2700,13 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">When configuring the keyboard layout, use the up and down
-	arrows to select the keymap that most closely represents the
-	mapping of the keyboard attached to the system.  Press
-	<keycap>Enter</keycap> to save the selection.</para>
+      <para>設定鍵盤配置時，可使用上與下方向鍵來選擇最接近已連接到系統的鍵盤的鍵盤對應表 (Keymap)，然後按下 <keycap>Enter</keycap> 儲存選項。</para>
 
       <note>
-	<para xml:lang="en">Pressing <keycap>Esc</keycap> will exit this menu and
-	  use the default keymap.  If the choice of keymap is not
-	  clear, <guimenuitem>United States of America
-	    ISO-8859-1</guimenuitem> is also a safe option.</para>
+	<para>按 <keycap>Esc</keycap> 會離開這個選單然後使用預設的鍵盤對應表，若不清選要使用那種鍵盤對應表，<guimenuitem>United States of America ISO-8859-1</guimenuitem> 是也是保險的選項。</para>
       </note>
 
-      <para xml:lang="en">In FreeBSD 10.0-RELEASE and later, this menu has been
-	enhanced.  The full selection of keymaps is shown, with the
-	default preselected.  In addition, when selecting a different
-	keymap, a dialog is displayed that allows the user to try the
-	keymap and ensure it is correct before proceeding.</para>
+      <para>在 FreeBSD 10.0-RELEASE 以及之後的版本，已經加強了這個選單，會顯示完整的鍵盤對應表選項，並預先選擇預設值。另外，當選擇其他鍵盤對應用時，在繼續之前會顯示對話框讓使用者測試鍵盤對應表來確認。</para>
 
       <figure xml:id="bsdinstall-keymap-10">
 	<title>改進後的鍵盤對應表選單</title>
@@ -2811,9 +2723,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
     <sect2 xml:id="bsdinstall-hostname">
       <title>設定主機名稱</title>
 
-      <para xml:lang="en">The next <application>bsdinstall</application> menu is
-	used to set the hostname for the newly installed
-	system.</para>
+      <para>下一個 <application>bsdinstall</application> 選單用來為新安裝的系統設定主機名稱。</para>
 
       <figure xml:id="bsdinstall-config-hostname">
 	<title>設定主機名稱</title>
@@ -2825,15 +2735,13 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Type in a hostname that is unique for the network.  It
-	should be a fully-qualified hostname, such as <systemitem class="fqdomainname">machine3.example.com</systemitem>.</para>
+      <para>輸入在網路上獨一無二的主機名稱，主機名稱要是完整的主機名稱，如 <systemitem class="fqdomainname">machine3.example.com</systemitem>。</para>
     </sect2>
 
     <sect2 xml:id="bsdinstall-components">
       <title>選擇要安裝的元件</title>
 
-      <para xml:lang="en">Next, <application>bsdinstall</application> will prompt to
-	select optional components to install.</para>
+      <para>接下來 <application>bsdinstall</application> 會提示選擇要安裝的選用元件。</para>
 
       <figure xml:id="bsdinstall-config-components">
 	<title>選擇要安裝的元件</title>
@@ -2845,60 +2753,31 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Deciding which components to install will depend largely
-	on the intended use of the system and the amount of disk space
-	available.  The FreeBSD kernel and userland, collectively known
-	as the <firstterm>base system</firstterm>, are always
-	installed.  Depending on the architecture, some of these
-	components may not appear:</para>
+      <para>決定要安裝的元件主要會根據系統的用途以及可用的磁碟空間容量。FreeBSD 核心 (Kernel) 及 Userland 統稱為 <firstterm>基礎系統 (Base system)</firstterm>，是必須安裝的部份。依據系統的架構，部份元件可能不會顯示:</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>doc</literal> - Additional documentation,
-	    mostly of historical interest, to install into
-	    <filename>/usr/share/doc</filename>.  The documentation
-	    provided by the FreeBSD Documentation Project may be
-	    installed later using the instructions in <xref linkend="updating-upgrading-documentation"/>.</para>
+	  <para><literal>doc</literal> - 額外的說明文件，大部份是經年累月的產物，會安裝到 <filename>/usr/share/doc</filename>。由 FreeBSD 文件計劃所提供的說明文件可在之後安裝，依照 <xref linkend="updating-upgrading-documentation"/> 中的指示操作。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>games</literal> - Several traditional
-	    <acronym>BSD</acronym> games, including
-	    <application>fortune</application>,
-	    <application>rot13</application>, and others.</para>
+	  <para><literal>games</literal> - 數個傳統 <acronym>BSD</acronym> 遊戲，包含 <application>fortune</application>, <application>rot13</application> 以及其他。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>lib32</literal> - Compatibility libraries for
-	    running 32-bit applications on a 64-bit version of
-	    FreeBSD.</para>
+	  <para><literal>lib32</literal> - 在 64-bit 版本的 FreeBSD 供執行 32-bit 應用程式使用的相容性程式庫。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>ports</literal> - The FreeBSD Ports Collection
-	    is a collection of files which automates the downloading,
-	    compiling and installation of third-party software
-	    packages.  <xref linkend="ports"/> discusses how to use
-	    the Ports Collection.</para>
+	  <para><literal>ports</literal> - FreeBSD Ports 套件集是一套可自動下載、編譯安裝第三方軟體套件的集合，<xref linkend="ports"/> 中會討論到如何使用 Ports 套件集。</para>
 
 	  <warning>
-	    <para xml:lang="en">The installation program does not check for
-	      adequate disk space.  Select this option only if
-	      sufficient hard disk space is available.  The FreeBSD Ports
-	      Collection takes up about 500 MB of disk
-	      space.</para>
+	    <para>安裝程式並不會檢查是否有充足的磁碟空間，FreeBSD Ports 套件集會使用約 500 MB 的磁碟空間，只有在有足夠的磁碟空間時才選擇這個選項。</para>
 	  </warning>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>src</literal> - The complete FreeBSD source code
-	    for both the kernel and the userland.  Although not
-	    required for the majority of applications, it may be
-	    required to build device drivers, kernel modules, or some
-	    applications from the Ports Collection.  It is also used
-	    for developing FreeBSD itself.  The full source tree requires
-	    1 GB of disk space and recompiling the entire FreeBSD
-	    system requires an additional 5 GB of space.</para>
+	  <para><literal>src</literal> - 完整的 FreeBSD 原始碼，包含核心 (Kernel) 與 Userland。雖然大多數的應用程式並不需要，但它可以編譯裝置驅動程式、核心模組或部份來自 Ports 套件集的應用程式，它同時也用來做為開發 FreeBSD 本身所使用。完整的原始碼樹需要 1 GB 的磁碟空間，重新編譯整個 FreeBSD 系統需要額外再 5 GB 的空間。</para>
 	</listitem>
       </itemizedlist>
     </sect2>
@@ -2906,13 +2785,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
     <sect2 xml:id="bsdinstall-netinstall">
       <title>從網路安裝</title>
 
-      <para xml:lang="en">The menu shown in <xref linkend="bsdinstall-netinstall-notify"/> only appears when
-	installing from a <filename>-bootonly.iso</filename>
-	<acronym>CD</acronym> as this installation media does not hold
-	copies of the installation files.  Since the installation
-	files must be retrieved over a network connection, this menu
-	indicates that the network interface must be first
-	configured.</para>
+      <para>於 <xref linkend="bsdinstall-netinstall-notify"/> 所示的選單只會在使用 <filename>-bootonly.iso</filename> <acronym>CD</acronym> 安裝時顯示，因這個安裝媒體中並未含安裝檔的複本。由於安裝檔必須透過網路下載，此選單會告知要先設定網路介面。</para>
 
       <figure xml:id="bsdinstall-netinstall-notify">
 	<title>從網路安裝</title>
@@ -2924,13 +2797,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">To configure the network connection, press
-	<keycap>Enter</keycap> and follow the instructions in <xref linkend="bsdinstall-config-network-dev"/>.  Once the
-	interface is configured, select a mirror site that is
-	located in the same region of the world as the computer on
-	which FreeBSD is being installed.  Files can be retrieved more
-	quickly when the mirror is close to the target computer,
-	reducing installation time.</para>
+      <para>要設定網路連線，按下 <keycap>Enter</keycap> 然後依照 <xref linkend="bsdinstall-config-network-dev"/> 中的指示操作，完成網路介面的設定之後，選擇與要安裝 FreeBSD 的電腦相同所在地區的鏡像站，當鏡像站越接近目標電腦，檔案下載的速度會比較快，這會減少安裝的時間。</para>
 
       <figure xml:id="bsdinstall-netinstall-mirror">
 	<title>選擇鏡像站</title>
@@ -2942,17 +2809,14 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Installation will then continue as if the installation
-	files were located on the local installation media.</para>
+      <para>若在本機的安裝媒體中找到安裝檔案，安裝程序便會繼續。</para>
     </sect2>
   </sect1>
 
   <sect1 xml:id="bsdinstall-partitioning">
     <title>配置磁碟空間</title>
 
-    <para xml:lang="en">The next menu is used to determine the method for
-      allocating disk space.  The options available in the menu
-      depend upon the version of FreeBSD being installed.</para>
+    <para>接下來的選單用來決定配置磁碟空間的方式，選單中可用的選項會依安裝的 FreeBSD 版本而有所不同。</para>
 
     <figure xml:id="bsdinstall-part-guided-manual">
       <title>FreeBSD 9.x 的分割區選擇</title>
@@ -2974,20 +2838,9 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
       </mediaobject>
     </figure>
 
-    <para xml:lang="en"><literal>Guided</literal> partitioning automatically sets up
-      the disk partitions, <literal>Manual</literal> partitioning
-      allows advanced users to create customized partitions from menu
-      options, and <literal>Shell</literal> opens a shell prompt where
-      advanced users can create customized partitions using
-      command-line utilities like <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <citerefentry><refentrytitle>fdisk</refentrytitle><manvolnum>8</manvolnum></citerefentry>, and
-      <citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  <literal>ZFS</literal> partitioning, only
-      available in FreeBSD 10 and later, creates an optionally encrypted
-      root-on-ZFS system with support for <firstterm>boot
-	environments</firstterm>.</para>
+    <para>引導式 (<literal>Guided</literal>) 磁碟分割會自動設定磁碟的分割區 (Partition)，手動 (<literal>Manual</literal>) 磁碟分割可讓進階的使用者使用選單項目建立自訂的分割區，而 <literal>Shell</literal> 會開啟 Shell 提示讓進階的使用者可以使用指示列工具如 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <citerefentry><refentrytitle>fdisk</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來建立自訂的分割區。<literal>ZFS</literal> 磁碟分割只在 FreeBSD 10 及之後的版本可以使用，可建立選擇性加密的 root-on-ZFS 系統並支援 <firstterm>開機環境</firstterm>。</para>
 
-    <para xml:lang="en">This section describes what to consider when laying out the
-      disk partitions.  It then demonstrates how to use the different
-      partitioning methods.</para>
+    <para>本節會介紹在配置磁碟分割時需要考量那些事情，並且會示範各種磁碟分割的方式。</para>
 
     <sect2 xml:id="configtuning-initial">
       <title>規劃分割區配置</title>
@@ -3003,41 +2856,15 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	<primary><filename>/usr</filename></primary>
       </indexterm>
 
-      <para xml:lang="en">When laying out file systems, remember that hard drives
-	transfer data faster from the outer tracks to the inner.
-	Thus, smaller and heavier-accessed file systems should be
-	closer to the outside of the drive, while larger partitions
-	like <filename>/usr</filename> should be placed toward the
-	inner parts of the disk.  It is a good idea to create
-	partitions in an order similar to: <filename>/</filename>,
-	swap, <filename>/var</filename>, and
-	<filename>/usr</filename>.</para>
+      <para>配置檔案系統時要記得硬碟的傳輸資料外軌較內軌的速度快，因此較小且大量存取的檔案系統應要較接近磁碟的外軌，而較大的分割區如 <filename>/usr</filename> 應放置在磁碟較內部，建議建立分割區的順序如下: <filename>/</filename>, swap, <filename>/var</filename> 然後 <filename>/usr</filename>。</para>
 
-      <para xml:lang="en">The size of the <filename>/var</filename> partition
-	reflects the intended machine's usage.  This partition is
-	used to hold mailboxes, log files, and printer spools.
-	Mailboxes and log files can grow to unexpected sizes
-	depending on the number of users and how long log files are
-	kept.  On average, most users rarely need more than about a
-	gigabyte of free disk space in
-	<filename>/var</filename>.</para>
+      <para>機器預期的用途會反映在 <filename>/var</filename> 分割區的大小，這個分割區用來保存郵件 (Mailbox)、記錄檔 (Log file) 及印表機 Spool。依使用者數及保存的期間，郵件及記錄檔可能成長到無法預期的大小，一般來說大部份的使用很少會在 <filename>/var</filename> 需要超過 1 GB 的可用磁碟空間。</para>
 
       <note>
-	<para xml:lang="en">Sometimes, a lot of disk space is required in
-	  <filename>/var/tmp</filename>.  When new software is
-	  installed, the packaging tools extract a temporary copy of
-	  the packages under <filename>/var/tmp</filename>.  Large
-	  software packages, like <application>Firefox</application>,
-	  <application>Apache OpenOffice</application> or
-	  <application>LibreOffice</application> may be tricky to
-	  install if there is not enough disk space under
-	  <filename>/var/tmp</filename>.</para>
+	<para>有時在 <filename>/var/tmp</filename> 會需要較多的空間，當新軟體安裝，套件工具會從套件中取出暫存的複本置於 <filename>/var/tmp</filename>。若在 <filename>/var/tmp</filename> 沒有足夠的空間，要安裝大型軟體套件，例如 <application>Firefox</application>, <application>Apache OpenOffice</application> 或 <application>LibreOffice</application> 會很困難。</para>
       </note>
 
-      <para xml:lang="en">The <filename>/usr</filename> partition holds many of the
-	files which support the system, including the FreeBSD Ports
-	Collection and system source code.  At least 2 gigabytes is
-	recommended for this partition.</para>
+      <para><filename>/usr</filename> 分割區會保存許多支持系統運作的檔案，包含 FreeBSD Ports 套件集以及系統原始碼。這個分割區建議至少要有 2 GB 的空間。</para>
 
       <para xml:lang="en">When selecting partition sizes, keep the space
 	requirements in mind.  Running out of space in one partition
@@ -3086,9 +2913,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
     <sect2 xml:id="bsdinstall-part-guided">
       <title>引導式磁碟分割</title>
 
-      <para xml:lang="en">When this method is selected, a menu will display the
-	available disk(s).  If multiple disks are connected, choose
-	the one where FreeBSD is to be installed.</para>
+      <para>當選擇這個方法，選單上會顯示可用的磁碟，若電腦有安裝多個磁碟，則需選擇其中一個來安裝 FreeBSD。</para>
 
       <figure xml:id="bsdinstall-part-guided-disk">
 	<title>自多個磁碟選擇</title>
@@ -3100,14 +2925,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Once the disk is selected, the next menu prompts to
-	install to either the entire disk or to create a partition
-	using free space.  If
-	<guibutton>[ Entire Disk ]</guibutton> is
-	chosen, a general partition layout filling the whole disk is
-	automatically created.  Selecting
-	<guibutton>[ Partition ]</guibutton> creates a
-	partition layout from the unused space on the disk.</para>
+      <para>選擇磁碟之後，接下來選單會提示是否要安裝到整個磁碟或是使用剩餘的空間建立新的分割區。若選擇 <guibutton>[ Entire Disk ]</guibutton>，會自動建立通用的分割區配置來填滿整個磁碟。選擇 <guibutton>[ Partition ]</guibutton> 則會使用磁碟上未使用的空間來建立分割區配置。</para>
 
       <figure xml:id="bsdinstall-part-entire-part">
 	<title>選擇完整磁碟或分割區</title>
@@ -3119,15 +2937,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">After the partition layout has been created, review it to
-	ensure it meets the needs of the installation.  Selecting
-	<guibutton>[ Revert ]</guibutton> will reset the
-	partitions to their original values and pressing
-	<guibutton>[ Auto ]</guibutton> will recreate the
-	automatic FreeBSD partitions.  Partitions can also be manually
-	created, modified, or deleted.  When the partitioning is
-	correct, select <guibutton>[ Finish ]</guibutton> to
-	continue with the installation.</para>
+      <para>分割區配置建立完成之後，再檢查一次確定是否符合安裝的需求。選擇 <guibutton>[ Revert ]</guibutton> 會重設分割區回復為原來的設定值，選擇 <guibutton>[ Auto ]</guibutton> 會重新建立自動配置的 FreeBSD 分割區。分割區也可以手動建立、修改或刪除。當確認分割區正確之後，選擇 <guibutton>[ Finish ]</guibutton> 繼續安裝。</para>
 
       <figure xml:id="bsdinstall-part-review">
 	<title>確認已建立的分割區</title>
@@ -3143,7 +2953,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
     <sect2 xml:id="bsdinstall-part-manual">
       <title>手動磁碟分割</title>
 
-      <para xml:lang="en">Selecting this method opens the partition editor:</para>
+      <para>選擇這個方法會開啟分割區編輯程式：</para>
 
       <figure xml:id="bsdinstall-part-manual-create">
 	<title>手動建立分割區</title>
@@ -3155,10 +2965,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Highlight the installation drive
-	(<filename>ada0</filename> in this example) and select
-	<guibutton>[ Create ]</guibutton> to display a menu
-	of available partition schemes:</para>
+      <para>選擇要安裝的磁碟機 (在這個例子為 <filename>ada0</filename>) 然後選擇 <guibutton>[ Create ]</guibutton> 會以選單顯示可用的分割表格式 (Partition scheme):</para>
 
       <figure xml:id="bsdinstall-part-manual-partscheme">
 	<title>手動建立分割區</title>
@@ -3170,14 +2977,10 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en"><acronym>GPT</acronym> is usually the most appropriate
-	choice for amd64 computers.  Older computers that are
-	not compatible with <acronym>GPT</acronym> should use
-	<acronym>MBR</acronym>.  The other partition schemes are
-	generally used for uncommon or older computers.</para>
+      <para>amd64 電腦最適合的選擇通常是 <acronym>GPT</acronym>，無法相容 <acronym>GPT</acronym> 的舊電腦則應使用 <acronym>MBR</acronym>。而其他分割表格式一般會用在那些較罕見或較舊的電腦上。</para>
 
       <table frame="none" rowsep="1" pgwide="1">
-	<title>磁碟分割格式</title>
+	<title>磁碟分割表格式</title>
 
 	<tgroup cols="2" align="left">
 	  <thead>
@@ -3190,46 +2993,38 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	  <tbody>
 	    <row>
 	      <entry xml:lang="en">APM</entry>
-	      <entry xml:lang="en">Apple Partition Map, used by <trademark class="registered">PowerPC</trademark>.</entry>
+	      <entry>Apple Partition Map，用於 <trademark class="registered">PowerPC</trademark>。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">BSD</entry>
-	      <entry xml:lang="en"><acronym>BSD</acronym> label without an
-		<acronym>MBR</acronym>, sometimes called
-		<firstterm>dangerously dedicated mode</firstterm> as
-		non-<acronym>BSD</acronym> disk utilities may not
-		recognize it.</entry>
+	      <entry>無 <acronym>MBR</acronym> 的 <acronym>BSD</acronym> 標籤，因非 <acronym>BSD</acronym> 的磁碟工具可能無法辨識該標籤，有時被稱做 <firstterm>危險的專用模式</firstterm>。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">GPT</entry>
-	      <entry xml:lang="en">GUID Partition Table (<link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table">http://en.wikipedia.org/wiki/GUID_Partition_Table</link>).</entry>
+	      <entry>GUID 分割區表 (<link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table">http://en.wikipedia.org/wiki/GUID_Partition_Table</link>)。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">MBR</entry>
-	      <entry xml:lang="en">Master Boot Record (<link xlink:href="http://en.wikipedia.org/wiki/Master_boot_record">http://en.wikipedia.org/wiki/Master_boot_record</link>).</entry>
+	      <entry>主開機記錄 (<link xlink:href="http://en.wikipedia.org/wiki/Master_boot_record">http://en.wikipedia.org/wiki/Master_boot_record</link>)。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">PC98</entry>
-	      <entry xml:lang="en"><acronym>MBR</acronym> variant used by NEC PC-98
-		computers (<link xlink:href="http://en.wikipedia.org/wiki/Pc9801">http://en.wikipedia.org/wiki/Pc9801</link>).</entry>
+	      <entry>使用 <acronym>MBR</acronym> 改編，用於 NEC PC-98 電腦 (<link xlink:href="http://en.wikipedia.org/wiki/Pc9801">http://en.wikipedia.org/wiki/Pc9801</link>)。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">VTOC8</entry>
-	      <entry xml:lang="en">Volume Table Of Contents used by Sun SPARC64 and
-		UltraSPARC computers.</entry>
+	      <entry>Volume Table Of Contents，用於 Sun SPARC64 及 UltraSPARC  電腦。</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
       </table>
 
-      <para xml:lang="en">After the partitioning scheme has been selected and
-	created, select <guibutton>[ Create ]</guibutton>
-	again to create the partitions.</para>
+      <para>選擇完分割區表並建立之後，再選擇 <guibutton>[ Create ]</guibutton> 一次來建立分割區。</para>
 
       <figure xml:id="bsdinstall-part-manual-addpart">
 	<title>手動建立分割區</title>
@@ -3241,111 +3036,55 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">A standard FreeBSD <acronym>GPT</acronym> installation uses
-	at least three partitions:</para>
+      <para>標準的 FreeBSD <acronym>GPT</acronym> 安裝會使用至少三種分割區:</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>freebsd-boot</literal> - Holds the FreeBSD boot
-	    code.</para>
+	  <para><literal>freebsd-boot</literal> - 儲存 FreeBSD 開機程式 (Boot code)。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>freebsd-ufs</literal> - A FreeBSD
-	    <acronym>UFS</acronym> file system.</para>
+	  <para><literal>freebsd-ufs</literal> - FreeBSD 的 <acronym>UFS</acronym> 檔案系統。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>freebsd-swap</literal> - FreeBSD swap
-	    space.</para>
+	  <para><literal>freebsd-swap</literal> - FreeBSD 交換空間。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">Another partition type worth noting is
-	<literal>freebsd-zfs</literal>, used for partitions that will
-	contain a FreeBSD <acronym>ZFS</acronym> file system (<xref linkend="zfs"/>).  Refer to <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> for
-	descriptions of the available <acronym>GPT</acronym> partition
-	types.</para>
+      <para>另一個值得注意的分割區類型是 <literal>freebsd-zfs</literal>，這個分割區用來放置 FreeBSD <acronym>ZFS</acronym> 檔案系統 (<xref linkend="zfs"/>)。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得可用的 <acronym>GPT</acronym> 分割區類型說明。</para>
 
-      <para xml:lang="en">Multiple file system partitions can be created and some
-	people prefer a traditional layout with separate partitions
-	for <filename>/</filename>, <filename>/var</filename>,
-	<filename>/tmp</filename>, and <filename>/usr</filename>.  See
-	<xref linkend="bsdinstall-part-manual-splitfs"/> for an
-	example.</para>
+      <para>檔案系統分割區可建立多個，且有部份人會偏好使用傳統的配置方式將 <filename>/</filename>, <filename>/var</filename>, <filename>/tmp</filename> 以及 <filename>/usr</filename> 分開存放在不同的分割區。請參考 <xref linkend="bsdinstall-part-manual-splitfs"/> 的範例。</para>
 
-      <para xml:lang="en">The <literal>Size</literal> may be entered with common
-	abbreviations: <emphasis>K</emphasis> for kilobytes,
-	<emphasis>M</emphasis> for megabytes, or
-	<emphasis>G</emphasis> for gigabytes.</para>
+      <para>大小 (<literal>Size</literal>) 欄位可以使用常用的縮寫來輸入: <emphasis>K</emphasis> 代表 KB, <emphasis>M</emphasis> 代表 MB, <emphasis>G</emphasis> 代表 GB。</para>
 
       <tip>
-	<para xml:lang="en">Proper sector alignment provides the best performance,
-	  and making partition sizes even multiples of 4K bytes helps
-	  to ensure alignment on drives with either 512-byte or
-	  4K-byte sectors.  Generally, using partition sizes that are
-	  even multiples of 1M or 1G is the easiest way to make sure
-	  every partition starts at an even multiple of 4K.  There is
-	  one exception: the <emphasis>freebsd-boot</emphasis>
-	  partition should be no larger than 512K due to current boot
-	  code limitations.</para>
+	<para>適當的對齊磁碟扇區 (Sector) 會提供最佳的效能，而且讓分割區大小為 4 KB 的偶數倍數可協助確保對齊在磁碟機上的 512-byte 或 4K-byte 扇區。一般來說，使用分割區大小為 1M 或 1G 的偶數倍數是最簡單的方式確保每個分割區以 4K 的偶數倍數做為開始。唯一一個例外是: <emphasis>freebsd-boot</emphasis> 分割區因目前開機程式 (Boot code) 的限制，不可大於 512K。</para>
       </tip>
 
-      <para xml:lang="en">A <literal>Mountpoint</literal> is needed if the partition
-	will contain a file system.  If only a single
-	<acronym>UFS</acronym> partition will be created, the
-	mountpoint should be <filename>/</filename>.</para>
+      <para>若分割區內含檔案系統便會需要一個掛載點 (<literal>Mountpoint</literal>)，若只要建立一個 <acronym>UFS</acronym> 分割區，那麼掛載點應設為 <filename>/</filename>。</para>
 
-      <para xml:lang="en">The <literal>Label</literal> is a name by which the
-	partition will be known.  Drive names or numbers can change if
-	the drive is connected to a different controller or port, but
-	the partition label does not change.  Referring to labels
-	instead of drive names and partition numbers in files like
-	<filename>/etc/fstab</filename> makes the system more tolerant
-	to hardware changes.  <acronym>GPT</acronym> labels appear in
-	<filename>/dev/gpt/</filename> when a disk is attached.  Other
-	partitioning schemes have different label capabilities and
-	their labels appear in different directories in
-	<filename>/dev/</filename>.</para>
+      <para>標籤 (<literal>Label</literal>) 是分割區的名稱，磁碟機名稱或編號可能因為磁碟機連接到不同的控制器或連結埠而有所不同，但分割區標籤並不會改變。因此在檔案如 <filename>/etc/fstab</filename> 中參照時，使用標籤來替代磁碟機名稱與分割區編號會讓系統對硬體變更有更多的容錯空間。<acronym>GPT</acronym> 標籤會於磁碟連結之後出現在 <filename>/dev/gpt/</filename>。其他分割格式的標籤格有不同功能，且標籤會在 <filename>/dev/</filename> 中有各自的目錄。</para>
 
       <tip>
-	<para xml:lang="en">Use a unique label on every partition to avoid
-	  conflicts from identical labels.  A few letters from the
-	  computer's name, use, or location can be added to the label.
-	  For instance, use <literal>labroot</literal> or
-	  <literal>rootfslab</literal> for the <acronym>UFS</acronym>
-	  root partition on the computer named
-	  <literal>lab</literal>.</para>
+	<para>每個分割區請使用獨一無二的標籤來避免相同名稱的衝突，標籤可以加入與電腦名稱、用途、地點有關的文字。例如，使用 <literal>labroot</literal> 或 <literal>rootfslab</literal> 來做為電腦名稱為 <literal>lab</literal> 的 <acronym>UFS</acronym> 根目錄分割區。</para>
       </tip>
 
       <example xml:id="bsdinstall-part-manual-splitfs">
 	<title>建立傳統分割的檔案系統分割區</title>
 
-	<para xml:lang="en">For a traditional partition layout where the
-	  <filename>/</filename>, <filename>/var</filename>,
-	  <filename>/tmp</filename>, and <filename>/usr</filename>
-	  directories are separate file systems on their own
-	  partitions, create a <acronym>GPT</acronym> partitioning
-	  scheme, then create the partitions as shown.  Partition
-	  sizes shown are typical for a 20G target disk.  If more
-	  space is available on the target disk, larger swap or
-	  <filename>/var</filename> partitions may be useful.  Labels
-	  shown here are prefixed with <literal>ex</literal> for
-	  <quote>example</quote>, but readers should use other unique
-	  label values as described above.</para>
+	<para>傳統的分割區配置會將 <filename>/</filename>, <filename>/var</filename>, <filename>/tmp</filename> 以及 <filename>/usr</filename> 分別使用不同的檔案系統與分割區。先建立 <acronym>GPT</acronym> 分割格式，然後依照下表所示建立分割區。下表是針對 20G 目標磁碟的分割區大小，若在目標磁碟有更多可用的空間，則可增加交換空間 (Swap) 或 <filename>/var</filename> 會比較有用。以下所示的標籤皆以 <literal>ex</literal> 為字首，代表 <quote>example</quote>，讀者應照前面的說明使用其他獨一無二的標籤。</para>
 
-	<para xml:lang="en">By default, FreeBSD's <filename>gptboot</filename> expects
-	  the first <acronym>UFS</acronym> partition to be the
-	  <filename>/</filename> partition.</para>
+	<para>預設 FreeBSD 的 <filename>gptboot</filename> 會預期第一個 <acronym>UFS</acronym> 分割區為 <filename>/</filename> 分割區。</para>
 
 	<informaltable frame="none">
 	  <tgroup cols="4">
 	    <thead>
 	      <row>
-		<entry xml:lang="en">Partition Type</entry>
-		<entry xml:lang="en">Size</entry>
-		<entry xml:lang="en">Mountpoint</entry>
-		<entry xml:lang="en">Label</entry>
+		<entry>分割區類型</entry>
+		<entry>大小</entry>
+		<entry>掛載點</entry>
+		<entry>標籤</entry>
 	      </row>
 	    </thead>
 
@@ -3385,8 +3124,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 
 	      <row>
 		<entry xml:lang="en"><literal>freebsd-ufs</literal></entry>
-		<entry xml:lang="en">accept the default (remainder of the
-		  disk)</entry>
+		<entry>接受預設值 (磁碟提示)</entry>
 		<entry xml:lang="en"><filename>/usr</filename></entry>
 		<entry xml:lang="en"><literal>exusrfs</literal></entry>
 	      </row>
@@ -3395,9 +3133,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</informaltable>
       </example>
 
-      <para xml:lang="en">After the custom partitions have been created, select
-	<guibutton>[ Finish ]</guibutton> to continue with
-	the installation.</para>
+      <para>自訂的分割區建立完後，選擇 <guibutton>[ Finish ]</guibutton> 繼續安裝。</para>
     </sect2>
 
     <sect2 xml:id="bsdinstall-part-zfs">
@@ -3573,14 +3309,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
   <sect1 xml:id="bsdinstall-final-warning">
     <title>確認安裝</title>
 
-    <para xml:lang="en">Once the disks are configured, the next menu provides the
-      last chance to make changes before the selected hard drive(s)
-      are formatted.  If changes need to be made, select
-      <guibutton>[ Back ]</guibutton> to return to the main
-      partitioning menu.
-      <guibutton>[ Revert &amp; Exit ]</guibutton>
-      will exit the installer without making any changes to the hard
-      drive.</para>
+    <para>磁碟設定完之後，接下來的選單會讓您在格式化所選的硬碟之前有最後一次機會做變更，若需要做變更，可選 <guibutton>[ Back ]</guibutton> 返回到主磁碟分割選單。<guibutton>[ Revert &amp; Exit ]</guibutton> 則會離開安裝程式，不會對硬碟做任何變更。</para>
 
     <figure xml:id="bsdinstall-final-confirmation">
       <title>最後確認</title>
@@ -3592,20 +3321,14 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
       </mediaobject>
     </figure>
 
-    <para xml:lang="en">To instead start the actual installation, select
-      <guibutton>[ Commit ]</guibutton> and press
-      <keycap>Enter</keycap>.</para>
+    <para>要開始實際的安裝，請選擇 <guibutton>[ Commit ]</guibutton> 然後按下 <keycap>Enter</keycap>。</para>
 
-    <para xml:lang="en">Installation time will vary depending on the distributions
-      chosen, installation media, and speed of the computer.  A series
-      of messages will indicate the progress.</para>
+    <para>安裝時間會依據選擇的發行版、安裝媒體、電腦的速度而有所不同，接下來會有一系列訊息會告知目前的進度。</para>
 
-    <para xml:lang="en">First, the installer formats the selected disk(s) and
-      initializes the partitions.  Next, in the case of a bootonly
-      media, it downloads the selected components:</para>
+    <para>首先，安裝程式會格式化選擇的磁碟，然後初始化分割區。然後，若使用僅可開機 (Boot only) 的媒體則會開始下載選擇的元件:</para>
 
     <figure xml:id="bsdinstall-distfile-fetching">
-      <title>取得發佈版本檔案</title>
+      <title>取得發行版檔案</title>
 
       <mediaobject>
 	<imageobject>
@@ -3614,12 +3337,10 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
       </mediaobject>
     </figure>
 
-    <para xml:lang="en">Next, the integrity of the distribution files is verified
-      to ensure they have not been corrupted during download or
-      misread from the installation media:</para>
+    <para>接著，會檢驗發行版的檔案完整性來確保沒有因下載過程中或安裝媒體的讀取過程中讀取錯誤造成的損壞:</para>
 
     <figure xml:id="bsdinstall-distfile-verify">
-      <title>檢驗發佈版本檔案</title>
+      <title>檢驗發行版檔案</title>
 
       <mediaobject>
 	<imageobject>
@@ -3628,11 +3349,10 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
       </mediaobject>
     </figure>
 
-    <para xml:lang="en">Finally, the verified distribution files are extracted to
-      the disk:</para>
+    <para>最後，檢驗過的發行版檔案會被取出儲存至磁碟:</para>
 
     <figure xml:id="bsdinstall-distfile-extract">
-      <title>解開發佈版本檔案</title>
+      <title>解開發行版檔案</title>
 
       <mediaobject>
 	<imageobject>
@@ -3641,36 +3361,22 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
       </mediaobject>
     </figure>
 
-    <para xml:lang="en">Once all requested distribution files have been extracted,
-      <application>bsdinstall</application> displays the first
-      post-installation configuration screen.  The available
-      post-configuration options are described in the next
-      section.</para>
+    <para>所有選擇的發行版檔案取出後，<application>bsdinstall</application> 會顯示第一次安裝後設定畫面，可用的安裝後設定選項會在下一節說明。</para>
   </sect1>
 
   <sect1 xml:id="bsdinstall-post">
     <title>安裝後注意事項</title>
 
-    <para xml:lang="en">Once FreeBSD is installed,
-      <application>bsdinstall</application> will prompt to configure
-      several options before booting into the newly installed system.
-      This section describes these configuration options.</para>
+    <para>FreeBSD 安裝完之後，<application>bsdinstall</application> 會在開機進入新安裝的系統之前提示設定數個選項，本節將介紹這些設定選項。</para>
 
     <tip>
-      <para xml:lang="en">Once the system has booted,
-	<command>bsdconfig</command> provides a menu-driven method for
-	configuring the system using these and additional
-	options.</para>
+      <para>系統開機之後，<command>bsdconfig</command> 提供了一個選單導向的方式可用來設定系統使用這些其他的選項。</para>
     </tip>
 
     <sect2 xml:id="bsdinstall-post-root">
       <title>設定 <systemitem class="username">root</systemitem> 密碼</title>
 
-      <para xml:lang="en">First, the <systemitem class="username">root</systemitem>
-	password must be set.  While entering the password, the
-	characters being typed are not displayed on the screen.  After
-	the password has been entered, it must be entered again.  This
-	helps prevent typing errors.</para>
+      <para>首先，必需設定 <systemitem class="username">root</systemitem> 的密碼，輸入密碼時，並不會直接在畫面上顯示輸入的字元。輸入完密碼之後，必須再輸入一次來確認沒有輸入錯誤。</para>
 
       <figure xml:id="bsdinstall-post-set-root-passwd">
 	<title>設定 <systemitem class="username">root</systemitem> 密碼</title>
@@ -3684,19 +3390,16 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
     </sect2>
 
     <sect2 xml:id="bsdinstall-config-network-dev">
-      <title>設定網路介面</title>
+      <title>設定網路介面卡</title>
 
-      <para xml:lang="en">Next, a list of the network interfaces found on the
-	computer is shown.  Select the interface to configure.</para>
+      <para>接著，會顯示在電腦上找到的網路介面卡清單。請選擇要設定的介面卡。</para>
 
       <note>
-	<para xml:lang="en">The network configuration menus will be skipped if the
-	  network was previously configured as part of a
-	  <emphasis>bootonly</emphasis> installation.</para>
+	<para>若使用 <emphasis>bootonly</emphasis> 的方式安裝在先前已有設定過網路，將會跳過網路設定選單。</para>
       </note>
 
       <figure xml:id="bsdinstall-configure-net-interface">
-	<title>選擇網路介面</title>
+	<title>選擇網路介面卡</title>
 
 	<mediaobject>
 	  <imageobject>
@@ -3705,10 +3408,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">If an Ethernet interface is selected, the installer will
-	skip ahead to the menu shown in <xref linkend="bsdinstall-configure-net-ipv4"/>.  If a wireless
-	network interface is chosen, the system will instead scan for
-	wireless access points:</para>
+      <para>若選擇的是乙太網路介面卡，安裝程式會跳過這部份直接到 <xref linkend="bsdinstall-configure-net-ipv4"/>，若選擇的是無線網路介面卡，系統則會開始掃描無線存取點 (Wireless Access Point):</para>
 
       <figure xml:id="bsdinstall-wireless-scan">
 	<title>掃描無線網路存取點</title>
@@ -3720,16 +3420,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Wireless networks are identified by a Service Set
-	Identifier (<acronym>SSID</acronym>), a short, unique name
-	given to each network.  <acronym>SSIDs</acronym> found during
-	the scan are listed, followed by a description of the
-	encryption types available for that network.  If the desired
-	<acronym>SSID</acronym> does not appear in the list, select
-	<guibutton>[ Rescan ]</guibutton> to scan again.  If
-	the desired network still does not appear, check for problems
-	with antenna connections or try moving the computer closer to
-	the access point.  Rescan after each change is made.</para>
+      <para>網線網路會使用 Service Set Identifier (<acronym>SSID</acronym>) 來辦識，SSID 是一段簡短、獨一無二的名稱，用來命名每個網路。 掃描時找到的 <acronym>SSID</acronym> 會列到清單，並會說明該網路可用的加密類型。 若想要連線的 <acronym>SSID</acronym> 並未出現在清單上，可選擇 <guibutton>[ Rescan ]</guibutton> 再掃描一次，若想要連線的網路仍然沒有出現，請檢查天線的連線是否有問題，或者嘗試將電腦移至更靠近存取點的位置，然後再掃描一次。</para>
 
       <figure xml:id="bsdinstall-wireless-accesspoints">
 	<title>選擇無線網路</title>
@@ -3741,14 +3432,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Next, enter the encryption information for connecting to
-	the selected wireless network.  <acronym>WPA2</acronym>
-	encryption is strongly recommended as older encryption types,
-	like <acronym>WEP</acronym>, offer little security.  If the
-	network uses <acronym>WPA2</acronym>, input the password, also
-	known as the Pre-Shared Key (<acronym>PSK</acronym>).  For
-	security reasons, the characters typed into the input box are
-	displayed as asterisks.</para>
+      <para>然後，輸入加密資訊來連線到選擇的無線網路。強列建議使用 <acronym>WPA2</acronym> 加密，因較舊的加密類型，如 <acronym>WEP</acronym> 僅提供微弱的安全性。若網路使用 <acronym>WPA2</acronym> 則需輸入密碼，也稱作 Pre-Shared Key (<acronym>PSK</acronym>)。考量安全性，輸入到輸入框的字元會以星號顯示。</para>
 
       <figure xml:id="bsdinstall-wireless-wpa2">
 	<title>WPA2 設定</title>
@@ -3760,9 +3444,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">Next, choose whether or not an <acronym>IPv4</acronym>
-	address should be configured on the Ethernet or wireless
-	interface:</para>
+      <para>接下來，選擇是否要設定乙太網路或無線網路介面卡的 <acronym>IPv4</acronym> 位址: </para>
 
       <figure xml:id="bsdinstall-configure-net-ipv4">
 	<title>選擇 <acronym>IPv4</acronym> 網路</title>
@@ -3774,27 +3456,13 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">There are two methods of <acronym>IPv4</acronym>
-	configuration.  <acronym>DHCP</acronym> will automatically
-	configure the network interface correctly and should be used
-	if the network provides a <acronym>DHCP</acronym> server.
-	Otherwise, the addressing information needs to be input
-	manually as a static configuration.</para>
+      <para>有兩種方式可以設定 <acronym>IPv4</acronym>。 <acronym>DHCP</acronym> 會自動設定網路介面卡且該網路上需有 <acronym>DHCP</acronym> 伺服器才可使用。否則，必須手動輸入位址的資訊來做靜態設定。</para>
 
       <note>
-	<para xml:lang="en">Do not enter random network information as it will not
-	  work.  If a <acronym>DHCP</acronym> server is not available,
-	  obtain the information listed in <xref linkend="bsdinstall-collect-network-information"/> from
-	  the network administrator or Internet service
-	  provider.</para>
+	<para>請不要隨便輸入網路資訊，因為這不管用。如果沒有可用的 <acronym>DHCP</acronym> 伺服器，可向網路管理者或網路服務供應商 (Internet Service Provider, ISP) 索取列於 <xref linkend="bsdinstall-collect-network-information"/> 的資訊。</para>
       </note>
 
-      <para xml:lang="en">If a <acronym>DHCP</acronym> server is available, select
-	<guibutton>[ Yes ]</guibutton> in the next menu to
-	automatically configure the network interface.  The installer
-	will appear to pause for a minute or so as it finds the
-	<acronym>DHCP</acronym> server and obtains the addressing
-	information for the system.</para>
+      <para>若有可用的 <acronym>DHCP</acronym> 伺服器，請在接下來的選單中選擇 <guibutton>[ Yes ]</guibutton> 則會自動設定網路介面卡。當找到 <acronym>DHCP</acronym> 伺服器並且取得系統的位址資訊時，安裝程式會出現一分鐘左右的停頓。</para>
 
       <figure xml:id="bsdinstall-net-ipv4-dhcp">
 	<title>選擇 <acronym>IPv4</acronym> <acronym>DHCP</acronym> 設定</title>
@@ -3806,9 +3474,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">If a <acronym>DHCP</acronym> server is not available,
-	select <guibutton>[ No ]</guibutton> and input the
-	following addressing information in this menu:</para>
+      <para>若沒有可用的 <acronym>DHCP</acronym> 伺服器，則選擇 <guibutton>[ No ]</guibutton> 然後在這個選單中輸入以下位址資訊:</para>
 
       <figure xml:id="bsdinstall-net-ipv4-static">
 	<title><acronym>IPv4</acronym> 靜態位置設定</title>
@@ -3822,28 +3488,19 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>IP Address</literal> - The
-	    <acronym>IPv4</acronym> address assigned to this computer.
-	    The address must be unique and not already in use by
-	    another piece of equipment on the local network.</para>
+	  <para>IP 位址 (<literal>IP Address</literal>) - 要分配給這台電腦的 <acronym>IPv4</acronym> 位址。位址必須獨一無二且不可已被其他在區域網路上的設備使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Subnet Mask</literal> - The subnet mask for
-	    the network.</para>
+	  <para>子網路遮罩 (<literal>Subnet Mask</literal>) - 網路的子網路遮罩。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Default Router</literal> - The
-	    <acronym>IP</acronym> address of the network's default
-	    gateway.</para>
+	  <para>預設路由器 (<literal>Default Router</literal>) - <acronym>IP</acronym> 位址所在網段的預設閘道器。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">The next screen will ask if the interface should be
-	configured for <acronym>IPv6</acronym>.  If
-	<acronym>IPv6</acronym> is available and desired, choose
-	<guibutton>[ Yes ]</guibutton> to select it.</para>
+      <para>接下來的畫面會詢問是否要設定介面卡的 <acronym>IPv6</acronym> 位址，若可以且想要使用 <acronym>IPv6</acronym>，請選擇 <guibutton>[ Yes ]</guibutton>。</para>
 
       <figure xml:id="bsdinstall-net-ipv6">
 	<title>選擇 IPv6 網路</title>
@@ -3855,19 +3512,9 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en"><acronym>IPv6</acronym> also has two methods of
-	configuration.    StateLess Address AutoConfiguration
-	(<acronym>SLAAC</acronym>) will automatically request the
-	correct configuration information from a local router.  Refer
-	to <link xlink:href="http://tools.ietf.org/html/rfc4862">http://tools.ietf.org/html/rfc4862</link>
-	for more information.  Static configuration requires manual
-	entry of network information.</para>
+      <para>同樣有兩種方式可以設定 <acronym>IPv6</acronym>。StateLess Address AutoConfiguration (<acronym>SLAAC</acronym>) 會自動向區域路由器請求取得正確的設定資訊，請參考 <link xlink:href="http://tools.ietf.org/html/rfc4862">http://tools.ietf.org/html/rfc4862</link> 取得進一步資訊。靜態設定則需要手動輸入網路資訊。</para>
 
-      <para xml:lang="en">If an <acronym>IPv6</acronym> router is available, select
-	<guibutton>[ Yes ]</guibutton> in the next menu to
-	automatically configure the network interface.  The installer
-	will appear to pause for a minute or so as it finds the router
-	and obtains the addressing information for the system.</para>
+      <para>若有可用的 <acronym>IPv6</acronym> 路由器，請在接下來的選單選擇 <guibutton>[ Yes ]</guibutton> 來自動設定網路介面卡。當找到路由器並且取得系統的位址資訊時，安裝程式會出現一分鐘左右的停頓。</para>
 
       <figure xml:id="bsdinstall-net-ipv6-slaac">
 	<title>選擇 IPv6 SLAAC 設定</title>
@@ -3879,9 +3526,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para xml:lang="en">If an <acronym>IPv6</acronym> router is not available,
-	select <guibutton>[ No ]</guibutton> and input the
-	following addressing information in this menu:</para>
+      <para>若沒有可用的 <acronym>IPv6</acronym> 路由器，請選擇 <guibutton>[ No ]</guibutton> 然後在這個選單中輸入以下位址資訊:</para>
 
       <figure xml:id="bsdinstall-net-ipv6-static">
 	<title>IPv6 靜態位置設定</title>
@@ -3895,31 +3540,15 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>IPv6 Address</literal> - The
-	    <acronym>IPv6</acronym> address assigned to this computer.
-	    The address must be unique and not already in use by
-	    another piece of equipment on the local network.</para>
+	  <para>IPv6 位址 (<literal>IPv6 Address</literal>) - 要分配給這台電腦的 <acronym>IPv6</acronym> 位址。位址必須獨一無二且不可已被其他在區域網路上的設備使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><literal>Default Router</literal> - The
-	    <acronym>IPv6</acronym> address of the network's default
-	    gateway.</para>
+	  <para>預設路由器 (<literal>Default Router</literal>) - <acronym>IPv6</acronym> 位址所在網段的預設閘道器。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">The last network configuration menu is used to configure
-	the Domain Name System (<acronym>DNS</acronym>) resolver,
-	which converts hostnames to and from network addresses.  If
-	<acronym>DHCP</acronym> or <acronym>SLAAC</acronym> was used
-	to autoconfigure the network interface, the <literal>Resolver
-	  Configuration</literal> values may already be filled in.
-	Otherwise, enter the local network's domain name in the
-	<literal>Search</literal> field.  <literal>DNS #1</literal>
-	and <literal>DNS #2</literal> are the <acronym>IPv4</acronym>
-	and/or <acronym>IPv6</acronym> addresses of the
-	<acronym>DNS</acronym> servers.  At least one
-	<acronym>DNS</acronym> server is required.</para>
+      <para>最後的網路設定選單是用來設定網域名稱系統 (Domain Name System, <acronym>DNS</acronym>) 的解析器，解析器會轉換主機名稱為網路位址。若已使用 <acronym>DHCP</acronym> 或 <acronym>SLAAC</acronym> 來自動設定網路介面卡，解析器設定 (<literal>Resolver Configuration</literal>) 的值可能會事先已填入，否則需輸入區域網路的網域名稱到搜尋 (<literal>Search</literal>) 欄位。 <literal>DNS #1</literal> 與 <literal>DNS #2</literal> 要填寫 <acronym>DNS</acronym> 伺服器的 <acronym>IPv4</acronym> 及/或 <acronym>IPv6</acronym> 位址，至少需填寫一個 <acronym>DNS</acronym> 伺服器。</para>
 
       <figure xml:id="bsdinstall-net-dns-config">
 	<title>DNS 設定</title>
@@ -28590,13 +28219,13 @@ fi</programlisting>
       <primary><command>gpart</command></primary>
     </indexterm>
 
-    <para>在本例中，會在新的磁碟上建立單一大型分割區，使用 <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table"> <acronym>GPT</acronym></link> 分割區結構而非較舊與通用性較差的 <acronym>MBR</acronym> 結構。</para>
+    <para>在本例中，會在新的磁碟上建立單一大型分割區，使用 <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table"> <acronym>GPT</acronym></link> 分割表格式而非較舊與通用性較差的 <acronym>MBR</acronym> 結構。</para>
 
     <note>
       <para>若新加入的磁碟不是空白的，可以使用 <command>gpart delete</command> 來移除舊的分割區資訊。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得詳細資訊。</para>
     </note>
 
-    <para>建立完分割區結構後接著加入一個分割區，要在新的磁碟增進效能可使用較大的硬體區塊大小 (Block size)，此分割區會對齊 1 MB 的邊界：</para>
+    <para>建立完分割表格式後接著加入一個分割區，要在新的磁碟增進效能可使用較大的硬體區塊大小 (Block size)，此分割區會對齊 1 MB 的邊界：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart create -s GPT ada1</userinput>
 <prompt>#</prompt> <userinput>gpart add -t freebsd-ufs -a 1M ada1</userinput></screen>
@@ -28667,7 +28296,7 @@ fi</programlisting>
   83886046         1        - free -  (512B)</screen>
 
     <note>
-      <para>若磁碟已使用 <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table"> <acronym>GPT</acronym></link> 分割區結構格式化，可能會顯示為 <quote>已損壞 (corrupted)</quote> 因為 <acronym>GPT</acronym> 備份分割區已不存在於磁碟結尾。 使用 <command>gpart</command> 來修正備份分割區：</para>
+      <para>若磁碟已使用 <link xlink:href="http://en.wikipedia.org/wiki/GUID_Partition_Table"> <acronym>GPT</acronym></link> 分割表格式做格式化，可能會顯示為 <quote>已損壞 (corrupted)</quote> 因為 <acronym>GPT</acronym> 備份分割區已不存在於磁碟結尾。 使用 <command>gpart</command> 來修正備份分割區：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart recover <replaceable>ada0</replaceable></userinput>
 ada0 recovered</screen>
@@ -40075,11 +39704,11 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
       <see>updating-upgrading</see>
     </indexterm>
 
-    <para>即時套用安全性更新與升級作業系統到新的發行版本對管理一個持續運作的系統是重要的。FreeBSD 內含可以執行這兩項任務的工具程式，叫做 <command>freebsd-update</command>。</para>
+    <para>即時套用安全性更新並升級到新發佈的作業系統對管理一個持續運作的系統是重要的。FreeBSD 內含可以執行這兩項任務的工具程式，叫做 <command>freebsd-update</command>。</para>
 
     <para>這個工具程式支援使用 Binary 對 FreeBSD 做安全性與和錯誤更新，不需要手動編譯和安裝修補 (Patch) 或新核心。目前由安全性團隊提供支援的 Binary 更新可用於所有的架構和發行版。支援的發行版清單及各自的支援期限列於 <uri xlink:href="http://www.FreeBSD.org/security/">http://www.FreeBSD.org/security/</uri>。</para>
 
-    <para>這個工具程式也支援升級作業系統到次要的發行版本以及升級到另一個發行版分支。在升級到新的發行版本前，需先查看該版本的發行公告，因為發行公告中包含了該發行版本的相關重要資訊。發行公告可自 <uri xlink:href="http://www.FreeBSD.org/releases/">http://www.FreeBSD.org/releases/</uri> 取得。</para>
+    <para>這個工具程式也支援升級作業系統到次要的發佈版以及升級到另一個發佈版分支。在升級到新的發佈版本前，需先查看該版本的發佈公告，因為發行公告中包含了該發行版本的相關重要資訊。發行公告可自 <uri xlink:href="http://www.FreeBSD.org/releases/">http://www.FreeBSD.org/releases/</uri> 取得。</para>
 
     <note>
       <para>如果有使用 <command>crontab</command> 來執行 <citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</manvolnum></citerefentry>，則必須在升級作業系統前先關閉。</para>
@@ -40170,7 +39799,7 @@ Uninstalling updates... done.</screen>
     <sect2 xml:id="freebsdupdate-upgrade">
       <title>執行主要及次要版號升級</title>
 
-      <para>從 FreeBSD 的次要版本升級到另一個版本，例如從 FreeBSD 9.0 到 FreeBSD 9.1, 叫作 <firstterm>次要版本</firstterm>更新。 <firstterm>主要版本</firstterm>更新發生在當 FreeBSD 從一個主要版本升級到主要版本升級到另一個主要版本時，例如從 FreeBSD 9.X 到 FreeBSD 10.X。 兩種更新都可以透過提供 <command>freebsd-update</command> 目標的發行版本來執行。</para>
+      <para>從 FreeBSD 的次要版本升級到另一個版本，例如從 FreeBSD 9.0 到 FreeBSD 9.1, 叫作 <firstterm>次要版本</firstterm>更新。 <firstterm>主要版本</firstterm>更新發生在當 FreeBSD 從一個主要版本升級到主要版本升級到另一個主要版本時，例如從 FreeBSD 9.X 到 FreeBSD 10.X。 兩種更新都可以透過提供 <command>freebsd-update</command> 目標的發佈版本來執行。</para>
 
       <note>
 	<para>如果系統正在執行自訂的核心，請在開始升級前，確定有保留一份 <filename>GENERIC</filename> 核心的複本在 <filename>/boot/GENERIC</filename>。 請參考 <xref linkend="freebsd-update-custom-kernel-9x"/> 關於如何取得 <filename>GENERIC</filename> 核心複本的說明。</para>
@@ -40299,9 +39928,9 @@ before running "/usr/sbin/freebsd-update install"</screen>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>freebsd-update IDS &gt;&gt; outfile.ids</userinput></screen>
 
-      <para>系統將會開始檢查並且會產生相當長的檔案清單，內容包含發行版本已知的與目前安裝版本的 <acronym>SHA256</acronym> 雜湊值會儲存到指定的輸出檔。</para>
+      <para>系統將會開始檢查並且會產生相當長的檔案清單，內容包含發佈版本已知的與目前安裝版本的 <acronym>SHA256</acronym> 雜湊值會儲存到指定的輸出檔。</para>
 
-      <para>清單中的項目會相當的多，但輸出的格式可以很簡單的用來分析。例如，要取得與發行版本不同的檔案清單，可使用以下指令：</para>
+      <para>清單中的項目會相當的多，但輸出的格式可以很簡單的用來分析。例如，要取得與發佈版本不同的檔案清單，可使用以下指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cat outfile.ids | awk '{ print $1 }' | more</userinput>
 /etc/master.passwd
