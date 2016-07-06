@@ -107,7 +107,7 @@ pkg install poedit
 | Manual Page | 操作手冊 ||
 | Host OS | 主端作業系統 ||
 | Guest OS | 客端作業系統 ||
-| Partitioning scheme | 分割區結構 | 例如 MBR, GPT 等 |
+| Partitioning scheme | 分割表格式 | 例如 MBR, GPT 等 |
 | Distribution | 發行版 | 用來發行用的版本 |
 | Release | 發佈, 發佈版 | |
 
