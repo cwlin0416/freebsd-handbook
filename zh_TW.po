@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-07-05 12:26+0800\n"
-"PO-Revision-Date: 2016-07-06 17:23+0800\n"
+"PO-Revision-Date: 2016-07-07 12:50+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -1800,7 +1800,7 @@ msgstr ""
 msgid ""
 "The first CD-ROM (and general net-wide) distribution was FreeBSD 1.0, released in December of 1993. This was based on the 4.3BSD-Lite (<quote>Net/2</quote>) tape from U.C. Berkeley, with many components also provided by 386BSD and the Free Software Foundation. It was a fairly reasonable success for a first offering, and they followed "
 "it with the highly successful FreeBSD 1.1 release in May of 1994."
-msgstr "第一張以 CD-ROM (及網路) 的發行版為 FreeBSD 1.0，是在 1993 年十二月發佈。 該版本是以 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>) 以及許多來自於 386BSD 和自由軟體基金會的元件為基礎。對於第一次發行而言還算成功，我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。"
+msgstr "第一張以 CD-ROM (及網路) 發行的版本為 FreeBSD 1.0，是在 1993 年十二月發佈。 該版本採用了 U.C. Berkeley 以磁帶方式發行的 4.3BSD-Lite (<quote>Net/2</quote>) 及許多來自於 386BSD 和自由軟體基金會的元件為基礎。對於第一次發行而言還算成功，我們又接著於 1994 年 5 月發行了相當成功的 FreeBSD 1.1。"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:2470
@@ -2414,7 +2414,7 @@ msgstr "部份 FreeBSD 安裝方式需要網路連線來下載安裝檔，因此
 #. (itstool) path: step/para
 #: book.translate.xml:3168
 msgid "If the network has a <acronym>DHCP</acronym> server, it can be used to provide automatic network configuration. If <acronym>DHCP</acronym> is not available, the following network information for the system must be obtained from the local network administrator or Internet service provider:"
-msgstr "如果網路中有 <acronym>DHCP</acronym> 伺服器，則可透過該伺服器自動設定網路，若無法使用 <acronym>DHCP</acronym>，則需要從區域網路管理者或是網際網路服務供應商 ( Internet Service Provider, ISP) 取得以的網路資訊供系統使用："
+msgstr "如果網路中有 <acronym>DHCP</acronym> 伺服器，則可透過該伺服器自動設定網路，若無法使用 <acronym>DHCP</acronym>，則需要從區域網路管理者或是網際網路服務供應商 (Internet Service Provider, ISP) 取得以的網路資訊供系統使用："
 
 #. (itstool) path: orderedlist/title
 #: book.translate.xml:3176
@@ -3524,7 +3524,7 @@ msgid ""
 "system more tolerant to hardware changes. <acronym>GPT</acronym> labels appear in <filename>/dev/gpt/</filename> when a disk is attached. Other partitioning schemes have different label capabilities and their labels appear in different directories in <filename>/dev/</filename>."
 msgstr ""
 "標籤 (<literal>Label</literal>) 是分割區的名稱，磁碟機名稱或編號可能因為磁碟機連接到不同的控制器或連結埠而有所不同，但分割區標籤並不會改變。因此在檔案如 <filename>/etc/fstab</filename> 中參照時，使用標籤來替代磁碟機名稱與分割區編號會讓系統對硬體變更有更多的容錯空間。<acronym>GPT</acronym> 標籤會於磁碟連結之後出現在 <filename>/dev/gpt/</"
-"filename>。其他分割格式的標籤格有不同功能，且標籤會在 <filename>/dev/</filename> 中有各自的目錄。"
+"filename>。其他分割表格式的標籤格有不同功能，且標籤會在 <filename>/dev/</filename> 中有各自的目錄。"
 
 #. (itstool) path: tip/para
 #: book.translate.xml:4256
@@ -3542,7 +3542,7 @@ msgid ""
 "For a traditional partition layout where the <filename>/</filename>, <filename>/var</filename>, <filename>/tmp</filename>, and <filename>/usr</filename> directories are separate file systems on their own partitions, create a <acronym>GPT</acronym> partitioning scheme, then create the partitions as shown. Partition sizes shown are "
 "typical for a 20G target disk. If more space is available on the target disk, larger swap or <filename>/var</filename> partitions may be useful. Labels shown here are prefixed with <literal>ex</literal> for <quote>example</quote>, but readers should use other unique label values as described above."
 msgstr ""
-"傳統的分割區配置會將 <filename>/</filename>, <filename>/var</filename>, <filename>/tmp</filename> 以及 <filename>/usr</filename> 分別使用不同的檔案系統與分割區。先建立 <acronym>GPT</acronym> 分割格式，然後依照下表所示建立分割區。下表是針對 20G 目標磁碟的分割區大小，若在目標磁碟有更多可用的空間，則可增加交換空間 (Swap) 或 <filename>/"
+"傳統的分割區配置會將 <filename>/</filename>, <filename>/var</filename>, <filename>/tmp</filename> 以及 <filename>/usr</filename> 分別使用不同的檔案系統與分割區。先建立 <acronym>GPT</acronym> 分割表格式，然後依照下表所示建立分割區。下表是針對 20G 目標磁碟的分割區大小，若在目標磁碟有更多可用的空間，則可增加交換空間 (Swap) 或 <filename>/"
 "var</filename> 會比較有用。以下所示的標籤皆以 <literal>ex</literal> 為字首，代表 <quote>example</quote>，讀者應照前面的說明使用其他獨一無二的標籤。"
 
 #. (itstool) path: example/para
@@ -4268,7 +4268,7 @@ msgstr "設定時區"
 #. (itstool) path: sect2/para
 #: book.translate.xml:4886
 msgid "The next menu asks if the system clock uses <acronym>UTC</acronym> or local time. When in doubt, select <guibutton>[ No ]</guibutton> to choose the more commonly-used local time."
-msgstr ""
+msgstr "接下來的選單會詢問系統時鐘要使用 <acronym>UTC</acronym> 或者當地時間。 若有疑問時可選擇 <guibutton>[ No ]</guibutton>使用更常用的當地時間。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4892
@@ -4288,12 +4288,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4901
 msgid "The next series of menus are used to determine the correct local time by selecting the geographic region, country, and time zone. Setting the time zone allows the system to automatically correct for regional time changes, such as daylight savings time, and perform other time zone related functions properly."
-msgstr ""
+msgstr "接下來一系列的選單會透過選擇地理區域、城市及時區來判斷正確的當地時間。設定時區可讓系統自動更正區域時間的更改，如日光節約時間以及正確執行其他時區相關的功能。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4908
 msgid "The example shown here is for a machine located in the Eastern time zone of the United States. The selections will vary according to the geographical location."
-msgstr ""
+msgstr "此處以位於美國東部時區的機器為例，選擇會依據地理位置不同改變。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4913
@@ -4313,7 +4313,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4922
 msgid "The appropriate region is selected using the arrow keys and then pressing <keycap>Enter</keycap>."
-msgstr ""
+msgstr "使用方向鍵選擇適當的區域然後按下 <keycap>Enter</keycap>。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4926
@@ -4333,7 +4333,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4935
 msgid "Select the appropriate country using the arrow keys and press <keycap>Enter</keycap>."
-msgstr ""
+msgstr "使用方向鍵選擇適當的城市然後按下 <keycap>Enter</keycap>。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4939
@@ -4353,7 +4353,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4948
 msgid "The appropriate time zone is selected using the arrow keys and pressing <keycap>Enter</keycap>."
-msgstr ""
+msgstr "使用方向鍵選擇適當的時區然後按下 <keycap>Enter</keycap>。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4952
@@ -4373,7 +4373,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4961
 msgid "Confirm the abbreviation for the time zone is correct. If it is, press <keycap>Enter</keycap> to continue with the post-installation configuration."
-msgstr ""
+msgstr "確認時區的縮寫是否正確，若正確，按下 <keycap>Enter</keycap> 繼續安裝後設定。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4967
@@ -4383,7 +4383,7 @@ msgstr "開啟服務"
 #. (itstool) path: sect2/para
 #: book.translate.xml:4969
 msgid "The next menu is used to configure which system services will be started whenever the system boots. All of these services are optional. Only start the services that are needed for the system to function."
-msgstr ""
+msgstr "接下來的選單用來設定有那些系統服務要在系統啟動時執行。所有的服務為選用，只需開啟系統運作真正需要的服務。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4975
@@ -4403,38 +4403,38 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4984
 msgid "Here is a summary of the services which can be enabled in this menu:"
-msgstr ""
+msgstr "這是可以在這個選單開啟的服務摘要:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4989
 msgid "<literal>sshd</literal> - The Secure Shell (<acronym>SSH</acronym>) daemon is used to remotely access a system over an encrypted connection. Only enable this service if the system should be available for remote logins."
-msgstr ""
+msgstr "<literal>sshd</literal> - Secure Shell (<acronym>SSH</acronym>) Daemon 可從遠端透過加密的連線存取系統，只有在系統允許遠端登入時開啟這個服務。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:4997
 msgid "<literal>moused</literal> - Enable this service if the mouse will be used from the command-line system console."
-msgstr ""
+msgstr "<literal>moused</literal> - 若在命令列系統 Console 會使用到滑鼠時，可開啟此服務。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5003
 msgid "<literal>ntpd</literal> - The Network Time Protocol (<acronym>NTP</acronym>) daemon for automatic clock synchronization. Enable this service if there is a <trademark class=\"registered\">Windows</trademark>, Kerberos, or <acronym>LDAP</acronym> server on the network."
-msgstr ""
+msgstr "<literal>ntpd</literal> - 網路時間通訊協定 (Network Time Protoco, <acronym>NTP</acronym>) Daemon 用來自動同步時間。若在網路上有使用 <trademark class=\"registered\">Windows</trademark>, Kerberos 或 <acronym>LDAP</acronym> 伺服器時，可開啟此服務。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5011
 msgid "<literal>powerd</literal> - System power control utility for power control and energy saving."
-msgstr ""
+msgstr "<literal>powerd</literal> - 系統電源控制工具用來做電源控制與節能。"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: figure/title
 #: book.translate.xml:5018 book.translate.xml:5026
 msgid "Enabling Crash Dumps"
-msgstr "開啟 Crash Dumps"
+msgstr "開啟當機資訊 (Crash Dump)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5020
 msgid "The next menu is used to configure whether or not crash dumps should be enabled. Enabling crash dumps can be useful in debugging issues with the system, so users are encouraged to enable crash dumps."
-msgstr ""
+msgstr "接下來的選單用來設定是否開啟當機資訊 (Crash dump)，開啟當機資訊對系統除錯非常有用，因此建議使用者開啟當機資訊。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4457,11 +4457,13 @@ msgid ""
 "The next menu prompts to create at least one user account. It is recommended to login to the system using a user account rather than as <systemitem class=\"username\">root</systemitem>. When logged in as <systemitem class=\"username\">root</systemitem>, there are essentially no limits or protection on what can be done. Logging in as a "
 "normal user is safer and more secure."
 msgstr ""
+"下個選單會提示建立至少一個使用者帳號。建議使用 <systemitem class=\"username\">root</systemitem> 以外的使用者帳號登入系統，當使用 <systemitem class=\"username\">root</systemitem> 登入時，基本上沒有任何的限制或保護。\n"
+"使用一般使用者登入較保險且安全。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5046
 msgid "Select <guibutton>[ Yes ]</guibutton> to add new users."
-msgstr ""
+msgstr "選擇 <guibutton>[ Yes ]</guibutton> 來新增新使用者。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:5050
@@ -4481,7 +4483,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5059
 msgid "Follow the prompts and input the requested information for the user account. The example shown in <xref linkend=\"bsdinstall-add-user2\"/> creates the <systemitem class=\"username\">asample</systemitem> user account."
-msgstr ""
+msgstr "請依照提示輸入請求的使用者帳號資訊，<xref linkend=\"bsdinstall-add-user2\"/> 的範例示範建立 <systemitem class=\"username\">asample</systemitem> 使用者帳號。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:5063
@@ -4501,87 +4503,87 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5072
 msgid "Here is a summary of the information to input:"
-msgstr ""
+msgstr "這裡是要輸入的資訊摘要:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5076
 msgid "<literal>Username</literal> - The name the user will enter to log in. A common convention is to use the first letter of the first name combined with the last name, as long as each username is unique for the system. The username is case sensitive and should not contain any spaces."
-msgstr ""
+msgstr "使用者名稱 (<literal>Username</literal>) - 登入時使用者要輸入的名稱，常見的慣例是用姓的前一個字母與名結合，只要每個使用者名稱在系統唯一的皆可。使用者名稱區分大小寫且不應含有任何空白字元。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5085
 msgid "<literal>Full name</literal> - The user's full name. This can contain spaces and is used as a description for the user account."
-msgstr ""
+msgstr "全名 (<literal>Full name</literal>) - 使用者的全名，這個欄位可使用空白並且會用來描述該使用者帳號。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5091
 msgid "<literal>Uid</literal> - User <acronym>ID</acronym>. Typically, this is left blank so the system will assign a value."
-msgstr ""
+msgstr "<literal>Uid</literal> - 使用者 <acronym>ID</acronym>，通常這個欄位會留空，系統會自動分配一個值。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5097
 msgid "<literal>Login group</literal> - The user's group. Typically this is left blank to accept the default."
-msgstr ""
+msgstr "登入群組 (<literal>Login group</literal>) - 使用者的群組，通常這個欄位會留空來使用預設值。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5102
 msgid "<literal>Invite <replaceable>user</replaceable> into other groups?</literal> - Additional groups to which the user will be added as a member. If the user needs administrative access, type <literal>wheel</literal> here."
-msgstr ""
+msgstr "邀請使用者進入其他群組? (<literal>Invite <replaceable>user</replaceable> into other groups?</literal>) - 使用者要加入成為其成員的其他群組，若該使用者需要管理權限，則在此輸入 <literal>wheel</literal>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5110
 msgid "<literal>Login class</literal> - Typically left blank for the default."
-msgstr ""
+msgstr "登入類別 (<literal>Login class</literal>) - 通常會留空來使用預設值。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5115
 msgid "<literal>Shell</literal> - Type in one of the listed values to set the interactive shell for the user. Refer to <xref linkend=\"shells\"/> for more information about shells."
-msgstr ""
+msgstr "<literal>Shell</literal> - 輸入清單中的其中一項來設定使用者所互動的 Shell，請參考 <xref linkend=\"shells\"/> 取得更多有關  Shell 的資訊。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5122
 msgid "<literal>Home directory</literal> - The user's home directory. The default is usually correct."
-msgstr ""
+msgstr "家目錄 (<literal>Home directory</literal>) - 使用者的家目錄，預設值通常是沒有問題的。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5127
 msgid "<literal>Home directory permissions</literal> - Permissions on the user's home directory. The default is usually correct."
-msgstr ""
+msgstr "家目錄權限 (<literal>Home directory permissions</literal>) - 使用者家目錄的權限，預設值通常是沒有問題的。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5133
 msgid "<literal>Use password-based authentication?</literal> - Typically <literal>yes</literal> so that the user is prompted to input their password at login."
-msgstr ""
+msgstr "使用密碼為基礎的認証方式? (<literal>Use password-based authentication?</literal>) - 通常為是 (<literal>yes</literal>)，使用者才可於登入時輸入密碼。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5139
 msgid "<literal>Use an empty password?</literal> - Typically <literal>no</literal> as it is insecure to have a blank password."
-msgstr ""
+msgstr "使用空白密碼? (<literal>Use an empty password?</literal>) - 通常為否 (<literal>no</literal>)，因為使用空白密碼並不安全。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5145
 msgid "<literal>Use a random password?</literal> - Typically <literal>no</literal> so that the user can set their own password in the next prompt."
-msgstr ""
+msgstr "使用隨機密碼? (<literal>Use a random password?</literal>) - 通常為否 (<literal>no</literal>)，這樣使用者接下來才可設定自己的密碼。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5151
 msgid "<literal>Enter password</literal> - The password for this user. Characters typed will not show on the screen."
-msgstr ""
+msgstr "輸入密碼 (<literal>Enter password</literal>) - 這個使用者的密碼，輸入的字元不會顯示在畫面上。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5157
 msgid "<literal>Enter password again</literal> - The password must be typed again for verification."
-msgstr ""
+msgstr "再輸入密碼一次 (<literal>Enter password again</literal>) - 再輸入一次密碼來確認無誤。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5162
 msgid "<literal>Lock out the account after creation?</literal> - Typically <literal>no</literal> so that the user can login."
-msgstr ""
+msgstr "建立後鎖定使用者帳號? (<literal>Lock out the account after creation?</literal>) - 通常為否 (<literal>no</literal>)，這樣使用者才可以登入。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5168
 msgid "After entering everything, a summary is shown for review. If a mistake was made, enter <literal>no</literal> and try again. If everything is correct, enter <literal>yes</literal> to create the new user."
-msgstr ""
+msgstr "在輸入完全部的資料後，會顯示摘要供檢查，若發現錯誤，可輸入否 (<literal>no</literal>) 然後再輸入一次，若輸入的所有資訊皆正確，輸入是 (<literal>yes</literal>) 以後便會建立新使用者。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:5174
@@ -4601,12 +4603,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5183
 msgid "If there are more users to add, answer the <literal>Add another user?</literal> question with <literal>yes</literal>. Enter <literal>no</literal> to finish adding users and continue the installation."
-msgstr ""
+msgstr "若還有其他要新增的使用者，則在詢問新增其他使用者? (<literal>Add another user?</literal>) 時回答是 (<literal>yes</literal>)。輸入否 (<literal>no</literal>) 來完成加入使用者然後繼續安裝。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5188
 msgid "For more information on adding users and user management, see <xref linkend=\"users-synopsis\"/>."
-msgstr ""
+msgstr "要取得新增使用者與使用者管理的更多資訊，請參考 <xref linkend=\"users-synopsis\"/>。"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: figure/title
@@ -4617,7 +4619,7 @@ msgstr "最後設定"
 #. (itstool) path: sect2/para
 #: book.translate.xml:5195
 msgid "After everything has been installed and configured, a final chance is provided to modify settings."
-msgstr ""
+msgstr "在所有東西安裝並設定完之後，會提供最後一次修改設定的機會。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -4632,47 +4634,47 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5208
 msgid "Use this menu to make any changes or do any additional configuration before completing the installation."
-msgstr ""
+msgstr "使用這個選單在完成安裝前做任何更改或做任何額外的設定。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5213
 msgid "<literal>Add User</literal> - Described in <xref linkend=\"bsdinstall-addusers\"/>."
-msgstr ""
+msgstr "新增使用者 (<literal>Add User</literal>) - 詳述於 <xref linkend=\"bsdinstall-addusers\"/>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5217
 msgid "<literal>Root Password</literal> - Described in <xref linkend=\"bsdinstall-post-root\"/>."
-msgstr ""
+msgstr "Root 密碼 (<literal>Root Password</literal>) - 詳述於 <xref linkend=\"bsdinstall-post-root\"/>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5221
 msgid "<literal>Hostname</literal> - Described in <xref linkend=\"bsdinstall-hostname\"/>."
-msgstr ""
+msgstr "主機名稱 (<literal>Hostname</literal>) - 詳述於 <xref linkend=\"bsdinstall-hostname\"/>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5225
 msgid "<literal>Network</literal> - Described in <xref linkend=\"bsdinstall-config-network-dev\"/>."
-msgstr ""
+msgstr "網路 (<literal>Network</literal>) - 詳述於 <xref linkend=\"bsdinstall-config-network-dev\"/>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5229
 msgid "<literal>Services</literal> - Described in <xref linkend=\"bsdinstall-sysconf\"/>."
-msgstr ""
+msgstr "服務 (<literal>Services</literal>) - 詳述於 <xref linkend=\"bsdinstall-sysconf\"/>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5233
 msgid "<literal>Time Zone</literal> - Described in <xref linkend=\"bsdinstall-timezone\"/>."
-msgstr ""
+msgstr "時區 (<literal>Time Zone</literal>) - 詳述於 <xref linkend=\"bsdinstall-timezone\"/>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5237
 msgid "<literal>Handbook</literal> - Download and install the FreeBSD Handbook."
-msgstr ""
+msgstr "使用手冊 (<literal>Handbook</literal>) - 下載並安裝 FreeBSD 使用手冊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5242
 msgid "After any final configuration is complete, select <guibutton>Exit</guibutton>."
-msgstr ""
+msgstr "完成最後的設定之後，選擇 <guibutton>Exit</guibutton>。"
 
 #. (itstool) path: figure/title
 #. (itstool) path: sect2/title
@@ -4693,7 +4695,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5255
 msgid "<application>bsdinstall</application> will prompt if there are any additional configuration that needs to be done before rebooting into the new system. Select <guibutton>[ Yes ]</guibutton> to exit to a shell within the new system or <guibutton>[ No ]</guibutton> to proceed to the last step of the installation."
-msgstr ""
+msgstr "<application>bsdinstall</application> 會提示是否有任何額外的設定需要在重新開機進入新系統之前完成。選擇 <guibutton>[ Yes ]</guibutton> 會離開進入到新系統的 Shell 或 <guibutton>[ No ]</guibutton> 繼續最後的安裝步驟。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:5264
@@ -4713,19 +4715,19 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5273
 msgid "If further configuration or special setup is needed, select <guibutton>[ Live CD ]</guibutton> to boot the install media into Live <acronym>CD</acronym> mode."
-msgstr ""
+msgstr "若有需要做進一步或特殊的設定，選擇 <guibutton>[ Live CD ]</guibutton> 會開機進入安裝媒體的 Live <acronym>CD</acronym> 模式。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5278
 msgid "If the installation is complete, select <guibutton>[ Reboot ]</guibutton> to reboot the computer and start the new FreeBSD system. Do not forget to remove the FreeBSD install media or the computer may boot from it again."
-msgstr ""
+msgstr "若安裝已完成，選擇 <guibutton>[ Reboot ]</guibutton> 重新開啟電腦然後啟動新的 FreeBSD 電腦。不要忘了移除 FreeBSD 安裝媒體，否則電腦會再次開機進入安裝程式。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5284
 msgid ""
 "As FreeBSD boots, informational messages are displayed. After the system finishes booting, a login prompt is displayed. At the <prompt>login:</prompt> prompt, enter the username added during the installation. Avoid logging in as <systemitem class=\"username\">root</systemitem>. Refer to <xref linkend=\"users-superuser\"/> for "
 "instructions on how to become the superuser when administrative access is needed."
-msgstr ""
+msgstr "FreeBSD 開機的過程會顯示許多可以參考的訊息，系統開機完成後，會顯示登入提示，在 <prompt>login:</prompt> 提示，輸入安裝時新增的使用者名稱。登入時避免直接使用 <systemitem class=\"username\">root</systemitem>，請參考 <xref linkend=\"users-superuser\"/> 來取得當需要管理權限時如何成為超級使用者的說明。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5293
@@ -4733,11 +4735,13 @@ msgid ""
 "The messages that appeared during boot can be reviewed by pressing <keycap>Scroll-Lock</keycap> to turn on the scroll-back buffer. The <keycap>PgUp</keycap>, <keycap>PgDn</keycap>, and arrow keys can be used to scroll back through the messages. When finished, press <keycap>Scroll-Lock</keycap> again to unlock the display and return to "
 "the console. To review these messages once the system has been up for some time, type <command>less /var/run/dmesg.boot</command> from a command prompt. Press <keycap>q</keycap> to return to the command line after viewing."
 msgstr ""
+"要查看開機過程顯示的訊息可按 <keycap>Scroll-Lock</keycap> 鍵來開啟卷軸暫存，然後可使用 <keycap>PgUp</keycap>, <keycap>PgDn</keycap> 以及方向鍵來捲動訊息。查看完成之後再按 <keycap>Scroll-Lock</keycap> 鍵一次來解除畫面鎖定並返回 Console。系統開機一段時間之後要查看這些訊息可在命令提示後輸入 <command>less /var/run/dmesg.boot</command>，查看"
+"後按下 <keycap>q</keycap> 鍵便可返回命令列。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5305
 msgid "If <application>sshd</application> was enabled in <xref linkend=\"bsdinstall-config-serv\"/>, the first boot may be a bit slower as the system will generate the <acronym>RSA</acronym> and <acronym>DSA</acronym> keys. Subsequent boots will be faster. The fingerprints of the keys will be displayed, as seen in this example:"
-msgstr ""
+msgstr "若在 <xref linkend=\"bsdinstall-config-serv\"/> 有開啟 <application>sshd</application>，因系統會產生 <acronym>RSA</acronym> 及 <acronym>DSA</acronym> 金鑰第一次開機可能會有點慢，之後的開機便會恢復正常速度。接著會顯示金鑰的指紋 (Fingerprint)，如這個範例:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5311
@@ -4783,12 +4787,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:5347
 msgid "Refer to <xref linkend=\"openssh\"/> for more information about fingerprints and <acronym>SSH</acronym>."
-msgstr ""
+msgstr "請參考 <xref linkend=\"openssh\"/> 來取得更多有關指紋與 <acronym>SSH</acronym> 的資訊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5350
 msgid "FreeBSD does not install a graphical environment by default. Refer to <xref linkend=\"x11\"/> for more information about installing and configuring a graphical window manager."
-msgstr ""
+msgstr "FreeBSD 預設並不會安裝圖型化介面，請參考 <xref linkend=\"x11\"/> 取得有關安裝與設定圖型化視窗管理程式的資訊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5354
@@ -4796,6 +4800,8 @@ msgid ""
 "Proper shutdown of a FreeBSD computer helps protect data and hardware from damage. <emphasis>Do not turn off the power before the system has been properly shut down!</emphasis> If the user is a member of the <systemitem class=\"groupname\">wheel</systemitem> group, become the superuser by typing <command>su</command> at the command "
 "line and entering the <systemitem class=\"username\">root</systemitem> password. Then, type <command>shutdown -p now</command> and the system will shut down cleanly, and if the hardware supports it, turn itself off."
 msgstr ""
+"正確的將 FreeBSD 電腦關機對保護資料及避免硬體損壞有幫助。<emphasis>在系統尚未正常關機之前請不要關閉電源! </emphasis> 若使用者為 <systemitem class=\"groupname\">wheel</systemitem> 群組的成員之一，可在命令列輸入 <command>su</command> 然後輸入 <systemitem class=\"username\">root</systemitem> 密碼來成為超級使用者。接著輸入 "
+"<command>shutdown -p now</command> 系統便會關機，若硬體支援的話，電腦會自行關閉電源。"
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
@@ -4812,7 +4818,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:5373
 msgid "This section covers basic installation troubleshooting, such as common problems people have reported."
-msgstr ""
+msgstr "本節涵蓋基礎的安裝疑難排解，例如一些已有人回報的常見問題。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5377
@@ -4821,16 +4827,18 @@ msgid ""
 "linkend=\"kernelconfig\"/> to add support for devices which are not present in the <filename>GENERIC</filename> kernel. The default kernel assumes that most hardware devices are in their factory default configuration in terms of <acronym>IRQ</acronym>s, <acronym>I/O</acronym> addresses, and <acronym>DMA</acronym> channels. If the "
 "hardware has been reconfigured, a custom kernel configuration file can tell FreeBSD where to find things."
 msgstr ""
+"查看該 FreeBSD 版本的 Hardware Notes (<link xlink:href=\"@@URL_RELPREFIX@@/releases/index.html\">http://www.freebsd.org/releases/index.html</link>) 文件來確認是否支援該硬體。若確定有支援該硬體但仍然卡住或發生其他問題，請依照 <xref linkend=\"kernelconfig\"/> 的指示編譯自訂核心來加入未在 <filename>GENERIC</filename> 核心的裝置。預設的核心"
+"會假設大部份的硬體裝置會使用原廠預設的 <acronym>IRQ</acronym>s, <acronym>I/O</acronym> 位址，及 <acronym>DMA</acronym> 通道，若硬體已經被重新設定過，自訂的核心設定檔可以告訴 FreeBSD 到那找到這些裝置。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:5391
 msgid "Some installation problems can be avoided or alleviated by updating the firmware on various hardware components, most notably the motherboard. Motherboard firmware is usually referred to as the <acronym>BIOS</acronym>. Most motherboard and computer manufacturers have a website for upgrades and upgrade information."
-msgstr ""
+msgstr "部份安裝問題可以透過更各種硬體元件的韌體來避免或緩解，特別是主機板。主機板的韌體通常稱為 <acronym>BIOS</acronym>，大部份主機板與電腦製造商會有網站可以取得升級程式與升級資訊。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:5398
 msgid "Manufacturers generally advise against upgrading the motherboard <acronym>BIOS</acronym> unless there is a good reason for doing so, like a critical update. The upgrade process <emphasis>can</emphasis> go wrong, leaving the <acronym>BIOS</acronym> incomplete and the computer inoperative."
-msgstr ""
+msgstr "製造商通常會建議若沒有特殊原因盡量避免升級主機板 <acronym>BIOS</acronym>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5406
@@ -4838,6 +4846,8 @@ msgid ""
 "If the system hangs while probing hardware during boot, or it behaves strangely during install, <acronym>ACPI</acronym> may be the culprit. FreeBSD makes extensive use of the system <acronym>ACPI</acronym> service on the i386, amd64, and ia64 platforms to aid in system configuration if it is detected during boot. Unfortunately, some "
 "bugs still exist in both the <acronym>ACPI</acronym> driver and within system motherboards and <acronym>BIOS</acronym> firmware. <acronym>ACPI</acronym> can be disabled by setting the <literal>hint.acpi.0.disabled</literal> hint in the third stage boot loader:"
 msgstr ""
+"若系統在開機偵測硬體時卡住或安裝時運作異常，可能主因為 <acronym>ACPI</acronym>，FreeBSD 在 i386, amd64 及 ia64 平台廣泛的使用了系統 <acronym>ACPI</acronym> 服務來協助設定系統組態，若在開機時有偵測到該功能。不幸的是，<acronym>ACPI</acronym> 驅動程式與系統主機板及 <acronym>BIOS</acronym> 韌體之間仍存在部份問題。可於開機載入程式的第三階段"
+"設定 <literal>hint.acpi.0.disabled</literal> Hint 來關閉 <acronym>ACPI</acronym>:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:5418
@@ -4848,7 +4858,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:5420
 msgid "This is reset each time the system is booted, so it is necessary to add <literal>hint.acpi.0.disabled=\"1\"</literal> to the file <filename>/boot/loader.conf</filename>. More information about the boot loader can be found in <xref linkend=\"boot-synopsis\"/>."
-msgstr ""
+msgstr "每一次系統重開之後便會重設，因此需要在 <filename>/boot/loader.conf</filename> 檔案加入 <literal>hint.acpi.0.disabled=\"1\"</literal>。更多有關開機載入程式的資訊可於 <xref linkend=\"boot-synopsis\"/> 取得。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:5427
@@ -4858,27 +4868,27 @@ msgstr "使用 Live <acronym>CD</acronym>"
 #. (itstool) path: sect1/para
 #: book.translate.xml:5429
 msgid "The welcome menu of <application>bsdinstall</application>, shown in <xref linkend=\"bsdinstall-choose-mode\"/>, provides a <guibutton>[ Live CD ]</guibutton> option. This is useful for those who are still wondering whether FreeBSD is the right operating system for them and want to test some of the features before installing."
-msgstr ""
+msgstr "如 <xref linkend=\"bsdinstall-choose-mode\"/> 所示 <application>bsdinstall</application> 的歡迎選單提供了 <guibutton>[ Live CD ]</guibutton> 選項，這對那些對 FreeBSD 是否為正確的作業系統尚存疑慮的人非常有幫助，這可讓這些人在安裝前測試一部份功能。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5436
 msgid "The following points should be noted before using the <guibutton>[ Live CD ]</guibutton>:"
-msgstr ""
+msgstr "在使用 <guibutton>[ Live CD ]</guibutton> 之前必須注意以下幾點事項:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5441
 msgid "To gain access to the system, authentication is required. The username is <systemitem class=\"username\">root</systemitem> and the password is blank."
-msgstr ""
+msgstr "若要增加存取權限，必須透過認証。使用者名稱為 <systemitem class=\"username\">root</systemitem> 而密碼則是空白。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5447
 msgid "As the system runs directly from the installation media, performance will be significantly slower than that of a system installed on a hard disk."
-msgstr ""
+msgstr "系統是直接從安裝媒體上執行，比起安裝到硬碟的系統，效能可能較差。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5453
 msgid "This option only provides a command prompt and not a graphical interface."
-msgstr ""
+msgstr "這個選項只提供命令提示，不會有圖型化介面。"
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:5478
