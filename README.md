@@ -110,6 +110,8 @@ pkg install poedit
 | Partitioning scheme | 分割表格式 | 例如 MBR, GPT 等 |
 | Distribution | 發行版 | 用來發行用的版本 |
 | Release | 發佈, 發佈版 | |
+| Command prompt | 命令提示 |
+| Command line | 命令列 |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
