@@ -4,14 +4,14 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 但要採用 GNU gettext 的模式必須先將既有採用 Docbook 的文件內容轉移至 PO 檔，否則無法並存，本專案目標解決以下幾個問題：
 
 - [x] 將既有 Docbook 格式轉換為 GNU gettext 的 PO 格式以讓未來可以有更多人可參與翻譯工作
-- [ ] 同步及匯整舊有翻譯至最新的原文翻譯版本以跟上目前的文件版本
+- [X] 同步及匯整舊有翻譯至最新的原文翻譯版本以跟上目前的文件版本
   - [X] 4. 軟體套件管理篇：Packages 及 Ports 機制
   - [X] 9. 列印
   - [X] 14. Jails
   - [X] 17. 儲存設備篇
   - [X] 10. Linux® 二進位檔的相容性
   - [X] 21. Virtualization(虛擬機器)
-  - [ ] 29. 防火牆
+  - [X] 29. 防火牆
 - [ ] 統整文件內目錄標題以及相關名詞
 
 # 如何翻譯?
@@ -110,8 +110,8 @@ pkg install poedit
 | Partitioning scheme | 分割表格式 | 例如 MBR, GPT 等 |
 | Distribution | 發行版 | 用來發行用的版本 |
 | Release | 發佈, 發佈版 | |
-| Command prompt | 命令提示 |
-| Command line | 命令列 |
+| Command prompt | 指令提示 |
+| Command line | 指令列 |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
