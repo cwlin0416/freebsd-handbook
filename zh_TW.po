@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-07-05 12:26+0800\n"
-"PO-Revision-Date: 2016-07-07 12:50+0800\n"
+"PO-Revision-Date: 2016-08-02 13:17+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -4908,7 +4908,7 @@ msgstr "如何使用 FreeBSD 的虛擬 Console。"
 #. (itstool) path: listitem/para
 #: book.translate.xml:5496
 msgid "How to create and manage users and groups on FreeBSD."
-msgstr ""
+msgstr "如何在 FreeBSD 建立與管理使用者與群組。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5501
@@ -5000,7 +5000,7 @@ msgstr "第一行包含了剛開機完系統的資訊，<literal>amd64</literal>
 #. (itstool) path: sect1/para
 #: book.translate.xml:5570
 msgid "Since FreeBSD is a multiuser system, it needs some way to distinguish between different users. This is accomplished by requiring every user to log into the system before gaining access to the programs on the system. Every user has a unique name <quote>username</quote> and a personal <quote>password</quote>."
-msgstr "FreeBSD 是一個多使用者的系統，需要一套可以分辨不同使用者的方法。因此所有的使用者在執行程式之前必須先“登入”系統以取得系統內程式的存取權限。每個使用者都有一組獨特的帳號名稱 (<quote>username</quote>) 及個人密碼 (<quote>password</quote>)。"
+msgstr "FreeBSD 是一個多使用者的系統，需要一套可以分辨不同使用者的方法。因此所有的使用者在執行程式之前必須先“登入”系統以取得系統內程式的存取權限。每個使用者都有一組獨一無二的使用者名稱 (<quote>username</quote>) 及個人密碼 (<quote>password</quote>)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5577
@@ -5197,32 +5197,32 @@ msgstr "使用者與基礎帳號管理"
 #. (itstool) path: sect1/para
 #: book.translate.xml:5773
 msgid "FreeBSD allows multiple users to use the computer at the same time. While only one user can sit in front of the screen and use the keyboard at any one time, any number of users can log in to the system through the network. To use the system, each user should have their own user account."
-msgstr ""
+msgstr "FreeBSD 允許多使用者同時使用電腦，在一次只能有一位使用者坐在電腦螢幕前使用鍵盤操作的同時，可讓任何數量的使用者透過網路登入到系統。每一位要使用該系統的使用者應有自己的帳號。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5779
 msgid "This chapter describes:"
-msgstr ""
+msgstr "本章介紹︰"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5783
 msgid "The different types of user accounts on a FreeBSD system."
-msgstr ""
+msgstr "FreeBSD 系統中各種類型的使用者帳號。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5788
 msgid "How to add, remove, and modify user accounts."
-msgstr ""
+msgstr "如何加入、移除與修改使用者帳號。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5792
 msgid "How to set limits to control the resources that users and groups are allowed to access."
-msgstr ""
+msgstr "如何設定用來控制使用者與群組允許存取的資源的限制。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5798
 msgid "How to create groups and add users as members of a group."
-msgstr ""
+msgstr "如何建立群組與加入使用者作為群組成員。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5804
@@ -5232,12 +5232,12 @@ msgstr "帳號類型"
 #. (itstool) path: sect2/para
 #: book.translate.xml:5806
 msgid "Since all access to the FreeBSD system is achieved using accounts and all processes are run by users, user and account management is important."
-msgstr ""
+msgstr "由於所有對 FreeBSD 系統的存取是透過使用者帳號來達成，且所有的程序需要經由使用者來執行，因此使用者帳號管理非常重要。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5810
 msgid "There are three main types of accounts: system accounts, user accounts, and the superuser account."
-msgstr ""
+msgstr "有三種主要類型的帳號：系統帳號、使用者帳號以及超級使用者帳號。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5814
@@ -5252,7 +5252,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:5821
 msgid "System accounts are used to run services such as DNS, mail, and web servers. The reason for this is security; if all services ran as the superuser, they could act without restriction."
-msgstr ""
+msgstr "系統帳號用來執行服務，例如 DNS、郵件及網頁伺服器，要這麼作是因為安全性考量，若所有的服務均以超級使用者來執行，那麼這些服務的運作將不會受到限制。"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5826
@@ -5267,7 +5267,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:5835
 msgid "Examples of system accounts are <systemitem class=\"username\">daemon</systemitem>, <systemitem class=\"username\">operator</systemitem>, <systemitem class=\"username\">bind</systemitem>, <systemitem class=\"username\">news</systemitem>, and <systemitem class=\"username\">www</systemitem>."
-msgstr ""
+msgstr "系統帳號的例子有 <systemitem class=\"username\">daemon</systemitem>, <systemitem class=\"username\">operator</systemitem>, <systemitem class=\"username\">bind</systemitem>, <systemitem class=\"username\">news</systemitem>, and <systemitem class=\"username\">www</systemitem>。"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5842
@@ -5277,7 +5277,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:5847
 msgid "<systemitem class=\"username\">nobody</systemitem> is the generic unprivileged system account. However, the more services that use <systemitem class=\"username\">nobody</systemitem>, the more files and processes that user will become associated with, and hence the more privileged that user becomes."
-msgstr ""
+msgstr "<systemitem class=\"username\">nobody</systemitem> 是通用的無權限系統帳號。雖然如此，只有要越多的服務使用 <systemitem class=\"username\">nobody</systemitem>，就會有更多的檔案與程式與該使用者相關聯，會讓該使用者擁有更多的權限。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5856
@@ -5292,54 +5292,54 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:5863
 msgid "User accounts are assigned to real people and are used to log in and use the system. Every person accessing the system should have a unique user account. This allows the administrator to find out who is doing what and prevents users from clobbering the settings of other users."
-msgstr ""
+msgstr "使用者帳號會分配給實際人員，用來登入及使用系統。每位要存取系統的人員需要擁有一組唯一的使用者帳號，這可讓管理者辨識誰在做什麼以及避免使用者覆蓋其他使用者的設定。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5869
 msgid "Each user can set up their own environment to accommodate their use of the system, by configuring their default shell, editor, key bindings, and language settings."
-msgstr ""
+msgstr "每位使用者可以設定自己的環境來配合自己使用系統的習慣，透過設定預設的 Shell、編輯器、組合鍵 (Key Binding) 及語言設定。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5874
 msgid "Every user account on a FreeBSD system has certain information associated with it:"
-msgstr ""
+msgstr "每個在 FreeBSD 系統的使用者帳號都會有一些相關的資訊："
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5879
 msgid "User name"
-msgstr ""
+msgstr "使用者名稱 (User name)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5882
 msgid ""
 "The user name is typed at the <prompt>login:</prompt> prompt. Each user must have a unique user name. There are a number of rules for creating valid user names which are documented in <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>5</manvolnum></citerefentry>. It is recommended to use user names that consist of eight or "
 "fewer, all lower case characters in order to maintain backwards compatibility with applications."
-msgstr ""
+msgstr "在 <prompt>login:</prompt> 提示出現時便要輸入使用者名稱，每位使用者必須要有一個唯一的使用者名稱。要建立有效的使用者名稱要遵守數條規則，在 <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中有說明。建議使用者名稱由 8 個或更少的字母組成，全部採用小寫字元以向下相容應用程式。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5894
 msgid "Password"
-msgstr ""
+msgstr "密碼 (Password)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5897
 msgid "Each account has an associated password."
-msgstr ""
+msgstr "每個帳號都會有密碼。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5902
 msgid "User ID (<acronym>UID</acronym>)"
-msgstr ""
+msgstr "使用者 ID (<acronym>UID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5905
 msgid "The User ID (<acronym>UID</acronym>) is a number used to uniquely identify the user to the FreeBSD system. Commands that allow a user name to be specified will first convert it to the <acronym>UID</acronym>. It is recommended to use a UID less than 65535, since higher values may cause compatibility issues with some software."
-msgstr ""
+msgstr "使用者 ID (User ID, <acronym>UID</acronym>) 是一組數字用來獨一無二的辨識 FreeBSD 系統的使用者，用到使用者名稱的指令會先將使用者名稱轉換為 <acronym>UID</acronym>。建議使用小於 65535 的 UID，超過這個值可能會造成部份軟體的相容性問題。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5916
 msgid "Group ID (<acronym>GID</acronym>)"
-msgstr ""
+msgstr "群組 ID (<acronym>GID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5919
@@ -5347,70 +5347,72 @@ msgid ""
 "The Group ID (<acronym>GID</acronym>) is a number used to uniquely identify the primary group that the user belongs to. Groups are a mechanism for controlling access to resources based on a user's <acronym>GID</acronym> rather than their <acronym>UID</acronym>. This can significantly reduce the size of some configuration files and "
 "allows users to be members of more than one group. It is recommended to use a GID of 65535 or lower as higher GIDs may break some software."
 msgstr ""
+"群組 ID (Group ID, <acronym>GID</acronym>) 是一組數字用來獨一無二的辨識使用者所屬的主要群組。群組是一個除了使用 <acronym>UID</acronym> 之外根據使用者的 <acronym>GID</acronym> 來控制資源存取權的機制。這可以顯著的降低某些設定檔的大小且可讓使用者成為一個以上群組的成員。建議使用 65535 或以下的 GID，因超過此值的 GID 可能會讓部份軟體無法運"
+"作。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5933
 msgid "Login class"
-msgstr ""
+msgstr "登入類別 (Login class)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5936
 msgid "Login classes are an extension to the group mechanism that provide additional flexibility when tailoring the system to different users. Login classes are discussed further in <xref linkend=\"users-limiting\"/>."
-msgstr ""
+msgstr "登入類別 (Login class) 擴充了群組機制，當在對不同使用者客製化系統時可提供額外的彈性。在 <xref linkend=\"users-limiting\"/> 有對登入類別更進一步的討論。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5945
 msgid "Password change time"
-msgstr ""
+msgstr "密碼更改時間 (Password change time)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5948
 msgid "By default, passwords do not expire. However, password expiration can be enabled on a per-user basis, forcing some or all users to change their passwords after a certain amount of time has elapsed."
-msgstr ""
+msgstr "預設情況下密碼並不會過期，雖然如此，密碼期限可在各別使用者上開啟，可強制部份或所有使用者在某段期間過後更改他們的密碼。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5957
 msgid "Account expiration time"
-msgstr ""
+msgstr "帳號到期時間 (Account expiration time)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5960
 msgid ""
 "By default, FreeBSD does not expire accounts. When creating accounts that need a limited lifespan, such as student accounts in a school, specify the account expiry date using <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>. After the expiry time has elapsed, the account cannot be used to log in to "
 "the system, although the account's directories and files will remain."
-msgstr ""
+msgstr "預設情況下 FreeBSD 的帳號不會有期限。當建立需要有限壽命的帳號時，例如，學校的學生帳號，可使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指定帳號的到期日期。到期日期過後，便無法使用該帳號登入到系統，儘管該帳號的目錄及檔案仍存在。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5971
 msgid "User's full name"
-msgstr ""
+msgstr "使用者的全名 (User's full name)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5974
 msgid "The user name uniquely identifies the account to FreeBSD, but does not necessarily reflect the user's real name. Similar to a comment, this information can contain spaces, uppercase characters, and be more than 8 characters long."
-msgstr ""
+msgstr "使用者名稱用來獨一無二的辦識 FreeBSD 的帳號，但並不一定反映了使用者的真實姓名。類似註解，這個資訊可以含有空白、大寫字元並可超過 8 個字母的長度。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5983
 msgid "Home directory"
-msgstr ""
+msgstr "家目錄 (Home directory)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5986
 msgid ""
 "The home directory is the full path to a directory on the system. This is the user's starting directory when the user logs in. A common convention is to put all user home directories under <filename><replaceable>/home/username</replaceable></filename> or <filename><replaceable>/usr/home/username</replaceable></filename>. Each user "
 "stores their personal files and subdirectories in their own home directory."
-msgstr ""
+msgstr "家目錄是系統中某個目錄的完整路徑，這個目錄是使用者登入後的起點目錄。習慣上會將所有使用者目錄放置在 <filename><replaceable>/home/username</replaceable></filename> 或 <filename><replaceable>/usr/home/username</replaceable></filename>。每位使用者可以儲存他們的個人檔案及子目錄於他們自己的家目錄。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5997
 msgid "User shell"
-msgstr ""
+msgstr "使用者 Shell (User shell)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:6000
 msgid "The shell provides the user's default environment for interacting with the system. There are many different kinds of shells and experienced users will have their own preferences, which can be reflected in their account settings."
-msgstr ""
+msgstr "Shell 提供了使用者預設的環境來與系統互動。有數種不同類型的 Shell，有經驗的使用者會有自己偏好的選擇，可儲存在自己的帳號設定。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6011
@@ -5425,23 +5427,23 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:6018
 msgid "The superuser account, usually called <systemitem class=\"username\">root</systemitem>, is used to manage the system with no limitations on privileges. For this reason, it should not be used for day-to-day tasks like sending and receiving mail, general exploration of the system, or programming."
-msgstr ""
+msgstr "超級使用者帳號，通常稱作 <systemitem class=\"username\">root</systemitem>，用來管理系統，沒有權限的限制，也因這個原因，該帳號不應該用來做每日的例行作業，如：寄信與收信、系統的一般探索或程式設計。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6025
 msgid ""
 "The superuser, unlike other user accounts, can operate without limits, and misuse of the superuser account may result in spectacular disasters. User accounts are unable to destroy the operating system by mistake, so it is recommended to login as a user account and to only become the superuser when a command requires extra privilege."
-msgstr ""
+msgstr "超級使用者並不像其他使用者帳號，可以沒有限制的操作，不正確的使用超級使用者帳號可能會造成可觀的災害。一般使用者帳號不會因為失誤而法摧毀作業系統，所以建議登入一般使用者帳號，只有在指令需要額外權限時切換為超級使用者。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6033
 msgid "Always double and triple-check any commands issued as the superuser, since an extra space or missing character can mean irreparable data loss."
-msgstr ""
+msgstr "使用超級使用者下指令時永遠要再三檢查，由於一個多餘的空白或缺少的字元可能意味著無法挽回的資料遺失。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6037
 msgid "There are several ways to gain superuser privilege. While one can log in as <systemitem class=\"username\">root</systemitem>, this is highly discouraged."
-msgstr ""
+msgstr "有數種方法可以提升為超級使用者權限，雖然可以直接登入為 <systemitem class=\"username\">root</systemitem>，但強烈不建議這樣做。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6042
@@ -5449,11 +5451,13 @@ msgid ""
 "Instead, use <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> to become the superuser. If <literal>-</literal> is specified when running this command, the user will also inherit the root user's environment. The user running this command must be in the <systemitem class=\"groupname\">wheel</"
 "systemitem> group or else the command will fail. The user must also know the password for the <systemitem class=\"username\">root</systemitem> user account."
 msgstr ""
+"改使用 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 切換為超級使用者。執行此指令時若指定 <literal>-</literal> 參數，該使用者會繼承 root 的使用者環境。執行此指令的使用者必須在 <systemitem class=\"groupname\">wheel</systemitem> 群組中，否則指令會失敗。使用者也必須要知道 <systemitem class="
+"\"username\">root</systemitem> 使用者帳號的密碼。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6052
 msgid "In this example, the user only becomes superuser in order to run <command>make install</command> as this step requires superuser privilege. Once the command completes, the user types <command>exit</command> to leave the superuser account and return to the privilege of their user account."
-msgstr ""
+msgstr "在此例當中，該使用者只在要執行 <command>make install</command> 時切換為超級使用者，因為這個步驟需要超級使用者權限。指令完成之後，該使用者輸入 <command>exit</command> 離開超級使用者帳號並返回他的使用者帳號權限。"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6060
@@ -5478,7 +5482,7 @@ msgstr ""
 msgid ""
 "The built-in <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> framework works well for single systems or small networks with just one system administrator. An alternative is to install the <package>security/sudo</package> package or port. This software provides activity logging and allows the "
 "administrator to configure which users can run which commands as the superuser."
-msgstr ""
+msgstr "內建的 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 框架在單人系統或只有一位系統管理者的小型網路可以運作的很好。另一種方式是安裝 <package>security/sudo</package> 套件或 Port。此軟體提供了活動記錄且允許管理者設定那個使用者可以用超級使用者執行那個指令。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6082
@@ -5493,7 +5497,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:6089
 msgid "FreeBSD provides a variety of different commands to manage user accounts. The most common commands are summarized in <xref linkend=\"users-modifying-utilities\"/>, followed by some examples of their usage. See the manual page for each utility for more details and usage examples."
-msgstr ""
+msgstr "FreeBSD 提供了各種不同指令來管理使用者帳號，最常用的指令已摘要於 <xref linkend=\"users-modifying-utilities\"/>，接著有一些用法的範例。請參考每個工具的操作手冊來取得更多詳細的資訊與用法範例。"
 
 #. (itstool) path: table/title
 #: book.translate.xml:6096
@@ -5519,7 +5523,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6111
 msgid "The recommended command-line application for adding new users."
-msgstr ""
+msgstr "建議用來新增新使用者的指令列應用程式。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6116
@@ -5529,7 +5533,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6117
 msgid "The recommended command-line application for removing users."
-msgstr ""
+msgstr "建議用來移除使用者的指令列應用程式。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6122
@@ -5539,7 +5543,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6123
 msgid "A flexible tool for changing user database information."
-msgstr ""
+msgstr "用來更改使用者資料庫資訊的工具。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6128
@@ -5549,7 +5553,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6129
 msgid "The command-line tool to change user passwords."
-msgstr ""
+msgstr "用來更改使用者密碼的指令列工具。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6134
@@ -5559,7 +5563,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:6135
 msgid "A powerful and flexible tool for modifying all aspects of user accounts."
-msgstr ""
+msgstr "用來修改使用者帳號各方面資訊強大且靈活的工具。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6143
@@ -5593,6 +5597,8 @@ msgid ""
 "The recommended program for adding new users is <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum></citerefentry>. When a new user is added, this program automatically updates <filename>/etc/passwd</filename> and <filename>/etc/group</filename>. It also creates a home directory for the new user, copies in the "
 "default configuration files from <filename>/usr/share/skel</filename>, and can optionally mail the new user a welcome message. This utility must be run as the superuser."
 msgstr ""
+"建議用來新增新使用者的程式為 <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum></citerefentry>。當新使用者新增之後，此程式會自動更新 <filename>/etc/passwd</filename> 以及 <filename>/etc/group</filename>，這同時也會建立新使用者的家目錄 (複製 <filename>/usr/share/skel</filename> 中的預設設定檔)，並且可以選擇是否"
+"要寄送歡迎訊息通知新使用者。這個工具必須使用超級使用者執行。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6169
@@ -5601,6 +5607,8 @@ msgid ""
 "shown in square brackets. In this example, the user has been invited into the <systemitem class=\"groupname\">wheel</systemitem> group, allowing them to become the superuser with <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>. When finished, the utility will prompt to either create another user "
 "or to exit."
 msgstr ""
+"<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具採用互動的方式，只需幾個步驟便可建立新使用者帳號。如 <xref linkend=\"users-modifying-adduser\"/> 所示，可輸入必填的資訊或按 <keycap>Return</keycap> 鍵採用方括中的預設值。在此例當中，使用者被邀請加入 <systemitem class=\"groupname\">wheel</"
+"systemitem> 群組，這讓使用者可使用 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 變成超級使用者。完成之後，此工具會詢問是否要建立其他的使用者或離開。"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6181
