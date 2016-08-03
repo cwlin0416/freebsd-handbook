@@ -112,6 +112,7 @@ pkg install poedit
 | Release | 發佈, 發佈版 | |
 | Command prompt | 指令提示 |
 | Command line | 指令列 |
+| Permission Set | 權限集 | 泛指讀取、寫入、執行等權限 |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
