@@ -115,6 +115,7 @@ pkg install poedit
 | Permission Set | 權限集 | 泛指讀取、寫入、執行等權限 |
 | Slice | 切割區 | 類似 Windows 的 Partition (分割區) |
 | Partition | 分區 | 與 Windows 的 Partition 不同, 是 Slice 底下再分出來的 |
+| Dangerously dedicated | 危險專用 | 磁碟中無 slice 的 partition |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
