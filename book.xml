@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 48967 2016-06-19 23:06:43Z karels $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49168 2016-07-25 22:02:17Z ivadasz $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -57,6 +57,7 @@
 <!ENTITY pgpkey.avilla SYSTEM "avilla.key">
 <!ENTITY pgpkey.avl SYSTEM "avl.key">
 <!ENTITY pgpkey.avos SYSTEM "avos.key">
+<!ENTITY pgpkey.badger SYSTEM "badger.key">
 <!ENTITY pgpkey.bakul SYSTEM "bakul.key">
 <!ENTITY pgpkey.bapt SYSTEM "bapt.key">
 <!ENTITY pgpkey.bar SYSTEM "bar.key">
@@ -109,6 +110,7 @@
 <!ENTITY pgpkey.cokane SYSTEM "cokane.key">
 <!ENTITY pgpkey.core-secretary SYSTEM "core-secretary.key">
 <!ENTITY pgpkey.cperciva SYSTEM "cperciva.key">
+<!ENTITY pgpkey.cpm SYSTEM "cpm.key">
 <!ENTITY pgpkey.crees SYSTEM "crees.key">
 <!ENTITY pgpkey.cs SYSTEM "cs.key">
 <!ENTITY pgpkey.cshumway SYSTEM "cshumway.key">
@@ -205,6 +207,7 @@
 <!ENTITY pgpkey.imp SYSTEM "imp.key">
 <!ENTITY pgpkey.issyl0 SYSTEM "issyl0.key">
 <!ENTITY pgpkey.itetcu SYSTEM "itetcu.key">
+<!ENTITY pgpkey.ivadasz SYSTEM "ivadasz.key">
 <!ENTITY pgpkey.ivoras SYSTEM "ivoras.key">
 <!ENTITY pgpkey.jacula SYSTEM "jacula.key">
 <!ENTITY pgpkey.jadawin SYSTEM "jadawin.key">
@@ -327,6 +330,7 @@
 <!ENTITY pgpkey.mikeh SYSTEM "mikeh.key">
 <!ENTITY pgpkey.milki SYSTEM "milki.key">
 <!ENTITY pgpkey.miwi SYSTEM "miwi.key">
+<!ENTITY pgpkey.mizhka SYSTEM "mizhka.key">
 <!ENTITY pgpkey.mjg SYSTEM "mjg.key">
 <!ENTITY pgpkey.mlaier SYSTEM "mlaier.key">
 <!ENTITY pgpkey.mm SYSTEM "mm.key">
@@ -459,6 +463,7 @@
 <!ENTITY pgpkey.stefanf SYSTEM "stefanf.key">
 <!ENTITY pgpkey.stephane SYSTEM "stephane.key">
 <!ENTITY pgpkey.stephen SYSTEM "stephen.key">
+<!ENTITY pgpkey.stevek SYSTEM "stevek.key">
 <!ENTITY pgpkey.sunpoet SYSTEM "sunpoet.key">
 <!ENTITY pgpkey.swills SYSTEM "swills.key">
 <!ENTITY pgpkey.sylvio SYSTEM "sylvio.key">
@@ -466,6 +471,7 @@
 <!ENTITY pgpkey.syuu SYSTEM "syuu.key">
 <!ENTITY pgpkey.tabthorpe SYSTEM "tabthorpe.key">
 <!ENTITY pgpkey.taras SYSTEM "taras.key">
+<!ENTITY pgpkey.tcberner SYSTEM "tcberner.key">
 <!ENTITY pgpkey.tdb SYSTEM "tdb.key">
 <!ENTITY pgpkey.theraven SYSTEM "theraven.key">
 <!ENTITY pgpkey.thierry SYSTEM "thierry.key">
@@ -1171,7 +1177,7 @@
       <term><application>粗體字</application></term>
 
       <listitem>
-	<para>以<keycap>粗體字</keycap>表示：應用程式、命令、按鍵。</para>
+	<para>以<keycap>粗體字</keycap>表示：應用程式、指令、按鍵。</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1205,7 +1211,7 @@
 <!-- How to type in key stokes, etc.. -->
   <bridgehead xml:id="preface-conv-examples" renderas="sect2">範例</bridgehead>
 
-  <para>範例以  <filename>C:\&gt;</filename> 為開頭代表 <trademark class="registered">MS-DOS</trademark> 的指令。 若沒有特殊情況的話，這些指令應該是在 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 環境的 <quote>命令提示字元 (Command Prompt)</quote> 視窗內執行。</para>
+  <para>範例以  <filename>C:\&gt;</filename> 為開頭代表 <trademark class="registered">MS-DOS</trademark> 的指令。 若沒有特殊情況的話，這些指令應該是在 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 環境的 <quote>指令提示字元 (Command Prompt)</quote> 視窗內執行。</para>
 
   <screen xml:lang="en"><prompt>E:\&gt;</prompt> <userinput>tools\fdimage floppies\kern.flp A:</userinput></screen>
 
@@ -3652,7 +3658,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</listitem>
 
 	<listitem>
-	  <para><literal>moused</literal> - 若在命令列系統 Console 會使用到滑鼠時，可開啟此服務。</para>
+	  <para><literal>moused</literal> - 若在指令列系統 Console 會使用到滑鼠時，可開啟此服務。</para>
 	</listitem>
 
 	<listitem>
@@ -3869,7 +3875,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 
       <para>FreeBSD 開機的過程會顯示許多可以參考的訊息，系統開機完成後，會顯示登入提示，在 <prompt>login:</prompt> 提示，輸入安裝時新增的使用者名稱。登入時避免直接使用 <systemitem class="username">root</systemitem>，請參考 <xref linkend="users-superuser"/> 來取得當需要管理權限時如何成為超級使用者的說明。</para>
 
-      <para>要查看開機過程顯示的訊息可按 <keycap>Scroll-Lock</keycap> 鍵來開啟卷軸暫存，然後可使用 <keycap>PgUp</keycap>, <keycap>PgDn</keycap> 以及方向鍵來捲動訊息。查看完成之後再按 <keycap>Scroll-Lock</keycap> 鍵一次來解除畫面鎖定並返回 Console。系統開機一段時間之後要查看這些訊息可在命令提示後輸入 <command>less /var/run/dmesg.boot</command>，查看後按下 <keycap>q</keycap> 鍵便可返回命令列。</para>
+      <para>要查看開機過程顯示的訊息可按 <keycap>Scroll-Lock</keycap> 鍵來開啟卷軸暫存，然後可使用 <keycap>PgUp</keycap>, <keycap>PgDn</keycap> 以及方向鍵來捲動訊息。查看完成之後再按 <keycap>Scroll-Lock</keycap> 鍵一次來解除畫面鎖定並返回 Console。系統開機一段時間之後要查看這些訊息可在指令提示後輸入 <command>less /var/run/dmesg.boot</command>，查看後按下 <keycap>q</keycap> 鍵便可返回指令列。</para>
 
       <para>若在 <xref linkend="bsdinstall-config-serv"/> 有開啟 <application>sshd</application>，因系統會產生 <acronym>RSA</acronym> 及 <acronym>DSA</acronym> 金鑰第一次開機可能會有點慢，之後的開機便會恢復正常速度。接著會顯示金鑰的指紋 (Fingerprint)，如這個範例:</para>
 
@@ -3913,7 +3919,7 @@ Starting sshd.</screen>
 
       <para>FreeBSD 預設並不會安裝圖型化介面，請參考 <xref linkend="x11"/> 取得有關安裝與設定圖型化視窗管理程式的資訊。</para>
 
-      <para>正確的將 FreeBSD 電腦關機對保護資料及避免硬體損壞有幫助。<emphasis>在系統尚未正常關機之前請不要關閉電源! </emphasis> 若使用者為 <systemitem class="groupname">wheel</systemitem> 群組的成員之一，可在命令列輸入 <command>su</command> 然後輸入 <systemitem class="username">root</systemitem> 密碼來成為超級使用者。接著輸入 <command>shutdown -p now</command> 系統便會關機，若硬體支援的話，電腦會自行關閉電源。</para>
+      <para>正確的將 FreeBSD 電腦關機對保護資料及避免硬體損壞有幫助。<emphasis>在系統尚未正常關機之前請不要關閉電源! </emphasis> 若使用者為 <systemitem class="groupname">wheel</systemitem> 群組的成員之一，可在指令列輸入 <command>su</command> 然後輸入 <systemitem class="username">root</systemitem> 密碼來成為超級使用者。接著輸入 <command>shutdown -p now</command> 系統便會關機，若硬體支援的話，電腦會自行關閉電源。</para>
     </sect2>
   </sect1>
 
@@ -3958,7 +3964,7 @@ Starting sshd.</screen>
       </listitem>
 
       <listitem>
-	<para>這個選項只提供命令提示，不會有圖型化介面。</para>
+	<para>這個選項只提供指令提示，不會有圖型化介面。</para>
       </listitem>
     </itemizedlist>
   </sect1>
@@ -4455,9 +4461,7 @@ Goodbye!
 	</example>
 
 	<note>
-	  <para xml:lang="en">Since the password is not echoed when typed, be
-	    careful to not mistype the password when creating the user
-	    account.</para>
+	  <para>由於密碼在輸入時並不會顯示，在建立使用者帳號時要小心密碼不要輸入錯誤。</para>
 	</note>
       </sect3>
 
@@ -4472,62 +4476,45 @@ Goodbye!
 	  <secondary>removing</secondary>
 	</indexterm>
 
-	<para xml:lang="en">To completely remove a user from the system, run
-	  <citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></citerefentry> as the superuser.  This command performs the
-	  following steps:</para>
+	<para>要自系統完全移除一個使用者可使用超級使用者執行 <citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></citerefentry>。這個指令會執行以下步驟：</para>
 
 	<procedure>
 	  <step>
-	    <para xml:lang="en">Removes the user's <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>1</manvolnum></citerefentry> entry, if one
-	      exists.</para>
+	    <para>移除使用者的 <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>1</manvolnum></citerefentry> 項目，若項目存在。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Removes any <citerefentry><refentrytitle>at</refentrytitle><manvolnum>1</manvolnum></citerefentry> jobs belonging to the
-	      user.</para>
+	    <para>移除任何屬於該使用者的 <citerefentry><refentrytitle>at</refentrytitle><manvolnum>1</manvolnum></citerefentry> 工作。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Kills all processes owned by the user.</para>
+	    <para>中止所有該使用者擁有的程序。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Removes the user from the system's local password
-	      file.</para>
+	    <para>自系統本地密碼檔移除該使用者。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Optionally removes the user's home directory, if it
-	      is owned by the user.</para>
+	    <para>選擇性移除該使用者的家目錄，若使用者擁有該目錄。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Removes the incoming mail files belonging to the
-	      user from <filename>/var/mail</filename>.</para>
+	    <para>自 <filename>/var/mail</filename> 移除屬於該使用者的收件郵件檔。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Removes all files owned by the user from temporary
-	      file storage areas such as
-	      <filename>/tmp</filename>.</para>
+	    <para>自暫存檔儲存區域 (如 <filename>/tmp</filename>) 移除所有使用者擁有的檔案。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Finally, removes the username from all groups to
-	      which it belongs in <filename>/etc/group</filename>.  If
-	      a group becomes empty and the group name is the same as
-	      the username, the group is removed.  This complements
-	      the per-user unique groups created by
-	      <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+	    <para>最後，自 <filename>/etc/group</filename> 中該使用者所屬的所有群組移除該使用者。若群組無任何成員且群組名稱與該使用者名稱相同，則該群組也會一併移除。這是為了輔助 <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</manvolnum></citerefentry> 替每位使用者建立獨一無二的群組。</para>
 	  </step>
 	</procedure>
 
-	<para xml:lang="en"><citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></citerefentry> cannot be used to remove superuser
-	  accounts since that is almost always an indication of
-	  massive destruction.</para>
+	<para><citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></citerefentry> 無法用來移除超級使用者帳號，因為這幾乎代表著大規模破壞。</para>
 
-	<para xml:lang="en">By default, an interactive mode is used, as shown
-	  in the following example.</para>
+	<para>預設會使用互動式模式，如下範例所示。</para>
 
 	<example>
 	  <title><command>rmuser</command> 互動式帳號移除</title>
@@ -4549,29 +4536,15 @@ Removing user (jru): mailspool home passwd.
 	  <primary><command>chpass</command></primary>
 	</indexterm>
 
-	<para xml:lang="en">Any user can use <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry> to change their default
-	  shell and personal information associated with their user
-	  account.  The superuser can use this utility to change
-	  additional account information for any user.</para>
+	<para>任何使用者都可以使用 <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來變更自己的預設 Shell 以及與自己的使用者帳號關聯的個人資訊。超級使用者可以使用這個工具更改任何使用者的其他帳號資訊。</para>
 
-	<para xml:lang="en">When passed no options, aside from an optional username,
-	  <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry> displays an editor containing user
-	  information.  When the user exits from the editor, the user
-	  database is updated with the new information.</para>
+	<para>除了選填的使用者名稱外，未傳入任何選項時，<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry> 會開啟含有使用者資訊的編輯器。當使用者自編輯器離開，便會更新新的資訊到使用者資料庫。</para>
 
 	<note>
-	  <para xml:lang="en">This utility will prompt for the user's password when
-	    exiting the editor, unless the utility is run as the
-	    superuser.</para>
+	  <para>離開編輯器時，此工具會提示使用者輸入密碼，除非使用超級使用者執行此工具。</para>
 	</note>
 
-	<para xml:lang="en">In <xref linkend="users-modifying-chpass-su"/>, the
-	  superuser has typed <command>chpass jru</command> and is
-	  now viewing the fields that can be changed for this user.
-	  If <systemitem class="username">jru</systemitem> runs this
-	  command instead, only the last six fields will be displayed
-	  and available for editing.  This is shown in
-	  <xref linkend="users-modifying-chpass-ru"/>.</para>
+	<para>在 <xref linkend="users-modifying-chpass-su"/> 中，超級使用者輸入了 <command>chpass jru</command> 並正在檢視這個使用者可以更改的欄位。若改以 <systemitem class="username">jru</systemitem> 執行這個指令，只會顯示最後六個欄位供編輯，如 <xref linkend="users-modifying-chpass-ru"/> 所示。</para>
 
 	<example xml:id="users-modifying-chpass-su">
 	  <title>以超級使用者的身份使用 <command>chpass</command></title>
@@ -4606,12 +4579,7 @@ Other information:</screen>
 	</example>
 
 	<note>
-	  <para xml:lang="en">The commands <citerefentry><refentrytitle>chfn</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> are links
-	    to <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry>, as are <citerefentry><refentrytitle>ypchpass</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
-	    <citerefentry><refentrytitle>ypchfn</refentrytitle><manvolnum>1</manvolnum></citerefentry>, and <citerefentry><refentrytitle>ypchsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  Since
-	    <acronym>NIS</acronym> support is automatic, specifying
-	    the <literal>yp</literal> before the command is not
-	    necessary.  How to configure NIS is covered in <xref linkend="network-servers"/>.</para>
+	  <para>指令 <citerefentry><refentrytitle>chfn</refentrytitle><manvolnum>1</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 皆連結至 <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry>，就如同 <citerefentry><refentrytitle>ypchpass</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>ypchfn</refentrytitle><manvolnum>1</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>ypchsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的關係。自從 NIS 支援自動化以後，便不再需要特別加上 <literal>yp</literal>，如何設定 NIS 在<xref linkend="network-servers"/> 中有說明。</para>
 	</note>
       </sect3>
 
@@ -4626,10 +4594,7 @@ Other information:</screen>
 	  <secondary>changing password</secondary>
 	</indexterm>
 
-	<para xml:lang="en">Any user can easily change their password using
-	  <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  To prevent accidental or unauthorized
-	  changes, this command will prompt for the user's original
-	  password before a new password can be set:</para>
+	<para>任何使用者皆可簡單的使用 <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 更改自己的密碼。要避免意外或未授權的變更，這個指令在設定新密碼之前會提示使用者輸入原來的密碼。</para>
 
 	<example>
 	  <title>更改您的密碼</title>
@@ -4643,12 +4608,7 @@ passwd: updating the database...
 passwd: done</screen>
 	</example>
 
-	<para xml:lang="en">The superuser can change any user's password by
-	  specifying the username when running <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  When
-	  this utility is run as the superuser, it will not prompt for
-	  the user's current password.  This allows the password to be
-	  changed when a user cannot remember the original
-	  password.</para>
+	<para>超級使用者可以更改任何使用者的密碼透過在執行 <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 時指定使用者名稱。當此工具以超級使用者執行時，將不會提示輸入使用者目前的密碼，這可在使用者忘記原來的密碼時更改密碼。</para>
 
 	<example>
 	  <title>以超級使用者的身份更改其他使用者的密碼</title>
@@ -4662,9 +4622,7 @@ passwd: done</screen>
 	</example>
 
 	<note>
-	  <para xml:lang="en">As with <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>yppasswd</refentrytitle><manvolnum>1</manvolnum></citerefentry> is a link to
-	    <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>, so <acronym>NIS</acronym> works with
-	    either command.</para>
+	  <para>如同 <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></citerefentry>，<citerefentry><refentrytitle>yppasswd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 連結到 <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>，因此 <acronym>NIS</acronym> 在兩個指令上皆可運作。</para>
 	</note>
       </sect3>
 
@@ -4675,13 +4633,7 @@ passwd: done</screen>
 	  <primary><command>pw</command></primary>
 	</indexterm>
 
-	<para xml:lang="en">The <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> utility can create, remove,
-	  modify, and display users and groups.  It functions as a
-	  front end to the system user and group files.  <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	  has a very powerful set of command line options that make it
-	  suitable for use in shell scripts, but new users may find it
-	  more complicated than the other commands presented in this
-	  section.</para>
+	<para><citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具可以建立、移除、修改以及顯示使用者與群組，它的功能是做為系統使用者與群組檔的前端。<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 有非常強大的的指令列選項集，這讓該指令非常適合用於 Shell scripts，但新的使用者可能會發現它比其他在本節的指令要複雜許多。</para>
       </sect3>
     </sect2>
 
@@ -4699,26 +4651,11 @@ passwd: done</screen>
 	<secondary>groups</secondary>
       </indexterm>
 
-      <para xml:lang="en">A group is a list of users.  A group is identified by its
-	group name and <acronym>GID</acronym>.  In FreeBSD, the kernel
-	uses the <acronym>UID</acronym> of a process, and the list of
-	groups it belongs to, to determine what the process is allowed
-	to do.  Most of the time, the <acronym>GID</acronym> of a user
-	or process usually means the first group in the list.</para>
+      <para>群組代表一群使用者，群組可以由其群組名稱及 <acronym>GID</acronym> 來辨識。在 FreeBSD，核心會使用程序的 <acronym>UID</acronym> 以及其所屬的群組清單來決定程序可以做那些事。大多數情況使用者或程序的 <acronym>GID</acronym> 通常指的是清單中的第一個群組。</para>
 
-      <para xml:lang="en">The group name to <acronym>GID</acronym> mapping is listed
-	in <filename>/etc/group</filename>.  This is a plain text file
-	with four colon-delimited fields.  The first field is the
-	group name, the second is the encrypted password, the third
-	the <acronym>GID</acronym>, and the fourth the comma-delimited
-	list of members.  For a more complete description of the
-	syntax, refer to <citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+      <para>群組名稱與 <acronym>GID</acronym> 的對應表列在 <filename>/etc/group</filename>。這個純文字檔案使用了四個以冒號分隔的欄位，第一個欄位為群組名稱，第二個欄位為加密後的密碼，第二個欄位為 <acronym>GID</acronym> 以及第四個欄位為以逗號分隔的成員清單。要取得更完整的語法說明，請參考 <citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
 
-      <para xml:lang="en">The superuser can modify <filename>/etc/group</filename>
-	using a text editor.  Alternatively, <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> can be used to
-	add and edit groups.  For example, to add a group called
-	<systemitem class="groupname">teamtwo</systemitem> and then
-	confirm that it exists:</para>
+      <para>超級使用者可以使用文字編輯器修改 <filename>/etc/group</filename>，或者可使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 加入與編輯群組。例如，要加入一個叫做 <systemitem class="groupname">teamtwo</systemitem> 的群組然後確認該群組已新增：</para>
 
       <example>
 	<title>使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 新增群組</title>
@@ -4728,13 +4665,7 @@ passwd: done</screen>
 teamtwo:*:1100:</screen>
       </example>
 
-      <para xml:lang="en">In this example, <literal>1100</literal> is the
-	<acronym>GID</acronym> of
-	<systemitem class="groupname">teamtwo</systemitem>.  Right
-	now, <systemitem class="groupname">teamtwo</systemitem> has no
-	members.  This command will add
-	<systemitem class="username">jru</systemitem> as a member of
-	<systemitem class="groupname">teamtwo</systemitem>.</para>
+      <para>在本例中，<literal>1100</literal> 是 <systemitem class="groupname">teamtwo</systemitem> 的 <acronym>GID</acronym>。目前 <systemitem class="groupname">teamtwo</systemitem> 沒有任何成員，這個指令會加入 <systemitem class="username">jru</systemitem> 作為 <systemitem class="groupname">teamtwo</systemitem> 的成員。</para>
 
       <example>
 	<title>使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 加入使用者帳號到新的群組</title>
@@ -4744,18 +4675,7 @@ teamtwo:*:1100:</screen>
 teamtwo:*:1100:jru</screen>
       </example>
 
-      <para xml:lang="en">The argument to <option>-M</option> is a comma-delimited
-	list of users to be added to a new (empty) group or to replace
-	the members of an existing group.  To the user, this group
-	membership is different from (and in addition to) the user's
-	primary group listed in the password file.  This means that
-	the user will not show up as a member when using
-	<option>groupshow</option> with <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>, but will show up
-	when the information is queried via <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></citerefentry> or a similar
-	tool.  When <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> is used to add a user to a group, it
-	only manipulates <filename>/etc/group</filename> and does not
-	attempt to read additional data from
-	<filename>/etc/passwd</filename>.</para>
+      <para>給 <option>-M</option> 的參數是以逗號分隔的使用者清單，用來加入成員到新的 (空的) 群組或取代既有群組中的成員。對使用者來說這裡的群組成員與使用者列於密碼檔的主要群組不同 (額外的)，這代表在 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 使用 <option>groupshow</option> 時不會顯示做為使用者主要群組的成員，但會顯示在使用 <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></citerefentry> 或同類工具所查詢的資訊當中。當使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來加入使用者到某個群組，該指令只會處理 <filename>/etc/group</filename> 且不會嘗試自 <filename>/etc/passwd</filename> 讀取其他的資料。</para>
 
       <example>
 	<title>使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 加入新成員到群組</title>
@@ -4765,11 +4685,7 @@ teamtwo:*:1100:jru</screen>
 teamtwo:*:1100:jru,db</screen>
       </example>
 
-      <para xml:lang="en">In this example, the argument to <option>-m</option> is a
-	comma-delimited list of users who are to be added to the
-	group.  Unlike the previous example, these users are appended
-	to the group and do not replace existing users in the
-	group.</para>
+      <para>在本例當中，給 <option>-m</option> 的參數是以逗號分隔的使用者清單，用來加入使用者到群組。不像前面的例子，這些使用者會加入到群組，而非取代既有群組中的使用者。</para>
 
       <example>
 	<title>使用 <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來查看所屬群組</title>
@@ -4778,14 +4694,9 @@ teamtwo:*:1100:jru,db</screen>
 uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)</screen>
       </example>
 
-      <para xml:lang="en">In this example,
-	<systemitem class="username">jru</systemitem> is a member of
-	the groups <systemitem class="groupname">jru</systemitem> and
-	<systemitem class="groupname">teamtwo</systemitem>.</para>
+      <para>在本例中，<systemitem class="username">jru</systemitem> 是群組 <systemitem class="groupname">jru</systemitem> 以及 <systemitem class="groupname">teamtwo</systemitem> 的成員。</para>
 
-      <para xml:lang="en">For more information about this command and the format of
-	<filename>/etc/group</filename>, refer to <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> and
-	<citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+      <para>要取得更多有關此指令的資訊及 <filename>/etc/group</filename> 的格式，請參考 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
     </sect2>
   </sect1>
 
@@ -4796,37 +4707,13 @@ uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)</screen>
       <primary>UNIX</primary>
     </indexterm>
 
-    <para xml:lang="en">In FreeBSD, every file and directory has an associated set of
-      permissions and several utilities are available for viewing
-      and modifying these permissions.  Understanding how permissions
-      work is necessary to make sure that users are able to access
-      the files that they need and are unable to improperly access
-      the files used by the operating system or owned by other
-      users.</para>
+    <para>在 FreeBSD 中，每個檔案與目都有相關聯的數個權限，且有許多工具可以檢視與修改這些權限。了解權限如何運作是必須的，這可確保使用者能夠存存取它們所需的檔案以及無法不正確的存取供作業系統或其他使用者擁有的檔案。</para>
 
-    <para xml:lang="en">This section discusses the traditional <trademark class="registered">UNIX</trademark> permissions
-      used in FreeBSD.  For finer grained file system access control,
-      refer to <xref linkend="fs-acl"/>.</para>
+    <para>本節會探討在 FreeBSD 中所用到的傳統 <trademark class="registered">UNIX</trademark> 權限。要做檔案系統存取控制的微調，請參考 <xref linkend="fs-acl"/>。</para>
 
-    <para xml:lang="en">In <trademark class="registered">UNIX</trademark>, basic permissions are assigned using
-      three types of access: read, write, and execute.  These access
-      types are used to determine file access to the file's owner,
-      group, and others (everyone else).  The read, write, and execute
-      permissions can be represented as the letters
-      <literal>r</literal>, <literal>w</literal>, and
-      <literal>x</literal>.  They can also be represented as binary
-      numbers as each permission is either on or off
-      (<literal>0</literal>).  When represented as a number, the
-      order is always read as <literal>rwx</literal>, where
-      <literal>r</literal> has an on value of <literal>4</literal>,
-      <literal>w</literal> has an on value of <literal>2</literal>
-      and <literal>x</literal> has an on value of
-      <literal>1</literal>.</para>
+    <para>在 <trademark class="registered">UNIX</trademark>，基礎權限透過三種類型的存取來分配：讀取、寫入與執行。這些存取類型用來決定檔案擁有者、群組以及其他人 (其他任何人) 的檔案存取權。讀取、寫入及執行權限可使用 <literal>r</literal>, <literal>w</literal>, and <literal>x</literal> 字母來表示。這些權限也可以使用二進位數字來表示每種權限的開或關 (<literal>0</literal>)。當以二進位數字來表示時，閱讀的順序為 <literal>rwx</literal>，其中 <literal>r</literal> 開啟的值為 <literal>4</literal>，<literal>w</literal> 開啟的值為 <literal>2</literal> 以及 <literal>x</literal> 開啟的值為 <literal>1</literal>。</para>
 
-    <para xml:lang="en">Table 4.1 summarizes the possible numeric and alphabetic
-      possibilities.  When reading the <quote>Directory
-	Listing</quote> column, a <literal>-</literal> is used to
-      represent a permission that is set to off.</para>
+    <para>表格 4.1 摘要了可用的數字及可用的字母。當閱讀 <quote>目錄清單標示</quote> 欄位時，<literal>-</literal> 用來代表該權限設為關閉。</para>
 
     <indexterm xml:lang="en">
       <primary>permissions</primary>
@@ -4843,7 +4730,7 @@ uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)</screen>
 	  <row>
 	    <entry>數值</entry>
 	    <entry>權限</entry>
-	    <entry>目錄標示</entry>
+	    <entry>目錄清單標示</entry>
 	  </row>
 	</thead>
 
@@ -5096,118 +4983,63 @@ total 530
 	</authorgroup>
       </info>
 
-      <para xml:lang="en">Other than the permissions already discussed, there are
-	three other specific settings that all administrators should
-	know about.  They are the <literal>setuid</literal>,
-	<literal>setgid</literal>, and <literal>sticky</literal>
-	permissions.</para>
+      <para>除了已經探討過的權限外，這裡尚有另外三種特別的設定所有管理者都應該知道，這些設定為 <literal>setuid</literal>, <literal>setgid</literal> 以及 <literal>sticky</literal> 權限。</para>
 
-      <para xml:lang="en">These settings are important for some <trademark class="registered">UNIX</trademark> operations
-	as they provide functionality not normally granted to normal
-	users.  To understand them, the difference between the real
-	user ID and effective user ID must be noted.</para>
+      <para>這些設定對某些 <trademark class="registered">UNIX</trademark> 操作非常重要，由於它們讓功能正常不會的授權給一般使用者。要了解這些權限，就必須說明真實使用者 ID (Real user ID) 與有效使用者 ID (Effective user ID) 的差異。</para>
 
-      <para xml:lang="en">The real user ID is the <acronym>UID</acronym> who owns
-	or starts the process.  The effective <acronym>UID</acronym>
-	is the user ID the process runs as.  As an example,
-	<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> runs with the real user ID when a user changes
-	their password.  However, in order to update the password
-	database, the command runs as the effective ID of the
-	<systemitem class="username">root</systemitem> user.  This
-	allows users to change their passwords without seeing a
-	<errorname>Permission Denied</errorname> error.</para>
+      <para>真實使用者 ID 即是擁有者或啟動程序者的 <acronym>UID</acronym>，而有效 <acronym>UID</acronym> 是執行程序所使用的使用者 ID。例如，<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 在使用者更改自己的密碼時會以真實使用者 ID 執行，然而，為了要更新密碼資料庫，該指令必須以 <systemitem class="username">root</systemitem> 使用者做為有效 ID 來執行，這讓使用者可以更改自己的密碼而不會遇到權限不足 (<errorname>Permission Denied</errorname>) 的錯誤。</para>
 
-      <para xml:lang="en">The setuid permission may be set by prefixing a permission
-	set with the number four (4) as shown in the following
-	example:</para>
+      <para>setuid 權限可以透過在權限集前加上數字 (4) 來設定，如下範例所示：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>chmod 4755 suidexample.sh</userinput></screen>
 
-      <para xml:lang="en">The permissions on
-	<filename><replaceable>suidexample.sh</replaceable></filename>
-	now look like the following:</para>
+      <para>現在 <filename><replaceable>suidexample.sh</replaceable></filename> 的權限會如下所示：</para>
 
       <programlisting xml:lang="en">-rwsr-xr-x   1 trhodes  trhodes    63 Aug 29 06:36 suidexample.sh</programlisting>
 
-      <para xml:lang="en">Note that a <literal>s</literal> is now part of the
-	permission set designated for the file owner, replacing the
-	executable bit.  This allows utilities which need elevated
-	permissions, such as <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+      <para>注意，<literal>s</literal> 現在取代了原來的執行位元成為指定檔案擁有者權限集的一部份，這會允許須要提升權限的工具，如 <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可正常使用。</para>
 
       <note>
-	<para xml:lang="en">The <literal>nosuid</literal> <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> option will
-	  cause such binaries to silently fail without alerting
-	  the user.  That option is not completely reliable as a
-	  <literal>nosuid</literal> wrapper may be able to circumvent
-	  it.</para>
+	<para><citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的 <literal>nosuid</literal> 選項會造成這類 Binary 執行失敗，但不會警告使用者。由於 <literal>nosuid</literal> Wrapper 可能可繞過該選項，因此該選項並非完全可靠。</para>
       </note>
 
-      <para xml:lang="en">To view this in real time, open two terminals.  On
-	one, type <command>passwd</command> as a normal user.
-	While it waits for a new password, check the process
-	table and look at the user information for
-	<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>:</para>
+      <para>實際來看這個範例，先開啟兩個終端機，其中一個用一般使用者輸入 <command>passwd</command>。在等待輸入新密碼的同時，檢查程序表並查看 <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 程序的使用者資訊：</para>
 
-      <para xml:lang="en">In terminal A:</para>
+      <para>於終端機 A：</para>
 
       <screen xml:lang="en">Changing local password for trhodes
 Old Password:</screen>
 
-      <para xml:lang="en">In terminal B:</para>
+      <para>於終端機 Ｂ：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ps aux | grep passwd</userinput></screen>
 
       <screen xml:lang="en">trhodes  5232  0.0  0.2  3420  1608   0  R+    2:10AM   0:00.00 grep passwd
 root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
-      <para xml:lang="en">Although <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> is run as a normal user, it is
-	using the effective <acronym>UID</acronym> of
-	<systemitem class="username">root</systemitem>.</para>
+      <para>雖然使用一般使用者來執行 <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry>，但該程序使用了 <systemitem class="username">root</systemitem> 的有效 <acronym>UID</acronym>。</para>
 
-      <para xml:lang="en">The <literal>setgid</literal> permission performs the
-	same function as the <literal>setuid</literal> permission;
-	except that it alters the group settings.  When an application
-	or utility executes with this setting, it will be granted the
-	permissions based on the group that owns the file, not the
-	user who started the process.</para>
+      <para><literal>setgid</literal> 權限的功能與 <literal>setuid</literal> 相似，當應用程式或工具使用此設定執行時，將會以擁有該檔案的群組來執行，而非執行行該程序的使用者。</para>
 
-      <para xml:lang="en">To set the <literal>setgid</literal> permission on a
-	file, provide <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> with a leading two (2):</para>
+      <para>要在檔案設定 <literal>setgid</literal> 權限，需在 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的參數前加上 (2)：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>chmod 2755 sgidexample.sh</userinput></screen>
 
-      <para xml:lang="en">In the following listing, notice that the
-	<literal>s</literal> is now in the field designated for the
-	group permission settings:</para>
+      <para>注意以下清單中，<literal>s</literal> 現在位於指定群組權限設定的欄位：</para>
 
       <screen xml:lang="en">-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh</screen>
 
       <note>
-	<para xml:lang="en">In these examples, even though the shell script in
-	  question is an executable file, it will not run with
-	  a different <acronym>EUID</acronym> or effective user ID.
-	  This is because shell scripts may not access the
-	  <citerefentry><refentrytitle>setuid</refentrytitle><manvolnum>2</manvolnum></citerefentry> system calls.</para>
+	<para>在以上這些範例中，雖然在例子中的 Shell script 是可執行的檔案，但並不會以其他的 <acronym>EUID</acronym> 或有效使用者 ID 執行，這是因為 Shell script 並不會存取 <citerefentry><refentrytitle>setuid</refentrytitle><manvolnum>2</manvolnum></citerefentry> 系統呼叫 (System call)。</para>
       </note>
 
-      <para xml:lang="en">The <literal>setuid</literal> and
-	<literal>setgid</literal> permission bits may lower system
-	security, by allowing for elevated permissions.  The third
-	special permission, the <literal>sticky bit</literal>, can
-	strengthen the security of a system.</para>
+      <para><literal>setuid</literal> 及 <literal>setgid</literal> 權限位元可能會因允許提升權限而降低系統的安全性，因此有了第三個特殊的權限：<literal>sticky bit</literal>，可以加強系統的安全性。</para>
 
-      <para xml:lang="en">When the <literal>sticky bit</literal> is set on a
-	directory, it allows file deletion only by the file owner.
-	This is useful to prevent file deletion in public directories,
-	such as <filename>/tmp</filename>, by users
-	who do not own the file.  To utilize this permission, prefix
-	the permission set with a one (1):</para>
+      <para>當在目錄上設定 <literal>sticky bit</literal>，將只允許由檔案擁有者刪除檔案。這對避免公開目錄，如 <filename>/tmp</filename> 中的檔案被不擁有該檔案的人刪除非常有用。要使用這個權限，可在權限集前加上 (1)：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>chmod 1777 /tmp</userinput></screen>
 
-      <para xml:lang="en">The <literal>sticky bit</literal> permission will display
-	as a <literal>t</literal> at the very end of the permission
-	set:</para>
+      <para><literal>sticky bit</literal> 權限會以 <literal>t</literal> 顯示於權限集的最後：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ls -al / | grep tmp</userinput></screen>
 
@@ -6164,7 +5996,7 @@ Swap: 2048M Total, 2048M Free
     <sect2 xml:id="changing-shells">
       <title>變更 Shell</title>
 
-      <para>永久變更 Shell 最簡單的方法就是透過 <command>chsh</command> 命令。 執行 <command>chsh</command> 將會使用環境變數中 <envar>EDITOR</envar> 指定的文字編輯器，如果沒有設定，則預設是 <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 請修改 <literal>Shell:</literal> 為新的 Shell 的完整路徑。</para>
+      <para>永久變更 Shell 最簡單的方法就是透過 <command>chsh</command> 指令。 執行 <command>chsh</command> 將會使用環境變數中 <envar>EDITOR</envar> 指定的文字編輯器，如果沒有設定，則預設是 <citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 請修改 <literal>Shell:</literal> 為新的 Shell 的完整路徑。</para>
 
       <para>或者，使用 <command>chsh -s</command>， 來直接設定 Shell 而不開啟文字編輯器。 例如， 假設想把 Shell 更改為 <command>bash</command>：</para>
 
@@ -19792,7 +19624,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 48921 2016-06-12 17:03:55Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 49177 2016-07-26 21:25:23Z bhd $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -20491,7 +20323,6 @@ cat changed
 	run this command from a secure location:</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>opiepasswd -c</userinput>
-[grimreaper] ~ $ opiepasswd -f -c
 Adding unfurl:
 Only use this method from the console; NEVER from remote. If you are using
 telnet, xterm, or a dial-in, type ^C now or exit with no password.
@@ -21827,7 +21658,7 @@ Connection closed by foreign host.</screen>
 
       <listitem>
 	<para xml:lang="en"><emphasis>Authentication Header
-	    (<acronym>AH</acronym>)</emphasis>): this protocol
+	    (<acronym>AH</acronym>)</emphasis>: this protocol
 	  protects the <acronym>IP</acronym> packet header from third
 	  party interference and spoofing by computing a cryptographic
 	  checksum and hashing the <acronym>IP </acronym> packet
@@ -23761,13 +23592,13 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
       <para xml:lang="en">Most organizations are moving or have moved toward a two
 	factor authentication model.  In these cases, the user may
 	not have a password to enter.  <application>Sudo</application>
-	provides for these cases with the <literal>NOPASSWORD</literal>
+	provides for these cases with the <literal>NOPASSWD</literal>
 	variable.  Adding it to the configuration above
 	will allow all members of the <replaceable>webteam</replaceable>
 	group to manage the service without the password
 	requirement:</para>
 
-      <programlisting xml:lang="en">%webteam   ALL=(ALL)       NOPASSWORD: /usr/sbin/service webservice *</programlisting>
+      <programlisting xml:lang="en">%webteam   ALL=(ALL)       NOPASSWD: /usr/sbin/service webservice *</programlisting>
     </tip>
 
     <sect2 xml:id="security-sudo-loggin">
@@ -56299,7 +56130,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 48922 2016-06-13 15:29:17Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49121 2016-07-15 19:04:23Z zeising $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -60940,10 +60771,10 @@ rtsold_enable="YES"</programlisting>
 	example:</para>
 
       <programlisting xml:lang="en">rl0:\
-	:addrs#1:addr="2001:471:1f11:246::":prefixlen#64:tc=ether:</programlisting>
+	:addrs#1:addr="2001:db8:1f11:246::":prefixlen#64:tc=ether:</programlisting>
 
       <para xml:lang="en">Replace <filename>rl0</filename> with the interface
-	to be used and <systemitem>2001:471:1f11:246::</systemitem>
+	to be used and <systemitem>2001:db8:1f11:246::</systemitem>
 	with the prefix of the allocation.</para>
 
       <para xml:lang="en">For a dedicated <systemitem class="netmask">/64</systemitem> subnet, nothing else needs
@@ -66383,16 +66214,16 @@ lIjBtlclVhaUrE2uLx/yTz2Apbm+GAmD8M0dQ7IYsOFlZNBW9zjgLLCtWDW+p1A=
 
     <sect2 xml:id="pgpkey-core-secretary">
       <title xml:lang="en">Core Team Secretary <email>core-secretary@FreeBSD.org</email></title>
-      <!-- $FreeBSD: head/share/pgpkeys/core-secretary.key 46944 2015-07-09 20:51:29Z matthew $ -->
+      <!-- $FreeBSD: head/share/pgpkeys/core-secretary.key 49059 2016-07-06 18:48:41Z matthew $ -->
 <!--
 sh addkey.sh core-secretary 36A7C05FE1ECF9BB ;
 -->
 <programlisting role="pgpfingerprint" xml:lang="en"><![CDATA[
-pub   rsa4096/36A7C05FE1ECF9BB 2014-07-09 [expires: 2016-07-08]
+pub   rsa4096/36A7C05FE1ECF9BB 2014-07-09 [SC] [expires: 2017-07-08]
       Key fingerprint = C07B F5E3 10AE 64BF 6120  B0F6 36A7 C05F E1EC F9BB
-uid                          Core Secretary <core-secretary@freebsd.org>
-uid                          FreeBSD Core Team Secretary <core-secretary@freebsd.org>
-sub   rsa4096/7B5150C8D7CE5D02 2014-07-09 [expires: 2016-07-08]
+uid                            FreeBSD Core Team Secretary <core-secretary@freebsd.org>
+uid                            Core Secretary <core-secretary@freebsd.org>
+sub   rsa4096/7B5150C8D7CE5D02 2014-07-09 [E] [expires: 2017-07-08]
 
 ]]></programlisting>
 <programlisting role="pgpkey" xml:lang="en"><![CDATA[
@@ -66409,164 +66240,164 @@ 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
-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
+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
@@ -66578,30 +66409,19 @@ wSi1sNZD2hNFPs/12a2tem7DAWqD2bi8BltKRbO+8T7BARwIl5hXGq5+YnO+DgTI
 f4SYkSt8aiPYwDAF3YSkzpiUmZoBSRt6Sb9sZ3zIxpfnrtLFmSeujzinyCVNzFdn
 +HKxZvI9Mc3Tv/LqPruVuWHt1Aj+eygH5bRZw4PTsMNX1FxM/K8hRY91A6Fyp3GC
 kb5RzqdEGuSONBseaZirC0d+EYZ4smy1jydpzwT1O8VjY4wi5BdgwQARAQABiQIl
-BBgBCgAPBQJTvR7xAhsMBQkB4TOAAAoJEDanwF/h7Pm7gzUP/Auq4I876RUqAP2D
-gPNArjuc7jqvIIsgqBvwS2Vdvxg0pFQmsL13nvlmFHR1dp+yOhiz1WmXIVGa9UoB
-rVdmDrzqCifHUVlFct99DLJlM+hNmQnHgTABTsClR4idkekOvyEgAW/gsgddYfqm
-N8nRKSrokFZvwoR7HlCcSXEuATbqgHjJC8IuJuIgDWjshy3yVLIo5v/g/Yuio4bx
-tRTJm72DtUIdDH3tDejc37wd945Rzk4hKzet64inF6XfRhqBsRob1m6/wtP62xPc
-Gbb1GlzxYg9WllRJ/ZOTktB4BemVjRn4/0KU93YyxFxHOtXsoZpRGDlovQBUhRkd
-b2JEyHaLnFVKa7w7JFKW9d+OdGjV93l//6139QEQlcuocV4QciXZOXTZkWsaKQOb
-6WkrSwkQwvNFS2yeUd0x6HD0xebztmSGoXL3uCKyeIxP/8MJjJUkWHh/+DLue4kh
-lHwva7Wym0cvYoS3RzfYd26t9OgM7rflE0tOeJovaoaKP6Aant/EkQj2Wb1MssO/
-Ia44NyMTrLARAPlAEGW/HI5JL9DZDnmUtByf29yqaHDuJCZS3nvR3T/4q+pblTVd
-xQgwopUWjiKkg72yCXMhr/6FcOr9Xgqn++GuMZzh/TFdEoFoJn9stUaScYsoMoih
-ym2NFbd1l2Pw/ifTQk5/KpQD/HkwiQIlBBgBCgAPAhsMBQJVnts0BQkDwu/DAAoJ
-EDanwF/h7Pm7fV4P/Rb4aYTZmpajgk26vnXIJ2L/Xorx1lV7+a1bDxct71qWSLv3
-aCDGDXe1ZLYMnyaNCJHNn4SP2biF7QrRhRmGdETA2VXXCFYLDS7s4OQKltF3p1DS
-1UPozfIyXkCFGbOasbaDtJ9SOSv04q1E6nXfCcF8xgjxMHbbrCsGiiHSNet+5A9f
-AeZPWKWeUDgc3U7tho0FWyHZWgCjt5x1pYlCsUPgV3vlyo8HqRiWxLYF1WQ7SwV/
-1536r5DD5vFbzhdxQ03mPDqLh0VZwPlQ6nb+bKwDX/75Q6tBNBkUQGM7XqI5tZ07
-CjjI1/sTYMJz+GNnkIgrSiBr3vihtJgUzbJFfJqoIPkSdpayCP17k2Mdk9eCW6mc
-tmtfhU91lzJUvAl3Og1TQP/wiyPQhTrQOlonwkrzY/Bve9Ilh2ZDt/9Q+XzEtSdG
-59phFT4s7Yt5f9gVGx2hUhE5mmLN27rQJ2JnyIkA9IyNiycFPRo4ZURXI0yzCwXH
-bwLEmA2FVnnyotURN7Z1k2PzUOL6lb7j2fMJZBbaFDR1G7J2pKNihJO3IY80z7Le
-tpRpWKSdHTpSW1UXJFQBFT4W7fja03aEXP3bK+RV1MkAp/TCWlVCsqnyJae7BnEu
-g9NgaY6PRozzy5ZAdWM36ylnwFyz48fgUWHFhDc7fMCHjwqDtP62K1TbRvFM
-=cQn3
+BBgBCgAPAhsMBQJXfUwZBQkFpAOoAAoJEDanwF/h7Pm7BkAP/0WGa2wtgiRontjT
+ekeg8wntDfo+8KNI7niFk7Opv2aT1wCXo0uVbHAhK0dJIUtADGep2gtNcStJsn+J
+FRR4uQpYJzB9vMzTI6p4h4FOuiFHQIiJ5Y0fb9iOWkuE3kZviTUs6VTVU2SgqymY
+WktL7RcfwMw185T6aK0j/oeksoRyZP1wjmMOtD2SqSsIBMveOcZ+AjUzMW0bCa/7
+6dr+Um7YCSnwGyOQmFUViSU2mLfUD9PSUdtKo4UllEcBDgGyn9zL6Fc1P2Bh07cE
+0lWGwCSbk8FYIbxl1AqwX2AzCzA2x/lnybthEUrVUWavrkKyKQ/9I5E8Vevuq4Rp
+tlGOxILKHtaSBq8+tTGZNBQMJT9eAMGtuVGZLsYt4aGfeUDRrzVtB5cBFZXv+zCz
+TT999xSUMaz9OwaEnjXIbcNsJ1EUCWqhNpNqRyMJfgvruDx63VDxmfDb0+F/KX4p
+bN8tZe/addztjtljUriKtFTKaVZfwxP9ejg28glyz3kpPdgKlU/q3AIcIxtPf3C9
+Yi4A3p4fV/YCPnc0K+mPfO1XJtCz5768YsQPDgx9t9M2LLNr1bwDo0ZRP3CVJDbt
+9AeJZ6wV/buO+KLjULTvJCWLGuTwDIe7VAaLxjpmGFhmEKEHNOfUOwEaBDwJRlp0
+7Z/bTdSjOhRZ4gMvywjeXhqLVTZq
+=CJCx
 -----END PGP PUBLIC KEY BLOCK-----
 ]]></programlisting>
 
