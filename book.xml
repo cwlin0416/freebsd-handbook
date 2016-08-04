@@ -816,11 +816,11 @@
       </listitem>
 
       <listitem>
-	<para><xref linkend="basics"/> 新增了程序、Daemon 以及 Signal 的介紹。</para>
+	<para><xref linkend="basics"/> 新增了程序、Daemon 以及信號 (Signal) 的介紹。</para>
       </listitem>
 
       <listitem>
-	<para><xref linkend="ports"/> 新增了介紹如何管理 binary 套件的資訊。</para>
+	<para><xref linkend="ports"/> 新增了介紹如何管理 Binary 套件的資訊。</para>
       </listitem>
 
       <listitem>
@@ -906,7 +906,7 @@
       <term><emphasis><xref linkend="ports"/></emphasis></term>
 
       <listitem>
-	<para>涵蓋如何使用 FreeBSD 獨創的 <quote>Ports 套件集</quote> 與標準 Binary 套件安裝第三方軟體。</para>
+	<para>涵蓋如何使用 FreeBSD 獨創的 <quote>Port 套件集</quote> 與標準 Binary 套件安裝第三方軟體。</para>
       </listitem>
     </varlistentry>
 
@@ -1377,7 +1377,7 @@
 	</listitem>
 
 	<listitem>
-	  <para>數以萬計的 <emphasis>立即可以執行</emphasis> 的應用程式，這些都可透過 FreeBSD 的 <emphasis>ports</emphasis> 及 <emphasis>套件</emphasis> 管理機制來取得。 不再需要費心到網路上到處搜尋所需要的軟體。</para>
+	  <para>數以萬計的 <emphasis>立即可以執行</emphasis> 的應用程式，這些都可透過 FreeBSD 的 <emphasis>Port</emphasis> 及 <emphasis>套件</emphasis> 管理機制來取得。 不再需要費心到網路上到處搜尋所需要的軟體。</para>
 	</listitem>
 
 	<listitem>
@@ -1403,7 +1403,7 @@
 	    </indexterm><indexterm>
 	      <primary>compilers</primary>
 	      <secondary>C++</secondary>
-	    </indexterm>完全相容的 <emphasis>C</emphasis>、<emphasis>C++</emphasis> 以及 Fortran 的環境和其他開發工具。 以及其他許多可供進階研發的程式語言也收集在 ports 和套件。</para>
+	    </indexterm>完全相容的 <emphasis>C</emphasis>、<emphasis>C++</emphasis> 以及 Fortran 的環境和其他開發工具。 以及其他許多可供進階研發的程式語言也收集在 Port 和套件集。</para>
 	</listitem>
 
 	<listitem>
@@ -1508,7 +1508,7 @@
 	<listitem>
 	  <para><emphasis>軟體開發：</emphasis> 基本安裝的 FreeBSD 就包含了完整的程式開發工具，如 C/C++<indexterm>
 	      <primary>Compiler</primary>
-	    </indexterm> 編譯器及除錯器。 透過 port 與套件管理系統也可支援需多其他語言。</para>
+	    </indexterm> 編譯器及除錯器。 透過 Port 與套件管理系統也可支援需多其他語言。</para>
 	</listitem>
       </itemizedlist>
 
@@ -2049,7 +2049,7 @@
 	      </indexterm> <indexterm>
 		<primary>SVN</primary>
 		<see>Subversion</see>
-	      </indexterm>過去數年來 FreeBSD 的中央原始碼樹 (Source tree) 一直是以 <link xlink:href="http://www.nongnu.org/cvs/">CVS</link> (Concurrent Versions System) 來維護的， 它是一套免費的原始碼控管工具。 從 2008 年 6 月起， FreeBSD 計劃開始改用 <link xlink:href="http://subversion.tigris.org">SVN</link> (Subversion)。 這是一個必要的更換動作，因為隨著原始碼樹及歷史版本儲存的數量不斷快速擴張，<application>CVS</application> 先天的技術限制越來越明顯。 文件計劃與 Ports 套件集檔案庫也同樣於 2012 年 5 月及 2012 年 7 月由 <application>CVS</application> 改為 <application>SVN</application>。請參考 <link linkend="synching">同步您的原始碼樹</link> 一節來取得有關如何取得 FreeBSD <literal>src/</literal> 檔案庫的更多資訊，以及 <link linkend="ports-using">使用 Ports 套件集</link> 了解如何取得 FreeBSD Ports 套件集。</para>
+	      </indexterm>過去數年來 FreeBSD 的中央原始碼樹 (Source tree) 一直是以 <link xlink:href="http://www.nongnu.org/cvs/">CVS</link> (Concurrent Versions System) 來維護的， 它是一套免費的原始碼控管工具。 從 2008 年 6 月起， FreeBSD 計劃開始改用 <link xlink:href="http://subversion.tigris.org">SVN</link> (Subversion)。 這是一個必要的更換動作，因為隨著原始碼樹及歷史版本儲存的數量不斷快速擴張，<application>CVS</application> 先天的技術限制越來越明顯。 文件計劃與 Port 套件集檔案庫也同樣於 2012 年 5 月及 2012 年 7 月由 <application>CVS</application> 改為 <application>SVN</application>。請參考 <link linkend="synching">同步您的原始碼樹</link> 一節來取得有關如何取得 FreeBSD <literal>src/</literal> 檔案庫的更多資訊，以及 <link linkend="ports-using">使用 Port 套件集</link> 了解如何取得 FreeBSD Port 套件集。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -2057,7 +2057,7 @@
 	  <term>提交者名單<anchor xml:id="development-committers"/></term>
 
 	  <listitem>
-	    <para>所謂的 <firstterm>提交者 (Committers)</firstterm> 指的是對 Subversion 原始碼樹有 <emphasis>寫入</emphasis> 權限的人， 並且被授予修改 FreeBSD 原始碼的權限。 (<quote>committer</quote> 一詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 任何人都可以回報問題到 <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>，在回報問題之前，可以使用 FreeBSD 郵遞清單、IRC 頻道或論壇來確認問題真的是一個錯誤 (Bug)。</para>
+	    <para>所謂的 <firstterm>提交者 (Committer)</firstterm> 指的是對 Subversion 原始碼樹有 <emphasis>寫入</emphasis> 權限的人， 並且被授予修改 FreeBSD 原始碼的權限。 (<quote>committer</quote> 一詞源自版本管理系統中的 <command>commit</command> 指令，該指令是用來把新的修改提交給檔案庫)。 任何人都可以回報問題到 <link xlink:href="https://bugs.FreeBSD.org/submit/">Bug Database</link>，在回報問題之前，可以使用 FreeBSD 郵遞清單、IRC 頻道或論壇來確認問題真的是一個錯誤 (Bug)。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -2065,7 +2065,7 @@
 	  <term>FreeBSD 核心團隊<anchor xml:id="development-core"/></term>
 
 	  <listitem>
-	    <para>如果把 FreeBSD 看成是一家公司的話， <firstterm>FreeBSD 核心團隊</firstterm><indexterm>
+	    <para>如果把 FreeBSD 看成是一家公司的話， <firstterm>FreeBSD 核心團隊 (FreeBSD core team)</firstterm><indexterm>
 		<primary>core team</primary>
 	      </indexterm> 就相當於董事會。 核心團隊的主要職責在於確保此計劃有良好的架構，以朝著正確的方向發展。 此外，邀請熱血且負責的軟體開發者加入提交者的行列， 以在若干成員離去時得以補充新血。 目前的核心團隊是在 2014 年 7 月從提交者候選人之中選出來的，這個選舉每兩年會舉辦一次。</para>
 
@@ -2098,7 +2098,7 @@
     <sect2 xml:id="third-party-programs">
       <title>第三方程式</title>
 
-      <para>除了基礎發行版之外，FreeBSD 提供了擁有上千個常用的程式的移植軟體的套件集，在撰寫本文的同時，已有超過 24,000 個 Port! Port 的範圍從 HTTP 伺服器到遊戲、語系、編輯器，幾乎所有東西都在裡面。完整的 Ports 套件集需要將近 500 MB。要編譯一個 Port 您只需要切換目錄到您想安裝的程式目錄，然後輸入 <command>make install</command>，接著系統便會處理剩下的動作。您編譯的每個 Port 完整原始發行版內容是動態下載的，所以您只需要有足夠的磁碟空間來編譯您想要的 Ports。幾乎所有 Ports 都提供以預先編譯好的<quote>套件</quote>，您可以透過簡單的指令來安裝 (<command>pkg install</command>)，提供那些不想要自行從原始碼編譯的人使用。更多有關套件與 Ports 的資訊可於 <xref linkend="ports"/> 取得。</para>
+      <para>除了基礎發行版之外，FreeBSD 提供了擁有上千個常用的程式的移植軟體的套件集，在撰寫本文的同時，已有超過 24,000 個 Port! Port 的範圍從 HTTP 伺服器到遊戲、語系、編輯器，幾乎所有東西都在裡面。完整的 Port 套件集需要將近 500 MB。要編譯一個 Port 您只需要切換目錄到您想安裝的程式目錄，然後輸入 <command>make install</command>，接著系統便會處理剩下的動作。您編譯的每個 Port 完整原始發行版內容是動態下載的，所以您只需要有足夠的磁碟空間來編譯您想要的 Port。幾乎所有 Port 都提供以預先編譯好的<quote>套件</quote>，您可以透過簡單的指令來安裝 (<command>pkg install</command>)，提供那些不想要自行從原始碼編譯的人使用。更多有關套件與 Port 的資訊可於 <xref linkend="ports"/> 取得。</para>
     </sect2>
 
     <sect2>
@@ -2329,7 +2329,7 @@
 
 	<para>如果 FreeBSD 是唯一一套要安裝到電腦的作業系統，這個步驟可以略過。 但是假如 FreeBSD 要和其他作業系統共用磁碟空間的話，就要決定 FreeBSD 要安裝在哪個磁碟或是哪個分割區 (Partition)。</para>
 
-	<para>在 i386 和 amd64 架構，可將磁碟分割成多個分割區，可以選擇下列兩種分割表格式 (Partitioning scheme) 的其中一種達成。 傳統的<firstterm>主開機紀錄</firstterm> (Master Boot Record, <acronym>MBR</acronym>) 的一個分割區表定義最多可有四個<firstterm>主分割區</firstterm> (Primary partition)，因一些歷史淵源，FreeBSD 稱這些主分割區為 <firstterm>slice</firstterm>，其中一個主分割區可作為<firstterm>延伸分割區</firstterm> (Extended partition)，延伸分割區又可分割成多個<firstterm>邏輯分割區</firstterm> (Logical partition)。 <firstterm>GUID 分割區表</firstterm> (GUID Partition Table, <acronym>GPT</acronym>) 是較新和較簡單的分割磁碟的方法，一般 <acronym>GPT</acronym> 實作允許每個磁碟多達 128 個分割區，不再需要使用邏輯分割區。</para>
+	<para>在 i386 和 amd64 架構，可將磁碟分割成多個分割區，可以選擇下列兩種分割表格式 (Partitioning scheme) 的其中一種達成。 傳統的<firstterm>主開機紀錄 (Master Boot Record, <acronym>MBR</acronym>)</firstterm> 的一個分割區表定義最多可有四個<firstterm>主分割區</firstterm> (Primary partition)，因一些歷史淵源，FreeBSD 稱這些主分割區為 <firstterm>slice</firstterm>，其中一個主分割區可作為<firstterm>延伸分割區</firstterm> (Extended partition)，延伸分割區又可分割成多個<firstterm>邏輯分割區</firstterm> (Logical partition)。 <firstterm>GUID 分割區表</firstterm> (GUID Partition Table, <acronym>GPT</acronym>) 是較新和較簡單的分割磁碟的方法，一般 <acronym>GPT</acronym> 實作允許每個磁碟多達 128 個分割區，不再需要使用邏輯分割區。</para>
 
 	<warning>
 	  <para>一些比較舊的作業系統，像是 <trademark class="registered">Windows</trademark> XP 並不相容 <acronym>GPT</acronym> 分割表格式。 如果 FreeBSD 將和這類作業系統共用一個磁碟，則需要用 <acronym>MBR</acronym> 分割表格式。</para>
@@ -2406,19 +2406,19 @@
 	</listitem>
 
 	<listitem>
-	  <para><literal>-disc1.iso</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。</para>
+	  <para><literal>-disc1.iso</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Port 套件集。這個檔案應使用 <acronym>CD</acronym> 燒錄應用程式燒錄到 <acronym>CD</acronym> 使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para><literal>-dvd1.iso</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集，也內含熱門的 Binary 套件可安裝視窗管理程式以及一些應用程式，如此便可從媒體安裝完整的系統，無須連線到網際網路。這個檔案應使用 <acronym>DVD</acronym> 燒錄應用程式燒錄到 <acronym>DVD</acronym> 使用。</para>
+	  <para><literal>-dvd1.iso</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Port 套件集，也內含熱門的 Binary 套件可安裝視窗管理程式以及一些應用程式，如此便可從媒體安裝完整的系統，無須連線到網際網路。這個檔案應使用 <acronym>DVD</acronym> 燒錄應用程式燒錄到 <acronym>DVD</acronym> 使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para><literal>-memstick.img</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Ports 套件集。這個檔案應依據以下操作指示寫入到 <acronym>USB</acronym> 隨身碟使用。</para>
+	  <para><literal>-memstick.img</literal>: 這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Port 套件集。這個檔案應依據以下操作指示寫入到 <acronym>USB</acronym> 隨身碟使用。</para>
 	</listitem>
       </itemizedlist>
 
-      <para>映像檔下載完成之後，下載同一個目錄之中的 <filename>CHECKSUM.SHA256</filename>。FreeBSD 提供 <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可用來計算映像檔的 <firstterm>checksum</firstterm>，使用方式為 <command>sha256 <replaceable>imagefilename</replaceable></command>，其他作業系統也會有類似的程式。</para>
+      <para>映像檔下載完成之後，下載同一個目錄之中的 <filename>CHECKSUM.SHA256</filename>。FreeBSD 提供 <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可用來計算映像檔的 <firstterm>校驗和 (Checksum)</firstterm>，使用方式為 <command>sha256 <replaceable>imagefilename</replaceable></command>，其他作業系統也會有類似的程式。</para>
 
       <para>比對計算後的 checksum 與 <filename>CHECKSUM.SHA256</filename> 檔案中的值，checksum 應該要完全相符，若 checksum 不相符，則代表該映像檔是損壞的，必須再下載一次。</para>
 
@@ -2775,15 +2775,15 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</listitem>
 
 	<listitem>
-	  <para><literal>ports</literal> - FreeBSD Ports 套件集是一套可自動下載、編譯安裝第三方軟體套件的集合，<xref linkend="ports"/> 中會討論到如何使用 Ports 套件集。</para>
+	  <para><literal>ports</literal> - FreeBSD Port 套件集是一套可自動下載、編譯安裝第三方軟體套件的集合，<xref linkend="ports"/> 中會討論到如何使用 Port 套件集。</para>
 
 	  <warning>
-	    <para>安裝程式並不會檢查是否有充足的磁碟空間，FreeBSD Ports 套件集會使用約 500 MB 的磁碟空間，只有在有足夠的磁碟空間時才選擇這個選項。</para>
+	    <para>安裝程式並不會檢查是否有充足的磁碟空間，FreeBSD Port 套件集會使用約 500 MB 的磁碟空間，只有在有足夠的磁碟空間時才選擇這個選項。</para>
 	  </warning>
 	</listitem>
 
 	<listitem>
-	  <para><literal>src</literal> - 完整的 FreeBSD 原始碼，包含核心 (Kernel) 與 Userland。雖然大多數的應用程式並不需要，但它可以編譯裝置驅動程式、核心模組或部份來自 Ports 套件集的應用程式，它同時也用來做為開發 FreeBSD 本身所使用。完整的原始碼樹需要 1 GB 的磁碟空間，重新編譯整個 FreeBSD 系統需要額外再 5 GB 的空間。</para>
+	  <para><literal>src</literal> - 完整的 FreeBSD 原始碼，包含核心 (Kernel) 與 Userland。雖然大多數的應用程式並不需要，但它可以編譯裝置驅動程式、核心模組或部份來自 Port 套件集的應用程式，它同時也用來做為開發 FreeBSD 本身所使用。完整的原始碼樹需要 1 GB 的磁碟空間，重新編譯整個 FreeBSD 系統需要額外再 5 GB 的空間。</para>
 	</listitem>
       </itemizedlist>
     </sect2>
@@ -2844,7 +2844,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
       </mediaobject>
     </figure>
 
-    <para>引導式 (<literal>Guided</literal>) 磁碟分割會自動設定磁碟的分割區 (Partition)，手動 (<literal>Manual</literal>) 磁碟分割可讓進階的使用者使用選單項目建立自訂的分割區，而 <literal>Shell</literal> 會開啟 Shell 提示讓進階的使用者可以使用指示列工具如 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <citerefentry><refentrytitle>fdisk</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來建立自訂的分割區。<literal>ZFS</literal> 磁碟分割只在 FreeBSD 10 及之後的版本可以使用，可建立選擇性加密的 root-on-ZFS 系統並支援 <firstterm>開機環境</firstterm>。</para>
+    <para>引導式 (<literal>Guided</literal>) 磁碟分割會自動設定磁碟的分割區 (Partition)，手動 (<literal>Manual</literal>) 磁碟分割可讓進階的使用者使用選單項目建立自訂的分割區，而 <literal>Shell</literal> 會開啟 Shell 提示讓進階的使用者可以使用指示列工具如 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <citerefentry><refentrytitle>fdisk</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>bsdlabel</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來建立自訂的分割區。<literal>ZFS</literal> 磁碟分割只在 FreeBSD 10 及之後的版本可以使用，可建立選擇性加密的 root-on-ZFS 系統並支援 <firstterm>開機環境 (Boot environment)</firstterm>。</para>
 
     <para>本節會介紹在配置磁碟分割時需要考量那些事情，並且會示範各種磁碟分割的方式。</para>
 
@@ -2870,7 +2870,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	<para>有時在 <filename>/var/tmp</filename> 會需要較多的空間，當新軟體安裝，套件工具會從套件中取出暫存的複本置於 <filename>/var/tmp</filename>。若在 <filename>/var/tmp</filename> 沒有足夠的空間，要安裝大型軟體套件，例如 <application>Firefox</application>, <application>Apache OpenOffice</application> 或 <application>LibreOffice</application> 會很困難。</para>
       </note>
 
-      <para><filename>/usr</filename> 分割區會保存許多支持系統運作的檔案，包含 FreeBSD Ports 套件集以及系統原始碼。這個分割區建議至少要有 2 GB 的空間。</para>
+      <para><filename>/usr</filename> 分割區會保存許多支持系統運作的檔案，包含 FreeBSD Port 套件集以及系統原始碼。這個分割區建議至少要有 2 GB 的空間。</para>
 
       <para xml:lang="en">When selecting partition sizes, keep the space
 	requirements in mind.  Running out of space in one partition
@@ -3004,7 +3004,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 
 	    <row>
 	      <entry xml:lang="en">BSD</entry>
-	      <entry>無 <acronym>MBR</acronym> 的 <acronym>BSD</acronym> 標籤，因非 <acronym>BSD</acronym> 的磁碟工具可能無法辨識該標籤，有時被稱做 <firstterm>危險的專用模式</firstterm>。</entry>
+	      <entry>無 <acronym>MBR</acronym> 的 <acronym>BSD</acronym> 標籤，因非 <acronym>BSD</acronym> 的磁碟工具可能無法辨識該標籤，有時被稱做 <firstterm>危險專用模式 (Dangerously dedicated mode)</firstterm>。</entry>
 	    </row>
 
 	    <row>
@@ -4019,11 +4019,11 @@ Starting sshd.</screen>
       </listitem>
 
       <listitem>
-	<para>如何掛載 (mount)、卸載 (umount) 檔案系統。</para>
+	<para>如何掛載 (Mount)、卸載 (Umount) 檔案系統。</para>
       </listitem>
 
       <listitem>
-	<para>什麼是程序、Daemon 以及 Signal。</para>
+	<para>什麼是程序、Daemon 以及信號 (Signal)。</para>
       </listitem>
 
       <listitem>
@@ -4035,7 +4035,7 @@ Starting sshd.</screen>
       </listitem>
 
       <listitem>
-	<para>什麼是 Devices 和 Device node 。</para>
+	<para>什麼是裝置 (Device) 和裝置節點 (Device node)。</para>
       </listitem>
 
       <listitem>
@@ -4118,7 +4118,7 @@ ttyv8   "/usr/X11R6/bin/xdm -nodaemon"  xterm   off secure</programlisting>
 # when going to single-user mode.
 console none                            unknown  off  secure</programlisting>
 
-      <para>預設狀態為安全 (<literal>secure</literal>)，這代表誰能夠操作實體鍵盤不是不重要就是已受到實體安全規範管制。 若設定更該為不安全(<literal>insecure</literal>) 則代表主機所在的環境不安全，因為任何人皆可接觸鍵盤。 當此行設定更改為不安全 (<literal>insecure</literal>) 時，當使用擇選擇單使用者模式時，FreeBSD 將會要求輸入 <systemitem class="username">root</systemitem> 的密碼。</para>
+      <para>預設狀態為安全 (<literal>secure</literal>)，這代表誰能夠操作實體鍵盤不是不重要就是已受到實體安全規範管制。 若設定更該為不安全 (<literal>insecure</literal>) 則代表主機所在的環境不安全，因為任何人皆可接觸鍵盤。 當此行設定更改為不安全 (<literal>insecure</literal>) 時，當使用擇選擇單使用者模式時，FreeBSD 將會要求輸入 <systemitem class="username">root</systemitem> 的密碼。</para>
 
       <note>
 	<para><emphasis>請審慎考慮是否要改為 <literal>insecure</literal></emphasis>！ 因為萬一忘記 <systemitem class="username">root</systemitem> 密碼的話，雖然還是有其他辦法可以登入單使用者模式，只是對不熟 FreeBSD 開機程序的人可就麻煩了。</para>
@@ -4809,7 +4809,7 @@ total 530
 
     <para>要能夠列出目錄內容，必須擁有目錄的讀取權限。 要刪除已知檔名的檔案，必須擁有檔案所在目錄的寫入 <emphasis>以及</emphasis> 執行的權限。</para>
 
-    <para>還有一些權限位元，但這些權限主要在特殊情況使用，如 setuid binaries 及 sticky directories。 如果您還想知道更多檔案權限的資訊及使用方法，請務必參閱 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
+    <para>還有一些權限位元，但這些權限主要在特殊情況使用，如 setuid 執行檔及 sticky 目錄。 如果您還想知道更多檔案權限的資訊及使用方法，請務必參閱 <citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
     <sect2>
       <info>
@@ -4895,25 +4895,25 @@ total 530
 	    <row>
 	      <entry>(權限)</entry>
 	      <entry xml:lang="en">w</entry>
-	      <entry xml:lang="en">Write</entry>
-	    </row>
-
-	    <row>
-	      <entry>(權限)</entry>
-	      <entry xml:lang="en">x</entry>
 	      <entry>寫入</entry>
 	    </row>
 
 	    <row>
 	      <entry>(權限)</entry>
+	      <entry xml:lang="en">x</entry>
+	      <entry>執行</entry>
+	    </row>
+
+	    <row>
+	      <entry>(權限)</entry>
 	      <entry xml:lang="en">t</entry>
-	      <entry xml:lang="en">Sticky bit</entry>
+	      <entry>Sticky 位元</entry>
 	    </row>
 
 	    <row>
 	      <entry>(權限)</entry>
 	      <entry xml:lang="en">s</entry>
-	      <entry>	Set UID 或 GID</entry>
+	      <entry>設定 UID 或 GID</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
@@ -4985,7 +4985,7 @@ total 530
 
       <para>除了已經探討過的權限外，這裡尚有另外三種特別的設定所有管理者都應該知道，這些設定為 <literal>setuid</literal>, <literal>setgid</literal> 以及 <literal>sticky</literal> 權限。</para>
 
-      <para>這些設定對某些 <trademark class="registered">UNIX</trademark> 操作非常重要，由於它們讓功能正常不會的授權給一般使用者。要了解這些權限，就必須說明真實使用者 ID (Real user ID) 與有效使用者 ID (Effective user ID) 的差異。</para>
+      <para>這些設定對某些一般不會授權給一般使用者的 <trademark class="registered">UNIX</trademark> 操作非常重要，它讓這些功能可運作。要了解這些權限，就必須說明真實使用者 ID (Real user ID) 與有效使用者 ID (Effective user ID) 的差異。</para>
 
       <para>真實使用者 ID 即是擁有者或啟動程序者的 <acronym>UID</acronym>，而有效 <acronym>UID</acronym> 是執行程序所使用的使用者 ID。例如，<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></citerefentry> 在使用者更改自己的密碼時會以真實使用者 ID 執行，然而，為了要更新密碼資料庫，該指令必須以 <systemitem class="username">root</systemitem> 使用者做為有效 ID 來執行，這讓使用者可以更改自己的密碼而不會遇到權限不足 (<errorname>Permission Denied</errorname>) 的錯誤。</para>
 
@@ -5078,7 +5078,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/bin/</filename></entry>
-	      <entry>single-user、multi-user 兩種模式皆可使用的基本工具 。</entry>
+	      <entry>單使用者 (Single-user)、多使用者 (Multi-user) 兩種模式皆可使用的基本工具 。</entry>
 	    </row>
 
 	    <row>
@@ -5093,12 +5093,12 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/dev/</filename></entry>
-	      <entry>Device nodes，詳情請參閱 <citerefentry><refentrytitle>intro</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</entry>
+	      <entry>裝置節點 (Device node)，詳情請參閱 <citerefentry><refentrytitle>intro</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/</filename></entry>
-	      <entry>系統設定檔及一些 script 檔。</entry>
+	      <entry>系統設定檔及一些 Script 檔。</entry>
 	    </row>
 
 	    <row>
@@ -5108,7 +5108,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/mail/</filename></entry>
-	      <entry>MTA(Mail Transport Agent)的相關設定檔，像是 <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
+	      <entry>MTA (Mail Transport Agent) 的相關設定檔，像是 <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
 	    </row>
 
 	    <row>
@@ -5118,7 +5118,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/periodic/</filename></entry>
-	      <entry>每日、每週、每月透過 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>，執行的定期排程 script，詳情請參閱 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
+	      <entry>每日、每週、每月透過 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>，執行的定期排程 Script，詳情請參閱 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
 	    </row>
 
 	    <row>
@@ -5133,12 +5133,12 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/proc/</filename></entry>
-	      <entry>Process 檔案系統，詳情請參閱 <citerefentry><refentrytitle>procfs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>mount_procfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
+	      <entry>程序 (Process) 檔案系統，詳情請參閱 <citerefentry><refentrytitle>procfs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>mount_procfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/rescue/</filename></entry>
-	      <entry>緊急救援用途的一些 statically linked 程式，詳情請參閱 <citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
+	      <entry>緊急救援用途的一些靜態連結 (Statically linked) 的程式，詳情請參閱 <citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
 	    </row>
 
 	    <row>
@@ -5148,12 +5148,12 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/sbin/</filename></entry>
-	      <entry>供 single-user 及 multi-user 環境使用的系統程式及管理工具 。</entry>
+	      <entry>供單使用者 (Single-user) 及多使用者 (Multi-user) 環境使用的系統程式及管理工具 。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/tmp/</filename></entry>
-	      <entry>臨時檔案。 一般而言，重開機之後 /tmp 內的東西會被<emphasis>清除</emphasis>掉。 而通常會將 memory-based 檔案系統掛載在 <filename>/tmp</filename> 上。 這些瑣事可透過 tmpmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成 。(或是在 <filename>/etc/fstab</filename> 內做設定， 詳情請參閱 <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。</entry>
+	      <entry>臨時檔案。 一般而言，重開機之後 /tmp 內的東西會被<emphasis>清除</emphasis>掉。 而通常會將以記憶體為基礎 (Memory-based) 的檔案系統掛載在 <filename>/tmp</filename> 上。 這些瑣事可透過 tmpmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成 。(或是在 <filename>/etc/fstab</filename> 內做設定， 詳情請參閱 <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。</entry>
 	    </row>
 
 	    <row>
@@ -5189,7 +5189,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/usr/local/</filename></entry>
-	      <entry>存放一些自行安裝的執行檔、程式庫等等。 同時，也是 FreeBSD ports 架構的預設安裝目錄。 <filename>/usr/local</filename> 內的目錄架構大致與 <filename>/usr</filename> 相同，詳情請參閱 <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry> 說明。 但 man 目錄例外，它們是直接放在 <filename>/usr/local</filename> 底下，而非 <filename>/usr/local/share</filename>，而 ports 所安裝的說明文件則在 <filename>share/doc/<replaceable>port</replaceable></filename>。</entry>
+	      <entry>存放一些自行安裝的執行檔、程式庫等等。 同時，也是 FreeBSD Port 架構的預設安裝目錄。 <filename>/usr/local</filename> 內的目錄架構大致與 <filename>/usr</filename> 相同，詳情請參閱 <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></citerefentry> 說明。 但 man 目錄例外，它們是直接放在 <filename>/usr/local</filename> 底下，而非 <filename>/usr/local/share</filename>，而 Port 所安裝的說明文件則在 <filename>share/doc/<replaceable>port</replaceable></filename>。</entry>
 	    </row>
 
 	    <row>
@@ -5199,7 +5199,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/usr/ports/</filename></entry>
-	      <entry>FreeBSD Ports 套件集 (選用)。</entry>
+	      <entry>FreeBSD Port 套件集 (選用)。</entry>
 	    </row>
 
 	    <row>
@@ -5219,27 +5219,27 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/var/</filename></entry>
-	      <entry>存放各種用途的日誌(log)檔、臨時或暫時存放、列印或郵件的 spool 檔案。有時候，memory-based 檔案系統也會掛載在 <filename>/var</filename>。 這些瑣事可透過 varmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成。(或是在 <filename>/etc/fstab</filename> 內做設定，相關細節請參閱 <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。</entry>
+	      <entry>存放各種用途的日誌 (Log) 檔、臨時或暫時存放、列印或郵件的暫存 (Spool) 檔案。有時候，以記憶體為基礎 (Memory-based) 的檔案系統也會掛載在 <filename>/var</filename>。 這些瑣事可透過 varmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成。(或是在 <filename>/etc/fstab</filename> 內做設定，相關細節請參閱 <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/var/log/</filename></entry>
-	      <entry>各項系統記錄的日誌(log)檔。</entry>
+	      <entry>各項系統記錄的日誌 (Log) 檔。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/var/mail/</filename></entry>
-	      <entry>各使用者的郵件(mailbox)檔案。</entry>
+	      <entry>各使用者的郵件 (Mailbox) 檔案。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/var/spool/</filename></entry>
-	      <entry>各種印表機、郵件系統的 spool 目錄。</entry>
+	      <entry>各種印表機、郵件系統的暫存 (Spool) 目錄。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/var/tmp/</filename></entry>
-	      <entry>臨時檔案。 這些檔案在重開機後通常仍會保留，除非 <filename>/var</filename> 是屬於 memory-based 檔案系統。</entry>
+	      <entry>臨時檔案。 這些檔案在重開機後通常仍會保留，除非 <filename>/var</filename> 是屬於以記憶體為基礎 (Memory-based) 的檔案系統。</entry>
 	    </row>
 
 	    <row>
@@ -5258,11 +5258,11 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
     <para>檔案存在目錄裡面。 一個目錄中可能沒有任何檔案，也可能有好幾百個檔案。 目錄之中也可以包含其他的目錄； 您可以建立階層式的目錄以便資料的管理。</para>
 
-    <para>檔案或目錄的對應是藉由給定的檔案或目錄名稱，然後加上正斜線符號 (<literal>/</literal>)；之後再視需要加上其他的目錄名稱。 如果您有一個目錄 <filename>foo</filename> ，裡面有一個目錄叫作 <filename>bar</filename>，這個目錄中又包含了一個叫 <filename>readme.txt</filename> 的檔案，那麼這個檔案的全名，或者說檔案的<firstterm>路徑</firstterm>就是 <filename>foo/bar/readme.txt</filename>。Note that this is different from <trademark class="registered">Windows</trademark> which uses <literal>\</literal> to separate file and directory names. FreeBSD does not use drive letters, or other drive names in the path. For example, one would not type <filename>c:\foo\bar\readme.txt</filename> on FreeBSD.</para>
+    <para>檔案或目錄的對應是藉由給定的檔案或目錄名稱，然後加上正斜線符號 (<literal>/</literal>)；之後再視需要加上其他的目錄名稱。 如果您有一個目錄 <filename>foo</filename> ，裡面有一個目錄叫作 <filename>bar</filename>，這個目錄中又包含了一個叫 <filename>readme.txt</filename> 的檔案，那麼這個檔案的全名，或者說檔案的<firstterm>路徑 (Path)</firstterm>就是 <filename>foo/bar/readme.txt</filename>。注意這與 <trademark class="registered">Windows</trademark> 用來分隔檔案與目錄名稱所使用的 <literal>\</literal> 不同，且 FreeBSD 在路徑上並不使用磁碟機代號或其他磁碟機名稱，意思是，在 FreeBSD 上不會有人輸入 <filename>c:\foo\bar\readme.txt</filename> 這種路徑。</para>
 
-    <para>目錄及檔案儲存在檔案系統之中。 每個檔案系統都有唯一一個最上層的目錄，叫做<firstterm>根目錄</firstterm> (root directory)。 然後在這個根目錄下面才能有其他的目錄。One file system is designated the <firstterm>root file system</firstterm> or <literal>/</literal>. Every other file system is <firstterm>mounted</firstterm> under the root file system. No matter how many disks are on the FreeBSD system, every directory appears to be part of the same disk.</para>
+    <para>目錄及檔案儲存在檔案系統 (File system) 之中。 每個檔案系統都有唯一一個最上層的目錄，叫做<firstterm>根目錄 (Root directory)</firstterm>。 然後在這個根目錄下面才能有其他的目錄。其中一個檔案系統會被指定成為<firstterm>根檔案系統 (Root file system)</firstterm> 或 <literal>/</literal>，其他的檔案系統均會<firstterm>掛載 (mounted)</firstterm> 在該根檔案系統之下，不論在 FreeBSD 有多少個磁碟，所有目錄都會成為該磁碟的一部份。</para>
 
-    <para>假設您有三個檔案系統，分別叫作 <literal>A</literal>, <literal>B</literal> 及 <literal>C</literal>。 每個檔案系統都包含兩個目錄，叫做 <literal>A1</literal>, <literal>A2</literal> (依此類推得 <literal>B1</literal>, <literal>B2</literal> 及 <literal>C1</literal>, <literal>C2</literal>)。</para>
+    <para>假設您有三個檔案系統，分別叫作 <literal>A</literal>, <literal>B</literal> 及 <literal>C</literal>。 每個檔案系統都包含兩個目錄，叫做 <literal>A1</literal>, <literal>A2</literal> (以此類推得 <literal>B1</literal>, <literal>B2</literal> 及 <literal>C1</literal>, <literal>C2</literal>)。</para>
 
     <para>稱 <literal>A</literal> 為主要的檔案系統；如果您用 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令查看此目錄的內容，您會看到兩個子目錄： <literal>A1</literal> 及 <literal>A2</literal>，如下所示：</para>
 
@@ -5300,7 +5300,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
       </textobject>
     </mediaobject>
 
-    <para>在 <literal>B1</literal> 或 <literal>B2</literal> 目錄中的任何檔案必須經由路徑 <filename>/A1/B1</filename> 或 <filename>/A1/B2</filename> 才能達到。 所有原來在 <filename>/A1</filename> 中的檔案會暫時被隱藏起來，直到 <literal>B</literal> 被<firstterm>移除</firstterm>後才會再顯現出來。</para>
+    <para>在 <literal>B1</literal> 或 <literal>B2</literal> 目錄中的任何檔案必須經由路徑 <filename>/A1/B1</filename> 或 <filename>/A1/B2</filename> 才能達到。 所有原來在 <filename>/A1</filename> 中的檔案會暫時被隱藏起來，直到 <literal>B</literal> 被<firstterm>解除掛載 (Unmounted)</firstterm> 後才會再顯現出來。</para>
 
     <para>如果 <literal>B</literal> 掛載在 <literal>A2</literal> 之上，則會變成：</para>
 
@@ -5372,17 +5372,17 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
       </textobject>
     </mediaobject>
 
-    <para>您完全可以使用單一的一個大的根檔案系統 (root file system) 而不建立其他的檔案系統。 這樣有好處也有有壞處。</para>
+    <para>您可以使用單一的一個大的根檔案系統而不建立其他的檔案系統。 這樣有好處也有有壞處。</para>
 
     <itemizedlist>
       <title>使用多個檔案系統的好處</title>
 
       <listitem>
-	<para>不同的檔案系統在掛上的時候可以有不同的 <firstterm>掛載參數</firstterm>。 舉例來說，為求謹慎您可以將根檔案系統設成唯讀， 以避免不小心刪除或修改掉重要的檔案。 將使用者可寫入的檔案系統 (例如 <filename>/home</filename>) 獨立出來也可以讓他們用 <firstterm>nosuid</firstterm> 的參數掛載，此選項可以讓在這個檔案系統中執行檔的 <firstterm>suid</firstterm>/<firstterm>guid</firstterm> bits 失效，也許可以讓系統更安全。</para>
+	<para>不同的檔案系統在掛上的時候可以有不同的 <firstterm>掛載參數 (Mount option)</firstterm>。 舉例來說，為求謹慎您可以將根檔案系統設成唯讀， 以避免不小心刪除或修改掉重要的檔案。 將使用者可寫入的檔案系統 (例如 <filename>/home</filename>) 獨立出來也可以讓他們用 <firstterm>nosuid</firstterm> 的參數掛載，此選項可以讓在這個檔案系統中執行檔的 <firstterm>suid</firstterm>/<firstterm>guid</firstterm> 位元失效，可讓系統更安全。</para>
       </listitem>
 
       <listitem>
-	<para>FreeBSD 會自動根據您檔案系統的使用方式來做最佳的檔案配置方式。 因此，一個有很多小檔案、 常常寫入的檔案系統跟只有幾個較大的檔案的檔案系統配置是不一樣的。 如果您只有單一一個大的檔案系統，這部分就沒用了。</para>
+	<para>FreeBSD 會自動根據您檔案系統的使用方式來做最佳的檔案配置方式。 因此，一個有很多小檔案、 常常寫入的檔案系統跟只有幾個較大的檔案的檔案系統配置是不一樣的。 如果您只有單一個大的檔案系統，這部分就沒用了。</para>
       </listitem>
 
       <listitem>
@@ -5394,7 +5394,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
       <title>使用單一檔案系統的好處</title>
 
       <listitem>
-	<para>檔案系統的大小是固定的。 您當初安裝 FreeBSD 的時候應該會給定一個大小，可是後來您可能會想把空間加大。 如果沒有備份的話是很難達成的； 您必須將檔案系統重新建立為您需要的大小，然後將備份回存回來。</para>
+	<para>檔案系統的大小是固定的。 若您在當初安裝 FreeBSD 的時指定了一個大小，可是後來您想把空間加大，在沒有備份的情況下很難達成，您必須將檔案系統重新建立為您需要的大小，然後將備份回存回來。</para>
 
 	<important>
 	  <para>FreeBSD 的 <citerefentry><refentrytitle>growfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指令可以突破此限制直接變更檔案系統的大小。</para>
@@ -5402,11 +5402,11 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
       </listitem>
     </itemizedlist>
 
-    <para>檔案系統包含在分割區裡面。 因為 FreeBSD 承襲 <trademark class="registered">UNIX</trademark> 架構，這邊講的分割區和一般提到的分割區 (例如 <trademark class="registered">MS-DOS</trademark> 分割區) 不同。 每一個分割區由一個代號(字母)表示，從 <literal>a</literal> 到 <literal>h</literal>。 每個分割區只能包含一個檔案系統。 因此除了說常見到用檔案系統同的掛載點來表示檔案系統外， 也可以用包含他的分割區代號來表示。</para>
+    <para>檔案系統放在分區 (Partition) 中。 因為 FreeBSD 承襲 <trademark class="registered">UNIX</trademark> 架構，這邊講的分區和一般提到的分割區 (例如 <trademark class="registered">MS-DOS</trademark> 分割區) 不同。每一個分區由一個代號 (字母) 表示，從 <literal>a</literal> 到 <literal>h</literal>。 每個分區只能含有一個檔案系統，因此在表示檔案系統時，除了用該檔案系統的常用的掛載點表示外，也可以使用該檔案系統所在的分區來表示。</para>
 
-    <para>FreeBSD 也會拿磁碟空間來當 <firstterm>swap space</firstterm>。 Swap space 給 FreeBSD 當作<firstterm>虛擬記憶體</firstterm>用。 這讓您的電腦好像擁有比實際更多的記憶體。 當 FreeBSD 的記憶體用完的時候，它會把一些目前沒用到的資料移到 swap space，然後在用到的時候移回去 (同時移出部份沒用到的)。</para>
+    <para>FreeBSD 也會使用磁碟空間作為<firstterm>交換空間 (Swap space)</firstterm> 來提供<firstterm>虛擬記憶體 (Virtual memory)</firstterm>。 這讓您的電腦好像擁有比實際更多的記憶體。 當 FreeBSD 的記憶體用完的時候，它會把一些目前沒用到的資料移到交換空間，然後在用到的時候移回去 (同時移出部份沒用到的)。</para>
 
-    <para>某些分割區有慣例的使用方式如下：</para>
+    <para>部份分區有使用的慣例如下：</para>
 
     <informaltable frame="none" pgwide="1">
       <tgroup cols="2">
@@ -5415,7 +5415,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	<thead>
 	  <row>
-	    <entry>分割區</entry>
+	    <entry>分區</entry>
 	    <entry>慣例</entry>
 	  </row>
 	</thead>
@@ -5423,28 +5423,28 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	<tbody valign="top">
 	  <row>
 	    <entry xml:lang="en"><literal>a</literal></entry>
-	    <entry>通常包含根檔案系統 (root file system)</entry>
+	    <entry>通常內含根檔案系統</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><literal>b</literal></entry>
-	    <entry>通常是 swap space</entry>
+	    <entry>通常內含交換空間</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><literal>c</literal></entry>
-	    <entry>通常和整個 slice 的大小一樣，給一些會用到整個 slice 的工具程式 (例如硬碟壞軌檢查工具) 來使用。 一般來說您應該不會把檔案系統建立在這個分割區。</entry>
+	    <entry>通常用來代表整個切割區 (Slice)，因此大小會與其所在的切割區一樣。這可讓需要對整個切割區處理的工具 (例如硬碟壞軌檢查工具) 可在 <literal>c</literal> 分區上執行。一般來說不會把檔案系統建立在這個分區。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:lang="en"><literal>d</literal></entry>
-	    <entry>分割區 <literal>d</literal> 曾經有代表特殊意義，但是已經不再使用。 所以現在 <literal>d</literal> 就和其他一般的分割區相同了。</entry>
+	    <entry>分區 <literal>d</literal> 曾經有代表特殊意義，但是已經不再使用。所以現在 <literal>d</literal> 和一般的分區相同。</entry>
 	  </row>
 	</tbody>
       </tgroup>
     </informaltable>
 
-    <para>每個包含有檔案系統的分割區是存在所謂的 slice 裡面。 FreeBSD 的 slice 就是指平常我們在 <trademark class="registered">Windows</trademark> 稱為分割區 (partition) 的東西一樣有自己的檔案系統，用單字標示，編號從 1 號到 4 號。</para>
+    <para>在 FreeBSD 的磁碟會分割成數個切割區 (Slice)，如同 <trademark class="registered">Windows</trademark> 中由編號 1 到 4 表示的分割區。這些切割區會再分成數個分區，每個分區內含檔案系統，且會使用字母來標示。</para>
 
     <indexterm xml:lang="en">
       <primary>slices</primary>
@@ -5456,17 +5456,17 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
       <primary>dangerously dedicated</primary>
     </indexterm>
 
-    <para>slice 號碼跟在裝置名稱後面，先接一個字母 <literal>s</literal>，然後從 1 號開始編下去。 因此 <quote>da0<emphasis>s1</emphasis></quote> 就是指第一個 SCSI 硬碟的第一個 slice。 一個磁碟上只能有四個實體的 slice，但是在實體的 slice 中您可以塞進適當類型的邏輯 slice。 這些延伸的 slice 編號從 5 開始，所以 <quote>ada0<emphasis>s5</emphasis></quote> 是第一個 SATA 硬碟上的第一個延伸 slice。 檔案系統在裝置 (device) 裡就是在一個 slice 之中。</para>
+    <para>切割區的編號在裝置名稱後面，會先以 <literal>s</literal> 為字首，然後從 1 開始編號。 因此 <quote>da0<emphasis>s1</emphasis></quote> 是指第一個 SCSI 硬碟的第一個切割區。 一個磁碟上只能有四個實體切割區，但是在實體切割區中放進適當類型的邏輯切割區。這些延伸的切割區編號會從 5 開始，所以 <quote>ada0<emphasis>s5</emphasis></quote> 是第一個 SATA 硬碟上的第一個延伸切割區。因此可以預期這些由檔案系統使用的裝置 (Device) 上均會各別佔據一個切割區。</para>
 
-    <para>Slices、<quote>dangerously dedicated</quote> 模式的實體磁碟機，以及其他包含<firstterm>分割區</firstterm>(partition) 的磁碟都是以字母 <literal>a</literal> 到 <literal>h</literal> 的編號來表示。 編號是接在裝置名稱的後面的，因此 <quote>da0<emphasis>a</emphasis></quote> is the <literal>a</literal> 是磁碟機 <literal>da</literal> 上的第一個 <quote>dangerously dedicated</quote> 模式之分割區。 而 <quote>ada1s3<emphasis>e</emphasis></quote> 則是第二顆 SATA 硬碟上第三個 slice 的第五個分割區。</para>
+    <para>切割區、<quote>危險專用 (Dangerously dedicated)</quote> 的實體磁碟機以及其他內含<firstterm>分割區 (Partition)</firstterm> 的磁碟都是以字母 <literal>a</literal> 到 <literal>h</literal> 來表示。 字母會接在裝置名稱的後面，因此 <quote>da0<emphasis>a</emphasis></quote> 是第一顆 <quote>dangerously dedicated</quote> 磁碟機 <literal>da</literal> 上的 <literal>a</literal> 分割區。 而 <quote>ada1s3<emphasis>e</emphasis></quote> 則是第二顆 SATA 硬碟上第三個切割區的第五個分區。</para>
 
-    <para>最後，我們就可以把系統上的每個磁碟都區分出來了。 一個磁碟的名稱會有一個代碼來表示這個磁碟的類型，接著是一個數字， 表示這是哪一個磁碟。 這邊跟 slice 每個磁碟編號從 0 開始不一樣。 常見的代碼可以參考 表格 <xref linkend="disks-naming"/>。</para>
+    <para>終於，我們可以辨識系統上的每個磁碟了，一個磁碟的名稱會有一個代碼來表示這個磁碟的類型，接著是一個表示這是那一個磁碟的編號。不像切割區，磁碟的編號從 0 開始。常見的代碼可以參考 <xref linkend="disks-naming"/>。</para>
 
-    <para>當要參照一個分割區的時候，需包含磁碟機名稱 <literal>s</literal> 加上 slice 編號，最後再輸入分割區字母代號。 範例可以參考 <xref linkend="basics-disk-slice-part"/>。</para>
+    <para>當要參照一個分區的時候，需包含磁碟機名稱、<literal>s</literal>、切割區編號以及分區字母。範例可以參考 <xref linkend="basics-disk-slice-part"/>。</para>
 
     <para><xref linkend="basics-concept-disk-model"/> 示範了一個基本的磁碟配置，相信對您有些幫助。</para>
 
-    <para>要安裝 FreeBSD，您必須先建置磁碟的 slice，接著於 slice 中建立要給 FreeBSD 用的分割區。 最後在這些分割區中建立檔案系統 (或 swap space) 並決定要將這些檔案系統掛載於哪裡。</para>
+    <para>要安裝 FreeBSD，您必須先建置磁碟的切割區，接著於切割區中建立要給 FreeBSD 用的分區。 最後在這些分區中建立檔案系統 (或交換空間) 並決定要將這些檔案系統掛載於哪裡。</para>
 
     <table frame="none" pgwide="1" xml:id="disks-naming">
       <title>磁碟裝置名稱</title>
@@ -5484,7 +5484,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	<tbody>
 	  <row>
-	    <entry><acronym>SATA</acronym> 及<acronym>IDE</acronym> 硬碟</entry>
+	    <entry><acronym>SATA</acronym> 及 <acronym>IDE</acronym> 硬碟</entry>
 	    <entry><literal>ada</literal> 或 <literal>ad</literal></entry>
 	  </row>
 
@@ -5532,7 +5532,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
     </table>
 
     <example xml:id="basics-disk-slice-part">
-      <title>磁碟、Slice 及分割區命名範例</title>
+      <title>磁碟、切割區及分區命名範例</title>
 
       <informaltable frame="none" pgwide="1">
 	<tgroup cols="2">
@@ -5549,12 +5549,12 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <tbody>
 	    <row>
 	      <entry xml:lang="en"><literal>ada0s1a</literal></entry>
-	      <entry>第一個 SATA 硬碟 (<literal>ada0</literal>) 上第一個 slice (<literal>s1</literal>)的第一個分割區(<literal>a</literal>) 。</entry>
+	      <entry>第一個 SATA 硬碟 (<literal>ada0</literal>) 上第一個切割區 (<literal>s1</literal>)的第一個分區(<literal>a</literal>) 。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><literal>da1s2e</literal></entry>
-	      <entry>第二個 SCSI 硬碟 (<literal>da1</literal>) 上第二個 slice (<literal>s2</literal>) 的第五個分割區 (<literal>e</literal>) 。</entry>
+	      <entry>第二個 SCSI 硬碟 (<literal>da1</literal>) 上第二個切割區 (<literal>s2</literal>) 的第五個分區 (<literal>e</literal>) 。</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
@@ -5564,9 +5564,9 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
     <example xml:id="basics-concept-disk-model">
       <title>磁碟的概念模型</title>
 
-      <para>此圖顯示 FreeBSD 中接到系統的第一個 <acronym>SATA</acronym> 磁碟機內部配置圖。 假設這個磁碟的容量是 250 GB，並且包含了一個 80 GB 的 slice 及一個 170 GB 的 slice (<trademark class="registered">MS-DOS</trademark> 的分割區)。 第一個 slice 是 <trademark class="registered">Windows</trademark> <acronym>NTFS</acronym> 檔案系統的 <filename>C:</filename> 磁碟機，第二個則安裝了 FreeBSD。 本範例的 FreeBSD 有三個分割區以及一個 swap 分割區。</para>
+      <para>此圖顯示 FreeBSD 中連接到系統的第一個 <acronym>SATA</acronym> 磁碟機內部配置圖。 假設這個磁碟的容量是 250 GB，並且包含了一個 80 GB 的切割區及一個 170 GB 的切割區 (<trademark class="registered">MS-DOS</trademark> 的分割區)。 第一個切割區是 <trademark class="registered">Windows</trademark> <acronym>NTFS</acronym> 檔案系統的 <filename>C:</filename> 磁碟機，第二個則安裝了 FreeBSD。 本範例中安裝的 FreeBSD 有四個資料分區及一個交換分區。</para>
 
-      <para>這四個分割區每個都是一個檔案系統。 <literal>a</literal> 分割是根 (root) 檔案系統；分割 <literal>d</literal> 是 <filename>/var/</filename>；分割 <literal>e</literal> 是 <filename>/tmp/</filename>，而 <literal>f</literal> 分割是 <filename>/usr/</filename> 目錄結構。Partition letter <literal>c</literal> refers to the entire slice, and so is not used for ordinary partitions.</para>
+      <para>這四個分區中各有一個檔案系統。 分區 <literal>a</literal> 是根檔案系統、分區 <literal>d</literal> 是 <filename>/var/</filename>、分區 <literal>e</literal> 是 <filename>/tmp/</filename>，而分區 <literal>f</literal> 是 <filename>/usr/</filename>。分區字母 <literal>c</literal> 用來代表整個切割區，因此並不作為一般分區使用。</para>
 
       <mediaobject>
 	<imageobject>
@@ -5577,7 +5577,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
   </sect1>
 
   <sect1 xml:id="mount-unmount">
-    <title>掛載與缷載檔案系組</title>
+    <title>掛載與缷載檔案系統</title>
 
     <para>檔案系統就像一顆樹。<filename>/</filename> 就像是樹根，而 <filename>/dev</filename>，<filename>/usr</filename> 以及其他在根目錄下的目錄就像是樹枝，而這些樹枝上面又還有分支，像是 <filename>/usr/local</filename> 等。</para>
 
@@ -5597,7 +5597,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	<secondary>mounted with fstab</secondary>
       </indexterm>
 
-      <para>在 <filename>/etc/fstab</filename> 裡面有設定的檔案系統會在開機(<xref linkend="boot"/>)的過程中自動地被掛載 (除非該檔案系統有被加上 <option>noauto</option> 參數)。檔案內容的格式如下：</para>
+      <para>在 <filename>/etc/fstab</filename> 裡面有設定的檔案系統會在開機 (<xref linkend="boot"/>) 的過程中自動地被掛載 (除非該檔案系統有被加上 <option>noauto</option> 參數)。檔案內容的格式如下：</para>
 
       <programlisting xml:lang="en"><replaceable>device</replaceable>       <replaceable>/mount-point</replaceable> <replaceable>fstype</replaceable>     <replaceable>options</replaceable>      <replaceable>dumpfreq</replaceable>     <replaceable>passno</replaceable></programlisting>
 
@@ -5629,7 +5629,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	  <term xml:lang="en"><literal>options</literal></term>
 
 	  <listitem>
-	    <para>可讀可寫(Read-Write)的檔案系統用 <option>rw</option>，而唯讀(Read-Only)的檔案系統則是用 <option>ro</option>，後面視需要還可以加其他選項。 常見的選項如 <option>noauto</option> 是用在不要於開機過程中自動的掛載的檔案系統。 其他選項可參閱 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 說明。</para>
+	    <para>可讀可寫 (Read-Write) 的檔案系統用 <option>rw</option>，而唯讀 (Read-Only) 的檔案系統則是用 <option>ro</option>，後面視需要還可以加其他選項。 常見的選項如 <option>noauto</option> 是用在不要於開機過程中自動的掛載的檔案系統。 其他選項可參閱 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 說明。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -5685,7 +5685,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	  <listitem>
 
-	    <para>執行所有的動作，但是不真的去呼叫掛載的 system call。 這個選項和 <option>-v</option> 搭配拿來推測 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 將要做什麼動作時很好用。</para>
+	    <para>執行所有的動作，但是不真的去呼叫掛載的系統呼叫 (System call)。 這個選項和 <option>-v</option> 搭配拿來推測 <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></citerefentry> 將要做什麼動作時很好用。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -5771,9 +5771,9 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
   <sect1 xml:id="basics-processes">
     <title>程序與 Daemon</title>
 
-    <para>FreeBSD 是一個多工的作業系統，也就是說在同一時間內可以跑超過一個程式。 每一個正在花時間跑的程式就叫做 <firstterm>程序</firstterm> (process)。 您下的每個指令都至少會開啟一個新的程序， 而有些系統程序是一直在跑以維持系統正常運作的。</para>
+    <para>FreeBSD 是一個多工的作業系統，也就是說在同一時間內可以跑超過一個程式。 每一個正在花時間跑的程式就叫做<firstterm>程序 (Process)</firstterm>。 您下的每個指令都至少會開啟一個新的程序， 而有些系統程序是一直在跑以維持系統正常運作的。</para>
 
-    <para>每一個程序都有一個獨一無二的數字叫做 <firstterm>程序代號</firstterm> (Process ID, PID)，而且就像檔案一樣，每一個程序也有擁有者及群組。 擁有者及群組的資訊是用來決定什麼檔案或裝置是這個程序可以開啟的 (前面有提到過檔案權限)。 大部份的程序都有父程序。 父程序是開啟這個程序的程序，例如：您對 shell 輸入指令，shell 本身就是一個程序，而您執行的指令也是程序。 每一個您用這種方式跑的程序的父程序都是 shell。 有一個特別的程序叫做 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是個例外，在 FreeBSD 開機的時候 init 會自動地被開啟，init 永遠是第一個程序，所以他的 <acronym>PID</acronym> 一直都會是 <literal>1</literal>。</para>
+    <para>每一個程序都有一個獨一無二的數字叫做 <firstterm>程序代號 (Process ID, <acronym>PID</acronym>)</firstterm>，而且就像檔案一樣，每一個程序也有擁有者及群組。 擁有者及群組的資訊是用來決定什麼檔案或裝置是這個程序可以開啟的 (前面有提到過檔案權限)。 大部份的程序都有父程序。 父程序是開啟這個程序的程序，例如：您對 Shell 輸入指令，Shell 本身就是一個程序，而您執行的指令也是程序。 每一個您用這種方式跑的程序的父程序都是 Shell。 有一個特別的程序叫做 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是個例外，在 FreeBSD 開機的時候 init 會自動地被開啟，init 永遠是第一個程序，所以他的 <acronym>PID</acronym> 一直都會是 <literal>1</literal>。</para>
 
     <para>有些程式並不是設計成一直在接收使用者的輸入的， 而是在開始執行的時候就從中斷與終端機的連線。 例如說， 網頁伺服器整天都在回應網頁方面的要求，它通常不需要您輸入任何東西。 另外，像是把信從一個站傳送到另一個站的程式，也是這種類型的應用程式。我們把這種程式稱作 <firstterm>Daemon</firstterm>。 Daemon 一詞是來自是希臘神話中的角色：祂們既不屬於善良陣營或邪惡陣營，祂們在背地裡做一些有用的事情。這也就是為何 BSD 的吉祥物，是一隻穿著帆布鞋拿著三叉耙的快樂小惡魔的原因。</para>
 
@@ -5818,9 +5818,9 @@ Swap: 2048M Total, 2048M Free
  2338 dru           1  20    0   440M 84532K select  1   0:06  0.00% kwin
  1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% kdeinit4</screen>
 
-      <para>輸出的資訊分成兩個部份。開頭 (前五行或六行) 顯示出最近一個程序的 <acronym>PID</acronym>、系統平均負載 (系統有多忙錄的測試)、系統的開機時間 (從上次重開算起) 以及現在的時間等。 在開頭裡面的其他數字分別是在講有多少程序正在執行、有多少記憶體及 swap 空間被占用了，還有就是系統分別花了多少時間在不同的 CPU 狀態上。If the <acronym>ZFS</acronym> file system module has been loaded, an <literal>ARC</literal> line indicates how much data was read from the memory cache instead of from disk.</para>
+      <para>輸出的資訊分成兩個部份。開頭 (前五行或六行) 顯示出最近一個程序的 <acronym>PID</acronym>、系統平均負載 (系統忙磁程度評估方式)、系統的開機時間 (自上次重新開機) 以及現在的時間等。 在開頭裡面的其他數字分別是在講有多少程序正在執行、有多少記憶體及交換空間被占用了，還有就是系統分別花了多少時間在不同的 CPU 狀態上。若有載入 <acronym>ZFS</acronym> 檔案系統模組，會有一行 <literal>ARC</literal> 標示有多少資料從磁碟改由記憶體快取中取得。</para>
 
-      <para>接下來的部份是由好幾個欄位所構成，和 <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 輸出的資訊類似。 就如同前例，您可以看到 <acronym>PID</acronym>、使用者名稱、CPU 花費的時間以及正在執行的指令。 <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry> 在預設的情況下還會告訴您程序用掉了多少的記憶體空間。 在這邊會分成兩欄，一個是總用量 (total size)，另一個是實際用量 (resident size)——總用量是指這個應用程式需要的記憶體空間，而實際用量則是指目前實際上該程式的記憶體使用量。</para>
+      <para>接下來的部份是由好幾個欄位所構成，和 <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></citerefentry> 輸出的資訊類似。 就如同前例，您可以看到 <acronym>PID</acronym>、使用者名稱、CPU 花費的時間以及正在執行的指令。 <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></citerefentry> 在預設的情況下還會告訴您程序用掉了多少的記憶體空間。 在這邊會分成兩欄，一個是總用量 (Total size)，另一個是實際用量 (Resident size)——總用量是指這個應用程式需要的記憶體空間，而實際用量則是指目前實際上該程式的記憶體使用量。</para>
 
       <para>top(1) 每隔 2 秒鐘會自動更新顯示內容，可用 <option>-s</option> 選項來改變間隔的時間。</para>
     </sect2>
@@ -5828,9 +5828,9 @@ Swap: 2048M Total, 2048M Free
     <sect2 xml:id="basics-daemons">
       <title>終止程序</title>
 
-      <para>要與執行中的程序或 Daemon 溝通唯一的方法是透過 <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令傳送<firstterm>信號</firstterm> (signal)。 信號有很多種，有些有特定的意義，有些則是會由應用程式來解讀，應用程式的說明文件會告訴您該程式是如何解讀信號。 使用者只能送信號給自己所擁有的程序，送信號給其他人的程序會出現權限不足的錯誤。 唯一的例外是 <systemitem class="username">root</systemitem>使用者，他可以送信號給任何人的程序。</para>
+      <para>要與執行中的程序或 Daemon 溝通唯一的方法是透過 <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令傳送<firstterm>信號 (Signal)</firstterm>。 信號有很多種，有些有特定的意義，有些則是會由應用程式來解讀，應用程式的說明文件會告訴您該程式是如何解讀信號。 使用者只能送信號給自己所擁有的程序，送信號給其他人的程序會出現權限不足的錯誤。 唯一的例外是 <systemitem class="username">root</systemitem>使用者，他可以送信號給任何人的程序。</para>
 
-      <para>作業系統在某些情況也會送信號給應用程式。 假設有個應用程式寫得不好，企圖要存取它不該碰的記憶體的時候，FreeBSD 會送一個 <quote>Segmentation Violation</quote> 信號 (<literal>SIGSEGV</literal>) 給這個程序。 如果有一個應用程式用了 <citerefentry><refentrytitle>alarm</refentrytitle><manvolnum>3</manvolnum></citerefentry> 的 system call 要求系統在過一段時間之後發出通知，時間到了的時候系統就會發出通知信號 (SIGALRM) 給該程式。</para>
+      <para>作業系統在某些情況也會送信號給應用程式。 假設有個應用程式寫得不好，企圖要存取它不該碰的記憶體的時候，FreeBSD 會送一個 <quote>Segmentation Violation</quote> 信號 (<literal>SIGSEGV</literal>) 給這個程序。 如果有一個應用程式用了 <citerefentry><refentrytitle>alarm</refentrytitle><manvolnum>3</manvolnum></citerefentry> 的系統呼叫 (System call) 要求系統在過一段時間之後發出通知，時間到了的時候系統就會發出通知信號 (SIGALRM) 給該程式。</para>
 
       <para><literal>SIGTERM</literal> 與 <literal>SIGKILL</literal> 這兩個信號可以拿來終止程序。 用 <literal>SIGTERM</literal> 結束程序是比較有禮貌的方式，該程序收到信號後可以把自已所使用的日誌檔關閉及其他要在結束前要做的事完成， 然後在關掉程序之前結束掉手邊的工作。 在某些情況下程序有可能會忽略 <literal>SIGTERM</literal>，如它正在做一些不能中斷的工作的話。</para>
 
@@ -5888,7 +5888,7 @@ Swap: 2048M Total, 2048M Free
       <primary>command line</primary>
     </indexterm>
 
-    <para><firstterm>Shell</firstterm> 提供了指令列介面可用來與作業系統互動，Shell 負責從輸入的頻道接收指令並執行它們。 多數 Shell 也內建一些有助於日常工作的功能，像是檔案管理、檔案搜尋、指令列編輯、指令巨集以及環境變數等。 FreeBSD 有內附了幾個 Shell，包含 Bourne Shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)，與改良版的 C-shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)。 還有許多其他的 Shell 可以從 FreeBSD Ports 套件集中取得，像是 <command>zsh</command> 以及 <command>bash</command> 等。</para>
+    <para><firstterm>Shell</firstterm> 提供了指令列介面可用來與作業系統互動，Shell 負責從輸入的頻道接收指令並執行它們。 多數 Shell 也內建一些有助於日常工作的功能，像是檔案管理、檔案搜尋、指令列編輯、指令巨集以及環境變數等。 FreeBSD 有內附了幾個 Shell，包含 Bourne Shell (<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)，與改良版的 C-shell (<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>)。 還有許多其他的 Shell 可以從 FreeBSD Port 套件集中取得，像是 <command>zsh</command> 以及 <command>bash</command> 等。</para>
 
     <para>要用哪個 Shell 牽涉到每個人的喜好。 如果您是一個 C 程式設計師，那對於使用像是 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 這種 C-like 的 shell 可能會感到較容易上手。 如果是 <trademark class="registered">Linux</trademark> 的使用者，那您也許會想要用 <command>bash</command>。 每一個 Shell 都有自已獨特之處，至於這些特點能不能符合使用者的喜好，就是您選擇 shell 的重點了。</para>
 
@@ -5943,8 +5943,7 @@ Swap: 2048M Total, 2048M Free
 	  <row>
 	    <entry xml:lang="en"><envar>TERMCAP</envar></entry>
 
-	    <entry xml:lang="en">Database entry of the terminal escape codes to
-	      perform various terminal functions.</entry>
+	    <entry>用來執行各種終端機功能的終端機跳脫碼 (Terminal escape code) 的資料庫項目。</entry>
 	  </row>
 
 	  <row>
@@ -5979,7 +5978,7 @@ Swap: 2048M Total, 2048M Free
       <primary>Bourne shells</primary>
     </indexterm>
 
-    <para>在不同的 shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 setenv 來設定環境變數。 在 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <command>bash</command>, use <command>export</command>，則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>：</para>
+    <para>在不同的 shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 setenv 來設定環境變數。 在 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <command>bash</command> 使用 <command>export</command>，則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>setenv EDITOR /usr/local/bin/emacs</userinput></screen>
 
@@ -5991,7 +5990,7 @@ Swap: 2048M Total, 2048M Free
 
     <para>Shell 中有特殊字元用來表示特殊資料，我們將其稱作 Ｍeta-characters。 其中最常見的 Ｍeta-characters 是 <literal>*</literal> 字元，它代表了檔名中的任意字元。 Meta-characters 可以用在搜尋檔名，舉例來說，輸入 <command>echo *</command> 會和輸入 <command>ls</command> 得到幾乎相同的結果，這是因為 shell 會將所有符合 <literal>*</literal> 字元的檔案由 <command>echo</command> 顯示出來。</para>
 
-    <para>為了避免 Shell 轉譯這些特殊字元，我們可以在這些特殊字元前放一個反斜線 (<literal>\</literal>) 字元使他們跳脫(escape) Shell 的轉譯。舉例來說，<command>echo $TERM</command> 會印出你目前終端機的設定， <command>echo \$TERM</command> 則會直接印出 <literal>$TERM</literal> 這幾個字。</para>
+    <para>為了避免 Shell 轉譯這些特殊字元，我們可以在這些特殊字元前放一個反斜線 (<literal>\</literal>) 字元使他們跳脫 (Escape) Shell 的轉譯。舉例來說，<command>echo $TERM</command> 會印出你目前終端機的設定， <command>echo \$TERM</command> 則會直接印出 <literal>$TERM</literal> 這幾個字。</para>
 
     <sect2 xml:id="changing-shells">
       <title>變更 Shell</title>
@@ -6003,7 +6002,7 @@ Swap: 2048M Total, 2048M Free
       <screen xml:lang="en"><prompt>%</prompt> <userinput>chsh -s /usr/local/bin/bash</userinput></screen>
 
       <note>
-	<para>新的 Shell <emphasis>必須</emphasis>已列於 <filename>/etc/shells</filename> 裡頭。 若是依 <xref linkend="ports"/> 說明由 Ports 套件集來裝的 Shell， 那就會自動列入至該檔案裡。 若仍缺少，請使用以下指令加入檔案 (請將路徑替換為新的 Shell 的路徑)：</para>
+	<para>新的 Shell <emphasis>必須</emphasis>已列於 <filename>/etc/shells</filename> 裡頭。 若是依 <xref linkend="ports"/> 說明由 Port 套件集來裝的 Shell， 那就會自動列入至該檔案裡。 若仍缺少，請使用以下指令加入檔案 (請將路徑替換為新的 Shell 的路徑)：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>echo <replaceable>/usr/local/bin/bash</replaceable> &gt;&gt; /etc/shells</userinput></screen>
 
@@ -6026,13 +6025,7 @@ Swap: 2048M Total, 2048M Free
 	</authorgroup>
       </info>
 
-      <para xml:lang="en">The <trademark class="registered">UNIX</trademark> shell is not just a command interpreter, it
-	acts as a powerful tool which allows users to execute
-	commands, redirect their output, redirect their input and
-	chain commands together to improve the final command output.
-	When this functionality is mixed with built in commands, the
-	user is provided with an environment that can maximize
-	efficiency.</para>
+      <para><trademark class="registered">UNIX</trademark> Shell 不只是指令的直譯器，它是一個強大的工具可讓使用者執行指令、重導指令的輸出、重導指令的輸入並將指令串連在一起來改進最終指令的輸出結果。當這個功能與內建的指令混合使用時，可提供一個可以最佳化效率的環境給使用者。</para>
 
       <para xml:lang="en">Shell redirection is the action of sending the output or
 	the input of a command into another command or into a file.
@@ -6096,7 +6089,7 @@ Swap: 2048M Total, 2048M Free
       <primary>editors</primary>
     </indexterm>
 
-    <para>在 FreeBSD 中有許多設定必須透過編輯文字檔完成。 因此，若能熟悉文字編輯器是再好不過的。 FreeBSD 本身就內建幾種文字編輯器， 您也可以透過 Ports 套件集來安裝其他的文字編輯器。</para>
+    <para>在 FreeBSD 中有許多設定必須透過編輯文字檔完成。 因此，若能熟悉文字編輯器是再好不過的。 FreeBSD 本身就內建幾種文字編輯器， 您也可以透過 Port 套件集來安裝其他的文字編輯器。</para>
 
     <indexterm xml:lang="en">
       <primary><command>ee</command></primary>
@@ -6106,7 +6099,7 @@ Swap: 2048M Total, 2048M Free
       <secondary><citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry></secondary>
     </indexterm>
 
-    <para>最簡單易學的文字編輯器叫做 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，意為簡易的編輯器(Easy Editor)。 要開始使用這個編輯器， 只需輸入 <command>ee <replaceable>filename</replaceable></command>，其中 <replaceable>filename</replaceable> 代表你想要編輯的檔案名稱。 在編輯器中， 所有編輯器的功能與操作都顯示在螢幕的上方。 其中的插入符號 (<literal>^</literal>) 代表鍵盤上的 <keycap>Ctrl</keycap> 鍵，所以 <literal>^e</literal> 代表的是  <keycombo action="simul"> <keycap>Ctrl</keycap> <keycap>e</keycap> </keycombo>。 若要結束 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，請按下 <keycap>Esc</keycap> 鍵，接著選擇 <quote>leave editor</quote> 即可。 此時如果該檔案有修改過，編輯器會提醒你是否要存檔。</para>
+    <para>最簡單易學的文字編輯器叫做 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，意為簡易的編輯器 (Easy Editor)。 要開始使用這個編輯器， 只需輸入 <command>ee <replaceable>filename</replaceable></command>，其中 <replaceable>filename</replaceable> 代表你想要編輯的檔案名稱。 在編輯器中， 所有編輯器的功能與操作都顯示在螢幕的上方。 其中的插入符號 (<literal>^</literal>) 代表鍵盤上的 <keycap>Ctrl</keycap> 鍵，所以 <literal>^e</literal> 代表的是  <keycombo action="simul"> <keycap>Ctrl</keycap> <keycap>e</keycap> </keycombo>。 若要結束 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>，請按下 <keycap>Esc</keycap> 鍵，接著選擇 <quote>leave editor</quote> 即可。 此時如果該檔案有修改過，編輯器會提醒你是否要存檔。</para>
 
     <indexterm xml:lang="en">
       <primary><command>vi</command></primary>
@@ -6118,22 +6111,19 @@ Swap: 2048M Total, 2048M Free
       <primary><command>emacs</command></primary>
     </indexterm>
 
-    <para>FreeBSD 同時也內建功能強大的文字編輯器，像是<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 其他編輯器如 <package>editors/emacs</package> 及 <package>editors/vim</package> 則由 FreeBSD Ports 套件集提供。 這些編輯器提供更強的功能，但是也比較難學習。 長期來看學習 <application>vim</application> 或 <application>Emacs</application> 會在日後為您省下更多的時間。</para>
+    <para>FreeBSD 同時也內建功能強大的文字編輯器，像是<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></citerefentry>。 其他編輯器如 <package>editors/emacs</package> 及 <package>editors/vim</package> 則由 FreeBSD Port 套件集提供。 這些編輯器提供更強的功能，但是也比較難學習。 長期來看學習 <application>vim</application> 或 <application>Emacs</application> 會在日後為您省下更多的時間。</para>
 
-    <para xml:lang="en">Many applications which modify files or require typed input
-      will automatically open a text editor.  To change the default
-      editor, set the <envar>EDITOR</envar> environment
-      variable as described in <xref linkend="shells"/>.</para>
+    <para>有許多應用程式在修改檔案或需要輸入時會自動開啟文字編輯器，要更改預設的編輯器可設定 <envar>EDITOR</envar> 環境變數如 <xref linkend="shells"/> 所說明。</para>
   </sect1>
 
   <sect1 xml:id="basics-devices">
     <title>裝置及裝置節點</title>
 
-    <para>裝置(Device)一詞大多是跟硬體比較有關的術語，包括磁碟、印表機、顯示卡和鍵盤。 FreeBSD 開機過程當中，開機訊息(Boot Message)中主要是會列出偵測到的硬體裝置，開機訊息的複本也會存放在 <filename>/var/run/dmesg.boot</filename>。</para>
+    <para>裝置 (Device) 一詞大多是跟硬體比較有關的術語，包括磁碟、印表機、顯示卡和鍵盤。 FreeBSD 開機過程當中，開機訊息 (Boot Message) 中主要是會列出偵測到的硬體裝置，開機訊息的複本也會存放在 <filename>/var/run/dmesg.boot</filename>。</para>
 
     <para>每一個裝置都有一個裝置名稱及編號，舉例來說 <filename>ada0</filename> 是第一台 SATA 硬碟，而 <filename>kbd0</filename> 則代表鍵盤。</para>
 
-    <para>在 FreeBSD 中大多數的裝置必須透過裝置節點(Device Node)的特殊檔案來存取，這些檔案會放置在 <filename>/dev</filename>。</para>
+    <para>在 FreeBSD 中大多數的裝置必須透過裝置節點 (Device Node) 的特殊檔案來存取，這些檔案會放置在 <filename>/dev</filename>。</para>
   </sect1>
 
   <sect1 xml:id="basics-more-information">
@@ -6159,7 +6149,7 @@ Swap: 2048M Total, 2048M Free
       </listitem>
 
       <listitem>
-	<para>系統呼叫(System call)與錯誤編號。</para>
+	<para>系統呼叫 (System call) 與錯誤編號。</para>
       </listitem>
 
       <listitem>
@@ -6220,7 +6210,7 @@ Swap: 2048M Total, 2048M Free
 	<primary>Free Software Foundation</primary>
       </indexterm>
 
-      <para>FreeBSD 有許多應用程式與工具來自自由軟體基金會(Free Software Foundation, FSF)。 除了操作手冊之外，這些程式提供了另外一種更具有彈性的超文字文件叫做 <literal>info</literal> 檔。 這些檔案可以使用 <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令來閱讀，或者若有裝 <package>editors/emacs</package> 亦可透過 <application>emacs</application> 的 info 模式閱讀。</para>
+      <para>FreeBSD 有許多應用程式與工具來自自由軟體基金會 (Free Software Foundation, FSF)。 除了操作手冊之外，這些程式提供了另外一種更具有彈性的超文字文件叫做 <literal>info</literal> 檔。 這些檔案可以使用 <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令來閱讀，或者若有裝 <package>editors/emacs</package> 亦可透過 <application>emacs</application> 的 info 模式閱讀。</para>
 
       <para>要使用 <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令，只需輸入：</para>
 
@@ -6239,20 +6229,20 @@ Swap: 2048M Total, 2048M Free
 -->
 <chapter version="5.0" xml:id="ports">
 
-  <title>安裝應用程式: 套件與 Ports</title>
+  <title>安裝應用程式: 套件與 Port</title>
 
   <sect1 xml:id="ports-synopsis">
     <title>概述</title>
 
     <indexterm xml:lang="en"><primary>ports</primary></indexterm>
     <indexterm><primary>套件</primary></indexterm>
-    <para>FreeBSD 已內建豐富的系統工具，此外 FreeBSD 提供了 2 種安裝第三方軟體的套件管理技術︰由原始碼安的 FreeBSD Ports 套件集，以及由預先編譯好的 Binary 安裝的 Binary  套件集。 無論要用哪一種方式，都可由本地的媒體或網路來安裝軟體。</para>
+    <para>FreeBSD 已內建豐富的系統工具，此外 FreeBSD 提供了 2 種安裝第三方軟體的套件管理技術︰由原始碼安的 FreeBSD Port 套件集，以及由預先編譯好的 Binary 安裝的 Binary  套件集。 無論要用哪一種方式，都可由本地的媒體或網路來安裝軟體。</para>
 
     <para>讀完這章，您將了解︰</para>
 
     <itemizedlist>
       <listitem>
-	<para>Binary 套件集與 Ports 的差別。</para>
+	<para>Binary 套件集與 Port 的差別。</para>
       </listitem>
 
       <listitem>
@@ -6264,7 +6254,7 @@ Swap: 2048M Total, 2048M Free
       </listitem>
 
       <listitem>
-	<para>如何編譯來自 Ports 套件集的第三方軟體原始碼。</para>
+	<para>如何編譯來自 Port 套件集的第三方軟體原始碼。</para>
       </listitem>
 
       <listitem>
@@ -6310,11 +6300,11 @@ Swap: 2048M Total, 2048M Free
 
     <para>FreeBSD Port 套件則包含了已設計好從原始碼編譯成應用程式的自動化程序。 Port 套件中的檔案包含自動下載、解壓縮、修補、編譯及安裝應用程式流程中所有需要的資訊。</para>
 
-    <para>Ports 系統可以透過 FreeBSD 套件管理指令來產生套件。</para>
+    <para>Port 系統可以透過 FreeBSD 套件管理指令來產生套件。</para>
 
-    <para>不論是 Binary 套件或者 Ports 套件都有相依的功能，若以 Binary 或 Port 套件安裝應用程式，且該應用程式有相依的程式庫尚未被安裝，則會自動先安裝該程式庫。</para>
+    <para>不論是 Binary 套件或者 Port 套件都有相依的功能，若以 Binary 或 Port 套件安裝應用程式，且該應用程式有相依的程式庫尚未被安裝，則會自動先安裝該程式庫。</para>
 
-    <para>雖然兩種技術非常相似，但 Binary 套件及 Ports 套件有各自的優點。 要視您要安裝的應用程式需求來選擇。</para>
+    <para>雖然兩種技術非常相似，但 Binary 套件及 Port 套件有各自的優點。 要視您要安裝的應用程式需求來選擇。</para>
 
     <itemizedlist>
       <title>Binary 套件優點</title>
@@ -6358,13 +6348,13 @@ Swap: 2048M Total, 2048M Free
       </listitem>
     </itemizedlist>
 
-    <para>要持續追蹤 Ports 的更新可以訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports">FreeBSD Ports 郵遞論壇</link> 與 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs">FreeBSD Ports 問題郵遞論壇</link>。</para>
+    <para>要持續追蹤 Port 的更新可以訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports">FreeBSD Port 郵遞論壇</link> 與 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs">FreeBSD Port 問題郵遞論壇</link>。</para>
 
     <warning>
       <para>在安裝任何應用程式之前，請先查看 <link xlink:href="http://vuxml.freebsd.org/"/> 是否有與該應用程式相關的安全性問題或輸入 <command>pkg audit -F</command> 來檢查所有已安裝的應用程式是否有已知的漏洞。</para>
     </warning>
 
-    <para>本章接下來的部份將說明如何在 FreeBSD 使用 Binary 套件及 Ports 套件安裝與管理第三方軟體。</para>
+    <para>本章接下來的部份將說明如何在 FreeBSD 使用 Binary 套件及 Port 套件安裝與管理第三方軟體。</para>
   </sect1>
 
   <sect1 xml:id="ports-finding-applications">
@@ -6374,13 +6364,13 @@ Swap: 2048M Total, 2048M Free
 
     <itemizedlist>
       <listitem>
-	<para>FreeBSD 網站有維護一份可搜尋的最新應用程式清單，在 <link xlink:href="@@URL_RELPREFIX@@/ports/index.html">http://www.FreeBSD.org/ports/</link>。 可以依應用程式名稱或軟體分類來搜尋 Ports。</para>
+	<para>FreeBSD 網站有維護一份可搜尋的最新應用程式清單，在 <link xlink:href="@@URL_RELPREFIX@@/ports/index.html">http://www.FreeBSD.org/ports/</link>。 可以依應用程式名稱或軟體分類來搜尋 Port。</para>
       </listitem>
 
       <listitem>
 	<indexterm xml:lang="en"><primary>FreshPorts</primary></indexterm>
 
-	<para>由 Dan Langille 維護的 <link xlink:href="http://www.FreshPorts.org/">FreshPorts.org</link>，提供完整的搜尋工具並且可追蹤在 Ports 套件集中的應用程式變更。註冊的使用者可以建立自訂的監視清單會自動寄發電子郵件通知 Ports 的更新資訊。</para>
+	<para>由 Dan Langille 維護的 <link xlink:href="http://www.FreshPorts.org/">FreshPorts.org</link>，提供完整的搜尋工具並且可追蹤在 Port 套件集中的應用程式變更。註冊的使用者可以建立自訂的監視清單會自動寄發電子郵件通知 Port 的更新資訊。</para>
       </listitem>
 
       <listitem>
@@ -6410,7 +6400,7 @@ subversion-static-<replaceable>1.8.8_2</replaceable>
 subversion16-<replaceable>1.6.23_4</replaceable>
 subversion17-<replaceable>1.7.16_2</replaceable></screen>
 
-	<para>套件名稱包含版本編號，且若 Ports 使用 Python 為基礎，也會包含用來編譯該套件的 Python 版本。有些 Ports 會有多個版本可使用，如 <application>subversion</application> ，因編譯選項不同，有多個版本可用，這個例子中即指靜態連結版本的 <application>subversion</application>。在指定要安裝的套件時，最好使用 Ports 來源來指定該應用程式，Ports 來源是指應用程式在 Ports 樹中的路徑。再輸入一次 <command>pkg search</command> 並加上 <option>-o</option> 來列出每個套件來源：</para>
+	<para>套件名稱包含版本編號，且若 Port 使用 Python 為基礎，也會包含用來編譯該套件的 Python 版本。有些 Port 會有多個版本可使用，如 <application>subversion</application> ，因編譯選項不同，有多個版本可用，這個例子中即指靜態連結版本的 <application>subversion</application>。在指定要安裝的套件時，最好使用 Port 來源來指定該應用程式，Port 來源是指應用程式在 Port 樹中的路徑。再輸入一次 <command>pkg search</command> 並加上 <option>-o</option> 來列出每個套件來源：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg search -o <replaceable>subversion</replaceable></userinput>
 devel/git-subversion
@@ -6425,11 +6415,11 @@ devel/subversion
 devel/subversion-book
 devel/subversion-static</screen>
 
-	<para><command>pkg search</command> 支援使用 Shell 萬手字元(globs)、正規表示法、描述或檔案庫中的其他其他內容。在安裝 <package>ports-mgmt/pkg</package> 或 <package>ports-mgmt/pkg-devel</package> 之後，可參考 <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多詳細資訊。</para>
+	<para><command>pkg search</command> 支援使用 Shell 萬手字元 (globs)、正規表示法、描述或檔案庫中的其他其他內容。在安裝 <package>ports-mgmt/pkg</package> 或 <package>ports-mgmt/pkg-devel</package> 之後，可參考 <citerefentry><refentrytitle>pkg-search</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多詳細資訊。</para>
       </listitem>
 
       <listitem>
-	<para>若 Ports 套件集已安裝，有數個方法可以查詢 Ports 樹中的本地版本。要找到 Port 所在的分類，可輸入 <command>whereis <replaceable>file</replaceable></command>，其中 <replaceable>file</replaceable> 是要安裝的程式：</para>
+	<para>若 Port 套件集已安裝，有數個方法可以查詢 Port 樹中的本地版本。要找到 Port 所在的分類，可輸入 <command>whereis <replaceable>file</replaceable></command>，其中 <replaceable>file</replaceable> 是要安裝的程式：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>whereis lsof</userinput>
 lsof: /usr/ports/sysutils/lsof</screen>
@@ -6443,7 +6433,7 @@ lsof: /usr/ports/sysutils/lsof</screen>
       </listitem>
 
       <listitem>
-	<para>另一個方法是使用 Ports 套件集內建的搜尋機制來找軟體。要使用搜尋的功能需先 <application>cd</application> 到 <filename>/usr/ports</filename> 然後執行 <command>make search name=program-name</command>，其中 <replaceable>program-name</replaceable> 代表軟體的名稱。舉例搜尋 <command>lsof</command>：</para>
+	<para>另一個方法是使用 Port 套件集內建的搜尋機制來找軟體。要使用搜尋的功能需先 <application>cd</application> 到 <filename>/usr/ports</filename> 然後執行 <command>make search name=program-name</command>，其中 <replaceable>program-name</replaceable> 代表軟體的名稱。舉例搜尋 <command>lsof</command>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports</userinput>
 <prompt>#</prompt> <userinput>make search name=lsof</userinput>
@@ -6459,7 +6449,7 @@ R-deps: </screen>
 	  <para>內建的搜尋機制會使用索引檔內的資訊。若出現訊息指出需要 <filename>INDEX</filename> 檔，可執行 <command>make fetchindex</command> 來下載最新的索引檔。當 <filename>INDEX</filename> 檔存在時，<command>make search</command> 方可執行請求的搜尋動作。</para>
 	</tip>
 
-	<para><quote>Path:</quote> 此行代表 Ports 的所在位置。</para>
+	<para><quote>Path:</quote> 此行代表 Port 的所在位置。</para>
 
 	<para>若不要接受這麼多資訊，可使用 <command>quicksearch</command> 功能：</para>
 
@@ -6469,7 +6459,7 @@ Port:   lsof-4.88.d,8
 Path:   /usr/ports/sysutils/lsof
 Info:   Lists information about open files (similar to fstat(1))</screen>
 
-	<para>若要進行更有深度的搜尋，使用 <command>make search key=<replaceable>string</replaceable></command> 或 <command>make quicksearch key=<replaceable>string</replaceable></command> 其中 <replaceable>string</replaceable> 是要搜尋的文字。該文字可以是一部份的註解、描述或相依套件，當不清楚程式的名稱時可以找到與特定主題相關的 Ports。</para>
+	<para>若要進行更有深度的搜尋，使用 <command>make search key=<replaceable>string</replaceable></command> 或 <command>make quicksearch key=<replaceable>string</replaceable></command> 其中 <replaceable>string</replaceable> 是要搜尋的文字。該文字可以是一部份的註解、描述或相依套件，當不清楚程式的名稱時可以找到與特定主題相關的 Port。</para>
 
 	<para>當使用 <buildtarget>search</buildtarget> 或 <buildtarget>quicksearch</buildtarget> 時，搜尋的字串不分大小寫。 搜尋 <quote>LSOF</quote> 會與搜尋 <quote>lsof</quote> 產生相同的結果。</para>
       </listitem>
@@ -6481,18 +6471,18 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
 
     <para><application>pkg</application> 是新一代套件管理工具用來取代舊版工具，提供許多功能讓處理 Binary 套件更快更簡單。</para>
 
-    <para><application>pkg</application> 並不是用來取代 Port 管理工具如 <package>ports-mgmt/portmaster</package> 或 <package>ports-mgmt/portupgrade</package>，這些工具可用來安裝來自 Binary 與 Ports 套件集的第三方軟體，而 <application>pkg</application> 僅能安裝 Binary 套件。</para>
+    <para><application>pkg</application> 並不是用來取代 Port 管理工具如 <package>ports-mgmt/portmaster</package> 或 <package>ports-mgmt/portupgrade</package>，這些工具可用來安裝來自 Binary 與 Port 套件集的第三方軟體，而 <application>pkg</application> 僅能安裝 Binary 套件。</para>
 
     <sect2 xml:id="pkgng-initial-setup">
       <title>開始使用 <application>pkg</application></title>
 
-      <para>FreeBSD 內建啟動(Bootstrap)工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。</para>
+      <para>FreeBSD 內建啟動 (Bootstrap) 工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。</para>
 
       <para>要啟動(Bootstrap)系統請執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput></screen>
 
-      <para>對較舊的 FreeBSD 版本，<application>pkg</application> 必須改透過 Ports 套件集或者 Binary 套件來安裝。</para>
+      <para>對較舊的 FreeBSD 版本，<application>pkg</application> 必須改透過 Port 套件集或者 Binary 套件來安裝。</para>
 
       <para>要安裝 Port 套件，請執行：</para>
 
@@ -6514,7 +6504,7 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
 	<para>套件資料庫轉換的過程可能會因內容轉換為新版本產生錯誤。通常，這些錯誤皆可安全忽略，雖然如此，仍然有在執行 <command>pkg2ng</command> 後無法成功轉換的第三方軟體清單，這些應用程式則必須手動重新安裝。</para>
       </note>
 
-      <para>為了確保 FreeBSD Ports 套件集會將新軟體的資訊註冊到 <application>pkg</application> 而非舊版套件格式，FreeBSD 版本 10.<replaceable>X</replaceable> 之前需要在 <filename>/etc/make.conf</filename> 加入此行：</para>
+      <para>為了確保 FreeBSD Port 套件集會將新軟體的資訊註冊到 <application>pkg</application> 而非舊版套件格式，FreeBSD 版本 10.<replaceable>X</replaceable> 之前需要在 <filename>/etc/make.conf</filename> 加入此行：</para>
 
       <programlisting xml:lang="en">WITH_PKGNG=	yes</programlisting>
 
@@ -6666,7 +6656,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
     <sect2 xml:id="pkgng-set">
       <title>修改套件 Metadata</title>
 
-      <para>在 FreeBSD Ports 套件集中的軟體可能會經歷主要版號的修改，要解決這個問題可使用 <application>pkg</application> 內建的指令來更新套件來源。這非常有用，例如 <package>lang/php5</package> 重新命名為 <package>lang/php53</package> 因此 <package>lang/php5</package> 從此之後代表版本 <literal>5.4</literal>。</para>
+      <para>在 FreeBSD Port 套件集中的軟體可能會經歷主要版號的修改，要解決這個問題可使用 <application>pkg</application> 內建的指令來更新套件來源。這非常有用，例如 <package>lang/php5</package> 重新命名為 <package>lang/php53</package> 因此 <package>lang/php5</package> 從此之後代表版本 <literal>5.4</literal>。</para>
 
       <para>要更改上述例子中的套件來源，可執行：</para>
 
@@ -6689,17 +6679,17 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
   </sect1>
 
   <sect1 xml:id="ports-using">
-    <title>使用 Ports 套件集</title>
+    <title>使用 Port 套件集</title>
 
-    <para>Ports 套件集是指一系列儲存在 <filename>/usr/ports</filename> 的 <filename>Makefiles</filename>、修補及描述檔，這一系列檔案用來編譯與安裝在 FreeBSD 上的應用程式。在使用 Port 安裝應用程式前，必須先安裝 Ports 套件集，若未在安裝 FreeBSD 的過程式中安裝，可使用下列其中一種方法來安裝：</para>
+    <para>Port 套件集是指一系列儲存在 <filename>/usr/ports</filename> 的 <filename>Makefiles</filename>、修補及描述檔，這一系列檔案用來編譯與安裝在 FreeBSD 上的應用程式。在使用 Port 安裝應用程式前，必須先安裝 Port 套件集，若未在安裝 FreeBSD 的過程式中安裝，可使用下列其中一種方法來安裝：</para>
 
     <procedure xml:id="ports-using-portsnap-method">
       <title>Portsnap 方法</title>
 
-      <para>FreeBSD 的基礎系統內含 <application>Portsnap</application>，這是一個可用來取得 Ports 套件集簡單又快速的工具，較建議多數使用者使用這個方式。此工具會連線到 FreeBSD 的網站，驗証密鑰，然後下載 Ports 套件集的新複本。該金鑰是要用來檢驗所有已下載檔案的完整性。</para>
+      <para>FreeBSD 的基礎系統內含 <application>Portsnap</application>，這是一個可用來取得 Port 套件集簡單又快速的工具，較建議多數使用者使用這個方式。此工具會連線到 FreeBSD 的網站，驗証密鑰，然後下載 Port 套件集的新複本。該金鑰是要用來檢驗所有已下載檔案的完整性。</para>
 
       <step>
-	<para>要下載壓縮後的 Ports 套件集快照 (Snapshot) 到 <filename>/var/db/portsnap</filename>：</para>
+	<para>要下載壓縮後的 Port 套件集快照 (Snapshot) 到 <filename>/var/db/portsnap</filename>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portsnap fetch</userinput></screen>
       </step>
@@ -6725,22 +6715,22 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
     <procedure xml:id="ports-using-subversion-method">
       <title>Subversion 方法</title>
 
-      <para>若要取得更多對 Ports 樹的控制，或若有本地的變更需要維護，可以使用 <application>Subversion</application> 來取得 Ports 套件集。請參考 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/subversion-primer.html">Subversion Primer</link> 來取得 <application>Subversion</application> 的詳細說明。</para>
+      <para>若要取得更多對 Port 樹的控制，或若有本地的變更需要維護，可以使用 <application>Subversion</application> 來取得 Port 套件集。請參考 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/committers-guide/subversion-primer.html">Subversion Primer</link> 來取得 <application>Subversion</application> 的詳細說明。</para>
 
       <step>
-	<para>必須安裝 <application>Subversion</application> 才可用來取出 (Check out) Ports 樹。若已存在 Ports 樹的複本，可使用此方式安裝 <application>Subversion</application>：</para>
+	<para>必須安裝 <application>Subversion</application> 才可用來取出 (Check out) Port 樹。若已存在 Port 樹的複本，可使用此方式安裝 <application>Subversion</application>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/devel/subversion</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-	<para>若尚無法使用 Ports 樹，或已經使用 <application>pkg</application> 來管理套件，可使用套件來安裝 <application>Subversion</application>：</para>
+	<para>若尚無法使用 Port 樹，或已經使用 <application>pkg</application> 來管理套件，可使用套件來安裝 <application>Subversion</application>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install subversion</userinput></screen>
 
       </step>
 
       <step>
-	<para>取出 Ports 樹的複本：</para>
+	<para>取出 Port 樹的複本：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/ports/head /usr/ports</userinput></screen>
       </step>
@@ -6752,7 +6742,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </step>
     </procedure>
 
-    <para>Ports 套件集會安裝一系列代表軟體分類的目錄，每個分類底下的子目錄代表每隻應用程式。 這些子目錄又稱做 Ports Skeleton，裡面檔案是用來告訴 FreeBSD 如何編譯與安裝該程式，每個 Port Skeleton 會含有以下檔案及目錄：</para>
+    <para>Port 套件集會安裝一系列代表軟體分類的目錄，每個分類底下的子目錄代表每隻應用程式。 這些子目錄又稱做 Port Skeleton，裡面檔案是用來告訴 FreeBSD 如何編譯與安裝該程式，每個 Port Skeleton 會含有以下檔案及目錄：</para>
 
     <itemizedlist>
       <listitem>
@@ -6764,7 +6754,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </listitem>
 
       <listitem>
-	<para><filename>files/</filename>: 此目錄含有編譯與安裝程式到 FreeBSD 時所需的修補檔。此目錄也可能含有其他用來編譯 Ports 的檔案。</para>
+	<para><filename>files/</filename>: 此目錄含有編譯與安裝程式到 FreeBSD 時所需的修補檔。此目錄也可能含有其他用來編譯 Port 的檔案。</para>
       </listitem>
 
       <listitem>
@@ -6772,29 +6762,29 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </listitem>
 
       <listitem>
-	<para><filename>pkg-plist</filename>: Port 安裝的所有檔案清單，也同時會告訴 Ports 系統解除安裝時要移除那一些檔案。</para>
+	<para><filename>pkg-plist</filename>: Port 安裝的所有檔案清單，也同時會告訴 Port 系統解除安裝時要移除那一些檔案。</para>
       </listitem>
     </itemizedlist>
 
-    <para>部份 Ports 含有 <filename>pkg-message</filename> 或其他檔案用來處理特殊情況。要取得有關這些檔案的詳細資訊，以及 Ports 的概要可參考 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/index.html">FreeBSD Porter's Handbook</link>。</para>
+    <para>部份 Port 含有 <filename>pkg-message</filename> 或其他檔案用來處理特殊情況。要取得有關這些檔案的詳細資訊，以及 Port 的概要可參考 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/porters-handbook/index.html">FreeBSD Porter's Handbook</link>。</para>
 
     <para>Port 中並不含實際的原始碼，即為 <filename>distfile</filename>，在編譯 Port 解壓縮時會自動下載的原始碼到 <filename>/usr/ports/distfiles</filename>。</para>
 
     <sect2 xml:id="ports-skeleton">
-      <title>安裝 Ports</title>
+      <title>安裝 Port</title>
 
       <indexterm xml:lang="en">
 	<primary>ports</primary>
 	<secondary>installing</secondary>
       </indexterm>
 
-      <para>下面我們會介紹如何使用 Ports 套件集來安裝、移除軟體的基本用法。 <command>make</command> 可用的目標及環境變數詳細說明可參閱 <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry>。</para>
+      <para>下面我們會介紹如何使用 Port 套件集來安裝、移除軟體的基本用法。 <command>make</command> 可用的目標及環境變數詳細說明可參閱 <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry>。</para>
 
       <warning>
-	<para>在編譯任何 Port 套件前，請先確認已經如前章節所敘述之方法更新 Ports 套件集。安裝任何第三方軟體皆可能會導致安全性漏洞，建議在安裝前先閱讀 <link xlink:href="http://vuxml.freebsd.org/"/> 了解  Port 已知的安全性問題。或者在每次安裝新 Port 前執行 <command>pkg audit -F</command>。此指令可以設定在每日系統安全性檢查時自動完成安全性稽查以及更新漏洞資料庫。要取得更多資訊，請參考 <citerefentry><refentrytitle>pkg-audit</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
+	<para>在編譯任何 Port 套件前，請先確認已經如前章節所敘述之方法更新 Port 套件集。安裝任何第三方軟體皆可能會導致安全性漏洞，建議在安裝前先閱讀 <link xlink:href="http://vuxml.freebsd.org/"/> 了解  Port 已知的安全性問題。或者在每次安裝新 Port 前執行 <command>pkg audit -F</command>。此指令可以設定在每日系統安全性檢查時自動完成安全性稽查以及更新漏洞資料庫。要取得更多資訊，請參考 <citerefentry><refentrytitle>pkg-audit</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
       </warning>
 
-      <para>使用 Ports 套件集會假設您擁有可正常連線的網路，同時也會需要超級使用者的權限。</para>
+      <para>使用 Port 套件集會假設您擁有可正常連線的網路，同時也會需要超級使用者的權限。</para>
 
       <para>要編譯並安裝 Port，需切換目錄到要安裝的 Port 底下，然後輸入 <command>make install</command>，訊息中會顯示安裝的進度：</para>
 
@@ -6846,19 +6836,19 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </note>
 
       <sect3>
-	<title>自訂 Ports 安裝</title>
+	<title>自訂 Port 安裝</title>
 
-	<para>部份 Ports 提供編譯選項，可用來開啟或關閉應用程式中的元件、安全選項、或其他允許自訂的項目。這類的應用程式例子包括 <package>www/firefox</package>, <package>security/gpgme</package> 以及 <package>mail/sylpheed-claws</package>。若 Port 相依的其他 Port 有可設定的選項時，預設的模式會提示使用者選擇選單中的選項，這可能會讓安裝的過程暫停讓使用者操作數次。要避免這個情況，可在 Port skeleton 中執行 <command>make config-recursive</command> 來一次設定所有選項。然後再執行 <command>make install [clean]</command> 編譯與安裝該 Port。</para>
+	<para>部份 Port 提供編譯選項，可用來開啟或關閉應用程式中的元件、安全選項、或其他允許自訂的項目。這類的應用程式例子包括 <package>www/firefox</package>, <package>security/gpgme</package> 以及 <package>mail/sylpheed-claws</package>。若 Port 相依的其他 Port 有可設定的選項時，預設的模式會提示使用者選擇選單中的選項，這可能會讓安裝的過程暫停讓使用者操作數次。要避免這個情況，可在 Port skeleton 中執行 <command>make config-recursive</command> 來一次設定所有選項。然後再執行 <command>make install [clean]</command> 編譯與安裝該 Port。</para>
 
 	<tip>
-	  <para>使用 <buildtarget>config-recursive</buildtarget> 時，會使用 <buildtarget>all-depends-list</buildtarget> Target 來收集所有要設定 Port 清單。建議執行 <command>make config-recursive</command> 直到所有相依的 Port 選項都已定義，直到 Ports 的選項畫面不會再出現，來確定所有相依的選項都已經設定。</para>
+	  <para>使用 <buildtarget>config-recursive</buildtarget> 時，會使用 <buildtarget>all-depends-list</buildtarget> Target 來收集所有要設定 Port 清單。建議執行 <command>make config-recursive</command> 直到所有相依的 Port 選項都已定義，直到 Port 的選項畫面不會再出現，來確定所有相依的選項都已經設定。</para>
 	</tip>
 
 	<para>有許多方式可以重新進入 Port 的編譯選項清單，以便在編譯 Port 之後加入、移除或更改這些選項。方法之一是 <command>cd</command> 進入含有 Port 的目錄並輸入 <command>make config</command>。還有另一個方法是使用 <command>make showconfig</command>。最後一個方法是執行 <command>make rmconfig</command> 來移除所有曾選擇過的選項，讓您能夠重新設定。這些方法在 <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry> 中都有詳細的說明。</para>
 
-	<para>Ports 系統使用 <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來下載檔案，它支援許多的環境變數可設定。若 FreeBSD 系統在防火牆或 FTP/HTTP 代理伺服器後面，可以設定 <envar>FTP_PASSIVE_MODE</envar>, <envar>FTP_PROXY</envar> 以及 <envar>FTP_PASSWORD</envar> 變數。請參考 <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>3</manvolnum></citerefentry> 取得完整支援的變數清單。</para>
+	<para>Port 系統使用 <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來下載檔案，它支援許多的環境變數可設定。若 FreeBSD 系統在防火牆或 FTP/HTTP 代理伺服器後面，可以設定 <envar>FTP_PASSIVE_MODE</envar>, <envar>FTP_PROXY</envar> 以及 <envar>FTP_PASSWORD</envar> 變數。請參考 <citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>3</manvolnum></citerefentry> 取得完整支援的變數清單。</para>
 
-	<para>對於那些無法一直連線到網際網路的使用者，可在 <filename>/usr/ports</filename> 下執行 <command>make fetch</command> 來下載所有的 distfiles，或是可在某個分類的目錄中，例如 <filename>/usr/ports/net</filename>，或指定的 Port Skeleton 中執行。要注意的是，若 Port 有任何的相依，在分類或 Ports Skeleton 中執行此指令並 <emphasis>不會</emphasis> 下載相依在其他分類的 Port distfiles。可使用 <command>make fetch-recursive</command> 來下載所有相依 Port 的 distfiles。</para>
+	<para>對於那些無法一直連線到網際網路的使用者，可在 <filename>/usr/ports</filename> 下執行 <command>make fetch</command> 來下載所有的 distfiles，或是可在某個分類的目錄中，例如 <filename>/usr/ports/net</filename>，或指定的 Port Skeleton 中執行。要注意的是，若 Port 有任何的相依，在分類或 Port Skeleton 中執行此指令並 <emphasis>不會</emphasis> 下載相依在其他分類的 Port distfiles。可使用 <command>make fetch-recursive</command> 來下載所有相依 Port 的 distfiles。</para>
 
 	<para>在部份少數情況，例如當公司或組織有自己的本地 distfiles 檔案庫，可使用 <varname>MASTER_SITES</varname> 變數來覆蓋在 <filename>Makefile</filename> 中指定的下載位址。當要指定替代的位址時可：</para>
 
@@ -6885,14 +6875,14 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
     </sect2>
 
     <sect2 xml:id="ports-removing">
-      <title>移除已安裝的 Ports</title>
+      <title>移除已安裝的 Port</title>
 
       <indexterm xml:lang="en">
 	<primary>ports</primary>
 	<secondary>removing</secondary>
       </indexterm>
 
-      <para>安裝的 Ports 可以使用 <command>pkg delete</command> 解除安裝。 使用這個指令的範例可以在 <citerefentry><refentrytitle>pkg-delete</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊找到。</para>
+      <para>安裝的 Port 可以使用 <command>pkg delete</command> 解除安裝。 使用這個指令的範例可以在 <citerefentry><refentrytitle>pkg-delete</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊找到。</para>
 
       <para>或者，可在 Port 的目錄下執行 <command>make deinstall</command>：</para>
 
@@ -6911,58 +6901,58 @@ The deinstallation will free 229 kB
     </sect2>
 
     <sect2 xml:id="ports-upgrading">
-      <title>升級 Ports</title>
+      <title>升級 Port</title>
 
       <indexterm xml:lang="en">
 	<primary>ports</primary>
 	<secondary>upgrading</secondary>
       </indexterm>
 
-      <para>隨著時間推移，Ports 套件集中會有新版的軟體可用。本節將說明如何檢查是否有可以升級的軟體及如何升級。</para>
+      <para>隨著時間推移，Port 套件集中會有新版的軟體可用。本節將說明如何檢查是否有可以升級的軟體及如何升級。</para>
 
-      <para>要檢查已安裝 Ports 是否有新版可用，請先確定已安裝最新版本的 Ports 樹，使用 <xref linkend="ports-using-portsnap-method"/> 或 <xref linkend="ports-using-subversion-method"/> 中說明的指令來更新。在 FreeBSD 10 與更新的版本，或若套件系統已轉換為 <application>pkg</application>，可以使用下列指令列出已經安裝的 Ports 中有那些已過時：</para>
+      <para>要檢查已安裝 Port 是否有新版可用，請先確定已安裝最新版本的 Port 樹，使用 <xref linkend="ports-using-portsnap-method"/> 或 <xref linkend="ports-using-subversion-method"/> 中說明的指令來更新。在 FreeBSD 10 與更新的版本，或若套件系統已轉換為 <application>pkg</application>，可以使用下列指令列出已經安裝的 Port 中有那些已過時：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg version -l "&lt;"</userinput></screen>
 
-      <para>在 FreeBSD 9.<replaceable>X</replaceable> 與較舊的版本，可以使用下列指令列出已經安裝的 Ports 中有那些已過時：</para>
+      <para>在 FreeBSD 9.<replaceable>X</replaceable> 與較舊的版本，可以使用下列指令列出已經安裝的 Port 中有那些已過時：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg_version -l "&lt;"</userinput></screen>
 
       <important>
-	<para>在嘗試升級之前，請先從檔首閱讀 <filename>/usr/ports/UPDATING</filename> 來取得最近有那些 Ports 已升級或系統已安裝。這個檔案中會說明各種問題及在升級 Port 時可能會需要使用者執行的額外步驟，例如檔案格式更改、設定檔位置更改、或任何與先前版本不相容的問題。留意那些與您要升級 Ports 相關的指示，並依照這些指示執行升級。</para>
+	<para>在嘗試升級之前，請先從檔首閱讀 <filename>/usr/ports/UPDATING</filename> 來取得最近有那些 Port 已升級或系統已安裝。這個檔案中會說明各種問題及在升級 Port 時可能會需要使用者執行的額外步驟，例如檔案格式更改、設定檔位置更改、或任何與先前版本不相容的問題。留意那些與您要升級 Port 相關的指示，並依照這些指示執行升級。</para>
       </important>
 
       <para>要執行實際的升級，可使用 <application>Portmaster</application> 或 <application>Portupgrade</application>。</para>
 
       <sect3 xml:id="portmaster">
-	<title>使用 <application>Portmaster</application> 升級 Ports</title>
+	<title>使用 <application>Portmaster</application> 升級 Port</title>
 
 	<indexterm xml:lang="en">
 	  <primary>portmaster</primary>
 	</indexterm>
 
-	<para><package>ports-mgmt/portmaster</package> 是可用來升級已安裝 Port 的小巧工具，它可不需要相依其他 Ports 或資料庫便可在 FreeBSD 使用，要使用 Port 安裝此工具可：</para>
+	<para><package>ports-mgmt/portmaster</package> 是可用來升級已安裝 Port 的小巧工具，它可不需要相依其他 Port 或資料庫便可在 FreeBSD 使用，要使用 Port 安裝此工具可：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/portmaster</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-	<para><application>Portmaster</application> 將 Ports 定義成四種類型：</para>
+	<para><application>Portmaster</application> 將 Port 定義成四種類型：</para>
 
 	<itemizedlist>
 	  <listitem>
-	    <para>根 Port：沒有相依且也不被任何其他 Ports 相依。</para>
+	    <para>根 Port：沒有相依且也不被任何其他 Port 相依。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para>主幹 Port：沒有相依，但被其他 Ports 相依。</para>
+	    <para>主幹 Port：沒有相依，但被其他 Port 相依。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para>分支 Port：有相依，且其被其他 Ports 相依。</para>
+	    <para>分支 Port：有相依，且其被其他 Port 相依。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para>枝 Port：有相依，但沒有被其他 Ports 相依。</para>
+	    <para>枝 Port：有相依，但沒有被其他 Port 相依。</para>
 	  </listitem>
 	</itemizedlist>
 
@@ -6998,38 +6988,38 @@ The deinstallation will free 229 kB
 	  <para>預設 <application>Portmaster</application> 會在刪除已存在的 Port 前備份套件，若成功安裝新版 <application>Portmaster</application> 會刪除該備份。使用 <option>-b</option> 來讓 <application>Portmaster</application> 不會自動刪除備份。加入 <option>-i</option> 可啟動 <application>Portmaster</application> 的互動模式，會在升級每個 Port 前提示訊息。尚有許多可用的其他選項，請閱讀 <citerefentry vendor="ports"><refentrytitle>portmaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的操作手冊來取得詳細的用法。</para>
 	</note>
 
-	<para>若升級的過程發生錯誤，可加入 <option>-f</option> 來升級並重新編譯所有 Ports：</para>
+	<para>若升級的過程發生錯誤，可加入 <option>-f</option> 來升級並重新編譯所有 Port：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster -af</userinput></screen>
 
-	<para><application>Portmaster</application> 也可用來安裝新的 Ports 到系統，在編譯及安裝新 Port 前升級所有相依模組。要使用這個功能，要指定 Port 位於 Ports 套件集中的位置：</para>
+	<para><application>Portmaster</application> 也可用來安裝新的 Port 到系統，在編譯及安裝新 Port 前升級所有相依模組。要使用這個功能，要指定 Port 位於 Port 套件集中的位置：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster <replaceable>shells/bash</replaceable></userinput></screen>
       </sect3>
 
       <sect3 xml:id="portupgrade">
-	<title>使用 Portupgrade 升級 Ports</title>
+	<title>使用 Portupgrade 升級 Port</title>
 
 	<indexterm xml:lang="en">
 	  <primary>portupgrade</primary>
 	</indexterm>
 
-	<para>另一個可以用來升級 Ports 的工具是 <application>Portupgrade</application>，可在 <package>ports-mgmt/portupgrade</package> 取得套件或 Ports，此工具會安裝一套可以用來管理 Ports 的應用程式，但是它需要相依 Ruby。要安裝該 Port：</para>
+	<para>另一個可以用來升級 Port 的工具是 <application>Portupgrade</application>，可在 <package>ports-mgmt/portupgrade</package> 取得套件或 Port，此工具會安裝一套可以用來管理 Port 的應用程式，但是它需要相依 Ruby。要安裝該 Port：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/portupgrade</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-	<para>在執行升級之前使用此工具，建議使用 <command>pkgdb -F</command> 掃描已安裝的 Ports 並修正該指令回報的所有資訊不一致的套件。</para>
+	<para>在執行升級之前使用此工具，建議使用 <command>pkgdb -F</command> 掃描已安裝的 Port 並修正該指令回報的所有資訊不一致的套件。</para>
 
-	<para>要升級所有安裝在系統上過時的 Ports，可使用 <command>portupgrade -a</command>，或者加上 <option>-i</option> 會在每個套件升級時詢問確認：</para>
+	<para>要升級所有安裝在系統上過時的 Port，可使用 <command>portupgrade -a</command>，或者加上 <option>-i</option> 會在每個套件升級時詢問確認：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portupgrade -ai</userinput></screen>
 
-	<para>要升級指定的應用程式而非所有可用 Ports 可使用 <command>portupgrade <replaceable>pkgname</replaceable></command>，非常重要的是，要加上 <option>-R</option> 來先升級指定應用程式所有相依的 Ports：</para>
+	<para>要升級指定的應用程式而非所有可用 Port 可使用 <command>portupgrade <replaceable>pkgname</replaceable></command>，非常重要的是，要加上 <option>-R</option> 來先升級指定應用程式所有相依的 Port：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portupgrade -R firefox</userinput></screen>
 
-	<para>若使用 <option>-P</option>，<application>Portupgrade</application> 會先在 <envar>PKG_PATH</envar> 清單中的本地目錄中搜尋可用的套件。若本地沒有可用的套件，則會從遠端下載。若套件無法在本地或遠端找到，<application>Portupgrade</application> 則會使用 Ports 來安裝。要避免完全使用 Ports 安裝，可使用 <option>-PP</option>，這個選項會告訴 <application>Portupgrade</application> 若沒有套件可用時放棄安裝：</para>
+	<para>若使用 <option>-P</option>，<application>Portupgrade</application> 會先在 <envar>PKG_PATH</envar> 清單中的本地目錄中搜尋可用的套件。若本地沒有可用的套件，則會從遠端下載。若套件無法在本地或遠端找到，<application>Portupgrade</application> 則會使用 Port 來安裝。要避免完全使用 Port 安裝，可使用 <option>-PP</option>，這個選項會告訴 <application>Portupgrade</application> 若沒有套件可用時放棄安裝：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portupgrade -PP gnome3</userinput></screen>
 
@@ -7038,18 +7028,18 @@ The deinstallation will free 229 kB
     </sect2>
 
     <sect2 xml:id="ports-disk-space">
-      <title>Ports 與磁碟空間</title>
+      <title>Port 與磁碟空間</title>
 
       <indexterm xml:lang="en">
 	<primary>ports</primary>
 	<secondary>disk-space</secondary>
       </indexterm>
 
-      <para>使用 Ports 套件集會隨著時間消耗磁碟空間。在編譯與安裝 Port 完之後，在 Ports Skeleton 中執行 <command>make clean</command> 可清除暫存的 <filename>work</filename> 目錄。若使用 <application>Portmaster</application> 來安裝 Port，則會自動移除該目錄，除非使用 <option>-K</option>。若有安裝 <application>Portupgrade</application>，此指令將會移除所有在 Ports 套件集的本地複本中找到的 <filename>work</filename> 目錄：</para>
+      <para>使用 Port 套件集會隨著時間消耗磁碟空間。在編譯與安裝 Port 完之後，在 Port Skeleton 中執行 <command>make clean</command> 可清除暫存的 <filename>work</filename> 目錄。若使用 <application>Portmaster</application> 來安裝 Port，則會自動移除該目錄，除非使用 <option>-K</option>。若有安裝 <application>Portupgrade</application>，此指令將會移除所有在 Port 套件集的本地複本中找到的 <filename>work</filename> 目錄：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -C</userinput></screen>
 
-      <para>除此之外，許多過時的原始碼發行檔案會儲存在 <filename>/usr/ports/distfiles</filename>。若有安裝 <application>Portupgrade</application>，此指令將會刪除所有不再被任何 Ports 所引用的 distfiles：</para>
+      <para>除此之外，許多過時的原始碼發行檔案會儲存在 <filename>/usr/ports/distfiles</filename>。若有安裝 <application>Portupgrade</application>，此指令將會刪除所有不再被任何 Port 所引用的 distfiles：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -D</userinput></screen>
 
@@ -7063,7 +7053,7 @@ The deinstallation will free 229 kB
 
       <para>預設這個指令會互動的方式詢問使用者確認是否要刪除 distfile。</para>
 
-      <para>除了以上指令外，<package>ports-mgmt/pkg_cutleaves</package> 套件或 Port 可自動移除不再需要使用的 Ports。</para>
+      <para>除了以上指令外，<package>ports-mgmt/pkg_cutleaves</package> 套件或 Port 可自動移除不再需要使用的 Port。</para>
     </sect2>
   </sect1>
 
@@ -7072,7 +7062,7 @@ The deinstallation will free 229 kB
 
     <para><application>Poudriere</application> 是一個使用 <acronym>BSD</acronym> 授權條款用來建立與測試 FreeBSD 套件的工具。它使用 FreeBSD Jail 來建置獨立的編譯環境，這些 Jail 可以用來編譯與目前所在系統不同 FreeBSD 版本的套件，也同樣可以在主機為 amd64 的系統上編譯供 i386 使用的套件。套件編譯完成後的目錄配置會與官方鏡像站完全相同。這些套件可由 <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及其他套件管理工具使用。</para>
 
-    <para><application>Poudriere</application> 可使用 <package role="port">ports-mgmt/poudriere</package> 套件或 Ports 安裝。安裝完成後會有一個範例的設定檔 <filename>/usr/local/etc/poudriere.conf.sample</filename>。複製此檔案到 <filename>/usr/local/etc/poudriere.conf</filename>，編輯複製的檔案來配合本地的設定。</para>
+    <para><application>Poudriere</application> 可使用 <package role="port">ports-mgmt/poudriere</package> 套件或 Port 安裝。安裝完成後會有一個範例的設定檔 <filename>/usr/local/etc/poudriere.conf.sample</filename>。複製此檔案到 <filename>/usr/local/etc/poudriere.conf</filename>，編輯複製的檔案來配合本地的設定。</para>
 
     <para xml:lang="en">While <acronym>ZFS</acronym> is not required on the system
       running <application>poudriere</application>, it is beneficial.
@@ -7270,7 +7260,7 @@ ports-mgmt/pkg
   </sect1>
 
   <sect1 xml:id="ports-broken">
-    <title>處理損壞的 Ports</title>
+    <title>處理損壞的 Port</title>
 
     <para>當發現某個 Port 無法順利編譯或安裝，可以嘗試以下幾種方法解決：</para>
 
@@ -7280,12 +7270,12 @@ ports-mgmt/pkg
       </listitem>
 
       <listitem>
-	<para>尋求維護人員的協助，在 Ports Skeleton 目錄中輸入 <command>make maintainer</command> 或閱讀 Port 的 <filename>Makefile</filename> 來取得維護人員的電子郵件位址。寄給維護人員的郵件內容請記得要包含 Port 的 <filename>Makefile</filename> 中的 <literal>$FreeBSD:</literal> 一整行及輸出的錯誤訊息。</para>
+	<para>尋求維護人員的協助，在 Port Skeleton 目錄中輸入 <command>make maintainer</command> 或閱讀 Port 的 <filename>Makefile</filename> 來取得維護人員的電子郵件位址。寄給維護人員的郵件內容請記得要包含 Port 的 <filename>Makefile</filename> 中的 <literal>$FreeBSD:</literal> 一整行及輸出的錯誤訊息。</para>
 
 	<note>
 	  <para>有一些 Port 並非由個人維護，而是由 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/mailing-list-faq/article.html">郵遞論壇</link> 維護，只要郵件地址長的像 <email role="nolink">freebsd-listname@FreeBSD.org</email> 都是，寄信時記得代入實際的論壇名稱。</para>
 
-	  <para>尤其是顯示 <email role="nolink">ports@FreeBSD.org</email> 的  Port  都不是由特定個人維護，該 Ports 的修正與支援來自訂閱該郵遞論壇的一般社群所提供，我們非常歡迎志工參與。</para>
+	  <para>尤其是顯示 <email role="nolink">ports@FreeBSD.org</email> 的  Port  都不是由特定個人維護，該 Port 的修正與支援來自訂閱該郵遞論壇的一般社群所提供，我們非常歡迎志工參與。</para>
 	</note>
 
 	<para>若寄信後沒有取得任何回應，可以依照 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-reports/article.html">撰寫 FreeBSD 問題回報</link> 的說明使用 Bugzilla 提出問題回報。</para>
@@ -7378,7 +7368,7 @@ ports-mgmt/pkg
 
     <variablelist>
       <varlistentry>
-	<term>X 伺服器(X Server)</term>
+	<term>X 伺服器 (X Server)</term>
 
 	<listitem>
 	  <para>X 最初設計是以網路為中心，採用 <quote>client-server</quote> 架構。在此架構下 <quote>X 伺服器</quote> 在有鍵盤、螢幕、滑鼠的電腦上運作。該伺服器負責的工作包含管理顯示、處理來自鍵盤、滑鼠的輸入及來自其他設備(如平板或或影像投影機)的輸入或輸出。這點可能會讓人感到困惑，因為 X 使用的術語與一般的認知剛好相反。 一般認知會以為 <quote>X 伺服器</quote> 是要在最強悍的主機上執行，而 <quote>X 客戶端</quote> 才是在桌機上面執行，實際上卻是相反。</para>
@@ -7386,7 +7376,7 @@ ports-mgmt/pkg
       </varlistentry>
 
       <varlistentry>
-	<term>X 客戶端(X Client)</term>
+	<term>X 客戶端 (X Client)</term>
 
 	<listitem>
 	  <para>每個 X 應用程式，如 <application>XTerm</application>、<application>Firefox</application> 都是 <quote>客戶端</quote>。 客戶端會傳訊息到伺服器，例如：<quote>請在這些座標畫一個視窗</quote>，接著伺服器會傳回訊息，如：<quote>使用者剛點選了確定按鈕</quote>。</para>
@@ -7396,17 +7386,17 @@ ports-mgmt/pkg
       </varlistentry>
 
       <varlistentry>
-	<term>視窗管理程式(Window Manager)</term>
+	<term>視窗管理程式 (Window Manager)</term>
 
 	<listitem>
-	  <para>X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href="http://xwinman.org/">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有 <quote>開始</quote> 鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Ports 套件集的 <filename>x11-wm</filename> 分類找到。</para>
+	  <para>X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href="http://xwinman.org/">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有 <quote>開始</quote> 鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Port 套件集的 <filename>x11-wm</filename> 分類找到。</para>
 
 	  <para>每個視窗管理程式也各有其不同的設定機制，有些需要手動修改設定檔， 而有的則可透過圖型化工具來完成大部分的設定工作。</para>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term>桌面環境(Desktop Environment)</term>
+	<term>桌面環境 (Desktop Environment)</term>
 
 	<listitem>
 	  <para><application>KDE</application> 與 <application>GNOME</application> 會被稱作桌面環境是因為包含了完整常用桌面作業的應用程式，這些應用程式可能包含文書軟體、網頁瀏覽器及遊戲。</para>
@@ -7414,19 +7404,19 @@ ports-mgmt/pkg
       </varlistentry>
 
       <varlistentry>
-	<term>聚焦政策(Focus Policy)</term>
+	<term>聚焦政策 (Focus Policy)</term>
 
 	<listitem>
 	  <para>視窗管理程式負責滑鼠指標的聚焦政策。 聚焦政策指的是如何決定使用中及接收鍵盤輸入的視窗。</para>
 
-	  <para>通常較為人熟悉的聚焦政策叫做 <quote>click-to-focus</quote>，這個模式中，滑鼠點選到的視窗便會處於作用中(Active)的狀態。在 <quote>focus-follows-mouse</quote> 模式滑鼠指標所在的視窗便是作用中的視窗，只要把滑鼠移到其他視窗就可以改變作用中的視窗，若滑鼠移到根視窗(Root Window)，則會聚焦在根視窗。在 <quote>sloppy-focus</quote> 模式，既使滑鼠移到根視窗，仍然會聚焦在最後聚焦的視窗上，此模式只有當滑鼠進入新的視窗時才會聚焦於該視窗，而非離開目前視窗時。<quote>click-to-focus</quote> 模式用滑鼠點擊來決定作用中的視窗，且該視窗會被置頂到所有其他視窗之前，即使滑鼠移到其他視窗，所有的鍵盤輸入仍會由該視窗所接收。</para>
+	  <para>通常較為人熟悉的聚焦政策叫做 <quote>click-to-focus</quote>，這個模式中，滑鼠點選到的視窗便會處於作用中 (Active) 的狀態。在 <quote>focus-follows-mouse</quote> 模式滑鼠指標所在的視窗便是作用中的視窗，只要把滑鼠移到其他視窗就可以改變作用中的視窗，若滑鼠移到根視窗 (Root Window)，則會聚焦在根視窗。在 <quote>sloppy-focus</quote> 模式，既使滑鼠移到根視窗，仍然會聚焦在最後聚焦的視窗上，此模式只有當滑鼠進入新的視窗時才會聚焦於該視窗，而非離開目前視窗時。<quote>click-to-focus</quote> 模式用滑鼠點擊來決定作用中的視窗，且該視窗會被置頂到所有其他視窗之前，即使滑鼠移到其他視窗，所有的鍵盤輸入仍會由該視窗所接收。</para>
 
 	  <para>不同的視窗管理程式支援不同的聚焦模式，全部都支援 click-to-focus 且其中大部份支援其他模式，請查看視窗管理程式的說明文件來了解可用的聚焦模式。</para>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term>視窗元件(Widget)</term>
+	<term>視窗元件 (Widget)</term>
 
 	<listitem>
 	  <para>視窗元件指的是在所有在使用者介面上可被點選或操作的項目，這包括按鈕、核選方塊、單選按鈕、圖示及清單。 視窗元件工具包(Widget toolkit)是指用來建立圖型化應用程式的一系列的視窗元件。目前有數個有名的視窗元件工具包，包含 <application>KDE</application> 所使用的 Qt、<application>GNOME</application> 所使用的 GTK+。 因此應用程式會依其開發時所選用的視窗元件工具包而有不同的外觀。</para>
@@ -7438,28 +7428,20 @@ ports-mgmt/pkg
   <sect1 xml:id="x-install">
     <title>安裝 <application>Xorg</application></title>
 
-    <para xml:lang="en">On FreeBSD, <application>Xorg</application> can be installed
-      as a package or port.</para>
+    <para>在 FreeBSD，<application>Xorg</application> 可透過套件或 Port 來安裝。</para>
 
-    <para xml:lang="en">To build and install from the Ports Collection:</para>
+    <para>要從 Port 套件集編譯與安裝:</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/x11/xorg</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-    <para xml:lang="en">The binary package can be installed more quickly but with
-      fewer options for customization:</para>
+    <para>使用 Binary 套件安裝快速，但可用的自訂選項較少:</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install xorg</userinput></screen>
 
-    <para xml:lang="en">Either of these installations results in the complete
-      <application>Xorg</application> system being installed.  This
-      is the best option for most users.</para>
+    <para>兩種安裝方式皆可完整安裝 <application>Xorg</application> 系統。此方式較建議大多數使用者。</para>
 
-    <para xml:lang="en">A smaller version of the X system suitable for experienced
-      users is available in <package>x11/xorg-minimal</package>.  Most
-      of the documents, libraries, and applications will not be
-      installed.  Some applications require these additional
-      components to function.</para>
+    <para>較精簡版本的 X 系統適合給有經驗的使用者使用，可至 <package>x11/xorg-minimal</package> 取得。這個版本就不會安裝大多數的文件、函數庫以及應用程式，而部份應用程式會需要這些額外的元件才能運作。</para>
   </sect1>
 
   <sect1 xml:id="x-config">
@@ -7481,62 +7463,38 @@ ports-mgmt/pkg
     <sect2 xml:id="x-config-quick-start">
       <title>快速開始</title>
 
-      <para xml:lang="en"><application>Xorg</application> supports most common
-	video cards, keyboards, and pointing devices.  These devices
-	are automatically detected and do not require any manual
-	configuration.</para>
+      <para><application>Xorg</application> 支援大多數常見的顯示卡、鍵盤以及指標裝置，<application>Xorg</application> 會自動偵測這些裝置，並不需要手動設定。</para>
 
       <procedure>
 	<step>
-	  <para xml:lang="en">If <application>Xorg</application> has been used on
-	    this computer before, move or remove any existing
-	    configuration files:</para>
+	  <para>若 <application>Xorg</application> 曾經在電腦使用過，可先將現有的設定檔重新命名或移除:</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>mv /etc/X11/xorg.conf ~/xorg.conf.etc</userinput>
 <prompt>#</prompt> <userinput>mv /usr/local/etc/X11/xorg.conf ~/xorg.conf.localetc</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Add the user who will run
-	    <application>Xorg</application> to the
-	    <literal>video</literal> or
-	    <literal>wheel</literal> group to enable 3D acceleration
-	    when available.  To add user
-	    <replaceable>jru</replaceable> to whichever group is
-	    available:</para>
+	  <para>加入要執行 <application>Xorg</application> 的使用者到 <literal>video</literal> 或 <literal>wheel</literal> 群組，以便在可用時能開啟 3D 加速。要加入使用者 <replaceable>jru</replaceable> 到任一個可用的群組:</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod video -m <replaceable>jru</replaceable> || pw groupmod wheel -m <replaceable>jru</replaceable></userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">The <acronym>TWM</acronym> window manager is included
-	    by default.  It is started when
-	    <application>Xorg</application> starts:</para>
+	  <para>預設內含 <acronym>TWM</acronym> 視窗管理程式，啟動 <application>Xorg</application> 時便會啟動該視窗管理程式:</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>startx</userinput></screen>
 	</step>
 
 	<step>
-	  <para xml:lang="en">On some older versions of FreeBSD, the system console
-	    must be set to <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> before switching back to the
-	    text console will work properly.  See
-	    <xref linkend="x-config-kms"/>.</para>
+	  <para>在部份較舊版的 FreeBSD，在切換回文字 Console 前系統 Console 必須設為 <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> 才可正常運作，請參考 <xref linkend="x-config-kms"/>。</para>
 	</step>
       </procedure>
     </sect2>
 
     <sect2 xml:id="x-config-user-group">
-      <title>用來加速影像處理的使用者群組</title>
+      <title>可加速影像處理的使用者群組</title>
 
-      <para xml:lang="en">Access to <filename>/dev/dri</filename> is needed to allow
-	3D acceleration on video cards.  It is usually simplest to add
-	the user who will be running X to either the
-	<literal>video</literal> or <literal>wheel</literal> group.
-	Here, <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> is used to add user
-	<replaceable>slurms</replaceable> to the
-	<literal>video</literal> group, or to the
-	<literal>wheel</literal> group if there is no
-	<literal>video</literal> group:</para>
+      <para>要存取 <filename>/dev/dri</filename> 需要允許顯示卡的 3D 加速功能，這通常只需要將要執行 X 的使用者加入 <literal>video</literal> 或 <literal>wheel</literal> 群組。此處使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來將使用者 <replaceable>slurms</replaceable> 加入 <literal>video</literal> 群組，若沒有 <literal>video</literal> 則會加入 <literal>wheel</literal> 群組:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod video -m <replaceable>slurms</replaceable> || pw groupmod wheel -m <replaceable>slurms</replaceable></userinput></screen>
     </sect2>
@@ -7544,19 +7502,9 @@ ports-mgmt/pkg
     <sect2 xml:id="x-config-kms">
       <title>核心模式設定 (Kernel Mode Setting, <acronym>KMS</acronym>)</title>
 
-      <para xml:lang="en">When the computer switches from displaying the console to
-	a higher screen resolution for X, it must set the video
-	output <emphasis>mode</emphasis>.  Recent versions of
-	<acronym>Xorg</acronym> use a system inside the kernel to do
-	these mode changes more efficiently.  Older versions of FreeBSD
-	use <citerefentry><refentrytitle>sc</refentrytitle><manvolnum>4</manvolnum></citerefentry>, which is not aware of the
-	<acronym>KMS</acronym> system.  The end result is that after
-	closing X, the system console is blank, even though it is
-	still working.  The newer <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> console avoids this
-	problem.</para>
+      <para>當電腦顯示從 Console 切換到高螢幕解析度供 X 使用時，必須設定影像輸出<emphasis>模式</emphasis>。最近版本的 <acronym>Xorg</acronym> 使用了核心內部的系統來讓切換模式更有效率。較舊版的 FreeBSD 使用的 <citerefentry><refentrytitle>sc</refentrytitle><manvolnum>4</manvolnum></citerefentry> 並不知到 <acronym>KMS</acronym> 系統的存在，這會導致關閉 X 之後即始仍在運作但系統 Console 卻呈現空白。較新版的 <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry> Console 可避免這個問題。</para>
 
-      <para xml:lang="en">Add this line to <filename>/boot/loader.conf</filename>
-	to enable <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry>:</para>
+      <para>加入此行到 <filename>/boot/loader.conf</filename> 來開啟 <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></citerefentry>:</para>
 
       <programlisting xml:lang="en">kern.vty=vt</programlisting>
     </sect2>
@@ -7567,37 +7515,19 @@ ports-mgmt/pkg
       <sect3 xml:id="x-config-files-directory">
 	<title>目錄</title>
 
-	<para xml:lang="en"><application>Xorg</application> looks in several
-	  directories for configuration files.
-	  <filename>/usr/local/etc/X11/</filename> is the recommended
-	  directory for these files on FreeBSD.  Using this directory
-	  helps keep application files separate from operating system
-	  files.</para>
+	<para><application>Xorg</application> 會查看數個目錄來尋找設定檔，在 FreeBSD 較建議使用 <filename>/usr/local/etc/X11/</filename> 來存放這些設定檔，使用這個目錄可以幫助將應用程式檔案與作業系統檔案分離。</para>
 
-	<para xml:lang="en">Storing configuration files in the legacy
-	  <filename>/etc/X11/</filename> still works.  However, this
-	  mixes application files with the base FreeBSD files and is not
-	  recommended.</para>
+	<para>儲存設定檔在傳統的 <filename>/etc/X11/</filename> 仍可運作，但並不建議將應用程式檔案與基礎 FreeBSD 檔案混合在一起存放。</para>
       </sect3>
 
       <sect3 xml:id="x-config-files-single-or-multi">
 	<title>單檔或多檔</title>
 
-	<para xml:lang="en">It is easier to use multiple files that each configure a
-	  specific setting than the traditional single
-	  <filename>xorg.conf</filename>.  These files are stored in
-	  the <filename>xorg.conf.d/</filename> subdirectory of the
-	  main configuration file directory.  The full path is
-	  typically
-	  <filename>/usr/local/etc/X11/xorg.conf.d/</filename>.</para>
+	<para>使用多檔，每一個檔案只設定一個指定項目會較傳統使用單一 <filename>xorg.conf</filename> 設定來的簡單。這些檔案會存放在主設定檔目錄下的 <filename>xorg.conf.d/</filename> 子目錄，完整路徑通常為 <filename>/usr/local/etc/X11/xorg.conf.d/</filename>。</para>
 
-	<para xml:lang="en">Examples of these files are shown later in this
-	  section.</para>
+	<para>於本節稍後會有這些檔案的範例。</para>
 
-	<para xml:lang="en">The traditional single <filename>xorg.conf</filename>
-	  still works, but is neither as clear nor as flexible as
-	  multiple files in the <filename>xorg.conf.d/</filename>
-	  subdirectory.</para>
+	<para>傳統單一 <filename>xorg.conf</filename> 的方式仍可運作，但比起在 <filename>xorg.conf.d/</filename> 子目錄中的多檔設定方式較不明瞭且沒有彈性。</para>
       </sect3>
     </sect2>
 
@@ -7609,14 +7539,11 @@ ports-mgmt/pkg
 	  <term xml:lang="en"><trademark class="registered">Intel</trademark></term>
 
 	  <listitem>
-	    <para xml:lang="en">3D acceleration is supported on most <trademark class="registered">Intel</trademark>
-	      graphics up to Ivy Bridge (HD Graphics 2500, 4000, and
-	      P4000), including Iron Lake (HD Graphics) and
-	      Sandy Bridge (HD Graphics 2000).</para>
+	    <para>3D 加速在大多數 <trademark class="registered">Intel</trademark> 顯示晶片都有支援，最新到 Ivy Bridge (HD Graphics 2500, 4000, 及 P4000) 包含 Iron Lake (HD Graphics) 與 Sandy Bridge (HD Graphics 2000)。</para>
 
-	    <para xml:lang="en">Driver name: <literal>intel</literal></para>
+	    <para>驅動程式名稱: <literal>intel</literal></para>
 
-	    <para xml:lang="en">For reference, see <link xlink:href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units"/>.</para>
+	    <para>參考文獻請至 <link xlink:href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units"/>。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -7624,12 +7551,11 @@ ports-mgmt/pkg
 	  <term xml:lang="en"><trademark class="registered">AMD</trademark> Radeon</term>
 
 	  <listitem>
-	    <para xml:lang="en">2D and 3D acceleration is supported on Radeon
-	      cards up to and including the HD6000 series.</para>
+	    <para>Radeon 顯示卡支援 2D 及 3D 加速，最新到 HD6000 系列。</para>
 
-	    <para xml:lang="en">Driver name: <literal>radeon</literal></para>
+	    <para>驅動程式名稱: <literal>radeon</literal></para>
 
-	    <para xml:lang="en">For reference, see <link xlink:href="https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units"/>.</para>
+	    <para>參考文獻請至 <link xlink:href="https://en.wikipedia.org/wiki/List_of_AMD_graphics_processing_units"/>。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -7637,81 +7563,43 @@ ports-mgmt/pkg
 	  <term xml:lang="en">NVIDIA</term>
 
 	  <listitem>
-	    <para xml:lang="en">Several NVIDIA drivers are available in the
-	      <filename>x11</filename> category of the Ports
-	      Collection.  Install the driver that matches the video
-	      card.</para>
+	    <para>有數個 NVIDIA 驅動程式可於 Port 套件集中的 <filename>x11</filename> 分類取得，請安裝其中與顯示卡相符的驅動程式。</para>
 
-	    <para xml:lang="en">For reference, see <link xlink:href="https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units"/>.</para>
+	    <para>參考文獻請至 <link xlink:href="https://en.wikipedia.org/wiki/List_of_Nvidia_graphics_processing_units"/>。</para>
 	  </listitem>
 	</varlistentry>
 
 	<varlistentry xml:id="x-config-video-cards-hybrid">
-	  <term xml:lang="en">Hybrid Combination Graphics</term>
+	  <term>混合組合繪圖晶片</term>
 
 	  <listitem>
-	    <para xml:lang="en">Some notebook computers add additional graphics
-	      processing units to those built into the chipset or
-	      processor.  <emphasis>Optimus</emphasis> combines
-	      <trademark class="registered">Intel</trademark> and NVIDIA hardware.
-	      <emphasis>Switchable Graphics</emphasis> or
-	      <emphasis>Hybrid Graphics</emphasis> are a combination
-	      of an <trademark class="registered">Intel</trademark> or <trademark class="registered">AMD</trademark> processor and an <trademark class="registered">AMD</trademark> Radeon
-	      <acronym>GPU</acronym>.</para>
+	    <para>部份筆記型電腦加入了額外繪圖處理單元到那些內建晶片組或處理。<emphasis>Optimus</emphasis> 結合了 <trademark class="registered">Intel</trademark> 及 NVIDIA 的硬體，<emphasis>Switchable Graphics</emphasis> 或 <emphasis>Hybrid Graphics</emphasis> 則是結合了 <trademark class="registered">Intel</trademark> 或 <trademark class="registered">AMD</trademark> 處理器與 <trademark class="registered">AMD</trademark> Radeon <acronym>GPU</acronym>。</para>
 
-	    <para xml:lang="en">Implementations of these hybrid graphics systems
-	      vary, and <application>Xorg</application> on FreeBSD is
-	      not able to drive all versions of them.</para>
+	    <para>這些混合繪圖系統的實作方式均不同，FreeBSD 的 <application>Xorg</application> 尚無法驅動所有的混合繪圖系統版本。</para>
 
-	    <para xml:lang="en">Some computers provide a <acronym>BIOS</acronym>
-	      option to disable one of the graphics adapters or select
-	      a <emphasis>discrete</emphasis> mode which can be used
-	      with one of the standard video card drivers.  For
-	      example, it is sometimes possible to disable the NVIDIA
-	      <acronym>GPU</acronym> in an Optimus system.  The
-	      <trademark class="registered">Intel</trademark> video can then be used with an <trademark class="registered">Intel</trademark>
-	      driver.</para>
+	    <para>部份電腦提供了 <acronym>BIOS</acronym> 的選項可以關閉其中一個繪圖介面卡或選擇 <emphasis>discrete</emphasis> 模式，可用使用其中一種標準顯示卡驅動程式來驅動。例如，有時關閉 Optimus 系統中的 NVIDIA <acronym>GPU</acronym> 是可能讓 <trademark class="registered">Intel</trademark> 顯示晶片可用 <trademark class="registered">Intel</trademark> 驅動程式驅動。</para>
 
-	    <para xml:lang="en"><acronym>BIOS</acronym> settings depend on the model
-	      of computer.  In some situations, both
-	      <acronym>GPU</acronym>s can be left enabled, but
-	      creating a configuration file that only uses the main
-	      <acronym>GPU</acronym> in the <literal>Device</literal>
-	      section is enough to make such a system
-	      functional.</para>
+	    <para><acronym>BIOS</acronym> 設定會依電腦的型號有所不同，在某些情況下，可以同時開啟兩個 <acronym>GPU</acronym>，而在建立的設定檔中的 <literal>Device</literal> 節只使用主要的 <acronym>GPU</acronym> 便能讓系統運作。</para>
 	  </listitem>
 	</varlistentry>
 
 	<varlistentry xml:id="x-config-video-cards-other">
-	  <term xml:lang="en">Other Video Cards</term>
+	  <term>其他顯示卡</term>
 
 	  <listitem>
-	    <para xml:lang="en">Drivers for some less-common video cards can be
-	      found in the <filename>x11-drivers</filename> directory
-	      of the Ports Collection.</para>
+	    <para>較不常見的顯示卡驅動程式可在 Port 套件集的 <filename>x11-drivers</filename> 目錄找到。</para>
 
-	    <para xml:lang="en">Cards that are not supported by a specific driver
-	      might still be usable with the
-	      <package>x11-drivers/xf86-video-vesa</package> driver.
-	      This driver is installed by <package>x11/xorg</package>.
-	      It can also be installed manually as
-	      <package>x11-drivers/xf86-video-vesa</package>.
-	      <application>Xorg</application> attempts to use this
-	      driver when a specific driver is not found for the video
-	      card.</para>
+	    <para>若沒有特定的驅動程式可以支援顯示卡，仍可能可用 <package>x11-drivers/xf86-video-vesa</package> 驅動程式來驅動。該驅動程式可使用 <package>x11/xorg</package> 安裝，也可使用 <package>x11-drivers/xf86-video-vesa</package> 手動安裝。當沒有指定驅動程式時 <application>Xorg</application> 會嘗試使用這個驅動程式來驅動顯示卡。</para>
 
-	    <para xml:lang="en"><package>x11-drivers/xf86-video-scfb</package> is a
-	      similar nonspecialized video driver that works on many
-	      <acronym>UEFI</acronym> and <trademark class="registered">ARM</trademark> computers.</para>
+	    <para><package>x11-drivers/xf86-video-scfb</package> 也是不特定顯示卡的驅動程式，可在許多 <acronym>UEFI</acronym> 及 <trademark class="registered">ARM</trademark> 的電腦上運作。</para>
 	  </listitem>
 	</varlistentry>
 
 	<varlistentry xml:id="x-config-video-cards-file">
-	  <term xml:lang="en">Setting the Video Driver in a File</term>
+	  <term>在檔案中設定影像驅動程式</term>
 
 	  <listitem>
-	    <para xml:lang="en">To set the <trademark class="registered">Intel</trademark> driver in a configuration
-	      file:</para>
+	    <para>要在設定檔設定使用 <trademark class="registered">Intel</trademark> 驅動程式:</para>
 
 	    <example xml:id="x-config-video-cards-file-intel">
 	      <title>在單檔中選擇 <trademark class="registered">Intel</trademark> 影像驅動程式</title>
@@ -7724,16 +7612,10 @@ ports-mgmt/pkg
 	# BusID    "PCI:1:0:0"
 EndSection</programlisting>
 
-	      <para xml:lang="en">If more than one video card is present, the
-		<literal>BusID</literal> identifier can be uncommented
-		and set to select the desired card.  A list of video
-		card bus <acronym>ID</acronym>s can be displayed with
-		<command>pciconf -lv | grep -B3
-		  display</command>.</para>
+	      <para>若有多張顯示卡，可取消註解 <literal>BusID</literal> identifier 然後設定為想要的顯示卡，顯示卡的 Bus <acronym>ID</acronym> 清單可以使用 <command>pciconf -lv | grep -B3 display</command> 取得。</para>
 	    </example>
 
-	    <para xml:lang="en">To set the Radeon driver in a configuration
-	      file:</para>
+	    <para>要在設定檔設定使用 Radeon 驅動程式:</para>
 
 	    <example xml:id="x-config-video-cards-file-radeon">
 	      <title>在單檔中選擇 Radeon 影像驅動程式</title>
@@ -7746,8 +7628,7 @@ EndSection</programlisting>
 EndSection</programlisting>
 	    </example>
 
-	    <para xml:lang="en">To set the <acronym>VESA</acronym> driver in a
-	      configuration file:</para>
+	    <para>要在設定檔設定使用 <acronym>VESA</acronym> 驅動程式:</para>
 
 	    <example xml:id="x-config-video-cards-file-vesa">
 	      <title>在單檔中選擇 <acronym>VESA</acronym> 影像驅動程式</title>
@@ -7760,8 +7641,7 @@ EndSection</programlisting>
 EndSection</programlisting>
 	    </example>
 
-	    <para xml:lang="en">To set the <literal>scfb</literal> driver for use
-	      with a <acronym>UEFI</acronym> or <trademark class="registered">ARM</trademark> computer:</para>
+	    <para>要設定 <acronym>UEFI</acronym> 或 <trademark class="registered">ARM</trademark> 電腦使用 <literal>scfb</literal> 驅動程式:</para>
 
 	    <example xml:id="x-config-video-cards-file-scfb">
 	      <title>在單檔中選擇 <literal>scfb</literal> 影像驅動程式</title>
@@ -7781,26 +7661,16 @@ EndSection</programlisting>
     <sect2 xml:id="x-config-monitors">
       <title>顯示器</title>
 
-      <para xml:lang="en">Almost all monitors support the Extended Display
-	Identification Data standard (<acronym>EDID</acronym>).
-	<application>Xorg</application> uses <acronym>EDID</acronym>
-	to communicate with the monitor and detect the supported
-	resolutions and refresh rates.  Then it selects the most
-	appropriate combination of settings to use with that
-	monitor.</para>
+      <para>幾乎所有顯示器都支援延伸顯示辨識資料標準 (Extended Display Identification Data, <acronym>EDID</acronym>)，<application>Xorg</application> 會使用 <acronym>EDID</acronym> 與顯示器通訊並偵測支援的解析度與更新頻率，然後選擇最適合的設定組合使用該顯示器。</para>
 
-      <para xml:lang="en">Other resolutions supported by the monitor can be
-	chosen by setting the desired resolution in configuration
-	files, or after the X server has been started with
-	<citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+      <para>其他顯示器支援的解析度可透過在設定檔中設定想要的解析度來選擇，或者在 X 伺服器啟動之後使用 <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
       <variablelist>
 	<varlistentry xml:id="x-config-monitors-xrandr">
-	  <term xml:lang="en">Using <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry></term>
+	  <term>使用 <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry></term>
 
 	  <listitem>
-	    <para xml:lang="en">Run <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> without any parameters to see a
-	      list of video outputs and detected monitor modes:</para>
+	    <para>執行 <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 不加任何參數可檢查影像輸出及已偵測到的顯示器模式清單:</para>
 
 	    <screen xml:lang="en"><prompt>%</prompt> <userinput>xrandr</userinput>
 Screen 0: minimum 320 x 200, current 3000 x 1920, maximum 8192 x 8192
@@ -7818,29 +7688,15 @@ DVI-0 connected primary 1920x1200+1080+0 (normal left inverted right x axis y ax
 DisplayPort-0 disconnected (normal left inverted right x axis y axis)
 HDMI-0 disconnected (normal left inverted right x axis y axis)</screen>
 
-	    <para xml:lang="en">This shows that the <literal>DVI-0</literal> output
-	      is being used to display a screen resolution of
-	      1920x1200 pixels at a refresh rate of about 60 Hz.
-	      Monitors are not attached to the
-	      <literal>DisplayPort-0</literal> and
-	      <literal>HDMI-0</literal> connectors.</para>
+	    <para>這表示 <literal>DVI-0</literal> 輸出被用來顯示解析度為 1920x1200 像素於更新頻率約 60 Hz 的畫面，未有顯示器連接到 <literal>DisplayPort-0</literal> 與 <literal>HDMI-0</literal> 接頭。</para>
 
-	    <para xml:lang="en">Any of the other display modes can be selected with
-	      <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  For example, to switch to 1280x1024 at
-	      60 Hz:</para>
+	    <para>可使用 <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來選擇任何其他的顯示模式。例如要切換為 1280x1024 於 60 Hz:</para>
 
 	    <screen xml:lang="en"><prompt>%</prompt> <userinput>xrandr --mode 1280x1024 --rate 60</userinput></screen>
 
-	    <para xml:lang="en">A common task is using the external video output on
-	      a notebook computer for a video projector.</para>
+	    <para>在筆記型電腦使用外部顯示輸出到投影機是常見的作業。</para>
 
-	    <para xml:lang="en">The type and quantity of output connectors varies
-	      between devices, and the name given to each output
-	      varies from driver to driver.  What one driver calls
-	      <literal>HDMI-1</literal>, another might call
-	      <literal>HDMI1</literal>.  So the first step is to run
-	      <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> to list all the available
-	      outputs:</para>
+	    <para>不同裝置間輸出接頭的類型與數量也不同，給每個輸出的名稱在不同驅動程式間也不同。在某些驅動程式稱為 <literal>HDMI-1</literal> 的輸出在其他驅動程式則可能稱為 <literal>HDMI1</literal>。因此第一個步驟是執行 <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 列出所有可用的輸出:</para>
 
 	    <screen xml:lang="en"><prompt>%</prompt> <userinput>xrandr</userinput>
 Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192
@@ -7861,40 +7717,23 @@ VGA1 connected (normal left inverted right x axis y axis)
 HDMI1 disconnected (normal left inverted right x axis y axis)
 DP1 disconnected (normal left inverted right x axis y axis)</screen>
 
-	    <para xml:lang="en">Four outputs were found: the built-in panel
-	      <literal>LVDS1</literal>, and external
-	      <literal>VGA1</literal>, <literal>HDMI1</literal>, and
-	      <literal>DP1</literal> connectors.</para>
+	    <para>找到四個輸出: 內建面板的 <literal>LVDS1</literal>，外接的 <literal>VGA1</literal>, <literal>HDMI1</literal> 以及 <literal>DP1</literal> 接頭。</para>
 
-	    <para xml:lang="en">The projector has been connected to the
-	      <literal>VGA1</literal> output.  <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> is now
-	      used to set that output to the native resolution of the
-	      projector and add the additional space to the right side
-	      of the desktop:</para>
+	    <para>投影機已連接至 <literal>VGA1</literal> 輸出，現在使用 <citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來設定該輸出到投影機 (原始解析度) 並加入額外的空間到桌面的右側:</para>
 
 	    <screen xml:lang="en"><prompt>%</prompt> <userinput>xrandr --output VGA1 --auto --right-of LVDS1</userinput></screen>
 
-	    <para xml:lang="en"><literal>--auto</literal> chooses the resolution and
-	      refresh rate detected by <acronym>EDID</acronym>.  If
-	      the resolution is not correctly detected, a fixed value
-	      can be given with <literal>--mode</literal> instead of
-	      the <literal>--auto</literal> statement.  For example,
-	      most projectors can be used with a 1024x768 resolution,
-	      which is set with
-	      <literal>--mode 1024x768</literal>.</para>
+	    <para><literal>--auto</literal> 會選擇使用 <acronym>EDID</acronym> 偵測到的解析度與更新頻率。若未正確偵測解析度，可替換 <literal>--auto</literal> 為 <literal>--mode</literal> 然後給予固定值。例如大部份的投影機可使用 1024x768 解析度為，則可設定 <literal>--mode 1024x768</literal>。</para>
 
-	    <para xml:lang="en"><citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> is often run from
-	      <filename>.xinitrc</filename> to set the appropriate
-	      mode when X starts.</para>
+	    <para><citerefentry vendor="xfree86"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 通常會在 <filename>.xinitrc</filename> 執行以在 X 啟動時設定適合的模式。</para>
 	  </listitem>
 	</varlistentry>
 
 	<varlistentry xml:id="x-config-monitors-files">
-	  <term xml:lang="en">Setting Monitor Resolution in a File</term>
+	  <term>在檔案中設定螢幕解析度</term>
 
 	  <listitem>
-	    <para xml:lang="en">To set a screen resolution of 1024x768 in a
-	      configuration file:</para>
+	    <para>在設定檔設定螢幕解析度為 1024x768:</para>
 
 	    <example>
 	      <title>在單檔中設定螢幕解析度</title>
@@ -7910,11 +7749,7 @@ DP1 disconnected (normal left inverted right x axis y axis)</screen>
 EndSection</programlisting>
 	    </example>
 
-	    <para xml:lang="en">The few monitors that do not have
-	      <acronym>EDID</acronym> can be configured by setting
-	      <literal>HorizSync</literal> and
-	      <literal>VertRefresh</literal> to the range of
-	      frequencies supported by the monitor.</para>
+	    <para>少數顯示器沒有 <acronym>EDID</acronym>，可設定 <literal>HorizSync</literal> 及 <literal>VertRefresh</literal> 為顯示器支援的頻率範圍。</para>
 
 	    <example>
 	      <title>手動設定顯示器頻率</title>
@@ -7940,23 +7775,14 @@ EndSection</programlisting>
 
 	<variablelist>
 	  <varlistentry xml:id="x-config-input-keyboard-layout">
-	    <term xml:lang="en">Keyboard Layout</term>
+	    <term>鍵盤配置</term>
 
 	    <listitem>
-	      <para xml:lang="en">The standardized location of keys on a keyboard
-		is called a <emphasis>layout</emphasis>.  Layouts and
-		other adjustable parameters are listed in
-		<citerefentry vendor="xfree86"><refentrytitle>xkeyboard-config</refentrytitle><manvolnum>7</manvolnum></citerefentry>.</para>
+	      <para>鍵盤上標準按鍵的位置稱做 <emphasis>配置 (Layout)</emphasis>。配置與其他可調整的參數列於 <citerefentry vendor="xfree86"><refentrytitle>xkeyboard-config</refentrytitle><manvolnum>7</manvolnum></citerefentry>。</para>
 
-	      <para xml:lang="en">A United States layout is the default.  To select
-		an alternate layout, set the
-		<literal>XkbLayout</literal> and
-		<literal>XkbVariant</literal> options in an
-		<literal>InputClass</literal>.  This will be applied
-		to all input devices that match the class.</para>
+	      <para>預設為 United States 配置，要選擇其他的配置可在 <literal>InputClass</literal> 設定 <literal>XkbLayout</literal> 與 <literal>XkbVariant</literal> 選項。這會套用所有符合該類別的輸入裝置。</para>
 
-	      <para xml:lang="en">This example selects a French keyboard layout with
-		the <literal>oss</literal> variant.</para>
+	      <para>這個例子選擇 French 鍵盤配置使用 <literal>oss</literal> 變體。</para>
 
 	      <example>
 		<title>設定鍵盤配置</title>
@@ -7975,16 +7801,7 @@ EndSection</programlisting>
 	      <example>
 		<title>設定多個鍵盤配置</title>
 
-		<para xml:lang="en">Set United States, Spanish, and Ukrainian
-		  keyboard layouts.  Cycle through these layouts by
-		  pressing
-		  <keycombo action="simul">
-		    <keycap>Alt</keycap>
-		    <keycap>Shift</keycap>
-		  </keycombo>.  <package>x11/xxkb</package> or
-		  <package>x11/sbxkb</package> can be used for
-		  improved layout switching control and
-		  current layout indicators.</para>
+		<para>設定 United States, Spanish 與 Ukrainian 鍵盤配置，並可按 <keycombo action="simul"> <keycap>Alt</keycap> <keycap>Shift</keycap> </keycombo> 來切換這些配置。可使用 <package>x11/xxkb</package> 或 <package>x11/sbxkb</package> 來加強配置切換控制與目前配置的指示。</para>
 
 		<para xml:lang="en"><filename>/usr/local/etc/X11/xorg.conf.d/kbd-layout-multi.conf</filename></para>
 
@@ -7998,16 +7815,10 @@ EndSection</programlisting>
 	  </varlistentry>
 
 	  <varlistentry xml:id="x-config-input-keyboard-zap">
-	    <term xml:lang="en">Closing <application>Xorg</application> From the
-	    Keyboard</term>
+	    <term>從鍵盤關閉 <application>Xorg</application></term>
 
 	    <listitem>
-	      <para xml:lang="en">X can be closed with a combination of keys.
-		By default, that key combination is not set because it
-		conflicts with keyboard commands for some
-		applications.  Enabling this option requires changes
-		to the keyboard <literal>InputDevice</literal>
-		section:</para>
+	      <para>X 可以使用組合鍵來關閉，預設並未設定組合鍵，因為該組合鍵與部份應用程式的鍵盤指令衝突。要開啟這個選項需要更改鍵盤 <literal>InputDevice</literal> 節:</para>
 
 	      <example>
 		<title>開啟鍵盤離開 X 功能</title>
@@ -8029,21 +7840,17 @@ EndSection</programlisting>
       <sect3 xml:id="x11-input-mice">
 	<title>滑鼠與指標裝置</title>
 
-	<para xml:lang="en">Many mouse parameters can be adjusted with configuration
-	  options.  See <citerefentry vendor="xorg"><refentrytitle>mousedrv</refentrytitle><manvolnum>4</manvolnum></citerefentry> for a full list.</para>
+	<para>有許多滑鼠參數可使用設定選項來調整，請參考 <citerefentry vendor="xorg"><refentrytitle>mousedrv</refentrytitle><manvolnum>4</manvolnum></citerefentry> 來取得完整清單。</para>
 
 	<variablelist>
 	  <varlistentry xml:id="x11-input-mice-buttons">
-	    <term xml:lang="en">Mouse Buttons</term>
+	    <term>滑鼠按鍵</term>
 
 	    <listitem>
-	      <para xml:lang="en">The number of buttons on a mouse can be set in the
-		mouse <literal>InputDevice</literal> section of
-		<filename>xorg.conf</filename>.  To set the number of
-		buttons to 7:</para>
+	      <para>滑鼠的按鍵數可在 <filename>xorg.conf</filename> 的滑鼠 <literal>InputDevice</literal> 節設定，例如要設定按鍵數為 7:</para>
 
 	      <example>
-		<title>設定滑鼠按鍵編號</title>
+		<title>設定滑鼠按鍵數</title>
 
 		<para xml:lang="en"><filename>/usr/local/etc/X11/xorg.conf.d/mouse0-buttons.conf</filename></para>
 
@@ -8061,29 +7868,19 @@ EndSection</programlisting>
     <sect2 xml:id="x-config-manual-configuration">
       <title>手動設定</title>
 
-      <para xml:lang="en">In some cases, <application>Xorg</application>
-	autoconfiguration does not work with particular hardware, or a
-	different configuration is desired.  For these cases, a custom
-	configuration file can be created.</para>
+      <para>在某些情況 <application>Xorg</application> 的自動設定無法在特定硬體上運作，或需要使用不同的設定。針對這些情況會建立自訂的設定檔。</para>
 
-      <para xml:lang="en">A configuration file can be generated by
-	<application>Xorg</application> based on the detected
-	hardware.  This file is often a useful starting point for
-	custom configurations.</para>
+      <para>設定檔可由 <application>Xorg</application> 根據偵測到的硬體產生，這個檔案對一開始自訂設定很有幫助。</para>
 
-      <para xml:lang="en">Generating an <filename>xorg.conf</filename>:</para>
+      <para>產生 <filename>xorg.conf</filename>:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>Xorg -configure</userinput></screen>
 
-      <para xml:lang="en">The configuration file is saved to
-	<filename>/root/xorg.conf.new</filename>.  Make any changes
-	desired, then test that file with:</para>
+      <para>設定檔會儲存至 <filename>/root/xorg.conf.new</filename>，做任何需要的更改，然後使用以下指令測試該檔案:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>Xorg -config /root/xorg.conf.new</userinput></screen>
 
-      <para xml:lang="en">After the new configuration has been adjusted and tested,
-	it can be split into smaller files in the normal location,
-	<filename>/usr/local/etc/X11/xorg.conf.d/</filename>.</para>
+      <para>在新設定檔調整與測試過後，便可分開成較小的檔案放置到正常的位置 <filename>/usr/local/etc/X11/xorg.conf.d/</filename>。</para>
     </sect2>
   </sect1>
 
@@ -9388,7 +9185,7 @@ EndSection</programlisting>
   <sect1 xml:id="desktop-synopsis">
     <title>概述</title>
 
-    <para>隨著 FreeBSD 優越的效能及穩定性越來越熱門，它同時適合作為每日使用的桌面系統。FreeBSD 套件或 Ports 有超過 24,000 個可用的應用程式，可以簡單的建立一個自訂的桌面環境來執行各種不同的桌面應用程式。本章將示範如何安裝數個桌面應用程式，包含網頁瀏覽器、辦工軟體、文件閱覽程式以及財務軟體。</para>
+    <para>隨著 FreeBSD 優越的效能及穩定性越來越熱門，它同時適合作為每日使用的桌面系統。FreeBSD 套件或 Port 有超過 24,000 個可用的應用程式，可以簡單的建立一個自訂的桌面環境來執行各種不同的桌面應用程式。本章將示範如何安裝數個桌面應用程式，包含網頁瀏覽器、辦工軟體、文件閱覽程式以及財務軟體。</para>
 
     <note>
       <para>比起重頭設定，更偏好安裝預先編譯好桌面環境的 FreeBSD 版本的使用者可參考 <link xlink:href="http://www.pcbsd.org/">pcbsd.org 網站</link></para>
@@ -9417,13 +9214,13 @@ EndSection</programlisting>
       <secondary>web</secondary>
     </indexterm>
 
-    <para>在 FreeBSD 中並未預先安裝好網頁瀏覽器。 但在 Ports 套件集中的 <link xlink:href="http://www.FreeBSD.org/ports/www.html">www</link> 分類中有許多瀏覽器可以採 Binary 套件安裝或自 Ports 套件集編譯的方式安裝。</para>
+    <para>在 FreeBSD 中並未預先安裝好網頁瀏覽器。 但在 Port 套件集中的 <link xlink:href="http://www.FreeBSD.org/ports/www.html">www</link> 分類中有許多瀏覽器可以採 Binary 套件安裝或自 Port 套件集編譯的方式安裝。</para>
 
     <para><application>KDE</application> 和 <application>GNOME</application> 桌面環境都有提供自有的 HTML 瀏覽器。請參考 <xref linkend="x11-wm"/> 來了解更多有關如何設定完整桌面環境的資訊。</para>
 
     <para>有一些輕量化的瀏覽器可使用，包含 <package>www/dillo2</package>, <package>www/links</package> 以及 <package>www/w3m</package>。</para>
 
-    <para>本章節將示範如何安裝下列常見的網頁瀏覽器並說明該應用程式是否需要用到大量資源、花費大量時間自 Ports 編譯或何主要的相依套件。</para>
+    <para>本章節將示範如何安裝下列常見的網頁瀏覽器並說明該應用程式是否需要用到大量資源、花費大量時間自 Port 編譯或何主要的相依套件。</para>
 
     <informaltable frame="none" pgwide="1">
       <tgroup cols="4">
@@ -9431,7 +9228,7 @@ EndSection</programlisting>
 	  <row>
 	    <entry>應用程式名稱</entry>
 	    <entry>所需資源</entry>
-	    <entry>自 Ports 安裝時間</entry>
+	    <entry>自 Port 安裝時間</entry>
 	    <entry>說明</entry>
 	  </row>
 	</thead>
@@ -9487,7 +9284,7 @@ EndSection</programlisting>
 
       <para>在地化的版本可在 <package>www/firefox-i18n</package> 及 <package>www/firefox-esr-i18n</package> 取得。</para>
 
-      <para>使用 Ports 套件地可以用原始碼編譯成您想要的 <application>Firefox</application> 版本。此範例編譯 <package>www/firefox</package>，其中 <literal>firefox</literal> 可替換為 ESR 或在地化版本來安裝。</para>
+      <para>使用 Port 套件地可以用原始碼編譯成您想要的 <application>Firefox</application> 版本。此範例編譯 <package>www/firefox</package>，其中 <literal>firefox</literal> 可替換為 ESR 或在地化版本來安裝。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/firefox</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -9584,7 +9381,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install opera</userinput></screen>
 
-      <para>或者，可安裝 Ports 套件集中的版本，以下範例會編譯原生的版本。</para>
+      <para>或者，可安裝 Port 套件集中的版本，以下範例會編譯原生的版本。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/opera</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -9695,7 +9492,7 @@ EndSection</programlisting>
 
     <para>當開始進行辦公，新的使用者通常會去找好用的辦公室軟體或是好上手的文件處理程式。 雖然有些 <link linkend="x11-wm">桌面環境</link> 像是 <application>KDE</application> 已經提供了辦公軟體組合的套件，FreeBSD 預設未提供任何辦工工具。 不論是否有安裝視窗管理程式，FreeBSD 可安裝多套辦公軟體以及圖型化文件處理程式。</para>
 
-    <para>本章節元範如何安裝以下熱門的辦工軟體以及說明該應用程式所需的資源、自 Ports 編譯的時間或者是否有其他主要相依套件。</para>
+    <para>本章節元範如何安裝以下熱門的辦工軟體以及說明該應用程式所需的資源、自 Port 編譯的時間或者是否有其他主要相依套件。</para>
 
     <informaltable frame="none" pgwide="1">
       <tgroup cols="4">
@@ -9703,7 +9500,7 @@ EndSection</programlisting>
 	  <row>
 	    <entry>應用程式名稱</entry>
 	    <entry>所需資源</entry>
-	    <entry>自 Ports 安裝時間</entry>
+	    <entry>自 Port 安裝時間</entry>
 	    <entry>主要相依套件</entry>
 	  </row>
 	</thead>
@@ -9798,7 +9595,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install abiword</userinput></screen>
 
-      <para>若沒有 Binary 套件版本，也可以從 Ports 套件集中編譯安裝：</para>
+      <para>若沒有 Binary 套件版本，也可以從 Port 套件集中編譯安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/editors/abiword</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -9817,12 +9614,12 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gimp</userinput></screen>
 
-      <para>或使用 Ports 套件集安裝：</para>
+      <para>或使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/gimp</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para> 在 Ports 套件集的 graphics 分類 (<link xlink:href="http://www.FreeBSD.org/ports/graphics.html">freebsd.org/ports/graphics.html</link>) 下也包含了許多 <application>GIMP</application> 相關的附加元件，說明檔及使用手冊。</para>
+      <para> 在 Port 套件集的 graphics 分類 (<link xlink:href="http://www.FreeBSD.org/ports/graphics.html">freebsd.org/ports/graphics.html</link>) 下也包含了許多 <application>GIMP</application> 相關的附加元件，說明檔及使用手冊。</para>
 
     </sect2>
 
@@ -9956,7 +9753,7 @@ EndSection</programlisting>
 	  <row>
 	    <entry>應用程式名稱</entry>
 	    <entry>所需資源</entry>
-	    <entry>自 Ports 安裝時間</entry>
+	    <entry>自 Port 安裝時間</entry>
 	    <entry>主要相依套件</entry>
 	  </row>
 	</thead>
@@ -10017,7 +9814,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install xpdf</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/xpdf</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10046,7 +9843,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gv</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/print/gv</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10063,7 +9860,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install geeqie</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/geeqie</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10094,7 +9891,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install epdfview</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/epdfview</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10123,7 +9920,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install okular</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/okular</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10143,7 +9940,7 @@ EndSection</programlisting>
 	  <row>
 	    <entry>應用程式名稱</entry>
 	    <entry>所需資源</entry>
-	    <entry>自 Ports 安裝時間</entry>
+	    <entry>自 Port 安裝時間</entry>
 	    <entry>主要相依套件</entry>
 	  </row>
 	</thead>
@@ -10188,7 +9985,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gnucash</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/finance/gnucash</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10208,7 +10005,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install gnumeric</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/math/gnumeric</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10237,7 +10034,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install kmymoney-kde4</userinput></screen>
 
-      <para>若沒有可用的套件版本，可使用 Ports 套件集安裝：</para>
+      <para>若沒有可用的套件版本，可使用 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/finance/kmymoney-kde4</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -10270,9 +10067,9 @@ EndSection</programlisting>
   <sect1 xml:id="multimedia-synopsis">
     <title>概述</title>
 
-    <para>FreeBSD 廣泛地支援各種音效卡， 讓您可以享受來自電腦上的高傳真音質(Hi-Fi)， 此外還包括了錄製和播放 MPEG Audio Layer 3 (<acronym>MP3</acronym>)、 Waveform Audio File (<acronym>WAV</acronym>)、Ogg Vorbis 以及其他許多種格式聲音的能力。同時 FreeBSD Ports 套件集也包含了許多可讓您可以錄音、編修音效以及控制 MIDI 配備的應用程式。</para>
+    <para>FreeBSD 廣泛地支援各種音效卡， 讓您可以享受來自電腦上的高傳真音質(Hi-Fi)， 此外還包括了錄製和播放 MPEG Audio Layer 3 (<acronym>MP3</acronym>)、 Waveform Audio File (<acronym>WAV</acronym>)、Ogg Vorbis 以及其他許多種格式聲音的能力。同時 FreeBSD Port 套件集也包含了許多可讓您可以錄音、編修音效以及控制 MIDI 配備的應用程式。</para>
 
-    <para> FreeBSD 也能播放一般的視訊檔和 <acronym>DVD</acronym>。 FreeBSD Ports 套件集中含有可編碼、轉換以及播放格種影像媒體的應用程式。</para>
+    <para> FreeBSD 也能播放一般的視訊檔和 <acronym>DVD</acronym>。 FreeBSD Port 套件集中含有可編碼、轉換以及播放格種影像媒體的應用程式。</para>
 
     <para>本章會說明如何設定 FreeBSD 上的音效卡、影像播放器、電視卡及掃描器。同時會說明有那些應用程式可以使用這些裝置。</para>
 
@@ -11111,7 +10908,7 @@ no adaptors present</screen>
     </sect2>
 
     <sect2 xml:id="video-ports">
-      <title>可處理影像的 Ports 與套件</title>
+      <title>可處理影像的 Port 與套件</title>
 
       <indexterm xml:lang="en"><primary>video ports</primary></indexterm>
       <indexterm xml:lang="en"><primary>video packages</primary></indexterm>
@@ -14161,7 +13958,7 @@ lp:
 
     <indexterm xml:lang="en"><primary>Ports Collection</primary></indexterm>
 
-    <para><trademark class="registered">Linux</trademark> 程式庫預設並不會安裝，且並不會開啟 <trademark class="registered">Linux</trademark> Binary 相容性。 <trademark class="registered">Linux</trademark> 程式庫可以手動安裝或是從 FreeBSD Ports 套件集安裝。</para>
+    <para><trademark class="registered">Linux</trademark> 程式庫預設並不會安裝，且並不會開啟 <trademark class="registered">Linux</trademark> Binary 相容性。 <trademark class="registered">Linux</trademark> 程式庫可以手動安裝或是從 FreeBSD Port 套件集安裝。</para>
 
     <para>在嘗試編譯 Port 前，要載入 <trademark class="registered">Linux</trademark> 核心模組，否則編譯會失敗：</para>
 
@@ -19687,7 +19484,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
       </listitem>
 
       <listitem>
-	<para>如何使用 <application>pkg</application> 來稽查從 Ports 套件集安裝的第三方軟體套件。</para>
+	<para>如何使用 <application>pkg</application> 來稽查從 Port 套件集安裝的第三方軟體套件。</para>
       </listitem>
 
       <listitem>
@@ -23997,7 +23794,7 @@ jail_<replaceable>www</replaceable>_devfs_enable="YES"          # mount devfs in
     </sect2>
 
     <sect2 xml:id="jails-tuning-admintools">
-      <title>在 FreeBSD Ports 套件集中的高層級管理工具</title>
+      <title>在 FreeBSD Port 套件集中的高層級管理工具</title>
 
       <para xml:lang="en">Among the many third-party utilities for jail
 	administration, one of the most complete and useful is
@@ -24876,7 +24673,7 @@ Retype New Password:</screen>
       </sect3>
 
       <sect3 xml:id="jails-ezjail-update-ports">
-	<title>更新 Ports</title>
+	<title>更新 Port</title>
 
 	<para xml:lang="en">The ports tree in the basejail is shared by the other
 	  jails.  Updating that copy of the ports tree gives the other
@@ -38586,10 +38383,10 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
 	<primary><application>moused</application></primary>
       </indexterm>
 
-      <para>對於使用寬字元或多位元組字元的語言，需從 Ports 套件集安裝支援該語言的 Console。 可用的 Ports 摘要在 <xref linkend="locale-console"/>。安裝完成之後，請參考 Port 的 <filename>pkg-message</filename> 或操作手冊來取得設定及使用說明。</para>
+      <para>對於使用寬字元或多位元組字元的語言，需從 Port 套件集安裝支援該語言的 Console。 可用的 Port 摘要在 <xref linkend="locale-console"/>。安裝完成之後，請參考 Port 的 <filename>pkg-message</filename> 或操作手冊來取得設定及使用說明。</para>
 
       <table xml:id="locale-console" frame="none" pgwide="1">
-	<title>Ports 套件集中可用的 Console</title>
+	<title>Port 套件集中可用的 Console</title>
 
 	<tgroup cols="2">
 	  <thead>
@@ -38641,7 +38438,7 @@ keychange="<replaceable>fkey_number sequence</replaceable>"</programlisting>
     <sect2>
       <title>Xorg 設定</title>
 
-      <para><xref linkend="x11"/> 會說明如何安裝並設定 <application>Xorg</application>。當要設定 <application>Xorg</application> 在地化時，可從 FreeBSD Ports 套件集中取得其他可用的字型及輸入法。應用程式特定的 <acronym>i18n</acronym> 設定像是字型與選單，可以在 <filename>~/.Xresources</filename> 中調校且可允許使用者在圖型化應用程式選單檢視其所選擇的語言。</para>
+      <para><xref linkend="x11"/> 會說明如何安裝並設定 <application>Xorg</application>。當要設定 <application>Xorg</application> 在地化時，可從 FreeBSD Port 套件集中取得其他可用的字型及輸入法。應用程式特定的 <acronym>i18n</acronym> 設定像是字型與選單，可以在 <filename>~/.Xresources</filename> 中調校且可允許使用者在圖型化應用程式選單檢視其所選擇的語言。</para>
 
       <indexterm xml:lang="en"><primary>X Input Method (XIM)</primary></indexterm>
 
@@ -38865,9 +38662,9 @@ Not sure where to put this section, perhaps as a note in the File system chapter
 
     <para><acronym>i18n</acronym> 應用程式會使用 <acronym>i18n</acronym> 工具包做為程式庫開發。這讓開發人員可以寫一個簡單的檔案並翻譯顯示的選單及文字至各種語言。</para>
 
-    <para><link xlink:href="@@URL_RELPREFIX@@/ports/index.html">FreeBSD Ports 套件集</link>中含有許多內建支援寬字元或多位元組字元的應用程式可支援各種語言。該類型的應用程式在名稱上會註明 <literal>i18n</literal> 以易於辨識。雖然如此，但不一定支援您所需要的語言。</para>
+    <para><link xlink:href="@@URL_RELPREFIX@@/ports/index.html">FreeBSD Port 套件集</link>中含有許多內建支援寬字元或多位元組字元的應用程式可支援各種語言。該類型的應用程式在名稱上會註明 <literal>i18n</literal> 以易於辨識。雖然如此，但不一定支援您所需要的語言。</para>
 
-    <para>有一部份應用程式可以使用指定的字元集來編譯。通常會在 Port 的 <filename>Makefile</filename> 中設定，或者傳送參數給 <application>configure</application>。請參考各 FreeBSD Ports 原始碼中的 <acronym>i18n</acronym> 說明文件以取得更多有關需要的設定值資訊或 Port 的 <filename>Makefile</filename> 來了解在編譯時有那些可以使用的編譯選項。</para>
+    <para>有一部份應用程式可以使用指定的字元集來編譯。通常會在 Port 的 <filename>Makefile</filename> 中設定，或者傳送參數給 <application>configure</application>。請參考各 FreeBSD Port 原始碼中的 <acronym>i18n</acronym> 說明文件以取得更多有關需要的設定值資訊或 Port 的 <filename>Makefile</filename> 來了解在編譯時有那些可以使用的編譯選項。</para>
   </sect1>
 
   <sect1 xml:id="lang-setup">
@@ -39155,7 +38952,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
       </listitem>
 
       <listitem>
-	<para>如何使用 <application>Subversion</application> 或說明文件 Ports 來維持已安裝的文件為新版。</para>
+	<para>如何使用 <application>Subversion</application> 或說明文件 Port 來維持已安裝的文件為新版。</para>
       </listitem>
 
       <listitem>
@@ -39312,7 +39109,7 @@ Uninstalling updates... done.</screen>
     <sect2 xml:id="freebsdupdate-upgrade">
       <title>執行主要及次要版號升級</title>
 
-      <para>從 FreeBSD 的次要版本升級到另一個版本，例如從 FreeBSD 9.0 到 FreeBSD 9.1, 叫作 <firstterm>次要版本</firstterm>更新。 <firstterm>主要版本</firstterm>更新發生在當 FreeBSD 從一個主要版本升級到主要版本升級到另一個主要版本時，例如從 FreeBSD 9.X 到 FreeBSD 10.X。 兩種更新都可以透過提供 <command>freebsd-update</command> 目標的發佈版本來執行。</para>
+      <para>從 FreeBSD 的次要版本升級到另一個版本，例如從 FreeBSD 9.0 到 FreeBSD 9.1, 叫作 <firstterm>次要版本 (Minor version)</firstterm> 更新。 <firstterm>主要版本 (Major version)</firstterm> 更新發生在當 FreeBSD 從一個主要版本升級到主要版本升級到另一個主要版本時，例如從 FreeBSD 9.X 到 FreeBSD 10.X。 兩種更新都可以透過提供 <command>freebsd-update</command> 目標的發佈版本來執行。</para>
 
       <note>
 	<para>如果系統正在執行自訂的核心，請在開始升級前，確定有保留一份 <filename>GENERIC</filename> 核心的複本在 <filename>/boot/GENERIC</filename>。 請參考 <xref linkend="freebsd-update-custom-kernel-9x"/> 關於如何取得 <filename>GENERIC</filename> 核心複本的說明。</para>
@@ -39380,7 +39177,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	<para>取決於是否有任何程式庫版本編號衝突，也可能只有兩個而不是三個安裝階段。</para>
       </note>
 
-      <para>升級程序現在完成了。如果所做的是主要的版本升級，則需依 <xref linkend="freebsdupdate-portsrebuild"/> 的說明重新安裝所有的 Ports 和套件。</para>
+      <para>升級程序現在完成了。如果所做的是主要的版本升級，則需依 <xref linkend="freebsdupdate-portsrebuild"/> 的說明重新安裝所有的 Port 和套件。</para>
 
       <sect3 xml:id="freebsd-update-custom-kernel-9x">
 	<title>在 FreeBSD 9.X 及之後版本自訂核心</title>
@@ -39406,7 +39203,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <sect3 xml:id="freebsdupdate-portsrebuild">
 	<title>主要版號升級後的套件升級</title>
 
-	<para>一般來說，已安裝的應用程式在次要版本升級仍可沒問題的正常執行。但主要版本升級會採用不同的應用程式 Binary 介面 (Application Binary Interfaces, <acronym>ABI</acronym>s)，會導致大部份第三方應用程式無法正常執行。 因此在主要版本升級後，需要升及所有已安裝的套件和 Ports，套件可以使用 <command>pkg upgrade</command> 來升級，而 Ports 則需使用 <package>ports-mgmt/portmaster</package> 工具。</para>
+	<para>一般來說，已安裝的應用程式在次要版本升級仍可沒問題的正常執行。但主要版本升級會採用不同的應用程式 Binary 介面 (Application Binary Interfaces, <acronym>ABI</acronym>s)，會導致大部份第三方應用程式無法正常執行。 因此在主要版本升級後，需要升及所有已安裝的套件和 Port，套件可以使用 <command>pkg upgrade</command> 來升級，而 Port 則需使用 <package>ports-mgmt/portmaster</package> 工具。</para>
 
 	<para>強制升級所有已安裝的套件會使用檔案庫中新版本的套件來取得目前套件，即使該版號沒有增加。由於在升級 FreeBSD 主要版本時會變更 ABI 版本，因此這是必要動作。強制升級可以執行以下指令來完成：</para>
 
@@ -39467,7 +39264,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 
     <para>文件是 FreeBSD 作業系統不可或缺的一部份。在最新版本的 FreeBSD 文件可在 FreeBSD 網站 (<link xlink:href="@@URL_RELPREFIX@@/doc/">http://www.freebsd.org/doc/</link>) 取得的同時，也可很簡單的取得 FreeBSD 網站、使用手冊、<acronym>FAQ</acronym> 及文章的本地複本。</para>
 
-    <para>本節將說明如何使用原始碼與 FreeBSD Ports 套件集來取得最新版本 FreeBSD 文件本地複本。</para>
+    <para>本節將說明如何使用原始碼與 FreeBSD Port 套件集來取得最新版本 FreeBSD 文件本地複本。</para>
 
     <para>要取得編輯與提出修正文件相關的資訊請參考 FreeBSD 文件計畫入門書 (<link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/books/fdp-primer">http://www.freebsd.org/doc/zh_TW.UTF-8/books/fdp-primer/</link>)。</para>
 
@@ -39542,7 +39339,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 
     <sect2 xml:id="doc-ports-install-package">
       <info>
-	<title>自 Ports 更新說明文件</title>
+	<title>自 Port 更新說明文件</title>
 
 	<authorgroup>
 	  <author xml:lang="en">
@@ -39564,7 +39361,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	<see>Updating and Upgrading</see>
       </indexterm>
 
-      <para>前一節介紹了由原始碼更新 FreeBSD 文件的方法，本節將說明使用 Ports 套件集的替代方法，可由以下方式達成：</para>
+      <para>前一節介紹了由原始碼更新 FreeBSD 文件的方法，本節將說明使用 Port 套件集的替代方法，可由以下方式達成：</para>
 
       <itemizedlist>
 	<listitem>
@@ -39572,13 +39369,13 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	</listitem>
 
 	<listitem>
-	  <para>使用 Ports 框架來編譯文件原始碼，可讓取得與編譯文件的步驟更簡單。</para>
+	  <para>使用 Port 框架來編譯文件原始碼，可讓取得與編譯文件的步驟更簡單。</para>
 	</listitem>
       </itemizedlist>
 
-      <para>這個更新 FreeBSD 文件的方法，會使用到一系列由文件工程團隊 <email>doceng@FreeBSD.org</email> 每月更新的文件 Ports 與套件。這些套件列於 FreeBSD Ports 套件集的 docs 分類下 (<link xlink:href="http://www.freshports.org/docs/">http://www.freshports.org/docs/</link>)。</para>
+      <para>這個更新 FreeBSD 文件的方法，會使用到一系列由文件工程團隊 <email>doceng@FreeBSD.org</email> 每月更新的文件 Port 與套件。這些套件列於 FreeBSD Port 套件集的 docs 分類下 (<link xlink:href="http://www.freshports.org/docs/">http://www.freshports.org/docs/</link>)。</para>
 
-      <para>文件 Ports 的組織方式如下：</para>
+      <para>文件 Port 的組織方式如下：</para>
 
       <itemizedlist>
 	<listitem>
@@ -39599,7 +39396,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install hu-freebsd-doc</userinput></screen>
 
       <note>
-	<para>套件使用的名稱格式與 Ports 的名稱不同：<literal><replaceable>lang</replaceable>-freebsd-doc</literal>，其中 <replaceable>lang</replaceable> 是語言代碼的縮寫，例如 <literal>hu</literal> 代表匈牙利語，<literal>zh_cn</literal> 代表簡體中文。</para>
+	<para>套件使用的名稱格式與 Port 的名稱不同：<literal><replaceable>lang</replaceable>-freebsd-doc</literal>，其中 <replaceable>lang</replaceable> 是語言代碼的縮寫，例如 <literal>hu</literal> 代表匈牙利語，<literal>zh_cn</literal> 代表簡體中文。</para>
       </note>
 
       <para>要指定文件的格式，需以編譯 Port 來代替安裝套件。例如要編譯並安裝英語文件：</para>
@@ -39607,9 +39404,9 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/misc/freebsd-doc-en</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para>Ports 提供設定選單來指定要編譯與安裝的格式，預設為分頁的 <acronym>HTML</acronym>　(類似 <uri xlink:href="http://www.FreeBSD.org">http://www.FreeBSD.org</uri> 使用的格式) 以及 <acronym>PDF</acronym>。</para>
+      <para>Port 提供設定選單來指定要編譯與安裝的格式，預設為分頁的 <acronym>HTML</acronym>　(類似 <uri xlink:href="http://www.FreeBSD.org">http://www.FreeBSD.org</uri> 使用的格式) 以及 <acronym>PDF</acronym>。</para>
 
-      <para>此外，編譯文件 Ports 時也可指定數個 <command>make</command> 選項，包括：</para>
+      <para>此外，編譯文件 Port 時也可指定數個 <command>make</command> 選項，包括：</para>
 
       <variablelist>
 	<varlistentry>
@@ -39642,7 +39439,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <screen xml:lang="en"><prompt>#</prompt> cd /usr/ports/misc/freebsd-doc-hu
 <prompt>#</prompt> make -DWITH_PDF DOCBASE=share/doc/freebsd/hu install clean</screen>
 
-      <para>文件套件或 Ports 可以依 <xref linkend="ports"/> 的說明更新。例如以下指令會使用 <package>ports-mgmt/portmaster</package> 更新已安裝的匈牙利語文件：</para>
+      <para>文件套件或 Port 可以依 <xref linkend="ports"/> 的說明更新。例如以下指令會使用 <package>ports-mgmt/portmaster</package> 更新已安裝的匈牙利語文件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster -PP hu-freebsd-doc</userinput></screen>
     </sect2>
@@ -39937,7 +39734,7 @@ Script started, output file is /var/tmp/mw.out</screen>
 	</step>
 
 	<step>
-	  <para>確認所有已安裝的 Ports 在舊的程式庫移除前已依照 <xref linkend="ports-upgrading"/> 的說明重新編譯。當重新編譯完成後，移除過時的程式庫來避免與新的程式庫發生衝突。有關此步驟更詳細的說明請參考 <xref linkend="make-delete-old"/>。</para>
+	  <para>確認所有已安裝的 Port 在舊的程式庫移除前已依照 <xref linkend="ports-upgrading"/> 的說明重新編譯。當重新編譯完成後，移除過時的程式庫來避免與新的程式庫發生衝突。有關此步驟更詳細的說明請參考 <xref linkend="make-delete-old"/>。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old-libs</userinput></screen>
 	</step>
