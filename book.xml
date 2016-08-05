@@ -5930,7 +5930,7 @@ Swap: 2048M Total, 2048M Free
       <primary>Bourne shells</primary>
     </indexterm>
 
-    <para>在不同的 shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 setenv 來設定環境變數。 在 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <command>bash</command> 使用 <command>export</command>，則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>：</para>
+    <para>在不同的 Shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 <command>setenv</command> 來設定環境變數。 在 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <command>bash</command> 則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> Shell 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>setenv EDITOR /usr/local/bin/emacs</userinput></screen>
 

@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-08-02 16:53+0800\n"
-"PO-Revision-Date: 2016-08-05 19:05+0800\n"
+"POT-Creation-Date: 2016-08-05 19:23+0800\n"
+"PO-Revision-Date: 2016-08-05 19:28+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -8421,8 +8421,8 @@ msgid ""
 "<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <command>bash</command>, use <command>export</command> to set the current environment variables. This example sets the default <envar>EDITOR</envar> to <filename>/usr/local/bin/emacs</filename> for the <citerefentry><refentrytitle>tcsh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> shell:"
 msgstr ""
-"在不同的 shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 setenv 來設定環境變數。 在 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</"
-"manvolnum></citerefentry> 和 <command>bash</command> 使用 <command>export</command>，則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>："
+"在不同的 Shell 底下設定環境變數的方式也有所不同。 在 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></citerefentry>，使用 <command>setenv</command> 來設定環境變數。 在 <citerefentry><refentrytitle>sh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> 和 <command>bash</command> 則使用 <command>export</command> 來設定目前環境的變數。 以下範例將 <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></citerefentry> Shell 下的 <envar>EDITOR</envar> 環境變數從預設值更改為 <filename>/usr/local/bin/emacs</filename>："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8522
