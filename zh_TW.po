@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-08-02 16:53+0800\n"
-"PO-Revision-Date: 2016-08-05 18:36+0800\n"
+"PO-Revision-Date: 2016-08-05 19:05+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -12218,7 +12218,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:11900
 msgid "This section describes how to install three popular desktop environments on a FreeBSD system. A desktop environment can range from a simple window manager to a complete suite of desktop applications. Over a hundred desktop environments are available in the <filename>x11-wm</filename> category of the Ports Collection."
-msgstr ""
+msgstr "本節將介紹如何在 FreeBSD 系統安裝三種熱門的桌面環境。一套桌面環境的範圍可從簡單的視窗管理程式到完整的桌面應用程式集。有上百套的桌面環境可在 Port 套件集的 <filename>x11-wm</filename> 分類取得。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11908
@@ -12235,7 +12235,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11922
 msgid "This desktop environment can be installed from a package:"
-msgstr ""
+msgstr "這套桌面環境可以從套件安裝:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11925
@@ -12246,7 +12246,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11927
 msgid "To instead build <application>GNOME</application> from ports, use the following command. <application>GNOME</application> is a large application and will take some time to compile, even on a fast computer."
-msgstr ""
+msgstr "也可使用以下指令從 Port 編譯 <application>GNOME</application>，<application>GNOME</application> 是一套大型的應用程式，即使在速度較快的電腦上，也會需要花費一些時間編譯。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11933
@@ -12259,7 +12259,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11936
 msgid "<application>GNOME</application> requires <filename>/proc</filename> to be mounted. Add this line to <filename>/etc/fstab</filename> to mount this file system automatically during system startup:"
-msgstr ""
+msgstr "<application>GNOME</application> 需要掛載 <filename>/proc</filename>。加入下行到 <filename>/etc/fstab</filename> 讓系統啟動時會自動掛載這個檔案系統。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11941 book.translate.xml:12032
@@ -12272,7 +12272,7 @@ msgstr ""
 msgid ""
 "<application>GNOME</application> uses <application>D-Bus</application> and <application>HAL</application> for a message bus and hardware abstraction. These applications are automatically installed as dependencies of <application>GNOME</application>. Enable them in <filename>/etc/rc.conf</filename> so they will be started when the "
 "system boots:"
-msgstr ""
+msgstr "<application>GNOME</application> 使用了 <application>D-Bus</application> 以及 <application>HAL</application> 的 Message bus 與 Hardware abstraction。這兩個應用程式會隨著 <application>GNOME</application> 的相依一併自動安裝，但需要在 <filename>/etc/rc.conf</filename> 開啟，這樣在系統開機時才會啟動:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11951 book.translate.xml:12042
@@ -12287,7 +12287,7 @@ msgstr ""
 msgid ""
 "After installation, configure <application>Xorg</application> to start <application>GNOME</application>. The easiest way to do this is to enable the GNOME Display Manager, <application>GDM</application>, which is installed as part of the <application>GNOME</application> package or port. It can be enabled by adding this line to "
 "<filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "安裝完之後，需設定讓 <application>Xorg</application> 啟動 <application>GNOME</application>。最簡單的方法是開啟 GNOME Display Manager, <application>GDM</application>，該程式已做為 <application>GNOME</application> 套件或 Port 的一部份安裝了，可加入下行到 <filename>/etc/rc.conf</filename> 來開啟:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11963
@@ -12298,7 +12298,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11965
 msgid "It is often desirable to also start all <application>GNOME</application> services. To achieve this, add a second line to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "通常也會需要啟動所有的 <application>GNOME</application> 服務，可加入下行到 <filename>/etc/rc.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11969
@@ -12309,14 +12309,14 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11971
 msgid "<application>GDM</application> will start automatically when the system boots."
-msgstr ""
+msgstr "<application>GDM</application> 則會在系統開機時自動啟動。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11974
 msgid ""
 "A second method for starting <application>GNOME</application> is to type <command>startx</command> from the command-line after configuring <filename>~/.xinitrc</filename>. If this file already exists, replace the line that starts the current window manager with one that starts <filename>/usr/local/bin/gnome-session</filename>. If this "
 "file does not exist, create it with this command:"
-msgstr ""
+msgstr "第二種啟動 <application>GNOME</application> 的方法是在設定完 <filename>~/.xinitrc</filename> 後在指令列輸入 <command>startx</command>。若這個檔案已經存在，替換啟動目前視窗管理程式的那一行，改為啟動 <filename>/usr/local/bin/gnome-session</filename>。若檔案不存在，則使用以下指令建立一個:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11983
@@ -12327,7 +12327,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11985
 msgid "A third method is to use <application>XDM</application> as the display manager. In this case, create an executable <filename>~/.xsession</filename>:"
-msgstr ""
+msgstr "第三種方法是使用 <application>XDM</application> 做為顯示管理程式，在這個方法需要建立一個可執行的 <filename>~/.xsession</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11989
