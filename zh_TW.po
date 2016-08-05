@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-08-02 16:53+0800\n"
-"PO-Revision-Date: 2016-08-04 14:23+0800\n"
+"PO-Revision-Date: 2016-08-05 18:12+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -8508,12 +8508,12 @@ msgstr ""
 msgid ""
 "The <trademark class=\"registered\">UNIX</trademark> shell is not just a command interpreter, it acts as a powerful tool which allows users to execute commands, redirect their output, redirect their input and chain commands together to improve the final command output. When this functionality is mixed with built in commands, the user "
 "is provided with an environment that can maximize efficiency."
-msgstr "<trademark class=\"registered\">UNIX</trademark> Shell 不只是指令的直譯器，它是一個強大的工具可讓使用者執行指令、重導指令的輸出、重導指令的輸入並將指令串連在一起來改進最終指令的輸出結果。當這個功能與內建的指令混合使用時，可提供一個可以最佳化效率的環境給使用者。"
+msgstr "<trademark class=\"registered\">UNIX</trademark> Shell 不只是指令的直譯器，它是一個強大的工具可讓使用者執行指令、重新導向指令的輸出、重新導向指令的輸入並將指令串連在一起來改進最終指令的輸出結果。當這個功能與內建的指令混合使用時，可提供一個可以最佳化效率的環境給使用者。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8605
 msgid "Shell redirection is the action of sending the output or the input of a command into another command or into a file. To capture the output of the <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> command, for example, into a file, redirect the output:"
-msgstr ""
+msgstr "Shell 重新導向是將一個指令的輸出或輸入傳送給另一個指令或檔案。例如，要擷取 <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令的輸出到一個檔案，可以重新導向輸出:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8610
@@ -8524,7 +8524,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:8612
 msgid "The directory contents will now be listed in <filename>directory_listing.txt</filename>. Some commands can be used to read input, such as <citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</manvolnum></citerefentry>. To sort this listing, redirect the input:"
-msgstr ""
+msgstr "目錄的內容現在會列到 <filename>directory_listing.txt</filename> 中，部份指令可以讀取輸入，例如 <citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</manvolnum></citerefentry>。要排序這個清單，可重新導向輸入:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8617
@@ -8535,7 +8535,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:8619
 msgid "The input will be sorted and placed on the screen. To redirect that input into another file, one could redirect the output of <citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</manvolnum></citerefentry> by mixing the direction:"
-msgstr ""
+msgstr "輸入的內容會被排序後呈現在畫面上，要重新導向該輸入到另一個檔案，可以重新導向 <citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的出輸:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8623
@@ -8549,16 +8549,18 @@ msgid ""
 "In all of the previous examples, the commands are performing redirection using file descriptors. Every <trademark class=\"registered\">UNIX</trademark> system has file descriptors, which include standard input (stdin), standard output (stdout), and standard error (stderr). Each one has a purpose, where input could be a keyboard or a "
 "mouse, something that provides input. Output could be a screen or paper in a printer. And error would be anything that is used for diagnostic or error messages. All three are considered <acronym>I/O</acronym> based file descriptors and sometimes considered streams."
 msgstr ""
+"於上述所有的範例中，指令會透過檔案描述符 (File descriptor) 來執行重新導向。每個 <trademark class=\"registered\">UNIX</trademark> 系統都有檔案描述符，其中包含了標準輸入 (stdin)、標準輸出 (stdout) 以及標準錯誤 (stderr)。每一種檔案描述符都有特定的用途，輸入可能來自鍵盤或滑鼠、任何可能提供輸入的來源，輸出則可能是螢幕或印表機中的紙張，而錯誤"
+"則為任何可能用來診斷的資訊或錯誤訊息。這三種皆被認為是以 I/O 為基礎的檔案描述符，有些也會被當做串流。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8636
 msgid "Through the use of these descriptors, the shell allows output and input to be passed around through various commands and redirected to or from a file. Another method of redirection is the pipe operator."
-msgstr ""
+msgstr "透過使用這些檔案描述符，Shell 能夠讓輸出與輸入在各種指令間傳遞與重新導向到或自檔案。另一種重新導向的方式是使用管線運算子 (Pipe operator)。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8641
 msgid "The <trademark class=\"registered\">UNIX</trademark> pipe operator, <quote>|</quote> allows the output of one command to be directly passed or directed to another program. Basically, a pipe allows the standard output of a command to be passed as standard input to another command, for example:"
-msgstr ""
+msgstr "<trademark class=\"registered\">UNIX</trademark> 的管線運算子，即 <quote>|</quote>，可允許指令的輸出可直接傳遞或導向到另一個程式。基本上，管線運算子允許指令的標準輸出以標準輸入傳遞給另一個指令，例如:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8647
@@ -8569,7 +8571,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:8649
 msgid "In that example, the contents of <filename>directory_listing.txt</filename> will be sorted and the output passed to <citerefentry><refentrytitle>less</refentrytitle><manvolnum>1</manvolnum></citerefentry>. This allows the user to scroll through the output at their own pace and prevent it from scrolling off the screen."
-msgstr ""
+msgstr "在這個例子中，<filename>directory_listing.txt</filename> 的內容會被排序然後輸出傳遞給 <citerefentry><refentrytitle>less</refentrytitle><manvolnum>1</manvolnum></citerefentry>，這可讓使用者依自己的閱讀步調捲動輸出的結果，避免結果直接捲動出畫面。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8658
@@ -11336,7 +11338,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:11131
 msgid "This shows that the <literal>DVI-0</literal> output is being used to display a screen resolution of 1920x1200 pixels at a refresh rate of about 60 Hz. Monitors are not attached to the <literal>DisplayPort-0</literal> and <literal>HDMI-0</literal> connectors."
-msgstr "這表示 <literal>DVI-0</literal> 輸出被用來顯示解析度為 1920x1200 像素於更新頻率約 60 Hz 的畫面，未有顯示器連接到 <literal>DisplayPort-0</literal> 與 <literal>HDMI-0</literal> 接頭。"
+msgstr "這個結果顯示 <literal>DVI-0</literal> 輸出被用來顯示解析度為 1920x1200 像素於更新頻率約 60 Hz 的畫面，未有顯示器連接到 <literal>DisplayPort-0</literal> 與 <literal>HDMI-0</literal> 接頭。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11138
@@ -11388,7 +11390,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:11174
 msgid "Four outputs were found: the built-in panel <literal>LVDS1</literal>, and external <literal>VGA1</literal>, <literal>HDMI1</literal>, and <literal>DP1</literal> connectors."
-msgstr "找到四個輸出: 內建面板的 <literal>LVDS1</literal>，外接的 <literal>VGA1</literal>, <literal>HDMI1</literal> 以及 <literal>DP1</literal> 接頭。"
+msgstr "已找到四個輸出: 內建面板的 <literal>LVDS1</literal>，外接的 <literal>VGA1</literal>, <literal>HDMI1</literal> 以及 <literal>DP1</literal> 接頭。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11179
@@ -12036,14 +12038,14 @@ msgstr ""
 #: book.translate.xml:11731
 msgid ""
 "<application>Xorg</application> provides an X Display Manager, <application>XDM</application>, which can be used for login session management. <application>XDM</application> provides a graphical interface for choosing which display server to connect to and for entering authorization information such as a login and password combination."
-msgstr ""
+msgstr "<application>Xorg</application> 提供了 X 顯示管理程式 (X Display Manager, <application>XDM</application>)，可用來做登入階段的管理。<application>XDM</application> 提供了一個圖型化的介面來選擇要連結的顯示伺服器以及輸入認証資訊 (登入與密碼)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11738
 msgid ""
 "This section demonstrates how to configure the X Display Manager on FreeBSD. Some desktop environments provide their own graphical login manager. Refer to <xref linkend=\"x11-wm-gnome\"/> for instructions on how to configure the GNOME Display Manager and <xref linkend=\"x11-wm-kde\"/> for instructions on how to configure the KDE "
 "Display Manager."
-msgstr ""
+msgstr "本節將示範如何設定 FreeBSD 的 X 顯示管理程式。部份桌面環境會提供自己的圖型化登入管理程式，請參考 <xref linkend=\"x11-wm-gnome\"/> 取得如何設定 GNOME 顯示管理程式 (GNOME Display Manager) 的操作方式以及 <xref linkend=\"x11-wm-kde\"/> 取得如何設定 KDE 顯示管理程式 (KDE Display Manager) 的操作方式。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11745
@@ -12053,7 +12055,7 @@ msgstr "設定 <application>XDM</application>"
 #. (itstool) path: sect2/para
 #: book.translate.xml:11747
 msgid "To install <application>XDM</application>, use the <package>x11/xdm</package> package or port. Once installed, <application>XDM</application> can be configured to run when the machine boots up by editing this entry in <filename>/etc/ttys</filename>:"
-msgstr ""
+msgstr "要安裝 <application>XDM</application> 可使用 <package>x11/xdm</package> 套件或 Port。安裝完成之後，可設定 <application>XDM</application> 在開機時執行，只需編輯 <filename>/etc/ttys</filename> 中的此項目:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11753
@@ -12064,7 +12066,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11755
 msgid "Change the <literal>off</literal> to <literal>on</literal> and save the edit. The <literal>ttyv8</literal> in this entry indicates that <application>XDM</application> will run on the ninth virtual terminal."
-msgstr ""
+msgstr "更改關 (<literal>off</literal>) 為開 (<literal>on</literal>) 然後儲存編輯。在此項目中的 <literal>ttyv8</literal> 代表 <application>XDM</application> 會在第 9 個虛擬終端機執行。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11760
@@ -12072,6 +12074,8 @@ msgid ""
 "The <application>XDM</application> configuration directory is located in <filename>/usr/local/lib/X11/xdm</filename>. This directory contains several files used to change the behavior and appearance of <application>XDM</application>, as well as a few scripts and programs used to set up the desktop when <application>XDM</application> is "
 "running. <xref linkend=\"xdm-config-files\"/> summarizes the function of each of these files. The exact syntax and usage of these files is described in <citerefentry vendor=\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"<application>XDM</application> 的設定目錄位於 <filename>/usr/local/lib/X11/xdm</filename>。此目錄中包含數個可用來更改 <application>XDM</application> 行為與外觀的檔案以及在 <application>XDM</application> 執行時用來設定桌面的一些  Script 及程式，<xref linkend=\"xdm-config-files\"/> 摘要了每個檔案的功能。這些檔案正確的語法與用法在 "
+"<citerefentry vendor=\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> 有說明。"
 
 #. (itstool) path: table/title
 #: book.translate.xml:11770
@@ -12091,7 +12095,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:11783
 msgid "The protocol for connecting to <application>XDM</application> is called the X Display Manager Connection Protocol (<acronym>XDMCP</acronym>) This file is a client authorization ruleset for controlling <acronym>XDMCP</acronym> connections from remote machines. By default, this file does not allow any remote clients to connect."
-msgstr ""
+msgstr "連線到 <application>XDM</application> 所需的通訊協定稱做 X 顯示管理程式連線通訊協定  (X Display Manager Connection Protocol, <acronym>XDMCP</acronym>)，此檔案為客戶端認証規則，用來控制來自遠端機器的 <acronym>XDMCP</acronym> 連線。預設此檔案並不允許任何遠端的客戶端連線。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11793
@@ -12103,7 +12107,7 @@ msgstr ""
 msgid ""
 "This file controls the look and feel of the <application>XDM</application> display chooser and login screens. The default configuration is a simple rectangular login window with the hostname of the machine displayed at the top in a large font and <quote>Login:</quote> and <quote>Password:</quote> prompts below. The format of this file "
 "is identical to the app-defaults file described in the <application>Xorg</application> documentation."
-msgstr ""
+msgstr "此檔案控制 <application>XDM</application> 顯示選擇器及登入畫面的外觀。預設的設定簡單的矩形登入視窗，上方用較大的字型顯示機器的主機名稱，並在下方顯示 <quote>Login:</quote> 與 <quote>Password:</quote> 提示。此檔案的格式與 <application>Xorg</application> 說明文件中說明的 app-defaults 檔相同。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11807
@@ -12113,7 +12117,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:11808
 msgid "The list of local and remote displays the chooser should provide as login choices."
-msgstr ""
+msgstr "登入選擇時在選擇器上要提供的本地及遠端顯示清單。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11813
@@ -12123,7 +12127,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:11814
 msgid "Default session script for logins which is run by <application>XDM</application> after a user has logged in. Normally each user will have a customized session script in <filename>~/.xsession</filename> that overrides this script"
-msgstr ""
+msgstr "預設的登入階段 Script，使用者登入之後由 <application>XDM</application> 執行。一般每一位使用者都會有自訂的階段 Script 在 <filename>~/.xsession</filename> 來覆蓋此 Script 的設定。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11822
@@ -12134,7 +12138,7 @@ msgstr ""
 #: book.translate.xml:11823
 msgid ""
 "Script to automatically launch applications before displaying the chooser or login interfaces. There is a script for each display being used, named <filename>Xsetup_*</filename>, where <literal>*</literal> is the local display number. Typically these scripts run one or two programs in the background such as <command>xconsole</command>."
-msgstr ""
+msgstr "用來在顯示選擇器與登入介面之前自動執行應用程式的 Script。每一個顯示各有一個 Script，名稱為 <filename>Xsetup_*</filename>，其中 <literal>*</literal> 為本地顯示編號。正常情況這些 Script 會在背景執行一兩個程式，例如 <command>xconsole</command>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11834
@@ -12144,7 +12148,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:11835
 msgid "Global configuration for all displays running on this machine."
-msgstr ""
+msgstr "用來設定所有在此機器上執行的顯示的全域設定檔。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11840
@@ -12154,7 +12158,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:11841
 msgid "Contains errors generated by the server program. If a display that <application>XDM</application> is trying to start hangs, look at this file for error messages. These messages are also written to the user's <filename>~/.xsession-errors</filename> on a per-session basis."
-msgstr ""
+msgstr "內含由伺服器程式產生的錯誤訊息，若 <application>XDM</application> 嘗試啟動的顯示沒有回應，可查看此檔案來取得錯誤訊息。以登入階段為基礎，這些訊息也同樣會寫入至使用者的 <filename>~/.xsession-errors</filename>。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11850
@@ -12164,7 +12168,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:11851
 msgid "The running process <acronym>ID</acronym> of <application>XDM</application>."
-msgstr ""
+msgstr "<application>XDM</application> 的執行程序 <acronym>ID</acronym>。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11860
@@ -12174,12 +12178,12 @@ msgstr "設定遠端存取"
 #. (itstool) path: sect2/para
 #: book.translate.xml:11862
 msgid "By default, only users on the same system can login using <application>XDM</application>. To enable users on other systems to connect to the display server, edit the access control rules and enable the connection listener."
-msgstr ""
+msgstr "預設只有同系統的使用者可以使用 <application>XDM</application> 登入。要開啟讓其他系統的使用者可連線到顯示伺服器，需編輯存取控制規則及開啟連線傾聽程式。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11867
 msgid "To configure <application>XDM</application> to listen for any remote connection, comment out the <literal>DisplayManager.requestPort</literal> line in <filename>/usr/local/lib/X11/xdm/xdm-config</filename> by putting a <literal>!</literal> in front of it:"
-msgstr ""
+msgstr "要設定 <application>XDM</application> 傾聽作何遠端的連線，在 <filename>/usr/local/lib/X11/xdm/xdm-config</filename> 中的 <literal>DisplayManager.requestPort</literal> 行前加上 <literal>!</literal> 來註解該行:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11873
@@ -12193,7 +12197,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11877
 msgid "Save the edits and restart <application>XDM</application>. To restrict remote access, look at the example entries in <filename>/usr/local/lib/X11/xdm/Xaccess</filename> and refer to <citerefentry vendor=\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> for further information."
-msgstr ""
+msgstr "儲存編輯並重新啟動 <application>XDM</application>，要限制遠端存取，請看 <filename>/usr/local/lib/X11/xdm/Xaccess</filename> 中的範例項目，並參考 <citerefentry vendor=\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> 取得進一步資訊。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:11886
