@@ -2491,39 +2491,21 @@ commit your changes?</programlisting>
     <sect2 xml:id="bsdinstall-starting-i386">
       <title>在 <trademark>i386</trademark> 及 amd64 開機</title>
 
-      <para xml:lang="en">These architectures provide a <acronym>BIOS</acronym>
-	menu for selecting the boot device.  Depending upon the
-	installation media being used, select the
-	<acronym>CD</acronym>/<acronym>DVD</acronym> or
-	<acronym>USB</acronym> device as the first boot device.  Most
-	systems also provide a key for selecting the boot device
-	during startup without having to enter the
-	<acronym>BIOS</acronym>.  Typically, the key is either
-	<keycap>F10</keycap>, <keycap>F11</keycap>,
-	<keycap>F12</keycap>, or <keycap>Escape</keycap>.</para>
+      <para>這兩種架構提供了 <acronym>BIOS</acronym> 選單可選擇開機的裝置，依據要使用的安裝媒體類型，選擇 <acronym>CD</acronym>/<acronym>DVD</acronym> 或 <acronym>USB</acronym> 裝置做為第一個開機裝置。大多數的系統也會提供快速鍵可在啟動時選擇開機裝置，而不需要進入<acronym>BIOS</acronym>，通常這個按鍵可能是 <keycap>F10</keycap>, <keycap>F11</keycap>, <keycap>F12</keycap> 或 <keycap>Escape</keycap> 其中之一。</para>
 
-      <para xml:lang="en">If the computer loads the existing operating system
-	instead of the FreeBSD installer, then either:</para>
+      <para>若電腦仍載入了現有的作業系統，而不是 FreeBSD 安裝程式，原因可能為:</para>
 
       <orderedlist>
 	<listitem>
-	  <para xml:lang="en">The installation media was not inserted early enough
-	    in the boot process.  Leave the media inserted and try
-	    restarting the computer.</para>
+	  <para>執行開機程序時安裝媒體插入主機的時間不夠早，請讓安裝媒體留在電腦中並重新啟動電腦。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">The <acronym>BIOS</acronym> changes were incorrect or
-	    not saved.  Double-check that the right boot device is
-	    selected as the first boot device.</para>
+	  <para>未正確修改 <acronym>BIOS</acronym> 或未儲檔，請再三檢查第一個開機裝置選擇了正確的裝置。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">This system is too old to support booting from the
-	    chosen media.  In this case, the <application>Plop Boot
-	      Manager</application> (<link xlink:href="http://www.plop.at/en/bootmanagers.html"/>)
-	    can be used to boot the system from the selected
-	    media.</para>
+	  <para>系統太舊，無法支援使用選擇的開機媒體開機，發生這個情況可以使用 <application>Plop Boot Manager</application> (<link xlink:href="http://www.plop.at/en/bootmanagers.html"/>) 來從選擇的開機媒體開機。</para>
 	</listitem>
       </orderedlist>
     </sect2>
@@ -2531,21 +2513,7 @@ commit your changes?</programlisting>
     <sect2>
       <title>在 <trademark class="registered">PowerPC</trademark> 開機</title>
 
-      <para xml:lang="en">On most machines, holding <keycap>C</keycap> on the
-	keyboard during boot will boot from the <acronym>CD</acronym>.
-	Otherwise, hold <keycombo action="simul">
-	  <keycap>Command</keycap>
-	  <keycap>Option</keycap>
-	  <keycap>O</keycap>
-	  <keycap>F</keycap>
-	</keycombo>, or
-	<keycombo action="simul">
-	  <keycap>Windows</keycap>
-	  <keycap>Alt</keycap>
-	  <keycap>O</keycap>
-	  <keycap>F</keycap>
-	</keycombo> on non-<trademark class="registered">Apple</trademark> keyboards.  At the
-	<prompt>0 &gt;</prompt> prompt, enter</para>
+      <para>在大部份機型，可於開機時按住鍵盤上的 <keycap>C</keycap>，便可從 <acronym>CD</acronym> 開機。若在非 <trademark class="registered">Apple</trademark> 的鍵盤則可按住 <keycombo action="simul"> <keycap>Command</keycap> <keycap>Option</keycap> <keycap>O</keycap> <keycap>F</keycap> </keycombo> 或 <keycombo action="simul"> <keycap>Windows</keycap> <keycap>Alt</keycap> <keycap>O</keycap> <keycap>F</keycap> </keycombo>，出現 <prompt>0 &gt;</prompt> 提示時，輸入</para>
 
       <screen xml:lang="en"><userinput>boot cd:,\ppc\loader cd:0</userinput></screen>
     </sect2>
@@ -2553,34 +2521,18 @@ commit your changes?</programlisting>
     <sect2>
       <title>在 <trademark class="registered">SPARC64</trademark> 開機</title>
 
-      <para xml:lang="en">Most <trademark class="registered">SPARC64</trademark> systems are set up to boot automatically
-	from disk.  To install FreeBSD from a <acronym>CD</acronym>
-	requires a break into the <acronym>PROM</acronym>.</para>
+      <para>大多數 <trademark class="registered">SPARC64</trademark> 系統會自動從磁碟開機，要從 <acronym>CD</acronym> 安裝 FreeBSD 需要進入 <acronym>PROM</acronym>。</para>
 
-      <para xml:lang="en">To do this, reboot the system and wait until the boot
-	message appears.  The message depends on the model, but should
-	look something like this:</para>
+      <para>要進入 <acronym>PROM</acronym>，需重新開機系統然後等候開機訊息出現。訊息會依機型而有所不同，但大致結果會如:</para>
 
       <screen xml:lang="en">Sun Blade 100 (UltraSPARC-IIe), Keyboard Present
 Copyright 1998-2001 Sun Microsystems, Inc.  All rights reserved.
 OpenBoot 4.2, 128 MB memory installed, Serial #51090132.
 Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 
-      <para xml:lang="en">If the system proceeds to boot from disk at this point,
-	press <keycombo action="simul"><keycap>L1</keycap><keycap>A</keycap></keycombo>
-	or <keycombo action="simul"><keycap>Stop</keycap><keycap>A</keycap></keycombo>
-	on the keyboard, or send a <command>BREAK</command> over the
-	serial console.  When using <application>tip</application> or
-	<application>cu</application>, <command>~#</command> will
-	issue a BREAK. The <acronym>PROM</acronym> prompt will be
-	<prompt>ok</prompt> on systems with one
-	<acronym>CPU</acronym> and <prompt>ok {0} </prompt> on
-	<acronym>SMP</acronym> systems, where the digit indicates the
-	number of the active <acronym>CPU</acronym>.</para>
+      <para>若系統繼續從磁碟開機，此時按下鍵盤上的 <keycombo action="simul"><keycap>L1</keycap><keycap>A</keycap></keycombo> 或 <keycombo action="simul"><keycap>Stop</keycap><keycap>A</keycap></keycombo> 或透過序列 Console 送出 <command>BREAK</command>。當使用 <application>tip</application> 或 <application>cu</application>, <command>~#</command> 發出一個 BREAK 後，<acronym>PROM</acronym> 的提示會在單 <acronym>CPU</acronym> 的系統出現 <prompt>ok</prompt>，<acronym>SMP</acronym> 的系統出現 <prompt>ok {0} </prompt>，其中的數字代表啟動的 <acronym>CPU</acronym> 數。</para>
 
-      <para xml:lang="en">At this point, place the <acronym>CD</acronym> into the
-	drive and type <command>boot cdrom</command> from the
-	<acronym>PROM</acronym> prompt.</para>
+      <para>此時，放入 <acronym>CD</acronym> 到磁碟機然後在 <acronym>PROM</acronym> 提示畫面輸入 <command>boot cdrom</command>。</para>
     </sect2>
 
     <sect2 xml:id="bsdinstall-view-probe">
