@@ -60,7 +60,7 @@ pkg install poedit
 | Common Address Redundancy Protocol | 共用位址備援協定 |||
 | Line Printer | 行列式印表機 ||
 | Serial | 序列 ||
-| Spool, Spooling | 暫存 (需附註原文) ||
+| Spool, Spooling | 緩衝, 暫存 (需附註原文) ||
 | Script | (不翻譯) ||
 | Log | 日誌 (需附註原文) ||
 | System call | 系統呼叫 (需附註原文) ||
