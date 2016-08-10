@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-08-05 19:23+0800\n"
-"PO-Revision-Date: 2016-08-05 19:28+0800\n"
+"POT-Creation-Date: 2016-08-09 13:52+0800\n"
+"PO-Revision-Date: 2016-08-10 15:09+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -897,7 +897,7 @@ msgid ""
 "<link xlink:href=\"@@URL_RELPREFIX@@/releases\">current release</link>. If you are interested in contributing something to the Project (code, hardware, funding), see the <link xlink:href=\"@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/contributing/index.html\">Contributing to FreeBSD</link> article."
 msgstr ""
 "FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class=\"registered\">Itanium</trademark>), AMD64, Sun <trademark class=\"registered\">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend=\"history\">FreeBSD 歷史</link>， 對於 FreeBSD 的"
-"最新版本介紹，請看 <link xlink:href=\"@@URL_RELPREFIX@@/releases\">最新的發行版</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、經費)， 請看 <link xlink:href=\"@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html\">如何對 FreeBSD 有貢獻</link>。"
+"最新版本介紹，請看 <link xlink:href=\"@@URL_RELPREFIX@@/releases\">最新的發行版</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、經費)， 請看 <link xlink:href=\"@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html\">如何對 FreeBSD 貢獻</link>。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1637
@@ -3211,7 +3211,7 @@ msgstr "配置檔案系統時要記得硬碟的傳輸資料外軌較內軌的速
 msgid ""
 "The size of the <filename>/var</filename> partition reflects the intended machine's usage. This partition is used to hold mailboxes, log files, and printer spools. Mailboxes and log files can grow to unexpected sizes depending on the number of users and how long log files are kept. On average, most users rarely need more than about a "
 "gigabyte of free disk space in <filename>/var</filename>."
-msgstr "機器預期的用途會反映在 <filename>/var</filename> 分割區的大小，這個分割區用來保存郵件 (Mailbox)、記錄檔 (Log file) 及印表機 Spool。依使用者數及保存的期間，郵件及記錄檔可能成長到無法預期的大小，一般來說大部份的使用很少會在 <filename>/var</filename> 需要超過 1 GB 的可用磁碟空間。"
+msgstr "機器預期的用途會反映在 <filename>/var</filename> 分割區的大小，這個分割區用來保存郵件 (Mailbox)、記錄檔 (Log file) 及印表機緩衝 (Spool)。依使用者數及保存的期間，郵件及記錄檔可能成長到無法預期的大小，一般來說大部份的使用很少會在 <filename>/var</filename> 需要超過 1 GB 的可用磁碟空間。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:3976
@@ -7063,7 +7063,7 @@ msgid ""
 "Multi-purpose log, temporary, transient, and spool files. A memory-based file system is sometimes mounted at <filename>/var</filename>. This can be automated using the varmfs-related variables in <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> or with an entry in <filename>/etc/fstab</"
 "filename>; refer to <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
-"存放各種用途的日誌 (Log) 檔、臨時或暫時存放、列印或郵件的暫存 (Spool) 檔案。有時候，以記憶體為基礎 (Memory-based) 的檔案系統也會掛載在 <filename>/var</filename>。 這些瑣事可透過 varmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成。(或是在 <filename>/etc/fstab</"
+"存放各種用途的日誌 (Log) 檔、臨時或暫時存放、列印或郵件的緩衝 (Spool) 檔案。有時候，以記憶體為基礎 (Memory-based) 的檔案系統也會掛載在 <filename>/var</filename>。 這些瑣事可透過 varmfs 相關的 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 環境變數來自動完成。(或是在 <filename>/etc/fstab</"
 "filename> 內做設定，相關細節請參閱 <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。"
 
 #. (itstool) path: row/entry
@@ -7094,7 +7094,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7304
 msgid "Miscellaneous printer and mail system spooling directories."
-msgstr "各種印表機、郵件系統的暫存 (Spool) 目錄。"
+msgstr "各種印表機、郵件系統的緩衝 (Spool) 目錄。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7309
@@ -7981,7 +7981,7 @@ msgid ""
 "There is a convention to name programs that normally run as daemons with a trailing <quote>d</quote>. For example, <application>BIND</application> is the Berkeley Internet Name Domain, but the actual program that executes is <command>named</command>. The <application>Apache</application> web server program is <command>httpd</command> "
 "and the line printer spooling daemon is <command>lpd</command>. This is only a naming convention. For example, the main mail daemon for the <application>Sendmail</application> application is <command>sendmail</command>, and not <literal>maild</literal>."
 msgstr ""
-"通常來說做為 Deamon 執行的程式名字後面都會加一個字母 <quote>d</quote>。 <application>BIND</application> 是 Berkeley Internet Name Domain 的縮寫，但實際上執行的程式名稱是 <command>named</command>、<application>Apache</application> 網頁伺服器的程式名稱是 <command>httpd</command>、行列式印表機暫存服務(Line Printer Spooling) Daemon 是 "
+"通常來說做為 Deamon 執行的程式名字後面都會加一個字母 <quote>d</quote>。 <application>BIND</application> 是 Berkeley Internet Name Domain 的縮寫，但實際上執行的程式名稱是 <command>named</command>、<application>Apache</application> 網頁伺服器的程式名稱是 <command>httpd</command>、行列式印表機緩衝服務(Line Printer Spooling) Daemon 是 "
 "<command>lpd</command>，依此類推。 但這是習慣用法，並沒有硬性規定，例如 <application>Sendmail</application> 主要的寄信 Daemon 是叫做 <command>sendmail</command> 而不是 <literal>maild</literal>。"
 
 #. (itstool) path: sect2/title
@@ -12231,6 +12231,8 @@ msgid ""
 "<application>GNOME</application> is a user-friendly desktop environment. It includes a panel for starting applications and displaying status, a desktop, a set of tools and applications, and a set of conventions that make it easy for applications to cooperate and be consistent with each other. More information regarding "
 "<application>GNOME</application> on FreeBSD can be found at <link xlink:href=\"http://www.FreeBSD.org/gnome\">http://www.FreeBSD.org/gnome</link>. That web site contains additional documentation about installing, configuring, and managing <application>GNOME</application> on FreeBSD."
 msgstr ""
+"<application>GNOME</application> 是一個擁有友善使用者介面的的桌面環境，它包括用於啟動應用程式和顯示狀態的面板、一系列工具與應用程序及一套可讓應用程式更容易進行合作、相互一致的協定。更多有關 FreeBSD <application>GNOME</application> 的訊息可在<link xlink:href=\"http://www.FreeBSD.org/gnome\">http://www.FreeBSD.org/gnome</link> 取得，該網"
+"站包含了有關在 FreeBSD 安裝、設定和管理 <application>GNOME</application> 的額外文件。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11922
@@ -12349,11 +12351,13 @@ msgid ""
 "<application>KDE</application> is another easy-to-use desktop environment. This desktop provides a suite of applications with a consistent look and feel, a standardized menu and toolbars, keybindings, color-schemes, internationalization, and a centralized, dialog-driven desktop configuration. More information on <application>KDE</"
 "application> can be found at <link xlink:href=\"http://www.kde.org/\">http://www.kde.org/</link>. For FreeBSD-specific information, consult <link xlink:href=\"http://freebsd.kde.org/\">http://freebsd.kde.org</link>."
 msgstr ""
+"<application>KDE</application> 是另一套易於使用的桌面環境。這個桌面環境提供了一致外觀的應用程式、標準化的選單和工具列、組合鍵、配色方案、國際化與集中、對話框導向的桌面設定。更多有關 <application>KDE</application> 可在 <link xlink:href=\"http://www.kde.org/\">http://www.kde.org/</link> 取得。要取得 FreeBSD 特定的資訊，則可參考 <link "
+"xlink:href=\"http://freebsd.kde.org/\">http://freebsd.kde.org</link>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12008
 msgid "To install the <application>KDE</application> package, type:"
-msgstr ""
+msgstr "要安裝 <application>KDE</application> 套件，請輸入:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12011
@@ -12364,7 +12368,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12013
 msgid "To instead build the <application>KDE</application> port, use the following command. Installing the port will provide a menu for selecting which components to install. <application>KDE</application> is a large application and will take some time to compile, even on a fast computer."
-msgstr ""
+msgstr "或者要使用 <application>KDE</application> Port 編譯，可使用以下指令，採用 Port 方式安裝會有選單可以選擇要安裝的元件。<application>KDE</application> 是一個大型的應用程式，即使在較快的電腦上仍需要花費一段時間來編譯。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12019
@@ -12382,19 +12386,19 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12027
 msgid "<application>KDE</application> requires <filename>/proc</filename> to be mounted. Add this line to <filename>/etc/fstab</filename> to mount this file system automatically during system startup:"
-msgstr ""
+msgstr "<application>KDE</application> 需要掛載 <filename>/proc</filename>。加入下行到 <filename>/etc/fstab</filename> 讓系統啟動時會自動掛載這個檔案系統:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12034
 msgid ""
 "<application>KDE</application> uses <application>D-Bus</application> and <application>HAL</application> for a message bus and hardware abstraction. These applications are automatically installed as dependencies of <application>KDE</application>. Enable them in <filename>/etc/rc.conf</filename> so they will be started when the system "
 "boots:"
-msgstr ""
+msgstr "<application>KDE</application> 使用了 <application>D-Bus</application> 以及 <application>HAL</application> 的 Message bus 與 Hardware abstraction。這兩個應用程式會隨著 <application>KDE</application> 的相依一併自動安裝，但需要在 <filename>/etc/rc.conf</filename> 開啟，這樣在系統開機時才會啟動:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12045
 msgid "The installation of <application>KDE</application> includes the KDE Display Manager, <application>KDM</application>. To enable this display manager, add this line to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "<application>KDE</application> 的安裝包含了 KDE Display Manager, <application>KDM</application>，要開啟這個顯示管理程式，需加入下行到 <filename>/etc/rc.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12051
@@ -12405,7 +12409,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12053
 msgid "A second method for launching <application>KDE</application> is to type <command>startx</command> from the command line. For this to work, the following line is needed in <filename>~/.xinitrc</filename>:"
-msgstr ""
+msgstr "第二種執行 <application>KDE</application> 的方法是在在指令列輸入 <command>startx</command>。要採用這個方式，需要加入下行到 <filename>~/.xinitrc</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12059
@@ -12416,7 +12420,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12061
 msgid "A third method for starting <application>KDE</application> is through <application>XDM</application>. To do so, create an executable <filename>~/.xsession</filename> as follows:"
-msgstr ""
+msgstr "第三種啟動 <application>KDE</application> 的方式是透過 <application>XDM</application>，要使用這個方法需要建立一個可執行的 <filename>~/.xsession</filename> 如下:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12066
@@ -12430,7 +12434,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12070
 msgid "Once <application>KDE</application> is started, refer to its built-in help system for more information on how to use its various menus and applications."
-msgstr ""
+msgstr "啟動 <application>KDE</application> 之後，請參考內建的說明系統來取得更多有關如何使用各種選單及應用程式的資訊。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12076
@@ -12443,11 +12447,13 @@ msgid ""
 "<application>Xfce</application> is a desktop environment based on the GTK+ toolkit used by <application>GNOME</application>. However, it is more lightweight and provides a simple, efficient, easy-to-use desktop. It is fully configurable, has a main panel with menus, applets, and application launchers, provides a file manager and sound "
 "manager, and is themeable. Since it is fast, light, and efficient, it is ideal for older or slower machines with memory limitations. More information on <application>Xfce</application> can be found at <link xlink:href=\"http://www.xfce.org/\">http://www.xfce.org</link>."
 msgstr ""
+"<application>Xfce</application> 是以 <application>GNOME</application> 使用的 GTK +工具包做為基礎所開發的桌面環境，但是它更輕巧且提供了一種簡單、高效、易於使用的桌面。它可完全自訂設定、附有選單、Applet 及應用程式啟動器的主面板、提供檔案管理程式和音效管理程式並且可設定主題。由於它是快速、輕巧、高效的桌面環境，因此它非常適合有記憶體限制的"
+"較舊或較慢機器。更多有關 <application>Xfce</application> 的資訊可至 <link xlink:href=\"http://www.xfce.org/\">http://www.xfce.org</link> 取得。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12089
 msgid "To install the <application>Xfce</application> package:"
-msgstr ""
+msgstr "要安裝 <application>Xfce</application> 套件:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12092
@@ -12458,7 +12464,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12094
 msgid "Alternatively, to build the port:"
-msgstr ""
+msgstr "或者使用 Port 編譯:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12096
@@ -12471,7 +12477,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12099
 msgid "Unlike <application>GNOME</application> or <application>KDE</application>, <application>Xfce</application> does not provide its own login manager. In order to start <application>Xfce</application> from the command line by typing <command>startx</command>, first add its entry to <filename>~/.xinitrc</filename>:"
-msgstr ""
+msgstr "不像 <application>GNOME</application> 或 <application>KDE</application>，<application>Xfce</application> 並沒有自己的登入管理程式，要由指令列啟動 <application>Xfce</application> 需輸入 <command>startx</command>，在這之前需先加入其項目到 <filename>~/.xinitrc</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12106
@@ -12482,7 +12488,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12108
 msgid "An alternate method is to use <application>XDM</application>. To configure this method, create an executable <filename>~/.xsession</filename>:"
-msgstr ""
+msgstr "另一種方式是使用 <application>XDM</application>，要設定這個方式需建立一個可執行的 <filename>~/.xsession</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12112
@@ -16962,17 +16968,17 @@ msgstr ""
 #. (itstool) path: chapter/para
 #: book.translate.xml:16768
 msgid "Putting information on paper is a vital function, despite many attempts to eliminate it. Printing has two basic components. The data must be delivered to the printer, and must be in a form that the printer can understand."
-msgstr ""
+msgstr "儘管很多人試圖淘汰列印功能，但列印資訊到紙上仍是一個重要的功能。列印由兩個基本元件組成，包含了資料傳送到印表機的方式以及印表機可以理解的資料形式。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16776
 msgid "Basic printing can be set up quickly. The printer must be capable of printing plain <acronym>ASCII</acronym> text. For printing to other types of files, see <xref linkend=\"printing-lpd-filters\"/>."
-msgstr ""
+msgstr "基本的列印功能可以快速設定完成，列印機必須能夠列印純 <acronym>ASCII</acronym> 文字。若要列印其他類型的檔案，請參考 <xref linkend=\"printing-lpd-filters\"/>。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:16783
 msgid "Create a directory to store files while they are being printed:"
-msgstr ""
+msgstr "建立一個目錄來儲存要被列印的檔案:"
 
 #. (itstool) path: step/screen
 #. (itstool) path: sect2/screen
@@ -16987,7 +16993,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:16792
 msgid "As <systemitem class=\"username\">root</systemitem>, create <filename>/etc/printcap</filename> with these contents:"
-msgstr ""
+msgstr "以 <systemitem class=\"username\">root</systemitem> 建立 <filename>/etc/printcap</filename> 內容如下:"
 
 #. (itstool) path: step/programlisting
 #: book.translate.xml:16796
@@ -17004,12 +17010,12 @@ msgstr ""
 #. (itstool) path: callout/para
 #: book.translate.xml:16805
 msgid "This line is for a printer connected to a <acronym>USB</acronym> port."
-msgstr ""
+msgstr "此行是針對連接到 <acronym>USB</acronym> 埠的印表機:"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:16808
 msgid "For a printer connected to a parallel or <quote>printer</quote> port, use:"
-msgstr ""
+msgstr "連接到並列或 <quote>印表器 (Printer)</quote> 埠的印表機要使用:"
 
 #. (itstool) path: callout/programlisting
 #. (itstool) path: entry/programlisting
@@ -17021,7 +17027,7 @@ msgstr ""
 #. (itstool) path: callout/para
 #: book.translate.xml:16813
 msgid "For a printer connected directly to a network, use:"
-msgstr ""
+msgstr "直接連接到網路的印表機要使用:"
 
 #. (itstool) path: callout/programlisting
 #. (itstool) path: entry/programlisting
@@ -17033,12 +17039,12 @@ msgstr ""
 #. (itstool) path: callout/para
 #: book.translate.xml:16818
 msgid "Replace <replaceable>network-printer-name</replaceable> with the <acronym>DNS</acronym> host name of the network printer."
-msgstr ""
+msgstr "替換 <replaceable>network-printer-name</replaceable> 為網路印表機的 <acronym>DNS</acronym> 主機名稱。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:16827
 msgid "Enable <command>lpd</command> by editing <filename>/etc/rc.conf</filename>, adding this line:"
-msgstr ""
+msgstr "編輯 <filename>/etc/rc.conf</filename> 加入下行來開啟 <command>lpd</command>:"
 
 #. (itstool) path: step/programlisting
 #. (itstool) path: sect2/programlisting
@@ -17051,7 +17057,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:16832 book.translate.xml:17320
 msgid "Start the service:"
-msgstr ""
+msgstr "啟動服務:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16834
@@ -17064,7 +17070,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:16839
 msgid "Print a test:"
-msgstr ""
+msgstr "測試列印:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16841
@@ -17075,12 +17081,12 @@ msgstr ""
 #. (itstool) path: tip/para
 #: book.translate.xml:16844
 msgid "If both lines do not start at the left border, but <quote>stairstep</quote> instead, see <xref linkend=\"printing-lpd-filters-stairstep\"/>."
-msgstr ""
+msgstr "若列印的兩行未從左邊界開始，而是呈現 <quote>階梯狀 (Stairstep)</quote>，請參考 <xref linkend=\"printing-lpd-filters-stairstep\"/>。"
 
 #. (itstool) path: step/para
 #: book.translate.xml:16849
 msgid "Text files can now be printed with <command>lpr</command>. Give the filename on the command line, or pipe output directly into <command>lpr</command>."
-msgstr ""
+msgstr "現在可以使用 <command>lpr</command> 來列印文字檔，只要在指令列給序檔案名稱，或者將輸出使用管線符號 (Pipe) 傳送給 <command>lpr</command>。"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16854
@@ -17100,12 +17106,12 @@ msgstr "印表機連線"
 msgid ""
 "Printers are connected to computer systems in a variety of ways. Small desktop printers are usually connected directly to a computer's <acronym>USB</acronym> port. Older printers are connected to a parallel or <quote>printer</quote> port. Some printers are directly connected to a network, making it easy for multiple computers to share "
 "them. A few printers use a rare serial port connection."
-msgstr ""
+msgstr "印表機有許多方式可以連接到電腦，小型的桌面印表機會直接連接到電腦的 <acronym>USB</acronym> 埠，舊式的印表機會連接到並列 (Parallel) 或 <quote>印表機 (Printer)</quote> 埠，而有一部份印表機則是直接連接網路，讓印表機能夠給多台電腦共享使用，還有少部分印表機則是連接到較罕見的序列 (Serial) 埠。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16871
 msgid "FreeBSD can communicate with all of these types of printers."
-msgstr ""
+msgstr "FreeBSD 可以與這些類型的印表機溝通。"
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
@@ -17116,7 +17122,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:16879
 msgid "<acronym>USB</acronym> printers can be connected to any available <acronym>USB</acronym> port on the computer."
-msgstr ""
+msgstr "<acronym>USB</acronym> 印表機可以連接到電腦上任何可用的 <acronym>USB</acronym> 埠。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16883
@@ -17124,80 +17130,82 @@ msgid ""
 "When FreeBSD detects a <acronym>USB</acronym> printer, two device entries are created: <filename>/dev/ulpt0</filename> and <filename>/dev/unlpt0</filename>. Data sent to either device will be relayed to the printer. After each print job, <filename>ulpt0</filename> resets the <acronym>USB</acronym> port. Resetting the port can cause "
 "problems with some printers, so the <filename>unlpt0</filename> device is usually used instead. <filename>unlpt0</filename> does not reset the USB port at all."
 msgstr ""
+"當 FreeBSD 偵測到 <acronym>USB</acronym> 印表機，會建立兩個裝置項目: <filename>/dev/ulpt0</filename> 以及 <filename>/dev/unlpt0</filename>，傳送到兩者任一裝置的資料都會被轉發到印表機。在每個列印工作完成後 <filename>ulpt0</filename> 便會重設 <acronym>USB</acronym> 埠，重設 <acronym>USB</acronym> 埠可能會在部份印表機造成問題，因此通常可以"
+"改使用 <filename>unlpt0</filename>  裝置。<filename>unlpt0</filename> 不會重設 USB 埠。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16898
 msgid "Parallel (<acronym>IEEE</acronym>-1284)"
-msgstr ""
+msgstr "並列 (<acronym>IEEE</acronym>-1284)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16901
 msgid "The parallel port device is <filename>/dev/lpt0</filename>. This device appears whether a printer is attached or not, it is not autodetected."
-msgstr ""
+msgstr "並列埠裝置使用 <filename>/dev/lpt0</filename>，此裝置不論印表機是否連接上都會存在，它並不會自動偵測。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16906
 msgid ""
 "Vendors have largely moved away from these <quote>legacy</quote> ports, and many computers no longer have them. Adapters can be used to connect a parallel printer to a <acronym>USB</acronym> port. With such an adapter, the printer can be treated as if it were actually a <acronym>USB</acronym> printer. Devices called <emphasis>print "
 "servers</emphasis> can also be used to connect parallel printers directly to a network."
-msgstr ""
+msgstr "供應商已不再採用這種 <quote>舊式</quote> 連接埠，且有許多電腦甚至已沒有這種連接埠。可以用轉接器來連接並列印表機到 <acronym>USB</acronym> 埠，有了轉接器，並列印表機可以被當作 <acronym>USB</acronym> 印表機使用。有另一種稱作 <emphasis>列印伺服器 (Print server)</emphasis> 的裝置也可用來連接並列印表機到網路。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16918
 msgid "Serial (RS-232)"
-msgstr ""
+msgstr "序列 (RS-232)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16921
 msgid "Serial ports are another legacy port, rarely used for printers except in certain niche applications. Cables, connectors, and required wiring vary widely."
-msgstr ""
+msgstr "序列埠也是另一種舊式連接埠，已很少用在印表機上，除了某些特殊的應用外，纜線、接頭與需要的佈線方式依需求變化性很大。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16925
 msgid "For serial ports built into a motherboard, the serial device name is <filename>/dev/cuau0</filename> or <filename>/dev/cuau1</filename>. Serial <acronym>USB</acronym> adapters can also be used, and these will appear as <filename>/dev/cuaU<replaceable>0</replaceable></filename>."
-msgstr ""
+msgstr "內建在主機板的序列埠的序列裝置名稱為 <filename>/dev/cuau0</filename> 或 <filename>/dev/cuau1</filename>。也有序列 <acronym>USB</acronym> 轉接器可使用，而裝置的的名稱則會是 <filename>/dev/cuaU<replaceable>0</replaceable></filename>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16932
 msgid "Several communication parameters must be known to communicate with a serial printer. The most important are <emphasis>baud rate</emphasis> or <acronym>BPS</acronym> (Bits Per Second) and <emphasis>parity</emphasis>. Values vary, but typical serial printers use a baud rate of 9600 and no parity."
-msgstr ""
+msgstr "要與序列印表機通訊必須知道數個通訊參數，其中最重要的是 <emphasis>傳輸速率 (Baud rate)</emphasis> 或 <acronym>BPS</acronym> (Bits Per Second) 以及 <emphasis>同位檢查 (Parity)</emphasis>。數值有數種，但一般序列印表機會使用 的傳輸速率是 9600 且無同位檢查。"
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:16942 book.translate.xml:17256
 msgid "Network"
-msgstr ""
+msgstr "網路"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16945
 msgid "Network printers are connected directly to the local computer network."
-msgstr ""
+msgstr "網路印表機可直接連接到區域網路。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16948
 msgid ""
 "The <acronym>DNS</acronym> hostname of the printer must be known. If the printer is assigned a dynamic address by <acronym>DHCP</acronym>, <acronym>DNS</acronym> should be dynamically updated so that the host name always has the correct <acronym>IP</acronym> address. Network printers are often given static <acronym>IP</acronym> "
 "addresses to avoid this problem."
-msgstr ""
+msgstr "若印表機透過 <acronym>DHCP</acronym> 分配動態位址，則必須要知道 <acronym>DNS</acronym> 主機名稱，<acronym>DNS</acronym> 應動態更新來讓主機名稱能夠對應到正確的 <acronym>IP</acronym> 位址。指定網路印表機一個靜態的 <acronym>IP</acronym> 位址可避免這個問題。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16956
 msgid ""
 "Most network printers understand print jobs sent with the <acronym>LPD</acronym> protocol. A print queue name can also be specified. Some printers process data differently depending on which queue is used. For example, a <literal>raw</literal> queue prints the data unchanged, while the <literal>text</literal> queue adds carriage "
 "returns to plain text."
-msgstr ""
+msgstr "大多數網路印表機可以認得使用 <acronym>LPD</acronym> 通訊協定所送出的列印工作，列印佇列 (Print queue) 的名稱也會在這時指定。部份印表機會依據使用的佇列來決定處理資料的方式，例如 <literal>raw</literal> 佇列會列印原始資料，而 <literal>text</literal> 佇列則會在純文字上增加換行符號 (Carriage return)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16964
 msgid "Many network printers can also print data sent directly to port 9100."
-msgstr ""
+msgstr "大部份網路印表機也可列印直接傳送到埠號 9100 的資料。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:16973
 msgid ""
 "Wired network connections are usually the easiest to set up and give the fastest printing. For direct connection to the computer, <acronym>USB</acronym> is preferred for speed and simplicity. Parallel connections work but have limitations on cable length and speed. Serial connections are more difficult to configure. Cable wiring "
 "differs between models, and communication parameters like baud rate and parity bits must add to the complexity. Fortunately, serial printers are rare."
-msgstr ""
+msgstr "有線網路連線通常是安裝最簡單的方式，且可以提供快速的列印。若要直接連接到電腦，較建議使用 <acronym>USB</acronym>，由於較快速、簡單。並列連線仍然可以使用，但有纜線長度與速度上的限制。而序列連線則比較難設定，不同型號的纜線佈線方式不同，且通訊參數如傳輸速率及同位檢查增加了複雜性，所幸序列印表機並不多。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:16986
@@ -17207,7 +17215,7 @@ msgstr "常見的頁面描述語言"
 #. (itstool) path: sect1/para
 #: book.translate.xml:16988
 msgid "Data sent to a printer must be in a language that the printer can understand. These languages are called Page Description Languages, or <acronym>PDL</acronym>s."
-msgstr ""
+msgstr "傳送給印表機的資料必須使用印表機能夠理解的語言，這些語言稱為頁面描述語言 (Page Description Languages) 或 <acronym>PDL</acronym>。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16994
@@ -17220,11 +17228,13 @@ msgid ""
 "Plain <acronym>ASCII</acronym> text is the simplest way to send data to a printer. Characters correspond one to one with what will be printed: an <literal>A</literal> in the data prints an <literal>A</literal> on the page. Very little formatting is available. There is no way to select a font or proportional spacing. The forced "
 "simplicity of plain <acronym>ASCII</acronym> means that text can be printed straight from the computer with little or no encoding or translation. The printed output corresponds directly with what was sent."
 msgstr ""
+"純 <acronym>ASCII</acronym> 文字是傳送資料到印表機最簡單的方式，一個字元對應一個要列印的文字: 資料中的 <literal>A</literal> 會列印一個 <literal>A</literal> 在頁面。可以使用的格式非常少，沒有辦法選擇字型或者比例間距。強迫使用簡單的純 <acronym>ASCII</acronym> 為的是讓文字可以直接從電腦列印只需一點或甚至不需要編碼或轉譯，列印的結果可直接對"
+"應傳送的內容。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17008
 msgid "Some inexpensive printers cannot print plain <acronym>ASCII</acronym> text. This makes them more difficult to set up, but it is usually still possible."
-msgstr ""
+msgstr "部份便宜印表機無法列印純 <acronym>ASCII</acronym> 文字，這讓這些印表機較難設定。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:17016
@@ -17237,11 +17247,13 @@ msgid ""
 "<trademark class=\"registered\">PostScript</trademark> is almost the opposite of <acronym>ASCII</acronym>. Rather than simple text, a <trademark class=\"registered\">PostScript</trademark> program is a set of instructions that draw the final document. Different fonts and graphics can be used. However, this power comes at a price. The "
 "program that draws the page must be written. Usually this program is generated by application software, so the process is invisible to the user."
 msgstr ""
+"<trademark class=\"registered\">PostScript</trademark> 與 <acronym>ASCII</acronym> 幾乎相反，與簡單的文字不同，<trademark class=\"registered\">PostScript</trademark> 程式語言有一套指令可以繪出最終所要的文件，可以使用不同的字型與圖形，但是，這樣強大的功能是有代價的，繪製頁面需要搛寫程式語言，通常這個程式語言會由應用程式產生，所以使用者是"
+"看不到的。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17028
 msgid "Inexpensive printers sometimes leave out <trademark class=\"registered\">PostScript</trademark> compatibility as a cost-saving measure."
-msgstr ""
+msgstr "便宜的印表機有時會移除 <trademark class=\"registered\">PostScript</trademark>  的相容性來節省成本。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:17034
@@ -17253,22 +17265,22 @@ msgstr ""
 msgid ""
 "<acronym>PCL</acronym> is an extension of <acronym>ASCII</acronym>, adding escape sequences for formatting, font selection, and printing graphics. Many printers provide <acronym>PCL5</acronym> support. Some support the newer <acronym>PCL6</acronym> or <acronym>PCLXL</acronym>. These later versions are supersets of <acronym>PCL5</"
 "acronym> and can provide faster printing."
-msgstr ""
+msgstr "<acronym>PCL</acronym> 由 <acronym>ASCII</acronym> 延伸而來，加入了跳脫序列 (Escape sequence) 來標示格式、選擇字型以及列印圖型。大部份印表機都支援 <acronym>PCL5</acronym>，少數支援較新的 <acronym>PCL6</acronym> 或 <acronym>PCLXL</acronym>，這些後來的版本是 <acronym>PCL5</acronym> 的超集合 (Superset)，並可以提供更快的列印速度。"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:17049
 msgid "Host-Based"
-msgstr ""
+msgstr "以主機為基礎 (Host-Based)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17052
 msgid "Manufacturers can reduce the cost of a printer by giving it a simple processor and very little memory. These printers are not capable of printing plain text. Instead, bitmaps of text and graphics are drawn by a driver on the host computer and then sent to the printer. These are called <emphasis>host-based</emphasis> printers."
-msgstr ""
+msgstr "製造商可能會使用簡單的處理器和較小的記憶體來降低印表機的成本，這些印表機無法列印純文字，相反的，文字與圖形會先在機器上的驅動程式畫完後傳送到印表機。這些稱為<emphasis>以主機為基礎 (Host-based)</emphasis> 的印表機。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:17060
 msgid "Communication between the driver and a host-based printer is often through proprietary or undocumented protocols, making them functional only on the most common operating systems."
-msgstr ""
+msgstr "驅動程式與以主機為基礎的印表機通訊通常會透過專有或無文件的通訊協定，這讓這些印表機只能在最常用的作業系統上運作。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:17069
@@ -17278,7 +17290,7 @@ msgstr "轉換 <trademark class=\"registered\">PostScript</trademark> 至其他 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17072
 msgid "Many applications from the Ports Collection and FreeBSD utilities produce <trademark class=\"registered\">PostScript</trademark> output. This table shows the utilities available to convert that into other common <acronym>PDL</acronym>s:"
-msgstr ""
+msgstr "Port 套件集與 FreeBSD 工具集有許多可以處理 <trademark class=\"registered\">PostScript</trademark> 輸出的應用程式，此表整理出了可轉換 <trademark class=\"registered\">PostScript</trademark> 成其他常用 <acronym>PDL</acronym> 的工具："
 
 #. (itstool) path: table/title
 #: book.translate.xml:17078
@@ -17288,17 +17300,17 @@ msgstr "輸出 <acronym>PDL</acronym> 格式"
 #. (itstool) path: row/entry
 #: book.translate.xml:17083
 msgid "Output <acronym>PDL</acronym>"
-msgstr ""
+msgstr "輸出 <acronym>PDL</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17085
 msgid "Generated By"
-msgstr ""
+msgstr "產生由"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17092
 msgid "<acronym>PCL</acronym> or <acronym>PCL5</acronym>"
-msgstr ""
+msgstr "<acronym>PCL</acronym> 或 <acronym>PCL5</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17094 book.translate.xml:17102 book.translate.xml:17110
@@ -17308,17 +17320,17 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:17095
 msgid "<literal>-sDEVICE=ljet4</literal> for monochrome, <literal>-sDEVICE=cljet5</literal> for color"
-msgstr ""
+msgstr "單色使用 <literal>-sDEVICE=ljet4</literal>、彩色使用 <literal>-sDEVICE=cljet5</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17100
 msgid "<acronym>PCLXL</acronym> or <acronym>PCL6</acronym>"
-msgstr ""
+msgstr "<acronym>PCLXL</acronym> 或 <acronym>PCL6</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17103
 msgid "<literal>-sDEVICE=pxlmono</literal> for monochrome, <literal>-sDEVICE=pxlcolor</literal> for color"
-msgstr ""
+msgstr "單色使用 <literal>-sDEVICE=pxlmono</literal>、彩色使用 <literal>-sDEVICE=pxlcolor</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17109
@@ -17346,6 +17358,8 @@ msgid ""
 "For the easiest printing, choose a printer that supports <trademark class=\"registered\">PostScript</trademark>. Printers that support <acronym>PCL</acronym> are the next preferred. With <package role=\"port\">print/ghostscript</package>, these printers can be used as if they understood <trademark class=\"registered\">PostScript</"
 "trademark> natively. Printers that support <trademark class=\"registered\">PostScript</trademark> or <acronym>PCL</acronym> directly almost always support direct printing of plain <acronym>ASCII</acronym> text files also."
 msgstr ""
+"要最簡單可以列印，可選擇支援 <trademark class=\"registered\">PostScript</trademark> 的印表機。其次則為支援 <acronym>PCL</acronym> 的印表機，有了 <package role=\"port\">print/ghostscript</package> 這些印表機也可像原生支援 <trademark class=\"registered\">PostScript</trademark> 的印表機一般使用。有直接支援 <trademark class=\"registered"
+"\">PostScript</trademark> 或 <acronym>PCL</acronym> 的印表機通常也會直接支援純 <acronym>ASCII</acronym> 文字檔案。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17137
@@ -17353,16 +17367,18 @@ msgid ""
 "Line-based printers like typical inkjets usually do not support <trademark class=\"registered\">PostScript</trademark> or <acronym>PCL</acronym>. They often can print plain <acronym>ASCII</acronym> text files. <package role=\"port\">print/ghostscript</package> supports the <acronym>PDL</acronym>s used by some of these printers. "
 "However, printing an entire graphic-based page on these printers is often very slow due to the large amount of data to be transferred and printed."
 msgstr ""
+"行列式印表機如同典型的噴墨式印表機通常不支援 <trademark class=\"registered\">PostScript</trademark> 或 <acronym>PCL</acronym>，這種印表機通常可以列印純 <acronym>ASCII</acronym> 文字檔案。<package role=\"port\">print/ghostscript</package> 支援部份這種印表機使用的 <acronym>PDL</acronym>，不過要在這種印表機上列印完全以圖型為基礎的頁面通常"
+"會非常緩慢，由於需要傳送大量的資料並列印。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17146
 msgid "Host-based printers are often more difficult to set up. Some cannot be used at all because of proprietary <acronym>PDL</acronym>s. Avoid these printers when possible."
-msgstr ""
+msgstr "以主機為基礎的印表機通常較難設定，有些會因為用了專有的 <acronym>PDL</acronym> 而無法使用，盡可能避免使用這類的印表機。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17151
 msgid "Descriptions of many <acronym>PDL</acronym>s can be found at <link xlink:href=\"http://www.undocprint.org/formats/page_description_languages\"/>. The particular <acronym>PDL</acronym> used by various models of printers can be found at <link xlink:href=\"http://www.openprinting.org/printers\"/>."
-msgstr ""
+msgstr "有關各種 <acronym>PDL</acronym> 的介紹可至 <link xlink:href=\"http://www.undocprint.org/formats/page_description_languages\"/>。各種型號印表機所使用的特定 <acronym>PDL</acronym> 可至 <link xlink:href=\"http://www.openprinting.org/printers\"/> 查詢。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:17159
@@ -17372,7 +17388,7 @@ msgstr "直接列印"
 #. (itstool) path: sect1/para
 #: book.translate.xml:17161
 msgid "For occasional printing, files can be sent directly to a printer device without any setup. For example, a file called <filename>sample.txt</filename> can be sent to a <acronym>USB</acronym> printer:"
-msgstr ""
+msgstr "對於偶爾列印，檔案可以直接傳送到印表機裝置，無需做任何設定。例如，要傳送一個名稱為 <filename>sample.txt</filename> 的檔案到 <acronym>USB</acronym> 印表機:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:17166
@@ -17385,7 +17401,7 @@ msgstr ""
 msgid ""
 "Direct printing to network printers depends on the abilities of the printer, but most accept print jobs on port 9100, and <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</manvolnum></citerefentry> can be used with them. To print the same file to a printer with the <acronym>DNS</acronym> hostname of <replaceable>netlaser</"
 "replaceable>:"
-msgstr ""
+msgstr "要直接使用網路印表機列印需看該印表機支援的功能，但大多數會接受埠號 9100 的列印作業，可使用 <citerefentry><refentrytitle>nc</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來完成。要使用 <acronym>DNS</acronym> 主機名稱為 <replaceable>netlaser</replaceable> 的印表機列印與上述相同的檔案可:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:17174
@@ -17401,12 +17417,12 @@ msgstr "<acronym>LPD</acronym> (行列式印表機 Daemon)"
 #. (itstool) path: sect1/para
 #: book.translate.xml:17180
 msgid "Printing a file in the background is called <emphasis>spooling</emphasis>. A spooler allows the user to continue with other programs on the computer without waiting for the printer to slowly complete the print job."
-msgstr ""
+msgstr "在背景列印一個檔案稱作 <emphasis>Spooling</emphasis>，緩衝程式 (Spooler) 讓使用者能夠繼續執行電腦的其他程式而不需要等候印表機緩慢的完成列印工作。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:17185
 msgid "FreeBSD includes a spooler called <citerefentry><refentrytitle>lpd</refentrytitle><manvolnum>8</manvolnum></citerefentry>. Print jobs are submitted with <citerefentry><refentrytitle>lpr</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "FreeBSD 內含的緩衝程式 (Spooler) 稱作 <citerefentry><refentrytitle>lpd</refentrytitle><manvolnum>8</manvolnum></citerefentry>，而列印工作會使用 <citerefentry><refentrytitle>lpr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來提交。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:17189 book.translate.xml:28667
@@ -17416,12 +17432,12 @@ msgstr "初始設定"
 #. (itstool) path: sect2/para
 #: book.translate.xml:17191
 msgid "A directory for storing print jobs is created, ownership is set, and the permissions are set to prevent other users from viewing the contents of those files:"
-msgstr ""
+msgstr "建立要用來儲存列印工作的目錄、設定擁有關係以及權限來避免其他使用者可以檢視這些檔案的內容:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17199
 msgid "Printers are defined in <filename>/etc/printcap</filename>. An entry for each printer includes details like a name, the port where it is attached, and various other settings. Create <filename>/etc/printcap</filename> with these contents:"
-msgstr ""
+msgstr "印表機會定義在 <filename>/etc/printcap</filename>，每台印表機項目所包含的詳細資料有名稱、連接的接頭以及各種其他設定。建立 <filename>/etc/printcap</filename> 使用以下內容:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:17205
@@ -17438,22 +17454,22 @@ msgstr ""
 #. (itstool) path: callout/para
 #: book.translate.xml:17214
 msgid "The name of this printer. <citerefentry><refentrytitle>lpr</refentrytitle><manvolnum>1</manvolnum></citerefentry> sends print jobs to the <literal>lp</literal> printer unless another printer is specified with <option>-P</option>, so the default printer should be named <literal>lp</literal>."
-msgstr ""
+msgstr "印表機的名稱。 <citerefentry><refentrytitle>lpr</refentrytitle><manvolnum>1</manvolnum></citerefentry> 會傳送列印工作到 <literal>lp</literal> 印表機，除非有使用 <option>-P</option> 來指定其他印表機，所以預的印表機名稱應使用 <literal>lp</literal>。"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:17222
 msgid "The device where the printer is connected. Replace this line with the appropriate one for the connection type shown here."
-msgstr ""
+msgstr "印表機所連接到裝置。替換此行為正確的連線類型，如此處所示。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17230
 msgid "Connection Type"
-msgstr ""
+msgstr "連線類型"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17231
 msgid "Device Entry in <filename>/etc/printcap</filename>"
-msgstr ""
+msgstr "在 <filename>/etc/printcap</filename> 的裝置項目"
 
 #. (itstool) path: entry/programlisting
 #: book.translate.xml:17239
@@ -17464,22 +17480,22 @@ msgstr ""
 #. (itstool) path: entry/para
 #: book.translate.xml:17241
 msgid "This is the <emphasis>non-resetting</emphasis> <acronym>USB</acronym> printer device. If problems are experienced, use <filename>ulpt0</filename> instead, which resets the <acronym>USB</acronym> port on each use."
-msgstr ""
+msgstr "此為<emphasis>不會重設</emphasis> <acronym>USB</acronym> 印表機的裝置，若使用上發生問題，請改使用 <filename>ulpt0</filename>，這個裝置會在每次使用後重設 <acronym>USB</acronym> 埠。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17251
 msgid "Parallel"
-msgstr ""
+msgstr "並列"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:17258
 msgid "For a printer supporting the <acronym>LPD</acronym> protocol:"
-msgstr ""
+msgstr "針對支援 <acronym>LPD</acronym> 通訊協定的印表機:"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:17263
 msgid "For printers supporting port 9100 printing:"
-msgstr ""
+msgstr "針對支援使用埠號 9100 列印的印表機:"
 
 #. (itstool) path: entry/programlisting
 #: book.translate.xml:17266
@@ -17490,12 +17506,12 @@ msgstr ""
 #. (itstool) path: entry/para
 #: book.translate.xml:17268
 msgid "For both types, replace <replaceable>network-printer-name</replaceable> with the <acronym>DNS</acronym> host name of the network printer."
-msgstr ""
+msgstr "針對兩者皆支援的印表機，請替換 <replaceable>network-printer-name</replaceable> 為網路印表機的 <acronym>DNS</acronym> 主機名稱。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:17275
 msgid "Serial"
-msgstr ""
+msgstr "序列"
 
 #. (itstool) path: entry/programlisting
 #: book.translate.xml:17276
@@ -17506,32 +17522,32 @@ msgstr ""
 #. (itstool) path: entry/para
 #: book.translate.xml:17278
 msgid "These values are for a typical serial printer connected to a motherboard serial port. The baud rate is 9600, and no parity is used."
-msgstr ""
+msgstr "這些是一般序列印表機連接到主機板序列埠會採用的數值，傳輸速率 (Baud rate) 是 9600 且無同位檢查 (No Parity)。"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:17289
 msgid "Suppress the printing of a header page at the start of a print job."
-msgstr ""
+msgstr "在列印工作開始時不列印首頁。"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:17294
 msgid "Do not limit the maximum size of a print job."
-msgstr ""
+msgstr "不限制列印工作的最大尺寸。"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:17298
 msgid "The path to the spooling directory for this printer. Each printer uses its own spooling directory."
-msgstr ""
+msgstr "此印表機的緩衝 (Spooling) 目錄路徑，每台印表機會自己使用一個獨立的緩衝 (Spooling) 目錄。"
 
 #. (itstool) path: callout/para
 #: book.translate.xml:17303
 msgid "The log file where errors on this printer will be reported."
-msgstr ""
+msgstr "記錄此印表機回報錯誤的記錄檔。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17308
 msgid "After creating <filename>/etc/printcap</filename>, use <citerefentry><refentrytitle>chkprintcap</refentrytitle><manvolnum>8</manvolnum></citerefentry> to test it for errors:"
-msgstr ""
+msgstr "在建立 <filename>/etc/printcap</filename> 之後，使用 <citerefentry><refentrytitle>chkprintcap</refentrytitle><manvolnum>8</manvolnum></citerefentry> 測試印表機是否有錯誤:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:17311
@@ -17542,12 +17558,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:17313
 msgid "Fix any reported problems before continuing."
-msgstr ""
+msgstr "在繼續之前修正任何回報的問題。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17315
 msgid "Enable <citerefentry><refentrytitle>lpd</refentrytitle><manvolnum>8</manvolnum></citerefentry> in <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "開啟 <filename>/etc/rc.conf</filename> 中的 <citerefentry><refentrytitle>lpd</refentrytitle><manvolnum>8</manvolnum></citerefentry>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:17322
@@ -53081,7 +53097,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:52810
 msgid "Configuring the Server"
-msgstr "設定伺服哭"
+msgstr "設定伺服器"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:52812
@@ -63156,7 +63172,7 @@ msgstr "FreeBSD 客戶端"
 #. (itstool) path: sect4/title
 #: book.translate.xml:62507
 msgid "How to Find Access Points"
-msgstr ""
+msgstr "如何尋找存取點"
 
 #. (itstool) path: sect4/para
 #: book.translate.xml:62509
@@ -63281,7 +63297,7 @@ msgstr ""
 #. (itstool) path: sect5/title
 #: book.translate.xml:62622
 msgid "Selecting an Access Point"
-msgstr ""
+msgstr "選擇存取點"
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:62624
@@ -63375,7 +63391,7 @@ msgstr ""
 #. (itstool) path: sect5/title
 #: book.translate.xml:62717
 msgid "Getting an <acronym>IP</acronym> Address with <acronym>DHCP</acronym>"
-msgstr ""
+msgstr "使用 <acronym>DHCP</acronym> 取得 <acronym>IP</acronym> 位址"
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:62720
@@ -63424,7 +63440,7 @@ msgstr ""
 #. (itstool) path: sect5/title
 #: book.translate.xml:62762
 msgid "Static <acronym>IP</acronym> Address"
-msgstr ""
+msgstr "靜態 <acronym>IP</acronym> 位址"
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:62764
@@ -63629,7 +63645,7 @@ msgstr ""
 #. (itstool) path: sect5/title
 #: book.translate.xml:62948
 msgid "<acronym>WPA</acronym> with <acronym>EAP-TLS</acronym>"
-msgstr ""
+msgstr "<acronym>WPA</acronym> 加上 <acronym>EAP-TLS</acronym>"
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:62951
@@ -63758,7 +63774,7 @@ msgstr ""
 #. (itstool) path: sect5/title
 #: book.translate.xml:63087
 msgid "<acronym>WPA</acronym> with <acronym>EAP-TTLS</acronym>"
-msgstr ""
+msgstr "<acronym>WPA</acronym> 加上 <acronym>EAP-TTLS</acronym>"
 
 #. (itstool) path: sect5/para
 #: book.translate.xml:63090
@@ -63839,7 +63855,7 @@ msgstr ""
 #. (itstool) path: sect5/title
 #: book.translate.xml:63178
 msgid "<acronym>WPA</acronym> with <acronym>EAP-PEAP</acronym>"
-msgstr ""
+msgstr "<acronym>WPA</acronym> 加上 <acronym>EAP-PEAP</acronym>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:63182
@@ -68937,7 +68953,7 @@ msgstr "參考書目"
 msgid ""
 "While manual pages provide a definitive reference for individual pieces of the FreeBSD operating system, they seldom illustrate how to put the pieces together to make the whole operating system run smoothly. For this, there is no substitute for a good book or users' manual on <trademark class=\"registered\">UNIX</trademark> system "
 "administration."
-msgstr ""
+msgstr "雖然操作手冊提供 FreeBSD 作業系統各個部分完整的說明，卻難免有「小學而大遺」之憾，像是如何讓整個作業系統運作順暢。因此，身邊有 <trademark class=\"registered\">UNIX</trademark> 系統管理的好書以及好的使用手冊是不可或缺的。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:65535
@@ -68947,92 +68963,92 @@ msgstr "FreeBSD 相關書籍"
 #. (itstool) path: sect1/para
 #: book.translate.xml:65535
 msgid "International books:"
-msgstr ""
+msgstr "國際書籍:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "<link xlink:href=\"http://jdli.tw.FreeBSD.org/publication/book/freebsd2/index.htm\">Using FreeBSD</link> (in Traditional Chinese), published by <link xlink:href=\"http://www.drmaster.com.tw/\">Drmaster</link>, 1997. ISBN 9-578-39435-7."
-msgstr ""
+msgstr "<link xlink:href=\"http://jdli.tw.FreeBSD.org/publication/book/freebsd2/index.htm\">FreeBSD 入門與應用 (光碟豪華版)</link> (繁體中文), <link xlink:href=\"http://www.drmaster.com.tw/\">博碩文化</link>出版, 1997. ISBN 9-578-39435-7。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD Unleashed (Simplified Chinese translation), published by <link xlink:href=\"http://www.hzbook.com/\">China Machine Press</link>. ISBN 7-111-10201-0."
-msgstr ""
+msgstr "FreeBSD 技術內幕 (FreeBSD Unleashed 簡體中譯版), <link xlink:href=\"http://www.hzbook.com/\">機械工業出版社</link>出版. ISBN 7-111-10201-0。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD From Scratch Second Edition (in Simplified Chinese), published by China Machine Press. ISBN 7-111-10286-X."
-msgstr ""
+msgstr "FreeBSD 使用大全第二版 (簡體中文), 機械工業出版社出版. ISBN 7-111-10286-X。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD Handbook Second Edition (Simplified Chinese translation), published by <link xlink:href=\"http://www.ptpress.com.cn/\">Posts &amp; Telecom Press</link>. ISBN 7-115-10541-3."
-msgstr ""
+msgstr "FreeBSD Handbook 第二版 (簡體中譯版), <link xlink:href=\"http://www.ptpress.com.cn/\">人民郵電出版社</link>出版. ISBN 7-115-10541-3。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD &amp; Windows (in Simplified Chinese), published by <link xlink:href=\"http://www.tdpress.com/\">China Railway Publishing House</link>. ISBN 7-113-03845-X"
-msgstr ""
+msgstr "FreeBSD &amp; Windows 集成組網實務 (簡體中文), <link xlink:href=\"http://www.tdpress.com/\">中國鐵道出版社</link>出版. ISBN 7-113-03845-X。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD Internet Services HOWTO (in Simplified Chinese), published by China Railway Publishing House. ISBN 7-113-03423-3"
-msgstr ""
+msgstr "FreeBSD 網站架設實務 (簡體中文), 中國鐵道出版社出版. ISBN 7-113-03423-3。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD (in Japanese), published by CUTT. ISBN 4-906391-22-2 C3055 P2400E."
-msgstr ""
+msgstr "FreeBSD (日文), CUTT 出版. ISBN 4-906391-22-2 C3055 P2400E。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "<link xlink:href=\"http://www.shoeisha.com/book/Detail.asp?bid=650\">Complete Introduction to FreeBSD</link> (in Japanese), published by <link xlink:href=\"http://www.shoeisha.co.jp/\">Shoeisha Co., Ltd</link>. ISBN 4-88135-473-6 P3600E."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.shoeisha.com/book/Detail.asp?bid=650\">Complete Introduction to FreeBSD</link> (日文), <link xlink:href=\"http://www.shoeisha.co.jp/\">Shoeisha Co., Ltd</link> 出版. ISBN 4-88135-473-6 P3600E。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "<link xlink:href=\"http://www.ascii.co.jp/pb/book1/shinkan/detail/1322785.html\">Personal UNIX Starter Kit FreeBSD</link> (in Japanese), published by <link xlink:href=\"http://www.ascii.co.jp/\">ASCII</link>. ISBN 4-7561-1733-3 P3000E."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.ascii.co.jp/pb/book1/shinkan/detail/1322785.html\">Personal UNIX Starter Kit FreeBSD</link> (日文), <link xlink:href=\"http://www.ascii.co.jp/\">ASCII</link> 出版. ISBN 4-7561-1733-3 P3000E。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD Handbook (Japanese translation), published by <link xlink:href=\"http://www.ascii.co.jp/\">ASCII</link>. ISBN 4-7561-1580-2 P3800E."
-msgstr ""
+msgstr "FreeBSD Handbook (日譯版), <link xlink:href=\"http://www.ascii.co.jp/\">ASCII</link> 出版. ISBN 4-7561-1580-2 P3800E。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "FreeBSD mit Methode (in German), published by <link xlink:href=\"http://www.cul.de\">Computer und Literatur Verlag</link>/Vertrieb Hanser, 1998. ISBN 3-932311-31-0."
-msgstr ""
+msgstr "FreeBSD mit Methode (德文), <link xlink:href=\"http://www.cul.de\">Computer und Literatur Verlag</link>/Vertrieb Hanser 出版, 1998. ISBN 3-932311-31-0。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "<link xlink:href=\"http://www.mitp.de/vmi/mitp/detail/pWert/1343/\"> FreeBSD de Luxe</link> (in German), published by <link xlink:href=\"http://www.mitp.de\">Verlag Modere Industrie</link>, 2003. ISBN 3-8266-1343-0."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.mitp.de/vmi/mitp/detail/pWert/1343/\"> FreeBSD de Luxe</link> (德文), <link xlink:href=\"http://www.mitp.de\">Verlag Modere Industrie</link> 出版, 2003. ISBN 3-8266-1343-0。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "<link xlink:href=\"http://www.pc.mycom.co.jp/FreeBSD/install-manual.html\">FreeBSD Install and Utilization Manual</link> (in Japanese), published by <link xlink:href=\"http://www.pc.mycom.co.jp/\">Mainichi Communications Inc.</link>, 1998. ISBN 4-8399-0112-0."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.pc.mycom.co.jp/FreeBSD/install-manual.html\">FreeBSD Install and Utilization Manual</link> (日文), <link xlink:href=\"http://www.pc.mycom.co.jp/\">Mainichi Communications Inc.</link> 出版, 1998. ISBN 4-8399-0112-0。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "Onno W Purbo, Dodi Maryanto, Syahrial Hubbany, Widjil Widodo <emphasis><link xlink:href=\"http://maxwell.itb.ac.id/\">Building Internet Server with FreeBSD</link></emphasis> (in Indonesia Language), published by <link xlink:href=\"http://www.elexmedia.co.id/\">Elex Media Komputindo</link>."
-msgstr ""
+msgstr "Onno W Purbo, Dodi Maryanto, Syahrial Hubbany, Widjil Widodo <emphasis><link xlink:href=\"http://maxwell.itb.ac.id/\">Building Internet Server with FreeBSD</link></emphasis> (印尼文), <link xlink:href=\"http://www.elexmedia.co.id/\">Elex Media Komputindo</link> 出版。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "Absolute BSD: The Ultimate Guide to FreeBSD (Traditional Chinese translation), published by <link xlink:href=\"http://www.grandtech.com.tw/\">GrandTech Press</link>, 2003. ISBN 986-7944-92-5."
-msgstr ""
+msgstr "FreeBSD 完全探索 (Absolute BSD: The Ultimate Guide to FreeBSD 繁體中譯版), <link xlink:href=\"http://www.grandtech.com.tw/\">GrandTech Press</link> 出版, 2003. ISBN 986-7944-92-5。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid "<link xlink:href=\"http://www.twbsd.org/cht/book/\">The FreeBSD 6.0 Book</link> (in Traditional Chinese), published by Drmaster, 2006. ISBN 9-575-27878-X."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.twbsd.org/cht/book/\">FreeBSD 6.0 架設管理與應用</link> (繁體中文), 博碩出版, 2006. ISBN 9-575-27878-X。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:65535
 msgid "English language books:"
-msgstr ""
+msgstr "英文書籍:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
