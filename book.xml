@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49168 2016-07-25 22:02:17Z ivadasz $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49238 2016-08-10 01:15:31Z yongari $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -523,6 +523,7 @@
 <!ENTITY pgpkey.xmj SYSTEM "xmj.key">
 <!ENTITY pgpkey.xride SYSTEM "xride.key">
 <!ENTITY pgpkey.yoichi SYSTEM "yoichi.key">
+<!ENTITY pgpkey.yongari SYSTEM "yongari.key">
 <!ENTITY pgpkey.yzlin SYSTEM "yzlin.key">
 <!ENTITY pgpkey.zack SYSTEM "zack.key">
 <!ENTITY pgpkey.zbb SYSTEM "zbb.key">
@@ -1384,9 +1385,9 @@
 	  <para>在網路上有數以千計 <emphasis>易於移植</emphasis> 的應用程式。FreeBSD 的原始程式碼與許多常見的商業版 <trademark class="registered">UNIX</trademark> 系統都相容， 所以大部分的程式都只需要很少的修改 (或根本不用修改) ，就可以編譯執行。</para>
 	</listitem>
 	<listitem>
-	  <para>需要時才置換的 <emphasis>虛擬記憶體</emphasis><indexterm>
+	  <para>依需要換頁的 <emphasis>虛擬記憶體</emphasis><indexterm>
 	      <primary>virtual memory</primary>
-	    </indexterm> 及 <quote>merged VM/buffer cache</quote> 的設計， 這點在系統中有用去大量記憶體的程式執行時，仍然有不錯的效率表現。 </para>
+	    </indexterm> 及 <quote>合併式VM/buffer 快取</quote> 設計，有效的滿足了需使用大量記憶體的程式，同時也能維持與其他使用者的互動。</para>
 	</listitem>
 
 	<listitem>
@@ -1449,7 +1450,7 @@
 		  <primary>firewall</primary>
 		</indexterm>以及 NAT<indexterm>
 		  <primary>NAT</primary>
-		</indexterm> (<quote>IP masquerading</quote>) 通訊閘。</para>
+		</indexterm> (<quote>IP 偽裝</quote>) 通訊閘。</para>
 	    </listitem>
 
 	    <listitem>
@@ -1525,73 +1526,45 @@
       <itemizedlist>
 	<listitem>
 
-	  <para xml:lang="en"><link xlink:href="http://www.apache.org/">Apache</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.apache.org/">Apache</link> <indexterm>
 	      <primary>Apache</primary>
-	    </indexterm> - The Apache Software Foundation runs most of
-	    its public facing infrastructure, including possibly one
-	    of the largest SVN repositories in the world with over 1.4
-	    million commits, on FreeBSD.</para>
+	    </indexterm> - Apache 軟體基金會中大部分面對大眾的基礎設施，包括可能是世界上最大的 SVN 檔案庫 (擁有超過 140 萬次提交) 都是在 FreeBSD 上運作。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.apple.com/">Apple</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.apple.com/">Apple</link> <indexterm>
 	      <primary>Apple</primary>
-	    </indexterm> - OS X borrows heavily from FreeBSD for the
-	    network stack, virtual file system, and many userland
-	    components.  Apple iOS also contains elements borrowed
-	    from FreeBSD.</para>
+	    </indexterm> - OS X 大量借鑒 FreeBSD 的網路 Stack、虛擬檔案系統以及許多使用者空間的元件。Apple iOS 中含有從 FreeBSD 借鑒來的元素。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.cisco.com/">Cisco</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.cisco.com/">Cisco</link> <indexterm>
 	      <primary>Cisco</primary>
-	    </indexterm> - IronPort network security and anti-spam
-	    appliances run a modified FreeBSD kernel.</para>
+	    </indexterm> -  IronPort 網路安全及反垃圾郵件設備是採用改良後 FreeBSD 核心來運作。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.citrix.com/">Citrix</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.citrix.com/">Citrix</link> <indexterm>
 	      <primary>Citrix</primary>
-	    </indexterm> - The NetScaler line of security appliances
-	    provide layer 4-7 load balancing, content caching,
-	    application firewall, secure VPN, and mobile cloud network
-	    access, along with the power of a FreeBSD shell.</para>
+	    </indexterm> - 安全設備的 NetScaler 產品線提供的第 4-7 層的負載均衡、內容快取、應用層防火牆、安全的 VPN 以及行動雲端網路存取，皆運用了 FreeBSD Shell 強大的功能。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.dell.com/KACE">Dell
-	      KACE</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.dell.com/KACE">Dell KACE</link> <indexterm>
 	      <primary>Dell KACE</primary>
-	    </indexterm> - The KACE system management appliances run
-	    FreeBSD because of its reliability, scalability, and the
-	    community that supports its continued development.</para>
+	    </indexterm> - KACE 系統管理設備中運作了 FreeBSD，因為 FreeBSD 的可靠性、可擴展性以及支持其持續發展的社群。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.experts-exchange.com/">Experts
-	      Exchange</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.experts-exchange.com/">Experts Exchange</link> <indexterm>
 	      <primary>Experts Exchange</primary>
-	    </indexterm> - All public facing web servers are powered
-	    by FreeBSD and they make extensive use of jails to isolate
-	    development and testing environments without the overhead
-	    of virtualization.</para>
+	    </indexterm> - 所有面對大眾的 Web 伺服器皆由 FreeBSD 驅動，且他們大量使用 Jail 來隔離開發與測試環境，減少了虛擬化的額外開銷。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.isilon.com/">Isilon</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.isilon.com/">Isilon</link> <indexterm>
 	      <primary>Isilon</primary>
-	    </indexterm> - Isilon's enterprise storage appliances
-	    are based on FreeBSD.  The extremely liberal FreeBSD license
-	    allowed Isilon to integrate their intellectual property
-	    throughout the kernel and focus on building their product
-	    instead of an operating system.</para>
+	    </indexterm> - Isilon 的企業存儲設備以 FreeBSD 為基礎。非常自由的 FreeBSD 授權條款讓 Isilon 整合了它們的智慧財產到整個核心，並專注打造自己的產品，而不是一個作業系統。</para>
 
 	</listitem>
 
@@ -1606,88 +1579,51 @@
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.juniper.net/">Juniper</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.juniper.net/">Juniper</link> <indexterm>
 	      <primary>Juniper</primary>
-	    </indexterm> - The JunOS operating system that powers all
-	    Juniper networking gear (including routers, switches,
-	    security, and networking appliances) is based on FreeBSD.
-	    Juniper is one of many vendors that showcases the
-	    symbiotic relationship between the project and vendors of
-	    commercial products.  Improvements generated at Juniper
-	    are upstreamed into FreeBSD to reduce the complexity of
-	    integrating new features from FreeBSD back into JunOS in the
-	    future.</para>
+	    </indexterm> -  JunOS 作業系統驅動了所有的 Juniper 網絡設備 (包括路由器，交換器，安全與網絡設備) 便是以 FreeBSD 為基礎。Juniper 在眾多廠商之中，展現了計劃與商業產品供應商之間的共生關係。由 Juniper 所開發的改進內容會回饋給 FreeBSD 來降低未來新功能從  FreeBSD 整合回 JunOS 的複雜性。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.mcafee.com/">McAfee</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.mcafee.com/">McAfee</link> <indexterm>
 	      <primary>McAfee</primary>
-	    </indexterm> - SecurOS, the basis of McAfee enterprise
-	    firewall products including Sidewinder is based on
-	    FreeBSD.</para>
+	    </indexterm> - SecurOS 是 McAfee 企業防火牆產品的基礎，其中包含了 Sidewinder ，也是以 FreeBSD 為基礎。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.netapp.com/">NetApp</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.netapp.com/">NetApp</link> <indexterm>
 	      <primary>NetApp</primary>
-	    </indexterm> - The Data ONTAP GX line of storage
-	    appliances are based on FreeBSD.  In addition, NetApp has
-	    contributed back many features, including the new BSD
-	    licensed hypervisor, bhyve.</para>
+	    </indexterm> - 存儲設備中的 Data ONTAP GX 產品線是以 FreeBSD 為基礎。除此之外，NetApp 還貢獻了回 FreeBSD 許多功能，包括新 BSD 條款授權的 hypervisor, bhyve。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.netflix.com/">Netflix</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.netflix.com/">Netflix</link> <indexterm>
 	      <primary>Netflix</primary>
-	    </indexterm> - The OpenConnect appliance that Netflix
-	    uses to stream movies to its customers is based on FreeBSD.
-	    Netflix has made extensive contributions to the codebase
-	    and works to maintain a zero delta from mainline FreeBSD.
-	    Netflix OpenConnect appliances are responsible for
-	    delivering more than 32% of all Internet traffic in North
-	    America.</para>
+	    </indexterm> - Netflix 用來以串流傳送電影到客戶的 OpenConnect 設備是以 FreeBSD 為基礎。 Netflix 也做了大量貢獻到程式碼庫，並致力於維持與主線 FreeBSD 的零修正關係。Netflix 的 OpenConnect 設備負責了北美所有的網路流量 32％ 以上。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.sandvine.com/">Sandvine</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.sandvine.com/">Sandvine</link> <indexterm>
 	      <primary>Sandvine</primary>
-	    </indexterm> - Sandvine uses FreeBSD as the basis of their
-	    high performance realtime network processing platforms
-	    that make up their intelligent network policy control
-	    products.</para>
+	    </indexterm> - Sandvine 使用 FreeBSD 作為它們的高性能即時網路處理平台，來建立它門的智慧網路策​​略控制產品。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.sony.com/">Sony</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.sony.com/">Sony</link> <indexterm>
 	      <primary>Sony</primary>
-	    </indexterm> - The PlayStation 4 gaming console runs a
-	    modified version of FreeBSD.</para>
+	    </indexterm> - PlayStation 4 遊戲主機使用了修改過的 FreeBSD 版本來運作。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.sophos.com/">Sophos</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.sophos.com/">Sophos</link> <indexterm>
 	      <primary>Sophos</primary>
-	    </indexterm> - The Sophos Email Appliance product is based
-	    on a hardened FreeBSD and scans inbound mail for spam and
-	    viruses, while also monitoring outbound mail for malware
-	    as well as the accidental loss of sensitive
-	    information.</para>
+	    </indexterm> - Sophos 電子郵件設備產品是以加強防護 (Hardened) 的 FreeBSD 為基礎，可掃描入站郵件中的垃圾郵件和病毒，同時也可監控出站郵件中的惡意軟體及敏感資訊。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.spectralogic.com/">Spectra
-	      Logic</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.spectralogic.com/">Spectra Logic</link> <indexterm>
 	      <primary>Spectra Logic</primary>
-	    </indexterm> - The nTier line of archive grade storage
-	    appliances run FreeBSD and OpenZFS.</para>
+	    </indexterm> - 儲藏級儲存設備的 nTier 產品線以 FreeBSD 和 OpenZFS 來運作。</para>
 	</listitem>
 
 	<listitem>
@@ -1730,14 +1666,9 @@
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.whatsapp.com/">WhatsApp</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="http://www.whatsapp.com/">WhatsApp</link> <indexterm>
 	      <primary>WhatsApp</primary>
-	    </indexterm> - When WhatsApp needed a platform that would
-	    be able to handle more than 1 million concurrent TCP
-	    connections per server, they chose FreeBSD.  They then
-	    proceeded to scale past 2.5 million connections per
-	    server.</para>
+	    </indexterm> - 當WhatsApp 需要一個每台伺服器能夠處理超過 100 萬個同時的 TCP 連線平台時，它們選擇了 FreeBSD。它們接著擴大規模到每台伺服器處理超過 250 萬的連線。</para>
 	</listitem>
 
 	<listitem>
@@ -8364,82 +8295,56 @@ hald_enable="YES"</programlisting>
   <sect1 xml:id="x-compiz-fusion">
     <title>安裝 Compiz Fusion</title>
 
-    <para xml:lang="en">One way to make using a desktop
-      computer more pleasant is with nice 3D effects.</para>
+    <para>要令使用桌面電腦更令人愉快的方法是用炫麗的 3D 效果。</para>
 
-    <para xml:lang="en">Installing the <application>Compiz Fusion</application>
-      package is easy, but configuring it requires a few steps that
-      are not described in the port's documentation.</para>
+    <para>安裝 <application>Compiz Fusion</application> 套件非常簡單，但設定該套件需要一些未在 Port 說明文件中說明的步驟。</para>
 
     <sect2 xml:id="x-compiz-video-card">
       <title>設定 FreeBSD nVidia 驅動程式</title>
 
-      <para xml:lang="en">Desktop effects can cause quite a load on the graphics
-	card.  For an nVidia-based graphics card, the proprietary
-	driver is required for good performance.  Users of other
-	graphics cards can skip this section and continue with the
-	<filename>xorg.conf</filename> configuration.</para>
+      <para>桌面特效需要使用相當程度的顯示卡，對於以 nVidia 為基礎的顯示卡，需要使用專用的驅動程序來取得較佳的性能。其他顯示卡的使用可以跳過這一節，並繼續 <filename>xorg.conf</filename> 設定。</para>
 
-      <para xml:lang="en">To determine which nVidia driver is needed see the <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/x.html#idp59950544">FAQ question
-	  on the subject</link>.</para>
+      <para>要知道需要那一種 nVidia 驅動程式可以查看 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/faq/x.html#idp59950544">FAQ 中與此主題相關的問題</link>。</para>
 
-      <para xml:lang="en">Having determined the correct driver to use for your card,
-	installation is as simple as installing any other
-	package.</para>
+      <para>知道您的顯示卡要使用那種驅動程式才是正確的之後，接下來的安裝程序跟安裝其他套件一樣簡單。</para>
 
-      <para xml:lang="en">For example, to install the latest driver:</para>
+      <para>例如，要安裝最新的驅動程式:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install x11/nvidia-driver</userinput></screen>
 
-      <para xml:lang="en">The driver will create a kernel module, which needs to be
-	loaded at system startup.  Add the following line to
-	<filename>/boot/loader.conf</filename>:</para>
+      <para>驅動程式會建立一個需要在系統啟動時載入的核心模組，加入下行到 <filename>/boot/loader.conf</filename>:</para>
 
       <programlisting xml:lang="en">nvidia_load="YES"</programlisting>
 
       <note>
-	<para xml:lang="en">To immediately load the kernel module into the running
-	  kernel by issuing a command like <command>kldload
-	    nvidia</command>, however it has been noted that the some
-	  versions of <application>Xorg</application> will not
-	  function properly if the driver is not loaded at boot time.
-	  After editing <filename>/boot/loader.conf</filename>, a
-	  reboot is recommended.</para>
+	<para>要立即載入核心模組到執行中的核心可以下 <command>kldload nvidia</command> 指令，但是需要注意，若不是在開機時載入，某些 <application>Xorg</application> 版本會無法正常運作。因此編輯完 <filename>/boot/loader.conf</filename> 之後建議要重新開機。</para>
       </note>
 
-      <para xml:lang="en">With the kernel module loaded, you normally only need to
-	change a single line in <filename>xorg.conf</filename>
-	to enable the proprietary driver:</para>
+      <para>核心模組載入之後，您只需要更改 <filename>xorg.conf</filename> 的其中一行來開啟專用的驅動程式:</para>
 
-      <para xml:lang="en">Find the following line in
-	<filename>/etc/X11/xorg.conf</filename>:</para>
+      <para>找到 <filename>/etc/X11/xorg.conf</filename> 中的下行:</para>
 
       <programlisting xml:lang="en">Driver      "nv"</programlisting>
 
-      <para xml:lang="en">and change it to:</para>
+      <para>然後更改該行為:</para>
 
       <programlisting xml:lang="en">Driver      "nvidia"</programlisting>
 
-      <para xml:lang="en">Start the GUI as usual, and you should be greeted by the
-	nVidia splash.  Everything should work as usual.</para>
+      <para>如往常般啟動 GUI，您應該會看到 nVidia 的啟動畫面，其他東西應如往常般運作。</para>
     </sect2>
 
     <sect2 xml:id="xorg-configuration">
       <title>設定 xorg.conf 來啟動桌面特效</title>
 
-      <para xml:lang="en">To enable <application>Compiz Fusion</application>,
-	<filename>/etc/X11/xorg.conf</filename> needs to be
-	modified:</para>
+      <para>要開啟 <application>Compiz Fusion</application> 需要修改 <filename>/etc/X11/xorg.conf</filename>:</para>
 
-      <para xml:lang="en">Add the following section to enable composite
-	effects:</para>
+      <para>加入以下 Section 來開啟合成特效:</para>
 
       <programlisting xml:lang="en">Section "Extensions"
     Option         "Composite" "Enable"
 EndSection</programlisting>
 
-      <para xml:lang="en">Locate the <quote>Screen</quote> section which should look
-	similar to the one below:</para>
+      <para>找到 <quote>Screen</quote> section，長的應該如下所示:</para>
 
       <programlisting xml:lang="en">Section "Screen"
     Identifier     "Screen0"
@@ -8447,25 +8352,19 @@ EndSection</programlisting>
     Monitor        "Monitor0"
     ...</programlisting>
 
-      <para xml:lang="en">and add the following two lines (after
-	<quote>Monitor</quote> will do):</para>
+      <para>然後加入以下兩行 (在<quote>Monitor</quote> 之後):</para>
 
       <programlisting xml:lang="en">DefaultDepth    24
 Option         "AddARGBGLXVisuals" "True"</programlisting>
 
-      <para xml:lang="en">Locate the <quote>Subsection</quote> that refers to the
-	screen resolution that you wish to use.  For example, if you
-	wish to use 1280x1024, locate the section that follows.  If
-	the desired resolution does not appear in any subsection, you
-	may add the relevant entry by hand:</para>
+      <para>找到您欲使用的螢幕解析度所在的 <quote>Subsection</quote>，例如，您想要使用 1280x1024，則找到如下所示的 Section。若想要使用的解析度不在任何 Subsection 之中，您可以手動加入對應的項目:</para>
 
       <programlisting xml:lang="en">SubSection     "Display"
     Viewport    0 0
     Modes      "1280x1024"
 EndSubSection</programlisting>
 
-      <para xml:lang="en">A color depth of 24 bits is needed for desktop
-	composition, change the above subsection to:</para>
+      <para>桌面合成需要 24 bit 的色彩深度，更改上述 Subsection 為:</para>
 
       <programlisting xml:lang="en">SubSection     "Display"
     Viewport    0 0
@@ -8473,18 +8372,14 @@ EndSubSection</programlisting>
     Modes      "1280x1024"
 EndSubSection</programlisting>
 
-      <para xml:lang="en">Finally, confirm that the <quote>glx</quote> and
-	<quote>extmod</quote> modules are loaded in the
-	<quote>Module</quote> section:</para>
+      <para>最後確認在 <quote>Module</quote> section 中已經載入 <quote>glx</quote> 與 <quote>extmod</quote> 模組:</para>
 
       <programlisting xml:lang="en">Section "Module"
     Load           "extmod"
     Load           "glx"
     ...</programlisting>
 
-      <para xml:lang="en">The preceding can be done automatically with
-	<package>x11/nvidia-xconfig</package> by running (as
-	root):</para>
+      <para>前面所述的動作可以執行 <package>x11/nvidia-xconfig</package> 來自動完成 (使用 root) :</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>nvidia-xconfig --add-argb-glx-visuals</userinput>
 <prompt>#</prompt> <userinput>nvidia-xconfig --composite</userinput>
@@ -8494,64 +8389,38 @@ EndSubSection</programlisting>
     <sect2 xml:id="compiz-fusion">
       <title>安裝與設定 Compiz Fusion</title>
 
-      <para xml:lang="en">Installing <application>Compiz Fusion</application>
-	is as simple as any other package:</para>
+      <para>安裝 <application>Compiz Fusion</application> 如同安裝其他套件一樣簡單:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install x11-wm/compiz-fusion</userinput></screen>
 
-      <para xml:lang="en">When the installation is finished, start your graphic
-	desktop and at a terminal, enter the following commands (as a
-	normal user):</para>
+      <para>安裝完成之後，開啟您的圖型化桌面，然後在終端機的畫面輸入以下指令 (使用一般使用者):</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>compiz --replace --sm-disable --ignore-desktop-hints ccp &amp;</userinput>
 <prompt>%</prompt> <userinput>emerald --replace &amp;</userinput></screen>
 
-      <para xml:lang="en">Your screen will flicker for a few seconds, as your window
-	manager (e.g. <application>Metacity</application> if you are
-	using <application>GNOME</application>) is replaced by
-	<application>Compiz Fusion</application>.
-	<application>Emerald</application> takes care of the window
-	decorations (i.e. close, minimize, maximize buttons, title
-	bars and so on).</para>
+      <para>由於您的視窗管理程式 (例如: <application>Metacity</application>，若您使用 <application>GNOME</application>) 會被替換成 <application>Compiz Fusion</application>，您的螢幕會閃爍幾秒。而 <application>Emerald</application> 會處理視窗的裝飾  (例如: 關閉、最小化、最大化按鈕、標題列及其他相關)。</para>
 
-      <para xml:lang="en">You may convert this to a trivial script and have it run
-	at startup automatically (e.g. by adding to
-	<quote>Sessions</quote> in a <application>GNOME</application>
-	desktop):</para>
+      <para>您或許可以將這些指令改寫成較小的 Script 然後在啟動時自動執行 (加到 <application>GNOME</application> 桌面的 <quote>Sessions</quote> 中):</para>
 
       <programlisting xml:lang="en">#! /bin/sh
 compiz --replace --sm-disable --ignore-desktop-hints ccp &amp;
 emerald --replace &amp;</programlisting>
 
-      <para xml:lang="en">Save this in your home directory as, for example,
-	<filename>start-compiz</filename> and make it
-	executable:</para>
+      <para>儲存這個 Script 到您的家目錄所在位置，例如 <filename>start-compiz</filename>，然後讓該檔案可以執行:</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>chmod +x ~/start-compiz</userinput></screen>
 
-      <para xml:lang="en">Then use the GUI to add it to <guimenuitem>Startup
-	  Programs</guimenuitem> (located in
-	<guimenuitem>System</guimenuitem>,
-	<guimenuitem>Preferences</guimenuitem>,
-	<guimenuitem>Sessions</guimenuitem> on a
-	<application>GNOME</application> desktop).</para>
+      <para>接著使用 GUI  將該檔案加入啟動程式 <guimenuitem>Startup Programs</guimenuitem> (位於 <application>GNOME</application> 桌面的系統 <guimenuitem>System</guimenuitem>, 偏好設定 <guimenuitem>Preferences</guimenuitem>, 工作階段 <guimenuitem>Sessions</guimenuitem>)。</para>
 
-      <para xml:lang="en">To actually select all the desired effects and their
-	settings, execute (again as a normal user) the
-	<application>Compiz Config Settings Manager</application>:</para>
+      <para>要選擇所想使用的特效與相關設定，可執行 (一樣使用一般使用者) Compiz Config 設定管理程式 <application>Compiz Config Settings Manager</application>:</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>ccsm</userinput></screen>
 
       <note>
-	<para xml:lang="en">In <application>GNOME</application>, this can also be
-	  found in the <guimenuitem>System</guimenuitem>,
-	  <guimenuitem>Preferences</guimenuitem> menu.</para>
+	<para>在 <application>GNOME</application> 中，也可在系統 <guimenuitem>System</guimenuitem>, 偏好設定 <guimenuitem>Preferences</guimenuitem> 選單中找到。</para>
       </note>
 
-      <para xml:lang="en">If you have selected <quote>gconf support</quote> during
-	the build, you will also be able to view these settings using
-	<command>gconf-editor</command> under
-	<literal>apps/compiz</literal>.</para>
+      <para>若您在編譯時選擇了 <quote>gconf support</quote>，您便可使用 <command>gconf-editor</command> 在 <literal>apps/compiz</literal> 下查看設定。</para>
     </sect2>
   </sect1>
 
@@ -8559,41 +8428,16 @@ emerald --replace &amp;</programlisting>
 
     <title>疑難排解</title>
 
-    <para xml:lang="en">If the mouse does not work, you will need to first configure
-      it before proceeding.
-      In recent <application>Xorg</application>
-      versions, the <literal>InputDevice</literal> sections in
-      <filename>xorg.conf</filename> are ignored in favor of the
-      autodetected devices.  To restore the old behavior, add the
-      following line to the <literal>ServerLayout</literal> or
-      <literal>ServerFlags</literal> section of this file:</para>
+    <para>若滑鼠無法使用，您將需要做第一次設定方可繼續。在最近的 <application>Xorg</application> 版本，使用自動偵測裝置會忽略在 <filename>xorg.conf</filename> 中的 <literal>InputDevice</literal> section。要採用舊的方式，需在此檔案加入下行到 <literal>ServerLayout</literal> 或 <literal>ServerFlags</literal> section:</para>
 
       <programlisting xml:lang="en">Option "AutoAddDevices" "false"</programlisting>
 
-      <para xml:lang="en">Input devices may then be configured as in previous
-	versions, along with any other options needed (e.g., keyboard
-	layout switching).</para>
+      <para>輸入裝置便可如先前版本一樣設定，連同其他所需的選項 (如: 切換鍵盤配置)。</para>
 
       <note>
-	<para xml:lang="en">As previously explained the
-	  <application>hald</application> daemon will, by default,
-	  automatically detect your keyboard.  There are chances that
-	  your keyboard layout or model will not be correct, desktop
-	  environments like <application>GNOME</application>,
-	  <application>KDE</application> or
-	  <application>Xfce</application> provide tools to configure
-	  the keyboard.  However, it is possible to set the keyboard
-	  properties directly either with the help of the
-	  <citerefentry vendor="xorg"><refentrytitle>setxkbmap</refentrytitle><manvolnum>1</manvolnum></citerefentry> utility or with a
-	  <application>hald</application>'s configuration rule.</para>
+	<para>如同前面有說明過，<application>hald</application> Daemon 預設會自動偵測您的鍵盤，因此您的鍵盤配置或型號可能不正確，桌面環境如 <application>GNOME</application>, <application>KDE</application> 或 <application>Xfce</application> 會提供設定鍵盤的工具。即使如此，還是有可能透過 <citerefentry vendor="xorg"><refentrytitle>setxkbmap</refentrytitle><manvolnum>1</manvolnum></citerefentry> 工具或 <application>hald</application> 的設定規則的協助來直接設定鍵盤屬性。</para>
 
-	<para xml:lang="en">For example if, one wants to use a PC 102 keys keyboard
-	  coming with a french layout, we have to create a keyboard
-	  configuration file for <application>hald</application>
-	  called <filename>x11-input.fdi</filename> and saved in the
-	  <filename>/usr/local/etc/hal/fdi/policy</filename>
-	  directory.  This file should contain the following
-	  lines:</para>
+	<para>舉例來說，若有人想要使用 PC 102 鍵的鍵盤，採用法語 (French) 配置，我們便需要建立一個給 <application>hald</application> 的鍵盤設定檔，名稱為 <filename>x11-input.fdi</filename>，然後儲存到 <filename>/usr/local/etc/hal/fdi/policy</filename> 目錄。這個檔案中應要有以下幾行:</para>
 
 	<programlisting xml:lang="en">&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
 &lt;deviceinfo version="0.2"&gt;
@@ -8605,20 +8449,15 @@ emerald --replace &amp;</programlisting>
   &lt;/device&gt;
 &lt;/deviceinfo&gt;</programlisting>
 
-	<para xml:lang="en">If this file already exists, just copy and add to your
-	  file the lines regarding the keyboard configuration.</para>
+	<para>若這個檔案已經存在，只需要複製並貼上您的檔案中有關鍵盤設定的那幾行。</para>
 
-	<para xml:lang="en">You will have to reboot your machine to force
-	  <application>hald</application> to read this file.</para>
+	<para>您會需要重新啟動您的機器來讓 <application>hald</application> 讀取這個檔案。</para>
 
-	<para xml:lang="en">It is possible to do the same configuration from an X
-	  terminal or a script with this command line:</para>
+	<para>也是可以從 X 終端機或 Script 下指令來做同樣的設定:</para>
 
 	<screen xml:lang="en"><prompt>%</prompt> <userinput>setxkbmap -model pc102 -layout fr</userinput></screen>
 
-	<para xml:lang="en"><filename>/usr/local/share/X11/xkb/rules/base.lst</filename>
-	  lists the various keyboard, layouts and options
-	  available.</para>
+	<para><filename>/usr/local/share/X11/xkb/rules/base.lst</filename> 中列出了各種可用的鍵盤、配置與設定。</para>
       </note>
 
       <indexterm xml:lang="en"><primary><application>Xorg</application>
@@ -8840,11 +8679,7 @@ EndSection</programlisting>
 	<qandaset>
 	  <qandaentry>
 	    <question xml:id="no-decorations">
-	      <para xml:lang="en">I have installed
-		<application>Compiz Fusion</application>, and
-		after running the commands you mention, my windows are
-		left without title bars and buttons.  What is
-		wrong?</para>
+	      <para>我已經安裝了 <application>Compiz Fusion</application>，但在執行了您所提到的指令後，我的視窗的標題列與按鈕便消失了。是那裡有問題?</para>
 	    </question>
 
 	    <answer>
@@ -8859,10 +8694,7 @@ EndSection</programlisting>
 
 	  <qandaentry>
 	    <question xml:id="xorg-crash">
-	      <para xml:lang="en">When I run the command to start
-		<application>Compiz Fusion</application>, the X
-		server crashes and I am back at the console.  What is
-		wrong?</para>
+	      <para>當我執行指令來啟動 <application>Compiz Fusion</application>，X 伺服器便當掉了，然後我又返回 Console。是那裡有問題?</para>
 	    </question>
 
 	    <answer>
@@ -9348,7 +9180,7 @@ EndSection</programlisting>
 
       <para><application>AbiWord</application> 是一個免費的文件處理軟體，外觀和感覺都近似於 <application><trademark class="registered">Microsoft</trademark> Word</application>。 它非常快速，包含了許多功能而且非常容易上手。</para>
 
-      <para><application>AbiWord</application> 可以輸入或輸出許多檔案格式， 包括一些有專利的格式，例如 <trademark class="registered">Microsoft</trademark> <filename>.rtf</filename> 格式。</para>
+      <para><application>AbiWord</application> 可以輸入或輸出許多檔案格式， 包括一些有專用的格式，例如 <trademark class="registered">Microsoft</trademark> <filename>.rtf</filename> 格式。</para>
 
       <para>要安裝 <application>AbiWord</application> Binary 套件，可使用下列指令：</para>
 
@@ -12695,7 +12527,7 @@ Starting lpd.</screen>
 	<listitem>
 	  <para>製造商可能會使用簡單的處理器和較小的記憶體來降低印表機的成本，這些印表機無法列印純文字，相反的，文字與圖形會先在機器上的驅動程式畫完後傳送到印表機。這些稱為<emphasis>以主機為基礎 (Host-based)</emphasis> 的印表機。</para>
 
-	  <para>驅動程式與以主機為基礎的印表機通訊通常會透過專有或無文件的通訊協定，這讓這些印表機只能在最常用的作業系統上運作。</para>
+	  <para>驅動程式與以主機為基礎的印表機通訊通常會透過專用或無文件的通訊協定，這讓這些印表機只能在最常用的作業系統上運作。</para>
 	</listitem>
       </varlistentry>
     </variablelist>
@@ -12753,7 +12585,7 @@ Starting lpd.</screen>
 
       <para>行列式印表機如同典型的噴墨式印表機通常不支援 <trademark class="registered">PostScript</trademark> 或 <acronym>PCL</acronym>，這種印表機通常可以列印純 <acronym>ASCII</acronym> 文字檔案。<package role="port">print/ghostscript</package> 支援部份這種印表機使用的 <acronym>PDL</acronym>，不過要在這種印表機上列印完全以圖型為基礎的頁面通常會非常緩慢，由於需要傳送大量的資料並列印。</para>
 
-      <para>以主機為基礎的印表機通常較難設定，有些會因為用了專有的 <acronym>PDL</acronym> 而無法使用，盡可能避免使用這類的印表機。</para>
+      <para>以主機為基礎的印表機通常較難設定，有些會因為用了專用的 <acronym>PDL</acronym> 而無法使用，盡可能避免使用這類的印表機。</para>
 
       <para>有關各種 <acronym>PDL</acronym> 的介紹可至 <link xlink:href="http://www.undocprint.org/formats/page_description_languages"/>。各種型號印表機所使用的特定 <acronym>PDL</acronym> 可至 <link xlink:href="http://www.openprinting.org/printers"/> 查詢。</para>
     </sect2>
@@ -39095,7 +38927,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	<listitem>
 	  <para>加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> 郵遞論壇來隨時瞭解 FreeBSD-STABLE 編譯的相依關係或是任何其他需特別注意的議題。開發者在評估一些有爭議的修正或更新時，也會先在這裡發信公告，讓使用者有機會可以對提案的更改提出問題。</para>
 
-	  <para>加入 <application>svn</application>相關郵遞論壇來追蹤該分支的修訂。 例如，要追蹤 9-STABLE 分支的使用者應該加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> 郵遞論壇。這個郵遞論壇會記錄每一次修改的提交項目，以及可能產生的副作用的相關資訊。</para>
+	  <para>加入 <application>svn</application> 相關郵遞論壇來追蹤該分支的修訂。 例如，要追蹤 9-STABLE 分支的使用者應該加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> 郵遞論壇。這個郵遞論壇會記錄每一次修改的提交項目，以及可能產生的副作用的相關資訊。</para>
 
 	  <para>要加入這兩個郵遞論壇，請前往 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link> 點選要訂閱的郵遞論壇，並依照網頁指示的步驟操作。要追蹤整個原始碼樹，不單只有 FreeBSD-CURRENT 的變更，可訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link> 郵遞論壇。</para>
 	</listitem>
