@@ -64,10 +64,12 @@ pkg install poedit
 | Script | (不翻譯) ||
 | Log | 日誌 (需附註原文) ||
 | System call | 系統呼叫 (需附註原文) ||
-| Slice  | TBD ||
-| third-party software | 第三方軟體 ||
-| Partition, Slice | 分割區 ||
+| Slice | 切割區 | 同 Windows 的 Partition (分割區) |
+| Slice Partition | 切割區分區 | 與 Windows 的 Partition 不同, 是 Slice 底下再分出來的 |
+| Partition | 分割區 | 同 FreeBSD 的 Sliace (切割區) |
 | Partitioning | 磁碟分割 ||
+| Partitioning scheme | 分割表格式 | 例如 MBR, GPT 等 |
+| third-party software | 第三方軟體 ||
 | Volume | 磁碟區 ||
 | Block, Block size, Bad block | 區塊, 磁碟區塊 ||
 | Swap Space | 交換空間 ||
@@ -107,14 +109,11 @@ pkg install poedit
 | Manual Page | 操作手冊 ||
 | Host OS | 主端作業系統 ||
 | Guest OS | 客端作業系統 ||
-| Partitioning scheme | 分割表格式 | 例如 MBR, GPT 等 |
 | Distribution | 發行版 | 用來發行用的版本 |
 | Release | 發佈, 發佈版 | |
 | Command prompt | 指令提示 |
 | Command line | 指令列 |
 | Permission Set | 權限集 | 泛指讀取、寫入、執行等權限 |
-| Slice | 切割區 | 類似 Windows 的 Partition (分割區) |
-| Partition | 分區 | 與 Windows 的 Partition 不同, 是 Slice 底下再分出來的 |
 | Dangerously dedicated | 危險專用 | 磁碟中無 slice 的 partition |
 | Stripe, Striping | 串連 | RAID, ZFS |
 | Mirror, Mirroring | 鏡像 | RAID, ZFS |
