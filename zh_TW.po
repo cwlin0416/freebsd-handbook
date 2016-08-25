@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-08-10 15:31+0800\n"
-"PO-Revision-Date: 2016-08-11 15:18+0800\n"
+"PO-Revision-Date: 2016-08-25 17:11+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -1014,7 +1014,7 @@ msgstr "<primary>虛擬記憶體</primary>"
 #. (itstool) path: listitem/para
 #: book.translate.xml:1741
 msgid "Demand paged <emphasis>virtual memory</emphasis><_:indexterm-1/> and <quote>merged VM/buffer cache</quote> design efficiently satisfies applications with large appetites for memory while still maintaining interactive response to other users."
-msgstr "依需要換頁的 <emphasis>虛擬記憶體</emphasis><_:indexterm-1/> 及 <quote>合併式VM/buffer 快取</quote> 設計，有效的滿足了需使用大量記憶體的程式，同時也能維持與其他使用者的互動。"
+msgstr "依需要換頁的 <emphasis>虛擬記憶體</emphasis><_:indexterm-1/> 及 <quote>合併式 VM/buffer 快取</quote> 設計，有效的滿足了需使用大量記憶體的程式，同時也能維持與其他使用者的互動。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1751
@@ -1333,7 +1333,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2061
 msgid "<link xlink:href=\"http://www.ixsystems.com/\">iXsystems</link> <_:indexterm-1/> - The TrueNAS line of unified storage appliances is based on FreeBSD. In addition to their commercial products, iXsystems also manages development of the open source projects PC-BSD and FreeNAS."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.ixsystems.com/\">iXsystems</link> <_:indexterm-1/> - 統合存儲 (Unified Storage) 設備的 TrueNAS 產品線是以 FreeBSD 為基礎。除了該公司自己的商業產品外，iXsystems 也管理著 PC-BSD 和 FreeNAS 兩個開源計劃的開發。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2072
@@ -1429,7 +1429,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2156
 msgid "<link xlink:href=\"http://www.weather.com/\">The Weather Channel</link> <_:indexterm-1/> - The IntelliStar appliance that is installed at each local cable providers headend and is responsible for injecting local weather forecasts into the cable TV network's programming runs FreeBSD."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.weather.com/\">The Weather Channel</link> <_:indexterm-1/> - 被安裝在各地有線電視營運商前端，負責加入當地天氣預報到有線電視網路節目的 IntelliStar 設備便是使用 FreeBSD。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2169
@@ -1441,7 +1441,7 @@ msgstr ""
 msgid ""
 "<link xlink:href=\"http://www.verisign.com/\">Verisign</link> <_:indexterm-1/> - Verisign is responsible for operating the .com and .net root domain registries as well as the accompanying DNS infrastructure. They rely on a number of different network operating systems including FreeBSD to ensure there is no common point of failure in "
 "their infrastructure."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.verisign.com/\">Verisign</link> <_:indexterm-1/> - VeriSign 主要經營 .com 與 .net 根網域名稱註冊業務以及隨附的 DNS 基礎設施運作。這些基礎設施的運作仰賴各種不同的網路作業系統包括 FreeBSD 來確保不會有單點故障的問題。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2182
@@ -1454,6 +1454,8 @@ msgid ""
 "<link xlink:href=\"http://www.voxer.com/\">Voxer</link> <_:indexterm-1/> - Voxer powers their mobile voice messaging platform with ZFS on FreeBSD. Voxer switched from a Solaris derivative to FreeBSD because of its superior documentation, larger and more active community, and more developer friendly environment. In addition to critical "
 "features like <acronym>ZFS</acronym> and DTrace, FreeBSD also offers TRIM support for <acronym>ZFS</acronym>."
 msgstr ""
+"<link xlink:href=\"http://www.voxer.com/\">Voxer</link> <_:indexterm-1/> - Voxer 使用了 FreeBSD 的 ZFS 來驅動行動語音通訊平台，讓 Voxer 從 Solaris 改使用 FreeBSD 的原因是 FreeBSD 擁有詳盡的文件、更大型且活躍的社群、較便利的開發人員環境。除了提供關鍵的 <acronym>ZFS</acronym> 和 DTrace 功能之外 FreeBSD 的 <acronym>ZFS</acronym> 也支援了 "
+"TRIM。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2196
@@ -1463,7 +1465,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2195
 msgid "<link xlink:href=\"http://www.whatsapp.com/\">WhatsApp</link> <_:indexterm-1/> - When WhatsApp needed a platform that would be able to handle more than 1 million concurrent TCP connections per server, they chose FreeBSD. They then proceeded to scale past 2.5 million connections per server."
-msgstr "<link xlink:href=\"http://www.whatsapp.com/\">WhatsApp</link> <_:indexterm-1/> - 當WhatsApp 需要一個每台伺服器能夠同時處理超過 100 萬個 TCP 連線的平台時，它們選擇了 FreeBSD。它們接著擴大規模到每台伺服器處理超過 250 萬的連線。"
+msgstr "<link xlink:href=\"http://www.whatsapp.com/\">WhatsApp</link> <_:indexterm-1/> - 當 WhatsApp 面臨需要一個每台伺服器能夠同時處理超過 100 萬個 TCP 連線的平台時，它們選擇了 FreeBSD。它們接著擴大規模到每台伺服器處理超過 250 萬的連線。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2208
@@ -1474,7 +1476,7 @@ msgstr ""
 #: book.translate.xml:2206
 msgid ""
 "<link xlink:href=\"http://wheelsystems.com/\">Wheel Systems</link> <_:indexterm-1/> - The FUDO security appliance allows enterprises to monitor, control, record, and audit contractors and administrators who work on their systems. Based on all of the best security features of FreeBSD including ZFS, GELI, Capsicum, HAST, and auditdistd."
-msgstr ""
+msgstr "<link xlink:href=\"http://wheelsystems.com/\">Wheel Systems</link> <_:indexterm-1/> - FUDO 安全性設備讓企業可以監控、控制、記錄以及稽查在其系統中作業的承包商與管理員。這些功能皆是以 FreeBSD 最佳的安全性功能為基礎，包括 ZFS, GELI, Capsicum, HAST 及 auditdistd。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2220
@@ -1489,7 +1491,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2225
 msgid "<link xlink:href=\"http://bsdrp.net/\">BSD Router</link> <_:indexterm-1/> - A FreeBSD based replacement for large enterprise routers designed to run on standard PC hardware."
-msgstr ""
+msgstr "<link xlink:href=\"http://bsdrp.net/\">BSD Router</link> <_:indexterm-1/> - 以 FreeBSD 為基礎的大型企業路由器替代方案，專門設計為可在標準 PC 硬體上運作。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2236
@@ -1501,7 +1503,7 @@ msgstr ""
 msgid ""
 "<link xlink:href=\"http://www.freenas.org/\">FreeNAS</link> <_:indexterm-1/> - A customized FreeBSD designed to be used as a network file server appliance. Provides a python based web interface to simplify the management of both the UFS and ZFS file systems. Includes support for NFS, SMB/CIFS, AFP, FTP, and iSCSI. Includes an "
 "extensible plugin system based on FreeBSD jails."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.freenas.org/\">FreeNAS</link> <_:indexterm-1/> - 專為網路檔案伺服器設備使用所設計的 FreeBSD。提供了以 Python 為基礎的網頁介面來簡化 UFS 與 ZFS 檔案系統的管理，支援了 NFS、SMB/ CIFS、AFP、FTP 與 iSCSI，還有以 FreeBSD Jail 為基礎的套件系統。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2248
@@ -1511,7 +1513,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2247
 msgid "<link xlink:href=\"http://www.ghostbsd.org/\">GhostBSD</link> <_:indexterm-1/> - A desktop oriented distribution of FreeBSD bundled with the Gnome desktop environment."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.ghostbsd.org/\">GhostBSD</link> <_:indexterm-1/> - 採用 Gnome 桌面環境的 FreeBSD 發行版。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2256
@@ -1521,7 +1523,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2255
 msgid "<link xlink:href=\"http://mfsbsd.vx.sk/\">mfsBSD</link> <_:indexterm-1/> - A toolkit for building a FreeBSD system image that runs entirely from memory."
-msgstr ""
+msgstr "<link xlink:href=\"http://mfsbsd.vx.sk/\">mfsBSD</link> <_:indexterm-1/> - 用來建置可完全從記憶體執行 FreeBSD 系統映像檔工具。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2264
@@ -1531,7 +1533,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2263
 msgid "<link xlink:href=\"http://www.nas4free.org/\">NAS4Free</link> <_:indexterm-1/> - A file server distribution based on FreeBSD with a PHP powered web interface."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.nas4free.org/\">NAS4Free</link> <_:indexterm-1/> - 以 FreeBSD 及 PHP 驅動網頁介面為基礎的檔案伺服器。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2272
@@ -1543,7 +1545,7 @@ msgstr ""
 msgid ""
 "<link xlink:href=\"http://www.opnsense.org/\">OPNSense</link> <_:indexterm-1/> - OPNsense is an open source, easy-to-use and easy-to-build FreeBSD based firewall and routing platform. OPNsense includes most of the features available in expensive commercial firewalls, and more in many cases. It brings the rich feature set of commercial "
 "offerings with the benefits of open and verifiable sources."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.opnsense.org/\">OPNSense</link> <_:indexterm-1/> - OPNsense 是一個以 FreeBSD 為基礎的開源、易於使用及易於建置的防火牆和路由平台。OPNsense 有大多數在昂貴的商業防火牆上才有的功能。它帶來了商業產品的豐富功能集，同時擁有開放和安全的來源。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2284
@@ -1553,7 +1555,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2283
 msgid "<link xlink:href=\"http://www.pcbsd.org/\">PC-BSD</link> <_:indexterm-1/> - A customized version of FreeBSD geared towards desktop users with graphical utilities to exposing the power of FreeBSD to all users. Designed to ease the transition of Windows and OS X users."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.pcbsd.org/\">PC-BSD</link> <_:indexterm-1/> - 訂製版本的 FreeBSD，裝備了給桌面使用者使用的圖型化工具來展示 FreeBSD 強大的功能給所有使用者，專門設計來緩解使用者在 Windows 與 OS X 間的過渡。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2294
@@ -1563,7 +1565,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2293
 msgid "<link xlink:href=\"http://www.pfsense.org/\">pfSense</link> <_:indexterm-1/> - A firewall distribution based on FreeBSD with a huge array of features and extensive IPv6 support."
-msgstr ""
+msgstr "<link xlink:href=\"http://www.pfsense.org/\">pfSense</link> <_:indexterm-1/> - 以 FreeBSD 為基礎的防火牆發行版，支援巨型陣列及大規模 IPv6。"
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:2303
@@ -1573,7 +1575,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2302
 msgid "<link xlink:href=\"http://zrouter.org/\">ZRouter</link> <_:indexterm-1/> - An open source alternative firmware for embedded devices based on FreeBSD. Designed to replace the proprietary firmware on off-the-shelf routers."
-msgstr ""
+msgstr "<link xlink:href=\"http://zrouter.org/\">ZRouter</link> <_:indexterm-1/> - 嵌入式裝置韌體的開源替代方案，以 FreeBSD 為基礎，專門設計來取代現成路由器上的專用韌體。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:2311
@@ -3133,7 +3135,7 @@ msgstr "接下來的選單用來決定配置磁碟空間的方式，選單中可
 #. (itstool) path: figure/title
 #: book.translate.xml:3909
 msgid "Partitioning Choices on FreeBSD 9.x"
-msgstr "FreeBSD 9.x 的分割區選擇"
+msgstr "FreeBSD 9.x 的磁碟分割選項"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3232,7 +3234,7 @@ msgstr "<filename>/usr</filename> 分割區會保存許多支持系統運作的�
 #. (itstool) path: sect2/para
 #: book.translate.xml:3993
 msgid "When selecting partition sizes, keep the space requirements in mind. Running out of space in one partition while barely using another can be a hassle."
-msgstr ""
+msgstr "在規劃分割區大小時，請牢記空間需求，當因某個分割區空間不足時要改使用其他分割區時會很麻煩。"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:3997
@@ -3249,7 +3251,7 @@ msgstr ""
 msgid ""
 "As a rule of thumb, the swap partition should be about double the size of physical memory (<acronym>RAM</acronym>). Systems with minimal <acronym>RAM</acronym> may perform better with more swap. Configuring too little swap can lead to inefficiencies in the <acronym>VM</acronym> page scanning code and might create issues later if more "
 "memory is added."
-msgstr ""
+msgstr "根據經驗，交換分割區應為是實體記憶體 (<acronym>RAM</acronym>) 的兩倍。使用最低需求的 <acronym>RAM</acronym> 來運作的系統會需要更多的交換空間來取得更好的表現。配置太小的交換交間可能導致 <acronym>VM</acronym> 分頁掃描碼效率不佳，且往後增加更多記憶體時可能會產生問題。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4012
@@ -3257,13 +3259,15 @@ msgid ""
 "On larger systems with multiple <acronym>SCSI</acronym> disks or multiple <acronym>IDE</acronym> disks operating on different controllers, it is recommended that swap be configured on each drive, up to four drives. The swap partitions should be approximately the same size. The kernel can handle arbitrary sizes but internal data "
 "structures scale to 4 times the largest swap partition. Keeping the swap partitions near the same size will allow the kernel to optimally stripe swap space across disks. Large swap sizes are fine, even if swap is not used much. It might be easier to recover from a runaway program before being forced to reboot."
 msgstr ""
+"在有數個 <acronym>SCSI</acronym> 磁碟或數個 <acronym>IDE</acronym> 磁碟在不同控制器的大型系統建議在每個磁碟機上都設定交換空間，最多可至四個磁碟機。每個交換分割區的大小應接近相同。核心雖可以處以任意大小的交換空間，但內部資料結構擴充到 4 倍的最大交換分割區大小時，讓交換分割區擁有相同的大小可以讓核心可以最佳的方式串連各個磁碟的交換空間。規"
+"劃較大交換空間是可以的，即使沒有使用到多少交換空間，這也會讓要從失控的程式恢復運作更容易，而不需強制重新啟動系統。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4025
 msgid ""
 "By properly partitioning a system, fragmentation introduced in the smaller write heavy partitions will not bleed over into the mostly read partitions. Keeping the write loaded partitions closer to the disk's edge will increase <acronym>I/O</acronym> performance in the partitions where it occurs the most. While <acronym>I/O</acronym> "
 "performance in the larger partitions may be needed, shifting them more toward the edge of the disk will not lead to a significant performance improvement over moving <filename>/var</filename> to the edge."
-msgstr ""
+msgstr "正確的做磁碟分割，可以區隔頻繁寫入所產生的資料碎片與經常讀取的分割區，將寫入頻繁的分割區放在磁碟的邊緣可以增加 <acronym>I/O</acronym> 效率。雖然較大的分割區可能也需要增加 <acronym>I/O</acronym> 效率，但將這些分割區往磁碟邊緣移動所增加的效率並不會比將 <filename>/var</filename> 移到磁碟邊緣所增加的效率來的顯著。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4038
@@ -3317,7 +3321,7 @@ msgstr ""
 msgid ""
 "After the partition layout has been created, review it to ensure it meets the needs of the installation. Selecting <guibutton>[ Revert ]</guibutton> will reset the partitions to their original values and pressing <guibutton>[ Auto ]</guibutton> will recreate the automatic FreeBSD partitions. Partitions can also be manually created, "
 "modified, or deleted. When the partitioning is correct, select <guibutton>[ Finish ]</guibutton> to continue with the installation."
-msgstr "分割區配置建立完成之後，再檢查一次確定是否符合安裝的需求。選擇 <guibutton>[ Revert ]</guibutton> 會重設分割區回復為原來的設定值，選擇 <guibutton>[ Auto ]</guibutton> 會重新建立自動配置的 FreeBSD 分割區。分割區也可以手動建立、修改或刪除。當確認分割區正確之後，選擇 <guibutton>[ Finish ]</guibutton> 繼續安裝。"
+msgstr "分割區配置建立完成之後，再檢查一次確定是否符合安裝的需求。選擇 <guibutton>[ Revert ]</guibutton> 會重設分割區回復為原來的設定值，選擇 <guibutton>[ Auto ]</guibutton> 會重新建立自動配置的 FreeBSD 分割區。分割區也可以手動建立、修改或刪除。當確認磁碟分割正確之後，選擇 <guibutton>[ Finish ]</guibutton> 繼續安裝。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4084
@@ -3462,7 +3466,7 @@ msgstr "Volume Table Of Contents，用於 Sun SPARC64 及 UltraSPARC  電腦。"
 #. (itstool) path: sect2/para
 #: book.translate.xml:4181
 msgid "After the partitioning scheme has been selected and created, select <guibutton>[ Create ]</guibutton> again to create the partitions."
-msgstr "選擇完分割區表並建立之後，再選擇 <guibutton>[ Create ]</guibutton> 一次來建立分割區。"
+msgstr "選擇完分割區表格式並建立之後，再選擇 <guibutton>[ Create ]</guibutton> 一次來建立分割區。"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3651,7 +3655,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:4340
 msgid "accept the default (remainder of the disk)"
-msgstr "接受預設值 (磁碟提示)"
+msgstr "接受預設值 (依磁碟提示)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:4342
@@ -3681,16 +3685,19 @@ msgid ""
 "<xref linkend=\"disks-encrypting-geli\"/>. If encryption is enabled, a 2 GB unencrypted boot pool containing the <filename>/boot</filename> directory is created. It holds the kernel and other files necessary to boot the system. A swap partition of a user selectable size is also created, and all remaining space is used for the "
 "<acronym>ZFS</acronym> pool."
 msgstr ""
+"在 FreeBSD 10.0-RELEASE 之後支援了自動建立 root-on-ZFS 的安裝程序。這種磁碟分割模式只能使用整個磁碟，並會清除整個磁碟內的內容。安裝程式會自動建立對齊 4k 邊界的分割區然後強制 <acronym>ZFS</acronym> 使用 4k 扇區 (Sector)。即使在 512 位元扇區的磁碟使用也很安全，並增加了確保在 512 位元的磁碟上建立儲存池 (Pool) 也可在未來加入 4k 扇區磁碟的好"
+"處，無論是作為額外的存儲空間或作為故障磁碟的替代品。安裝程式也可選擇性採用 <acronym>GELI</acronym> 磁碟加密，如 <xref linkend=\"disks-encrypting-geli\"/> 所介紹，若開啟磁碟加密，會建立一個內含 <filename>/boot</filename> 目錄的 2 GB 未加密的開機儲存池，這個儲存池中會儲存核心及其他開機必要的檔案。然後剩餘的空用會給 <acronym>ZFS</acronym> "
+"儲存池使用。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4377
 msgid "The main <acronym>ZFS</acronym> configuration menu offers a number of options to control the creation of the pool."
-msgstr ""
+msgstr "主要 <acronym>ZFS</acronym> 設定選單提供了數個設定選項來控制儲存池的建立。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4382
 msgid "<acronym>ZFS</acronym> Partitioning Menu"
-msgstr "<acronym>ZFS</acronym> 分割區選單"
+msgstr "<acronym>ZFS</acronym> 磁碟分割選單"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -3709,6 +3716,8 @@ msgid ""
 "part-shell\"/> to create the pool. The installer supports the creation of various pool types, including stripe (not recommended, no redundancy), mirror (best performance, least usable space), and RAID-Z 1, 2, and 3 (with the capability to withstand the concurrent failure of 1, 2, and 3 disks, respectively). while selecting the pool "
 "type, a tooltip is displayed across the bottom of the screen with advice about the number of required disks, and in the case of RAID-Z, the optimal number of disks for each configuration."
 msgstr ""
+"選擇 <keycap>T</keycap> 來設定儲存池類型 (<literal>Pool Type</literal>) 以及要組成儲存池的磁碟。自動 <acronym>ZFS</acronym> 安裝程式目前僅支援建立單一頂層 vdev，除了在串連 (Stripe) 模式。要建立更複雜的儲存池，需使用 <xref linkend=\"bsdinstall-part-shell\"/> 的操作來建立儲存池。安裝程式支援建立各種儲存池類型，包含串連 Stripe (不建議，沒"
+"有備援功能)、鏡像 Mirror (效能較佳，但可用空間較少) 以及 RAID-Z 1, 2, 與 3 (分別有能力承受同時 1, 2 與 3 個磁碟的損壞)。在選擇儲存池類型時會有提示顯示在螢幕的下方，提示所需要的磁碟數以及在使用 RAID-Z 時，每個配置最佳的磁碟數。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4408
@@ -3730,7 +3739,7 @@ msgstr ""
 msgid ""
 "Once a <literal>Pool Type</literal> has been selected, a list of available disks is displayed, and the user is prompted to select one or more disks to make up the pool. The configuration is then validated, to ensure enough disks are selected. If not, select <guibutton>&lt;Change Selection&gt;</guibutton> to return to the list of disks, "
 "or <guibutton>&lt;Cancel&gt;</guibutton> to change the pool type."
-msgstr ""
+msgstr "選擇儲存池 (<literal>Pool Type</literal>) 之後，會顯示可用的磁碟清單，然後會提示使用者選擇一個或多個磁碟來建立儲存池。接著會檢驗設定來確定選擇的磁碟足夠，若不足，選擇更改選項 (<guibutton>&lt;Change Selection&gt;</guibutton>) 來返回磁碟清單或取消 (<guibutton>&lt;Cancel&gt;</guibutton>) 來更改儲存池類型。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4427
@@ -3767,7 +3776,7 @@ msgstr ""
 msgid ""
 "If one or more disks are missing from the list, or if disks were attached after the installer was started, select <guibutton>- Rescan Devices</guibutton> to repopulate the list of available disks. To ensure that the correct disks are selected, so as not to accidently destroy the wrong disks, the <guibutton>- Disk Info</guibutton> menu "
 "can be used to inspect each disk, including its partition table and various other information such as the device model number and serial number, if available."
-msgstr ""
+msgstr "若有一個或多磁碟未出現在清單上，或在安裝程式啟動後才連接的磁碟，可選擇重新掃描裝置 (<guibutton>- Rescan Devices</guibutton>) 來更新可用磁碟的清單。要確定是否正確選擇磁碟以不致於摧毀錯的磁碟，可用磁碟資訊 (<guibutton>- Disk Info</guibutton>) 來檢查每個磁碟，包含磁碟中的分割表以及各種其他資訊如裝置型號與序號 (若有的話)。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4457
@@ -3789,12 +3798,12 @@ msgstr ""
 msgid ""
 "The main <acronym>ZFS</acronym> configuration menu also allows the user to enter a pool name, disable forcing 4k sectors, enable or disable encryption, switch between <acronym>GPT</acronym> (recommended) and <acronym>MBR</acronym> partition table types, and select the amount of swap space. Once all options have been set to the desired "
 "values, select the <guibutton>&gt;&gt;&gt; Install</guibutton> option at the top of the menu."
-msgstr ""
+msgstr "主 <acronym>ZFS</acronym> 設定選單也允許使用者輸入儲存池名稱、關閉強制 4k 扇區對齊、開啟或關閉加密、切換 <acronym>GPT</acronym> (建議) 與 <acronym>MBR</acronym> 分割表類型以及選擇交換空間容量。設定所有選項為想要的值之後，請選擇選單上方的安裝 (<guibutton>&gt;&gt;&gt; Install</guibutton>) 選項。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:4476
 msgid "If <acronym>GELI</acronym> disk encryption was enabled, the installer will prompt twice for the passphrase to be used to encrypt the disks."
-msgstr ""
+msgstr "若開啟了 <acronym>GELI</acronym> 磁碟加密，安裝程式會提示輸入兩次用來加密磁碟的密碼。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4481
@@ -3814,7 +3823,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4490
 msgid "The installer then offers a last chance to cancel before the contents of the selected drives are destroyed to create the <acronym>ZFS</acronym> pool."
-msgstr ""
+msgstr "安裝程式接著會提供最後一次修改的機會可取消先前所選擇摧毀用來建立 <acronym>ZFS</acronym> 儲存池的磁碟機。"
 
 #. (itstool) path: figure/title
 #: book.translate.xml:4495
@@ -3834,7 +3843,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4504
 msgid "The installation then proceeds normally."
-msgstr ""
+msgstr "然後安裝程序會正常繼續。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:4509
@@ -3847,6 +3856,8 @@ msgid ""
 "When creating advanced installations, the <application>bsdinstall</application> paritioning menus may not provide the level of flexibility required. Advanced users can select the <guibutton>Shell</guibutton> option from the partitioning menu in order to manually partition the drives, create the file system(s), populate <filename>/tmp/"
 "bsdinstall_etc/fstab</filename>, and mount the file systems under <filename>/mnt</filename>. Once this is done, type <command>exit</command> to return to <application>bsdinstall</application> and continue the installation."
 msgstr ""
+"當要做進階的安裝時，<application>bsdinstall</application> 的分割區配置選單可能無法提供需要的彈性。進階的使用者可以在磁碟分割選單選擇 <guibutton>Shell</guibutton> 選項來手動分割磁碟機、建立檔案系統、填寫 <filename>/tmp/bsdinstall_etc/fstab</filename> 以及掛載檔案系統到 <filename>/mnt</filename> 下。這些動作完成之後，輸入 <command>exit</"
+"command> 可返回 <application>bsdinstall</application> 繼續安裝程序。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:4526
@@ -10441,11 +10452,13 @@ msgid ""
 "<varname>CCACHE_DIR</varname> enables the use of <package role=\"port\">devel/ccache</package> to cache compilation and reduce build times for frequently-compiled code. It may be convenient to put <application>poudriere</application> datasets in an isolated tree mounted at <filename>/poudriere</filename>. Defaults for the other "
 "configuration values are adequate."
 msgstr ""
+"雖然在系統上執行 <application>poudriere</application> 並不一定要使用 <acronym>ZFS</acronym>，但使用了是有幫助的。當使用了 <acronym>ZFS</acronym>，則必須在 <filename>/usr/local/etc/poudriere.conf</filename> 指定 <varname>ZPOOL</varname> 以及 <varname>FREEBSD_HOST</varname> 應設定到一個最近的鏡像站。定義 <varname>CCACHE_DIR</varname> 可開"
+"啟使用 <package role=\"port\">devel/ccache</package> 快取的功能來快取編譯結果並減少那些需時常編譯的程式碼的編譯次數。將 <application>poudriere</application> 資料集放到一個獨立的目錄並掛載到 <filename>/poudriere</filename> 可能會比較方便，其他設定項目採用預設值便足夠。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10248
 msgid "The number of processor cores detected is used to define how many builds should run in parallel. Supply enough virtual memory, either with <acronym>RAM</acronym> or swap space. If virtual memory runs out, compiling jails will stop and be torn down, resulting in weird error messages."
-msgstr ""
+msgstr "偵測到的處理器數量可用來定義要同時執行多少個編譯。並請給予足夠的虛擬記憶體，不論是 <acronym>RAM</acronym> 或交換空間，若虛擬記憶體不足，編譯 Jail 將會停止並被清除，可能會造成奇怪的錯誤訊息。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10255
@@ -10458,6 +10471,8 @@ msgid ""
 "After configuration, initialize <application>poudriere</application> so that it installs a jail with the required FreeBSD tree and a ports tree. Specify a name for the jail using <option>-j</option> and the FreeBSD version with <option>-v</option>. On systems running FreeBSD/amd64, the architecture can be set with <option>-a</option> "
 "to either <literal>i386</literal> or <literal>amd64</literal>. The default is the architecture shown by <command>uname</command>."
 msgstr ""
+"在設定之後，初始化 <application>poudriere</application> 來安裝 Jail 及其所需的 FreeBSD 樹與 Port 樹。使用 <option>-j</option> 來指定 Jail 的名稱以及 <option>-v</option> 來指定 FreeBSD 的版本。在執行 FreeBSD/amd64 的系統上可使用 <option>-a</option> 來設定要使用的架構為 <literal>i386</literal> 或 <literal>amd64</literal>，預設會採用使用 "
+"<command>uname</command> 所顯示的架構。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10267
@@ -10522,6 +10537,8 @@ msgid ""
 "On a single computer, <application>poudriere</application> can build ports with multiple configurations, in multiple jails, and from different port trees. Custom configurations for these combinations are called <emphasis>sets</emphasis>. See the CUSTOMIZATION section of <citerefentry vendor=\"ports\"><refentrytitle>poudriere</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details after <package>ports-mgmt/poudriere</package> or <package>ports-mgmt/poudriere-devel</package> is installed."
 msgstr ""
+"在一台電腦，<application>poudriere</application> 可使用多組設定在多個 Jail 編譯來自不同 Port 樹的 Port。用來定義這些組合的自訂設定稱作 <emphasis>sets</emphasis>，可在安裝 <package>ports-mgmt/poudriere</package> 或 <package>ports-mgmt/poudriere-devel</package> 後參考 <citerefentry vendor=\"ports\"><refentrytitle>poudriere</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> 中的 CUSTOMIZATION 章節來取得詳細的資訊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10323
@@ -10529,11 +10546,13 @@ msgid ""
 "The basic configuration shown here puts a single jail-, port-, and set-specific <filename>make.conf</filename> in <filename>/usr/local/etc/poudriere.d</filename>. The filename in this example is created by combining the jail name, port name, and set name: <filename><replaceable>10amd64-local-workstation</replaceable>-make.conf</"
 "filename>. The system <filename>make.conf</filename> and this new file are combined at build time to create the <filename>make.conf</filename> used by the build jail."
 msgstr ""
+"在此處示範的基本設定放了單一個 jail-, port- 以及 set- 特定的 <filename>make.conf</filename> 在 <filename>/usr/local/etc/poudriere.d</filename>。在此範例使用的檔案名稱由 Jail 名稱、Port 名稱以及 set 名稱所組成: <filename><replaceable>10amd64-local-workstation</replaceable>-make.conf</filename>。系統 <filename>make.conf</filename> 與這個"
+"新的檔案在編譯時期會被合併為編譯 Jail 要使用的 <filename>make.conf</filename>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10333
 msgid "Packages to be built are entered in <filename><replaceable>10amd64-local-workstation</replaceable>-pkglist</filename>:"
-msgstr ""
+msgstr "要編譯的套件會輸入到 <filename><replaceable>10amd64-local-workstation</replaceable>-pkglist</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:10336
@@ -10548,7 +10567,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:10341
 msgid "Options and dependencies for the specified ports are configured:"
-msgstr ""
+msgstr "可使用以下方式設定選項及相依:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10344
@@ -10559,7 +10578,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:10346
 msgid "Finally, packages are built and a package repository is created:"
-msgstr ""
+msgstr "最後，編譯套件並建立套件檔案庫:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10349
@@ -10570,17 +10589,17 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:10351
 msgid "<keycombo action=\"simul\"><keycap>Ctrl</keycap><keycap>t</keycap></keycombo> displays the current state of the build. <application>Poudriere</application> also builds files in <filename>/poudriere/logs/bulk/<replaceable>jailname</replaceable></filename> that can be used with a web server to display build information."
-msgstr ""
+msgstr "<keycombo action=\"simul\"><keycap>Ctrl</keycap><keycap>t</keycap></keycombo> 可以顯示目前編譯的狀態，<application>Poudriere</application> 也會編譯在 <filename>/poudriere/logs/bulk/<replaceable>jailname</replaceable></filename> 中的檔案，可用在網頁伺服器來顯示編譯資訊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10358
 msgid "Packages are now available for installation from the <application>poudriere</application> repository."
-msgstr ""
+msgstr "套件現在可以從 <application>poudriere</application> 檔案庫來安裝。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10362
 msgid "For more information on using <application>poudriere</application>, see <citerefentry vendor=\"ports\"><refentrytitle>poudriere</refentrytitle><manvolnum>8</manvolnum></citerefentry> and the main web site, <link xlink:href=\"https://github.com/freebsd/poudriere/wiki\"/>."
-msgstr ""
+msgstr "要取得更多使用 <application>poudriere</application> 的資訊，請參考 <citerefentry vendor=\"ports\"><refentrytitle>poudriere</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及主網站 <link xlink:href=\"https://github.com/freebsd/poudriere/wiki\"/>。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10367
@@ -10592,7 +10611,7 @@ msgstr "設定 pkg 客戶端使用 Poudriere 檔案庫"
 msgid ""
 "While it is possible to use both a custom repository along side of the official repository, sometimes it is useful to disable the official repository. This is done by creating a configuration file that overrides and disables the official configuration file. Create <filename>/usr/local/etc/pkg/repos/FreeBSD.conf</filename> that contains "
 "the following:"
-msgstr ""
+msgstr "雖然可以同時使用自訂的檔案庫與官方檔案庫，但有時關閉官方檔案庫會有幫助。這可以透過建立一個設定檔覆蓋並關閉官方的設定檔來完成。建立 <filename>/usr/local/etc/pkg/repos/FreeBSD.conf</filename> 包含以下內容:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10378
@@ -10606,12 +10625,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:10382
 msgid "Usually it is easiest to serve a poudriere repository to the client machines via HTTP. Setup a webserver to serve up the package directory, usually something like: <filename>/usr/local/poudriere/data/packages/<replaceable>10amd64</replaceable></filename>. Where <filename>10amd64</filename> is the name of the build."
-msgstr ""
+msgstr "通常最簡單要提供 poudriere 給客戶端的方式是透過 HTTP。安裝一個網頁伺服器來提供套件目錄，通常會像: <filename>/usr/local/poudriere/data/packages/<replaceable>10amd64</replaceable></filename>，其中 <filename>10amd64</filename> 是編譯的名稱。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10389
 msgid "If the URL to the package repository is: <literal>http://pkg.example.com/10amd64</literal>, then the repository configuration file in <filename>/usr/local/etc/pkg/repos/custom.conf</filename> would look like:"
-msgstr ""
+msgstr "若要連往套件檔案庫的 URL 是: <literal>http://pkg.example.com/10amd64</literal>，則在 <filename>/usr/local/etc/pkg/repos/custom.conf</filename> 的檔案庫設定檔為:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10395
@@ -11689,11 +11708,14 @@ msgid ""
 "fonts. In addition, <application>Xorg</application> can be configured to use <trademark class=\"registered\">TrueType</trademark> fonts with a minimum of effort. For more details on this, see the <citerefentry vendor=\"xfree86\"><refentrytitle>X</refentrytitle><manvolnum>7</manvolnum></citerefentry> manual page or <xref linkend="
 "\"truetype\"/>."
 msgstr ""
+"由於 <application>Xorg</application> 內建的預設字型用在典型的桌面出版應用程式並不是很理想，大字型會呈現鋸齒狀邊緣，看起來很不專業，小字型幾乎完全看不清楚。不過，這裡有幾個免費高品質的 Type1 (<trademark class=\"registered\">PostScript</trademark>) 字型可用，且能容易的在 <application>Xorg</application> 使用。例如，URW 字型集 (<trademark "
+"class=\"registered\">Times Roman</trademark>, <trademark class=\"registered\">Helvetica</trademark>, <trademark class=\"registered\">Palatino</trademark> 及其他)。 Freefont 字型集 (<package>x11-fonts/freefonts</package>) 包含了更多的字型，但其中大部分是給圖形軟體如 GIMP 所使用的字型，並不能完全作為螢幕字型使用。此外，<application>Xorg</"
+"application> 可以簡單的設定使用 <trademark class=\"registered\">TrueType</trademark> 字型。更多有關本主題的詳細資訊，請參考 <citerefentry vendor=\"xfree86\"><refentrytitle>X</refentrytitle><manvolnum>7</manvolnum></citerefentry> 操作手冊或 <xref linkend=\"truetype\"/>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11437
 msgid "To install the above Type1 font collections from the Ports Collection, run the following commands:"
-msgstr ""
+msgstr "要從 Port 套件集安裝上述的 Type1 字型集可執行以下指令:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11440
@@ -11706,7 +11728,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11443
 msgid "And likewise with the freefont or other collections. To have the X server detect these fonts, add an appropriate line to the X server configuration file (<filename>/etc/X11/xorg.conf</filename>), which reads:"
-msgstr ""
+msgstr "同樣的安裝方式也適用 Freefont 或其他字型集。要讓 X 伺服器偵測到這些新安裝的字型，可加入適當的設定到 X 伺服器設定檔 (<filename>/etc/X11/xorg.conf</filename>)，內容為:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11448
@@ -11717,7 +11739,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11450
 msgid "Alternatively, at the command line in the X session run:"
-msgstr ""
+msgstr "或者在 X session 的指令列執行:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11453
@@ -11733,6 +11755,8 @@ msgid ""
 "This will work but will be lost when the X session is closed, unless it is added to the startup file (<filename>~/.xinitrc</filename> for a normal <command>startx</command> session, or <filename>~/.xsession</filename> when logging in through a graphical login manager like <application>XDM</application>). A third way is to use the new "
 "<filename>/usr/local/etc/fonts/local.conf</filename> as demonstrated in <xref linkend=\"antialias\"/>."
 msgstr ""
+"這樣便可，但在 X session 關閉時將會失效，除非將該設定加入啟動檔 (一般的 <command>startx</command> session 可在 <filename>~/.xinitrc</filename> 設定，若透過圖型化登入管理程式如 <application>XDM</application> 登入時則在 <filename>~/.xsession</filename> 設定)。第三種方式是使用新 <filename>/usr/local/etc/fonts/local.conf</filename>，如 "
+"<xref linkend=\"antialias\"/> 的示範。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11468
@@ -11754,7 +11778,7 @@ msgstr ""
 msgid ""
 "<application>Xorg</application> has built in support for rendering <trademark class=\"registered\">TrueType</trademark> fonts. There are two different modules that can enable this functionality. The freetype module is used in this example because it is more consistent with the other font rendering back-ends. To enable the freetype "
 "module just add the following line to the <literal>\"Module\"</literal> section of <filename>/etc/X11/xorg.conf</filename>."
-msgstr ""
+msgstr "<application>Xorg</application> 內建支援繪製 <trademark class=\"registered\">TrueType</trademark> 字型，目前有兩個模組可以支援這項功能。在本例中使用 freetype 模組，由於此模組與其他字型繪製後端較為一致。要開啟 freetype 模組只需要將下行加入到 <filename>/etc/X11/xorg.conf</filename> 中的 <literal>\"Module\"</literal> section。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11486
@@ -11769,6 +11793,9 @@ msgid ""
 "cannot be directly taken from an <trademark class=\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</trademark>; they must be in <trademark class=\"registered\">UNIX</trademark>/<trademark class=\"registered\">MS-DOS</trademark>/<trademark class=\"registered\">Windows</trademark> format for use by <application>Xorg</"
 "application>. Once the files have been copied into this directory, use <application>mkfontdir</application> to create a <filename>fonts.dir</filename>, so that the X font renderer knows that these new files have been installed. <command>mkfontdir</command> can be installed as a package:"
 msgstr ""
+"現在要建立一個儲存 <trademark class=\"registered\">TrueType</trademark> 字型的目錄 (例如，<filename>/usr/local/share/fonts/TrueType</filename>) 然後複製所有 <trademark class=\"registered\">TrueType</trademark> 字型到這個目錄。要注意 <trademark class=\"registered\">TrueType</trademark> 字型並無法直接取自 <trademark class=\"registered"
+"\">Apple</trademark> <trademark class=\"registered\">Mac</trademark>，<application>Xorg</application> 使用的字型必須為 <trademark class=\"registered\">UNIX</trademark>/<trademark class=\"registered\">MS-DOS</trademark>/<trademark class=\"registered\">Windows</trademark> 的格式。檔案複製到讓目錄之後，使用 <application>mkfontdir</"
+"application> 來建立 <filename>fonts.dir</filename> 來讓 X 字型繪製程式知道安裝了新的檔案。<command>mkfontdir</command> 可用套件的方式安裝:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11502
@@ -11779,7 +11806,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11504
 msgid "Then create an index of X font files in a directory:"
-msgstr ""
+msgstr "然後在目錄中建立 X 字型檔的索引:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11507
@@ -11792,7 +11819,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11510
 msgid "Now add the <trademark class=\"registered\">TrueType</trademark> directory to the font path. This is just the same as described in <xref linkend=\"type1\"/>:"
-msgstr ""
+msgstr "接著加入 <trademark class=\"registered\">TrueType</trademark> 目錄到字型路徑。這個動作與 <xref linkend=\"type1\"/> 中所介紹的方式相同:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11513
@@ -11805,14 +11832,14 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11516
 msgid "or add a <literal>FontPath</literal> line to <filename>xorg.conf</filename>."
-msgstr ""
+msgstr "或直接加入 <literal>FontPath</literal> 一行到 <filename>xorg.conf</filename>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11519
 msgid ""
 "Now <application>Gimp</application>, <application>Apache OpenOffice</application>, and all of the other X applications should now recognize the installed <trademark class=\"registered\">TrueType</trademark> fonts. Extremely small fonts (as with text in a high resolution display on a web page) and extremely large fonts (within "
 "<application><trademark>StarOffice</trademark></application>) will look much better now."
-msgstr ""
+msgstr "現在 <application>Gimp</application>, <application>Apache OpenOffice</application> 以及其他 X 應用程式應可以辨識到已安裝的 <trademark class=\"registered\">TrueType</trademark> 字型。極小的字型 (以高解析度在網頁中顯示的文字) 與極大的字型 (在 <application><trademark>StarOffice</trademark></application> 中) 現在會看起來比較像樣了。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11540
@@ -11834,7 +11861,7 @@ msgstr ""
 msgid ""
 "All fonts in <application>Xorg</application> that are found in <filename>/usr/local/share/fonts/</filename> and <filename>~/.fonts/</filename> are automatically made available for anti-aliasing to Xft-aware applications. Most recent applications are Xft-aware, including <application>KDE</application>, <application>GNOME</application>, "
 "and <application>Firefox</application>."
-msgstr ""
+msgstr "所有可在 <filename>/usr/local/share/fonts/</filename> 及 <filename>~/.fonts/</filename> 找到的 <application>Xorg</application> 字型均可在  Xft-aware 的應用程式使用反鋸齒的效果。大多最近的應用程式均為 Xft-aware 的，包括 <application>KDE</application>, <application>GNOME</application> 以及 <application>Firefox</application>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11559
@@ -11842,6 +11869,8 @@ msgid ""
 "In order to control which fonts are anti-aliased, or to configure anti-aliasing properties, create (or edit, if it already exists) the file <filename>/usr/local/etc/fonts/local.conf</filename>. Several advanced features of the Xft font system can be tuned using this file; this section describes only some simple possibilities. For more "
 "details, please see <citerefentry vendor=\"xorg\"><refentrytitle>fonts-conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 msgstr ""
+"要控制那一些字型要做反鋸齒或設定反鋸齒的屬性，需建立 <filename>/usr/local/etc/fonts/local.conf</filename> 檔案 (若檔案存在則編輯)。在這個檔案中可以調整 Xft 字型系統的數項進階功能，本章節僅介紹部份簡單的項目，要取得進一步資訊，可參考 <citerefentry vendor=\"xorg\"><refentrytitle>fonts-conf</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry>。"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11568
@@ -11851,7 +11880,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11570
 msgid "This file must be in XML format. Pay careful attention to case, and make sure all tags are properly closed. The file begins with the usual XML header followed by a DOCTYPE definition, and then the <literal>&lt;fontconfig&gt;</literal> tag:"
-msgstr ""
+msgstr "這個檔案必須使用 XML 格式，小心文字大小寫，且要確定所有標籤均有正常結尾。檔案的開頭使用常見的 XML 檔首，接著為 DOCTYPE 定義，然後是 <literal>&lt;fontconfig&gt;</literal> 標籤:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11576
@@ -11867,7 +11896,7 @@ msgstr ""
 msgid ""
 "As previously stated, all fonts in <filename>/usr/local/share/fonts/</filename> as well as <filename>~/.fonts/</filename> are already made available to Xft-aware applications. If you wish to add another directory outside of these two directory trees, add a line similar to the following to <filename>/usr/local/etc/fonts/local.conf</"
 "filename>:"
-msgstr ""
+msgstr "如同前面所提到的，所有在 <filename>/usr/local/share/fonts/</filename> 與 <filename>~/.fonts/</filename> 的字型均已在 Xft-aware 的應用程式做反鋸齒效果，若您想要加入除了上兩者以外的目錄，可加入下行設定到 <filename>/usr/local/etc/fonts/local.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11588
@@ -11878,7 +11907,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11590
 msgid "After adding new fonts, and especially new font directories, you should run the following command to rebuild the font caches:"
-msgstr ""
+msgstr "加入新字型及額外的新字型目錄之後，您應執行以下指令來重新建立字型快取:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11594
@@ -11889,7 +11918,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11596
 msgid "Anti-aliasing makes borders slightly fuzzy, which makes very small text more readable and removes <quote>staircases</quote> from large text, but can cause eyestrain if applied to normal text. To exclude font sizes smaller than 14 point from anti-aliasing, include these lines:"
-msgstr ""
+msgstr "反鋸齒效果會讓文字的邊緣變模糊，這會讓非常小的文字更能夠閱讀且去除大型文字的 <quote>鋸齒</quote>，但套用在一般的文字可能會造成眼睛的疲勞。要排除小於 14 點的字型大小使用反鋸齒效果，可加入這些行:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11603
@@ -11921,7 +11950,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11625
 msgid "Spacing for some monospaced fonts may also be inappropriate with anti-aliasing. This seems to be an issue with <application>KDE</application>, in particular. One possible fix for this is to force the spacing for such fonts to be 100. Add the following lines:"
-msgstr ""
+msgstr "反鋸齒所產生的間距對於部份等寬字型並不適合，尤其是在使用 <application>KDE</application> 時會發生問題。可能的修正方式是強制字型的間距為 100，可加入以下行:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11631
@@ -11948,7 +11977,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11648
 msgid "(this aliases the other common names for fixed fonts as <literal>\"mono\"</literal>), and then add:"
-msgstr ""
+msgstr "(這會設定等寬字型的其他常用名稱為 <literal>\"mono\"</literal>)，然後加入:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11651
@@ -11967,7 +11996,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11660
 msgid "Certain fonts, such as Helvetica, may have a problem when anti-aliased. Usually this manifests itself as a font that seems cut in half vertically. At worst, it may cause applications to crash. To avoid this, consider adding the following to <filename>local.conf</filename>:"
-msgstr ""
+msgstr "部份字型，如 Helvetica，在使用反鋸齒時可能會發生問題，通常會呈現像垂直切成兩半的字型，最差還可能會導致應用程式當掉。要避免這個問題，可考慮加入以下設定到 <filename>local.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11666
@@ -11986,12 +12015,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11675
 msgid "Once you have finished editing <filename>local.conf</filename> make sure you end the file with the <literal>&lt;/fontconfig&gt;</literal> tag. Not doing this will cause your changes to be ignored."
-msgstr ""
+msgstr "編輯 <filename>local.conf</filename> 完之後，請確認有使用 <literal>&lt;/fontconfig&gt;</literal> 標籤結尾，若沒使用會讓您的更改直接被忽略。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11680
 msgid "Finally, users can add their own settings via their personal <filename>.fonts.conf</filename> files. To do this, each user should simply create a <filename>~/.fonts.conf</filename>. This file must also be in XML format."
-msgstr ""
+msgstr "最後，使用者可以透過個人的 <filename>.fonts.conf</filename> 檔案來加入自己的設定。要加入個人設定，每位使用者只需簡單的建立 <filename>~/.fonts.conf</filename>，這個檔案也同樣需要為 XML 格式。"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11686
@@ -12006,7 +12035,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11690
 msgid "One last point: with an LCD screen, sub-pixel sampling may be desired. This basically treats the (horizontally separated) red, green and blue components separately to improve the horizontal resolution; the results can be dramatic. To enable this, add the line somewhere in <filename>local.conf</filename>:"
-msgstr ""
+msgstr "最後一點: 若有使用 LCD 螢幕，可能會想要使用子像素取樣 (Sub-pixel sampling)，這基本上會分開處理 (水平分隔)  紅、綠、藍色彩組成來提高垂直解析度，結果可能是無法預料的。要開啟這個功能，加入下行到 <filename>local.conf</filename> 的任一處:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11697
@@ -12025,7 +12054,7 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:11707
 msgid "Depending on the sort of display, <literal>rgb</literal> may need to be changed to <literal>bgr</literal>, <literal>vrgb</literal> or <literal>vbgr</literal>: experiment and see which works best."
-msgstr ""
+msgstr "依據不同的顯示器類型，<literal>rgb</literal> 可能會需要更改為 <literal>bgr</literal>, <literal>vrgb</literal> 或 <literal>vbgr</literal>: 可實驗看看然後看那一個效果最好。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:11718
@@ -12882,6 +12911,8 @@ msgid ""
 "The <filename>xorg.conf.new</filename> configuration file may now be tuned to taste. Open the file in a text editor such as <citerefentry vendor=\"ports\"><refentrytitle>emacs</refentrytitle><manvolnum>1</manvolnum></citerefentry> or <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry>. If the monitor "
 "is an older or unusual model that does not support autodetection of sync frequencies, those settings can be added to <filename>xorg.conf.new</filename> under the <literal>\"Monitor\"</literal> section:"
 msgstr ""
+"現在可以開始調整 <filename>xorg.conf.new</filename> 設定檔，在文字編輯器如 <citerefentry vendor=\"ports\"><refentrytitle>emacs</refentrytitle><manvolnum>1</manvolnum></citerefentry> 或 <citerefentry><refentrytitle>ee</refentrytitle><manvolnum>1</manvolnum></citerefentry> 開啟該設定檔。若顯示器是不支援自動偵測同步頻率 (Sync frequency) 的"
+"舊或特殊的型號，同步頻率的設定可以手動加到 <filename>xorg.conf.new</filename> 的 <literal>\"Monitor\"</literal> section:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:12390
@@ -12899,14 +12930,14 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:12398
 msgid "Most monitors support sync frequency autodetection, making manual entry of these values unnecessary. For the few monitors that do not support autodetection, avoid potential damage by only entering values provided by the manufacturer."
-msgstr ""
+msgstr "多數顯示器都支援自動偵測同步頻率，並不需要手動設定這些數值。對於那些不支援自動偵測的顯示器，請輸入由製造商提供的數值來避免損壞顯示器。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12404
 msgid ""
 "X allows DPMS (Energy Star) features to be used with capable monitors. The <citerefentry vendor=\"xfree86\"><refentrytitle>xset</refentrytitle><manvolnum>1</manvolnum></citerefentry> program controls the time-outs and can force standby, suspend, or off modes. If you wish to enable DPMS features for your monitor, you must add the "
 "following line to the monitor section:"
-msgstr ""
+msgstr "X 允許在支援的顯示器使用 DPMS (Energy Star) 功能，<citerefentry vendor=\"xfree86\"><refentrytitle>xset</refentrytitle><manvolnum>1</manvolnum></citerefentry> 程式可以控制逾時並可強制待機 (Standby)、暫停 (Suspend) 或關閉 (Off) 模式。若您想要為您的顯示器開啟 DPMS 功能，您需要加入下行到顯示器 (Monitor) 的 Section:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:12410
@@ -12922,7 +12953,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:12416
 msgid "While the <filename>xorg.conf.new</filename> configuration file is still open in an editor, select the default resolution and color depth desired. This is defined in the <literal>\"Screen\"</literal> section:"
-msgstr ""
+msgstr "在編輯器還未關閉 <filename>xorg.conf.new</filename> 設定檔前，選擇想要使用的預設解析度及色彩深度。這些項目可在 <literal>\"Screen\"</literal> section 定義:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:12421
@@ -12947,11 +12978,13 @@ msgid ""
 "The <literal>DefaultDepth</literal> keyword describes the color depth to run at by default. This can be overridden with the <option>-depth</option> command line switch to <citerefentry vendor=\"xorg\"><refentrytitle>Xorg</refentrytitle><manvolnum>1</manvolnum></citerefentry>. The <literal>Modes</literal> keyword describes the "
 "resolution to run at for the given color depth. Note that only VESA standard modes are supported as defined by the target system's graphics hardware. In the example above, the default color depth is twenty-four bits per pixel. At this color depth, the accepted resolution is 1024 by 768 pixels."
 msgstr ""
+"<literal>DefaultDepth</literal> 關鍵字代表預設執行要使用的色彩深度，這個設定可以被 <citerefentry vendor=\"xorg\"><refentrytitle>Xorg</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的指令列參數 <option>-depth</option> 覆蓋。<literal>Modes</literal> 關鍵字代表執行要使用的解析度，注意，只有 VESA 標準模式才支援目標系統的繪圖硬體來定"
+"義解析度。在上述的例子中，預設使用的色彩深度為每像素 24 bit，這個色彩深度可用的解析度為 1024 x 768 像素。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12444
 msgid "Finally, write the configuration file and test it using the test mode given above."
-msgstr ""
+msgstr "最後，儲存設定檔並使用測試模式來測試上述的設定。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:12448
@@ -12959,11 +12992,13 @@ msgid ""
 "One of the tools available to assist you during troubleshooting process are the <application>Xorg</application> log files, which contain information on each device that the <application>Xorg</application> server attaches to. <application>Xorg</application> log file names are in the format of <filename>/var/log/Xorg.0.log</filename>. "
 "The exact name of the log can vary from <filename>Xorg.0.log</filename> to <filename>Xorg.8.log</filename> and so forth."
 msgstr ""
+"有一個工具可以協助您診斷問題，那就是 <application>Xorg</application> 記錄檔。該記錄檔中記錄了 <application>Xorg</application> 連接的每個裝置的資訊。<application>Xorg</application> 記錄檔名稱的格式為 <filename>/var/log/Xorg.0.log</filename>，確切的記錄檔名會可能從 <filename>Xorg.0.log</filename> 到 <filename>Xorg.8.log</filename> 以此類"
+"推。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12460
 msgid "If all is well, the configuration file needs to be installed in a common location where <citerefentry vendor=\"xorg\"><refentrytitle>Xorg</refentrytitle><manvolnum>1</manvolnum></citerefentry> can find it. This is typically <filename>/etc/X11/xorg.conf</filename> or <filename>/usr/local/etc/X11/xorg.conf</filename>."
-msgstr ""
+msgstr "若一且運作正常，設定檔需要安裝到 <citerefentry vendor=\"xorg\"><refentrytitle>Xorg</refentrytitle><manvolnum>1</manvolnum></citerefentry> 會尋找的常用設定檔位置，通常是 <filename>/etc/X11/xorg.conf</filename> 或 <filename>/usr/local/etc/X11/xorg.conf</filename>。"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:12465
@@ -12977,6 +13012,8 @@ msgid ""
 "The <application>Xorg</application> configuration process is now complete. <application>Xorg</application> may be now started with the <citerefentry vendor=\"xfree86\"><refentrytitle>startx</refentrytitle><manvolnum>1</manvolnum></citerefentry> utility. The <application>Xorg</application> server may also be started with the use of "
 "<citerefentry vendor=\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"現在已經完成了 <application>Xorg</application> 的設定程序。<application>Xorg</application> 現在可以使用 <citerefentry vendor=\"xfree86\"><refentrytitle>startx</refentrytitle><manvolnum>1</manvolnum></citerefentry> 工具啟動。<application>Xorg</application> 伺服器也可以使用 <citerefentry vendor=\"xfree86\"><refentrytitle>xdm</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> 來啟動。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12474
@@ -12993,7 +13030,7 @@ msgstr ""
 msgid ""
 "Configuration with <trademark class=\"registered\">Intel</trademark> i810 integrated chipsets requires the <filename>agpgart</filename> AGP programming interface for <application>Xorg</application> to drive the card. See the <citerefentry><refentrytitle>agp</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver manual page for "
 "more information."
-msgstr ""
+msgstr "要設定 <trademark class=\"registered\">Intel</trademark> i810 整合晶片組需要使用 <filename>agpgart</filename> AGP 程式介面來控制 <application>Xorg</application> 驅動該顯示卡。請參考 <citerefentry><refentrytitle>agp</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式操作手冊來取得更多詳細資訊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12487
@@ -13001,6 +13038,8 @@ msgid ""
 "This will allow configuration of the hardware as any other graphics board. Note on systems without the <citerefentry><refentrytitle>agp</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver compiled in the kernel, trying to load the module with <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> will not work. This driver has to be in the kernel at boot time through being compiled in or using <filename>/boot/loader.conf</filename>."
 msgstr ""
+"這也可讓您可以設定任何其他繪圖卡的硬體。注意，在未編譯 <citerefentry><refentrytitle>agp</refentrytitle><manvolnum>4</manvolnum></citerefentry> 到核心的系統，並無法使用 <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來載入該模組，因此驅動程式必須在開機時便在核心啟動，所以需要透過編譯或使用 "
+"<filename>/boot/loader.conf</filename> 來載入。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12496
@@ -13015,12 +13054,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12502
 msgid "This section assumes a bit of advanced configuration knowledge. If attempts to use the standard configuration tools above have not resulted in a working configuration, there is information enough in the log files to be of use in getting the setup working. Use of a text editor will be necessary."
-msgstr ""
+msgstr "此章節會需要有一些進階的設定知識，若嘗試使用上述的標準設定工具仍無法產生可運作的設定，在記錄檔中應有足夠的資訊可運用來讓顯示卡運作。在此會需要使用文字編輯器。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12509
 msgid "Current widescreen (WSXGA, WSXGA+, WUXGA, WXGA, WXGA+, et.al.) formats support 16:10 and 10:9 formats or aspect ratios that can be problematic. Examples of some common screen resolutions for 16:10 aspect ratios are:"
-msgstr ""
+msgstr "目前使用寬螢幕 (WSXGA, WSXGA+, WUXGA, WXGA, WXGA+, et.al.) 格式支援的 16:10 及 10:9 格式或其他的寬高比可會有問題。例如一些 16:10 寬高比常見的螢幕解析度:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:12516
@@ -13050,7 +13089,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12536
 msgid "At some point, it will be as easy as adding one of these resolutions as a possible <literal>Mode</literal> in the <literal>Section \"Screen\"</literal> as such:"
-msgstr ""
+msgstr "在某些時候，可以簡單的將這些要使用的解析度以 <literal>Mode</literal>  加入到  Section \"Screen\":"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12540
@@ -13072,12 +13111,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12552
 msgid "<application>Xorg</application> is smart enough to pull the resolution information from the widescreen via I2C/DDC information so it knows what the monitor can handle as far as frequencies and resolutions."
-msgstr ""
+msgstr "<application>Xorg</application> 能夠從寬螢幕設定取得解析度資訊 (透過 I2C/DDC)，因此能夠知道螢幕能處理的頻率及解析度。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12557
 msgid "If those <literal>ModeLines</literal> do not exist in the drivers, one might need to give <application>Xorg</application> a little hint. Using <filename>/var/log/Xorg.0.log</filename> one can extract enough information to manually create a <literal>ModeLine</literal> that will work. Simply look for information resembling this:"
-msgstr ""
+msgstr "若驅動程式中不存在那些螢幕能處理的 <literal>ModeLines</literal>，則需要給 <application>Xorg</application> 一點提示。透過 <filename>/var/log/Xorg.0.log</filename> 可以取得足夠的資訊來手動建立可運作的 <literal>ModeLine</literal>。只需要在記錄檔中找到類似以下的訊息:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12565
@@ -13093,7 +13132,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12571
 msgid "This information is called EDID information. Creating a <literal>ModeLine</literal> from this is just a matter of putting the numbers in the correct order:"
-msgstr ""
+msgstr "這些資訊稱作 EDID 資訊，使用 EDIT 資訊建立 <literal>ModeLine</literal> 只需要將數據使用正確的順序放入:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12575
@@ -13104,7 +13143,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12577
 msgid "So that the <literal>ModeLine</literal> in <literal>Section \"Monitor\"</literal> for this example would look like this:"
-msgstr ""
+msgstr "將資訊放入之後，本例中 <literal>Section \"Monitor\"</literal> 中的 <literal>ModeLine</literal> 會看起來像這樣:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12581
@@ -13122,7 +13161,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12589
 msgid "Now having completed these simple editing steps, X should start on your new widescreen monitor."
-msgstr ""
+msgstr "便完成編輯的步驟，接著需要在您的寬螢幕顯示器啟動 X。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12594
@@ -13137,7 +13176,7 @@ msgstr "我已經安裝了 <application>Compiz Fusion</application>，但在執
 #. (itstool) path: answer/para
 #: book.translate.xml:12607
 msgid "You are probably missing a setting in <filename>/etc/X11/xorg.conf</filename>. Review this file carefully and check especially the <literal>DefaultDepth</literal> and <literal>AddARGBGLXVisuals</literal> directives."
-msgstr ""
+msgstr "您可能忘記在 <filename>/etc/X11/xorg.conf</filename> 中的設定。請重新檢查這個檔案，特別是 <literal>DefaultDepth</literal> 及 <literal>AddARGBGLXVisuals</literal> 指令項。"
 
 #. (itstool) path: question/para
 #: book.translate.xml:12618
@@ -13147,7 +13186,7 @@ msgstr "當我執行指令來啟動 <application>Compiz Fusion</application>，
 #. (itstool) path: answer/para
 #: book.translate.xml:12625
 msgid "If you check <filename>/var/log/Xorg.0.log</filename>, you will probably find error messages during the X startup. The most common would be:"
-msgstr ""
+msgstr "若您檢查 <filename>/var/log/Xorg.0.log</filename>，您可能可以找到當 X 啟動時所發生的錯誤訊息。最常發生的錯誤會是:"
 
 #. (itstool) path: answer/screen
 #: book.translate.xml:12630
@@ -13163,7 +13202,7 @@ msgstr ""
 #. (itstool) path: answer/para
 #: book.translate.xml:12636
 msgid "This is usually the case when you upgrade <application>Xorg</application>. You will need to reinstall the <package>x11/nvidia-driver</package> package so glx is built again."
-msgstr ""
+msgstr "會發生這個情形通常是因為您升級了 <application>Xorg</application>，您需要重新安裝 <package>x11/nvidia-driver</package> 套件來重新編譯 glx。"
 
 #. (itstool) path: part/title
 #: book.translate.xml:12650
@@ -35854,7 +35893,7 @@ msgstr "了解如何設定並安裝新的核心 (<xref linkend=\"kernelconfig\"/
 #. (itstool) path: info/title
 #: book.translate.xml:35477
 msgid "RAID0 - Striping"
-msgstr "RAID0 - 分散 (Striping)"
+msgstr "RAID0 - 串連 (Striping)"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:35488 book.translate.xml:36262 book.translate.xml:62218
@@ -36013,7 +36052,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:35636
 msgid "RAID1 - Mirroring"
-msgstr "RAID1 - 鏡射 (Mirroring)"
+msgstr "RAID1 - 鏡像 (Mirroring)"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:35641
@@ -36111,7 +36150,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:35726
 msgid "Creating a Mirror with Two New Disks"
-msgstr "使用兩個新磁碟建立鏡射"
+msgstr "使用兩個新磁碟建立鏡像"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:35728
@@ -36285,7 +36324,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:35850
 msgid "Creating a Mirror with an Existing Drive"
-msgstr "使用既有磁碟建立鏡射"
+msgstr "使用既有磁碟建立鏡像"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:35852
@@ -36748,7 +36787,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:36233
 msgid "<acronym>RAID</acronym>3 - Byte-level Striping with Dedicated Parity"
-msgstr "<acronym>RAID</acronym>3 - 位元級分散儲存與獨立奇偶校驗"
+msgstr "<acronym>RAID</acronym>3 - 位元級串連與獨立奇偶校驗"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:36237
@@ -37052,7 +37091,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:36534
 msgid "Converting a Single Drive to a Mirror"
-msgstr "轉換單一磁碟為鏡射"
+msgstr "轉換單一磁碟為鏡像"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:36536
