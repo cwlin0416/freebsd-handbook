@@ -116,6 +116,8 @@ pkg install poedit
 | Slice | 切割區 | 類似 Windows 的 Partition (分割區) |
 | Partition | 分區 | 與 Windows 的 Partition 不同, 是 Slice 底下再分出來的 |
 | Dangerously dedicated | 危險專用 | 磁碟中無 slice 的 partition |
+| Stripe, Striping | 串連 | RAID, ZFS |
+| Mirror, Mirroring | 鏡像 | RAID, ZFS |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
