@@ -117,6 +117,8 @@ pkg install poedit
 | Dangerously dedicated | 危險專用 | 磁碟中無 slice 的 partition |
 | Stripe, Striping | 串連 | RAID, ZFS |
 | Mirror, Mirroring | 鏡像 | RAID, ZFS |
+| Fault | 故障 | RAID, ZFS |
+| Fail | 失效 | RAID, ZFS |
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
