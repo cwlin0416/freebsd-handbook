@@ -6930,7 +6930,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 48719 2016-04-23 20:46:04Z bjk $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 49376 2016-09-09 15:33:51Z wblock $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -7612,7 +7612,7 @@ EndSection</programlisting>
 
       <para>所有可在 <filename>/usr/local/share/fonts/</filename> 及 <filename>~/.fonts/</filename> 找到的 <application>Xorg</application> 字型均可在  Xft-aware 的應用程式使用反鋸齒的效果。大多最近的應用程式均為 Xft-aware 的，包括 <application>KDE</application>, <application>GNOME</application> 以及 <application>Firefox</application>。</para>
 
-      <para>要控制那一些字型要做反鋸齒或設定反鋸齒的屬性，需建立 <filename>/usr/local/etc/fonts/local.conf</filename> 檔案 (若檔案存在則編輯)。在這個檔案中可以調整 Xft 字型系統的數項進階功能，本章節僅介紹部份簡單的項目，要取得進一步資訊，可參考 <citerefentry vendor="xorg"><refentrytitle>fonts-conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
+      <para>要控制那一些字型要做反鋸齒或設定反鋸齒的屬性，需建立 <filename>/usr/local/etc/fonts/local.conf</filename> 檔案 (若檔案存在則編輯)。在這個檔案中可以調整 Xft 字型系統的數項進階功能，本章節僅介紹部份簡單的項目，要取得進一步資訊，請參考 <citerefentry vendor="xorg"><refentrytitle>fonts-conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
 
       <indexterm xml:lang="en"><primary>XML</primary></indexterm>
 
@@ -7622,11 +7622,11 @@ EndSection</programlisting>
       &lt;!DOCTYPE fontconfig SYSTEM "fonts.dtd"&gt;
       &lt;fontconfig&gt;</programlisting>
 
-      <para>如同前面所提到的，所有在 <filename>/usr/local/share/fonts/</filename> 與 <filename>~/.fonts/</filename> 的字型均已在 Xft-aware 的應用程式做反鋸齒效果，若您想要加入除了上兩者以外的目錄，可加入下行設定到 <filename>/usr/local/etc/fonts/local.conf</filename>：</para>
+      <para>如同前面所提到的，所有在 <filename>/usr/local/share/fonts/</filename> 與 <filename>~/.fonts/</filename> 的字型均可在 Xft-aware 的應用程式做反鋸齒效果，若您想要加入除了上兩者以外的目錄，可加入如下行設定到 <filename>/usr/local/etc/fonts/local.conf</filename>：</para>
 
       <programlisting xml:lang="en">&lt;dir&gt;/path/to/my/fonts&lt;/dir&gt;</programlisting>
 
-      <para>加入新字型及額外的新字型目錄之後，您應執行以下指令來重新建立字型快取：</para>
+      <para>加入新字型及額外的新字型目錄之後，需重新建立字型快取：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>fc-cache -f</userinput></screen>
 
@@ -7654,9 +7654,9 @@ EndSection</programlisting>
 	<secondary>spacing</secondary>
       </indexterm>
 
-      <para>反鋸齒所產生的間距對於部份等寬字型並不適合，尤其是在使用 <application>KDE</application> 時會發生問題。可能的修正方式是強制字型的間距為 100，可加入以下行：</para>
+      <para>反鋸齒所產生的間距對於部份等寬字型並不合適，尤其是在使用 <application>KDE</application> 時會成為一個問題。可能的修正方式是強制這類字型的間距為 100，可加入以下行：</para>
 
-      <programlisting xml:lang="en">       &lt;match target="pattern" name="family"&gt;
+      <programlisting xml:lang="en">	&lt;match target="pattern" name="family"&gt;
 	   &lt;test qual="any" name="family"&gt;
 	       &lt;string&gt;fixed&lt;/string&gt;
 	   &lt;/test&gt;
@@ -7695,9 +7695,15 @@ EndSection</programlisting>
 	     &lt;/edit&gt;
 	 &lt;/match&gt;        </programlisting>
 
-      <para>編輯 <filename>local.conf</filename> 完之後，請確認有使用 <literal>&lt;/fontconfig&gt;</literal> 標籤結尾，若沒使用會讓您的更改直接被忽略。</para>
+      <para xml:lang="en">After editing
+	<filename>local.conf</filename>, make certain to end the file
+	with the <literal>&lt;/fontconfig&gt;</literal> tag.  Not
+	doing this will cause changes to be ignored.</para>
 
-      <para>最後，使用者可以透過個人的 <filename>.fonts.conf</filename> 檔案來加入自己的設定。要加入個人設定，每位使用者只需簡單的建立 <filename>~/.fonts.conf</filename>，這個檔案也同樣需要為 XML 格式。</para>
+      <para xml:lang="en">Users can add personalized settings by creating their own
+	<filename>~/.config/fontconfig/fonts.conf</filename>.  This
+	file uses the same <acronym>XML</acronym> format described
+	above.</para>
 
       <indexterm xml:lang="en"><primary>LCD screen</primary></indexterm>
       <indexterm xml:lang="en"><primary>Fonts</primary>
@@ -7705,7 +7711,7 @@ EndSection</programlisting>
 
       <para>最後一點：若有使用 LCD 螢幕，可能會想要使用子像素取樣 (Sub-pixel sampling)，這基本上會分開處理 (水平分隔)  紅、綠、藍色彩組成來提高垂直解析度，結果可能是無法預料的。要開啟這個功能，加入下行到 <filename>local.conf</filename> 的任一處：</para>
 
-      <programlisting xml:lang="en">&lt;match target="font"&gt;
+      <programlisting xml:lang="en">	 &lt;match target="font"&gt;
 	     &lt;test qual="all" name="rgba"&gt;
 		 &lt;const&gt;unknown&lt;/const&gt;
 	     &lt;/test&gt;
@@ -12735,7 +12741,7 @@ lp:
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/linuxemu/chapter.xml 48090 2016-01-25 05:12:20Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/linuxemu/chapter.xml 49367 2016-09-05 15:45:59Z bcr $
 -->
 <chapter version="5.0" xml:id="linuxemu">
 
@@ -12779,9 +12785,13 @@ lp:
     </indexterm>
     <indexterm><primary>Binary 相容性</primary> <secondary>Linux</secondary></indexterm>
 
-    <para>FreeBSD 提供和 32 位元 <trademark class="registered">Linux</trademark> Binary 的相容性，允許使用者在 FreeBSD 不需要修改就可以安裝和執行大部份 32 位元 <trademark class="registered">Linux</trademark> Binary。 曾經有報告指出，在某些情況下，32 位元 <trademark class="registered">Linux</trademark> Binary 在 FreeBSD 的表現比在 <trademark class="registered">Linux</trademark> 好。</para>
+    <para>FreeBSD 提供 <trademark class="registered">Linux</trademark> Binary 的相容性，允許使用者在 FreeBSD 系統上不需要修改就可以安裝和執行大部份的 <trademark class="registered">Linux</trademark> Binary。 曾經有報告指出，在某些情況下，<trademark class="registered">Linux</trademark> Binary 在 FreeBSD 的表現比在 <trademark class="registered">Linux</trademark> 好。</para>
 
-    <para>然而，部份 <trademark class="registered">Linux</trademark> 作業系統的特色在 FreeBSD 並未支援。 例如，如果 <trademark class="registered">Linux</trademark> Binary 過度使用 <trademark>i386</trademark> 特定的呼叫，像是啟動虛擬 8086 模式，將無法在 FreeBSD 執行。此外，64 位元 <trademark class="registered">Linux</trademark> Binary 目前也尚未支援。</para>
+    <para>然而，部份特定在 <trademark class="registered">Linux</trademark> 作業系統上的功能在 FreeBSD 並沒有支援。例如，若 <trademark class="registered">Linux</trademark> Binary 過度的使用 <trademark>i386</trademark> 特定的呼叫，如啟動虛擬 8086 模式，會無法在 FreeBSD 執行。</para>
+
+    <note>
+      <para>FreeBSD 10.3 後支援 64 位元的 <trademark class="registered">Linux</trademark> Binary 相容性。</para>
+    </note>
 
     <para>讀完這章，您將了解︰</para>
 
@@ -12824,6 +12834,10 @@ lp:
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload linux</userinput></screen>
 
+    <para xml:lang="en">For 64-bit compatibility:</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload linux64</userinput></screen>
+
     <para>確認模組已載入：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>kldstat</userinput>
@@ -12840,6 +12854,9 @@ lp:
     <para>要在開機時開啟 <trademark class="registered">Linux</trademark> 相容性，可以加入這行到 <filename>/etc/rc.conf</filename>：</para>
 
     <programlisting xml:lang="en">linux_enable="YES"</programlisting>
+
+    <para xml:lang="en">On 64-bit machines, <filename>/etc/rc.d/abi</filename> will
+      automatically load the module for 64-bit emulation.</para>
 
     <indexterm><primary>核心選項</primary> <secondary>COMPAT_LINUX</secondary></indexterm>
 
@@ -18281,7 +18298,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 49177 2016-07-26 21:25:23Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 49377 2016-09-09 17:31:58Z wblock $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -20813,32 +20830,55 @@ COPYRIGHT            100% |*****************************|  4735
 
 	<para xml:lang="en">Instead of using passwords, a client can be configured
 	  to connect to the remote machine using keys.  To generate
-	  <acronym>DSA</acronym> or <acronym>RSA</acronym>
+	  <acronym>RSA</acronym>
 	  authentication keys, use <command>ssh-keygen</command>.  To
 	  generate a public and private key pair, specify the type of
 	  key and follow the prompts.  It is recommended to protect
 	  the keys with a memorable, but hard to guess
 	  passphrase.</para>
 
-	<screen xml:lang="en"><prompt>%</prompt> <userinput>ssh-keygen -t <replaceable>dsa</replaceable></userinput>
-Generating public/private dsa key pair.
-Enter file in which to save the key (/home/user/.ssh/id_dsa):
-Created directory '/home/user/.ssh'.
-Enter passphrase (empty for no passphrase): <replaceable>type some passphrase here which can contain spaces</replaceable>
-Enter same passphrase again: <replaceable>type some passphrase here which can contain spaces</replaceable>
-Your identification has been saved in /home/user/.ssh/id_dsa.
-Your public key has been saved in /home/user/.ssh/id_dsa.pub.
+	<screen xml:lang="en"><prompt>%</prompt> <userinput>ssh-keygen -t rsa</userinput>
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/user/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):  <co xml:id="co-ssh-keygen-passphrase1"/>
+Enter same passphrase again:                 <co xml:id="co-ssh-keygen-passphrase2"/>
+Your identification has been saved in /home/user/.ssh/id_rsa.
+Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
-bb:48:db:f2:93:57:80:b6:aa:bc:f5:d5:ba:8f:79:17 user@host.example.com</screen>
+SHA256:54Xm9Uvtv6H4NOo6yjP/YCfODryvUU7yWHzMqeXwhq8 user@host.example.com
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|                 |
+|                 |
+|        . o..    |
+|       .S*+*o    |
+|      . O=Oo . . |
+|       = Oo= oo..|
+|      .oB.* +.oo.|
+|       =OE**.o..=|
++----[SHA256]-----+</screen>
 
-	<para xml:lang="en">Depending upon the specified protocol, the private key
-	  is stored in <filename>~/.ssh/id_dsa</filename> (or
-	  <filename>~/.ssh/id_rsa</filename>), and the public key
-	  is stored in <filename>~/.ssh/id_dsa.pub</filename> (or
-	  <filename>~/.ssh/id_rsa.pub</filename>).  The
-	  <emphasis>public</emphasis> key must be first copied to
+	<calloutlist>
+	  <callout arearefs="co-ssh-keygen-passphrase1">
+	    <para xml:lang="en">Type a passphrase here.  It can contain spaces and
+	      symbols.</para>
+	  </callout>
+
+	  <callout arearefs="co-ssh-keygen-passphrase2">
+	    <para xml:lang="en">Retype the passphrase to verify it.</para>
+	  </callout>
+	</calloutlist>
+
+
+	<para xml:lang="en">The private key
+	  is stored in <filename>~/.ssh/id_rsa</filename>
+	  and the public key
+	  is stored in <filename>~/.ssh/id_rsa.pub</filename>.
+	  The
+	  <emphasis>public</emphasis> key must be copied to
 	  <filename>~/.ssh/authorized_keys</filename> on the remote
-	  machine in order for key-based authentication to
+	  machine for key-based authentication to
 	  work.</para>
 
 	<warning>
@@ -20852,41 +20892,47 @@ bb:48:db:f2:93:57:80:b6:aa:bc:f5:d5:ba:8f:79:17 user@host.example.com</screen>
 	    passphrase.  In addition, to better secure end users,
 	    <literal>from</literal> may be placed in the public key
 	    file.  For example, adding
-	    <literal>from="192.168.10.5"</literal> in the front of
-	    <literal>ssh-rsa</literal> or <literal>rsa-dsa</literal>
-	    prefix will only allow that specific user to login from
+	    <literal>from="192.168.10.5"</literal> in front of the
+	    <literal>ssh-rsa</literal>
+	    prefix will only allow that specific user to log in from
 	    that <acronym>IP</acronym> address.</para>
 	</warning>
 
-	<para xml:lang="en">The various options and files can be different
-	  according to the <application>OpenSSH</application> version.
+	<para xml:lang="en">The options and files vary with different versions of
+	  <application>OpenSSH</application>.
 	  To avoid problems, consult <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
 
-	<para xml:lang="en">If a passphrase is used, the user will be prompted for
+	<para xml:lang="en">If a passphrase is used, the user is prompted for
 	  the passphrase each time a connection is made to the server.
-	  To load <acronym>SSH</acronym> keys into memory, without
-	  needing to type the passphrase each time, use
+	  To load <acronym>SSH</acronym> keys into memory and remove
+	  the need to type the passphrase each time, use
 	  <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>ssh-add</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
 
 	<para xml:lang="en">Authentication is handled by
-	  <command>ssh-agent</command>, using the private key(s) that
-	  are loaded into it.  Then, <command>ssh-agent</command>
-	  should be used to launch another application such as a
+	  <command>ssh-agent</command>, using the private keys that
+	  are loaded into it.  <command>ssh-agent</command>
+	  can be used to launch another application like a
 	  shell or a window manager.</para>
 
 	<para xml:lang="en">To use <command>ssh-agent</command> in a shell, start it
-	  with a shell as an argument.  Next, add the identity by
-	  running <command>ssh-add</command> and providing it the
-	  passphrase for the private key.  Once these steps have been
-	  completed, the user will be able to <command>ssh</command>
+	  with a shell as an argument.  Add the identity by
+	  running <command>ssh-add</command> and entering the
+	  passphrase for the private key.
+	  The user will then be able to <command>ssh</command>
 	  to any host that has the corresponding public key installed.
 	  For example:</para>
 
 	<screen xml:lang="en"><prompt>%</prompt> ssh-agent <replaceable>csh</replaceable>
 <prompt>%</prompt> ssh-add
-Enter passphrase for key '/usr/home/user/.ssh/id_dsa': <replaceable>type passphrase here</replaceable>
-Identity added: /usr/home/user/.ssh/id_dsa (/usr/home/user/.ssh/id_dsa)
+Enter passphrase for key '/usr/home/user/.ssh/id_rsa':  <co xml:id="co-ssh-agent-passphrase"/>
+Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 <prompt>%</prompt></screen>
+
+	<calloutlist>
+	  <callout arearefs="co-ssh-agent-passphrase">
+	    <para xml:lang="en">Enter the passphrase for the key.</para>
+	  </callout>
+	</calloutlist>
 
 	<para xml:lang="en">To use <command>ssh-agent</command> in
 	  <application>Xorg</application>, add an entry for it in
@@ -32446,7 +32492,7 @@ data                      288G  1.53T      2     12  9.23K  61.5K
     <sect2 xml:id="zfs-zfs-create">
       <title>建立與摧毀資料集</title>
 
-      <para>不同於傳統的磁碟與 Volumn 管理程式，在 <acronym>ZFS</acronym> 中的空間並<emphasis>不</emphasis>會預先分配。傳統的檔案系統在分割與分配空間完後，若沒有增加新的磁碟便無法再增加額外的檔案系統。在 <acronym>ZFS</acronym>，可以隨時建立新的檔案系統，每個資料集 (<link linkend="zfs-term-dataset"><emphasis>Dataset</emphasis></link>) 都有自己的屬性，包含壓縮 (Compression)、去重複 (Deduplication)、快取 (Caching) 與配額 (Quota) 功能以及其他有用的屬性如唯讀 (Readonly)、區分大小寫 (Case sensitivity)、網路檔案分享 (Network file sharing) 以及掛載點 (Mount point)。資料集可以存在於其他資料集中，且子資料集會繼承其父資料集的屬性。每個資料集都可以作為一個單位來管理、委託 (<link linkend="zfs-zfs-allow">Delegate</link>)、備援 (<link linkend="zfs-zfs-send">Replicate</link>)、快照 (<link linkend="zfs-zfs-snapshot">Snapshot</link>)、監禁 (<link linkend="zfs-zfs-jail">Jail</link>) 與摧毀 (Destroy)，替每種不同類型或集合的檔案建立各別的資料集還有許多的好處。唯一的缺點是在當有非常大數量的資料集時，部份指令例如 <command>zfs list</command> 會變的較緩慢，且掛載上百個或其至上千個資料集可能會使 FreeBSD 的開機程序變慢。</para>
+      <para>不同於傳統的磁碟與磁碟區管理程式 (Volume manager) ，在 <acronym>ZFS</acronym> 中的空間並<emphasis>不</emphasis>會預先分配。傳統的檔案系統在分割與分配空間完後，若沒有增加新的磁碟便無法再增加額外的檔案系統。在 <acronym>ZFS</acronym>，可以隨時建立新的檔案系統，每個資料集 (<link linkend="zfs-term-dataset"><emphasis>Dataset</emphasis></link>) 都有自己的屬性，包含壓縮 (Compression)、去重複 (Deduplication)、快取 (Caching) 與配額 (Quota) 功能以及其他有用的屬性如唯讀 (Readonly)、區分大小寫 (Case sensitivity)、網路檔案分享 (Network file sharing) 以及掛載點 (Mount point)。資料集可以存在於其他資料集中，且子資料集會繼承其父資料集的屬性。每個資料集都可以作為一個單位來管理、委託 (<link linkend="zfs-zfs-allow">Delegate</link>)、備援 (<link linkend="zfs-zfs-send">Replicate</link>)、快照 (<link linkend="zfs-zfs-snapshot">Snapshot</link>)、監禁 (<link linkend="zfs-zfs-jail">Jail</link>) 與摧毀 (Destroy)，替每種不同類型或集合的檔案建立各別的資料集還有許多的好處。唯一的缺點是在當有非常大數量的資料集時，部份指令例如 <command>zfs list</command> 會變的較緩慢，且掛載上百個或其至上千個資料集可能會使 FreeBSD 的開機程序變慢。</para>
 
       <para>建立一個新資料集並開啟 <link linkend="zfs-term-compression-lz4">LZ4 壓縮</link>：</para>
 
@@ -32694,15 +32740,7 @@ mypool/var/tmp@after_cp                   0      -   118K  -</screen>
       <sect3 xml:id="zfs-zfs-snapshot-diff">
 	<title>比對快照</title>
 
-	<para xml:lang="en">ZFS provides a built-in command to compare the
-	  differences in content between two snapshots.  This is
-	  helpful when many snapshots were taken over time and the
-	  user wants to see how the file system has changed over time.
-	  For example, <command>zfs diff</command> lets a user find
-	  the latest snapshot that still contains a file that was
-	  accidentally deleted.  Doing this for the two snapshots that
-	  were created in the previous section yields this
-	  output:</para>
+	<para>ZFS 提供了內建指令可以用來比對兩個快照 (Snapshot) 之間的差異，在使用者想要查看一段時間之間檔案系統所的變更時非常有用。例如 <command>zfs diff</command> 可以讓使用者在最後一次快照中找到意外刪除的檔案。對前面一節所做的兩個快照使用這個指令會產生以下結果：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs list -rt all <replaceable>mypool/var/tmp</replaceable></userinput>
 NAME                                   USED  AVAIL  REFER  MOUNTPOINT
@@ -32713,11 +32751,7 @@ mypool/var/tmp@after_cp                   0      -   118K  -
 M       /var/tmp/
 +       /var/tmp/passwd</screen>
 
-	<para xml:lang="en">The command lists the changes between the specified
-	  snapshot (in this case
-	  <literal><replaceable>mypool/var/tmp@my_recursive_snapshot</replaceable></literal>)
-	  and the live file system.  The first column shows the
-	  type of change:</para>
+	<para>指令會列出指定快照 (在這個例子中為 <literal><replaceable>mypool/var/tmp@my_recursive_snapshot</replaceable></literal>) 與目前檔案系統間的更改。第一個欄位是更改的類型：</para>
 
 	<informaltable pgwide="1">
 	  <tgroup cols="2">
@@ -32745,20 +32779,11 @@ M       /var/tmp/
 	  </tgroup>
 	</informaltable>
 
-	<para xml:lang="en">Comparing the output with the table, it becomes clear
-	  that <filename><replaceable>passwd</replaceable></filename>
-	  was added after the snapshot
-	  <literal><replaceable>mypool/var/tmp@my_recursive_snapshot</replaceable></literal>
-	  was created.  This also resulted in a modification to the
-	  parent directory mounted at
-	  <literal><replaceable>/var/tmp</replaceable></literal>.</para>
+	<para>對照這個表格來看輸出的結果，可以明顯的看到 <filename><replaceable>passwd</replaceable></filename> 是在快照 <literal><replaceable>mypool/var/tmp@my_recursive_snapshot</replaceable></literal> 建立之後才加入的，結果也同樣看的到掛載到 <literal><replaceable>/var/tmp</replaceable></literal> 的父目錄已經做過修改。</para>
 
-	<para xml:lang="en">Comparing two snapshots is helpful when using the
-	  <acronym>ZFS</acronym> replication feature to transfer a
-	  dataset to a different host for backup purposes.</para>
+	<para>在使用 <acronym>ZFS</acronym> 備援功能傳輸一個資料集到另一個主機備份時比對兩個快照也同樣很有用。</para>
 
-	<para xml:lang="en">Compare two snapshots by providing the full dataset name
-	  and snapshot name of both datasets:</para>
+	<para>比對兩個快照需要提供兩個資料集的完整資料集名稱與快照名稱：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cp /var/tmp/passwd /var/tmp/passwd.copy</userinput>
 <prompt>#</prompt> <userinput>zfs snapshot <replaceable>mypool/var/tmp@diff_snapshot</replaceable></userinput>
@@ -32770,45 +32795,15 @@ M       /var/tmp/
 M       /var/tmp/
 +       /var/tmp/passwd</screen>
 
-	<para xml:lang="en">A backup administrator can compare two snapshots
-	  received from the sending host and determine the actual
-	  changes in the dataset.  See the
-	  <link linkend="zfs-zfs-send">Replication</link> section for
-	  more information.</para>
+	<para>備份管理者可以比對兩個自發送主機所接收到的兩個快照並查看實際在資料集中的變更。請參考 <link linkend="zfs-zfs-send">備援</link> 一節來取得更多資訊。</para>
       </sect3>
 
       <sect3 xml:id="zfs-zfs-snapshot-rollback">
 	<title>使用快照還原</title>
 
-	<para xml:lang="en">When at least one snapshot is available, it can be
-	  rolled back to at any time.  Most of the time this is the
-	  case when the current state of the dataset is no longer
-	  required and an older version is preferred.  Scenarios such
-	  as local development tests have gone wrong, botched system
-	  updates hampering the system's overall functionality, or the
-	  requirement to restore accidentally deleted files or
-	  directories are all too common occurrences.  Luckily,
-	  rolling back a snapshot is just as easy as typing
-	  <command>zfs rollback
-	    <replaceable>snapshotname</replaceable></command>.
-	  Depending on how many changes are involved, the operation
-	  will finish in a certain amount of time.  During that time,
-	  the dataset always remains in a consistent state, much like
-	  a database that conforms to ACID principles is performing a
-	  rollback.  This is happening while the dataset is live and
-	  accessible without requiring a downtime.  Once the snapshot
-	  has been rolled back, the dataset has the same state as it
-	  had when the snapshot was originally taken.  All other data
-	  in that dataset that was not part of the snapshot is
-	  discarded.  Taking a snapshot of the current state of the
-	  dataset before rolling back to a previous one is a good idea
-	  when some data is required later.  This way, the user can
-	  roll back and forth between snapshots without losing data
-	  that is still valuable.</para>
+	<para>只要至少有一個可用的快照便可以隨時還原。大多數在已不需要目前資料集，想要改用較舊版的資料的情況，例如，本地開發的測試發生錯誤、不良的系統更新破壞了系統的整體功能或需要還原意外刪除檔案或目錄 ... 等，都是非常常見的情形。幸運的，要還原到某個快照只需要簡單輸入 <command>zfs rollback <replaceable>snapshotname</replaceable></command>。會依快照所做的變更數量來決定處理的時間，還原的操作會在一段時間後完成。在這段時間中，資料集會一直保持一致的狀態，類似一個符合 ACID 原則的資料庫在做還原。還原可在資料集處於上線及可存取的情況下完成，不需要停機。還原到快照之後，資料集便回到當初執行快照時相同的狀態，所有沒有在快照中的其他資料便會被丟棄，因此往後若還有可能需要部份資料時，建議在還原到前一個快照之前先對目前的資料集做快照，這樣一來，使用者便可以在快照之間來回快換，而不會遺失重要的資料。</para>
 
-	<para xml:lang="en">In the first example, a snapshot is rolled back because
-	  of a careless <command>rm</command> operation that removes
-	  too much data than was intended.</para>
+	<para>在第一個範例中，因為 <command>rm</command> 操作不小心移除了預期外的資料，要還原到快照。</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs list -rt all <replaceable>mypool/var/tmp</replaceable></userinput>
 NAME                                   USED  AVAIL  REFER  MOUNTPOINT
@@ -32823,22 +32818,13 @@ passwd          passwd.copy
 vi.recover
 <prompt>%</prompt></screen>
 
-	<para xml:lang="en">At this point, the user realized that too many files
-	  were deleted and wants them back.  <acronym>ZFS</acronym>
-	  provides an easy way to get them back using rollbacks, but
-	  only when snapshots of important data are performed on a
-	  regular basis.  To get the files back and start over from
-	  the last snapshot, issue the command:</para>
+	<para>在此時，使用者發現到刪除了太多檔案並希望能夠還原。<acronym>ZFS</acronym> 提供了簡單的方可以取回檔案，便是使用還原 (Rollback)，但這只在有定期對重要的資料使用快照時可用。要拿回檔案並從最後一次快照重新開始，可執行以下指令：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs rollback <replaceable>mypool/var/tmp@diff_snapshot</replaceable></userinput>
 <prompt>%</prompt> <userinput>ls /var/tmp</userinput>
 passwd          passwd.copy     vi.recover</screen>
 
-	<para xml:lang="en">The rollback operation restored the dataset to the state
-	  of the last snapshot.  It is also possible to roll back to a
-	  snapshot that was taken much earlier and has other snapshots
-	  that were created after it.  When trying to do this,
-	  <acronym>ZFS</acronym> will issue this warning:</para>
+	<para>還原操作會將資料集還原為最後一次快照的狀態。這也可以還原到更早之前，有其他在其之後建立的快照。要這麼做時，<acronym>ZFS</acronym> 會發出這個警告：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs list -rt snapshot <replaceable>mypool/var/tmp</replaceable></userinput>
 AME                                   USED  AVAIL  REFER  MOUNTPOINT
@@ -32851,17 +32837,7 @@ use '-r' to force deletion of the following snapshots:
 mypool/var/tmp@after_cp
 mypool/var/tmp@diff_snapshot</screen>
 
-	<para xml:lang="en">This warning means that snapshots exist between the
-	  current state of the dataset and the snapshot to which the
-	  user wants to roll back.  To complete the rollback, these
-	  snapshots must be deleted.  <acronym>ZFS</acronym> cannot
-	  track all the changes between different states of the
-	  dataset, because snapshots are read-only.
-	  <acronym>ZFS</acronym> will not delete the affected
-	  snapshots unless the user specifies <option>-r</option> to
-	  indicate that this is the desired action.  If that is the
-	  intention, and the consequences of losing all intermediate
-	  snapshots is understood, the command can be issued:</para>
+	<para>這個警告是因在該快照與資料集的目前狀態之間有其他快照存在，然而使用者想要還原到該快照。要完成這樣的還原動作，必須刪除在這之間的快照，因為 <acronym>ZFS</acronym> 無法追蹤不同資料集狀態間的變更。在使用者未指定 <option>-r</option> 來確認這個動作前，<acronym>ZFS</acronym> 不會刪除受影響的快照。若確定要這麼做，那麼必須要知道會遺失所有在這之間的快照，然後可執行以下指令：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs rollback -r <replaceable>mypool/var/tmp@my_recursive_snapshot</replaceable></userinput>
 <prompt>#</prompt> <userinput>zfs list -rt snapshot <replaceable>mypool/var/tmp</replaceable></userinput>
@@ -32870,27 +32846,13 @@ mypool/var/tmp@my_recursive_snapshot     8K      -   152K  -
 <prompt>%</prompt> <userinput>ls /var/tmp</userinput>
 vi.recover</screen>
 
-	<para xml:lang="en">The output from <command>zfs list -t snapshot</command>
-	  confirms that the intermediate snapshots
-	  were removed as a result of
-	  <command>zfs rollback -r</command>.</para>
+	<para>可從 <command>zfs list -t snapshot</command> 的結果來確認 <command>zfs rollback -r</command> 會移除的快照。</para>
       </sect3>
 
       <sect3 xml:id="zfs-zfs-snapshot-snapdir">
 	<title>從快照還原個別檔案</title>
 
-	<para xml:lang="en">Snapshots are mounted in a hidden directory under the
-	  parent dataset:
-	  <filename>.zfs/snapshots/<replaceable>snapshotname</replaceable></filename>.
-	  By default, these directories will not be displayed even
-	  when a standard <command>ls -a</command> is issued.
-	  Although the directory is not displayed, it is there
-	  nevertheless and can be accessed like any normal directory.
-	  The property named <literal>snapdir</literal> controls
-	  whether these hidden directories show up in a directory
-	  listing.  Setting the property to <literal>visible</literal>
-	  allows them to appear in the output of <command>ls</command>
-	  and other commands that deal with directory contents.</para>
+	<para>快照會掛載在父資料集下的隱藏目錄：<filename>.zfs/snapshots/<replaceable>snapshotname</replaceable></filename>。預設不會顯示這些目錄，即使是用 <command>ls -a</command> 指令。雖然該目錄不會顯示，但該目錄實際存在，而且可以像一般的目錄一樣存取。一個名稱為 <literal>snapdir</literal> 的屬性可以控制是否在目錄清單中顯示這些隱藏目錄，設定該屬性為可見 (<literal>visible</literal>) 可以讓這些目錄出現在 <command>ls</command> 以及其他處理目錄內容的指令中。</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs get snapdir <replaceable>mypool/var/tmp</replaceable></userinput>
 NAME            PROPERTY  VALUE    SOURCE
@@ -32901,16 +32863,7 @@ mypool/var/tmp  snapdir   hidden   default
 <prompt>%</prompt> <userinput>ls -a /var/tmp</userinput>
 .               ..              .zfs            passwd          vi.recover</screen>
 
-	<para xml:lang="en">Individual files can easily be restored to a previous
-	  state by copying them from the snapshot back to the parent
-	  dataset.  The directory structure below
-	  <filename>.zfs/snapshot</filename> has a directory named
-	  exactly like the snapshots taken earlier to make it easier
-	  to identify them.  In the next example, it is assumed that a
-	  file is to be restored from the hidden
-	  <filename>.zfs</filename> directory by copying it from the
-	  snapshot that contained the latest version of the
-	  file:</para>
+	<para>要還原個別檔案到先前的狀態非常簡單，只要從快照中複製檔案到父資料集。在 <filename>.zfs/snapshot</filename> 目錄結構下有一個與先前所做的快照名稱相同的目錄，可以很容易的找到。在下個範例中，我們會示範從隱藏的 <filename>.zfs</filename> 目錄還原一個檔案，透過從含有該檔案的最新版快照複製：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>rm /var/tmp/passwd</userinput>
 <prompt>%</prompt> <userinput>ls -a /var/tmp</userinput>
@@ -32921,61 +32874,25 @@ after_cp                my_recursive_snapshot
 passwd          vi.recover
 <prompt>#</prompt> <userinput>cp /var/tmp/.zfs/snapshot/<replaceable>after_cp/passwd</replaceable> <replaceable>/var/tmp</replaceable></userinput></screen>
 
-	<para xml:lang="en">When <command>ls .zfs/snapshot</command> was issued, the
-	  <literal>snapdir</literal> property might have been set to
-	  hidden, but it would still be possible to list the contents
-	  of that directory.  It is up to the administrator to decide
-	  whether these directories will be displayed.  It is possible
-	  to display these for certain datasets and prevent it for
-	  others.  Copying files or directories from this hidden
-	  <filename>.zfs/snapshot</filename> is simple enough.  Trying
-	  it the other way around results in this error:</para>
+	<para>執行 <command>ls .zfs/snapshot</command> 時，雖然 <literal>snapdir</literal> 可能已經設為隱藏，但仍可能可以顯示該目錄中的內容，這取決於管理者是否要顯示這些目錄，可以只顯示特定的資料集，而其他的則不顯示。從這個隱藏的 <filename>.zfs/snapshot</filename> 複製檔案或目錄非常簡單，除此之外，嘗試其他的動作則會出現以下錯誤：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cp <replaceable>/etc/rc.conf</replaceable> /var/tmp/.zfs/snapshot/<replaceable>after_cp/</replaceable></userinput>
 cp: /var/tmp/.zfs/snapshot/after_cp/rc.conf: Read-only file system</screen>
 
-	<para xml:lang="en">The error reminds the user that snapshots are read-only
-	  and cannot be changed after creation.  Files cannot be
-	  copied into or removed from snapshot directories because
-	  that would change the state of the dataset they
-	  represent.</para>
+	<para>這個錯誤用來提醒使用者快照是唯讀的，在建立之後不能更改。無法複製檔案進去或從該快照目錄中移除，因為這會變更該資料集所代表的狀態。</para>
 
-	<para xml:lang="en">Snapshots consume space based on how much the parent
-	  file system has changed since the time of the snapshot.  The
-	  <literal>written</literal> property of a snapshot tracks how
-	  much space is being used by the snapshot.</para>
+	<para>快照所消耗的空間是依據自快照之後父檔案系統做了多少變更來決定，快照的 <literal>written</literal> 屬性可以用來追蹤有多少空間被快照所使用。</para>
 
-	<para xml:lang="en">Snapshots are destroyed and the space reclaimed with
-	  <command>zfs destroy
-	    <replaceable>dataset</replaceable>@<replaceable>snapshot</replaceable></command>.
-	  Adding <option>-r</option> recursively removes all snapshots
-	  with the same name under the parent dataset.  Adding
-	  <option>-n -v</option> to the command displays a list of the
-	  snapshots that would be deleted and an estimate of how much
-	  space would be reclaimed without performing the actual
-	  destroy operation.</para>
+	<para>使用 <command>zfs destroy <replaceable>dataset</replaceable>@<replaceable>snapshot</replaceable></command> 可以摧毀快照並回收空間。加上 <option>-r</option> 可以遞迴移除所有在父資料集下使用同名的快照。加入 <option>-n -v</option> 來顯示將要移除的快照清單以及估計回收的空間，而不會實際執行摧毀的操作。</para>
       </sect3>
     </sect2>
 
     <sect2 xml:id="zfs-zfs-clones">
-      <title>管理複製 (Clone)</title>
+      <title>管理複本 (Clone)</title>
 
-      <para xml:lang="en">A clone is a copy of a snapshot that is treated more like
-	a regular dataset.  Unlike a snapshot, a clone is not read
-	only, is mounted, and can have its own properties.  Once a
-	clone has been created using <command>zfs clone</command>, the
-	snapshot it was created from cannot be destroyed.  The
-	child/parent relationship between the clone and the snapshot
-	can be reversed using <command>zfs promote</command>.  After a
-	clone has been promoted, the snapshot becomes a child of the
-	clone, rather than of the original parent dataset.  This will
-	change how the space is accounted, but not actually change the
-	amount of space consumed.  The clone can be mounted at any
-	point within the <acronym>ZFS</acronym> file system hierarchy,
-	not just below the original location of the snapshot.</para>
+      <para>複本 (Clone) 是快照的複製，但更像是一般的資料集，與快照不同的是，複本是非唯讀的 (可寫)，且可掛載，可以有自己的屬性。使用 <command>zfs clone</command> 建立複本之後，便無法再摧毀用來建立複本的快照。複本與快照的父/子關係可以使用 <command>zfs promote</command> 來對換。提升複本之後 ，快照便會成為複本的子資料集，而不是原來的父資料集，這個動作會改變空間計算的方式，但並不會實際改變空間的使用量。複本可以被掛載到 <acronym>ZFS</acronym> 檔案系統階層中的任何一點，並非只能位於原來快照的位置底下。</para>
 
-      <para xml:lang="en">To demonstrate the clone feature, this example dataset is
-	used:</para>
+      <para>要示範複本功能會用到這個範例資料集：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs list -rt all <replaceable>camino/home/joe</replaceable></userinput>
 NAME                    USED  AVAIL  REFER  MOUNTPOINT
@@ -32983,14 +32900,7 @@ camino/home/joe         108K   1.3G    87K  /usr/home/joe
 camino/home/joe@plans    21K      -  85.5K  -
 camino/home/joe@backup    0K      -    87K  -</screen>
 
-      <para xml:lang="en">A typical use for clones is to experiment with a specific
-	dataset while keeping the snapshot around to fall back to in
-	case something goes wrong.  Since snapshots cannot be
-	changed, a read/write clone of a snapshot is created.  After
-	the desired result is achieved in the clone, the clone can be
-	promoted to a dataset and the old file system removed.  This
-	is not strictly necessary, as the clone and dataset can
-	coexist without problems.</para>
+      <para>會使用到複本一般是要在可以保留快照以便出錯時可還原的情況下使用指定的資料集做實驗，由於快照並無法做更改，所以會建立一個可以讀/寫的快照複本。當在複本中做完想要執行的動作後，便可以提升複本成資料集，然後移除舊的檔案系統。嚴格來說這並非必要，因為複本與資料集可同時存在，不會有任何問題。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs clone <replaceable>camino/home/joe</replaceable>@<replaceable>backup</replaceable> <replaceable>camino/home/joenew</replaceable></userinput>
 <prompt>#</prompt> <userinput>ls /usr/home/joe*</userinput>
@@ -33004,16 +32914,7 @@ Filesystem          Size    Used   Avail Capacity  Mounted on
 usr/home/joe        1.3G     31k    1.3G     0%    /usr/home/joe
 usr/home/joenew     1.3G     31k    1.3G     0%    /usr/home/joenew</screen>
 
-      <para xml:lang="en">After a clone is created it is an exact copy of the state
-	the dataset was in when the snapshot was taken.  The clone can
-	now be changed independently from its originating dataset.
-	The only connection between the two is the snapshot.
-	<acronym>ZFS</acronym> records this connection in the property
-	<literal>origin</literal>.  Once the dependency between the
-	snapshot and the clone has been removed by promoting the clone
-	using <command>zfs promote</command>, the
-	<literal>origin</literal> of the clone is removed as it is now
-	an independent dataset.  This example demonstrates it:</para>
+      <para>建立完的複本便有與建立快照時狀態相同的資料集，現在複本可以獨立於原來的資料集來做更改。剩下唯一與資料集之間的關係便是快照，<acronym>ZFS</acronym> 會在屬性 <literal>origin</literal> 記錄這個關係，一旦在快照與複本之間的相依關係因為使用 <command>zfs promote</command> 提升而移除時，複本的 <literal>origin</literal> 也會因為成為一個完全獨立的資料集而移除。以下範例會示範這個動作：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs get origin <replaceable>camino/home/joenew</replaceable></userinput>
 NAME                  PROPERTY  VALUE                     SOURCE
@@ -33023,14 +32924,7 @@ camino/home/joenew    origin    camino/home/joe@backup    -
 NAME                  PROPERTY  VALUE   SOURCE
 camino/home/joenew    origin    -       -</screen>
 
-      <para xml:lang="en">After making some changes like copying
-	<filename>loader.conf</filename> to the promoted clone, for
-	example, the old directory becomes obsolete in this case.
-	Instead, the promoted clone can replace it.  This can be
-	achieved by two consecutive commands: <command>zfs
-	  destroy</command> on the old dataset and <command>zfs
-	  rename</command> on the clone to name it like the old
-	dataset (it could also get an entirely different name).</para>
+      <para>做為部份更改之後，例如複製 <filename>loader.conf</filename> 到提升後的複本，這個例子中的舊目錄便無須保留，取而代之的是提升後的複本，這個動作可以用兩個連續的指令來完成：在舊資料集上執行 <command>zfs destroy</command> 並在與舊資料相似名稱 (也可能用完全不同的名稱) 的複本上執行 <command>zfs rename</command>。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cp <replaceable>/boot/defaults/loader.conf</replaceable> <replaceable>/usr/home/joenew</replaceable></userinput>
 <prompt>#</prompt> <userinput>zfs destroy -f <replaceable>camino/home/joe</replaceable></userinput>
@@ -33041,18 +32935,7 @@ backup.txz     loader.conf     plans.txt
 Filesystem          Size    Used   Avail Capacity  Mounted on
 usr/home/joe        1.3G    128k    1.3G     0%    /usr/home/joe</screen>
 
-      <para xml:lang="en">The cloned snapshot is now handled like an ordinary
-	dataset.  It contains all the data from the original snapshot
-	plus the files that were added to it like
-	<filename>loader.conf</filename>.  Clones can be used in
-	different scenarios to provide useful features to ZFS users.
-	For example, jails could be provided as snapshots containing
-	different sets of installed applications.  Users can clone
-	these snapshots and add their own applications as they see
-	fit.  Once they are satisfied with the changes, the clones can
-	be promoted to full datasets and provided to end users to work
-	with like they would with a real dataset.  This saves time and
-	administrative overhead when providing these jails.</para>
+      <para>快照的複本現在可以如同一般資料集一樣使用，它的內容包含了所有來自原始快照的資料以及後來加入的檔案，例如 <filename>loader.conf</filename>。複本可以在許多不同的情境下使用提供 ZFS 的使用者有用的功能，例如，Jail 可以透過含有已安裝了各種應用程式集的快照來提供，使用者可以複製這些快照然後加入自己想要嘗試的應用程式，一但更改可以滿足需求，便可提升複本為完整的資料集然後提供給終端使用者，讓終端使用者可以如同實際擁有資料集一般的使用，這個以節省提供這些 Jail 的時間與管理成本。</para>
     </sect2>
 
     <sect2 xml:id="zfs-zfs-send">
@@ -35120,7 +35003,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 49348 2016-08-25 23:08:49Z brd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 49368 2016-09-06 19:38:10Z bcr $
 -->
 <chapter version="5.0" xml:id="virtualization">
 
@@ -35182,7 +35065,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 
     <itemizedlist>
       <listitem>
-	<para>了解<link linkend="basics"><trademark class="registered">UNIX</trademark> 與 FreeBSD 的基礎</link>。</para>
+	<para>了解 <link linkend="basics"><trademark class="registered">UNIX</trademark> 與 FreeBSD 的基礎</link>。</para>
       </listitem>
 
       <listitem>
@@ -35612,7 +35495,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
   </sect1>
 
   <sect1 xml:id="virtualization-guest-virtualbox">
-    <title xml:lang="en">FreeBSD as a Guest on <trademark>VirtualBox</trademark></title>
+    <title>在 <trademark>VirtualBox</trademark> 使用 FreeBSD 作為客端</title>
 
     <para xml:lang="en">FreeBSD works well as a guest in
       <application><trademark>VirtualBox</trademark></application>.  The virtualization
@@ -35966,8 +35849,8 @@ net.link.tap.up_on_open: 0 -&gt; 1
 
       <para xml:lang="en">Download an installation image of FreeBSD to install:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>fetch <replaceable>ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.2/FreeBSD-10.2-RELEASE-amd64-bootonly.iso</replaceable></userinput>
-FreeBSD-10.2-RELEASE-amd64-bootonly.iso       100% of  230 MB  570 kBps 06m17s</screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>fetch <replaceable>ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-amd64-bootonly.iso</replaceable></userinput>
+FreeBSD-10.3-RELEASE-amd64-bootonly.iso       100% of  230 MB  570 kBps 06m17s</screen>
 
       <para xml:lang="en">FreeBSD comes with an example script for running a virtual
 	machine in <application>bhyve</application>.  The script will
@@ -35986,7 +35869,7 @@ FreeBSD-10.2-RELEASE-amd64-bootonly.iso       100% of  230 MB  570 kBps 06m17s</
 	machine, used to track the running machines.  This example
 	starts the virtual machine in installation mode:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>sh /usr/share/examples/bhyve/vmrun.sh -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> -t <replaceable>tap0</replaceable> -d <replaceable>guest.img</replaceable> -i -I <replaceable>FreeBSD-10.0-RELEASE-amd64-bootonly.iso</replaceable> <replaceable>guestname</replaceable></userinput></screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>sh /usr/share/examples/bhyve/vmrun.sh -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> -t <replaceable>tap0</replaceable> -d <replaceable>guest.img</replaceable> -i -I <replaceable>FreeBSD-10.3-RELEASE-amd64-bootonly.iso</replaceable> <replaceable>guestname</replaceable></userinput></screen>
 
       <para xml:lang="en">The virtual machine will boot and start the installer.
 	After installing a system in the virtual machine, when the
@@ -54097,7 +53980,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49352 2016-08-26 17:25:01Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49364 2016-09-02 18:11:32Z wblock $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -58682,7 +58565,7 @@ rtsold_enable="YES"</programlisting>
 	the generic tunneling interface
 	<filename><replaceable>gif0</replaceable></filename>:</para>
 
-      <programlisting xml:lang="en">gif_interfaces="gif<replaceable>0</replaceable>"</programlisting>
+      <programlisting xml:lang="en">cloned_interfaces="gif<replaceable>0</replaceable>"</programlisting>
 
       <para xml:lang="en">Next, configure that interface with the
 	<acronym>IPv4</acronym> addresses of the local and remote
@@ -58690,7 +58573,7 @@ rtsold_enable="YES"</programlisting>
 	and <replaceable>REMOTE_IPv4_ADDR</replaceable> with the
 	actual <acronym>IPv4</acronym> addresses:</para>
 
-      <programlisting xml:lang="en">gifconfig_gif0="<replaceable>MY_IPv4_ADDR REMOTE_IPv4_ADDR</replaceable>"</programlisting>
+      <programlisting xml:lang="en">cloned_interfaces_gif0="<replaceable>MY_IPv4_ADDR REMOTE_IPv4_ADDR</replaceable>"</programlisting>
 
       <para xml:lang="en">To apply the <acronym>IPv6</acronym> address that has been
 	assigned for use as the <acronym>IPv6</acronym> tunnel
