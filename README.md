@@ -12,8 +12,14 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
   - [X] 10. Linux® 二進位檔的相容性
   - [X] 21. Virtualization(虛擬機器)
   - [X] 29. 防火牆
-- [ ] 統整文件內目錄標題以及相關名詞
-
+- [X] 統整文件內目錄標題以及相關名詞
+- [X] 完成 Part 1 翻譯
+- [ ] 完成 Part 3 翻譯
+  - [ ] 19. Z 檔案系統 (ZFS) - 進行中
+  - [ ] 11. 設定與調校
+  - [ ] 12. FreeBSD 開機程序
+  - [ ] 23. 更新與升級 FreeBSD
+  - [ ] 13. 安全性
 # 如何翻譯?
 * [FreeBSD Handbook - EN](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) 為操作手冊原文
 * [book.html](book.html) 為採用 GNU gettext 翻譯所產生的新版文件
