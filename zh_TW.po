@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-09-14 11:43+0800\n"
-"PO-Revision-Date: 2016-09-14 17:33+0800\n"
+"PO-Revision-Date: 2016-10-06 13:29+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -320,7 +320,7 @@ msgstr "<xref linkend=\"mac\"/> 是此版本新增的章節。該章介紹：什
 #. (itstool) path: listitem/para
 #: book.translate.xml:882
 msgid "<xref linkend=\"disks\"/> has been expanded with new information about USB storage devices, file system snapshots, file system quotas, file and network backed filesystems, and encrypted disk partitions."
-msgstr "<xref linkend=\"disks\"/> 新增了像是：USB 隨身碟、檔案系統快照 (Snapshot)、檔案系統配額 (Quota) 、檔案及網路的備援檔案系統、以及如何對硬碟分割區作加密等詳解。"
+msgstr "<xref linkend=\"disks\"/> 新增了像是：USB 隨身碟、檔案系統快照 (Snapshot)、檔案系統配額 (Quota) 、檔案與網路為基礎的檔案系統、以及如何對硬碟分割區作加密等詳解。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:889
@@ -3214,7 +3214,7 @@ msgstr "配置檔案系統時要記得硬碟的資料傳輸的速度外軌較內
 msgid ""
 "The size of the <filename>/var</filename> partition reflects the intended machine's usage. This partition is used to hold mailboxes, log files, and printer spools. Mailboxes and log files can grow to unexpected sizes depending on the number of users and how long log files are kept. On average, most users rarely need more than about a "
 "gigabyte of free disk space in <filename>/var</filename>."
-msgstr "機器預期的用途會反映到 <filename>/var</filename> 分割區的大小，這個分割區用來保存郵件 (Mailbox)、記錄檔 (Log file) 及印表機緩衝 (Spool)。依使用者數及保存的期間，郵件及記錄檔可能成長到無法預期的大小，一般來說大部份的使用很少會在 <filename>/var</filename> 需要超過 1 GB 的可用磁碟空間。"
+msgstr "機器預期的用途會反映到 <filename>/var</filename> 分割區的大小，這個分割區用來保存郵件 (Mailbox)、日誌檔 (Log file) 及印表機緩衝 (Spool)。依使用者數及保存的期間，郵件及日誌檔可能成長到無法預期的大小，一般來說大部份的使用很少會在 <filename>/var</filename> 需要超過 1 GB 的可用磁碟空間。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:3980
@@ -8221,7 +8221,7 @@ msgstr "為何要使用 <command>/bin/kill</command>？ "
 msgid ""
 "Many shells provide <command>kill</command> as a built in command, meaning that the shell will send the signal directly, rather than running <filename>/bin/kill</filename>. Be aware that different shells have a different syntax for specifying the name of the signal to send. Rather than try to learn all of them, it can be simpler to "
 "specify <command>/bin/kill</command>."
-msgstr "多數 shell 都有提供內建的 <command>kill</command> 指令。 也就是說這種 shell 會直接發送信號，而不是執行 <filename>/bin/kill</filename>。 但要小心不同的 shell 會有不同的語法來指定信號的名稱等。 與其嘗試去把它們通通學會，不如就單純的直接用 <command>/bin/kill</command>。"
+msgstr "多數 Shell 都有提供內建的 <command>kill</command> 指令。 也就是說這種 shell 會直接發送信號，而不是執行 <filename>/bin/kill</filename>。 但要小心不同的 shell 會有不同的語法來指定信號的名稱等。 與其嘗試去把它們通通學會，不如就單純的直接用 <command>/bin/kill</command>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8358
@@ -12012,7 +12012,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:11678
 msgid "After editing <filename>local.conf</filename>, make certain to end the file with the <literal>&lt;/fontconfig&gt;</literal> tag. Not doing this will cause changes to be ignored."
-msgstr "編輯 <filename>local.conf</filename> 完之後，請確認有使用 literal>&lt;/fontconfig&gt;</literal> 標籤結尾，若沒有使用會讓所做的更改被忽略。"
+msgstr "編輯 <filename>local.conf</filename> 完之後，請確認有使用 <literal>&lt;/fontconfig&gt;</literal> 標籤結尾，若沒有使用會讓所做的更改被忽略。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11683
@@ -12989,7 +12989,7 @@ msgid ""
 "One of the tools available to assist you during troubleshooting process are the <application>Xorg</application> log files, which contain information on each device that the <application>Xorg</application> server attaches to. <application>Xorg</application> log file names are in the format of <filename>/var/log/Xorg.0.log</filename>. "
 "The exact name of the log can vary from <filename>Xorg.0.log</filename> to <filename>Xorg.8.log</filename> and so forth."
 msgstr ""
-"有一個工具可以協助您診斷問題，那就是 <application>Xorg</application> 記錄檔。該記錄檔中記錄了 <application>Xorg</application> 連接的每個裝置的資訊。<application>Xorg</application> 記錄檔名稱的格式為 <filename>/var/log/Xorg.0.log</filename>，確切的記錄檔名會可能從 <filename>Xorg.0.log</filename> 到 <filename>Xorg.8.log</filename> 以此類"
+"有一個工具可以協助您診斷問題，那就是 <application>Xorg</application> 日誌檔。該日誌檔中記錄了 <application>Xorg</application> 連接的每個裝置的資訊。<application>Xorg</application> 記錄檔名稱的格式為 <filename>/var/log/Xorg.0.log</filename>，確切的記錄檔名會可能從 <filename>Xorg.0.log</filename> 到 <filename>Xorg.8.log</filename> 以此類"
 "推。"
 
 #. (itstool) path: sect1/para
@@ -13051,7 +13051,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12504
 msgid "This section assumes a bit of advanced configuration knowledge. If attempts to use the standard configuration tools above have not resulted in a working configuration, there is information enough in the log files to be of use in getting the setup working. Use of a text editor will be necessary."
-msgstr "此章節會需要有一些進階的設定知識，若嘗試使用上述的標準設定工具仍無法產生可運作的設定，在記錄檔中應有足夠的資訊可運用來讓顯示卡運作。在此會需要使用文字編輯器。"
+msgstr "此章節會需要有一些進階的設定知識，若嘗試使用上述的標準設定工具仍無法產生可運作的設定，在日誌檔中應有足夠的資訊可運用來讓顯示卡運作。在此會需要使用文字編輯器。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12511
@@ -13113,7 +13113,7 @@ msgstr "<application>Xorg</application> 能夠從寬螢幕設定取得解析度�
 #. (itstool) path: sect2/para
 #: book.translate.xml:12559
 msgid "If those <literal>ModeLines</literal> do not exist in the drivers, one might need to give <application>Xorg</application> a little hint. Using <filename>/var/log/Xorg.0.log</filename> one can extract enough information to manually create a <literal>ModeLine</literal> that will work. Simply look for information resembling this:"
-msgstr "若驅動程式中不存在那些螢幕能處理的 <literal>ModeLines</literal>，則需要給 <application>Xorg</application> 一點提示。透過 <filename>/var/log/Xorg.0.log</filename> 可以取得足夠的資訊來手動建立可運作的 <literal>ModeLine</literal>。只需要在記錄檔中找到類似以下的訊息："
+msgstr "若驅動程式中不存在那些螢幕能處理的 <literal>ModeLines</literal>，則需要給 <application>Xorg</application> 一點提示。透過 <filename>/var/log/Xorg.0.log</filename> 可以取得足夠的資訊來手動建立可運作的 <literal>ModeLine</literal>。只需要在日誌檔中找到類似以下的訊息："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12567
@@ -14474,7 +14474,7 @@ msgstr ""
 #: book.translate.xml:13715
 msgid ""
 "<application>GnuCash</application> is part of the <application>GNOME</application> effort to provide user-friendly, yet powerful, applications to end-users. <application>GnuCash</application> can be used to keep track of income and expenses, bank accounts, and stocks. It features an intuitive interface while remaining professional."
-msgstr "<application>GnuCash</application> 是 <application>GNOME</application> 團隊努力成果中的一部分， <application>GNOME</application> 團隊主要提供親切而強大的桌面應用程式給終端使用者。使用 <application>GnuCash</application> 可以持續追蹤記錄收入與花費、銀行帳戶以及股票證券等。 它的特性是介面直覺但功能仍非常專業。"
+msgstr "<application>GnuCash</application> 是 <application>GNOME</application> 團隊努力成果中的一部分， <application>GNOME</application> 團隊主要提供親切而強大的桌面應用程式給終端使用者。使用 <application>GnuCash</application> 可以持續追蹤收入與花費、銀行帳戶以及股票證券等。 它的特性是介面直覺但功能仍非常專業。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13723
@@ -17592,7 +17592,7 @@ msgstr "此印表機的緩衝 (Spooling) 目錄路徑，每台印表機會自己
 #. (itstool) path: callout/para
 #: book.translate.xml:17306
 msgid "The log file where errors on this printer will be reported."
-msgstr "記錄此印表機回報錯誤的記錄檔。"
+msgstr "回報此印表機的錯誤的日誌檔。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17311
@@ -39447,7 +39447,7 @@ msgstr "顯示已記錄的儲存池歷史日誌"
 msgid ""
 "Commands that modify the pool are recorded. Recorded actions include the creation of datasets, changing properties, or replacement of a disk. This history is useful for reviewing how a pool was created and which user performed a specific action and when. History is not kept in a log file, but is part of the pool itself. The command to "
 "review this history is aptly named <command>zpool history</command>:"
-msgstr "修改儲存池的指令會被記錄下來，會記錄的動作包含資料集的建立，屬性更改或更換磁碟。這個歷史記錄用來查看儲存池是如何建立、由誰執行、什麼動作及何時。歷史記錄並非儲存在記錄檔 (Log file)，而是儲存在儲存池。查看這個歷史記錄的指令名稱為 <command>zpool history</command>："
+msgstr "修改儲存池的指令會被記錄下來，會記錄的動作包含資料集的建立，屬性更改或更換磁碟。這個歷史記錄用來查看儲存池是如何建立、由誰執行、什麼動作及何時。歷史記錄並非儲存在日誌檔 (Log file)，而是儲存在儲存池。查看這個歷史記錄的指令名稱為 <command>zpool history</command>："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:38596
@@ -39606,7 +39606,7 @@ msgid ""
 msgstr ""
 "不同於傳統的磁碟與磁碟區管理程式 (Volume manager) ，在 <acronym>ZFS</acronym> 中的空間並<emphasis>不</emphasis>會預先分配。傳統的檔案系統在分割與分配空間完後，若沒有增加新的磁碟便無法再增加額外的檔案系統。在 <acronym>ZFS</acronym>，可以隨時建立新的檔案系統，每個資料集 (<link linkend=\"zfs-term-dataset\"><emphasis>Dataset</emphasis></"
 "link>) 都有自己的屬性，包含壓縮 (Compression)、去重複 (Deduplication)、快取 (Caching) 與配額 (Quota) 功能以及其他有用的屬性如唯讀 (Readonly)、區分大小寫 (Case sensitivity)、網路檔案分享 (Network file sharing) 以及掛載點 (Mount point)。資料集可以存在於其他資料集中，且子資料集會繼承其父資料集的屬性。每個資料集都可以作為一個單位來管理、委"
-"託 (<link linkend=\"zfs-zfs-allow\">Delegate</link>)、備援 (<link linkend=\"zfs-zfs-send\">Replicate</link>)、快照 (<link linkend=\"zfs-zfs-snapshot\">Snapshot</link>)、監禁 (<link linkend=\"zfs-zfs-jail\">Jail</link>) 與摧毀 (Destroy)，替每種不同類型或集合的檔案建立各別的資料集還有許多的好處。唯一的缺點是在當有非常大數量的資料集時，部"
+"託 (<link linkend=\"zfs-zfs-allow\">Delegate</link>)、備份 (<link linkend=\"zfs-zfs-send\">Replicate</link>)、快照 (<link linkend=\"zfs-zfs-snapshot\">Snapshot</link>)、監禁 (<link linkend=\"zfs-zfs-jail\">Jail</link>) 與摧毀 (Destroy)，替每種不同類型或集合的檔案建立各別的資料集還有許多的好處。唯一的缺點是在當有非常大數量的資料集時，部"
 "份指令例如 <command>zfs list</command> 會變的較緩慢，且掛載上百個或其至上千個資料集可能會使 FreeBSD 的開機程序變慢。"
 
 #. (itstool) path: sect2/para
@@ -40077,7 +40077,7 @@ msgstr "對照這個表格來看輸出的結果，可以明顯的看到 <filenam
 #. (itstool) path: sect3/para
 #: book.translate.xml:39195
 msgid "Comparing two snapshots is helpful when using the <acronym>ZFS</acronym> replication feature to transfer a dataset to a different host for backup purposes."
-msgstr "在使用 <acronym>ZFS</acronym> 備援功能傳輸一個資料集到另一個主機備份時比對兩個快照也同樣很有用。"
+msgstr "在使用 <acronym>ZFS</acronym> 備份功能來傳輸一個資料集到另一個主機備份時比對兩個快照也同樣很有用。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39199
@@ -40102,7 +40102,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:39212
 msgid "A backup administrator can compare two snapshots received from the sending host and determine the actual changes in the dataset. See the <link linkend=\"zfs-zfs-send\">Replication</link> section for more information."
-msgstr "備份管理者可以比對兩個自發送主機所接收到的兩個快照並查看實際在資料集中的變更。請參考 <link linkend=\"zfs-zfs-send\">備援</link> 一節來取得更多資訊。"
+msgstr "備份管理者可以比對兩個自傳送主機所接收到的兩個快照並查看實際在資料集中的變更。請參考 <link linkend=\"zfs-zfs-send\">備份</link> 一節來取得更多資訊。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:39220
@@ -40398,7 +40398,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:39498
 msgid "Replication"
-msgstr "備援"
+msgstr "備份 (Replication)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39500
@@ -40407,11 +40407,13 @@ msgid ""
 "not only store the data on another pool connected to the local system, but also to send it over a network to another system. Snapshots are the basis for this replication (see the section on <link linkend=\"zfs-zfs-snapshot\"><acronym>ZFS</acronym> snapshots</link>). The commands used for replicating data are <command>zfs send</command> "
 "and <command>zfs receive</command>."
 msgstr ""
+"將資料保存在單一地點的單一儲存池上會讓資料暴露在盜竊、自然或人為的風險之下，定期備份整個儲存池非常重要，<acronym>ZFS</acronym> 提供了內建的序列化 (Serialization) 功能可以將資料以串流傳送到標準輸出。使用這項技術，不僅可以將資料儲存到另一個已連結到本地系統的儲存池，也可以透過網路將資料傳送到另一個系統，這種備份方式以快照為基礎 (請參考章"
+"節 <link linkend=\"zfs-zfs-snapshot\"><acronym>ZFS</acronym> 快照(Snapshot)</link>)。用來備份資料的指令為 <command>zfs send</command> 及 <command>zfs receive</command>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39514
 msgid "These examples demonstrate <acronym>ZFS</acronym> replication with these two pools:"
-msgstr ""
+msgstr "以下例子將示範使用兩個儲存池來做 <acronym>ZFS</acronym> 備份："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39517
@@ -40430,6 +40432,8 @@ msgid ""
 "manually done by a system administrator when needed. A snapshot is used to provide a consistent version of the file system to be replicated. Once a snapshot of <replaceable>mypool</replaceable> has been created, it can be copied to the <replaceable>backup</replaceable> pool. Only snapshots can be replicated. Changes made since the most "
 "recent snapshot will not be included."
 msgstr ""
+"名為 <replaceable>mypool</replaceable> 的儲存池為主要的儲存池，資料會定期寫入與讀取的位置。第二個儲存池 <replaceable>backup</replaceable> 用來待命 (Standby)，萬一主要儲存池無法使用時可替換。注意，<acronym>ZFS</acronym> 並不會自動做容錯移轉 (Fail-over)，必須要由系統管理者在需要的時候手動完成。快照會用來提供一個與檔系統一致的版本來做備"
+"份，<replaceable>mypool</replaceable> 的快照建立之後，便可以複製到 <replaceable>backup</replaceable> 儲存池，只有快照可以做備份，最近一次快照之後所做的變更不會含在內容裡面。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39536
@@ -40444,7 +40448,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39541
 msgid "Now that a snapshot exists, <command>zfs send</command> can be used to create a stream representing the contents of the snapshot. This stream can be stored as a file or received by another pool. The stream is written to standard output, but must be redirected to a file or pipe or an error is produced:"
-msgstr ""
+msgstr "快照存在以後，便可以使用 <command>zfs send</command> 來建立一個代表快照內容的串流，這個串流可以儲存成檔案或由其他儲存池接收。串流會寫入到標準輸出，但是必須要重新導向到一個檔案或轉接到其他地方，否則會錯誤："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39548
@@ -40458,7 +40462,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39552
 msgid "To back up a dataset with <command>zfs send</command>, redirect to a file located on the mounted backup pool. Ensure that the pool has enough free space to accommodate the size of the snapshot being sent, which means all of the data contained in the snapshot, not just the changes from the previous snapshot."
-msgstr ""
+msgstr "要使用 <command>zfs send</command> 備份一個資料集，可重新導向到一個位於在已掛載到備份儲存池上的檔案。確定該儲存池有足夠的空間容納要傳送的快照，這裡指的是該快照中內含的所有資料，並非只有上次快照到該快照間的變更。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39559
@@ -40474,7 +40478,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39565
 msgid "The <command>zfs send</command> transferred all the data in the snapshot called <replaceable>backup1</replaceable> to the pool named <replaceable>backup</replaceable>. Creating and sending these snapshots can be done automatically with a <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> job."
-msgstr ""
+msgstr "<command>zfs send</command> 會傳輸在快照 <replaceable>backup1</replaceable> 中所有的資料到儲存池 <replaceable>backup</replaceable>。可以使用 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 排程來自動完成建立與傳送快照的動作。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39571
@@ -40482,6 +40486,8 @@ msgid ""
 "Instead of storing the backups as archive files, <acronym>ZFS</acronym> can receive them as a live file system, allowing the backed up data to be accessed directly. To get to the actual data contained in those streams, <command>zfs receive</command> is used to transform the streams back into files and directories. The example below "
 "combines <command>zfs send</command> and <command>zfs receive</command> using a pipe to copy the data from one pool to another. The data can be used directly on the receiving pool after the transfer is complete. A dataset can only be replicated to an empty dataset."
 msgstr ""
+"若不想將備份以封存檔案儲存，<acronym>ZFS</acronym> 可用實際的檔案系統來接收資料，讓備份的資料可以直接被存取。要取得實際包含在串流中的資料可以用 <command>zfs receive</command> 將串流轉換回檔案與目錄。以下例子會以管線符號連接 <command>zfs send</command> 及 <command>zfs receive</command>，將資料從一個儲存池複製到另一個，傳輸完成後可以直接"
+"使用接收儲存池上的資料。一個資料集只可以被複製到另一個空的資料集。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39583
@@ -40507,7 +40513,7 @@ msgstr "漸進式備份"
 #. (itstool) path: sect3/para
 #: book.translate.xml:39597
 msgid "<command>zfs send</command> can also determine the difference between two snapshots and send only the differences between the two. This saves disk space and transfer time. For example:"
-msgstr ""
+msgstr "<command>zfs send</command> 也可以比較兩個快照之間的差異，並且只傳送兩者之間的差異，這麼做可以節省磁碟空間及傳輸時間。例如："
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:39602
@@ -40529,7 +40535,7 @@ msgstr ""
 msgid ""
 "A second snapshot called <replaceable>replica2</replaceable> was created. This second snapshot contains only the changes that were made to the file system between now and the previous snapshot, <replaceable>replica1</replaceable>. Using <command>zfs send -i</command> and indicating the pair of snapshots generates an incremental replica "
 "stream containing only the data that has changed. This can only succeed if the initial snapshot already exists on the receiving side."
-msgstr ""
+msgstr "會建立一個名為 <replaceable>replica2</replaceable> 的第二個快照，這個快照只中只會含有目前與前次快照 <replaceable>replica1</replaceable> 之間檔案系統所做的變更。使用 <command>zfs send -i</command> 並指定要用來產生漸進備份串流的快照，串流中只會含有做過更改的資料。這個動作只在接收端已經有初始快照時才可用。"
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:39623
@@ -40564,7 +40570,7 @@ msgstr ""
 msgid ""
 "The incremental stream was successfully transferred. Only the data that had changed was replicated, rather than the entirety of <replaceable>replica1</replaceable>. Only the differences were sent, which took much less time to transfer and saved disk space by not copying the complete pool each time. This is useful when having to rely on "
 "slow networks or when costs per transferred byte must be considered."
-msgstr ""
+msgstr "如此一來，便成功傳輸漸進式的串流，只有做過更改的資料會被備份，不會傳送完整的 <replaceable>replica1</replaceable>。由於不會備份完整的儲存池，只傳送差異的部份，所以可以減少傳輸的時間並節省磁碟空間，特別是在網路緩慢或需要考量每位元傳輸成本時非常有用。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39655
@@ -40572,11 +40578,13 @@ msgid ""
 "A new file system, <replaceable>backup/mypool</replaceable>, is available with all of the files and data from the pool <replaceable>mypool</replaceable>. If <option>-P</option> is specified, the properties of the dataset will be copied, including compression settings, quotas, and mount points. When <option>-R</option> is specified, all "
 "child datasets of the indicated dataset will be copied, along with all of their properties. Sending and receiving can be automated so that regular backups are created on the second pool."
 msgstr ""
+"從儲存池 <replaceable>mypool</replaceable> 複製所有檔案與資料的新檔案系統 <replaceable>backup/mypool</replaceable> 便可以使用。若指定 <option>-P</option>，會一併複製資料集的屬性，這包含壓縮 (Compression) 設定，配額 (Quota) 及掛載點 (Mount point)。若指定 <option>-R</option>，會複製所有指定資料集的子資料集，及這些子資料集的所有屬性。可將"
+"傳送與接收自動化來定期使用第二個儲存池做備份。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:39668
 msgid "Sending Encrypted Backups over <application>SSH</application>"
-msgstr "透過 <application>SSH</application> 傳送已加密的備份"
+msgstr "透過 <application>SSH</application> 傳送加密的備份"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39671
@@ -40585,21 +40593,23 @@ msgid ""
 "internet to a remote host. <application>SSH</application> can be used to securely encrypt data send over a network connection. Since <acronym>ZFS</acronym> only requires the stream to be redirected from standard output, it is relatively easy to pipe it through <application>SSH</application>. To keep the contents of the file system "
 "encrypted in transit and on the remote system, consider using <link xlink:href=\"http://wiki.freebsd.org/PEFS\">PEFS</link>."
 msgstr ""
+"透過網路來傳送串流對要遠端備份是相當不錯的方式，但是也有一些缺點，透過網路連結傳送的資料沒有加密，這會讓任何人都可以在未告知傳送使用者的情況下攔截並轉換串流回資料，這是我們所不想見到的情況，特別是在使用網際網路傳送串流到遠端的主機時。<application>SSH</application> 可用來安全的加密要透過網路連線傳送的資料，在 <acronym>ZFS</acronym> 只需"
+"要從標準輸出重新導向便可簡單的轉接到 <application>SSH</application>。要在傳送或在遠端系統中維持檔案系統內容在加密的狀態也可考慮使用 <link xlink:href=\"http://wiki.freebsd.org/PEFS\">PEFS</link>。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39685
 msgid "A few settings and security precautions must be completed first. Only the necessary steps required for the <command>zfs send</command> operation are shown here. For more information on <application>SSH</application>, see <xref linkend=\"openssh\"/>."
-msgstr ""
+msgstr "有一些設定以及安全性注意事項必須先完成，只有對 <command>zfs send</command> 操作必要的步驟才會在此說明，要取得更多有關 <application>SSH</application> 的資訊請參考 <xref linkend=\"openssh\"/>。"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:39691
 msgid "This configuration is required:"
-msgstr ""
+msgstr "必要的環境設定："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39695
 msgid "Passwordless <application>SSH</application> access between sending and receiving host using <application>SSH</application> keys"
-msgstr ""
+msgstr "使用 <application>SSH</application> 金鑰設定傳送端與接收端間無密碼的 <application>SSH</application> 存取"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39701
@@ -40607,11 +40617,13 @@ msgid ""
 "Normally, the privileges of the <systemitem class=\"username\">root</systemitem> user are needed to send and receive streams. This requires logging in to the receiving system as <systemitem class=\"username\">root</systemitem>. However, logging in as <systemitem class=\"username\">root</systemitem> is disabled by default for security "
 "reasons. The <link linkend=\"zfs-zfs-allow\">ZFS Delegation</link> system can be used to allow a non-<systemitem class=\"username\">root</systemitem> user on each system to perform the respective send and receive operations."
 msgstr ""
+"正常會需要 <systemitem class=\"username\">root</systemitem> 的權限來傳送與接收串流，這需要可以 <systemitem class=\"username\">root</systemitem> 登入到接收端系統。但是，預設因安全性考慮會關閉以 <systemitem class=\"username\">root</systemitem> 登入。<link linkend=\"zfs-zfs-allow\">ZFS Delegation</link> 系統可以用來允許一個非 <systemitem "
+"class=\"username\">root</systemitem> 使用者在每個系統上執行各自的發送與接收操作。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39717
 msgid "On the sending system:"
-msgstr ""
+msgstr "在傳送端系統上："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:39719
@@ -40622,7 +40634,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:39723
 msgid "To mount the pool, the unprivileged user must own the directory, and regular users must be allowed to mount file systems. On the receiving system:"
-msgstr ""
+msgstr "要掛載儲存池，無權限的使用者必須擁有該目錄且必須允許一般的使用者掛載檔案系統。在接收端系統上："
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:39727
@@ -40639,7 +40651,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:39736
 msgid "The unprivileged user now has the ability to receive and mount datasets, and the <replaceable>home</replaceable> dataset can be replicated to the remote system:"
-msgstr ""
+msgstr "無權限的使用者現在有能力可以接收並掛載資料集，且 <replaceable>home</replaceable> 資料集可以被複製到遠端系統："
 
 #. (itstool) path: sect3/screen
 #: book.translate.xml:39740
@@ -40657,6 +40669,9 @@ msgid ""
 "<replaceable>recvpool</replaceable> pool. Adding <option>-d</option> to <command>zfs recv</command> overwrites the name of the pool on the receiving side with the name of the snapshot. <option>-u</option> causes the file systems to not be mounted on the receiving side. When <option>-v</option> is included, more detail about the "
 "transfer is shown, including elapsed time and the amount of data transferred."
 msgstr ""
+"替儲存在儲存池 <replaceable>mypool</replaceable> 上的檔案系統資料集 <replaceable>home</replaceable> 製作一個遞迴快照 <replaceable>monday</replaceable>，然後使用 <command>zfs send -R</command> 來傳送包含該資料集及其所有子資料集、快照、複製與設定的串流。輸出會被導向到 <application>SSH</application> 連線的遠端主機 <replaceable>backuphost</"
+"replaceable> 上等候輸入的 <command>zfs receive</command>，在此建議使用完整網域名稱或 IP 位置。接收端的機器會寫入資料到 <replaceable>recvpool</replaceable> 儲存池上的 <replaceable>backup</replaceable> 資料集，在 <command>zfs recv</command> 加上 <option>-d</option> 可覆寫在接收端使用相同名稱的快照，加上 <option>-u</option> 可讓檔案系統在"
+"接收端不會被掛載，當使用 <option>-v</option>，會顯示更多有關傳輸的詳細資訊，包含已花費的時間及已傳輸的資料量。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:39768
@@ -40669,11 +40684,13 @@ msgid ""
 "<link linkend=\"zfs-term-quota\">Dataset quotas</link> are used to restrict the amount of space that can be consumed by a particular dataset. <link linkend=\"zfs-term-refquota\">Reference Quotas</link> work in very much the same way, but only count the space used by the dataset itself, excluding snapshots and child datasets. Similarly, "
 "<link linkend=\"zfs-term-userquota\">user</link> and <link linkend=\"zfs-term-groupquota\">group</link> quotas can be used to prevent users or groups from using all of the space in the pool or dataset."
 msgstr ""
+"資料集配額 (<link linkend=\"zfs-term-quota\">Dataset quota</link>) 可用來限制特定資料集可以使用的的空間量。參考配額 (<link linkend=\"zfs-term-refquota\">Reference Quota</link>) 的功能也非常相似，差在參考配額只會計算資料集自己使用的空間，不含快照與子資料集。類似的，使用者 (<link linkend=\"zfs-term-userquota\">User</link>) 與群組 (<link "
+"linkend=\"zfs-term-groupquota\">Group</link>) 配額可以用來避免使用者或群組用掉儲存池或資料集的所有空間。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39782
 msgid "To enforce a dataset quota of 10 GB for <filename>storage/home/bob</filename>:"
-msgstr ""
+msgstr "要設定 <filename>storage/home/bob</filename> 的資料集配額為 10 GB："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39785
@@ -40684,7 +40701,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39787
 msgid "To enforce a reference quota of 10 GB for <filename>storage/home/bob</filename>:"
-msgstr ""
+msgstr "要設定 <filename>storage/home/bob</filename> 的參考配額為 10 GB："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39790
@@ -40695,7 +40712,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39792
 msgid "To remove a quota of 10 GB for <filename>storage/home/bob</filename>:"
-msgstr ""
+msgstr "要移除 <filename>storage/home/bob</filename> 的 10 GB 配額："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39795
@@ -40706,32 +40723,32 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39797
 msgid "The general format is <literal>userquota@<replaceable>user</replaceable>=<replaceable>size</replaceable></literal>, and the user's name must be in one of these formats:"
-msgstr ""
+msgstr "設定使用者配額的一般格式為 <literal>userquota@<replaceable>user</replaceable>=<replaceable>size</replaceable></literal> 使用者的名稱必須使用以下格式："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39803
 msgid "<acronym>POSIX</acronym> compatible name such as <replaceable>joe</replaceable>."
-msgstr ""
+msgstr "<acronym>POSIX</acronym> 相容的名稱，如 <replaceable>joe</replaceable>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39808
 msgid "<acronym>POSIX</acronym> numeric ID such as <replaceable>789</replaceable>."
-msgstr ""
+msgstr "<acronym>POSIX</acronym> 數字 ID，如 <replaceable>789</replaceable>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39813
 msgid "<acronym>SID</acronym> name such as <replaceable>joe.bloggs@example.com</replaceable>."
-msgstr ""
+msgstr "<acronym>SID</acronym> 名稱，如 <replaceable>joe.bloggs@example.com</replaceable>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39819
 msgid "<acronym>SID</acronym> numeric ID such as <replaceable>S-1-123-456-789</replaceable>."
-msgstr ""
+msgstr "<acronym>SID</acronym> 數字 ID，如 <replaceable>S-1-123-456-789</replaceable>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39825
 msgid "For example, to enforce a user quota of 50 GB for the user named <replaceable>joe</replaceable>:"
-msgstr ""
+msgstr "例如，要設定使用者名為 <replaceable>joe</replaceable> 的使用者配額為 50 GB："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39828
@@ -40742,7 +40759,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39830
 msgid "To remove any quota:"
-msgstr ""
+msgstr "要移除所有配額："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39832
@@ -40753,17 +40770,17 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:39835
 msgid "User quota properties are not displayed by <command>zfs get all</command>. Non-<systemitem class=\"username\">root</systemitem> users can only see their own quotas unless they have been granted the <literal>userquota</literal> privilege. Users with this privilege are able to view and set everyone's quota."
-msgstr ""
+msgstr "使用者配額的屬性不會顯示在 <command>zfs get all</command>。非 <systemitem class=\"username\">root</systemitem> 的使用者只可以看到自己的配額，除非它們有被授予 <literal>userquota</literal> 權限，擁有這個權限的使用者可以檢視與設定任何人的配額。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39843
 msgid "The general format for setting a group quota is: <literal>groupquota@<replaceable>group</replaceable>=<replaceable>size</replaceable></literal>."
-msgstr ""
+msgstr "要設定群組配額的一般格式為：<literal>groupquota@<replaceable>group</replaceable>=<replaceable>size</replaceable></literal>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39846
 msgid "To set the quota for the group <replaceable>firstgroup</replaceable> to 50 GB, use:"
-msgstr ""
+msgstr "要設定群組 <replaceable>firstgroup</replaceable> 的配額為 50 GB 可使用："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39850
@@ -40774,7 +40791,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39852
 msgid "To remove the quota for the group <replaceable>firstgroup</replaceable>, or to make sure that one is not set, instead use:"
-msgstr ""
+msgstr "要移除群組 <replaceable>firstgroup</replaceable> 的配額，或確保該群組未設定配額可使用："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39856
@@ -40785,19 +40802,19 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39858
 msgid "As with the user quota property, non-<systemitem class=\"username\">root</systemitem> users can only see the quotas associated with the groups to which they belong. However, <systemitem class=\"username\">root</systemitem> or a user with the <literal>groupquota</literal> privilege can view and set all quotas for all groups."
-msgstr ""
+msgstr "如同使用者配額屬性，非 <systemitem class=\"username\">root</systemitem> 使用者只可以查看自己所屬群組的配額。而 <systemitem class=\"username\">root</systemitem> 或擁有 <literal>groupquota</literal> 權限的使用者，可以檢視並設定所有群組的任何配額。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39866
 msgid ""
 "To display the amount of space used by each user on a file system or snapshot along with any quotas, use <command>zfs userspace</command>. For group information, use <command>zfs groupspace</command>. For more information about supported options or how to display only specific options, refer to <citerefentry><refentrytitle>zfs</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
-msgstr ""
+msgstr "要顯示在檔案系統或快照上每位使用者所使用的空間量及配額可使用 <command>zfs userspace</command>，要取得群組的資訊則可使用 <command>zfs groupspace</command>，要取得有關支援的選項資訊或如何只顯示特定選項的資訊請參考 <citerefentry><refentrytitle>zfs</refentrytitle><manvolnum>1</manvolnum></citerefentry>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39873
 msgid "Users with sufficient privileges, and <systemitem class=\"username\">root</systemitem>, can list the quota for <filename>storage/home/bob</filename> using:"
-msgstr ""
+msgstr "有足夠權限的使用者及 <systemitem class=\"username\">root</systemitem> 可以使用以下指令列出 <filename>storage/home/bob</filename> 的配額："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39877
@@ -40813,12 +40830,12 @@ msgstr "保留空間"
 #. (itstool) path: sect2/para
 #: book.translate.xml:39883
 msgid "<link linkend=\"zfs-term-reservation\">Reservations</link> guarantee a minimum amount of space will always be available on a dataset. The reserved space will not be available to any other dataset. This feature can be especially useful to ensure that free space is available for an important dataset or log files."
-msgstr ""
+msgstr "保留空間 (<link linkend=\"zfs-term-reservation\">Reservation</link>) 可以確保資料集最少可用的空間量，其他任何資料集無法使用保留的空間，這個功能在要確保有足夠的可用空間來存放重要的資料集或日誌檔時特別有用。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39890
 msgid "The general format of the <literal>reservation</literal> property is <literal>reservation=<replaceable>size</replaceable></literal>, so to set a reservation of 10 GB on <filename>storage/home/bob</filename>, use:"
-msgstr ""
+msgstr "<literal>reservation</literal> 屬性的一般格式為 <literal>reservation=<replaceable>size</replaceable></literal>，所以要在 <filename>storage/home/bob</filename> 設定保留 10 GB 的空間可以用："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39896
@@ -40829,7 +40846,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39898
 msgid "To clear any reservation:"
-msgstr ""
+msgstr "要清除任何保留空間："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39900
@@ -40840,12 +40857,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39902
 msgid "The same principle can be applied to the <literal>refreservation</literal> property for setting a <link linkend=\"zfs-term-refreservation\">Reference Reservation</link>, with the general format <literal>refreservation=<replaceable>size</replaceable></literal>."
-msgstr ""
+msgstr "同樣的原則可以應用在 <literal>refreservation</literal> 屬性來設定參考保留空間 (<link linkend=\"zfs-term-refreservation\">Reference Reservation</link>)，參考保留空間的一般格式為 <literal>refreservation=<replaceable>size</replaceable></literal>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39908
 msgid "This command shows any reservations or refreservations that exist on <filename>storage/home/bob</filename>:"
-msgstr ""
+msgstr "這個指令會顯示任何已設定於 <filename>storage/home/bob</filename> 的 reservation 或 refreservation："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39911
@@ -40868,6 +40885,8 @@ msgid ""
 "<acronym>ZFS</acronym> provides transparent compression. Compressing data at the block level as it is written not only saves space, but can also increase disk throughput. If data is compressed by 25%, but the compressed data is written to the disk at the same rate as the uncompressed version, resulting in an effective write speed of "
 "125%. Compression can also be a great alternative to <link linkend=\"zfs-zfs-deduplication\">Deduplication</link> because it does not require additional memory."
 msgstr ""
+"<acronym>ZFS</acronym> 提供直接的壓縮功能，在資料區塊層級壓縮資料不僅可以節省空間，也可以增加磁碟的效能。若資料壓縮了 25%，但壓縮的資料會使用了與未壓縮版本相同的速率寫入到磁碟，所以實際的寫入速度會是原來的 125%。壓縮功能也可來替代去重複 (<link linkend=\"zfs-zfs-deduplication\">Deduplication</link>) 功能，因為壓縮並不需要使用額外的記憶"
+"體。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39928
@@ -40876,11 +40895,13 @@ msgid ""
 "to <acronym>LZ4</acronym> is the <emphasis>early abort</emphasis> feature. If <acronym>LZ4</acronym> does not achieve at least 12.5% compression in the first part of the data, the block is written uncompressed to avoid wasting CPU cycles trying to compress data that is either already compressed or uncompressible. For details about the "
 "different compression algorithms available in <acronym>ZFS</acronym>, see the <link linkend=\"zfs-term-compression\">Compression</link> entry in the terminology section."
 msgstr ""
+"<acronym>ZFS</acronym> 提了多種不同的壓縮演算法，每一種都有不同的優缺點，隨著 <acronym>ZFS</acronym> v5000 引進了 <acronym>LZ4</acronym> 壓縮技術，可對整個儲存池開啟壓縮，而不像其他演算法需要消耗大量的效能來達成，最大的優點是 <acronym>LZ4</acronym> 擁有 <emphasis>提早放棄</emphasis> 的功能，若 <acronym>LZ4</acronym> 無法在資料一開始的部"
+"份達成至少 12.5% 的壓縮率，便會以不壓縮的方式來寫入資料區塊來避免 CPU 在那些已經壓縮過或無法壓縮的資料上浪費運算能力。要取得更多有關 <acronym>ZFS</acronym> 中可用的壓縮演算法詳細資訊，可參考術語章節中的壓縮 (<link linkend=\"zfs-term-compression\">Compression</link>) 項目。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39944
 msgid "The administrator can monitor the effectiveness of compression using a number of dataset properties."
-msgstr ""
+msgstr "管理者可以使用資料集的屬性來監視壓縮的效果。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:39947
@@ -40897,7 +40918,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39954
 msgid "The dataset is currently using 449 GB of space (the used property). Without compression, it would have taken 496 GB of space (the <literal>logicallyused</literal> property). This results in the 1.11:1 compression ratio."
-msgstr ""
+msgstr "資料集目前使用了 449 GB 的空間 (在 used 屬性)。在尚未壓縮前，該資料集應該會使用 496 GB 的空間 (於 <literal>logicallyused</literal> 屬性)，這個結果顯示目前的壓縮比為 1.11:1。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39960
@@ -40906,11 +40927,13 @@ msgid ""
 "10 GB of compressible data, they will still be able to store additional data. If they later update a file, say a database, with more or less compressible data, the amount of space available to them will change. This can result in the odd situation where a user did not increase the actual amount of data (the <literal>logicalused</"
 "literal> property), but the change in compression caused them to reach their quota limit."
 msgstr ""
+"壓縮功能在與使用者配額 (<link linkend=\"zfs-term-userquota\">User Quota</link>) 一併使用時可能會產生無法預期的副作用。使用者配額會限制一個使用者在一個資料集上可以使用多少空間，但衡量的依據是以 <emphasis>壓縮後</emphasis> 所使用的空間，因此，若一個使用者有 10 GB 的配額，寫入了 10 GB 可壓縮的資料，使用者將還會有空間儲存額外的資料。若使用"
+"者在之後更新了一個檔案，例如一個資料庫，可能有更多或較少的可壓縮資料，那麼剩餘可用的空間量也會因此而改變，這可能會造成奇怪的現象便是，一個使用者雖然沒有增加實際的資料量 (於 <literal>logicalused</literal> 屬性)，但因為更改影響了壓縮率，導致使用者達到配額的上限。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39975
 msgid "Compression can have a similar unexpected interaction with backups. Quotas are often used to limit how much data can be stored to ensure there is sufficient backup space available. However since quotas do not consider compression, more data may be written than would fit with uncompressed backups."
-msgstr ""
+msgstr "壓縮功能在與備份功能一起使用時也可能會有類似的問題，通常會使用配額功能來限制能夠儲存的資料量來確保有足夠的備份空間可用。但是由於配額功能並不會考量壓縮狀況，可能會有比未壓縮版本備份更多的資料量會被寫入到資料集。"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: row/entry
@@ -40925,11 +40948,13 @@ msgid ""
 "When enabled, <link linkend=\"zfs-term-deduplication\">deduplication</link> uses the checksum of each block to detect duplicate blocks. When a new block is a duplicate of an existing block, <acronym>ZFS</acronym> writes an additional reference to the existing data instead of the whole duplicate block. Tremendous space savings are "
 "possible if the data contains many duplicated files or repeated information. Be warned: deduplication requires an extremely large amount of memory, and most of the space savings can be had without the extra cost by enabling compression instead."
 msgstr ""
+"當開啟，去重複 (<link linkend=\"zfs-term-deduplication\">Deduplication</link>) 功能會使用每個資料區塊的 Checksum 來偵測重複的資料區塊，當新的資料區塊與現有的資料區塊重複，<acronym>ZFS</acronym> 便會寫入連接到現有資料的參考來替代寫入重複的資料區塊，這在資料中有大量重複的檔案或資訊時可以節省大量的空間，要注意的是：去重複功能需要使用大量的"
+"記憶體且大部份可節省的空間可改開啟壓縮功能來達成，而壓縮功能不需要使用額外的記憶體。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39998
 msgid "To activate deduplication, set the <literal>dedup</literal> property on the target pool:"
-msgstr ""
+msgstr "要開啟去重複功能，需在目標儲存池設定 <literal>dedup</literal> 屬性："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:40001
@@ -40940,7 +40965,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:40003
 msgid "Only new data being written to the pool will be deduplicated. Data that has already been written to the pool will not be deduplicated merely by activating this option. A pool with a freshly activated deduplication property will look like this example:"
-msgstr ""
+msgstr "只有要被寫入到儲存池的新資料才會做去重複的動作，先前已被寫入到儲存池的資料不會因此啟動了這個選項而做去重複。查看已開啟去重複屬性的儲存池會如下："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:40009
@@ -40954,7 +40979,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:40013
 msgid "The <literal>DEDUP</literal> column shows the actual rate of deduplication for the pool. A value of <literal>1.00x</literal> shows that data has not been deduplicated yet. In the next example, the ports tree is copied three times into different directories on the deduplicated pool created above."
-msgstr ""
+msgstr "<literal>DEDUP</literal> 欄位會顯示儲存池的實際去重複率，數值為 <literal>1.00x</literal> 代表資料尚未被去重複。在下一個例子會在前面所建立的去重複儲存池中複製三份 Port 樹到不同的目錄。中。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:40020
@@ -40969,7 +40994,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:40025
 msgid "Redundant data is detected and deduplicated:"
-msgstr ""
+msgstr "已經偵測到重複的資料並做去重複："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:40027
@@ -40983,12 +41008,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:40031
 msgid "The <literal>DEDUP</literal> column shows a factor of <literal>3.00x</literal>. Multiple copies of the ports tree data was detected and deduplicated, using only a third of the space. The potential for space savings can be enormous, but comes at the cost of having enough memory to keep track of the deduplicated blocks."
-msgstr ""
+msgstr "<literal>DEDUP</literal> 欄位顯示有 <literal>3.00x</literal> 的去重複率，這代表已偵測到多份複製的 Port 樹資料並做了去重複的動作，且只會使用第三份資料所佔的空間。去重複能節省空間的潛力可以非常巨大，但會需要消耗大量的記憶體來持續追蹤去重複的資料區塊。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:40038
 msgid "Deduplication is not always beneficial, especially when the data on a pool is not redundant. <acronym>ZFS</acronym> can show potential space savings by simulating deduplication on an existing pool:"
-msgstr ""
+msgstr "去重複並非總是有效益的，特別是當儲存池中的資料本身並沒有重複時。<acronym>ZFS</acronym> 可以透過在現有儲存池上模擬開啟去重複功能來顯示可能節省的空間："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:40043
@@ -41024,6 +41049,9 @@ msgid ""
 "reasonably compressible, the space savings may be very good. Enabling compression first is recommended, and compression can also provide greatly increased performance. Only enable deduplication in cases where the additional savings will be considerable and there is sufficient memory for the <link linkend=\"zfs-term-deduplication"
 "\"><acronym>DDT</acronym></link>."
 msgstr ""
+"在 <command>zdb -S</command> 分析完儲存池後會顯示在啟動去重複後可達到的空間減少比例。在本例中，<literal>1.16</literal> 是非常差的空間節省比例，因為這個比例使用壓縮功能便能達成。若在此儲存池上啟動去重複並不能明顯的節省空間使用量，那麼就不值得耗費大量的記憶體來開啟去重複功能。透過公式 <emphasis>ratio = dedup * compress / copies</"
+"emphasis>，系統管理者可以規劃儲存空間的配置，來判斷要處理的資料是否有足夠的重複資料區塊來平衡所需的記憶體。若資料是可壓縮的，那麼空間節少的效果可能會非常好，建議先開啟壓縮功能，且壓縮功能也可以大大提高效能。去重複功能只有在可以節省可觀的空間且有足夠的記憶體做 <link linkend=\"zfs-term-deduplication\"><acronym>DDT</acronym></link> 時才開"
+"啟。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:40084
@@ -41036,6 +41064,8 @@ msgid ""
 "<command>zfs jail</command> and the corresponding <literal>jailed</literal> property are used to delegate a <acronym>ZFS</acronym> dataset to a <link linkend=\"jails\">Jail</link>. <command>zfs jail <replaceable>jailid</replaceable></command> attaches a dataset to the specified jail, and <command>zfs unjail</command> detaches it. For "
 "the dataset to be controlled from within a jail, the <literal>jailed</literal> property must be set. Once a dataset is jailed, it can no longer be mounted on the host because it may have mount points that would compromise the security of the host."
 msgstr ""
+"<command>zfs jail</command> 以及相關的 <literal>jailed</literal> 屬性可以用來將一個 <acronym>ZFS</acronym> 資料集委託給一個 <link linkend=\"jails\">Jail</link> 管理。<command>zfs jail <replaceable>jailid</replaceable></command> 可以將一個資料集連結到一個指定的 Jail，而 <command>zfs unjail</command> 則可解除連結。資料集要可以在 Jail 中控"
+"制需設定 <literal>jailed</literal> 屬性，一旦資料集被隔離便無法再掛載到主機，因為有掛載點可能會破壞主機的安全性。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:40102
@@ -41048,11 +41078,13 @@ msgid ""
 "A comprehensive permission delegation system allows unprivileged users to perform <acronym>ZFS</acronym> administration functions. For example, if each user's home directory is a dataset, users can be given permission to create and destroy snapshots of their home directories. A backup user can be given permission to use replication "
 "features. A usage statistics script can be allowed to run with access only to the space utilization data for all users. It is even possible to delegate the ability to delegate permissions. Permission delegation is possible for each subcommand and most properties."
 msgstr ""
+"一個全面性的權限委託系統可能無權限的使用者執行 <acronym>ZFS</acronym> 的管理功能。例如，若每個使用者的家目錄均為一個資料集，便可以給予使用者權限建立與摧毀它們家目錄中的快照。可以給予備份使用者使用備份功能的權限。一個使用量統計的 Script 可以允許其在執行時能存取所有使用者的空間利用率資料。甚至可以將委託權限委託給其他人，每個子指令與大多數"
+"屬性都可使用權限委託。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:40117
 msgid "Delegating Dataset Creation"
-msgstr ""
+msgstr "委託資料集建立"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:40119
@@ -41061,11 +41093,13 @@ msgid ""
 "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> to <literal>1</literal> to allow non-root users to mount a file system. There is another restriction aimed at preventing abuse: non-<systemitem class=\"username\">root</systemitem> users must own the mountpoint where the file system is to be "
 "mounted."
 msgstr ""
+"<command>zfs allow <replaceable>someuser</replaceable> create <replaceable>mydataset</replaceable></command> 可以給予指定的使用者在指定的父資料集下建立子資料集的權限。這裡需要注意：建立新資料集會牽涉到掛載，因此需要設定 FreeBSD 的 <literal>vfs.usermount</literal> <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> 為 <literal>1</literal> 來允許非 root 的使用者掛載一個檔案系統。這裡還有另一項限制可以避免濫用：非 <systemitem class=\"username\">root</systemitem> 使用者必須擁有掛載點在檔案系統中所在位置的權限才可掛載。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:40134
 msgid "Delegating Permission Delegation"
-msgstr ""
+msgstr "委託權限委託"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:40136
@@ -41073,6 +41107,7 @@ msgid ""
 "<command>zfs allow <replaceable>someuser</replaceable> allow <replaceable>mydataset</replaceable></command> gives the specified user the ability to assign any permission they have on the target dataset, or its children, to other users. If a user has the <literal>snapshot</literal> permission and the <literal>allow</literal> permission, "
 "that user can then grant the <literal>snapshot</literal> permission to other users."
 msgstr ""
+"<command>zfs allow <replaceable>someuser</replaceable> allow <replaceable>mydataset</replaceable></command> 可以給予指定的使用者有權限指派它們在目標資料集或其子資料集上擁有的任何權限給其他人。若該使用者擁有 <literal>snapshot</literal> 權限及 <literal>allow</literal> 權限，則該使用者可以授權 <literal>snapshot</literal> 權限給其他使用者。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:40152
@@ -41082,7 +41117,7 @@ msgstr "調校"
 #. (itstool) path: sect2/para
 #: book.translate.xml:40154
 msgid "There are a number of tunables that can be adjusted to make <acronym>ZFS</acronym> perform best for different workloads."
-msgstr ""
+msgstr "這裡有數個可調校的項目可以調整，來讓 <acronym>ZFS</acronym> 在面對各種工作都能以最佳狀況運作。"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#zfs-advanced-tuning-arc_max
@@ -41237,7 +41272,7 @@ msgstr "i386 上的 <acronym>ZFS</acronym>"
 #. (itstool) path: sect2/para
 #: book.translate.xml:40419
 msgid "Some of the features provided by <acronym>ZFS</acronym> are memory intensive, and may require tuning for maximum efficiency on systems with limited <acronym>RAM</acronym>."
-msgstr ""
+msgstr "<acronym>ZFS</acronym> 所提供的部份功能需要使用大量記憶體，且可能需要對有限 <acronym>RAM</acronym> 的系統調校來取得最佳的效率。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:40425
@@ -41250,6 +41285,8 @@ msgid ""
 "As a bare minimum, the total system memory should be at least one gigabyte. The amount of recommended <acronym>RAM</acronym> depends upon the size of the pool and which <acronym>ZFS</acronym> features are used. A general rule of thumb is 1 GB of RAM for every 1 TB of storage. If the deduplication feature is used, a general rule of "
 "thumb is 5 GB of RAM per TB of storage to be deduplicated. While some users successfully use <acronym>ZFS</acronym> with less <acronym>RAM</acronym>, systems under heavy load may panic due to memory exhaustion. Further tuning may be required for systems with less than the recommended RAM requirements."
 msgstr ""
+"最低需求，總系統記憶體應至少有 1 GB，建議的 <acronym>RAM</acronym> 量需視儲存池的大小以及使用的 <acronym>ZFS</acronym> 功能而定。一般的經驗法則是每 1 TB 的儲存空間需要 1 GB 的 RAM，若有開啟去重複的功能，一般的經驗法則是每 1 TB 的要做去重複的儲存空間需要 5 GB 的 RAM。雖然有部份使用者成功使用較少的 <acronym>RAM</acronym> 來運作 "
+"<acronym>ZFS</acronym>，但系統在負載較重時有可能會因為記憶用耗而導致當機，對於要使用低於建議 RAM 需求量來運作的系統可能會需要更進一步的調校。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:40442 book.translate.xml:62435
@@ -41259,7 +41296,7 @@ msgstr "核心設定"
 #. (itstool) path: sect3/para
 #: book.translate.xml:40444
 msgid "Due to the address space limitations of the <trademark>i386</trademark> platform, <acronym>ZFS</acronym> users on the <trademark>i386</trademark> architecture must add this option to a custom kernel configuration file, rebuild the kernel, and reboot:"
-msgstr ""
+msgstr "由於在 <trademark>i386</trademark> 平台上位址空間的限制，在 <trademark>i386</trademark> 架構上的 <acronym>ZFS</acronym> 使用者必須加入這個選項到自訂核心設定檔，重新編譯核心並重新開啟："
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:40450
@@ -41272,7 +41309,7 @@ msgstr ""
 msgid ""
 "This expands the kernel address space, allowing the <varname>vm.kvm_size</varname> tunable to be pushed beyond the currently imposed limit of 1 GB, or the limit of 2 GB for <acronym>PAE</acronym>. To find the most suitable value for this option, divide the desired address space in megabytes by four. In this example, it is <literal>512</"
 "literal> for 2 GB."
-msgstr ""
+msgstr "這個選項會增加核心位址空間，允許調整 <varname>vm.kvm_size</varname> 超出目前的 1 GB 限制或在 <acronym>PAE</acronym> 的 2 GB 限制。要找到這個選項最合適的數值，可以將想要的位址空間換算成 MB 然後除以 4，在本例中，以 2 GB 計算後即為 <literal>512</literal>。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:40462
@@ -41282,7 +41319,7 @@ msgstr "載入程式可調參數"
 #. (itstool) path: sect3/para
 #: book.translate.xml:40464
 msgid "The <filename>kmem</filename> address space can be increased on all FreeBSD architectures. On a test system with 1 GB of physical memory, success was achieved with these options added to <filename>/boot/loader.conf</filename>, and the system restarted:"
-msgstr ""
+msgstr "在所有的 FreeBSD 架構上均可增加 <filename>kmem</filename> 位址空間，經測試在一個 1 GB 實體記憶體的測試系統上，加入以下選項到 <filename>/boot/loader.conf</filename>，重新開啟系統，可成功設定。"
 
 #. (itstool) path: sect3/programlisting
 #: book.translate.xml:40471
@@ -41297,7 +41334,7 @@ msgstr ""
 #. (itstool) path: sect3/para
 #: book.translate.xml:40476
 msgid "For a more detailed list of recommendations for <acronym>ZFS</acronym>-related tuning, see <link xlink:href=\"http://wiki.freebsd.org/ZFSTuningGuide\"/>."
-msgstr ""
+msgstr "要取得更多詳細的 <acronym>ZFS</acronym> 相關調校的建議清單，請參考 <link xlink:href=\"http://wiki.freebsd.org/ZFSTuningGuide\"/>。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:40483
@@ -41352,6 +41389,9 @@ msgid ""
 "as a mirror or <acronym>RAID-Z</acronym> array. <acronym>ZFS</acronym> file systems (called <emphasis>datasets</emphasis>) each have access to the combined free space of the entire pool. As blocks are allocated from the pool, the space available to each file system decreases. This approach avoids the common pitfall with extensive "
 "partitioning where free space becomes fragmented across the partitions."
 msgstr ""
+"<acronym>ZFS</acronym> 是一個從本質上與眾不同的檔案系統，由於它並非只是一個檔案系統，<acronym>ZFS</acronym> 結合了檔案系統及磁碟區管理程式，讓額外的儲存裝置可以即時的加入到系統並可讓既有的檔案系統立即使用這些在儲存池中空間。透過結合傳統區分為二的兩個角色，<acronym>ZFS</acronym> 能夠克服以往 <acronym>RAID</acronym> 磁碟群組無法擴充的限"
+"制。每個在儲存池頂層的裝置稱作 <emphasis>vdev</emphasis>，其可以是一個簡單的磁碟或是一個 <acronym>RAID</acronym> 如鏡像或 <acronym>RAID-Z</acronym> 陣列。<acronym>ZFS</acronym> 的檔案系統 (稱作 <emphasis>資料集 (Dataset)</emphasis>) 每一個資料集均可存取整個存池所共通的可用空間，隨著使用儲存池來配置空間區塊，儲存池能給每個檔案系統使用的"
+"可用空間就會減少，這個方法可以避免擴大分割區會使的可用空間分散分割區之間的常見問題。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-pool
@@ -41362,7 +41402,7 @@ msgstr "儲存池 (Pool)"
 #. (itstool) path: note/para
 #: book.translate.xml:40566
 msgid "FreeBSD 9.0 and 9.1 include support for <acronym>ZFS</acronym> version 28. Later versions use <acronym>ZFS</acronym> version 5000 with feature flags. The new feature flags system allows greater cross-compatibility with other implementations of <acronym>ZFS</acronym>."
-msgstr ""
+msgstr "FreeBSD 9.0 與 9.1 支援 <acronym>ZFS</acronym> 版本 28，之後的版本使用 <acronym>ZFS</acronym> 版本 5000 與功能旗標，新的功能旗標系統有更佳的相容性，能夠與其他人實作的 <acronym>ZFS</acronym> 相容。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:40554
@@ -41370,6 +41410,8 @@ msgid ""
 "A storage <emphasis>pool</emphasis> is the most basic building block of <acronym>ZFS</acronym>. A pool is made up of one or more vdevs, the underlying devices that store the data. A pool is then used to create one or more file systems (datasets) or block devices (volumes). These datasets and volumes share the pool of remaining free "
 "space. Each pool is uniquely identified by a name and a <acronym>GUID</acronym>. The features available are determined by the <acronym>ZFS</acronym> version number on the pool. <_:note-1/>"
 msgstr ""
+"<emphasis>儲存池 (Pool)</emphasis> 是建構 <acronym>ZFS</acronym> 最基礎的單位。一個儲存池可由一個或多個 vdev 所組成，是用來儲存資料的底層裝置。儲存池會被拿來建立一個或多個檔案系統 (資料集 Dataset) 或區塊裝置 (磁碟區 Volume)，這些資料集與磁碟區會共用儲存池的剩餘可用空間。每一個儲存池可由名稱與 <acronym>GUID</acronym> 來辨識。可用的功能會"
+"依儲存池上的 <acronym>ZFS</acronym> 版本而有不同。<_:note-1/>"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-vdev
@@ -41384,12 +41426,14 @@ msgid ""
 "<emphasis>Disk</emphasis> - The most basic type of vdev is a standard block device. This can be an entire disk (such as <filename><replaceable>/dev/ada0</replaceable></filename> or <filename><replaceable>/dev/da0</replaceable></filename>) or a partition (<filename><replaceable>/dev/ada0p3</replaceable></filename>). On FreeBSD, there is "
 "no performance penalty for using a partition rather than the entire disk. This differs from recommendations made by the Solaris documentation."
 msgstr ""
+"<emphasis>磁碟 (Disk)</emphasis> - 最基本的 vdev 型態便是一個標準的磁碟區塊裝置，這可以是一整個磁碟 (例如 <filename><replaceable>/dev/ada0</replaceable></filename> 或 <filename><replaceable>/dev/da0</replaceable></filename>) 或一個分割區 (<filename><replaceable>/dev/ada0p3</replaceable></filename>)。在 FreeBSD 上，使用分割區來替代整個磁"
+"碟不會影響效能，這可能與 Solaris 說明文件所建議的有所不同。"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#zfs-term-vdev-file
 #: book.translate.xml:40603
 msgid "<emphasis>File</emphasis> - In addition to disks, <acronym>ZFS</acronym> pools can be backed by regular files, this is especially useful for testing and experimentation. Use the full path to the file as the device path in <command>zpool create</command>. All vdevs must be at least 128 MB in size."
-msgstr ""
+msgstr "<emphasis>檔案 (File)</emphasis> - 除了磁碟外，<acronym>ZFS</acronym> 儲存池可以使用一般檔案為基礎，這在測試與實驗時特別有用。在 <command>zpool create</command> 時使用檔案的完整路徑作為裝置路徑。所有 vdev 必須至少有 128 MB 的大小。"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#zfs-term-vdev-mirror
@@ -41397,12 +41441,12 @@ msgstr ""
 msgid ""
 "<emphasis>Mirror</emphasis> - When creating a mirror, specify the <literal>mirror</literal> keyword followed by the list of member devices for the mirror. A mirror consists of two or more devices, all data will be written to all member devices. A mirror vdev will only hold as much data as its smallest member. A mirror vdev can "
 "withstand the failure of all but one of its members without losing any data."
-msgstr ""
+msgstr "<emphasis>鏡像 (Mirror)</emphasis> - 要建立鏡像，需使用 <literal>mirror</literal> 關鍵字，後面接著要做為該鏡像成員裝置的清單。一個鏡像需要由兩個或多個裝置來組成，所有的資料都會被寫入到所有的成員裝置。鏡像 vdev 可以對抗所有成員故障只剩其中一個而不損失任何資料。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:40624
 msgid "A regular single disk vdev can be upgraded to a mirror vdev at any time with <command>zpool <link linkend=\"zfs-zpool-attach\">attach</link></command>."
-msgstr ""
+msgstr "正常單一磁碟的 vdev 可以使用 <command>zpool <link linkend=\"zfs-zpool-attach\">attach</link></command> 隨時升級成為鏡像 vdev。"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#zfs-term-vdev-raidz
@@ -41412,18 +41456,20 @@ msgid ""
 "after an unexpected restart. <acronym>ZFS</acronym> supports three levels of <acronym>RAID-Z</acronym> which provide varying levels of redundancy in exchange for decreasing levels of usable storage. The types are named <acronym>RAID-Z1</acronym> through <acronym>RAID-Z3</acronym> based on the number of parity devices in the array and "
 "the number of disks which can fail while the pool remains operational."
 msgstr ""
+"<emphasis><acronym>RAID-Z</acronym></emphasis> - <acronym>ZFS</acronym> 實作了 <acronym>RAID-Z</acronym>，以標準的 <acronym>RAID-5</acronym> 修改而來，可提供奇偶校驗 (Parity) 更佳的分散性並去除了 <quote><acronym>RAID-5</acronym> write hole</quote> 導致在預期之外的重啟後資料與奇偶校驗資訊不一致的問題。<acronym>ZFS</acronym> 支援三個層級"
+"的 <acronym>RAID-Z</acronym>，可提供不同程度的備援來換取減少不同程度的可用空間，類型的名稱以陣列中奇偶校驗裝置的數量與儲存池可以容許磁碟故障的數量來命名，從 <acronym>RAID-Z1</acronym> 到 <acronym>RAID-Z3</acronym> 。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40650
 msgid "In a <acronym>RAID-Z1</acronym> configuration with four disks, each 1 TB, usable storage is 3 TB and the pool will still be able to operate in degraded mode with one faulted disk. If an additional disk goes offline before the faulted disk is replaced and resilvered, all data in the pool can be lost."
-msgstr ""
+msgstr "在 <acronym>RAID-Z1</acronym> 配置 4 個磁碟，每個磁碟 1 TB，可用的儲存空間則為 3 TB，且若其中一個磁碟故障仍可以降級 (Degraded) 的模式運作，若在故障磁碟尚未更換並修復 (Resilver) 之前又有磁碟故障，所有在儲存池中的資料便會遺失。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40658
 msgid ""
 "In a <acronym>RAID-Z3</acronym> configuration with eight disks of 1 TB, the volume will provide 5 TB of usable space and still be able to operate with three faulted disks. <trademark>Sun</trademark> recommends no more than nine disks in a single vdev. If the configuration has more disks, it is recommended to divide them into separate "
 "vdevs and the pool data will be striped across them."
-msgstr ""
+msgstr "在 <acronym>RAID-Z3</acronym> 配置 8 個 1 TB 的磁碟，磁碟區將會可以提供 5 TB 的可用空間且在 3 個磁碟故障的情況下仍可運作。<trademark>Sun</trademark> 建議單一個 vdev 不要使用超過 9 個磁碟。若配置需要使用更多磁碟，建議分成兩個 vdev，這樣儲存池的資料便會分散到這兩個 vdev。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40667
@@ -41431,12 +41477,14 @@ msgid ""
 "A configuration of two <acronym>RAID-Z2</acronym> vdevs consisting of 8 disks each would create something similar to a <acronym>RAID-60</acronym> array. A <acronym>RAID-Z</acronym> group's storage capacity is approximately the size of the smallest disk multiplied by the number of non-parity disks. Four 1 TB disks in <acronym>RAID-Z1</"
 "acronym> has an effective size of approximately 3 TB, and an array of eight 1 TB disks in <acronym>RAID-Z3</acronym> will yield 5 TB of usable space."
 msgstr ""
+"使用兩個 <acronym>RAID-Z2</acronym> 各由 8 個磁碟組成的 vdev 的配置可以建立一個類似 <acronym>RAID-60</acronym> 的陣列。<acronym>RAID-Z</acronym> 群組的儲存空量會接近其中最小的磁碟乘上非奇偶校驗磁碟的數量。4 個 1 TB 磁碟在 <acronym>RAID-Z1</acronym> 會有接近 3 TB 的實際大小，且一個由 8 個 1 TB 磁碟組成的 <acronym>RAID-Z3</acronym> 陣列會"
+"有 5 TB 的可用空間。"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#zfs-term-vdev-spare
 #: book.translate.xml:40682
 msgid "<emphasis>Spare</emphasis> - <acronym>ZFS</acronym> has a special pseudo-vdev type for keeping track of available hot spares. Note that installed hot spares are not deployed automatically; they must manually be configured to replace the failed device using <command>zfs replace</command>."
-msgstr ""
+msgstr "<emphasis>備援 (Spare)</emphasis> - <acronym>ZFS</acronym> 有特殊的虛擬 vdev 型態可用來持續追蹤可用的熱備援裝置 (Hot spare)。注意，安裝的熱備援裝置並不會自動佈署，熱備援裝置需要手動使用 <command>zfs replace</command> 設定替換故障的裝置。"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#zfs-term-vdev-log
@@ -41445,23 +41493,25 @@ msgid ""
 "<emphasis>Log</emphasis> - <acronym>ZFS</acronym> Log Devices, also known as <acronym>ZFS</acronym> Intent Log (<link linkend=\"zfs-term-zil\"><acronym>ZIL</acronym></link>) move the intent log from the regular pool devices to a dedicated device, typically an <acronym>SSD</acronym>. Having a dedicated log device can significantly "
 "improve the performance of applications with a high volume of synchronous writes, especially databases. Log devices can be mirrored, but <acronym>RAID-Z</acronym> is not supported. If multiple log devices are used, writes will be load balanced across them."
 msgstr ""
+"<emphasis>日誌 (Log)</emphasis> - <acronym>ZFS</acronym> 記錄裝置，也被稱作 <acronym>ZFS</acronym> 意圖日誌 (ZFS Intent Log, <link linkend=\"zfs-term-zil\"><acronym>ZIL</acronym></link>) 會從正常的儲存池裝置移動意圖日誌到獨立的裝置上，通常是一個 <acronym>SSD</acronym>。有了獨立的日誌裝置，可以明顯的增進有大量同步寫入應用程式的效能，特別"
+"是資料庫。日誌裝置可以做成鏡像，但不支援 <acronym>RAID-Z</acronym>，若使用多個日誌裝置，寫入動作會被負載平衡分散到這些裝置。"
 
 #. (itstool) path: listitem/para
 #. (itstool) id: book.translate.xml#zfs-term-vdev-cache
 #: book.translate.xml:40707
 msgid "<emphasis>Cache</emphasis> - Adding a cache vdev to a pool will add the storage of the cache to the <link linkend=\"zfs-term-l2arc\"><acronym>L2ARC</acronym></link>. Cache devices cannot be mirrored. Since a cache device only stores additional copies of existing data, there is no risk of data loss."
-msgstr ""
+msgstr "<emphasis>快取 (Cache)</emphasis> - 加入快取 vdev 到儲存池可以增加儲存空間的 <link linkend=\"zfs-term-l2arc\"><acronym>L2ARC</acronym></link> 快取。快取裝置無法做鏡像，因快取裝置只會儲存額外的現有資料的複本，並沒有資料遺失的風險。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:40579
 msgid "A pool is made up of one or more vdevs, which themselves can be a single disk or a group of disks, in the case of a <acronym>RAID</acronym> transform. When multiple vdevs are used, <acronym>ZFS</acronym> spreads data across the vdevs to increase performance and maximize usable space. <_:itemizedlist-1/>"
-msgstr ""
+msgstr "儲存池是由一個或多個 vdev 所組成，vdev 可以是一個磁碟或是 <acronym>RAID</acronym> Transform 的磁碟群組。當使用多個 vdev，<acronym>ZFS</acronym> 可以分散資料到各個 vdev 來增加效能與最大的可用空間。<_:itemizedlist-1/>"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-txg
 #: book.translate.xml:40718
 msgid "Transaction Group (<acronym>TXG</acronym>)"
-msgstr ""
+msgstr "交易群組 (Transaction Group, <acronym>TXG</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40732
@@ -41469,11 +41519,12 @@ msgid ""
 "<emphasis>Open</emphasis> - When a new transaction group is created, it is in the open state, and accepts new writes. There is always a transaction group in the open state, however the transaction group may refuse new writes if it has reached a limit. Once the open transaction group has reached a limit, or the <link linkend=\"zfs-"
 "advanced-tuning-txg-timeout\"><varname>vfs.zfs.txg.timeout</varname></link> has been reached, the transaction group advances to the next state."
 msgstr ""
+"<emphasis>開放 (Open)</emphasis> - 新的交易群組建立之後便處於開放的狀態，可以接受新的寫入動作。永遠會有開放狀態的交易群組，即始交易群組可能會因到達上限而拒絕新的寫入動作。一但開放的交易群組到達上限或到達 <link linkend=\"zfs-advanced-tuning-txg-timeout\"><varname>vfs.zfs.txg.timeout</varname></link>，交易群組便會繼續進入下一個狀態。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40744
 msgid "<emphasis>Quiescing</emphasis> - A short state that allows any pending operations to finish while not blocking the creation of a new open transaction group. Once all of the transactions in the group have completed, the transaction group advances to the final state."
-msgstr ""
+msgstr "<emphasis>靜置中 (Quiescing)</emphasis> - 一個短暫的狀態，會等候任何未完成的操作完成，不會阻擋新開放的交易群組建立。一旦所有在群組中的交易完成，交易群組便會進入到最終狀態。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40753
@@ -41482,6 +41533,8 @@ msgid ""
 "biggest, followed by the metadata, which may take multiple passes to complete. Since allocating space for the data blocks generates new metadata, the syncing state cannot finish until a pass completes that does not allocate any additional space. The syncing state is also where <emphasis>synctasks</emphasis> are completed. Synctasks are "
 "administrative operations, such as creating or destroying snapshots and datasets, that modify the uberblock are completed. Once the sync state is complete, the transaction group in the quiescing state is advanced to the syncing state."
 msgstr ""
+"<emphasis>同步中 (Syncing)</emphasis> - 所有在交易群組中的資料會被寫任到穩定的儲存空間，這個程序會依序修改其他也需同樣寫入到穩定儲存空間的資料，如 Metadata 與空間對應表。同步的程多會牽涉多個循環，首先是同步所有更改的資料區塊，也是最大的部份，接著是 Metadata，這可能會需要多個循環來完成。由於要配置空間供資料區塊使用會產生新的 Metadata，同"
+"步中狀態在到達循環完成而不再需要分配任何額外空間的狀態前無法結束。同步中狀態也是完成 <emphasis>synctask</emphasis> 的地方，Synctask 是指管理操作，如：建立或摧毀快照與資料集，會修改 uberblock，也會在此時完成。同步狀態完成後，其他處於狀態中狀態的交易群組便會進入同步中狀態。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:40721
@@ -41490,6 +41543,8 @@ msgid ""
 "one in each of these three states: <_:itemizedlist-1/> All administrative functions, such as <link linkend=\"zfs-term-snapshot\"><command>snapshot</command></link> are written as part of the transaction group. When a synctask is created, it is added to the currently open transaction group, and that group is advanced as quickly as "
 "possible to the syncing state to reduce the latency of administrative commands."
 msgstr ""
+"交易群組是一種將更動的資料區塊包裝成一組的方式，最後再一次寫入到儲存池。交易群組是 <acronym>ZFS</acronym> 用來檢驗一致性的基本單位。每個交易群組會被分配一個獨一無二的 64-bit 連續代號。最多一次可以有三個活動中的交易群組，這三個交易群組的每一個都有這三種狀態：<_:itemizedlist-1/> 所有管理功能如快照 (<link linkend=\"zfs-term-snapshot"
+"\"><command>Snapshot</command></link>) 會作為交易群組的一部份寫入。當 synctask 建立之後，便會加入到目前開放的交易群組中，然後該群組會盡快的進入同步中狀態來減少管理指令的延遲。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-arc
@@ -41549,6 +41604,8 @@ msgid ""
 "Unlike a traditional file system, when data is overwritten on <acronym>ZFS</acronym>, the new data is written to a different block rather than overwriting the old data in place. Only when this write is complete is the metadata then updated to point to the new location. In the event of a shorn write (a system crash or power loss in the "
 "middle of writing a file), the entire original contents of the file are still available and the incomplete write is discarded. This also means that <acronym>ZFS</acronym> does not require a <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> after an unexpected shutdown."
 msgstr ""
+"不像傳統的檔案系統，在 <acronym>ZFS</acronym>，當資料要被覆寫時，不會直接覆寫舊資料所在的位置，而是將新資料會寫入到另一個資料區塊，只在資料寫入完成後才會更新 Metadata 指向新的位置。因此，在發生寫入中斷 (在寫入檔案的過程中系統當機或電源中斷) 時，原來檔案的完整內容並不會遺失，只會放棄未寫入完成的新資料，這也意謂著 <acronym>ZFS</acronym> "
+"在發生預期之外的關機後不需要做 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-dataset
@@ -41563,6 +41620,8 @@ msgid ""
 "example, <replaceable>mypool/home</replaceable>, the home dataset, is a child of <replaceable>mypool</replaceable> and inherits properties from it. This can be expanded further by creating <replaceable>mypool/home/user</replaceable>. This grandchild dataset will inherit properties from the parent and grandparent. Properties on a child "
 "can be set to override the defaults inherited from the parents and grandparents. Administration of datasets and their children can be <link linkend=\"zfs-zfs-allow\">delegated</link>."
 msgstr ""
+"<emphasis>資料集 (Dataset)</emphasis> 是 <acronym>ZFS</acronym> 檔案系統、磁碟區、快照或複本的通用術語。每個資料集都有獨一無二的名稱使用 <replaceable>poolname/path@snapshot</replaceable> 格式。儲存池的根部技術上來說也算一個資料集，子資料集會採用像目錄一樣的層級來命名，例如 <replaceable>mypool/home</replaceable>，home 資料集是 "
+"<replaceable>mypool</replaceable> 的子資料集並且會繼承其屬性。這可以在往後繼續擴展成 <replaceable>mypool/home/user</replaceable>，這個孫資料集會繼承其父及祖父的屬性。在子資料集的屬性可以覆蓋預設繼承自父及祖父的屬性。資料集及其子資料級的管理權限可以委託 (<link linkend=\"zfs-zfs-allow\">Delegate</link>) 給他人。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-filesystem
@@ -41573,7 +41632,7 @@ msgstr "檔案系統 (File system)"
 #. (itstool) path: row/entry
 #: book.translate.xml:40913
 msgid "A <acronym>ZFS</acronym> dataset is most often used as a file system. Like most other file systems, a <acronym>ZFS</acronym> file system is mounted somewhere in the systems directory hierarchy and contains files and directories of its own with permissions, flags, and other metadata."
-msgstr ""
+msgstr "<acronym>ZFS</acronym> 資料集最常被當做檔案系統使用。如同大多數其他的檔案系統，<acronym>ZFS</acronym> 檔案系統會被掛載在系統目錄層級的某一處且內含各自擁有權限、旗標及 Metadata 的檔案與目錄。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-volume
@@ -41587,6 +41646,7 @@ msgid ""
 "In additional to regular file system datasets, <acronym>ZFS</acronym> can also create volumes, which are block devices. Volumes have many of the same features, including copy-on-write, snapshots, clones, and checksumming. Volumes can be useful for running other file system formats on top of <acronym>ZFS</acronym>, such as <acronym>UFS</"
 "acronym> virtualization, or exporting <acronym>iSCSI</acronym> extents."
 msgstr ""
+"除了一般的檔案系統資料集之外，<acronym>ZFS</acronym> 也可以建立磁碟區 (Volume)，磁碟區是磁碟區塊裝置。磁碟區有許多與資料集相似的功能，包含複製時寫入、快照、複本以及奇偶校驗。要在 <acronym>ZFS</acronym> 的頂層執行其他檔案系統格式時使用磁碟區非常有用，例如 <acronym>UFS</acronym> 虛擬化或匯出 <acronym>iSCSI</acronym> 延伸磁區 (Extent)。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-snapshot
@@ -41609,7 +41669,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-clone
 #: book.translate.xml:40977
 msgid "Clone"
-msgstr ""
+msgstr "複本 (Clone)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:40979
@@ -41623,7 +41683,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-checksum
 #: book.translate.xml:40999
 msgid "Checksum"
-msgstr ""
+msgstr "校驗碼 (Checksum)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41015
@@ -41729,7 +41789,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-quota
 #: book.translate.xml:41190
 msgid "Dataset Quota"
-msgstr ""
+msgstr "資料集配額 (Dataset Quota)"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:41199
@@ -41755,7 +41815,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-refquota
 #: book.translate.xml:41220
 msgid "Reference Quota"
-msgstr ""
+msgstr "參考配額 (Reference Quota)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41223
@@ -41766,7 +41826,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-userquota
 #: book.translate.xml:41231
 msgid "User Quota"
-msgstr ""
+msgstr "使用者配額 (User Quota)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41234
@@ -41777,7 +41837,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-groupquota
 #: book.translate.xml:41239
 msgid "Group Quota"
-msgstr ""
+msgstr "群組配額 (Group Quota)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41242
@@ -41788,7 +41848,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-reservation
 #: book.translate.xml:41247
 msgid "Dataset Reservation"
-msgstr ""
+msgstr "資料集保留空間 (Dataset Reservation)"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:41265
@@ -41806,7 +41866,7 @@ msgstr ""
 #. (itstool) id: book.translate.xml#zfs-term-refreservation
 #: book.translate.xml:41275
 msgid "Reference Reservation"
-msgstr ""
+msgstr "參考保留空間 (Reference Reservation)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41278
