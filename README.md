@@ -125,6 +125,8 @@ pkg install poedit
 | Mirror, Mirroring | 鏡像 | RAID, ZFS |
 | Fault | 故障 | RAID, ZFS |
 | Fail | 失效 | RAID, ZFS |
+| Parity | 奇偶校驗 | RAID, ZFS |
+| Checksum | 校驗碼, 資料校驗 | RAID, ZFS | 
 
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
