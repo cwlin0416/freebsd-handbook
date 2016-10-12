@@ -77,7 +77,7 @@ pkg install poedit
 | Partitioning scheme | 分割表格式 | 例如 MBR, GPT 等 |
 | third-party software | 第三方軟體 ||
 | Volume | 磁碟區 ||
-| Block, Block size, Bad block | 區塊, 磁碟區塊 ||
+| Block, Block size, Bad block | 區塊, 資料區塊, 磁碟區塊 ||
 | Swap Space | 交換空間 ||
 | Ports Collection | TBD, Ports 套件集 ||
 | Binary Package | TBD, Binary 套件 ||
