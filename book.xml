@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49311 2016-08-18 03:44:16Z gjb $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49450 2016-10-04 20:58:05Z peter $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -249,6 +249,7 @@
 <!ENTITY pgpkey.jonathan SYSTEM "jonathan.key">
 <!ENTITY pgpkey.josef SYSTEM "josef.key">
 <!ENTITY pgpkey.jpaetzel SYSTEM "jpaetzel.key">
+<!ENTITY pgpkey.jrm SYSTEM "jrm.key">
 <!ENTITY pgpkey.jsa SYSTEM "jsa.key">
 <!ENTITY pgpkey.jtl SYSTEM "jtl.key">
 <!ENTITY pgpkey.junovitch SYSTEM "junovitch.key">
@@ -263,6 +264,7 @@
 <!ENTITY pgpkey.kensmith SYSTEM "kensmith.key">
 <!ENTITY pgpkey.keramida SYSTEM "keramida.key">
 <!ENTITY pgpkey.kevlo SYSTEM "kevlo.key">
+<!ENTITY pgpkey.keymaster SYSTEM "keymaster.key">
 <!ENTITY pgpkey.kib SYSTEM "kib.key">
 <!ENTITY pgpkey.kmoore SYSTEM "kmoore.key">
 <!ENTITY pgpkey.knu SYSTEM "knu.key">
@@ -447,6 +449,7 @@
 <!ENTITY pgpkey.sephe SYSTEM "sephe.key">
 <!ENTITY pgpkey.sepotvin SYSTEM "sepotvin.key">
 <!ENTITY pgpkey.sergei SYSTEM "sergei.key">
+<!ENTITY pgpkey.sevan SYSTEM "sevan.key">
 <!ENTITY pgpkey.sgalabov SYSTEM "sgalabov.key">
 <!ENTITY pgpkey.shaun SYSTEM "shaun.key">
 <!ENTITY pgpkey.sheldonh SYSTEM "sheldonh.key">
@@ -2006,7 +2009,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 49257 2016-08-12 19:33:18Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 49447 2016-10-02 14:15:50Z sevan $
 -->
 
 <chapter version="5.0" xml:id="bsdinstall">
@@ -2125,7 +2128,13 @@
     <para>安裝 FreeBSD 的硬體需求隨 FreeBSD 的版本和硬體架構而不同。 FreeBSD 發行版支援的硬體架構和裝置會列在 <link xlink:href="@@URL_RELPREFIX@@/releases/index.html">FreeBSD 發佈資訊</link> 頁面。<link xlink:href="@@URL_RELPREFIX@@/where.html">FreeBSD 下載頁面</link>
 也有建議如何正確的選擇在不同架構使用的映像檔。</para>
 
-    <para>FreeBSD 安裝程序需要至少 64 MB 的 <acronym>RAM</acronym> 以及 1.5 GB 的硬碟空間。然而，這樣少的記憶體及磁碟空間只適合在客製的應用上，如嵌入式設備，一般用途的桌面系統會需要更多的資源，2-4 GB RAM 與至少 8 GB 的硬碟空間是不錯的起點。</para>
+    <para xml:lang="en">A FreeBSD installation requires a minimum of 96 MB of
+      <acronym>RAM</acronym> and 1.5 GB of free hard drive space.
+      However, such small amounts of memory and disk space are really
+      only suitable for custom applications like embedded appliances.
+      General-purpose desktop systems need more resources.
+      2-4 GB RAM and at least 8 GB hard drive space is a
+      good starting point.</para>
 
     <para>每一種架構的處理器需求概述如下：</para>
 
@@ -26338,7 +26347,7 @@ fi</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 48568 2016-04-12 17:30:23Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 49426 2016-09-24 04:15:09Z eadler $
 -->
 
 <chapter version="5.0" xml:id="disks">
@@ -27743,7 +27752,7 @@ scsibus1:
 
       <listitem>
 	<para xml:lang="en">Copies of whole file systems or disks which are
-	  sychronized with another system on the network using a
+	  synchronized with another system on the network using a
 	  scheduled <package>net/rsync</package>.</para>
       </listitem>
 
@@ -33693,86 +33702,19 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	    <entry xml:id="zfs-term-arc" xml:lang="en">Adaptive Replacement
 	      Cache (<acronym>ARC</acronym>)</entry>
 
-	    <entry xml:lang="en"><acronym>ZFS</acronym> uses an Adaptive Replacement
-	      Cache (<acronym>ARC</acronym>), rather than a more
-	      traditional Least Recently Used (<acronym>LRU</acronym>)
-	      cache.  An <acronym>LRU</acronym> cache is a simple list
-	      of items in the cache, sorted by when each object was
-	      most recently used.  New items are added to the top of
-	      the list.  When the cache is full, items from the
-	      bottom of the list are evicted to make room for more
-	      active objects.  An <acronym>ARC</acronym> consists of
-	      four lists; the Most Recently Used
-	      (<acronym>MRU</acronym>) and Most Frequently Used
-	      (<acronym>MFU</acronym>) objects, plus a ghost list for
-	      each.  These ghost lists track recently evicted objects
-	      to prevent them from being added back to the cache.
-	      This increases the cache hit ratio by avoiding objects
-	      that have a history of only being used occasionally.
-	      Another advantage of using both an
-	      <acronym>MRU</acronym> and <acronym>MFU</acronym> is
-	      that scanning an entire file system would normally evict
-	      all data from an <acronym>MRU</acronym> or
-	      <acronym>LRU</acronym> cache in favor of this freshly
-	      accessed content.  With <acronym>ZFS</acronym>, there is
-	      also an <acronym>MFU</acronym> that only tracks the most
-	      frequently used objects, and the cache of the most
-	      commonly accessed blocks remains.</entry>
+	    <entry><acronym>ZFS</acronym> 使用了自適應替換快取 (Adaptive Replacement Cache, <acronym>ARC</acronym>)，而不是傳統的最近最少使用 (Least Recently Used, <acronym>LRU</acronym>) 快取，LRU 快取在快取中是一個簡單的項目清單，會依每個物件最近使用的時間來排序，新項會加入到清單的最上方，當快取額滿了便會去除清單最下方的項目來空出空間給較常使用的物件。<acronym>ARC</acronym> 結合了四種快取清單，最近最常使用 (Most Recently Used, <acronym>MRU</acronym>) 及最常使用 (Most Frequently Used, <acronym>MFU</acronym>) 物件加上兩個清單各自的幽靈清單 (Ghost list)，這些幽靈清單會追蹤最近被去除的物件來避免又被加回到快取，避免過去只有偶爾被使用的物件加入清單可以增加快取的命中率。同時使用 <acronym>MRU</acronym> 及 <acronym>MFU</acronym> 的另外一個優點是掃描一個完整檔案系統可以去除在 <acronym>MRU</acronym> 或 <acronym>LRU</acronym> 快取中的所有資料，有利於這些才剛存取的內容。使用 <acronym>ZFS</acronym> 也有 <acronym>MFU</acronym> 可只追蹤最常使用的物件並保留最常被存取的資料區塊快取。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-l2arc" xml:lang="en"><acronym>L2ARC</acronym></entry>
 
-	    <entry xml:lang="en"><acronym>L2ARC</acronym> is the second level
-	      of the <acronym>ZFS</acronym> caching system.  The
-	      primary <acronym>ARC</acronym> is stored in
-	      <acronym>RAM</acronym>.  Since the amount of
-	      available <acronym>RAM</acronym> is often limited,
-	      <acronym>ZFS</acronym> can also use
-	      <link linkend="zfs-term-vdev-cache">cache vdevs</link>.
-	      Solid State Disks (<acronym>SSD</acronym>s) are often
-	      used as these cache devices due to their higher speed
-	      and lower latency compared to traditional spinning
-	      disks.  <acronym>L2ARC</acronym> is entirely optional,
-	      but having one will significantly increase read speeds
-	      for files that are cached on the <acronym>SSD</acronym>
-	      instead of having to be read from the regular disks.
-	      <acronym>L2ARC</acronym> can also speed up <link linkend="zfs-term-deduplication">deduplication</link>
-	      because a <acronym>DDT</acronym> that does not fit in
-	      <acronym>RAM</acronym> but does fit in the
-	      <acronym>L2ARC</acronym> will be much faster than a
-	      <acronym>DDT</acronym> that must be read from disk.  The
-	      rate at which data is added to the cache devices is
-	      limited to prevent prematurely wearing out
-	      <acronym>SSD</acronym>s with too many writes.  Until the
-	      cache is full (the first block has been evicted to make
-	      room), writing to the <acronym>L2ARC</acronym> is
-	      limited to the sum of the write limit and the boost
-	      limit, and afterwards limited to the write limit.  A
-	      pair of <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> values control these rate limits.
-	      <link linkend="zfs-advanced-tuning-l2arc_write_max"><varname>vfs.zfs.l2arc_write_max</varname></link>
-	      controls how many bytes are written to the cache per
-	      second, while <link linkend="zfs-advanced-tuning-l2arc_write_boost"><varname>vfs.zfs.l2arc_write_boost</varname></link>
-	      adds to this limit during the
-	      <quote>Turbo Warmup Phase</quote> (Write Boost).</entry>
+	    <entry><acronym>L2ARC</acronym> 是  <acronym>ZFS</acronym> 快取系統的第二層，主要的 <acronym>ARC</acronym> 會儲存在 <acronym>RAM</acronym> 當中，但因為 <acronym>RAM</acronym> 可用的空間量通常有限，因此 <acronym>ZFS</acronym> 也可以使用 <link linkend="zfs-term-vdev-cache">快取 vdev (Cache vdev)</link>。固態磁碟 (Solid State Disk, <acronym>SSD</acronym>) 常被拿來此處作為快取裝置，因為比起傳統旋轉碟片的磁碟，固體磁碟有較快的速度與較低的延遲。<acronym>L2ARC</acronym> 是選用的，但使用可以明顯增進那些已使用 <acronym>SSD</acronym> 快取的檔案讀取速度，無須從一般磁碟讀取。<acronym>L2ARC</acronym> 也同樣可以加速去重複 (<link linkend="zfs-term-deduplication">Deduplication</link>)，因為 <acronym>DDT</acronym> 並不適合放在 <acronym>RAM</acronym>，但適合放在 <acronym>L2ARC</acronym>，比起要從磁碟讀取，可以加快不少速度。為了避免  <acronym>SSD</acronym> 因寫入次速過度而過早耗損，加入到快取裝置的資料速率會被限制，直到快取用盡 (去除第一個資料區塊來騰出空間) 之前，寫入到 <acronym>L2ARC</acronym> 的資料速率會限制在寫入限制 (Write limit) 與加速限制 (Boost limit) 的總合，之後則會限制為寫入限制，可以控制這兩個速度限制的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 數值分別為 <link linkend="zfs-advanced-tuning-l2arc_write_max"><varname>vfs.zfs.l2arc_write_max</varname></link> 控制每秒有多少數位元組可寫入到快取，而 <link linkend="zfs-advanced-tuning-l2arc_write_boost"><varname>vfs.zfs.l2arc_write_boost</varname></link> 可在 <quote>渦輪預熱階段</quote> (即寫入加速) 時增加寫入限制。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-zil" xml:lang="en"><acronym>ZIL</acronym></entry>
 
-	    <entry xml:lang="en"><acronym>ZIL</acronym> accelerates synchronous
-	      transactions by using storage devices like
-	      <acronym>SSD</acronym>s that are faster than those used
-	      in the main storage pool.  When an application requests
-	      a synchronous write (a guarantee that the data has been
-	      safely stored to disk rather than merely cached to be
-	      written later), the data is written to the faster
-	      <acronym>ZIL</acronym> storage, then later flushed out
-	      to the regular disks.  This greatly reduces latency and
-	      improves performance.  Only synchronous workloads like
-	      databases will benefit from a <acronym>ZIL</acronym>.
-	      Regular asynchronous writes such as copying files will
-	      not use the <acronym>ZIL</acronym> at all.</entry>
+	    <entry><acronym>ZIL</acronym> 會使用儲存裝置，例如，比那些用在主要儲存池還快的 <acronym>SSD</acronym> 來加速同步交易 (Synchronous transaction)。當應用程式請求做一個同步的寫入時 (保証資料會安全的儲存到磁碟，而不是先快取稍後再寫入)，資料會先寫入到速度較快的 <acronym>ZIL</acronym> 儲存空間，之後再一併寫入到一般的磁碟。這可大量的減少延遲並增進效能。<acronym>ZIL</acronym> 只會有利於使用像資料庫這類的同步工作，一般非同步的寫入像複製檔案，則完全不會用到 <acronym>ZIL</acronym>。</entry>
 	  </row>
 
 	  <row>
@@ -44039,7 +43981,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 49282 2016-08-15 14:25:01Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 49465 2016-10-07 18:00:23Z sevan $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -45007,8 +44949,8 @@ Exports list on foobar:
 <prompt>#</prompt> <userinput>service autounmountd start</userinput></screen>
 
       <para xml:lang="en">The <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> map format is the same as in other
-	operating systems, it might be desirable to consult
-	information from other operating systems, such as the <link xlink:href="http://images.apple.com/business/docs/Autofs.pdf">Mac
+	operating systems.  Information about this format from other
+	 sources can be useful, like the <link xlink:href="http://web.archive.org/web/20160813071113/http://images.apple.com/business/docs/Autofs.pdf">Mac
 	  OS X document</link>.</para>
 
       <para xml:lang="en">Consult the <citerefentry><refentrytitle>automount</refentrytitle><manvolnum>8</manvolnum></citerefentry>, <citerefentry><refentrytitle>automountd</refentrytitle><manvolnum>8</manvolnum></citerefentry>,
@@ -47347,7 +47289,7 @@ options {
 	disable-empty-zone "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA";
 	disable-empty-zone "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA";
 
-// If you've got a DNS server around at your upstream provider, enter
+// If you have a DNS server around at your upstream provider, enter
 // its IP address here, and enable the line below.  This will make you
 // benefit from its cache, thus reduce overall DNS traffic in the Internet.
 /*
@@ -47403,7 +47345,7 @@ options {
 	// query-source address * port NNNNN;
 };
 
-// If you enable a local name server, don't forget to enter 127.0.0.1
+// If you enable a local name server, do not forget to enter 127.0.0.1
 // first in your /etc/resolv.conf so this server will be queried.
 // Also, make sure to enable it in /etc/rc.conf.
 
@@ -47599,7 +47541,7 @@ zone "ip6.int"		{ type master; file "/etc/namedb/master/empty.db"; };
 // understand how DNS and BIND work.  There are sometimes
 // non-obvious pitfalls.  Setting up a slave zone is usually simpler.
 //
-// NB: Don't blindly enable the examples below. :-)  Use actual names
+// NB: Do not blindly enable the examples below. :-)  Use actual names
 // and addresses instead.
 
 /* An example dynamic zone
@@ -48704,7 +48646,7 @@ $include Kexample.com.+005+nnnnn.ZSK.key    ; ZSK</programlisting>
 	<programlisting xml:lang="en">LoadModule php5_module        libexec/apache24/libphp5.so</programlisting>
 
 <!--
-I don't think this is still needed
+I do not think this is still needed
 AddModule mod_php5.c
     &lt;IfModule mod_php5.c&gt;
         DirectoryIndex index.php index.html
@@ -48951,7 +48893,7 @@ AddModule mod_php5.c
 	  a forum for the trade of unlicensed commercial software or
 	  worse.  If anonymous <acronym>FTP</acronym> uploads are
 	  required, then verify the permissions so that these files
-	  can not be read by other anonymous users until they have
+	  cannot be read by other anonymous users until they have
 	  been reviewed by an administrator.</para>
       </note>
     </sect2>
