@@ -2128,13 +2128,7 @@
     <para>安裝 FreeBSD 的硬體需求隨 FreeBSD 的版本和硬體架構而不同。 FreeBSD 發行版支援的硬體架構和裝置會列在 <link xlink:href="@@URL_RELPREFIX@@/releases/index.html">FreeBSD 發佈資訊</link> 頁面。<link xlink:href="@@URL_RELPREFIX@@/where.html">FreeBSD 下載頁面</link>
 也有建議如何正確的選擇在不同架構使用的映像檔。</para>
 
-    <para xml:lang="en">A FreeBSD installation requires a minimum of 96 MB of
-      <acronym>RAM</acronym> and 1.5 GB of free hard drive space.
-      However, such small amounts of memory and disk space are really
-      only suitable for custom applications like embedded appliances.
-      General-purpose desktop systems need more resources.
-      2-4 GB RAM and at least 8 GB hard drive space is a
-      good starting point.</para>
+    <para>FreeBSD 安裝程序需要至少 96 MB 的 <acronym>RAM</acronym> 以及 1.5 GB 的硬碟空間。然而，如此少的記憶體及磁碟空間只適合在客製的應用上，如嵌入式設備。一般用途的桌面系統會需要更多的資源，2-4 GB RAM 與至少 8 GB 的硬碟空間是不錯的起點。</para>
 
     <para>每一種架構的處理器需求概述如下：</para>
 
@@ -2301,9 +2295,9 @@
 	</listitem>
       </itemizedlist>
 
-      <para>映像檔下載完成之後，下載同一個目錄之中的 <filename>CHECKSUM.SHA256</filename>。FreeBSD 提供 <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可用來計算映像檔的 <firstterm>校驗和 (Checksum)</firstterm>，使用方式為 <command>sha256 <replaceable>imagefilename</replaceable></command>，其他作業系統也會有類似的程式。</para>
+      <para>映像檔下載完成之後，下載同一個目錄之中的 <filename>CHECKSUM.SHA256</filename>。FreeBSD 提供 <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可用來計算映像檔的 <firstterm>校驗碼 (Checksum)</firstterm>，使用方式為 <command>sha256 <replaceable>imagefilename</replaceable></command>，其他作業系統也會有類似的程式。</para>
 
-      <para>比對計算後的 checksum 與 <filename>CHECKSUM.SHA256</filename> 檔案中的值，checksum 應該要完全相符，若 checksum 不相符，則代表該映像檔是損壞的，必須再下載一次。</para>
+      <para>比對計算後的校驗碼與 <filename>CHECKSUM.SHA256</filename> 檔案中的值，校驗碼應該要完全相符，若校驗碼不相符，則代表該映像檔是損壞的，必須再下載一次。</para>
 
       <sect3 xml:id="bsdinstall-usb">
 	<title>寫入映象檔到 <acronym>USB</acronym></title>
@@ -6459,7 +6453,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </listitem>
 
       <listitem>
-	<para><filename>distinfo</filename>：內含編譯 Port 必須下載的檔案名稱以及校驗碼 (Checksums)。</para>
+	<para><filename>distinfo</filename>：內含編譯 Port 必須下載的檔案名稱以及校驗碼 (Checksum)。</para>
       </listitem>
 
       <listitem>
@@ -31431,7 +31425,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
 
   <itemizedlist>
     <listitem>
-      <para>資料完整性：所有資料都會有一個資料的 <link linkend="zfs-term-checksum">checksum</link>，資被寫入時會計算 checksum 然後一併寫入，往後讀取資料時又會再計算一次 checksum，若 checksum 與當初寫入時不相符，便可偵測到資料錯誤，此時若有可用的資料備援 (Data redundancy)，<acronym>ZFS</acronym> 會嘗試自動修正錯誤。</para>
+      <para>資料完整性：所有資料都會有一個資料的校驗碼 (<link linkend="zfs-term-checksum">checksum</link>)，資被寫入時會計算校驗碼然後一併寫入，往後讀取資料時又會再計算一次校驗碼，若校驗碼與當初寫入時不相符，便可偵測到資料錯誤，此時若有可用的資料備援 (Data redundancy)，<acronym>ZFS</acronym> 會嘗試自動修正錯誤。</para>
     </listitem>
 
     <listitem>
@@ -31532,7 +31526,7 @@ devfs on /dev (devfs, local)
 example on /example (zfs, local)
 example/compressed on /example/compressed (zfs, local)</screen>
 
-      <para>在建立之後，<acronym>ZFS</acronym> 的資料集可如同其他檔案系統一般使用，且有許多額外功能可在每個資料集上設定。例如，建立一個新的檔案系統 <literal>data</literal>，此處預計存放重要的資料，所以會設定每個資料區 (Data block) 要保留兩份複本：</para>
+      <para>在建立之後，<acronym>ZFS</acronym> 的資料集可如同其他檔案系統一般使用，且有許多額外功能可在每個資料集上設定。例如，建立一個新的檔案系統 <literal>data</literal>，此處預計存放重要的資料，所以會設定每個資料區 (Data block) 要保留兩份備份：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs create example/data</userinput>
 <prompt>#</prompt> <userinput>zfs set copies=2 example/data</userinput></screen>
@@ -31574,7 +31568,7 @@ example/data        17547008       0 17547008     0%    /example/data</screen>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs create storage/home</userinput></screen>
 
-      <para>可以設定開啟壓縮及保留目錄及檔案額外複本的功能：</para>
+      <para>可以設定開啟壓縮及保留目錄及檔案額外備份的功能：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs set copies=2 storage/home</userinput>
 <prompt>#</prompt> <userinput>zfs set compression=gzip storage/home</userinput></screen>
@@ -31634,7 +31628,7 @@ storage/home  26320512       0 26320512     0%    /home</screen>
     <sect2 xml:id="zfs-quickstart-recovering-raid-z">
       <title>復原 <acronym>RAID-Z</acronym></title>
 
-      <para>每個軟體 <acronym>RAID</acronym> 都有監控其 <literal>狀態</literal> 的方式，<acronym>RAID-Z</acronym> 裝置的狀態可以使用這個指令來查看：</para>
+      <para>每個軟體 <acronym>RAID</acronym> 都有監控其狀態 (<literal>state</literal>) 的方式，<acronym>RAID-Z</acronym> 裝置的狀態可以使用這個指令來查看：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status -x</userinput></screen>
 
@@ -31694,13 +31688,13 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-quickstart-data-verification">
       <title>資料檢驗</title>
 
-      <para><acronym>ZFS</acronym> 使用 Checksum 來檢驗資料的完整性 (Integrity)，在建立檔案系統時便會自動開啟。</para>
+      <para><acronym>ZFS</acronym> 使用校驗碼 (Checksum) 來檢驗資料的完整性 (Integrity)，在建立檔案系統時便會自動開啟。</para>
 
       <warning>
-	<para>Checksum 可以關閉，但並<emphasis>不</emphasis>建議！Checksum 只會使用非常少的儲存空間來確保資料的完整性。Checksum 若關閉會使許多 <acronym>ZFS</acronym> 功能無法正常運作，關閉 Checksum 功能並不會明顯的改善效能。</para>
+	<para>校驗碼 (Checksum) 可以關閉，但並<emphasis>不</emphasis>建議！校驗碼只會使用非常少的儲存空間來確保資料的完整性。校驗碼若關閉會使許多 <acronym>ZFS</acronym> 功能無法正常運作，關閉校驗碼功能並不會明顯的改善效能。</para>
       </warning>
 
-      <para>Checksum 檢驗這個動作即所謂的<emphasis>清潔 (Scrub)</emphasis>，可以使用以下指令來檢驗 <literal>storage</literal> 儲存池的資料完整性：</para>
+      <para>檢驗校驗碼這個動作即所謂的<emphasis>清潔 (Scrub)</emphasis>，可以使用以下指令來檢驗 <literal>storage</literal> 儲存池的資料完整性：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool scrub storage</userinput></screen>
 
@@ -31804,7 +31798,7 @@ errors: No known data errors</screen>
 
       <para>加入磁碟到儲存池 (zpool) 會有兩種情形：使用 <command>zpool attach</command> 加入一個磁碟到既有的 vdev，或使用 <command>zpool add</command> 加入 vdev 到儲存池。只有部份 <link linkend="zfs-term-vdev">vdev 型態</link> 允許在 vdev 建立之後加入磁碟。</para>
 
-      <para>由單一磁碟所建立的儲存池缺乏備援 (Redundancy) 功能，可以偵測到資料的損壞但無法修復，因為資料沒有其他複本可用。複本 (<link linkend="zfs-term-copies">copies</link>) 屬性可以讓您從較小的故障中復原，如磁碟壞軌 (Bad sector)，但無法提供與鏡像或 <acronym>RAID-Z</acronym> 同樣層級的保護。由單一磁碟所建立的儲存池可以使用 <command>zpool attach</command> 來加入額外的磁碟到 vdev，來建立鏡像。<command>zpool attach</command> 也可用來加入額外的磁碟到鏡像群組，來增加備援與讀取效率。若使用的磁碟已有分割區，可以複製該磁碟的分割區配置到另一個，使用 <command>gpart backup</command> 與 <command>gpart restore</command> 可讓這件事變的很簡單。</para>
+      <para>由單一磁碟所建立的儲存池缺乏備援 (Redundancy) 功能，可以偵測到資料的損壞但無法修復，因為資料沒有其他備份可用。備份數 (<link linkend="zfs-term-copies">Copies</link>) 屬性可以讓您從較小的故障中復原，如磁碟壞軌 (Bad sector)，但無法提供與鏡像或 <acronym>RAID-Z</acronym> 同樣層級的保護。由單一磁碟所建立的儲存池可以使用 <command>zpool attach</command> 來加入額外的磁碟到 vdev，來建立鏡像。<command>zpool attach</command> 也可用來加入額外的磁碟到鏡像群組，來增加備援與讀取效率。若使用的磁碟已有分割區，可以複製該磁碟的分割區配置到另一個，使用 <command>gpart backup</command> 與 <command>gpart restore</command> 可讓這件事變的很簡單。</para>
 
       <para>加入 <replaceable>ada1p3</replaceable> 來升級單一磁碟串連 (stripe) vdev <replaceable>ada0p3</replaceable> 採用鏡像型態 (mirror)：</para>
 
@@ -31943,7 +31937,7 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-zpool-status">
       <title>檢查儲存池狀態</title>
 
-      <para>儲存池的狀態很重要，若有磁碟機離線或偵測到讀取、寫入或 Checksum 錯誤，對應的錯誤計數便會增加。<command>status</command> 會顯示儲存池中每一個磁碟機的設定與狀態及整個儲存池的狀態。需要處置的方式與有關最近清潔 (<link linkend="zfs-zpool-scrub"><command>Scrub</command></link>) 的詳細資訊也會一併顯示。</para>
+      <para>儲存池的狀態很重要，若有磁碟機離線或偵測到讀取、寫入或校驗碼 (Checksum) 錯誤，對應的錯誤計數便會增加。<command>status</command> 會顯示儲存池中每一個磁碟機的設定與狀態及整個儲存池的狀態。需要處置的方式與有關最近清潔 (<link linkend="zfs-zpool-scrub"><command>Scrub</command></link>) 的詳細資訊也會一併顯示。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status</userinput>
   pool: mypool
@@ -31967,7 +31961,7 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-zpool-clear">
       <title>清除錯誤</title>
 
-      <para>當偵測到錯誤發生，讀取、寫入或 Checksum 的計數變會增加。使用 <command>zpool clear <replaceable>mypool</replaceable></command> 可以清除錯誤訊息及重置計數。清空錯誤狀態對當儲存池發生錯誤要使用自動化 Script 通知的管理者來說會很重要，因在舊的錯誤尚未清除前，可能便不會回報後續的錯誤。</para>
+      <para>當偵測到錯誤發生，讀取、寫入或校驗碼 (Checksum) 的計數便會增加。使用 <command>zpool clear <replaceable>mypool</replaceable></command> 可以清除錯誤訊息及重置計數。清空錯誤狀態對當儲存池發生錯誤要使用自動化 Script 通知的管理者來說會很重要，因在舊的錯誤尚未清除前，可能便不會回報後續的錯誤。</para>
     </sect2>
 
     <sect2 xml:id="zfs-zpool-replace">
@@ -32132,7 +32126,7 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-zpool-selfheal">
       <title>自我修復</title>
 
-      <para>Checksum 會隨資料區塊一併儲存，這使得檔案系統可以做到<emphasis>自我修復</emphasis>。這個功能可以在 Checksum 與儲存池中的另一個裝置不同時自動修復資料。舉例來說，有兩個磁碟做鏡像 (Mirror)，其中一個磁碟機開始失常並無法正常儲存資料，甚至是資料放在長期封存的儲存裝置上，已經很久沒有被存取。傳統的檔案系統需要執行演算法來檢查並修復資料如 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>，這些指令耗費時間，且在嚴重時需要管理者手動決定要做那一種修復操作。當 <acronym>ZFS</acronym> 偵測到資料區塊的 Checksum 不對時，它除了把資料交給需要的應用程式外，也會修正在磁碟上錯誤的資料。這件事不需要與系統管理者作任何互動便會在一般的儲存池操作時完成。</para>
+      <para>校驗碼 (Checksum) 會隨資料區塊一併儲存，這使得檔案系統可以做到<emphasis>自我修復</emphasis>。這個功能可以在校驗碼與儲存池中的另一個裝置不同時自動修復資料。舉例來說，有兩個磁碟做鏡像 (Mirror)，其中一個磁碟機開始失常並無法正常儲存資料，甚至是資料放在長期封存的儲存裝置上，已經很久沒有被存取。傳統的檔案系統需要執行演算法來檢查並修復資料如 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>，這些指令耗費時間，且在嚴重時需要管理者手動決定要做那一種修復操作。當 <acronym>ZFS</acronym> 偵測到資料區塊的校驗碼不對時，它除了把資料交給需要的應用程式外，也會修正在磁碟上錯誤的資料。這件事不需要與系統管理者作任何互動便會在一般的儲存池操作時完成。</para>
 
       <para>接下來的例子會示範自我修復會如何運作。建立一個使用磁碟 <filename>/dev/ada0</filename> 及 <filename>/dev/ada1</filename> 做鏡像的儲存池。</para>
 
@@ -32154,7 +32148,7 @@ errors: No known data errors
 NAME     SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
 healer   960M  92.5K   960M     0%  1.00x  ONLINE  -</screen>
 
-      <para>將部份需要使用自我修復功能來保護的重要資料複製到該儲存池，建立一個儲存池的 Checksum 供稍後做比較時使用。</para>
+      <para>將部份需要使用自我修復功能來保護的重要資料複製到該儲存池，建立一個儲存池的校驗碼供稍後做比較時使用。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cp /some/important/data /healer</userinput>
 <prompt>#</prompt> <userinput>zfs list</userinput>
@@ -32177,7 +32171,7 @@ SHA1 (/healer) = 2753eff56d77d9a536ece6694bf0a82740344d1f</screen>
 209715200 bytes transferred in 62.992162 secs (3329227 bytes/sec)
 <prompt>#</prompt> <userinput>zpool import healer</userinput></screen>
 
-      <para>儲存池的狀態顯示有一個裝置發生了錯誤。注意，應用程式從儲存池讀取的資料中並沒有任何的錯誤資料，<acronym>ZFS</acronym> 會自 <filename>ada0</filename> 裝置提供有正確 Checksum 的資料。結果裡面 <literal>CKSUM</literal> 欄位含有非零值便是有錯誤 Checksum 的裝置。</para>
+      <para>儲存池的狀態顯示有一個裝置發生了錯誤。注意，應用程式從儲存池讀取的資料中並沒有任何的錯誤資料，<acronym>ZFS</acronym> 會自 <filename>ada0</filename> 裝置提供有正確校驗碼的資料。結果裡面 <literal>CKSUM</literal> 欄位含有非零值便是有錯誤校驗碼的裝置。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status <replaceable>healer</replaceable></userinput>
     pool: healer
@@ -32198,14 +32192,14 @@ SHA1 (/healer) = 2753eff56d77d9a536ece6694bf0a82740344d1f</screen>
 
 errors: No known data errors</screen>
 
-      <para>錯誤已經被偵測到並且由未被影響的 <filename>ada0</filename> 鏡像磁碟上的備援提供資料。可與原來的 Checksum 做比較來看儲存池是否已修復為一致。</para>
+      <para>錯誤已經被偵測到並且由未被影響的 <filename>ada0</filename> 鏡像磁碟上的備援提供資料。可與原來的校驗碼做比較來看儲存池是否已修復為一致。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sha1 /healer &gt;&gt; checksum.txt</userinput>
 <prompt>#</prompt> <userinput>cat checksum.txt</userinput>
 SHA1 (/healer) = 2753eff56d77d9a536ece6694bf0a82740344d1f
 SHA1 (/healer) = 2753eff56d77d9a536ece6694bf0a82740344d1f</screen>
 
-      <para>儲存池在故意竄改資料前與後的兩個 Checksum 仍相符顯示了 <acronym>ZFS</acronym> 在 Checksum 不同時偵測與自動修正錯誤的能力。注意，這只在當儲存池中有足夠的備援時才可做到，由單一裝置組成的儲存池並沒有自我修復的能力。這也是為什麼在 <acronym>ZFS</acronym> 中 Checksum 如此重要，任何原因都不該關閉。不需要 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> 或類似的檔案系統一致性檢查程式便能夠偵測與修正問題，且儲存儲存池在發生問題時仍可正常運作。接著需要做清潔作業來覆蓋在 <filename>ada1</filename> 上的錯誤資料。</para>
+      <para>儲存池在故意竄改資料前與後的兩個校驗碼仍相符顯示了 <acronym>ZFS</acronym> 在校驗碼不同時偵測與自動修正錯誤的能力。注意，這只在當儲存池中有足夠的備援時才可做到，由單一裝置組成的儲存池並沒有自我修復的能力。這也是為什麼在 <acronym>ZFS</acronym> 中校驗碼如此重要，任何原因都不該關閉。不需要 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> 或類似的檔案系統一致性檢查程式便能夠偵測與修正問題，且儲存儲存池在發生問題時仍可正常運作。接著需要做清潔作業來覆蓋在 <filename>ada1</filename> 上的錯誤資料。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool scrub <replaceable>healer</replaceable></userinput>
 <prompt>#</prompt> <userinput>zpool status <replaceable>healer</replaceable></userinput>
@@ -32229,7 +32223,7 @@ config:
 
 errors: No known data errors</screen>
 
-      <para>清潔作業會從 <filename>ada0</filename> 讀取資料並重新寫入任何在 <filename>ada1</filename> 上有錯誤 Checksum 的資料。這個操作可以由 <command>zpool status</command> 的輸出中呈現修復中 <literal>(repairing)</literal> 的項目來辨識。這個作業完成後，儲存池的狀態會更改為：</para>
+      <para>清潔作業會從 <filename>ada0</filename> 讀取資料並重新寫入任何在 <filename>ada1</filename> 上有錯誤校驗碼的資料。這個操作可以由 <command>zpool status</command> 的輸出中呈現修復中 <literal>(repairing)</literal> 的項目來辨識。這個作業完成後，儲存池的狀態會更改為：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status <replaceable>healer</replaceable></userinput>
   pool: healer
@@ -32315,7 +32309,7 @@ mypool               110K  47.0G    31K  /mnt/mypool</screen>
 
       <para>在升級 FreeBSD 之後或儲存池是由其他使用舊版 <acronym>ZFS</acronym> 所匯入，儲存池可以手動升級到最新版本的 <acronym>ZFS</acronym> 來支援新的功能。在升級前請評估儲存池是否還要在舊的系統做匯入，由於升級是一個單向的程序，舊的儲存池可以升級，但有新功能的儲存池無法降級。</para>
 
-      <para>升級一個 v28 的儲存以支援 <literal>Feature Flags</literal>：</para>
+      <para>升級一個 v28 的儲存以支援功能旗標 (<literal>Feature Flags</literal>)：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status</userinput>
   pool: mypool
@@ -32361,7 +32355,7 @@ Enabled the following features on 'mypool':
 
       <para><acronym>ZFS</acronym> 的新功能在 <command>zpool upgrade</command> 尚未完成之前無法使用。可以用 <command>zpool upgrade -v</command> 來查看升級後有那些新功能，也同時會列出已經支援那些功能。</para>
 
-      <para>升級儲存池支援額外的 Feature flags：</para>
+      <para>升級儲存池支援額外的功能旗標 (Feature flags)：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status</userinput>
   pool: mypool
@@ -33052,7 +33046,7 @@ mypool@replica2                                 0      -  55.0M  -</screen>
 	  </listitem>
 
 	  <listitem>
-	    <para>正常會需要 <systemitem class="username">root</systemitem> 的權限來傳送與接收串流，這需要可以 <systemitem class="username">root</systemitem> 登入到接收端系統。但是，預設因安全性考慮會關閉以 <systemitem class="username">root</systemitem> 登入。<link linkend="zfs-zfs-allow">ZFS Delegation</link> 系統可以用來允許一個非 <systemitem class="username">root</systemitem> 使用者在每個系統上執行各自的發送與接收操作。</para>
+	    <para>正常會需要 <systemitem class="username">root</systemitem> 的權限來傳送與接收串流，這需要可以 <systemitem class="username">root</systemitem> 登入到接收端系統。但是，預設因安全性考慮會關閉以 <systemitem class="username">root</systemitem> 登入。ZFS 委託 (<link linkend="zfs-zfs-allow">ZFS Delegation</link>) 系統可以用來允許一個非 <systemitem class="username">root</systemitem> 使用者在每個系統上執行各自的發送與接收操作。</para>
 	  </listitem>
 
 	  <listitem>
@@ -33197,7 +33191,7 @@ mypool/compressed_dataset  logicalused       496G      -</screen>
     <sect2 xml:id="zfs-zfs-deduplication">
       <title>去重複 (Deduplication)</title>
 
-      <para>當開啟，去重複 (<link linkend="zfs-term-deduplication">Deduplication</link>) 功能會使用每個資料區塊的 Checksum 來偵測重複的資料區塊，當新的資料區塊與現有的資料區塊重複，<acronym>ZFS</acronym> 便會寫入連接到現有資料的參考來替代寫入重複的資料區塊，這在資料中有大量重複的檔案或資訊時可以節省大量的空間，要注意的是：去重複功能需要使用大量的記憶體且大部份可節省的空間可改開啟壓縮功能來達成，而壓縮功能不需要使用額外的記憶體。</para>
+      <para>當開啟，去重複 (<link linkend="zfs-term-deduplication">Deduplication</link>) 功能會使用每個資料區塊的校驗碼 (Checksum) 來偵測重複的資料區塊，當新的資料區塊與現有的資料區塊重複，<acronym>ZFS</acronym> 便會寫入連接到現有資料的參考來替代寫入重複的資料區塊，這在資料中有大量重複的檔案或資訊時可以節省大量的空間，要注意的是：去重複功能需要使用大量的記憶體且大部份可節省的空間可改開啟壓縮功能來達成，而壓縮功能不需要使用額外的記憶體。</para>
 
       <para>要開啟去重複功能，需在目標儲存池設定 <literal>dedup</literal> 屬性：</para>
 
@@ -33632,7 +33626,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	    <entry xml:id="zfs-term-pool">儲存池 (Pool)</entry>
 
 	    <entry><emphasis>儲存池 (Pool)</emphasis> 是建構 <acronym>ZFS</acronym> 最基礎的單位。一個儲存池可由一個或多個 vdev 所組成，是用來儲存資料的底層裝置。儲存池會被拿來建立一個或多個檔案系統 (資料集 Dataset) 或區塊裝置 (磁碟區 Volume)，這些資料集與磁碟區會共用儲存池的剩餘可用空間。每一個儲存池可由名稱與 <acronym>GUID</acronym> 來辨識。可用的功能會依儲存池上的 <acronym>ZFS</acronym> 版本而有不同。<note>
-		<para>FreeBSD 9.0 與 9.1 支援 <acronym>ZFS</acronym> 版本 28，之後的版本使用 <acronym>ZFS</acronym> 版本 5000 與功能旗標，新的功能旗標系統有更佳的相容性，能夠與其他人實作的 <acronym>ZFS</acronym> 相容。</para>
+		<para>FreeBSD 9.0 與 9.1 支援 <acronym>ZFS</acronym> 版本 28，之後的版本使用 <acronym>ZFS</acronym> 版本 5000 與功能旗標，新的功能旗標 (Feature flags) 系統有更佳的相容性，能夠與其他人實作的 <acronym>ZFS</acronym> 相容。</para>
 	      </note></entry>
 	  </row>
 
@@ -33641,7 +33635,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 
 	    <entry>儲存池是由一個或多個 vdev 所組成，vdev 可以是一個磁碟或是 <acronym>RAID</acronym> Transform 的磁碟群組。當使用多個 vdev，<acronym>ZFS</acronym> 可以分散資料到各個 vdev 來增加效能與最大的可用空間。<itemizedlist>
 		<listitem>
-		  <para xml:id="zfs-term-vdev-disk"><emphasis>磁碟 (Disk)</emphasis> - 最基本的 vdev 型態便是一個標準的磁碟區塊裝置，這可以是一整個磁碟 (例如 <filename><replaceable>/dev/ada0</replaceable></filename> 或 <filename><replaceable>/dev/da0</replaceable></filename>) 或一個分割區 (<filename><replaceable>/dev/ada0p3</replaceable></filename>)。在 FreeBSD 上，使用分割區來替代整個磁碟不會影響效能，這可能與 Solaris 說明文件所建議的有所不同。</para>
+		  <para xml:id="zfs-term-vdev-disk"><emphasis>磁碟 (Disk)</emphasis> - 最基本的 vdev 型態便是一個標準的資料區塊裝置，這可以是一整個磁碟 (例如 <filename><replaceable>/dev/ada0</replaceable></filename> 或 <filename><replaceable>/dev/da0</replaceable></filename>) 或一個分割區 (<filename><replaceable>/dev/ada0p3</replaceable></filename>)。在 FreeBSD 上，使用分割區來替代整個磁碟不會影響效能，這可能與 Solaris 說明文件所建議的有所不同。</para>
 		</listitem>
 
 		<listitem>
@@ -33708,7 +33702,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  <row>
 	    <entry xml:id="zfs-term-l2arc" xml:lang="en"><acronym>L2ARC</acronym></entry>
 
-	    <entry><acronym>L2ARC</acronym> 是  <acronym>ZFS</acronym> 快取系統的第二層，主要的 <acronym>ARC</acronym> 會儲存在 <acronym>RAM</acronym> 當中，但因為 <acronym>RAM</acronym> 可用的空間量通常有限，因此 <acronym>ZFS</acronym> 也可以使用 <link linkend="zfs-term-vdev-cache">快取 vdev (Cache vdev)</link>。固態磁碟 (Solid State Disk, <acronym>SSD</acronym>) 常被拿來此處作為快取裝置，因為比起傳統旋轉碟片的磁碟，固體磁碟有較快的速度與較低的延遲。<acronym>L2ARC</acronym> 是選用的，但使用可以明顯增進那些已使用 <acronym>SSD</acronym> 快取的檔案讀取速度，無須從一般磁碟讀取。<acronym>L2ARC</acronym> 也同樣可以加速去重複 (<link linkend="zfs-term-deduplication">Deduplication</link>)，因為 <acronym>DDT</acronym> 並不適合放在 <acronym>RAM</acronym>，但適合放在 <acronym>L2ARC</acronym>，比起要從磁碟讀取，可以加快不少速度。為了避免  <acronym>SSD</acronym> 因寫入次速過度而過早耗損，加入到快取裝置的資料速率會被限制，直到快取用盡 (去除第一個資料區塊來騰出空間) 之前，寫入到 <acronym>L2ARC</acronym> 的資料速率會限制在寫入限制 (Write limit) 與加速限制 (Boost limit) 的總合，之後則會限制為寫入限制，可以控制這兩個速度限制的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 數值分別為 <link linkend="zfs-advanced-tuning-l2arc_write_max"><varname>vfs.zfs.l2arc_write_max</varname></link> 控制每秒有多少數位元組可寫入到快取，而 <link linkend="zfs-advanced-tuning-l2arc_write_boost"><varname>vfs.zfs.l2arc_write_boost</varname></link> 可在 <quote>渦輪預熱階段</quote> (即寫入加速) 時增加寫入限制。</entry>
+	    <entry><acronym>L2ARC</acronym> 是  <acronym>ZFS</acronym> 快取系統的第二層，主要的 <acronym>ARC</acronym> 會儲存在 <acronym>RAM</acronym> 當中，但因為 <acronym>RAM</acronym> 可用的空間量通常有限，因此 <acronym>ZFS</acronym> 也可以使用 <link linkend="zfs-term-vdev-cache">快取 vdev (Cache vdev)</link>。固態磁碟 (Solid State Disk, <acronym>SSD</acronym>) 常被拿來此處作為快取裝置，因為比起傳統旋轉碟片的磁碟，固體磁碟有較快的速度與較低的延遲。<acronym>L2ARC</acronym> 是選用的，但使用可以明顯增進那些已使用 <acronym>SSD</acronym> 快取的檔案讀取速度，無須從一般磁碟讀取。<acronym>L2ARC</acronym> 也同樣可以加速去重複 (<link linkend="zfs-term-deduplication">Deduplication</link>)，因為 <acronym>DDT</acronym> 並不適合放在 <acronym>RAM</acronym>，但適合放在 <acronym>L2ARC</acronym>，比起要從磁碟讀取，可以加快不少速度。為了避免  <acronym>SSD</acronym> 因寫入次速過多而過早耗損，加入到快取裝置的資料速率會被限制，直到快取用盡 (去除第一個資料區塊來騰出空間) 之前，寫入到 <acronym>L2ARC</acronym> 的資料速率會限制在寫入限制 (Write limit) 與加速限制 (Boost limit) 的總合，之後則會限制為寫入限制，可以控制這兩個速度限制的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 數值分別為 <link linkend="zfs-advanced-tuning-l2arc_write_max"><varname>vfs.zfs.l2arc_write_max</varname></link> 控制每秒有多少數位元組可寫入到快取，而 <link linkend="zfs-advanced-tuning-l2arc_write_boost"><varname>vfs.zfs.l2arc_write_boost</varname></link> 可在 <quote>渦輪預熱階段</quote> (即寫入加速) 時增加寫入限制。</entry>
 	  </row>
 
 	  <row>
@@ -33738,431 +33732,155 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  <row>
 	    <entry xml:id="zfs-term-volume">磁碟區 (Volume)</entry>
 
-	    <entry>除了一般的檔案系統資料集之外，<acronym>ZFS</acronym> 也可以建立磁碟區 (Volume)，磁碟區是磁碟區塊裝置。磁碟區有許多與資料集相似的功能，包含複製時寫入、快照、複本以及奇偶校驗。要在 <acronym>ZFS</acronym> 的頂層執行其他檔案系統格式時使用磁碟區非常有用，例如 <acronym>UFS</acronym> 虛擬化或匯出 <acronym>iSCSI</acronym> 延伸磁區 (Extent)。</entry>
+	    <entry>除了一般的檔案系統資料集之外，<acronym>ZFS</acronym> 也可以建立磁碟區 (Volume)，磁碟區是資料區塊裝置。磁碟區有許多與資料集相似的功能，包含複製時寫入、快照、複本以及資料校驗。要在 <acronym>ZFS</acronym> 的頂層執行其他檔案系統格式時使用磁碟區非常有用，例如 <acronym>UFS</acronym> 虛擬化或匯出 <acronym>iSCSI</acronym> 延伸磁區 (Extent)。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-snapshot">快照 (Snapshot)</entry>
 
-	    <entry xml:lang="en">The
-	      <link linkend="zfs-term-cow">copy-on-write</link>
-	      (<acronym>COW</acronym>) design of
-	      <acronym>ZFS</acronym> allows for nearly instantaneous,
-	      consistent snapshots with arbitrary names.  After taking
-	      a snapshot of a dataset, or a recursive snapshot of a
-	      parent dataset that will include all child datasets, new
-	      data is written to new blocks, but the old blocks are
-	      not reclaimed as free space.  The snapshot contains
-	      the original version of the file system, and the live
-	      file system contains any changes made since the snapshot
-	      was taken.  No additional space is used.  As new data is
-	      written to the live file system, new blocks are
-	      allocated to store this data.  The apparent size of the
-	      snapshot will grow as the blocks are no longer used in
-	      the live file system, but only in the snapshot.  These
-	      snapshots can be mounted read only to allow for the
-	      recovery of previous versions of files.  It is also
-	      possible to
-	      <link linkend="zfs-zfs-snapshot">rollback</link> a live
-	      file system to a specific snapshot, undoing any changes
-	      that took place after the snapshot was taken.  Each
-	      block in the pool has a reference counter which keeps
-	      track of how many snapshots, clones, datasets, or
-	      volumes make use of that block.  As files and snapshots
-	      are deleted, the reference count is decremented.  When a
-	      block is no longer referenced, it is reclaimed as free
-	      space.  Snapshots can also be marked with a
-	      <link linkend="zfs-zfs-snapshot">hold</link>.  When a
-	      snapshot is held, any attempt to destroy it will return
-	      an <literal>EBUSY</literal> error.  Each snapshot can
-	      have multiple holds, each with a unique name.  The
-	      <link linkend="zfs-zfs-snapshot">release</link> command
-	      removes the hold so the snapshot can deleted.  Snapshots
-	      can be taken on volumes, but they can only be cloned or
-	      rolled back, not mounted independently.</entry>
+	    <entry><acronym>ZFS</acronym> 的寫入時複製 (<link linkend="zfs-term-cow">Copy-On-Write</link>, <acronym>COW</acronym>) 設計可以使用任意的名稱做到幾乎即時、一致的快照。在製做資料集的快照或父資料集遞迴快照 (會包含其所有子資料集) 之後，新的資料會寫入到資的資料區塊，但不會回收舊的資料區塊為可用空間，快照中會使用原版本的檔案系統，而快照之後所做的變更則會儲存在目前的檔案系統，因此不會重複使用額外的空間。當新的資料寫入到目前的檔案系統，便會配置新的資料區塊來儲存這些資料。快照表面大小 (Apparent size) 會隨著在目前檔案系統停止使用的資料區塊而成長，但僅限於快照。可以用唯讀的方式掛載這些快照來復原先前版本的檔案，也可以還原 (<link linkend="zfs-zfs-snapshot">Rollback</link>) 目前的檔案系統到指定的快照，來還原任何在快照之後所做的變更。每個在儲存池中的資料區塊都會有一個參考記數器，可以用來持續追蹤有多少快照、複本、資料集或是磁碟區使用這個資料區塊，當刪除檔案與快照參照的計數變會滅少，直到沒有任何東西參考這個資料區塊才會被回收為可用空間。快照也可使用 <link linkend="zfs-zfs-snapshot">hold</link> 來標記，檔標記為 hold 時，任何嘗試要刪除該快照的動作便會回傳 <literal>EBUSY</literal> 的錯誤，每個快照可以標記多個不同唯一名稱的 hold，而 <link linkend="zfs-zfs-snapshot">release</link> 指令則可以移除 hold，這樣才可刪除快照。在磁碟區上快可以製作快照，但只能用來複製或還原，無法獨立掛載。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-clone">複本 (Clone)</entry>
 
-	    <entry xml:lang="en">Snapshots can also be cloned.  A clone is a
-	      writable version of a snapshot, allowing the file system
-	      to be forked as a new dataset.  As with a snapshot, a
-	      clone initially consumes no additional space.  As
-	      new data is written to a clone and new blocks are
-	      allocated, the apparent size of the clone grows.  When
-	      blocks are overwritten in the cloned file system or
-	      volume, the reference count on the previous block is
-	      decremented.  The snapshot upon which a clone is based
-	      cannot be deleted because the clone depends on it.  The
-	      snapshot is the parent, and the clone is the child.
-	      Clones can be <emphasis>promoted</emphasis>, reversing
-	      this dependency and making the clone the parent and the
-	      previous parent the child.  This operation requires no
-	      additional space.  Because the amount of space used by
-	      the parent and child is reversed, existing quotas and
-	      reservations might be affected.</entry>
+	    <entry>快照也可以做複本，複本是可寫入版本的快照，讓檔案系統可分支成為新的資料集。如同快照，複本一開始不會消耗任何額外空間，隨著新資料寫入到複本會配置新的資料區塊，複本的表面大小 (Apparent size) 才會成長，當在複本檔案系統或磁碟區的資料區塊被覆寫時，在先前資料區塊的參考計數則會減少。建立複本所使用的快照無法被刪除，因為複本會相依該快照，快照為父，複本為子。複本可以被提升 (<emphasis>promoted</emphasis>)、反轉相依關係，來讓複本成為父，之前的父變為子，這個操作不需要額外的空間。由於反轉了父與子使用的空間量，所以可能會影響既有的配額 (Quota) 與保留空間 (Reservation)。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-checksum">校驗碼 (Checksum)</entry>
 
-	    <entry xml:lang="en">Every block that is allocated is also checksummed.
-	      The checksum algorithm used is a per-dataset property,
-	      see <link linkend="zfs-zfs-set"><command>set</command></link>.
-	      The checksum of each block is transparently validated as
-	      it is read, allowing <acronym>ZFS</acronym> to detect
-	      silent corruption.  If the data that is read does not
-	      match the expected checksum, <acronym>ZFS</acronym> will
-	      attempt to recover the data from any available
-	      redundancy, like mirrors or <acronym>RAID-Z</acronym>).
-	      Validation of all checksums can be triggered with <link linkend="zfs-term-scrub"><command>scrub</command></link>.
-	      Checksum algorithms include:
-
-	      <itemizedlist>
+	    <entry>配置每個資料區塊快的同時也會做資料校驗，資料校驗用的演算法是依資料集屬性而有所不同的，請參考 <link linkend="zfs-zfs-set"><command>set</command></link>。每個資料區塊會在讀取的過成便完成校驗，讓 <acronym>ZFS</acronym> 可以偵測到隱藏的損壞，若資料不符合預期的校驗碼，<acronym>ZFS</acronym> 會嘗試從任何可用的備援來還原資料，例如鏡像 (Mirror) 或 <acronym>RAID-Z</acronym>。要檢驗所有資料的校驗碼可以使用清潔 (<link linkend="zfs-term-scrub"><command>Scrub</command></link>)，資料校驗的演算法有：<itemizedlist>
 		<listitem>
-		  <para xml:lang="en"><literal>fletcher2</literal></para>
+		  <para><literal>fletcher2</literal></para>
 		</listitem>
 
 		<listitem>
-		  <para xml:lang="en"><literal>fletcher4</literal></para>
+		  <para><literal>fletcher4</literal></para>
 		</listitem>
 
 		<listitem>
-		  <para xml:lang="en"><literal>sha256</literal></para>
+		  <para><literal>sha256</literal></para>
 		</listitem>
-	      </itemizedlist>
-
-	      The <literal>fletcher</literal> algorithms are faster,
-	      but <literal>sha256</literal> is a strong cryptographic
-	      hash and has a much lower chance of collisions at the
-	      cost of some performance.  Checksums can be disabled,
-	      but it is not recommended.</entry>
+	      </itemizedlist> <literal>fletcher</literal> 演算法最快，而 <literal>sha256</literal> 雖較消耗效能，但其有強大的密碼雜湊與較低的衝突率。也可關閉資料校驗，但並不建議。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-compression">壓縮 (Compression)</entry>
 
-	    <entry xml:lang="en">Each dataset has a compression property, which
-	      defaults to off.  This property can be set to one of a
-	      number of compression algorithms.  This will cause all
-	      new data that is written to the dataset to be
-	      compressed.  Beyond a reduction in space used, read and
-	      write throughput often increases because fewer blocks
-	      are read or written.
-
-	      <itemizedlist>
+	    <entry>每個資料集都有壓縮 (Compression) 屬性，預設是關閉的，這個屬性可以設定使用以下幾個壓縮演算法的其中一個來壓縮寫入到資料集的新資料。壓縮除了減少空間使用量外，常也會增加讀取與寫入的吞吐量，因為會減少讀取與寫入的資料區塊。 <itemizedlist>
 		<listitem xml:id="zfs-term-compression-lz4">
-		  <para xml:lang="en"><emphasis><acronym>LZ4</acronym></emphasis> -
-		    Added in <acronym>ZFS</acronym> pool version
-		    5000 (feature flags), <acronym>LZ4</acronym> is
-		    now the recommended compression algorithm.
-		    <acronym>LZ4</acronym> compresses approximately
-		    50% faster than <acronym>LZJB</acronym> when
-		    operating on compressible data, and is over three
-		    times faster when operating on uncompressible
-		    data.  <acronym>LZ4</acronym> also decompresses
-		    approximately 80% faster than
-		    <acronym>LZJB</acronym>.  On modern
-		    <acronym>CPU</acronym>s, <acronym>LZ4</acronym>
-		    can often compress at over 500 MB/s, and
-		    decompress at over 1.5 GB/s (per single CPU
-		    core).</para>
+		  <para><emphasis><acronym>LZ4</acronym></emphasis> - <acronym>ZFS</acronym> 儲存池版本 5000 (功能旗標) 後所增加，<acronym>LZ4</acronym> 現在是建議的壓縮演算法，在處理可壓縮的資料時 <acronym>LZ4</acronym> 壓縮比 <acronym>LZJB</acronym> 快將近 50%，在處理不可壓縮的資料時快將近三倍，<acronym>LZ4</acronym> 解壓縮也比 <acronym>LZJB</acronym> 將近 80%。在現代的 <acronym>CPU</acronym> 上，<acronym>LZ4</acronym> 經常平均可用 500 MB/s 的速度壓縮，而解壓縮可到達 1.5 GB/s (每個 CPU 核心)。</para>
 
 		  <note>
-		    <para xml:lang="en"><acronym>LZ4</acronym> compression is
-		      only available after FreeBSD 9.2.</para>
+		    <para><acronym>LZ4</acronym> 壓縮只在 FreeBSD 9.2 之後可使用。</para>
 		  </note>
 		</listitem>
 
 		<listitem xml:id="zfs-term-compression-lzjb">
-		  <para xml:lang="en"><emphasis><acronym>LZJB</acronym></emphasis> -
-		    The default compression algorithm.  Created by
-		    Jeff Bonwick (one of the original creators of
-		    <acronym>ZFS</acronym>).  <acronym>LZJB</acronym>
-		    offers good compression with less
-		    <acronym>CPU</acronym> overhead compared to
-		    <acronym>GZIP</acronym>.  In the future, the
-		    default compression algorithm will likely change
-		    to <acronym>LZ4</acronym>.</para>
+		  <para><emphasis><acronym>LZJB</acronym></emphasis> - 預設的壓縮演算法。由 Jeff Bonwick 所開發 (<acronym>ZFS</acronym> 的創始人之一)。<acronym>LZJB</acronym>與 <acronym>GZIP</acronym> 相比，可以較低的 <acronym>CPU</acronym> 提供較佳的壓縮功能。在未來預設的壓縮演算法將會更換為 <acronym>LZ4</acronym>。</para>
 		</listitem>
 
 		<listitem xml:id="zfs-term-compression-gzip">
-		  <para xml:lang="en"><emphasis><acronym>GZIP</acronym></emphasis> -
-		    A popular stream compression algorithm available
-		    in <acronym>ZFS</acronym>.  One of the main
-		    advantages of using <acronym>GZIP</acronym> is its
-		    configurable level of compression.  When setting
-		    the <literal>compress</literal> property, the
-		    administrator can choose the level of compression,
-		    ranging from <literal>gzip1</literal>, the lowest
-		    level of compression, to <literal>gzip9</literal>,
-		    the highest level of compression.  This gives the
-		    administrator control over how much
-		    <acronym>CPU</acronym> time to trade for saved
-		    disk space.</para>
+		  <para><emphasis><acronym>GZIP</acronym></emphasis> - 在 <acronym>ZFS</acronym> 可用的熱門串流壓縮演算法。使用 <acronym>GZIP</acronym> 主要的優點之一便是可設定壓縮層級。當設定 <literal>compress</literal> 屬性，管理者可以選擇壓縮層級範圍從最低的壓縮層級 <literal>gzip1</literal> 到最高的壓縮層級 <literal>gzip9</literal>。這讓管理者可以控制要使用多少 <acronym>CPU</acronym> 來節省磁碟空間。</para>
 		</listitem>
 
 		<listitem xml:id="zfs-term-compression-zle">
-		  <para xml:lang="en"><emphasis><acronym>ZLE</acronym></emphasis> -
-		    Zero Length Encoding is a special compression
-		    algorithm that only compresses continuous runs of
-		    zeros.  This compression algorithm is only useful
-		    when the dataset contains large blocks of
-		    zeros.</para>
+		  <para><emphasis><acronym>ZLE</acronym></emphasis> - 零長度編號是一個特殊的壓縮演算法，它只會壓縮連續的零。這種壓縮演算法只在資料集中含有大量為零的資料區塊時有用。</para>
 		</listitem>
 	      </itemizedlist></entry>
 	  </row>
 
 	  <row>
-	    <entry xml:id="zfs-term-copies">複本數 (Copies)</entry>
+	    <entry xml:id="zfs-term-copies">備份數 (Copies)</entry>
 
-	    <entry xml:lang="en">When set to a value greater than 1, the
-	      <literal>copies</literal> property instructs
-	      <acronym>ZFS</acronym> to maintain multiple copies of
-	      each block in the
-	      <link linkend="zfs-term-filesystem">File System</link>
-	      or
-	      <link linkend="zfs-term-volume">Volume</link>.  Setting
-	      this property on important datasets provides additional
-	      redundancy from which to recover a block that does not
-	      match its checksum.  In pools without redundancy, the
-	      copies feature is the only form of redundancy.  The
-	      copies feature can recover from a single bad sector or
-	      other forms of minor corruption, but it does not protect
-	      the pool from the loss of an entire disk.</entry>
+	    <entry>當設定大於 1 的數值時，<literal>copies</literal> 屬性會指示 <acronym>ZFS</acronym> 備份每個在檔案系統 (<link linkend="zfs-term-filesystem">File System</link>) 或磁碟區 (<link linkend="zfs-term-volume">Volume</link>) 的資料區塊數份。在重要的資料集上設定這個屬性可以做額外的備援以在資料校驗碼不相符時可做復原。在沒有做備援的儲存池上，備份功能提供只是一種資料的備援方式，備份功能可以復原單一壞軌或其他情況的次要損壞，但無法復原儲存池中整個磁碟損壞所損失的資料。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-deduplication">去重複 (Deduplication)</entry>
 
-	    <entry xml:lang="en">Checksums make it possible to detect duplicate
-	      blocks of data as they are written.  With deduplication,
-	      the reference count of an existing, identical block is
-	      increased, saving storage space.  To detect duplicate
-	      blocks, a deduplication table (<acronym>DDT</acronym>)
-	      is kept in memory.  The table contains a list of unique
-	      checksums, the location of those blocks, and a reference
-	      count.  When new data is written, the checksum is
-	      calculated and compared to the list.  If a match is
-	      found, the existing block is used.  The
-	      <acronym>SHA256</acronym> checksum algorithm is used
-	      with deduplication to provide a secure cryptographic
-	      hash.  Deduplication is tunable.  If
-	      <literal>dedup</literal> is <literal>on</literal>, then
-	      a matching checksum is assumed to mean that the data is
-	      identical.  If <literal>dedup</literal> is set to
-	      <literal>verify</literal>, then the data in the two
-	      blocks will be checked byte-for-byte to ensure it is
-	      actually identical.  If the data is not identical, the
-	      hash collision will be noted and the two blocks will be
-	      stored separately.  Because <acronym>DDT</acronym> must
-	      store the hash of each unique block, it consumes a very
-	      large amount of memory.  A general rule of thumb is
-	      5-6 GB of ram per 1 TB of deduplicated data).
-	      In situations where it is not practical to have enough
-	      <acronym>RAM</acronym> to keep the entire
-	      <acronym>DDT</acronym> in memory, performance will
-	      suffer greatly as the <acronym>DDT</acronym> must be
-	      read from disk before each new block is written.
-	      Deduplication can use <acronym>L2ARC</acronym> to store
-	      the <acronym>DDT</acronym>, providing a middle ground
-	      between fast system memory and slower disks.  Consider
-	      using compression instead, which often provides nearly
-	      as much space savings without the additional memory
-	      requirement.</entry>
+	    <entry>校驗碼讓在寫入時可以偵測重複資料區塊，使用去重複，可以增加既有、完全相同的資料區塊參考數來節省儲存空間。要偵測重複的資料區塊需要在記憶體中儲存去重複資料表 (Deduplication table, <acronym>DDT</acronym>)，這個資料表中會有唯一的校驗碼清單、這些資料區塊的所在位置以及參考數。當寫入新資料時，便會計算校驗碼然後比對清單中是否有符合的既有資料區塊已在清單。去重複使用了 <acronym>SHA256</acronym> 校驗碼演算法來提供一個安全的加密雜湊，去重複功能是可以調校的，若 <literal>dedup</literal> 設為 <literal>on</literal> 只要符合校驗碼便會認為資料完全相同，若 <literal>dedup</literal> 設為 <literal>verify</literal> 則會一個一個位元檢查兩個資料區塊的資料來確保資料真的完全相同，若資料不同便會註記與雜湊衝突並會分別儲存兩個資料區塊。由於 <acronym>DDT</acronym> 須要儲存每個唯一資料區塊的雜湊，所以會消耗大量的記憶體，一般的經驗法則是每 1 TB 的去重複資料需要使用 5-6 GB 的記憶體。由於要有足夠的 <acronym>RAM</acronym> 來儲存整個 <acronym>DDT</acronym> 在實務上並不實際，導致在每個新資料區塊寫入前需要從磁碟來讀取 <acronym>DDT</acronym> 會對效能有很大的影響，去重複功能可以使用 <acronym>L2ARC</acronym> 儲存 <acronym>DDT</acronym> 以在快速的系統記憶體及較慢的磁碟之間取得一個平衡點。也可以考慮使用壓縮功能來取代此功能，因為壓縮也能節省相近的空間使用量而不需要大量額外的記憶體。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-scrub">清潔 (Scrub)</entry>
 
-	    <entry xml:lang="en">Instead of a consistency check like <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>,
-	      <acronym>ZFS</acronym> has <command>scrub</command>.
-	      <command>scrub</command> reads all data blocks stored on
-	      the pool and verifies their checksums against the known
-	      good checksums stored in the metadata.  A periodic check
-	      of all the data stored on the pool ensures the recovery
-	      of any corrupted blocks before they are needed.  A scrub
-	      is not required after an unclean shutdown, but is
-	      recommended at least once every three months.  The
-	      checksum of each block is verified as blocks are read
-	      during normal use, but a scrub makes certain that even
-	      infrequently used blocks are checked for silent
-	      corruption.  Data security is improved, especially in
-	      archival storage situations.  The relative priority of
-	      <command>scrub</command> can be adjusted with <link linkend="zfs-advanced-tuning-scrub_delay"><varname>vfs.zfs.scrub_delay</varname></link>
-	      to prevent the scrub from degrading the performance of
-	      other workloads on the pool.</entry>
+	    <entry><acronym>ZFS</acronym>  有 <command>scrub</command> 來替代 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來做一致性的檢查。<command>scrub</command> 會讀取所有儲存在儲存池中的資料區塊並且根據儲存在 Metadata 中已知良好的校驗碼來檢驗這些資料區塊的校驗碼，定期檢查儲存池中儲存的所有資料可以確保實際使用這些資料前已將所有損壞的資料區塊復原。在不正常的關閉之後並不需要做清潔動作，但建議每三個月至少執行一次。在正常使用讀取時便會檢查每個資料區塊的校驗碼，但清潔動作可以確保那些不常用的資料也會被檢查以避免隱藏的損壞，如此便能增進資料的安全性，特別是對用來保存資料的儲存裝置。<command>scrub</command> 可以使用 <link linkend="zfs-advanced-tuning-scrub_delay"><varname>vfs.zfs.scrub_delay</varname></link> 調整相對優先權來避免清潔動作降低儲存池上其他工作的效率。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-quota">資料集配額 (Dataset Quota)</entry>
 
-	    <entry xml:lang="en"><acronym>ZFS</acronym> provides very fast and
-	      accurate dataset, user, and group space accounting in
-	      addition to quotas and space reservations.  This gives
-	      the administrator fine grained control over how space is
-	      allocated and allows space to be reserved for critical
-	      file systems.
-
-	      <para xml:lang="en"><acronym>ZFS</acronym> supports different types of
+	    <entry>除了配額及空間保留外，<acronym>ZFS</acronym> 提供非常快速且準確的資料集、使用者及群組空間的計算功能，這可讓管理者調整空間配置的方式且可為重要的檔案系統保留空間。 <para><acronym>ZFS</acronym> supports different types of
 		quotas: the dataset quota, the <link linkend="zfs-term-refquota">reference
 		  quota (<acronym>refquota</acronym>)</link>, the
 		<link linkend="zfs-term-userquota">user
 		  quota</link>, and the
 		<link linkend="zfs-term-groupquota">group
-		  quota</link>.</para>
-
-	      <para xml:lang="en">Quotas limit the amount of space that a dataset
-		and all of its descendants, including snapshots of the
-		dataset, child datasets, and the snapshots of those
-		datasets, can consume.</para>
-
-	      <note>
-		<para xml:lang="en">Quotas cannot be set on volumes, as the
-		  <literal>volsize</literal> property acts as an
-		  implicit quota.</para>
+		  quota</link>.</para> <para>配額會限制資料集及後裔包含資料集的快照、子資料集及子資料集的快照能使用的空間量。</para> <note>
+		<para>磁碟區上無法設定配額，因為 <literal>volsize</literal> 屬性已經被用來做內定的配額。</para>
 	      </note></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-refquota">參考配額 (Reference Quota)</entry>
 
-	    <entry xml:lang="en">A reference quota limits the amount of space a
-	      dataset can consume by enforcing a hard limit.  However,
-	      this hard limit includes only space that the dataset
-	      references and does not include space used by
-	      descendants, such as file systems or snapshots.</entry>
+	    <entry>參考配額可以設定一個硬性限制 (Hard limit) 來限制資料集能使用的空間量，而這個硬性限制只包含了資料集參考的空間，並不含其後裔所使用的空間，如：檔案系統或快照。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-userquota">使用者配額 (User Quota)</entry>
 
-	    <entry xml:lang="en">User quotas are useful to limit the amount of space
-	      that can be used by the specified user.</entry>
+	    <entry>使用者配額在用來限制特定使用者能使用的空間量時非常有用。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-groupquota">群組配額 (Group Quota)</entry>
 
-	    <entry xml:lang="en">The group quota limits the amount of space that a
-	      specified group can consume.</entry>
+	    <entry>群組配額可以限制特定群組能使用的空間量。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-reservation">資料集保留空間 (Dataset Reservation)</entry>
 
-	    <entry xml:lang="en">The <literal>reservation</literal> property makes
-	      it possible to guarantee a minimum amount of space for a
-	      specific dataset and its descendants.  If a 10 GB
-	      reservation is set on
-	      <filename>storage/home/bob</filename>, and another
-	      dataset tries to use all of the free space, at least
-	      10 GB of space is reserved for this dataset.  If a
-	      snapshot is taken of
-	      <filename>storage/home/bob</filename>, the space used by
-	      that snapshot is counted against the reservation.  The
-	      <link linkend="zfs-term-refreservation"><literal>refreservation</literal></link>
-	      property works in a similar way, but it
-	      <emphasis>excludes</emphasis> descendants like
-	      snapshots.
-
-	      <para xml:lang="en">Reservations of any sort are useful in many
-		situations, such as planning and testing the
-		suitability of disk space allocation in a new system,
-		or ensuring that enough space is available on file
-		systems for audio logs or system recovery procedures
-		and files.</para>
-	    </entry>
+	    <entry><literal>reservation</literal> 屬性可以確保對特定資料集及其後裔最小可用的空間量，若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。若要製作 <filename>storage/home/bob</filename> 的快照，該快照所使用的空間也會被列入保留空間計算。 <link linkend="zfs-term-refreservation"><literal>refreservation</literal></link> 屬性也以類似的方式運作，但是他 <emphasis>不包含</emphasis> 後裔，例如：快照。 <para>不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。</para></entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-refreservation">參考保留空間 (Reference Reservation)</entry>
 
-	    <entry xml:lang="en">The <literal>refreservation</literal> property
-	      makes it possible to guarantee a minimum amount of
-	      space for the use of a specific dataset
-	      <emphasis>excluding</emphasis> its descendants.  This
-	      means that if a 10 GB reservation is set on
-	      <filename>storage/home/bob</filename>, and another
-	      dataset tries to use all of the free space, at least
-	      10 GB of space is reserved for this dataset.  In
-	      contrast to a regular
-	      <link linkend="zfs-term-reservation">reservation</link>,
-	      space used by snapshots and descendant datasets is not
-	      counted against the reservation.  For example, if a
-	      snapshot is taken of
-	      <filename>storage/home/bob</filename>, enough disk space
-	      must exist outside of the
-	      <literal>refreservation</literal> amount for the
-	      operation to succeed.  Descendants of the main data set
-	      are not counted in the <literal>refreservation</literal>
-	      amount and so do not encroach on the space set.</entry>
+	    <entry><literal>refreservation</literal> 屬性可以確保對特定資料集 <emphasis>不包含</emphasis> 其後裔最小可用的空間，這代表若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。於正常 <link linkend="zfs-term-reservation">reservation</link> 不同的是，由快照及後裔資料集所使用的空間並不會列入保留空間計算。例如，若要製作一個 <filename>storage/home/bob</filename> 的快照，在 <literal>refreservation</literal> 空間之外必須要有足夠的空間才能成功完成這項操作，主資料集的後裔並不會列入 <literal>refreservation</literal> 空間額計算，所以也不會佔用保留空間。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-resilver">修復 (Resilver)</entry>
 
-	    <entry xml:lang="en">When a disk fails and is replaced, the new disk
-	      must be filled with the data that was lost.  The process
-	      of using the parity information distributed across the
-	      remaining drives to calculate and write the missing data
-	      to the new drive is called
-	      <emphasis>resilvering</emphasis>.</entry>
+	    <entry>當有磁碟故障且被更換後，新的磁碟必須回存先前所遺失的資料，會使用分散在其他磁碟上的奇偶校驗資訊來計算並寫入遺失的資料到新的磁碟機的這個程序稱作 <emphasis>修復 (Resilvering)</emphasis>。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-online">上線 (Online)</entry>
 
-	    <entry xml:lang="en">A pool or vdev in the <literal>Online</literal>
-	      state has all of its member devices connected and fully
-	      operational.  Individual devices in the
-	      <literal>Online</literal> state are functioning
-	      normally.</entry>
+	    <entry>一個儲存池或 vdev 處於線上 (<literal>Online</literal>) 狀態時代表所有該裝置的成員均已連結且正常運作。個別裝置處於線上 (<literal>Online</literal>) 狀態時代表功能正常。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-offline">離線 (Offline)</entry>
 
-	    <entry xml:lang="en">Individual devices can be put in an
-	      <literal>Offline</literal> state by the administrator if
-	      there is sufficient redundancy to avoid putting the pool
-	      or vdev into a
-	      <link linkend="zfs-term-faulted">Faulted</link> state.
-	      An administrator may choose to offline a disk in
-	      preparation for replacing it, or to make it easier to
-	      identify.</entry>
+	    <entry>若有足夠的備援可避免儲存池或 vdev  進入故障 (<link linkend="zfs-term-faulted">Faulted</link>) 狀態，個別裝置若可由管理者設為離線 (<literal>Offline</literal>) 狀態，管理者可以選擇要設定那一個磁碟為離線來準備更換或是讓其更容易辨識。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-degraded">降級 (Degraded)</entry>
 
-	    <entry xml:lang="en">A pool or vdev in the <literal>Degraded</literal>
-	      state has one or more disks that have been disconnected
-	      or have failed.  The pool is still usable, but if
-	      additional devices fail, the pool could become
-	      unrecoverable.  Reconnecting the missing devices or
-	      replacing the failed disks will return the pool to an
-	      <link linkend="zfs-term-online">Online</link> state
-	      after the reconnected or new device has completed the
-	      <link linkend="zfs-term-resilver">Resilver</link>
-	      process.</entry>
+	    <entry>一個儲存池或 vdev 處於降級 (<literal>Degraded</literal>) 狀態代表其有一個或多個磁碟已斷線或故障，此時儲存池仍可以使用，但只要再有其他的裝置故障，儲存池會無法復原。重新連線缺少的裝置或更換故障的磁碟，並在新裝置完成修復 (<link linkend="zfs-term-resilver">Resilver</link>) 程序可讓儲存池返回線上 (<link linkend="zfs-term-online">Online</link>) 狀態。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-faulted">故障 (Faulted)</entry>
 
-	    <entry xml:lang="en">A pool or vdev in the <literal>Faulted</literal>
-	      state is no longer operational.  The data on it can no
-	      longer be accessed.  A pool or vdev enters the
-	      <literal>Faulted</literal> state when the number of
-	      missing or failed devices exceeds the level of
-	      redundancy in the vdev.  If missing devices can be
-	      reconnected, the pool will return to a
-	      <link linkend="zfs-term-online">Online</link> state.  If
-	      there is insufficient redundancy to compensate for the
-	      number of failed disks, then the contents of the pool
-	      are lost and must be restored from backups.</entry>
+	    <entry>一個儲存池或 vdev 處於故障 (<literal>Faulted</literal>) 狀態代表無法運作，會無法存取在該裝置上的資料。當在 vdev 中缺少或故障的裝置數超過備援的層級，儲存池或 vdev 會進入故障 (<literal>Faulted</literal>) 狀態。若缺少的裝置可以重新連結上，儲存池便會返回線上 (<link linkend="zfs-term-online">Online</link>) 狀態。若沒有足夠的備援可補償故障的磁碟數量便會遺失儲存池中的內容且只能從備份還原。</entry>
 	  </row>
 	</tbody>
       </tgroup>

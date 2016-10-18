@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2016-10-11 17:55+0800\n"
-"PO-Revision-Date: 2016-10-11 19:10+0800\n"
+"PO-Revision-Date: 2016-10-17 19:31+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -2216,11 +2216,10 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2971
-#, fuzzy
 msgid ""
 "A FreeBSD installation requires a minimum of 96 MB of <acronym>RAM</acronym> and 1.5 GB of free hard drive space. However, such small amounts of memory and disk space are really only suitable for custom applications like embedded appliances. General-purpose desktop systems need more resources. 2-4 GB RAM and at least 8 GB hard drive "
 "space is a good starting point."
-msgstr "FreeBSD 安裝程序需要至少 64 MB 的 <acronym>RAM</acronym> 以及 1.5 GB 的硬碟空間。然而，這樣少的記憶體及磁碟空間只適合在客製的應用上，如嵌入式設備，一般用途的桌面系統會需要更多的資源，2-4 GB RAM 與至少 8 GB 的硬碟空間是不錯的起點。"
+msgstr "FreeBSD 安裝程序需要至少 96 MB 的 <acronym>RAM</acronym> 以及 1.5 GB 的硬碟空間。然而，如此少的記憶體及磁碟空間只適合在客製的應用上，如嵌入式設備。一般用途的桌面系統會需要更多的資源，2-4 GB RAM 與至少 8 GB 的硬碟空間是不錯的起點。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2979
@@ -2536,13 +2535,13 @@ msgid ""
 "After downloading the image file, download <filename>CHECKSUM.SHA256</filename> from the same directory. Calculate a <firstterm>checksum</firstterm> for the image file. FreeBSD provides <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> for this, used as <command>sha256 "
 "<replaceable>imagefilename</replaceable></command>. Other operating systems have similar programs."
 msgstr ""
-"映像檔下載完成之後，下載同一個目錄之中的 <filename>CHECKSUM.SHA256</filename>。FreeBSD 提供 <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可用來計算映像檔的 <firstterm>校驗和 (Checksum)</firstterm>，使用方式為 <command>sha256 <replaceable>imagefilename</replaceable></command>，其他作業系統也"
+"映像檔下載完成之後，下載同一個目錄之中的 <filename>CHECKSUM.SHA256</filename>。FreeBSD 提供 <citerefentry><refentrytitle>sha256</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可用來計算映像檔的 <firstterm>校驗碼 (Checksum)</firstterm>，使用方式為 <command>sha256 <replaceable>imagefilename</replaceable></command>，其他作業系統也"
 "會有類似的程式。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:3312
 msgid "Compare the calculated checksum with the one shown in <filename>CHECKSUM.SHA256</filename>. The checksums must match exactly. If the checksums do not match, the image file is corrupt and must be downloaded again."
-msgstr "比對計算後的 checksum 與 <filename>CHECKSUM.SHA256</filename> 檔案中的值，checksum 應該要完全相符，若 checksum 不相符，則代表該映像檔是損壞的，必須再下載一次。"
+msgstr "比對計算後的校驗碼與 <filename>CHECKSUM.SHA256</filename> 檔案中的值，校驗碼應該要完全相符，若校驗碼不相符，則代表該映像檔是損壞的，必須再下載一次。"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:3318
@@ -9825,7 +9824,7 @@ msgstr "<filename>Makefile</filename>：內含用來說明應用程式要如何�
 #. (itstool) path: listitem/para
 #: book.translate.xml:9689
 msgid "<filename>distinfo</filename>: contains the names and checksums of the files that must be downloaded to build the port."
-msgstr "<filename>distinfo</filename>：內含編譯 Port 必須下載的檔案名稱以及校驗碼 (Checksums)。"
+msgstr "<filename>distinfo</filename>：內含編譯 Port 必須下載的檔案名稱以及校驗碼 (Checksum)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9695
@@ -37799,7 +37798,7 @@ msgstr "<acronym>ZFS</acronym> 的設計目標主要有三個："
 msgid ""
 "Data integrity: All data includes a <link linkend=\"zfs-term-checksum\">checksum</link> of the data. When data is written, the checksum is calculated and written along with it. When that data is later read back, the checksum is calculated again. If the checksums do not match, a data error has been detected. <acronym>ZFS</acronym> will "
 "attempt to automatically correct errors when data redundancy is available."
-msgstr "資料完整性：所有資料都會有一個資料的 <link linkend=\"zfs-term-checksum\">checksum</link>，資被寫入時會計算 checksum 然後一併寫入，往後讀取資料時又會再計算一次 checksum，若 checksum 與當初寫入時不相符，便可偵測到資料錯誤，此時若有可用的資料備援 (Data redundancy)，<acronym>ZFS</acronym> 會嘗試自動修正錯誤。"
+msgstr "資料完整性：所有資料都會有一個資料的校驗碼 (<link linkend=\"zfs-term-checksum\">checksum</link>)，資被寫入時會計算校驗碼然後一併寫入，往後讀取資料時又會再計算一次校驗碼，若校驗碼與當初寫入時不相符，便可偵測到資料錯誤，此時若有可用的資料備援 (Data redundancy)，<acronym>ZFS</acronym> 會嘗試自動修正錯誤。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:37188
@@ -38012,7 +38011,7 @@ msgstr ""
 msgid ""
 "After creation, <acronym>ZFS</acronym> datasets can be used like any file systems. However, many other features are available which can be set on a per-dataset basis. In the example below, a new file system called <literal>data</literal> is created. Important files will be stored here, so it is configured to keep two copies of each "
 "data block:"
-msgstr "在建立之後，<acronym>ZFS</acronym> 的資料集可如同其他檔案系統一般使用，且有許多額外功能可在每個資料集上設定。例如，建立一個新的檔案系統 <literal>data</literal>，此處預計存放重要的資料，所以會設定每個資料區 (Data block) 要保留兩份複本："
+msgstr "在建立之後，<acronym>ZFS</acronym> 的資料集可如同其他檔案系統一般使用，且有許多額外功能可在每個資料集上設定。例如，建立一個新的檔案系統 <literal>data</literal>，此處預計存放重要的資料，所以會設定每個資料區 (Data block) 要保留兩份備份："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:37355
@@ -38106,7 +38105,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:37419
 msgid "Compression and keeping extra copies of directories and files can be enabled:"
-msgstr "可以設定開啟壓縮及保留目錄及檔案額外複本的功能："
+msgstr "可以設定開啟壓縮及保留目錄及檔案額外備份的功能："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:37422
@@ -38239,7 +38238,7 @@ msgstr "復原 <acronym>RAID-Z</acronym>"
 #. (itstool) path: sect2/para
 #: book.translate.xml:37504
 msgid "Every software <acronym>RAID</acronym> has a method of monitoring its <literal>state</literal>. The status of <acronym>RAID-Z</acronym> devices may be viewed with this command:"
-msgstr "每個軟體 <acronym>RAID</acronym> 都有監控其 <literal>狀態</literal> 的方式，<acronym>RAID-Z</acronym> 裝置的狀態可以使用這個指令來查看："
+msgstr "每個軟體 <acronym>RAID</acronym> 都有監控其狀態 (<literal>state</literal>) 的方式，<acronym>RAID-Z</acronym> 裝置的狀態可以使用這個指令來查看："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:37509
@@ -38347,17 +38346,17 @@ msgstr "資料檢驗"
 #. (itstool) path: sect2/para
 #: book.translate.xml:37576
 msgid "<acronym>ZFS</acronym> uses checksums to verify the integrity of stored data. These are enabled automatically upon creation of file systems."
-msgstr "<acronym>ZFS</acronym> 使用 Checksum 來檢驗資料的完整性 (Integrity)，在建立檔案系統時便會自動開啟。"
+msgstr "<acronym>ZFS</acronym> 使用校驗碼 (Checksum) 來檢驗資料的完整性 (Integrity)，在建立檔案系統時便會自動開啟。"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:37581
 msgid "Checksums can be disabled, but it is <emphasis>not</emphasis> recommended! Checksums take very little storage space and provide data integrity. Many <acronym>ZFS</acronym> features will not work properly with checksums disabled. There is no noticeable performance gain from disabling these checksums."
-msgstr "Checksum 可以關閉，但並<emphasis>不</emphasis>建議！Checksum 只會使用非常少的儲存空間來確保資料的完整性。Checksum 若關閉會使許多 <acronym>ZFS</acronym> 功能無法正常運作，關閉 Checksum 功能並不會明顯的改善效能。"
+msgstr "校驗碼 (Checksum) 可以關閉，但並<emphasis>不</emphasis>建議！校驗碼只會使用非常少的儲存空間來確保資料的完整性。校驗碼若關閉會使許多 <acronym>ZFS</acronym> 功能無法正常運作，關閉校驗碼功能並不會明顯的改善效能。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:37589
 msgid "Checksum verification is known as <emphasis>scrubbing</emphasis>. Verify the data integrity of the <literal>storage</literal> pool with this command:"
-msgstr "Checksum 檢驗這個動作即所謂的<emphasis>清潔 (Scrub)</emphasis>，可以使用以下指令來檢驗 <literal>storage</literal> 儲存池的資料完整性："
+msgstr "檢驗校驗碼這個動作即所謂的<emphasis>清潔 (Scrub)</emphasis>，可以使用以下指令來檢驗 <literal>storage</literal> 儲存池的資料完整性："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:37593
@@ -38544,7 +38543,7 @@ msgid ""
 "<acronym>RAID-Z</acronym>. Starting with a pool consisting of a single disk vdev, <command>zpool attach</command> can be used to add an additional disk to the vdev, creating a mirror. <command>zpool attach</command> can also be used to add additional disks to a mirror group, increasing redundancy and read performance. If the disks "
 "being used for the pool are partitioned, replicate the layout of the first disk on to the second, <command>gpart backup</command> and <command>gpart restore</command> can be used to make this process easier."
 msgstr ""
-"由單一磁碟所建立的儲存池缺乏備援 (Redundancy) 功能，可以偵測到資料的損壞但無法修復，因為資料沒有其他複本可用。複本 (<link linkend=\"zfs-term-copies\">copies</link>) 屬性可以讓您從較小的故障中復原，如磁碟壞軌 (Bad sector)，但無法提供與鏡像或 <acronym>RAID-Z</acronym> 同樣層級的保護。由單一磁碟所建立的儲存池可以使用 <command>zpool "
+"由單一磁碟所建立的儲存池缺乏備援 (Redundancy) 功能，可以偵測到資料的損壞但無法修復，因為資料沒有其他備份可用。備份數 (<link linkend=\"zfs-term-copies\">Copies</link>) 屬性可以讓您從較小的故障中復原，如磁碟壞軌 (Bad sector)，但無法提供與鏡像或 <acronym>RAID-Z</acronym> 同樣層級的保護。由單一磁碟所建立的儲存池可以使用 <command>zpool "
 "attach</command> 來加入額外的磁碟到 vdev，來建立鏡像。<command>zpool attach</command> 也可用來加入額外的磁碟到鏡像群組，來增加備援與讀取效率。若使用的磁碟已有分割區，可以複製該磁碟的分割區配置到另一個，使用 <command>gpart backup</command> 與 <command>gpart restore</command> 可讓這件事變的很簡單。"
 
 #. (itstool) path: sect2/para
@@ -38733,7 +38732,7 @@ msgstr "檢查儲存池狀態"
 msgid ""
 "Pool status is important. If a drive goes offline or a read, write, or checksum error is detected, the corresponding error count increases. The <command>status</command> output shows the configuration and status of each device in the pool and the status of the entire pool. Actions that need to be taken and details about the last <link "
 "linkend=\"zfs-zpool-scrub\"><command>scrub</command></link> are also shown."
-msgstr "儲存池的狀態很重要，若有磁碟機離線或偵測到讀取、寫入或 Checksum 錯誤，對應的錯誤計數便會增加。<command>status</command> 會顯示儲存池中每一個磁碟機的設定與狀態及整個儲存池的狀態。需要處置的方式與有關最近清潔 (<link linkend=\"zfs-zpool-scrub\"><command>Scrub</command></link>) 的詳細資訊也會一併顯示。"
+msgstr "儲存池的狀態很重要，若有磁碟機離線或偵測到讀取、寫入或校驗碼 (Checksum) 錯誤，對應的錯誤計數便會增加。<command>status</command> 會顯示儲存池中每一個磁碟機的設定與狀態及整個儲存池的狀態。需要處置的方式與有關最近清潔 (<link linkend=\"zfs-zpool-scrub\"><command>Scrub</command></link>) 的詳細資訊也會一併顯示。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:37945
@@ -38768,7 +38767,7 @@ msgstr "清除錯誤"
 msgid ""
 "When an error is detected, the read, write, or checksum counts are incremented. The error message can be cleared and the counts reset with <command>zpool clear <replaceable>mypool</replaceable></command>. Clearing the error state can be important for automated scripts that alert the administrator when the pool encounters an error. "
 "Further errors may not be reported if the old errors are not cleared."
-msgstr "當偵測到錯誤發生，讀取、寫入或 Checksum 的計數變會增加。使用 <command>zpool clear <replaceable>mypool</replaceable></command> 可以清除錯誤訊息及重置計數。清空錯誤狀態對當儲存池發生錯誤要使用自動化 Script 通知的管理者來說會很重要，因在舊的錯誤尚未清除前，可能便不會回報後續的錯誤。"
+msgstr "當偵測到錯誤發生，讀取、寫入或校驗碼 (Checksum) 的計數便會增加。使用 <command>zpool clear <replaceable>mypool</replaceable></command> 可以清除錯誤訊息及重置計數。清空錯誤狀態對當儲存池發生錯誤要使用自動化 Script 通知的管理者來說會很重要，因在舊的錯誤尚未清除前，可能便不會回報後續的錯誤。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:37978
@@ -38999,9 +38998,8 @@ msgid ""
 "time, and in severe cases, an administrator has to manually decide which repair operation must be performed. When <acronym>ZFS</acronym> detects a data block with a checksum that does not match, it tries to read the data from the mirror disk. If that disk can provide the correct data, it will not only give that data to the application "
 "requesting it, but also correct the wrong data on the disk that had the bad checksum. This happens without any interaction from a system administrator during normal pool operation."
 msgstr ""
-"Checksum 會隨資料區塊一併儲存，這使得檔案系統可以做到<emphasis>自我修復</emphasis>。這個功能可以在 Checksum 與儲存池中的另一個裝置不同時自動修復資料。舉例來說，有兩個磁碟做鏡像 (Mirror)，其中一個磁碟機開始失常並無法正常儲存資料，甚至是資料放在長期封存的儲存裝置上，已經很久沒有被存取。傳統的檔案系統需要執行演算法來檢查並修復資料如 "
-"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>，這些指令耗費時間，且在嚴重時需要管理者手動決定要做那一種修復操作。當 <acronym>ZFS</acronym> 偵測到資料區塊的 Checksum 不對時，它除了把資料交給需要的應用程式外，也會修正在磁碟上錯誤的資料。這件事不需要與系統管理者作任何互動便會在一般的儲存池操作時完"
-"成。"
+"校驗碼 (Checksum) 會隨資料區塊一併儲存，這使得檔案系統可以做到<emphasis>自我修復</emphasis>。這個功能可以在校驗碼與儲存池中的另一個裝置不同時自動修復資料。舉例來說，有兩個磁碟做鏡像 (Mirror)，其中一個磁碟機開始失常並無法正常儲存資料，甚至是資料放在長期封存的儲存裝置上，已經很久沒有被存取。傳統的檔案系統需要執行演算法來檢查並修復資料如 "
+"<citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry>，這些指令耗費時間，且在嚴重時需要管理者手動決定要做那一種修復操作。當 <acronym>ZFS</acronym> 偵測到資料區塊的校驗碼不對時，它除了把資料交給需要的應用程式外，也會修正在磁碟上錯誤的資料。這件事不需要與系統管理者作任何互動便會在一般的儲存池操作時完成。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38202
@@ -39034,7 +39032,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:38224
 msgid "Some important data that to be protected from data errors using the self-healing feature is copied to the pool. A checksum of the pool is created for later comparison."
-msgstr "將部份需要使用自我修復功能來保護的重要資料複製到該儲存池，建立一個儲存池的 Checksum 供稍後做比較時使用。"
+msgstr "將部份需要使用自我修復功能來保護的重要資料複製到該儲存池，建立一個儲存池的校驗碼供稍後做比較時使用。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:38228
@@ -39078,7 +39076,7 @@ msgstr ""
 msgid ""
 "The pool status shows that one device has experienced an error. Note that applications reading data from the pool did not receive any incorrect data. <acronym>ZFS</acronym> provided data from the <filename>ada0</filename> device with the correct checksums. The device with the wrong checksum can be found easily as the <literal>CKSUM</"
 "literal> column contains a nonzero value."
-msgstr "儲存池的狀態顯示有一個裝置發生了錯誤。注意，應用程式從儲存池讀取的資料中並沒有任何的錯誤資料，<acronym>ZFS</acronym> 會自 <filename>ada0</filename> 裝置提供有正確 Checksum 的資料。結果裡面 <literal>CKSUM</literal> 欄位含有非零值便是有錯誤 Checksum 的裝置。"
+msgstr "儲存池的狀態顯示有一個裝置發生了錯誤。注意，應用程式從儲存池讀取的資料中並沒有任何的錯誤資料，<acronym>ZFS</acronym> 會自 <filename>ada0</filename> 裝置提供有正確校驗碼的資料。結果裡面 <literal>CKSUM</literal> 欄位含有非零值便是有錯誤校驗碼的裝置。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:38269
@@ -39107,7 +39105,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:38288
 msgid "The error was detected and handled by using the redundancy present in the unaffected <filename>ada0</filename> mirror disk. A checksum comparison with the original one will reveal whether the pool is consistent again."
-msgstr "錯誤已經被偵測到並且由未被影響的 <filename>ada0</filename> 鏡像磁碟上的備援提供資料。可與原來的 Checksum 做比較來看儲存池是否已修復為一致。"
+msgstr "錯誤已經被偵測到並且由未被影響的 <filename>ada0</filename> 鏡像磁碟上的備援提供資料。可與原來的校驗碼做比較來看儲存池是否已修復為一致。"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:38293
@@ -39126,7 +39124,7 @@ msgid ""
 "consisting of a single device has no self-healing capabilities. That is also the reason why checksums are so important in <acronym>ZFS</acronym> and should not be disabled for any reason. No <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> or similar file system consistency check program is "
 "required to detect and correct this and the pool was still available during the time there was a problem. A scrub operation is now required to overwrite the corrupted data on <filename>ada1</filename>."
 msgstr ""
-"儲存池在故意竄改資料前與後的兩個 Checksum 仍相符顯示了 <acronym>ZFS</acronym> 在 Checksum 不同時偵測與自動修正錯誤的能力。注意，這只在當儲存池中有足夠的備援時才可做到，由單一裝置組成的儲存池並沒有自我修復的能力。這也是為什麼在 <acronym>ZFS</acronym> 中 Checksum 如此重要，任何原因都不該關閉。不需要 <citerefentry><refentrytitle>fsck</"
+"儲存池在故意竄改資料前與後的兩個校驗碼仍相符顯示了 <acronym>ZFS</acronym> 在校驗碼不同時偵測與自動修正錯誤的能力。注意，這只在當儲存池中有足夠的備援時才可做到，由單一裝置組成的儲存池並沒有自我修復的能力。這也是為什麼在 <acronym>ZFS</acronym> 中校驗碼如此重要，任何原因都不該關閉。不需要 <citerefentry><refentrytitle>fsck</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> 或類似的檔案系統一致性檢查程式便能夠偵測與修正問題，且儲存儲存池在發生問題時仍可正常運作。接著需要做清潔作業來覆蓋在 <filename>ada1</filename> 上的錯誤資料。"
 
 #. (itstool) path: sect2/screen
@@ -39159,7 +39157,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:38335
 msgid "The scrub operation reads data from <filename>ada0</filename> and rewrites any data with an incorrect checksum on <filename>ada1</filename>. This is indicated by the <literal>(repairing)</literal> output from <command>zpool status</command>. After the operation is complete, the pool status changes to:"
-msgstr "清潔作業會從 <filename>ada0</filename> 讀取資料並重新寫入任何在 <filename>ada1</filename> 上有錯誤 Checksum 的資料。這個操作可以由 <command>zpool status</command> 的輸出中呈現修復中 <literal>(repairing)</literal> 的項目來辨識。這個作業完成後，儲存池的狀態會更改為："
+msgstr "清潔作業會從 <filename>ada0</filename> 讀取資料並重新寫入任何在 <filename>ada1</filename> 上有錯誤校驗碼的資料。這個操作可以由 <command>zpool status</command> 的輸出中呈現修復中 <literal>(repairing)</literal> 的項目來辨識。這個作業完成後，儲存池的狀態會更改為："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:38342
@@ -39320,7 +39318,7 @@ msgstr "在升級 FreeBSD 之後或儲存池是由其他使用舊版 <acronym>ZF
 #. (itstool) path: sect2/para
 #: book.translate.xml:38476
 msgid "Upgrade a v28 pool to support <literal>Feature Flags</literal>:"
-msgstr "升級一個 v28 的儲存以支援 <literal>Feature Flags</literal>："
+msgstr "升級一個 v28 的儲存以支援功能旗標 (<literal>Feature Flags</literal>)："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:38479
@@ -39377,7 +39375,7 @@ msgstr "<acronym>ZFS</acronym> 的新功能在 <command>zpool upgrade</command> 
 #. (itstool) path: sect2/para
 #: book.translate.xml:38527
 msgid "Upgrade a pool to support additional feature flags:"
-msgstr "升級儲存池支援額外的 Feature flags："
+msgstr "升級儲存池支援額外的功能旗標 (Feature flags)："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:38529
@@ -40618,8 +40616,8 @@ msgid ""
 "Normally, the privileges of the <systemitem class=\"username\">root</systemitem> user are needed to send and receive streams. This requires logging in to the receiving system as <systemitem class=\"username\">root</systemitem>. However, logging in as <systemitem class=\"username\">root</systemitem> is disabled by default for security "
 "reasons. The <link linkend=\"zfs-zfs-allow\">ZFS Delegation</link> system can be used to allow a non-<systemitem class=\"username\">root</systemitem> user on each system to perform the respective send and receive operations."
 msgstr ""
-"正常會需要 <systemitem class=\"username\">root</systemitem> 的權限來傳送與接收串流，這需要可以 <systemitem class=\"username\">root</systemitem> 登入到接收端系統。但是，預設因安全性考慮會關閉以 <systemitem class=\"username\">root</systemitem> 登入。<link linkend=\"zfs-zfs-allow\">ZFS Delegation</link> 系統可以用來允許一個非 <systemitem "
-"class=\"username\">root</systemitem> 使用者在每個系統上執行各自的發送與接收操作。"
+"正常會需要 <systemitem class=\"username\">root</systemitem> 的權限來傳送與接收串流，這需要可以 <systemitem class=\"username\">root</systemitem> 登入到接收端系統。但是，預設因安全性考慮會關閉以 <systemitem class=\"username\">root</systemitem> 登入。ZFS 委託 (<link linkend=\"zfs-zfs-allow\">ZFS Delegation</link>) 系統可以用來允許一個非 "
+"<systemitem class=\"username\">root</systemitem> 使用者在每個系統上執行各自的發送與接收操作。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:39720
@@ -40949,8 +40947,8 @@ msgid ""
 "When enabled, <link linkend=\"zfs-term-deduplication\">deduplication</link> uses the checksum of each block to detect duplicate blocks. When a new block is a duplicate of an existing block, <acronym>ZFS</acronym> writes an additional reference to the existing data instead of the whole duplicate block. Tremendous space savings are "
 "possible if the data contains many duplicated files or repeated information. Be warned: deduplication requires an extremely large amount of memory, and most of the space savings can be had without the extra cost by enabling compression instead."
 msgstr ""
-"當開啟，去重複 (<link linkend=\"zfs-term-deduplication\">Deduplication</link>) 功能會使用每個資料區塊的 Checksum 來偵測重複的資料區塊，當新的資料區塊與現有的資料區塊重複，<acronym>ZFS</acronym> 便會寫入連接到現有資料的參考來替代寫入重複的資料區塊，這在資料中有大量重複的檔案或資訊時可以節省大量的空間，要注意的是：去重複功能需要使用大量的"
-"記憶體且大部份可節省的空間可改開啟壓縮功能來達成，而壓縮功能不需要使用額外的記憶體。"
+"當開啟，去重複 (<link linkend=\"zfs-term-deduplication\">Deduplication</link>) 功能會使用每個資料區塊的校驗碼 (Checksum) 來偵測重複的資料區塊，當新的資料區塊與現有的資料區塊重複，<acronym>ZFS</acronym> 便會寫入連接到現有資料的參考來替代寫入重複的資料區塊，這在資料中有大量重複的檔案或資訊時可以節省大量的空間，要注意的是：去重複功能需要使"
+"用大量的記憶體且大部份可節省的空間可改開啟壓縮功能來達成，而壓縮功能不需要使用額外的記憶體。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:40001
@@ -41403,7 +41401,7 @@ msgstr "儲存池 (Pool)"
 #. (itstool) path: note/para
 #: book.translate.xml:40569
 msgid "FreeBSD 9.0 and 9.1 include support for <acronym>ZFS</acronym> version 28. Later versions use <acronym>ZFS</acronym> version 5000 with feature flags. The new feature flags system allows greater cross-compatibility with other implementations of <acronym>ZFS</acronym>."
-msgstr "FreeBSD 9.0 與 9.1 支援 <acronym>ZFS</acronym> 版本 28，之後的版本使用 <acronym>ZFS</acronym> 版本 5000 與功能旗標，新的功能旗標系統有更佳的相容性，能夠與其他人實作的 <acronym>ZFS</acronym> 相容。"
+msgstr "FreeBSD 9.0 與 9.1 支援 <acronym>ZFS</acronym> 版本 28，之後的版本使用 <acronym>ZFS</acronym> 版本 5000 與功能旗標，新的功能旗標 (Feature flags) 系統有更佳的相容性，能夠與其他人實作的 <acronym>ZFS</acronym> 相容。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:40557
@@ -41427,7 +41425,7 @@ msgid ""
 "<emphasis>Disk</emphasis> - The most basic type of vdev is a standard block device. This can be an entire disk (such as <filename><replaceable>/dev/ada0</replaceable></filename> or <filename><replaceable>/dev/da0</replaceable></filename>) or a partition (<filename><replaceable>/dev/ada0p3</replaceable></filename>). On FreeBSD, there is "
 "no performance penalty for using a partition rather than the entire disk. This differs from recommendations made by the Solaris documentation."
 msgstr ""
-"<emphasis>磁碟 (Disk)</emphasis> - 最基本的 vdev 型態便是一個標準的磁碟區塊裝置，這可以是一整個磁碟 (例如 <filename><replaceable>/dev/ada0</replaceable></filename> 或 <filename><replaceable>/dev/da0</replaceable></filename>) 或一個分割區 (<filename><replaceable>/dev/ada0p3</replaceable></filename>)。在 FreeBSD 上，使用分割區來替代整個磁"
+"<emphasis>磁碟 (Disk)</emphasis> - 最基本的 vdev 型態便是一個標準的資料區塊裝置，這可以是一整個磁碟 (例如 <filename><replaceable>/dev/ada0</replaceable></filename> 或 <filename><replaceable>/dev/da0</replaceable></filename>) 或一個分割區 (<filename><replaceable>/dev/ada0p3</replaceable></filename>)。在 FreeBSD 上，使用分割區來替代整個磁"
 "碟不會影響效能，這可能與 Solaris 說明文件所建議的有所不同。"
 
 #. (itstool) path: listitem/para
@@ -41583,7 +41581,7 @@ msgid ""
 msgstr ""
 "<acronym>L2ARC</acronym> 是  <acronym>ZFS</acronym> 快取系統的第二層，主要的 <acronym>ARC</acronym> 會儲存在 <acronym>RAM</acronym> 當中，但因為 <acronym>RAM</acronym> 可用的空間量通常有限，因此 <acronym>ZFS</acronym> 也可以使用 <link linkend=\"zfs-term-vdev-cache\">快取 vdev (Cache vdev)</link>。固態磁碟 (Solid State Disk, "
 "<acronym>SSD</acronym>) 常被拿來此處作為快取裝置，因為比起傳統旋轉碟片的磁碟，固體磁碟有較快的速度與較低的延遲。<acronym>L2ARC</acronym> 是選用的，但使用可以明顯增進那些已使用 <acronym>SSD</acronym> 快取的檔案讀取速度，無須從一般磁碟讀取。<acronym>L2ARC</acronym> 也同樣可以加速去重複 (<link linkend=\"zfs-term-deduplication"
-"\">Deduplication</link>)，因為 <acronym>DDT</acronym> 並不適合放在 <acronym>RAM</acronym>，但適合放在 <acronym>L2ARC</acronym>，比起要從磁碟讀取，可以加快不少速度。為了避免  <acronym>SSD</acronym> 因寫入次速過度而過早耗損，加入到快取裝置的資料速率會被限制，直到快取用盡 (去除第一個資料區塊來騰出空間) 之前，寫入到 <acronym>L2ARC</"
+"\">Deduplication</link>)，因為 <acronym>DDT</acronym> 並不適合放在 <acronym>RAM</acronym>，但適合放在 <acronym>L2ARC</acronym>，比起要從磁碟讀取，可以加快不少速度。為了避免  <acronym>SSD</acronym> 因寫入次速過多而過早耗損，加入到快取裝置的資料速率會被限制，直到快取用盡 (去除第一個資料區塊來騰出空間) 之前，寫入到 <acronym>L2ARC</"
 "acronym> 的資料速率會限制在寫入限制 (Write limit) 與加速限制 (Boost limit) 的總合，之後則會限制為寫入限制，可以控制這兩個速度限制的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 數值分別為 <link linkend=\"zfs-advanced-tuning-l2arc_write_max\"><varname>vfs.zfs.l2arc_write_max</varname></link> "
 "控制每秒有多少數位元組可寫入到快取，而 <link linkend=\"zfs-advanced-tuning-l2arc_write_boost\"><varname>vfs.zfs.l2arc_write_boost</varname></link> 可在 <quote>渦輪預熱階段</quote> (即寫入加速) 時增加寫入限制。"
 
@@ -41657,7 +41655,7 @@ msgid ""
 "In additional to regular file system datasets, <acronym>ZFS</acronym> can also create volumes, which are block devices. Volumes have many of the same features, including copy-on-write, snapshots, clones, and checksumming. Volumes can be useful for running other file system formats on top of <acronym>ZFS</acronym>, such as <acronym>UFS</"
 "acronym> virtualization, or exporting <acronym>iSCSI</acronym> extents."
 msgstr ""
-"除了一般的檔案系統資料集之外，<acronym>ZFS</acronym> 也可以建立磁碟區 (Volume)，磁碟區是磁碟區塊裝置。磁碟區有許多與資料集相似的功能，包含複製時寫入、快照、複本以及奇偶校驗。要在 <acronym>ZFS</acronym> 的頂層執行其他檔案系統格式時使用磁碟區非常有用，例如 <acronym>UFS</acronym> 虛擬化或匯出 <acronym>iSCSI</acronym> 延伸磁區 (Extent)。"
+"除了一般的檔案系統資料集之外，<acronym>ZFS</acronym> 也可以建立磁碟區 (Volume)，磁碟區是資料區塊裝置。磁碟區有許多與資料集相似的功能，包含複製時寫入、快照、複本以及資料校驗。要在 <acronym>ZFS</acronym> 的頂層執行其他檔案系統格式時使用磁碟區非常有用，例如 <acronym>UFS</acronym> 虛擬化或匯出 <acronym>iSCSI</acronym> 延伸磁區 (Extent)。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-snapshot
@@ -41675,6 +41673,10 @@ msgid ""
 "reclaimed as free space. Snapshots can also be marked with a <link linkend=\"zfs-zfs-snapshot\">hold</link>. When a snapshot is held, any attempt to destroy it will return an <literal>EBUSY</literal> error. Each snapshot can have multiple holds, each with a unique name. The <link linkend=\"zfs-zfs-snapshot\">release</link> command "
 "removes the hold so the snapshot can deleted. Snapshots can be taken on volumes, but they can only be cloned or rolled back, not mounted independently."
 msgstr ""
+"<acronym>ZFS</acronym> 的寫入時複製 (<link linkend=\"zfs-term-cow\">Copy-On-Write</link>, <acronym>COW</acronym>) 設計可以使用任意的名稱做到幾乎即時、一致的快照。在製做資料集的快照或父資料集遞迴快照 (會包含其所有子資料集) 之後，新的資料會寫入到資的資料區塊，但不會回收舊的資料區塊為可用空間，快照中會使用原版本的檔案系統，而快照之後所做的"
+"變更則會儲存在目前的檔案系統，因此不會重複使用額外的空間。當新的資料寫入到目前的檔案系統，便會配置新的資料區塊來儲存這些資料。快照表面大小 (Apparent size) 會隨著在目前檔案系統停止使用的資料區塊而成長，但僅限於快照。可以用唯讀的方式掛載這些快照來復原先前版本的檔案，也可以還原 (<link linkend=\"zfs-zfs-snapshot\">Rollback</link>) 目前的檔"
+"案系統到指定的快照，來還原任何在快照之後所做的變更。每個在儲存池中的資料區塊都會有一個參考記數器，可以用來持續追蹤有多少快照、複本、資料集或是磁碟區使用這個資料區塊，當刪除檔案與快照參照的計數變會滅少，直到沒有任何東西參考這個資料區塊才會被回收為可用空間。快照也可使用 <link linkend=\"zfs-zfs-snapshot\">hold</link> 來標記，檔標記為 hold "
+"時，任何嘗試要刪除該快照的動作便會回傳 <literal>EBUSY</literal> 的錯誤，每個快照可以標記多個不同唯一名稱的 hold，而 <link linkend=\"zfs-zfs-snapshot\">release</link> 指令則可以移除 hold，這樣才可刪除快照。在磁碟區上快可以製作快照，但只能用來複製或還原，無法獨立掛載。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-clone
@@ -41689,6 +41691,8 @@ msgid ""
 "cloned file system or volume, the reference count on the previous block is decremented. The snapshot upon which a clone is based cannot be deleted because the clone depends on it. The snapshot is the parent, and the clone is the child. Clones can be <emphasis>promoted</emphasis>, reversing this dependency and making the clone the "
 "parent and the previous parent the child. This operation requires no additional space. Because the amount of space used by the parent and child is reversed, existing quotas and reservations might be affected."
 msgstr ""
+"快照也可以做複本，複本是可寫入版本的快照，讓檔案系統可分支成為新的資料集。如同快照，複本一開始不會消耗任何額外空間，隨著新資料寫入到複本會配置新的資料區塊，複本的表面大小 (Apparent size) 才會成長，當在複本檔案系統或磁碟區的資料區塊被覆寫時，在先前資料區塊的參考計數則會減少。建立複本所使用的快照無法被刪除，因為複本會相依該快照，快照為"
+"父，複本為子。複本可以被提升 (<emphasis>promoted</emphasis>)、反轉相依關係，來讓複本成為父，之前的父變為子，這個操作不需要額外的空間。由於反轉了父與子使用的空間量，所以可能會影響既有的配額 (Quota) 與保留空間 (Reservation)。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-checksum
@@ -41718,6 +41722,8 @@ msgid ""
 "match the expected checksum, <acronym>ZFS</acronym> will attempt to recover the data from any available redundancy, like mirrors or <acronym>RAID-Z</acronym>). Validation of all checksums can be triggered with <link linkend=\"zfs-term-scrub\"><command>scrub</command></link>. Checksum algorithms include: <_:itemizedlist-1/> The "
 "<literal>fletcher</literal> algorithms are faster, but <literal>sha256</literal> is a strong cryptographic hash and has a much lower chance of collisions at the cost of some performance. Checksums can be disabled, but it is not recommended."
 msgstr ""
+"配置每個資料區塊快的同時也會做資料校驗，資料校驗用的演算法是依資料集屬性而有所不同的，請參考 <link linkend=\"zfs-zfs-set\"><command>set</command></link>。每個資料區塊會在讀取的過成便完成校驗，讓 <acronym>ZFS</acronym> 可以偵測到隱藏的損壞，若資料不符合預期的校驗碼，<acronym>ZFS</acronym> 會嘗試從任何可用的備援來還原資料，例如鏡像 "
+"(Mirror) 或 <acronym>RAID-Z</acronym>。要檢驗所有資料的校驗碼可以使用清潔 (<link linkend=\"zfs-term-scrub\"><command>Scrub</command></link>)，資料校驗的演算法有：<_:itemizedlist-1/> <literal>fletcher</literal> 演算法最快，而 <literal>sha256</literal> 雖較消耗效能，但其有強大的密碼雜湊與較低的衝突率。也可關閉資料校驗，但並不建議。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41050
@@ -41725,18 +41731,20 @@ msgid ""
 "<emphasis><acronym>LZ4</acronym></emphasis> - Added in <acronym>ZFS</acronym> pool version 5000 (feature flags), <acronym>LZ4</acronym> is now the recommended compression algorithm. <acronym>LZ4</acronym> compresses approximately 50% faster than <acronym>LZJB</acronym> when operating on compressible data, and is over three times faster "
 "when operating on uncompressible data. <acronym>LZ4</acronym> also decompresses approximately 80% faster than <acronym>LZJB</acronym>. On modern <acronym>CPU</acronym>s, <acronym>LZ4</acronym> can often compress at over 500 MB/s, and decompress at over 1.5 GB/s (per single CPU core)."
 msgstr ""
+"<emphasis><acronym>LZ4</acronym></emphasis> - <acronym>ZFS</acronym> 儲存池版本 5000 (功能旗標) 後所增加，<acronym>LZ4</acronym> 現在是建議的壓縮演算法，在處理可壓縮的資料時 <acronym>LZ4</acronym> 壓縮比 <acronym>LZJB</acronym> 快將近 50%，在處理不可壓縮的資料時快將近三倍，<acronym>LZ4</acronym> 解壓縮也比 <acronym>LZJB</acronym> 將近 "
+"80%。在現代的 <acronym>CPU</acronym> 上，<acronym>LZ4</acronym> 經常平均可用 500 MB/s 的速度壓縮，而解壓縮可到達 1.5 GB/s (每個 CPU 核心)。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:41067
 msgid "<acronym>LZ4</acronym> compression is only available after FreeBSD 9.2."
-msgstr ""
+msgstr "<acronym>LZ4</acronym> 壓縮只在 FreeBSD 9.2 之後可使用。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41073
 msgid ""
 "<emphasis><acronym>LZJB</acronym></emphasis> - The default compression algorithm. Created by Jeff Bonwick (one of the original creators of <acronym>ZFS</acronym>). <acronym>LZJB</acronym> offers good compression with less <acronym>CPU</acronym> overhead compared to <acronym>GZIP</acronym>. In the future, the default compression "
 "algorithm will likely change to <acronym>LZ4</acronym>."
-msgstr ""
+msgstr "<emphasis><acronym>LZJB</acronym></emphasis> - 預設的壓縮演算法。由 Jeff Bonwick 所開發 (<acronym>ZFS</acronym> 的創始人之一)。<acronym>LZJB</acronym>與 <acronym>GZIP</acronym> 相比，可以較低的 <acronym>CPU</acronym> 提供較佳的壓縮功能。在未來預設的壓縮演算法將會更換為 <acronym>LZ4</acronym>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41085
@@ -41744,24 +41752,26 @@ msgid ""
 "<emphasis><acronym>GZIP</acronym></emphasis> - A popular stream compression algorithm available in <acronym>ZFS</acronym>. One of the main advantages of using <acronym>GZIP</acronym> is its configurable level of compression. When setting the <literal>compress</literal> property, the administrator can choose the level of compression, "
 "ranging from <literal>gzip1</literal>, the lowest level of compression, to <literal>gzip9</literal>, the highest level of compression. This gives the administrator control over how much <acronym>CPU</acronym> time to trade for saved disk space."
 msgstr ""
+"<emphasis><acronym>GZIP</acronym></emphasis> - 在 <acronym>ZFS</acronym> 可用的熱門串流壓縮演算法。使用 <acronym>GZIP</acronym> 主要的優點之一便是可設定壓縮層級。當設定 <literal>compress</literal> 屬性，管理者可以選擇壓縮層級範圍從最低的壓縮層級 <literal>gzip1</literal> 到最高的壓縮層級 <literal>gzip9</literal>。這讓管理者可以控制要使用"
+"多少 <acronym>CPU</acronym> 來節省磁碟空間。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:41101
 msgid "<emphasis><acronym>ZLE</acronym></emphasis> - Zero Length Encoding is a special compression algorithm that only compresses continuous runs of zeros. This compression algorithm is only useful when the dataset contains large blocks of zeros."
-msgstr ""
+msgstr "<emphasis><acronym>ZLE</acronym></emphasis> - 零長度編號是一個特殊的壓縮演算法，它只會壓縮連續的零。這種壓縮演算法只在資料集中含有大量為零的資料區塊時有用。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41040
 msgid ""
 "Each dataset has a compression property, which defaults to off. This property can be set to one of a number of compression algorithms. This will cause all new data that is written to the dataset to be compressed. Beyond a reduction in space used, read and write throughput often increases because fewer blocks are read or written. <_:"
 "itemizedlist-1/>"
-msgstr ""
+msgstr "每個資料集都有壓縮 (Compression) 屬性，預設是關閉的，這個屬性可以設定使用以下幾個壓縮演算法的其中一個來壓縮寫入到資料集的新資料。壓縮除了減少空間使用量外，常也會增加讀取與寫入的吞吐量，因為會減少讀取與寫入的資料區塊。 <_:itemizedlist-1/>"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-copies
 #: book.translate.xml:41112
 msgid "Copies"
-msgstr "複本數 (Copies)"
+msgstr "備份數 (Copies)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41114
@@ -41769,6 +41779,8 @@ msgid ""
 "When set to a value greater than 1, the <literal>copies</literal> property instructs <acronym>ZFS</acronym> to maintain multiple copies of each block in the <link linkend=\"zfs-term-filesystem\">File System</link> or <link linkend=\"zfs-term-volume\">Volume</link>. Setting this property on important datasets provides additional "
 "redundancy from which to recover a block that does not match its checksum. In pools without redundancy, the copies feature is the only form of redundancy. The copies feature can recover from a single bad sector or other forms of minor corruption, but it does not protect the pool from the loss of an entire disk."
 msgstr ""
+"當設定大於 1 的數值時，<literal>copies</literal> 屬性會指示 <acronym>ZFS</acronym> 備份每個在檔案系統 (<link linkend=\"zfs-term-filesystem\">File System</link>) 或磁碟區 (<link linkend=\"zfs-term-volume\">Volume</link>) 的資料區塊數份。在重要的資料集上設定這個屬性可以做額外的備援以在資料校驗碼不相符時可做復原。在沒有做備援的儲存池上，備"
+"份功能提供只是一種資料的備援方式，備份功能可以復原單一壞軌或其他情況的次要損壞，但無法復原儲存池中整個磁碟損壞所損失的資料。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41133
@@ -41780,6 +41792,10 @@ msgid ""
 "<acronym>DDT</acronym> in memory, performance will suffer greatly as the <acronym>DDT</acronym> must be read from disk before each new block is written. Deduplication can use <acronym>L2ARC</acronym> to store the <acronym>DDT</acronym>, providing a middle ground between fast system memory and slower disks. Consider using compression "
 "instead, which often provides nearly as much space savings without the additional memory requirement."
 msgstr ""
+"校驗碼讓在寫入時可以偵測重複資料區塊，使用去重複，可以增加既有、完全相同的資料區塊參考數來節省儲存空間。要偵測重複的資料區塊需要在記憶體中儲存去重複資料表 (Deduplication table, <acronym>DDT</acronym>)，這個資料表中會有唯一的校驗碼清單、這些資料區塊的所在位置以及參考數。當寫入新資料時，便會計算校驗碼然後比對清單中是否有符合的既有資料區塊"
+"已在清單。去重複使用了 <acronym>SHA256</acronym> 校驗碼演算法來提供一個安全的加密雜湊，去重複功能是可以調校的，若 <literal>dedup</literal> 設為 <literal>on</literal> 只要符合校驗碼便會認為資料完全相同，若 <literal>dedup</literal> 設為 <literal>verify</literal> 則會一個一個位元檢查兩個資料區塊的資料來確保資料真的完全相同，若資料不同便會"
+"註記與雜湊衝突並會分別儲存兩個資料區塊。由於 <acronym>DDT</acronym> 須要儲存每個唯一資料區塊的雜湊，所以會消耗大量的記憶體，一般的經驗法則是每 1 TB 的去重複資料需要使用 5-6 GB 的記憶體。由於要有足夠的 <acronym>RAM</acronym> 來儲存整個 <acronym>DDT</acronym> 在實務上並不實際，導致在每個新資料區塊寫入前需要從磁碟來讀取 <acronym>DDT</"
+"acronym> 會對效能有很大的影響，去重複功能可以使用 <acronym>L2ARC</acronym> 儲存 <acronym>DDT</acronym> 以在快速的系統記憶體及較慢的磁碟之間取得一個平衡點。也可以考慮使用壓縮功能來取代此功能，因為壓縮也能節省相近的空間使用量而不需要大量額外的記憶體。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-scrub
@@ -41795,6 +41811,9 @@ msgid ""
 "infrequently used blocks are checked for silent corruption. Data security is improved, especially in archival storage situations. The relative priority of <command>scrub</command> can be adjusted with <link linkend=\"zfs-advanced-tuning-scrub_delay\"><varname>vfs.zfs.scrub_delay</varname></link> to prevent the scrub from degrading the "
 "performance of other workloads on the pool."
 msgstr ""
+"<acronym>ZFS</acronym>  有 <command>scrub</command> 來替代 <citerefentry><refentrytitle>fsck</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來做一致性的檢查。<command>scrub</command> 會讀取所有儲存在儲存池中的資料區塊並且根據儲存在 Metadata 中已知良好的校驗碼來檢驗這些資料區塊的校驗碼，定期檢查儲存池中儲存的所有資料可以確保實際"
+"使用這些資料前已將所有損壞的資料區塊復原。在不正常的關閉之後並不需要做清潔動作，但建議每三個月至少執行一次。在正常使用讀取時便會檢查每個資料區塊的校驗碼，但清潔動作可以確保那些不常用的資料也會被檢查以避免隱藏的損壞，如此便能增進資料的安全性，特別是對用來保存資料的儲存裝置。<command>scrub</command> 可以使用 <link linkend=\"zfs-advanced-"
+"tuning-scrub_delay\"><varname>vfs.zfs.scrub_delay</varname></link> 調整相對優先權來避免清潔動作降低儲存池上其他工作的效率。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-quota
@@ -41805,22 +41824,22 @@ msgstr "資料集配額 (Dataset Quota)"
 #. (itstool) path: entry/para
 #: book.translate.xml:41202
 msgid "<acronym>ZFS</acronym> supports different types of quotas: the dataset quota, the <link linkend=\"zfs-term-refquota\">reference quota (<acronym>refquota</acronym>)</link>, the <link linkend=\"zfs-term-userquota\">user quota</link>, and the <link linkend=\"zfs-term-groupquota\">group quota</link>."
-msgstr ""
+msgstr "<acronym>ZFS</acronym> 支援幾種不同類型的配額：資料集配額、參考配額 (<link linkend=\"zfs-term-refquota\">Reference quota, <acronym>refquota</acronym></link>)、使用者配額 (<link linkend=\"zfs-term-userquota\">User quota</link>) 以及群組配額 (<link linkend=\"zfs-term-groupquota\">Group quota</link>)。"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:41210
 msgid "Quotas limit the amount of space that a dataset and all of its descendants, including snapshots of the dataset, child datasets, and the snapshots of those datasets, can consume."
-msgstr ""
+msgstr "配額會限制資料集及後裔包含資料集的快照、子資料集及子資料集的快照能使用的空間量。"
 
 #. (itstool) path: note/para
 #: book.translate.xml:41216
 msgid "Quotas cannot be set on volumes, as the <literal>volsize</literal> property acts as an implicit quota."
-msgstr ""
+msgstr "磁碟區上無法設定配額，因為 <literal>volsize</literal> 屬性已經被用來做內定的配額。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41195
 msgid "<acronym>ZFS</acronym> provides very fast and accurate dataset, user, and group space accounting in addition to quotas and space reservations. This gives the administrator fine grained control over how space is allocated and allows space to be reserved for critical file systems. <_:para-1/> <_:para-2/> <_:note-3/>"
-msgstr ""
+msgstr "除了配額及空間保留外，<acronym>ZFS</acronym> 提供非常快速且準確的資料集、使用者及群組空間的計算功能，這可讓管理者調整空間配置的方式且可為重要的檔案系統保留空間。 <_:para-1/> <_:para-2/> <_:note-3/>"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-refquota
@@ -41831,7 +41850,7 @@ msgstr "參考配額 (Reference Quota)"
 #. (itstool) path: row/entry
 #: book.translate.xml:41226
 msgid "A reference quota limits the amount of space a dataset can consume by enforcing a hard limit. However, this hard limit includes only space that the dataset references and does not include space used by descendants, such as file systems or snapshots."
-msgstr ""
+msgstr "參考配額可以設定一個硬性限制 (Hard limit) 來限制資料集能使用的空間量，而這個硬性限制只包含了資料集參考的空間，並不含其後裔所使用的空間，如：檔案系統或快照。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-userquota
@@ -41842,7 +41861,7 @@ msgstr "使用者配額 (User Quota)"
 #. (itstool) path: row/entry
 #: book.translate.xml:41237
 msgid "User quotas are useful to limit the amount of space that can be used by the specified user."
-msgstr ""
+msgstr "使用者配額在用來限制特定使用者能使用的空間量時非常有用。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-groupquota
@@ -41853,7 +41872,7 @@ msgstr "群組配額 (Group Quota)"
 #. (itstool) path: row/entry
 #: book.translate.xml:41245
 msgid "The group quota limits the amount of space that a specified group can consume."
-msgstr ""
+msgstr "群組配額可以限制特定群組能使用的空間量。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-reservation
@@ -41864,7 +41883,7 @@ msgstr "資料集保留空間 (Dataset Reservation)"
 #. (itstool) path: entry/para
 #: book.translate.xml:41268
 msgid "Reservations of any sort are useful in many situations, such as planning and testing the suitability of disk space allocation in a new system, or ensuring that enough space is available on file systems for audio logs or system recovery procedures and files."
-msgstr ""
+msgstr "不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:41253
@@ -41872,6 +41891,8 @@ msgid ""
 "The <literal>reservation</literal> property makes it possible to guarantee a minimum amount of space for a specific dataset and its descendants. If a 10 GB reservation is set on <filename>storage/home/bob</filename>, and another dataset tries to use all of the free space, at least 10 GB of space is reserved for this dataset. If a "
 "snapshot is taken of <filename>storage/home/bob</filename>, the space used by that snapshot is counted against the reservation. The <link linkend=\"zfs-term-refreservation\"><literal>refreservation</literal></link> property works in a similar way, but it <emphasis>excludes</emphasis> descendants like snapshots. <_:para-1/>"
 msgstr ""
+"<literal>reservation</literal> 屬性可以確保對特定資料集及其後裔最小可用的空間量，若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。若要製作 <filename>storage/home/bob</filename> 的快照，該快照所使用的空間也會被列入保留空間計算。 <link linkend="
+"\"zfs-term-refreservation\"><literal>refreservation</literal></link> 屬性也以類似的方式運作，但是他 <emphasis>不包含</emphasis> 後裔，例如：快照。 <_:para-1/>"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-refreservation
@@ -41886,6 +41907,8 @@ msgid ""
 "least 10 GB of space is reserved for this dataset. In contrast to a regular <link linkend=\"zfs-term-reservation\">reservation</link>, space used by snapshots and descendant datasets is not counted against the reservation. For example, if a snapshot is taken of <filename>storage/home/bob</filename>, enough disk space must exist outside "
 "of the <literal>refreservation</literal> amount for the operation to succeed. Descendants of the main data set are not counted in the <literal>refreservation</literal> amount and so do not encroach on the space set."
 msgstr ""
+"<literal>refreservation</literal> 屬性可以確保對特定資料集 <emphasis>不包含</emphasis> 其後裔最小可用的空間，這代表若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。於正常 <link linkend=\"zfs-term-reservation\">reservation</link> 不同的是，由快"
+"照及後裔資料集所使用的空間並不會列入保留空間計算。例如，若要製作一個 <filename>storage/home/bob</filename> 的快照，在 <literal>refreservation</literal> 空間之外必須要有足夠的空間才能成功完成這項操作，主資料集的後裔並不會列入 <literal>refreservation</literal> 空間額計算，所以也不會佔用保留空間。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-resilver
@@ -41896,7 +41919,7 @@ msgstr "修復 (Resilver)"
 #. (itstool) path: row/entry
 #: book.translate.xml:41305
 msgid "When a disk fails and is replaced, the new disk must be filled with the data that was lost. The process of using the parity information distributed across the remaining drives to calculate and write the missing data to the new drive is called <emphasis>resilvering</emphasis>."
-msgstr ""
+msgstr "當有磁碟故障且被更換後，新的磁碟必須回存先前所遺失的資料，會使用分散在其他磁碟上的奇偶校驗資訊來計算並寫入遺失的資料到新的磁碟機的這個程序稱作 <emphasis>修復 (Resilvering)</emphasis>。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-online
@@ -41907,7 +41930,7 @@ msgstr "上線 (Online)"
 #. (itstool) path: row/entry
 #: book.translate.xml:41316
 msgid "A pool or vdev in the <literal>Online</literal> state has all of its member devices connected and fully operational. Individual devices in the <literal>Online</literal> state are functioning normally."
-msgstr ""
+msgstr "一個儲存池或 vdev 處於線上 (<literal>Online</literal>) 狀態時代表所有該裝置的成員均已連結且正常運作。個別裝置處於線上 (<literal>Online</literal>) 狀態時代表功能正常。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-offline
@@ -41919,7 +41942,7 @@ msgstr "離線 (Offline)"
 #: book.translate.xml:41326
 msgid ""
 "Individual devices can be put in an <literal>Offline</literal> state by the administrator if there is sufficient redundancy to avoid putting the pool or vdev into a <link linkend=\"zfs-term-faulted\">Faulted</link> state. An administrator may choose to offline a disk in preparation for replacing it, or to make it easier to identify."
-msgstr ""
+msgstr "若有足夠的備援可避免儲存池或 vdev  進入故障 (<link linkend=\"zfs-term-faulted\">Faulted</link>) 狀態，個別裝置若可由管理者設為離線 (<literal>Offline</literal>) 狀態，管理者可以選擇要設定那一個磁碟為離線來準備更換或是讓其更容易辨識。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-degraded
@@ -41933,6 +41956,8 @@ msgid ""
 "A pool or vdev in the <literal>Degraded</literal> state has one or more disks that have been disconnected or have failed. The pool is still usable, but if additional devices fail, the pool could become unrecoverable. Reconnecting the missing devices or replacing the failed disks will return the pool to an <link linkend=\"zfs-term-online"
 "\">Online</link> state after the reconnected or new device has completed the <link linkend=\"zfs-term-resilver\">Resilver</link> process."
 msgstr ""
+"一個儲存池或 vdev 處於降級 (<literal>Degraded</literal>) 狀態代表其有一個或多個磁碟已斷線或故障，此時儲存池仍可以使用，但只要再有其他的裝置故障，儲存池會無法復原。重新連線缺少的裝置或更換故障的磁碟，並在新裝置完成修復 (<link linkend=\"zfs-term-resilver\">Resilver</link>) 程序可讓儲存池返回線上 (<link linkend=\"zfs-term-online\">Online</"
+"link>) 狀態。"
 
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-faulted
@@ -41946,6 +41971,8 @@ msgid ""
 "A pool or vdev in the <literal>Faulted</literal> state is no longer operational. The data on it can no longer be accessed. A pool or vdev enters the <literal>Faulted</literal> state when the number of missing or failed devices exceeds the level of redundancy in the vdev. If missing devices can be reconnected, the pool will return to a "
 "<link linkend=\"zfs-term-online\">Online</link> state. If there is insufficient redundancy to compensate for the number of failed disks, then the contents of the pool are lost and must be restored from backups."
 msgstr ""
+"一個儲存池或 vdev 處於故障 (<literal>Faulted</literal>) 狀態代表無法運作，會無法存取在該裝置上的資料。當在 vdev 中缺少或故障的裝置數超過備援的層級，儲存池或 vdev 會進入故障 (<literal>Faulted</literal>) 狀態。若缺少的裝置可以重新連結上，儲存池便會返回線上 (<link linkend=\"zfs-term-online\">Online</link>) 狀態。若沒有足夠的備援可補償故障"
+"的磁碟數量便會遺失儲存池中的內容且只能從備份還原。"
 
 #. (itstool) path: info/title
 #: book.translate.xml:41379
