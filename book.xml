@@ -1274,7 +1274,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 49507 2016-10-12 20:01:32Z wblock $
 -->
 <chapter version="5.0" xml:id="introduction">
 
@@ -1626,6 +1626,18 @@
 	  <para><link xlink:href="http://www.spectralogic.com/">Spectra Logic</link> <indexterm>
 	      <primary>Spectra Logic</primary>
 	    </indexterm> - 儲藏級儲存設備的 nTier 產品線以 FreeBSD 和 OpenZFS 來運作。</para>
+	</listitem>
+
+	<listitem>
+	  <para xml:lang="en"><link xlink:href="https://www.stormshield.eu">Stormshield</link>
+	    <indexterm xml:lang="en">
+	      <primary>Stormshield</primary>
+
+	    </indexterm> - Stormshield Network Security appliances
+	    are based on a hardened version of FreeBSD.  The BSD license
+	    allows us to integrate our own intellectual property with
+	    the system while returning a great deal of interesting
+	    development to the community.</para>
 	</listitem>
 
 	<listitem>
@@ -14025,29 +14037,14 @@ export PATH</programlisting>
       <primary>services</primary>
     </indexterm>
 
-    <para xml:lang="en">Many users install third party software on FreeBSD from the
-      Ports Collection and require the installed services to be
-      started upon system initialization.  Services, such as
-      <package>mail/postfix</package> or
-      <package>www/apache22</package> are just two of the many
-      software packages which may be started during system
-      initialization.  This section explains the procedures available
-      for starting third party software.</para>
+    <para>許多使用者會使用 Port 套件集安裝第三方軟體到 FreeBSD 且需要安裝服務在系統初始化時可啟動該軟體。服務，例如 <package>mail/postfix</package> 或 <package>www/apache22</package> 僅只是在眾多需要在系統初始化時啟動的軟體之中的兩個。本章節將說明可用來啟動第三方軟體的程序。</para>
 
-    <para xml:lang="en">In FreeBSD, most included services, such as <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>, are
-      started through the system start up scripts.</para>
+    <para>在 FreeBSD 大多數內建的服務，例如 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 也是透過系統啟動 Script 來執行。</para>
 
     <sect2>
       <title>延伸應用程式設定</title>
 
-      <para xml:lang="en">Now that FreeBSD includes <filename>rc.d</filename>,
-	configuration of application startup is easier and provides
-	more features.  Using the key words discussed in
-	<xref linkend="configtuning-rcd"/>, applications can be set to
-	start after certain other services and extra flags can be
-	passed through <filename>/etc/rc.conf</filename> in place of
-	hard coded flags in the start up script.  A basic script may
-	look similar to the following:</para>
+      <para>現在 FreeBSD 會引用 <filename>rc.d</filename>，讓設定應用程式啟動程式更簡單且提供更多的功能。使用於 <xref linkend="configtuning-rcd"/> 所提到的關鍵字，可以設定應用程式在其他特定服務之後啟動且可以透過 <filename>/etc/rc.conf</filename> 來傳遞額外的旗標來取代寫死在啟動 Script 中的旗標。一個基本的 Script 可能會如下例所示：</para>
 
       <programlisting xml:lang="en">#!/bin/sh
 #
@@ -14073,43 +14070,23 @@ pidfile=${utility_pidfile-"/var/run/utility.pid"}
 
 run_rc_command "$1"</programlisting>
 
-      <para xml:lang="en">This script will ensure that the provided
-	<literal>utility</literal> will be started after the
-	<literal>DAEMON</literal> pseudo-service.  It also provides a
-	method for setting and tracking the process ID
-	(<acronym>PID</acronym>).</para>
+      <para>這個 Script 會確保要執行的 <literal>utility</literal> 會在虛構的服務 <literal>DAEMON</literal> 之後啟動，也同時提供設定與追蹤程序 ID (Process ID, <acronym>PID</acronym>) 的方法。</para>
 
-      <para xml:lang="en">This application could then have the following line placed
-	in <filename>/etc/rc.conf</filename>:</para>
+      <para>接著此應用程式便可將下行放到 <filename>/etc/rc.conf</filename> 中：</para>
 
       <programlisting xml:lang="en">utility_enable="YES"</programlisting>
 
-      <para xml:lang="en">This method allows for easier manipulation of command
-	line arguments, inclusion of the default functions provided
-	in <filename>/etc/rc.subr</filename>, compatibility with
-	<citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry>, and provides for easier configuration via
-	<filename>rc.conf</filename>.</para>
+      <para>使用這種方式可以簡單的處理指令列參數、引用 <filename>/etc/rc.subr</filename> 所提供的預設函數、與 <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry> 相容並可在 <filename>rc.conf</filename> 簡單的設定。</para>
     </sect2>
 
     <sect2>
       <title>使用服務來啟動其他服務</title>
 
-      <para xml:lang="en">Other services can be started using <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry>.
-	Working with <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> and its configuration is
-	described in depth in
-	<xref linkend="network-inetd"/>.</para>
+      <para>其他的服務可以使用 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來啟動，在 <xref linkend="network-inetd"/> 有如何使用 <citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及其設定的深入說明。</para>
 
-      <para xml:lang="en">In some cases, it may make more sense to use
-	<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> to start system services.  This approach
-	has a number of advantages as <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> runs these
-	processes as the owner of the <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>5</manvolnum></citerefentry>.  This allows
-	regular users to start and maintain their own
-	applications.</para>
+      <para>在某些情況更適合使用 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來啟動系統服務，由於 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 會使用 <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>5</manvolnum></citerefentry> 的擁有者來執行這些程序，所以這個方法有不少優點，這讓一般的使用者也可以啟動與維護自己的應用程式。</para>
 
-      <para xml:lang="en">The <literal>@reboot</literal> feature of <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>,
-	may be used in place of the time specification.  This causes
-	the job to run when <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> is started, normally during
-	system initialization.</para>
+      <para><citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的 <literal>@reboot</literal> 功能，可用來替代指定詳細的時間，而該工作會在系統初始化時執行 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 後執行。</para>
     </sect2>
   </sect1>
 
@@ -14133,35 +14110,13 @@ run_rc_command "$1"</programlisting>
       <secondary>configuration</secondary>
     </indexterm>
 
-    <para xml:lang="en">One of the most useful utilities in FreeBSD is
-      <application>cron</application>.  This utility runs in the
-      background and regularly checks
-      <filename>/etc/crontab</filename> for tasks to execute and
-      searches <filename>/var/cron/tabs</filename> for custom crontab
-      files.  These files are used to schedule tasks which
-      <application>cron</application> runs at the specified times.
-      Each entry in a crontab defines a task to run and is known as a
-      <firstterm>cron job</firstterm>.</para>
+    <para>在 FreeBSD 其中最有用的其中一項工具便是 <application>cron</application>，這個工具會在背景執行並且定期檢查 <filename>/etc/crontab</filename> 是否有要執行的工作然後搜尋 <filename>/var/cron/tabs</filename> 是否有自訂的 crontab 檔案，這些檔案用來安排要讓 <application>cron</application> 在指定的時間執行的工作，crontab 中的每一個項目定義了一個要執行的工作，又稱作 <firstterm>cron job</firstterm>。</para>
 
-    <para xml:lang="en">Two different types of configuration files are used: the
-      system crontab, which should not be modified, and user crontabs,
-      which can be created and edited as needed.  The format used by
-      these files is documented in <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>5</manvolnum></citerefentry>.  The format of the
-      system crontab, <filename>/etc/crontab</filename> includes a
-      <literal>who</literal> column which does not exist in user
-      crontabs.  In the system crontab,
-      <application>cron</application> runs the command as the user
-      specified in this column.  In a user crontab, all commands run
-      as the user who created the crontab.</para>
+    <para>這裡使用了兩種類型的設定檔：其一是系統 crontab，系統 crontab 不應該被修改，其二為使用者 crontab，使用者 crontab 可以依需要建立與編輯。這兩種檔案的格式在 <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>5</manvolnum></citerefentry> 有說明。系統 crontab <filename>/etc/crontab</filename> 的格式含有在使用者 crontab 所沒有的 <literal>who</literal> 欄位，在系統 crontab，<application>cron</application> 會依據該欄位所指定的使用者來執行指令，而在使用者 crontab，會以建立 crontab 的使用者來執行指令。</para>
 
-    <para xml:lang="en">User crontabs allow individual users to schedule their own
-      tasks.  The <systemitem class="username">root</systemitem> user
-      can also have a user <filename>crontab</filename> which can be
-      used to schedule tasks that do not exist in the system
-      <filename>crontab</filename>.</para>
+    <para>使用者 crontab 讓個別使用者可以安排自己的工作，<systemitem class="username">root</systemitem> 使用者也可有自己的使用者 <filename>crontab</filename> 來安排不在系統 <filename>crontab</filename> 中的工作。</para>
 
-    <para xml:lang="en">Here is a sample entry from the system crontab,
-      <filename>/etc/crontab</filename>:</para>
+    <para>以下為系統 crontab <filename>/etc/crontab</filename> 的範例項目：</para>
 
     <programlisting xml:lang="en"># /etc/crontab - root's crontab for FreeBSD
 #
@@ -14176,115 +14131,58 @@ PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin <co xml:id="co-env"/>
 
     <calloutlist>
       <callout arearefs="co-comments">
-	<para xml:lang="en">Lines that begin with the <literal>#</literal> character
-	  are comments.  A comment can be placed in the file as a
-	  reminder of what and why a desired action is performed.
-	  Comments cannot be on the same line as a command or else
-	  they will be interpreted as part of the command; they must
-	  be on a new line.  Blank lines are ignored.</para>
+	<para>以 <literal>#</literal> 字元為首的行代表註解。可在檔案中放置註解提醒要執行什麼動作及為何要執行。註解不可與指令同行，否則會被當做指令的一部份，註解必須在新的一行，空白行則會被忽略掉。</para>
       </callout>
 
       <callout arearefs="co-env">
-	<para xml:lang="en">The equals (<literal>=</literal>) character is used to
-	  define any environment settings.  In this example, it is
-	  used to define the <envar>SHELL</envar> and
-	  <envar>PATH</envar>.  If the <envar>SHELL</envar> is
-	  omitted, <application>cron</application> will use the
-	  default Bourne shell.  If the <envar>PATH</envar> is
-	  omitted, the full path must be given to the command or
-	  script to run.</para>
+	<para>等號 (<literal>=</literal>) 字元用來定義任何環境設定。在這個例子當中，使用了等號來定義 <envar>SHELL</envar> 及 <envar>PATH</envar>。若 <envar>SHELL</envar> 被省略，<application>cron</application> 則會使用預設的 Bourne shell。若 <envar>PATH</envar> 被省略，則必須指定指令或 Script 的完整路徑才能執行。</para>
       </callout>
 
       <callout arearefs="co-field-descr">
-	<para xml:lang="en">This line defines the seven fields used in a system
-	  crontab: <literal>minute</literal>, <literal>hour</literal>,
-	  <literal>mday</literal>, <literal>month</literal>,
-	  <literal>wday</literal>, <literal>who</literal>, and
-	  <literal>command</literal>.  The <literal>minute</literal>
-	  field is the time in minutes when the specified command will
-	  be run, the <literal>hour</literal> is the hour when the
-	  specified command will be run, the <literal>mday</literal>
-	  is the day of the month, <literal>month</literal> is the
-	  month, and <literal>wday</literal> is the day of the week.
-	  These fields must be numeric values, representing the
-	  twenty-four hour clock, or a <literal>*</literal>,
-	  representing all values for that field.  The
-	  <literal>who</literal> field only exists in the system
-	  crontab and specifies which user the command should be run
-	  as.  The last field is the command to be executed.</para>
+	<para>此行定義了在系統 crontab 會使用到的七個欄位：<literal>minute</literal>, <literal>hour</literal>, <literal>mday</literal>, <literal>month</literal>, <literal>wday</literal>, <literal>who</literal> 以及 <literal>command</literal>。<literal>minute</literal> 欄位是指定指令要執行的時間中的分，<literal>hour</literal> 指定指令要執行的時，<literal>mday</literal> 是月裡面的日，<literal>month</literal> 是月，以及 <literal>wday</literal> 是週裡面的日。這些欄位必須數值代表 24 小時制的時間或 <literal>*</literal> 來代表所有可能的值。<literal>who</literal> 這個欄位只有系統 crontab 才有，用來指定要用那一個使用者來執行指令。最後一個欄位則是要執行的指令。</para>
       </callout>
 
       <callout arearefs="co-main">
-	<para xml:lang="en">This entry defines the values for this cron job.  The
-	  <literal>*/5</literal>, followed by several more
-	  <literal>*</literal> characters, specifies that
-	  <command>/usr/libexec/atrun</command> is invoked by
-	  <systemitem class="username">root</systemitem> every five
-	  minutes of every hour, of every day and day of the week, of
-	  every month.</para>
+	<para>這個項目定義了該工作所使用的數值，<literal>*/5</literal> 後接著數個 <literal>*</literal> 字元指的是每個月的每一週的每一日的每個小時的每 5 分鐘會使用 <systemitem class="username">root</systemitem> 執行 <command>/usr/libexec/atrun</command>。</para>
 
-	<para xml:lang="en">Commands can include any number of switches.  However,
-	  commands which extend to multiple lines need to be broken
-	  with the backslash <quote>\</quote> continuation
-	  character.</para>
+	<para>指令可含任何數量的參數，但若指令要使用多行則需以反斜線 <quote>\</quote> 連線字元換行。</para>
       </callout>
     </calloutlist>
 
     <sect2 xml:id="configtuning-installcrontab">
       <title>建立使用者的 Crontab</title>
 
-      <para xml:lang="en">To create a user crontab, invoke
-	<command>crontab</command> in editor mode:</para>
+      <para>要建立一個使用者 crontab 可使用編輯模式執行 <command>crontab</command>：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>crontab -e</userinput></screen>
 
-      <para xml:lang="en">This will open the user's crontab using the default text
-	editor.  The first time a user runs this command, it will open
-	an empty file.  Once a user creates a crontab, this command
-	will open that file for editing.</para>
+      <para>這樣會使用預設的文字編輯器來開啟使用者的 crontab，使用者第一次執行這個指令會開啟一個空的檔案，使用者建立 crontab 之後這個指令則會開啟已建立的 crontab 供編輯。</para>
 
-      <para xml:lang="en">It is useful to add these lines to the top of the crontab
-	file in order to set the environment variables and to remember
-	the meanings of the fields in the crontab:</para>
+      <para>加入這些行到 crontab 檔的最上方來設定環境變數以及備忘在 crontab 中欄位的意思非常有用：</para>
 
       <programlisting xml:lang="en">SHELL=/bin/sh
 PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin
 # Order of crontab fields
 # minute	hour	mday	month	wday	command</programlisting>
 
-      <para xml:lang="en">Then add a line for each command or script to run,
-	specifying the time to run the command.  This example runs the
-	specified custom Bourne shell script every day at two in the
-	afternoon.  Since the path to the script is not specified in
-	<literal>PATH</literal>, the full path to the script is
-	given:</para>
+      <para>然後每一個要執行的指令或 Script 加入一行，指定要執行指令的時間。這個例子會每天在下午 2 點執行指定的自訂 Bourne shell script，由於沒有在 <literal>PATH</literal> 指定 Script 的路徑，所以必須給予完整的 Script 路徑：</para>
 
       <programlisting xml:lang="en">0	14	*	*	*	/usr/home/dru/bin/mycustomscript.sh</programlisting>
 
       <tip>
-	<para xml:lang="en">Before using a custom script, make sure it is executable
-	  and test it with the limited set of environment variables
-	  set by cron.  To replicate the environment that would be
-	  used to run the above cron entry, use:</para>
+	<para>在使用自訂的 Script 之前，請先確定該 Script 可以執行並且使用 cron 在有限的環境變數下測試。要複製一個用來執行上述 cron 項目的環境可以使用：</para>
 
 	<programlisting xml:lang="en">env -i SHELL=/bin/sh PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin HOME=/home/<replaceable>dru</replaceable> LOGNAME=<replaceable>dru</replaceable> <replaceable>/usr/home/dru/bin/mycustomscript.sh</replaceable></programlisting>
 
-	<para xml:lang="en">The environment set by cron is discussed in
-	  <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>5</manvolnum></citerefentry>.  Checking that scripts operate correctly in
-	  a cron environment is especially important if they include
-	  any commands that delete files using wildcards.</para>
+	<para>在 <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>5</manvolnum></citerefentry> 有討論 cron 使用的環境變數，若 Script 中含有任何會使用萬用字元刪除檔案的指令，那麼檢查 Script 可正常在 cron 的環境運作非常重要。</para>
       </tip>
 
-      <para xml:lang="en">When finished editing the crontab, save the file.  It
-	will automatically be installed and
-	<application>cron</application> will read the crontab and run
-	its cron jobs at their specified times.  To list the cron jobs
-	in a crontab, use this command:</para>
+      <para>編輯完成 crontab 之後儲存檔案，編輯完的 crontab 會被自動安裝且 <application>cron</application> 會讀取該 crontab 並在其指定的時指執行其 cron job。要列出 crontab 中有那一些 cron job 可以使用此指令：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>crontab -l</userinput>
 0	14	*	*	*	/usr/home/dru/bin/mycustomscript.sh</screen>
 
-      <para xml:lang="en">To remove all of the cron jobs in a user crontab:</para>
+      <para>要移除使用在使用者 crontab 中的 cron job 可：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>crontab -r</userinput>
 remove crontab for dru? <userinput>y</userinput></screen>
@@ -14306,53 +14204,21 @@ remove crontab for dru? <userinput>y</userinput></screen>
       </authorgroup>
     </info>
 
-    <para xml:lang="en">FreeBSD uses the <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> system of startup scripts during
-      system initialization and for managing services.  The scripts
-      listed in <filename>/etc/rc.d</filename> provide basic services
-      which can be controlled with the <option>start</option>,
-      <option>stop</option>, and <option>restart</option> options to
-      <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  For instance, <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> can be restarted
-      with the following command:</para>
+    <para>FreeBSD 在系統初始化時使用 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> 系統的啟動 Script。列於 <filename>/etc/rc.d</filename> 的 Script 提供了基本的服務可使用 <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> 加上 <option>start</option>, <option>stop</option> 以及 <option>restart</option> 選項來控制。例如，使用以下指令可以重新啟動 <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry>：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service sshd restart</userinput></screen>
 
-    <para xml:lang="en">This procedure can be used to start services on a running
-      system.  Services will be started automatically at boot time
-      as specified in <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.  For example, to enable
-      <citerefentry><refentrytitle>natd</refentrytitle><manvolnum>8</manvolnum></citerefentry> at system startup, add the following line to
-      <filename>/etc/rc.conf</filename>:</para>
+    <para>這個程序可以用來在執行中的系統上啟動服務，而在 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中有指定的服務則會在開機時自動啟動。例如，要在系統啟動時開啟 <citerefentry><refentrytitle>natd</refentrytitle><manvolnum>8</manvolnum></citerefentry>，可入下行到 <filename>/etc/rc.conf</filename>：</para>
 
     <programlisting xml:lang="en">natd_enable="YES"</programlisting>
 
-    <para xml:lang="en">If a <option>natd_enable="NO"</option> line is already
-      present, change the <literal>NO</literal> to
-      <literal>YES</literal>.  The <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> scripts will
-      automatically load any dependent services during the next boot,
-      as described below.</para>
+    <para>若 <option>natd_enable="NO"</option> 行已存在，則將 <literal>NO</literal> 更改為 <literal>YES</literal>，在下次開機時 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> script 便會自動載入任何相依的服務，詳細如下所述。</para>
 
-    <para xml:lang="en">Since the <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> system is primarily intended to start
-      and stop services at system startup and shutdown time, the
-      <option>start</option>, <option>stop</option> and
-      <option>restart</option> options will only perform their action
-      if the appropriate <filename>/etc/rc.conf</filename> variable
-      is set.  For instance, <command>sshd restart</command> will
-      only work if <varname>sshd_enable</varname> is set to
-      <option>YES</option> in <filename>/etc/rc.conf</filename>.
-      To <option>start</option>, <option>stop</option> or
-      <option>restart</option> a service regardless of the settings
-      in <filename>/etc/rc.conf</filename>, these commands should be
-      prefixed with <quote>one</quote>.  For instance, to restart
-      <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> regardless of the current
-      <filename>/etc/rc.conf</filename> setting, execute the following
-      command:</para>
+    <para>由於 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> 系統主要用於在系統開機與關機時啟動與停止服務，只有當有服務的變數設定在 <filename>/etc/rc.conf</filename> 時 <option>start</option>, <option>stop</option> 以及 <option>restart</option> 才會有作用。例如 <command>sshd restart</command> 只會在 <filename>/etc/rc.conf</filename> 中的 <varname> sshd_enable</varname> 設為 <option>YES</option> 時才會運作，若要不透過 <filename>/etc/rc.conf</filename> 的設定來 <option>start</option>, <option>stop</option> 或 <option>restart</option> 一個服務則需要在指令前加上 <quote>one</quote>，例如要不透過目前在 <filename>/etc/rc.conf</filename> 的設定重新啟動 <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 可執行以下指令：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service sshd onerestart</userinput></screen>
 
-    <para xml:lang="en">To check if a service is enabled in
-      <filename>/etc/rc.conf</filename>, run the appropriate
-      <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> script with <option>rcvar</option>.  This example
-      checks to see if <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> is enabled in
-      <filename>/etc/rc.conf</filename>:</para>
+    <para>要檢查一個服務是否有在 <filename>/etc/rc.conf</filename> 開啟，可執行服務的 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> Script 加上 <option>rcvar</option>。這個例子會檢查 <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是否在 <filename>/etc/rc.conf</filename> 已經開啟：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service sshd rcvar</userinput>
 # sshd
@@ -14361,149 +14227,77 @@ sshd_enable="YES"
 #   (default: "")</screen>
 
     <note>
-      <para xml:lang="en">The <literal># sshd</literal> line is output from the
-	above command, not a
-	<systemitem class="username">root</systemitem> console.</para>
+      <para>行 <literal># sshd</literal> 的輸出來自上述指令，而非 <systemitem class="username">root</systemitem> console。</para>
     </note>
 
-    <para xml:lang="en">To determine whether or not a service is running, use
-      <option>status</option>.  For instance, to verify that
-      <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> is running:</para>
+    <para>要判斷是一個服務是否正在執行，可使用 <option>status</option>，例如要確認 <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是否正常在執行：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service sshd status</userinput>
 sshd is running as pid 433.</screen>
 
-    <para xml:lang="en">In some cases, it is also possible to
-      <option>reload</option> a service.  This attempts to send a
-      signal to an individual service, forcing the service to reload
-      its configuration files.  In most cases, this means sending
-      the service a <literal>SIGHUP</literal> signal.  Support for
-      this feature is not included for every service.</para>
+    <para>在某些情況，也可以 <option>reload</option> 一個服務。這個動作會嘗試發送一個信號給指定的服務，強制服務重新載入其設定檔，在大多數的情況下，發送給服務的信號是 <literal>SIGHUP</literal>。並不是每個服務都有支援此功能。</para>
 
-    <para xml:lang="en">The <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> system is used for network services and it
-      also contributes to most of the system initialization.  For
-      instance, when the
-      <filename>/etc/rc.d/bgfsck</filename> script is executed, it
-      prints out the following message:</para>
+    <para><citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> 系統會用在網路服務及也應用在大多數的系統初化 。例如執行 <filename>/etc/rc.d/bgfsck</filename> Script 會列印出以下訊息：</para>
 
     <screen xml:lang="en">Starting background file system checks in 60 seconds.</screen>
 
-    <para xml:lang="en">This script is used for background file system checks,
-      which occur only during system initialization.</para>
+    <para>這個 Script 用來在背景做檔案系統檢查，只有在系統初始化時要執行。</para>
 
-    <para xml:lang="en">Many system services depend on other services to function
-      properly.  For example, <citerefentry><refentrytitle>yp</refentrytitle><manvolnum>8</manvolnum></citerefentry> and other
-      <acronym>RPC</acronym>-based services may fail to start until
-      after the <citerefentry><refentrytitle>rpcbind</refentrytitle><manvolnum>8</manvolnum></citerefentry> service has started.  To resolve this
-      issue, information about dependencies and other meta-data is
-      included in the comments at the top of each startup script.
-      The <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry> program is used to parse these comments
-      during system initialization to determine the order in which
-      system services should be invoked to satisfy the
-      dependencies.</para>
+    <para>許多系統服務會相依其他服務來運作，例如 <citerefentry><refentrytitle>yp</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及其他以 <acronym>RPC</acronym> 為基礎的服務在 <citerefentry><refentrytitle>rpcbind</refentrytitle><manvolnum>8</manvolnum></citerefentry> 服務啟動前可能會啟動失敗。要解決這種問題，就必須在啟動 Script 上方的註解中加入相依及其他 meta-data。在系統初始化時會用 <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry> 程式分析這些註解來決定要以什麼順序來執行系統服務以滿足相依。</para>
 
-    <para xml:lang="en">The following key word must be included in all startup
-      scripts as it is required by <citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> to
-      <quote>enable</quote> the startup script:</para>
+    <para>因 <citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的需要，以下的關鍵字必須加入到所有的啟動 Script 方可 <quote>enable</quote> 啟動 Script：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en"><literal>PROVIDE</literal>: Specifies the services this
-	  file provides.</para>
+	<para><literal>PROVIDE</literal>: 設定此檔案所提供的服務。</para>
       </listitem>
     </itemizedlist>
 
-    <para xml:lang="en">The following key words may be included at the top of each
-      startup script.  They are not strictly necessary, but are
-      useful as hints to <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry>:</para>
+    <para>以下關鍵字可能會在每個啟動 Script 的上方引用，雖然非必要，但是對於 <citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</manvolnum></citerefentry> 是非常有用的提示：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en"><literal>REQUIRE</literal>: Lists services which are
-	  required for this service.  The script containing this key
-	  word will run <emphasis>after</emphasis> the specified
-	  services.</para>
+	<para><literal>REQUIRE</literal>: 列出此服務需要引用的服務。有使用此關鍵字的 Script 會在指定服務啟動 <emphasis>之後</emphasis> 才執行。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><literal>BEFORE</literal>: Lists services which depend
-	  on this service.  The script containing this key word will
-	  run <emphasis>before</emphasis> the specified
-	  services.</para>
+	<para><literal>BEFORE</literal>: 列出相依此服務的服務。有使用此關鍵字的 Script 會在指定的服務啟動 <emphasis>之前</emphasis> 執行。</para>
       </listitem>
     </itemizedlist>
 
-    <para xml:lang="en">By carefully setting these keywords for each startup script,
-      an administrator has a fine-grained level of control of the
-      startup order of the scripts, without the need for
-      <quote>runlevels</quote> used by some <trademark class="registered">UNIX</trademark> operating
-      systems.</para>
+    <para>透過仔細的設定每個啟動 Script 的這些關鍵字，管理者便可對 Script 的啟動順序進行微調，而不需使用到其他 <trademark class="registered">UNIX</trademark> 作業系統所使用的 <quote>runlevels</quote>。</para>
 
-    <para xml:lang="en">Additional information can be found in <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> and
-      <citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Refer to <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/rc-scripting">this article</link>
-      for instructions on how to create custom <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-      scripts.</para>
+    <para>額外的資訊可在 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>rc.subr</refentrytitle><manvolnum>8</manvolnum></citerefentry> 中找到。請參考 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/rc-scripting">此文章</link> 來取得如何建立自訂 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> Script 的操作說明。</para>
 
     <sect2 xml:id="configtuning-core-configuration">
-      <title>管理特定系統的設定</title>
+      <title>管理系統特定的設定</title>
 
       <indexterm xml:lang="en">
 	<primary>rc files</primary>
 	<secondary><filename>rc.conf</filename></secondary>
       </indexterm>
 
-      <para xml:lang="en">The principal location for system configuration
-	information is <filename>/etc/rc.conf</filename>.  This file
-	contains a wide range of configuration information and it is
-	read at system startup to configure the system.  It provides
-	the configuration information for the
-	<filename>rc*</filename> files.</para>
+      <para>系統設定資訊的主要位於 <filename>/etc/rc.conf</filename>，這個檔案的設定資訊範圍非常廣且會在系統啟動時讀取來設定系統，它也提供設定資訊給 <filename>rc*</filename> 檔案使用。</para>
 
-      <para xml:lang="en">The entries in <filename>/etc/rc.conf</filename> override
-	the default settings in
-	<filename>/etc/defaults/rc.conf</filename>.  The file
-	containing the default settings should not be edited.
-	Instead, all system-specific changes should be made to
-	<filename>/etc/rc.conf</filename>.</para>
+      <para>在 <filename>/etc/rc.conf</filename> 中的設定項目會覆蓋在 <filename>/etc/defaults/rc.conf</filename> 的預設設定，不應直接編輯該檔案中的預設設定，所有系統特定的設定應到 <filename>/etc/rc.conf</filename> 所修改。</para>
 
-      <para xml:lang="en">A number of strategies may be applied in clustered
-	applications to separate site-wide configuration from
-	system-specific configuration in order to reduce
-	administration overhead.  The recommended approach is to place
-	system-specific configuration into
-	<filename>/etc/rc.conf.local</filename>.  For example, these
-	entries in <filename>/etc/rc.conf</filename> apply to all
-	systems:</para>
+      <para>在叢集應用時要將系統特定的設定與各站特定的設定分開，藉此減少管理成本有好幾種方法，建議的方法是將系統特定的設定放置在 <filename>/etc/rc.conf.local</filename>，例如以下將要套用到所有系統的設定項目放在 <filename>/etc/rc.conf</filename>：</para>
 
       <programlisting xml:lang="en">sshd_enable="YES"
 keyrate="fast"
 defaultrouter="10.1.1.254"</programlisting>
 
-      <para xml:lang="en">Whereas these entries in
-	<filename>/etc/rc.conf.local</filename> apply to this system
-	only:</para>
+      <para>而只套用到此系統的設定放在 <filename>/etc/rc.conf.local</filename>：</para>
 
       <programlisting xml:lang="en">hostname="node1.example.org"
 ifconfig_fxp0="inet 10.1.1.1/8"</programlisting>
 
-      <para xml:lang="en">Distribute <filename>/etc/rc.conf</filename> to every
-	system using an application such as
-	<application>rsync</application> or
-	<application>puppet</application>, while
-	<filename>/etc/rc.conf.local</filename> remains
-	unique.</para>
+      <para>使用應用程式如 <application>rsync</application> 或 <application>puppet</application> 將 <filename>/etc/rc.conf</filename> 散布到每個系統，而在各系統保留自己的 <filename>/etc/rc.conf.local</filename>。</para>
 
-      <para xml:lang="en">Upgrading the system will not overwrite
-	<filename>/etc/rc.conf</filename>, so system configuration
-	information will not be lost.</para>
+      <para>升級系統並不會覆寫 <filename>/etc/rc.conf</filename>，所以系統設定資訊不會因此遺失。</para>
 
       <tip>
-	<para xml:lang="en">Both <filename>/etc/rc.conf</filename> and
-	  <filename>/etc/rc.conf.local</filename>
-	  are parsed by <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  This allows system operators to
-	  create complex configuration scenarios.  Refer to
-	  <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for further information on this
-	  topic.</para>
+	<para><filename>/etc/rc.conf</filename> 以及 <filename>/etc/rc.conf.local</filename> 兩個檔案都會使用 <citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 解析，這讓系統操作者能夠建立較複雜的設定方案。請參考 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 來取得更多有關此主題的資訊。</para>
       </tip>
     </sect2>
   </sect1>
@@ -14528,9 +14322,7 @@ ifconfig_fxp0="inet 10.1.1.1/8"</programlisting>
       <secondary>configuration</secondary>
     </indexterm>
 
-    <para xml:lang="en">Adding and configuring a network interface card
-      (<acronym>NIC</acronym>)  is a common task for any FreeBSD
-      administrator.</para>
+    <para>對 FreeBSD 管理者來說加入與設定網路介面卡 (Network Interface Card, <acronym>NIC</acronym>) 會是一件常見的工作。</para>
 
     <sect2>
       <title>找到正確的驅動程式</title>
@@ -14540,30 +14332,11 @@ ifconfig_fxp0="inet 10.1.1.1/8"</programlisting>
 	<secondary>driver</secondary>
       </indexterm>
 
-      <para xml:lang="en">First, determine the model of the <acronym>NIC</acronym>
-	and the chip it uses.  FreeBSD supports a wide variety of
-	<acronym>NIC</acronym>s.  Check the Hardware Compatibility
-	List for the FreeBSD release to see if the <acronym>NIC</acronym>
-	is supported.</para>
+      <para>首先，要先確定 <acronym>NIC</acronym> 的型號及其使用的晶片。FreeBSD 支援各種 <acronym>NIC</acronym>，可檢查該 FreeBSD 發佈版本的硬體相容性清單來查看是否有支援該 <acronym>NIC</acronym>。</para>
 
-      <para xml:lang="en">If the <acronym>NIC</acronym> is supported, determine
-	the name of the FreeBSD driver for the <acronym>NIC</acronym>.
-	Refer to <filename>/usr/src/sys/conf/NOTES</filename> and
-	<filename>/usr/src/sys/<replaceable>arch</replaceable>/conf/NOTES</filename>
-	for the list of <acronym>NIC</acronym> drivers with some
-	information about the supported chipsets.  When in doubt, read
-	the manual page of the driver as it will provide more
-	information about the supported hardware and any known
-	limitations of the driver.</para>
+      <para>若有支援該 <acronym>NIC</acronym>，接著要確定該 <acronym>NIC</acronym> 所要需要的 FreeBSD 驅動程式名稱。請參考 <filename>/usr/src/sys/conf/NOTES</filename> 及 <filename>/usr/src/sys/<replaceable>arch</replaceable>/conf/NOTES</filename> 來取得 <acronym>NIC</acronym> 驅動程式清單及其支援的晶片組相關資訊。當有疑問是，請閱讀該驅動程式的操作手冊，會有提供更多有關支援硬體及該驅動程式已知問題的資訊。</para>
 
-      <para xml:lang="en">The drivers for common <acronym>NIC</acronym>s are already
-	present in the <filename>GENERIC</filename> kernel, meaning
-	the <acronym>NIC</acronym> should be probed during boot.  The
-	system's boot messages can be viewed by typing
-	<command>more /var/run/dmesg.boot</command> and using the
-	spacebar to scroll through the text.  In this example, two
-	Ethernet <acronym>NIC</acronym>s using the <citerefentry><refentrytitle>dc</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver
-	are present on the system:</para>
+      <para><filename>GENERIC</filename> 核心已有內含常見 <acronym>NIC</acronym> 的驅動程式 ，意思是在開機時應該會偵測到 <acronym>NIC</acronym>。可以輸入 <command>more /var/run/dmesg.boot</command> 來檢視系統的開機訊息並使用空白鍵捲動文字。在此例中，兩個乙太網路 <acronym>NIC</acronym> 使用系統已有的 <citerefentry><refentrytitle>dc</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式：</para>
 
       <screen xml:lang="en">dc0: &lt;82c169 PNIC 10/100BaseTX&gt; port 0xa000-0xa0ff mem 0xd3800000-0xd38
 000ff irq 15 at device 11.0 on pci0
@@ -14580,33 +14353,15 @@ bmtphy1:  10baseT, 10baseT-FDX, 100baseTX, 100baseTX-FDX, auto
 dc1: Ethernet address: 00:a0:cc:da:da:db
 dc1: [ITHREAD]</screen>
 
-      <para xml:lang="en">If the driver for the <acronym>NIC</acronym> is not
-	present in <filename>GENERIC</filename>, but a driver is
-	available, the driver will need to be loaded before the
-	<acronym>NIC</acronym> can be configured and used.  This may
-	be accomplished in one of two ways:</para>
+      <para>若在 <filename>GENERIC</filename> 中沒有該 <acronym>NIC</acronym> 的驅動程式，但有可用的驅動程式，那麼在設定及使用 <acronym>NIC</acronym> 前要先載入該驅動程式，有兩種方式可以完成這件事：</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en">The easiest way is to load a kernel module for the
-	    <acronym>NIC</acronym> using <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  To also
-	    automatically load the driver at boot time, add the
-	    appropriate line to
-	    <filename>/boot/loader.conf</filename>.  Not all
-	    <acronym>NIC</acronym> drivers are available as
-	    modules.</para>
+	  <para>最簡單的方式是使用 <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citerefentry> 載入 <acronym>NIC</acronym> 要使用的核心模組。要在開機時自動載入，可加入適當的設定到 <filename>/boot/loader.conf</filename>。不是所有 <acronym>NIC</acronym> 驅動程式皆可當做模組使用。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Alternatively, statically compile support for the
-	    <acronym>NIC</acronym> into a custom kernel.  Refer to
-	    <filename>/usr/src/sys/conf/NOTES</filename>,
-	    <filename>/usr/src/sys/<replaceable>arch</replaceable>/conf/NOTES</filename>
-	    and the manual page of the driver to determine which line
-	    to add to the custom kernel configuration file.  For more
-	    information about recompiling the kernel, refer to <xref linkend="kernelconfig"/>.  If the <acronym>NIC</acronym>
-	    was detected at boot, the kernel does not need to be
-	    recompiled.</para>
+	  <para>或者，靜態編譯對 <acronym>NIC</acronym> 的支援到自訂核心，請參考  <filename>/usr/src/sys/conf/NOTES</filename>, <filename>/usr/src/sys/<replaceable>arch</replaceable>/conf/NOTES</filename> 及驅動程式的操作手冊來了解要在自訂核心設定檔中要加入那些設定。要取得更多有關重新編譯核心的資訊可參考 <xref linkend="kernelconfig"/>。若在開機時有偵測到 <acronym>NIC</acronym>，就不需要再重新編譯核心。</para>
 	</listitem>
       </itemizedlist>
 
@@ -14634,53 +14389,29 @@ dc1: [ITHREAD]</screen>
 for it.  Whatever is done must also be done to the same indexterm in
 linuxemu/chapter.xml -->
 
-	<para xml:lang="en">Unfortunately, there are still many vendors that do not
-	  provide schematics for their drivers to the open source
-	  community because they regard such information as trade
-	  secrets.  Consequently, the developers of FreeBSD and other
-	  operating systems are left with two choices: develop the
-	  drivers by a long and pain-staking process of reverse
-	  engineering or using the existing driver binaries available
-	  for <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> platforms.</para>
+	<para>很不幸的，仍有很多供應商並沒有提供它們驅動程式的技術文件給開源社群，因為這些文件有涉及商業機密。因此，FreeBSD 及其他作業系統的開發人員只剩下兩種方案可以選擇：透過長期與艱苦的過程做逆向工程來開發驅動程式或是使用現有供 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 平台用的驅動程式 Binary。</para>
 
-	<para xml:lang="en">FreeBSD provides <quote>native</quote> support for the
-	  Network Driver Interface Specification
-	  (<acronym>NDIS</acronym>).  It includes <citerefentry><refentrytitle>ndisgen</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	  which can be used to convert a <trademark class="registered">Windows</trademark> XP driver into a
-	  format that can be used on FreeBSD.  Because the <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry>
-	  driver uses a <trademark class="registered">Windows</trademark> XP binary, it only runs on <trademark>i386</trademark>
-	  and amd64 systems.  <acronym>PCI</acronym>, CardBus,
-	  <acronym>PCMCIA</acronym>, and <acronym>USB</acronym>
-	  devices are supported.</para>
+	<para>FreeBSD 對 Network Driver Interface Specification (<acronym>NDIS</acronym>) 有提供 <quote>原生</quote> 的支援，這包含了 <citerefentry><refentrytitle>ndisgen</refentrytitle><manvolnum>8</manvolnum></citerefentry> 可用來轉換 <trademark class="registered">Windows</trademark> XP 驅動程式成可在 FreeBSD 上使用的格式。由於 <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式使用的是 <trademark class="registered">Windows</trademark> XP binary，所以只能在 <trademark>i386</trademark> 及 amd64 系統上執行。<acronym>PCI</acronym>, CardBus, <acronym>PCMCIA</acronym> 以及 <acronym>USB</acronym> 裝置也都有支援。</para>
 
-	<para xml:lang="en">To use <citerefentry><refentrytitle>ndisgen</refentrytitle><manvolnum>8</manvolnum></citerefentry>, three things are needed:</para>
+	<para>要使用 <citerefentry><refentrytitle>ndisgen</refentrytitle><manvolnum>8</manvolnum></citerefentry> 需要三樣東西：</para>
 
 	<orderedlist>
 	  <listitem>
-	    <para xml:lang="en">FreeBSD kernel sources.</para>
+	    <para>FreeBSD 核心原始碼。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para xml:lang="en">A <trademark class="registered">Windows</trademark> XP driver binary with a
-	      <filename>.SYS</filename> extension.</para>
+	    <para>一個 <filename>.SYS</filename> 附檔名的 <trademark class="registered">Windows</trademark> XP 驅動程式 Binary。</para>
 	  </listitem>
 
 	  <listitem>
-	    <para xml:lang="en">A <trademark class="registered">Windows</trademark> XP driver configuration file with a
-	      <filename>.INF</filename> extension.</para>
+	    <para>一個 <filename>.INF</filename> 附檔名的 <trademark class="registered">Windows</trademark> XP 驅動程式設定檔。</para>
 	  </listitem>
 	</orderedlist>
 
-	<para xml:lang="en">Download the <filename>.SYS</filename> and
-	  <filename>.INF</filename> files for the specific
-	  <acronym>NIC</acronym>.  Generally, these can be found on
-	  the driver CD or at the vendor's website.  The following
-	  examples use <filename>W32DRIVER.SYS</filename> and
-	  <filename>W32DRIVER.INF</filename>.</para>
+	<para>下載供指定 <acronym>NIC</acronym> 使用的 <filename>.SYS</filename> 及 <filename>.INF</filename> 檔。通常這些檔案可以在驅動程式 CD 或者供應商的網站上找到。以下範例會使用 <filename>W32DRIVER.SYS</filename> 及 <filename>W32DRIVER.INF</filename>。</para>
 
-	<para xml:lang="en">The driver bit width must match the version of FreeBSD.
-	  For FreeBSD/i386, use a <trademark class="registered">Windows</trademark> 32-bit driver.  For
-	  FreeBSD/amd64, a <trademark class="registered">Windows</trademark> 64-bit driver is needed.</para>
+	<para>驅動程式的位元寬度必須與 FreeBSD 的版本相符。例如 FreeBSD/i386 需要使用 <trademark class="registered">Windows</trademark> 32-bit 驅動程式，而 FreeBSD/amd64 則需要使用 <trademark class="registered">Windows</trademark> 64-bit 驅動程式。</para>
 
 	<para xml:lang="en">The next step is to compile the driver binary into a
 	  loadable kernel module.  As
@@ -14689,30 +14420,18 @@ linuxemu/chapter.xml -->
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>ndisgen <replaceable>/path/to/W32DRIVER.INF</replaceable> <replaceable>/path/to/W32DRIVER.SYS</replaceable></userinput></screen>
 
-	<para xml:lang="en">This command is interactive and prompts for any extra
-	  information it requires.  A new kernel module will be
-	  generated in the current directory.  Use <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	  to load the new module:</para>
+	<para>這個指令是互動式的，會提示輸入任何所需的額外資訊，新的核心模組會被產生在目前的目錄，使用 <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來載入新的模組：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>kldload <replaceable>./W32DRIVER_SYS.ko</replaceable></userinput></screen>
 
-	<para xml:lang="en">In addition to the generated kernel module, the
-	  <filename>ndis.ko</filename> and
-	  <filename>if_ndis.ko</filename> modules must be loaded.
-	  This should happen automatically when any module that
-	  depends on <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry> is loaded.  If not, load them
-	  manually, using the following commands:</para>
+	<para>除了產生的核心模組之外，<filename>ndis.ko</filename> 以及 <filename>if_ndis.ko</filename> 也必須載入，會在任何有相依 <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry> 的模組被載入時一併自動載入。若沒有自動載入，則需使用以下指令手動載入：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>kldload ndis</userinput>
 <prompt>#</prompt> <userinput>kldload if_ndis</userinput></screen>
 
-	<para xml:lang="en">The first command loads the <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry> miniport driver
-	  wrapper and the second loads the generated
-	  <acronym>NIC</acronym> driver.</para>
+	<para>第一個指令會載入 <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry> miniport 驅動程式包裝程式，而第二個指令會載入產生的 <acronym>NIC</acronym> 驅動程式。</para>
 
-	<para xml:lang="en">Check <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></citerefentry> to see if there were any load
-	  errors.  If all went well, the output should be similar to
-	  the following:</para>
+	<para>檢查 <citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 查看是否有任何載入錯誤，若一切正常，輸出結果應會如下所示：</para>
 
 	<screen xml:lang="en">ndis0: &lt;Wireless-G PCI Adapter&gt; mem 0xf4100000-0xf4101fff irq 3 at device 8.0 on pci1
 ndis0: NDIS API version: 5.0
@@ -14720,14 +14439,9 @@ ndis0: Ethernet address: 0a:b1:2c:d3:4e:f5
 ndis0: 11b rates: 1Mbps 2Mbps 5.5Mbps 11Mbps
 ndis0: 11g rates: 6Mbps 9Mbps 12Mbps 18Mbps 36Mbps 48Mbps 54Mbps</screen>
 
-	<para xml:lang="en">From here, <filename>ndis0</filename> can be
-	  configured like any other <acronym>NIC</acronym>.</para>
+	<para>到此之後 <filename>ndis0</filename> 可以像任何其他 <acronym>NIC</acronym> 設定使用。</para>
 
-	<para xml:lang="en">To configure the system to load the <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry> modules
-	  at boot time, copy the generated module,
-	  <filename>W32DRIVER_SYS.ko</filename>, to
-	  <filename>/boot/modules</filename>.  Then, add the following
-	  line to <filename>/boot/loader.conf</filename>:</para>
+	<para>要設定系統於開機時載入 <citerefentry><refentrytitle>ndis</refentrytitle><manvolnum>4</manvolnum></citerefentry> 模組，可複製產生的模組 <filename>W32DRIVER_SYS.ko</filename> 到 <filename>/boot/modules</filename>。然後加入下行到 <filename>/boot/loader.conf</filename>：</para>
 
 	<programlisting xml:lang="en">W32DRIVER_SYS_load="YES"</programlisting>
       </sect3>
@@ -14741,13 +14455,9 @@ ndis0: 11g rates: 6Mbps 9Mbps 12Mbps 18Mbps 36Mbps 48Mbps 54Mbps</screen>
 	<secondary>configuration</secondary>
       </indexterm>
 
-      <para xml:lang="en">Once the right driver is loaded for the
-	<acronym>NIC</acronym>, the card needs to be configured.  It
-	may have been configured at installation time by
-	<citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>載入正確的 <acronym>NIC</acronym> 驅動程式之後，接著需要設定介面卡，這個動作可能在安裝時已經使用 <citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry> 設定過了。</para>
 
-      <para xml:lang="en">To display the <acronym>NIC</acronym> configuration,
-	enter the following command:</para>
+      <para>要查看 <acronym>NIC</acronym> 設定可輸入以下指令：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>ifconfig</userinput>
 dc0: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1500
@@ -14769,85 +14479,57 @@ lo0: flags=8049&lt;UP,LOOPBACK,RUNNING,MULTICAST&gt; metric 0 mtu 16384
         inet 127.0.0.1 netmask 0xff000000
         nd6 options=3&lt;PERFORMNUD,ACCEPT_RTADV&gt;</screen>
 
-      <para xml:lang="en">In this example, the following devices were
-	displayed:</para>
+      <para>在這個例子中列出了以下裝置：</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><filename>dc0</filename>: The first Ethernet
-	    interface.</para>
+	  <para><filename>dc0</filename>: 第一個乙太網路介面。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><filename>dc1</filename>: The second Ethernet
-	    interface.</para>
+	  <para><filename>dc1</filename>: 第二個乙太網路介面。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><filename>lo0</filename>: The loopback
-	    device.</para>
+	  <para><filename>lo0</filename>: Loopback 裝置。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">FreeBSD uses the driver name followed by the order in which
-	the card is detected at boot to name the
-	<acronym>NIC</acronym>.  For example,
-	<filename>sis2</filename> is the third
-	<acronym>NIC</acronym> on the system using the <citerefentry><refentrytitle>sis</refentrytitle><manvolnum>4</manvolnum></citerefentry>
-	driver.</para>
+      <para>FreeBSD 會使用驅動程式名稱接著開機時所偵測到的介面卡順序來命名 <acronym>NIC</acronym>。例如 <filename>sis2</filename> 是指在系統上使用 <citerefentry><refentrytitle>sis</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式的第三個 <acronym>NIC</acronym>。</para>
 
-      <para xml:lang="en">In this example, <filename>dc0</filename> is up and
-	running.  The key indicators are:</para>
+      <para>在此例中，<filename>dc0</filename> 已經上線並且執行中。主要的依據有：</para>
 
       <orderedlist>
 	<listitem>
-	  <para xml:lang="en"><literal>UP</literal> means that the card is
-	    configured and ready.</para>
+	  <para><literal>UP</literal> 代表介面卡已設定好並且準備就緒。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">The card has an Internet (<literal>inet</literal>)
-	    address, <systemitem class="ipaddress">192.168.1.3</systemitem>.</para>
+	  <para>介面卡有網際網路 (<literal>inet</literal>) 位址，<systemitem class="ipaddress">192.168.1.3</systemitem>。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">It has a valid subnet mask
-	    (<literal>netmask</literal>), where
-	    <systemitem class="netmask">0xffffff00</systemitem> is the
-	    same as <systemitem class="netmask">255.255.255.0</systemitem>.</para>
+	  <para>介面卡有一個有效的子網路遮罩 (<literal>netmask</literal>)，其中 <systemitem class="netmask">0xffffff00</systemitem> 等同於 <systemitem class="netmask">255.255.255.0</systemitem>。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">It has a valid broadcast address, <systemitem class="ipaddress">192.168.1.255</systemitem>.</para>
+	  <para>介面卡有一個有效的廣播位址，<systemitem class="ipaddress">192.168.1.255</systemitem>。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">The <acronym>MAC</acronym> address of the card
-	    (<literal>ether</literal>) is <systemitem class="etheraddress">00:a0:cc:da:da:da</systemitem>.</para>
+	  <para>介面卡 (<literal>ether</literal>) 的 <acronym>MAC</acronym> 位址是 <systemitem class="etheraddress">00:a0:cc:da:da:da</systemitem>。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">The physical media selection is on autoselection mode
-	    (<literal>media: Ethernet autoselect (100baseTX
-	      &lt;full-duplex&gt;)</literal>).  In this example,
-	    <filename>dc1</filename> is configured to run with
-	    <literal>10baseT/UTP</literal> media.  For more
-	    information on available media types for a driver, refer
-	    to its manual page.</para>
+	  <para>實體媒介選擇為自動選擇模式 (<literal>media: Ethernet autoselect (100baseTX &lt;full-duplex&gt;)</literal>)。在本例中 <filename>dc1</filename> 被設定使用 <literal>10baseT/UTP</literal> 媒介。要取得更多有關可用的驅動程式媒介類型請參考操作手冊。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">The status of the link (<literal>status</literal>) is
-	    <literal>active</literal>, indicating that the carrier
-	    signal is detected.  For <filename>dc1</filename>, the
-	    <literal>status: no carrier</literal> status is normal
-	    when an Ethernet cable is not plugged into the
-	    card.</para>
+	  <para>連結的狀態 (<literal>status</literal>) 為使用中 (<literal>active</literal>)，代表有偵測到載波信號 (Carrier Signal)。若 <filename>dc1</filename> 所代表的介面卡未插入乙太網路線則狀態為 <literal>status: no carrier</literal> 是正常的。</para>
 	</listitem>
       </orderedlist>
 
-      <para xml:lang="en">If the <citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> output had shown something similar
-	to:</para>
+      <para>若 <citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的輸出結果如下：</para>
 
       <screen xml:lang="en">dc0: flags=8843&lt;BROADCAST,SIMPLEX,MULTICAST&gt; metric 0 mtu 1500
 	options=80008&lt;VLAN_MTU,LINKSTATE&gt;
@@ -14855,58 +14537,31 @@ lo0: flags=8049&lt;UP,LOOPBACK,RUNNING,MULTICAST&gt; metric 0 mtu 16384
 	media: Ethernet autoselect (100baseTX &lt;full-duplex&gt;)
 	status: active</screen>
 
-      <para xml:lang="en">it would indicate the card has not been configured.</para>
+      <para>則代表尚未設定介面卡。</para>
 
-      <para xml:lang="en">The card must be configured as
-	<systemitem class="username">root</systemitem>.  The
-	<acronym>NIC</acronym> configuration can be performed from the
-	command line with <citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> but will not persist after
-	a reboot unless the configuration is also added to
-	<filename>/etc/rc.conf</filename>.  If a
-	<acronym>DHCP</acronym> server is present on the LAN,
-	just add this line:</para>
+      <para>介面卡必須以 <systemitem class="username">root</systemitem> 來設定。<acronym>NIC</acronym> 的設定可在指令列執行 <citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來完成，但重新開機之後變會消失，除非將設定也加到 <filename>/etc/rc.conf</filename>。若在 LAN 中有 <acronym>DHCP</acronym> 伺服器，則只需加入此行：</para>
 
       <programlisting xml:lang="en">ifconfig_dc0="DHCP"</programlisting>
 
-      <para xml:lang="en">Replace <replaceable>dc0</replaceable> with the correct value
-	for the system.</para>
+      <para>替換 <replaceable>dc0</replaceable> 為該系統的正確值。</para>
 
-      <para xml:lang="en">The line added, then, follow the instructions given in
-	<xref linkend="config-network-testing"/>.</para>
+      <para>加入這行之後，接著依據 <xref linkend="config-network-testing"/> 指示操作。</para>
 
       <note>
-	<para xml:lang="en">If the network was configured during installation, some
-	  entries for the <acronym>NIC</acronym>(s) may be already
-	  present.  Double check <filename>/etc/rc.conf</filename>
-	  before adding any lines.</para>
+	<para>若網路在安裝時已設定，可能會已經有 <acronym>NIC</acronym> 的設定項目。在加入任何設定前請再次檢查 <filename>/etc/rc.conf</filename>。 </para>
       </note>
 
-      <para xml:lang="en">In the case, there is no <acronym>DHCP</acronym> server,
-	the <acronym>NIC</acronym>(s) have to be configured manually.
-	Add a line for each <acronym>NIC</acronym> present on the
-	system, as seen in this example:</para>
+      <para>在這個例中，沒有 <acronym>DHCP</acronym> 伺服器，必須手動設定 <acronym>NIC</acronym>。提每一個在系統上的 <acronym>NIC</acronym> 加入一行設定，如此例：</para>
 
       <programlisting xml:lang="en">ifconfig_dc0="inet 192.168.1.3 netmask 255.255.255.0"
 ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"</programlisting>
 
-      <para xml:lang="en">Replace <filename>dc0</filename> and
-	<filename>dc1</filename> and the <acronym>IP</acronym>
-	address information with the correct values for the system.
-	Refer to the man page for the driver, <citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry>, and
-	<citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more details about the allowed options and
-	the syntax of <filename>/etc/rc.conf</filename>.</para>
+      <para>替換 <filename>dc0</filename> 及 <filename>dc1</filename> 以及 <acronym>IP</acronym> 位址資訊為系統的正確值。請參考驅動程式的操作手冊、<citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 取得更多有關可用的選項及 <filename>/etc/rc.conf</filename> 的語法。</para>
 
-      <para xml:lang="en">If the network is not using <acronym>DNS</acronym>, edit
-	<filename>/etc/hosts</filename> to add the names and
-	<acronym>IP</acronym> addresses of the hosts on the
-	<acronym>LAN</acronym>, if they are not already there.  For
-	more information, refer to <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry> and to
-	<filename>/usr/share/examples/etc/hosts</filename>.</para>
+      <para>若網路沒有使用 <acronym>DNS</acronym>，則編輯 <filename>/etc/hosts</filename> 加入 <acronym>LAN</acronym> 上主機的名稱與 <acronym>IP</acronym> 位址。要取得更多資訊請參考 <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry> 及 <filename>/usr/share/examples/etc/hosts</filename>。</para>
 
       <note>
-	<para xml:lang="en">If there is no <acronym>DHCP</acronym> server and
-	  access to the Internet is needed, manually configure the
-	  default gateway and the nameserver:</para>
+	<para>若沒有 <acronym>DHCP</acronym> 伺服器且需要存取網際網路，那麼需要手動設定預設閘道及名稱伺服器：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>echo 'defaultrouter="<replaceable>your_default_router</replaceable>"' &gt;&gt; /etc/rc.conf</userinput>
 <prompt>#</prompt> <userinput>echo 'nameserver <replaceable>your_DNS_server</replaceable>' &gt;&gt; /etc/resolv.conf</userinput></screen>
@@ -14916,25 +14571,17 @@ ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"</programlis
     <sect2 xml:id="config-network-testing">
       <title>測試與疑難排解</title>
 
-      <para xml:lang="en">Once the necessary changes to
-	<filename>/etc/rc.conf</filename> are saved, a reboot can be
-	used to test the network configuration and to verify that the
-	system restarts without any configuration errors.
-	Alternatively, apply the settings to the networking system
-	with this command:</para>
+      <para>必要的變更儲存到 <filename>/etc/rc.conf</filename> 之後，需要重新啟動系統來測試網路設定並檢查系統重新啟動是否沒有任何設定錯誤。或者使用這個指令將設定套用到網路系統：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service netif restart</userinput></screen>
 
       <note>
-	<para xml:lang="en">If a default gateway has been set in
-	  <filename>/etc/rc.conf</filename>, also issue this
-	  command:</para>
+	<para>若預設的閘道器已設定於 <filename>/etc/rc.conf</filename> 也同樣要下這個指令：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>service routing restart</userinput></screen>
       </note>
 
-      <para xml:lang="en">Once the networking system has been relaunched, test the
-	<acronym>NIC</acronym>s.</para>
+      <para>網路系統重新啟動後，便可接著測試 <acronym>NIC</acronym>。</para>
 
       <sect3>
 	<title>測試乙太網路卡</title>
@@ -14944,9 +14591,7 @@ ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"</programlis
 	  <secondary>testing</secondary>
 	</indexterm>
 
-	<para xml:lang="en">To verify that an Ethernet card is configured correctly,
-	  <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry> the interface itself, and then <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	  another machine on the <acronym>LAN</acronym>:</para>
+	<para>要檢查乙太網路卡是否已正確設定可 <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry> 介面卡自己，然後 <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry> 其他於 <acronym>LAN</acronym> 上的主機：</para>
 
 	<screen xml:lang="en"><prompt>%</prompt> <userinput>ping -c5 192.168.1.3</userinput>
 PING 192.168.1.3 (192.168.1.3): 56 data bytes
@@ -14972,16 +14617,7 @@ PING 192.168.1.2 (192.168.1.2): 56 data bytes
 5 packets transmitted, 5 packets received, 0% packet loss
 round-trip min/avg/max/stddev = 0.700/0.729/0.766/0.025 ms</screen>
 
-	<para xml:lang="en">To test network resolution, use the host name instead
-	  of the <acronym>IP</acronym> address.  If there is no
-	  <acronym>DNS</acronym> server on the network,
-	  <filename>/etc/hosts</filename> must first be
-	  configured.  To this purpose, edit
-	  <filename>/etc/hosts</filename> to add the names and
-	  <acronym>IP</acronym> addresses of the hosts on the
-	  <acronym>LAN</acronym>, if they are not already there.  For
-	  more information, refer to <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry> and to
-	  <filename>/usr/share/examples/etc/hosts</filename>.</para>
+	<para>要測試網路解析，可使用主機名稱來替代 <acronym>IP</acronym> 位址。若在網路上沒有 <acronym>DNS</acronym> 伺服器則必須先設定 <filename>/etc/hosts</filename>，若主機尚未設定到 <filename>/etc/hosts</filename> 中，則需編輯 <filename>/etc/hosts</filename> 加入 <acronym>LAN</acronym> 上主機的名稱及 <acronym>IP</acronym> 位址，要取得更多資訊請參考 <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry> 及 <filename>/usr/share/examples/etc/hosts</filename>。</para>
       </sect3>
 
       <sect3>
@@ -14992,58 +14628,19 @@ round-trip min/avg/max/stddev = 0.700/0.729/0.766/0.025 ms</screen>
 	  <secondary>troubleshooting</secondary>
 	</indexterm>
 
-	<para xml:lang="en">When troubleshooting hardware and software
-	  configurations, check the simple things first.  Is the
-	  network cable plugged in?  Are the network services properly
-	  configured?  Is the firewall configured correctly?  Is the
-	  <acronym>NIC</acronym> supported by FreeBSD?  Before sending
-	  a bug report, always check the Hardware Notes, update the
-	  version of FreeBSD to the latest STABLE version, check the
-	  mailing list archives, and search the Internet.</para>
+	<para>在排除硬體及軟體設定問題時，要先檢查幾件簡單的事。網路線插上了沒？網路的服務都正確設定了嗎？防火牆設定是否正確？FreeBSD 是否支援該 <acronym>NIC</acronym>？在回報問題之前，永遠要先檢查 Hardware Notes、更新 FreeBSD 到最新的 STABLE 版本、檢查郵遞論壇封存記錄以及上網查詢。</para>
 
-	<para xml:lang="en">If the card works, yet performance is poor, read
-	  through <citerefentry><refentrytitle>tuning</refentrytitle><manvolnum>7</manvolnum></citerefentry>.  Also, check the network
-	  configuration as incorrect network settings can cause slow
-	  connections.</para>
+	<para>若介面卡可以運作，但是效能很差，請閱讀 <citerefentry><refentrytitle>tuning</refentrytitle><manvolnum>7</manvolnum></citerefentry>，同時也要檢查網路設定，因為不正確的網路設定會造成連線速度緩慢。</para>
 
-	<para xml:lang="en">Some users experience one or two
-	  <errorname>device timeout</errorname> messages, which is
-	  normal for some cards.  If they continue, or are bothersome,
-	  determine if the device is conflicting with another device.
-	  Double check the cable connections.  Consider trying another
-	  card.</para>
+	<para>部份使用者會遇到一次或兩次 <errorname>device timeout</errorname> 的訊息，在對某些介面卡是正常的。若訊息持續發生或很煩的，請確認是否有與其他的裝置衝突，再次檢查網路線，或考慮使用其他介面卡。</para>
 
-	<para xml:lang="en">To resolve <errorname>watchdog timeout</errorname>
-	  errors,  first check the network cable.  Many cards
-	  require a <acronym>PCI</acronym> slot which supports bus
-	  mastering.  On some old motherboards, only one
-	  <acronym>PCI</acronym> slot allows it, usually slot 0.
-	  Check the <acronym>NIC</acronym> and the motherboard
-	  documentation to determine if that may be the
-	  problem.</para>
+	<para>要解決 <errorname>watchdog timeout</errorname> 錯誤，先檢查網路線。許多介面卡需要使用支援 Bus Mastering 的 <acronym>PCI</acronym> 插槽，在一些舊型的主機板，只會有一個 <acronym>PCI</acronym> 插槽支援，通常是插槽 0。檢查 <acronym>NIC</acronym> 以及主機板說明文件來確定是否為此問題。</para>
 
-	<para xml:lang="en"><errorname>No route to host</errorname> messages occur
-	  if the system is unable to route a packet to the destination
-	  host.  This can happen if no default route is specified or
-	  if a cable is unplugged.  Check the output of
-	  <command>netstat -rn</command> and make sure there is a
-	  valid route to the host.  If there is not, read
-	  <xref linkend="network-routing"/>.</para>
+	<para>若系統無法路由傳送封包到目標主機則會出現 <errorname>No route to host</errorname> 訊息，這可能是因為沒有指定預設的路由或未插上網路線。請檢查 <command>netstat -rn</command> 的輸出並確認有一個有效的路由可連線至主機，若沒有，請閱讀 <xref linkend="network-routing"/>。</para>
 
-	<para xml:lang="en"><errorname>ping: sendto: Permission denied</errorname>
-	  error messages are often caused by a misconfigured firewall.
-	  If a firewall is enabled on FreeBSD but no rules have been
-	  defined, the default policy is to deny all traffic, even
-	  <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Refer to
-	  <xref linkend="firewalls"/> for more information.</para>
+	<para>造成 <errorname>ping: sendto: Permission denied</errorname>  錯誤訊息的原因通常是防火牆設定錯誤。若在 FreeBSD 上有開啟防火牆，但卻未定義任何的規則，預設的原則是拒絕所有傳輸，即使是用 <citerefentry><refentrytitle>ping</refentrytitle><manvolnum>8</manvolnum></citerefentry>。請參考 <xref linkend="firewalls"/> 取得更多資訊。</para>
 
-	<para xml:lang="en">Sometimes performance of the card is poor or below
-	  average.  In these cases, try setting the media
-	  selection mode from <literal>autoselect</literal> to the
-	  correct media selection.  While this works for most
-	  hardware, it may or may not resolve the issue.  Again,
-	  check all the network settings, and refer to
-	  <citerefentry><refentrytitle>tuning</refentrytitle><manvolnum>7</manvolnum></citerefentry>.</para>
+	<para>有時介面卡的效能很差或低於平均值，在這種情況可嘗試設定媒介選擇模式由 <literal>autoselect</literal> 更改為正確的媒介選項，雖然這在大部份硬體可運作，但可能無法解決問題，同樣的，檢查所有網路設定並參考 <citerefentry><refentrytitle>tuning</refentrytitle><manvolnum>7</manvolnum></citerefentry>。</para>
       </sect3>
     </sect2>
   </sect1>
@@ -31425,11 +31022,11 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
 
   <itemizedlist>
     <listitem>
-      <para>資料完整性：所有資料都會有一個資料的校驗碼 (<link linkend="zfs-term-checksum">checksum</link>)，資被寫入時會計算校驗碼然後一併寫入，往後讀取資料時又會再計算一次校驗碼，若校驗碼與當初寫入時不相符，便可偵測到資料錯誤，此時若有可用的資料備援 (Data redundancy)，<acronym>ZFS</acronym> 會嘗試自動修正錯誤。</para>
+      <para>資料完整性：所有資料都會有一個資料的校驗碼 (<link linkend="zfs-term-checksum">checksum</link>)，資料寫入時會計算校驗碼然後一併寫入，往後讀取資料時會再計算一次校驗碼，若校驗碼與當初寫入時不相符，便可偵測到資料錯誤，此時若有可用的資料備援 (Data redundancy)，<acronym>ZFS</acronym> 會嘗試自動修正錯誤。</para>
     </listitem>
 
     <listitem>
-      <para>儲存池：實體的儲存裝置都會被加入到一個儲存池 (Pool)，然後會使用這個共用的儲存池來配置儲存空間，空間可給所有的檔案系統使用，而空間可透過加入新的儲存裝置到儲存池來增加。</para>
+      <para>儲存池：實體的儲存裝置都會先被加入到一個儲存池 (Pool)，這個共用的儲存池可用來配置儲存空間，儲存池的空間可被所有的檔案系統使用且透過加入新的儲存裝置來增加空間。</para>
     </listitem>
 
     <listitem>
@@ -31442,7 +31039,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
   <sect1 xml:id="zfs-differences">
     <title>什麼使 <acronym>ZFS</acronym> 與眾不同</title>
 
-    <para><acronym>ZFS</acronym> 與任何以往的檔案系統有顯著的不同，它並不只是一個檔案系統，結合了傳統磁碟區管理程式 (Volume Manager) 及檔案系統兩個獨立的角色，造就了 <acronym>ZFS</acronym> 獨特的優點，讓檔案系統現在可以察覺磁碟底層結構的變動。傳統在一個磁碟上只能建立一個檔案系統，若有兩個磁碟則會需要建立兩個分開的檔案系統，這個問題在傳統硬體 <acronym>RAID</acronym> 上可以透過呈現一個單一的邏輯磁碟給作業系統來解決，這個磁碟的空間實際上由數個實體磁碟所組成，而作業系統便可在這個邏輯磁碟上放置檔案系統，即使在像 <acronym>GEOM</acronym> 提供的軟體 <acronym>RAID</acronym> 解決方案也是一樣，把 <acronym>RAID</acronym> transform 當做是一個單一的裝置，把 <acronym>UFS</acronym> 檔案系統放在上面。<acronym>ZFS</acronym> 結合了 Volume Manager 與檔案系統來解決這個問題並讓建立的許多檔案系統可以共用一個儲存池 (Pool)。<acronym>ZFS</acronym> 最大的優點是可以察覺實體磁碟配置的變動，當有額外的磁碟加入到儲存池時可以自動擴增即有的檔案系統，所有的檔案系統便可使用這個新的空間。<acronym>ZFS</acronym> 也有數個不同的屬性可以套用到各別檔案系統上，比起單一檔案系統，對建立數個不同檔案系統與資料集 (Dataset) 時有許多的好處。</para>
+    <para><acronym>ZFS</acronym> 與以往任何的檔案系統有顯著的不同，因為它不只是一個檔案系統，<acronym>ZFS</acronym> 的獨特優點來自結合了以往被分開的磁碟區管理程式 (Volume Manager) 及檔案系統兩個角色，讓檔案系統也能夠察覺磁碟底層結構的變動。傳統在一個磁碟上只能建立一個檔案系統，若有兩個磁碟則會需要建立兩個分開的檔案系統，在傳統要解決這個問題要使用硬體 <acronym>RAID</acronym> 來製作一個空間實際上由數顆實體磁碟所組成的單一的邏輯磁碟給作業系統，作業系統便可在這個邏輯磁碟上放置檔案系統，即使是在那些使用 <acronym>GEOM</acronym> 提供的軟體 <acronym>RAID</acronym> 解決方案也是一樣，把 <acronym>UFS</acronym> 檔案系統放在 <acronym>RAID</acronym> Transform 上面當做是一個單一的裝置。<acronym>ZFS</acronym> 結合了磁碟區管理程式 (Volume Manager) 與檔案系統來解決這個問題並讓建立多個檔案系統可以共用一個儲存池 (Pool)。<acronym>ZFS</acronym> 最大的優點是可以察覺實體磁碟配置的變動，當有額外的磁碟加入到儲存池時可以自動擴增現有的檔案系統，所有的檔案系統便可使用這個新的空間。<acronym>ZFS</acronym> 也有數個不同的屬性可以套用到各別檔案系統上，比起單一檔案系統，對建立數個不同檔案系統與資料集 (Dataset) 時有許多的好處。</para>
   </sect1>
 
   <sect1 xml:id="zfs-quickstart">
@@ -31485,14 +31082,14 @@ drwxr-xr-x   2 root  wheel    3 Aug 29 23:15 .
 drwxr-xr-x  21 root  wheel  512 Aug 29 23:12 ..
 -rw-r--r--   1 root  wheel    0 Aug 29 23:15 testfile</screen>
 
-      <para>但是，這個儲存池並未運用到任何 <acronym>ZFS</acronym> 功能，若要在這個儲存池上建立一個有開啟壓縮的資料集：</para>
+      <para>但是，這個儲存池並未運用到任何 <acronym>ZFS</acronym> 功能，若要在這個儲存池上建立一個有開啟壓縮功能的資料集：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs create example/compressed</userinput>
 <prompt>#</prompt> <userinput>zfs set compression=gzip example/compressed</userinput></screen>
 
       <para><literal>example/compressed</literal> 資料集現在是一個 <acronym>ZFS</acronym> 壓縮的檔案系統，可以試著複製較大的檔案到 <filename>/example/compressed</filename>。</para>
 
-      <para>壓縮也可以使用以下指令關閉：</para>
+      <para>壓縮功能也可以使用以下指令關閉：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs set compression=off example/compressed</userinput></screen>
 
@@ -31506,7 +31103,7 @@ devfs               1       1        0   100%    /dev
 /dev/ad0s1d  54098308 1032864 48737580     2%    /usr
 example      17547008       0 17547008     0%    /example</screen>
 
-      <para>要重新掛載檔案系統以便再次使用，使用 use <command>zfs mount</command> 然後以 <command>df</command> 檢查：</para>
+      <para>要重新掛載檔案系統以便再次使用，使用 <command>zfs mount</command> 然後以 <command>df</command> 檢查：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs mount example/compressed</userinput>
 <prompt>#</prompt> <userinput>df</userinput>
@@ -31526,7 +31123,7 @@ devfs on /dev (devfs, local)
 example on /example (zfs, local)
 example/compressed on /example/compressed (zfs, local)</screen>
 
-      <para>在建立之後，<acronym>ZFS</acronym> 的資料集可如同其他檔案系統一般使用，且有許多額外功能可在每個資料集上設定。例如，建立一個新的檔案系統 <literal>data</literal>，此處預計存放重要的資料，所以會設定每個資料區 (Data block) 要保留兩份備份：</para>
+      <para>在建立之後，<acronym>ZFS</acronym> 的資料集可如同其他檔案系統一般使用，且有許多額外功能可在每個資料集上設定。例如，建立一個預計存放重要的資料的新檔案系統 <literal>data</literal>，要設定每個資料區塊 (Data block) 要保留兩份備份：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs create example/data</userinput>
 <prompt>#</prompt> <userinput>zfs set copies=2 example/data</userinput></screen>
@@ -31561,10 +31158,10 @@ example/data        17547008       0 17547008     0%    /example/data</screen>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool create storage raidz da0 da1 da2</userinput></screen>
 
       <note>
-	<para><trademark>Sun</trademark> 建議用在 <acronym>RAID</acronym>-Z 設定的裝置數在三到九個之間。若需要由 10 個或更多磁碟組成單一儲存池環境，請考慮是否分成較小的 <acronym>RAID-Z</acronym> 群組。若只有兩個可用的磁碟且需要做備援 (Redundancy)，請考慮使用 <acronym>ZFS</acronym> 鏡像 (Mirror)。請參考 <citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得更多詳細資訊。</para>
+	<para><trademark>Sun</trademark> 建議用在 <acronym>RAID</acronym>-Z 設定的裝置數在三到九個之間。若需要由 10 個或更多磁碟組成單一儲存池的環境，可考慮分成較小的 <acronym>RAID-Z</acronym> 群組。若只有兩個可用的磁碟且需要做備援 (Redundancy)，可考慮使用 <acronym>ZFS</acronym> 鏡像 (Mirror)。請參考 <citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得更多詳細資訊。</para>
       </note>
 
-      <para>先前的例子已經建立了 <literal>storage</literal> zpool，現在這個例子會在該儲存池中建立一個新的檔案系統，名稱為 <literal>home</literal>：</para>
+      <para>先前的例子已經建立了 <literal>storage</literal> 儲存池 (zpool)，現在這個例子會在該儲存池中建立一個新的檔案系統，名稱為 <literal>home</literal>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs create storage/home</userinput></screen>
 
@@ -31573,7 +31170,7 @@ example/data        17547008       0 17547008     0%    /example/data</screen>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs set copies=2 storage/home</userinput>
 <prompt>#</prompt> <userinput>zfs set compression=gzip storage/home</userinput></screen>
 
-      <para>要讓這個空間做為使用者的新家目錄位置，複製使用者資料到這個目錄並建立適合的符號連結 (Symbolic link)：</para>
+      <para>要讓這個空間作為使用者的新家目錄位置，需複製使用者資料到這個目錄並建立適合的符號連結 (Symbolic link)：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cp -rp /home/* /storage/home</userinput>
 <prompt>#</prompt> <userinput>rm -rf /home /usr/home</userinput>
@@ -31586,9 +31183,9 @@ example/data        17547008       0 17547008     0%    /example/data</screen>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs snapshot storage/home@08-30-08</userinput></screen>
 
-      <para>只可以對整個檔案系統做快照，無法針對各別目錄或檔案。</para>
+      <para>快照只可以使用整個檔案系統製作，無法使用各別目錄或檔案。</para>
 
-      <para><literal>@</literal> 是用來區隔檔案系統 (File system) 名稱或磁碟區 (Volume) 名稱的字元，若有重要的目錄意外被刪除，檔案系統可以備份然後還原到先前目錄還存在時的快照 (Snapshot)：</para>
+      <para><literal>@</literal> 字元用來區隔檔案系統名稱 (File system) 或磁碟區 (Volume) 名稱，若有重要的目錄意外被刪除，檔案系統可以備份然後還原到先前目錄還存在時的快照 (Snapshot)：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs rollback storage/home@08-30-08</userinput></screen>
 
@@ -31620,7 +31217,7 @@ devfs                1       1        0   100%    /dev
 storage       26320512       0 26320512     0%    /storage
 storage/home  26320512       0 26320512     0%    /home</screen>
 
-      <para>這個動作完成 <acronym>RAID-Z</acronym> 最後的設定，有關已建立的檔案系統每日狀態更新可以做為 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的一部份在每晚執行。加入此行到 <filename>/etc/periodic.conf</filename>：</para>
+      <para>這個動作完成 <acronym>RAID-Z</acronym> 最後的設定，有關已建立的檔案系統每日狀態更新可以做為 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的一部份在每天晚上執行。加入此行到 <filename>/etc/periodic.conf</filename>：</para>
 
       <programlisting xml:lang="en">daily_status_zfs_enable="YES"</programlisting>
     </sect2>
@@ -31628,7 +31225,7 @@ storage/home  26320512       0 26320512     0%    /home</screen>
     <sect2 xml:id="zfs-quickstart-recovering-raid-z">
       <title>復原 <acronym>RAID-Z</acronym></title>
 
-      <para>每個軟體 <acronym>RAID</acronym> 都有監控其狀態 (<literal>state</literal>) 的方式，<acronym>RAID-Z</acronym> 裝置的狀態可以使用這個指令來查看：</para>
+      <para>每個軟體 <acronym>RAID</acronym> 都有監控其狀態 (<literal>state</literal>) 的方式，而 <acronym>RAID-Z</acronym> 裝置的狀態可以使用這個指令來查看：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status -x</userinput></screen>
 
@@ -31665,7 +31262,7 @@ errors: No known data errors</screen>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool replace storage da1</userinput></screen>
 
-      <para>到這裡，可以再檢查狀態一次，這時不使用 <option>-x</option> 參數來顯示所有的儲存池：</para>
+      <para>到這裡，可以再檢查狀態一次，這時不需使用 <option>-x</option> 參數來顯示所有的儲存池：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status storage</userinput>
  pool: storage
@@ -31682,23 +31279,23 @@ config:
 
 errors: No known data errors</screen>
 
-      <para>在這個例子中，所有的磁碟均正常運作。</para>
+      <para>在這個例子中，所有的磁碟均已正常運作。</para>
     </sect2>
 
     <sect2 xml:id="zfs-quickstart-data-verification">
       <title>資料檢驗</title>
 
-      <para><acronym>ZFS</acronym> 使用校驗碼 (Checksum) 來檢驗資料的完整性 (Integrity)，在建立檔案系統時便會自動開啟。</para>
+      <para><acronym>ZFS</acronym> 使用校驗碼 (Checksum) 來檢驗資料的完整性 (Integrity)，會在建立檔案系統時便自動開啟。</para>
 
       <warning>
-	<para>校驗碼 (Checksum) 可以關閉，但並<emphasis>不</emphasis>建議！校驗碼只會使用非常少的儲存空間來確保資料的完整性。校驗碼若關閉會使許多 <acronym>ZFS</acronym> 功能無法正常運作，關閉校驗碼功能並不會明顯的改善效能。</para>
+	<para>校驗碼 (Checksum) 可以關閉，但並<emphasis>不</emphasis>建議！校驗碼只會使用非常少的儲存空間來確保資料的完整性。若關閉校驗碼會使許多 <acronym>ZFS</acronym> 功能無法正常運作，且關閉校驗碼對並不會明顯的改善效能。</para>
       </warning>
 
       <para>檢驗校驗碼這個動作即所謂的<emphasis>清潔 (Scrub)</emphasis>，可以使用以下指令來檢驗 <literal>storage</literal> 儲存池的資料完整性：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool scrub storage</userinput></screen>
 
-      <para>清潔所需要的時間依儲存的資料量而定，較大的資料量相對會需要花費較長的時間來檢驗。清潔對 <acronym>I/O</acronym> 的操作非常密集，且一次只能進行一個清潔動作。在清潔完成之後，可以使用 <command>status</command> 來查看狀態：</para>
+      <para>清潔所需要的時間依儲存的資料量而定，較大的資料量相對會需要花費較長的時間來檢驗。清潔會對 <acronym>I/O</acronym> 有非常密集的操作且一次只能進行一個清潔動作。在清潔完成之後，可以使用 <command>status</command> 來查看狀態：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status storage</userinput>
  pool: storage
@@ -31729,7 +31326,7 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-zpool-create">
       <title>建立與摧毀儲存池</title>
 
-      <para>建立 <acronym>ZFS</acronym> 儲存池 (<emphasis>zpool</emphasis>) 要做幾個涉及長遠規劃的決定，因為建立儲存池之後便無法再更改儲存池的結構。最重要的決定是要使用那一種型態的 vdev 來將實體磁碟設為同一群組。請參考 <link linkend="zfs-term-vdev">vdev 型態</link> 的清單來取得有關可用選項的詳細資訊。大部份的 vdev 型態不允許在建立儲存池之後再加入額外的磁碟，鏡像 (Mirror) 是其中一個例外，可以允許加入額外的磁碟到 vdev，另一個則是串連 (Stripe)，可以加入額外的磁碟到 vdev 來升級為鏡像。雖然可以加入額外的 vdev 來擴充儲存池，但儲存池的配置在建立之後便無法更改，若要要更改，則必須備份資料，把儲存池摧毀後再重新建立。</para>
+      <para>建立 <acronym>ZFS</acronym> 儲存池 (<emphasis>zpool</emphasis>) 要做幾個涉及長遠規劃的決定，因為建立儲存池之後便無法再更改儲存池的結構。最重要的決定是要使用那一種型態的 vdev 來將實體磁碟設為同一群組。請參考 <link linkend="zfs-term-vdev">vdev 型態</link> 的清單來取得有關可用選項的詳細資訊。大部份的 vdev 型態不允許在建立儲存池之後再加入額外的磁碟，鏡像 (Mirror) 是可以允許加入額外的磁碟到 vdev 的其中一個例外，另一個則是串連 (Stripe)，可以加入額外的磁碟到 vdev 來升級為鏡像。雖然可以加入額外的 vdev 來擴充儲存池，但儲存池的配置在建立之後便無法更改，若要要更改，則必須先備份資料，把儲存池摧毀後再重新建立。</para>
 
       <para>建立一個簡單的鏡像儲存池：</para>
 
@@ -31748,7 +31345,7 @@ config:
 
 errors: No known data errors</screen>
 
-      <para>可以一次建立數個 vdev，磁碟群組間使用 vdev type 關鍵字來區隔，在這個例子使用 <literal>mirror</literal>：</para>
+      <para>可以一次建立數個 vdev，磁碟群組間使用 vdev 型態關鍵字來區隔，在這個例子使用 <literal>mirror</literal>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool create <replaceable>mypool</replaceable> mirror <replaceable>/dev/ada1</replaceable> <replaceable>/dev/ada2</replaceable> mirror <replaceable>/dev/ada3</replaceable> <replaceable>/dev/ada4</replaceable></userinput>
   pool: mypool
@@ -31767,7 +31364,7 @@ config:
 
 errors: No known data errors</screen>
 
-      <para>儲存池也可使用分割區 (Partition) 來建立，不使用整個磁碟。把 <acronym>ZFS</acronym> 放到不同的分割區可讓同一個磁碟有其他的分割區可做其他用途，尤其是有 Bootcode 與檔案系統要用來開機的分割區，這讓磁碟可以用來開機也同樣可以做為儲存池的一部份。在 FreeBSD 用分割區來替代整個磁碟並不會對效能有影響。使用分割區也讓管理者可以對磁碟容量做 <emphasis>少算的預備</emphasis>，使用比完整容量少的容量，未來若要替換的磁碟號稱與原磁碟相同，但實際上卻比較小時，也可符合這個較小的分割區容量，以使用替換的磁碟。</para>
+      <para>儲存池也可以不使用整個磁碟而改使用分割區 (Partition) 來建立。把 <acronym>ZFS</acronym> 放到不同的分割區可讓同一個磁碟有其他的分割區可做其他用途，尤其是有 Bootcode 與檔案系統要用來開機的分割區，這讓磁碟可以用來開機也同樣可以做為儲存池的一部份。在 FreeBSD 用分割區來替代整個磁碟並不會對效能有影響。使用分割區也讓管理者可以對磁碟容量做 <emphasis>少算的預備</emphasis>，使用比完整容量少的容量，未來若要替換的磁碟號稱與原磁碟相同，但實際上卻比較小時，也可符合這個較小的分割區容量，以使用替換的磁碟。</para>
 
       <para>使用分割區建立一個 <link linkend="zfs-term-vdev-raidz">RAID-Z2</link> 儲存池：</para>
 
@@ -31790,7 +31387,7 @@ config:
 
 errors: No known data errors</screen>
 
-      <para>不再使用的儲存池可以摧毀，來讓磁碟可以再次使用。摧毀一個儲存池要先卸載所有該儲存池的資料集。若資料集在使用中，卸載的操作會失敗且不會被摧毀儲存池。儲存池的摧毀可以使用 <option>-f</option> 來強制執行，但這可能造成那些有開啟這些資料集中的檔案的應用程式無法辨識的行為。</para>
+      <para>不需使用的儲存池可以摧毀，來讓磁碟可以再次使用。摧毀一個儲存池要先卸載所有該儲存池的資料集。若資料集在使用中，卸載的操作會失敗且儲存池不會被摧毀。儲存池的摧毀可以使用 <option>-f</option> 來強制執行，但這可能造成那些有開啟這些資料集之中檔案的應用程式無法辨識的行為。</para>
     </sect2>
 
     <sect2 xml:id="zfs-zpool-attach">
@@ -31961,7 +31558,7 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-zpool-clear">
       <title>清除錯誤</title>
 
-      <para>當偵測到錯誤發生，讀取、寫入或校驗碼 (Checksum) 的計數便會增加。使用 <command>zpool clear <replaceable>mypool</replaceable></command> 可以清除錯誤訊息及重置計數。清空錯誤狀態對當儲存池發生錯誤要使用自動化 Script 通知的管理者來說會很重要，因在舊的錯誤尚未清除前，可能便不會回報後續的錯誤。</para>
+      <para>當偵測到錯誤發生，讀取、寫入或校驗碼 (Checksum) 的計數便會增加。使用 <command>zpool clear <replaceable>mypool</replaceable></command> 可以清除錯誤訊息及重置計數。清空錯誤狀態對當儲存池發生錯誤要使用自動化 Script 通知的管理者來說會很重要，因在舊的錯誤尚未清除前不會回報後續的錯誤。</para>
     </sect2>
 
     <sect2 xml:id="zfs-zpool-replace">
@@ -32161,7 +31758,7 @@ SHA1 (/healer) = 2753eff56d77d9a536ece6694bf0a82740344d1f</screen>
       <para>寫入隨機的資料到鏡像的第一個磁碟來模擬資料損毀的情況。要避免 <acronym>ZFS</acronym> 偵測到錯誤時馬上做修復，接著要將儲存池匯出，待模擬資料損毀之後再匯入。</para>
 
       <warning>
-	<para>這是一個危險的操作，會破壞重要的資料。在這裡使用僅為了示範用，不應在儲存池正常運作時嘗試使用，也不應將這個故意損壞資料的例子用在任何其他的檔案系統上，不要使用任何不屬於該儲存池的其他磁碟裝置名稱。請確定在執行指令前已對儲存池做正確的備份。</para>
+	<para>這是一個危險的操作，會破壞重要的資料。在這裡使用僅為了示範用，不應在儲存池正常運作時嘗試使用，也不應將這個故意損壞資料的例子用在任何其他的檔案系統上，所以請勿使用任何不屬於該儲存池的其他磁碟裝置名稱並確定在執行指令前已對儲存池做正確的備份。</para>
       </warning>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool export <replaceable>healer</replaceable></userinput>
@@ -32244,7 +31841,7 @@ config:
 
 errors: No known data errors</screen>
 
-      <para>清潔操作完成後，便同步完 <filename>ada0</filename> 到 <filename>ada1</filename> 間的所有資料。執行 <command>zpool clear</command> 可以清除 (<link linkend="zfs-zpool-clear">Clear</link>) 儲存池狀態的錯誤訊息。</para>
+      <para>清潔操作完成便同步了 <filename>ada0</filename> 到 <filename>ada1</filename> 間的所有資料。執行 <command>zpool clear</command> 可以清除 (<link linkend="zfs-zpool-clear">Clear</link>) 儲存池狀態的錯誤訊息。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool clear <replaceable>healer</replaceable></userinput>
 <prompt>#</prompt> <userinput>zpool status <replaceable>healer</replaceable></userinput>
@@ -32307,7 +31904,7 @@ mypool               110K  47.0G    31K  /mnt/mypool</screen>
     <sect2 xml:id="zfs-zpool-upgrade">
       <title>升級儲存儲存池</title>
 
-      <para>在升級 FreeBSD 之後或儲存池是由其他使用舊版 <acronym>ZFS</acronym> 所匯入，儲存池可以手動升級到最新版本的 <acronym>ZFS</acronym> 來支援新的功能。在升級前請評估儲存池是否還要在舊的系統做匯入，由於升級是一個單向的程序，舊的儲存池可以升級，但有新功能的儲存池無法降級。</para>
+      <para>在升級 FreeBSD 之後或儲存池是由其他使用舊版 <acronym>ZFS</acronym> 的系統匯入，儲存池可以手動升級到最新版本的 <acronym>ZFS</acronym> 來支援新的功能。在升級前請評估儲存池是否還要在舊的系統做匯入，由於升級是一個單向的程序，舊的儲存池可以升級，但有新功能的儲存池無法降級。</para>
 
       <para>升級一個 v28 的儲存以支援功能旗標 (<literal>Feature Flags</literal>)：</para>
 
@@ -32355,7 +31952,7 @@ Enabled the following features on 'mypool':
 
       <para><acronym>ZFS</acronym> 的新功能在 <command>zpool upgrade</command> 尚未完成之前無法使用。可以用 <command>zpool upgrade -v</command> 來查看升級後有那些新功能，也同時會列出已經支援那些功能。</para>
 
-      <para>升級儲存池支援額外的功能旗標 (Feature flags)：</para>
+      <para>升級儲存池支援新版的功能旗標 (Feature flags)：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool status</userinput>
   pool: mypool
@@ -32407,7 +32004,7 @@ Enabled the following features on 'mypool':
   filesystem_limits</screen>
 
       <warning>
-	<para>使用儲存池來開機的系統上的 Boot code 必須更新以支援新的儲存池版本，在含有 Boot code 的分割區使用 <command>gpart bootcode</command> 來更新。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得更多資訊。</para>
+	<para>在使用儲存池來開機的系統上的 Boot code 也必須一併更新來支援新的儲存池版本，可在含有 Boot code 的分割區使用 <command>gpart bootcode</command> 來更新。請參考 <citerefentry><refentrytitle>gpart</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得更多資訊。</para>
       </warning>
     </sect2>
 
@@ -32572,9 +32169,9 @@ mypool/var/tmp        152K  93.2G   152K  /var/tmp</screen>
     <sect2 xml:id="zfs-zfs-volume">
       <title>建立與摧毀磁碟區</title>
 
-      <para>磁碟區 (Volume) 是特殊類型的資料集，不會被掛載成一個檔案系統，而是會被當做儲存區塊裝置出現在 <filename>/dev/zvol/<replaceable>poolname</replaceable>/<replaceable>dataset</replaceable></filename> 下。這讓磁碟區可以用於其他檔案系統，備份虛擬機器的磁碟或是使用 <acronym>iSCSI</acronym> 或 <acronym>HAST</acronym> 通訊協定匯出。</para>
+      <para>磁碟區 (Volume) 是特殊類型的資料集，不會被掛載成一個檔案系統，而是會被當做儲存區塊裝置出現在 <filename>/dev/zvol/<replaceable>poolname</replaceable>/<replaceable>dataset</replaceable></filename> 下。這讓磁碟區可供其他檔案系統使用、拿來備份虛擬機器的磁碟或是使用 <acronym>iSCSI</acronym> 或 <acronym>HAST</acronym> 通訊協定匯出。</para>
 
-      <para>磁碟區可以被格式化成任何檔案系統，或不使用檔案系統來儲存原始資料。對一般使用者，磁碟區就像是一般的磁碟，可以放置一般的檔案系統在這些 <emphasis>zvols</emphasis>上，並提供一般磁碟或檔案系統一般所沒有的功能。例如，使用壓縮屬性在一個 250 MB 的磁碟區可建立一個壓縮的 <acronym>FAT</acronym> 檔案系統。</para>
+      <para>磁碟區可以被格式化成任何檔案系統，或不使用檔案系統來儲存原始資料。對一般使用者，磁碟區就像是一般的磁碟，可以放置一般的檔案系統在這些 <emphasis>zvols</emphasis> 上，並提供一般磁碟或檔案系統一般所沒有的功能。例如，使用壓縮屬性在一個 250 MB 的磁碟區可建立一個壓縮的 <acronym>FAT</acronym> 檔案系統。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs create -V 250m -o compression=on tank/fat32</userinput>
 <prompt>#</prompt> <userinput>zfs list tank</userinput>
@@ -32632,7 +32229,7 @@ mypool/var/mail       144K  93.2G   144K  /var/mail
 mypool/var/newname   87.5K  93.2G  87.5K  /var/newname
 mypool/var/tmp        152K  93.2G   152K  /var/tmp</screen>
 
-      <para>快照也可以像這樣重新命名，由於快照的天性，使其無法被重新命名到另一個父資料集。要遞迴重新命名快照可指定 <option>-r</option>，然後在子資料集中所有同名的快照也會一併被重新命名。</para>
+      <para>快照也可以像這樣重新命名，由於快照的本質使其無法被重新命名到另一個父資料集。要遞迴重新命名快照可指定 <option>-r</option>，然後在子資料集中所有同名的快照也會一併被重新命名。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs list -t snapshot</userinput>
 NAME                                USED  AVAIL  REFER  MOUNTPOINT
@@ -32668,7 +32265,7 @@ tank    custom:costcenter  -                  -
     <sect2 xml:id="zfs-zfs-snapshot">
       <title>管理快照 (Snapshot)</title>
 
-      <para>快照 (<link linkend="zfs-term-snapshot">Snapshot</link>) 是 <acronym>ZFS</acronym> 最強大的功能之一。快照提供了資料集唯讀、單一時間點 (Point-in-Time) 的複製功能，使用了寫入時複製 (Copy-On-Write, <acronym>COW</acronym>) 的技術，可以透過保存在磁碟上的舊版資料快速的建立快照。若沒有快照存在，在資料被覆蓋或刪除時，便回收空間供未來使用。由於只記錄前一個版本與目前資料集的差異，因此快照可節省磁碟空間。快照只允許在整個資料集上使用，無法在各別檔案或目錄。當建立了一個資料集的快照時，便備份了所有內含的資料，這包含了檔案系統屬性、檔案、目錄、權限等等。第一次建立快照時只會使用到更改參照到資料區塊的空間，不會用到額外的空間。使用 <option>-r</option> 可以對使用同名的資料集及其所有子資料集的建立一個遞迴快照，提供一致且即時 (Moment-in-time) 的完整檔案系統快照功能，這對於那些彼此有相關或相依檔案存放在不同資料集的應用程式非常重要。若不使用快照，備份所複製的資料其實是不同時間點的，可能會有不一致的問題。</para>
+      <para>快照 (<link linkend="zfs-term-snapshot">Snapshot</link>) 是 <acronym>ZFS</acronym> 最強大的功能之一。快照提供了資料集唯讀、單一時間點 (Point-in-Time) 的複製功能，使用了寫入時複製 (Copy-On-Write, <acronym>COW</acronym>) 的技術，可以透過保存在磁碟上的舊版資料快速的建立快照。若沒有快照存在，在資料被覆蓋或刪除時，便回收空間供未來使用。由於只記錄前一個版本與目前資料集的差異，因此快照可節省磁碟空間。快照只允許在整個資料集上使用，無法在各別檔案或目錄。當建立了一個資料集的快照時，便備份了所有內含的資料，這包含了檔案系統屬性、檔案、目錄、權限等等。第一次建立快照時只會使用到更改參照到資料區塊的空間，不會用到其他額外的空間。使用 <option>-r</option> 可以對使用同名的資料集及其所有子資料集的建立一個遞迴快照，提供一致且即時 (Moment-in-time) 的完整檔案系統快照功能，這對於那些彼此有相關或相依檔案存放在不同資料集的應用程式非常重要。不使用快照所備份的資料其實是分散不同時間點的。</para>
 
       <para><acronym>ZFS</acronym> 中的快照提供了多種功能，即使是在其他缺乏快照功能的檔案系統上。一個使用快照的典型例子是在安裝軟體或執行系統升級這種有風險的動作時，能有一個快速的方式可以備份檔案系統目前的狀態，若動作失敗，可以使用快照還原 (Roll back) 到與快照建立時相同的系統狀態，若升級成功，便可刪除快照來釋放空間。若沒有快照功能，升級失敗通常會需要使用備份來恢復 (Restore) 系統，而這個動作非常繁瑣、耗時且可能會需要停機一段時間系統無法使用。使用快照可以快速的還原，即使系統正在執行一般的運作，只而要短暫或甚至不需停機。能夠節省大量在有數 TB 的儲存系統上從備份複製所需資料的時間。快照並非要用來取代儲存池的完整備份，但可以用在快速且簡單的保存某個特定時間點的資料集。</para>
 
@@ -37971,7 +37568,7 @@ Elapsed Times for processes csh,
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 49510 2016-10-13 02:48:24Z wblock $
 -->
 <chapter version="5.0" xml:id="serialcomms">
   <title>序列通訊</title>
@@ -38480,9 +38077,9 @@ Elapsed Times for processes csh,
 	<listitem>
 	  <para xml:lang="en">Call-out ports are named
 	    <filename>/dev/cuau<replaceable>N</replaceable></filename>
-	    on FreeBSD versions 10.x and higher and
+	    on FreeBSD versions 8.X and higher and
 	    <filename>/dev/cuad<replaceable>N</replaceable></filename>
-	    on FreeBSD versions 9.x and lower.  Call-out ports are
+	    on FreeBSD versions 7.X and lower.  Call-out ports are
 	    usually not used for terminals, but are used for modems.
 	    The call-out port can be used if the serial cable or the
 	    terminal does not support the <quote>Data Carrier
