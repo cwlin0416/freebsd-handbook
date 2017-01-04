@@ -99,7 +99,7 @@ pkg install poedit
 | Ripping | 擷取 ||
 | Audio Tracks | 音軌 ||
 | Library, Libraries | 程式庫 | |
-| Log Rotation | 日誌循環 ||
+| Log Rotation | 日誌翻轉 ||
 | Bandwidth Delay Product | 頻寬延遲乘積 ||
 | Suspend, Hibernate, Resume | 待機, 休眠, 喚醒 ||
 | System Hangs | TBD, 系統無回應 ||
