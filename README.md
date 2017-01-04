@@ -16,7 +16,7 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 - [X] 完成 Part 1 翻譯
 - [ ] 完成 Part 3 翻譯
   - [X] 19. Z 檔案系統 (ZFS)
-  - [ ] 11. 設定與調校 - 進行中
+  - [X] 11. 設定與調校
   - [ ] 12. FreeBSD 開機程序
   - [ ] 23. 更新與升級 FreeBSD
   - [ ] 13. 安全性
