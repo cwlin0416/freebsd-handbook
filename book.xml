@@ -3,7 +3,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 48108 2016-01-28 02:09:41Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 49576 2016-10-25 16:21:58Z gjb $
 --><!ENTITY % chapters SYSTEM "chapters.ent">
 <!--
      Creates entities for each chapter in the FreeBSD Handbook. Each entity
@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49450 2016-10-04 20:58:05Z peter $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49752 2016-12-19 17:36:26Z pstef $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -117,6 +117,7 @@
 <!ENTITY pgpkey.csjp SYSTEM "csjp.key">
 <!ENTITY pgpkey.culot SYSTEM "culot.key">
 <!ENTITY pgpkey.cy SYSTEM "cy.key">
+<!ENTITY pgpkey.dab SYSTEM "dab.key">
 <!ENTITY pgpkey.daichi SYSTEM "daichi.key">
 <!ENTITY pgpkey.damien SYSTEM "damien.key">
 <!ENTITY pgpkey.danfe SYSTEM "danfe.key">
@@ -134,6 +135,7 @@
 <!ENTITY pgpkey.dd SYSTEM "dd.key">
 <!ENTITY pgpkey.deb SYSTEM "deb.key">
 <!ENTITY pgpkey.decke SYSTEM "decke.key">
+<!ENTITY pgpkey.def SYSTEM "def.key">
 <!ENTITY pgpkey.deischen SYSTEM "deischen.key">
 <!ENTITY pgpkey.delphij SYSTEM "delphij.key">
 <!ENTITY pgpkey.demon SYSTEM "demon.key">
@@ -283,6 +285,7 @@
 <!ENTITY pgpkey.lesi SYSTEM "lesi.key">
 <!ENTITY pgpkey.lev SYSTEM "lev.key">
 <!ENTITY pgpkey.lidl SYSTEM "lidl.key">
+<!ENTITY pgpkey.lifanov SYSTEM "lifanov.key">
 <!ENTITY pgpkey.linimon SYSTEM "linimon.key">
 <!ENTITY pgpkey.lioux SYSTEM "lioux.key">
 <!ENTITY pgpkey.lippe SYSTEM "lippe.key">
@@ -332,6 +335,7 @@
 <!ENTITY pgpkey.mich SYSTEM "mich.key">
 <!ENTITY pgpkey.mikeh SYSTEM "mikeh.key">
 <!ENTITY pgpkey.milki SYSTEM "milki.key">
+<!ENTITY pgpkey.misha SYSTEM "misha.key">
 <!ENTITY pgpkey.miwi SYSTEM "miwi.key">
 <!ENTITY pgpkey.mizhka SYSTEM "mizhka.key">
 <!ENTITY pgpkey.mjg SYSTEM "mjg.key">
@@ -400,6 +404,7 @@
 <!ENTITY pgpkey.plosher SYSTEM "plosher.key">
 <!ENTITY pgpkey.pluknet SYSTEM "pluknet.key">
 <!ENTITY pgpkey.portmgr-secretary SYSTEM "portmgr-secretary.key">
+<!ENTITY pgpkey.pstef SYSTEM "pstef.key">
 <!ENTITY pgpkey.qingli SYSTEM "qingli.key">
 <!ENTITY pgpkey.rafan SYSTEM "rafan.key">
 <!ENTITY pgpkey.rakuco SYSTEM "rakuco.key">
@@ -603,9 +608,9 @@
 
     <author><orgname>FreeBSD 文件計劃</orgname></author>
 
-    <pubdate xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 48108 2016-01-28 02:09:41Z wblock $</pubdate>
+    <pubdate xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 49576 2016-10-25 16:21:58Z gjb $</pubdate>
 
-    <releaseinfo xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 48108 2016-01-28 02:09:41Z wblock $</releaseinfo>
+    <releaseinfo xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 49576 2016-10-25 16:21:58Z gjb $</releaseinfo>
 
     <copyright xml:lang="en">
       <year>1995</year>
@@ -629,6 +634,7 @@
       <year>2013</year>
       <year>2014</year>
       <year>2015</year>
+      <year>2016</year>
       <holder>The FreeBSD Documentation Project</holder>
     </copyright>
 
@@ -706,9 +712,9 @@
     </legalnotice>
 
     <abstract>
-      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 9.3-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.3-RELEASE</emphasis>。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中。 許多章節仍未完成，已完成的部份也有些需要更新。 如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
+      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 11.0-RELEASE</emphasis>, <emphasis>FreeBSD 10.3-RELEASE</emphasis> 以及 <emphasis>FreeBSD 9.3-RELEASE</emphasis> 的安裝與平日操作的說明。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中，因此部份章節可能尚未仍未完成，如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
 
-      <para>在 <link xlink:href="http://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到這份文件的最新版本，舊版文件可從 <uri xlink:href="http://docs.FreeBSD.org/doc/">http://docs.FreeBSD.org/doc/</uri> 取得，也可以從 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/doc/">FreeBSD FTP 伺服器</link> 或是眾多 <link linkend="mirrors-ftp">鏡像網站</link> 下載不同格式的資料。 如果比較偏好實體書面資料，那可以在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
+      <para>在 <link xlink:href="http://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到本文件的最新版本，舊版文件可從 <uri xlink:href="http://docs.FreeBSD.org/doc/">http://docs.FreeBSD.org/doc/</uri> 取得。本文件也提供各種格式與不同壓縮方式的版本可自 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/doc/">FreeBSD FTP 伺服器</link> 或是其中一個 <link linkend="mirrors-ftp">鏡像網站</link> 下載。 列印出來的實體書面資料可在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
   </info>
 
@@ -1629,15 +1635,10 @@
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><link xlink:href="https://www.stormshield.eu">Stormshield</link>
-	    <indexterm xml:lang="en">
+	  <para><link xlink:href="https://www.stormshield.eu">Stormshield</link> <indexterm>
 	      <primary>Stormshield</primary>
 
-	    </indexterm> - Stormshield Network Security appliances
-	    are based on a hardened version of FreeBSD.  The BSD license
-	    allows us to integrate our own intellectual property with
-	    the system while returning a great deal of interesting
-	    development to the community.</para>
+	    </indexterm> - Stormshield 網路安全設備使用了硬體化版本的 FreeBSD 做為基礎，BSD 授權條款讓我們我們的智慧財產與系統可以整合，並同時回饋大量有趣的發展給社群。</para>
 	</listitem>
 
 	<listitem>
@@ -2021,7 +2022,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 49447 2016-10-02 14:15:50Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 49539 2016-10-21 20:31:12Z wblock $
 -->
 
 <chapter version="5.0" xml:id="bsdinstall">
@@ -2270,7 +2271,7 @@
       <step>
 	<title>檢查 FreeBSD 勘誤表</title>
 
-	<para>儘管 FreeBSD Project 努力確保每個 FreeBSD 發行版能夠儘可能地穩定，錯誤偶爾還是會悄悄出現。 有極小的機會錯誤會影響安裝過程。 當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/10.3R/errata.html">http://www.freebsd.org/releases/10.3R/errata.html</link>)。 安裝前要檢查勘誤表，確保沒有會影響到安裝的問題。</para>
+	<para>儘管 FreeBSD Project 努力確保每個 FreeBSD 發行版能夠儘可能地穩定，但錯誤偶爾還是會悄悄出現，並有極小的可能會發生影響安裝流程的錯誤，當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/11.0R/errata.html">http://www.freebsd.org/releases/11.0R/errata.html</link>)。 安裝前先檢查勘誤表，以確保沒有會影響到安裝的問題。</para>
 
 	<para>所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">http://www.freebsd.org/releases/index.html</link>)。</para>
       </step>
@@ -2304,6 +2305,10 @@
 
 	<listitem>
 	  <para><literal>-memstick.img</literal>：這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Port 套件集。這個檔案應依據以下操作指示寫入到 <acronym>USB</acronym> 隨身碟使用。</para>
+	</listitem>
+	
+	<listitem>
+	  <para><literal>-mini-memstick.img</literal>：類似 <literal>-bootonly.iso</literal>，但不含安裝檔 (可依所要下載)，安裝時需要網際網路連線，可依 <xref linkend="bsdinstall-usb"/> 的說明將此檔案寫入至 <acronym>USB</acronym> 隨身碟。</para>
 	</listitem>
       </itemizedlist>
 
@@ -8607,7 +8612,7 @@ EndSection</programlisting>
 	<primary><application>Chromium</application></primary>
       </indexterm>
 
-      <para><application>Chromium</application> 是一個開放源始碼的瀏覽器計劃，該計劃的目標是要建立一個安全、快速且更穩定的網頁瀏覽體驗。<application>Chromium</application> 的功能有頁籤式瀏覽、彈出視窗封鎖、擴充套件等等。<application>Chromium</application> 也是 Google Chrome 網頁瀏覽器所採用的基礎。</para>
+      <para><application>Chromium</application> 是一個開放源始碼的瀏覽器計劃，該計劃的目標是要建立一個安全、快速且更穩定的網頁瀏覽體驗。<application>Chromium</application> 的功能有頁籤式瀏覽、彈出視窗封鎖、擴充套件等等。</para>
 
       <para><application>Chromium</application> 可以使用套件來安裝，只要輸入：</para>
 
@@ -9230,7 +9235,7 @@ EndSection</programlisting>
 
     <indexterm xml:lang="en"><primary>PCI</primary></indexterm>
     <indexterm xml:lang="en"><primary>sound cards</primary></indexterm>
-    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="http://www.FreeBSD.org/releases/10.3R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
+    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="http://www.FreeBSD.org/releases/11.0R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
 
     <indexterm xml:lang="en">
       <primary>kernel</primary>
@@ -10669,7 +10674,7 @@ add path usb/0.2.0 mode 0666 group usb</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/kernelconfig/chapter.xml 46043 2014-12-02 07:16:45Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/kernelconfig/chapter.xml 49655 2016-11-09 19:15:17Z sevan $
 -->
 <chapter version="5.0" xml:id="kernelconfig">
 <!--<chapterinfo>
@@ -10738,7 +10743,7 @@ add path usb/0.2.0 mode 0666 group usb</programlisting>
 
     <para>早期的 FreeBSD 的核心 (Kernel) 被戲稱為 “巨石”。因為當時的核心是一個非常大的程式，且只支援固定的硬體裝置，如果您想改變核心的設定，就必須編譯一個新核心並重新開機，才能使用。</para>
 
-    <para>現在，大多數在 FreeBSD 核心的功能已採用模組 (Module) 的方式包裝，可以依據需求動態在核心載入或卸載。 這使得核心能夠快速採用新硬體環境的新功能，就叫做模組化核心 (Modular Kernel)。</para>
+    <para>現今，大多數在 FreeBSD 核心的功能已採用模組 (Module) 的方式包裝，並可依需求動態從核心載入或卸載。 這使得執行中的核心能夠快速適應新硬體環境並在核心開啟新的功能，這就是所謂模組化核心 (Modular Kernel)。</para>
 
     <para>儘管如此，還是有一些功能因使用到靜態的核心設定須要編譯，因為這些功能與核心緊密結合，無法將做成可動態載入的模組。且部份強調安全性的環境會盡量避免載入與卸載核心模組，且只要將需要的功能靜態的編譯到核心當中。</para>
 
@@ -10814,7 +10819,7 @@ ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 
 
     <para>以上輸出資訊說明 <filename>ath</filename> 驅動程式已經找到一個無線乙太網路裝置。</para>
 
-    <para>在 <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令加上 <option>-k</option> 參數，可提供有用的資訊，例如，列出有包含指定關鍵字的手冊頁面清單：</para>
+    <para>在 <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令加上 <option>-k</option> 旗標可提供有用的資訊，例如，這可列出有包含指定裝置品牌或名稱的手冊頁面清單：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>man -k <replaceable>Atheros</replaceable></userinput></screen>
 
@@ -14413,10 +14418,7 @@ linuxemu/chapter.xml -->
 
 	<para>驅動程式的位元寬度必須與 FreeBSD 的版本相符。例如 FreeBSD/i386 需要使用 <trademark class="registered">Windows</trademark> 32-bit 驅動程式，而 FreeBSD/amd64 則需要使用 <trademark class="registered">Windows</trademark> 64-bit 驅動程式。</para>
 
-	<para xml:lang="en">The next step is to compile the driver binary into a
-	  loadable kernel module.  As
-	  <systemitem class="username">root</systemitem>, use
-	  <citerefentry><refentrytitle>ndisgen</refentrytitle><manvolnum>8</manvolnum></citerefentry>:</para>
+	<para>下個步驟是編譯驅動程式 Binary 成可載入的核心模組。以 <systemitem class="username">root</systemitem> 身份使用 <citerefentry><refentrytitle>ndisgen</refentrytitle><manvolnum>8</manvolnum></citerefentry>：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>ndisgen <replaceable>/path/to/W32DRIVER.INF</replaceable> <replaceable>/path/to/W32DRIVER.SYS</replaceable></userinput></screen>
 
@@ -14652,58 +14654,19 @@ round-trip min/avg/max/stddev = 0.700/0.729/0.766/0.025 ms</screen>
     <indexterm xml:lang="en"><primary><acronym>IP</acronym>
 	aliases</primary></indexterm>
 
-    <para xml:lang="en">A common use of FreeBSD is virtual site hosting, where one
-      server appears to the network as many servers.  This is achieved
-      by assigning multiple network addresses to a single
-      interface.</para>
+    <para>FreeBSD 最常見的用途之一就是虛擬網站代管，即以一台伺服器在網路上扮演多台伺服器，這可以透過指定多個網路位置到一個網路介面來做到。</para>
 
-    <para xml:lang="en">A given network interface has one <quote>real</quote>
-      address, and may have any number of <quote>alias</quote>
-      addresses.  These aliases are normally added by placing alias
-      entries in <filename>/etc/rc.conf</filename>, as seen in this
-      example:</para>
+    <para>一個網路介面會有一個 <quote>真實 (Real)</quote> 位址且可以有許多個 <quote>別名 (Alias)</quote> 位址。一般會在 <filename>/etc/rc.conf</filename> 中放置別名項目來增加別名，如下例：</para>
 
     <programlisting xml:lang="en">ifconfig_fxp0_alias0="inet xxx.xxx.xxx.xxx netmask xxx.xxx.xxx.xxx"</programlisting>
 
-    <para xml:lang="en">Alias entries must start with
-      <literal>alias<replaceable>0</replaceable></literal> using a
-      sequential number such as
-      <literal>alias0</literal>, <literal>alias1</literal>,
-      and so on.  The configuration process will stop at the first
-      missing number.</para>
+    <para>別名項目必須以 <literal>alias<replaceable>0</replaceable></literal> 開頭，使用連續數字例如 <literal>alias0</literal>, <literal>alias1</literal> 以此類推，設定程序會在第一個遇到缺號的地方中止。</para>
 
-    <para xml:lang="en">The calculation of alias netmasks is important.  For a
-      given interface, there must be one address which correctly
-      represents the network's netmask.  Any other addresses which
-      fall within this network must have a netmask of all
-      <literal>1</literal>s, expressed as either
-      <systemitem class="netmask">255.255.255.255</systemitem> or
-      <systemitem class="netmask">0xffffffff</systemitem>.</para>
+    <para>要注意別名網路遮罩 (Netmask) 的計算，使用的介面必須至少有一個正確的填寫網路遮罩的位址，而其他所有在此網路中的位址則必須使用全部 <literal>1</literal> 的網路遮罩，可用 <systemitem class="netmask">255.255.255.255</systemitem> 或 <systemitem class="netmask">0xffffffff</systemitem> 來表示。</para>
 
-    <para xml:lang="en">For example, consider the case where the
-      <filename>fxp0</filename> interface is connected to two
-      networks: <systemitem class="ipaddress">10.1.1.0</systemitem>
-      with a netmask of
-      <systemitem class="netmask">255.255.255.0</systemitem> and
-      <systemitem class="ipaddress">202.0.75.16</systemitem> with a
-      netmask of
-      <systemitem class="netmask">255.255.255.240</systemitem>.  The
-      system is to be configured to appear in the ranges
-      <systemitem class="ipaddress">10.1.1.1</systemitem> through
-      <systemitem class="ipaddress">10.1.1.5</systemitem> and
-      <systemitem class="ipaddress">202.0.75.17</systemitem> through
-      <systemitem class="ipaddress">202.0.75.20</systemitem>.  Only
-      the first address in a given network range should have a real
-      netmask.  All the rest
-      (<systemitem class="ipaddress">10.1.1.2</systemitem> through
-      <systemitem class="ipaddress">10.1.1.5</systemitem> and
-      <systemitem class="ipaddress">202.0.75.18</systemitem> through
-      <systemitem class="ipaddress">202.0.75.20</systemitem>) must be
-      configured with a netmask of
-      <systemitem class="netmask">255.255.255.255</systemitem>.</para>
+    <para>舉例來說，有一個 <filename>fxp0</filename> 介面連結到兩個網路：<systemitem class="ipaddress">10.1.1.0</systemitem> 使用網路遮罩 <systemitem class="netmask">255.255.255.0</systemitem> 以及 <systemitem class="ipaddress">202.0.75.16</systemitem> 使用網路遮罩 <systemitem class="netmask">255.255.255.240</systemitem>。而系統將要設定使用範圍 <systemitem class="ipaddress">10.1.1.1</systemitem> 到 <systemitem class="ipaddress">10.1.1.5</systemitem> 以及 <systemitem class="ipaddress">202.0.75.17</systemitem> 到 <systemitem class="ipaddress">202.0.75.20</systemitem>。在指定的網路範圍中只有第一個位址應使用真實的網路遮罩，其餘 (<systemitem class="ipaddress">10.1.1.2</systemitem> 到 <systemitem class="ipaddress">10.1.1.5</systemitem> 及 <systemitem class="ipaddress">202.0.75.18</systemitem> 到 <systemitem class="ipaddress">202.0.75.20</systemitem>) 則必須設定使用 <systemitem class="netmask">255.255.255.255</systemitem> 的遮罩。</para>
 
-    <para xml:lang="en">The following <filename>/etc/rc.conf</filename> entries
-      configure the adapter correctly for this scenario:</para>
+    <para>在此情境下正確設定網路介面的方式如下 <filename>/etc/rc.conf</filename> 中的項目：</para>
 
     <programlisting xml:lang="en">ifconfig_fxp0="inet 10.1.1.1 netmask 255.255.255.0"
 ifconfig_fxp0_alias0="inet 10.1.1.2 netmask 255.255.255.255"
@@ -14715,11 +14678,7 @@ ifconfig_fxp0_alias5="inet 202.0.75.18 netmask 255.255.255.255"
 ifconfig_fxp0_alias6="inet 202.0.75.19 netmask 255.255.255.255"
 ifconfig_fxp0_alias7="inet 202.0.75.20 netmask 255.255.255.255"</programlisting>
 
-    <para xml:lang="en">A simpler way to express this is with a space-separated list
-      of <acronym>IP</acronym> address ranges.  The first address
-      will be given the
-      indicated subnet mask and the additional addresses will have a
-      subnet mask of <literal>255.255.255.255</literal>.</para>
+    <para>有一種更簡單的方式可以表達這些設定，便是使用以空白分隔的 <acronym>IP</acronym> 位址清單。只有第一個位址會使用指定的子網路遮罩，其他的位址則會使用 <literal>255.255.255.255</literal> 的子網路遮罩。</para>
 
     <programlisting xml:lang="en">ifconfig_fxp0_aliases="inet 10.1.1.1-5/24 inet 202.0.75.17-20/28"</programlisting>
   </sect1>
@@ -14749,63 +14708,20 @@ ifconfig_fxp0_alias7="inet 202.0.75.20 netmask 255.255.255.255"</programlisting>
       <primary><citerefentry><refentrytitle>syslogd</refentrytitle><manvolnum>8</manvolnum></citerefentry></primary>
     </indexterm>
 
-    <para xml:lang="en">Generating and reading system logs is an important aspect of
-      system administration.  The information in system logs can be
-      used to detect hardware and software issues as well as
-      application and system configuration errors.  This information
-      also plays an important role in security auditing and incident
-      response.  Most system daemons and applications will generate
-      log entries.</para>
+    <para>產生與讀取系統日誌對系統管理來說是一件非常重要的事，在系統日誌中的資訊可以用來偵測硬體與軟體的問題，同樣也可以偵測應用程式與系統設定的錯誤。這些資訊在安全性稽查與事件回應也同樣扮演了重要的角色，大多數系統 Daemon 與應用程式都會產生日誌項目。</para>
 
-    <para xml:lang="en">FreeBSD provides a system logger,
-      <application>syslogd</application>, to manage logging.  By
-      default, <application>syslogd</application> is started when the
-      system boots.  This is controlled by the variable
-      <literal>syslogd_enable</literal> in
-      <filename>/etc/rc.conf</filename>.  There are numerous
-      application arguments that can be set using
-      <literal>syslogd_flags</literal> in
-      <filename>/etc/rc.conf</filename>.  Refer to <citerefentry><refentrytitle>syslogd</refentrytitle><manvolnum>8</manvolnum></citerefentry> for
-      more information on the available arguments.</para>
+    <para>FreeBSD 提供了一個系統日誌程式 <application>syslogd</application> 用來管理日誌。預設 <application>syslogd</application> 會與系統開機時啟動。這可使用在 <filename>/etc/rc.conf</filename> 中的變數 <literal>syslogd_enable</literal> 來控制。而且有數個應用程式參數可在 <filename>/etc/rc.conf</filename> 使用 <literal>syslogd_flags</literal> 來設定。請參考 <citerefentry><refentrytitle>syslogd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來取得更多可用參數的資訊。</para>
 
-    <para xml:lang="en">This section describes how to configure the FreeBSD system
-      logger for both local and remote logging and how to perform log
-      rotation and log management.</para>
+    <para>此章節會介紹如何設定 FreeBSD 系統日誌程式來做本地與遠端日誌並且介紹如何執行日誌翻轉 (Log rotation) 與日誌管理。</para>
 
     <sect2>
       <title>設定本地日誌</title>
 
       <indexterm xml:lang="en"><primary>syslog.conf</primary></indexterm>
 
-      <para xml:lang="en">The configuration file,
-	<filename>/etc/syslog.conf</filename>, controls what
-	<application>syslogd</application> does with log entries as
-	they are received.  There are several parameters to control
-	the handling of incoming events.  The
-	<firstterm>facility</firstterm> describes which subsystem
-	generated the message, such as the kernel or a daemon, and the
-	<firstterm>level</firstterm> describes the severity of the
-	event that occurred.  This makes it possible to configure if
-	and where a log message is logged, depending on the facility
-	and level.  It is also possible to take action depending on
-	the application that sent the message, and in the case of
-	remote logging, the hostname of the machine generating the
-	logging event.</para>
+      <para>設定檔 <filename>/etc/syslog.conf</filename> 控制 <application>syslogd</application> 收到日誌項目時要做的事情，有數個參數可以用來控制接收到事件時的處理方式。<firstterm>設施 (facility)</firstterm> 用來描述記錄產生訊息的子系統 (subsystem)，如核心或者 Daemon，而 <firstterm>層級 (level)</firstterm> 用來描述所發生的事件嚴重性。也可以依據應用程式所發出的訊息及產生日誌事件機器的主機名稱來決定後續處置的動作。</para>
 
-      <para xml:lang="en">This configuration file contains one line per action,
-	where the syntax for each line is a selector field followed by
-	an action field.  The syntax of the selector field is
-	<replaceable>facility.level</replaceable> which will match log
-	messages from <replaceable>facility</replaceable> at level
-	<replaceable>level</replaceable> or higher.  It is also
-	possible to add an optional comparison flag before the level
-	to specify more precisely what is logged.  Multiple selector
-	fields can be used for the same action, and are separated with
-	a semicolon (<literal>;</literal>).  Using
-	<literal>*</literal> will match everything.  The action field
-	denotes where to send the log message, such as to a file or
-	remote log host.  As an example, here is the default
-	<filename>syslog.conf</filename> from FreeBSD:</para>
+      <para>此設定檔中一行代表一個動作，每一行的格式皆為一個選擇器欄位 (Selector field) 接著一個動作欄位 (Action field)。選擇器欄位的格式為 <replaceable>facility.level</replaceable> 可以用來比對來自 <replaceable>facility</replaceable> 於層級 <replaceable>level</replaceable> 或更高層的日誌訊息，也可以在層級前加入選擇性的比對旗標來更確切的指定記錄的內容。同樣一個動作可以使用多個選擇器欄位並使用分號 (<literal>;</literal>) 來分隔。用 <literal>*</literal> 可以比對任何東西。動作欄位可用來指定傳送日誌訊息的目標，如一個檔案或遠端日誌主機。範例為以下為 FreeBSD 預設的 <filename>syslog.conf</filename>：</para>
 
       <programlisting xml:lang="en"># $FreeBSD$
 #
@@ -14843,104 +14759,48 @@ cron.*                                          /var/log/cron
 *.*                                             /var/log/ppp.log
 !*</programlisting>
 
-      <para xml:lang="en">In this example:</para>
+      <para>在這個範例中：</para>
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en">Line 8 matches all messages with a level of
-	    <literal>err</literal> or higher, as well as
-	    <literal>kern.warning</literal>,
-	    <literal>auth.notice</literal> and
-	    <literal>mail.crit</literal>, and sends these log messages
-	    to the console
-	    (<filename>/dev/console</filename>).</para>
+	  <para>第 8 行會找出所有符合 <literal>err</literal> 或以上層級的訊息，還有 <literal>kern.warning</literal>, <literal>auth.notice</literal> 與 <literal>mail.crit</literal> 的訊息，然後將這些日誌訊息傳送到 Console (<filename>/dev/console</filename>)。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Line 12 matches all messages from the
-	    <literal>mail</literal> facility at level
-	    <literal>info</literal> or above and logs the messages to
-	    <filename>/var/log/maillog</filename>.</para>
+	  <para>第 12 行會找出所有符合 <literal>mail</literal> 設施中於 <literal>info</literal> 或以上層級的訊息，並記錄訊息至 <filename>/var/log/maillog</filename>。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Line 17 uses a comparison flag (<literal>=</literal>)
-	    to only match messages at level <literal>debug</literal>
-	    and logs them to
-	    <filename>/var/log/debug.log</filename>.</para>
+	  <para>第 17 行使用了比較旗標 (<literal>=</literal>) 來只找出符合 <literal>debug</literal> 層級的訊息，並將訊息記錄至 <filename>/var/log/debug.log</filename>。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Line 33 is an example usage of a program
-	    specification.  This makes the rules following it only
-	    valid for the specified program.  In this case, only the
-	    messages generated by <application>ppp</application> are
-	    logged to <filename>/var/log/ppp.log</filename>.</para>
+	  <para>第 33 行是指定程式的範例用法。這可以讓在該行以下的規則只對指定的程式生效。在此例中，只有由 <application>ppp</application> 產生的訊息會被記錄到 <filename>/var/log/ppp.log</filename>。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">The available levels, in order from most to least
-	critical are <literal>emerg</literal>,
-	<literal>alert</literal>, <literal>crit</literal>,
-	<literal>err</literal>, <literal>warning</literal>,
-	<literal>notice</literal>, <literal>info</literal>, and
-	<literal>debug</literal>.</para>
+      <para>所以可用層級從最嚴重到最不嚴重的順序為 <literal>emerg</literal>, <literal>alert</literal>, <literal>crit</literal>, <literal>err</literal>, <literal>warning</literal>, <literal>notice</literal>, <literal>info</literal> 以及 <literal>debug</literal>。</para>
 
-      <para xml:lang="en">The facilities, in no particular order, are
-	<literal>auth</literal>, <literal>authpriv</literal>,
-	<literal>console</literal>, <literal>cron</literal>,
-	<literal>daemon</literal>, <literal>ftp</literal>,
-	<literal>kern</literal>, <literal>lpr</literal>,
-	<literal>mail</literal>, <literal>mark</literal>,
-	<literal>news</literal>, <literal>security</literal>,
-	<literal>syslog</literal>, <literal>user</literal>,
-	<literal>uucp</literal>, and <literal>local0</literal> through
-	<literal>local7</literal>.  Be aware that other operating
-	systems might have different facilities.</para>
+      <para>設施 (facility) 則無特定順序，可用的有 <literal>auth</literal>, <literal>authpriv</literal>, <literal>console</literal>, <literal>cron</literal>, <literal>daemon</literal>, <literal>ftp</literal>, <literal>kern</literal>, <literal>lpr</literal>, <literal>mail</literal>, <literal>mark</literal>, <literal>news</literal>, <literal>security</literal>, <literal>syslog</literal>, <literal>user</literal>, <literal>uucp</literal> 及 <literal>local0</literal> 到 <literal>local7</literal>。要注意在其他作業系統的設施可能會不同。</para>
 
-      <para xml:lang="en">To log everything of level <literal>notice</literal> and
-	higher to <filename>/var/log/daemon.log</filename>, add the
-	following entry:</para>
+      <para>要記錄所有所有 <literal>notice</literal> 與以上層級的訊息到 <filename>/var/log/daemon.log</filename> 可加入以下項目：</para>
 
       <programlisting xml:lang="en">daemon.notice                                        /var/log/daemon.log</programlisting>
 
-      <para xml:lang="en">For more information about the different levels and
-	facilities, refer to <citerefentry><refentrytitle>syslog</refentrytitle><manvolnum>3</manvolnum></citerefentry> and <citerefentry><refentrytitle>syslogd</refentrytitle><manvolnum>8</manvolnum></citerefentry>.
-	For more information about
-	<filename>/etc/syslog.conf</filename>, its syntax, and more
-	advanced usage examples, see <citerefentry><refentrytitle>syslog.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+      <para>要取得更多有關不同的層級與設施的資訊請參考 <citerefentry><refentrytitle>syslog</refentrytitle><manvolnum>3</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>syslogd</refentrytitle><manvolnum>8</manvolnum></citerefentry>。要取得更多有關 <filename>/etc/syslog.conf</filename>、語法以及更多進階用法範例的資訊請參考 <citerefentry><refentrytitle>syslog.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
     </sect2>
 
     <sect2>
-      <title>日誌管理與循環</title>
+      <title>日誌管理與翻轉</title>
 
       <indexterm xml:lang="en"><primary>newsyslog</primary></indexterm>
       <indexterm xml:lang="en"><primary>newsyslog.conf</primary></indexterm>
       <indexterm xml:lang="en"><primary>log rotation</primary></indexterm>
       <indexterm xml:lang="en"><primary>log management</primary></indexterm>
 
-      <para xml:lang="en">Log files can grow quickly, taking up disk space and
-	making it more difficult to locate useful information.  Log
-	management attempts to mitigate this.  In FreeBSD,
-	<application>newsyslog</application> is used to manage log
-	files.  This built-in program periodically rotates and
-	compresses log files, and optionally creates missing log files
-	and signals programs when log files are moved.  The log files
-	may be generated by <application>syslogd</application> or by
-	any other program which generates log files.  While
-	<application>newsyslog</application> is normally run from
-	<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>, it is not a system daemon.  In the default
-	configuration, it runs every hour.</para>
+      <para>日誌檔案會成長的非常快速，這會消耗磁碟空間並且會更難在日誌中找到有用的資訊，日誌管理便是為了嘗試減緩這種問題。在 FreeBSD 可以使用 <application>newsyslog</application> 來管理日誌檔案，這個內建的程式會定期翻轉 (Rotate) 與壓縮日誌檔案，並且可選擇性的建立遺失的日誌檔案並在日誌檔案被移動位置時通知程式。日誌檔案可能會由 <application>syslogd</application> 產生或由其他任何會產生日誌檔案的程式。<application>newsyslog</application> 正常會由 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來執行，它並非一個系統 Daemon，預設會每個小時執行一次。</para>
 
-      <para xml:lang="en">To know which actions to take,
-	<application>newsyslog</application> reads its configuration
-	file, <filename>/etc/newsyslog.conf</filename>.  This file
-	contains one line for each log file that
-	<application>newsyslog</application> manages.  Each line
-	states the file owner, permissions, when to rotate that file,
-	optional flags that affect log rotation, such as compression,
-	and programs to signal when the log is rotated.  Here is the
-	default configuration in FreeBSD:</para>
+      <para><application>newsyslog</application> 會讀取其設定檔 <filename>/etc/newsyslog.conf</filename> 來決定其要採取的動作，每個要由 <application>newsyslog</application> 所管理的日誌檔案會在此設定檔中設定一行，每一行要說明檔案的擁有者、權限、何時要翻轉該檔案、選用的日誌翻轉旗標，如：壓縮，以及日誌翻轉時要通知的程式。以下為 FreeBSD 的預設設定：</para>
 
       <programlisting xml:lang="en"># configuration file for newsyslog
 # $FreeBSD$
@@ -14982,29 +14842,9 @@ cron.*                                          /var/log/cron
 /var/log/weekly.log                     640  5     1    $W6D0 JN
 /var/log/xferlog                        600  7     100  *     JC</programlisting>
 
-      <para xml:lang="en">Each line starts with the name of the log to be rotated,
-	optionally followed by an owner and group for both rotated and
-	newly created files.  The <literal>mode</literal> field sets
-	the permissions on the log file and <literal>count</literal>
-	denotes how many rotated log files should be kept.  The
-	<literal>size</literal> and <literal>when</literal> fields
-	tell <application>newsyslog</application> when to rotate the
-	file.  A log file is rotated when either its size is larger
-	than the <literal>size</literal> field or when the time in the
-	<literal>when</literal> field has passed.  An asterisk
-	(<literal>*</literal>) means that this field is ignored.  The
-	<replaceable>flags</replaceable> field gives further
-	instructions, such as how to compress the rotated file or to
-	create the log file if it is missing.  The last two fields are
-	optional and specify the name of the Process ID
-	(<acronym>PID</acronym>) file of a process and a signal number
-	to send to that process when the file is rotated.</para>
+      <para>每一行的開始為要翻轉的日誌名稱、接著是供翻轉與新建檔案使用的擁有者及群組 (選填)。<literal>mode</literal> 欄位可設定日誌檔案的權限，<literal>count</literal> 代表要保留多少個翻轉過的日誌檔案，而 <literal>size</literal> 與 <literal>when</literal> 欄位會告訴 <application>newsyslog</application> 何時要翻轉該檔案。日誌檔案會在當其檔案超過 <literal>size</literal> 欄位的大小或已超過 <literal>when</literal> 欄位指定的時間時翻轉，可使用星號 (<literal>*</literal>) 忽略該欄位。<replaceable>flags</replaceable> 欄位可以給予進階的參數，例如：如何壓縮翻轉後檔案或建立遺失的日誌檔案。最後兩個欄位皆為選填，可指定程序的程序 ID (<acronym>PID</acronym>) 檔名稱以及檔案翻轉後要傳送給該程序的信號 (Signal) 編號。</para>
 
-      <para xml:lang="en">For more information on all fields, valid flags, and how
-	to specify the rotation time, refer to <citerefentry><refentrytitle>newsyslog.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.
-	Since <application>newsyslog</application> is run from
-	<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>, it cannot rotate files more often than it is
-	scheduled to run from <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>要取的更多有關所有欄位、可用的旗標及如何指定翻轉時間，請參考 <citerefentry><refentrytitle>newsyslog.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。由於 <application>newsyslog</application> 是由 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 執行，因此無法比其在 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 中所排定的時間間距內更頻繁的執行翻轉檔案。</para>
     </sect2>
 
     <sect2 xml:id="network-syslogd">
@@ -15267,8 +15107,7 @@ Logging to FILE /var/log/messages</screen>
     <sect2>
       <title><filename>/etc</filename> 配置</title>
 
-      <para xml:lang="en">There are a number of directories in which configuration
-	information is kept.  These include:</para>
+      <para>有數個目錄中儲存著設定資訊，這些目錄有：</para>
 
       <informaltable frame="none" pgwide="1">
 	<tgroup cols="2">
@@ -15278,52 +15117,42 @@ Logging to FILE /var/log/messages</screen>
 	  <tbody>
 	    <row>
 	      <entry xml:lang="en"><filename>/etc</filename></entry>
-	      <entry xml:lang="en">Generic system-specific configuration
-		information.</entry>
+	      <entry>通用系統特定的設定資訊。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/defaults</filename></entry>
-	      <entry xml:lang="en">Default versions of system configuration
-		files.</entry>
+	      <entry>系統設定檔的預設版本。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/mail</filename></entry>
-	      <entry xml:lang="en">Extra <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry> configuration and other
-		<acronym>MTA</acronym> configuration files.</entry>
+	      <entry><citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry> 額外的設定以及其他 <acronym>MTA</acronym> 設定檔。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/ppp</filename></entry>
-	      <entry xml:lang="en">Configuration for both user- and kernel-ppp
-		programs.</entry>
+	      <entry>user- 及 kernel-ppp 程式的設定。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/namedb</filename></entry>
-	      <entry xml:lang="en">Default location for <citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> data.
-		Normally <filename>named.conf</filename> and zone
-		files are stored here.</entry>
+	      <entry><citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> 資料的預設位置。<filename>named.conf</filename> 及區域 (Zone) 檔案正常會儲存在此處。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/usr/local/etc</filename></entry>
-	      <entry xml:lang="en">Configuration files for installed applications.
-		May contain per-application subdirectories.</entry>
+	      <entry>已安裝應用程式的設定檔，可能會有以應用程式區分的子目錄。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/usr/local/etc/rc.d</filename></entry>
-	      <entry xml:lang="en"><citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> scripts for installed
-		applications.</entry>
+	      <entry>已安裝應用程式的 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> Script。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/var/db</filename></entry>
-	      <entry xml:lang="en">Automatically generated system-specific database
-		files, such as the package database and the
-		<citerefentry><refentrytitle>locate</refentrytitle><manvolnum>1</manvolnum></citerefentry> database.</entry>
+	      <entry>自動產生的系統特定資料庫檔案，例如套件資料庫以及 <citerefentry><refentrytitle>locate</refentrytitle><manvolnum>1</manvolnum></citerefentry> 資料庫。</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
@@ -15343,12 +15172,9 @@ Logging to FILE /var/log/messages</screen>
 	  <primary><filename>resolv.conf</filename></primary>
 	</indexterm>
 
-	<para xml:lang="en">How a FreeBSD system accesses the Internet Domain Name
-	  System (<acronym>DNS</acronym>) is controlled by
-	  <citerefentry><refentrytitle>resolv.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+	<para>FreeBSD 要如何存取網際網路網域名稱系統 (Internet Domain Name System, <acronym>DNS</acronym>) 是由 <citerefentry><refentrytitle>resolv.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 來控制。</para>
 
-	<para xml:lang="en">The most common entries to
-	  <filename>/etc/resolv.conf</filename> are:</para>
+	<para><filename>/etc/resolv.conf</filename> 中最常用的項目為：</para>
 
 	<informaltable frame="none" pgwide="1">
 	  <tgroup cols="2">
@@ -15358,43 +15184,33 @@ Logging to FILE /var/log/messages</screen>
 	    <tbody>
 	      <row>
 		<entry xml:lang="en"><literal>nameserver</literal></entry>
-		<entry xml:lang="en">The <acronym>IP</acronym> address of a name
-		  server the resolver should query.  The servers are
-		  queried in the order listed with a maximum of
-		  three.</entry>
+		<entry>解析程式 (Resolver) 要查詢的名稱伺服器 <acronym>IP</acronym> 位置，這些伺服器會依所列的順序來查詢，最多可以有三個。</entry>
 	      </row>
 
 	      <row>
 		<entry xml:lang="en"><literal>search</literal></entry>
-		<entry xml:lang="en">Search list for hostname lookup.  This is
-		  normally determined by the domain of the local
-		  hostname.</entry>
+		<entry>主機名稱查詢使用的搜尋清單。這通常會使用本機主機名稱所在的網域。</entry>
 	      </row>
 
 	      <row>
 		<entry xml:lang="en"><literal>domain</literal></entry>
-		<entry xml:lang="en">The local domain name.</entry>
+		<entry>本地網域名稱。</entry>
 	      </row>
 	    </tbody>
 	  </tgroup>
 	</informaltable>
 
-	<para xml:lang="en">A typical <filename>/etc/resolv.conf</filename> looks
-	  like this:</para>
+	<para>典型的 <filename>/etc/resolv.conf</filename> 會如下：</para>
 
 	<programlisting xml:lang="en">search example.com
 nameserver 147.11.1.11
 nameserver 147.11.100.30</programlisting>
 
 	<note>
-	  <para xml:lang="en">Only one of the <literal>search</literal> and
-	    <literal>domain</literal> options should be used.</para>
+	  <para><literal>search</literal> 與 <literal>domain</literal> 選項應擇一使用。</para>
 	</note>
 
-	<para xml:lang="en">When using <acronym>DHCP</acronym>, <citerefentry><refentrytitle>dhclient</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	  usually rewrites <filename>/etc/resolv.conf</filename>
-	  with information received from the <acronym>DHCP</acronym>
-	  server.</para>
+	<para>當使用 <acronym>DHCP</acronym> 時，<citerefentry><refentrytitle>dhclient</refentrytitle><manvolnum>8</manvolnum></citerefentry> 通常會使用從 <acronym>DHCP</acronym> 伺服器所接收到的資訊覆寫 <filename>/etc/resolv.conf</filename>。</para>
       </sect3>
 
       <sect3>
@@ -15402,18 +15218,7 @@ nameserver 147.11.100.30</programlisting>
 
 	<indexterm xml:lang="en"><primary>hosts</primary></indexterm>
 
-	<para xml:lang="en"><filename>/etc/hosts</filename> is a simple text
-	  database which works in conjunction with
-	  <acronym>DNS</acronym> and
-	  <acronym>NIS</acronym> to provide host name to
-	  <acronym>IP</acronym> address mappings.  Entries for local
-	  computers connected via a <acronym>LAN</acronym> can be
-	  added to this file for simplistic naming purposes instead
-	  of setting up a <citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> server.  Additionally,
-	  <filename>/etc/hosts</filename> can be used to provide a
-	  local record of Internet names, reducing the need to query
-	  external <acronym>DNS</acronym> servers for commonly
-	  accessed names.</para>
+	<para><filename>/etc/hosts</filename> 是簡單的文字資料庫，會與 <acronym>DNS</acronym> 及 <acronym>NIS</acronym> 一併使用來提供主機名稱與 <acronym>IP</acronym> 位址的對應。可將透過 <acronym>LAN</acronym> 所連結的在地電腦項目加入到這個檔案做最簡單的命名，來替代設定一個 <citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> 伺服器。除此之外 <filename>/etc/hosts</filename> 可以用來提供本地的網際網路名稱記錄，來減少常用名稱向外部 <acronym>DNS</acronym> 伺服器查詢的需求。</para>
 
 	<programlisting xml:lang="en"># $FreeBSD$
 #
@@ -15448,16 +15253,15 @@ nameserver 147.11.100.30</programlisting>
 # from your regional registry (ARIN, APNIC, LACNIC, RIPE NCC, or AfriNIC.)
 #</programlisting>
 
-	<para xml:lang="en">The format of <filename>/etc/hosts</filename> is as
-	  follows:</para>
+	<para><filename>/etc/hosts</filename> 的格式如下：</para>
 
 	<programlisting xml:lang="en">[Internet address] [official hostname] [alias1] [alias2] ...</programlisting>
 
-	<para xml:lang="en">For example:</para>
+	<para>例如：</para>
 
 	<programlisting xml:lang="en">10.0.0.1 myRealHostname.example.com myRealHostname foobar1 foobar2</programlisting>
 
-	<para xml:lang="en">Consult <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more information.</para>
+	<para>請參考 <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry> 取得更多資訊。</para>
       </sect3>
     </sect2>
   </sect1>
@@ -15471,40 +15275,27 @@ nameserver 147.11.100.30</programlisting>
       <secondary>with sysctl</secondary>
     </indexterm>
 
-    <para xml:lang="en"><citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> is used to make changes to a running FreeBSD
-      system.  This includes many advanced options of the
-      <acronym>TCP/IP</acronym> stack and virtual memory system
-      that can dramatically improve performance for an experienced
-      system administrator.  Over five hundred system variables can
-      be read and set using <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+    <para><citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 可用來更改執行中的 FreeBSD 系統，這包含許多 <acronym>TCP/IP</acronym> 堆疊及虛擬記憶體系統的進階選項，讓有經驗的系統管理者能夠簡單的提升效能。有超過五百個系統變數可以使用 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來讀取與設定。</para>
 
-    <para xml:lang="en">At its core, <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> serves two functions: to read
-      and to modify system settings.</para>
+    <para><citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 主要提供兩個功能：讀取與修改系統設定。</para>
 
-    <para xml:lang="en">To view all readable variables:</para>
+    <para>檢視所有可讀取的變數：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>sysctl -a</userinput></screen>
 
-    <para xml:lang="en">To read a particular variable, specify its name:</para>
+    <para>要讀取特定變數只要指定其名稱：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>sysctl kern.maxproc</userinput>
 kern.maxproc: 1044</screen>
 
-    <para xml:lang="en">To set a particular variable, use the
-      <replaceable>variable</replaceable>=<replaceable>value</replaceable>
-      syntax:</para>
+    <para>要設定特定變數可使用 <replaceable>variable</replaceable>=<replaceable>value</replaceable> 語法：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl kern.maxfiles=5000</userinput>
 kern.maxfiles: 2088 -&gt; 5000</screen>
 
-    <para xml:lang="en">Settings of sysctl variables are usually either strings,
-      numbers, or booleans, where a boolean is <literal>1</literal>
-      for yes or <literal>0</literal> for no.</para>
+    <para>sysctl 的設定值通常為字串、數字或布林值，其中布林值的 <literal>1</literal> 代表是，<literal>0</literal> 代表否。</para>
 
-    <para xml:lang="en">To automatically set some variables each time the machine
-      boots, add them to <filename>/etc/sysctl.conf</filename>.  For
-      more information, refer to <citerefentry><refentrytitle>sysctl.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> and
-      <xref linkend="configtuning-sysctlconf"/>.</para>
+    <para>要在每次機器開機時自動設定一些變數可將其加入到 <filename>/etc/sysctl.conf</filename>。要取得更多的資訊請參考 <citerefentry><refentrytitle>sysctl.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 及 <xref linkend="configtuning-sysctlconf"/>。</para>
 
     <sect2 xml:id="configtuning-sysctlconf">
       <title xml:lang="en"><filename>sysctl.conf</filename></title>
@@ -15512,17 +15303,9 @@ kern.maxfiles: 2088 -&gt; 5000</screen>
       <indexterm xml:lang="en"><primary>sysctl.conf</primary></indexterm>
       <indexterm xml:lang="en"><primary>sysctl</primary></indexterm>
 
-      <para xml:lang="en">The configuration file for <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry>,
-	<filename>/etc/sysctl.conf</filename>, looks much like
-	<filename>/etc/rc.conf</filename>.  Values are set in a
-	<literal>variable=value</literal> form.  The specified values
-	are set after the system goes into multi-user mode.  Not all
-	variables are settable in this mode.</para>
+      <para><citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的設定檔於 <filename>/etc/sysctl.conf</filename>，內容很像 <filename>/etc/rc.conf</filename>，設定數值使用 <literal>variable=value</literal> 格式。指定的數值會在系統進入多使用者模式時設定，但並非所有變數皆可在此模式設定。</para>
 
-      <para xml:lang="en">For example, to turn off logging of fatal signal exits
-	and prevent users from seeing processes started by other
-	users, the following tunables can be set in
-	<filename>/etc/sysctl.conf</filename>:</para>
+      <para>例如，要關閉嚴重信號 (Fatal signal) 中止的記錄並避免使用者看到其他使用者所執行的程序，可加入以下設定到 <filename>/etc/sysctl.conf</filename>：</para>
 
       <programlisting xml:lang="en"># Do not log fatal signal exits (e.g., sig 11)
 kern.logsigexit=0
@@ -15547,22 +15330,14 @@ security.bsd.see_other_uids=0</programlisting>
 	</authorgroup>
       </info>
 
-      <para xml:lang="en">In some cases it may be desirable to modify read-only
-	<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> values, which will require a reboot of the
-	system.</para>
+      <para>在有些情況可能會需要修改唯讀的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 數值，而這會需要重新啟動系統。</para>
 
-      <para xml:lang="en">For instance, on some laptop models the <citerefentry><refentrytitle>cardbus</refentrytitle><manvolnum>4</manvolnum></citerefentry>
-	device will not probe memory ranges and will fail with errors
-	similar to:</para>
+      <para>例如，某些筆電型號的 <citerefentry><refentrytitle>cardbus</refentrytitle><manvolnum>4</manvolnum></citerefentry> 裝置無法偵測到記憶體範圍而且會失效並有類似以下的錯誤：</para>
 
       <screen xml:lang="en">cbb0: Could not map register memory
 device_probe_and_attach: cbb0 attach returned 12</screen>
 
-      <para xml:lang="en">The fix requires the modification of a read-only
-	<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> setting.  Add
-	<option>hw.pci.allow_unsupported_io_range=1</option> to
-	<filename>/boot/loader.conf</filename> and reboot.  Now
-	<citerefentry><refentrytitle>cardbus</refentrytitle><manvolnum>4</manvolnum></citerefentry> should work properly.</para>
+      <para>這個修正需要修改唯讀的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 設定。加入 <option>hw.pci.allow_unsupported_io_range=1</option> 到 <filename>/boot/loader.conf</filename> 然後重新啟動。現在 <citerefentry><refentrytitle>cardbus</refentrytitle><manvolnum>4</manvolnum></citerefentry> 應可正常運作。</para>
     </sect2>
   </sect1>
 
@@ -16224,90 +15999,63 @@ kern.maxvnodes: 100000</screen>
   <sect1 xml:id="adding-swap-space">
     <title>增加交換空間</title>
 
-    <para xml:lang="en">Sometimes a system requires more swap space.  This section
-      describes two methods to increase swap space: adding swap to an
-      existing partition or new hard drive, and creating a swap file
-      on an existing partition.</para>
+    <para>有時系統會需要更多的交換 (Swap) 空間，本章節會介紹兩種增加交換空間的方式：一種是在既有的分割區或新的硬碟增加交換空間，另一種則是在既有的分割區中建立一個交換檔。</para>
 
-    <para xml:lang="en">For information on how to encrypt swap space, which options
-      exist, and why it should be done, refer to <xref linkend="swap-encrypting"/>.</para>
+    <para>要取得更多有關如何加密交換空間的資訊、有那些可用的選項以及為何要做加密，可參考 <xref linkend="swap-encrypting"/>。</para>
 
     <sect2 xml:id="new-drive-swap">
       <title>使用新硬碟或既有分割區增加交換空間</title>
 
-      <para xml:lang="en">Adding a new hard drive for swap gives better performance
-	than using a partition on an existing drive.  Setting up
-	partitions and hard drives is explained in <xref linkend="disks-adding"/> while <xref linkend="configtuning-initial"/> discusses partition layouts
-	and swap partition size considerations.</para>
+      <para>在新的磁碟上增加交換空間比起使用既有硬碟上的分割區會有較佳的效率。設定分割區與硬碟在 <xref linkend="disks-adding"/> 中有說明，另外 <xref linkend="configtuning-initial"/> 會討論到分割區的配置與交換分割區大小需考量的事項。</para>
 
-      <para xml:lang="en">Use <command>swapon</command> to add a swap partition to
-	the system.  For example:</para>
+      <para>使用 <command>swapon</command> 來增加交換分割區到系統，例：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>swapon <replaceable>/dev/ada1s1b</replaceable></userinput></screen>
 
       <warning>
-	<para xml:lang="en">It is possible to use any partition not currently
-	  mounted, even if it already contains data.  Using
-	  <command>swapon</command> on a partition that contains data
-	  will overwrite and destroy that data.  Make sure that the
-	  partition to be added as swap is really the intended
-	  partition before running <command>swapon</command>.</para>
+	<para>可以使用任何尚未掛載過、甚至已經有內含資料的分割區做為交換空間，但在含有資料的分割區上使用 <command>swapon</command> 會覆寫並清除該分割區上所有的資料，請在執行 <command>swapon</command> 之前確認真的要使用該分割區增加交換空間。</para>
       </warning>
 
-      <para xml:lang="en">To automatically add this swap partition on boot, add an
-	entry to <filename>/etc/fstab</filename>:</para>
+      <para>要在開機時自動加入此交換分割區，可加入以下項目到 <filename>/etc/fstab</filename>：</para>
 
       <programlisting xml:lang="en"><replaceable>/dev/ada1s1b</replaceable>	none	swap	sw	0	0</programlisting>
 
-      <para xml:lang="en">See <citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry> for an explanation of the entries in
-	<filename>/etc/fstab</filename>.  More information about
-	<command>swapon</command> can be found in
-	<citerefentry><refentrytitle>swapon</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>請參考 <citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry> 來取得在 <filename>/etc/fstab</filename> 中項目的說明。更多有關 <command>swapon</command> 的資訊 可以在 <citerefentry><refentrytitle>swapon</refentrytitle><manvolnum>8</manvolnum></citerefentry> 找到。</para>
     </sect2>
 
     <sect2 xml:id="create-swapfile">
       <title>建立交換檔</title>
 
-      <para xml:lang="en">These examples create a 64M swap file called
-	<filename>/usr/swap0</filename> instead of using a
-	partition.</para>
+      <para>以下例子會建立一個 64M 的交換檔於 <filename>/usr/swap0</filename> 來替代使用分割區建立交換空間。</para>
 
-      <para xml:lang="en">Using swap files requires that the module needed by
-	<citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></citerefentry> has either been built into the kernel or has been
-	loaded before swap is enabled.  See
-	<xref linkend="kernelconfig"/> for information about building
-	a custom kernel.</para>
+      <para>使用交換檔開啟交換空間前需要在核心編譯或載入 <citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></citerefentry> 所需的模組，請參考 <xref linkend="kernelconfig"/> 了解有關編譯自訂核心的資訊。</para>
 
       <example xml:id="swapfile-10-and-later">
 	<title>建立交換檔於 FreeBSD 10.<replaceable>X</replaceable> 及以後版本</title>
 
 	<procedure>
 	  <step>
-	    <para xml:lang="en">Create the swap file:</para>
+	    <para>建立交換檔：</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>dd if=/dev/zero of=<replaceable>/usr/swap0</replaceable> bs=1m count=<replaceable>64</replaceable></userinput></screen>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Set the proper permissions on the new file:</para>
+	    <para>在新檔案設定適當的權限：</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>chmod 0600 <replaceable>/usr/swap0</replaceable></userinput></screen>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Inform the system about the swap file by adding a
-	      line to <filename>/etc/fstab</filename>:</para>
+	    <para>加入行到 <filename>/etc/fstab</filename> 以讓系統知道交換檔的資訊：</para>
 
 	    <programlisting xml:lang="en">md99	none	swap	sw,file=/usr/swap0,late	0	0</programlisting>
 
-	    <para xml:lang="en">The <citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></citerefentry> device <filename>md99</filename> is
-	      used, leaving lower device numbers available for
-	      interactive use.</para>
+	    <para>已使用 <citerefentry><refentrytitle>md</refentrytitle><manvolnum>4</manvolnum></citerefentry> 裝置的 <filename>md99</filename>，保留較低的裝置編號供互動操作時使用。</para>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Swap space will be added on system startup.  To add
-	      swap space immediately, use <citerefentry><refentrytitle>swapon</refentrytitle><manvolnum>8</manvolnum></citerefentry>:</para>
+	    <para>交換空間會於系統啟動時增加。若要立即增加交換空間，請參考 <citerefentry><refentrytitle>swapon</refentrytitle><manvolnum>8</manvolnum></citerefentry>：</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>swapon -aL</userinput></screen>
 	  </step>
@@ -16319,31 +16067,25 @@ kern.maxvnodes: 100000</screen>
 
 	<procedure>
 	  <step>
-	    <para xml:lang="en">Create the swap file,
-	      <filename>/usr/swap0</filename>:</para>
+	    <para>建立交換檔 <filename>/usr/swap0</filename>：</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>dd if=/dev/zero of=<replaceable>/usr/swap0</replaceable> bs=1m count=<replaceable>64</replaceable></userinput></screen>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Set the proper permissions on
-	      <filename>/usr/swap0</filename>:</para>
+	    <para>設定適當的權限於 <filename>/usr/swap0</filename>：</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>chmod 0600 <replaceable>/usr/swap0</replaceable></userinput></screen>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Enable the swap file in
-	      <filename>/etc/rc.conf</filename>:</para>
+	    <para>在 <filename>/etc/rc.conf</filename> 開啟交換檔：</para>
 
 	    <programlisting xml:lang="en">swapfile="<replaceable>/usr/swap0</replaceable>"   # Set to name of swap file</programlisting>
 	  </step>
 
 	  <step>
-	    <para xml:lang="en">Swap space will be added on system startup.  To
-	      enable the swap file immediately, specify a free memory
-	      device.  Refer to <xref linkend="disks-virtual"/> for
-	      more information about memory devices.</para>
+	    <para>交換空間會於系統啟動時增加。若要立即增加交換空間，可指定一個未使用的記憶體裝置。請參考 <xref linkend="disks-virtual"/> 取得更多有關記憶體裝置的資訊。</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>mdconfig -a -t vnode -f <replaceable>/usr/swap0</replaceable> -u <replaceable>0</replaceable> &amp;&amp; swapon /dev/md<replaceable>0</replaceable></userinput></screen>
 	  </step>
@@ -17895,7 +17637,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 49377 2016-09-09 17:31:58Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 49531 2016-10-21 03:32:27Z lwhsu $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -18514,7 +18256,7 @@ cat changed
 	message is sent to the broadcast address.  However, there is
 	no reason for an external host to perform such an action.  To
 	reject all external broadcast requests, set
-	<varname>net.inet.icmp.bmcastecho </varname> to
+	<varname>net.inet.icmp.bmcastecho</varname> to
 	<literal>0</literal>.</para>
 
       <para xml:lang="en">Some additional settings are documented in
@@ -25875,7 +25617,7 @@ trailer,133</programlisting>
     </sect2>
 
     <sect2>
-      <title>循環與壓縮 Audit Trail 檔</title>
+      <title>翻轉與壓縮 Audit Trail 檔</title>
 
       <para xml:lang="en">Audit trails are written to by the kernel and
 	managed by the audit daemon, <citerefentry><refentrytitle>auditd</refentrytitle><manvolnum>8</manvolnum></citerefentry>.
@@ -27668,10 +27410,10 @@ scsibus1:
 
       <note>
 	<para xml:lang="en">The installation media for
-	  FreeBSD/i386 9.3-RELEASE does not
+	  FreeBSD/i386 10.3-RELEASE does not
 	  include a rescue shell.  For this version, instead
 	  download and burn a Livefs <acronym>CD</acronym> image from
-	  <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/9.3/FreeBSD-9.3-RELEASE-i386-livefs.iso">ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/9.3/FreeBSD-9.3-RELEASE-i386-livefs.iso</uri>.</para>
+	  <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso">ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso</uri>.</para>
       </note>
 
       <para xml:lang="en">Next, test the rescue shell and the backups.  Make notes
@@ -29428,7 +29170,7 @@ esac</programlisting>
       <primary>Striping</primary>
     </indexterm>
 
-    <para>串連會合併數個磁碟成單一個磁碟區 (Volume)。串連可以透過使用硬體 <acronym>RAID</acronym> 控制器來達到。<acronym>GEOM</acronym> 磁碟子系統提供了軟體支援的磁碟串連，也就是所謂的 <acronym>RAID0</acronym>，而不需要 <acronym>RAID</acronym> 磁碟控制器。</para>
+    <para>串連會合併數個磁碟成單一個磁碟區 (Volume)，可以透過使用硬體 <acronym>RAID</acronym> 控制器來做到串連。<acronym>GEOM</acronym> 磁碟子系統提供了軟體支援的磁碟串連，也就是所謂的 <acronym>RAID0</acronym>，而不需要 <acronym>RAID</acronym> 磁碟控制器。</para>
 
     <para>在 <acronym>RAID0</acronym> 中，資料會被切割成數個資料區塊 (Block) 寫入到磁碟陣列中的每一個磁碟機。如下圖所示，取代以往等候系統寫入 256k 到一個磁碟的時間， <acronym>RAID0</acronym> 可以同時寫入 64k 到磁碟陣列中四個磁碟的每個磁碟，這可提供優異的 <acronym>I/O</acronym> 效能，若使用多個磁碟控制器可增加更多的效能。</para>
 
@@ -31053,7 +30795,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service zfs start</userinput></screen>
 
-    <para>這本節的例子會假設有三個 <acronym>SCSI</acronym> 磁碟，名稱分別為 <filename><replaceable>da0</replaceable></filename>, <filename><replaceable>da1</replaceable></filename> 及 <filename><replaceable>da2</replaceable></filename>。<acronym>SATA</acronym> 硬體的使用者裝置名稱改為 <filename><replaceable>ada</replaceable></filename> 。</para>
+    <para>本節的例子會假設有三個 <acronym>SCSI</acronym> 磁碟，名稱分別為 <filename><replaceable>da0</replaceable></filename>, <filename><replaceable>da1</replaceable></filename> 及 <filename><replaceable>da2</replaceable></filename>。<acronym>SATA</acronym> 硬體的使用者裝置名稱改為 <filename><replaceable>ada</replaceable></filename> 。</para>
 
     <sect2 xml:id="zfs-quickstart-single-disk-pool">
       <title>單磁碟儲存池</title>
@@ -32800,7 +32542,7 @@ mypool/compressed_dataset  logicalused       496G      -</screen>
 NAME  SIZE ALLOC  FREE CAP DEDUP HEALTH ALTROOT
 pool 2.84G 2.19M 2.83G  0% 1.00x ONLINE -</screen>
 
-      <para><literal>DEDUP</literal> 欄位會顯示儲存池的實際去重複率，數值為 <literal>1.00x</literal> 代表資料尚未被去重複。在下一個例子會在前面所建立的去重複儲存池中複製三份 Port 樹到不同的目錄。中。</para>
+      <para><literal>DEDUP</literal> 欄位會顯示儲存池的實際去重複率，數值為 <literal>1.00x</literal> 代表資料尚未被去重複。在下一個例子會在前面所建立的去重複儲存池中複製三份 Port 樹到不同的目錄中。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool list</userinput>
 for d in dir1 dir2 dir3; do
@@ -33441,7 +33183,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  <row>
 	    <entry xml:id="zfs-term-reservation">資料集保留空間 (Dataset Reservation)</entry>
 
-	    <entry><literal>reservation</literal> 屬性可以確保對特定資料集及其後裔最小可用的空間量，若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。若要製作 <filename>storage/home/bob</filename> 的快照，該快照所使用的空間也會被列入保留空間計算。 <link linkend="zfs-term-refreservation"><literal>refreservation</literal></link> 屬性也以類似的方式運作，但是他 <emphasis>不包含</emphasis> 後裔，例如：快照。 <para>不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。</para></entry>
+	    <entry><literal>reservation</literal> 屬性可以確保對特定資料集及其後裔最小可用的空間量，若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。若要製作 <filename>storage/home/bob</filename> 的快照，該快照所使用的空間也會被列入保留空間計算。 <link linkend="zfs-term-refreservation"><literal>refreservation</literal></link> 屬性也以類似的方式運作，但是他 <emphasis>不包含</emphasis> 後裔，例如：快照。 <para>不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。</para></entry>
 	  </row>
 
 	  <row>
@@ -33679,7 +33421,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 49368 2016-09-06 19:38:10Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 49599 2016-10-28 14:26:21Z wblock $
 -->
 <chapter version="5.0" xml:id="virtualization">
 
@@ -34377,31 +34119,10 @@ perm    vboxnetctl 0660</programlisting>
     <sect2 xml:id="virtualization-virtualbox-usb-support">
       <title><trademark>VirtualBox</trademark> USB 支援</title>
 
-      <para xml:lang="en">In order to be able to read and write to USB devices,
-	users need to be members of
-	<systemitem class="groupname">operator</systemitem>:</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod operator -m <replaceable>jerry</replaceable></userinput></screen>
-
-      <para xml:lang="en">Then, add the following to
-	<filename>/etc/devfs.rules</filename>, or create this file if
-	it does not exist yet:</para>
-
-      <programlisting xml:lang="en">[system=10]
-add path 'usb/*' mode 0660 group operator</programlisting>
-
-      <para xml:lang="en">To load these new rules, add the following to
-	<filename>/etc/rc.conf</filename>:</para>
-
-      <programlisting xml:lang="en">devfs_system_ruleset="system"</programlisting>
-
-      <para xml:lang="en">Then, restart devfs:</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>service devfs restart</userinput></screen>
-
-      <para xml:lang="en">USB can now be enabled in the guest operating system.  USB
-	devices should be visible in the <trademark>VirtualBox</trademark>
-	preferences.</para>
+      <para xml:lang="en">The <application><trademark>VirtualBox</trademark></application> extension
+	pack is not available for FreeBSD hosts.  Without the extension
+	pack, the FreeBSD host cannot pass <acronym>USB</acronym>
+	ports through to guest operating systems.</para>
     </sect2>
 
     <sect2 xml:id="virtualization-virtualbox-host-dvd-cd-access">
@@ -35613,7 +35334,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 48637 2016-04-14 21:52:30Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 49531 2016-10-21 03:32:27Z lwhsu $
 -->
 <chapter version="5.0" xml:id="updating-upgrading">
 
@@ -43296,7 +43017,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 49465 2016-10-07 18:00:23Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 49710 2016-12-05 12:59:05Z sevan $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -44608,7 +44329,7 @@ Exports list on foobar:
     <sect2>
       <title>設定 <acronym>NIS</acronym> Master 伺服器</title>
 
-      <para xml:lang="en"> The canonical copies of all <acronym>NIS</acronym> files
+      <para xml:lang="en">The canonical copies of all <acronym>NIS</acronym> files
 	are stored on the master server.  The databases used to store
 	the information are called <acronym>NIS</acronym> maps.  In
 	FreeBSD, these maps are stored in
@@ -48430,6 +48151,9 @@ directory mask = 0755</programlisting>
 
       <programlisting xml:lang="en">samba_enable="YES"</programlisting>
 
+      <para xml:lang="en">To enable Samba4, use:</para>
+      <programlisting xml:lang="en">samba_server_enable="YES"</programlisting>
+
       <para xml:lang="en">To start <application>Samba</application> now:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service samba start</userinput>
@@ -48441,7 +48165,7 @@ Starting smbd.</screen>
 	separate daemons.  Both the <application>nmbd</application>
 	and <application>smbd</application> daemons are started by
 	<varname>samba_enable</varname>.  If winbind name resolution
-	is also required, set:</para> 
+	is also required, set:</para>
 
 	<programlisting xml:lang="en">winbindd_enable="YES"</programlisting>
 
@@ -48971,7 +48695,7 @@ iscsictl_flags="-Aa"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 48265 2016-02-26 16:53:25Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 49600 2016-10-28 15:31:21Z wblock $
 -->
 <chapter version="5.0" xml:id="firewalls">
 
@@ -50995,7 +50719,7 @@ $cmd 00231 allow tcp from any to any 110 out via $pif setup keep-state
 $cmd 00250 allow icmp from any to any out via $pif keep-state
 
 # Allow outbound NTP
-$cmd 00260 allow tcp from any to any 37 out via $pif setup keep-state
+$cmd 00260 allow udp from any to any 123 out via $pif setup keep-state
 
 # Allow outbound SSH
 $cmd 00280 allow tcp from any to any 22 out via $pif setup keep-state
@@ -52656,7 +52380,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49364 2016-09-02 18:11:32Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49640 2016-11-03 19:48:36Z sevan $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -55837,7 +55561,7 @@ bridge0: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1
 	      address is seen on a different interface.  This gives
 	      the benefit of static address entries without the need
 	      to pre-populate the forwarding table.  Clients learned
-	      on a particular segment of the bridge can not roam to
+	      on a particular segment of the bridge cannot roam to
 	      another segment.</para>
 
 	    <para xml:lang="en">An example of using sticky addresses is to combine
@@ -55854,7 +55578,7 @@ bridge0: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1
 
 	    <para xml:lang="en">In this example, both clients see <systemitem class="ipaddress">192.168.0.1</systemitem> as their
 	      default gateway.  Since the bridge cache is sticky, one
-	      host can not spoof the <acronym>MAC</acronym> address of
+	      host cannot spoof the <acronym>MAC</acronym> address of
 	      the other customer in order to intercept their
 	      traffic.</para>
 
@@ -57249,7 +56973,7 @@ rtsold_enable="YES"</programlisting>
 	and <replaceable>REMOTE_IPv4_ADDR</replaceable> with the
 	actual <acronym>IPv4</acronym> addresses:</para>
 
-      <programlisting xml:lang="en">cloned_interfaces_gif0="<replaceable>MY_IPv4_ADDR REMOTE_IPv4_ADDR</replaceable>"</programlisting>
+      <programlisting xml:lang="en">create_args_gif0="tunnel <replaceable>MY_IPv4_ADDR REMOTE_IPv4_ADDR</replaceable>"</programlisting>
 
       <para xml:lang="en">To apply the <acronym>IPv6</acronym> address that has been
 	assigned for use as the <acronym>IPv6</acronym> tunnel
@@ -57955,7 +57679,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
       provided in parentheses after the hostname.</para>
 
     
-<para xml:lang="en"><link linkend="central-ftp">Central Servers</link>, <link linkend="mirrors-primary-ftp">Primary Mirror Sites</link>, <link linkend="mirrors-am-ftp">Armenia</link>, <link linkend="mirrors-au-ftp">Australia</link>, <link linkend="mirrors-at-ftp">Austria</link>, <link linkend="mirrors-br-ftp">Brazil</link>, <link linkend="mirrors-ca-ftp">Canada</link>, <link linkend="mirrors-cn-ftp">China</link>, <link linkend="mirrors-cz-ftp">Czech Republic</link>, <link linkend="mirrors-dk-ftp">Denmark</link>, <link linkend="mirrors-ee-ftp">Estonia</link>, <link linkend="mirrors-fi-ftp">Finland</link>, <link linkend="mirrors-fr-ftp">France</link>, <link linkend="mirrors-de-ftp">Germany</link>, <link linkend="mirrors-gr-ftp">Greece</link>, <link linkend="mirrors-hk-ftp">Hong Kong</link>, <link linkend="mirrors-ie-ftp">Ireland</link>, <link linkend="mirrors-jp-ftp">Japan</link>, <link linkend="mirrors-kr-ftp">Korea</link>, <link linkend="mirrors-lv-ftp">Latvia</link>, <link linkend="mirrors-lt-ftp">Lithuania</link>, <link linkend="mirrors-nl-ftp">Netherlands</link>, <link linkend="mirrors-nz-ftp">New Zealand</link>, <link linkend="mirrors-no-ftp">Norway</link>, <link linkend="mirrors-pl-ftp">Poland</link>, <link linkend="mirrors-ru-ftp">Russia</link>, <link linkend="mirrors-sa-ftp">Saudi Arabia</link>, <link linkend="mirrors-si-ftp">Slovenia</link>, <link linkend="mirrors-za-ftp">South Africa</link>, <link linkend="mirrors-es-ftp">Spain</link>, <link linkend="mirrors-se-ftp">Sweden</link>, <link linkend="mirrors-ch-ftp">Switzerland</link>, <link linkend="mirrors-tw-ftp">Taiwan</link>, <link linkend="mirrors-ua-ftp">Ukraine</link>, <link linkend="mirrors-uk-ftp">United Kingdom</link>, <link linkend="mirrors-us-ftp">USA</link>.</para>
+<para xml:lang="en"><link linkend="central-ftp">Central Servers</link>, <link linkend="mirrors-primary-ftp">Primary Mirror Sites</link>, <link linkend="mirrors-am-ftp">Armenia</link>, <link linkend="mirrors-au-ftp">Australia</link>, <link linkend="mirrors-at-ftp">Austria</link>, <link linkend="mirrors-br-ftp">Brazil</link>, <link linkend="mirrors-cn-ftp">China</link>, <link linkend="mirrors-cz-ftp">Czech Republic</link>, <link linkend="mirrors-dk-ftp">Denmark</link>, <link linkend="mirrors-ee-ftp">Estonia</link>, <link linkend="mirrors-fi-ftp">Finland</link>, <link linkend="mirrors-fr-ftp">France</link>, <link linkend="mirrors-de-ftp">Germany</link>, <link linkend="mirrors-gr-ftp">Greece</link>, <link linkend="mirrors-hk-ftp">Hong Kong</link>, <link linkend="mirrors-ie-ftp">Ireland</link>, <link linkend="mirrors-jp-ftp">Japan</link>, <link linkend="mirrors-kr-ftp">Korea</link>, <link linkend="mirrors-lv-ftp">Latvia</link>, <link linkend="mirrors-lt-ftp">Lithuania</link>, <link linkend="mirrors-nl-ftp">Netherlands</link>, <link linkend="mirrors-nz-ftp">New Zealand</link>, <link linkend="mirrors-no-ftp">Norway</link>, <link linkend="mirrors-pl-ftp">Poland</link>, <link linkend="mirrors-ru-ftp">Russia</link>, <link linkend="mirrors-sa-ftp">Saudi Arabia</link>, <link linkend="mirrors-si-ftp">Slovenia</link>, <link linkend="mirrors-za-ftp">South Africa</link>, <link linkend="mirrors-es-ftp">Spain</link>, <link linkend="mirrors-se-ftp">Sweden</link>, <link linkend="mirrors-ch-ftp">Switzerland</link>, <link linkend="mirrors-tw-ftp">Taiwan</link>, <link linkend="mirrors-ua-ftp">Ukraine</link>, <link linkend="mirrors-uk-ftp">United Kingdom</link>, <link linkend="mirrors-us-ftp">USA</link>.</para>
 
 
     
@@ -58072,21 +57796,6 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
         </listitem>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp4.br.FreeBSD.org/pub/FreeBSD/">ftp://ftp4.br.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
-        </listitem>
-      </itemizedlist>
-    </listitem>
-  </varlistentry>
-  <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-ca-ftp"/>Canada</term>
-    <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@ca.FreeBSD.org</email> for this domain.</para>
-      <itemizedlist>
-        <listitem>
-          <para xml:lang="en"><link xlink:href="ftp://ftp.ca.FreeBSD.org/pub/FreeBSD/">ftp://ftp.ca.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
-        </listitem>
-        <listitem>
-          <para xml:lang="en"><link xlink:href="ftp://ftp2.ca.FreeBSD.org/pub/FreeBSD/">ftp://ftp2.ca.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
         </listitem>
       </itemizedlist>
     </listitem>
@@ -59118,7 +58827,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bibliography/chapter.xml 45637 2014-09-18 20:51:12Z gjb $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bibliography/chapter.xml 49531 2016-10-21 03:32:27Z lwhsu $
 -->
 <appendix version="5.0" xml:id="bibliography">
 
@@ -59242,7 +58951,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 
       <listitem>
 	<para xml:lang="en">FreeBSD: The Complete Reference, published by <link xlink:href="http://books.mcgraw-hill.com">McGrawHill</link>,
-	  2003.  ISBN: 0072224096 </para>
+	  2003.  ISBN: 0072224096</para>
       </listitem>
     </itemizedlist>
   </sect1>
@@ -62006,7 +61715,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     <title>官方鏡像站</title>
 
     
-<para xml:lang="en"><link linkend="central-www">Central Servers</link>, <link linkend="mirrors-am-www">Armenia</link>, <link linkend="mirrors-au-www">Australia</link>, <link linkend="mirrors-at-www">Austria</link>, <link linkend="mirrors-ca-www">Canada</link>, <link linkend="mirrors-cz-www">Czech Republic</link>, <link linkend="mirrors-dk-www">Denmark</link>, <link linkend="mirrors-fi-www">Finland</link>, <link linkend="mirrors-fr-www">France</link>, <link linkend="mirrors-de-www">Germany</link>, <link linkend="mirrors-hk-www">Hong Kong</link>, <link linkend="mirrors-ie-www">Ireland</link>, <link linkend="mirrors-jp-www">Japan</link>, <link linkend="mirrors-lv-www">Latvia</link>, <link linkend="mirrors-lt-www">Lithuania</link>, <link linkend="mirrors-nl-www">Netherlands</link>, <link linkend="mirrors-no-www">Norway</link>, <link linkend="mirrors-ru-www">Russia</link>, <link linkend="mirrors-si-www">Slovenia</link>, <link linkend="mirrors-za-www">South Africa</link>, <link linkend="mirrors-es-www">Spain</link>, <link linkend="mirrors-se-www">Sweden</link>, <link linkend="mirrors-ch-www">Switzerland</link>, <link linkend="mirrors-tw-www">Taiwan</link>, <link linkend="mirrors-uk-www">United Kingdom</link>, <link linkend="mirrors-us-www">USA</link>.</para>
+<para xml:lang="en"><link linkend="central-www">Central Servers</link>, <link linkend="mirrors-am-www">Armenia</link>, <link linkend="mirrors-au-www">Australia</link>, <link linkend="mirrors-at-www">Austria</link>, <link linkend="mirrors-cz-www">Czech Republic</link>, <link linkend="mirrors-dk-www">Denmark</link>, <link linkend="mirrors-fi-www">Finland</link>, <link linkend="mirrors-fr-www">France</link>, <link linkend="mirrors-de-www">Germany</link>, <link linkend="mirrors-hk-www">Hong Kong</link>, <link linkend="mirrors-ie-www">Ireland</link>, <link linkend="mirrors-jp-www">Japan</link>, <link linkend="mirrors-lv-www">Latvia</link>, <link linkend="mirrors-lt-www">Lithuania</link>, <link linkend="mirrors-nl-www">Netherlands</link>, <link linkend="mirrors-no-www">Norway</link>, <link linkend="mirrors-ru-www">Russia</link>, <link linkend="mirrors-si-www">Slovenia</link>, <link linkend="mirrors-za-www">South Africa</link>, <link linkend="mirrors-es-www">Spain</link>, <link linkend="mirrors-se-www">Sweden</link>, <link linkend="mirrors-ch-www">Switzerland</link>, <link linkend="mirrors-tw-www">Taiwan</link>, <link linkend="mirrors-uk-www">United Kingdom</link>, <link linkend="mirrors-us-www">USA</link>.</para>
 
 
     
@@ -62057,22 +61766,6 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www.at.FreeBSD.org/">http://www.at.FreeBSD.org/</link> (IPv6)</para>
-      </listitem>
-    </itemizedlist>
-  </listitem>
-  <listitem>
-    <anchor xml:id="mirrors-ca-www"/>
-    <para xml:lang="en">Canada</para>
-    <itemizedlist>
-      <listitem>
-        <para xml:lang="en">
-          <link xlink:href="http://www.ca.FreeBSD.org/">http://www.ca.FreeBSD.org/</link>
-        </para>
-      </listitem>
-      <listitem>
-        <para xml:lang="en">
-          <link xlink:href="http://www2.ca.FreeBSD.org/">http://www2.ca.FreeBSD.org/</link>
-        </para>
       </listitem>
     </itemizedlist>
   </listitem>
