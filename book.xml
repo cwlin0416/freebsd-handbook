@@ -33183,7 +33183,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  <row>
 	    <entry xml:id="zfs-term-reservation">資料集保留空間 (Dataset Reservation)</entry>
 
-	    <entry><literal>reservation</literal> 屬性可以確保對特定資料集及其後裔最小可用的空間量，若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。若要製作 <filename>storage/home/bob</filename> 的快照，該快照所使用的空間也會被列入保留空間計算。 <link linkend="zfs-term-refreservation"><literal>refreservation</literal></link> 屬性也以類似的方式運作，但是他 <emphasis>不包含</emphasis> 後裔，例如：快照。 <para>不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。</para></entry>
+	    <entry><literal>reservation</literal> 屬性可以確保對特定資料集及其後裔最小可用的空間量，若在 <filename>storage/home/bob</filename> 設定 10 GB 的保留空間且其他資料集嘗試使用所有剩餘的空間時，會保留至少 10 GB 的空間供這個資料集使用。若要製作 <filename>storage/home/bob</filename> 的快照，該快照所使用的空間也會被列入保留空間計算。 <link linkend="zfs-term-refreservation"><literal>refreservation</literal></link> 屬性也以類似的方式運作，但是他 <emphasis>不包含</emphasis> 後裔，例如：快照。 <para>不管那一種保留空間在許多情境皆很有用，例如：要規劃與測試磁碟空間配置在新系統上的適應性，或是確保有足夠的空間供稽查日誌或系統還原程序及檔案使用。</para></entry>
 	  </row>
 
 	  <row>
