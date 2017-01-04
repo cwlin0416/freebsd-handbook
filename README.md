@@ -20,6 +20,7 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
   - [ ] 12. FreeBSD 開機程序
   - [ ] 23. 更新與升級 FreeBSD
   - [ ] 13. 安全性
+
 # 如何翻譯?
 * [FreeBSD Handbook - EN](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) 為操作手冊原文
 * [book.html](book.html) 為採用 GNU gettext 翻譯所產生的新版文件
