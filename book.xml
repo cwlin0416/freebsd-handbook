@@ -4856,7 +4856,7 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/mail/</filename></entry>
-	      <entry>MTA (Mail Transport Agent) 的相關設定檔，像是 <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
+	      <entry>郵件傳輸代理程式，像是 <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的相關設定檔。</entry>
 	    </row>
 
 	    <row>
@@ -13932,7 +13932,7 @@ export PATH</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 48892 2016-06-04 11:45:17Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 49795 2017-01-04 17:41:17Z bcr $
 -->
 <chapter version="5.0" xml:id="config-tuning">
 
@@ -14049,7 +14049,7 @@ export PATH</programlisting>
     <sect2>
       <title>延伸應用程式設定</title>
 
-      <para>現在 FreeBSD 會引用 <filename>rc.d</filename>，讓設定應用程式啟動程式更簡單且提供更多的功能。使用於 <xref linkend="configtuning-rcd"/> 所提到的關鍵字，可以設定應用程式在其他特定服務之後啟動且可以透過 <filename>/etc/rc.conf</filename> 來傳遞額外的旗標來取代寫死在啟動 Script 中的旗標。一個基本的 Script 可能會如下例所示：</para>
+      <para>現在 FreeBSD 會引用 <filename>rc.d</filename>，設定應用程式啟動變的更簡單且提供更多的功能。使用於 <xref linkend="configtuning-rcd"/> 所提到的關鍵字，可以設定應用程式在其他特定服務之後啟動且可以透過 <filename>/etc/rc.conf</filename> 來傳遞額外的旗標來取代寫死在啟動 Script 中的旗標。一個基本的 Script 可能會如下例所示：</para>
 
       <programlisting xml:lang="en">#!/bin/sh
 #
@@ -15344,18 +15344,7 @@ device_probe_and_attach: cbb0 attach returned 12</screen>
   <sect1 xml:id="configtuning-disk">
     <title>調校磁碟</title>
 
-    <para xml:lang="en">The following section will discuss various tuning
-      mechanisms and options which may be applied to disk
-      devices.  In many cases, disks with mechanical parts,
-      such as <acronym>SCSI</acronym> drives, will be the
-      bottleneck driving down the overall system performance.  While
-      a solution is to install a drive without mechanical parts,
-      such as a solid state drive, mechanical drives are not
-      going away anytime in the near future.  When tuning disks,
-      it is advisable to utilize the features of the <citerefentry><refentrytitle>iostat</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-      command to test various changes to the system.  This
-      command will allow the user to obtain valuable information
-      on system <acronym>IO</acronym>.</para>
+    <para>接下來的章節會討論在磁碟裝置上各種可調校的機制與選項。在大多數案例中，有使用機械元件的硬碟，如 <acronym>SCSI</acronym> 磁碟機，會成為導致整體系統效能低下的瓶頸。雖然已經有不使用機械元件的磁碟機解決方案，如，固態硬碟，但使用機械元件的磁碟機短期內並不會消失。在調校磁碟時，建議可以利用 <citerefentry><refentrytitle>iostat</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指令的功能來測試各種對系統的變更，這個指令可讓使用者取得系統 <acronym>IO</acronym> 相關的有用資訊。</para>
 
     <sect2>
       <title>Sysctl 變數</title>
@@ -16767,7 +16756,7 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
     <indexterm xml:lang="en"><primary>booting</primary></indexterm>
     <indexterm xml:lang="en"><primary>bootstrap</primary></indexterm>
 
-    <para>從開啟電腦到載入作業系統的這段流程稱為<quote>開機程序</quote> (Bootstrap process) 或<quote>開機</quote> (booting)。FreeBSD 的開機程序提供大量的客製化彈性，包含可選擇安裝在同電腦的其他的作業系統、不同版本的作業系統或不同核心的作業系統的功能。</para>
+    <para>從開啟電腦到載入作業系統的這段流程稱為 <quote>開機程序</quote> (Bootstrap process) 或 <quote>開機</quote> (Booting)。FreeBSD 的開機程序提供大量的客製化彈性，包含可選擇安裝在同電腦的其他的作業系統、不同版本的作業系統或不同核心的作業系統的功能。</para>
 
     <para>本章會詳細說明可以設定的選項。示範如何自訂 FreeBSD 開機流程，包含其中所有會發生的事，直到啟動 FreeBSD 核心、偵測裝置及啟動 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>。這些事會發生在開機訊息的文字顏色會從亮白變成灰色之間。</para>
 
@@ -16803,48 +16792,19 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
   <sect1 xml:id="boot-introduction">
     <title>FreeBSD 開機程序</title>
 
-    <para xml:lang="en">Turning on a computer and starting the operating system
-      poses an interesting dilemma.  By definition, the computer does
-      not know how to do anything until the operating system is
-      started.  This includes running programs from the disk.  If the
-      computer can not run a program from the disk without the
-      operating system, and the operating system programs are on the
-      disk, how is the operating system started?</para>
+    <para>打開電腦並啟動作業系統的這個動作呈現了一個有趣的困境。照道理，電腦在啟動作業系統之前並不知道要如何做任何事情，這些事情之中包括從磁碟執行程式。如果電腦無法在沒有作業系統的情況下執行程式，而作業系統的程式本身又在磁碟上，那麼作業系統要如何啟動呢?</para>
 
-    <para xml:lang="en">This problem parallels one in the book <citetitle>The
-	Adventures of Baron Munchausen</citetitle>.  A character had
-      fallen part way down a manhole, and pulled himself out by
-      grabbing his bootstraps and lifting.  In the early days of
-      computing, the term <firstterm>bootstrap</firstterm> was applied
-      to the mechanism used to load the operating system.  It has
-      since become shortened to <quote>booting</quote>.</para>
+    <para>這個問題如同 <citetitle>The Adventures of Baron Munchausen</citetitle> 一書中的一個角色掉進了洞裡，他抓住了靴子上的拔靴帶 (Bootstrap) 才把自己拉了出來，因此在期電腦領域用 <firstterm>bootstrap</firstterm> 一詞來指載入作業系統的機制，後來被縮短為 <quote>booting</quote>。</para>
 
     <indexterm xml:lang="en"><primary><acronym>BIOS</acronym></primary></indexterm>
 
     <indexterm xml:lang="en"><primary>Basic Input/Output
 	System</primary><see><acronym>BIOS</acronym></see></indexterm>
 
-    <para xml:lang="en">On x86 hardware, the Basic Input/Output System
-      (<acronym>BIOS</acronym>) is responsible for loading the
-      operating system.  The <acronym>BIOS</acronym> looks on the hard
-      disk for the Master Boot Record (<acronym>MBR</acronym>), which
-      must be located in a specific place on the disk.  The
-      <acronym>BIOS</acronym> has enough knowledge to load and run the
-      <acronym>MBR</acronym>, and assumes that the
-      <acronym>MBR</acronym> can then carry out the rest of the tasks
-      involved in loading the operating system, possibly with the help
-      of the <acronym>BIOS</acronym>.</para>
+    <para>在 x86 硬體上，基本輸入/輸出系統 (Basic Input/Output System, <acronym>BIOS</acronym>) 負責載入作業系統。 <acronym>BIOS</acronym> 會找到硬碟上的主開機記錄區 (Master Boot Record, <acronym>MBR</acronym>)，該記錄區必須位於磁碟上的特定位置。<acronym>BIOS</acronym> 有足夠的知識可以載入並執行這個 <acronym>MBR</acronym>，並且假設這個 <acronym>MBR</acronym> 在 <acronym>BIOS</acronym> 的協助下可以完成接下來載入作業系統的工作。</para>
 
     <note>
-      <para xml:lang="en">FreeBSD provides for booting from both the older
-	<acronym>MBR</acronym> standard, and the newer GUID Partition
-	Table (<acronym>GPT</acronym>).  <acronym>GPT</acronym>
-	partitioning is often found on computers with the Unified
-	Extensible Firmware Interface (<acronym>UEFI</acronym>).
-	However, FreeBSD can boot from <acronym>GPT</acronym> partitions
-	even on machines with only a legacy <acronym>BIOS</acronym>
-	with <citerefentry><refentrytitle>gptboot</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Work is under way to provide direct
-	<acronym>UEFI</acronym> booting.</para>
+      <para>FreeBSD 在較舊的 <acronym>MBR</acronym> 標準與較新的 GUID 分割區表 (GUID Partition Table, <acronym>GPT</acronym>) 上都能夠開機 (Booting)。<acronym>GPT</acronym> 磁碟分割通常會在有支援統一可延伸韌體介面 (Unified Extensible Firmware Interface, <acronym>UEFI</acronym>) 的電腦上找到。不論如何，FreeBSD 即使在只有傳統 <acronym>BIOS</acronym> 的機器上，也可以使用 <citerefentry><refentrytitle>gptboot</refentrytitle><manvolnum>8</manvolnum></citerefentry> 由 <acronym>GPT</acronym> 分割區開機。直接使用 <acronym>UEFI</acronym> 開機的開發工作正在進行中。</para>
     </note>
 
     <indexterm xml:lang="en"><primary>Master Boot Record
@@ -16854,49 +16814,18 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
 
     <indexterm xml:lang="en"><primary>Boot Loader</primary></indexterm>
 
-    <para xml:lang="en">The code within the <acronym>MBR</acronym> is typically
-      referred to as a <emphasis>boot manager</emphasis>, especially
-      when it interacts with the user.  The boot manager usually has
-      more code in the first track of the disk or within the file
-      system.  Examples of boot managers include the standard FreeBSD
-      boot manager <application>boot0</application>, also called
-      <application>Boot Easy</application>, and
-      <application>Grub</application>, which is used by many <trademark class="registered">Linux</trademark>
-      distributions.</para>
+    <para>在 <acronym>MBR</acronym> 中的程式通常會稱作開機管理程式 (<emphasis>Boot manager</emphasis>)，特別是那些會與使用者互動的程式。開機管理程式通常會另一部份的程式會存放於磁碟的第一個磁軌或檔案系統。開機管理程式的例子有標準 FreeBSD 開機管理程式 <application>boot0</application> 又稱 <application>Boot Easy</application> 以及 <application>Grub</application> 常用於各種 <trademark class="registered">Linux</trademark> 發行版。</para>
 
-    <para xml:lang="en">If only one operating system is installed, the
-      <acronym>MBR</acronym> searches for the first bootable (active)
-      slice on the disk, and then runs the code on that slice to load
-      the remainder of the operating system.  When multiple operating
-      systems are present, a different boot manager can be installed
-      to display a list of operating systems so the user
-      can select one to boot.</para>
+    <para>若只有安裝一個作業系統，<acronym>MBR</acronym> 會搜尋磁碟上第一個可開機的 (使用中) 切割區 (Slice)，然後執行在該切割區上的程式來載入剩下的作業系統。當有多個作業系統存在時，可以安裝可顯示作業系統清單的開機管理程式，以讓使用者可以選擇要啟動的作業系統。</para>
 
-    <para xml:lang="en">The remainder of the FreeBSD bootstrap system is divided into
-      three stages.  The first stage knows just enough to get the
-      computer into a specific state and run the second stage.  The
-      second stage can do a little bit more, before running the third
-      stage.  The third stage finishes the task of loading the
-      operating system.  The work is split into three stages because
-      the <acronym>MBR</acronym> puts limits on the size of the
-      programs that can be run at stages one and two.  Chaining the
-      tasks together allows FreeBSD to provide a more flexible
-      loader.</para>
+    <para>剩餘的 FreeBSD 開機系統分成三個階段，第一個階段只知道如何讓電腦進入特定狀態並執行第二階段，第二個階段在執行第三階段之前會做的事比較多一點，第三個階段會完成載入作業系統的工作。把工作分成三個階段的原因是 <acronym>MBR</acronym> 有限制在階段一與階段二能夠執行程式的大小。將這些工作連結在一起讓 FreeBSD 能夠提供更有彈性的載入程式。</para>
 
     <indexterm xml:lang="en"><primary>kernel</primary></indexterm>
     <indexterm xml:lang="en"><primary><citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry></primary></indexterm>
 
-    <para xml:lang="en">The kernel is then started and begins to probe for devices
-      and initialize them for use.  Once the kernel boot process is
-      finished, the kernel passes control to the user process
-      <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>, which makes sure the disks are in a usable state,
-      starts the user-level resource configuration which mounts file
-      systems, sets up network cards to communicate on the network,
-      and starts the processes which have been configured to run at
-      startup.</para>
+    <para>核心會接著開始偵測裝置並初始化這些裝置供使用。核心開機程序完成之後，核心便會傳送控制權給使用者程序 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>，這個程序會確保磁碟在可以使用的狀態，然後啟動使用者層級的資源設置來掛載檔案系統、設定網路卡以能夠連線網路、啟動那些被設定在開機時要啟動的程序。</para>
 
-    <para xml:lang="en">This section describes these stages in more detail and
-      demonstrates how to interact with the FreeBSD boot process.</para>
+    <para>本章節將更詳細介紹這些階段並示範如何與 FreeBSD 開機程序互動。</para>
 
     <sect2 xml:id="boot-boot0">
       <title>開機管理程式</title>
@@ -16906,19 +16835,9 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
       <indexterm xml:lang="en"><primary>Master Boot Record
 	(<acronym>MBR</acronym>)</primary></indexterm>
 
-      <para xml:lang="en">The boot manager code in the <acronym>MBR</acronym> is
-	sometimes referred to as <emphasis>stage zero</emphasis> of
-	the boot process.  By default, FreeBSD uses the
-	<application>boot0</application> boot manager.</para>
+      <para>有時會稱在 <acronym>MBR</acronym> 中的開機管理程式為開機程序的 <emphasis>第零階段 (Stage zero)</emphasis>，FreeBSD 預設會使用 <application>boot0</application> 開機管理程式。</para>
 
-      <para xml:lang="en">The <acronym>MBR</acronym> installed by the FreeBSD installer
-	is based on <filename>/boot/boot0</filename>.  The size and
-	capability of <application>boot0</application> is restricted
-	to 446 bytes due to the slice table and
-	<literal>0x55AA</literal> identifier at the end of the
-	<acronym>MBR</acronym>.  If <application>boot0</application>
-	and multiple operating systems are installed, a message
-	similar to this example will be displayed at boot time:</para>
+      <para>由 FreeBSD 安裝程式所安裝的 <acronym>MBR</acronym> 便是以 <filename>/boot/boot0</filename> 為基礎。<application>boot0</application> 的大小與容量被限制在 446 個位元組是由於切割表與 <literal>0x55AA</literal> 識別碼位於 <acronym>MBR</acronym> 的最末端。若安裝多個作業系統使用 <application>boot0</application> ，則會在開機時顯示如下範例的訊息：</para>
 
       <example xml:id="boot-boot0-example">
 	<title><filename>boot0</filename> 螢幕截圖</title>
@@ -16929,54 +16848,23 @@ F2 FreeBSD
 Default: F2</screen>
       </example>
 
-      <para xml:lang="en">Other operating systems will overwrite an existing
-	<acronym>MBR</acronym> if they are installed after FreeBSD.  If
-	this happens, or to replace the existing
-	<acronym>MBR</acronym> with the FreeBSD <acronym>MBR</acronym>,
-	use the following command:</para>
+      <para>其作他作業統若在 FreeBSD 之後才安裝則會覆蓋現有的 <acronym>MBR</acronym>，若這件事發生了，或者要使用 FreeBSD <acronym>MBR</acronym> 取代現有的 <acronym>MBR</acronym> 可使用以下指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>fdisk -B -b /boot/boot0 <replaceable>device</replaceable></userinput></screen>
 
-      <para xml:lang="en">where <replaceable>device</replaceable> is the boot disk,
-	such as <filename>ad0</filename> for the first
-	<acronym>IDE</acronym> disk, <filename>ad2</filename> for the
-	first <acronym>IDE</acronym> disk on a second
-	<acronym>IDE</acronym> controller, or <filename>da0</filename>
-	for the first <acronym>SCSI</acronym> disk.  To create a
-	custom configuration of the <acronym>MBR</acronym>, refer to
-	<citerefentry><refentrytitle>boot0cfg</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>其中 <replaceable>device</replaceable> 開機磁碟，例如第一個 <acronym>IDE</acronym> 磁碟為 <filename>ad0</filename>，第二個 <acronym>IDE</acronym> 控制器的第一個 <acronym>IDE</acronym>磁碟為 <filename>ad2</filename>，第一個 <acronym>SCSI</acronym> 磁碟為 <filename>da0</filename>。要建立自訂的 <acronym>MBR</acronym> 設定請參考 <citerefentry><refentrytitle>boot0cfg</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
     </sect2>
 
     <sect2 xml:id="boot-boot1">
       <title>階段一與階段二</title>
 
-      <para xml:lang="en">Conceptually, the first and second stages are part of the
-	same program on the same area of the disk.  Because of space
-	constraints, they have been split into two, but are always
-	installed together.  They are copied from the combined
-	<filename>/boot/boot</filename> by the FreeBSD installer or
-	<command>bsdlabel</command>.</para>
+      <para>概念上，第一與第二個階段均為磁碟上同一個區域上同一個程式的一部份，由於空間上的限制，它們被分成兩部份，但是會一併安裝。它們會由 FreeBSD 安裝程式或 <command>bsdlabel</command> 從 <filename>/boot/boot</filename> 複製而來。</para>
 
-      <para xml:lang="en">These two stages are located outside file systems, in the
-	first track of the boot slice, starting with the first sector.
-	This is where <application>boot0</application>, or any other
-	boot manager, expects to find a program to run which will
-	continue the boot process.</para>
+      <para>這兩個階段均位於檔案系統之外，在開機切割區的第一個磁軌，從第一個磁碟扇區 (Sector) 開始，這個位置便是 <application>boot0</application> 或其他開機管理程式所會儲存的地方，並會尋找可以執行的程式以繼續開機程序。</para>
 
-      <para xml:lang="en">The first stage, <filename>boot1</filename>, is very
-	simple, since it can only be 512 bytes in size.  It knows just
-	enough about the FreeBSD <firstterm>bsdlabel</firstterm>, which
-	stores information about the slice, to find and execute
-	<filename>boot2</filename>.</para>
+      <para>第一個階段的 <filename>boot1</filename> 非常的簡單，因為它只能有 512 位元組的大小。它只能認得儲存切割區資訊的 FreeBSD <firstterm>bsdlabel</firstterm> 以及尋找並執行 <filename>boot2</filename>。</para>
 
-      <para xml:lang="en">Stage two, <filename>boot2</filename>, is slightly more
-	sophisticated, and understands the FreeBSD file system enough to
-	find files.  It can provide a simple interface to choose the
-	kernel or loader to run.  It runs
-	<application>loader</application>, which is much more
-	sophisticated and provides a boot configuration file.  If the
-	boot process is interrupted at stage two, the following
-	interactive screen is displayed:</para>
+      <para>階段二 <filename>boot2</filename> 稍微複雜一點，能夠理解 FreeBSD 檔案系統來搜尋檔案。它可以提供一個簡單的介面來選擇要執行的核心或載入程式。它所執行的載入程式 (<application>loader</application>) 更複雜並能讀取開機設定檔。若開機程序在階段二中斷，則會顯示以下的互動畫面：</para>
 
       <example xml:id="boot-boot2-example">
 	<title><filename>boot2</filename> 螢幕截圖</title>
@@ -16986,22 +16874,12 @@ Default: 0:ad(0,a)/boot/loader
 boot:</screen>
       </example>
 
-      <para xml:lang="en">To replace the installed <filename>boot1</filename> and
-	<filename>boot2</filename>, use <command>bsdlabel</command>,
-	where <replaceable>diskslice</replaceable> is the disk and
-	slice to boot from, such as <filename>ad0s1</filename> for the
-	first slice on the first <acronym>IDE</acronym> disk:</para>
+      <para>要更換已安裝的 <filename>boot1</filename> 與 <filename>boot2</filename> 可使用 <command>bsdlabel</command>，其中 <replaceable>diskslice</replaceable> 是要開機的磁碟與切割區，例如 <filename>ad0s1</filename> 代表第一個 <acronym>IDE</acronym> 磁碟的第一個切割區：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>bsdlabel -B <replaceable>diskslice</replaceable></userinput></screen>
 
       <warning>
-	<para xml:lang="en">If just the disk name is used, such as
-	  <filename>ad0</filename>, <command>bsdlabel</command> will
-	  create the disk in <quote>dangerously dedicated
-	    mode</quote>, without slices.  This is probably not the
-	  desired action, so double check the
-	  <replaceable>diskslice</replaceable> before pressing
-	  <keycap>Return</keycap>.</para>
+	<para>若只使用磁碟名稱，如 <filename>ad0</filename>，<command>bsdlabel</command> 便會以 <quote>危險專用的模式</quote> 來建立磁碟，而不會建立任何分割區。這個可能與預期的動作不同，所以在按下 <keycap>Return</keycap> 鍵之前請再次確認 <replaceable>diskslice</replaceable>。</para>
       </warning>
     </sect2>
 
@@ -17010,43 +16888,18 @@ boot:</screen>
 
       <indexterm xml:lang="en"><primary>boot-loader</primary></indexterm>
 
-      <para xml:lang="en">The <application>loader</application> is the final stage
-	of the three-stage bootstrap process.  It is located on the
-	file system, usually as
-	<filename>/boot/loader</filename>.</para>
+      <para><application>loader</application> 是三階段開機程多的最後一個階段，載入程式位於檔案系統之中，通常在 <filename>/boot/loader</filename>。</para>
 
-      <para xml:lang="en">The <application>loader</application> is intended as an
-	interactive method for configuration, using a built-in command
-	set, backed up by a more powerful interpreter which has a more
-	complex command set.</para>
+      <para><application>loader</application> 主要目地是利用擁有更複雜指令集的強大直譯器做為基礎的內建指令集提供一個互動的方式來做設定。</para>
 
-      <para xml:lang="en">During initialization, <application>loader</application>
-	will probe for a console and for disks, and figure out which
-	disk it is booting from.  It will set variables accordingly,
-	and an interpreter is started where user commands can be
-	passed from a script or interactively.</para>
+      <para>在初始化的過程中，<application>loader</application> 會偵測 Console 與磁碟，並找出可以用來開機的磁碟。在由 Script 或互動輸入使用者指令的地方會設定相對的變數並啟動直譯器。</para>
 
       <indexterm xml:lang="en"><primary>loader</primary></indexterm>
       <indexterm xml:lang="en"><primary>loader configuration</primary></indexterm>
 
-      <para xml:lang="en">The <application>loader</application> will then read
-	<filename>/boot/loader.rc</filename>, which by default reads
-	in <filename>/boot/defaults/loader.conf</filename> which sets
-	reasonable defaults for variables and reads
-	<filename>/boot/loader.conf</filename> for local changes to
-	those variables.  <filename>loader.rc</filename> then acts on
-	these variables, loading whichever modules and kernel are
-	selected.</para>
+      <para><application>loader</application> 接著會讀取 <filename>/boot/loader.rc</filename>，這個程式預設又會讀取 <filename>/boot/defaults/loader.conf</filename> 來設定合理的變數預設值以及讀取 <filename>/boot/loader.conf</filename> 來對這些變數做本地的更改。<filename>loader.rc</filename> 接著會依這些變數來運作，讀取選擇模組與核心。</para>
 
-      <para xml:lang="en">Finally, by default, <application>loader</application>
-	issues a 10 second wait for key presses, and boots the kernel
-	if it is not interrupted.  If interrupted, the user is
-	presented with a prompt which understands the command set,
-	where the user may adjust variables, unload all modules, load
-	modules, and then finally boot or reboot.  <xref linkend="boot-loader-commands"/> lists the most commonly
-	used <application>loader</application> commands.  For a
-	complete discussion of all available commands, refer to
-	<citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>最後，預設情況下 <application>loader</application> 會待候鍵盤輸入 10 秒鐘，若沒有被中斷的話會接著啟動核心。若被使用者中斷，則會向使用者顯示提示字元，此時使用可以使用指令集來調整變數、卸載所有模組、載入模組，然後最後開機或重新開機。<xref linkend="boot-loader-commands"/> 中列出了最常使用的 <application>loader</application> 指令。要完整了解所有可用的指令，請參考 <citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
 
       <table xml:id="boot-loader-commands" frame="none" pgwide="1">
 	<title>載入程式內建指令</title>
@@ -17063,141 +16916,99 @@ boot:</screen>
 	    <row>
 	      <entry xml:lang="en">autoboot
 		<replaceable>seconds</replaceable></entry>
-	      <entry xml:lang="en">Proceeds to boot the kernel if not interrupted
-		within the time span given, in seconds.  It displays a
-		countdown, and the default time span is 10
-		seconds.</entry>
+	      <entry>若在指定時間 (秒) 內沒有中斷，會繼續啟動核心。此指令會顯示倒數，預設的時間為 10 秒鐘。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">boot
 		<optional><replaceable>-options</replaceable></optional>
 		<optional><replaceable>kernelname</replaceable></optional></entry>
-	      <entry xml:lang="en">Immediately proceeds to boot the kernel, with
-		any specified options or kernel name.  Providing a
-		kernel name on the command-line is only applicable
-		after an <command>unload</command> has been issued.
-		Otherwise, the previously-loaded kernel will be
-		used.  If <emphasis>kernelname</emphasis> is not
-		qualified it will be searched under
-		<emphasis>/boot/kernel</emphasis> and
-		<emphasis>/boot/modules</emphasis>.</entry>
+	      <entry>使用指定的選項或核心名稱立即啟動核心。由指令列指定核心名稱前必須先執行 <command>unload</command>，否則會使用先前載入過的核心。若 <emphasis>kernelname</emphasis> 不是完整的路徑則會搜尋 <emphasis>/boot/kernel</emphasis> 及 <emphasis>/boot/modules</emphasis> 底下。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">boot-conf</entry>
-	      <entry xml:lang="en">Goes through the same automatic configuration of
-		modules based on specified variables, most commonly
-		<envar>kernel</envar>.  This only makes sense if
-		<command>unload</command> is used first, before
-		changing some variables.</entry>
+	      <entry>依據指定的變數及最常用的 <envar>kernel</envar> 再做一次相同的自動模組設置。這只有在執行 <command>unload</command> 之後，尚未變更變數之前方可使用。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">help
 		<optional><replaceable>topic</replaceable></optional></entry>
-	      <entry xml:lang="en">Shows help messages read from
-		<filename>/boot/loader.help</filename>.  If the topic
-		given is <literal>index</literal>, the list of
-		available topics is displayed.</entry>
+	      <entry>顯示自 <filename>/boot/loader.help</filename> 取得的說明訊息。若指定的主題為 <literal>index</literal> 則會顯示所有可用的主題。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">include <replaceable>filename</replaceable>
 		…</entry>
-	      <entry xml:lang="en">Reads the specified file and interprets it line
-		by line.  An error immediately stops the
-		<command>include</command>.</entry>
+	      <entry>讀取指定的檔案並直譯每一行。若有錯誤則會立即中止 <command>include</command>。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">load <optional>-t
 		  <replaceable>type</replaceable></optional>
 		<replaceable>filename</replaceable></entry>
-	      <entry xml:lang="en">Loads the kernel, kernel module, or file of the
-		type given, with the specified filename.  Any
-		arguments after <replaceable>filename</replaceable>
-		are passed to the file.  If
-		<emphasis>filename</emphasis> is not qualified it
-		will be searched under
-		<emphasis>/boot/kernel</emphasis>
-		and <emphasis>/boot/modules</emphasis>.</entry>
+	      <entry>由指定的檔案名稱載入核心、核心模組或指定類型的檔案。任何於 <replaceable>filename</replaceable> 之後的參數都會被傳遞到該檔案。若 <emphasis>filename</emphasis> 不是決定位置則會搜尋 <emphasis>/boot/kernel</emphasis> 及 <emphasis>/boot/modules</emphasis> 底下。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">ls <optional>-l</optional>
 		<optional><replaceable>path</replaceable></optional></entry>
-	      <entry xml:lang="en">Displays a listing of files in the given path, or
-		the root directory, if the path is not specified.  If
-		<option>-l</option> is specified, file sizes will
-		also be shown.</entry>
+	      <entry>顯示指定路徑中的檔案，若未指定路徑則會顯示根目錄中的檔案。若有指定 <option>-l</option>，則會連檔案大小一同顯示。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">lsdev <optional>-v</optional></entry>
-	      <entry xml:lang="en">Lists all of the devices from which it may be
-		possible to load modules.  If <option>-v</option> is
-		specified, more details are printed.</entry>
+	      <entry>列出所有的裝置，這些裝置可能可以用來載入模組。若有指定 <option>-v</option> 則會顯示更詳細的資訊。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">lsmod <optional>-v</optional></entry>
-	      <entry xml:lang="en">Displays loaded modules.  If <option>-v</option>
-		is specified, more details are shown.</entry>
+	      <entry>顯示已載入的模組。若有指定 <option>-v</option> 則會顯示更詳細的資訊。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">more <replaceable>filename</replaceable></entry>
-	      <entry xml:lang="en">Displays the files specified, with a pause at
-		each <varname>LINES</varname> displayed.</entry>
+	      <entry>顯示指定的檔案，並於每 <varname>LINES</varname> 行顯示後會暫停。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">reboot</entry>
-	      <entry xml:lang="en">Immediately reboots the system.</entry>
+	      <entry>立即重新啟動系統。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">set <replaceable>variable</replaceable>, set
 		<replaceable>variable</replaceable>=<replaceable>value</replaceable></entry>
-	      <entry xml:lang="en">Sets the specified environment variables.</entry>
+	      <entry>設定指定的環境變數。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en">unload</entry>
-	      <entry xml:lang="en">Removes all loaded modules.</entry>
+	      <entry>移除所有已載入的模組。</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
       </table>
 
-      <para xml:lang="en">Here are some practical examples of loader usage.  To boot
-	the usual kernel in single-user mode
-	<indexterm xml:lang="en"><primary>single-user
-	  mode</primary></indexterm>:</para>
+      <para>這裡有一些 loader 用法的實務範例。要使用一般的核心開機進入單使用者模式 (Single-user mode<indexterm><primary>single-user
+	  mode</primary></indexterm>) 可：</para>
 
       <screen xml:lang="en"><userinput>boot -s</userinput></screen>
 
-      <para xml:lang="en">To unload the usual kernel and modules and then load the
-	previous or another, specified kernel:</para>
+      <para>要卸載一般的核心與模組，然後載入先前或另一個指定的核心可：</para>
 
       <screen xml:lang="en"><userinput>unload</userinput>
 <userinput>load <replaceable>kernel.old</replaceable></userinput></screen>
 
-      <para xml:lang="en">Use <filename>kernel.GENERIC</filename> to refer to the
-	default kernel that comes with an installation, or
-	<filename>kernel.old</filename>, to refer to the previously
-	installed kernel before a system upgrade or before configuring
-	a custom kernel.</para>
+      <para>使用 <filename>kernel.GENERIC</filename> 來代表安裝程式使用的預設核心，或 <filename>kernel.old</filename> 來代表在系統升級之前或設定自訂核心前安裝的核心。</para>
 
-      <para xml:lang="en">Use the following to load the usual modules with another
-	kernel:</para>
+      <para>使用以下指令來使用另一個核心載入一般的模組：</para>
 
       <screen xml:lang="en"><userinput>unload</userinput>
 <userinput>set kernel="<replaceable>kernel.old</replaceable>"</userinput>
 <userinput>boot-conf</userinput></screen>
 
-      <para xml:lang="en">To load an automated kernel configuration script:</para>
+      <para>要載入一個已自動化的核心設置 Script 可：</para>
 
       <screen xml:lang="en"><userinput>load -t userconfig_script <replaceable>/boot/kernel.conf</replaceable></userinput></screen>
 
@@ -27060,50 +26871,31 @@ scsibus1:
       </authorgroup>
       -->
 
-    <para xml:lang="en">Implementing a backup plan is essential in order to have the
-      ability to recover from disk failure, accidental file deletion,
-      random file corruption, or complete machine destruction,
-      including destruction of on-site backups.</para>
+    <para>為了要能夠從磁碟故障、意外刪除文件、隨機文件損壞或完全機器毀壞，包含本地備份毀壞進行恢復，執行備份計劃是必要的。</para>
 
-    <para xml:lang="en">The backup type and schedule will vary, depending upon the
-      importance of the data, the granularity needed for file
-      restores, and the amount of acceptable downtime.  Some possible
-      backup techniques include:</para>
+    <para>備份的類型與排程會依情況有所不同，取決於資料的重要性、檔案還原所需的程度以及可接受的停機時間。一些可用來備份的技術有：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Archives of the whole system, backed up onto permanent,
-	  off-site media.  This provides protection against all of the
-	  problems listed above, but is slow and inconvenient to
-	  restore from, especially for non-privileged users.</para>
+	<para>封存整個檔案系統，備份至永久、異地媒體。這可在以上所列的所有問題發生時提供保護，但要還原會較慢且不方便，特別是對於沒有權限的使用者。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">File system snapshots, which are useful for restoring
-	  deleted files or previous versions of files.</para>
+	<para>檔案系統快照 (Snapshot)，對於還原已刪除的檔案或先前版本的檔案非常有用。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Copies of whole file systems or disks which are
-	  synchronized with another system on the network using a
-	  scheduled <package>net/rsync</package>.</para>
+	<para>整個檔案系統或磁碟的複本，使用排程的 <package>net/rsync</package> 來與網路上的另一個系統同步。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Hardware or software <acronym>RAID</acronym>, which
-	  minimizes or avoids downtime when a disk fails.</para>
+	<para>硬體或軟體 <acronym>RAID</acronym>，來最小化或避免當磁碟故障時的停機時間。</para>
       </listitem>
     </itemizedlist>
 
-    <para xml:lang="en">Typically, a mix of backup techniques is used.  For
-      example, one could create a schedule to automate a weekly, full
-      system backup that is stored off-site and to supplement this
-      backup with hourly ZFS snapshots.  In addition, one could make a
-      manual backup of individual directories or files before making
-      file edits or deletions.</para>
+    <para>通常會混合使用各種備份技術，例如，建立一個排程每週自動做儲存於異地的完整系統備份，並使用每小時的 ZFS 快照來輔助備份。此外，在對檔案做編輯或刪除前手動備份各別目錄或檔案。</para>
 
-    <para xml:lang="en">This section describes some of the utilities which can be
-      used to create and manage backups on a FreeBSD system.</para>
+    <para>本章節會介紹一些可以用來在 FreeBSD 上建立與管理系統備份的工具。</para>
 
     <sect2>
       <title>檔案系統備份</title>
@@ -27119,55 +26911,22 @@ scsibus1:
 	<primary><command>restore</command></primary>
       </indexterm>
 
-      <para xml:lang="en">The traditional <trademark class="registered">UNIX</trademark> programs for backing up a file
-	system are <citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</manvolnum></citerefentry>, which creates the backup, and
-	<citerefentry><refentrytitle>restore</refentrytitle><manvolnum>8</manvolnum></citerefentry>, which restores the backup.  These utilities
-	work at the disk block level, below the abstractions of the
-	files, links, and directories that are created by file
-	systems.  Unlike other backup software,
-	<command>dump</command> backs up an entire file system and is
-	unable to backup only part of a file system or a directory
-	tree that spans multiple file systems.  Instead of writing
-	files and directories, <command>dump</command> writes the raw
-	data blocks that comprise files and directories.</para>
+      <para>要備份一個檔案系統，會用到 <citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</manvolnum></citerefentry> 這個傳統 <trademark class="registered">UNIX</trademark> 程式來建立備份，並可使用 <citerefentry><refentrytitle>restore</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來還原備份。這兩個工具可在磁碟區塊的層級運作，這個層級比由檔案系統建立檔案、連結與目錄的抽象層級還要低，因此不像其他的備份軟體，<command>dump</command> 必須一次備份整個檔案系統，且無法只備份部份檔案系統或跨多個檔案系統的目錄樹，<command>dump</command> 會備份構成檔案與目錄的原始資料區塊，而非直接備份檔案與目錄。</para>
 
       <note>
-	<para xml:lang="en">If <command>dump</command> is used on the root
-	  directory, it will not back up <filename>/home</filename>,
-	  <filename>/usr</filename> or many other directories since
-	  these are typically mount points for other file systems or
-	  symbolic links into those file systems.</para>
+	<para>在根目錄使用 <command>dump</command>，會無法備份 <filename>/home</filename>, <filename>/usr</filename> 或其他許多的目錄，由於這些目錄通常是其他檔案系統的掛載點或連結到其他檔案系統的符號連結。</para>
       </note>
 
-      <para xml:lang="en">When used to restore data, <command>restore</command>
-	stores temporary files in <filename>/tmp/</filename> by
-	default.  When using a recovery disk with a small
-	<filename>/tmp</filename>, set <envar>TMPDIR</envar> to a
-	directory with more free space in order for the restore to
-	succeed.</para>
+      <para>還原資料時，<command>restore</command> 預設會儲存暫存檔案於 <filename>/tmp/</filename>，當使用一個 <filename>/tmp</filename> 較小的復原磁碟時，請設定 <envar>TMPDIR</envar> 到一個擁有較多可用空間的目錄以讓還原可以順利執行。</para>
 
-      <para xml:lang="en">When using <command>dump</command>, be aware that some
-	quirks remain from its early days in Version 6 of
-	AT&amp;T <trademark class="registered">UNIX</trademark>,circa 1975.  The default parameters assume a
-	backup to a 9-track tape, rather than to another type of media
-	or to the high-density tapes available today.  These defaults
-	must be overridden on the command line.</para>
+      <para>當使用 <command>dump</command> 時，請小心最早自 AT&amp;T <trademark class="registered">UNIX</trademark>,circa 1975 的版本 6 仍有一些問題存在，預設的參數會假設備份到一個 9 軌的磁帶，這並非其他類型的媒體或現今可用的高密度磁帶，必須另外在指令列修改這個預設值。</para>
 
       <indexterm xml:lang="en">
 	<primary><filename>.rhosts</filename></primary>
       </indexterm>
-      <para xml:lang="en">It is possible to backup a file system across the network
-	to a another system or to a tape drive attached to another
-	computer.  While the <citerefentry><refentrytitle>rdump</refentrytitle><manvolnum>8</manvolnum></citerefentry> and <citerefentry><refentrytitle>rrestore</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	utilities can be used for this purpose, they are not
-	considered to be secure.</para>
+      <para>雖然可以使用 <citerefentry><refentrytitle>rdump</refentrytitle><manvolnum>8</manvolnum></citerefentry> 與 <citerefentry><refentrytitle>rrestore</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具可以跨網路備份一個檔案系統到另一個系統或備份到連結另一台電腦的磁帶機，但這使用兩個工具備份的安全性並不足夠。</para>
 
-      <para xml:lang="en">Instead, one can use <command>dump</command> and
-	<command>restore</command> in a more secure fashion over an
-	<acronym>SSH</acronym> connection.  This example creates a
-	full, compressed backup of <filename>/usr</filename> and sends
-	the backup file to the specified host over a
-	<acronym>SSH</acronym> connection.</para>
+      <para>可改以在較安全的 <acronym>SSH</acronym> 連線上使用 <command>dump</command> 與 <command>restore</command>。以下例子會建立一個完整、壓縮的 <filename>/usr</filename> 備份並透過 <acronym>SSH</acronym> 連線傳送備份檔案到指定的主機。</para>
 
       <example>
 	<title>在 <application>ssh</application> 使用 <command>dump</command></title>
@@ -27176,9 +26935,7 @@ scsibus1:
           targetuser@targetmachine.example.com dd of=/mybigfiles/dump-usr-l0.gz</userinput></screen>
       </example>
 
-      <para xml:lang="en">This example sets <envar>RSH</envar> in order to write the
-	backup to a tape drive on a remote system over a
-	<acronym>SSH</acronym> connection:</para>
+      <para>這個例子會設定 <envar>RSH</envar>，以便透過 <acronym>SSH</acronym> 連線寫入備份到遠端系統的磁帶機：</para>
 
       <example>
 	<title>在 <application>ssh</application> 使用 <command>dump</command> 透過 <envar>RSH</envar> 設定</title>
@@ -27195,23 +26952,13 @@ scsibus1:
 	<secondary><command>tar</command></secondary>
       </indexterm>
 
-      <para xml:lang="en">Several built-in utilities are available for backing up
-	and restoring specified files and directories as
-	needed.</para>
+      <para>系統已有內建數個工具可在需要時用來備份與還原指定的檔案與目錄。</para>
 
-      <para xml:lang="en">A good choice for making a backup of all of the files in a
-	directory is <citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  This utility dates back to Version
-	6 of AT&amp;T <trademark class="registered">UNIX</trademark> and by default assumes a recursive backup
-	to a local tape  device.  Switches can be used to instead
-	specify the name of a backup file.</para>
+      <para>要備份一個目錄中的所有檔案最好的選擇是 <citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</manvolnum></citerefentry>，這個工具最早可以追朔自 AT&amp;T <trademark class="registered">UNIX</trademark> 版本 6 時，因此預設會做一個遞迴備份到一個磁帶機，可以使用參數來改指定備份檔案的名稱。</para>
 
       <indexterm xml:lang="en"><primary><command>tar</command></primary></indexterm>
 
-      <para xml:lang="en">This example creates a compressed backup of the current
-	directory and saves it to
-	<filename>/tmp/mybackup.tgz</filename>.  When creating a
-	backup file, make sure that the backup is not saved to the
-	same directory that is being backed up.</para>
+      <para>這個例子會建立目前目錄的壓縮備份並儲存至 <filename>/tmp/mybackup.tgz</filename>，在建立備份檔案時，要確認備份檔案不要儲存到與目前備份目錄相同的目錄。</para>
 
       <example>
 	<title>使用 <command>tar</command> 備份目前目錄</title>
@@ -27219,12 +26966,7 @@ scsibus1:
       <screen xml:lang="en"><prompt>#</prompt> <userinput>tar czvf <replaceable>/tmp/mybackup.tgz</replaceable> . </userinput></screen>
       </example>
 
-      <para xml:lang="en">To restore the entire backup, <command>cd</command> into
-	the directory to restore into and specify the name of the
-	backup.  Note that this will overwrite any newer versions of
-	files in the restore directory.  When in doubt, restore to a
-	temporary directory or specify the name of the file within the
-	backup to restore.</para>
+      <para>要還原整個備份，先 <command>cd</command> 進入要放置還原檔的目錄並指定備份的名稱。注意，這個動作會覆寫任何在該還原目錄中任何較新版的檔案，當不確定時，可先還原到一個暫時的目錄或指定備份檔中的檔案做還原。</para>
 
       <example>
 	<title>使用 <command>tar</command> 還原目前目錄</title>
@@ -27232,29 +26974,16 @@ scsibus1:
       <screen xml:lang="en"><prompt>#</prompt> <userinput>tar xzvf <replaceable>/tmp/mybackup.tgz</replaceable></userinput></screen>
       </example>
 
-      <para xml:lang="en">There are dozens of available switches which are described
-	in <citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  This utility also supports the use of exclude
-	patterns to specify which files should not be included when
-	backing up the specified directory or restoring files from a
-	backup.</para>
+      <para>除此之外還有許多可用的參數在 <citerefentry><refentrytitle>tar</refentrytitle><manvolnum>1</manvolnum></citerefentry> 中會有說明。本工具也支援使用排除模式 (Exclude pattern) 來指定那些檔案應該在備份指定目錄或自備份還原檔案時排除。</para>
 
       <indexterm xml:lang="en">
 	<primary>backup software</primary>
 	<secondary><command>cpio</command></secondary>
       </indexterm>
 
-      <para xml:lang="en">To create a backup using a specified list of files and
-	directories, <citerefentry><refentrytitle>cpio</refentrytitle><manvolnum>1</manvolnum></citerefentry> is a good choice.  Unlike
-	<command>tar</command>, <command>cpio</command> does not know
-	how to walk the directory tree and it must be provided the
-	list of files to backup.</para>
+      <para>要使用指定的檔案與目錄清單做備份使用 <citerefentry><refentrytitle>cpio</refentrytitle><manvolnum>1</manvolnum></citerefentry> 是不錯的選擇。它並不像 <command>tar</command>，<command>cpio</command> 並不知道如何走訪目錄樹，所以必須提供檔案的清單才能做備份。</para>
 
-      <para xml:lang="en">For example, a list of files can be created using
-	<command>ls</command> or <command>find</command>.  This
-	example creates a recursive listing of the current directory
-	which is then piped to  <command>cpio</command> in order to
-	create an output backup file named
-	<filename>/tmp/mybackup.cpio</filename>.</para>
+      <para>例如，檔案的清單可以使用 <command>ls</command> 或 <command>find</command> 來產生。以下例子會建立一個目前目錄的遞迴清單然後轉送 (Piped) 給 <command>cpio</command> 來建立名稱為 <filename>/tmp/mybackup.cpio</filename> 的備份檔。</para>
 
       <example>
 	<title>使用 <command>ls</command> 與 <command>cpio</command> 來製作目前目錄的遞迴備份</title>
@@ -27270,17 +26999,9 @@ scsibus1:
       <indexterm xml:lang="en"><primary>POSIX</primary></indexterm>
       <indexterm xml:lang="en"><primary>IEEE</primary></indexterm>
 
-      <para xml:lang="en">A backup utility which tries to bridge the features
-	provided by <command>tar</command> and <command>cpio</command>
-	is <citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  Over the years, the various versions of
-	<command>tar</command> and <command>cpio</command> became
-	slightly incompatible.  <trademark class="registered">POSIX</trademark> created <command>pax</command>
-	which attempts to read and write many of the various
-	<command>cpio</command> and <command>tar</command> formats,
-	plus new formats of its own.</para>
+      <para>有一個備份工具嘗試整合 <command>tar</command> 與 <command>cpio</command> 所提供的功能，便是 <citerefentry><refentrytitle>pax</refentrytitle><manvolnum>1</manvolnum></citerefentry>。經歷數年，各種版本的 <command>tar</command> 與 <command>cpio</command> 變的有一些無法相容。<trademark class="registered">POSIX</trademark> 開發出 <command>pax</command>，嘗試讀取與寫入各種版本的 <command>cpio</command> and <command>tar</command> 格式並加入自己的新格式。</para>
 
-      <para xml:lang="en">The <command>pax</command> equivalent to the previous
-	examples would be:</para>
+      <para>以先前的例子改使用 <command>pax</command> 會是：</para>
 
       <example>
 	<title>使用 <command>pax</command> 備份目前目錄</title>
@@ -27294,57 +27015,29 @@ scsibus1:
 
       <indexterm xml:lang="en"><primary>tape media</primary></indexterm>
 
-      <para xml:lang="en">While tape technology has continued to evolve, modern
-	backup systems tend to combine off-site backups with local
-	removable media.  FreeBSD supports any tape drive that uses
-	<acronym>SCSI</acronym>, such as <acronym>LTO</acronym> or
-	<acronym>DAT</acronym>.  There is limited support for
-	<acronym>SATA</acronym> and <acronym>USB</acronym> tape
-	drives.</para>
+      <para>隨著磁帶的技術持續發展，當今的備份系統將異地備份與本地可移除媒體做了結合。FreeBSD 支援任何使用 <acronym>SCSI</acronym> 的磁帶機，如 <acronym>LTO</acronym> 或 <acronym>DAT</acronym>，並有限制的支援 <acronym>SATA</acronym> 與 <acronym>USB</acronym> 磁帶機。</para>
 
-      <para xml:lang="en">For <acronym>SCSI</acronym> tape devices, FreeBSD uses the
-	<citerefentry><refentrytitle>sa</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver and the <filename>/dev/sa0</filename>,
-	<filename>/dev/nsa0</filename>, and
-	<filename>/dev/esa0</filename> devices.  The physical device
-	name is <filename>/dev/sa0</filename>.  When
-	<filename>/dev/nsa0</filename> is used, the backup application
-	will not rewind the tape after writing a file, which allows
-	writing more than one file to a tape.  Using
-	<filename>/dev/esa0</filename> ejects the tape after the
-	device is closed.</para>
+      <para><acronym>SCSI</acronym> 磁帶機在 FreeBSD 會使用 <citerefentry><refentrytitle>sa</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式以及 <filename>/dev/sa0</filename>, <filename>/dev/nsa0</filename> 與 <filename>/dev/esa0</filename> 裝置，實體裝置名稱為 <filename>/dev/sa0</filename>，當使用 <filename>/dev/nsa0</filename> 時，備份程式在寫入檔案之後不會倒帶，這可允許寫入超過一個檔案到磁帶，而使用 <filename>/dev/esa0</filename> 時，當關閉裝置後便會退出磁帶。</para>
 
-      <para xml:lang="en">In FreeBSD, <command>mt</command> is used to control
-	operations of the tape drive, such as seeking through files on
-	a tape or writing tape control marks to the tape.  For
-	example, the first three files on a tape can be preserved by
-	skipping past them before writing a new file:</para>
+      <para>在 FreeBSD 中會使用 <command>mt</command> 來做磁帶機的控制操作，例如在磁帶中搜尋檔案或寫入磁帶控制記號到磁帶。例如，要保留磁帶上的前三個檔案，可以在寫入新檔案前跳過這些檔案：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mt -f /dev/nsa0 fsf 3</userinput></screen>
 
-      <para xml:lang="en">This utility supports many operations.  Refer to
-	<citerefentry><refentrytitle>mt</refentrytitle><manvolnum>1</manvolnum></citerefentry> for details.</para>
+      <para>這個工具尚支援許多操作，請參考 <citerefentry><refentrytitle>mt</refentrytitle><manvolnum>1</manvolnum></citerefentry> 了解詳情。</para>
 
-      <para xml:lang="en">To write a single file to tape using
-	<command>tar</command>, specify the name of the tape device
-	and the file to backup:</para>
+      <para>要使用 <command>tar</command> 寫入單一檔案到磁帶，可指定磁帶裝置的名稱以及要備份的檔案：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>tar cvf /dev/sa0 <replaceable>file</replaceable></userinput></screen>
 
-      <para xml:lang="en">To recover files from a <command>tar</command> archive
-	on tape into the current directory:</para>
+      <para>要從磁帶上的 <command>tar</command> 封存檔還原檔案到目前的目錄可：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>tar xvf /dev/sa0</userinput></screen>
 
-      <para xml:lang="en">To backup a <acronym>UFS</acronym> file system, use
-	<command>dump</command>.  This examples backs up
-	<filename>/usr</filename> without rewinding the tape when
-	finished:</para>
+      <para>要備份一個 <acronym>UFS</acronym> 檔案系統可使用 <command>dump</command>。以下例子會備份 <filename>/usr</filename> 並在完成時不做倒帶：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>dump -0aL -b64 -f /dev/nsa0 /usr</userinput></screen>
 
-      <para xml:lang="en">To interactively restore files from a
-	<command>dump</command> file on tape into the current
-	directory:</para>
+      <para>要以互動的方式從磁帶上的 <command>dump</command> 檔案還原到目前目錄：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>restore -i -f /dev/nsa0</userinput></screen>
     </sect2>
@@ -27356,32 +27049,20 @@ scsibus1:
 	<primary>backup software</primary>
       </indexterm>
 
-      <para xml:lang="en">The FreeBSD Ports Collection provides many third-party
-	utilities which can be used to schedule the creation of
-	backups, simplify tape backup, and make backups easier and
-	more convenient.  Many of these applications are client/server
-	based and can be used to automate the backups of a single
-	system or all of the computers in a network.</para>
+      <para>FreeBSD Port 套件集提供了許多第三方工具可用於排程建立備份，簡化磁帶備份並讓備份更簡單方便。許多這類的應用程式是以客戶端/伺服器為基礎，可用來自動化單一系統或網路上所有電腦的備份。</para>
 
-      <para xml:lang="en">Popular utilities include
-	<application>Amanda</application>,
-	<application>Bacula</application>,
-	<application>rsync</application>, and
-	<application>duplicity</application>.</para>
+      <para>較熱門的工具包含 <application>Amanda</application>, <application>Bacula</application>, <application>rsync</application> 以及 <application>duplicity</application>。</para>
     </sect2>
 
     <sect2>
       <title>緊急還原</title>
 
-      <para xml:lang="en">In addition to regular backups, it is recommended to
-	perform the following steps as part of an emergency
-	preparedness plan.</para>
+      <para>除了正常的備份外，建議將下以步驟做為緊急準備計劃的一部份。</para>
 
       <indexterm xml:lang="en">
 	<primary><command>bsdlabel</command></primary></indexterm>
 
-      <para xml:lang="en">Create a print copy of the output of the following
-	commands:</para>
+      <para>替以下指令的輸出建立一份可列印的複本：</para>
 
       <itemizedlist>
 	<listitem>
@@ -27400,31 +27081,15 @@ scsibus1:
       <indexterm xml:lang="en"><primary>livefs
 	  <acronym>CD</acronym></primary></indexterm>
 
-      <para xml:lang="en">Store this printout and a copy of the installation media
-	in a secure location.  Should an emergency restore be
-	needed, boot into the installation media and select
-	<literal>Live CD</literal> to access a rescue shell.  This
-	rescue mode can be used to view the current state of the
-	system, and if needed, to  reformat disks and restore data
-	from backups.</para>
+      <para>在安全的地方保存這份列印結果與安裝媒體的複本，在緊急還原時可能會需要，接著開機進入安裝媒體並選擇 <literal>Live CD</literal> 以存取救援 Shell (Rescue shell)，這個救援模式可以用來檢視目前系統的狀態，若有需要，可重新格式化磁碟然後自備份還原資料。</para>
 
       <note>
-	<para xml:lang="en">The installation media for
-	  FreeBSD/i386 10.3-RELEASE does not
-	  include a rescue shell.  For this version, instead
-	  download and burn a Livefs <acronym>CD</acronym> image from
-	  <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso">ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso</uri>.</para>
+	<para>FreeBSD/i386 10.3-RELEASE 的安裝媒體未含救援 Shell，針對該版本，可改自 <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso">ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso</uri> 下載 <acronym>CD</acronym> 映像檔並燒錄。</para>
       </note>
 
-      <para xml:lang="en">Next, test the rescue shell and the backups.  Make notes
-	of the procedure.  Store these notes with the media, the
-	printouts, and the backups.  These notes may prevent the
-	inadvertent destruction of the backups while under the stress
-	of performing an emergency recovery.</para>
+      <para>然後，測試救援 Shell 下的備份。記錄下整個程序，將這份記錄隨媒體、列印結果、備份檔一併保存，這份記錄可以避免在緊張壓力下做緊急還原時因不慎造成備份的毀壞。</para>
 
-      <para xml:lang="en">For an added measure of security, store the latest backup
-	at a remote location which is physically separated from the
-	computers and disk drives by a significant distance.</para>
+      <para>要再安全性一點，則可將最新的備份儲存在與實體電腦與磁碟機有一段明顯距離的遠端位置。</para>
     </sect2>
   </sect1>
 
@@ -33041,13 +32706,13 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  <row>
 	    <entry xml:id="zfs-term-l2arc" xml:lang="en"><acronym>L2ARC</acronym></entry>
 
-	    <entry><acronym>L2ARC</acronym> 是  <acronym>ZFS</acronym> 快取系統的第二層，主要的 <acronym>ARC</acronym> 會儲存在 <acronym>RAM</acronym> 當中，但因為 <acronym>RAM</acronym> 可用的空間量通常有限，因此 <acronym>ZFS</acronym> 也可以使用 <link linkend="zfs-term-vdev-cache">快取 vdev (Cache vdev)</link>。固態磁碟 (Solid State Disk, <acronym>SSD</acronym>) 常被拿來此處作為快取裝置，因為比起傳統旋轉碟片的磁碟，固體磁碟有較快的速度與較低的延遲。<acronym>L2ARC</acronym> 是選用的，但使用可以明顯增進那些已使用 <acronym>SSD</acronym> 快取的檔案讀取速度，無須從一般磁碟讀取。<acronym>L2ARC</acronym> 也同樣可以加速去重複 (<link linkend="zfs-term-deduplication">Deduplication</link>)，因為 <acronym>DDT</acronym> 並不適合放在 <acronym>RAM</acronym>，但適合放在 <acronym>L2ARC</acronym>，比起要從磁碟讀取，可以加快不少速度。為了避免  <acronym>SSD</acronym> 因寫入次速過多而過早耗損，加入到快取裝置的資料速率會被限制，直到快取用盡 (去除第一個資料區塊來騰出空間) 之前，寫入到 <acronym>L2ARC</acronym> 的資料速率會限制在寫入限制 (Write limit) 與加速限制 (Boost limit) 的總合，之後則會限制為寫入限制，可以控制這兩個速度限制的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 數值分別為 <link linkend="zfs-advanced-tuning-l2arc_write_max"><varname>vfs.zfs.l2arc_write_max</varname></link> 控制每秒有多少數位元組可寫入到快取，而 <link linkend="zfs-advanced-tuning-l2arc_write_boost"><varname>vfs.zfs.l2arc_write_boost</varname></link> 可在 <quote>渦輪預熱階段</quote> (即寫入加速) 時增加寫入限制。</entry>
+	    <entry><acronym>L2ARC</acronym> 是  <acronym>ZFS</acronym> 快取系統的第二層，主要的 <acronym>ARC</acronym> 會儲存在 <acronym>RAM</acronym> 當中，但因為 <acronym>RAM</acronym> 可用的空間量通常有限，因此 <acronym>ZFS</acronym> 也可以使用 <link linkend="zfs-term-vdev-cache">快取 vdev (Cache vdev)</link>。固態磁碟 (Solid State Disk, <acronym>SSD</acronym>) 常被拿來此處作為快取裝置，因為比起傳統旋轉碟片的磁碟，固態磁碟有較快的速度與較低的延遲。<acronym>L2ARC</acronym> 是選用的，但使用可以明顯增進那些已使用 <acronym>SSD</acronym> 快取的檔案讀取速度，無須從一般磁碟讀取。<acronym>L2ARC</acronym> 也同樣可以加速去重複 (<link linkend="zfs-term-deduplication">Deduplication</link>)，因為 <acronym>DDT</acronym> 並不適合放在 <acronym>RAM</acronym>，但適合放在 <acronym>L2ARC</acronym>，比起要從磁碟讀取，可以加快不少速度。為了避免  <acronym>SSD</acronym> 因寫入次速過多而過早耗損，加入到快取裝置的資料速率會被限制，直到快取用盡 (去除第一個資料區塊來騰出空間) 之前，寫入到 <acronym>L2ARC</acronym> 的資料速率會限制在寫入限制 (Write limit) 與加速限制 (Boost limit) 的總合，之後則會限制為寫入限制，可以控制這兩個速度限制的 <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> 數值分別為 <link linkend="zfs-advanced-tuning-l2arc_write_max"><varname>vfs.zfs.l2arc_write_max</varname></link> 控制每秒有多少數位元組可寫入到快取，而 <link linkend="zfs-advanced-tuning-l2arc_write_boost"><varname>vfs.zfs.l2arc_write_boost</varname></link> 可在 <quote>渦輪預熱階段</quote> (即寫入加速) 時增加寫入限制。</entry>
 	  </row>
 
 	  <row>
 	    <entry xml:id="zfs-term-zil" xml:lang="en"><acronym>ZIL</acronym></entry>
 
-	    <entry><acronym>ZIL</acronym> 會使用儲存裝置，例如，比那些用在主要儲存池還快的 <acronym>SSD</acronym> 來加速同步交易 (Synchronous transaction)。當應用程式請求做一個同步的寫入時 (保証資料會安全的儲存到磁碟，而不是先快取稍後再寫入)，資料會先寫入到速度較快的 <acronym>ZIL</acronym> 儲存空間，之後再一併寫入到一般的磁碟。這可大量的減少延遲並增進效能。<acronym>ZIL</acronym> 只會有利於使用像資料庫這類的同步工作，一般非同步的寫入像複製檔案，則完全不會用到 <acronym>ZIL</acronym>。</entry>
+	    <entry><acronym>ZIL</acronym> 會使用比主要儲存池還更快的儲存裝置來加速同步寫入動作 (Synchronous transaction)，如 <acronym>SSD</acronym>。當應用程式請求做一個同步的寫入時 (保証資料會安全的儲存到磁碟，而不是先快取稍後再寫入)，資料會先寫入到速度較快的 <acronym>ZIL</acronym> 儲存空間，之後再一併寫入到一般的磁碟。這可大量的減少延遲並增進效能。<acronym>ZIL</acronym> 只會有利於使用像資料庫這類的同步工作，一般非同步的寫入像複製檔案，則完全不會用到 <acronym>ZIL</acronym>。</entry>
 	  </row>
 
 	  <row>
@@ -33117,7 +32782,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 		</listitem>
 
 		<listitem xml:id="zfs-term-compression-lzjb">
-		  <para><emphasis><acronym>LZJB</acronym></emphasis> - 預設的壓縮演算法。由 Jeff Bonwick 所開發 (<acronym>ZFS</acronym> 的創始人之一)。<acronym>LZJB</acronym>與 <acronym>GZIP</acronym> 相比，可以較低的 <acronym>CPU</acronym> 提供較佳的壓縮功能。在未來預設的壓縮演算法將會更換為 <acronym>LZ4</acronym>。</para>
+		  <para><emphasis><acronym>LZJB</acronym></emphasis> - 預設的壓縮演算法。由 Jeff Bonwick 所開發 (<acronym>ZFS</acronym> 的創始人之一)。<acronym>LZJB</acronym> 與 <acronym>GZIP</acronym> 相比，可以較低的 <acronym>CPU</acronym> 提供較佳的壓縮功能。在未來預設的壓縮演算法將會更換為 <acronym>LZ4</acronym>。</para>
 		</listitem>
 
 		<listitem xml:id="zfs-term-compression-gzip">
@@ -41254,7 +40919,7 @@ tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500
 
     <variablelist>
       <varlistentry>
-	<term xml:lang="en">Mail User Agent (<acronym>MUA</acronym>)</term>
+	<term>郵件使用者代理程式 (Mail User Agent, <acronym>MUA</acronym>)</term>
 	<listitem>
 	  <para xml:lang="en">The Mail User Agent (<acronym>MUA</acronym>) is an
 	    application which is used to compose, send, and receive
@@ -41276,7 +40941,7 @@ tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">Mail Transfer Agent (<acronym>MTA</acronym>)</term>
+	<term>郵件傳輸代理程式 (Mail Transfer Agent, <acronym>MTA</acronym>)</term>
 	<listitem>
 	  <para xml:lang="en">The Mail Transfer Agent (<acronym>MTA</acronym>) is
 	    responsible for receiving incoming mail and delivering
@@ -41298,7 +40963,7 @@ tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">Mail Host and Mailboxes</term>
+	<term>郵件主機 (Mail Host) 與郵件信箱 (Mailbox)</term>
 	<listitem>
 	  <para xml:lang="en">The mail host is a server that is responsible for
 	    delivering and receiving mail for a host or a network.
@@ -41347,7 +41012,7 @@ tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500
       </varlistentry>
 
       <varlistentry>
-	<term>網域名稱系統 (<acronym>DNS</acronym>)</term>
+	<term>網域名稱系統 (Domain Name System, <acronym>DNS</acronym>)</term>
 	<listitem>
 	  <para xml:lang="en">The Domain Name System (<acronym>DNS</acronym>) and
 	    its daemon <command>named</command> play a large role in
@@ -45228,49 +44893,16 @@ TWO       (,hotel,test-domain)
 
     <indexterm xml:lang="en"><primary>LDAP</primary></indexterm>
 
-    <para xml:lang="en">The Lightweight Directory Access Protocol
-      (<acronym>LDAP</acronym>) is an application layer protocol used
-      to access, modify, and authenticate objects using a distributed
-      directory information service.  Think of it as a phone or record
-      book which stores several levels of hierarchical, homogeneous
-      information.  It is used in Active Directory and
-      <application>OpenLDAP</application> networks and allows users to
-      access to several levels of internal information utilizing a
-      single account.  For example, email authentication, pulling
-      employee contact information, and internal website
-      authentication might all make use of a single user account in
-      the <acronym>LDAP</acronym> server's record base.</para>
+    <para>輕量級目錄存取協定 (Lightweight Directory Access Protocol, <acronym>LDAP</acronym>) 是一個利用分散式目錄資訊服務來做到存取、修改與認証物件的應用層通訊協定，可以想像成是一本可以儲存數個階層、同質資訊的電話簿或記錄簿。它用在 Active Directory 及 <application>OpenLDAP</application> 網路，允許使用者利用一個帳號來存取數個階層的內部資訊，例如：電子郵件認証、取得員工聯絡資訊及內部網站的認証皆可使用 <acronym>LDAP</acronym> 伺服器資料庫中的單一使用者帳號來存取。</para>
 
-    <para xml:lang="en">This section provides a quick start guide for configuring an
-      <acronym>LDAP</acronym> server on a FreeBSD system.  It assumes
-      that the administrator already has a design plan which includes
-      the type of information to store, what that information will be
-      used for, which users should have access to that information,
-      and how to secure this information from unauthorized
-      access.</para>
+    <para>本章節將介紹在 FreeBSD 系統上如何快速的設定一個 <acronym>LDAP</acronym> 伺服器。本章節假設管理者已做好規劃，這包含：要儲存何種類型的資訊、這些資訊要來做什麼、那些使用者擁有存取這些資訊的權限以及如何確保這些資訊不會被未經授權存取。</para>
 
     <sect2>
       <title><acronym>LDAP</acronym> 術語與結構</title>
 
-      <para xml:lang="en"><acronym>LDAP</acronym> uses several terms which should be
-	understood before starting the configuration.  All directory
-	entries consist of a group of
-	<firstterm>attributes</firstterm>.  Each of these attribute
-	sets contains a unique identifier known as a
-	<firstterm>Distinguished Name</firstterm>
-	(<acronym>DN</acronym>) which is normally built from several
-	other attributes such as the common or
-	<firstterm>Relative Distinguished Name</firstterm>
-	(<acronym>RDN</acronym>).  Similar to how directories have
-	absolute and relative paths, consider a <acronym>DN</acronym>
-	as an absolute path and the <acronym>RDN</acronym> as the
-	relative path.</para>
+      <para><acronym>LDAP</acronym> 使用了數個術語在開始設置之前必須先了解。所有的目錄項目由一群屬性 (<firstterm>attributes</firstterm>) 所組成，每個屬性集皆有一個獨特的辨識碼稱為辨識名稱 (<firstterm>Distinguished Name</firstterm>, <acronym>DN</acronym>)，這個辨識碼會由數個其他的屬性，如：常用或相對辨識名稱 (<firstterm>Relative Distinguished Name</firstterm>, <acronym>RDN</acronym>) 所組成，這就像目錄有絕對路徑與相對路徑，可以把 <acronym>DN</acronym> 當做絕對路徑，<acronym>RDN</acronym> 當做相對路徑。</para>
 
-      <para xml:lang="en">An example <acronym>LDAP</acronym> entry looks like the
-	following.  This example searches for the entry for the
-	specified user account (<literal>uid</literal>),
-	organizational unit (<literal>ou</literal>), and organization
-	(<literal>o</literal>):</para>
+      <para><acronym>LDAP</acronym> 項目的例子如下。這個例子會搜尋指定使用者帳號 (<literal>uid</literal>)、組織單位 (<literal>ou</literal>) 及組織的項目 (<literal>o</literal>)：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>ldapsearch -xb "uid=<replaceable>trhodes</replaceable>,ou=<replaceable>users</replaceable>,o=<replaceable>example.com</replaceable>"</userinput>
 # extended LDIF
@@ -45295,15 +44927,9 @@ result: 0 Success
 # numResponses: 2
 # numEntries: 1</screen>
 
-      <para xml:lang="en">This example entry shows the values for the
-	<literal>dn</literal>, <literal>mail</literal>,
-	<literal>cn</literal>, <literal>uid</literal>, and
-	<literal>telephoneNumber</literal> attributes.  The
-	<acronym>cn</acronym> attribute is the
-	<acronym>RDN</acronym>.</para>
+      <para>這個範例項目會顯示 <literal>dn</literal>, <literal>mail</literal>, <literal>cn</literal>, <literal>uid</literal> 以及 <literal>telephoneNumber</literal> 屬性的數值。而 <acronym>cn</acronym> 屬性則是 <acronym>RDN</acronym>。</para>
 
-      <para xml:lang="en">More information about <acronym>LDAP</acronym> and its
-	terminology can be found at <uri xlink:href="http://www.openldap.org/doc/admin24/intro.html">http://www.openldap.org/doc/admin24/intro.html</uri>.</para>
+      <para>更多有關 <acronym>LDAP</acronym> 以及其術語的資訊可在 <uri xlink:href="http://www.openldap.org/doc/admin24/intro.html">http://www.openldap.org/doc/admin24/intro.html</uri> 找到。</para>
     </sect2>
 
     <sect2 xml:id="ldap-config">
@@ -45311,88 +44937,49 @@ result: 0 Success
 
       <indexterm xml:lang="en"><primary>LDAP Server</primary></indexterm>
 
-      <para xml:lang="en">FreeBSD does not provide a built-in <acronym>LDAP</acronym>
-	server.  Begin the configuration by installing the <package role="port">net/openldap24-server</package> package or port.
-	Since the port has many configurable options, it is
-	recommended that the default options are reviewed to see if
-	the package is sufficient, and to instead compile the port if
-	any options should be changed.  In most cases, the defaults
-	are fine.  However, if SQL support is needed, this option must
-	be enabled and the port compiled using the instructions in
-	<xref linkend="ports-using"/>.</para>
+      <para>FreeBSD 並未提供內建的 <acronym>LDAP</acronym> 伺服器，因此要從安裝 <package role="port">net/openldap24-server</package> 套件或 Port 開始設置。由於 Port 有許多可以設定的選項，建議安裝套件使用預設的選項，若選項必須做修改才改用編譯 Port 的方式安裝，大多數的案例皆可使用預設值。然而，若需要支援 SQL，則必須開啟選項並依 <xref linkend="ports-using"/> 的指示編譯 Port。</para>
 
-      <para xml:lang="en">Next, create the directories to hold the data and to store
-	the certificates:</para>
+      <para>接著，建立目錄來儲存資枓以及儲存憑證：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mkdir /var/db/openldap-data</userinput>
 <prompt>#</prompt> <userinput>mkdir /usr/local/etc/openldap/private</userinput></screen>
 
-      <para xml:lang="en">Copy over the database configuration file:</para>
+      <para>複製資料庫設定檔：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cp /usr/local/etc/openldap/DB_CONFIG.example /var/db/openldap-data/DB_CONFIG</userinput></screen>
 
-      <para xml:lang="en">The next phase is to configure the certificate authority.
-	The following commands must be executed from
-	<filename>/usr/local/etc/openldap/private</filename>.  This is
-	important as the file permissions need to be restrictive and
-	users should not have access to these files.  To create the
-	certificate authority, start with this command and follow the
-	prompts:</para>
+      <para>下一個階段是設定憑証機構 (Certificate authority)。以下指令必須在 <filename>/usr/local/etc/openldap/private</filename> 執行，這很重要是由於檔案權限須要被限制且使用者不應有這些檔案的存取權限。要建立憑証授權，需先輸人這個指令並依提示作業：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl req -days <replaceable>365</replaceable> -nodes -new -x509 -keyout ca.key -out ../ca.crt</userinput></screen>
 
-      <para xml:lang="en">The entries for the prompts may be generic
-	<emphasis>except</emphasis> for the
-	<literal>Common Name</literal>.  This entry must be
-	<emphasis>different</emphasis> than the system hostname.  If
-	this will be a self signed certificate, prefix the hostname
-	with <literal>CA</literal> for certificate authority.</para>
+      <para>提示的輸入項目除了通用名稱 (<literal>Common Name</literal>) 其他是可以一樣的，這個項目必須使用與系統主機名稱 <emphasis>不同</emphasis> 的名稱。若這是一個自行簽署的憑証 (Self signed certificate)，則在憑証機構 <literal>CA</literal> 的前面加上主機名稱。</para>
 
-      <para xml:lang="en">The next task is to create a certificate signing request
-	and a private key.  Input this command and follow the
-	prompts:</para>
+      <para>接下來的工作是建立一個憑証簽署的請求及私鑰。請輸入以下指令然後依提示操作：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl req -days <replaceable>365</replaceable> -nodes -new -keyout server.key -out server.csr</userinput></screen>
 
-      <para xml:lang="en">During the certificate generation process, be sure to
-	correctly set the <literal>Common Name</literal> attribute.
-	Once complete, sign the key:</para>
+      <para>在憑証產生程序的過程中請確認 <literal>Common Name</literal> 屬性設定正確。完成之後便可簽署金鑰：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl x509 -req -days <replaceable>365</replaceable> -in server.csr -out ../server.crt -CA ../ca.crt -CAkey ca.key -CAcreateserial</userinput></screen>
 
-      <para xml:lang="en">The final part of the certificate generation process is to
-	generate and sign the client certificates:</para>
+      <para>在憑証產生程序的最後一步是產生並簽署用戶憑証：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl req -days <replaceable>365</replaceable> -nodes -new -keyout client.key -out client.csr</userinput>
 <prompt>#</prompt> <userinput>openssl x509 -req -days 3650 -in client.csr -out ../client.crt -CA ../ca.crt -CAkey ca.key</userinput></screen>
 
-      <para xml:lang="en">Remember to use the same <literal>Common Name</literal>
-	attribute when prompted.  When finished, ensure that a total
-	of eight (8) new files have been generated through the
-	proceeding commands.  If so, the next step is to edit
-	<filename>/usr/local/etc/openldap/slapd.conf</filename> and
-	add the following options:</para>
+      <para>要記得當提示是要使用同樣的 <literal>Common Name</literal> 屬性。完成之後，請確認執行的指令產生了共 8 個新檔案。若正確無誤，下個步驟便是編輯 <filename>/usr/local/etc/openldap/slapd.conf</filename> 並加入以下選項：</para>
 
       <programlisting xml:lang="en">TLSCipherSuite HIGH:MEDIUM:+SSLv3
 TLSCertificateFile /usr/local/etc/openldap/server.crt
 TLSCertificateKeyFile /usr/local/etc/openldap/private/server.key
 TLSCACertificateFile /usr/local/etc/openldap/ca.crt</programlisting>
 
-      <para xml:lang="en">Then, edit
-	<filename>/usr/local/etc/openldap/ldap.conf</filename> and add
-	the following lines:</para>
+      <para>接著編輯 <filename>/usr/local/etc/openldap/ldap.conf</filename> 然後加入下行：</para>
 
       <programlisting xml:lang="en">TLS_CACERT /usr/local/etc/openldap/ca.crt
 TLS_CIPHER_SUITE HIGH:MEDIUM:+SSLv3</programlisting>
 
-      <para xml:lang="en">While editing this file, uncomment the following entries
-	and set them to the desired values: <option>BASE</option>,
-	<option>URI</option>, <option>SIZELIMIT</option> and
-	<option>TIMELIMIT</option>.  Set the <option>URI</option> to
-	contain <option>ldap://</option> and
-	<option>ldaps://</option>.  Then, add two entries pointing to
-	the certificate authority.  When finished, the entries should
-	look similar to the following:</para>
+      <para>在編輯這個檔案的時候，取消註解以下項目然後設定這些項目使用實際要使用的數值：<option>BASE</option>, <option>URI</option>, <option>SIZELIMIT</option> 以 <option>TIMELIMIT</option>。設定 <option>URI</option> 要包含 <option>ldap://</option> 及 <option>ldaps://</option>。然後加入兩個項目指向憑証機構。完成之後，所有的設定項目會如下：</para>
 
       <programlisting xml:lang="en">BASE    dc=example,dc=com
 URI     ldap:// ldaps://
@@ -45403,34 +44990,18 @@ TIMELIMIT       15
 TLS_CACERT /usr/local/etc/openldap/ca.crt
 TLS_CIPHER_SUITE HIGH:MEDIUM:+SSLv3</programlisting>
 
-      <para xml:lang="en">The default password for the server should then be
-	changed:</para>
+      <para>給伺服器用的預設密碼應該要更換：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>slappasswd -h "{SHA}" &gt;&gt; /usr/local/etc/openldap/slapd.conf</userinput></screen>
 
-      <para xml:lang="en">This command will prompt for the password and, if the
-	process does not fail, a password hash will be added to the
-	end of <filename>slapd.conf</filename>.  Several hashing
-	formats are supported.  Refer to the manual page for
-	<command>slappasswd</command> for more information.</para>
+      <para>這個指令會提示輸入密碼，若程序沒有失敗，便會將編碼過的密碼加到 <filename>slapd.conf</filename> 的最後。支援的編碼格式有許多種，請參考 <command>slappasswd</command> 的操作手冊以取得更多資訊。</para>
 
-      <para xml:lang="en">Next, edit
-	<filename>/usr/local/etc/openldap/slapd.conf</filename> and
-	add the following lines:</para>
+      <para>接著編輯 <filename>/usr/local/etc/openldap/slapd.conf</filename> 並加入下行：</para>
 
       <programlisting xml:lang="en">password-hash {sha}
 allow bind_v2</programlisting>
 
-      <para xml:lang="en">The <option>suffix</option> in this file must be updated
-	to match the <option>BASE</option> used in
-	<filename>/usr/local/etc/openldap/ldap.conf</filename> and
-	<option>rootdn</option> should also be set.  A recommended
-	value for <option>rootdn</option> is something like
-	<option>cn=Manager</option>.  Before saving this file, place
-	the <option>rootpw</option> in front of the password output
-	from <command>slappasswd</command> and delete the old
-	<option>rootpw</option>.  The end result should
-	look similar to this:</para>
+      <para>在這個設定檔的 <option>suffix</option> 必須更新為與在 <filename>/usr/local/etc/openldap/ldap.conf</filename> 及 <option>rootdn</option> 使用的 <option>BASE</option> 相同。<option>rootdn</option> 建議的值為 <option>cn=Manager</option>。在儲存這個檔案之前，將 <option>rootpw</option> 放到由 <command>slappasswd</command> 產生的密碼之前，然後刪除原有的 <option>rootpw</option>。最後的結果應該如下：</para>
 
       <programlisting xml:lang="en">TLSCipherSuite HIGH:MEDIUM:+SSLv3
 TLSCertificateFile /usr/local/etc/openldap/server.crt
@@ -45438,20 +45009,16 @@ TLSCertificateKeyFile /usr/local/etc/openldap/private/server.key
 TLSCACertificateFile /usr/local/etc/openldap/ca.crt
 rootpw  {SHA}W6ph5Mm5Pz8GgiULbPgzG37mj9g=</programlisting>
 
-      <para xml:lang="en">Finally, enable the <application>OpenLDAP</application>
-	service in <filename>/etc/rc.conf</filename> and set the
-	<acronym>URI</acronym>:</para>
+      <para>最後，在 <filename>/etc/rc.conf</filename> 開啟 <application>OpenLDAP</application> 服務並設定 <acronym>URI</acronym>：</para>
 
       <programlisting xml:lang="en">slapd_enable="YES"
 slapd_flags="-4 -h ldaps:///"</programlisting>
 
-      <para xml:lang="en">At this point the server can be started and tested:</para>
+      <para>此時便可啟動並測試伺服器：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service slapd start</userinput></screen>
 
-      <para xml:lang="en">If everything is configured correctly, a search of the
-	directory should show a successful connection with a single
-	response as in this example:</para>
+      <para>若所有的設定均正確，搜尋目錄應會如此範例顯示成功連線並有一筆回應：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ldapsearch -Z</userinput>
 # extended LDIF
@@ -45469,18 +45036,13 @@ result: 32 No such object
 # numResponses: 1</screen>
 
       <note>
-	<para xml:lang="en">If the command fails and the configuration looks
-	  correct, stop the <command>slapd</command> service and
-	  restart it with debugging options:</para>
+	<para>若指令失敗且設定看起來沒有問題，可先停止 <command>slapd</command> 服務並開啟除錯選項並重新啟動：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>service slapd stop</userinput>
 <prompt>#</prompt> <userinput>/usr/local/libexec/slapd -d -1</userinput></screen>
       </note>
 
-      <para xml:lang="en">Once the service is responding, the directory can be
-	populated using <command>ldapadd</command>.  In this example,
-	a file containing this list of users is first created.  Each
-	user should use the following format:</para>
+      <para>服務有回應之後，便可使用 <command>ldapadd</command> 匯入資料到目錄。在此例中，會先建立一個含有使用者清單的檔案，每位使用者應使用以下格式定義：</para>
 
       <programlisting xml:lang="en">dn: dc=<replaceable>example</replaceable>,dc=<replaceable>com</replaceable>
 objectclass: dcObject
@@ -45492,9 +45054,7 @@ dn: cn=<replaceable>Manager</replaceable>,dc=<replaceable>example</replaceable>,
 objectclass: organizationalRole
 cn: <replaceable>Manager</replaceable></programlisting>
 
-      <para xml:lang="en">To import this file, specify the file name.  The following
-	command will prompt for the password specified earlier and the
-	output should look something like this:</para>
+      <para>要匯入這個檔案，可指定檔案名稱。以下指令會提示輸入先前設定過的密碼然後輸入如下的結果：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ldapadd -Z -D "cn=<replaceable>Manager</replaceable>,dc=<replaceable>example</replaceable>,dc=<replaceable>com</replaceable>" -W -f <replaceable>import.ldif</replaceable></userinput>
 Enter LDAP Password:
@@ -45502,8 +45062,7 @@ adding new entry "dc=example,dc=com"
 
 adding new entry "cn=Manager,dc=example,dc=com"</screen>
 
-      <para xml:lang="en">Verify the data was added by issuing a search on the
-	server using <command>ldapsearch</command>:</para>
+      <para>使用 <command>ldapsearch</command> 發出一個查詢到伺服器來確認資料已新增：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>ldapsearch -Z</userinput>
 # extended LDIF
@@ -45533,8 +45092,7 @@ result: 0 Success
 # numResponses: 3
 # numEntries: 2</screen>
 
-      <para xml:lang="en">At this point, the server should be configured and
-	functioning properly.</para>
+      <para>此時，伺服器應已設定完成並可正常運作。</para>
     </sect2>
   </sect1>
 
@@ -45550,7 +45108,7 @@ result: 0 Success
       </authorgroup>
     </sect1info>
     -->
-    <title>動態主機設定協定 (<acronym>DHCP</acronym>)</title>
+    <title>動態主機設置協定 (<acronym>DHCP</acronym>)</title>
 
     <indexterm xml:lang="en">
       <primary>Dynamic Host Configuration Protocol</primary>
@@ -45560,142 +45118,70 @@ result: 0 Success
       <primary>Internet Systems Consortium (ISC)</primary>
     </indexterm>
 
-    <para xml:lang="en">The Dynamic Host Configuration Protocol
-      (<acronym>DHCP</acronym>) allows a system to connect to a
-      network in order to be assigned the necessary addressing
-      information for communication on that network.  FreeBSD includes
-      the OpenBSD version of <command>dhclient</command> which is used
-      by the client to obtain the addressing information.  FreeBSD does
-      not install a <acronym>DHCP</acronym> server, but several
-      servers are available in the FreeBSD Ports Collection.  The
-      <acronym>DHCP</acronym> protocol is fully described in <link xlink:href="http://www.freesoft.org/CIE/RFC/2131/">RFC
-	2131</link>.
-      Informational resources are also available at <link xlink:href="http://www.isc.org/downloads/dhcp/">isc.org/downloads/dhcp/</link>.</para>
+    <para>動態主機設置協定 (Dynamic Host Configuration Protocol, <acronym>DHCP</acronym>) 可分配必要的位置資訊給一個連線到網路的系統以在該網路通訊。FreeBSD 內含 OpenBSD 版本的 <command>dhclient</command>，可用來做為客戶端來取得位置資訊。FreeBSD 預設並不會安裝 <acronym>DHCP</acronym> 伺服器，但在 FreeBSD Port 套件集中有許多可用的伺服器。有關 <acronym>DHCP</acronym> 通訊協定的完整說明位於 <link xlink:href="http://www.freesoft.org/CIE/RFC/2131/">RFC 2131</link>，相關資源也可至 <link xlink:href="http://www.isc.org/downloads/dhcp/">isc.org/downloads/dhcp/</link> 取得。</para>
 
-    <para xml:lang="en">This section describes how to use the built-in
-      <acronym>DHCP</acronym> client.  It then describes how to
-      install and configure a <acronym>DHCP</acronym> server.</para>
+    <para>本節將介紹如何使用內建的 <acronym>DHCP</acronym> 客戶端，接著會介紹如何安裝並設定一個 <acronym>DHCP</acronym> 伺服器。</para>
 
     <note>
-      <para xml:lang="en">In FreeBSD, the <citerefentry><refentrytitle>bpf</refentrytitle><manvolnum>4</manvolnum></citerefentry> device is needed by both the
-	<acronym>DHCP</acronym> server and <acronym>DHCP</acronym>
-	client.  This device is included in the
-	<filename>GENERIC</filename>  kernel that is installed with
-	FreeBSD.  Users who prefer to create a custom kernel need to keep
-	this device if  <acronym>DHCP</acronym> is used.</para>
+      <para>在 FreeBSD 中，<citerefentry><refentrytitle>bpf</refentrytitle><manvolnum>4</manvolnum></citerefentry> 裝置同時會被 <acronym>DHCP</acronym> 伺服器與 <acronym>DHCP</acronym> 客戶端所使用。這個裝置會在 <filename>GENERIC</filename> 核心中被引用並隨著 FreeBSD 安裝。想要建立自訂核心的使用者若要使用 <acronym>DHCP</acronym> 則須保留這個裝置。</para>
 
-      <para xml:lang="en">It should be noted that <filename>bpf</filename> also
-	allows privileged users to run network packet sniffers on
-	that system.</para>
+      <para>另外要注意 <filename>bpf</filename> 也會讓有權限的使用者在該系統上可執行網路封包監聽程式。</para>
     </note>
 
     <sect2>
       <title>設定 <acronym>DHCP</acronym> 客戶端</title>
 
-      <para xml:lang="en"><acronym>DHCP</acronym> client support is included in the
-	FreeBSD installer, making it easy to configure a newly installed
-	system to automatically receive its networking addressing
-	information from an existing <acronym>DHCP</acronym> server.
-	Refer to <xref linkend="bsdinstall-post"/> for examples of
-	network configuration.</para>
+      <para><acronym>DHCP</acronym> 客戶端內含在 FreeBSD 安裝程式當中，這讓在新安裝的系統上設定自動從 <acronym>DHCP</acronym> 伺服器接收網路位置資訊變的更簡單。請參考 <xref linkend="bsdinstall-post"/> 取得網路設置的範例。</para>
 
       <indexterm xml:lang="en"><primary><acronym>UDP</acronym></primary></indexterm>
-      <para xml:lang="en">When <command>dhclient</command> is executed on the client
-	machine, it begins broadcasting requests for configuration
-	information.  By default, these requests use
-	<acronym>UDP</acronym> port 68.  The server replies on
-	<acronym>UDP</acronym> port 67, giving the client an
-	<acronym>IP</acronym> address and other relevant network
-	information such as a subnet mask, default gateway, and
-	<acronym>DNS</acronym> server addresses.  This information is
-	in the form of a <acronym>DHCP</acronym>
-	<quote>lease</quote> and is valid for a configurable time.
-	This allows stale <acronym>IP</acronym> addresses for clients
-	no longer connected to the network to automatically be reused.
-	<acronym>DHCP</acronym> clients can obtain a great deal of
-	information from the server.  An exhaustive list may be found
-	in <citerefentry><refentrytitle>dhcp-options</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+      <para>當 <command>dhclient</command> 在客戶端機器上執行時，它便會開始廣播請求取得設置資訊。預設這些請求會使用 <acronym>UDP</acronym> 埠號 68。而伺服器則會在 <acronym>UDP</acronym> 埠號 67 來回覆，將 <acronym>IP</acronym> 位址與其他相關的網路資訊，如：子網路遮罩、預設閘道及 <acronym>DNS</acronym> 伺服器位址告訴客戶端，詳細的清單可在 <citerefentry><refentrytitle>dhcp-options</refentrytitle><manvolnum>5</manvolnum></citerefentry> 找到。</para>
 
-      <para xml:lang="en">By default, when a FreeBSD system boots, its
-	<acronym>DHCP</acronym> client runs in the background, or
-	<firstterm>asynchronously</firstterm>.  Other startup scripts
-	continue to run while the <acronym>DHCP</acronym> process
-	completes, which speeds up system startup.</para>
+      <para>預設當 FreeBSD 系統開機時，其 <acronym>DHCP</acronym> 客戶端會在背景執行或稱非同步 (<firstterm>Asynchronously</firstterm>) 執行，在完成 <acronym>DHCP</acronym> 程序的同時其他啟動 Script 會繼續執行，來加速系統啟動。</para>
 
-      <para xml:lang="en">Background <acronym>DHCP</acronym> works well when the
-	<acronym>DHCP</acronym> server responds quickly to the
-	client's requests.  However, <acronym>DHCP</acronym> may take
-	a long time to complete on some systems.  If network services
-	attempt to run before <acronym>DHCP</acronym> has assigned the
-	network addressing information, they will fail.  Using
-	<acronym>DHCP</acronym> in <firstterm>synchronous</firstterm>
-	mode prevents this problem as it pauses startup until the
-	<acronym>DHCP</acronym> configuration has completed.</para>
+      <para>背景 <acronym>DHCP</acronym> 在 <acronym>DHCP</acronym> 伺服器可以快速的回應客戶端請求時可運作的很好。然而 <acronym>DHCP</acronym> 在某些系統可能需要較長的時間才能完成，若網路服務嘗試在 <acronym>DHCP</acronym> 尚未分配網路位置資訊前執行則會失敗。使用同步 (<firstterm>Synchronous</firstterm>) 模式執行 <acronym>DHCP</acronym> 可避免這個問題，因為同步模式會暫停啟動直到 <acronym>DHCP</acronym> 已設置完成。</para>
 
-      <para xml:lang="en">This line in <filename>/etc/rc.conf</filename> is used to
-	configure background or asynchronous mode:</para>
+      <para>在 <filename>/etc/rc.conf</filename> 中的這行用來設定採用背景 (非同步模式)：</para>
 
       <programlisting xml:lang="en">ifconfig_<replaceable>fxp0</replaceable>="DHCP"</programlisting>
 
-      <para xml:lang="en">This line may already exist if the system was configured
-	to use <acronym>DHCP</acronym> during installation.  Replace
-	the <replaceable>fxp0</replaceable> shown in these examples
-	with the name of the interface to be dynamically configured,
-	as described in <xref linkend="config-network-setup"/>.</para>
+      <para>若系統已經在安裝時設定使用 <acronym>DHCP</acronym>，這行可能會已存在。替換在例子中的 <replaceable>fxp0</replaceable> 為實際要動態設置的網路介面名稱，如 <xref linkend="config-network-setup"/> 中的說明。</para>
 
-      <para xml:lang="en">To instead configure the system to use synchronous mode,
-	and to pause during startup while <acronym>DHCP</acronym>
-	completes, use
-	<quote><literal>SYNCDHCP</literal></quote>:</para>
+      <para>要改設定系統採用同步模式，會在啟動時暫停動後 <acronym>DHCP</acronym> 完成，使用 <quote><literal>SYNCDHCP</literal></quote>：</para>
 
       <programlisting xml:lang="en">ifconfig_<replaceable>fxp0</replaceable>="SYNCDHCP"</programlisting>
 
-      <para xml:lang="en">Additional client options are available.  Search for
-	<literal>dhclient</literal> in <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for
-	details.</para>
+      <para>尚有其他可用的客戶端選項，請在 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 搜尋 <literal>dhclient</literal> 來取得詳細資訊。</para>
 
       <indexterm xml:lang="en">
 	<primary><acronym>DHCP</acronym></primary>
 	<secondary>configuration files</secondary>
       </indexterm>
 
-      <para xml:lang="en">The <acronym>DHCP</acronym> client uses the following
-	files:</para>
+      <para><acronym>DHCP</acronym> 客戶端會使用到以下檔案：</para>
 
       <itemizedlist>
 	<listitem>
 	  <para xml:lang="en"><filename>/etc/dhclient.conf</filename></para>
 
-	  <para xml:lang="en">The configuration file used by
-	    <command>dhclient</command>.  Typically, this file
-	    contains only comments as the defaults are suitable for
-	    most clients.  This configuration file is described in
-	    <citerefentry><refentrytitle>dhclient.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+	  <para><command>dhclient</command> 用到的設定檔。通常這個檔案只會有註解，因為預設便適用大多數客戶端。這個設定檔在 <citerefentry><refentrytitle>dhclient.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中有說明。</para>
 	</listitem>
 
 	<listitem>
 	  <para xml:lang="en"><filename>/sbin/dhclient</filename></para>
 
-	  <para xml:lang="en">More information about the command itself can
-	    be found in <citerefentry><refentrytitle>dhclient</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+	  <para>有關指令本身的更多資訊可於 <citerefentry><refentrytitle>dhclient</refentrytitle><manvolnum>8</manvolnum></citerefentry> 找到。</para>
 	</listitem>
 
 	<listitem>
 	  <para xml:lang="en"><filename>/sbin/dhclient-script</filename></para>
 
-	  <para xml:lang="en">The
-	    FreeBSD-specific <acronym>DHCP</acronym> client configuration
-	    script.  It is described in <citerefentry><refentrytitle>dhclient-script</refentrytitle><manvolnum>8</manvolnum></citerefentry>, but
-	    should not need any user modification to function
-	    properly.</para>
+	  <para>FreeBSD 特定的 <acronym>DHCP</acronym> 客戶端設定 Script。在 <citerefentry><refentrytitle>dhclient-script</refentrytitle><manvolnum>8</manvolnum></citerefentry> 中有說明，但應不須做任何修改便可正常運作。</para>
 	</listitem>
 
 	<listitem>
 	  <para xml:lang="en"><filename>/var/db/dhclient.leases.<replaceable>interface</replaceable></filename></para>
 
-	  <para xml:lang="en">The <acronym>DHCP</acronym> client keeps a database of
-	    valid leases in this file, which is written as a log and
-	    is described in <citerefentry><refentrytitle>dhclient.leases</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+	  <para><acronym>DHCP</acronym> 客戶端會在這個檔案中儲存有效租約的資料，寫入的格式類似日誌，在 <citerefentry><refentrytitle>dhclient.leases</refentrytitle><manvolnum>5</manvolnum></citerefentry> 有說明。</para>
 	</listitem>
       </itemizedlist>
     </sect2>
@@ -45703,13 +45189,7 @@ result: 0 Success
     <sect2 xml:id="network-dhcp-server">
       <title>安裝並設定 <acronym>DHCP</acronym> 伺服器</title>
 
-      <para xml:lang="en">This section demonstrates how to configure a FreeBSD system
-	to act as a <acronym>DHCP</acronym> server using the Internet
-	Systems Consortium (<acronym>ISC</acronym>) implementation of
-	the <acronym>DHCP</acronym> server.  This implementation and
-	its documentation can be installed using the
-	<package>net/isc-dhcp43-server</package> package or
-	port.</para>
+      <para>本節將示範如何設定 FreeBSD 系統成為 <acronym>DHCP</acronym> 伺服器，使用 Internet Systems Consortium (<acronym>ISC</acronym>) 所實作的 <acronym>DHCP</acronym> 伺服器，這個伺服器及其文件可使用 <package>net/isc-dhcp43-server</package> 套件或 Port 安裝。</para>
 
       <indexterm xml:lang="en">
 	<primary><acronym>DHCP</acronym></primary>
@@ -45721,21 +45201,13 @@ result: 0 Success
 	  <secondary>installation</secondary>
       </indexterm>
 
-      <para xml:lang="en">The installation of
-	<package>net/isc-dhcp43-server</package> installs a sample
-	configuration file.  Copy
-	<filename>/usr/local/etc/dhcpd.conf.example</filename> to
-	<filename>/usr/local/etc/dhcpd.conf</filename> and make any
-	edits to this new file.</para>
+      <para><package>net/isc-dhcp43-server</package> 的安裝程式會安裝一份範例設定檔，複製 <filename>/usr/local/etc/dhcpd.conf.example</filename> 到 <filename>/usr/local/etc/dhcpd.conf</filename> 並在這個新檔案做編輯。</para>
 
       <indexterm xml:lang="en">
 	<primary><acronym>DHCP</acronym></primary>
 	  <secondary>dhcpd.conf</secondary>
       </indexterm>
-      <para xml:lang="en">The configuration file is comprised of declarations for
-	subnets and hosts which define the  information that is
-	provided to <acronym>DHCP</acronym>  clients.  For example,
-	these  lines configure the following:</para>
+      <para>這個設定檔內容包括了子網路及主機的宣告，用來定義要提供給 <acronym>DHCP</acronym> 客戶端的資訊。如以下行設定：</para>
 
       <programlisting xml:lang="en">option domain-name "example.org";<co xml:id="domain-name"/>
 option domain-name-servers ns1.example.org;<co xml:id="domain-name-servers"/>
@@ -45757,105 +45229,62 @@ host fantasia {
 
       <calloutlist>
 	<callout arearefs="domain-name">
-	  <para xml:lang="en">This option specifies the default search domain that
-	    will be provided to clients.  Refer to
-	    <citerefentry><refentrytitle>resolv.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more information.</para>
+	  <para>這個選項指定了要提供給客戶端的預設搜尋網域。請參考 <citerefentry><refentrytitle>resolv.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 取得更多資訊。</para>
 	</callout>
 
 	<callout arearefs="domain-name-servers">
-	  <para xml:lang="en">This option specifies a comma separated list of
-	    <acronym>DNS</acronym> servers that the client should use.
-	    They can be listed by their Fully Qualified Domain Names
-	    (<acronym>FQDN</acronym>), as seen in the example, or by
-	    their <acronym>IP</acronym> addresses.</para>
+	  <para>這個選項指定了客戶端應使用的 <acronym>DNS</acronym> 伺服器清單 (以逗號分隔)。如範例中所示，可使用伺服器的完整網域名稱 (Fully Qualified Domain Names, <acronym>FQDN</acronym>) 或伺服器的 <acronym>IP</acronym> 位址。</para>
 	</callout>
 
 	<callout arearefs="subnet-mask">
-	  <para xml:lang="en">The subnet mask that will be provided to
-	    clients.</para>
+	  <para>要提供給客戶端的子網路遮罩。</para>
 	</callout>
 
 	<callout arearefs="default-lease-time">
-	  <para xml:lang="en">The default lease expiry time in seconds.  A client
-	    can be configured to override this value.  </para>
+	  <para>預設租約到期時間 (秒)。客戶端可以自行設定覆蓋這個數值。</para>
 	</callout>
 
 	<callout arearefs="max-lease-time">
-	  <para xml:lang="en">The maximum allowed length of time, in seconds, for a
-	    lease.  Should a client request a longer lease, a lease
-	    will still be issued, but it will only be valid for
-	    <literal>max-lease-time</literal>.</para>
+	  <para>一個租約最多允許的時間長度 (秒)。若客戶端請求更長的租約，仍會發出租約，但最多只會在 <literal>max-lease-time</literal> 內有效。</para>
 	</callout>
 
 	<callout arearefs="ddns-update-style">
-	  <para xml:lang="en">The default of <option>none</option> disables dynamic
-	    DNS updates.  Changing this to <option>interim</option>
-	    configures the <acronym>DHCP</acronym> server to update a
-	    <acronym>DNS</acronym> server whenever it hands out a
-	    lease so that the <acronym>DNS</acronym> server knows
-	    which <acronym>IP</acronym> addresses are associated with
-	    which computers in the network.  Do not change the default
-	    setting unless the <acronym>DNS</acronym> server has  been
-	    configured to support dynamic
-	    <acronym>DNS</acronym>.</para>
+	  <para>預設的 <option>none</option> 會關閉動態 DNS 更新。更改此值為 <option>interim</option> 可讓 <acronym>DHCP</acronym> 伺服器每當發出一個租約便通知 <acronym>DNS</acronym> 伺服器更新，如此一來 <acronym>DNS</acronym> 伺服器便知道網路中該電腦的 <acronym>IP</acronym> 位址。不要更改此預設值，除非 <acronym>DNS</acronym> 伺服器已設定為支援動態 <acronym>DNS</acronym>。</para>
 	</callout>
 
 	<callout arearefs="range">
-	  <para xml:lang="en">This line creates a pool of available
-	    <acronym>IP</acronym> addresses which are reserved for
-	    allocation to <acronym>DHCP</acronym> clients.  The range
-	    of addresses must be valid for the network or subnet
-	    specified in the previous line.</para>
+	  <para>此行會建立一個可用 <acronym>IP</acronym> 位址的儲存池來保留這些要分配給 <acronym>DHCP</acronym> 客戶端的位址。位址範圍必須在前一行所指定的網路或子網路中有效。</para>
 	</callout>
 
 	<callout arearefs="routers">
-	  <para xml:lang="en">Declares the default gateway that is valid for the
-	    network or subnet specified before the opening
-	    <literal>{</literal> bracket.</para>
+	  <para>宣告在開始的 <literal>{</literal> 括號之前所指定的網路或子網路中有效的預設通訊閘。</para>
 	</callout>
 
 	<callout arearefs="hardware">
-	  <para xml:lang="en">Specifies the hardware <acronym>MAC</acronym> address
-	    of a client so that the <acronym>DHCP</acronym> server can
-	    recognize the client when it makes a request.</para>
+	  <para>指定客戶端的硬體 <acronym>MAC</acronym> 位址，好讓 <acronym>DHCP</acronym> 伺服器在客戶端發出請求時可以辨識客戶端。</para>
 	</callout>
 
 	<callout arearefs="fixed-address">
-	  <para xml:lang="en">Specifies that this host should always be given the
-	    same <acronym>IP</acronym> address.  Using the hostname is
-	    correct, since the <acronym>DHCP</acronym> server will
-	    resolve the hostname before returning the lease
-	    information.</para>
+	  <para>指定這個主機應分配相同的 <acronym>IP</acronym> 位址。在此處用主機名稱是正確的，由於 <acronym>DHCP</acronym> 伺服器會在回傳租約資訊前先解析主機名稱。</para>
 	</callout>
       </calloutlist>
 
-      <para xml:lang="en">This configuration file supports many more options.  Refer
-	to dhcpd.conf(5), installed with the server, for details and
-	examples.</para>
+      <para>此設定檔還支援其他選項，請參考隨伺服器一併安裝的  dhcpd.conf(5) 來取得詳細資訊與範例。</para>
 
-      <para xml:lang="en">Once the configuration of <filename>dhcpd.conf</filename>
-	is complete, enable the <acronym>DHCP</acronym> server in
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>完成 <filename>dhcpd.conf</filename> 的設定之後，在 <filename>/etc/rc.conf</filename> 啟動 <acronym>DHCP</acronym> 伺服器：</para>
 
       <programlisting xml:lang="en">dhcpd_enable="YES"
 dhcpd_ifaces="dc0"</programlisting>
 
-      <para xml:lang="en">Replace the <literal>dc0</literal> with the interface (or
-	interfaces, separated by whitespace) that the
-	<acronym>DHCP</acronym> server should listen on for
-	<acronym>DHCP</acronym> client requests.</para>
+      <para>替換 <literal>dc0</literal> 為 <acronym>DHCP</acronym> 伺服器要傾聽 <acronym>DHCP</acronym> 客戶端請求的網路介面 (多個介面可以空白分隔)。</para>
 
-      <para xml:lang="en">Start the server by issuing the following command:</para>
+      <para>執行以下指令來啟動伺服器：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service isc-dhcpd start</userinput></screen>
 
-      <para xml:lang="en">Any future changes to the configuration of the server will
-	require the <application>dhcpd</application> service to be
-	stopped and then started using <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>往後任何對伺服器設定的變更會需要使用 <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> 中止 <application>dhcpd</application> 服務然後啟動。</para>
 
-      <para xml:lang="en">The <acronym>DHCP</acronym> server uses the following
-	files.  Note that the manual pages are installed with the
-	server software.</para>
+      <para><acronym>DHCP</acronym> 伺服器會使用到以下檔案。注意，操作手冊會與伺服器軟體一同安裝。</para>
 
       <indexterm xml:lang="en">
 	<primary><acronym>DHCP</acronym></primary>
@@ -45865,39 +45294,25 @@ dhcpd_ifaces="dc0"</programlisting>
 	<listitem>
 	  <para xml:lang="en"><filename>/usr/local/sbin/dhcpd</filename></para>
 
-	  <para xml:lang="en">More information about the
-	    <application>dhcpd</application> server can be found in
-	    dhcpd(8).</para>
+	  <para>更多有關 <application>dhcpd</application> 伺服器的資訊可在 dhcpd(8) 找到。</para>
 	</listitem>
 
 	<listitem>
 	  <para xml:lang="en"><filename>/usr/local/etc/dhcpd.conf</filename></para>
 
-	  <para xml:lang="en">The server configuration file needs to contain all the
-	    information that should be provided to clients, along with
-	    information regarding the operation of the server.  This
-	    configuration file is described in dhcpd.conf(5).</para>
+	  <para>伺服器設定檔需要含有所有要提供給客戶端的資訊以及有關伺服器運作的資訊。在  dhcpd.conf(5) 有此設定檔的說明。 </para>
 	</listitem>
 
 	<listitem>
 	  <para xml:lang="en"><filename>/var/db/dhcpd.leases</filename></para>
 
-	  <para xml:lang="en">The <acronym>DHCP</acronym> server keeps a database of
-	    leases it has issued in this file, which is written as a
-	    log.  Refer to dhcpd.leases(5), which gives a slightly
-	    longer description.</para>
+	  <para><acronym>DHCP</acronym> 伺服器會儲存一份已發出租約的資料於這個檔案，寫入的格式類似日誌。參考 dhcpd.leases(5) 會有更完整的說明。</para>
 	</listitem>
 
 	<listitem>
 	  <para xml:lang="en"><filename>/usr/local/sbin/dhcrelay</filename></para>
 
-	  <para xml:lang="en">This daemon is used in advanced environments where one
-	    <acronym>DHCP</acronym> server forwards a request from a
-	    client to another <acronym>DHCP</acronym> server on a
-	    separate network.  If this functionality is required,
-	    install the <package>net/isc-dhcp43-relay</package>
-	    package or port.  The installation includes dhcrelay(8)
-	    which provides more detail.</para>
+	  <para>這個 Daemon 會用在更進階的環境中，在一個 <acronym>DHCP</acronym> 伺服器要轉發來自客戶端的請求到另一個網路的另一個 <acronym>DHCP</acronym> 伺服器的環境。若需要使用此功能，請安裝 <package>net/isc-dhcp43-relay</package> 套件或 Port，安裝會包含 dhcrelay(8)，裡面有提供更詳細的資訊。</para>
 	</listitem>
       </itemizedlist>
     </sect2>
@@ -45925,7 +45340,7 @@ dhcpd_ifaces="dc0"</programlisting>
       </authorgroup>
     </sect1info>
     -->
-    <title>網域名稱系統 (<acronym>DNS</acronym>)</title>
+    <title>網域名稱系統 (Domain Name System, <acronym>DNS</acronym>)</title>
 
     <indexterm xml:lang="en"><primary>DNS</primary></indexterm>
 
@@ -48695,7 +48110,7 @@ iscsictl_flags="-Aa"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 49600 2016-10-28 15:31:21Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 49796 2017-01-04 18:42:26Z maxim $
 -->
 <chapter version="5.0" xml:id="firewalls">
 
@@ -50719,7 +50134,7 @@ $cmd 00231 allow tcp from any to any 110 out via $pif setup keep-state
 $cmd 00250 allow icmp from any to any out via $pif keep-state
 
 # Allow outbound NTP
-$cmd 00260 allow udp from any to any 123 out via $pif setup keep-state
+$cmd 00260 allow udp from any to any 123 out via $pif keep-state
 
 # Allow outbound SSH
 $cmd 00280 allow tcp from any to any 22 out via $pif setup keep-state
@@ -52380,7 +51795,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49640 2016-11-03 19:48:36Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49799 2017-01-06 20:02:33Z sevan $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -55631,7 +55046,7 @@ bridge0: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1
 	package can be used to retrieve the data.</para>
 
       <para xml:lang="en">To enable monitoring on the bridge, uncomment this line in
-	<filename>/etc/snmp.config</filename> by removing the
+	<filename>/etc/snmpd.config</filename> by removing the
 	beginning <literal>#</literal> symbol:</para>
 
       <programlisting xml:lang="en">begemotSnmpdModulePath."bridge" = "/usr/lib/snmp_bridge.so"</programlisting>
