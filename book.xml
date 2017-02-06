@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49752 2016-12-19 17:36:26Z pstef $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49901 2017-01-29 07:12:45Z jmd $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -241,6 +241,7 @@
 <!ENTITY pgpkey.jlh SYSTEM "jlh.key">
 <!ENTITY pgpkey.jmb SYSTEM "jmb.key">
 <!ENTITY pgpkey.jmcneill SYSTEM "jmcneill.key">
+<!ENTITY pgpkey.jmd SYSTEM "jmd.key">
 <!ENTITY pgpkey.jmelo SYSTEM "jmelo.key">
 <!ENTITY pgpkey.jmg SYSTEM "jmg.key">
 <!ENTITY pgpkey.jmmv SYSTEM "jmmv.key">
@@ -282,6 +283,7 @@
 <!ENTITY pgpkey.lbr SYSTEM "lbr.key">
 <!ENTITY pgpkey.le SYSTEM "le.key">
 <!ENTITY pgpkey.leeym SYSTEM "leeym.key">
+<!ENTITY pgpkey.ler SYSTEM "ler.key">
 <!ENTITY pgpkey.lesi SYSTEM "lesi.key">
 <!ENTITY pgpkey.lev SYSTEM "lev.key">
 <!ENTITY pgpkey.lidl SYSTEM "lidl.key">
@@ -414,6 +416,7 @@
 <!ENTITY pgpkey.rees SYSTEM "rees.key">
 <!ENTITY pgpkey.remko SYSTEM "remko.key">
 <!ENTITY pgpkey.rene SYSTEM "rene.key">
+<!ENTITY pgpkey.rezny SYSTEM "rezny.key">
 <!ENTITY pgpkey.rgrimes SYSTEM "rgrimes.key">
 <!ENTITY pgpkey.rich SYSTEM "rich.key">
 <!ENTITY pgpkey.riggs SYSTEM "riggs.key">
@@ -5945,7 +5948,7 @@ Swap: 2048M Total, 2048M Free
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 48368 2016-03-11 06:41:46Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 49829 2017-01-10 23:08:09Z linimon $
 -->
 <chapter version="5.0" xml:id="ports">
 
@@ -5956,7 +5959,7 @@ Swap: 2048M Total, 2048M Free
 
     <indexterm xml:lang="en"><primary>ports</primary></indexterm>
     <indexterm><primary>套件</primary></indexterm>
-    <para>FreeBSD 已內建豐富的系統工具，此外 FreeBSD 提供了 2 種安裝第三方軟體的套件管理技術︰由原始碼安的 FreeBSD Port 套件集，以及由預先編譯好的 Binary 安裝的 Binary  套件集。 無論要用哪一種方式，都可由本地的媒體或網路來安裝軟體。</para>
+    <para>FreeBSD 內建豐富的系統工具集，此外 FreeBSD 提供了兩種安裝第三方軟體的套件管理技術︰由原始碼安裝的 FreeBSD Port 套件集，以及由預先編譯好的 Binary 安裝的 Binary  套件集。兩種方法都可使用本地的媒體或網路來安裝軟體。</para>
 
     <para>讀完這章，您將了解︰</para>
 
@@ -5998,7 +6001,7 @@ Swap: 2048M Total, 2048M Free
       </step>
 
       <step>
-	<para>解壓縮軟體。 發佈的格式通常會使用 tarball 並以 <citerefentry><refentrytitle>compress</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></citerefentry> 或 <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></citerefentry> 壓縮。</para>
+	<para>自發佈的格式解壓縮軟體。 發佈的格式通常為 tarball 並以程式壓縮，如 <citerefentry><refentrytitle>compress</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>gzip</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></citerefentry> 或 <citerefentry><refentrytitle>xz</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
       </step>
 
       <step>
@@ -6014,17 +6017,19 @@ Swap: 2048M Total, 2048M Free
       </step>
     </procedure>
 
-    <para>如果軟體套件未被特意移植到 FreeBSD 或測試是否可運作。 那可能需要修改一下該軟體的原始碼才能正常使用。 在搛寫此篇文章時候， 已經有超過 24,000 個第三方應用程式已經被移植到 FreeBSD。</para>
+    <para>FreeBSD <emphasis>Port</emphasis> 是指設計用來自動化從原始碼編譯應用程式整個程序的一系列檔案，組成 Port 的檔案包含了自動下載、解壓縮、修補、編譯與安裝應用程式的必要資訊。</para>
 
-    <para>FreeBSD Binary 套件中包含了應用程式預先編譯好的指令、設定檔及文件。 套件可以使用 <application>pkg</application> 指令來管理，如 <command>pkg install</command>。</para>
+    <para>若軟體尚未被 FreeBSD 採用並測試，可能會需要經過一些修正才能正常安裝並執行。</para>
 
-    <para>FreeBSD Port 套件則包含了已設計好從原始碼編譯成應用程式的自動化程序。 Port 套件中的檔案包含自動下載、解壓縮、修補、編譯及安裝應用程式流程中所有需要的資訊。</para>
+    <para>雖然如此，目前已有超過 <link xlink:href="@@URL_RELPREFIX@@/ports/index.html">24,000</link> 個第三方應用程式已經被移植到 FreeBSD。當可行時，這些應用程式也會做成預先編譯好的 <emphasis>套件 (Package)</emphasis> 供下載。</para>
 
-    <para>Port 系統可以透過 FreeBSD 套件管理指令來產生套件。</para>
+    <para>這些 Binary 套件可使用 FreeBSD 套件管理指令來管理。</para>
 
-    <para>不論是 Binary 套件或者 Port 套件都有相依的功能，若以 Binary 或 Port 套件安裝應用程式，且該應用程式有相依的程式庫尚未被安裝，則會自動先安裝該程式庫。</para>
+    <para>不論是 Binary 套件或者 Port 都有相依性，若用 Binary 套件或 Port 來安裝應用程式，且該應用程式若有相依的程式庫尚未被安裝，則會自動先安裝該程式庫。</para>
 
-    <para>雖然兩種技術非常相似，但 Binary 套件及 Port 套件有各自的優點。 要視您要安裝的應用程式需求來選擇。</para>
+    <para>FreeBSD  Binary 套件中含有一個應用程式中所有預先編譯好的指令、設定檔以及文件，Binary 套件可以使用 <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指令來管理，如 <command>pkg install</command>。</para>
+
+    <para>雖然兩種技術非常相似，但 Binary 套件及 Port 有各自的優點。 要視您要安裝的應用程式需求來選擇。</para>
 
     <itemizedlist>
       <title>Binary 套件優點</title>
@@ -6191,26 +6196,35 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
 
     <para><application>pkg</application> 是新一代套件管理工具用來取代舊版工具，提供許多功能讓處理 Binary 套件更快更簡單。</para>
 
-    <para><application>pkg</application> 並不是用來取代 Port 管理工具如 <package>ports-mgmt/portmaster</package> 或 <package>ports-mgmt/portupgrade</package>，這些工具可用來安裝來自 Binary 與 Port 套件集的第三方軟體，而 <application>pkg</application> 僅能安裝 Binary 套件。</para>
+    <para>對於只想要使用在 FreeBSD 鏡像站上預先編譯 Binary 套件的站台，使用 <application>pkg</application> 管理套件便已足夠。</para>
+
+    <para>但是，對於那些想要從原始碼或使用自己的檔案庫編譯的站台，則會需要 <link linkend="ports-upgrading-tools">Port 管理工具</link>。</para>
+
+    <para>因為 <application>pkg</application> 僅能管理 Binary 套件，所以不能當做為替代 Port 管理工具，這些工具可用來安裝來自 Binary 與 Port 套件集的軟體，而 <application>pkg</application> 僅能安裝 Binary 套件。</para>
 
     <sect2 xml:id="pkgng-initial-setup">
       <title>開始使用 <application>pkg</application></title>
 
-      <para>FreeBSD 內建啟動 (Bootstrap) 工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。</para>
+      <para>FreeBSD 內建啟動 (Bootstrap) 工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。這個工具是設計在 FreeBSD 版本 10.<replaceable>X</replaceable> 之後使用。</para>
 
-      <para>要啟動(Bootstrap)系統請執行：</para>
+      <note>
+	<para>不是所有 FreeBSD 版本及架構支援此啟動程序，目前支援的清單列於 <link xlink:href="http://pkg.freebsd.org/"/>，對不支援的版本，必須改透過 Port 套件集或者 Binary 套件來安裝 <application>pkg</application>。</para>
+
+      </note>
+
+      <para>要啟動 (Bootstrap) 系統請執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput></screen>
 
-      <para>對較舊的 FreeBSD 版本，<application>pkg</application> 必須改透過 Port 套件集或者 Binary 套件來安裝。</para>
+      <para>您必須有網際網路連線供啟動程式使用。</para>
 
-      <para>要安裝 Port 套件，請執行：</para>
+      <para>否則，要安裝 Port 套件，則須執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/pkg</userinput>
 <prompt>#</prompt> <userinput>make</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para>當升級原使用舊版套件系統的既有系統時，必須將資料庫轉換成新的格式，因此新的工具才會知道有那些已安裝過的套件。一旦 <application>pkg</application> 已安裝，必須執行以下指令將套件資料庫從舊版格式轉換到新版格式：</para>
+      <para>當升級原使用舊版 pkg_* 工具的既有系統時，必須將資料庫轉換成新的格式，如此新的工具才會知道有那些已安裝過的套件。<application>pkg</application> 安裝完後，必須執行以下指令將套件資料庫從舊版格式轉換到新版格式：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg2ng</userinput></screen>
 
@@ -6221,15 +6235,14 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
       </important>
 
       <note>
-	<para>套件資料庫轉換的過程可能會因內容轉換為新版本產生錯誤。通常，這些錯誤皆可安全忽略，雖然如此，仍然有在執行 <command>pkg2ng</command> 後無法成功轉換的第三方軟體清單，這些應用程式則必須手動重新安裝。</para>
+	<para>套件資料庫轉換的過程可能會因內容轉換為新版本產生錯誤。通常，這些錯誤皆可安全忽略，即使如此，仍然有在執行 <command>pkg2ng</command> 後無法成功轉換的軟體清單，這些應用程式則必須手動重新安裝。</para>
       </note>
 
-      <para>為了確保 FreeBSD Port 套件集會將新軟體的資訊註冊到 <application>pkg</application> 而非舊版套件格式，FreeBSD 版本 10.<replaceable>X</replaceable> 之前需要在 <filename>/etc/make.conf</filename> 加入此行：</para>
+      <para>為了確保 FreeBSD Port 套件集會將新軟體的資訊註冊到 <application>pkg</application> 而非舊版套件資料庫，FreeBSD 版本 10.<replaceable>X</replaceable> 之前需要在 <filename>/etc/make.conf</filename> 加入此行：</para>
 
       <programlisting xml:lang="en">WITH_PKGNG=	yes</programlisting>
 
-      <para>預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站。若要取得有關編譯自訂套件檔案庫的資訊，請參考 
-<xref linkend="ports-poudriere"/></para>
+      <para>預設 <application>pkg</application> 會使用 FreeBSD 套件鏡像站 (<emphasis>Repository</emphasis>) 的 Binary 套件。若要取得有關編譯自訂套件檔案庫的資訊，請參考 <xref linkend="ports-poudriere"/>。</para>
 
       <para>其他 <application>pkg</application> 設定選項說明請參考 <citerefentry><refentrytitle>pkg.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
 
@@ -6319,7 +6332,7 @@ Proceed with deleting packages [y/N]: <userinput>y</userinput>
     <sect2 xml:id="pkgng-auditing">
       <title>稽查已安裝套件</title>
 
-      <para>偶爾可能會在第三方的應用程式中發現軟體漏洞，要找出這些程式，可使用 <application>pkg</application> 內建的稽查機制。要查詢已安裝在系統上的軟體是否有任何已知的漏洞可執行：</para>
+      <para>在第三方的應用程式中偶爾可能會發現軟體漏洞，要找出這些程式，可使用 <application>pkg</application> 內建的稽查機制。要查詢已安裝在系統上的軟體是否有任何已知的漏洞可執行：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg audit -F</userinput></screen>
     </sect2>
@@ -6401,7 +6414,11 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
   <sect1 xml:id="ports-using">
     <title>使用 Port 套件集</title>
 
-    <para>Port 套件集是指一系列儲存在 <filename>/usr/ports</filename> 的 <filename>Makefiles</filename>、修補及描述檔，這一系列檔案用來編譯與安裝在 FreeBSD 上的應用程式。在使用 Port 安裝應用程式前，必須先安裝 Port 套件集，若未在安裝 FreeBSD 的過程式中安裝，可使用下列其中一種方法來安裝：</para>
+    <para>Port 套件集是指一數個 <filename>Makefiles</filename>、修補及描述檔案，每一組這些檔案可用來編譯與安裝在 FreeBSD 上的一個應用程式，即種為一個 <emphasis>Port</emphasis>。</para>
+
+    <para>預設，Port 套件集儲存在 <filename>/usr/ports</filename> 的子目錄下。</para>
+
+    <para>在應用程式可以使用 Port 編譯之前，必須先安裝 Port 套件集。若在安裝 FreeBSD 時沒有安裝，可以使用以下其中一種方式安裝：</para>
 
     <procedure xml:id="ports-using-portsnap-method">
       <title>Portsnap 方法</title>
@@ -6462,7 +6479,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       </step>
     </procedure>
 
-    <para>Port 套件集會安裝一系列代表軟體分類的目錄，每個分類底下的子目錄代表每隻應用程式。 這些子目錄又稱做 Port Skeleton，裡面檔案是用來告訴 FreeBSD 如何編譯與安裝該程式，每個 Port Skeleton 會含有以下檔案及目錄：</para>
+    <para>Port 套件集中含有代表不同軟體分類的目錄，每個分類底下的子目錄代表每個應用程式，每個內含數個用來告訴 FreeBSD 如何編譯與安裝該程式檔案的應用程式子目錄即稱作 <emphasis>Port Skeleton</emphasis>，每個 Port Skeleton 會含有以下檔案及目錄：</para>
 
     <itemizedlist>
       <listitem>
@@ -6642,7 +6659,20 @@ The deinstallation will free 229 kB
 	<para>在嘗試升級之前，請先從檔首閱讀 <filename>/usr/ports/UPDATING</filename> 來取得最近有那些 Port 已升級或系統已安裝。這個檔案中會說明各種問題及在升級 Port 時可能會需要使用者執行的額外步驟，例如檔案格式更改、設定檔位置更改、或任何與先前版本不相容的問題。留意那些與您要升級 Port 相關的指示，並依照這些指示執行升級。</para>
       </important>
 
-      <para>要執行實際的升級，可使用 <application>Portmaster</application> 或 <application>Portupgrade</application>。</para>
+      <sect3 xml:id="ports-upgrading-tools">
+	<title>升級與管理 Port 的工具</title>
+
+	<indexterm><primary>ports</primary> <secondary>upgrading-tools</secondary></indexterm>
+
+	<para>Port 套件集含有數個工具可以進行升級，每一種工具都有其優點及缺點。</para>
+
+	<para>以往大多 Port 安裝會使用 <application>Portmaster</application> 或 <application>Portupgrade</application>，現在有較新的 <application>Synth</application> 可使用。</para>
+
+	<note>
+	  <para>那一種工具對特定系統是最佳的選擇取決於系統管理員。建議在使用任何這些工具之前先備份資料。</para>
+	</note>
+
+      </sect3>
 
       <sect3 xml:id="portmaster">
 	<title>使用 <application>Portmaster</application> 升級 Port</title>
@@ -6651,7 +6681,7 @@ The deinstallation will free 229 kB
 	  <primary>portmaster</primary>
 	</indexterm>
 
-	<para><package>ports-mgmt/portmaster</package> 是可用來升級已安裝 Port 的小巧工具，它可不需要相依其他 Port 或資料庫便可在 FreeBSD 使用，要使用 Port 安裝此工具可：</para>
+	<para><package>ports-mgmt/portmaster</package> 是可用來升級已安裝 Port 的小巧工具，它只使用了隨 FreeBSD 基礎系統安裝的工具，不需要相依其他 Port 或資料庫便可在 FreeBSD 使用，要使用 Port 安裝此工具可：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/portmaster</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -6715,6 +6745,8 @@ The deinstallation will free 229 kB
 	<para><application>Portmaster</application> 也可用來安裝新的 Port 到系統，在編譯及安裝新 Port 前升級所有相依模組。要使用這個功能，要指定 Port 位於 Port 套件集中的位置：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster <replaceable>shells/bash</replaceable></userinput></screen>
+
+	<para>更多有關 <package>ports-mgmt/portmaster</package> 的資訊可至其 <filename>pkg-descr</filename> 取得。</para>
       </sect3>
 
       <sect3 xml:id="portupgrade">
@@ -6724,7 +6756,7 @@ The deinstallation will free 229 kB
 	  <primary>portupgrade</primary>
 	</indexterm>
 
-	<para>另一個可以用來升級 Port 的工具是 <application>Portupgrade</application>，可在 <package>ports-mgmt/portupgrade</package> 取得套件或 Port，此工具會安裝一套可以用來管理 Port 的應用程式，但是它需要相依 Ruby。要安裝該 Port：</para>
+	<para><package>ports-mgmt/portupgrade</package> 是另一個可以用來升級 Port 的工具，此工具會安裝一套可以用來管理 Port 的應用程式，它需要相依 Ruby。要安裝該 Port：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/portupgrade</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -6744,7 +6776,10 @@ The deinstallation will free 229 kB
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>portupgrade -PP gnome3</userinput></screen>
 
 	<para>若只想要下載 Port distfiles 或套件，使用 <option>-P</option> 參數。若不要編譯或安裝任何東西，使用 <option>-F</option>。請參考 <command>portupgrade</command> 的操作手冊來取得所有可用選項的更多資訊。</para>
+
+	<para>更多有關 <package>ports-mgmt/portupgrade</package> 的資訊可至其 <filename>pkg-descr</filename> 取得。</para>
       </sect3>
+
     </sect2>
 
     <sect2 xml:id="ports-disk-space">
@@ -6759,11 +6794,11 @@ The deinstallation will free 229 kB
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -C</userinput></screen>
 
-      <para>除此之外，許多過時的原始碼發行檔案會儲存在 <filename>/usr/ports/distfiles</filename>。若有安裝 <application>Portupgrade</application>，此指令將會刪除所有不再被任何 Port 所引用的 distfiles：</para>
+      <para>除此之外，許多過時的原始碼發行檔案會儲存在 <filename>/usr/ports/distfiles</filename>。使用 <application>Portupgrade</application> 刪除所有不再被任何 Port 所引用的 distfiles：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -D</userinput></screen>
 
-      <para>要使用 <application>Portupgrade</application> 來移除所有未被任何安裝在系統上的 Port 所引用的 distfiles：</para>
+      <para><application>Portupgrade</application> 可以移除所有未被任何安裝在系統上的 Port 所引用的 distfiles：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portsclean -DD</userinput></screen>
 
@@ -6771,9 +6806,9 @@ The deinstallation will free 229 kB
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>portmaster --clean-distfiles</userinput></screen>
 
-      <para>預設這個指令會互動的方式詢問使用者確認是否要刪除 distfile。</para>
+      <para>預設，若 distfile 應要被刪除，這個指令會以互動的方式向使用者確認。</para>
 
-      <para>除了以上指令外，<package>ports-mgmt/pkg_cutleaves</package> 套件或 Port 可自動移除不再需要使用的 Port。</para>
+      <para>除了以上指令外，<package>ports-mgmt/pkg_cutleaves</package> 可自動移除不再需要使用的 Port。</para>
     </sect2>
   </sect1>
 
@@ -6786,7 +6821,7 @@ The deinstallation will free 229 kB
 
     <para>雖然在系統上執行 <application>poudriere</application> 並不一定要使用 <acronym>ZFS</acronym>，但使用了是有幫助的。當使用了 <acronym>ZFS</acronym>，則必須在 <filename>/usr/local/etc/poudriere.conf</filename> 指定 <varname>ZPOOL</varname> 以及 <varname>FREEBSD_HOST</varname> 應設定到一個最近的鏡像站。定義 <varname>CCACHE_DIR</varname> 可開啟使用 <package role="port">devel/ccache</package> 快取的功能來快取編譯結果並減少那些需時常編譯的程式碼的編譯次數。將 <application>poudriere</application> 資料集放到一個獨立的目錄並掛載到 <filename>/poudriere</filename> 可能會比較方便，其他設定項目採用預設值便足夠。</para>
 
-    <para>偵測到的處理器數量可用來定義要同時執行多少個編譯。並請給予足夠的虛擬記憶體，不論是 <acronym>RAM</acronym> 或交換空間，若虛擬記憶體不足，編譯 Jail 將會停止並被清除，可能會造成奇怪的錯誤訊息。</para>
+    <para>偵測到的處理器數量可用來定義要同時執行多少個編譯。並給予足夠的虛擬記憶體，不論是 <acronym>RAM</acronym> 或交換空間，若虛擬記憶體不足，編譯 Jail 的動作將會停止並被清除，會造成奇怪的錯誤訊息。</para>
 
     <sect2 xml:id="poudriere-initialization">
       <title>初始化 Jail 與 Port 樹</title>
@@ -6859,9 +6894,9 @@ ports-mgmt/pkg
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>poudriere bulk -j <replaceable>10amd64</replaceable> -p <replaceable>local</replaceable> -z <replaceable>workstation</replaceable> -f <replaceable>10amd64-local-workstation-pkglist</replaceable></userinput></screen>
 
-      <para><keycombo action="simul"><keycap>Ctrl</keycap><keycap>t</keycap></keycombo> 可以顯示目前編譯的狀態，<application>Poudriere</application> 也會編譯在 <filename>/poudriere/logs/bulk/<replaceable>jailname</replaceable></filename> 中的檔案，可用在網頁伺服器來顯示編譯資訊。</para>
+      <para>在執行時，按下 <keycombo action="simul"><keycap>Ctrl</keycap><keycap>t</keycap></keycombo> 可以顯示目前編譯的狀態，<application>Poudriere</application> 也會編譯在 <filename>/poudriere/logs/bulk/<replaceable>jailname</replaceable></filename> 中的檔案，可用在網頁伺服器來顯示編譯資訊。</para>
 
-      <para>套件現在可以從 <application>poudriere</application> 檔案庫來安裝。</para>
+      <para>完成之後，新套件現在可以從 <application>poudriere</application> 檔案庫來安裝。</para>
 
       <para>要取得更多使用 <application>poudriere</application> 的資訊，請參考 <citerefentry vendor="ports"><refentrytitle>poudriere</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及主網站 <link xlink:href="https://github.com/freebsd/poudriere/wiki"/>。</para>
     </sect2>
@@ -6874,7 +6909,7 @@ ports-mgmt/pkg
 	enabled: no
 }</screen>
 
-      <para>通常最簡單要提供 poudriere 給客戶端的方式是透過 HTTP。安裝一個網頁伺服器來提供套件目錄，通常會像：<filename>/usr/local/poudriere/data/packages/<replaceable>10amd64</replaceable></filename>，其中 <filename>10amd64</filename> 是編譯的名稱。</para>
+      <para>通常最簡單要提供 poudriere 檔案庫給客戶端的方式是透過 HTTP。安裝一個網頁伺服器來提供套件目錄，通常會像：<filename>/usr/local/poudriere/data/packages/<replaceable>10amd64</replaceable></filename>，其中 <filename>10amd64</filename> 是編譯的名稱。</para>
 
       <para>若要連往套件檔案庫的 URL 是：<literal>http://pkg.example.com/10amd64</literal>，則在 <filename>/usr/local/etc/pkg/repos/custom.conf</filename> 的檔案庫設定檔為：</para>
 
@@ -6892,7 +6927,7 @@ ports-mgmt/pkg
 
     <itemizedlist>
       <listitem>
-	<para>大部份應用程式安裝會在 <filename>/usr/local/etc</filename> 安裝至少一個預設的設定檔，在應用程式有大量設定檔的情況會建立一個子目錄來存放這些設定檔。範例的設定檔名通常會使用 <filename>.sample</filename> 結尾，應要檢查這些檔案的內容，並可能要做一些編輯讓設定檔符合系統的需求，要編輯設定檔範本前需先複製該檔案並去除 <filename>.sample</filename> 副檔名。</para>
+	<para>大部份應用程式安裝會在 <filename>/usr/local/etc</filename> 安裝至少一個預設的設定檔，若應用程式有大量設定檔的時則會建立一個子目錄來存放這些設定檔。範例的設定檔案名稱通常使用 <filename>.sample</filename> 結尾，設定檔應要仔細查看並可能要做一些編輯讓設定檔符合系統的需求，要編輯設定檔範本前需先複製該檔案並去除 <filename>.sample</filename> 副檔名。</para>
       </listitem>
 
       <listitem>
@@ -6901,6 +6936,14 @@ ports-mgmt/pkg
 
       <listitem>
 	<para>部份應用程式會以服務的方式執行，在啟動應用程式前前需要加入設定到 <filename>/etc/rc.conf</filename>。這些應用程式通常會安裝啟動 Script 到 <filename>/usr/local/etc/rc.d</filename>，請參考 <link linkend="configtuning-starting-services">啟動服務</link> 來取得更多資訊。</para>
+
+	<note>
+	  <para xml:lang="en">By design, applications do not run their startup
+	    script upon installation, nor do they run their stop
+	    script upon deinstallation or upgrade.  This decision
+	    is left to the individual system administrator.</para>
+	</note>
+
       </listitem>
 
       <listitem>
@@ -6927,9 +6970,9 @@ ports-mgmt/pkg
 	<para>尋求維護人員的協助，在 Port Skeleton 目錄中輸入 <command>make maintainer</command> 或閱讀 Port 的 <filename>Makefile</filename> 來取得維護人員的電子郵件位址。寄給維護人員的郵件內容請記得要包含 Port 的 <filename>Makefile</filename> 中的 <literal>$FreeBSD:</literal> 一整行及輸出的錯誤訊息。</para>
 
 	<note>
-	  <para>有一些 Port 並非由個人維護，而是由 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/mailing-list-faq/article.html">郵遞論壇</link> 維護，只要郵件地址長的像 <email role="nolink">freebsd-listname@FreeBSD.org</email> 都是，寄信時記得代入實際的論壇名稱。</para>
+	  <para>有一些 Port 並非由個人維護，而是由 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/mailing-list-faq/article.html">郵遞論壇</link> 維護，有許多，但並非全部，只要郵件地址長的像 <email role="nolink">freebsd-listname@FreeBSD.org</email> 都是，寄信時記得代入實際的論壇名稱。</para>
 
-	  <para>尤其是顯示 <email role="nolink">ports@FreeBSD.org</email> 的  Port  都不是由特定個人維護，該 Port 的修正與支援來自訂閱該郵遞論壇的一般社群所提供，我們非常歡迎志工參與。</para>
+	  <para>尤其是由 <email role="nolink">ports@FreeBSD.org</email> 所維護的  Port  都不是由特定個人維護，而該 Port 的修正與支援都是來自訂閱該郵遞論壇的一般社群所提供，我們隨時歡迎志工參與!</para>
 	</note>
 
 	<para>若寄信後沒有取得任何回應，可以依照 <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/problem-reports/article.html">撰寫 FreeBSD 問題回報</link> 的說明使用 Bugzilla 提出問題回報。</para>
@@ -6950,7 +6993,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 49376 2016-09-09 15:33:51Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 49905 2017-01-29 16:14:25Z wblock $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -6977,7 +7020,7 @@ ports-mgmt/pkg
     <para>使用 <application>bsdinstall</application> 安裝 FreeBSD 並不會自動安裝圖型化使用者介面。本章將說明如何安裝並設定 <application>Xorg</application>，該應用程式提供開放源碼的 X Window 系統來提供圖型化環境。接著會說明如何找到並安裝桌面環境或視窗管理程式。</para>
 
     <note>
-      <para>偏好安裝時會自動設定 <application>Xorg</application> 並且在安裝過程提供視窗管理程式選項的使用者請參考 <link xlink:href="http://www.pcbsd.org/">pcbsd.org</link> 網站。</para>
+      <para>偏好安裝時會自動設定 <application>Xorg</application> 並且在安裝過程提供視窗管理程式選項的使用者請參考 <link xlink:href="http://www.trueos.org/"/> 網站。</para>
     </note>
 
     <para>更多有關 <application>Xorg</application> 支援影像硬體資訊，請參考 <link xlink:href="http://www.x.org/">x.org</link> 網站。</para>
@@ -7084,16 +7127,16 @@ ports-mgmt/pkg
 
     <para>在 FreeBSD，<application>Xorg</application> 可透過套件或 Port 來安裝。</para>
 
+    <para>使用 Binary 套件的安裝速度較快，但可用的自訂選項較少：</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install xorg</userinput></screen>
+
     <para>要從 Port 套件集編譯與安裝：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/x11/xorg</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-    <para>使用 Binary 套件安裝快速，但可用的自訂選項較少：</para>
-
-    <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install xorg</userinput></screen>
-
-    <para>兩種安裝方式皆可完整安裝 <application>Xorg</application> 系統。此方式較建議大多數使用者。</para>
+    <para>兩種安裝方式皆可完整安裝 <application>Xorg</application> 系統，對大多數使用者較建議使用 Binary 套件安裝。</para>
 
     <para>較精簡版本的 X 系統適合給有經驗的使用者使用，可至 <package>x11/xorg-minimal</package> 取得。這個版本就不會安裝大多數的文件、函數庫以及應用程式，而部份應用程式會需要這些額外的元件才能運作。</para>
   </sect1>
@@ -7117,7 +7160,15 @@ ports-mgmt/pkg
     <sect2 xml:id="x-config-quick-start">
       <title>快速開始</title>
 
-      <para><application>Xorg</application> 支援大多數常見的顯示卡、鍵盤以及指標裝置，<application>Xorg</application> 會自動偵測這些裝置，並不需要手動設定。</para>
+      <para><application>Xorg</application> 支援大多數常見的顯示卡、鍵盤以及指標裝置。</para>
+
+      <tip>
+	<para xml:lang="en">Video cards, monitors, and input devices are
+	  automatically detected and do not require any manual
+	  configuration.  Do not create <filename>xorg.conf</filename>
+	  or run a <option>-configure</option> step unless automatic
+	  configuration fails.</para>
+      </tip>
 
       <procedure>
 	<step>
@@ -7165,6 +7216,10 @@ ports-mgmt/pkg
 
     <sect2 xml:id="x-config-files">
       <title>設定檔</title>
+
+      <para xml:lang="en">Manual configuration is usually not necessary.  Please do
+	not manually create configuration files unless
+	autoconfiguration does not work.</para>
 
       <sect3 xml:id="x-config-files-directory">
 	<title>目錄</title>
@@ -7524,6 +7579,12 @@ EndSection</programlisting>
 
       <para>在某些情況 <application>Xorg</application> 的自動設定無法在特定硬體上運作，或需要使用不同的設定。針對這些情況會建立自訂的設定檔。</para>
 
+      <warning>
+	<para xml:lang="en">Do not create manual configuration files unless
+	  required.  Unnecessary manual configuration can prevent
+	  proper operation.</para>
+      </warning>
+
       <para>設定檔可由 <application>Xorg</application> 根據偵測到的硬體產生，這個檔案對一開始自訂設定很有幫助。</para>
 
       <para>產生 <filename>xorg.conf</filename>：</para>
@@ -7557,7 +7618,11 @@ EndSection</programlisting>
 
       <para>由於 <application>Xorg</application> 內建的預設字型用在典型的桌面出版應用程式並不是很理想，大字型會呈現鋸齒狀邊緣，看起來很不專業，小字型幾乎完全看不清楚。不過，這裡有幾個免費高品質的 Type1 (<trademark class="registered">PostScript</trademark>) 字型可用，且能容易的在 <application>Xorg</application> 使用。例如，URW 字型集 (<trademark class="registered">Times Roman</trademark>, <trademark class="registered">Helvetica</trademark>, <trademark class="registered">Palatino</trademark> 及其他)。 Freefont 字型集 (<package>x11-fonts/freefonts</package>) 包含了更多的字型，但其中大部分是給圖形軟體如 GIMP 所使用的字型，並不能完全作為螢幕字型使用。此外，<application>Xorg</application> 可以簡單的設定使用 <trademark class="registered">TrueType</trademark> 字型。更多有關本主題的詳細資訊，請參考 <citerefentry vendor="xfree86"><refentrytitle>X</refentrytitle><manvolnum>7</manvolnum></citerefentry> 操作手冊或 <xref linkend="truetype"/>。</para>
 
-      <para>要從 Port 套件集安裝上述的 Type1 字型集可執行以下指令：</para>
+      <para>要由 Binary 套件安裝上述的 Type1 字型集可執行以下指令：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install urwfonts</userinput></screen>
+
+      <para>或由 Port 套件集編譯，可執行以下指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/x11-fonts/urwfonts</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -8358,7 +8423,7 @@ EndSection</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 48658 2016-04-17 11:28:39Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 49854 2017-01-15 02:54:36Z sevan $
 -->
 <chapter version="5.0" xml:id="desktop">
   <!--
@@ -8485,7 +8550,11 @@ EndSection</programlisting>
     <sect3 xml:id="moz-java-plugin">
       <title>Firefox 與 <trademark>Java</trademark> 附加元件</title>
 
-      <para><application>Firefox</application> 的安裝並不包含 <trademark>Java</trademark> 支援，雖然如此 <package>java/icedtea-web</package> 提供了免費的網頁瀏覽器附加元件來執行 Java applet，此附加元件可以用 Binary  套件安裝或者自 Port 編譯：</para>
+      <para><application>Firefox</application> 的安裝並不包含 <trademark>Java</trademark> 支援，雖然如此 <package>java/icedtea-web</package> 提供了免費的網頁瀏覽器附加元件來執行 Java applet，此附加元件可以用 Binary  套件安裝：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install icedtea-web</userinput></screen>
+
+      <para>或由 Port 套件集編譯：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/java/icedtea-web</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -8595,7 +8664,11 @@ EndSection</programlisting>
 
       <para><application>Konqueror</application> 不只是個網頁瀏覽器， 它同時也是檔案管理器和多媒體瀏覽器。它包含在 <package>x11/kde4-baseapps</package> 套件或 Port 中。</para>
 
-      <para><application>Konqueror</application> 使用支援 WebKit 以及它自有的 KTHML。WebKit  是一套被許多現代瀏覽器所使用的繪圖引擎，包含 Chromium。要在 FreeBSD 的 <application>Konqueror</application> 使用 WebKit 需安裝 <package>www/kwebkitpart</package> 套件或 Port。此範例示範使用 Port 編譯：</para>
+      <para><application>Konqueror</application> 使用支援 WebKit 以及它自有的 KTHML。WebKit  是一套被許多現代瀏覽器所使用的繪圖引擎，包含 Chromium。要在 FreeBSD 的 <application>Konqueror</application> 使用 WebKit 需安裝 <package>www/kwebkitpart</package> 套件或 Port。此範例示範使用 Binary 套件安裝：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install kwebkitpart</userinput></screen>
+
+      <para>由 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/kwebkitpart</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -9134,7 +9207,7 @@ EndSection</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 49918 2017-02-04 08:01:15Z ryusuke $
 -->
 <chapter version="5.0" xml:id="multimedia">
 
@@ -10397,7 +10470,11 @@ bktr0: Pinnacle/Miro TV, Philips SECAM tuner.</programlisting>
     <sect2>
       <title>設定 MythTV 後端</title>
 
-      <para xml:lang="en">To install MythTV using the port:</para>
+      <para>要使用 Binary 套件安裝 MythTV 可：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install mythtv</userinput></screen>
+
+      <para>或由 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/multimedia/mythtv</userinput>
 <prompt>#</prompt> <userinput>make install</userinput></screen>
@@ -10543,6 +10620,17 @@ Re-scan of bus 3 was successful</screen>
 	<application>xscanimage</application> while
 	<package>graphics/xsane</package> installs
 	<application>xsane</application>.</para>
+
+      <para>要由 Binary 套件安裝這兩個部份可：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install xsane sane-frontends</userinput></screen>
+
+      <para>或由 Port 套件集安裝：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/sane-frontends</userinput>
+<prompt>#</prompt> <userinput>make install clean</userinput>
+<prompt>#</prompt> <userinput>cd /usr/ports/graphics/xsane</userinput>
+<prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
       <para xml:lang="en">After installing the
 	<package>graphics/sane-backends</package> port or package, use
@@ -48110,7 +48198,7 @@ iscsictl_flags="-Aa"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 49796 2017-01-04 18:42:26Z maxim $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 49919 2017-02-04 09:47:56Z bcr $
 -->
 <chapter version="5.0" xml:id="firewalls">
 
@@ -49608,7 +49696,7 @@ rdr pass on $ext_if inet proto tcp from !&lt;spamd-white&gt; to \
 	<programlisting xml:lang="en">scrub in all</programlisting>
 
 	<para xml:lang="en">Some services, such as <acronym>NFS</acronym>, require
-	  specific fragment handling options.  Refer to <link xlink:href="http://www.openbsd.gr/faq/pf/scrub.html">http://www.openbsd.gr/faq/pf/scrub.html</link>
+	  specific fragment handling options.  Refer to <link xlink:href="https://home.nuug.no/~peter/pf/en/scrub.html">https://home.nuug.no/~peter/pf/en/scrub.html</link>
 	  for more information.</para>
 
 	<para xml:lang="en">This example reassembles fragments, clears the
