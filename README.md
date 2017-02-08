@@ -128,7 +128,7 @@ pkg install poedit
 | Fail | 失效 | RAID, ZFS |
 | Parity | 奇偶校驗 | RAID, ZFS |
 | Checksum | 校驗碼, 資料校驗 | RAID, ZFS | 
-
+| Gateway | 通訊閘 | 網路 |
 # PO 線上協同翻譯平台
 * https://hosted.weblate.org/
 * https://translatewiki.net/
