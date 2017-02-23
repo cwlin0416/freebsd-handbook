@@ -17,9 +17,14 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 - [ ] 完成 Part 3 翻譯
   - [X] 19. Z 檔案系統 (ZFS)
   - [X] 11. 設定與調校
-  - [ ] 12. FreeBSD 開機程序
-  - [ ] 23. 更新與升級 FreeBSD
+  - [X] 12. FreeBSD 開機程序
+  - [X] 23. 更新與升級 FreeBSD
+    - [ ] 23.6. 重新編譯 World
   - [ ] 13. 安全性
+    - [ ] 13.3. 一次性密碼
+    - [ ] 13.8. OpenSSH
+    - [ ] 13.10. 監視第三方安全性問題
+    - [ ] 13.14. 使用 Sudo 分享管理權限
 
 # 如何翻譯?
 * [FreeBSD Handbook - EN](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) 為操作手冊原文
