@@ -25,6 +25,12 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
     - [ ] 13.8. OpenSSH
     - [ ] 13.10. 監視第三方安全性問題
     - [ ] 13.14. 使用 Sudo 分享管理權限
+- [ ] 完成 Part 4 翻譯
+  - [ ] 28. 網路伺服器
+    - [ ] 28.8. Apache HTTP 伺服器
+    - [ ] 28.9. 檔案傳輸協定 (FTP)
+    - [ ] 28.10. Microsoft® Windows® 用戶端檔案與列印服務 (Samba)
+    - [ ] 28.11. NTP 時間校對
 
 # 如何翻譯?
 * [FreeBSD Handbook - EN](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) 為操作手冊原文
