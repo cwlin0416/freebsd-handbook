@@ -2258,7 +2258,7 @@
 	  </listitem>
 
 	  <listitem>
-	    <para>預設閘道器 <acronym>IP</acronym> 位址</para>
+	    <para>預設通訊閘 <acronym>IP</acronym> 位址</para>
 	  </listitem>
 
 	  <listitem>
@@ -3253,7 +3253,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</listitem>
 
 	<listitem>
-	  <para>預設路由器 (<literal>Default Router</literal>) - <acronym>IP</acronym> 位址所在網段的預設閘道器。</para>
+	  <para>預設路由器 (<literal>Default Router</literal>) - <acronym>IP</acronym> 位址所在網段的預設通訊閘。</para>
 	</listitem>
       </itemizedlist>
 
@@ -3301,7 +3301,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</listitem>
 
 	<listitem>
-	  <para>預設路由器 (<literal>Default Router</literal>) - <acronym>IPv6</acronym> 位址所在網段的預設閘道器。</para>
+	  <para>預設路由器 (<literal>Default Router</literal>) - <acronym>IPv6</acronym> 位址所在網段的預設通訊閘。</para>
 	</listitem>
       </itemizedlist>
 
@@ -6414,7 +6414,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
   <sect1 xml:id="ports-using">
     <title>使用 Port 套件集</title>
 
-    <para>Port 套件集是指一數個 <filename>Makefiles</filename>、修補及描述檔案，每一組這些檔案可用來編譯與安裝在 FreeBSD 上的一個應用程式，即種為一個 <emphasis>Port</emphasis>。</para>
+    <para>Port 套件集是指一數個 <filename>Makefiles</filename>、修補及描述檔案，每一組這些檔案可用來編譯與安裝在 FreeBSD 上的一個應用程式，即稱為一個 <emphasis>Port</emphasis>。</para>
 
     <para>預設，Port 套件集儲存在 <filename>/usr/ports</filename> 的子目錄下。</para>
 
@@ -6938,10 +6938,7 @@ ports-mgmt/pkg
 	<para>部份應用程式會以服務的方式執行，在啟動應用程式前前需要加入設定到 <filename>/etc/rc.conf</filename>。這些應用程式通常會安裝啟動 Script 到 <filename>/usr/local/etc/rc.d</filename>，請參考 <link linkend="configtuning-starting-services">啟動服務</link> 來取得更多資訊。</para>
 
 	<note>
-	  <para xml:lang="en">By design, applications do not run their startup
-	    script upon installation, nor do they run their stop
-	    script upon deinstallation or upgrade.  This decision
-	    is left to the individual system administrator.</para>
+	  <para>依設計，應用程式不會在安裝時執行其啟動 Script，也不會在解除安裝或升級時執行其中止 Script，這留給各系統的管理者去做決定。</para>
 	</note>
 
       </listitem>
@@ -7163,11 +7160,7 @@ ports-mgmt/pkg
       <para><application>Xorg</application> 支援大多數常見的顯示卡、鍵盤以及指標裝置。</para>
 
       <tip>
-	<para xml:lang="en">Video cards, monitors, and input devices are
-	  automatically detected and do not require any manual
-	  configuration.  Do not create <filename>xorg.conf</filename>
-	  or run a <option>-configure</option> step unless automatic
-	  configuration fails.</para>
+	<para>顯示卡、顯示器以及輸入裝置會自動偵測，無須任何手動設置。除非自動設置失敗，否則請勿建立 <filename>xorg.conf</filename> 或執行 <option>-configure</option> 步驟。</para>
       </tip>
 
       <procedure>
@@ -7217,9 +7210,7 @@ ports-mgmt/pkg
     <sect2 xml:id="x-config-files">
       <title>設定檔</title>
 
-      <para xml:lang="en">Manual configuration is usually not necessary.  Please do
-	not manually create configuration files unless
-	autoconfiguration does not work.</para>
+      <para>通常不需要做手動設置，除非自動設置無法運作，否則請不要手動建立設定檔。</para>
 
       <sect3 xml:id="x-config-files-directory">
 	<title>目錄</title>
@@ -7580,9 +7571,7 @@ EndSection</programlisting>
       <para>在某些情況 <application>Xorg</application> 的自動設定無法在特定硬體上運作，或需要使用不同的設定。針對這些情況會建立自訂的設定檔。</para>
 
       <warning>
-	<para xml:lang="en">Do not create manual configuration files unless
-	  required.  Unnecessary manual configuration can prevent
-	  proper operation.</para>
+	<para>非必要請勿手動建立設定檔，非必要的手動設置會造成運作不正常。</para>
       </warning>
 
       <para>設定檔可由 <application>Xorg</application> 根據偵測到的硬體產生，這個檔案對一開始自訂設定很有幫助。</para>
@@ -14666,7 +14655,7 @@ ifconfig_dc1="inet 10.0.0.1 netmask 255.255.255.0 media 10baseT/UTP"</programlis
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service netif restart</userinput></screen>
 
       <note>
-	<para>若預設的閘道器已設定於 <filename>/etc/rc.conf</filename> 也同樣要下這個指令：</para>
+	<para>若預設的通訊閘已設定於 <filename>/etc/rc.conf</filename> 也同樣要下這個指令：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>service routing restart</userinput></screen>
       </note>
@@ -16193,56 +16182,11 @@ kern.maxvnodes: 100000</screen>
       </authorgroup>
     </info>
 
-    <para xml:lang="en">It is important to utilize hardware resources in an
-      efficient manner.  Power and resource management allows the
-      operating system to monitor system limits and to possibly
-      provide an alert if the system temperature increases
-      unexpectedly.  An early specification for providing power
-      management was the Advanced Power Management
-      (<acronym>APM</acronym>) facility.  <acronym>APM</acronym>
-      controls the power usage of a system based on its activity.
-      However, it was difficult and inflexible for operating systems
-      to manage the power usage and thermal properties of a system.
-      The hardware was managed by the <acronym>BIOS</acronym> and the
-      user had limited configurability and visibility into the power
-      management settings.  The <acronym>APM</acronym>
-      <acronym>BIOS</acronym> is supplied by the vendor and is
-      specific to the hardware platform.  An <acronym>APM</acronym>
-      driver in the operating system mediates access to the
-      <acronym>APM</acronym> Software Interface, which allows
-      management of power levels.</para>
+    <para>以有效率的方式運用硬體資源是很重要的，電源與資源管理讓作業系統可以監控系統的限制，並且在系統溫度意外升高時能夠發出警報。早期提供電源管理的規範是進階電源管理 (Advanced Power Management, <acronym>APM</acronym>)，<acronym>APM</acronym> 可根據系統的使用狀況來來控制電源用量。然而，使用 <acronym>APM</acronym> 要作業系統來管理系統的電源用量和溫度屬性是困難且沒有彈性的，因為硬體是由 <acronym>BIOS</acronym> 所管理，使用者對電源管理設定只有有限的設定性與可見性，且 <acronym>APM</acronym> <acronym>BIOS</acronym> 是由供應商提供且特定於某些硬體平台，而作業系統中必透過 <acronym>APM</acronym> 驅動程式做為中介存取 <acronym>APM</acronym> 軟體介面才能夠管理電源等級。</para>
 
-    <para xml:lang="en">There are four major problems in <acronym>APM</acronym>.
-      First, power management is done by the vendor-specific
-      <acronym>BIOS</acronym>, separate from the operating system.
-      For example, the user can set idle-time values for a hard drive
-      in the <acronym>APM</acronym> <acronym>BIOS</acronym> so that,
-      when exceeded, the <acronym>BIOS</acronym> spins down the hard
-      drive without the consent of the operating system.  Second, the
-      <acronym>APM</acronym> logic is embedded in the
-      <acronym>BIOS</acronym>, and it operates outside the scope of
-      the operating system.  This means that users can only fix
-      problems in the <acronym>APM</acronym>
-      <acronym>BIOS</acronym> by flashing a new one into the
-      <acronym>ROM</acronym>, which is a dangerous procedure with the
-      potential to leave the system in an unrecoverable state if it
-      fails.  Third, <acronym>APM</acronym> is a vendor-specific
-      technology, meaning that there is a lot of duplication of
-      efforts and bugs found in one vendor's <acronym>BIOS</acronym>
-      may not be solved in others.  Lastly, the <acronym>APM</acronym>
-      <acronym>BIOS</acronym> did not have enough room to implement a
-      sophisticated power policy or one that can adapt well to the
-      purpose of the machine.</para>
+    <para>在 <acronym>APM</acronym> 有四個主要的問題。第一，電源管理是由供應商特定的 <acronym>BIOS</acronym> 來完成，與作業系統是分開的。例如，使用者可在 <acronym>APM</acronym> <acronym>BIOS</acronym> 設定硬碟的閒置時間值，在超過時間時 <acronym>BIOS</acronym> 可在未徵得作業系統的同意下降低硬碟的轉速。第二，<acronym>APM</acronym> 的邏輯是內嵌在 <acronym>BIOS</acronym> 當中的，並且在作業系統範圍之外運作，這代表使用者只能夠透過燒錄新的韌體到 <acronym>ROM</acronym> 來修正 <acronym>APM</acronym> <acronym>BIOS</acronym> 中的問題，而這樣的程序是危險的，若失敗，可能會讓系統進入無法復原的狀態。第三，<acronym>APM</acronym> 是供應商特定的技術，這代表有許多重複的工作，在一個供應商的 <acronym>BIOS</acronym> 找到的問題在其他的供應商卻沒有解決。最後一點，<acronym>APM</acronym> <acronym>BIOS</acronym> 並沒有足夠的空間來實作複雜的電源管理政策或可良好適應主機用途的程式。</para>
 
-    <para xml:lang="en">The Plug and Play <acronym>BIOS</acronym>
-      (<acronym>PNPBIOS</acronym>) was unreliable in many situations.
-      <acronym>PNPBIOS</acronym> is 16-bit technology, so the
-      operating system has to use 16-bit emulation in order to
-      interface with <acronym>PNPBIOS</acronym> methods.  FreeBSD
-      provides an <acronym>APM</acronym> driver as
-      <acronym>APM</acronym> should still be used for systems
-      manufactured at or before the year 2000.  The driver is
-      documented in <citerefentry><refentrytitle>apm</refentrytitle><manvolnum>4</manvolnum></citerefentry>.</para>
+    <para>Plug and Play <acronym>BIOS</acronym> (<acronym>PNPBIOS</acronym>) 在很多情況下並不可靠，<acronym>PNPBIOS</acronym> 是 16 位元的技術，所以作業系統必須模擬 16 位元才能存取 <acronym>PNPBIOS</acronym>。FreeBSD 提供了一個 <acronym>APM</acronym> 驅動程式來做 <acronym>APM</acronym>，應可用在 2000 年之前所製造的系統，該驅動程式的說明於 <citerefentry><refentrytitle>apm</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</para>
 
     <indexterm xml:lang="en">
       <primary>ACPI</primary>
@@ -16252,55 +16196,22 @@ kern.maxvnodes: 100000</screen>
       <primary>APM</primary>
     </indexterm>
 
-    <para xml:lang="en">The successor to <acronym>APM</acronym> is the Advanced
-      Configuration and Power Interface (<acronym>ACPI</acronym>).
-      <acronym>ACPI</acronym> is a standard written by an alliance of
-      vendors to provide an interface for hardware resources and power
-      management.  It is a key element in <emphasis>Operating
-	System-directed configuration and Power Management</emphasis>
-      as it provides more control and flexibility to the operating
-      system.</para>
+    <para><acronym>APM</acronym> 的後繼者是進階設置與電源介面 (Advanced Configuration and Power Interface, <acronym>ACPI</acronym>)。<acronym>ACPI</acronym> 是一套由供應商聯盟所搛寫出的標準，提供了硬體資源與電源管理的介面，它是 <emphasis>作業系統直接設置與電源管理 (Operating System-directed configuration and Power Management)</emphasis> 關鍵的要素，提供了作業系統更多的控制方式與彈性。</para>
 
-    <para xml:lang="en">This chapter demonstrates how to configure
-      <acronym>ACPI</acronym> on FreeBSD.  It then offers some tips on
-      how to debug <acronym>ACPI</acronym> and how to submit a problem
-      report containing debugging information so that developers can
-      diagnosis and fix <acronym>ACPI</acronym> issues.</para>
+    <para>本章節將示範如何在 FreeBSD 設定 <acronym>ACPI</acronym>，然後提供一些如何對 <acronym>ACPI</acronym> 除錯的提示以及如何提交包含除錯資訊的問題回報，讓開發人員能夠診斷並修正 <acronym>ACPI</acronym> 的問題。</para>
 
     <sect2 xml:id="acpi-config">
       <title>設定 <acronym>ACPI</acronym></title>
 
-      <para xml:lang="en">In FreeBSD the <citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver is loaded by default at
-	system boot and should <emphasis>not</emphasis> be compiled
-	into the kernel.  This driver cannot be unloaded after boot
-	because the system bus uses it for various hardware
-	interactions.  However, if the system is experiencing
-	problems, <acronym>ACPI</acronym> can be disabled altogether
-	by rebooting after setting
-	<literal>hint.acpi.0.disabled="1"</literal> in
-	<filename>/boot/loader.conf</filename> or by setting this
-	variable at the loader prompt, as described in <xref linkend="boot-loader"/>.</para>
+      <para>在 FreeBSD <citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式預設會在系統開始時載入，且<emphasis>不</emphasis>應被編譯到核心當中。這個驅動程式在開機之後無法被卸載，因為系統匯流排會使用它做各種硬體互動。雖然如此，若系統遇到問題，<acronym>ACPI</acronym> 還是可以被關閉，在 <filename>/boot/loader.conf</filename> 中設定 <literal>hint.acpi.0.disabled="1"</literal> 之後重新開機或在載入程式提示時設定這個變數，如 <xref linkend="boot-loader"/> 中的說明。</para>
 
       <note>
-	<para xml:lang="en"><acronym>ACPI</acronym> and <acronym>APM</acronym>
-	  cannot coexist and should be used separately.  The last one
-	  to load will terminate if the driver notices the other is
-	  running.</para>
+	<para><acronym>ACPI</acronym> 與 <acronym>APM</acronym> 不能同時存在且應分開使用，若有偵測到有另一個正在執行，要載入的後者將會中斷。</para>
       </note>
 
-      <para xml:lang="en"><acronym>ACPI</acronym> can be used to put the system into
-	a sleep mode with <command>acpiconf</command>, the
-	<option>-s</option> flag, and a number from
-	<literal>1</literal> to <literal>5</literal>.  Most users only
-	need <literal>1</literal> (quick suspend to
-	<acronym>RAM</acronym>) or <literal>3</literal> (suspend to
-	<acronym>RAM</acronym>).  Option <literal>5</literal> performs
-	a soft-off which is the same as running
-	<command>halt -p</command>.</para>
+      <para><acronym>ACPI</acronym> 可以用來讓系統進入睡眠模式，使用 <command>acpiconf</command> 與 <option>-s</option> 旗標再加上由 <literal>1</literal> 到 <literal>5</literal> 的數字。大多數使用者只需使用 <literal>1</literal> (快速待命到 <acronym>RAM</acronym>) 或 <literal>3</literal> (待命到 <acronym>RAM</acronym>)，選項 <literal>5</literal> 會執行軟關機 (Soft-off)，如同執行 <command>halt -p</command> 一樣。</para>
 
-      <para xml:lang="en">Other options are available using
-	<command>sysctl</command>.  Refer to <citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry> and
-	<citerefentry vendor="current"><refentrytitle>acpiconf</refentrytitle><manvolnum>8</manvolnum></citerefentry> for more information.</para>
+      <para>其他的選項可使用 <command>sysctl</command> 來設定，請參考 <citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry> 以及 <citerefentry vendor="current"><refentrytitle>acpiconf</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多資訊。</para>
     </sect2>
 
     <sect2 xml:id="ACPI-comprob">
@@ -16882,7 +16793,7 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
 
     <para>打開電腦並啟動作業系統的這個動作呈現了一個有趣的困境。照道理，電腦在啟動作業系統之前並不知道要如何做任何事情，這些事情之中包括從磁碟執行程式。如果電腦無法在沒有作業系統的情況下執行程式，而作業系統的程式本身又在磁碟上，那麼作業系統要如何啟動呢?</para>
 
-    <para>這個問題如同 <citetitle>The Adventures of Baron Munchausen</citetitle> 一書中的一個角色掉進了洞裡，他抓住了靴子上的拔靴帶 (Bootstrap) 才把自己拉了出來，因此在期電腦領域用 <firstterm>bootstrap</firstterm> 一詞來指載入作業系統的機制，後來被縮短為 <quote>booting</quote>。</para>
+    <para>這個問題如同 <citetitle>The Adventures of Baron Munchausen</citetitle> 一書中的一個角色掉進了洞裡，他抓住了靴子上的拔靴帶 (Bootstrap) 才把自己拉了出來，因此在早期電腦領域用 <firstterm>bootstrap</firstterm> 一詞來指載入作業系統的機制，後來被縮短為 <quote>booting</quote>。</para>
 
     <indexterm xml:lang="en"><primary><acronym>BIOS</acronym></primary></indexterm>
 
@@ -17035,7 +16946,7 @@ boot:</screen>
 	      <entry xml:lang="en">load <optional>-t
 		  <replaceable>type</replaceable></optional>
 		<replaceable>filename</replaceable></entry>
-	      <entry>由指定的檔案名稱載入核心、核心模組或指定類型的檔案。任何於 <replaceable>filename</replaceable> 之後的參數都會被傳遞到該檔案。若 <emphasis>filename</emphasis> 不是決定位置則會搜尋 <emphasis>/boot/kernel</emphasis> 及 <emphasis>/boot/modules</emphasis> 底下。</entry>
+	      <entry>由指定的檔案名稱載入核心、核心模組或指定類型的檔案。任何於 <replaceable>filename</replaceable> 之後的參數都會被傳遞到該檔案。若 <emphasis>filename</emphasis> 不是絕對位置則會搜尋 <emphasis>/boot/kernel</emphasis> 及 <emphasis>/boot/modules</emphasis> 底下。</entry>
 	    </row>
 
 	    <row>
@@ -17113,13 +17024,7 @@ boot:</screen>
 	<primary><citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry></primary>
       </indexterm>
 
-      <para xml:lang="en">Once the kernel is loaded by either
-	<application>loader</application> or by
-	<application>boot2</application>, which bypasses
-	<application>loader</application>, it examines any boot flags
-	and adjusts its behavior as necessary.  <xref linkend="boot-kernel"/> lists the commonly used boot flags.
-	Refer to <citerefentry><refentrytitle>boot</refentrytitle><manvolnum>8</manvolnum></citerefentry> for more information on the other boot
-	flags.</para>
+      <para>由 <application>loader</application> 或由會繞開 <application>loader</application> 的 <application>boot2</application> 載入核心之後，載入程式便會檢查是不有使用任何開機旗標，並根據需要調整開機的方式。<xref linkend="boot-kernel"/> 列出了常用的開機旗標，請參考 <citerefentry><refentrytitle>boot</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得更多其他開機旗標的資訊。</para>
 
       <indexterm xml:lang="en">
 	<primary>kernel</primary>
@@ -17140,44 +17045,30 @@ boot:</screen>
 	  <tbody>
 	    <row>
 	      <entry xml:lang="en"><option>-a</option></entry>
-	      <entry xml:lang="en">During kernel initialization, ask for the device
-		to mount as the root file system.</entry>
+	      <entry>核心初始化時，會詢問要掛載為根檔案系統的裝置。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><option>-C</option></entry>
-	      <entry xml:lang="en">Boot the root file system from a
-		<acronym>CDROM</acronym>.</entry>
+	      <entry>由 <acronym>CDROM</acronym> 做為根檔案系統開機。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><option>-s</option></entry>
-	      <entry xml:lang="en">Boot into single-user mode.</entry>
+	      <entry>開機進入單使用者模式。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><option>-v</option></entry>
-	      <entry xml:lang="en">Be more verbose during kernel startup.</entry>
+	      <entry>核心啟動時提供更多詳細資訊。</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
       </table>
 
-      <para xml:lang="en">Once the kernel has finished booting, it passes control to
-	the user process <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>, which is located at
-	<filename>/sbin/init</filename>, or the program path specified
-	in the <envar>init_path</envar> variable in
-	<command>loader</command>.  This is the last stage of the boot
-	process.</para>
+      <para>一旦核心完成開機程序後，便會傳送控制權給使用者程序 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>，該程序位於 <filename>/sbin/init</filename> 或在 <command>loader</command> 中的 <envar>init_path</envar> 變數所指的程式路徑。這是開機程序的最後一個階段。</para>
 
-      <para xml:lang="en">The boot sequence makes sure that the file systems
-	available on the system are consistent.  If a
-	<acronym>UFS</acronym> file system is not, and
-	<command>fsck</command> cannot fix the inconsistencies,
-	<application>init</application> drops the system into
-	single-user mode so that the system administrator can resolve
-	the problem directly.  Otherwise, the system boots into
-	multi-user mode.</para>
+      <para>開機程序會確保系統上的檔案系統的一致性 (Consistency)，若 <acronym>UFS</acronym> 檔案系統不一致且 <command>fsck</command> 無法修時，<application>init</application> 會讓系統進入單使用者模式，以讓系統管理者能夠直接解決問題，否則系統會開機進入多使用者模式。</para>
 
       <sect3 xml:id="boot-singleuser">
 	<title>單使用者模式</title>
@@ -17185,42 +17076,17 @@ boot:</screen>
 	<indexterm xml:lang="en"><primary>single-user mode</primary></indexterm>
 	<indexterm xml:lang="en"><primary>console</primary></indexterm>
 
-	<para xml:lang="en">A user can specify this mode by booting with
-	  <option>-s</option> or by setting the
-	  <envar>boot_single</envar> variable in
-	  <application>loader</application>.  It can also be reached
-	  by running <command>shutdown now</command> from multi-user
-	  mode.  Single-user mode begins with this message:</para>
+	<para>使用者可以在開機時指定 <option>-s</option> 或在 <application>loader</application> 設定 <envar>boot_single</envar> 變數進入這個模式。也可以透過在多使用者模式執行 <command>shutdown now</command> 進入此模式。進入單使用者模式時會出現此訊息：</para>
 
 	<programlisting xml:lang="en">Enter full pathname of shell or RETURN for /bin/sh:</programlisting>
 
-	<para xml:lang="en">If the user presses <keycap>Enter</keycap>, the system
-	  will enter the default Bourne shell.  To specify a different
-	  shell, input the full path to the shell.</para>
+	<para>若使用者按下 <keycap>Enter</keycap>，系統便會進入預設的 Bourne shell。要指定使用其他的 Shell 則輸入該 Shell 的完整路徑。</para>
 
-	<para xml:lang="en">Single-user mode is usually used to repair a system that
-	  will not boot due to an inconsistent file system or an error
-	  in a boot configuration file.  It can also be used to reset
-	  the <systemitem class="username">root</systemitem> password
-	  when it is unknown.  These actions are possible as the
-	  single-user mode prompt gives full, local access to the
-	  system and its configuration files.  There is no networking
-	  in this mode.</para>
+	<para>單使用者模式通常用來修復因檔案系統不一致或開機設定檔發生錯誤造成的無法開機，也可以用來重設遺忘的 <systemitem class="username">root</systemitem> 的密碼，因為在單使用者模式會給予對本地系統及設定檔完整的存取權。在這個模式下沒有網路功能。</para>
 
-	<para xml:lang="en">While single-user mode is useful for repairing a system,
-	  it poses a security risk unless the system is in a
-	  physically secure location.  By default, any user who can
-	  gain physical access to a system will have full control of
-	  that system after booting into single-user mode.</para>
+	<para>雖然單使用者模式對修復系統很有幫助，但若系統放在不安全的場所便會有安全上的風險。預設，開機進入單使用者模式後，任何能夠存取實體主機的使用者便擁有系統的完整控制權。</para>
 
-	<para xml:lang="en">If the system <literal>console</literal> is changed to
-	  <literal>insecure</literal> in
-	  <filename>/etc/ttys</filename>, the system will first prompt
-	  for the <systemitem class="username">root</systemitem>
-	  password before initiating single-user mode.  This adds a
-	  measure of security while removing the ability to reset the
-	  <systemitem class="username">root</systemitem> password when
-	  it is unknown.</para>
+	<para>若在 <filename>/etc/ttys</filename> 系統 <literal>console</literal> 更改為 <literal>insecure</literal>，系統便會在初始化單使用者模式前先詢問 <systemitem class="username">root</systemitem> 的密碼。這可增加一定程度的安全性，但便無法在忘記 <systemitem class="username">root</systemitem> 密碼時重設密碼。</para>
 
 	<example xml:id="boot-insecure-console">
 	  <title>在 <filename>/etc/ttys</filename> 設定不安全的 Console</title>
@@ -17232,10 +17098,7 @@ boot:</screen>
 console none                            unknown off <replaceable>insecure</replaceable></programlisting>
 	</example>
 
-	<para xml:lang="en">An <literal>insecure</literal> console means that
-	  physical security to the console is considered to be
-	  insecure, so only someone who knows the <systemitem class="username">root</systemitem> password may use
-	  single-user mode.</para>
+	<para>不安全 (<literal>insecure</literal>) console  代表對 Console 的實體安全性評估為不安全 (insecure)，所以只有知道 <systemitem class="username">root</systemitem> 密碼的人可以使用單使用者模式。</para>
       </sect3>
 
       <sect3 xml:id="boot-multiuser">
@@ -17243,27 +17106,13 @@ console none                            unknown off <replaceable>insecure</repla
 
 	<indexterm xml:lang="en"><primary>multi-user mode</primary></indexterm>
 
-	<para xml:lang="en">If <application>init</application> finds the file
-	  systems to be in order, or once the user has finished their
-	  commands in single-user mode and has typed
-	  <command>exit</command> to leave single-user mode, the
-	  system enters multi-user mode, in which it starts the
-	  resource configuration of the system.</para>
+	<para>若 <application>init</application> 正常找到檔案系統或在單使用者模式的使用者完成了操作並輸入 <command>exit</command> 離開單使用者模式，系統便會進入多使用者模式，在這個模式便會開始系統的資源設置。</para>
 
 	<indexterm xml:lang="en"><primary>rc files</primary></indexterm>
 
-	<para xml:lang="en">The resource configuration system reads in configuration
-	  defaults from <filename>/etc/defaults/rc.conf</filename> and
-	  system-specific details from
-	  <filename>/etc/rc.conf</filename>.  It then proceeds to
-	  mount the system file systems listed in
-	  <filename>/etc/fstab</filename>.  It starts up networking
-	  services, miscellaneous system daemons, then the startup
-	  scripts of locally installed packages.</para>
+	<para>資源設置系統 (Resource configuration system) 會從 <filename>/etc/defaults/rc.conf</filename> 讀取設定預設值以及從 <filename>/etc/rc.conf</filename> 讀取系統特定的設定，接著會繼續掛載系統列於 <filename>/etc/fstab</filename> 的檔案系統，也會啟動網路服務、其他的系統 Daemon，然後執行本地已安裝套件的啟動 Script。</para>
 
-	<para xml:lang="en">To learn more about the resource configuration system,
-	  refer to <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> and examine the scripts located in
-	  <filename>/etc/rc.d</filename>.</para>
+	<para>要了解更多有關資源設置系統，請參考 <citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以及查看位於 <filename>/etc/rc.d</filename> 的 Script。</para>
       </sect3>
     </sect2>
   </sect1>
@@ -17289,120 +17138,60 @@ console none                            unknown off <replaceable>insecure</repla
       </authorgroup>
     </info>
 
-    <para xml:lang="en">Typically when a FreeBSD system boots, it displays its progress
-      as a series of messages at the console.  A boot splash screen
-      creates an alternate boot screen that hides all of the boot
-      probe and service startup messages.  A few boot loader messages,
-      including the boot options menu and a timed wait countdown
-      prompt, are displayed at boot time, even when the splash screen
-      is enabled.  The display of the splash screen can be turned off
-      by hitting any key on the keyboard during the boot
-      process.</para>
+    <para>正常 FreeBSD 系統開機會在 Console 顯示以一系列訊息來表示開機進度。開機啟動畫面 (Boot splash screen) 是另一種可以把所有開機偵測與服務啟動訊息隱藏的開機畫面，但即使開啟了啟動畫面，仍有有少數的開機載入程式的訊息，如：開機選項選單以及倒數時間的提示，仍會在開機時顯示。在開機程序時可以按下鍵盤上的按鍵來關閉顯示中的啟動畫面。</para>
 
-    <para xml:lang="en">There are two basic environments available in FreeBSD.  The
-      first is the default legacy virtual console command line
-      environment.  After the system finishes booting, a console login
-      prompt is presented.  The second environment is a configured
-      graphical environment.  Refer to <xref linkend="x11"/> for more
-      information on how to install and configure a graphical display
-      manager and a graphical login manager.</para>
+    <para>FreeBSD 有兩種基本的環境可以使用，一種是預設的傳統虛擬 Console 指令列環境，在系統完成開機之後，便會顯示 Console 登入提示。另一種環境則是設定好的圖型化環境，請參考 <xref linkend="x11"/> 以取得更多有關如何安裝與設定圖型化顯示管理程式與圖型化登入管理程式的資訊。</para>
 
-    <para xml:lang="en">Once the system has booted, the splash screen defaults to
-      being a screen saver.  After a time period of non-use, the
-      splash screen will display and will cycle through steps of
-      changing intensity of the image, from bright to very dark and
-      over again.  The configuration of the splash screen saver can be
-      overridden by adding a <literal>saver=</literal> line to
-      <filename>/etc/rc.conf</filename>.  Several built-in screen
-      savers are available and described in <citerefentry><refentrytitle>splash</refentrytitle><manvolnum>4</manvolnum></citerefentry>.  The
-      <literal>saver=</literal> option only applies to virtual
-      consoles and has no effect on graphical display managers.</para>
+    <para>系統開機之後，啟動畫面預設會作為螢幕保護程式，一段時間未使用便會顯示啟動畫面，並且會循環更改影像的亮度，從明亮到非常暗，然後再繼續循環。啟動螢幕保護程式的設定可在 <filename>/etc/rc.conf</filename> 增加一行 <literal>saver=</literal> 來更改。有許多內建的螢幕保護程式可用，在 <citerefentry><refentrytitle>splash</refentrytitle><manvolnum>4</manvolnum></citerefentry> 中有說明。<literal>saver=</literal> 的選項只會套用至虛擬 Console，對圖型化顯示管理程式並不會有任何影響。</para>
 
-    <para xml:lang="en">Sample splash screen files can be downloaded from the
-      gallery at <link xlink:href="http://artwork.freebsdgr.org/node/3/">http://artwork.freebsdgr.org</link>.
-      By installing the <package>sysutils/bsd-splash-changer</package>
-      package or port, a random splash image from a collection will
-      display at boot.</para>
+    <para>範例啟動畫面檔可到位於 <link xlink:href="http://artwork.freebsdgr.org/node/3/">http://artwork.freebsdgr.org</link> 的圖庫下載。安裝 <package>sysutils/bsd-splash-changer</package> 套件或 Port，可以在開機時隨機顯示圖片集中的啟動畫面。</para>
 
-    <para xml:lang="en">The splash screen function supports 256-colors in the
-      bitmap (<filename>.bmp</filename>), ZSoft
-      <acronym>PCX</acronym> (<filename>.pcx</filename>), or
-      TheDraw (<filename>.bin</filename>) formats.  The
-      <filename>.bmp</filename>, <filename>.pcx</filename>, or
-      <filename>.bin</filename> image has to be placed on the root
-      partition, for example in <filename>/boot</filename>.  The
-      splash image files must have a resolution of 320 by 200 pixels
-      or less in order to work on standard <acronym>VGA</acronym>
-      adapters.  For the default boot display resolution of 256-colors
-      and 320 by 200 pixels or less, add the following lines to
-      <filename>/boot/loader.conf</filename>.  Replace
-      <replaceable>splash.bmp</replaceable> with the name of the
-      bitmap file to use:</para>
+    <para>啟動畫面功能支援 256 色的點陣圖 (<filename>.bmp</filename>)、ZSoft <acronym>PCX</acronym> (<filename>.pcx</filename>) 或 TheDraw (<filename>.bin</filename>) 格式。<filename>.bmp</filename>, <filename>.pcx</filename> 或 <filename>.bin</filename> 圖片必須放在根分割區，例如於 <filename>/boot</filename>。啟動圖片檔必須使用 320x200 像素或更低的解析度以能夠在標準 <acronym>VGA</acronym> 介面卡上運作，要在預設 256 色、 320x200 像素或更低的解析度設定開機啟動圖片，可加入下行到 <filename>/boot/loader.conf</filename>，並替換 <replaceable>splash.bmp</replaceable> 為實際要使用的點陣圖檔：</para>
 
     <programlisting xml:lang="en">splash_bmp_load="YES"
 bitmap_load="YES"
 bitmap_name="/boot/<replaceable>splash.bmp</replaceable>"</programlisting>
 
-    <para xml:lang="en">To use a <acronym>PCX</acronym> file instead of a bitmap
-      file:</para>
+    <para>要使用 <acronym>PCX</acronym> 檔則可替換點陣圖檔：</para>
 
     <programlisting xml:lang="en">splash_pcx_load="YES"
 bitmap_load="YES"
 bitmap_name="/boot/<replaceable>splash.pcx</replaceable>"</programlisting>
 
-    <para xml:lang="en">To instead use ASCII art in the <link xlink:href="https://en.wikipedia.org/wiki/TheDraw">https://en.wikipedia.org/wiki/TheDraw</link>
-      format:</para>
+    <para>若要改使用 <link xlink:href="https://en.wikipedia.org/wiki/TheDraw">https://en.wikipedia.org/wiki/TheDraw</link> 格式的 ASCII 圖可：</para>
 
     <programlisting xml:lang="en">splash_txt="YES"
 bitmap_load="YES"
 bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 
-    <para xml:lang="en">To use larger images that fill the whole display screen, up
-      to the maximum resolution of 1024 by 768 pixels, the
-      <acronym>VESA</acronym> module must also be loaded during system
-      boot.  If using a custom kernel, ensure that the custom kernel
-      configuration file includes the <literal>VESA</literal> kernel
-      configuration option.  To load the <acronym>VESA</acronym>
-      module for the splash screen, add this line to
-      <filename>/boot/loader.conf</filename> before the three lines
-      mentioned in the above examples:</para>
+    <para>要使用較大的圖片來填滿整個顯示畫面支援的解析度最大可至 1024x768 像素，<acronym>VESA</acronym> 模組也必須在系統開機時載入。若使用自訂的核心，請確定自訂核心設定檔中有含有 <literal>VESA</literal> 核心設定選項。要載入 <acronym>VESA</acronym> 模組來顯示啟動畫面可在 <filename>/boot/loader.conf</filename> 上述例子中提到的三行之前加入下行：</para>
 
     <programlisting xml:lang="en">vesa_load="YES"</programlisting>
 
-    <para xml:lang="en">Other interesting <filename>loader.conf</filename> options
-      include:</para>
+    <para>其他有用的 <filename>loader.conf</filename> 選項還有：</para>
 
     <variablelist>
       <varlistentry><term xml:lang="en"><literal>beastie_disable="YES"</literal></term>
 
 	<listitem>
-	  <para xml:lang="en">This will stop the boot options menu from being
-	    displayed, but the timed wait count down prompt will still
-	    be present.  Even with the display of the boot options
-	    menu disabled, entering an option selection at the timed
-	    wait count down prompt will enact the corresponding boot
-	    option.</para>
+	  <para>這個會關閉開機選項選單的顯示，但倒數計時提示仍會在。即使關閉了開機選項選單，在倒數計時提示時輸入選擇的選項還是會啟動對應的開機選項。</para>
 	</listitem>
       </varlistentry>
 
       <varlistentry><term xml:lang="en"><literal>loader_logo="beastie"</literal></term>
 
 	<listitem>
-	  <para xml:lang="en">This will replace the default words
-	    <quote>FreeBSD</quote>, which are displayed to the right of
-	    the boot options menu, with the colored beastie
-	    logo.</para>
+	  <para>這個選項會替換預設與上色的小惡魔圖示一起顯示於開機選項選單右側的 <quote>FreeBSD</quote> 文字，</para>
 	</listitem>
       </varlistentry>
     </variablelist>
 
-    <para xml:lang="en">For more information, refer to <citerefentry><refentrytitle>splash</refentrytitle><manvolnum>4</manvolnum></citerefentry>,
-      <citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>, and <citerefentry><refentrytitle>vga</refentrytitle><manvolnum>4</manvolnum></citerefentry>.</para>
+    <para>要取得更多資訊，請參考 <citerefentry><refentrytitle>splash</refentrytitle><manvolnum>4</manvolnum></citerefentry>, <citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>vga</refentrytitle><manvolnum>4</manvolnum></citerefentry>。</para>
   </sect1>
 
   <sect1 xml:id="device-hints">
     <info>
-      <title xml:lang="en">Device Hints</title>
+      <title>裝置提示</title>
 
       <authorgroup>
 	<author xml:lang="en">
@@ -17419,81 +17208,53 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
       <primary>device.hints</primary>
     </indexterm>
 
-    <para xml:lang="en">During initial system startup, the boot <citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></citerefentry> reads
-      <citerefentry vendor="current"><refentrytitle>device.hints</refentrytitle><manvolnum>5</manvolnum></citerefentry>.  This file stores kernel boot information
-      known as variables, sometimes referred to as
-      <quote>device hints</quote>.  These <quote>device hints</quote>
-      are used by device drivers for device configuration.</para>
+    <para>在一開始系統啟動時，開機 <citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></citerefentry> 會讀取 <citerefentry vendor="current"><refentrytitle>device.hints</refentrytitle><manvolnum>5</manvolnum></citerefentry>，這個檔中儲存了核心開機資訊，即變數，有時我們又會稱其為 <quote>裝置提示 (Device hints)</quote>。這些 <quote>裝置提示 (Device hints)</quote> 會傳送給裝置驅動程式做裝置的設置使用。</para>
 
-    <para xml:lang="en">Device hints may also be specified at the Stage 3 boot
-      loader prompt, as demonstrated in <xref linkend="boot-loader"/>.
-      Variables can be added using <command>set</command>, removed
-      with <command>unset</command>, and viewed
-      <command>show</command>.  Variables set in
-      <filename>/boot/device.hints</filename> can also be overridden.
-      Device hints entered at the boot loader are not permanent and
-      will not be applied on the next reboot.</para>
+    <para>裝置提示也可在階段 3 開機載入程式提示時指定，如 <xref linkend="boot-loader"/> 中的示範，其變數也可以使用 <command>set</command> 增加、使用 <command>unset</command> 移除、使用 <command>show</command> 檢視，也可覆蓋設定在 <filename>/boot/device.hints</filename> 的變數，但在開機載入程式輸入的裝置提示並不是永久有效的，在下一次重新開機久後便會失效。</para>
 
-    <para xml:lang="en">Once the system is booted, <citerefentry><refentrytitle>kenv</refentrytitle><manvolnum>1</manvolnum></citerefentry> can be used to dump
-      all of the variables.</para>
+    <para>一旦系統開機後，便可使用 <citerefentry><refentrytitle>kenv</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來列出所有的變數。</para>
 
-    <para xml:lang="en">The syntax for <filename>/boot/device.hints</filename>
-      is one variable per line, using the hash
-      <quote>#</quote> as comment markers.  Lines are constructed as
-      follows:</para>
+    <para><filename>/boot/device.hints</filename> 的語法為一個變數一行，使用井字號 <quote>#</quote> 做為註解符號，每一行的結構如下：</para>
 
     <screen xml:lang="en"><userinput>hint.driver.unit.keyword="<replaceable>value</replaceable>"</userinput></screen>
 
-    <para xml:lang="en">The syntax for the Stage 3 boot loader is:</para>
+    <para>在階段 3 開機載入程式的語法則為：</para>
 
     <screen xml:lang="en"><userinput>set hint.driver.unit.keyword=<replaceable>value</replaceable></userinput></screen>
 
-    <para xml:lang="en">where <literal>driver</literal> is the device driver name,
-      <literal>unit</literal> is the device driver unit number, and
-      <literal>keyword</literal> is the hint keyword.  The keyword may
-      consist of the following options:</para>
+    <para>其中 <literal>driver</literal> 為裝置驅動程式名稱、<literal>unit</literal> 為裝置驅動程式單位編號及 <literal>keyword</literal> 為提示關鍵字，關鍵字由以下選項所組成：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en"><literal>at</literal>: specifies the bus which the
-	  device is attached to.</para>
+	<para><literal>at</literal>: 指定裝置所連結的匯流排 (Bus)。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><literal>port</literal>: specifies the start address of
-	  the <acronym>I/O</acronym> to be used.</para>
+	<para><literal>port</literal>: 指定要使用的 <acronym>I/O</acronym> 開始位置。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><literal>irq</literal>: specifies the interrupt request
-	  number to be used.</para>
+	<para><literal>irq</literal>: 指定要使用的中斷請求編號。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><literal>drq</literal>: specifies the DMA channel
-	  number.</para>
+	<para><literal>drq</literal>: 指定 DMA 頻道編號。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><literal>maddr</literal>: specifies the physical memory
-	  address occupied by the device.</para>
+	<para><literal>maddr</literal>: 指定裝置所使用的實體記憶體位置。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><literal>flags</literal>: sets various flag bits for the
-	  device.</para>
+	<para><literal>flags</literal>: 設定提供給裝置的各種旗標位元。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><literal>disabled</literal>: if set to
-	  <literal>1</literal> the device is disabled.</para>
+	<para><literal>disabled</literal>: 若設為 <literal>1</literal> 則可關閉該裝置。</para>
       </listitem>
     </itemizedlist>
 
-    <para xml:lang="en">Since device drivers may accept or require more hints not
-      listed here, viewing a driver's manual page is recommended.
-      For more information, refer to <citerefentry vendor="current"><refentrytitle>device.hints</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
-      <citerefentry><refentrytitle>kenv</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>, and <citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+    <para>由於裝置驅動程式可能會接受或請求更多未列於此處的提示，建議先閱讀驅動程式的操作手冊。要取得更多資訊請參考 <citerefentry vendor="current"><refentrytitle>device.hints</refentrytitle><manvolnum>5</manvolnum></citerefentry>, <citerefentry><refentrytitle>kenv</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>loader</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
   </sect1>
 
   <sect1 xml:id="boot-shutdown">
@@ -17503,31 +17264,14 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
       <primary><citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry></primary>
     </indexterm>
 
-    <para xml:lang="en">Upon controlled shutdown using <citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry>,
-      <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> will attempt to run the script
-      <filename>/etc/rc.shutdown</filename>, and then proceed to send
-      all processes the <literal>TERM</literal> signal, and
-      subsequently the <literal>KILL</literal> signal to any that do
-      not terminate in a timely manner.</para>
+    <para>在使用 <citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry> 控制關閉時，<citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 會嘗試執行 <filename>/etc/rc.shutdown</filename> Script 接著傳送 <literal>TERM</literal> 信號給所有的程序，然後傳送 <literal>KILL</literal> 信號給未在時間內中止的程序。</para>
 
-    <para xml:lang="en">To power down a FreeBSD machine on architectures and systems
-      that support power management, use
+    <para>要在支援電源管理的架構與系統關閉 FreeBSD 主機電源，可使用 <command>shutdown -p now</command> 來立即關閉電源，要重新啟動 FreeBSD 系統可使用 <command>shutdown -r now</command>。操作人必須為 <systemitem class="username">root</systemitem> 或為 <systemitem class="groupname">operator</systemitem> 的成員才可執行 <citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry>，擁有這些身份的人也可使用 <citerefentry><refentrytitle>halt</refentrytitle><manvolnum>8</manvolnum></citerefentry> 與 <citerefentry><refentrytitle>reboot</refentrytitle><manvolnum>8</manvolnum></citerefentry>，參考這些指令與 <citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry> 的操作手冊來取得更多資訊。</para>
 
-      <command>shutdown -p now</command> to turn the power off
-      immediately.  To reboot a FreeBSD system, use
-      <command>shutdown -r now</command>.  One must be
-      <systemitem class="username">root</systemitem> or a member of
-      <systemitem class="groupname">operator</systemitem> in order to
-      run <citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  One can also use <citerefentry><refentrytitle>halt</refentrytitle><manvolnum>8</manvolnum></citerefentry> and
-      <citerefentry><refentrytitle>reboot</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Refer to their manual pages and to
-      <citerefentry><refentrytitle>shutdown</refentrytitle><manvolnum>8</manvolnum></citerefentry> for more information.</para>
-
-    <para xml:lang="en">Modify group membership by referring to
-      <xref linkend="users-synopsis"/>.</para>
+    <para>要修改群組成員可參考 <xref linkend="users-synopsis"/>。</para>
 
     <note>
-      <para xml:lang="en">Power management requires <citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry> to be loaded as
-	a module or statically compiled into a custom kernel.</para>
+      <para>電源管理需要以載入 <citerefentry><refentrytitle>acpi</refentrytitle><manvolnum>4</manvolnum></citerefentry> 模組或將其靜態編譯至自訂核心中。</para>
     </note>
   </sect1>
 </chapter>
@@ -17629,121 +17373,44 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
   <sect1 xml:id="security-intro">
     <title>簡介</title>
 
-    <para xml:lang="en">Security is everyone's responsibility.  A weak entry point
-      in any system could allow intruders to gain access to critical
-      information and cause havoc on an entire network.  One of the
-      core principles of information security is the
-      <acronym>CIA</acronym> triad, which stands for the
-      Confidentiality, Integrity, and Availability of information
-      systems.</para>
+    <para>保安是每個人的責任，任何系統中的弱點都可讓入侵者取得對關鍵資訊的存取權並導致整個網路的浩劫。資訊安全的其中一個核心原則便是 <acronym>CIA</acronym> 三字訣，代表著資訊系統的機密性 (Confidentiality)、完整性 (Integrity) 以及可用性 (Availability)。</para>
 
-    <para xml:lang="en">The <acronym>CIA</acronym> triad is a bedrock concept of
-      computer security as customers and users expect their data to be
-      protected.  For example, a customer expects that their credit
-      card information is securely stored (confidentiality), that
-      their orders are not changed behind the scenes (integrity), and
-      that they have access to their order information at all times
-      (availablility).</para>
+    <para><acronym>CIA</acronym> 三字訣是電腦安全的基石，就如同客戶與使用者期望他們的資料得到保護一樣重要。例如，一個客戶會期望他們的信用卡資訊被安全的保存 (機密性)、他們的訂單不會在私底下被竄改 (完整性) 以及他們隨時可以存取他們的訂單資訊 (可用性)。</para>
 
-    <para xml:lang="en">To provide <acronym>CIA</acronym>, security professionals
-      apply a defense in depth strategy.  The idea of defense in depth
-      is to add several layers of security to prevent one single layer
-      failing and the entire security system collapsing.  For example,
-      a system administrator cannot simply turn on a firewall and
-      consider the network or system secure.  One must also audit
-      accounts, check the integrity of binaries, and ensure malicious
-      tools are not installed.  To implement an effective security
-      strategy, one must understand threats and how to defend against
-      them.</para>
+    <para>要提供 <acronym>CIA</acronym>，安全專家會應用防禦深度的策略。防禦深度的概念是增加數個保全階層來避免單一階層失效便導致整個安全系統瓦解。例如，系統管理者不能直接打開防火牆與評估網路或系統的安全性，還要同時稽查帳號、檢查 Binary 的完整性與確保未被安裝惡意工具。要執行有效的保安策略，必須了解威脅以及如何抵禦威脅。</para>
 
-    <para xml:lang="en">What is a threat as it pertains to computer security?
-      Threats are not limited to remote attackers who attempt to
-      access a system without permission from a remote location.
-      Threats also include employees, malicious software, unauthorized
-      network devices, natural disasters, security vulnerabilities,
-      and even competing corporations.</para>
+    <para>什麼威脅影響到電腦安全性? 威脅並不僅限於在遠端嘗試未經授權存取系統的遠端攻擊者，威脅也包含員工、惡意軟體、未經許可的網路裝置、天然災害、安全性漏洞甚至是公司競爭對手。</para>
 
-    <para xml:lang="en">Systems and networks can be accessed without permission,
-      sometimes by accident, or by remote attackers, and in some
-      cases, via corporate espionage or former employees.  As a user,
-      it is important to prepare for and admit when a mistake has led
-      to a security breach and report possible issues to the security
-      team.  As an administrator, it is important to know of the
-      threats and be prepared to mitigate them.</para>
+    <para>系統與網路可以被未經授權存取，有時是因為意外，或是因遠端攻擊者，或在某些案例中，是因商業間諜或者前員工。做為使用者，重要的是做好防範準備以及當有失誤造成安全漏洞能夠承認並回報可能的問題給安全團隊。做為管理者，重要的是了解威脅並準備在發生時能夠減緩威脅。</para>
 
-    <para xml:lang="en">When applying security to systems, it is recommended to
-      start by securing the basic accounts and system configuration,
-      and then to secure the network layer so that it adheres to the
-      system policy and the organization's security procedures.  Many
-      organizations already have a security policy that covers the
-      configuration of technology devices.  The policy should include
-      the security configuration of workstations, desktops, mobile
-      devices, phones, production servers, and development servers.
-      In many cases, standard operating procedures
-      (<acronym>SOP</acronym>s) already exist.  When in doubt, ask the
-      security team.</para>
+    <para>當要應用保安到系統上時，建議由基本帳號以及系統設定開始保全，接著確保網路層，使其遵守系統政策以及組織的安全程序。許多組織已經有涵蓋科技裝置設置的安全性政策，該政策應包含工作站、桌上型電腦、行動裝置、手機、上線伺服器、開發伺服器的安全設置。在大多數案例中，也都已經有標準操作程序 (<acronym>SOP</acronym>)，當有疑慮時，請向安全團隊諮詢。</para>
 
-    <para xml:lang="en">The rest of this introduction describes how some of these
-      basic security configurations are performed on a FreeBSD system.
-      The rest of this chapter describes some specific tools which can
-      be used when implementing a security policy on a FreeBSD
-      system.</para>
+    <para>簡介接下來的部份將說明如何在 FreeBSD 系統上執行這些基礎的安全設置。本章接下來的部份將介紹在 FreeBSD 系統執行安全性政策時會用到的特定工具。</para>
 
     <sect2 xml:id="security-accounts">
       <title>防止登入</title>
 
-      <para xml:lang="en">In securing a system, a good starting point is an audit of
-	accounts.  Ensure that <systemitem class="username">root</systemitem> has a strong password and
-	that this password is not shared.  Disable any accounts that
-	do not need login access.</para>
+      <para>要確保一個系統的安全最好的起點便是做好帳號的稽查，確保 <systemitem class="username">root</systemitem> 使用了一個強而有力的密碼，並這個密碼未在其他地方使用過，然後關閉任何無須登入存取權的帳號。</para>
 
-      <para xml:lang="en">To deny login access to accounts, two methods exist.  The
-	first is to lock the account.  This example locks the
-	<systemitem class="username">toor</systemitem> account:</para>
+      <para>要關閉帳號的存取權登入有兩種方法，第一種是鎖定帳號，以下範例會鎖定 <systemitem class="username">toor</systemitem> 帳號：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pw lock <replaceable>toor</replaceable></userinput></screen>
 
-      <para xml:lang="en">The second method is to prevent login access by changing
-	the shell to <filename>/sbin/nologin</filename>.  Only the
-	superuser can change the shell for other users:</para>
+      <para>第二個關閉登入存取權的方式是更改 Shell 為 <filename>/sbin/nologin</filename>，只有超級使用者可以更改其他使用者的 Shell：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>chsh -s /usr/sbin/nologin <replaceable>toor</replaceable></userinput></screen>
 
-      <para xml:lang="en">The <filename>/usr/sbin/nologin</filename> shell prevents
-	the system from assigning a shell to the user when they
-	attempt to login.</para>
+      <para><filename>/usr/sbin/nologin</filename> shell 可以避免系統分配 Shell 給嘗試登入的使用者。</para>
     </sect2>
 
     <sect2 xml:id="security-accountmgmt">
       <title>帳號升級授權</title>
 
-      <para xml:lang="en">In some cases, system administration needs to be shared
-	with other users.  FreeBSD has two methods to handle this.  The
-	first one, which is not recommended, is a shared root password
-	used by members of the <systemitem class="groupname">wheel</systemitem> group.  With this
-	method, a user types <command>su</command> and enters the
-	password for <systemitem class="groupname">wheel</systemitem>
-	whenever superuser access is needed.  The user should then
-	type <command>exit</command> to leave privileged access after
-	finishing the commands that required administrative access.
-	To add a user to this group, edit
-	<filename>/etc/group</filename> and add the user to the end of
-	the <literal>wheel</literal> entry.  The user must be
-	separated by a comma character with no space.</para>
+      <para>在有一些案例，需要與其他使用者共用系統管理權限，FreeBSD 有兩種方式可以處理這種情況。第一種，也是較不建議的方式，是與 <systemitem class="groupname">wheel</systemitem> 群組的成員共用 root 的密碼，這種方式使用者可以在需要超級使用者的存取權時輸入 <command>su</command> 然後輸入 <systemitem class="groupname">wheel</systemitem> 的密碼，在完成需要管理存取權的指令之後，使用應輸入 <command>exit</command> 離開。要加入使用者到這個群組，可編輯 <filename>/etc/group</filename> 然後加入該使用者到 <literal>wheel</literal> 項目的最後，使用者必須以逗號字元分隔並不可有空白。</para>
 
-      <para xml:lang="en">The second, and recommended, method to permit privilege
-	escalation is to install the <package>security/sudo</package>
-	package or port.  This software provides additional auditing,
-	more fine-grained user control, and can be configured to lock
-	users into running only the specified privileged
-	commands.</para>
+      <para>第二種方式，也是較建議的方式，安裝 <package>security/sudo</package> 套件或 Port 來提升權限。這個軟體提供了額外的稽查、更細微的使用者控制，然後可以設定鎖定使用者只能執行特定需權限的指令。</para>
 
-      <para xml:lang="en">After installation, use <command>visudo</command> to edit
-	<filename>/usr/local/etc/sudoers</filename>.  This example
-	creates a new <systemitem class="groupname">webadmin</systemitem> group, adds the
-	<systemitem class="username">trhodes</systemitem> account to
-	that group, and configures that group access to restart
-	<package>apache24</package>:</para>
+      <para>在安裝之後，使用 <command>visudo</command> 來編輯 <filename>/usr/local/etc/sudoers</filename>。這個範例會建立新 <systemitem class="groupname">webadmin</systemitem> 群組，並加入 <systemitem class="username">trhodes</systemitem> 帳號到該群組，然後設定該群組可重新啟動 <package>apache24</package> 的存取權：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupadd webadmin -M trhodes -g 6000</userinput>
 <prompt>#</prompt> <userinput>visudo</userinput>
@@ -17753,122 +17420,46 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
     <sect2 xml:id="security-passwords">
       <title>密碼編碼方式</title>
 
-      <para xml:lang="en">Passwords are a necessary evil of technology.  When they
-	must be used, they should be complex and a powerful hash
-	mechanism should be used to encrypt the version that is stored
-	in the password database.  FreeBSD supports the
-	<acronym>DES</acronym>, <acronym>MD5</acronym>,
-	<acronym>SHA256</acronym>, <acronym>SHA512</acronym>, and
-	Blowfish hash algorithms in its <function>crypt()</function>
-	library.  The default of <acronym>SHA512</acronym> should not
-	be changed to a less secure hashing algorithm, but can be
-	changed to the more secure Blowfish algorithm.</para>
+      <para>密碼是資訊科技的必要之惡，當必須使用密碼時，應要有複雜且強大的雜湊機制來加密儲存在密碼資料庫中的密碼。FreeBSD 支援 <acronym>DES</acronym>, <acronym>MD5</acronym>, <acronym>SHA256</acronym>, <acronym>SHA512</acronym> 以及 Blowfish 雜湊演算法於其 <function>crypt()</function> 程式庫。預設使用 <acronym>SHA512</acronym>，不建議改成更不安全的雜湊演算法，但可改成更安全的 Blowfish 演算法。</para>
 
       <note>
-	<para xml:lang="en">Blowfish is not part of <acronym>AES</acronym> and is
-	  not considered compliant with any Federal Information
-	  Processing Standards (<acronym>FIPS</acronym>).  Its use may
-	  not be permitted in some environments.</para>
+	<para>Blowfish 不是 <acronym>AES</acronym> 的一部份且不符合任何聯邦資訊處理標準 (Federal Information Processing Standards, <acronym>FIPS</acronym>)，在某些環境可能不會允許使用這種加密方式。</para>
       </note>
 
-      <para xml:lang="en">To determine which hash algorithm is used to encrypt a
-	user's password, the superuser can view the hash for the user
-	in the FreeBSD password database.  Each hash starts with a symbol
-	which indicates the type of hash mechanism used to encrypt the
-	password.  If <acronym>DES</acronym> is used, there is no
-	beginning symbol.  For <acronym>MD5</acronym>, the symbol is
-	<literal>$</literal>.  For <acronym>SHA256</acronym> and
-	<acronym>SHA512</acronym>, the symbol is
-	<literal>$6$</literal>.  For Blowfish, the symbol is
-	<literal>$2a$</literal>.  In this example, the password for
-	<systemitem class="username">dru</systemitem> is hashed using
-	the default <acronym>SHA512</acronym> algorithm as the hash
-	starts with <literal>$6$</literal>.  Note that the encrypted
-	hash, not the password itself, is stored in the password
-	database:</para>
+      <para>要知道目前用何種雜湊演算法來加密某位使用者密碼，超級使用者可以檢視在 FreeBSD 密碼資料庫中該使用者的雜湊，每個雜湊的一開始便會以符號標示其用來加密密碼所使用的雜湊機制。若使用 <acronym>DES</acronym> 則開始不會有任何符號，而 <acronym>MD5</acronym> 的符號則是 <literal>$</literal>，<acronym>SHA256</acronym> 及 <acronym>SHA512</acronym> 的符號是 <literal>$6$</literal>，Blowfish 的符號是 <literal>$2a$</literal>。在以下例子中 <systemitem class="username">dru</systemitem> 的密碼使以預設的 <acronym>SHA512</acronym> 演算法加密，因為其雜湊的開始為 <literal>$6$</literal>。注意，該加密過的雜湊，不是原來的密碼，會儲存於密碼資料庫中：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>grep dru /etc/master.passwd</userinput>
 dru:$6$pzIjSvCAn.PBYQBA$PXpSeWPx3g5kscj3IMiM7tUEUSPmGexxta.8Lt9TGSi2lNQqYGKszsBPuGME0:1001:1001::0:0:dru:/usr/home/dru:/bin/csh</screen>
 
-      <para xml:lang="en">The hash mechanism is set in the user's login class.  For
-	this example, the user is in the <literal>default</literal>
-	login class and the hash algorithm is set with this line in
-	<filename>/etc/login.conf</filename>:</para>
+      <para>雜湊機制是設定在該使用者的登入類別 (Login class)，以此為例，該使用者屬於 <literal>default</literal> 登入類別，且雜湊演算法是以下行設定在 <filename>/etc/login.conf</filename>：</para>
 
       <programlisting xml:lang="en">        :passwd_format=sha512:\</programlisting>
 
-      <para xml:lang="en">To change the algorithm to Blowfish, modify that line to
-	look like this:</para>
+      <para>要更改演算法為 Blowfish，可修改該行如下：</para>
 
       <programlisting xml:lang="en">        :passwd_format=blf:\</programlisting>
 
-      <para xml:lang="en">Then run <command>cap_mkdb /etc/login.conf</command> as
-	described in <xref linkend="users-limiting"/>.  Note that this
-	change will not affect any existing password hashes.  This
-	means that all passwords should be re-hashed by asking users
-	to run <command>passwd</command> in order to change their
-	password.</para>
+      <para>然後依 <xref linkend="users-limiting"/> 中所描述的方式執行 <command>cap_mkdb /etc/login.conf</command>。注意，這個動作不會影響任何已存在的密碼雜湊，但這代表必須要求所有使用者執行 <command>passwd</command> 來更改其密碼才有辦法重新加密所有密碼。</para>
 
-      <para xml:lang="en">For remote logins, two-factor authentication should be
-	used.  An example of two-factor authentication is
-	<quote>something you have</quote>, such as a key, and
-	<quote>something you know</quote>, such as the passphrase for
-	that key.  Since <application>OpenSSH</application> is part of
-	the FreeBSD base system, all network logins should be over an
-	encrypted connection and use key-based authentication instead
-	of passwords.  For more information, refer to <xref linkend="openssh"/>.  Kerberos users may need to make
-	additional changes to implement
-	<application>OpenSSH</application> in their network.  These
-	changes are described in <xref linkend="kerberos5"/>.</para>
+      <para>針對遠端登入，應使用雙重認證 (Two-factor authentication)，舉例來說您同時要 <quote>有某樣東西</quote>，如：鑰匙，以及 <quote>知道某個資訊</quote>，如：密碼。自從 <application>OpenSSH</application> 是 FreeBSD 基礎系統的一部份，所有來算網路的登入應透過加密過的連線且使用以金鑰為基礎的認証來替代密碼。要了解更多資訊請參考 <xref linkend="openssh"/>。Kerberos 的使用者可能會需要多做一些額外的更改才能在其網路上使用 <application>OpenSSH</application>，這些更改在 <xref linkend="kerberos5"/> 中會有說明。</para>
     </sect2>
 
     <sect2 xml:id="security-pwpolicy">
       <title>強制密碼政策</title>
 
-      <para xml:lang="en">Enforcing a strong password policy for local accounts is a
-	fundamental aspect of system security.  In FreeBSD, password
-	length, password strength, and password complexity can be
-	implemented using built-in Pluggable Authentication Modules
-	(<acronym>PAM</acronym>).</para>
+      <para>強制在本地帳號使用高強度密碼的政策是系統安全的基礎之一。在 FreeBSD 密碼長度、密碼強度以及密碼複雜性可使用內建的可插拔認証模組 (Pluggable Authentication Modules, <acronym>PAM</acronym>) 來執行。</para>
 
-      <para xml:lang="en">This section demonstrates how to configure the minimum and
-	maximum password length and the enforcement of mixed
-	characters using the <filename>pam_passwdqc.so</filename>
-	module.  This module is enforced when a user changes their
-	password.</para>
+      <para>本節將示範如何設定密碼長度下限與上限以及使用 <filename>pam_passwdqc.so</filename> 來強制使用混合字元的密碼，此模組可在使用者更改其密碼時強制要求。</para>
 
-      <para xml:lang="en">To configure this module, become the superuser and
-	uncomment the line containing
-	<literal>pam_passwdqc.so</literal> in
-	<filename>/etc/pam.d/passwd</filename>.  Then, edit that line
-	to match the password policy:</para>
+      <para>要設定此模組，需要先成為超級使用者，然後取消註解在 <filename>/etc/pam.d/passwd</filename> 中含有 <literal>pam_passwdqc.so</literal> 的行。然後編輯該行來配合密碼政策：</para>
 
       <programlisting xml:lang="en">password        requisite       pam_passwdqc.so         <replaceable>min=disabled,disabled,disabled,12,10 similar=deny retry=3</replaceable> enforce=users</programlisting>
 
-      <para xml:lang="en">This example sets several requirements for new passwords.
-	The <literal>min</literal> setting controls the minimum
-	password length.  It has five values because this module
-	defines five different types of passwords based on their
-	complexity.  Complexity is defined by the type of characters
-	that must exist in a password, such as letters, numbers,
-	symbols, and case.  The types of passwords are described in
-	<citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  In this example, the first three types
-	of passwords are disabled, meaning that passwords that meet
-	those complexity requirements will not be accepted, regardless
-	of their length.    The <literal>12</literal> sets a minimum
-	password policy of at least twelve characters, if the password
-	also contains characters with three types of complexity.  The
-	<literal>10</literal> sets the password policy to also allow
-	passwords of at least ten characters, if the password contains
-	characters with four types of complexity.</para>
+      <para>這個例子會設定新密碼所需符合的需求。<literal>min</literal> 設定可以控制密碼長度下限，它有五個值因為這個模組根據密碼的複雜度定義了五種類型。而複雜度是由必須在密碼中存在的字元類型來定義，例如：文字、數字、符號以及大小寫，這些密碼類型在 <citerefentry><refentrytitle>pam_passwdqc</refentrytitle><manvolnum>8</manvolnum></citerefentry> 有詳細的說明。在這個例子，密碼類型的前三項為關閉的，代表不會接受只滿足這些複雜度的密碼，不論長度為何。<literal>12</literal> 設定密碼政策可接受滿足三種字元類型複雜度且至少 12 個字元的密碼，<literal>10</literal> 設定密碼政策接受滿足四種字元類型複雜度且至少 10 個字元的密碼。</para>
 
-      <para xml:lang="en">The <literal>similar</literal> setting denies passwords
-	that are similar to the user's previous password.  The
-	<literal>retry</literal> setting provides a user with three
-	opportunities to enter a new password.</para>
+      <para><literal>similar</literal> 設定則會拒絕以使用者前一次類似的密碼。<literal>retry</literal> 設定會提供使用者三次輸入新密碼的機會。</para>
 
-      <para xml:lang="en">Once this file is saved, a user changing their password
-	will see a message similar to the following:</para>
+      <para>一這個檔案儲存之後，更改密碼的使用者將會看到如下的訊息：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>passwd</userinput>
 Changing local password for trhodes
@@ -17885,125 +17476,52 @@ Alternatively, if noone else can see your terminal now, you can
 pick this as your password: "trait-useful&amp;knob".
 Enter new password:</screen>
 
-      <para xml:lang="en">If a password that does not match the policy is entered,
-	it will be rejected with a warning and the user will have an
-	opportunity to try again, up to the configured number of
-	retries.</para>
+      <para>若輸入了一個不符何密碼政策的密碼，則會被拒絕並顯示警告，然後使用者會有機會再重試，直到超過設定的允許重試次數。</para>
 
-      <para xml:lang="en">Most password policies require passwords to expire after
-	so many days.  To set a password age time in FreeBSD, set
-	<option>passwordtime</option> for the user's login class in
-	<filename>/etc/login.conf</filename>.  The
-	<literal>default</literal> login class contains an
-	example:</para>
+      <para>大多數密碼政策會讓密碼在多日過後過期。要在 FreeBSD 設定密碼年齡日期，可在 <filename>/etc/login.conf</filename> 中該使用者的登入類別設定 <option>passwordtime</option>。在 <literal>default</literal> 登入類別已有設定範例：</para>
 
       <programlisting xml:lang="en">#       :passwordtime=90d:\</programlisting>
 
-      <para xml:lang="en">So, to set an expiry of 90 days for this login class,
-	remove the comment symbol (<literal>#</literal>), save the
-	edit, and run <command>cap_mkdb
-	  /etc/login.conf</command>.</para>
+      <para>因此，要設定此登入類別的密碼在 90 天之後過期只需要移除註解符號 (<literal>#</literal>)，然後儲存編輯結果並執行 <command>cap_mkdb /etc/login.conf</command>。</para>
 
-      <para xml:lang="en">To set the expiration on individual users, pass an
-	expiration date or the number of days to expiry and a username
-	to <command>pw</command>:</para>
+      <para>要在個別使用者設定期限，可將有效日期或到期的天數與使用者名稱傳給 <command>pw</command>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pw usermod -p <replaceable>30-apr-2015</replaceable> -n <replaceable>trhodes</replaceable></userinput></screen>
 
-      <para xml:lang="en">As seen here, an expiration date is set in the form of
-	day, month, and year.  For more information, see
-	<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>如這個例子，有效日期的格式為天、月以及年。要取得更多資訊可參考 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
     </sect2>
 
     <sect2 xml:id="security-rkhunter">
-      <title>偵測 Rootkits</title>
+      <title>偵測 Root 工具 (Rootkit)</title>
 
-      <para xml:lang="en">A <firstterm>rootkit</firstterm> is any unauthorized
-	software that attempts to gain <systemitem class="username">root</systemitem> access to a system.  Once
-	installed, this malicious software will normally open up
-	another avenue of entry for an attacker.  Realistically, once
-	a system has been compromised by a rootkit and an
-	investigation has been performed, the system should be
-	reinstalled from scratch.  There is tremendous risk that even
-	the most prudent security or systems engineer will miss
-	something an attacker left behind.</para>
+      <para><firstterm>rootkit</firstterm> 指的是嘗試未經授權取得系統 <systemitem class="username">root</systemitem> 存取權的軟體。一旦安裝之後，這個惡意軟體將可以光明正大的開啟給另一個給攻擊者進入的大門。現實上，一但系統已被 rootkit 滲透且執行了搜索動作之後，該系統就應該從頭重新安裝，因為即使非常謹真的資安或系統工程式也可能會遺漏攻擊者留下的動西。</para>
 
-      <para xml:lang="en">A rootkit does do one thing usefulfor administrators: once
-	detected, it is a sign that a compromise happened at some
-	point.  But, these types of applications tend to be very well
-	hidden.  This section demonstrates a tool that can be used to
-	detect rootkits, <package>security/rkhunter</package>.</para>
+      <para>rootkit 所做過的事可提供管理者一個非常有用的資訊：一但偵測到，便代表某處已經被滲透，但這類的應用程式躲藏的非常好，本節將會示範一個可以用來偵測 rootkit 的工具，<package>security/rkhunter</package>。</para>
 
-      <para xml:lang="en">After installation of this package or port, the system may
-	be checked using the following command.  It will produce a lot
-	of information and will require some manual pressing of
-	<keycap>ENTER</keycap>:</para>
+      <para>安裝此套件或 Port 之後，系統便可使用以下指令檢查。該指令提供許多資訊且會需要手動按下 <keycap>ENTER</keycap> 確認：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>rkhunter -c</userinput></screen>
 
-      <para xml:lang="en">After the process completes, a status message will be
-	printed to the screen.  This message will include the amount
-	of files checked, suspect files, possible rootkits, and more.
-	During the check, some generic security warnings may
-	be produced about hidden files, the
-	<application>OpenSSH</application> protocol selection, and
-	known vulnerable versions of installed software.  These can be
-	handled now or after a more detailed analysis has been
-	performed.</para>
+      <para>該程序完成之後，目前狀態的訊息便會顯示在畫面上。這個訊息包含了已檢查過多少檔案、可疑的檔案、可能的 rootkit 以及其他更多資訊。在檢查的過程中，可能會產生一些有關隱藏檔案、<application>OpenSSH</application> 通訊協定選擇及已安裝軟體已知漏洞版本的通用的安全性警告、這些問題可以立即處理或在更詳細的分析之後再處理。</para>
 
-      <para xml:lang="en">Every administrator should know what is running on the
-	systems they are responsible for.  Third-party tools like
-	<application>rkhunter</application> and
-	<package>sysutils/lsof</package>, and native commands such
-	as <command>netstat</command> and <command>ps</command>, can
-	show a great deal of information on the system.  Take notes on
-	what is normal, ask questions when something seems out of
-	place, and be paranoid.  While preventing a compromise is
-	ideal, detecting a compromise is a must.</para>
+      <para>每位管理者應了解在系統上執行了那些程式以及這些程式的用途。第三方工具如 <application>rkhunter</application> 與 <package>sysutils/lsof</package> 以及原生指令如 <command>netstat</command> 與 <command>ps</command> 可以系統上大量的資訊，記錄下那一些是正常的，當有不適當的程式出現時提出疑問，然後找出答案。雖然理想要避免滲透，但也必須偵測是否已被滲透了。</para>
     </sect2>
 
     <sect2 xml:id="security-ids">
       <title>Binary 檢驗</title>
 
-      <para xml:lang="en">Verification of system files and binaries is important
-	because it provides the system administration and security
-	teams information about system changes.  A software
-	application that monitors the system for changes is called an
-	Intrusion Detection System (<acronym>IDS</acronym>).</para>
+      <para>檢驗系統檔案與 Binary 是很重要的，因為它可以提供系統管理者與資安團隊有關系統變更的資訊，能夠監視系統變更的軟體應用程式稱為入侵偵測系統 (Intrusion Detection System, <acronym>IDS</acronym>)。</para>
 
-      <para xml:lang="en">FreeBSD provides native support for a basic
-	<acronym>IDS</acronym> system.  While the nightly security
-	emails will notify an administrator of changes, the
-	information is stored locally and there is a chance that a
-	malicious user could modify this information in order to hide
-	their changes to the system.  As such, it is recommended to
-	create a separate set of binary signatures and store them on a
-	read-only, root-owned directory or, preferably, on a removable
-	<acronym>USB</acronym> disk or remote
-	<application>rsync</application> server.</para>
+      <para>FreeBSD 原生提供了基礎的 <acronym>IDS</acronym> 系統，雖然每天晚上會有安全性的信件會通知管理者相關的變更，但這些資訊是儲存在本地的，這讓惡意的使用者有機會能夠修改這些資訊來隱藏其對系統的變更。也因此，會建議建立一個獨立的 Binary 簽名並將這些簽名儲存在唯度、root 擁有的目錄或在可移除的 <acronym>USB</acronym> 磁碟或遠端 <application>rsync</application> 伺服器更好。</para>
 
-      <para xml:lang="en">The built-in <command>mtree</command> utility can be used
-	to generate a specification of the contents of a directory.  A
-	seed, or a numeric constant, is used to generate the
-	specification and is required to check that the specification
-	has not changed.  This makes it possible to determine if a
-	file or binary has been modified.  Since the seed value is
-	unknown by an attacker, faking or checking the checksum values
-	of files will be difficult to impossible.  The following
-	example generates a set of <acronym>SHA256</acronym> hashes,
-	one for each system binary in <filename>/bin</filename>, and
-	saves those values to a hidden file in <systemitem class="username">root</systemitem>'s home directory,
-	<filename>/root/.bin_chksum_mtree</filename>:</para>
+      <para>內建 <command>mtree</command> 工具可以對一個目錄中的內容產生一個規格檔，產生規格檔會用到一個種子碼或常數，然後在檢查規格是否有更改過時會也會需要使用這個種子碼或常數。這讓檢查一個檔案或 Binary 是否被修改變成可能的一件事。由於攻擊者並不知道種子碼 (Seed)，要仿冒或檢查檔案的校驗碼 (Checksum) 數值是幾乎不可能的。以下例子會產生一組 <acronym>SHA256</acronym> 雜湊，每一個在 <filename>/bin</filename> 的系統  Binary 都會有一個，並姐會將這些值以隱藏黨儲存在 <systemitem class="username">root</systemitem> 的家目錄，<filename>/root/.bin_chksum_mtree</filename>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mtree -s <replaceable>3483151339707503</replaceable> -c -K cksum,sha256digest -p <replaceable>/bin</replaceable> &gt; <replaceable>/root/.bin_chksum_mtree</replaceable></userinput>
 <prompt>#</prompt> mtree: /bin checksum: 3427012225</screen>
 
-      <para xml:lang="en">The <replaceable>3483151339707503</replaceable> represents
-	the seed.  This value should be remembered, but not
-	shared.</para>
+      <para><replaceable>3483151339707503</replaceable> 代表種子碼，這個值應要記錄下來且不可給其它人看。</para>
 
-      <para xml:lang="en">Viewing <filename>/root/.bin_cksum_mtree</filename> should
-	yield output similar to the following:</para>
+      <para>檢視 <filename>/root/.bin_cksum_mtree</filename> 應會產生類似以下的輸出結果：</para>
 
       <programlisting xml:lang="en">#          user: root
 #       machine: dreadnaught
@@ -18026,29 +17544,14 @@ Enter new password:</screen>
     chmod       size=8640 time=1380277975.000000000 cksum=2214429708 \
                 sha256digest=a435972263bf814ad8df082c0752aa2a7bdd8b74ff01431ccbd52ed1e490bbe7</programlisting>
 
-      <para xml:lang="en">The machine's hostname, the date and time the
-	specification was created, and the name of the user who
-	created the specification are included in this report.  There
-	is a checksum, size, time, and <acronym>SHA</acronym>256
-	digest for each binary in the directory.</para>
+      <para>機器的主機名稱、建立規格檔的日期與時間、以及建立此規格檔的使用者名稱皆會記錄在此報告當中，報告當中還會有在目錄中每個 Binary 的校驗碼、大小、時間以及 <acronym>SHA</acronym>256 編碼。</para>
 
-      <para xml:lang="en">To verify that the binary signatures have not changed,
-	compare the current contents of the directory to the
-	previously generated specification, and save the results to a
-	file.  This command requires the seed that was used to
-	generate the original specification:</para>
+      <para>要檢驗 Binary 簽名是否有被變更過，可使用先前產生的規格檔比對目前目錄的內容，然後儲存結果到檔案。這個指令需要當初產生原規格檔所使用的種子碼：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mtree -s <replaceable>3483151339707503</replaceable> -p <replaceable>/bin</replaceable> &lt; <replaceable>/root/.bin_chksum_mtree</replaceable> &gt;&gt; <replaceable>/root/.bin_chksum_output</replaceable></userinput>
 <prompt>#</prompt> mtree: /bin checksum: 3427012225</screen>
 
-      <para xml:lang="en">This should produce the same checksum for
-	<filename>/bin</filename> that was produced when the
-	specification was created.  If no changes have occurred to the
-	binaries in this directory, the
-	<filename>/root/.bin_chksum_output</filename> output file will
-	be empty.  To simulate a change, change the date on
-	<filename>/bin/cat</filename> using <command>touch</command>
-	and run the verification command again:</para>
+      <para>這個動作應會產生與上次建立 <filename>/bin</filename> 規格檔時產生的校驗碼相同，若在此目錄的 Binary 沒有被變更過，那麼 <filename>/root/.bin_chksum_output</filename> 這個輸出檔將會是空的。要模擬變更，可以使用 <command>touch</command> 更改 <filename>/root/.bin_chksum_output</filename> 的日期然後再執行檢驗指令一次：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>touch /bin/cat</userinput>
 <prompt>#</prompt> <userinput>mtree -s <replaceable>3483151339707503</replaceable> -p <replaceable>/bin</replaceable> &lt; <replaceable>/root/.bin_chksum_mtree</replaceable> &gt;&gt; <replaceable>/root/.bin_chksum_output</replaceable></userinput>
@@ -18056,110 +17559,35 @@ Enter new password:</screen>
 cat changed
 	modification time expected Fri Sep 27 06:32:55 2013 found Mon Feb  3 10:28:43 2014</screen>
 
-      <para xml:lang="en">It is recommended to create specifications for the
-	directories which contain binaries and configuration files, as
-	well as any directories containing sensitive data.  Typically,
-	specifications are created for <filename>/bin</filename>,
-	<filename>/sbin</filename>, <filename>/usr/bin</filename>,
-	<filename>/usr/sbin</filename>,
-	<filename>/usr/local/bin</filename>,
-	<filename>/etc</filename>, and
-	<filename>/usr/local/etc</filename>.</para>
+      <para>建議對含有 Binary 以及設定檔的目錄建立規格檔，對含有敏感資料的目錄也是。通常會為 <filename>/bin</filename>, <filename>/sbin</filename>, <filename>/usr/bin</filename>, <filename>/usr/sbin</filename>, <filename>/usr/local/bin</filename>, <filename>/etc</filename> 及 <filename>/usr/local/etc</filename> 建立規格檔。</para>
 
-      <para xml:lang="en">More advanced <acronym>IDS</acronym> systems exist, such
-	as <package>security/aide</package>.  In most cases,
-	<command>mtree</command> provides the functionality
-	administrators need.  It is important to keep the seed value
-	and the checksum output hidden from malicious users.  More
-	information about <command>mtree</command> can be found in
-	<citerefentry><refentrytitle>mtree</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+      <para>也有更進階的 <acronym>IDS</acronym> 系統，例如 <package>security/aide</package>。大多數情況 <command>mtree</command> 已可提供管理者所需的功能。將種子碼與校驗碼結果保存在惡意使用者無法存取的地方是非常重要的一件事。更多有關 <command>mtree</command> 的資訊可在 <citerefentry><refentrytitle>mtree</refentrytitle><manvolnum>8</manvolnum></citerefentry> 找到。</para>
     </sect2>
 
     <sect2 xml:id="security-tuning">
       <title>系統安全性調校</title>
 
-      <para xml:lang="en">In FreeBSD, many system features can be tuned using
-	<command>sysctl</command>.  A few of the security features
-	which can be tuned to prevent Denial of Service
-	(<acronym>DoS</acronym>) attacks will be covered in this
-	section.  More information about using
-	<command>sysctl</command>, including how to temporarily change
-	values and how to make the changes permanent after testing,
-	can be found in <xref linkend="configtuning-sysctl"/>.</para>
+      <para>在 FreeBSD，有許多系統功能可以使用 <command>sysctl</command> 調校，本節會涵蓋少數可以調校來避免阻斷服務 (Denial of Service, <acronym>DoS</acronym>) 攻擊的安全性功能。更多有關使用 <command>sysctl</command> 的資訊包含：如何暫時更改數值及如何在測試之後做永久更改可在 <xref linkend="configtuning-sysctl"/> 找到。</para>
 
       <note>
-	<para xml:lang="en">Any time a setting is changed with
-	  <command>sysctl</command>, the chance to cause undesired
-	  harm is increased, affecting the availability of the system.
-	  All changes should be monitored and, if possible, tried on a
-	  testing system before being used on a production
-	  system.</para>
+	<para>任何時間使用 <xref linkend="configtuning-sysctl"/> 做的設定變更都會讓造成不想要的傷害的可能性上升，影響到系統的可用性。因此應要對所有的變更做監視，若可能的話，先在測試系統上實驗，再到上線的系統上使用。</para>
       </note>
 
-      <para xml:lang="en">By default, the FreeBSD kernel boots with a security level of
-	<literal>-1</literal>.  This is called <quote>insecure
-	  mode</quote> because immutable file flags may be turned off
-	and all devices may be read from or written to.  The security
-	level will remain at <literal>-1</literal> unless it is
-	altered through <command>sysctl</command> or by a setting in
-	the startup scripts.  The security level may be increased
-	during system startup by setting
-	<varname>kern_securelevel_enable</varname> to
-	<literal>YES</literal> in <filename>/etc/rc.conf</filename>,
-	and the value of <varname>kern_securelevel</varname> to the
-	desired security level.  See <citerefentry><refentrytitle>security</refentrytitle><manvolnum>7</manvolnum></citerefentry> and <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	for more information on these settings and the available
-	security levels.</para>
+      <para>預設 FreeBSD 核心會使用安全性層級 <literal>-1</literal> 來開機，這又稱作<quote>不安全模式</quote>，因為不可變 (Immutable) 檔案旗標可以被關閉且可以讀取或寫入所有的裝置。除非有使用 <command>sysctl</command> 或在啟動 Script 設定修改該值，否則安全性層級將會在 <literal>-1</literal>。安全性層級可以在系統啟動時透過在 <filename>/etc/rc.conf</filename> 設定 <varname>kern_securelevel_enable</varname> 為 <literal>YES</literal> 以及 設定 <varname>kern_securelevel</varname> 的值為想要的安全層級來提升。請參考 <citerefentry><refentrytitle>security</refentrytitle><manvolnum>7</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得更多與這些設定及可用的安全性層級相關的資訊。</para>
 
       <warning>
-	<para xml:lang="en">Increasing the <varname>securelevel</varname> can break
-	  <application>Xorg</application> and cause other issues.  Be
-	  prepared to do some debugging.</para>
+	<para>提高 <varname>securelevel</varname> 會導致 <application>Xorg</application> 無法執行以及造成其他問題，請做好除錯的準備。</para>
       </warning>
 
-      <para xml:lang="en">The <varname>net.inet.tcp.blackhole</varname> and
-	<varname>net.inet.udp.blackhole</varname> settings can be used
-	to drop incoming <acronym>SYN</acronym> packets on closed
-	ports without sending a return <acronym>RST</acronym>
-	response.  The default behavior is to return an
-	<acronym>RST</acronym> to show a port is closed.  Changing the
-	default provides some level of protection against ports scans,
-	which are used to determine which applications are running on
-	a system.  Set <varname>net.inet.tcp.blackhole</varname> to
-	<literal>2</literal> and
-	<varname>net.inet.udp.blackhole</varname> to
-	<literal>1</literal>.  Refer to <citerefentry><refentrytitle>blackhole</refentrytitle><manvolnum>4</manvolnum></citerefentry> for more
-	information about these settings.</para>
+      <para><varname>net.inet.tcp.blackhole</varname> 以及 <varname>net.inet.udp.blackhole</varname> 設定可以用來丟棄在已關閉連接埠 (Port) 收到的 <acronym>SYN</acronym> 封包且不會回傳 <acronym>RST</acronym> 回應，預設的動作是會回傳 <acronym>RST</acronym> 來表示該連接埠已被關閉，更改預設的動作可對連接埠掃描 (用在查看在系統上執行的應用程式) 提供一定程度的保護，要這麼做可設定 <varname>net.inet.tcp.blackhole</varname> 為 <literal>2</literal> 及 <varname>net.inet.udp.blackhole</varname> 為 <literal>1</literal>。請參考 <citerefentry><refentrytitle>blackhole</refentrytitle><manvolnum>4</manvolnum></citerefentry> 以取得更多有關這些設定的資訊。</para>
 
-      <para xml:lang="en">The <varname>net.inet.icmp.drop_redirect</varname> and
-	<varname>net.inet.ip.redirect</varname> settings help prevent
-	against <firstterm>redirect attacks</firstterm>.  A redirect
-	attack is a type of <acronym>DoS</acronym> which sends mass
-	numbers of <acronym>ICMP</acronym> type 5 packets.  Since
-	these packets are not required, set
-	<varname>net.inet.icmp.drop_redirect</varname> to
-	<literal>1</literal> and set
-	<varname>net.inet.ip.redirect</varname> to
-	<literal>0</literal>.</para>
+      <para><varname>net.inet.icmp.drop_redirect</varname> 以及 <varname>net.inet.ip.redirect</varname> 設定可以幫助避免 <firstterm>重新導向攻擊 (Redirect attacks)</firstterm>，重新導向攻擊是 <acronym>DoS</acronym> 的一種，會傳送大量 <acronym>ICMP</acronym> 類型 5 的封包，由於這些封包並不是必要的，設定 <varname>net.inet.icmp.drop_redirect</varname> 為 <literal>1</literal> 以及設定 <varname>net.inet.ip.redirect</varname> 為 <literal>0</literal> 可丟棄這些封包。</para>
 
-      <para xml:lang="en">Source routing is a method for detecting and accessing
-	non-routable addresses on the internal network.  This should
-	be disabled as non-routable addresses are normally not
-	routable on purpose.  To disable this feature, set
-	<varname>net.inet.ip.sourceroute</varname> and
-	<varname>net.inet.ip.accept_sourceroute</varname> to
-	<literal>0</literal>.</para>
+      <para>來源路由 (Source routing) 是一種偵測與存取在內部網路中不可路由位址的方法，由於不可路由位址通常是固故讓它不可路由的，因此可以關閉這個功能。要關閉這個功能可設定 <varname>net.inet.ip.sourceroute</varname> 以及 <varname>net.inet.ip.accept_sourceroute</varname> 為 <literal>0</literal>。</para>
 
-      <para xml:lang="en">When a machine on the network needs to send messages to
-	all hosts on a subnet, an <acronym>ICMP</acronym> echo request
-	message is sent to the broadcast address.  However, there is
-	no reason for an external host to perform such an action.  To
-	reject all external broadcast requests, set
-	<varname>net.inet.icmp.bmcastecho</varname> to
-	<literal>0</literal>.</para>
+      <para>當一台在網路上的機器需要傳送訊息給所有在子網路上的主機時，會發送 <acronym>ICMP</acronym> 回應請求訊息到廣播位址。然而，外部的主機是沒有理由可以執行這個動作的。要拒絕所有來自外部的廣播請求可設定 <varname>net.inet.icmp.bmcastecho</varname> 為 <literal>0</literal>。</para>
 
-      <para xml:lang="en">Some additional settings are documented in
-	<citerefentry><refentrytitle>security</refentrytitle><manvolnum>7</manvolnum></citerefentry>.</para>
+      <para>還有一些額外的設定在 <citerefentry><refentrytitle>security</refentrytitle><manvolnum>7</manvolnum></citerefentry> 有說明。</para>
     </sect2>
   </sect1>
 
@@ -48888,7 +48316,7 @@ pass proto udp to any port $udp_services keep state</programlisting>
       </tip>
 
       <sect3 xml:id="pftut-gateway">
-	<title>使用 NAT 的簡單閘道器</title>
+	<title>使用 NAT 的簡單通訊閘</title>
 
 	<para xml:lang="en">This section demonstrates how to configure a FreeBSD system
 	  running <application>PF</application> to act as a gateway
@@ -57073,8 +56501,7 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
   <sect1 xml:id="mirrors-cdrom">
     <title><acronym>CD</acronym> 與 <acronym>DVD</acronym> 合集</title>
 
-    <para xml:lang="en">FreeBSD <acronym>CD</acronym> and <acronym>DVD</acronym> sets
-      are available from several online retailers:</para>
+    <para>FreeBSD <acronym>CD</acronym> 以及 <acronym>DVD</acronym> 組可從以下幾個線上零售商取得：</para>
 
     <itemizedlist>
       <listitem>
@@ -57158,31 +56585,12 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   <sect1 xml:id="mirrors-ftp">
     <title><acronym>FTP</acronym> 站</title>
 
-    <para xml:lang="en">The official sources for FreeBSD are available via anonymous
-      <acronym>FTP</acronym> from a worldwide set of mirror sites.
-      The site <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/">ftp://ftp.FreeBSD.org/pub/FreeBSD/</uri>
-      is available via <acronym>HTTP</acronym> and
-      <acronym>FTP</acronym>.  It is made up of many machines operated
-      by the project cluster administrators and behind GeoDNS to
-      direct users to the closest available mirror.</para>
+    <para>FreeBSD 的官方原始碼可從全球任一鏡像站透過匿名 <acronym>FTP</acronym> 取得。其中 <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/">ftp://ftp.FreeBSD.org/pub/FreeBSD/</uri> 站可使用 <acronym>HTTP</acronym> 及 <acronym>FTP</acronym>，該站是由多台由計畫叢集管理員所維護的主機所組成，且在 GeoDNS 之後，可導向使用者到最近可用的鏡像站。</para>
 
-    <para xml:lang="en">Additionally, FreeBSD is available via anonymous
-      <acronym>FTP</acronym> from the following mirror sites.  When
-      obtaining FreeBSD via anonymous <acronym>FTP</acronym>,
-      please try to use a nearby site.  The mirror sites listed as
-      <quote>Primary Mirror Sites</quote> typically have the entire
-      FreeBSD archive (all the currently available versions for each of
-      the architectures) but faster download speeds are probably
-      available from a site that is in your country or region.  The
-      regional sites carry the most recent versions for the most
-      popular architecture(s) but might not carry the entire FreeBSD
-      archive.  All sites provide access via anonymous
-      <acronym>FTP</acronym> but some sites also provide access via
-      other methods.  The access methods available for each site are
-      provided in parentheses after the hostname.</para>
+    <para>除此之外，FreeBSD 也可透過匿名 <acronym>FTP</acronym> 從下列鏡像站取得。要透過匿名 <acronym>FTP</acronym> 取得 FreeBSD 時，請先嘗試使用臨近的站台。列在 <quote>主要鏡像站</quote> 中的鏡像站通常會有完整的 FreeBSD 封存檔 (每一個架構目前所有可用的版本)，但若要考慮下載速度，可能要使用您所在國家或區域的站台。區域的站台會有熱門架構最近期的版本，但不會有完整的 FreeBSD 封存檔。所有站台皆提供匿名 <acronym>FTP</acronym> 存取只有部份站台會以其他方式提供存取。每個站台可用的存取方式會列在主機名稱後的括號當中。</para>
 
     
-<para xml:lang="en"><link linkend="central-ftp">Central Servers</link>, <link linkend="mirrors-primary-ftp">Primary Mirror Sites</link>, <link linkend="mirrors-am-ftp">Armenia</link>, <link linkend="mirrors-au-ftp">Australia</link>, <link linkend="mirrors-at-ftp">Austria</link>, <link linkend="mirrors-br-ftp">Brazil</link>, <link linkend="mirrors-cn-ftp">China</link>, <link linkend="mirrors-cz-ftp">Czech Republic</link>, <link linkend="mirrors-dk-ftp">Denmark</link>, <link linkend="mirrors-ee-ftp">Estonia</link>, <link linkend="mirrors-fi-ftp">Finland</link>, <link linkend="mirrors-fr-ftp">France</link>, <link linkend="mirrors-de-ftp">Germany</link>, <link linkend="mirrors-gr-ftp">Greece</link>, <link linkend="mirrors-hk-ftp">Hong Kong</link>, <link linkend="mirrors-ie-ftp">Ireland</link>, <link linkend="mirrors-jp-ftp">Japan</link>, <link linkend="mirrors-kr-ftp">Korea</link>, <link linkend="mirrors-lv-ftp">Latvia</link>, <link linkend="mirrors-lt-ftp">Lithuania</link>, <link linkend="mirrors-nl-ftp">Netherlands</link>, <link linkend="mirrors-nz-ftp">New Zealand</link>, <link linkend="mirrors-no-ftp">Norway</link>, <link linkend="mirrors-pl-ftp">Poland</link>, <link linkend="mirrors-ru-ftp">Russia</link>, <link linkend="mirrors-sa-ftp">Saudi Arabia</link>, <link linkend="mirrors-si-ftp">Slovenia</link>, <link linkend="mirrors-za-ftp">South Africa</link>, <link linkend="mirrors-es-ftp">Spain</link>, <link linkend="mirrors-se-ftp">Sweden</link>, <link linkend="mirrors-ch-ftp">Switzerland</link>, <link linkend="mirrors-tw-ftp">Taiwan</link>, <link linkend="mirrors-ua-ftp">Ukraine</link>, <link linkend="mirrors-uk-ftp">United Kingdom</link>, <link linkend="mirrors-us-ftp">USA</link>.</para>
+<para><link linkend="central-ftp">中央伺服器</link>、<link linkend="mirrors-primary-ftp">主要鏡像站</link>、<link linkend="mirrors-am-ftp">亞美尼亞 (Armenia)</link>、<link linkend="mirrors-au-ftp">澳洲 (Australia)</link>、<link linkend="mirrors-at-ftp">奧地利 (Austria)</link>、<link linkend="mirrors-br-ftp">巴西 (Brazil)</link>、<link linkend="mirrors-cn-ftp">中國 (China)</link>、<link linkend="mirrors-cz-ftp">捷克 (Czech Republic)</link>、<link linkend="mirrors-dk-ftp">丹麥 (Denmark)</link>、<link linkend="mirrors-ee-ftp">愛沙尼亞 (Estonia)</link>、<link linkend="mirrors-fi-ftp">芬蘭 (Finland)</link>、<link linkend="mirrors-fr-ftp">法國 (France)</link>、<link linkend="mirrors-de-ftp">德國 (Germany)</link>、<link linkend="mirrors-gr-ftp">希臘 (Greece)</link>、<link linkend="mirrors-hk-ftp">香港 (Hong Kong)</link>、<link linkend="mirrors-ie-ftp">愛爾蘭 (Ireland)</link>、<link linkend="mirrors-jp-ftp">日本 (Japan)</link>、<link linkend="mirrors-kr-ftp">韓國 (Korea)</link>、<link linkend="mirrors-lv-ftp">拉脫維亞 (Latvia)</link>、<link linkend="mirrors-lt-ftp">立陶宛 (Lithuania)</link>、<link linkend="mirrors-nl-ftp">荷蘭 (Netherlands)</link>、<link linkend="mirrors-nz-ftp">紐西蘭 (New Zealand)</link>、<link linkend="mirrors-no-ftp">挪威 (Norway)</link>、<link linkend="mirrors-pl-ftp">波蘭 (Poland)</link>、<link linkend="mirrors-ru-ftp">俄羅斯 (Russia)</link>、<link linkend="mirrors-sa-ftp">沙烏地阿拉伯 (Saudi Arabia)</link>、<link linkend="mirrors-si-ftp">斯洛維尼亞 (Slovenia)</link>、<link linkend="mirrors-za-ftp">南非 (South Africa)</link>、<link linkend="mirrors-es-ftp">西班牙 (Spain)</link>、<link linkend="mirrors-se-ftp">瑞典 (Sweden)</link>、<link linkend="mirrors-ch-ftp">瑞士 (Switzerland)</link>、<link linkend="mirrors-tw-ftp">台灣 (Taiwan)</link>、<link linkend="mirrors-ua-ftp">烏克蘭 (Ukraine)</link>、<link linkend="mirrors-uk-ftp">英國 (United Kingdom)</link>、<link linkend="mirrors-us-ftp">美國 (USA)</link>。</para>
 
 
     
@@ -57192,7 +56600,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     
 <variablelist>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="central-ftp"/>Central Servers</term>
+    <term><anchor xml:id="central-ftp"/>中央伺服器</term>
     <listitem>
       <itemizedlist>
         <listitem>
@@ -57202,10 +56610,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-primary-ftp"/>Primary Mirror Sites</term>
+    <term><anchor xml:id="mirrors-primary-ftp"/>主要鏡像站</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>mirror-admin@FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>mirror-admin@FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp1.FreeBSD.org/pub/FreeBSD/">ftp://ftp1.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57244,10 +56651,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-am-ftp"/>Armenia</term>
+    <term><anchor xml:id="mirrors-am-ftp"/>亞美尼亞 (Armenia)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@am.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@am.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp1.am.FreeBSD.org/pub/FreeBSD/">ftp://ftp1.am.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="http://ftp1.am.FreeBSD.org/pub/FreeBSD/">http://ftp1.am.FreeBSD.org/pub/FreeBSD/</link> / rsync) </para>
@@ -57256,10 +56662,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-au-ftp"/>Australia</term>
+    <term><anchor xml:id="mirrors-au-ftp"/>澳洲 (Australia)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@au.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@au.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.au.FreeBSD.org/pub/FreeBSD/">ftp://ftp.au.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57274,10 +56679,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-at-ftp"/>Austria</term>
+    <term><anchor xml:id="mirrors-at-ftp"/>奧地利 (Austria)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@at.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@at.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.at.FreeBSD.org/pub/FreeBSD/">ftp://ftp.at.FreeBSD.org/pub/FreeBSD/</link> (ftp / ftpv6 / <link xlink:href="http://ftp.at.FreeBSD.org/pub/FreeBSD/">http://ftp.at.FreeBSD.org/pub/FreeBSD/</link> / <link xlink:href="http://ftp.at.FreeBSD.org/pub/FreeBSD/">http://ftp.at.FreeBSD.org/pub/FreeBSD/</link>) </para>
@@ -57286,10 +56690,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-br-ftp"/>Brazil</term>
+    <term><anchor xml:id="mirrors-br-ftp"/>巴西 (Brazil)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@br.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@br.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp2.br.FreeBSD.org/FreeBSD/">ftp://ftp2.br.FreeBSD.org/FreeBSD/</link> (ftp / <link xlink:href="http://ftp2.br.FreeBSD.org/">http://ftp2.br.FreeBSD.org/</link>) </para>
@@ -57304,10 +56707,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-cn-ftp"/>China</term>
+    <term><anchor xml:id="mirrors-cn-ftp"/>中國 (China)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@cn.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@cn.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.cn.FreeBSD.org/pub/FreeBSD/">ftp://ftp.cn.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57316,10 +56718,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-cz-ftp"/>Czech Republic</term>
+    <term><anchor xml:id="mirrors-cz-ftp"/>捷克 (Czech Republic)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@cz.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@cz.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.cz.FreeBSD.org/pub/FreeBSD/">ftp://ftp.cz.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="ftp://ftp.cz.FreeBSD.org/pub/FreeBSD/">ftp://ftp.cz.FreeBSD.org/pub/FreeBSD/</link> / <link xlink:href="http://ftp.cz.FreeBSD.org/pub/FreeBSD/">http://ftp.cz.FreeBSD.org/pub/FreeBSD/</link> / <link xlink:href="http://ftp.cz.FreeBSD.org/pub/FreeBSD/">http://ftp.cz.FreeBSD.org/pub/FreeBSD/</link> / rsync / rsyncv6) </para>
@@ -57331,10 +56732,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-dk-ftp"/>Denmark</term>
+    <term><anchor xml:id="mirrors-dk-ftp"/>丹麥 (Denmark)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@dk.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@dk.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.dk.FreeBSD.org/pub/FreeBSD/">ftp://ftp.dk.FreeBSD.org/pub/FreeBSD/</link> (ftp / ftpv6 / <link xlink:href="http://ftp.dk.FreeBSD.org/pub/FreeBSD/">http://ftp.dk.FreeBSD.org/pub/FreeBSD/</link> / <link xlink:href="http://ftp.dk.FreeBSD.org/pub/FreeBSD/">http://ftp.dk.FreeBSD.org/pub/FreeBSD/</link>) </para>
@@ -57343,10 +56743,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-ee-ftp"/>Estonia</term>
+    <term><anchor xml:id="mirrors-ee-ftp"/>愛沙尼亞 (Estonia)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@ee.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@ee.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.ee.FreeBSD.org/pub/FreeBSD/">ftp://ftp.ee.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57355,10 +56754,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-fi-ftp"/>Finland</term>
+    <term><anchor xml:id="mirrors-fi-ftp"/>芬蘭 (Finland)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@fi.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@fi.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.fi.FreeBSD.org/pub/FreeBSD/">ftp://ftp.fi.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57367,10 +56765,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-fr-ftp"/>France</term>
+    <term><anchor xml:id="mirrors-fr-ftp"/>法國 (France)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@fr.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@fr.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.fr.FreeBSD.org/pub/FreeBSD/">ftp://ftp.fr.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57397,10 +56794,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-de-ftp"/>Germany</term>
+    <term><anchor xml:id="mirrors-de-ftp"/>德國 (Germany)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>de-bsd-hubs@de.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@de.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.de.FreeBSD.org/pub/FreeBSD/">ftp://ftp.de.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57427,10 +56823,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-gr-ftp"/>Greece</term>
+    <term><anchor xml:id="mirrors-gr-ftp"/>希臘 (Greece)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@gr.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@gr.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.gr.FreeBSD.org/pub/FreeBSD/">ftp://ftp.gr.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57442,7 +56837,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-hk-ftp"/>Hong Kong</term>
+    <term><anchor xml:id="mirrors-hk-ftp"/>香港 (Hong Kong)</term>
     <listitem>
       <itemizedlist>
         <listitem>
@@ -57452,7 +56847,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-ie-ftp"/>Ireland</term>
+    <term><anchor xml:id="mirrors-ie-ftp"/>愛爾蘭 (Ireland)</term>
     <listitem>
       <para xml:lang="en">In case of problems, please contact the hostmaster
       <email>hostmaster@ie.FreeBSD.org</email> for this domain.</para>
@@ -57464,10 +56859,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-jp-ftp"/>Japan</term>
+    <term><anchor xml:id="mirrors-jp-ftp"/>日本 (Japan)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@jp.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@jp.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.jp.FreeBSD.org/pub/FreeBSD/">ftp://ftp.jp.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57500,10 +56894,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-kr-ftp"/>Korea</term>
+    <term><anchor xml:id="mirrors-kr-ftp"/>韓國 (Korea)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@kr.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@kr.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.kr.FreeBSD.org/pub/FreeBSD/">ftp://ftp.kr.FreeBSD.org/pub/FreeBSD/</link> (ftp / rsync) </para>
@@ -57515,10 +56908,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-lv-ftp"/>Latvia</term>
+    <term><anchor xml:id="mirrors-lv-ftp"/>拉脫維亞 (Latvia)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@lv.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@lv.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.lv.FreeBSD.org/pub/FreeBSD/">ftp://ftp.lv.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="http://ftp.lv.FreeBSD.org/pub/FreeBSD/">http://ftp.lv.FreeBSD.org/pub/FreeBSD/</link>) </para>
@@ -57527,10 +56919,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-lt-ftp"/>Lithuania</term>
+    <term><anchor xml:id="mirrors-lt-ftp"/>立陶宛 (Lithuania)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@lt.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@lt.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.lt.FreeBSD.org/pub/FreeBSD/">ftp://ftp.lt.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="http://ftp.lt.FreeBSD.org/pub/FreeBSD/">http://ftp.lt.FreeBSD.org/pub/FreeBSD/</link>) </para>
@@ -57539,10 +56930,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-nl-ftp"/>Netherlands</term>
+    <term><anchor xml:id="mirrors-nl-ftp"/>荷蘭 (Netherlands)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@nl.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@nl.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.nl.FreeBSD.org/pub/FreeBSD/">ftp://ftp.nl.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="http://ftp.nl.FreeBSD.org/os/FreeBSD/">http://ftp.nl.FreeBSD.org/os/FreeBSD/</link> / rsync) </para>
@@ -57554,7 +56944,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-nz-ftp"/>New Zealand</term>
+    <term><anchor xml:id="mirrors-nz-ftp"/>紐西蘭 (New Zealand)</term>
     <listitem>
       <itemizedlist>
         <listitem>
@@ -57564,10 +56954,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-no-ftp"/>Norway</term>
+    <term><anchor xml:id="mirrors-no-ftp"/>挪威 (Norway)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@no.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@no.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.no.FreeBSD.org/pub/FreeBSD/">ftp://ftp.no.FreeBSD.org/pub/FreeBSD/</link> (ftp / rsync) </para>
@@ -57576,10 +56965,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-pl-ftp"/>Poland</term>
+    <term><anchor xml:id="mirrors-pl-ftp"/>波蘭 (Poland)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@pl.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@pl.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.pl.FreeBSD.org/pub/FreeBSD/">ftp://ftp.pl.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57591,10 +56979,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-ru-ftp"/>Russia</term>
+    <term><anchor xml:id="mirrors-ru-ftp"/>俄羅斯 (Russia)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@ru.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@ru.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.ru.FreeBSD.org/pub/FreeBSD/">ftp://ftp.ru.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="http://ftp.ru.FreeBSD.org/FreeBSD/">http://ftp.ru.FreeBSD.org/FreeBSD/</link> / rsync) </para>
@@ -57615,10 +57002,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-sa-ftp"/>Saudi Arabia</term>
+    <term><anchor xml:id="mirrors-sa-ftp"/>沙烏地阿拉伯 (Saudi Arabia)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>ftpadmin@isu.net.sa</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>ftpadmin@isu.net.sa</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.isu.net.sa/pub/ftp.freebsd.org/">ftp://ftp.isu.net.sa/pub/ftp.freebsd.org/</link> (ftp) </para>
@@ -57627,10 +57013,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-si-ftp"/>Slovenia</term>
+    <term><anchor xml:id="mirrors-si-ftp"/>斯洛維尼亞 (Slovenia)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@si.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@si.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.si.FreeBSD.org/pub/FreeBSD/">ftp://ftp.si.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57639,10 +57024,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-za-ftp"/>South Africa</term>
+    <term><anchor xml:id="mirrors-za-ftp"/>南非 (South Africa)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@za.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@za.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.za.FreeBSD.org/pub/FreeBSD/">ftp://ftp.za.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57657,10 +57041,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-es-ftp"/>Spain</term>
+    <term><anchor xml:id="mirrors-es-ftp"/>西班牙 (Spain)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@es.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@es.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.es.FreeBSD.org/pub/FreeBSD/">ftp://ftp.es.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="http://ftp.es.FreeBSD.org/pub/FreeBSD/">http://ftp.es.FreeBSD.org/pub/FreeBSD/</link>) </para>
@@ -57672,10 +57055,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-se-ftp"/>Sweden</term>
+    <term><anchor xml:id="mirrors-se-ftp"/>瑞典 (Sweden)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@se.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@se.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.se.FreeBSD.org/pub/FreeBSD/">ftp://ftp.se.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57696,10 +57078,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-ch-ftp"/>Switzerland</term>
+    <term><anchor xml:id="mirrors-ch-ftp"/>瑞士 (Switzerland)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@ch.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@ch.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.ch.FreeBSD.org/pub/FreeBSD/">ftp://ftp.ch.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="http://ftp.ch.FreeBSD.org/pub/FreeBSD/">http://ftp.ch.FreeBSD.org/pub/FreeBSD/</link>) </para>
@@ -57708,10 +57089,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-tw-ftp"/>Taiwan</term>
+    <term><anchor xml:id="mirrors-tw-ftp"/>台灣 (Taiwan)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@tw.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@tw.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/">ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/</link> (ftp / <link xlink:href="ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/">ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/</link> / rsync / rsyncv6) </para>
@@ -57753,7 +57133,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-ua-ftp"/>Ukraine</term>
+    <term><anchor xml:id="mirrors-ua-ftp"/>烏克蘭 (Ukraine)</term>
     <listitem>
       <itemizedlist>
         <listitem>
@@ -57769,10 +57149,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-uk-ftp"/>United Kingdom</term>
+    <term><anchor xml:id="mirrors-uk-ftp"/>英國 (United Kingdom)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@uk.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@uk.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp.uk.FreeBSD.org/pub/FreeBSD/">ftp://ftp.uk.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57793,10 +57172,9 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     </listitem>
   </varlistentry>
   <varlistentry>
-    <term xml:lang="en"><anchor xml:id="mirrors-us-ftp"/>USA</term>
+    <term><anchor xml:id="mirrors-us-ftp"/>美國 (USA)</term>
     <listitem>
-      <para xml:lang="en">In case of problems, please contact the hostmaster
-      <email>hostmaster@us.FreeBSD.org</email> for this domain.</para>
+      <para>若有任何問題，請聯絡此區域的主機管理者 <email>hostmaster@us.FreeBSD.org</email>。</para>
       <itemizedlist>
         <listitem>
           <para xml:lang="en"><link xlink:href="ftp://ftp1.us.FreeBSD.org/pub/FreeBSD/">ftp://ftp1.us.FreeBSD.org/pub/FreeBSD/</link> (ftp) </para>
@@ -57851,40 +57229,24 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     <sect2 xml:id="svn-intro">
       <title>簡介</title>
 
-      <para xml:lang="en">As of July 2012, FreeBSD uses
-	<application>Subversion</application> as the only version
-	control system for storing all of FreeBSD's source code,
-	documentation, and the Ports Collection.</para>
+      <para>自 2012 年 7 月起，FreeBSD 儲存所有 FreeBSD 的原始碼、文件與 Port 套件集均使用 <application>Subversion</application> 作為其唯一的版本控制系統。</para>
 
       <note>
-	<para xml:lang="en"><application>Subversion</application> is generally a
-	  developer tool.  Users may prefer to use
-	  <command>freebsd-update</command> (<xref linkend="updating-upgrading-freebsdupdate"/>) to update
-	  the FreeBSD base system, and <command>portsnap</command> (<xref linkend="ports-using"/>) to update the FreeBSD Ports
-	  Collection.</para>
+	<para><application>Subversion</application> 只是一套開發人員工具。一般使用者可能會較喜歡使用 <command>freebsd-update</command> (<xref linkend="updating-upgrading-freebsdupdate"/>) 來更新 FreeBSD 基礎系統及 <command>portsnap</command> (<xref linkend="ports-using"/>) 來更新 FreeBSD Port 套件集。</para>
       </note>
 
-      <para xml:lang="en">This section demonstrates how to install
-	<application>Subversion</application> on a FreeBSD system and
-	use it to create a local copy of a FreeBSD repository.
-	Additional information on the use of
-	<application>Subversion</application> is included.</para>
+      <para>本節將示範如何在 FreeBSD 系統安裝 <application>Subversion</application> 以及使用它建立一個本地的 FreeBSD 檔案庫複本，也包含使用 <application>Subversion</application> 的其他資訊。</para>
     </sect2>
 
     <sect2 xml:id="svn-ssl-certificates">
       <title>根 <acronym>SSL</acronym> 憑證</title>
 
-      <para xml:lang="en">Installing
-	<package role="port">security/ca_root_nss</package> allows
-	<application>Subversion</application> to verify the identity
-	of <acronym>HTTPS</acronym> repository servers.  The root
-	<acronym>SSL</acronym> certificates can be installed from a
-	port:</para>
+      <para>安裝 <package role="port">security/ca_root_nss</package> 可讓 <application>Subversion</application> 能夠驗証 <acronym>HTTPS</acronym> 檔案庫伺服器的身份。root <acronym>SSL</acronym> 憑証可從 Port 安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/security/ca_root_nss</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">or as a package:</para>
+      <para>或從套件：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install ca_root_nss</userinput></screen>
     </sect2>
@@ -57892,33 +57254,22 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     <sect2 xml:id="svn-svnlite">
       <title xml:lang="en"><application>Svnlite</application></title>
 
-      <para xml:lang="en">A lightweight version of
-	<application>Subversion</application> is already installed
-	on FreeBSD as <command>svnlite</command>.  The port or package
-	version of <application>Subversion</application> is only
-	needed if the Python or Perl <acronym>API</acronym> is needed,
-	or if a later version of Subversion is desired.</para>
+      <para><command>svnlite</command> 為輕量化版的 <application>Subversion</application>，會隨 FreeBSD 安裝。<application>Subversion</application> 的 Port 或套件版本僅在要使用其 Python 或 Perl <acronym>API</acronym> 或想要使用最新版本 Subversion 時才需安裝，</para>
 
-      <para xml:lang="en">The only difference from normal
-	<application>Subversion</application> use is that the command
-	name is <literal>svnlite</literal>.</para>
+      <para>與正常 <application>Subversion</application> 唯一的差別只是指令名稱改為 <literal>svnlite</literal>。</para>
     </sect2>
 
     <sect2 xml:id="svn-install">
       <title>安裝</title>
 
-      <para xml:lang="en">If <command>svnlite</command> is unavailable or the full
-	version of <application>Subversion</application> is needed,
-	then it must be installed.</para>
+      <para>若無法使用 <command>svnlite</command> 或需要完整版本的 <application>Subversion</application> 就必須安裝。</para>
 
-      <para xml:lang="en"><application>Subversion</application> can be installed
-	from the Ports Collection:</para>
+      <para><application>Subversion</application> 可從 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/devel/subversion</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en"><application>Subversion</application> can also be
-	installed as a package:</para>
+      <para><application>Subversion</application> 也可以以套件安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install subversion</userinput></screen>
     </sect2>
@@ -57926,36 +57277,17 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     <sect2 xml:id="svn-usage">
       <title>執行 <application>Subversion</application></title>
 
-      <para xml:lang="en">To fetch a clean copy of the sources into a local
-	directory, use <command>svn</command>.  The files in this
-	directory are called a <emphasis>local working
-	  copy</emphasis>.</para>
+      <para>要下載原始碼乾淨的複本到本地目錄可使用 <command>svn</command>。在此目錄中的檔案稱作 <emphasis>本地工作複本 (Local working copy)</emphasis>。</para>
 
       <warning>
-	<para xml:lang="en">Move or delete an existing destination directory before
-	  using <command>checkout</command> for the first time.</para>
+	<para>在第一次使用 <command>checkout</command> 前請先移動或刪除目地現有的目錄。</para>
 
-	<para xml:lang="en">Checkout over an existing
-	  non-<command>svn</command> directory can cause conflicts
-	  between the existing files and those brought in from the
-	  repository.</para>
+	<para>在現有非 <command>svn</command> 目錄存在的情況下做取出 (Checkout) 的動作會導致現有檔案與檔案庫中的檔案發生衝突。</para>
       </warning>
 
-      <para xml:lang="en"><application>Subversion</application> uses
-	<acronym>URL</acronym>s to designate a repository, taking the
-	form of <replaceable>protocol://hostname/path</replaceable>.
-	The first component of the path is the FreeBSD repository to
-	access.  There are three different repositories,
-	<literal>base</literal> for the FreeBSD base system source code,
-	<literal>ports</literal> for the Ports Collection, and
-	<literal>doc</literal> for documentation.  For example, the
-	URL
-	<literal>https://svn.FreeBSD.org/ports/head/</literal>
-	specifies the main branch of the ports repository,
-	using the <literal>https</literal> protocol.</para>
+      <para><application>Subversion</application> 使用 <acronym>URL</acronym> 來指定檔案庫，使用的格式為 <replaceable>protocol://hostname/path</replaceable>。路徑的第一個部份為要存取的 FreeBSD 檔案庫，目前有三個檔案庫，<literal>base</literal> 為 FreeBSD 基礎系統原始碼、<literal>ports</literal> 為 Port 套件集以及 <literal>doc</literal> 為說明文件。舉例來說，URL <literal>https://svn.FreeBSD.org/ports/head/</literal> 代表 Port 檔案庫的主要分支，使用 <literal>https</literal> 通訊協定。</para>
 
-      <para xml:lang="en">A checkout from a given repository is performed with a
-	command like this:</para>
+      <para>使用指令從指定的檔案庫取出 (Checkout) 原始碼如下：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/<replaceable>repository</replaceable>/<replaceable>branch</replaceable> <replaceable>lwcdir</replaceable></userinput></screen>
 
@@ -57963,75 +57295,35 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 
       <itemizedlist>
 	<listitem>
-	  <para xml:lang="en"><replaceable>repository</replaceable> is one of the
-	    Project repositories: <literal>base</literal>,
-	    <literal>ports</literal>, or
-	    <literal>doc</literal>.</para>
+	  <para><replaceable>repository</replaceable> 要是下列專案檔案庫其中之一：<literal>base</literal>, <literal>ports</literal> 或 <literal>doc</literal>。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><replaceable>branch</replaceable> depends on the
-	    repository used.  <literal>ports</literal> and
-	    <literal>doc</literal> are mostly updated in the
-	    <literal>head</literal> branch, while
-	    <literal>base</literal> maintains the latest version of
-	    -CURRENT under <literal>head</literal> and the respective
-	    latest versions of the -STABLE branches under
-	    <literal>stable/9</literal>
-	    (9.<replaceable>x</replaceable>) and
-	    <literal>stable/10</literal>
-	    (10.<replaceable>x</replaceable>).</para>
+	  <para><replaceable>branch</replaceable> 則依據使用的檔案庫來決定。<literal>ports</literal> 與 <literal>doc</literal> 大部份的更新皆在 <literal>head</literal> 分支，而 <literal>base</literal> 則會將 -CURRENT 的最新版本存放在 <literal>head</literal> 下，-STABLE 分支各自最新的版本則會放在 <literal>stable/9</literal> (9.<replaceable>x</replaceable>) 與 <literal>stable/10</literal> (10.<replaceable>x</replaceable>) 下。</para>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en"><replaceable>lwcdir</replaceable> is the target
-	    directory where the contents of the specified branch
-	    should be placed.  This is usually
-	    <filename>/usr/ports</filename> for
-	    <literal>ports</literal>,
-	    <filename>/usr/src</filename> for
-	    <literal>base</literal>, and
-	    <filename>/usr/doc</filename> for
-	    <literal>doc</literal>.</para>
+	  <para><replaceable>lwcdir</replaceable> 則是要存放指定分支內容的目標目錄，通常 <literal>ports</literal> 會置於 <filename>/usr/ports</filename>，<literal>base</literal> 會置於 <filename>/usr/src</filename> 以及 <literal>doc</literal> 會置於 <filename>/usr/doc</filename>。</para>
 	</listitem>
       </itemizedlist>
 
-      <para xml:lang="en">This example checks out the Ports Collection from the
-	FreeBSD repository using the <acronym>HTTPS</acronym>
-	protocol, placing the local working copy in
-	<filename>/usr/ports</filename>.  If
-	<filename>/usr/ports</filename> is already
-	present but was not created by <command>svn</command>,
-	remember to rename or delete it before the checkout.</para>
+      <para>以下範例會使用 <acronym>HTTPS</acronym> 協定從 FreeBSD 的檔案庫取出 Port 套件集，並將本地工作複本放置於 <filename>/usr/ports</filename>。若 <filename>/usr/ports</filename> 已存在，且不是由 <command>svn</command> 所建立的，記得要在取出之前重新命名或刪除。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/ports/head /usr/ports</userinput></screen>
 
-      <para xml:lang="en">Because the initial checkout must download the full
-	branch of the remote repository, it can take a while.  Please
-	be patient.</para>
+      <para>由於首次取出的動作必須下載遠端檔案庫中完整的分支，會需要花費一段時間，請耐心等候。</para>
 
-      <para xml:lang="en">After the initial checkout, the local working copy can be
-	updated by running:</para>
+      <para>首次取出之後，往後要更新本地工作複本可以執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>svn update <replaceable>lwcdir</replaceable></userinput></screen>
 
-      <para xml:lang="en">To update
-	<filename>/usr/ports</filename> created in
-	the example above, use:</para>
+      <para>要更新上述範例所建立的 <filename>/usr/ports</filename> 可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>svn update /usr/ports</userinput></screen>
 
-      <para xml:lang="en">The update is much quicker than a checkout, only
-	transferring files that have changed.</para>
+      <para>因為只會傳輸有更新過的檔案，更新的動作會比取出還要快速。</para>
 
-      <para xml:lang="en">An alternate way of updating the local working copy after
-	checkout is provided by the <filename>Makefile</filename> in
-	the <filename>/usr/ports</filename>,
-	<filename>/usr/src</filename>, and
-	<filename>/usr/doc</filename> directories.
-	Set <varname>SVN_UPDATE</varname> and use the
-	<buildtarget xml:lang="en">update</buildtarget> target.  For example, to
-	update <filename>/usr/src</filename>:</para>
+      <para>另一種在取出之後更新本地工作複本的方式是透過 <filename>/usr/ports</filename>, <filename>/usr/src</filename> 以及 <filename>/usr/doc</filename> 目錄所提供的 <filename>Makefile</filename>。設定 <varname>SVN_UPDATE</varname> 並使用 <buildtarget>update</buildtarget> 目標。例如要更新 <filename>/usr/src</filename>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
 <prompt>#</prompt> <userinput>make update SVN_UPDATE=yes</userinput></screen>
@@ -58045,30 +57337,17 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	<secondary>Mirror Sites</secondary>
       </indexterm>
 
-      <para xml:lang="en">The FreeBSD <application>Subversion</application>
-	repository is:</para>
+      <para>FreeBSD <application>Subversion</application> 的檔案庫為：</para>
 
       <programlisting xml:lang="en">svn.FreeBSD.org</programlisting>
 
-      <para xml:lang="en">This is
-	a publicly accessible mirror network that uses GeoDNS to
-	select an appropriate back end server.  To view the FreeBSD
-	<application>Subversion</application> repositories through a
-	browser, use <link xlink:href="https://svnweb.FreeBSD.org/">https://svnweb.FreeBSD.org/</link>.</para>
+      <para>這是可公開存取的鏡像站，使用了 GeoDNS 會自動選擇適合的後端伺服器。若要由瀏覽器檢視 <application>Subversion</application> 檔案庫可以使用 <link xlink:href="https://svnweb.FreeBSD.org/">https://svnweb.FreeBSD.org/</link>。</para>
 
       <note>
-	<para xml:lang="en">The FreeBSD <application>Subversion</application> mirrors
-	  previously used self-signed SSL certificates documented in
-	  this chapter.  As of July 14, 2015, all mirrors now use an
-	  official SSL certificate that will be recognized by
-	  <application>Subversion</application> if the <package role="port">security/ca_root_nss</package> port is
-	  installed.  The legacy self-signed certificates and server
-	  names are still available but are deprecated and no longer
-	  supported.</para>
+	<para>FreeBSD <application>Subversion</application> 鏡像站先前使用的自我簽署 SSL 憑証記錄於本章節中。自 2015 年 7 月開始，所有鏡像站開始使用官方的 SSL  憑証，若有安裝 <package role="port">security/ca_root_nss</package> Port 則 <application>Subversion</application> 便有辦法辨識。舊的自我簽署憑証與伺服器名稱仍可以使用，但已不建議使用且不再支援。</para>
       </note>
 
-      <para xml:lang="en">For those without the <package role="port">security/ca_root_nss</package> port
-	installed, the SHA1 and SHA256 fingerprints are:</para>
+      <para>對於未安裝 <package role="port">security/ca_root_nss</package> Port 的系統，所需的 SHA1 與 SHA256 的指紋 (Fingerprint) 為：</para>
 
       <informaltable>
 	<tgroup cols="2">
@@ -58076,8 +57355,8 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	  <colspec colwidth="1*"/>
 	  <thead>
 	    <row>
-	      <entry xml:lang="en">Hash</entry>
-	      <entry xml:lang="en">Fingerprint</entry>
+	      <entry>編碼 (Hash)</entry>
+	      <entry>指紋 (Fingerprint)</entry>
 	    </row>
 	  </thead>
 
@@ -58095,19 +57374,11 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	</tgroup>
       </informaltable>
 
-      <para xml:lang="en"><acronym>HTTPS</acronym> is the preferred protocol,
-	providing protection against another computer pretending to be
-	the FreeBSD mirror (commonly known as a <quote>man in the
-	  middle</quote> attack) or otherwise trying to send bad
-	content to the end user.</para>
+      <para>建議使用 <acronym>HTTPS</acronym> 通訊協定，這可提供避免其他電腦假裝為 FreeBSD 鏡像站 (即為一般所知的 <quote>中間人攻擊 (Man in the middle)</quote> 攻擊) 與其他嘗試傳送惡意內容給終端使用者的保護。</para>
 
-      <para xml:lang="en">If <literal>https</literal> cannot be used due to firewall
-	or other problems, <literal>svn</literal> is the next choice,
-	with slightly faster transfers.  When neither can be used, use
-	<literal>http</literal>.</para>
+      <para>若因防火牆或其他問題無法使用 <literal>https</literal>，那麼下一個選擇為使用 <literal>svn</literal>，這個通訊協定會有較快的傳輸速度。當兩者皆無法使用時才使用 <literal>http</literal>。</para>
 
-      <para xml:lang="en">For those still using deprecated server names, the SHA1
-	and SHA256 fingerprints will be one of:</para>
+      <para>對於那些仍使用已不建議使用伺服器名稱的電腦的 SHA1 及 SHA256 指紋可為下列其中之一：</para>
 
       <informaltable>
 	<tgroup cols="2">
@@ -58115,145 +57386,122 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	  <colspec colwidth="1*"/>
 	  <thead>
 	    <row>
-	      <entry xml:lang="en">Hash</entry>
-	      <entry xml:lang="en">Fingerprint</entry>
+	      <entry>編碼 (Hash)</entry>
+	      <entry>指紋 (Fingerprint)</entry>
 	    </row>
 	  </thead>
 
 	  <tbody>
 	    <row>
-	      <entry xml:lang="en">Legacy-SHA1</entry>
+	      <entry>舊-SHA1</entry>
 	      <entry xml:lang="en"><literal>1C:BD:85:95:11:9F:EB:75:A5:4B:C8:A3:FE:08:E4:02:73:06:1E:61</literal></entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">Legacy-SHA1</entry>
+	      <entry>舊-SHA1</entry>
 	      <entry xml:lang="en"><literal>F6:44:AA:B9:03:89:0E:3E:8C:4D:4D:14:F0:27:E6:C7:C1:8B:17:C5</literal></entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">Legacy-SHA256</entry>
+	      <entry>舊-SHA256</entry>
 	      <entry xml:lang="en"><literal>47:35:A9:09:A3:AB:FA:20:33:36:43:C5:1A:D6:E6:FB:EB:C0:C0:83:37:D4:46:9C:A0:AB:89:7F:C2:9C:4C:A3</literal></entry>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en">Legacy-SHA256</entry>
+	      <entry>舊-SHA256</entry>
 	      <entry xml:lang="en"><literal>48:3C:84:DB:7C:27:1B:FA:D5:0B:A0:D7:E0:4C:79:AA:A3:8E:A3:FA:84:E6:32:34:7D:EB:30:E6:11:01:CF:BE</literal></entry>
 	    </row>
 	  </tbody>
 	</tgroup>
       </informaltable>
 
-      <para xml:lang="en">Seeing one of these legacy certificate
-	fingerprints means it is likely that a deprecated
-	server name is being used.</para>
+      <para>從這些舊的憑証指紋中找到對應已不建已使用伺服器名稱所使用的項目。</para>
     </sect2>
 
     <sect2>
       <title>取得更多資訊</title>
 
-      <para xml:lang="en">For other information about using
-	<application>Subversion</application>, please see the
-	<quote>Subversion Book</quote>, titled
-	<link xlink:href="http://svnbook.red-bean.com/">Version
-	  Control with Subversion</link>, or the <link xlink:href="http://subversion.apache.org/docs/">Subversion
-	  Documentation</link>.</para>
+      <para>要取得其他有關使用 <application>Subversion</application> 的資訊請參考 <quote>Subversion Book</quote>，其書名為 <link xlink:href="http://svnbook.red-bean.com/">Version Control with Subversion</link> 或是 <link xlink:href="http://subversion.apache.org/docs/">Subversion Documentation</link>。</para>
     </sect2>
   </sect1>
 
   <sect1 xml:id="mirrors-rsync">
     <title>使用 <application>rsync</application></title>
 
-    <para xml:lang="en">These sites make FreeBSD available through the rsync
-      protocol.  The <application>rsync</application> utility works in
-      much the same way as the <citerefentry><refentrytitle>rcp</refentrytitle><manvolnum>1</manvolnum></citerefentry> command, but has more
-      options and uses the rsync remote-update protocol which
-      transfers only the differences between two sets of files, thus
-      greatly speeding up the synchronization over the network.  This
-      is most useful for mirror sites of the FreeBSD
-      <acronym>FTP</acronym> server.  The
-      <application>rsync</application> suite is available for many
-      operating systems, on FreeBSD, see the <package>net/rsync</package>
-      port or use the package.</para>
+    <para>這些站台讓 FreeBSD 可透過 rsync 通訊協定取得。<application>rsync</application> 工具運作的方式類似 <citerefentry><refentrytitle>rcp</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令，但有更多的選項可用，且使用 rsync 遠端更新協定，該協定只會傳輸兩個檔案集之間的差異，所以能夠大大的加快在網路上同步的速度，這對大多數 FreeBSD <acronym>FTP</acronym> 伺服器的鏡像站非常有用。<application>rsync</application> 在許多作業系統上也可以使用，在 FreeBSD 上請參考 <package>net/rsync</package> Port 或使用套件。</para>
 
     <variablelist>
       <varlistentry>
-	<term xml:lang="en">Czech Republic</term>
+	<term>捷克 (Czech Republic)</term>
 
 	<listitem>
 	  <para xml:lang="en">rsync://ftp.cz.FreeBSD.org/</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">ftp: A partial mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>ftp: FreeBSD <acronym>FTP</acronym> 伺服器的部份鏡像。</para>
 	    </listitem>
 
 	    <listitem>
-	      <para xml:lang="en">FreeBSD: A full mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD: FreeBSD <acronym>FTP</acronym> 伺服器的完整鏡像。</para>
 	    </listitem>
 	  </itemizedlist>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">Netherlands</term>
+	<term>荷蘭 (Netherlands)</term>
 
 	<listitem>
 	  <para xml:lang="en">rsync://ftp.nl.FreeBSD.org/</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">FreeBSD: A full mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD: FreeBSD <acronym>FTP</acronym> 伺服器的完整鏡像。</para>
 	    </listitem>
 	  </itemizedlist>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">Russia</term>
+	<term>俄羅斯 (Russia)</term>
 
 	<listitem>
 	  <para xml:lang="en">rsync://ftp.mtu.ru/</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">FreeBSD: A full mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD: FreeBSD <acronym>FTP</acronym> 伺服器的完整鏡像。</para>
 	    </listitem>
 
 	    <listitem>
-	      <para xml:lang="en">FreeBSD-Archive: The mirror of FreeBSD Archive
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD-Archive: FreeBSD 封存 <acronym>FTP</acronym> 伺服器的鏡像。</para>
 	    </listitem>
 	  </itemizedlist>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">Sweden</term>
+	<term>瑞典 (Sweden)</term>
 
 	<listitem>
 	  <para xml:lang="en">rsync://ftp4.se.freebsd.org/</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">FreeBSD: A full mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD: FreeBSD <acronym>FTP</acronym> 伺服器的完整鏡像。</para>
 	    </listitem>
 	  </itemizedlist>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">Taiwan</term>
+	<term>台灣 (Taiwan)</term>
 
 	<listitem>
 	  <para xml:lang="en">rsync://ftp.tw.FreeBSD.org/</para>
@@ -58262,62 +57510,57 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 
 	  <para xml:lang="en">rsync://ftp6.tw.FreeBSD.org/</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">FreeBSD: A full mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD: FreeBSD <acronym>FTP</acronym> 伺服器的完整鏡像。</para>
 	    </listitem>
 	  </itemizedlist>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">United Kingdom</term>
+	<term>英國 (United Kingdom)</term>
 
 	<listitem>
 	  <para xml:lang="en">rsync://rsync.mirrorservice.org/</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">ftp.freebsd.org: A full mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>ftp.freebsd.org: FreeBSD <acronym>FTP</acronym> 伺服器的完整鏡像。</para>
 	    </listitem>
 	  </itemizedlist>
 	</listitem>
       </varlistentry>
 
       <varlistentry>
-	<term xml:lang="en">United States of America</term>
+	<term>美國 (USA)</term>
 
 	<listitem>
 	  <para xml:lang="en">rsync://ftp-master.FreeBSD.org/</para>
 
-	  <para xml:lang="en">This server may only be used by FreeBSD primary mirror
-	    sites.</para>
+	  <para>此伺服器僅供 FreeBSD 主要鏡像站使用。</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">FreeBSD: The master archive of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD: FreeBSD <acronym>FTP</acronym> 伺服器的主要封存。</para>
 	    </listitem>
 
 	    <listitem>
-	      <para xml:lang="en">acl: The FreeBSD master ACL list.</para>
+	      <para>acl: FreeBSD 主要 ACL 清單。</para>
 	    </listitem>
 	  </itemizedlist>
 
 	  <para xml:lang="en">rsync://ftp13.FreeBSD.org/</para>
 
-	  <para xml:lang="en">Available collections:</para>
+	  <para>可用的檔案集：</para>
 
 	  <itemizedlist>
 	    <listitem>
-	      <para xml:lang="en">FreeBSD: A full mirror of the FreeBSD
-		<acronym>FTP</acronym> server.</para>
+	      <para>FreeBSD: FreeBSD <acronym>FTP</acronym> 伺服器的完整鏡像。</para>
 	    </listitem>
 	  </itemizedlist>
 	</listitem>
@@ -61218,7 +60461,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     <title>官方鏡像站</title>
 
     
-<para xml:lang="en"><link linkend="central-www">Central Servers</link>, <link linkend="mirrors-am-www">Armenia</link>, <link linkend="mirrors-au-www">Australia</link>, <link linkend="mirrors-at-www">Austria</link>, <link linkend="mirrors-cz-www">Czech Republic</link>, <link linkend="mirrors-dk-www">Denmark</link>, <link linkend="mirrors-fi-www">Finland</link>, <link linkend="mirrors-fr-www">France</link>, <link linkend="mirrors-de-www">Germany</link>, <link linkend="mirrors-hk-www">Hong Kong</link>, <link linkend="mirrors-ie-www">Ireland</link>, <link linkend="mirrors-jp-www">Japan</link>, <link linkend="mirrors-lv-www">Latvia</link>, <link linkend="mirrors-lt-www">Lithuania</link>, <link linkend="mirrors-nl-www">Netherlands</link>, <link linkend="mirrors-no-www">Norway</link>, <link linkend="mirrors-ru-www">Russia</link>, <link linkend="mirrors-si-www">Slovenia</link>, <link linkend="mirrors-za-www">South Africa</link>, <link linkend="mirrors-es-www">Spain</link>, <link linkend="mirrors-se-www">Sweden</link>, <link linkend="mirrors-ch-www">Switzerland</link>, <link linkend="mirrors-tw-www">Taiwan</link>, <link linkend="mirrors-uk-www">United Kingdom</link>, <link linkend="mirrors-us-www">USA</link>.</para>
+<para><link linkend="central-www">中央伺服器</link>、<link linkend="mirrors-am-www">亞美尼亞 (Armenia)</link>、<link linkend="mirrors-au-www">澳洲 (Australia)</link>、<link linkend="mirrors-at-www">奧地利 (Austria)</link>、<link linkend="mirrors-cz-www">捷克 (Czech Republic)</link>、<link linkend="mirrors-dk-www">丹麥 (Denmark)</link>、<link linkend="mirrors-fi-www">芬蘭 (Finland)</link>、<link linkend="mirrors-fr-www">法國 (France)</link>、<link linkend="mirrors-de-www">德國 (Germany)</link>、<link linkend="mirrors-hk-www">香港 (Hong Kong)</link>、<link linkend="mirrors-ie-www">愛爾蘭 (Ireland)</link>、<link linkend="mirrors-jp-www">日本 (Japan)</link>、<link linkend="mirrors-lv-www">拉脫維亞 (Latvia)</link>、<link linkend="mirrors-lt-www">立陶宛 (Lithuania)</link>、<link linkend="mirrors-nl-www">荷蘭 (Netherlands)</link>、<link linkend="mirrors-no-www">挪威 (Norway)</link>、<link linkend="mirrors-ru-www">俄羅斯 (Russia)</link>、<link linkend="mirrors-si-www">斯洛維尼亞 (Slovenia)</link>、<link linkend="mirrors-za-www">南非 (South Africa)</link>、<link linkend="mirrors-es-www">西班牙 (Spain)</link>、<link linkend="mirrors-se-www">瑞典 (Sweden)</link>、<link linkend="mirrors-ch-www">瑞士 (Switzerland)</link>、<link linkend="mirrors-tw-www">台灣 (Taiwan)</link>、<link linkend="mirrors-uk-www">英國 (United Kingdom)</link>、<link linkend="mirrors-us-www">美國 (USA)</link>。</para>
 
 
     
@@ -61229,7 +60472,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 <itemizedlist>
   <listitem>
     <anchor xml:id="central-www"/>
-    <para xml:lang="en">Central Servers</para>
+    <para>中央伺服器</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61240,7 +60483,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-am-www"/>
-    <para xml:lang="en">Armenia</para>
+    <para>亞美尼亞 (Armenia)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www1.am.FreeBSD.org/">http://www1.am.FreeBSD.org/</link> (IPv6)</para>
@@ -61249,7 +60492,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-au-www"/>
-    <para xml:lang="en">Australia</para>
+    <para>澳洲 (Australia)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61265,7 +60508,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-at-www"/>
-    <para xml:lang="en">Austria</para>
+    <para>奧地利 (Austria)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www.at.FreeBSD.org/">http://www.at.FreeBSD.org/</link> (IPv6)</para>
@@ -61274,7 +60517,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-cz-www"/>
-    <para xml:lang="en">Czech Republic</para>
+    <para>捷克 (Czech Republic)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www.cz.FreeBSD.org/">http://www.cz.FreeBSD.org/</link> (IPv6)</para>
@@ -61283,7 +60526,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-dk-www"/>
-    <para xml:lang="en">Denmark</para>
+    <para>丹麥 (Denmark)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www.dk.FreeBSD.org/">http://www.dk.FreeBSD.org/</link> (IPv6)</para>
@@ -61292,7 +60535,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-fi-www"/>
-    <para xml:lang="en">Finland</para>
+    <para>芬蘭 (Finland)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61303,7 +60546,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-fr-www"/>
-    <para xml:lang="en">France</para>
+    <para>法國 (France)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61314,7 +60557,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-de-www"/>
-    <para xml:lang="en">Germany</para>
+    <para>德國 (Germany)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61325,7 +60568,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-hk-www"/>
-    <para xml:lang="en">Hong Kong</para>
+    <para>香港 (Hong Kong)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61336,7 +60579,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-ie-www"/>
-    <para xml:lang="en">Ireland</para>
+    <para>愛爾蘭 (Ireland)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61347,7 +60590,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-jp-www"/>
-    <para xml:lang="en">Japan</para>
+    <para>日本 (Japan)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www.jp.FreeBSD.org/www.FreeBSD.org/">http://www.jp.FreeBSD.org/www.FreeBSD.org/</link> (IPv6)</para>
@@ -61356,7 +60599,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-lv-www"/>
-    <para xml:lang="en">Latvia</para>
+    <para>拉脫維亞 (Latvia)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61367,7 +60610,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-lt-www"/>
-    <para xml:lang="en">Lithuania</para>
+    <para>立陶宛 (Lithuania)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61378,7 +60621,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-nl-www"/>
-    <para xml:lang="en">Netherlands</para>
+    <para>荷蘭 (Netherlands)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61389,7 +60632,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-no-www"/>
-    <para xml:lang="en">Norway</para>
+    <para>挪威 (Norway)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61400,7 +60643,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-ru-www"/>
-    <para xml:lang="en">Russia</para>
+    <para>俄羅斯 (Russia)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www.ru.FreeBSD.org/">http://www.ru.FreeBSD.org/</link> (IPv6)</para>
@@ -61409,7 +60652,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-si-www"/>
-    <para xml:lang="en">Slovenia</para>
+    <para>斯洛維尼亞 (Slovenia)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61420,7 +60663,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-za-www"/>
-    <para xml:lang="en">South Africa</para>
+    <para>南非 (South Africa)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61431,7 +60674,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-es-www"/>
-    <para xml:lang="en">Spain</para>
+    <para>西班牙 (Spain)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61447,7 +60690,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-se-www"/>
-    <para xml:lang="en">Sweden</para>
+    <para>瑞典 (Sweden)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61458,7 +60701,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-ch-www"/>
-    <para xml:lang="en">Switzerland</para>
+    <para>瑞士 (Switzerland)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www.ch.FreeBSD.org/">http://www.ch.FreeBSD.org/</link> (IPv6)</para>
@@ -61470,7 +60713,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-tw-www"/>
-    <para xml:lang="en">Taiwan</para>
+    <para>台灣 (Taiwan)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61494,7 +60737,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-uk-www"/>
-    <para xml:lang="en">United Kingdom</para>
+    <para>英國 (United Kingdom)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en">
@@ -61510,7 +60753,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
   </listitem>
   <listitem>
     <anchor xml:id="mirrors-us-www"/>
-    <para xml:lang="en">USA</para>
+    <para>美國 (USA)</para>
     <itemizedlist>
       <listitem>
         <para xml:lang="en"><link xlink:href="http://www5.us.FreeBSD.org/">http://www5.us.FreeBSD.org/</link> (IPv6)</para>
