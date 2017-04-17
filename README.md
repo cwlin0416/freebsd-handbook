@@ -19,7 +19,7 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
   - [X] 11. 設定與調校
   - [X] 12. FreeBSD 開機程序
   - [X] 23. 更新與升級 FreeBSD
-    - [ ] 23.6. 重新編譯 World
+    - [X] 23.6. 重新編譯 World
   - [ ] 13. 安全性
     - [ ] 13.3. 一次性密碼
     - [ ] 13.8. OpenSSH
