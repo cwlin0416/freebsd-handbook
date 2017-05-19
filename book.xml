@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 49901 2017-01-29 07:12:45Z jmd $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50052 2017-03-12 14:52:35Z dexter $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -141,6 +141,7 @@
 <!ENTITY pgpkey.demon SYSTEM "demon.key">
 <!ENTITY pgpkey.den SYSTEM "den.key">
 <!ENTITY pgpkey.des SYSTEM "des.key">
+<!ENTITY pgpkey.dexter SYSTEM "dexter.key">
 <!ENTITY pgpkey.dfr SYSTEM "dfr.key">
 <!ENTITY pgpkey.dhartmei SYSTEM "dhartmei.key">
 <!ENTITY pgpkey.dhn SYSTEM "dhn.key">
@@ -164,6 +165,7 @@
 <!ENTITY pgpkey.emax SYSTEM "emax.key">
 <!ENTITY pgpkey.erj SYSTEM "erj.key">
 <!ENTITY pgpkey.erwin SYSTEM "erwin.key">
+<!ENTITY pgpkey.eugen SYSTEM "eugen.key">
 <!ENTITY pgpkey.fabient SYSTEM "fabient.key">
 <!ENTITY pgpkey.fanf SYSTEM "fanf.key">
 <!ENTITY pgpkey.farrokhi SYSTEM "farrokhi.key">
@@ -344,6 +346,7 @@
 <!ENTITY pgpkey.mlaier SYSTEM "mlaier.key">
 <!ENTITY pgpkey.mm SYSTEM "mm.key">
 <!ENTITY pgpkey.mmel SYSTEM "mmel.key">
+<!ENTITY pgpkey.mmokhi SYSTEM "mmokhi.key">
 <!ENTITY pgpkey.mmoll SYSTEM "mmoll.key">
 <!ENTITY pgpkey.mnag SYSTEM "mnag.key">
 <!ENTITY pgpkey.mp SYSTEM "mp.key">
@@ -411,6 +414,7 @@
 <!ENTITY pgpkey.rafan SYSTEM "rafan.key">
 <!ENTITY pgpkey.rakuco SYSTEM "rakuco.key">
 <!ENTITY pgpkey.ray SYSTEM "ray.key">
+<!ENTITY pgpkey.rcyu SYSTEM "rcyu.key">
 <!ENTITY pgpkey.rdivacky SYSTEM "rdivacky.key">
 <!ENTITY pgpkey.rea SYSTEM "rea.key">
 <!ENTITY pgpkey.rees SYSTEM "rees.key">
@@ -497,6 +501,7 @@
 <!ENTITY pgpkey.tmm SYSTEM "tmm.key">
 <!ENTITY pgpkey.tmseck SYSTEM "tmseck.key">
 <!ENTITY pgpkey.tobez SYSTEM "tobez.key">
+<!ENTITY pgpkey.tobik SYSTEM "tobik.key">
 <!ENTITY pgpkey.tota SYSTEM "tota.key">
 <!ENTITY pgpkey.trasz SYSTEM "trasz.key">
 <!ENTITY pgpkey.trevor SYSTEM "trevor.key">
@@ -1283,7 +1288,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 49507 2016-10-12 20:01:32Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 50139 2017-04-09 00:48:24Z brd $
 -->
 <chapter version="5.0" xml:id="introduction">
 
@@ -1586,7 +1591,7 @@
 	<listitem>
 	  <para><link xlink:href="http://www.ixsystems.com/">iXsystems</link> <indexterm>
 	      <primary>iXsystems</primary>
-	    </indexterm> - 統合存儲 (Unified Storage) 設備的 TrueNAS 產品線是以 FreeBSD 為基礎。除了該公司自己的商業產品外，iXsystems 也管理著 PC-BSD 和 FreeNAS 兩個開源計劃的開發。</para>
+	    </indexterm> - 統合存儲 (Unified Storage) 設備的 TrueNAS 產品線是以 FreeBSD 為基礎。除了該公司自己的商業產品外，iXsystems 也管理著 TrueOS 和 FreeNAS 兩個開源計劃的開發。</para>
 	</listitem>
 
 	<listitem>
@@ -1641,7 +1646,7 @@
 	  <para><link xlink:href="https://www.stormshield.eu">Stormshield</link> <indexterm>
 	      <primary>Stormshield</primary>
 
-	    </indexterm> - Stormshield 網路安全設備使用了硬體化版本的 FreeBSD 做為基礎，BSD 授權條款讓我們我們的智慧財產與系統可以整合，並同時回饋大量有趣的發展給社群。</para>
+	    </indexterm> - Stormshield 網路安全設備使用了硬體化版本的 FreeBSD 做為基礎，BSD 授權條款讓他們可將其智慧財產與系統整合並同時回饋大量有趣的發展給社群。</para>
 	</listitem>
 
 	<listitem>
@@ -1719,8 +1724,8 @@
 	</listitem>
 
 	<listitem>
-	  <para><link xlink:href="http://www.pcbsd.org/">PC-BSD</link> <indexterm>
-	      <primary>PC-BSD</primary>
+	  <para><link xlink:href="http://www.pcbsd.org/">TrueOS</link> <indexterm>
+	      <primary>TrueOS</primary>
 	    </indexterm> - 訂製版本的 FreeBSD，裝備了給桌面使用者使用的圖型化工具來展示 FreeBSD 強大的功能給所有使用者，專門設計來緩解使用者在 Windows 與 OS X 間的過渡。</para>
 	</listitem>
 
@@ -2025,7 +2030,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 49539 2016-10-21 20:31:12Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 50142 2017-04-09 01:10:27Z brd $
 -->
 
 <chapter version="5.0" xml:id="bsdinstall">
@@ -2098,7 +2103,7 @@
     <para>一般來說，本章所寫的安裝說明是針對 <trademark>i386</trademark> 和 <acronym>AMD64</acronym> 架構。如果可以用於其他平台，將會列表說明。 安裝程式和本章所敘述的內容可能會有些微差異，所以請將本章視為通用的指引，而不是完全照著來做。</para>
 
     <note>
-      <para>喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 PC-BSD 計畫所使用的。 他可以用來安裝圖形化桌面 (PC-BSD) 或是指令列版本的 FreeBSD。 細節請參考 PC-BSD 使用者 Handbook (<link xlink:href="http://wiki.pcbsd.org/index.php/Colophon">http://wiki.pcbsd.org/index.php/Colophon</link>)。</para>
+      <para>喜歡用圖形化安裝程式安裝 FreeBSD 的使用者， 可能會對 <application>pc-sysinstall</application> 有興趣，這是 TrueOS 計畫所使用的。 他可以用來安裝圖形化桌面 (TrueOS) 或是指令列版本的 FreeBSD。 細節請參考 TrueOS 使用者 Handbook (<link xlink:href="https://www.trueos.org/handbook/trueos.html">https://www.trueos.org/handbook/trueos.html</link>)。</para>
     </note>
 
     <para>讀完這章，您將了解︰</para>
@@ -2354,7 +2359,7 @@
 	  <step>
 	    <title>取得 <application>Image Writer <trademark class="registered">Windows</trademark> 版</application></title>
 
-	    <para><application>Image Writer <trademark class="registered">Windows</trademark> 版</application> 是一個免費的應用程式，可以正確地將映像檔寫入隨身碟。 從 <uri xlink:href="https://launchpad.net/win32-image-writer/">https://launchpad.net/win32-image-writer/</uri> 下載，並解壓縮到一個資料夾。</para>
+	    <para><application>Image Writer <trademark class="registered">Windows</trademark> 版</application> 是一個免費的應用程式，可以正確地將映像檔寫入隨身碟。可從 <uri xlink:href="https://sourceforge.net/projects/win32diskimager/">https://sourceforge.net/projects/win32diskimager/</uri> 下載，並解壓縮到一個資料夾。</para>
 	  </step>
 
 	  <step>
@@ -2719,7 +2724,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	<para>有時在 <filename>/var/tmp</filename> 會需要較多的空間，當新軟體安裝，套件工具會從套件中取出暫存的複本置於 <filename>/var/tmp</filename>。若在 <filename>/var/tmp</filename> 沒有足夠的空間，要安裝大型軟體套件，例如 <application>Firefox</application>, <application>Apache OpenOffice</application> 或 <application>LibreOffice</application> 會很困難。</para>
       </note>
 
-      <para><filename>/usr</filename> 分割區會保存許多支持系統運作的檔案，包含 FreeBSD Port 套件集以及系統原始碼。這個分割區建議至少要有 2 GB 的空間。</para>
+      <para><filename>/usr</filename> 分割區保存了許多支持系統運作的檔案，包含 FreeBSD Port 套件集以及系統原始碼，這個分割區建議至少要有 2 GB 的空間。</para>
 
       <para>在規劃分割區大小時，請牢記空間需求，當因某個分割區空間不足時要改使用其他分割區時會很麻煩。</para>
 
@@ -5948,7 +5953,7 @@ Swap: 2048M Total, 2048M Free
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 49829 2017-01-10 23:08:09Z linimon $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 50140 2017-04-09 00:54:08Z brd $
 -->
 <chapter version="5.0" xml:id="ports">
 
@@ -6125,7 +6130,7 @@ subversion-static-<replaceable>1.8.8_2</replaceable>
 subversion16-<replaceable>1.6.23_4</replaceable>
 subversion17-<replaceable>1.7.16_2</replaceable></screen>
 
-	<para>套件名稱包含版本編號，且若 Port 使用 Python 為基礎，也會包含用來編譯該套件的 Python 版本。有些 Port 會有多個版本可使用，如 <application>subversion</application> ，因編譯選項不同，有多個版本可用，這個例子中即指靜態連結版本的 <application>subversion</application>。在指定要安裝的套件時，最好使用 Port 來源來指定該應用程式，Port 來源是指應用程式在 Port 樹中的路徑。再輸入一次 <command>pkg search</command> 並加上 <option>-o</option> 來列出每個套件來源：</para>
+	<para>套件名稱包含版本編號，且若 Port 使用 Python 為基礎，也會包含用來編譯該套件的 Python 版本。有些 Port 會有多個版本可使用，如 <application>Subversion</application> ，因編譯選項不同，有多個版本可用，這個例子中即指靜態連結版本的 <application>Subversion</application>。在指定要安裝的套件時，最好使用 Port 來源來指定該應用程式，Port 來源是指應用程式在 Port 樹中的路徑。再輸入一次 <command>pkg search</command> 並加上 <option>-o</option> 來列出每個套件來源：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>pkg search -o <replaceable>subversion</replaceable></userinput>
 devel/git-subversion
@@ -6216,7 +6221,7 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput></screen>
 
-      <para>您必須有網際網路連線供啟動程式使用。</para>
+      <para>您必須有可用的網際網路連線供啟動程式使用方可成功。</para>
 
       <para>否則，要安裝 Port 套件，則須執行：</para>
 
@@ -6575,7 +6580,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       <sect3>
 	<title>自訂 Port 安裝</title>
 
-	<para>部份 Port 提供編譯選項，可用來開啟或關閉應用程式中的元件、安全選項、或其他允許自訂的項目。這類的應用程式例子包括 <package>www/firefox</package>, <package>security/gpgme</package> 以及 <package>mail/sylpheed-claws</package>。若 Port 相依的其他 Port 有可設定的選項時，預設的模式會提示使用者選擇選單中的選項，這可能會讓安裝的過程暫停讓使用者操作數次。要避免這個情況，可在 Port skeleton 中執行 <command>make config-recursive</command> 來一次設定所有選項。然後再執行 <command>make install [clean]</command> 編譯與安裝該 Port。</para>
+	<para>部份 Port 提供編譯選項，可用來開啟或關閉應用程式中的元件、安全選項、或其他允許自訂的項目。這類的應用程式例子包括 <package>www/firefox</package>, <package>security/gpgme</package> 以及 <package>mail/sylpheed-claws</package>。若 Port 相依的其他 Port 有可設定的選項時，預設的模式會提示使用者選擇選單中的選項，這可能會讓安裝的過程暫停讓使用者操作數次。要避免這個情況，可一次設定所有選項，只要在 Port skeleton 中執行 <command>make config-recursive</command>，然後再執行 <command>make install [clean]</command> 編譯與安裝該 Port。</para>
 
 	<tip>
 	  <para>使用 <buildtarget>config-recursive</buildtarget> 時，會使用 <buildtarget>all-depends-list</buildtarget> Target 來收集所有要設定 Port 清單。建議執行 <command>make config-recursive</command> 直到所有相依的 Port 選項都已定義，直到 Port 的選項畫面不會再出現，來確定所有相依的選項都已經設定。</para>
@@ -6990,7 +6995,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 49905 2017-01-29 16:14:25Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 50137 2017-04-09 00:31:35Z brd $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -7083,7 +7088,7 @@ ports-mgmt/pkg
 	<term>視窗管理程式 (Window Manager)</term>
 
 	<listitem>
-	  <para>X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href="http://xwinman.org/">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有 <quote>開始</quote> 鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Port 套件集的 <filename>x11-wm</filename> 分類找到。</para>
+	  <para>X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交給所謂的視窗管理程式來管理。可用的<link xlink:href="http://www.xwinman.org/">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有 <quote>開始</quote> 鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗管理程式可在 Port 套件集的 <filename>x11-wm</filename> 分類找到。</para>
 
 	  <para>每個視窗管理程式也各有其不同的設定機制，有些需要手動修改設定檔， 而有的則可透過圖型化工具來完成大部分的設定工作。</para>
 	</listitem>
@@ -8412,7 +8417,7 @@ EndSection</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 49854 2017-01-15 02:54:36Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 50009 2017-02-25 15:07:23Z bcr $
 -->
 <chapter version="5.0" xml:id="desktop">
   <!--
@@ -8435,7 +8440,7 @@ EndSection</programlisting>
     <para>隨著 FreeBSD 優越的效能及穩定性越來越熱門，它同時適合作為每日使用的桌面系統。FreeBSD 套件或 Port 有超過 24,000 個可用的應用程式，可以簡單的建立一個自訂的桌面環境來執行各種不同的桌面應用程式。本章將示範如何安裝數個桌面應用程式，包含網頁瀏覽器、辦工軟體、文件閱覽程式以及財務軟體。</para>
 
     <note>
-      <para>比起重頭設定，更偏好安裝預先編譯好桌面環境的 FreeBSD 版本的使用者可參考 <link xlink:href="http://www.pcbsd.org/">pcbsd.org 網站</link></para>
+      <para>比起重頭設定與編譯，較偏好使用 FreeBSD 桌面環境已預先編譯好版本的使用者可參考 <link xlink:href="http://www.trueos.org/">trueos.org 網站</link>。</para>
     </note>
 
     <para>在閱讀這章之前，你必須了解如何：</para>
@@ -9196,7 +9201,7 @@ EndSection</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 49918 2017-02-04 08:01:15Z ryusuke $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 50124 2017-04-04 13:02:08Z sevan $
 -->
 <chapter version="5.0" xml:id="multimedia">
 
@@ -9217,7 +9222,7 @@ EndSection</programlisting>
   <sect1 xml:id="multimedia-synopsis">
     <title>概述</title>
 
-    <para>FreeBSD 廣泛地支援各種音效卡， 讓您可以享受來自電腦上的高傳真音質(Hi-Fi)， 此外還包括了錄製和播放 MPEG Audio Layer 3 (<acronym>MP3</acronym>)、 Waveform Audio File (<acronym>WAV</acronym>)、Ogg Vorbis 以及其他許多種格式聲音的能力。同時 FreeBSD Port 套件集也包含了許多可讓您可以錄音、編修音效以及控制 MIDI 配備的應用程式。</para>
+    <para>FreeBSD 廣泛地支援各種音效卡， 讓使用者可以享受來自電腦上的高傳真音質(Hi-Fi)， 此外還包括了錄製和播放 MPEG Audio Layer 3 (<acronym>MP3</acronym>)、 Waveform Audio File (<acronym>WAV</acronym>)、Ogg Vorbis 以及其他許多種格式聲音的能力。同時 FreeBSD Port 套件集也包含了許多可讓您可以錄音、編修音效以及控制 MIDI 配備的應用程式。</para>
 
     <para> FreeBSD 也能播放一般的視訊檔和 <acronym>DVD</acronym>。 FreeBSD Port 套件集中含有可編碼、轉換以及播放格種影像媒體的應用程式。</para>
 
@@ -16742,7 +16747,7 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/boot/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/boot/chapter.xml 50045 2017-03-10 13:31:18Z bcr $
 -->
 
 <chapter version="5.0" xml:id="boot">
@@ -16922,7 +16927,7 @@ boot:</screen>
 	      <entry xml:lang="en">boot
 		<optional><replaceable>-options</replaceable></optional>
 		<optional><replaceable>kernelname</replaceable></optional></entry>
-	      <entry>使用指定的選項或核心名稱立即啟動核心。由指令列指定核心名稱前必須先執行 <command>unload</command>，否則會使用先前載入過的核心。若 <emphasis>kernelname</emphasis> 不是完整的路徑則會搜尋 <emphasis>/boot/kernel</emphasis> 及 <emphasis>/boot/modules</emphasis> 底下。</entry>
+	      <entry>使用任何指定的選項或核心名稱立即啟動核心，要由指令列指定核心名稱必須先執行 <command>unload</command>，否則會使用先前載入過的核心。若 <emphasis>kernelname</emphasis> 不是完整的路徑則會搜尋 <emphasis>/boot/kernel</emphasis> 及 <emphasis>/boot/modules</emphasis> 底下。</entry>
 	    </row>
 
 	    <row>
@@ -17514,7 +17519,7 @@ Enter new password:</screen>
 
       <para>FreeBSD 原生提供了基礎的 <acronym>IDS</acronym> 系統，雖然每天晚上會有安全性的信件會通知管理者相關的變更，但這些資訊是儲存在本地的，這讓惡意的使用者有機會能夠修改這些資訊來隱藏其對系統的變更。也因此，會建議建立一個獨立的 Binary 簽名並將這些簽名儲存在唯度、root 擁有的目錄或在可移除的 <acronym>USB</acronym> 磁碟或遠端 <application>rsync</application> 伺服器更好。</para>
 
-      <para>內建 <command>mtree</command> 工具可以對一個目錄中的內容產生一個規格檔，產生規格檔會用到一個種子碼或常數，然後在檢查規格是否有更改過時會也會需要使用這個種子碼或常數。這讓檢查一個檔案或 Binary 是否被修改變成可能的一件事。由於攻擊者並不知道種子碼 (Seed)，要仿冒或檢查檔案的校驗碼 (Checksum) 數值是幾乎不可能的。以下例子會產生一組 <acronym>SHA256</acronym> 雜湊，每一個在 <filename>/bin</filename> 的系統  Binary 都會有一個，並姐會將這些值以隱藏黨儲存在 <systemitem class="username">root</systemitem> 的家目錄，<filename>/root/.bin_chksum_mtree</filename>：</para>
+      <para>內建 <command>mtree</command> 工具可以對一個目錄中的內容產生一個規格檔，產生規格檔會用到一個種子碼 (Seed) 或常數，然後在檢查規格是否有更改過時會也會需要使用這個種子碼或常數。這讓檢查一個檔案或 Binary 是否被修改變成可能的一件事。由於攻擊者並不知道種子碼，要仿冒或檢查檔案的校驗碼 (Checksum) 數值是幾乎不可能的。以下例子會產生一組 <acronym>SHA256</acronym> 雜湊，每一個在 <filename>/bin</filename> 的系統  Binary 都會有一個，並姐會將這些值以隱藏黨儲存在 <systemitem class="username">root</systemitem> 的家目錄，<filename>/root/.bin_chksum_mtree</filename>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mtree -s <replaceable>3483151339707503</replaceable> -c -K cksum,sha256digest -p <replaceable>/bin</replaceable> &gt; <replaceable>/root/.bin_chksum_mtree</replaceable></userinput>
 <prompt>#</prompt> mtree: /bin checksum: 3427012225</screen>
@@ -17600,67 +17605,20 @@ cat changed
       <secondary>one-time passwords</secondary>
     </indexterm>
 
-    <para xml:lang="en">By default, FreeBSD includes support for One-time Passwords In
-      Everything (<acronym>OPIE</acronym>).  <acronym>OPIE</acronym>
-      is designed to prevent replay attacks, in which an attacker
-      discovers a user's password and uses it to access a system.
-      Since a password is only used once in <acronym>OPIE</acronym>, a
-      discovered password is of little use to an attacker.
-      <acronym>OPIE</acronym> uses a secure hash and a
-      challenge/response system to manage passwords.  The FreeBSD
-      implementation uses the <acronym>MD5</acronym> hash by
-      default.</para>
+    <para>預設 FreeBSD 已內建一次性密碼 (One-time Passwords In Everything, <acronym>OPIE</acronym>)。<acronym>OPIE</acronym> 設計用來避免重送攻擊 (Replay attack)，重送攻擊指的是攻擊者發現了某位使用者的密碼，然後使用該密碼來存取系統。由於在 <acronym>OPIE</acronym> 的環境下，一組密碼只能被使用一次，被發現的密碼對攻擊者而言便沒有什麼作用。<acronym>OPIE</acronym> 使用了安全的加密方式與詰問/回應系統 (Challenge/response system) 來管理密碼。FreeBSD 在實作上預設採用 <acronym>MD5</acronym> 加密。</para>
 
-    <para xml:lang="en"><acronym>OPIE</acronym> uses three different types of
-      passwords.  The first is the usual <trademark class="registered">UNIX</trademark> or Kerberos password.
-      The second is the one-time password which is generated by
-      <command>opiekey</command>.  The third type of password is the
-      <quote>secret password</quote> which is used to generate
-      one-time passwords.  The secret password has nothing to do with,
-      and should be different from, the <trademark class="registered">UNIX</trademark> password.</para>
+    <para><acronym>OPIE</acronym> 使用了三種不同類型的密碼，第一種是一般的 <trademark class="registered">UNIX</trademark> 或 Kerberos 密碼，第二種是由 <command>opiekey</command> 所產生的一次性密碼，第三種是用來生一次性密碼的 <quote>秘密密碼 (Secret password)</quote>，秘密密碼與 <trademark class="registered">UNIX</trademark> 密碼無關且不應相同。</para>
 
-    <para xml:lang="en">There are two other pieces of data that are important to
-      <acronym>OPIE</acronym>.  One is the <quote>seed</quote> or
-      <quote>key</quote>, consisting of two letters and five digits.
-      The other is the <quote>iteration count</quote>, a number
-      between 1 and 100.  <acronym>OPIE</acronym> creates the one-time
-      password by concatenating the seed and the secret password,
-      applying the <acronym>MD5</acronym> hash as many times as
-      specified by the iteration count, and turning the result into
-      six short English words which represent the one-time password.
-      The authentication system keeps track of the last one-time
-      password used, and the user is authenticated if the hash of the
-      user-provided password is equal to the previous password.
-      Because a one-way hash is used, it is impossible to generate
-      future one-time passwords if a successfully used password is
-      captured.  The iteration count is decremented after each
-      successful login to keep the user and the login program in sync.
-      When the iteration count gets down to <literal>1</literal>,
-      <acronym>OPIE</acronym> must be reinitialized.</para>
+    <para>對 <acronym>OPIE</acronym> 來說還有另外兩個部份的資料很重要。其中一個是<quote>種子碼 (Seed)</quote> 或稱<quote>金鑰 (Key)</quote>，由兩個字母與五個數字組成。另一個則是<quote>疊代次數 (Iteration count)</quote>，是一個介於 1 到 100 間的數字。<acronym>OPIE</acronym> 會將種子碼與秘密密碼串連後，套用 <acronym>MD5</acronym> 加密數次後 (根據疊代次數)，再將結果轉換成六個簡短的英文單字來產生一次性密碼。認証系統會持續追蹤最後使用的一次性密碼，若使用者提供的密碼加密後與前一次的密碼相同則可通過認証。由於採用了單向的加密方式，若使用過的密碼被成功擷取也無法拿來產生之後的一次性密碼。疊代次數會在每一次登入成功之後減少，來保持使用者與登入程式間的同步。當疊代次數減少至 <literal>1</literal> 時，<acronym>OPIE</acronym> 便要重新初始化。</para>
 
-    <para xml:lang="en">There are a few programs involved in this process.  A
-      one-time password, or a consecutive list of one-time passwords,
-      is generated by passing an iteration count, a seed, and a secret
-      password to <citerefentry><refentrytitle>opiekey</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  In addition to initializing
-      <acronym>OPIE</acronym>, <citerefentry><refentrytitle>opiepasswd</refentrytitle><manvolnum>1</manvolnum></citerefentry> is used to change
-      passwords, iteration counts, or seeds.  The relevant credential
-      files in <filename>/etc/opiekeys</filename> are examined by
-      <citerefentry><refentrytitle>opieinfo</refentrytitle><manvolnum>1</manvolnum></citerefentry> which prints out the invoking user's current
-      iteration count and seed.</para>
+    <para>這個整個程序會牽涉到幾個程式。傳送疊代次數、種子碼與秘密密碼來產生一組一次性密碼或數個一次性密碼的 <citerefentry><refentrytitle>opiekey</refentrytitle><manvolnum>1</manvolnum></citerefentry>。除了初始化 <acronym>OPIE</acronym> 之外，用來更改密碼、疊代次數或種子碼的 <citerefentry><refentrytitle>opiepasswd</refentrytitle><manvolnum>1</manvolnum></citerefentry>。會讀取放在 <filename>/etc/opiekeys</filename> 的相關憑証檔來列出使用者目前的疊代次數與種子碼的 <citerefentry><refentrytitle>opieinfo</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
-    <para xml:lang="en">This section describes four different sorts of operations.
-      The first is how to set up one-time-passwords for the first time
-      over a secure connection.  The second is how to use
-      <command>opiepasswd</command> over an insecure connection.  The
-      third is how to log in over an insecure connection.  The fourth
-      is how to generate a number of keys which can be written down or
-      printed out to use at insecure locations.</para>
+    <para>本章節將介紹四種不同的操作，第一是如何在安全連線下做第一次的一次性密碼設定，第二是如何使用在不安全的連線下使用 <command>opiepasswd</command>，第三是如何在不安全的連線下登入系統，第四是如何產生數個可以被記錄或列印下來在不安全的場所使的金鑰。</para>
 
     <sect2>
       <title>初始化 <acronym>OPIE</acronym></title>
 
-      <para xml:lang="en">To initialize <acronym>OPIE</acronym> for the first time,
-	run this command from a secure location:</para>
+      <para>第一次要初始化 <acronym>OPIE</acronym>，要在安全的場所執行以下指令：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>opiepasswd -c</userinput>
 Adding unfurl:
@@ -17674,41 +17632,17 @@ Again new secret pass phrase:
 ID unfurl OTP key is 499 to4268
 MOS MALL GOAT ARM AVID COED</screen>
 
-      <para xml:lang="en">The <option>-c</option> sets console mode which assumes
-	that the command is being run from a secure location, such as
-	a computer under the user's control or a
-	<acronym>SSH</acronym> session to a computer under the user's
-	control.</para>
+      <para><option>-c</option> 會設定採用假設指令在安全場所執行的 Console 模式，如在使用者掌控之中的電腦或者透過 <acronym>SSH</acronym> 連線到一台在使用者掌控之中的電腦。</para>
 
-      <para xml:lang="en">When prompted, enter the secret password which will be
-	used to generate the one-time login keys.  This password
-	should be difficult to guess and should be different than the
-	password which is associated with the user's login account.
-	It must be between 10 and 127 characters long.  Remember this
-	password.</para>
+      <para>提示出現後，輸入用來產生一次性登入金鑰的秘密密碼，應使用一個不容易被猜出來的密碼，且應與使用者登入帳號所使用的密碼不同，密碼必須介於 10 到 127 個字元長度之間，然後請記住這個密碼。</para>
 
-      <para xml:lang="en">The <literal>ID</literal> line lists the login name
-	(<literal>unfurl</literal>), default iteration count
-	(<literal>499</literal>), and default seed
-	(<literal>to4268</literal>).  When logging in, the system will
-	remember these parameters and display them, meaning that they
-	do not have to be memorized.  The last line lists the
-	generated one-time password which corresponds to those
-	parameters and the secret password.  At the next login, use
-	this one-time password.</para>
+      <para><literal>ID</literal> 行會列出登入名稱 (<literal>unfurl</literal>)、預設的疊代次數 (<literal>499</literal>) 以及預設的種子碼 (<literal>to4268</literal>)。在進行登入時，系統會記住這些參數並且顯示出來，這也代表不需要另外記錄這些資訊。最後一行會列出根據這些參數與秘密密碼所產生出來的一次性密碼，在下一次登入時便要使用這個一次性密碼。</para>
     </sect2>
 
     <sect2>
-      <title>不安全連線初始化</title>
+      <title>在不安全連線下做初始化</title>
 
-      <para xml:lang="en">To initialize or change the secret password on an
-	insecure system, a secure connection is needed to some place
-	where <command>opiekey</command> can be run.  This might be a
-	shell prompt on a trusted machine.  An iteration count is
-	needed, where 100 is probably a good value, and the seed can
-	either be specified or the randomly-generated one used.  On
-	the insecure connection, the machine being initialized, use
-	<citerefentry><refentrytitle>opiepasswd</refentrytitle><manvolnum>1</manvolnum></citerefentry>:</para>
+      <para>要在不安全的系統上初始化或更改秘密密碼會需要某個可使用安全的連線的地方執行 <command>opiekey</command>，這可能是在某一台信任的主機上的 Shell。初始化需要設定疊代次數，100 可能是不錯的數字，種子碼可以自行指定或隨機產生，在不安全連線下要被初始化主機須使用 <citerefentry><refentrytitle>opiepasswd</refentrytitle><manvolnum>1</manvolnum></citerefentry>：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>opiepasswd</userinput>
 
@@ -17724,9 +17658,7 @@ New secret pass phrase:
 ID mark OTP key is 499 gr4269
 LINE PAP MILK NELL BUOY TROY</screen>
 
-      <para xml:lang="en">To accept the default seed, press <keycap>Return</keycap>.
-	Before entering an access password, move over to the secure
-	connection and give it the same parameters:</para>
+      <para>要採用預設的種子碼，可直接按下 <keycap>Return</keycap> 做初始化。接著在輸入回應之前移到安全的連線然後給予相同的加密參數產生密碼：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>opiekey 498 to4268</userinput>
 Using the MD5 algorithm to compute response.
@@ -17734,16 +17666,13 @@ Reminder: Do not use opiekey from telnet or dial-in sessions.
 Enter secret pass phrase:
 GAME GAG WELT OUT DOWN CHAT</screen>
 
-      <para xml:lang="en">Switch back over to the insecure connection, and copy the
-	generated one-time password over to the relevant
-	program.</para>
+      <para>切換回不安全的連線，然後複製產生的一次性密碼貼上。</para>
     </sect2>
 
     <sect2>
       <title>產生單組一次性密碼</title>
 
-      <para xml:lang="en">After initializing <acronym>OPIE</acronym> and logging in,
-	a prompt like this will be displayed:</para>
+      <para>在初始化 <acronym>OPIE</acronym> 之後進行登入會顯示如下的提示訊息：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>telnet example.com</userinput>
 Trying 10.0.0.1...
@@ -17756,25 +17685,15 @@ login: <userinput>&lt;username&gt;</userinput>
 otp-md5 498 gr4269 ext
 Password: </screen>
 
-      <para xml:lang="en">The <acronym>OPIE</acronym> prompts provides a useful
-	feature.  If <keycap>Return</keycap> is pressed at the
-	password prompt, the prompt will turn echo on and display
-	what is typed.  This can be useful when attempting to type in
-	a password by hand from a printout.</para>
+      <para><acronym>OPIE</acronym> 的提示提供了一個很有用的功能，若在密碼提示時按下 <keycap>Return</keycap>，便會開啟回應功能並顯示輸入的內容，這個功能在嘗試手工輸入列印出來的密碼時很有用。</para>
 
       <indexterm xml:lang="en"><primary>MS-DOS</primary></indexterm>
       <indexterm xml:lang="en"><primary>Windows</primary></indexterm>
       <indexterm xml:lang="en"><primary>MacOS</primary></indexterm>
 
-      <para xml:lang="en">At this point, generate the one-time password to answer
-	this login prompt.  This must be done on a trusted system
-	where it is safe to run <citerefentry><refentrytitle>opiekey</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  There are versions
-	of this command for <trademark class="registered">Windows</trademark>, <trademark class="registered">Mac OS</trademark> and FreeBSD.  This command
-	needs the iteration count and the seed as command line
-	options.  Use cut-and-paste from the login prompt on the
-	machine being logged in to.</para>
+      <para>此時，要產生一次性密碼來回應登入時的提示，這必須在受信任且可安全執行 <citerefentry><refentrytitle>opiekey</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的系統上完成。這個指令有提供 <trademark class="registered">Windows</trademark>, <trademark class="registered">Mac OS</trademark> 與 FreeBSD 版本，使用時需要疊代次數與種子碼做為在指令列的參數，剪下在要登入主機在登入時所提示的訊息。</para>
 
-      <para xml:lang="en">On the trusted system:</para>
+      <para>在信任的系統上執行：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>opiekey 498 to4268</userinput>
 Using the MD5 algorithm to compute response.
@@ -17782,17 +17701,13 @@ Reminder: Do not use opiekey from telnet or dial-in sessions.
 Enter secret pass phrase:
 GAME GAG WELT OUT DOWN CHAT</screen>
 
-      <para xml:lang="en">Once the one-time password is generated, continue to log
-	in.</para>
+      <para>在產生一次性密碼後，回到登入畫面繼續登入。</para>
     </sect2>
 
     <sect2>
       <title>產生多組一次性密碼</title>
 
-      <para xml:lang="en">Sometimes there is no access to a trusted machine or
-	secure connection.  In this case, it is possible to use
-	<citerefentry><refentrytitle>opiekey</refentrytitle><manvolnum>1</manvolnum></citerefentry> to generate a number of one-time passwords
-	beforehand.  For example:</para>
+      <para>有時會無法存取信任的主機或沒有安全的連線，在這種情況下，可以使用 <citerefentry><refentrytitle>opiekey</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來預先產生多個一次性密碼，例如：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>opiekey -n 5 30 zz99999</userinput>
 Using the MD5 algorithm to compute response.
@@ -17804,37 +17719,21 @@ Enter secret pass phrase: <userinput>&lt;secret password&gt;</userinput>
 29: RIO ODIN GO BYE FURY TIC
 30: GREW JIVE SAN GIRD BOIL PHI</screen>
 
-      <para xml:lang="en">The <option>-n 5</option> requests five keys in sequence,
-	and <option>30</option> specifies what the last iteration
-	number should be.  Note that these are printed out in
-	<emphasis>reverse</emphasis> order of use.  The really
-	paranoid might want to write the results down by hand;
-	otherwise, print the list.  Each line shows both the iteration
-	count and the one-time password.  Scratch off the passwords as
-	they are used.</para>
+      <para><option>-n 5</option> 會請求產生連續五個金鑰，而 <option>30</option> 則是指定最後一個疊代的編號。注意這些列印出的結果的順序與使用的順序<emphasis>相反</emphasis>。十足的偏執狂可能會想要用手寫下結果，否則就列印出清單。每一行會同時顯示疊代次數及一次性密碼，在密碼使用過後便可劃掉。</para>
     </sect2>
 
     <sect2>
       <title>限制使用 <trademark class="registered">UNIX</trademark> 密碼</title>
 
-      <para xml:lang="en"><acronym>OPIE</acronym> can restrict the use of <trademark class="registered">UNIX</trademark>
-	passwords based on the IP address of a login session.  The
-	relevant file is <filename>/etc/opieaccess</filename>, which
-	is present by default.  Refer to <citerefentry><refentrytitle>opieaccess</refentrytitle><manvolnum>5</manvolnum></citerefentry> for more
-	information on this file and which security considerations to
-	be aware of when using it.</para>
+      <para><acronym>OPIE</acronym> 可以根據登入階段的 IP 位置限制使用 <trademark class="registered">UNIX</trademark> 密碼，相關的檔案為 <filename>/etc/opieaccess</filename>，這個檔案預設便存在。請參考 <citerefentry><refentrytitle>opieaccess</refentrytitle><manvolnum>5</manvolnum></citerefentry> 來取得更多有關此檔案的資訊以及當使用時要考量的安全性問題。</para>
 
-      <para xml:lang="en">Here is a sample <filename>opieaccess</filename>:</para>
+      <para>這裡有一個範本 <filename>opieaccess</filename>：</para>
 
       <programlisting xml:lang="en">permit 192.168.0.0 255.255.0.0</programlisting>
 
-      <para xml:lang="en">This line allows users whose IP source address (which is
-	vulnerable to spoofing) matches the specified value and mask,
-	to use <trademark class="registered">UNIX</trademark> passwords at any time.</para>
+      <para>這一行允許來源 IP 位址 (容易受到詐騙的位址) 符合指定值與遮罩的使用者在任何時間可使用 <trademark class="registered">UNIX</trademark> 密碼登入。</para>
 
-      <para xml:lang="en">If no rules in <filename>opieaccess</filename> are
-	matched, the default is to deny non-<acronym>OPIE</acronym>
-	logins.</para>
+      <para>若在 <filename>opieaccess</filename> 中沒有符合的規則，預設會拒絕非 <acronym>OPIE</acronym> 的登入。</para>
     </sect2>
   </sect1>
 
@@ -19380,34 +19279,13 @@ racoon_enable="yes"</programlisting>
       <secondary>OpenSSH</secondary>
     </indexterm>
 
-    <para xml:lang="en"><application>OpenSSH</application> is a set of network
-      connectivity tools used to provide secure access to remote
-      machines.  Additionally, <acronym>TCP/IP</acronym> connections
-      can be tunneled or forwarded securely through
-      <acronym>SSH</acronym> connections.
-      <application>OpenSSH</application> encrypts all traffic to
-      effectively eliminate eavesdropping, connection hijacking, and
-      other network-level attacks.</para>
+    <para><application>OpenSSH</application> 是一套網路連線工具，可安全的存取遠端的主機，此外，透過 <acronym>SSH</acronym> 連線可以建立 <acronym>TCP/IP</acronym> 連線通道或安全的轉送 <acronym>TCP/IP</acronym> 的封包。<application>OpenSSH</application> 會對所有傳輸的資料做加密，可有效的避免竊聽 (Eavesdropping)、或連線劫持 (Connection hijacking) 與其他網路層的攻擊。</para>
 
-    <para xml:lang="en"><application>OpenSSH</application> is maintained by the
-      OpenBSD project and is installed by default in FreeBSD.  It is
-      compatible with both <acronym>SSH</acronym> version 1 and 2
-      protocols.</para>
+    <para><application>OpenSSH</application> 由 OpenBSD 專案所維護且在 FreeBSD 預設會安裝，它可同時相容 <acronym>SSH</acronym> 版本 1 與 2 通訊協定。</para>
 
-    <para xml:lang="en">When data is sent over the network in an unencrypted form,
-      network sniffers anywhere in between the client and server can
-      steal user/password information or data transferred during the
-      session.  <application>OpenSSH</application> offers a variety of
-      authentication and encryption methods to prevent this from
-      happening.  More information about
-      <application>OpenSSH</application> is available from <link xlink:href="http://www.openssh.com/">http://www.openssh.com/</link>.</para>
+    <para>當以未加密的方式在網路上傳送資料時，任何在客戶端與伺服器之間的網路竊聽程式 (Network sniffer) 皆可竊取使用者/密碼資訊或者在連線階段傳送的資料，<application>OpenSSH</application> 提供了數種認証與加密方式來避免這種事情發生。更多有關 <application>OpenSSH</application> 的資訊可於 <link xlink:href="http://www.openssh.com/">http://www.openssh.com/</link> 取得。</para>
 
-    <para xml:lang="en">This section provides an overview of the built-in client
-      utilities to securely access other systems and securely transfer
-      files from a FreeBSD system.  It then describes how to configure a
-      <acronym>SSH</acronym> server on a FreeBSD system.  More
-      information is available in the man pages mentioned in this
-      chapter.</para>
+    <para>本節會簡單介紹如何使用內建的客戶端工具安全的存取其他系統及安全的傳輸檔案到 FreeBSD 系統，然後會說明如何設定在 FreeBSD 系統上的 <acronym>SSH</acronym> 伺服器。更多的資訊可於本章節所提及的操作手冊 (Man page) 取得。</para>
 
     <sect2>
       <title>使用 SSH 客戶端工具</title>
@@ -19417,12 +19295,7 @@ racoon_enable="yes"</programlisting>
 	<secondary>client</secondary>
       </indexterm>
 
-      <para xml:lang="en">To log into a <acronym>SSH</acronym> server, use
-	<command>ssh</command> and specify a username that exists on
-	that server and the <acronym>IP</acronym> address or hostname
-	of the server.  If this is the first time a connection has
-	been made to the specified server, the user will be prompted
-	to first verify the server's fingerprint:</para>
+      <para>要登入一台 <acronym>SSH</acronym> 伺服器，可使用 <command>ssh</command> 然後指定在伺服器上存在的使用者名稱與 <acronym>IP</acronym> 位址或伺服器的主機名稱。若這是第一次連線到指定的伺服器，會提示該使用者伺服器的指紋做第一次檢驗：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ssh <replaceable>user@example.com</replaceable></userinput>
 The authenticity of host 'example.com (10.0.0.1)' can't be established.
@@ -19431,26 +19304,9 @@ Are you sure you want to continue connecting (yes/no)? <userinput>yes</userinput
 Permanently added 'example.com' (ECDSA) to the list of known hosts.
 Password for user@example.com: <userinput><replaceable>user_password</replaceable></userinput></screen>
 
-      <para xml:lang="en"><acronym>SSH</acronym> utilizes a key fingerprint system
-	to verify the authenticity of the server when the client
-	connects.  When the user accepts the key's fingerprint by
-	typing <literal>yes</literal> when connecting for the first
-	time, a copy of the key is saved to
-	<filename>.ssh/known_hosts</filename> in the user's home
-	directory.  Future attempts to login are verified against the
-	saved key and <command>ssh</command> will display an alert if
-	the server's key does not match the saved key.  If this
-	occurs, the user should first verify why the key has changed
-	before continuing with the connection.</para>
+      <para><acronym>SSH</acronym> 會在客戶端連線時利用金鑰指紋 (Key fingerprint) 系統來驗證伺服器的真偽，當使用者在第一次連線時輸入 <literal>yes</literal> 接受了這個金鑰指紋，便會將該金鑰的複本儲存到使用者家目錄的 <filename>.ssh/known_hosts</filename>，未來嘗試登入時便會以這個存好的金鑰來驗證，若伺服器的金鑰與儲存的金鑰不同將會顯示警告訊息。若出現這個警告時，使用者應在繼續連線之前檢查金鑰變動的原因。</para>
 
-      <para xml:lang="en">By default, recent versions of
-	<application>OpenSSH</application> only accept
-	<acronym>SSH</acronym>v2 connections.  By default, the client
-	will use version 2 if possible and will fall back to version 1
-	if the server does not support version 2.  To force
-	<command>ssh</command> to only use the specified protocol,
-	include <option>-1</option> or <option>-2</option>.
-	Additional options are described in <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+      <para>最近版本的 <application>OpenSSH</application> 預設只會接受 <acronym>SSH</acronym>v2 的連線。客戶端預設會盡可能使用版本 2 的通訊協定，若伺服器不支援版本 2 的通訊協定便會向下相容版本 1 的協定。要強制 <command>ssh</command> 只能使用指定的通訊協定，可使用 <option>-1</option> 或 <option>-2</option>，其他的選項在 <citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry> 中有說明。</para>
 
       <indexterm xml:lang="en">
 	<primary>OpenSSH</primary>
@@ -19460,11 +19316,7 @@ Password for user@example.com: <userinput><replaceable>user_password</replaceabl
 	<primary><citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></citerefentry></primary>
       </indexterm>
 
-      <para xml:lang="en">Use <citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></citerefentry> to securely copy a file to or from a
-	remote machine.  This example copies
-	<filename>COPYRIGHT</filename> on the remote system to a file
-	of the same name in the current directory of the local
-	system:</para>
+      <para>使用 <citerefentry><refentrytitle>scp</refentrytitle><manvolnum>1</manvolnum></citerefentry> 可從遠端主機安全的複製一個檔案，以下範例會複製在遠端主機的 <filename>COPYRIGHT</filename> 到本地主機的目前目錄：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>scp <replaceable>user@example.com:/COPYRIGHT COPYRIGHT</replaceable></userinput>
 Password for user@example.com: <userinput><replaceable>*******</replaceable></userinput>
@@ -19472,36 +19324,16 @@ COPYRIGHT            100% |*****************************|  4735
 00:00
 <prompt>#</prompt></screen>
 
-      <para xml:lang="en">Since the fingerprint was already verified for this host,
-	the server's key is automatically checked before prompting for
-	the user's password.</para>
+      <para>由於這個主機的指紋已驗證過，在提示用者輸入密碼之前伺服器的金鑰已自動檢查。</para>
 
-      <para xml:lang="en">The arguments passed to <command>scp</command> are similar
-	to <command>cp</command>.  The file or files to copy is the
-	first argument and the destination to copy to is the second.
-	Since the file is fetched over the network, one or more of the
-	file arguments takes the form
-	<option>user@host:&lt;path_to_remote_file&gt;</option>.  Be
-	aware when copying directories recursively that
-	<command>scp</command> uses <option>-r</option>, whereas
-	<command>cp</command> uses <option>-R</option>.</para>
+      <para>傳給 <command>scp</command> 的參數與傳給 <command>cp</command> 的參數相似。第一個參數是要複製的檔案，第二個參數是目地，由於檔案是透過網路取得，檔案參數需要使用 <option>user@host:&lt;path_to_remote_file&gt;</option> 格式。注意，在 <command>scp</command> 要遞迴複製目錄是使用 <option>-r</option>，如同 <command>cp</command> 使用 <option>-R</option>。</para>
 
-      <para xml:lang="en">To open an interactive session for copying files, use
-	<command>sftp</command>.  Refer to <citerefentry><refentrytitle>sftp</refentrytitle><manvolnum>1</manvolnum></citerefentry> for a list of
-	available commands while in an <command>sftp</command>
-	session.</para>
+      <para>要開啟可互動的連線來複製檔案可使用 <command>sftp</command>，請參考 <citerefentry><refentrytitle>sftp</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得在 <command>sftp</command> 連線時可用的指令清單。</para>
 
       <sect3 xml:id="security-ssh-keygen">
 	<title>以金鑰為基礎的認證</title>
 
-	<para xml:lang="en">Instead of using passwords, a client can be configured
-	  to connect to the remote machine using keys.  To generate
-	  <acronym>RSA</acronym>
-	  authentication keys, use <command>ssh-keygen</command>.  To
-	  generate a public and private key pair, specify the type of
-	  key and follow the prompts.  It is recommended to protect
-	  the keys with a memorable, but hard to guess
-	  passphrase.</para>
+	<para>除了使用密碼之外，客戶端可以設定成使用金鑰來連線到遠端的主機。要產生 <acronym>RSA</acronym> 認証金鑰可使用 <command>ssh-keygen</command>。要產生成對的公鑰與私鑰，可指定金鑰的類型並依提示操作。建議使用容易記住但較難猜出的密碼來保護這個金鑰。</para>
 
 	<screen xml:lang="en"><prompt>%</prompt> <userinput>ssh-keygen -t rsa</userinput>
 Generating public/private rsa key pair.
@@ -19527,66 +19359,28 @@ The key's randomart image is:
 
 	<calloutlist>
 	  <callout arearefs="co-ssh-keygen-passphrase1">
-	    <para xml:lang="en">Type a passphrase here.  It can contain spaces and
-	      symbols.</para>
+	    <para>在此輸入密碼，密碼不可含有空白或符號。</para>
 	  </callout>
 
 	  <callout arearefs="co-ssh-keygen-passphrase2">
-	    <para xml:lang="en">Retype the passphrase to verify it.</para>
+	    <para>再輸入一次密碼驗證。</para>
 	  </callout>
 	</calloutlist>
 
 
-	<para xml:lang="en">The private key
-	  is stored in <filename>~/.ssh/id_rsa</filename>
-	  and the public key
-	  is stored in <filename>~/.ssh/id_rsa.pub</filename>.
-	  The
-	  <emphasis>public</emphasis> key must be copied to
-	  <filename>~/.ssh/authorized_keys</filename> on the remote
-	  machine for key-based authentication to
-	  work.</para>
+	<para>私鑰會儲存於 <filename>~/.ssh/id_rsa</filename> 而公鑰會儲存於 <filename>~/.ssh/id_rsa.pub</filename>。<emphasis>公鑰</emphasis>必須複製到遠端主機的<filename>~/.ssh/authorized_keys</filename> 來讓以金鑰為基礎的認証可以運作。</para>
 
 	<warning>
-	  <para xml:lang="en">Many users believe that keys are secure by design and
-	    will use a key without a passphrase.  This is
-	    <emphasis>dangerous</emphasis> behavior.  An
-	    administrator can verify that a key pair is protected by a
-	    passphrase by viewing the private key manually.  If the
-	    private key file contains the word
-	    <literal>ENCRYPTED</literal>, the key owner is using a
-	    passphrase.  In addition, to better secure end users,
-	    <literal>from</literal> may be placed in the public key
-	    file.  For example, adding
-	    <literal>from="192.168.10.5"</literal> in front of the
-	    <literal>ssh-rsa</literal>
-	    prefix will only allow that specific user to log in from
-	    that <acronym>IP</acronym> address.</para>
+	  <para>許多使用者認為金鑰的設計是安全的並在產生金鑰時未使用密碼，這樣的行為其實很<emphasis>危險</emphasis>。管理者可以手動查看私鑰來檢查金鑰對是否受密碼保護，如果私鑰檔案中包含 <literal>ENCRYPTED</literal> 字詞，則代表金鑰的擁有者有使用密碼。此外，要更進一步保護最終使用者的安全，可在公鑰檔案中放入 <literal>from</literal>，例如，在 <literal>ssh-rsa</literal> 前加上 <literal>from="192.168.10.5"</literal> 將只允許指定的使用者由該 IP 位址登入。</para>
 	</warning>
 
-	<para xml:lang="en">The options and files vary with different versions of
-	  <application>OpenSSH</application>.
-	  To avoid problems, consult <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+	<para>不同版本 <application>OpenSSH</application> 的選項與檔案會不同，要避免發生問題請參考 <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
-	<para xml:lang="en">If a passphrase is used, the user is prompted for
-	  the passphrase each time a connection is made to the server.
-	  To load <acronym>SSH</acronym> keys into memory and remove
-	  the need to type the passphrase each time, use
-	  <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</manvolnum></citerefentry> and <citerefentry><refentrytitle>ssh-add</refentrytitle><manvolnum>1</manvolnum></citerefentry>.</para>
+	<para>若使用了密碼，在每次連線到伺服器時都會提示使用者輸入密碼。要將 <acronym>SSH</acronym> 金鑰載入到記憶體並讓每次連線時不必再輸入密碼，可使用 <citerefentry><refentrytitle>ssh-agent</refentrytitle><manvolnum>1</manvolnum></citerefentry> 與 <citerefentry><refentrytitle>ssh-add</refentrytitle><manvolnum>1</manvolnum></citerefentry>。</para>
 
-	<para xml:lang="en">Authentication is handled by
-	  <command>ssh-agent</command>, using the private keys that
-	  are loaded into it.  <command>ssh-agent</command>
-	  can be used to launch another application like a
-	  shell or a window manager.</para>
+	<para>認証可用 <command>ssh-agent</command> 來管理，只要將私鑰載入，<command>ssh-agent</command> 可用在執行其他應用程式，如 Shell 或視窗管理程式。</para>
 
-	<para xml:lang="en">To use <command>ssh-agent</command> in a shell, start it
-	  with a shell as an argument.  Add the identity by
-	  running <command>ssh-add</command> and entering the
-	  passphrase for the private key.
-	  The user will then be able to <command>ssh</command>
-	  to any host that has the corresponding public key installed.
-	  For example:</para>
+	<para>要在 Shell 使用 <command>ssh-agent</command>，使用 Shell 做為參數來啟動 <command>ssh-agent</command>。執行 <command>ssh-add</command> 來加入識別碼，然後輸入私鑰的密碼。使用者將可使用 <command>ssh</command> 連線到任何有安裝對應公鑰的主機，例如：</para>
 
 	<screen xml:lang="en"><prompt>%</prompt> ssh-agent <replaceable>csh</replaceable>
 <prompt>%</prompt> ssh-add
@@ -19596,25 +19390,15 @@ Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 
 	<calloutlist>
 	  <callout arearefs="co-ssh-agent-passphrase">
-	    <para xml:lang="en">Enter the passphrase for the key.</para>
+	    <para>輸入金鑰的密碼。</para>
 	  </callout>
 	</calloutlist>
 
-	<para xml:lang="en">To use <command>ssh-agent</command> in
-	  <application>Xorg</application>, add an entry for it in
-	  <filename>~/.xinitrc</filename>.  This provides the
-	  <command>ssh-agent</command> services to all programs
-	  launched in <application>Xorg</application>.  An example
-	  <filename>~/.xinitrc</filename> might look like this:</para>
+	<para>要在 <application>Xorg</application> 使用 <command>ssh-agent</command> 可在 <filename>~/.xinitrc</filename> 加入一個設定項目，這可讓 <command>ssh-agent</command> 對所有在 <application>Xorg</application> 中執行的程式提供服務。<filename>~/.xinitrc</filename> 範例如下：</para>
 
 	<programlisting xml:lang="en">exec ssh-agent <replaceable>startxfce4</replaceable></programlisting>
 
-	<para xml:lang="en">This launches <command>ssh-agent</command>, which in
-	  turn launches <application>XFCE</application>, every time
-	  <application>Xorg</application> starts.  Once
-	  <application>Xorg</application> has been restarted so that
-	  the changes can take effect, run <command>ssh-add</command>
-	  to load all of the <acronym>SSH</acronym> keys.</para>
+	<para>這會在每次啟動 <application>Xorg</application> 時，反過來先執行 <command>ssh-agent</command> 再由執行 <application>XFCE</application>，一但 <application>Xorg</application> 被重新啟動，要讓所有變更生效需執行 <command>ssh-add</command> 來載入所有的 <acronym>SSH</acronym> 金鑰。</para>
       </sect3>
 
       <sect3 xml:id="security-ssh-tunneling">
@@ -19625,26 +19409,21 @@ Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 	  <secondary>tunneling</secondary>
 	</indexterm>
 
-	<para xml:lang="en"><application>OpenSSH</application> has the ability to
-	  create a tunnel to encapsulate another protocol in an
-	  encrypted session.</para>
+	<para><application>OpenSSH</application> 可以建立一個通道 (Tunnel) 來封裝其他通訊協定到一個加密的連線。</para>
 
-	<para xml:lang="en">The following command tells <command>ssh</command> to
-	  create a tunnel for
-	  <application>telnet</application>:</para>
+	<para>以下指令會告訴 <command>ssh</command> 建立一個供 <application>telnet</application> 使用的通道：</para>
 
 	<screen xml:lang="en"><prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>5023:localhost:23 user@foo.example.com</replaceable></userinput>
 <prompt>%</prompt></screen>
 
-	<para xml:lang="en">This example uses the following options:</para>
+	<para>這個例子使用了以下選項：</para>
 
 	<variablelist>
 	  <varlistentry>
 	    <term xml:lang="en"><option>-2</option></term>
 
 	    <listitem>
-	      <para xml:lang="en">Forces <command>ssh</command> to use version 2 to
-		connect to the server.</para>
+	      <para>強制 <command>ssh</command> 使用版本 2 的通訊協定連線到伺服器。</para>
 	    </listitem>
 	  </varlistentry>
 
@@ -19652,9 +19431,7 @@ Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 	    <term xml:lang="en"><option>-N</option></term>
 
 	    <listitem>
-	      <para xml:lang="en">Indicates no command, or tunnel only.  If omitted,
-		<command>ssh</command> initiates a normal
-		session.</para>
+	      <para>代表不需下指令、只建立通道。若省略這個選項 <command>ssh</command> 會初始化一個正常的連線。</para>
 	    </listitem>
 	  </varlistentry>
 
@@ -19662,8 +19439,7 @@ Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 	    <term xml:lang="en"><option>-f</option></term>
 
 	    <listitem>
-	      <para xml:lang="en">Forces <command>ssh</command> to run in the
-		background.</para>
+	      <para>強制 <command>ssh</command> 在背景執行。</para>
 	    </listitem>
 	  </varlistentry>
 
@@ -19671,9 +19447,7 @@ Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 	    <term xml:lang="en"><option>-L</option></term>
 
 	    <listitem>
-	      <para xml:lang="en">Indicates a local tunnel in
-		<replaceable>localport:remotehost:remoteport</replaceable>
-		format.</para>
+	      <para>代表這是一個本地通道，使用 <replaceable>localport:remotehost:remoteport</replaceable> 格式。</para>
 	    </listitem>
 	  </varlistentry>
 
@@ -19681,29 +19455,14 @@ Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 	    <term xml:lang="en"><option>user@foo.example.com</option></term>
 
 	    <listitem>
-	      <para xml:lang="en">The login name to use on the specified remote
-		<acronym>SSH</acronym> server.</para>
+	      <para>在指定的遠端 <acronym>SSH</acronym> 伺服器要使用的登入名稱。</para>
 	    </listitem>
 	  </varlistentry>
 	</variablelist>
 
-	<para xml:lang="en">An <acronym>SSH</acronym> tunnel works by creating a
-	  listen socket on <systemitem>localhost</systemitem> on the
-	  specified <literal>localport</literal>.  It then forwards
-	  any connections received on <literal>localport</literal> via
-	  the <acronym>SSH</acronym> connection to the specified
-	  <literal>remotehost:remoteport</literal>.  In the example,
-	  port <literal>5023</literal> on the client is forwarded to
-	  port <literal>23</literal> on the remote machine.  Since
-	  port 23 is used by <application>telnet</application>, this
-	  creates an encrypted <application>telnet</application>
-	  session through an <acronym>SSH</acronym> tunnel.</para>
+	<para>SSH 通道會建立一個傾聽 <systemitem>localhost</systemitem> 指定 <literal>localport</literal> 的 Socket ，然後會透過 <acronym>SSH</acronym>  連線轉送任何在 <literal>localport</literal> 接收的連線。以這個例子來說在客戶端的 Port <literal>5023</literal> 會被轉送到遠端主機的 Port <literal>23</literal>，由於 Port 23 是由 <application>telnet</application> 使用，所以這會透過 <acronym>SSH</acronym> 通道建立一個加密的 <application>telnet</application> 連線。</para>
 
-	<para xml:lang="en">This method can be used to wrap any number of insecure
-	  <acronym>TCP</acronym> protocols such as
-	  <acronym>SMTP</acronym>, <acronym>POP3</acronym>, and
-	  <acronym>FTP</acronym>, as seen in the following
-	  examples.</para>
+	<para>這個方法可用來包裝許多不安全的 <acronym>TCP</acronym> 通訊協定，例如 <acronym>SMTP</acronym>, <acronym>POP3</acronym> 以及 <acronym>FTP</acronym>，如下例所示。</para>
 
 	<example>
 	  <title>建立供 <acronym>SMTP</acronym> 使用的安全通道</title>
@@ -19716,58 +19475,31 @@ Connected to localhost.
 Escape character is '^]'.
 220 mailserver.example.com ESMTP</screen>
 
-	  <para xml:lang="en">This can be used in conjunction with
-	    <command>ssh-keygen</command> and additional user accounts
-	    to create a more seamless <acronym>SSH</acronym> tunneling
-	    environment.  Keys can be used in place of typing a
-	    password, and the tunnels can be run as a separate
-	    user.</para>
+	  <para>這可配合 <command>ssh-keygen</command> 與另一個使用者帳號與來建立一個更無縫的 <acronym>SSH</acronym> 通道環境，可使用金鑰來代替手動輸入密碼，然後該通道便可以另一個使用者執行。</para>
 	</example>
 
 	<example>
 	  <title>安全存取 <acronym>POP3</acronym> 伺服器</title>
 
-	  <para xml:lang="en">In this example, there is an <acronym>SSH</acronym>
-	    server that accepts connections from the outside.  On the
-	    same network resides a mail server running a
-	    <acronym>POP3</acronym> server.  To check email in a
-	    secure manner, create an <acronym>SSH</acronym> connection
-	    to the <acronym>SSH</acronym> server and tunnel through to
-	    the mail server:</para>
+	  <para>在這個例子中有一個 <acronym>SSH</acronym> 伺服器會接受來自外部的連線，在同個網段下有一個郵件伺服器執行 <acronym>POP3</acronym> 伺服器。要使用較安全的方式檢查有沒有新郵件可建立一個 <acronym>SSH</acronym> 連線到 <acronym>SSH</acronym> 伺服器然後透過通道連線到郵件伺服器：</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>2110:mail.example.com:110 user@ssh-server.example.com</replaceable></userinput>
 user@ssh-server.example.com's password: <userinput>******</userinput></screen>
 
-	  <para xml:lang="en">Once the tunnel is up and running, point the email
-	    client to send <acronym>POP3</acronym> requests to
-	    <systemitem>localhost</systemitem> on port 2110.  This
-	    connection will be forwarded securely across the tunnel to
-	    <systemitem>mail.example.com</systemitem>.</para>
+	  <para>一但通道啟動並執行後，指定郵件客戶端將 <acronym>POP3</acronym> 請求傳送到 <systemitem>localhost</systemitem> 的 Port 2110，這個連線將會被安全的透過通道轉送到 <systemitem>mail.example.com</systemitem>。</para>
 	</example>
 
 	<example>
 	  <title>跳過防火牆</title>
 
-	  <para xml:lang="en">Some firewalls
-	    filter both incoming and outgoing connections.  For
-	    example, a firewall might limit access from remote
-	    machines to ports 22 and 80 to only allow
-	    <acronym>SSH</acronym> and web surfing.  This prevents
-	    access to any other service which uses a port other than
-	    22 or 80.</para>
+	  <para>有些防火牆會同時過濾傳入與傳出的連線。例如，防火牆很可能會限制來自遠端主機只能存取 Port 22 與 80 來只讓 <acronym>SSH</acronym> 與網頁瀏覽器連線，這會使得 Port 使用 22 或 80 以外的服務無法存取。</para>
 
-	  <para xml:lang="en">The solution is to create an <acronym>SSH</acronym>
-	    connection to a machine outside of the network's firewall
-	    and use it to tunnel to the desired service:</para>
+	  <para>這問題的解決方法是建立一個 <acronym>SSH</acronym> 連線到在防火牆防護之外主機然後使用該連線的通道連到想要使用的服務：</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>ssh -2 -N -f -L <replaceable>8888:music.example.com:8000 user@unfirewalled-system.example.org</replaceable></userinput>
 user@unfirewalled-system.example.org's password: <userinput>*******</userinput></screen>
 
-	  <para xml:lang="en">In this example, a streaming Ogg Vorbis client can now
-	    be pointed to <systemitem>localhost</systemitem> port
-	    8888, which will be forwarded over to
-	    <systemitem>music.example.com</systemitem> on port 8000,
-	    successfully bypassing the firewall.</para>
+	  <para>在這個例子中，串流 Ogg Vorbis 客戶端現在可以指向 <systemitem>localhost</systemitem> Port 8888，連線將會被轉送到 <systemitem>music.example.com</systemitem> 於 Port 8000，成功的跳過防火牆。</para>
 	</example>
       </sect3>
     </sect2>
@@ -19780,112 +19512,59 @@ user@unfirewalled-system.example.org's password: <userinput>*******</userinput><
 	<secondary>enabling</secondary>
       </indexterm>
 
-      <para xml:lang="en">In addition to providing built-in <acronym>SSH</acronym>
-	client utilities, a FreeBSD system can be configured as an
-	<acronym>SSH</acronym> server, accepting connections from
-	other <acronym>SSH</acronym> clients.</para>
+      <para>除了提供內建的 <acronym>SSH</acronym> 客戶端工具外，還可以設定 FreeBSD 系統為一個 <acronym>SSH</acronym> 伺服器，以接受來自其他 <acronym>SSH</acronym> 客戶端的連線。</para>
 
-      <para xml:lang="en">To see if <application>sshd</application> is operating,
-	use the <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> command:</para>
+      <para>要查看 <application>sshd</application> 是否正在運作，可使用 <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service sshd status</userinput></screen>
 
-      <para xml:lang="en">If the service is not running, add the following line to
-	<filename>/etc/rc.conf</filename>.</para>
+      <para>若服務未執行，請加入下行到 <filename>/etc/rc.conf</filename>。</para>
 
       <programlisting xml:lang="en">sshd_enable="YES"</programlisting>
 
-      <para xml:lang="en">This will start <application>sshd</application>, the
-	daemon program for <application>OpenSSH</application>, the
-	next time the system boots.  To start it now:</para>
+      <para>這會讓下次系統開機時啟動 <application>OpenSSH</application> 的 Daemon 程式 <application>sshd</application>。若要立即啟動：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service sshd start</userinput></screen>
 
-      <para xml:lang="en">The first time <application>sshd</application> starts on a
-	FreeBSD system, the system's host keys will be automatically
-	created and the fingerprint will be displayed on the console.
-	Provide users with the fingerprint so that they can verify it
-	the first time they connect to the server.</para>
+      <para>在 FreeBSD 系統第一次啟動 <application>sshd</application> 時便會自動產生系統的主機金鑰且會顯示指紋在  Console 上，這個指紋可供使用者在第一次連線到伺服器時驗證用。</para>
 
-      <para xml:lang="en">Refer to <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> for the list of available options
-	when starting <application>sshd</application> and a more
-	complete discussion about authentication, the login process,
-	and the various configuration files.</para>
+      <para>請參考 <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 可取得在啟動 <application>sshd</application> 時可用選項的清單以及更多完整有關認証、登入程序與各種設定檔的資訊。</para>
 
-      <para xml:lang="en">At this point, the <application>sshd</application> should
-	be available to all users with a username and password on
-	the system.</para>
+      <para>現在，<application>sshd</application> 應可供所有在系統上有使用者名稱及密碼的使用者使用。</para>
     </sect2>
 
     <sect2>
       <title>SSH 伺服器安全性</title>
 
-      <para xml:lang="en">While <application>sshd</application> is the most widely
-	used remote administration facility for FreeBSD, brute force
-	and drive by attacks are common to any system exposed to
-	public networks.  Several additional parameters are available
-	to prevent the success of these attacks and will be described
-	in this section.</para>
+      <para>在 FreeBSD 廣泛使用 <application>sshd</application> 做為遠端管理基礎設施的同時，所有暴露在公有網路上的系統也會時常受到暴力攻擊 (Brute force attack) 與路過攻擊 (Drive by attack)。在本節會介紹一些可用來避免這些攻擊的參數。</para>
 
-      <para xml:lang="en">It is a good idea to limit which users can log into the
-	<acronym>SSH</acronym> server and from where using the
-	<literal>AllowUsers</literal> keyword in the
-	<application>OpenSSH</application> server configuration file.
-	For example, to only allow <systemitem class="username">root</systemitem> to log in from
-	<systemitem class="ipaddress">192.168.1.32</systemitem>, add
-	this line to <filename>/etc/ssh/sshd_config</filename>:</para>
+      <para>使用在 <application>OpenSSH</application> 伺服器設定檔的 <literal>AllowUsers</literal> 關鍵字限制可以登入到 <acronym>SSH</acronym> 伺服器的使用者及來源是一個不錯的方式。例如要只允許來自 <systemitem class="ipaddress">192.168.1.32</systemitem> 的 <systemitem class="username">root</systemitem> 登入，可加入下行到 <filename>/etc/ssh/sshd_config</filename>：</para>
 
       <programlisting xml:lang="en">AllowUsers root@192.168.1.32</programlisting>
 
-      <para xml:lang="en">To allow <systemitem class="username">admin</systemitem>
-	to log in from anywhere, list that user without specifying an
-	<acronym>IP</acronym> address:</para>
+      <para>要允許來自任何地方的 <systemitem class="username">admin</systemitem> 登入，可只列出使用者名稱，不指定 <acronym>IP</acronym> 位址：</para>
 
       <programlisting xml:lang="en">AllowUsers admin</programlisting>
 
-      <para xml:lang="en">Multiple users should be listed on the same line, like
-	so:</para>
+      <para>有多位使用者也應列在同一行，例如：</para>
 
       <programlisting xml:lang="en">AllowUsers root@192.168.1.32 admin</programlisting>
 
-      <para xml:lang="en">After making changes to
-	<filename>/etc/ssh/sshd_config</filename>,
-	tell <application>sshd</application> to reload its
-	configuration file by running:</para>
+      <para>在對 <filename>/etc/ssh/sshd_config</filename> 做完變更後，執行以下指令告訴 <application>sshd</application> 重新載入設定檔：
+ </para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service sshd reload</userinput></screen>
 
       <note>
-	<para xml:lang="en">When this keyword is used, it is important to list each
-	  user that needs to log into this machine.  Any user that is
-	  not specified in that line will be locked out.  Also, the
-	  keywords used in the <application>OpenSSH</application>
-	  server configuration file are case-sensitive.  If the
-	  keyword is not spelled correctly, including its case, it
-	  will be ignored.  Always test changes to this file to make
-	  sure that the edits are working as expected.  Refer to
-	  <citerefentry><refentrytitle>sshd_config</refentrytitle><manvolnum>5</manvolnum></citerefentry> to verify the spelling and use of the
-	  available keywords.</para>
+	<para>在使用了這個關鍵字時，列出每一位需要登入此主機的使用者很重要，任何未被在該行指定的使用者將無法登入。同時，在 <application>OpenSSH</application> 伺服器設定檔使用的關鍵字是區分大小寫的，若關鍵字未正確的拼寫 (含其大小寫)，則將會被忽略，永遠要記得測試對這個檔案所做的更改來確保伺服器有如預期的方式運作。請參考 <citerefentry><refentrytitle>sshd_config</refentrytitle><manvolnum>5</manvolnum></citerefentry> 來檢查拼寫以及可用的關鍵字。</para>
       </note>
 
-      <para xml:lang="en">In addition, users may be forced to use two factor
-	authentication via the use of a public and private key.  When
-	required, the user may generate a key pair through the use
-	of <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry> and send the administrator the public
-	key.  This key file will be placed in the
-	<filename>authorized_keys</filename> as described above in
-	the client section.  To force the users to use keys only,
-	the following option may be configured:</para>
+      <para>此外，使用者可能被強制要透過公鑰與私鑰使用雙重認證 (Two factor authentication)。當需要時，使用者可以透過使用 <citerefentry><refentrytitle>ssh-keygen</refentrytitle><manvolnum>1</manvolnum></citerefentry> 產生一堆金鑰然後將公鑰傳送給管理者，這個金鑰檔會如以上在客戶端章節所述的被放在 <filename>authorized_keys</filename>。要強制使用者只能使用這個金鑰，可能需要設定以下選項：</para>
 
       <programlisting xml:lang="en">AuthenticationMethods publickey</programlisting>
 
       <tip>
-	<para xml:lang="en">Do not confuse <filename>/etc/ssh/sshd_config</filename>
-	  with <filename>/etc/ssh/ssh_config</filename> (note the
-	  extra <literal>d</literal> in the first filename).  The
-	  first file configures the server and the second file
-	  configures the client.  Refer to <citerefentry><refentrytitle>ssh_config</refentrytitle><manvolnum>5</manvolnum></citerefentry> for a
-	  listing of the available client settings.</para>
+	<para>請不要將 <filename>/etc/ssh/sshd_config</filename> 以及 <filename>/etc/ssh/ssh_config</filename> 搞混 (注意在第一節檔名有多出個 <literal>d</literal>)，第一個檔案用來設定伺服器，而第二個檔案用來設定客戶端。請參考 <citerefentry><refentrytitle>ssh_config</refentrytitle><manvolnum>5</manvolnum></citerefentry> 來取得可用的客戶端設定清單。</para>
       </tip>
     </sect2>
   </sect1>
@@ -20868,104 +20547,42 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
       <secondary>Sudo</secondary>
     </indexterm>
 
-    <para xml:lang="en">System administrators often need the ability to grant
-      enhanced permissions to users so they may perform privileged
-      tasks.  The idea that team members are provided access
-      to a FreeBSD system to perform their specific tasks opens up unique
-      challenges to every administrator.  These team members only
-      need a subset of access beyond normal end user levels; however,
-      they almost always tell management they are unable to
-      perform their tasks without superuser access.  Thankfully, there
-      is no reason to provide such access to end users because tools
-      exist to manage this exact requirement.</para>
+    <para>系統管理者通常會要能夠授予額外的權限給其他使用者，以讓這些使用者可以執行需權限的工作。要讓團隊成員可以存取 FreeBSD 系統來完成其特定的工作對所有管理者都會帶來挑戰，這些團隊成員通常只需要比一般使用者多出一些存取權限便可作業，但他們總是會告訴管理者若沒有超級使用者的存取權便無法完成其工作。幸好，有工具可以管理這類的需求，這樣便不需提供這麼大的權限給一般使用者。</para>
 
-    <para xml:lang="en">Up to this point, the security chapter has covered permitting
-      access to authorized users and attempting to prevent unauthorized
-      access.  Another problem arises once authorized users have access
-      to the system resources.  In many cases, some users may need
-      access to application startup scripts, or a team of
-      administrators need to maintain the system.  Traditionally, the
-      standard users and groups, file permissions, and even the
-      <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> command would manage this access.  And as applications
-      required more access, as more users needed to use system
-      resources, a better solution was required.  The most used
-      application is currently <application>Sudo</application>.</para>
+    <para>到目前為止，安全性章節已說明了如何允許已授權的使用者存取以及嘗試防止未經授權的存取，而現在有另一個問題，是由已授權的使用者擁有權限存取系統資源造成的。在很多的情況，使用者會需要存取應用程式啟動 Script 的權限或是管理者團隊需要維護系統，以往會使用標準的使用者與群組、檔案權限、甚至是 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令來管理存取權，但當應用程式需要更多存取權，更多使用者需要使用系統資源時，便需要更好的解決方案，目前最常用來解決此問題的應用程式便是 <application>Sudo</application>。</para>
 
-    <para xml:lang="en"><application>Sudo</application> allows administrators
-      to configure more rigid access to system commands
-      and provide for some advanced logging features.
-      As a tool, it is available from the Ports Collection as
-      <package role="port">security/sudo</package> or by use of
-      the <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> utility.  To use the <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> tool:</para>
+    <para><application>Sudo</application> 讓管理者可以對系統指令的存取設下更嚴格的限制並提供進階的記錄功能。如同其他工具，它可自 Port 套件集取得，於其中的 <package role="port">security/sudo</package>，或使用 <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具取得，若要使用 <citerefentry><refentrytitle>pkg</refentrytitle><manvolnum>8</manvolnum></citerefentry> 工具可：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install sudo</userinput></screen>
 
-    <para xml:lang="en">After the installation is complete, the installed
-      <command>visudo</command> will open the configuration file with
-      a text editor.  Using <command>visudo</command> is highly
-      recommended as it comes with a built in syntax checker to verify
-      there are no errors before the file is saved.</para>
+    <para>安裝完成之後，可用安裝的 <command>visudo</command> 以文字編輯器開啟設定檔，強烈建議使用 <command>visudo</command> 來編輯設定檔，由於它有內建的語法檢查程式可在檔案儲存之前檢驗是否有誤。</para>
 
-    <para xml:lang="en">The configuration file is made up of several small sections
-      which allow for extensive configuration.  In the following
-      example, web application maintainer, user1, needs to start,
-      stop, and restart the web application known as
-      <replaceable>webservice</replaceable>.  To
-      grant this user permission to perform these tasks, add
-      this line to the end of
-      <filename>/usr/local/etc/sudoers</filename>:</para>
+    <para>設定檔由個小節所組成，透過這些小節可做常廣泛的設定，在以下的範例中，網站應用程式維護人員 user1 需要啟動、停止與重新啟動名稱為 <replaceable>webservice</replaceable> 的網站應用程式 。要授權此使用者執行這些工作的權限，可加入此行到 <filename>/usr/local/etc/sudoers</filename> 的最後：</para>
 
     <programlisting xml:lang="en">user1   ALL=(ALL)       /usr/sbin/service webservice *</programlisting>
 
-    <para xml:lang="en">The user may now start <replaceable>webservice</replaceable>
-      using this command:</para>
+    <para>現在使用者可使用此指令來啟動 <replaceable>webservice</replaceable>：</para>
 
     <screen xml:lang="en"><prompt>%</prompt> <userinput>sudo /usr/sbin/service <replaceable>webservice</replaceable> start</userinput></screen>
 
-    <para xml:lang="en">While this configuration allows a single user access to the
-      <application>webservice</application> service; however, in most
-      organizations, there is an entire web team in charge of managing
-      the service.  A single line can also give access to an entire
-      group.  These steps will create a web group, add a user to this
-      group, and allow all members of the group to manage the
-      service:</para>
+    <para>雖然這項設定可以讓一位使用者存取 <application>webservice</application> 服務，但在大部份組織中會有一整個網站小組負責管理該服務，因此也可以一行來授予整個群組存取權，以下步驟會建立一個網站群組、加入使用者到這個群組，然後讓該群組中的所有成員能夠管理服務：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupadd -g 6001 -n webteam</userinput></screen>
 
-    <para xml:lang="en">Using the same <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> command, the user is added to
-      the webteam group:</para>
+    <para>同樣使用 <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></citerefentry> 指令來加入該使用到 webteam 群組：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod -m user1 -n webteam</userinput></screen>
 
-    <para xml:lang="en">Finally, this line in
-      <filename>/usr/local/etc/sudoers</filename> allows any
-      member of the webteam group to manage
-      <replaceable>webservice</replaceable>:</para>
+    <para>最後，在 <filename>/usr/local/etc/sudoers</filename> 中的這行設定可以讓 webteam 群組的所有成員可以管理 <replaceable>webservice</replaceable>：</para>
 
     <programlisting xml:lang="en">%webteam   ALL=(ALL)       /usr/sbin/service webservice *</programlisting>
 
-    <para xml:lang="en">Unlike <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <application>Sudo</application>
-      only requires the end user password.  This adds an advantage where
-      users will not need shared passwords, a finding in most security
-      audits and just bad all the way around.</para>
+    <para>與 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 不同的是 <application>Sudo</application> 只需要一般使用者的密碼，這有一個使用者不需要共用密碼的優點，在大多數安全稽查都會發現共用密碼的問題且這種情況只有壞處可言。</para>
 
-    <para xml:lang="en">Users permitted to run applications with
-      <application>Sudo</application> only enter their own passwords.
-      This is more secure and gives better control than <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
-      where the <systemitem class="username">root</systemitem>
-      password is entered and the user acquires all
-      <systemitem class="username">root</systemitem>
-      permissions.</para>
+    <para>使用 <application>Sudo</application> 允許使用者執行應用程式只需要輸入使用者自己的密碼，這更安全且提供比 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 更佳的控制權，因為 <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></citerefentry> 只要輸入 <systemitem class="username">root</systemitem> 密碼之後該使用者便可取得所有的 <systemitem class="username">root</systemitem> 權限。</para>
 
     <tip>
-      <para xml:lang="en">Most organizations are moving or have moved toward a two
-	factor authentication model.  In these cases, the user may
-	not have a password to enter.  <application>Sudo</application>
-	provides for these cases with the <literal>NOPASSWD</literal>
-	variable.  Adding it to the configuration above
-	will allow all members of the <replaceable>webteam</replaceable>
-	group to manage the service without the password
-	requirement:</para>
+      <para>大多數組織已正在導入或已導入雙重認証 (Two factor authentication)，在這個情境下使用者可以不用輸入密碼，<application>Sudo</application> 提供了 <literal>NOPASSWD</literal> 變數來供這個情境使用，可將該設定加入到上述的設定將可允許所有 <replaceable>webteam</replaceable> 群組的成員不需要輸入密碼便可管理該服務：</para>
 
       <programlisting xml:lang="en">%webteam   ALL=(ALL)       NOPASSWD: /usr/sbin/service webservice *</programlisting>
     </tip>
@@ -20973,64 +20590,31 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
     <sect2 xml:id="security-sudo-loggin">
       <title>記錄輸出</title>
 
-      <para xml:lang="en">An advantage to implementing
-	<application>Sudo</application> is the ability to enable
-	session logging.  Using the built in log mechanisms
-	and the included <application>sudoreplay</application>
-	command, all commands initiated through
-	<application>Sudo</application> are logged for later
-	verification.  To enable this feature, add a default log
-	directory entry, this example uses a user variable.
-	Several other log filename conventions exist, consult the
-	manual page for <application>sudoreplay</application> for
-	additional information.</para>
+      <para>採用 <application>Sudo</application> 的另一個優點是能夠開啟連線階段的記錄。使用內建立記錄機制與內含的 <application>sudoreplay</application> 指令，所有透過 <application>Sudo</application> 初始化的指令會被記錄下來供往後檢驗用。要開啟這個功能要加入預設記錄目錄的項目，以下範例中使用了使用者變數，也有許多其他記錄檔名稱常用規則，可參考 <application>sudoreplay</application> 的操作手冊來取得進一步資訊。</para>
 
       <programlisting xml:lang="en">Defaults iolog_dir=/var/log/sudo-io/%{user}</programlisting>
 
       <tip>
-	<para xml:lang="en">This directory will be created automatically after the
-	  logging is configured.  It is best to let the system create
-	  directory with default permissions just to be safe.  In
-	  addition, this entry will also log administrators who use the
-	  <application>sudoreplay</application> command.  To change
-	  this behavior, read and uncomment the logging options inside
-	  <filename>sudoers</filename>.</para>
+	<para>這個目錄會在記錄功能設定之後自動建立，最好讓系統以預設的權限來建立目錄比較保險，除此之外，這個設定項目也會記錄使用 <application>sudoreplay</application> 指令的管理者，要更改設定請閱讀並取消在 <filename>sudoers</filename> 中記錄選項的註解。</para>
       </tip>
 
-      <para xml:lang="en">Once this directive has been added to the
-	<filename>sudoers</filename> file, any user configuration
-	can be updated with the request to log access.  In the
-	example shown, the updated <replaceable>webteam</replaceable>
-	entry would have the following additional changes:</para>
+      <para>一旦這個設定加入至 <filename>sudoers</filename> 檔案之後，所有的使用者設定項目便可加上記錄存取動作的項目，在 <replaceable>webteam</replaceable> 項目加入額外設定之後的範例如下： </para>
 
       <programlisting xml:lang="en">%webteam ALL=(ALL) NOPASSWD: LOG_INPUT: LOG_OUTPUT: /usr/sbin/service webservice *</programlisting>
 
-      <para xml:lang="en">From this point on, all <replaceable>webteam</replaceable>
-	members altering the status of the
-	<replaceable>webservice</replaceable> application
-	will be logged.  The list of previous and current sessions
-	can be displayed with:</para>
+      <para>從此之後，所有 <replaceable>webteam</replaceable> 修改 <replaceable>webservice</replaceable> 應用程式狀態的成員將會被記錄下來。要列出先前與目前連線階段的記錄可：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sudoreplay -l</userinput></screen>
 
-      <para xml:lang="en">In the output, to replay a specific session, search for the
-	<literal>TSID=</literal> entry, and pass that to
-	<application>sudoreplay</application> with no other options to
-	replay the session at normal speed.  For example:</para>
+      <para>在輸出結果中要重播指定連線階段的記錄可搜尋 <literal>TSID=</literal> 項目，然後傳送給 <application>sudoreplay</application> 且不加其他選項便可以一般速度重播連線階段，例如：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sudoreplay user1/00/00/02</userinput></screen>
 
       <warning>
-	<para xml:lang="en">While sessions are logged, any administrator is
-	  able to remove sessions and leave only a question of why they
-	  had done so.  It is worthwhile to add a daily check
-	  through an intrusion detection system (<acronym>IDS</acronym>)
-	  or similar software so that other administrators are alerted
-	  to manual alterations.</para>
+	<para>雖然所有連線階段都會被記錄，但任何管理者可以移除連線階段，使得沒人知道它們做了什麼事，所以非常值在入侵偵測系統 (<acronym>IDS</acronym>) 或類似的軟體加入每日檢查以便在有人為修改時通知其他管理人員。</para>
       </warning>
 
-      <para xml:lang="en">The <command>sudoreplay</command> is extremely extendable.
-	Consult the documentation for more information.</para>
+      <para><command>sudoreplay</command> 的擴充性非常強，請參考說明文件來取得更多資訊。</para>
     </sect2>
   </sect1>
 </chapter>
@@ -25007,7 +24591,7 @@ fi</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 49426 2016-09-24 04:15:09Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 50083 2017-03-24 17:48:02Z maxim $
 -->
 
 <chapter version="5.0" xml:id="disks">
@@ -25416,6 +25000,129 @@ da0: &lt;STECH Simple Drive 1.04&gt; s/n WD-WXE508CAN263          detached
       <screen xml:lang="en"><prompt>#</prompt> <userinput>automount -fu</userinput></screen>
 
       <para>這個機制一般會用在記憶卡與 <acronym>USB</acronym> 隨身碟，也可用在任何 Block 裝置，包含光碟機或 <acronym>iSCSI</acronym> <acronym>LUN</acronym>。</para>
+    </sect2>
+
+    <sect2>
+      <title><acronym>USB</acronym> 大容量儲存目標</title>
+
+      <note>
+	<para><citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式是一個在 FreeBSD 12.0 之後才可用的 <acronym>USB</acronym> 裝置模式驅動程式。</para>
+      </note>
+
+      <para xml:lang="en">When running on <acronym>USB</acronym>
+	<acronym>OTG</acronym>-compliant hardware like that built into
+	many embedded boards, the FreeBSD <acronym>USB</acronym> stack
+	can run in <emphasis>device mode</emphasis>.  Device mode
+	makes it possible for the computer to present itself as
+	different kinds	of <acronym>USB</acronym> device classes,
+	including serial ports, network adapters, and mass storage. A
+	<acronym>USB</acronym> host like a laptop or desktop computer
+	is able to access them just like physical
+	<acronym>USB</acronym> devices.</para>
+
+      <para xml:lang="en">The <citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> kernel module allows the
+	<acronym>USB</acronym> stack to switch between host-side and
+	device-side automatically, depending on what is connected to
+	the <acronym>USB</acronym> port.  Connecting a
+	<acronym>USB</acronym> device like a memory stick to the
+	<acronym>USB</acronym> <acronym>OTG</acronym> port causes FreeBSD
+	to switch to host mode. Connecting a <acronym>USB</acronym>
+	host like a computer causes FreeBSD to switch to device
+	mode.</para>
+
+      <para xml:lang="en">What FreeBSD presents to the <acronym>USB</acronym> host
+	depends on the <varname>hw.usb.template</varname> sysctl.  See
+	<citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> for the list of available values.  Note
+	that for the host to notice the configuration change, it must
+	be either physically disconnected and reconnected, or forced
+	to rescan the <acronym>USB</acronym> bus in a system-specific
+	way.  When FreeBSD is running on the host, <citerefentry vendor="current"><refentrytitle>usbconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry>
+	<command>reset</command> can be used.  This also must be done
+	after loading <filename>usb_template.ko</filename> if the
+	<acronym>USB</acronym> host was already connected to the
+	<acronym>USB</acronym> <acronym>OTG</acronym> socket.</para>
+
+      <para xml:lang="en">The <varname>hw.usb.template</varname> sysctl
+	is set to 0 by default, making FreeBSD work as a
+	<acronym>USB</acronym> Mass Storage target.  Both
+	<citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> kernel modules must
+	be loaded.  <citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> interfaces to the CTL subsystem,
+	the same one that is used for <acronym>iSCSI</acronym> or
+	Fibre Channel targets.  On the host side,
+	<acronym>USB</acronym> Mass Storage initiators can only access
+	a single <acronym>LUN</acronym>,
+	<acronym>LUN</acronym> 0.</para>
+
+      <para xml:lang="en"><acronym>USB</acronym> Mass Storage does not require the
+	<citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon to be running, although it can be used if
+	desired.  This is different from <acronym>iSCSI</acronym>.
+	Thus, there are two ways to configure the target:
+	<citerefentry><refentrytitle>ctladm</refentrytitle><manvolnum>8</manvolnum></citerefentry>, or <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Both require the
+	<filename>cfumass.ko</filename> kernel module to be loaded.
+	The module can be loaded manually:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload cfumass</userinput></screen>
+
+      <para xml:lang="en">If <filename>cfumass.ko</filename> has not been built into
+	the kernel, <filename>/boot/loader.conf</filename> can be set
+	to load	the module at boot:</para>
+
+      <programlisting xml:lang="en">cfumass_load="YES"</programlisting>
+
+      <para xml:lang="en">A <acronym>LUN</acronym> can be created without the
+	<citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>ctladm create -b block -o file=/data/target0</userinput></screen>
+
+      <para xml:lang="en">This presents the contents of the image file
+	<filename>/data/target0</filename> as a <acronym>LUN</acronym>
+	to the <acronym>USB</acronym> host.  The file must exist
+	before executing the command.  To configure the
+	<acronym>LUN</acronym> at system startup, add the command to
+	<filename>/etc/rc.local</filename>.</para>
+
+      <para xml:lang="en"><citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> can also be used to manage
+	<acronym>LUN</acronym>s.  Create
+	<filename>/etc/ctl.conf</filename>, add a line to
+	<filename>/etc/rc.conf</filename> to make sure <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> is
+	automatically started at boot, and then start the
+	daemon.</para>
+
+      <para xml:lang="en">This is an example of a simple
+	<filename>/etc/ctl.conf</filename> configuration file.  Refer
+	to <citerefentry><refentrytitle>ctl.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for a more complete description of the
+	options.</para>
+
+      <programlisting xml:lang="en">target naa.50015178f369f092 {
+	lun 0 {
+		path /data/target0
+		size 4G
+	}
+}</programlisting>
+
+      <para xml:lang="en">The example creates a single target with a single
+	<acronym>LUN</acronym>.  The
+	<literal>naa.50015178f369f092</literal> is a device identifier
+	composed of 32 random hexadecimal digits.  The
+	<literal>path</literal> line defines the full path to a file
+	or zvol backing the <acronym>LUN</acronym>.  That file must
+	exist before starting <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  The second line is
+	optional and specifies the size of the
+	<acronym>LUN</acronym>.</para>
+
+      <para xml:lang="en">To make sure the <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon is started at
+	boot, add this line to
+	<filename>/etc/rc.conf</filename>:</para>
+
+      <programlisting xml:lang="en">ctld_enable="YES"</programlisting>
+
+      <para xml:lang="en">To start <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> now, run this command:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service ctld start</userinput></screen>
+
+      <para>當 <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> Daemon 啟動後，它會讀取 <filename>/etc/ctl.conf</filename>，若這個檔案在 Daemon 啟動之後才做修改，要重新載入變更的內容才能立即生效：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service ctld reload</userinput></screen>
     </sect2>
   </sect1>
 
@@ -32602,7 +32309,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 49599 2016-10-28 14:26:21Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 50094 2017-03-28 00:09:27Z dexter $
 -->
 <chapter version="5.0" xml:id="virtualization">
 
@@ -33359,9 +33066,9 @@ perm pass* 0660</programlisting>
       <acronym>BSD</acronym>-licensed hypervisor became part of the
       base system with FreeBSD 10.0-RELEASE.  This hypervisor supports a
       number of guests, including FreeBSD, OpenBSD, and many <trademark class="registered">Linux</trademark>
-      distributions.  Currently, <application>bhyve</application> only
-      supports a serial console and does not emulate a graphical
-      console.  Virtualization offload features of newer
+      distributions.  By default, <application>bhyve</application>
+      provides access to serial console and does not emulate a
+      graphical console.  Virtualization offload features of newer
       <acronym>CPU</acronym>s are used to avoid the legacy methods of
       translating instructions and manually managing memory
       mappings.</para>
@@ -33522,7 +33229,7 @@ grub&gt; <userinput>boot</userinput></screen>
       <para xml:lang="en">Now that the <trademark class="registered">Linux</trademark> kernel is loaded, the guest can be
 	started:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap1</replaceable> -s 3:0,virtio-blk,<replaceable>./linux.img</replaceable> \
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap0</replaceable> -s 3:0,virtio-blk,<replaceable>./linux.img</replaceable> \
     -s 4:0,ahci-cd,<replaceable>./somelinux.iso</replaceable> -l com1,stdio -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> <replaceable>linuxguest</replaceable></userinput></screen>
 
       <para xml:lang="en">The system will boot and start the installer.  After
@@ -33550,7 +33257,7 @@ grub&gt; <userinput>boot</userinput></screen>
 
       <para xml:lang="en">Boot the virtual machine:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap1</replaceable> \
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap0</replaceable> \
     -s 3:0,virtio-blk,<replaceable>./linux.img</replaceable> -l com1,stdio -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> <replaceable>linuxguest</replaceable></userinput></screen>
 
       <para xml:lang="en"><trademark class="registered">Linux</trademark> will now boot in the virtual machine and
@@ -33562,8 +33269,80 @@ grub&gt; <userinput>boot</userinput></screen>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyvectl --destroy --vm=<replaceable>linuxguest</replaceable></userinput></screen>
     </sect2>
 
+    <sect2 xml:id="virtualization-bhyve-uefi">
+      <title>使用 <acronym>UEFI</acronym> 韌體開機 <application>bhyve</application> 虛擬機器</title>
+
+      <para xml:lang="en">In addition to <application>bhyveload</application> and
+	<application>grub-bhyve</application>, the
+	<application>bhyve</application> hypervisor can also boot
+	virtual machines using the <acronym>UEFI</acronym> userspace
+	firmware.  This option may support guest operating systems
+	that are not supported by the other loaders.</para>
+
+      <para xml:lang="en">In order to make use of the <acronym>UEFI</acronym>
+        support in <application>bhyve</application>, first obtain the
+        <acronym>UEFI</acronym> firmware images.  This can be done
+	by installing <package>sysutils/bhyve-firmware</package>
+	port or package.</para>
+
+      <para xml:lang="en">With the firmware in place, add the flags
+	<option>-l bootrom,<replaceable>/path/to/firmware</replaceable></option>
+	to your <application>bhyve</application> command line.
+	The actual <application>bhyve</application> command may look
+	like this:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -AHP -s 0:0,hostbridge -s 1:0,lpc \
+-s 2:0,virtio-net,<replaceable>tap1</replaceable> -s 3:0,virtio-blk,<replaceable>./disk.img</replaceable> \
+-s 4:0,ahci-cd,<replaceable>./install.iso</replaceable> -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> \
+-l bootrom,<replaceable>/usr/local/share/uefi-firmware/BHYVE_UEFI.fd</replaceable> \
+<replaceable>guest</replaceable></userinput></screen>
+
+      <para xml:lang="en"><package>sysutils/bhyve-firmware</package> also contains a
+	<acronym>CSM</acronym>-enabled firmware, to boot guests with no
+	<acronym>UEFI</acronym> support in legacy
+	<acronym>BIOS</acronym> mode:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -AHP -s 0:0,hostbridge -s 1:0,lpc \
+-s 2:0,virtio-net,<replaceable>tap1</replaceable> -s 3:0,virtio-blk,<replaceable>./disk.img</replaceable> \
+-s 4:0,ahci-cd,<replaceable>./install.iso</replaceable> -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> \
+-l bootrom,<replaceable>/usr/local/share/uefi-firmware/BHYVE_UEFI_CSM.fd</replaceable> \
+<replaceable>guest</replaceable></userinput></screen>
+    </sect2>
+
+    <sect2 xml:id="virtualization-bhyve-framebuffer">
+      <title>供 <application>bhyve</application> 客端用的圖型化 <acronym>UEFI</acronym> Framebuffer </title>
+
+      <para xml:lang="en">The <acronym>UEFI</acronym> firmware support is particularly
+	useful with predominantly graphical guest operating systems
+	such as Microsoft <trademark class="registered">Windows</trademark>.</para>
+
+      <para xml:lang="en">Support for the UEFI-GOP framebuffer may also be enabled
+	with the <option>-s 29,fbuf,tcp=<replaceable>0.0.0.0:5900</replaceable></option>
+	flags.  The framebuffer resolution may be configured with
+	<option>w=<replaceable>800</replaceable></option> and
+	<option>h=<replaceable>600</replaceable></option>, and
+	<application>bhyve</application> can be instructed to wait for
+	a <acronym>VNC</acronym> connection before booting the guest
+	by adding <option>wait</option>.  The framebuffer may be
+	accessed from the host or over the network via the
+	<acronym>VNC</acronym> protocol.</para>
+
+      <para><application>bhyve</application> 指令的結果會如下：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -AHP -s 0:0,hostbridge -s 31:0,lpc \
+-s 2:0,virtio-net,<replaceable>tap1</replaceable> -s 3:0,virtio-blk,<replaceable>./disk.img</replaceable> \
+-s 4:0,ahci-cd,<replaceable>./install.iso</replaceable> -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> \
+-s 29,fbuf,tcp=<replaceable>0.0.0.0:5900</replaceable>,w=<replaceable>800</replaceable>,h=<replaceable>600</replaceable>,wait \
+-l bootrom,<replaceable>/usr/local/share/uefi-firmware/BHYVE_UEFI.fd</replaceable> \
+<replaceable>guest</replaceable></userinput></screen>
+
+      <para xml:lang="en">Note, in BIOS emulation mode, the framebuffer will cease
+	receiving updates once control is passed from firmware to
+	guest operating system.</para>
+    </sect2>
+
     <sect2 xml:id="virtualization-bhyve-zfs">
-      <title>在 <application>bhyve</application> Guests 使用 <acronym>ZFS</acronym></title>
+      <title>在 <application>bhyve</application> 客端使用 <acronym>ZFS</acronym></title>
 
       <para xml:lang="en">If <acronym>ZFS</acronym> is available on the host
 	machine, using <acronym>ZFS</acronym> volumes
@@ -33576,7 +33355,7 @@ grub&gt; <userinput>boot</userinput></screen>
       <para xml:lang="en">When starting the <acronym>VM</acronym>, specify the
 	<acronym>ZFS</acronym> volume as the disk drive:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap1</replaceable> -s3:0,virtio-blk,<replaceable>/dev/zvol/zroot/linuxdisk0</replaceable> \
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap0</replaceable> -s3:0,virtio-blk,<replaceable>/dev/zvol/zroot/linuxdisk0</replaceable> \
     -l com1,<replaceable>stdio</replaceable> -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> <replaceable>linuxguest</replaceable></userinput></screen>
     </sect2>
 
@@ -33601,7 +33380,7 @@ grub&gt; <userinput>boot</userinput></screen>
 	information.</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload nmdm</userinput>
-<prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap1</replaceable> -s 3:0,virtio-blk,<replaceable>./linux.img</replaceable> \
+<prompt>#</prompt> <userinput>bhyve -A -H -P -s 0:0,hostbridge -s 1:0,lpc -s 2:0,virtio-net,<replaceable>tap0</replaceable> -s 3:0,virtio-blk,<replaceable>./linux.img</replaceable> \
     -l com1,<replaceable>/dev/nmdm0A</replaceable> -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> <replaceable>linuxguest</replaceable></userinput>
 <prompt>#</prompt> <userinput>cu -l <replaceable>/dev/nmdm0B</replaceable></userinput>
 Connected
@@ -34515,7 +34294,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 49531 2016-10-21 03:32:27Z lwhsu $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50128 2017-04-04 13:16:44Z sevan $
 -->
 <chapter version="5.0" xml:id="updating-upgrading">
 
@@ -34569,13 +34348,13 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
   <sect1 xml:id="updating-upgrading-synopsis">
     <title>概述</title>
 
-    <para>FreeBSD 在每次的發佈之間持續在開發。有些人喜歡官方發佈的版本，有些人則喜歡持續同步使用最新的開發版本。雖然如此，即使是官方發佈的版本仍時常會有安全性與其他緊急修復的更新。無論使用哪種版本，FreeBSD 都提供所有必要的工具來讓系統保持最新版，而且可以輕易升級不同版本。本章將說明如何追蹤開發版本的系統及保持 FreeBSD 系統維持新版的基本工具。</para>
+    <para>FreeBSD 在每次的發佈之間持續在開發。有些人偏好正式發佈的版本，也有另一群人喜歡使用最新的開發版本。然而，即使是正式發佈的版本也時常會有安全性與其他緊急修復的更新，因此，無論使用哪種版本，FreeBSD 都提供所有必要的工具來讓系統能維持最新的版本，且讓各種版本都能簡單的升級。本章將說明如何追蹤開發版本的系統及讓 FreeBSD 系統維持最新版本的基本工具。</para>
 
     <para>讀完這章，您將了解︰</para>
 
     <itemizedlist>
       <listitem>
-	<para>如何使用 <application>freebsd-update</application>, <application>Subversion</application> 來讓 FreeBSD 系統保持新版。</para>
+	<para>如何使用 <application>freebsd-update</application>, <application>Subversion</application> 來維持 FreeBSD 系統為最新版。</para>
       </listitem>
 
       <listitem>
@@ -34645,7 +34424,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
       <see>updating-upgrading</see>
     </indexterm>
 
-    <para>即時套用安全性更新並升級到新發佈的作業系統對管理一個持續運作的系統是重要的。FreeBSD 內含可以執行這兩項任務的工具程式，叫做 <command>freebsd-update</command>。</para>
+    <para>隨時套用安全性更新以及升級到新發佈的作業系統版本對管理一個持續運作的系統是非常重要的任務，FreeBSD 內含可以執行這兩項任務的工具程式，叫做 <command>freebsd-update</command>。</para>
 
     <para>這個工具程式支援使用 Binary 對 FreeBSD 做安全性與和錯誤更新，不需要手動編譯和安裝修補 (Patch) 或新核心。目前由安全性團隊提供支援的 Binary 更新可用於所有的架構和發行版。支援的發行版清單及各自的支援期限列於 <uri xlink:href="http://www.FreeBSD.org/security/">http://www.FreeBSD.org/security/</uri>。</para>
 
@@ -35188,31 +34967,19 @@ before running "/usr/sbin/freebsd-update install"</screen>
   <sect1 xml:id="synching">
     <title>同步原始碼</title>
 
-    <para>有多許方法可以更新 FreeBSD 的原始碼，本節將說明主要的方法 <application>Subversion</application>。</para>
+    <para>有多許方法可以更新 FreeBSD 的原始碼，本節將說明主要的方法：<application>Subversion</application>。</para>
 
     <warning>
-      <para>雖然有可能只更新部份原始碼樹，但是正式支援的更新步驟是更新整個樹並重新編譯所有在使用者空間 (User space) 中的程式，例如在 <filename>/bin</filename> 和 <filename>/sbin</filename> 中的程式及核心原始碼。只更新部份的原始碼樹，例如：只更新核心或使用者空間的程式的做法經常會導致編譯錯誤、核心錯誤或資料損毀的問題。</para>
+      <para>雖然有可能只更新部份原始碼樹，但是正式支援的更新步驟是更新整個樹並重新編譯所有在使用者空間 (User space) 中的程式，例如在 <filename>/bin</filename> 和 <filename>/sbin</filename> 中的程式及核心原始碼，只更新部份的原始碼樹 (例如：只更新核心或使用者空間的程式) 的做法經常會導致編譯錯誤、核心錯誤或資料損毀的問題。</para>
     </warning>
 
     <indexterm xml:lang="en">
       <primary>Subversion</primary>
     </indexterm>
 
-    <para xml:lang="en"><application>Subversion</application> uses the
-      <emphasis>pull</emphasis> model of updating sources.  The user,
-      or a <command>cron</command> script, invokes the
-      <command>svn</command> program which updates the local version
-      of the source.  <application>Subversion</application> is the
-      preferred method for updating local source trees as updates are
-      up-to-the-minute and the user controls when updates are
-      downloaded.  It is easy to restrict updates to specific files or
-      directories and the requested updates are generated on the fly
-      by the server.  How to synchronize source using
-      <application>Subversion</application> is described in <xref linkend="svn"/>.</para>
+    <para><application>Subversion</application> 使用了<emphasis>拉式 (Pull)</emphasis> 的原始碼更新模式，使用者或 <command>cron</command> script 只要執行 <command>svn</command> 程式便可更新本地的原始碼。會選擇 <application>Subversion</application> 做為更新本地原始碼樹的方法是因為它更新速度很快且使用者可以控制要下載那些更新，它可以很容易的限制只下載特定檔案或目錄的更新，且伺服器可以立即產生請求的更新，如何使用 <application>Subversion</application> 同步原始碼在 <xref linkend="svn"/> 有介紹。</para>
 
-    <para xml:lang="en">If a user inadvertently wipes out portions of the local
-      archive, <application>Subversion</application> will detect and
-      rebuild the damaged portions during an update.</para>
+    <para>若使用者無意見刪除了部份的本地封存檔，<application>Subversion</application> 可以在更新時偵測到並且重新建立被刪除的部份。</para>
   </sect1>
 
   <sect1 xml:id="makeworld">
@@ -35229,12 +34996,12 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <title>編譯 World <emphasis>之前</emphasis> 要完成的工作</title>
 
       <step>
-	<para>備份所有重要的資料到另一個系統或可卸除的媒體，檢查備份的完整性並在手中保留一份可開機的安裝媒體。如何強調都不足夠說明在重新編譯系統 <emphasis>之前</emphasis> 備份系統的重要性。即便重新編譯 World 已變成簡單的一件事，也難免會有原始碼樹失誤導致系統無法開機的時候。您可能永遠都用不上備份，但最好確保安全而非後悔。</para>
+	<para>備份所有重要的資料到另一個系統或可卸除的媒體，檢查備份的完整性並在手中保留一份可開機的安裝媒體。如何強調都不足夠說明在重新編譯系統 <emphasis>之前</emphasis> 備份系統的重要性，即便重新編譯 World 已變成簡單的一件事，也難免會有原始碼樹失誤導致系統無法開機的時候。您可能永遠都用不上備份，但最好確保安全而非後悔。</para>
       </step>
 
       <step>
 	<indexterm xml:lang="en"><primary>mailing list</primary></indexterm>
-	<para>回顧最近 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> 或 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">freebsd-current</link> 中的項目，依您所追蹤的分支決定。注意任何已知的問題以及會被影響的系統。若已知的問題影響您已同步的原始碼版本，請等候表明問題已被解決的 <quote>全部解決 (all clear)</quote> 公告發佈，然後重新同步原始碼並確認本地的原始碼版本已含有所需的修正。</para>
+	<para>回顧最近 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> 或 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">freebsd-current</link> 中的項目，依您所追蹤的分支決定。注意任何已知的問題以及會被影響的系統，若已知的問題影響您已同步的原始碼版本，請等候表明問題已被解決的 <quote>全部解決 (all clear)</quote> 公告發佈，然後重新同步原始碼並確認本地的原始碼版本已含有所需的修正。</para>
       </step>
 
       <step>
@@ -35245,7 +35012,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
     <warning>
       <title>不要使用 <command>make world</command></title>
 
-      <para>部份舊版的文件建議使用 <command>make world</command>。然而該指令跳過了部份重要的步驟，應僅供專家使用。大多數的情況使用 <command>make world</command> 都是錯的，並應使用此處說明的程序。</para>
+      <para>部份舊版的文件建議使用 <command>make world</command>，然而該指令跳過了部份重要的步驟，應僅供專家使用。大多數的情況使用 <command>make world</command> 都是錯的，並應使用此處說明的程序。</para>
     </warning>
 
     <sect2 xml:id="canonical-build">
@@ -35353,7 +35120,7 @@ Script started, output file is /var/tmp/mw.out</screen>
 	</step>
 
 	<step>
-	  <para>刪除任何過時的檔案。這很重要，因為若檔案遺留在磁碟上可能會造成問題。</para>
+	  <para>刪除任何廢棄的檔案。這很重要，因為若檔案遺留在磁碟上可能會造成問題。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old</userinput></screen>
 	</step>
@@ -35365,7 +35132,7 @@ Script started, output file is /var/tmp/mw.out</screen>
 	</step>
 
 	<step>
-	  <para>確認所有已安裝的 Port 在舊的程式庫移除前已依照 <xref linkend="ports-upgrading"/> 的說明重新編譯。當重新編譯完成後，移除過時的程式庫來避免與新的程式庫發生衝突。有關此步驟更詳細的說明請參考 <xref linkend="make-delete-old"/>。</para>
+	  <para>確認所有已安裝的 Port 在舊的程式庫移除前已依照 <xref linkend="ports-upgrading"/> 的說明重新編譯。當重新編譯完成後，移除廢棄的程式庫來避免與新的程式庫發生衝突。有關此步驟更詳細的說明請參考 <xref linkend="make-delete-old"/>。</para>
 
 	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old-libs</userinput></screen>
 	</step>
@@ -35383,110 +35150,49 @@ Script started, output file is /var/tmp/mw.out</screen>
 	<primary><filename>make.conf</filename></primary>
       </indexterm>
 
-      <para xml:lang="en">This build world process uses several configuration
-	files.</para>
+      <para>建置 Word 的程序會使用到許多個設定檔。</para>
 
-      <para xml:lang="en">The <filename>Makefile</filename> located in
-	<filename>/usr/src</filename> describes how the programs that
-	comprise FreeBSD should be built and the order in which they
-	should be built.</para>
+      <para>位於 <filename>/usr/src</filename> 的 <filename>Makefile</filename> 用來描述要如何編譯組成 FreeBSD 的程式以及編譯的順序。</para>
 
-      <para xml:lang="en">The options available to <command>make</command> are
-	described in <citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> and some common examples are
-	included in
-	<filename>/usr/share/examples/etc/make.conf</filename>.  Any
-	options which are added to <filename>/etc/make.conf</filename>
-	will control the how <command>make</command> runs and builds
-	programs.  These options take effect every time
-	<command>make</command> is used, including compiling
-	applications from the Ports Collection, compiling custom C
-	programs, or building the FreeBSD operating system.  Changes to
-	some settings can have far-reaching and potentially surprising
-	effects.  Read the comments in both locations and keep in mind
-	that the defaults have been chosen for a combination of
-	performance and safety.</para>
+      <para><command>make</command> 可用的選項在 <citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中有介紹， 在 <filename>/usr/share/examples/etc/make.conf</filename> 也有一些常見的範例。所有加到 <filename>/etc/make.conf</filename> 的選項會控制 <command>make</command> 要如何執行與編譯程式。這些選項對每一次使用 <command>make</command> 都會有影響，包含編譯在 Port 套件集中的應用程式、編譯自訂的 C 程式或編譯 FreeBSD 作業系統，更動某些設定可能會產生深遠與意想不到的影響，在更改前要仔細閱讀在這些地方的註解，然後也要了預設值是在效率與安全之間取得的平衝點。</para>
 
       <indexterm xml:lang="en">
 	<primary><filename>src.conf</filename></primary>
       </indexterm>
 
-      <para xml:lang="en">How the operating system is built from source code is
-	controlled by <filename>/etc/src.conf</filename>.  Unlike
-	<filename>/etc/make.conf</filename>, the contents of
-	<filename>/etc/src.conf</filename> only take effect when the
-	FreeBSD operating system itself is being built.  Descriptions of
-	the many options available for this file are shown in
-	<citerefentry><refentrytitle>src.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.  Be cautious about disabling seemingly
-	unneeded kernel modules and build options.  Sometimes there
-	are unexpected or subtle interactions.</para>
+      <para>要如何由原始碼編譯成作業系統是由 <filename>/etc/src.conf</filename> 控制，不像 <filename>/etc/make.conf</filename>，<filename>/etc/src.conf</filename> 的內容只會對 FreeBSD 作業系統編譯產生效果。有關這個檔案可用的選項在 <citerefentry><refentrytitle>src.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 有說明。要注意，停用看似不須要的核心模組與選項，有時會有意想不到或微妙的結果。</para>
     </sect2>
 
     <sect2 xml:id="make-buildworld">
       <title>變數與目標</title>
 
-      <para xml:lang="en">The general format for using <command>make</command> is as
-	follows:</para>
+      <para>使用 <command>make</command> 的一般格式如下：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>make -<replaceable>x</replaceable> -D<replaceable>VARIABLE</replaceable> <replaceable>target</replaceable></userinput></screen>
 
-      <para xml:lang="en">In this example,
-	<option>-<replaceable>x</replaceable></option> is an option
-	passed to <command>make</command>.  Refer to <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> for
-	examples of the available options.</para>
+      <para>在這個例子中，<option>-<replaceable>x</replaceable></option> 是傳送給 <command>make</command> 的一個選項，可參考 <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得可用選項的範例。</para>
 
-      <para xml:lang="en">To pass a variable, specify the variable name with
-	<option>-D<replaceable>VARIABLE</replaceable></option>.  The
-	behavior of the <filename>Makefile</filename> is controlled by
-	variables.  These can either be set in
-	<filename>/etc/make.conf</filename> or they can be specified
-	when using <command>make</command>.  For example, this
-	variable specifies that profiled libraries should not be
-	built:</para>
+      <para>要傳送一個變數 (Variable)，可使用 <option>-D<replaceable>VARIABLE</replaceable></option> 來指定變數名稱，<filename>Makefile</filename> 的行為便是由這些變數來控制。這些變數可設定在 <filename>/etc/make.conf</filename> 或在使用 <command>make</command> 時指定，舉例來說，以下變數可以控制不要編譯 profile 的程式庫 ：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>make -DNO_PROFILE <replaceable>target</replaceable></userinput></screen>
 
-      <para xml:lang="en">It corresponds with this setting in
-	<filename>/etc/make.conf</filename>:</para>
+      <para>在 <filename>/etc/make.conf</filename> 要做一樣的設定可：</para>
 
       <programlisting xml:lang="en">NO_PROFILE=    true     #    Avoid compiling profiled libraries</programlisting>
 
-      <para xml:lang="en">The <replaceable>target</replaceable> tells
-	<command>make</command> what to do and the
-	<filename>Makefile</filename> defines the available targets.
-	Some targets are used by the build process to break out the
-	steps necessary to rebuild the system into a number of
-	sub-steps.</para>
+      <para><replaceable>target</replaceable> 會告訴 <command>make</command> 要做什麼，而在 <filename>Makefile</filename> 中會定義可用的目標 (Target)， 有些目標是給建置程序使用的，這些步驟是由一個重新編譯系統的必要步驟細分而成的。</para>
 
-      <para xml:lang="en">Having separate options is useful for two reasons.  First,
-	it allows for a build that does not affect any components of a
-	running system.  Because of this,
-	<buildtarget xml:lang="en">buildworld</buildtarget> can be safely run on a
-	machine running in multi-user mode.  It is still recommended
-	that <buildtarget xml:lang="en">installworld</buildtarget> be run in part in
-	single-user mode, though.</para>
+      <para>把選項分成數個主要為了兩個原因，第一，它可單獨編譯不影響系統執行中的元件，也因為如此，<buildtarget>buildworld</buildtarget> 可以安全的在多使用者模式時執行，雖然如此，但還是建議 <buildtarget>installworld</buildtarget> 要在單使用者模式執行。</para>
 
-      <para xml:lang="en">Secondly, it allows <acronym>NFS</acronym> mounts to be
-	used to upgrade multiple machines on a network, as described
-	in <xref linkend="small-lan"/>.</para>
+      <para>第二，它讓 <acronym>NFS</acronym> 掛載可以使用，以便同時升級網路上多台主機，如 <xref linkend="small-lan"/> 所介紹的。</para>
 
-      <para xml:lang="en">It is possible to specify <option>-j</option> which will
-	cause <command>make</command> to spawn several simultaneous
-	processes.  Since much of the compiling process is
-	<acronym>I/O</acronym>-bound rather than
-	<acronym>CPU</acronym>-bound, this is useful on both single
-	<acronym>CPU</acronym> and multi-<acronym>CPU</acronym>
-	machines.</para>
+      <para>編譯時也可以指定 <option>-j</option> 來讓 <command>make</command> 產生數個平行的程序來編譯。由於大多數的編譯程序會受到 <acronym>I/O</acronym> 綁定而非 <acronym>CPU</acronym> 綁定，這個選項在單 <acronym>CPU</acronym> 與多 <acronym>CPU</acronym> 的主機都很有用。</para>
 
-      <para xml:lang="en">On a single-<acronym>CPU</acronym> machine, run the
-	following command to have up to 4 processes running at any one
-	time.  Empirical evidence posted to the mailing lists shows
-	this generally gives the best performance benefit.</para>
+      <para>在單 <acronym>CPU</acronym> 主機，執行以下指令讓一次最多可有 4 個程序同時執行，根據回報到郵遞論壇 (Mailing list) 的經驗顯示，這個設定值在大多數情況可以有最佳的效能。</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>make -j4 buildworld</userinput></screen>
 
-      <para xml:lang="en">On a multi-<acronym>CPU</acronym> machine, try values
-	between <literal>6</literal> and <literal>10</literal> to see
-	how they speed things up.</para>
+      <para>在多 <acronym>CPU</acronym> 主機，可嘗試使用 <literal>6</literal> 至 <literal>10</literal> 並觀察加速的情形。</para>
 
       <indexterm xml:lang="en">
 	<primary>rebuilding <quote>world</quote></primary>
@@ -35494,23 +35200,17 @@ Script started, output file is /var/tmp/mw.out</screen>
       </indexterm>
 
       <note>
-	<para xml:lang="en">If any variables were specified to <command>make
-	    buildworld</command>, specify the same variables to
-	  <command>make installworld</command>.  However,
-	  <option>-j</option> must <emphasis>never</emphasis> be used
-	  with <buildtarget xml:lang="en">installworld</buildtarget>.</para>
+	<para>任何傳給 <command>make buildworld</command> 的變數，也同樣要傳給 <command>make installworld</command>。只有 <option>-j</option> <emphasis>永遠</emphasis>不該用在 <buildtarget>installworld</buildtarget>。</para>
 
-	<para xml:lang="en">For example, if this command was used:</para>
+	<para>例如，若使用了以下指令：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>make -DNO_PROFILE buildworld</userinput></screen>
 
-	<para xml:lang="en">Install the results with:</para>
+	<para>在安裝時便要使用：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>make -DNO_PROFILE installworld</userinput></screen>
 
-	<para xml:lang="en">Otherwise, the second command will try to install
-	  profiled libraries that were not built during the
-	  <command>make buildworld</command> phase.</para>
+	<para>否則，第二個指令會嘗試安裝在 <command>make buildworld</command> 階段沒有編譯的 profile 的程式庫。</para>
       </note>
     </sect2>
 
@@ -35535,71 +35235,25 @@ Script started, output file is /var/tmp/mw.out</screen>
 	</primary>
       </indexterm>
 
-      <para xml:lang="en">FreeBSD provides the <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> Bourne script to aid
-	in determining the differences between the configuration files
-	in <filename>/etc</filename>, and the configuration files in
-	<filename>/usr/src/etc</filename>.  This is the recommended
-	solution for keeping the system configuration files up to date
-	with those located in the source tree.</para>
+      <para>FreeBSD 提供了 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> Bourne script 來協助比對在 <filename>/etc</filename> 的設定檔與在 <filename>/usr/src/etc</filename> 的設定檔間的差異，這是要維持系統設定檔與原始碼樹中最新的設定檔相同版本的建議方式。</para>
 
-      <para xml:lang="en">Before using <command>mergemaster</command>, it is
-	recommended to first copy the existing
-	<filename>/etc</filename> somewhere safe.  Include
-	<option>-R</option> which does a recursive copy and
-	<option>-p</option> which preserves times and the ownerships
-	on files:</para>
+      <para>在使用 <command>mergemaster</command> 之前，建議先將現有的 <filename>/etc</filename> 備份到某一處安全的地方，加上 <option>-R</option> 來做遞迴複製以及 <option>-p</option> 來保留檔案的時間與擁有者資訊：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cp -Rp /etc /etc.old</userinput></screen>
 
-      <para xml:lang="en">When run, <command>mergemaster</command> builds a
-	temporary root environment, from <filename>/</filename> down,
-	and populates it with various system configuration files.
-	Those files are then compared to the ones currently installed
-	in the system.  Files that differ will be shown in
-	<citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> format, with the <option>+</option> sign
-	representing added or modified lines, and <option>-</option>
-	representing lines that will be either removed completely or
-	replaced with a new file.  Refer to <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> for more
-	information about how file differences are shown.</para>
+      <para>執行時，<command>mergemaster</command> 會在 <filename>/</filename> 下建立暫存的 root 環境，然後放入各種系統設定檔，這些檔案接著會被拿來與目前安裝在系統的設定檔做比對，有差異的檔案會以 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的格式顯示， <option>+</option> 號代表增加或修改過的行，而 <option>-</option> 號代表在新檔案已完全移除或被取代的行。請參考 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得更多有關檔案差異會如何顯示的資訊。</para>
 
-      <para xml:lang="en">Next, <command>mergemaster</command> will display each
-	file that differs, and present options to: delete the new
-	file, referred to as the temporary file, install the temporary
-	file in its unmodified state, merge the temporary file with
-	the currently installed file, or view the results
-	again.</para>
+      <para>接著，<command>mergemaster</command> 會顯示每個有差異的檔案，然後提供操作選項：刪除新的暫存設定檔、不修改安裝暫存設定檔、將暫存設定檔與目前安裝的設定檔合併或再檢視結果一次。</para>
 
-      <para xml:lang="en">Choosing to delete the temporary file will tell
-	<command>mergemaster</command> to keep the current file
-	unchanged and to delete the new version.  This option is not
-	recommended.  To get help at any time, type
-	<keycap>?</keycap> at the <command>mergemaster</command>
-	prompt.  If the user chooses to skip a file, it will be
-	presented again after all other files have been dealt
-	with.</para>
+      <para>選擇刪除暫存設定檔案會告訴 <command>mergemaster</command> 保留目前的設定檔不變然後刪除新版本的設定檔，但這是較不建議使用的選項。在要尋求協助可隨時在 <command>mergemaster</command> 提示後輸入 <keycap>?</keycap>。若使用者選擇跳過該設定檔，該檔案則會在所有其他檔案處理過之後再顯示一次。</para>
 
-      <para xml:lang="en">Choosing to install the unmodified temporary file will
-	replace the current file with the new one.  For most
-	unmodified files, this is the best option.</para>
+      <para>選擇安裝未修改過的暫存設定檔會使用較新的設定檔來取代目前的設定檔，對於大多數未修改過的設定檔來說，這是最佳的選項。</para>
 
-      <para xml:lang="en">Choosing to merge the file will present a text editor, and
-	the contents of both files.  The files can be merged by
-	reviewing both files side by side on the screen, and choosing
-	parts from both to create a finished product.  When the files
-	are compared side by side, <keycap>l</keycap> selects the left
-	contents and <keycap>r</keycap> selects contents from the
-	right.  The final output will be a file consisting of both
-	parts, which can then be installed.  This option is
-	customarily used for files where settings have been modified
-	by the user.</para>
+      <para>選擇合併檔案會進入文字編輯器並同時顯示兩個檔案的內容，可在畫面上並排查看這兩個檔案，並從兩者之中選擇一邊來產生最終要的部份來合併這兩個設定檔。在檔案並排比較時，使用 <keycap>l</keycap> 可選擇左邊的內容，<keycap>r</keycap> 可選擇右邊的內容，最終的結果會是一個由兩邊選擇部份所組成的檔案，然後才可以安裝。這個選項習慣上是針對那些有被使用者修改過設定的檔案使用。</para>
 
-      <para xml:lang="en">Choosing to view the results again will redisplay the file
-	differences.</para>
+      <para>選擇再查看結果一次則會再顯示一次檔案間的差異。</para>
 
-      <para xml:lang="en">After <command>mergemaster</command> is done with the
-	system files, it will prompt for other options.  It may prompt
-	to rebuild the password file and will finish up with an option
-	to remove left-over temporary files.</para>
+      <para><command>mergemaster</command> 完成系統設定檔的處理之後，會提示其他選項，有可能會提示重建密碼檔，然後最終會出現移除剩下的暫存檔。</para>
 <!--
 Probably not needed as changes should be minimal and mergemaster does
 a good job of merging.
@@ -35685,7 +35339,7 @@ a good job of merging.
 
     <sect2 xml:id="make-delete-old">
       <info>
-	<title>刪除過時的檔案及程式庫</title>
+	<title>刪除廢棄的檔案及程式庫</title>
 
 	<authorgroup>
 	  <author xml:lang="en">
@@ -35702,90 +35356,50 @@ a good job of merging.
 	<primary>Deleting obsolete files and directories</primary>
       </indexterm>
 
-      <para xml:lang="en">As a part of the FreeBSD development lifecycle, files and
-	their contents occasionally become obsolete.  This may be
-	because functionality is implemented elsewhere, the version
-	number of the library has changed, or it was removed from the
-	system entirely.  These obsoleted files, libraries, and
-	directories should be removed when updating the system.
-	This ensures that the system is not cluttered with old files
-	which take up unnecessary space on the storage and backup
-	media.  Additionally, if the old library has a security or
-	stability issue, the system should be updated to the newer
-	library to keep it safe and to prevent crashes caused by the
-	old library.  Files, directories, and libraries which are
-	considered obsolete are listed in
-	<filename>/usr/src/ObsoleteFiles.inc</filename>.  The
-	following instructions should be used to remove obsolete files
-	during the system upgrade process.</para>
+      <para>隨著 FreeBSD 開發生命週期結束，檔案與其內容最終會被廢棄，這可是因為該功能已改在其他地方實作、程式庫的版本編號改變、或者完全從系統中移除。這些廢棄的檔案、程式庫與目錄應在升級系統時被移除，這可確保系統不會到處散布著舊檔案，在儲存與備份媒體中佔據不必要的空間。除此之外，若舊的程式庫有安全性或穩定性的問題，則系統應更新到較新的程式庫來確保系統安全與避免因舊程式庫造成的當機。被列為廢棄的檔案、目錄與程式庫會列於 <filename>/usr/src/ObsoleteFiles.inc</filename>。在進行系統升級程序時應依照以下指示移除廢棄的檔案。</para>
 
-      <para xml:lang="en">After the <command>make installworld</command> and the
-	subsequent <command>mergemaster</command> have finished
-	successfully, check for obsolete files and libraries:</para>
+      <para>在 <command>make installworld</command> 與接下來的 <command>mergemaster</command> 成功完成之後，需檢查是否有廢棄的檔案與程式庫：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
 <prompt>#</prompt> <userinput>make check-old</userinput></screen>
 
-      <para xml:lang="en">If any obsolete files are found, they can be deleted using
-	the following command:</para>
+      <para>若有找到任何廢棄的檔案，可使用以下指令刪除這些檔案：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old</userinput></screen>
 
-      <para xml:lang="en">A prompt is displayed before deleting each obsolete file.
-	To skip the prompt and let the system remove these files
-	automatically, use
-	<varname>BATCH_DELETE_OLD_FILES</varname>:</para>
+      <para>在刪除每一個廢棄檔案之前會顯示提示確認，若要跳過這些提示讓系統自動移除這些檔案，可使用 <varname>BATCH_DELETE_OLD_FILES</varname>：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>make -DBATCH_DELETE_OLD_FILES delete-old</userinput></screen>
 
-      <para xml:lang="en">The same goal can be achieved by piping these commands
-	through <command>yes</command>:</para>
+      <para>也可使用管線 (Pipe) 符號傳遞 <command>yes</command> 給這些指令來達到同樣的效果：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>yes|make delete-old</userinput></screen>
 
       <warning>
-	<title xml:lang="en">Warning</title>
+	<title>警告</title>
 
-	<para xml:lang="en">Deleting obsolete files will break applications that
-	  still depend on those obsolete files.  This is especially
-	  true for old libraries.  In most cases, the programs, ports,
-	  or libraries that used the old library need to be recompiled
-	  before <command>make delete-old-libs</command> is
-	  executed.</para>
+	<para>刪除廢棄檔案會弄壞那些相依這些廢棄檔案的應用程式，尤其是刪除廢棄的程式庫。在大多數情況，使用舊程式庫的程式、Port、程式庫需要在執行 <command>make delete-old-libs</command> 之前重新編譯。</para>
       </warning>
 
-      <para xml:lang="en">Utilities for checking shared library dependencies include
-	<package>sysutils/libchk</package> and
-	<package>sysutils/bsdadminscripts</package>.</para>
+      <para>可檢查共用程式庫相依的工具有 <package>sysutils/libchk</package> 與 <package>sysutils/bsdadminscripts</package>。</para>
 
-      <para xml:lang="en">Obsolete shared libraries can conflict with newer
-	libraries, causing messages like these:</para>
+      <para>廢棄的共用程式庫可能會與較新的程式庫衝突，會出現訊息如下：</para>
 
       <screen xml:lang="en">/usr/bin/ld: warning: libz.so.4, needed by /usr/local/lib/libtiff.so, may conflict with libz.so.5
 /usr/bin/ld: warning: librpcsvc.so.4, needed by /usr/local/lib/libXext.so, may conflict with librpcsvc.so.5</screen>
 
-      <para xml:lang="en">To solve these problems, determine which port installed
-	the library:</para>
+      <para>要解決這些問題須找出那個 Port 會安裝該程式庫：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg which /usr/local/lib/libtiff.so</userinput>
   /usr/local/lib/libtiff.so was installed by package tiff-3.9.4
 <prompt>#</prompt> <userinput>pkg which /usr/local/lib/libXext.so</userinput>
   /usr/local/lib/libXext.so was installed by package libXext-1.1.1,1</screen>
 
-      <para xml:lang="en">Then deinstall, rebuild, and reinstall the port.  To
-	automate this process,
-	<package>ports-mgmt/portmaster</package> can be used.  After
-	all ports are rebuilt and no longer use the old libraries,
-	delete the old libraries using the following command:</para>
+      <para>然後解除安裝、重新編譯然後重新安裝 Port，要將這個程序自動化可使用 <package>ports-mgmt/portmaster</package>。在所有 Port 重新編譯且舊程式庫不再使用之後，使用以下指令刪除舊程式庫：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old-libs</userinput></screen>
 
-      <para xml:lang="en">If something goes wrong, it is easy to rebuild a
-	particular piece of the system.  For example, if
-	<filename>/etc/magic</filename> was accidentally deleted as
-	part of the upgrade or merge of <filename>/etc</filename>,
-	<command>file</command> will stop working.  To fix this,
-	run:</para>
+      <para>若有東西發生錯誤，要重新編譯系統的特定部份也很簡單。例如，若 <filename>/etc/magic</filename> 在升級或合併 <filename>/etc</filename> 時被意外刪除，<command>file</command> 便會無法運作，要修正這個問題可執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src/usr.bin/file</userinput>
 <prompt>#</prompt> <userinput>make all install</userinput></screen>
@@ -35799,9 +35413,7 @@ a good job of merging.
 	  <term>每個變更是否都需要重新編譯 World?</term>
 
 	  <listitem>
-	    <para xml:lang="en">It depends upon the nature of the change.  For
-	      example, if <application>svn</application> only shows
-	      the following files as being updated:</para>
+	    <para>這需視變更的內容而定，例如，若 <application>svn</application> 只有顯示以下檔案有被更新過：</para>
 
 	    <screen xml:lang="en"><filename>src/games/cribbage/instr.c</filename>
 <filename>src/games/sail/pl_main.c</filename>
@@ -35809,38 +35421,21 @@ a good job of merging.
 <filename>src/release/sysinstall/media.c</filename>
 <filename>src/share/mk/bsd.port.mk</filename></screen>
 
-	    <para xml:lang="en">it probably is not worth rebuilding the entire
-	      world.  Instead, go into the appropriate sub-directories
-	      and run <command>make all install</command>.  But if
-	      something major changes, such as
-	      <filename>src/lib/libc/stdlib</filename>, consider
-	      rebuilding world.</para>
+	    <para>那可能就不須要重新編譯整個 World，可改直接進入對應的子目錄然後執行 <command>make all install</command>。但若有一些主要 (Major) 的變更，例如 <filename>src/lib/libc/stdlib</filename>，那麼請考慮重新編譯 World。</para>
 
-	    <para xml:lang="en">Some users rebuild world every fortnight and let
-	      changes accumulate over that fortnight.  Others only
-	      re-make those things that have changed and are careful
-	      to spot all the dependencies.  It all depends on how
-	      often a user wants to upgrade and whether they are
-	      tracking FreeBSD-STABLE or FreeBSD-CURRENT.</para>
+	    <para>有些使用者每兩週會重新編譯一次 World 然後讓變更再累積兩週，也有些使用者只重新編譯那些有變更過的內容並非常小心的檢查所有相依，要怎麼做完全是依使用者相要多久升級一次系統以及他們是追蹤 FreeBSD-STABLE 或是 FreeBSD-CURRENT 分支而定。</para>
 	  </listitem>
 	</varlistentry>
 
 	<varlistentry>
-	  <term>什麼會造成有很多信號 11<indexterm>
+	  <term>什麼會造成有很多 signal 11<indexterm>
 	      <primary>signal 11</primary>
 	    </indexterm> (或其他信號) 錯誤的編譯失敗?</term>
 
 	  <listitem>
-	    <para xml:lang="en">This normally indicates a hardware problem.
-	      Building world is an effective way to stress test
-	      hardware, especially memory.  A sure indicator of a
-	      hardware issue is when <application>make</application>
-	      is restarted and it dies at a different point in the
-	      process.</para>
+	    <para>這通常代表發生硬體問題，編譯 World 是對硬體做壓力測試很有效的方式，特別是對記憶體。對於硬體問題較明確的指標是每一次重新 <application>make</application> 會在程序的不同地方停止。</para>
 
-	    <para xml:lang="en">To resolve this error, swap out the components in
-	      the machine, starting with RAM, to determine which
-	      component is failing.</para>
+	    <para>要解決這種問題，需要更換主機的元件，先從 RAM 開始，然後找出那個元件故障。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -35848,14 +35443,7 @@ a good job of merging.
 	  <term>完成編譯後是可否移除 <filename>/usr/obj</filename>?</term>
 
 	  <listitem>
-	    <para xml:lang="en">This directory contains all the object files that
-	      were produced during the compilation phase.  Normally,
-	      one of the first steps in the <command>make
-		buildworld</command> process is to remove this
-	      directory and start afresh.  Keeping
-	      <filename>/usr/obj</filename> around when finished makes
-	      little sense, and its removal frees up a approximately
-	      2GB of disk space.</para>
+	    <para>這個目錄包含了所有在編譯階段所產生的目標檔 (Object file)。正常在 <command>make buildworld</command> 程序的其中一個初始步驟便是移除所有在這個目錄的檔案然後重頭開始，因此在編譯完成之後保留 <filename>/usr/obj</filename> 沒有太大意義，把它移除之後可以釋放大約 2GB 的磁碟空間。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -35863,34 +35451,22 @@ a good job of merging.
 	  <term>是否能繼續中斷的編譯?</term>
 
 	  <listitem>
-	    <para xml:lang="en">This depends on how far into the process the
-	      problem occurs.  In general, <command>make
-		buildworld</command> builds new copies of essential
-	      tools and the system libraries.  These tools and
-	      libraries are then installed, used to rebuild
-	      themselves, and are installed again.  The rest of the
-	      system is then rebuilt with the new system
-	      tools.</para>
+	    <para>這要看程序執行到什麼程度才發生問題，一般來說，<command>make buildworld</command> 會編譯新版的重要工具及系統程式庫，接著會安裝這些工具及程式庫，再用來重新編譯它們自己，然後再安裝一次，接著才會使用這些新系統工具重新編譯系統剩下未完成的部份。</para>
 
-	    <para xml:lang="en">During the last stage, it is fairly safe to run
-	      these commands as they will not undo the work of the
-	      previous <command>make buildworld</command>:</para>
+	    <para>在最後一個階段執行這個指令是相同安全的，這些指令不會重做先前 <command>make buildworld</command> 所做的工作：</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
 <prompt>#</prompt> <userinput>make -DNO_CLEAN all</userinput></screen>
 
-	    <para xml:lang="en">If this message appears:</para>
+	    <para>若出現這個訊息：</para>
 
 	    <screen xml:lang="en">--------------------------------------------------------------
 Building everything..
 --------------------------------------------------------------</screen>
 
-	    <para xml:lang="en">in the <command>make buildworld</command> output,
-	      it is probably fairly safe to do so.</para>
+	    <para>在 <command>make buildworld</command> 的輸出結果，要執行上述指令是相當安全的。</para>
 
-	    <para xml:lang="en">If that message is not displayed, it is always
-	      better to be safe than sorry and to restart the build
-	      from scratch.</para>
+	    <para>若沒有顯示上述訊息，保險起見最好重頭開始編譯的動作。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -35898,54 +35474,21 @@ Building everything..
 	  <term>有可能加速編譯 World 的速度嗎?</term>
 
 	  <listitem>
-	    <para xml:lang="en">Several actions can speed up the build world
-	      process.  For example, the entire process can be run
-	      from single-user mode.  However, this will prevent users
-	      from having access to the system until the process is
-	      complete.</para>
+	    <para>有很多方法可以加速整個編譯 World 的程序，舉例來說，整個程序可以在單使用者模式執行，這可以避免一般使用者在程序完成前存取系統。</para>
 
-	    <para xml:lang="en">Careful file system design or the use of ZFS
-	      datasets can make a difference.  Consider putting
-	      <filename>/usr/src</filename> and
-	      <filename>/usr/obj</filename> on
-	      separate file systems.  If possible, place the file
-	      systems on separate disks on separate disk controllers.
-	      When mounting <filename>/usr/src</filename>, use
-	      <option>noatime</option> which prevents the file system
-	      from recording the file access time.  If <filename>/usr/src</filename> is not on its
-	      own file system, consider remounting <filename>/usr</filename> with
-	      <option>noatime</option>.</para>
+	    <para>注意檔案系統的規劃或者採用 ZFS 資料集可能會有明顯的差異，可以考慮將 <filename>/usr/src</filename> 與 <filename>/usr/obj</filename> 放在不同的檔案系統，若可能的話，將檔案系統放在不同磁碟控制器的磁碟。在掛載 <filename>/usr/src</filename> 時，使用 <option>noatime</option> 可以避免檔案系統記錄檔案存取時間，若 <filename>/usr/src</filename> 放在不是自己所擁有的檔案系統，則可考慮使用 <option>noatime</option> 重新掛載 <filename>/usr</filename>。</para>
 
-	    <para xml:lang="en">The file system holding <filename>/usr/obj</filename> can be mounted
-	      or remounted with <option>async</option> so that disk
-	      writes happen asynchronously.  The write completes
-	      immediately, and the data is written to the disk a few
-	      seconds later.  This allows writes to be clustered
-	      together, and can provide a dramatic performance
-	      boost.</para>
+	    <para>儲存 <filename>/usr/obj</filename> 的檔案系統可使用 <option>async</option> 掛載或重新掛載磁碟，讓磁碟做非同步的寫入，這樣寫入可立即完成，並且在幾秒之後再一起寫入到磁碟，這會讓寫入動作可以集中處理，可加快不少效能。</para>
 
 	    <warning>
-	      <para xml:lang="en">Keep in mind that this option makes the file
-		system more fragile.  With this option, there is an
-		increased chance that, should power fail, the file
-		system will be in an unrecoverable state when the
-		machine restarts.</para>
+	      <para>注意，這個選項會讓檔案系統更脆弱，使用了這個選項會提高電源中斷、重新開機時，造成檔案系統進入無法還原狀態的機會。</para>
 
-	      <para xml:lang="en">If <filename>/usr/obj</filename> is the only
-		directory on this file system, this is not a problem.
-		If you have other, valuable data on the same file
-		system, ensure that there are verified backups before
-		enabling this option.</para>
+	      <para>若 <filename>/usr/obj</filename> 是單獨位於檔案系統的目錄，那麼也不是什麼大問題，若是您在同一個檔案系統還有其他有價值的資料，請在開啟此選項前先確認有做好備份。</para>
 	    </warning>
 
-	    <para xml:lang="en">Turn off profiling by setting
-	      <quote>NO_PROFILE=true</quote> in
-	      <filename>/etc/make.conf</filename>.</para>
+	    <para>在 <filename>/etc/make.conf</filename> 設定 <quote>NO_PROFILE=true</quote> 關閉剖析 (Profiling)。</para>
 
-	    <para xml:lang="en">Pass <option>-j<replaceable>n</replaceable></option>
-	      to <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> to run multiple processes in parallel.
-	      This usually helps on both single- and multi-processor
-	      machines.</para>
+	    <para>傳遞 <option>-j<replaceable>n</replaceable></option> 給 <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來用多程序平行編譯，這個通常對單或多處理器的主機都有幫助。</para>
 	  </listitem>
 	</varlistentry>
 
@@ -35953,8 +35496,7 @@ Building everything..
 	  <term>若發生錯誤時該怎麼辦?</term>
 
 	  <listitem>
-	    <para xml:lang="en">First, make absolutely sure that the environment has
-	      no extraneous cruft from earlier builds:</para>
+	    <para>首先，確定環境沒有受到先前編譯結果的影響。</para>
 
 	    <screen xml:lang="en"><prompt>#</prompt> <userinput>chflags -R noschg /usr/obj/usr</userinput>
 <prompt>#</prompt> <userinput>rm -rf /usr/obj/usr</userinput>
@@ -35962,16 +35504,11 @@ Building everything..
 <prompt>#</prompt> <userinput>make cleandir</userinput>
 <prompt>#</prompt> <userinput>make cleandir</userinput></screen>
 
-	    <para xml:lang="en">Yes, <command>make cleandir</command> really should
-	      be run twice.</para>
+	    <para>是的，<command>make cleandir</command> 真的需要執行兩次。</para>
 
-	    <para xml:lang="en">Then, restart the whole process, starting with
-	      <command>make buildworld</command>.</para>
+	    <para>然後重新啟動整個程序，從 <command>make buildworld</command> 開始。</para>
 
-	    <para xml:lang="en">If problems persist, send the error and the output
-	      of <command>uname -a</command> to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions">FreeBSD general questions mailing list</link>.  Be
-	      prepared to answer other questions about the
-	      setup!</para>
+	    <para>若問題仍存在，回報錯誤與 <command>uname -a</command> 的輸出結果到 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions">FreeBSD 一般問題郵遞論壇</link>，然後準備好回答有關該次安裝的其他問題。</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
@@ -35998,76 +35535,21 @@ Building everything..
       <secondary>installing multiple machines</secondary>
     </indexterm>
 
-    <para xml:lang="en">When multiple machines need to track the same source tree,
-      it is a waste of disk space, network bandwidth, and
-      <acronym>CPU</acronym> cycles to have each system download the
-      sources and rebuild everything.  The solution is to have one
-      machine do most of the work, while the rest of the machines
-      mount that work via <acronym>NFS</acronym>.  This section
-      outlines a method of doing so.  For more information about using
-      <acronym>NFS</acronym>, refer to <xref linkend="network-nfs"/>.</para>
+    <para>當有多部主機需要追蹤相同的原始碼樹，要在每一部主機的系統下載原始碼與重新編譯所有的東西會耗費不少磁碟空間、網路頻寬與 <acronym>CPU</acronym> 運算，要解決這個問題的方法是先在一部主機上做完大部份的工作，而其餘的主機透過 <acronym>NFS</acronym> 掛載使用編譯完的成果。本節會介紹如何做這件事。要取得更多有關使用 <acronym>NFS</acronym> 的資訊請參考 <xref linkend="network-nfs"/>。</para>
 
-    <para xml:lang="en">First, identify a set of machines which will run the same
-      set of binaries, known as a <firstterm>build set</firstterm>.
-      Each machine can have a custom kernel, but will run the same
-      userland binaries.  From that set, choose a machine to be the
-      <firstterm>build machine</firstterm> that the world and kernel
-      are built on.  Ideally, this is a fast machine that has
-      sufficient spare <acronym>CPU</acronym> to run <command>make
-	buildworld</command> and <command>make
-	buildkernel</command>.</para>
+    <para>首先，要先確認要執行同一組 Binary 的一群主機，這群主機又稱作 <firstterm>建置集 (Build set)</firstterm>，其中每部主機可以有自己的自訂核心，但會執行相同的 Userland binary。建置集中需挑選一部做為<firstterm>建置主機 (Build machine)</firstterm>，這部主機將會拿來編譯 World 與核心 (Kernel)，理想情況下，要挑選一部速度較快、有足夠的 <acronym>CPU</acronym> 能夠執行 <command>make buildworld</command> 與 <command>make buildkernel</command> 的主機。</para>
 
-    <para xml:lang="en">Select a machine to be the <firstterm>test
-	machine</firstterm>, which will test software updates before
-      they are put into production.  This <emphasis>must</emphasis> be
-      a machine that can afford to be down for an extended period of
-      time.  It can be the build machine, but need not be.</para>
+    <para>再挑選一部主機做為<firstterm>測試主機 (Test machine)</firstterm>，這部主機,要在將系統更新上正式運作的環境前做測試，這<emphasis>必須</emphasis>一部能夠承受服務停止一段時間的主機，它也可是同時是建置主機，但不是一定要。</para>
 
-    <para xml:lang="en">All the machines in this build set need to mount
-      <filename>/usr/obj</filename> and <filename>/usr/src</filename>
-      from the build machine via <acronym>NFS</acronym>.  For multiple
-      build sets, <filename>/usr/src</filename> should be on one build
-      machine, and <acronym>NFS</acronym> mounted on the rest.</para>
+    <para>所有在此建置集中的主機需要透過 <acronym>NFS</acronym> 掛載在建置主機上的 <filename>/usr/obj</filename> 與 <filename>/usr/src</filename>。在有多個建置集時，<filename>/usr/src</filename> 也應放在其中一部建置主機，然後由其他主機使用 <acronym>NFS</acronym> 掛載。</para>
 
-    <para xml:lang="en">Ensure that <filename>/etc/make.conf</filename> and
-      <filename>/etc/src.conf</filename> on all the machines in the
-      build set agree with the build machine.  That means that the
-      build machine must build all the parts of the base system that
-      any machine in the build set is going to install.  Also, each
-      build machine should have its kernel name set with
-      <varname>KERNCONF</varname> in
-      <filename>/etc/make.conf</filename>, and the build machine
-      should list them all in its <varname>KERNCONF</varname>,
-      listing its own kernel first.  The build machine must have the
-      kernel configuration files for each machine in its <filename>/usr/src/sys/<replaceable>arch</replaceable>/conf</filename>.</para>
+    <para>確保在建置集中的所有主機的 <filename>/etc/make.conf</filename> 及 <filename>/etc/src.conf</filename> 與建置主機一致，這是由於建置主機必須編譯整個基礎系統 (Base system) 給所有建置集中的主機安裝。此外，每一部建置主機應在 <filename>/etc/make.conf</filename> 使用 <varname>KERNCONF</varname> 設定其核心名稱，且建置主機應列出所有要編譯的核心名稱在 <varname>KERNCONF</varname>，並且把自己要用的核心放在第一個。建置主機也必須有每部主機的核心設定檔在其 <filename>/usr/src/sys/<replaceable>arch</replaceable>/conf</filename>。</para>
 
-    <para xml:lang="en">On the build machine, build the kernel and world as
-      described in <xref linkend="makeworld"/>, but do not install
-      anything on the build machine.  Instead, install the built
-      kernel on the test machine.  On the test machine, mount
-      <filename>/usr/src</filename> and
-      <filename>/usr/obj</filename> via <acronym>NFS</acronym>.  Then,
-      run <command>shutdown now</command> to go to single-user mode in
-      order to install the new kernel and world and run
-      <command>mergemaster</command> as usual.  When done, reboot to
-      return to normal multi-user operations.</para>
+    <para>在建置主機上，編譯核心與 World 如 <xref linkend="makeworld"/> 所述，但不要在建置主機上安裝所有編譯好的東西，而是要將編譯好的核心安裝到測試主機，在測試主機透過 <acronym>NFS</acronym> 掛載 <filename>/usr/src</filename> 及 <filename>/usr/obj</filename>。然後執行 <command>shutdown now</command> 進入單使用者模式來安裝新的核心與 World 並如同往常執行 <command>mergemaster</command>。完成之後，重新開機回到正常的多使用者模式運作。</para>
 
-    <para xml:lang="en">After verifying that everything on the test machine is
-      working properly, use the same procedure to install the new
-      software on each of the other machines in the build set.</para>
+    <para>在測試主機上檢驗完所有東西皆運作正常之後，使用相同的程序將編譯好的結果安裝到在建置集中的其他主機。</para>
 
-    <para xml:lang="en">The same methodology can be used for the ports tree.  The
-      first step is to share <filename>/usr/ports</filename> via
-      <acronym>NFS</acronym> to all the machines in the build set.  To
-      configure <filename>/etc/make.conf</filename> to share
-      distfiles, set <varname>DISTDIR</varname> to a common shared
-      directory that is writable by whichever user <systemitem class="username">root</systemitem> is mapped to by the
-      <acronym>NFS</acronym> mount.  Each machine should set
-      <varname>WRKDIRPREFIX</varname> to a local build directory, if
-      ports are to be built locally.  Alternately, if the build system
-      is to build and distribute packages to the machines in the build
-      set, set <varname>PACKAGES</varname> on the build system to a
-      directory similar to <varname>DISTDIR</varname>.</para>
+    <para>同樣的方法也可用在 Port 樹，第一個步驟是透過 <acronym>NFS</acronym> 共享 <filename>/usr/ports</filename> 給所有在建置集中的主機。要設定 <filename>/etc/make.conf</filename> 使用共享的 distfiles，可設定 <varname>DISTDIR</varname> 為由 <acronym>NFS</acronym> 掛載對應到的使用者 <systemitem class="username">root</systemitem> 可寫入的通用共享目錄。每一台主機應設定 <varname>WRKDIRPREFIX</varname> 到一個本地的編譯目錄，若 Port 要在本地編譯。或者，若建置系統要編譯並散佈套件到建置集中的主機可在建置系統上設定 <varname>PACKAGES</varname> 到一個類似 <varname>DISTDIR</varname> 的目錄。</para>
   </sect1>
 </chapter>
 
@@ -42198,7 +41680,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 49710 2016-12-05 12:59:05Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 50143 2017-04-09 01:45:58Z bjk $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -45958,9 +45440,9 @@ mail            IN      A       192.168.1.5</programlisting>
 	  <para xml:lang="en">The SHA-256 <acronym>RR</acronym> can now be compared
 	    to the digest in <link xlink:href="https://data.iana.org/root-anchors/root-anchors.xml">https://data.iana.org/root-anchors/root-anchors.xml</link>.
 	    To be absolutely sure that the key has not been tampered
-	    with the data in the <acronym>XML</acronym> file can be
-	    verified using the <acronym>PGP</acronym> signature in
-	    <link xlink:href="https://data.iana.org/root-anchors/root-anchors.asc">https://data.iana.org/root-anchors/root-anchors.asc</link>.</para>
+	    with the data in the <acronym>XML</acronym> file should be
+	    verified using a proper <acronym>PGP</acronym> signature.</para>
+	    
 
 	  <para xml:lang="en">Next, the key must be formatted properly.  This
 	    differs a little between <acronym>BIND</acronym> versions
@@ -46911,7 +46393,8 @@ AddModule mod_php5.c
     <para xml:lang="en">A FreeBSD system can also be configured to act as a
       <application>Samba</application> server by installing the
       <package>net/samba43</package> port or package.  This allows the
-      administrator to create <acronym>SMB</acronym>/<acronym>CIFS</acronym>shares on
+      administrator to create <acronym>SMB</acronym>/<acronym>CIFS</acronym>
+      shares on
       the FreeBSD system which can be accessed by clients running
       <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> or the <application>Samba</application>
       client libraries.</para>
@@ -51311,7 +50794,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 49799 2017-01-06 20:02:33Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 50044 2017-03-10 12:32:33Z bcr $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -52028,6 +51511,11 @@ route_net2="-net 192.168.1.0/24 192.168.1.1"</programlisting>
 	    <citerefentry><refentrytitle>ifconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry>:</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>ifconfig | grep -B3 -i wireless</userinput></screen>
+
+	  <para xml:lang="en">On FreeBSD 11 or higher, use this command
+	    instead:</para>
+
+	  <screen xml:lang="en"><prompt>%</prompt> <userinput>sysctl net.wlan.devices</userinput></screen>
 
 	  <para xml:lang="en">If a wireless adapter is not listed, an additional
 	    kernel module might be required, or it might be a model
@@ -53491,7 +52979,7 @@ freebsdap       00:11:95:c3:0d:ac    1   54M 22:1   100 EPS</screen>
 	    scanning for access points and the 802.11 protocol
 	    handshakes required to arrange communication:</para>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>wlandebug -i <replaceable>ath0</replaceable> +scan+auth+debug+assoc</userinput>
+	  <screen xml:lang="en"><prompt>#</prompt> <userinput>wlandebug -i <replaceable>wlan0</replaceable> +scan+auth+debug+assoc</userinput>
   net.wlan.0.debug: 0 =&gt; 0xc80000&lt;assoc,auth,scan&gt;</screen>
 
 	  <para xml:lang="en">Many useful statistics are maintained by the 802.11
