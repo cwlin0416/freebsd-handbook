@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50052 2017-03-12 14:52:35Z dexter $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50264 2017-05-16 07:33:22Z joneum $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -129,6 +129,7 @@
 <!ENTITY pgpkey.davide SYSTEM "davide.key">
 <!ENTITY pgpkey.davidxu SYSTEM "davidxu.key">
 <!ENTITY pgpkey.db SYSTEM "db.key">
+<!ENTITY pgpkey.dbaio SYSTEM "dbaio.key">
 <!ENTITY pgpkey.dbn SYSTEM "dbn.key">
 <!ENTITY pgpkey.dchagin SYSTEM "dchagin.key">
 <!ENTITY pgpkey.dcs SYSTEM "dcs.key">
@@ -252,6 +253,7 @@
 <!ENTITY pgpkey.johans SYSTEM "johans.key">
 <!ENTITY pgpkey.jon SYSTEM "jon.key">
 <!ENTITY pgpkey.jonathan SYSTEM "jonathan.key">
+<!ENTITY pgpkey.joneum SYSTEM "joneum.key">
 <!ENTITY pgpkey.josef SYSTEM "josef.key">
 <!ENTITY pgpkey.jpaetzel SYSTEM "jpaetzel.key">
 <!ENTITY pgpkey.jrm SYSTEM "jrm.key">
@@ -538,6 +540,7 @@
 <!ENTITY pgpkey.wollman SYSTEM "wollman.key">
 <!ENTITY pgpkey.woodsb02 SYSTEM "woodsb02.key">
 <!ENTITY pgpkey.wosch SYSTEM "wosch.key">
+<!ENTITY pgpkey.wulf SYSTEM "wulf.key">
 <!ENTITY pgpkey.wxs SYSTEM "wxs.key">
 <!ENTITY pgpkey.xmj SYSTEM "xmj.key">
 <!ENTITY pgpkey.xride SYSTEM "xride.key">
@@ -1288,7 +1291,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 50139 2017-04-09 00:48:24Z brd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 50234 2017-05-05 16:45:08Z sevan $
 -->
 <chapter version="5.0" xml:id="introduction">
 
@@ -1619,9 +1622,13 @@
 	</listitem>
 
 	<listitem>
-	  <para><link xlink:href="http://www.sandvine.com/">Sandvine</link> <indexterm>
+	  <para xml:lang="en"><link xlink:href="http://www.sandvine.com/">Sandvine</link>
+	    <indexterm xml:lang="en">
 	      <primary>Sandvine</primary>
-	    </indexterm> - Sandvine 使用 FreeBSD 作為它們的高性能即時網路處理平台，來建立它們的智慧網路策略控制產品。</para>
+	    </indexterm> - Sandvine uses FreeBSD as the basis of their
+	    high performance real-time network processing platforms
+	    that make up their intelligent network policy control
+	    products.</para>
 	</listitem>
 
 	<listitem>
@@ -2030,7 +2037,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 50142 2017-04-09 01:10:27Z brd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 50186 2017-04-20 10:43:08Z remko $
 -->
 
 <chapter version="5.0" xml:id="bsdinstall">
@@ -2985,7 +2992,7 @@ Ethernet address 0:3:ba:b:92:d4, Host ID: 830b92d4.</screen>
 	</mediaobject>
       </figure>
 
-      <para>選擇 <keycap>T</keycap> 來設定儲存池類型 (<literal>Pool Type</literal>) 以及要組成儲存池的磁碟。自動 <acronym>ZFS</acronym> 安裝程式目前僅支援建立單一頂層 vdev，除了在串連 (Stripe) 模式。要建立更複雜的儲存池，需使用 <xref linkend="bsdinstall-part-shell"/> 的操作來建立儲存池。安裝程式支援建立各種儲存池類型，包含串連 Stripe (不建議，沒有備援功能)、鏡像 Mirror (效能較佳，但可用空間較少) 以及 RAID-Z 1, 2, 與 3 (分別有能力承受同時 1, 2 與 3 個磁碟的損壞)。在選擇儲存池類型時會有提示顯示在螢幕的下方，提示所需要的磁碟數以及在使用 RAID-Z 時，每個配置最佳的磁碟數。</para>
+      <para>選擇 <keycap>T</keycap> 來設定儲存池類型 (<literal>Pool Type</literal>) 以及要組成儲存池的磁碟。自動 <acronym>ZFS</acronym> 安裝程式目前僅支援建立單一頂層 vdev，除了在串連 (Stripe) 模式。要建立更複雜的儲存池，需使用 <xref linkend="bsdinstall-part-shell"/> 的操作來建立儲存池。安裝程式支援建立各種儲存池類型，包含串連 Stripe (不建議，沒有備援功能)、鏡像 Mirror (效能較佳，但可用空間較少) 以及 RAID-Z 1, 2, 與 3 (分別有能力承受同時 1, 2 與 3 個磁碟的損壞)。在選擇儲存池類型時會在螢幕的下方提示所需的磁碟數量，以及在使用 RAID-Z 時，每種配置最佳的磁碟數。</para>
 
       <figure xml:id="bsdinstall-zfs-vdev_type">
 	<title><acronym>ZFS</acronym> 儲存池類型</title>
@@ -3730,7 +3737,7 @@ Starting sshd.</screen>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 49033 2016-07-03 19:27:03Z brd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 50188 2017-04-20 12:50:37Z remko $
 -->
 <chapter version="5.0" xml:id="basics">
   <!--
@@ -7776,10 +7783,7 @@ EndSection</programlisting>
 
       <para>編輯 <filename>local.conf</filename> 完之後，請確認有使用 <literal>&lt;/fontconfig&gt;</literal> 標籤結尾，若沒有使用會讓所做的更改被忽略。</para>
 
-      <para xml:lang="en">Users can add personalized settings by creating their own
-	<filename>~/.config/fontconfig/fonts.conf</filename>.  This
-	file uses the same <acronym>XML</acronym> format described
-	above.</para>
+      <para>使用者可透過建立自己的 <filename>~/.config/fontconfig/fonts.conf</filename> 來加入個人化的設定，此檔案使用與上述說明相同的 <acronym>XML</acronym> 格式。</para>
 
       <indexterm xml:lang="en"><primary>LCD screen</primary></indexterm>
       <indexterm xml:lang="en"><primary>Fonts</primary>
@@ -12933,7 +12937,7 @@ lp:
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload linux</userinput></screen>
 
-    <para xml:lang="en">For 64-bit compatibility:</para>
+    <para>對 64-位元的相容性：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload linux64</userinput></screen>
 
@@ -12954,8 +12958,7 @@ lp:
 
     <programlisting xml:lang="en">linux_enable="YES"</programlisting>
 
-    <para xml:lang="en">On 64-bit machines, <filename>/etc/rc.d/abi</filename> will
-      automatically load the module for 64-bit emulation.</para>
+    <para>在 64-位元的機器上，<filename>/etc/rc.d/abi</filename> 會自動載入用來做 64-位元模擬的模組。</para>
 
     <indexterm><primary>核心選項</primary> <secondary>COMPAT_LINUX</secondary></indexterm>
 
@@ -20590,7 +20593,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
     <sect2 xml:id="security-sudo-loggin">
       <title>記錄輸出</title>
 
-      <para>採用 <application>Sudo</application> 的另一個優點是能夠開啟連線階段的記錄。使用內建立記錄機制與內含的 <application>sudoreplay</application> 指令，所有透過 <application>Sudo</application> 初始化的指令會被記錄下來供往後檢驗用。要開啟這個功能要加入預設記錄目錄的項目，以下範例中使用了使用者變數，也有許多其他記錄檔名稱常用規則，可參考 <application>sudoreplay</application> 的操作手冊來取得進一步資訊。</para>
+      <para>採用 <application>Sudo</application> 的另一個優點是能夠開啟連線階段的記錄。使用內建立記錄機制與內含的 <application>sudoreplay</application> 指令，所有透過 <application>Sudo</application> 初始化的指令會被記錄下來供往後檢驗用。要開啟這個功能要加入預設記錄目錄的項目，在以下範例中使用了使用者變數來做目錄名稱，也還有許多其他記錄檔名稱慣例，可參考 <application>sudoreplay</application> 的操作手冊來取得進一步資訊。</para>
 
       <programlisting xml:lang="en">Defaults iolog_dir=/var/log/sudo-io/%{user}</programlisting>
 
@@ -20611,10 +20614,10 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sudoreplay user1/00/00/02</userinput></screen>
 
       <warning>
-	<para>雖然所有連線階段都會被記錄，但任何管理者可以移除連線階段，使得沒人知道它們做了什麼事，所以非常值在入侵偵測系統 (<acronym>IDS</acronym>) 或類似的軟體加入每日檢查以便在有人為修改時通知其他管理人員。</para>
+	<para>雖然所有連線階段都會被記錄，但任何管理者都可以移除連線階段，使得沒人知道它們做了什麼事，所以非常值得在入侵偵測系統 (<acronym>IDS</acronym>) 或類似的軟體加入每日檢查，以便在有人為修改時通知其他管理人員。</para>
       </warning>
 
-      <para><command>sudoreplay</command> 的擴充性非常強，請參考說明文件來取得更多資訊。</para>
+      <para><command>sudoreplay</command> 的擴充空間非常大，請參考說明文件來取得更多資訊。</para>
     </sect2>
   </sect1>
 </chapter>
@@ -27951,7 +27954,7 @@ esac</programlisting>
 <chapter version="5.0" xml:id="geom">
 
   <info>
-    <title xml:lang="en">GEOM: Modular Disk Transformation Framework</title>
+    <title>GEOM: 模組化磁碟轉換框架</title>
 
     <authorgroup>
       <author xml:lang="en">
@@ -27975,13 +27978,7 @@ esac</programlisting>
       <see><acronym>GEOM</acronym></see>
     </indexterm>
 
-    <para xml:lang="en">In FreeBSD, the <acronym>GEOM</acronym> framework permits
-      access and control to classes, such as Master Boot Records and
-      <acronym>BSD</acronym> labels, through the use of providers, or
-      the disk devices in <filename>/dev</filename>.  By supporting
-      various software <acronym>RAID</acronym> configurations,
-      <acronym>GEOM</acronym> transparently provides access  to the
-      operating system and operating system utilities.</para>
+    <para>在 FreeBSD 中，<acronym>GEOM</acronym> 可允許對類別做存取與控制，例如：主開機記錄 (Master Boot Record) 與 <acronym>BSD</acronym> 標籤，透過利用提供者，或在 <filename>/dev</filename> 中的磁碟裝置。透過支援各種 <acronym>RAID</acronym> 的配置，<acronym>GEOM</acronym> 透明的提供了對作業系統與作業系統工具的存取。</para>
 
     <para xml:lang="en">This chapter covers the use of disks under the
       <acronym>GEOM</acronym> framework in FreeBSD.  This includes the
@@ -32803,60 +32800,50 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
   <sect1 xml:id="virtualization-guest-virtualbox">
     <title>在 <trademark>VirtualBox</trademark> 使用 FreeBSD 作為客端</title>
 
-    <para xml:lang="en">FreeBSD works well as a guest in
-      <application><trademark>VirtualBox</trademark></application>.  The virtualization
-      software is available for most common operating systems,
-      including FreeBSD itself.</para>
+    <para>在 <application><trademark>VirtualBox</trademark></application> 中使用 FreeBSD 做為客端系統也可運作的很好，虛擬化軟體可支援最常見的幾個作業系統，這當然也包含 FreeBSD。</para>
 
-    <para xml:lang="en">The <application><trademark>VirtualBox</trademark></application> guest additions
-      provide support for:</para>
+    <para><application><trademark>VirtualBox</trademark></application> guest additions 支援以下功能：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Clipboard sharing.</para>
+	<para>剪貼簿共享。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Mouse pointer integration.</para>
+	<para>滑鼠指標整合。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Host time synchronization.</para>
+	<para>主機時間同步。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Window scaling.</para>
+	<para>視窗縮放。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Seamless mode.</para>
+	<para>無痕模式。</para>
       </listitem>
     </itemizedlist>
 
     <note>
-      <para xml:lang="en">These commands are run in the FreeBSD guest.</para>
+      <para>以下指令均是在 FreeBSD 客端中執行。</para>
     </note>
 
-    <para xml:lang="en">First, install the
-      <package>emulators/virtualbox-ose-additions</package> package
-      or port in the FreeBSD guest.  This will install the port:</para>
+    <para>首先，在 FreeBSD 客端安裝 <package>emulators/virtualbox-ose-additions</package> 套件或 Port，以下指令會安裝 Port：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/emulators/virtualbox-ose-additions &amp;&amp; make install clean</userinput></screen>
 
-    <para xml:lang="en">Add these lines to <filename>/etc/rc.conf</filename>:</para>
+    <para>加入下行到 <filename>/etc/rc.conf</filename>：</para>
 
     <programlisting xml:lang="en">vboxguest_enable="YES"
 vboxservice_enable="YES"</programlisting>
 
-    <para xml:lang="en">If <citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></citerefentry> or <citerefentry><refentrytitle>ntpdate</refentrytitle><manvolnum>8</manvolnum></citerefentry> is used, disable host
-      time synchronization:</para>
+    <para>若有使用 <citerefentry><refentrytitle>ntpd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 或 <citerefentry><refentrytitle>ntpdate</refentrytitle><manvolnum>8</manvolnum></citerefentry>，便可關閉主機時間同步功能：</para>
 
     <programlisting xml:lang="en">vboxservice_flags="--disable-timesync"</programlisting>
 
-    <para xml:lang="en"><application>Xorg</application> will automatically recognize
-      the <literal>vboxvideo</literal> driver.  It can also be
-      manually entered in
-      <filename>/etc/X11/xorg.conf</filename>:</para>
+    <para><application>Xorg</application> 會自動辨識 <literal>vboxvideo</literal> 驅動程式，也可手動在 <filename>/etc/X11/xorg.conf</filename> 中輸入：</para>
 
     <programlisting xml:lang="en">Section "Device"
 	Identifier "Card0"
@@ -32865,18 +32852,14 @@ vboxservice_enable="YES"</programlisting>
 	BoardName "VirtualBox Graphics Adapter"
 EndSection</programlisting>
 
-    <para xml:lang="en">To use the <literal>vboxmouse</literal> driver, adjust the
-      mouse section in <filename>/etc/X11/xorg.conf</filename>:</para>
+    <para>要使用 <literal>vboxmouse</literal> 驅動程式，可調整在 <filename>/etc/X11/xorg.conf</filename> 中與滑鼠相關的一節：</para>
 
     <programlisting xml:lang="en">Section "InputDevice"
 	Identifier "Mouse0"
 	Driver "vboxmouse"
 EndSection</programlisting>
 
-    <para xml:lang="en"><acronym>HAL</acronym> users should create the following
-      <filename>/usr/local/etc/hal/fdi/policy/90-vboxguest.fdi</filename>
-      or copy it from
-      <filename>/usr/local/share/hal/fdi/policy/10osvendor/90-vboxguest.fdi</filename>:</para>
+    <para><acronym>HAL</acronym> 的使用者應建立以下 <filename>/usr/local/etc/hal/fdi/policy/90-vboxguest.fdi</filename> 或複製自 <filename>/usr/local/share/hal/fdi/policy/10osvendor/90-vboxguest.fdi</filename>：</para>
 
     <programlisting xml:lang="en">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;!--
@@ -32915,141 +32898,69 @@ EndSection</programlisting>
   <sect1 xml:id="virtualization-host-virtualbox">
     <title>以 FreeBSD 作為主端安裝 <application>VirtualBox</application> </title>
 
-    <para xml:lang="en"><application><trademark>VirtualBox</trademark></application> is an actively
-      developed, complete virtualization package, that is available
-      for most operating systems including <trademark class="registered">Windows</trademark>, <trademark class="registered">Mac OS</trademark>, <trademark class="registered">Linux</trademark>
-      and FreeBSD.  It is equally capable of running <trademark class="registered">Windows</trademark> or
-      <trademark class="registered">UNIX</trademark>-like guests.  It is released as open source software, but
-      with closed-source components available in a separate extension
-      pack.  These components include support for USB 2.0 devices.
-      More information may be found on the <link xlink:href="http://www.virtualbox.org/wiki/Downloads"><quote>Downloads</quote>
-	page of the <application><trademark>VirtualBox</trademark></application>
-	wiki</link>.  Currently, these extensions are not available
-      for FreeBSD.</para>
+    <para><application><trademark>VirtualBox</trademark></application> 是一套積極開發、完整的虛擬化套件，適用大多數作業系統，包含 <trademark class="registered">Windows</trademark>, <trademark class="registered">Mac OS</trademark>, <trademark class="registered">Linux</trademark> 與 FreeBSD，它同樣能夠執行類 <trademark class="registered">Windows</trademark> 或 <trademark class="registered">UNIX</trademark> 的客端系統。它是以開源軟體的方式發佈，但閉源元件可獨立在擴充包中使用，這些元件包含對 USB 2.0 裝置的支援。更多資訊可在 <link xlink:href="http://www.virtualbox.org/wiki/Downloads"><application><trademark>VirtualBox</trademark></application> wiki 的 <quote>Downloads</quote> 頁面</link>。目前，這些擴充套件並不支援 FreeBSD。</para>
 
     <sect2 xml:id="virtualization-virtualbox-install">
       <title>安裝 <trademark>VirtualBox</trademark></title>
 
-      <para xml:lang="en"><application><trademark>VirtualBox</trademark></application> is available as a
-	FreeBSD package or port in
-	<package>emulators/virtualbox-ose</package>.  The port can be
-	installed using these commands:</para>
+      <para><application><trademark>VirtualBox</trademark></application> 可於 <package>emulators/virtualbox-ose</package> 以 FreeBSD 套件或 Port 的方式取得。要安裝 Port 可使用以下指令：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/emulators/virtualbox-ose</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para xml:lang="en">One useful option in the port's configuration menu is the
-	<literal>GuestAdditions</literal> suite of programs.  These
-	provide a number of useful features in guest operating
-	systems, like mouse pointer integration (allowing the mouse to
-	be shared between host and guest without the need to press a
-	special keyboard shortcut to switch) and faster video
-	rendering, especially in <trademark class="registered">Windows</trademark> guests.  The guest
-	additions are available in the <guimenu>Devices</guimenu>
-	menu, after the installation of the guest is finished.</para>
+      <para>在 Port 的設定選單中 <literal>GuestAdditions</literal> 相關程式是最有用的選項之一，這些程式可在客端作業系統提供數個有用的功能，如滑鼠指標整合 (允許滑鼠在主端與客端之間移動，不需要按特殊快速鍵來切換) 與較快的影像繪圖速度，特別是在 <trademark class="registered">Windows</trademark> 的客端系統。Guest additions 可在客端系統安裝完之後的 <guimenu>Devices</guimenu> 選單找到。</para>
 
-      <para xml:lang="en">A few configuration changes are needed before
-	<application><trademark>VirtualBox</trademark></application> is started for the
-	first time.  The port installs a kernel module in
-	<filename>/boot/modules</filename> which
-	must be loaded into the running kernel:</para>
+      <para>還有一些設定需要在 <application><trademark>VirtualBox</trademark></application> 第一次啟動端做修改，Port 會安裝一個核心模組在 <filename>/boot/modules</filename>，該模組必須在核心中載入：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload vboxdrv</userinput></screen>
 
-      <para xml:lang="en">To ensure the module is always loaded after a reboot,
-	add this line to
-	<filename>/boot/loader.conf</filename>:</para>
+      <para>要確保該模組在重新開機後會載入，可加入下行到 <filename>/boot/loader.conf</filename>：</para>
 
       <programlisting xml:lang="en">vboxdrv_load="YES"</programlisting>
 
-      <para xml:lang="en">To use the kernel modules that allow bridged or host-only
-	networking, add this line to
-	<filename>/etc/rc.conf</filename> and reboot the
-	computer:</para>
+      <para>要使用可支援橋接或僅限主端 (Host-only) 的網路，可加入下行到 <filename>/etc/rc.conf</filename>，然後重新啟動電腦：</para>
 
       <programlisting xml:lang="en">vboxnet_enable="YES"</programlisting>
 
-      <para xml:lang="en">The <systemitem class="groupname">vboxusers</systemitem>
-	group is created during installation of
-	<application><trademark>VirtualBox</trademark></application>.  All users that need
-	access to <application><trademark>VirtualBox</trademark></application> will have to
-	be added as members of this group.  <command>pw</command> can
-	be used to add new members:</para>
+      <para>在安裝 <application><trademark>VirtualBox</trademark></application> 的過程中會建立 <systemitem class="groupname">vboxusers</systemitem> 群組，所有需要存取 <application><trademark>VirtualBox</trademark></application> 的使用者均需要加入成為此群組的成員，<command>pw</command> 可用來加入新的成員：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod vboxusers -m <replaceable>yourusername</replaceable></userinput></screen>
 
-      <para xml:lang="en">The default permissions for
-	<filename>/dev/vboxnetctl</filename> are restrictive and need
-	to be changed for bridged networking:</para>
+      <para><filename>/dev/vboxnetctl</filename> 的預設權限是受限的，需要更改後才可使用橋接網路：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>chown root:vboxusers /dev/vboxnetctl</userinput>
 <prompt>#</prompt> <userinput>chmod 0660 /dev/vboxnetctl</userinput></screen>
 
-      <para xml:lang="en">To make this permissions change permanent, add these
-	lines to <filename>/etc/devfs.conf</filename>:</para>
+      <para>要永久變更權限，可加入下列幾行到 <filename>/etc/devfs.conf</filename>：</para>
 
       <programlisting xml:lang="en">own     vboxnetctl root:vboxusers
 perm    vboxnetctl 0660</programlisting>
 
-      <para xml:lang="en">To launch <application><trademark>VirtualBox</trademark></application>,
-	type from a <application>Xorg</application> session:</para>
+      <para>要執行 <application><trademark>VirtualBox</trademark></application>，可在 <application>Xorg</application> 工作階段輸入：</para>
 
       <screen xml:lang="en"><prompt>%</prompt> <userinput>VirtualBox</userinput></screen>
 
-      <para xml:lang="en">For more information on configuring and using
-	<application><trademark>VirtualBox</trademark></application>, refer to the
-	<link xlink:href="http://www.virtualbox.org">official
-	  website</link>.  For FreeBSD-specific information and
-	troubleshooting instructions, refer to the <link xlink:href="http://wiki.FreeBSD.org/VirtualBox">relevant
-	  page in the FreeBSD wiki</link>.</para>
+      <para>要取得更多有關設定與使用 <application><trademark>VirtualBox</trademark></application> 的資訊，請參考 <link xlink:href="http://www.virtualbox.org">官方網站</link>。供 FreeBSD 特定的資訊與疑難排解操作指示，可參考 <link xlink:href="http://wiki.FreeBSD.org/VirtualBox">FreeBSD wiki 中相關的頁面</link>。</para>
     </sect2>
 
     <sect2 xml:id="virtualization-virtualbox-usb-support">
       <title><trademark>VirtualBox</trademark> USB 支援</title>
 
-      <para xml:lang="en">The <application><trademark>VirtualBox</trademark></application> extension
-	pack is not available for FreeBSD hosts.  Without the extension
-	pack, the FreeBSD host cannot pass <acronym>USB</acronym>
-	ports through to guest operating systems.</para>
+      <para><application><trademark>VirtualBox</trademark></application> 擴充包目前不支援 FreeBSD 主端系統，沒有這個擴充包，FreeBSD 主端系統無法傳遞 <acronym>USB</acronym> 埠給客端作業系統。</para>
     </sect2>
 
     <sect2 xml:id="virtualization-virtualbox-host-dvd-cd-access">
       <title><trademark>VirtualBox</trademark> Host <acronym>DVD</acronym>/<acronym>CD</acronym> 存取</title>
 
-      <para xml:lang="en">Access to the host
-	<acronym>DVD</acronym>/<acronym>CD</acronym> drives from
-	guests is achieved through the sharing of the physical drives.
-	Within <trademark>VirtualBox</trademark>, this is set up from the Storage window in
-	the Settings of the virtual machine.  If needed, create an
-	empty <acronym>IDE</acronym>
-	<acronym>CD</acronym>/<acronym>DVD</acronym> device first.
-	Then choose the Host Drive from the popup menu for the virtual
-	<acronym>CD</acronym>/<acronym>DVD</acronym> drive selection.
-	A checkbox labeled <literal>Passthrough</literal> will appear.
-	This allows the virtual machine to use the hardware directly.
-	For example, audio <acronym>CD</acronym>s or the burner will
-	only function if this option is selected.</para>
+      <para>透過共享實體磁碟機可讓客端系統能夠存取主端系統的 <acronym>DVD</acronym>/<acronym>CD</acronym> 磁碟機。在 <trademark>VirtualBox</trademark> 中，這個功能可在虛擬機器設定中的儲存 (Storage) 視窗中設定。若需要，可先建立一個空的 <acronym>IDE</acronym> <acronym>CD</acronym>/<acronym>DVD</acronym> 裝置，然後在跳出的選單中選擇要做為虛擬 <acronym>CD</acronym>/<acronym>DVD</acronym> 磁碟機的主端磁碟機，此時會出現一個標籤為 <literal>Passthrough</literal> 的核選方塊，勾選這個核選方塊可讓虛擬機器直接使用該硬體，例如，音樂 <acronym>CD</acronym> 或燒錄機只會在有勾選此選項時能夠運作。</para>
 
-      <para xml:lang="en"><acronym>HAL</acronym> needs to run for
-	<application><trademark>VirtualBox</trademark></application>
-	<acronym>DVD</acronym>/<acronym>CD</acronym> functions to
-	work, so enable it in <filename>/etc/rc.conf</filename> and
-	start it if it is not already running:</para>
+      <para><application><trademark>VirtualBox</trademark></application> <acronym>DVD</acronym>/<acronym>CD</acronym> 功能要能運作需要執行 <acronym>HAL</acronym>，因此需在 <filename>/etc/rc.conf</filename> 中開啟，若該服務尚未啟動，則啟動它：</para>
 
       <programlisting xml:lang="en">hald_enable="YES"</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service hald start</userinput></screen>
 
-      <para xml:lang="en">In order for users to be able to use
-	<application><trademark>VirtualBox</trademark></application>
-	<acronym>DVD</acronym>/<acronym>CD</acronym> functions, they
-	need access to <filename>/dev/xpt0</filename>,
-	<filename>/dev/cd<replaceable>N</replaceable></filename>, and
-	<filename>/dev/pass<replaceable>N</replaceable></filename>.
-	This is usually achieved by making the user a member of
-	<systemitem class="groupname">operator</systemitem>.
-	Permissions to these devices have to be corrected by adding
-	these lines to <filename>/etc/devfs.conf</filename>:</para>
+      <para>為了讓使用者能夠使用 <application><trademark>VirtualBox</trademark></application> <acronym>DVD</acronym>/<acronym>CD</acronym> 功能，這些使用者需要存取 <filename>/dev/xpt0</filename>, <filename>/dev/cd<replaceable>N</replaceable></filename> 以及 <filename>/dev/pass<replaceable>N</replaceable></filename>，這通常可讓這些使用者成為 <systemitem class="groupname">operator</systemitem> 的成員來達成。對這些裝置的權限必須加入下行到 <filename>/etc/devfs.conf</filename> 來修正：</para>
 
       <programlisting xml:lang="en">perm cd* 0660
 perm xpt0 0660
@@ -34294,7 +34205,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50128 2017-04-04 13:16:44Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50261 2017-05-15 14:26:03Z wblock $
 -->
 <chapter version="5.0" xml:id="updating-upgrading">
 
@@ -34463,7 +34374,7 @@ UpdateIfUnmodified /etc/ /var/ /root/ /.cshrc /.profile</programlisting>
 # will have any local changes merged into the version from the new release.
 MergeChanges /etc/ /var/named/etc/ /boot/device.hints</programlisting>
 
-      <para>列出 <command>freebsd-update</command> 應嘗試合併的設定檔目錄。 檔案合併程序是指一系列類似 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 做的 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 修補動作， 但是選項比較少。 合併的動作包含接受、開啟編輯器，或讓 <command>freebsd-update</command> 中止。 如果有疑慮，請先備份 <filename>/etc</filename>，然後再接受合併。 更多關於 <command>mergemaster</command> 的資訊， 參見 <xref linkend="mergemaster"/>。</para>
+      <para>列出 <command>freebsd-update</command> 應嘗試合併的設定檔目錄。 檔案合併程序是指一系列類似 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 做的 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 修補動作， 但是選項比較少。 合併的動作包含接受、開啟編輯器，或讓 <command>freebsd-update</command> 中止。 如果有疑慮，請先備份 <filename>/etc</filename>，然後再接受合併。 更多關於 <command>mergemaster</command> 的資訊， 參見 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
 
       <programlisting xml:lang="en"># Directory in which to store downloaded updates and temporary
 # files used by FreeBSD Update.
@@ -34921,597 +34832,292 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	</listitem>
       </orderedlist>
     </sect2>
-
-    <sect2 xml:id="stable">
-      <title>使用 FreeBSD-STABLE</title>
-
-      <para>主要發行版便是使用 FreeBSD-STABLE 這個開發分支所產生。變更進入這個分支的速度比較慢，並假設這些變更已經先在 FreeBSD-CURRENT 測試過。但這 <emphasis>仍然</emphasis> 是一個開發分支，而且 FreeBSD-STABLE 的原始碼在任何時候都有可能不適合一般的使用。它只是另一個開發分支，並非專門提供給終端使用者使用。若沒有替代資源可供測試的使用者應該改使用最新的 FreeBSD 發行版。</para>
-
-      <para>有興趣追蹤或對 FreeBSD 開發流程貢獻的人，尤其是對 FreeBSD 接下來的發行版相關內容有興趣的人，應該考慮追蹤 FreeBSD-STABLE。</para>
-
-      <para>儘管 FreeBSD-STABLE 分支應該在任何時候均能正確編譯、執行，但是並不保証不會有問題。因為使用 FreeBSD-STABLE 的人比 FreeBSD-CURRENT 多，有時無可避免地會在 FreeBSD-STABLE 發現在 FreeBSD-CURRENT 並非顯而易見的錯誤和極端的狀況。也因此，我們並不建議盲目追蹤 FreeBSD-STABLE。 特別重要的是 <emphasis>不要</emphasis> 在尚未使用開發或測試環境對程式碼做完整的測試之前，升級任何上線的伺服器為 FreeBSD-STABLE。</para>
-
-      <para>若要追蹤 FreeBSD-STABLE：</para>
-
-      <indexterm xml:lang="en">
-	<primary>-STABLE</primary>
-	  <secondary>using</secondary>
-      </indexterm>
-      <orderedlist>
-	<listitem>
-	  <para>加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> 郵遞論壇來隨時瞭解 FreeBSD-STABLE 編譯的相依關係或是任何其他需特別注意的議題。開發者在評估一些有爭議的修正或更新時，也會先在這裡發信公告，讓使用者有機會可以對提案的更改提出問題。</para>
-
-	  <para>加入 <application>svn</application> 相關郵遞論壇來追蹤該分支的修訂。 例如，要追蹤 9-STABLE 分支的使用者應該加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> 郵遞論壇。這個郵遞論壇會記錄每一次修改的提交項目，以及可能產生的副作用的相關資訊。</para>
-
-	  <para>要加入這兩個郵遞論壇，請前往 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link> 點選要訂閱的郵遞論壇，並依照網頁指示的步驟操作。要追蹤整個原始碼樹，不單只有 FreeBSD-CURRENT 的變更，可訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link> 郵遞論壇。</para>
-	</listitem>
-
-	<listitem>
-	  <para>要安裝新的 FreeBSD-STABLE 系統， 可從 <link linkend="mirrors">FreeBSD 鏡像站</link> 或從 FreeBSD-STABLE 每個月的快照 (Snapshot) 來安裝最新的 FreeBSD-STABLE 發行版。請參考 <link xlink:href="@@URL_RELPREFIX@@/snapshots/">www.freebsd.org/snapshots</link> 來取得更多有關快照的資訊。</para>
-
-	  <para>要編譯或升級已經安裝的 FreeBSD 系統至 FreeBSD-STABLE，可使用 <link linkend="svn">svn</link> <indexterm>
-		<primary>Subversion</primary>
-	      </indexterm> 來取得欲安裝分支的原始碼。分支的名稱列在 <link xlink:href="@@URL_RELPREFIX@@/releng/">www.freebsd.org/releng</link>，例如 <literal>stable/9</literal>。</para>
-	</listitem>
-
-	<listitem>
-	  <para>在編譯或升級到 FreeBSD-STABLE <indexterm>
-	      <primary>-STABLE</primary>
-		<secondary>compiling</secondary>
-	    </indexterm> 之前 ， 請仔細閱讀 <filename>/usr/src/Makefile</filename> 並依照 <xref linkend="makeworld"/> 的指示操作。閱讀 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">FreeBSD-STABLE 郵遞論壇</link> 以及 <filename>/usr/src/UPDATING</filename> 來了解升級的相關資訊，有時會含有升級下一個發行版的必要資訊。</para>
-	</listitem>
-      </orderedlist>
-    </sect2>
   </sect1>
 
-  <sect1 xml:id="synching">
-    <title>同步原始碼</title>
+  <sect1 xml:id="updating-src">
+    <title>從原始碼更新 FreeBSD</title>
 
-    <para>有多許方法可以更新 FreeBSD 的原始碼，本節將說明主要的方法：<application>Subversion</application>。</para>
+    <para>從編譯原始碼來更新 FreeBSD 比起用 Binary 更新有幾項優點，在編譯程式碼時可以自訂選項來充分運用特定硬體，部份基礎系統可以使用非預設的設定值編譯，或是在不需要或不想要的時候跳過編譯。使用編譯的程序來更新系統比起安裝 Binary 來更新會耗時許多，但能夠完整自訂一個量身定做版本的 FreeBSD。</para>
 
-    <warning>
-      <para>雖然有可能只更新部份原始碼樹，但是正式支援的更新步驟是更新整個樹並重新編譯所有在使用者空間 (User space) 中的程式，例如在 <filename>/bin</filename> 和 <filename>/sbin</filename> 中的程式及核心原始碼，只更新部份的原始碼樹 (例如：只更新核心或使用者空間的程式) 的做法經常會導致編譯錯誤、核心錯誤或資料損毀的問題。</para>
-    </warning>
+    <sect2 xml:id="updating-src-quick-start">
+      <title>快速開始</title>
 
-    <indexterm xml:lang="en">
-      <primary>Subversion</primary>
-    </indexterm>
-
-    <para><application>Subversion</application> 使用了<emphasis>拉式 (Pull)</emphasis> 的原始碼更新模式，使用者或 <command>cron</command> script 只要執行 <command>svn</command> 程式便可更新本地的原始碼。會選擇 <application>Subversion</application> 做為更新本地原始碼樹的方法是因為它更新速度很快且使用者可以控制要下載那些更新，它可以很容易的限制只下載特定檔案或目錄的更新，且伺服器可以立即產生請求的更新，如何使用 <application>Subversion</application> 同步原始碼在 <xref linkend="svn"/> 有介紹。</para>
-
-    <para>若使用者無意見刪除了部份的本地封存檔，<application>Subversion</application> 可以在更新時偵測到並且重新建立被刪除的部份。</para>
-  </sect1>
-
-  <sect1 xml:id="makeworld">
-    <title>重新編譯 World</title>
-
-    <indexterm xml:lang="en">
-      <primary>Rebuilding <quote>world</quote></primary>
-    </indexterm>
-    <para>當本地的原始碼樹已與特定版本的 FreeBSD 如 FreeBSD-STABLE 或 FreeBSD-CURRENT 同步以後，便可使用原始碼樹來重新編譯系統。這個程序即為重新編譯 World。</para>
-
-    <para>在重新編譯 World <emphasis>之前</emphasis>，請確定已完成以下工作：</para>
-
-    <procedure>
-      <title>編譯 World <emphasis>之前</emphasis> 要完成的工作</title>
-
-      <step>
-	<para>備份所有重要的資料到另一個系統或可卸除的媒體，檢查備份的完整性並在手中保留一份可開機的安裝媒體。如何強調都不足夠說明在重新編譯系統 <emphasis>之前</emphasis> 備份系統的重要性，即便重新編譯 World 已變成簡單的一件事，也難免會有原始碼樹失誤導致系統無法開機的時候。您可能永遠都用不上備份，但最好確保安全而非後悔。</para>
-      </step>
-
-      <step>
-	<indexterm xml:lang="en"><primary>mailing list</primary></indexterm>
-	<para>回顧最近 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> 或 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">freebsd-current</link> 中的項目，依您所追蹤的分支決定。注意任何已知的問題以及會被影響的系統，若已知的問題影響您已同步的原始碼版本，請等候表明問題已被解決的 <quote>全部解決 (all clear)</quote> 公告發佈，然後重新同步原始碼並確認本地的原始碼版本已含有所需的修正。</para>
-      </step>
-
-      <step>
-	<para>閱讀 <filename>/usr/src/UPDATING</filename> 了解該版本的原始碼是否有必要的額外步驟要完成。 這個檔案中會包含有關潛藏問題的重要資訊，並且可能會要求執行某些指令。大多升級需要完成指定的額外步驟，例如：在安裝新 World 前重新命名或刪除指定檔案，這些步驟會列在檔案最後，明確說明目前建議的升級順序。若 <filename>UPDATING</filename> 中有與本章相矛盾的步驟，請以 <filename>UPDATING</filename> 為準並應遵循其內容。</para>
-      </step>
-    </procedure>
-
-    <warning>
-      <title>不要使用 <command>make world</command></title>
-
-      <para>部份舊版的文件建議使用 <command>make world</command>，然而該指令跳過了部份重要的步驟，應僅供專家使用。大多數的情況使用 <command>make world</command> 都是錯的，並應使用此處說明的程序。</para>
-    </warning>
-
-    <sect2 xml:id="canonical-build">
-      <title>流程概述</title>
-
-      <para>編譯 World 流程會假設您是依照 <xref linkend="synching"/> 指示取得最近版本的原始碼來升級舊版的 FreeBSD。</para>
-
-      <para>在 FreeBSD，<quote>world</quote> 一詞包含了核心，核心系統 Binary，程式庫，原始碼以及內建的編譯器。這些元件編譯與安裝的順序非常重要。</para>
-
-      <para>舉例來說，舊的編譯器可能有問題而無法編譯新的核心。新的核心需使用新的編譯器來編譯，因此新的編譯器必需先編譯，但在新核心編譯前並不一定要安裝。</para>
-
-      <para>新的 World 可能需要使用新的核心功能，所以必須在新的 World 安裝之前先安裝新的核心。舊的 World 也可能在新的核心上無法正常執行，所以必須在新的核心安裝完之後
-馬上安裝新的 World。</para>
-
-      <para>有一部份設定必須在新的 World 安裝前變更，但其他的部份在之前變更則可能會破壞舊的 World。因此會使用到兩種不同的設定升級步驟。大部份情況，更新程序只會取代或新增檔案，不會刪除已存在的舊檔案。當這可能會造成問題時 <filename>/usr/src/UPDATING</filename> 便會說明需要手動刪除的檔案以及操作的步驟。</para>
-
-      <para>這些問題會影響接下來的建議升級順序。</para>
-
-      <note>
-	<para>將執行 <command>make</command> 的輸出儲存到檔案是不錯的辦法，若發生錯誤時，便可複製錯誤訊息張貼到 FreeBSD 郵遞論壇。</para>
-
-	<para>最簡單的方式是使用 <command>script</command> 並透過參數指定要儲存所有輸出的檔案名稱。請不要儲存輸出到 <filename>/tmp</filename>，因這個目錄可能在下次重新開機後被清除。儲存檔案最好的地方是 <filename>/var/tmp</filename>。在重新編譯 World 之前執行這個指令，並在流程完成後輸入 <userinput>exit</userinput>：</para>
-
-	<screen xml:lang="en"><prompt>#</prompt> <userinput>script <replaceable>/var/tmp/mw.out</replaceable></userinput>
-Script started, output file is /var/tmp/mw.out</screen>
-      </note>
+      <para>這是從原始碼編譯來更新 FreeBSD 的標準步驟快速的參考，稍後的章節會更詳細的說明這個程序。</para>
 
       <procedure>
-	<title>編譯 World 流程概述</title>
-
-	<para>編譯 World 流程中使用的指令應依此處指定的順序執行。本節將摘要各指令的功能。</para>
-
 	<step>
-	  <para>若編譯 World 流程先前已在系統執行過，先前編譯的結果可能遺留在 <filename>/usr/obj</filename>。要加速新的編譯 World 流程及節省處理相依問題的時間，若此目錄存在，請移除此目錄：</para>
+	  <title>更新並編譯</title>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>chflags -R noschg /usr/obj/*</userinput>
-<prompt>#</prompt> <userinput>rm -rf /usr/obj</userinput></screen>
-	</step>
+	  <screen xml:lang="en"><prompt>#</prompt> <userinput>svn update /usr/src</userinput>  <co xml:id="updating-src-qs-svnup"/>
+<emphasis>check <filename>/usr/src/UPDATING</filename></emphasis>  <co xml:id="updating-src-qs-review-updating"/>
+<prompt>#</prompt> <userinput>cd /usr/src</userinput>          <co xml:id="updating-src-qs-cd"/>
+<prompt>#</prompt> <userinput>make -j<replaceable>4</replaceable> buildworld</userinput>  <co xml:id="updating-src-qs-buildworld"/>
+<prompt>#</prompt> <userinput>make -j<replaceable>4</replaceable> kernel</userinput>      <co xml:id="updating-src-qs-kernel"/>
+<prompt>#</prompt> <userinput>make installworld</userinput>    <co xml:id="updating-src-qs-installworld"/>
+<prompt>#</prompt> <userinput>mergemaster -Ui</userinput>      <co xml:id="updating-src-qs-mergemaster"/>
+<prompt>#</prompt> <userinput>shutdown -r now</userinput>      <co xml:id="updating-src-qs-shutdown"/></screen>
 
-	<step>
-	  <para>編譯新的編譯器及一些相關工具，然後使用新的編譯器編譯新的 World。編譯的結果會儲存到 <filename>/usr/obj</filename>。</para>
+	  <calloutlist>
+	    <callout arearefs="updating-src-qs-svnup">
+	      <para>取得最新版本的原始碼，請參考 <xref linkend="updating-src-obtaining-src"/> 來了解更多取得與更新原始碼的資訊。</para>
+	    </callout>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
-<prompt>#</prompt> <userinput>make buildworld</userinput></screen>
-	</step>
+	    <callout arearefs="updating-src-qs-review-updating">
+	      <para>從原始碼編譯之前與之後任何需要手動操作步驟會在 <filename>/usr/src/UPDATING</filename> 中有說明。</para>
+	    </callout>
 
-	<step>
-	  <para>使用在 <filename>/usr/obj</filename> 中的新編譯器來編譯新的核心，來確保不會發生編譯器與核心不相容的問題。因某些記憶體結構可能有修改，這個步驟是必要的，若核心與原始碼的版本不同，<command>ps</command> 及 <command>top</command> 這類的程式會無法運作。</para>
+	    <callout arearefs="updating-src-qs-cd">
+	      <para>前往原始碼目錄。</para>
+	    </callout>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make buildkernel</userinput></screen>
-	</step>
+	    <callout arearefs="updating-src-qs-buildworld">
+	      <para>編譯世界 (World)，即除了核心 (Kernel) 外的所有東西。</para>
+	    </callout>
 
-	<step>
-	  <para>安裝新的核心與新的核心模組，讓開機時可以使用新的核心。這個指令可在多使用者模式執行，除非 <varname>kern.securelevel</varname> 設定在 <literal>1</literal> 以上 <emphasis>且</emphasis> 在核心 Binary 有設定 <literal>noschg</literal> 或類似的旗標 (Flag)，請先讓系統進入單使用者模式。請參考 <citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得有關 <varname>kern.securelevel</varname>  的詳細資訊以及 <citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</manvolnum></citerefentry> 取得有關各種檔案旗標的詳細資訊。</para>
+	    <callout arearefs="updating-src-qs-kernel">
+	      <para>編譯並安裝核心，此動作等同於同時做 <buildtarget>buildkernel</buildtarget> <buildtarget>installkernel</buildtarget>。</para>
+	    </callout>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make installkernel</userinput></screen>
-	</step>
+	    <callout arearefs="updating-src-qs-installworld">
+	      <para>安裝世界。</para>
+	    </callout>
 
-	<step>
-	  <para>讓系統進入單使用者模組來減少升級任何已在執行中的 Binary 所產生的問題，同樣也可減少在新核心上執行舊 World 的問題。</para>
+	    <callout arearefs="updating-src-qs-mergemaster">
+	      <para>更新與合併在 <filename>/etc/</filename> 中的設定檔案。</para>
+	    </callout>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>shutdown now</userinput></screen>
-
-	  <para>進入單使用者模式後，若系統磁碟格式為 UFS 請執行以下指令：</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>mount -u /</userinput>
-<prompt>#</prompt> <userinput>mount -a -t ufs</userinput>
-<prompt>#</prompt> <userinput>swapon -a</userinput></screen>
-
-	  <para>若系統磁碟格式為 ZFS，則需執行以下兩個指令。此範例假設 zpool 名稱為 <literal>zroot</literal>：</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs set readonly=off zroot</userinput>
-<prompt>#</prompt> <userinput>zfs mount -a</userinput></screen>
-	</step>
-
-	<step>
-	  <para>選用：若想要使用 US 英文以外的鍵盤對應表，可以使用 <citerefentry><refentrytitle>kbdmap</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來變更：</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>kbdmap</userinput></screen>
-	</step>
-
-	<step>
-	  <para>接著，不論那一種檔案系統，若 <acronym>CMOS</acronym> 時鐘設定為本地時間 (若 <citerefentry><refentrytitle>date</refentrytitle><manvolnum>1</manvolnum></citerefentry> 顯示不正確的時間與時區)，請執行：</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>adjkerntz -i</userinput></screen>
-	</step>
-
-	<step>
-	  <para>重新編譯 World 不會直接更新某些目錄中的設定檔，如 <filename>/etc</filename>, <filename>/var</filename> 以及 <filename>/usr</filename>。接下來的步驟是更新一部份的設定檔到 <filename>/etc</filename> 來準備安裝新的 World。以下指令只會比對影響 <buildtarget>installworld</buildtarget> 是否成功執行的必要檔案。例如，這個步驟會可能會加入新版 FreeBSD 的新群組、系統帳號或啟動 Script。為了讓 <buildtarget>installworld</buildtarget> 步驟可以使用任何新的系統帳號、群組與 Script，這是個必要的步驟。請參考 <xref linkend="mergemaster"/> 來取得更多有關此指令的詳細操作說明：</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>mergemaster -p</userinput></screen>
-	</step>
-
-	<step>
-	  <para>從 <filename>/usr/obj</filename> 安裝新 World 與系統 Binary。</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
-<prompt>#</prompt> <userinput>make installworld</userinput></screen>
-	</step>
-
-	<step>
-	  <para>更新任何剩下的設定檔。</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>mergemaster -iF</userinput></screen>
-	</step>
-
-	<step>
-	  <para>刪除任何廢棄的檔案。這很重要，因為若檔案遺留在磁碟上可能會造成問題。</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old</userinput></screen>
-	</step>
-
-	<step>
-	  <para>現在需要完整重新啟動來載入新的核心、新的 World 與新的設定檔。</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>reboot</userinput></screen>
-	</step>
-
-	<step>
-	  <para>確認所有已安裝的 Port 在舊的程式庫移除前已依照 <xref linkend="ports-upgrading"/> 的說明重新編譯。當重新編譯完成後，移除廢棄的程式庫來避免與新的程式庫發生衝突。有關此步驟更詳細的說明請參考 <xref linkend="make-delete-old"/>。</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old-libs</userinput></screen>
+	    <callout arearefs="updating-src-qs-shutdown">
+	      <para>重新啟動系統以使用新編譯好的世界與核心。</para>
+	    </callout>
+	  </calloutlist>
 	</step>
       </procedure>
-
-      <indexterm xml:lang="en"><primary>single-user mode</primary></indexterm>
-
-      <para>若系統允許停機一小段時間，請考慮以單使用者模式編譯系統來替代在多使用者模組編譯系統，然後進入單使用者模式來完成安裝。重新安裝系統會觸及到很多重要的系統檔案，所有的標準系統 Binary、程式庫以及引用檔。在執行中的系統更換這些檔案，特別是有使用者在使用時，是自找麻煩。</para>
     </sect2>
 
-    <sect2 xml:id="src-updating">
-      <title>設定檔</title>
+    <sect2 xml:id="updating-src-preparing">
+      <title>準備原始碼更新</title>
 
-      <indexterm xml:lang="en">
-	<primary><filename>make.conf</filename></primary>
-      </indexterm>
-
-      <para>建置 Word 的程序會使用到許多個設定檔。</para>
-
-      <para>位於 <filename>/usr/src</filename> 的 <filename>Makefile</filename> 用來描述要如何編譯組成 FreeBSD 的程式以及編譯的順序。</para>
-
-      <para><command>make</command> 可用的選項在 <citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中有介紹， 在 <filename>/usr/share/examples/etc/make.conf</filename> 也有一些常見的範例。所有加到 <filename>/etc/make.conf</filename> 的選項會控制 <command>make</command> 要如何執行與編譯程式。這些選項對每一次使用 <command>make</command> 都會有影響，包含編譯在 Port 套件集中的應用程式、編譯自訂的 C 程式或編譯 FreeBSD 作業系統，更動某些設定可能會產生深遠與意想不到的影響，在更改前要仔細閱讀在這些地方的註解，然後也要了預設值是在效率與安全之間取得的平衝點。</para>
-
-      <indexterm xml:lang="en">
-	<primary><filename>src.conf</filename></primary>
-      </indexterm>
-
-      <para>要如何由原始碼編譯成作業系統是由 <filename>/etc/src.conf</filename> 控制，不像 <filename>/etc/make.conf</filename>，<filename>/etc/src.conf</filename> 的內容只會對 FreeBSD 作業系統編譯產生效果。有關這個檔案可用的選項在 <citerefentry><refentrytitle>src.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 有說明。要注意，停用看似不須要的核心模組與選項，有時會有意想不到或微妙的結果。</para>
+      <para>閱讀 <filename>/usr/src/UPDATING</filename>，從原始碼編譯之前與之後任何需要手動操作步驟會在此檔案中說明。</para>
     </sect2>
 
-    <sect2 xml:id="make-buildworld">
-      <title>變數與目標</title>
+    <sect2 xml:id="updating-src-obtaining-src">
+      <title>更新原始碼</title>
 
-      <para>使用 <command>make</command> 的一般格式如下：</para>
+      <para>FreeBSD 的原始碼位於 <filename>/usr/src/</filename>，較建議透過 <application>Subversion</application> 版本控制系統來更新這份原始碼，要確認原始碼已在版本控制系統的管控下可：</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>make -<replaceable>x</replaceable> -D<replaceable>VARIABLE</replaceable> <replaceable>target</replaceable></userinput></screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>svn info /usr/src</userinput>
+Path: /usr/src
+Working Copy Root Path: /usr/src
+...</screen>
 
-      <para>在這個例子中，<option>-<replaceable>x</replaceable></option> 是傳送給 <command>make</command> 的一個選項，可參考 <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得可用選項的範例。</para>
+      <para>此結果代表 <filename>/usr/src/</filename> 已在版本控制系統的管控下並且可以使用 <citerefentry><refentrytitle>svn</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來更新：</para>
 
-      <para>要傳送一個變數 (Variable)，可使用 <option>-D<replaceable>VARIABLE</replaceable></option> 來指定變數名稱，<filename>Makefile</filename> 的行為便是由這些變數來控制。這些變數可設定在 <filename>/etc/make.conf</filename> 或在使用 <command>make</command> 時指定，舉例來說，以下變數可以控制不要編譯 profile 的程式庫 ：</para>
+      <screen xml:id="synching" xml:lang="en"><prompt>#</prompt> <userinput>svn update /usr/src</userinput></screen>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>make -DNO_PROFILE <replaceable>target</replaceable></userinput></screen>
+      <para>若該目錄最近沒有更新過，可能會需要一些時間來完成更新動作。在更新完成之後，原始碼便為最新版本，並可開始依下一章節的說明來編譯程序。</para>
 
-      <para>在 <filename>/etc/make.conf</filename> 要做一樣的設定可：</para>
+      <note xml:id="updating-src-obtaining-src-checkout">
+	<title>取得原始碼</title>
 
-      <programlisting xml:lang="en">NO_PROFILE=    true     #    Avoid compiling profiled libraries</programlisting>
+	<para>若輸出結果顯示 <literal>'/usr/src' is not a working copy</literal> 代表有缺少檔案或原始碼是採用其他方式安裝，若是如此，便需重新取出 (checkout) 原始碼。</para>
 
-      <para><replaceable>target</replaceable> 會告訴 <command>make</command> 要做什麼，而在 <filename>Makefile</filename> 中會定義可用的目標 (Target)， 有些目標是給建置程序使用的，這些步驟是由一個重新編譯系統的必要步驟細分而成的。</para>
+	<table xml:id="updating-src-obtaining-src-repopath">
+	  <title>FreeBSD 版本與檔案庫路徑</title>
 
-      <para>把選項分成數個主要為了兩個原因，第一，它可單獨編譯不影響系統執行中的元件，也因為如此，<buildtarget>buildworld</buildtarget> 可以安全的在多使用者模式時執行，雖然如此，但還是建議 <buildtarget>installworld</buildtarget> 要在單使用者模式執行。</para>
+	  <tgroup cols="3">
+	    <thead>
+	      <row>
+		<entry><command>uname -r</command> 的輸出結果</entry>
+		<entry>檔案庫路徑</entry>
+		<entry>說明</entry>
+	      </row>
+	    </thead>
 
-      <para>第二，它讓 <acronym>NFS</acronym> 掛載可以使用，以便同時升級網路上多台主機，如 <xref linkend="small-lan"/> 所介紹的。</para>
+	    <tbody>
+	      <row>
+		<entry xml:lang="en"><literal><replaceable>X.Y</replaceable>-RELEASE</literal></entry>
+		<entry xml:lang="en"><literal>base/releng/</literal><replaceable>X</replaceable></entry>
+		<entry>發佈版本加上關鍵的安全性與錯誤修正，較建議大多數使用者使用這個分支。</entry>
+	      </row>
 
-      <para>編譯時也可以指定 <option>-j</option> 來讓 <command>make</command> 產生數個平行的程序來編譯。由於大多數的編譯程序會受到 <acronym>I/O</acronym> 綁定而非 <acronym>CPU</acronym> 綁定，這個選項在單 <acronym>CPU</acronym> 與多 <acronym>CPU</acronym> 的主機都很有用。</para>
+	      <row>
+		<entry xml:lang="en"><literal><replaceable>X.Y</replaceable>-STABLE</literal></entry>
+		<entry xml:lang="en"><literal>base/stable/</literal><replaceable>X</replaceable></entry>
+		<entry>
+		  <para>發佈版本加上所有在該分支上其他開發中的程式，<emphasis>STABLE</emphasis> 代表不會更改應用程式 Binary 介面 (Applications Binary Interface, <acronym>ABI</acronym>)，所以在先前版本所編譯的軟體仍可以正常運作，舉例來說，被編譯在 FreeBSD 10.1 可執行的軟體在編譯完 FreeBSD 10-STABLE 之後仍可以執行。</para>
 
-      <para>在單 <acronym>CPU</acronym> 主機，執行以下指令讓一次最多可有 4 個程序同時執行，根據回報到郵遞論壇 (Mailing list) 的經驗顯示，這個設定值在大多數情況可以有最佳的效能。</para>
+		  <para>STABLE 分支偶爾也會有錯誤或無法相容的問題會影響使用者，雖然這些問題通常會很快的被修正。</para>
+		</entry>
+	      </row>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>make -j4 buildworld</userinput></screen>
+	      <row>
+		<entry xml:lang="en"><literal><replaceable>X</replaceable>-CURRENT</literal></entry>
+		<entry xml:lang="en"><literal>base/head/</literal></entry>
+		<entry>最新未發佈的 FreeBSD 開發版本，CURRENT 分支可能會有重大錯誤或不相容的問題，只建議進階的使用者使用。</entry>
+	      </row>
+	    </tbody>
+	  </tgroup>
+	</table>
 
-      <para>在多 <acronym>CPU</acronym> 主機，可嘗試使用 <literal>6</literal> 至 <literal>10</literal> 並觀察加速的情形。</para>
+	<para>查看 FreeBSD 目前使用的版本可使用 <citerefentry><refentrytitle>uname</refentrytitle><manvolnum>1</manvolnum></citerefentry>：</para>
 
-      <indexterm xml:lang="en">
-	<primary>rebuilding <quote>world</quote></primary>
-	<secondary>timings</secondary>
-      </indexterm>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>uname -r</userinput>
+10.3-RELEASE</screen>
 
-      <note>
-	<para>任何傳給 <command>make buildworld</command> 的變數，也同樣要傳給 <command>make installworld</command>。只有 <option>-j</option> <emphasis>永遠</emphasis>不該用在 <buildtarget>installworld</buildtarget>。</para>
+	<para>根據 <xref linkend="updating-src-obtaining-src-repopath"/>，要更新 <literal>10.3-RELEASE</literal> 需使用的原始碼檔案庫路徑為 <literal>base/releng/10</literal>，在取出 (checkout) 原始碼時便要使用這個路徑：</para>
 
-	<para>例如，若使用了以下指令：</para>
+        <screen xml:lang="en"><prompt>#</prompt> <userinput>mv /usr/src /usr/src.bak</userinput>  <co xml:id="updating-src-obtaining-src-mv"/>
+<prompt>#</prompt> <userinput>svn checkout https://svn.freebsd.org/base/<replaceable>releng/10</replaceable> /usr/src</userinput>  <co xml:id="updating-src-obtaining-src-checkout-cmd"/></screen>
 
-	<screen xml:lang="en"><prompt>#</prompt> <userinput>make -DNO_PROFILE buildworld</userinput></screen>
+	<calloutlist>
+	  <callout arearefs="updating-src-obtaining-src-mv">
+	    <para>將舊的目錄移到其他地方，若沒有在這個目錄做過任何本地修改，可直接刪除這個目錄。</para>
+	  </callout>
 
-	<para>在安裝時便要使用：</para>
-
-	<screen xml:lang="en"><prompt>#</prompt> <userinput>make -DNO_PROFILE installworld</userinput></screen>
-
-	<para>否則，第二個指令會嘗試安裝在 <command>make buildworld</command> 階段沒有編譯的 profile 的程式庫。</para>
+	  <callout arearefs="updating-src-obtaining-src-checkout-cmd">
+	    <para>將從 <xref linkend="updating-src-obtaining-src-repopath"/> 查到的路徑加到檔案庫 <acronym>URL</acronym> 之後。第三個參數用來存放本地系統原始碼的目標目錄。</para>
+	  </callout>
+	</calloutlist>
       </note>
     </sect2>
 
-    <sect2 xml:id="mergemaster">
-      <info>
-	<title>合併設定檔</title>
+    <sect2 xml:id="updating-src-building">
+      <title>從原始碼編譯</title>
 
-	<authorgroup>
-	  <author xml:lang="en">
-	    <personname>
-	      <firstname>Tom</firstname>
-	      <surname>Rhodes</surname>
-	    </personname>
-	    <contrib>Contributed by </contrib>
-	  </author>
-	</authorgroup>
-      </info>
-
-      <indexterm xml:lang="en">
-	<primary>
-	  <command>mergemaster</command>
-	</primary>
-      </indexterm>
-
-      <para>FreeBSD 提供了 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> Bourne script 來協助比對在 <filename>/etc</filename> 的設定檔與在 <filename>/usr/src/etc</filename> 的設定檔間的差異，這是要維持系統設定檔與原始碼樹中最新的設定檔相同版本的建議方式。</para>
-
-      <para>在使用 <command>mergemaster</command> 之前，建議先將現有的 <filename>/etc</filename> 備份到某一處安全的地方，加上 <option>-R</option> 來做遞迴複製以及 <option>-p</option> 來保留檔案的時間與擁有者資訊：</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cp -Rp /etc /etc.old</userinput></screen>
-
-      <para>執行時，<command>mergemaster</command> 會在 <filename>/</filename> 下建立暫存的 root 環境，然後放入各種系統設定檔，這些檔案接著會被拿來與目前安裝在系統的設定檔做比對，有差異的檔案會以 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 的格式顯示， <option>+</option> 號代表增加或修改過的行，而 <option>-</option> 號代表在新檔案已完全移除或被取代的行。請參考 <citerefentry><refentrytitle>diff</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來取得更多有關檔案差異會如何顯示的資訊。</para>
-
-      <para>接著，<command>mergemaster</command> 會顯示每個有差異的檔案，然後提供操作選項：刪除新的暫存設定檔、不修改安裝暫存設定檔、將暫存設定檔與目前安裝的設定檔合併或再檢視結果一次。</para>
-
-      <para>選擇刪除暫存設定檔案會告訴 <command>mergemaster</command> 保留目前的設定檔不變然後刪除新版本的設定檔，但這是較不建議使用的選項。在要尋求協助可隨時在 <command>mergemaster</command> 提示後輸入 <keycap>?</keycap>。若使用者選擇跳過該設定檔，該檔案則會在所有其他檔案處理過之後再顯示一次。</para>
-
-      <para>選擇安裝未修改過的暫存設定檔會使用較新的設定檔來取代目前的設定檔，對於大多數未修改過的設定檔來說，這是最佳的選項。</para>
-
-      <para>選擇合併檔案會進入文字編輯器並同時顯示兩個檔案的內容，可在畫面上並排查看這兩個檔案，並從兩者之中選擇一邊來產生最終要的部份來合併這兩個設定檔。在檔案並排比較時，使用 <keycap>l</keycap> 可選擇左邊的內容，<keycap>r</keycap> 可選擇右邊的內容，最終的結果會是一個由兩邊選擇部份所組成的檔案，然後才可以安裝。這個選項習慣上是針對那些有被使用者修改過設定的檔案使用。</para>
-
-      <para>選擇再查看結果一次則會再顯示一次檔案間的差異。</para>
-
-      <para><command>mergemaster</command> 完成系統設定檔的處理之後，會提示其他選項，有可能會提示重建密碼檔，然後最終會出現移除剩下的暫存檔。</para>
-<!--
-Probably not needed as changes should be minimal and mergemaster does
-a good job of merging.
-	<tip>
-	  <title>Name the New Root Directory
-	    (<filename>/var/tmp/root</filename>)
-	    with a Time Stamp, so You Can Easily Compare Differences
-	    Between Versions</title>
-
-	  <para>Frequently rebuilding world entails frequently
-	    updating <filename>/etc</filename>
-	    as well, which can be a bit of a chore.</para>
-
-	  <para>To speed up this process, use the following
-	    procedure to keep a copy of the last set of changed files
-	    that were merged into <filename>/etc</filename>.</para>
-
-	  <procedure>
-	    <step>
-	      <para>Make the world as normal.  When updating
-		<filename>/etc</filename> and the
-		other directories, give the target directory a name
-		based on the current date:</para>
-
-	      <screen>&prompt.root; <userinput>mkdir /var/tmp/root-20130214</userinput>
-&prompt.root; <userinput>cd /usr/src/etc</userinput>
-&prompt.root; <userinput>make DESTDIR=/var/tmp/root-20130214 \
-    distrib-dirs distribution</userinput></screen>
-	    </step>
-
-	    <step>
-	      <para>Merge in the changes from this directory as
-		outlined above.  <emphasis>Do not</emphasis> remove
-		the <filename>/var/tmp/root-20130214</filename>
-		directory when you have finished.</para>
-	    </step>
-
-	    <step>
-	      <para>After downloading the latest version of the
-		source and remaking it, follow step 1.  Create a new
-		directory, which reflects the new date.  This example
-		uses
-		<filename>/var/tmp/root-20130221</filename>.</para>
-	    </step>
-
-	    <step>
-	      <para>Use &man.diff.1; to see the differences that have
-		been made in the intervening week by creating a
-		recursive diff between the two directories:</para>
-
-	      <screen>&prompt.root; <userinput>cd /var/tmp</userinput>
-&prompt.root; <userinput>diff -r root-20130214 root-20130221</userinput></screen>
-
-	      <para>Typically, this will be a much smaller set of
-		differences than those between
-		<filename>/var/tmp/root-20130221/etc</filename> and
-		<filename>/etc</filename>.  Because the set of
-		differences is smaller, it is easier to migrate those
-		changes across into <filename>/etc</filename>.</para>
-	    </step>
-
-	    <step>
-	      <para>When finished, remove the older of the two
-		<filename>/var/tmp/root-*</filename>
-		directories:</para>
-
-	      <screen>&prompt.root; <userinput>rm -rf /var/tmp/root-20130214</userinput></screen>
-	    </step>
-
-	    <step>
-	      <para>Repeat this process whenever merging
-		in changes to <filename>/etc</filename>.</para>
-	    </step>
-	  </procedure>
-
-	  <para>Use &man.date.1; to automate the generation of the
-	    directory names:</para>
-
-	  <screen>&prompt.root; <userinput>mkdir /var/tmp/root-`date "+%Y%m%d"`</userinput></screen>
-	</tip>
-	-->
-    </sect2>
-
-    <sect2 xml:id="make-delete-old">
-      <info>
-	<title>刪除廢棄的檔案及程式庫</title>
-
-	<authorgroup>
-	  <author xml:lang="en">
-	    <personname>
-	      <firstname>Anton</firstname>
-	      <surname>Shterenlikht</surname>
-	    </personname>
-	    <contrib>Based on notes provided by </contrib>
-	  </author>
-	</authorgroup>
-      </info>
-
-      <indexterm xml:lang="en">
-	<primary>Deleting obsolete files and directories</primary>
-      </indexterm>
-
-      <para>隨著 FreeBSD 開發生命週期結束，檔案與其內容最終會被廢棄，這可是因為該功能已改在其他地方實作、程式庫的版本編號改變、或者完全從系統中移除。這些廢棄的檔案、程式庫與目錄應在升級系統時被移除，這可確保系統不會到處散布著舊檔案，在儲存與備份媒體中佔據不必要的空間。除此之外，若舊的程式庫有安全性或穩定性的問題，則系統應更新到較新的程式庫來確保系統安全與避免因舊程式庫造成的當機。被列為廢棄的檔案、目錄與程式庫會列於 <filename>/usr/src/ObsoleteFiles.inc</filename>。在進行系統升級程序時應依照以下指示移除廢棄的檔案。</para>
-
-      <para>在 <command>make installworld</command> 與接下來的 <command>mergemaster</command> 成功完成之後，需檢查是否有廢棄的檔案與程式庫：</para>
+      <para xml:id="makeworld">編譯世界 (<emphasis>world</emphasis>) 即編譯整個作業系統除了核心 (Kernel)，要先做這個動作以便提供最新的工具來編譯核心，接著便可編譯核心：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
-<prompt>#</prompt> <userinput>make check-old</userinput></screen>
+<prompt>#</prompt> <userinput>make buildworld</userinput>
+<prompt>#</prompt> <userinput>make buildkernel</userinput></screen>
 
-      <para>若有找到任何廢棄的檔案，可使用以下指令刪除這些檔案：</para>
+      <para>編譯完的程式會寫入至 <filename>/usr/obj</filename>。</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old</userinput></screen>
+      <para>以上這些均為基本的步驟，用來控制編譯的其他選項在以下章節會說明。</para>
 
-      <para>在刪除每一個廢棄檔案之前會顯示提示確認，若要跳過這些提示讓系統自動移除這些檔案，可使用 <varname>BATCH_DELETE_OLD_FILES</varname>：</para>
+      <sect3 xml:id="updating-src-building-clean-build">
+	<title>執行清除編譯</title>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>make -DBATCH_DELETE_OLD_FILES delete-old</userinput></screen>
+	<para>部份 FreeBSD 編譯系統版本會保留先前編譯的程式於暫存的物件目錄 <filename>/usr/obj</filename>，避免重新編譯那些尚未更動過的程式碼可加速後續的編譯動作，若要強制重新編譯所有東西可在開始編譯前使用 <buildtarget>cleanworld</buildtarget>：</para>
 
-      <para>也可使用管線 (Pipe) 符號傳遞 <command>yes</command> 給這些指令來達到同樣的效果：</para>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>make cleanworld</userinput></screen>
+      </sect3>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>yes|make delete-old</userinput></screen>
+      <sect3 xml:id="updating-src-building-jobs">
+	<title>設定工作數量</title>
 
-      <warning>
-	<title>警告</title>
+	<para>在多核處理器上增加編譯工作的數量可增加編譯速度，可使用 <command>sysctl hw.ncpu</command> 來查看有多少核心，不同處理器使用不同版本的 FreeBSD 編譯系統，所以唯一能了解不同工作數量對編譯速度影響的方式便是測試。在一開始可考慮選擇一個介於 1/2 到 2 倍核心數之間的數值，工作的數量可使用 <option>-j</option> 來指定。</para>
 
-	<para>刪除廢棄檔案會弄壞那些相依這些廢棄檔案的應用程式，尤其是刪除廢棄的程式庫。在大多數情況，使用舊程式庫的程式、Port、程式庫需要在執行 <command>make delete-old-libs</command> 之前重新編譯。</para>
-      </warning>
+	<example xml:id="updating-src-building-jobs-example">
+	  <title>增加編譯工作數</title>
 
-      <para>可檢查共用程式庫相依的工具有 <package>sysutils/libchk</package> 與 <package>sysutils/bsdadminscripts</package>。</para>
+	  <para>使用四個工作來編譯世界與核心：</para>
 
-      <para>廢棄的共用程式庫可能會與較新的程式庫衝突，會出現訊息如下：</para>
+	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make -j4 buildworld buildkernel</userinput></screen>
+	</example>
+      </sect3>
 
-      <screen xml:lang="en">/usr/bin/ld: warning: libz.so.4, needed by /usr/local/lib/libtiff.so, may conflict with libz.so.5
-/usr/bin/ld: warning: librpcsvc.so.4, needed by /usr/local/lib/libXext.so, may conflict with librpcsvc.so.5</screen>
+      <sect3 xml:id="updating-src-building-only-kernel">
+	<title>只編譯核心</title>
 
-      <para>要解決這些問題須找出那個 Port 會安裝該程式庫：</para>
+	<para>若原始碼有更動，便須執行 <buildtarget>buildworld</buildtarget>，完成之後，便可隨時執行 <buildtarget>buildkernel</buildtarget> 來編譯核心，若要只編譯核心可：</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg which /usr/local/lib/libtiff.so</userinput>
-  /usr/local/lib/libtiff.so was installed by package tiff-3.9.4
-<prompt>#</prompt> <userinput>pkg which /usr/local/lib/libXext.so</userinput>
-  /usr/local/lib/libXext.so was installed by package libXext-1.1.1,1</screen>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
+<prompt>#</prompt> <userinput>make buildkernel</userinput></screen>
+      </sect3>
 
-      <para>然後解除安裝、重新編譯然後重新安裝 Port，要將這個程序自動化可使用 <package>ports-mgmt/portmaster</package>。在所有 Port 重新編譯且舊程式庫不再使用之後，使用以下指令刪除舊程式庫：</para>
+      <sect3 xml:id="updating-src-building-custom-kernel">
+	<title>編譯自訂核心</title>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old-libs</userinput></screen>
+	<para>標準的 FreeBSD 核心是以一個名為 <filename>GENERIC</filename> 的<emphasis>核心設定檔 (Kernel config file)</emphasis>為基礎，<filename>GENERIC</filename> 核心中內含了所有最常用的裝置驅動程式與選項，有時這個檔案對編譯自訂核心也非常有用，可根據其來加入或移除裝置驅動程式或選項來滿足特定需求。</para>
 
-      <para>若有東西發生錯誤，要重新編譯系統的特定部份也很簡單。例如，若 <filename>/etc/magic</filename> 在升級或合併 <filename>/etc</filename> 時被意外刪除，<command>file</command> 便會無法運作，要修正這個問題可執行：</para>
+	<para>例如，要開發一個 <acronym>RAM</acronym> 受到嚴重限制的小型嵌入式電腦，便可移除不需要的裝置驅動程式或選項來縮小核心。</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src/usr.bin/file</userinput>
-<prompt>#</prompt> <userinput>make all install</userinput></screen>
+	<para>核心設定檔位於 <filename>/usr/src/sys/<replaceable>arch</replaceable>/conf/</filename>，其中使用的 <replaceable>arch</replaceable> 即為 <command>uname -m</command> 輸出的結果，大部份的電腦為 <literal>amd64</literal>，那其設定檔目錄則為 <filename>/usr/src/sys/<replaceable>amd64</replaceable>/conf/</filename>。</para>
+
+	<tip>
+	  <para><filename>/usr/src</filename> 可以被刪除或重建，所以較建議將自訂核心設定檔放在另一個目錄，如 <filename>/root</filename>，並將核心設定檔以連結放至 <filename>conf</filename> 目錄，若該目錄被刪除或覆寫，便可重新建立一個新的核心設定的連結。</para>
+	</tip>
+
+	<para>自訂設定檔可由複製 <filename>GENERIC</filename> 設定檔來建立，在此範例，新的自訂核心要用在儲存伺服器，所以將其命名為 <filename>STORAGESERVER</filename>：</para>
+
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>cp /usr/src/sys/amd64/conf/GENERIC /root/STORAGESERVER</userinput>
+<prompt>#</prompt> <userinput>cd /usr/src/sys/amd64/conf</userinput>
+<prompt>#</prompt> <userinput>ln -s /root/STORAGESERVER .</userinput></screen>
+
+	<para>接著編譯 <filename>/root/STORAGESERVER</filename>，要加入或移除裝置或選項可見 <citerefentry><refentrytitle>config</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
+
+	<para>自訂核心要在指令列設定 <varname>KERNCONF</varname> 為核心設定檔來編譯：</para>
+
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>make buildkernel KERNCONF=STORAGESERVER</userinput></screen>
+      </sect3>
     </sect2>
 
-    <sect2 xml:id="updating-questions">
-      <title>常見問題</title>
+    <sect2 xml:id="updating-src-installing">
+      <title>安裝編譯好的程式</title>
 
-      <variablelist>
-	<varlistentry>
-	  <term>每個變更是否都需要重新編譯 World?</term>
+      <para>在完成 <buildtarget>buildworld</buildtarget> 與 <buildtarget>buildkernel</buildtarget> 兩個步驟之後，便可安裝新的核心與世界：</para>
 
-	  <listitem>
-	    <para>這需視變更的內容而定，例如，若 <application>svn</application> 只有顯示以下檔案有被更新過：</para>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
+<prompt>#</prompt> <userinput>make installkernel installworld</userinput></screen>
 
-	    <screen xml:lang="en"><filename>src/games/cribbage/instr.c</filename>
-<filename>src/games/sail/pl_main.c</filename>
-<filename>src/release/sysinstall/config.c</filename>
-<filename>src/release/sysinstall/media.c</filename>
-<filename>src/share/mk/bsd.port.mk</filename></screen>
+      <para>若使用自訂核心，則同樣須設定 <varname>KERNCONF</varname> 來使用新的自訂核心：</para>
 
-	    <para>那可能就不須要重新編譯整個 World，可改直接進入對應的子目錄然後執行 <command>make all install</command>。但若有一些主要 (Major) 的變更，例如 <filename>src/lib/libc/stdlib</filename>，那麼請考慮重新編譯 World。</para>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
+<prompt>#</prompt> <userinput>make installkernel installworld KERNCONF=STORAGESERVER</userinput></screen>
+    </sect2>
 
-	    <para>有些使用者每兩週會重新編譯一次 World 然後讓變更再累積兩週，也有些使用者只重新編譯那些有變更過的內容並非常小心的檢查所有相依，要怎麼做完全是依使用者相要多久升級一次系統以及他們是追蹤 FreeBSD-STABLE 或是 FreeBSD-CURRENT 分支而定。</para>
-	  </listitem>
-	</varlistentry>
+    <sect2 xml:id="updating-src-completing">
+      <title>完成更新</title>
 
-	<varlistentry>
-	  <term>什麼會造成有很多 signal 11<indexterm>
-	      <primary>signal 11</primary>
-	    </indexterm> (或其他信號) 錯誤的編譯失敗?</term>
+      <para>還有最後一些的工作要做來完成更新，任何修改過的設定檔要與新版本的設定檔合併、移除找到的過時程式庫，然後重新啟動系統。</para>
 
-	  <listitem>
-	    <para>這通常代表發生硬體問題，編譯 World 是對硬體做壓力測試很有效的方式，特別是對記憶體。對於硬體問題較明確的指標是每一次重新 <application>make</application> 會在程序的不同地方停止。</para>
+      <sect3 xml:id="updating-src-completing-merge-mergemaster">
+	<title>使用 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 合併設定檔案</title>
 
-	    <para>要解決這種問題，需要更換主機的元件，先從 RAM 開始，然後找出那個元件故障。</para>
-	  </listitem>
-	</varlistentry>
+	<para><citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 可簡單的將修改過的系統設定檔與新版設定檔合併。</para>
 
-	<varlistentry>
-	  <term>完成編譯後是可否移除 <filename>/usr/obj</filename>?</term>
+	<para>使用 <option>-Ui</option>，<citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 會自動更新那些未被使用者修改過的設定檔並安裝尚不存在的檔案：</para>
 
-	  <listitem>
-	    <para>這個目錄包含了所有在編譯階段所產生的目標檔 (Object file)。正常在 <command>make buildworld</command> 程序的其中一個初始步驟便是移除所有在這個目錄的檔案然後重頭開始，因此在編譯完成之後保留 <filename>/usr/obj</filename> 沒有太大意義，把它移除之後可以釋放大約 2GB 的磁碟空間。</para>
-	  </listitem>
-	</varlistentry>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>mergemaster -Ui</userinput></screen>
 
-	<varlistentry>
-	  <term>是否能繼續中斷的編譯?</term>
+	<para>若檔案需要手動合併，會有互動式介面可讓使用者選擇要保留那一邊的檔案，請參考 <citerefentry><refentrytitle>mergemaster</refentrytitle><manvolnum>8</manvolnum></citerefentry> 取得更多資訊。</para>
+      </sect3>
 
-	  <listitem>
-	    <para>這要看程序執行到什麼程度才發生問題，一般來說，<command>make buildworld</command> 會編譯新版的重要工具及系統程式庫，接著會安裝這些工具及程式庫，再用來重新編譯它們自己，然後再安裝一次，接著才會使用這些新系統工具重新編譯系統剩下未完成的部份。</para>
+      <sect3 xml:id="updating-src-completing-check-old">
+	<title>檢查過時的檔案與程式庫</title>
 
-	    <para>在最後一個階段執行這個指令是相同安全的，這些指令不會重做先前 <command>make buildworld</command> 所做的工作：</para>
+	<para>部份廢棄的檔案或目錄可以在更新之後保留，可使用以下指令找出這些檔案：</para>
 
-	    <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
-<prompt>#</prompt> <userinput>make -DNO_CLEAN all</userinput></screen>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>make check-old</userinput></screen>
 
-	    <para>若出現這個訊息：</para>
+	<para>並用以下指令刪除：</para>
 
-	    <screen xml:lang="en">--------------------------------------------------------------
-Building everything..
---------------------------------------------------------------</screen>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old</userinput></screen>
 
-	    <para>在 <command>make buildworld</command> 的輸出結果，要執行上述指令是相當安全的。</para>
+	<para>部份廢棄的程式庫也可以保留下來，可使用以下指令來偵測這些程式庫：</para>
 
-	    <para>若沒有顯示上述訊息，保險起見最好重頭開始編譯的動作。</para>
-	  </listitem>
-	</varlistentry>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>make check-old-libs</userinput></screen>
 
-	<varlistentry>
-	  <term>有可能加速編譯 World 的速度嗎?</term>
+	<para>並使用以下指令刪除</para>
 
-	  <listitem>
-	    <para>有很多方法可以加速整個編譯 World 的程序，舉例來說，整個程序可以在單使用者模式執行，這可以避免一般使用者在程序完成前存取系統。</para>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>make delete-old-libs</userinput></screen>
 
-	    <para>注意檔案系統的規劃或者採用 ZFS 資料集可能會有明顯的差異，可以考慮將 <filename>/usr/src</filename> 與 <filename>/usr/obj</filename> 放在不同的檔案系統，若可能的話，將檔案系統放在不同磁碟控制器的磁碟。在掛載 <filename>/usr/src</filename> 時，使用 <option>noatime</option> 可以避免檔案系統記錄檔案存取時間，若 <filename>/usr/src</filename> 放在不是自己所擁有的檔案系統，則可考慮使用 <option>noatime</option> 重新掛載 <filename>/usr</filename>。</para>
+	<para>那些仍使用舊程式庫的程式將在刪除程式庫之後無法正常運作，而這些程式須要在刪除舊程式庫之後重新編譯或更換。</para>
 
-	    <para>儲存 <filename>/usr/obj</filename> 的檔案系統可使用 <option>async</option> 掛載或重新掛載磁碟，讓磁碟做非同步的寫入，這樣寫入可立即完成，並且在幾秒之後再一起寫入到磁碟，這會讓寫入動作可以集中處理，可加快不少效能。</para>
+	<tip>
+	  <para>當確認所有舊檔案或目錄可安全的刪除時，要避免刪除每一個檔案時均需按下 <keycap>y</keycap> 與 <keycap>Enter</keycap> 鍵可在指令設定 <varname>BATCH_DELETE_OLD_FILES</varname>，例如：</para>
 
-	    <warning>
-	      <para>注意，這個選項會讓檔案系統更脆弱，使用了這個選項會提高電源中斷、重新開機時，造成檔案系統進入無法還原狀態的機會。</para>
+	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make BATCH_DELETE_OLD_FILES=yes delete-old-libs</userinput></screen>
+	</tip>
+      </sect3>
 
-	      <para>若 <filename>/usr/obj</filename> 是單獨位於檔案系統的目錄，那麼也不是什麼大問題，若是您在同一個檔案系統還有其他有價值的資料，請在開啟此選項前先確認有做好備份。</para>
-	    </warning>
+      <sect3 xml:id="updating-src-completing-restart">
+	<title>更新後重新啟動</title>
 
-	    <para>在 <filename>/etc/make.conf</filename> 設定 <quote>NO_PROFILE=true</quote> 關閉剖析 (Profiling)。</para>
+	<para>更新之後的最後一個步驟便是重新啟動電腦，來讓所有的變更生效：</para>
 
-	    <para>傳遞 <option>-j<replaceable>n</replaceable></option> 給 <citerefentry><refentrytitle>make</refentrytitle><manvolnum>1</manvolnum></citerefentry> 來用多程序平行編譯，這個通常對單或多處理器的主機都有幫助。</para>
-	  </listitem>
-	</varlistentry>
-
-	<varlistentry>
-	  <term>若發生錯誤時該怎麼辦?</term>
-
-	  <listitem>
-	    <para>首先，確定環境沒有受到先前編譯結果的影響。</para>
-
-	    <screen xml:lang="en"><prompt>#</prompt> <userinput>chflags -R noschg /usr/obj/usr</userinput>
-<prompt>#</prompt> <userinput>rm -rf /usr/obj/usr</userinput>
-<prompt>#</prompt> <userinput>cd /usr/src</userinput>
-<prompt>#</prompt> <userinput>make cleandir</userinput>
-<prompt>#</prompt> <userinput>make cleandir</userinput></screen>
-
-	    <para>是的，<command>make cleandir</command> 真的需要執行兩次。</para>
-
-	    <para>然後重新啟動整個程序，從 <command>make buildworld</command> 開始。</para>
-
-	    <para>若問題仍存在，回報錯誤與 <command>uname -a</command> 的輸出結果到 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-questions">FreeBSD 一般問題郵遞論壇</link>，然後準備好回答有關該次安裝的其他問題。</para>
-	  </listitem>
-	</varlistentry>
-      </variablelist>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>shutdown -r now</userinput></screen>
+      </sect3>
     </sect2>
   </sect1>
 
@@ -50794,7 +50400,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 50044 2017-03-10 12:32:33Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 50200 2017-04-23 13:07:36Z sevan $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -55355,12 +54961,6 @@ rtsold_enable="YES"</programlisting>
 	<listitem>
 	  <para xml:lang="en">Contact an Internet Service Provider to see if they
 	    offer <acronym>IPv6</acronym>.</para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.sixxs.net">SixXS</link>
-	    offers tunnels with end-points all around the
-	    globe.</para>
 	</listitem>
 
 	<listitem>
