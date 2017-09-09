@@ -52,13 +52,24 @@ https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/po-translations.htm
 # 建立翻譯環境
 https://www.freebsd.org/doc/en/books/fdp-primer/po-translations-quick-start.html
 ```
+# 安裝翻譯工具
 pkg install docproj subversion
+
+# 下載最新文件
 svn checkout https://svn.FreeBSD.org/doc/head ~/doc
 cd ~/doc/zh_TW/books/handbook/
-make po # 建立翻譯檔 zh_TW.po
-poedit zh_TW.po # 翻譯
-make tran # 產生翻譯結果 book.xml
-make FORMATS=html # 將 book.xml 轉為 html
+
+# 建立翻譯檔 zh_TW.po
+make po 
+
+# 翻譯
+poedit zh_TW.po
+
+# 產生翻譯結果 book.xml
+make tran
+
+# 將 book.xml 轉為 html
+make FORMATS=html
 ```
 
 # PO 檔編輯器
