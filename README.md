@@ -57,7 +57,7 @@ pkg install docproj subversion
 
 # 下載最新文件
 svn checkout https://svn.FreeBSD.org/doc/head ~/doc
-cd ~/doc/zh_TW/books/handbook/
+cd ~/doc/zh_TW.UTF-8/books/handbook/
 
 # 建立翻譯檔 zh_TW.po
 make po 
