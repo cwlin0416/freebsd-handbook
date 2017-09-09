@@ -3,7 +3,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50360 2017-06-11 16:04:49Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50779 2017-08-31 02:36:49Z wblock $
 --><!ENTITY % chapters SYSTEM "chapters.ent">
 <!--
      Creates entities for each chapter in the FreeBSD Handbook. Each entity
@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50527 2017-07-20 18:19:40Z mjoras $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50783 2017-09-01 14:39:13Z pizzamig $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -360,6 +360,7 @@
 <!ENTITY pgpkey.murray SYSTEM "murray.key">
 <!ENTITY pgpkey.mux SYSTEM "mux.key">
 <!ENTITY pgpkey.mva SYSTEM "mva.key">
+<!ENTITY pgpkey.mw SYSTEM "mw.key">
 <!ENTITY pgpkey.mwlucas SYSTEM "mwlucas.key">
 <!ENTITY pgpkey.naddy SYSTEM "naddy.key">
 <!ENTITY pgpkey.nate SYSTEM "nate.key">
@@ -409,6 +410,7 @@
 <!ENTITY pgpkey.pho SYSTEM "pho.key">
 <!ENTITY pgpkey.pi SYSTEM "pi.key">
 <!ENTITY pgpkey.pirzyk SYSTEM "pirzyk.key">
+<!ENTITY pgpkey.pizzamig SYSTEM "pizzamig.key">
 <!ENTITY pgpkey.pjd SYSTEM "pjd.key">
 <!ENTITY pgpkey.pkelsey SYSTEM "pkelsey.key">
 <!ENTITY pgpkey.plosher SYSTEM "plosher.key">
@@ -617,16 +619,25 @@
 
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/txtfiles.ent 47275 2015-08-19 01:55:52Z gjb $
 -->]>
-<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="zh_TW">
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:lang="zh_TW">
 
   <info>
+    <its:rules xmlns:db="http://docbook.org/ns/docbook" version="1.0">
+
+      <its:translateRule translate="no" selector="//db:programlisting[@role='pgpfingerprint']"/>
+
+      <its:translateRule translate="no" selector="//db:programlisting[@role='pgpkey']"/>
+
+      <its:translateRule translate="no" selector="//db:sect2[starts-with(@xml:id,'pgpkey-')]"/>
+    </its:rules>
+
     <title>FreeBSD 使用手冊</title>
 
     <author><orgname>FreeBSD 文件計劃</orgname></author>
 
-    <pubdate xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50360 2017-06-11 16:04:49Z sevan $</pubdate>
+    <pubdate its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50779 2017-08-31 02:36:49Z wblock $</pubdate>
 
-    <releaseinfo xml:lang="en">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50360 2017-06-11 16:04:49Z sevan $</releaseinfo>
+    <releaseinfo its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50779 2017-08-31 02:36:49Z wblock $</releaseinfo>
 
     <copyright xml:lang="en">
       <year>1995</year>
@@ -729,7 +740,14 @@
     </legalnotice>
 
     <abstract>
-      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 11.0-RELEASE</emphasis>, <emphasis>FreeBSD 10.3-RELEASE</emphasis> 的安裝與平日操作的說明。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中，因此部份章節可能尚未仍未完成，如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
+      <para xml:lang="en">Welcome to FreeBSD! This handbook covers the installation
+	and day to day use of
+	<emphasis>FreeBSD 11.1-RELEASE</emphasis>,
+	<emphasis>FreeBSD 11.0-RELEASE</emphasis>, and
+	<emphasis>FreeBSD 10.3-RELEASE</emphasis>. This book is
+	the result of ongoing work by many individuals.  Some sections
+	might be outdated.  Those interested in helping to update and
+	expand this document should send email to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD documentation project mailing list</link>.</para>
 
       <para>在 <link xlink:href="http://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到本文件的最新版本，舊版文件可從 <uri xlink:href="http://docs.FreeBSD.org/doc/">http://docs.FreeBSD.org/doc/</uri> 取得。本文件也提供各種格式與不同壓縮方式的版本可自 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/doc/">FreeBSD FTP 伺服器</link> 或是其中一個 <link linkend="mirrors-ftp">鏡像網站</link> 下載。 列印出來的實體書面資料可在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
@@ -2288,7 +2306,15 @@
       <step>
 	<title>檢查 FreeBSD 勘誤表</title>
 
-	<para>儘管 FreeBSD Project 努力確保每個 FreeBSD 發行版能夠儘可能地穩定，但錯誤偶爾還是會悄悄出現，並有極小的可能會發生影響安裝流程的錯誤，當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/11.0R/errata.html">http://www.freebsd.org/releases/11.0R/errata.html</link>)。 安裝前先檢查勘誤表，以確保沒有會影響到安裝的問題。</para>
+	<para xml:lang="en">Although the FreeBSD Project strives to ensure that
+	  each release of FreeBSD is as stable as possible, bugs
+	  occasionally creep into the process.  On very rare occasions
+	  those bugs affect the installation process.  As these
+	  problems are discovered and fixed, they are noted in the
+	  FreeBSD Errata (<link xlink:href="@@URL_RELPREFIX@@/releases/11.1R/errata.html">http://www.freebsd.org/releases/11.1R/errata.html</link>)
+	  on the FreeBSD web site.  Check the errata before installing to
+	  make sure that there are no problems that might affect the
+	  installation.</para>
 
 	<para>所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">http://www.freebsd.org/releases/index.html</link>)。</para>
       </step>
@@ -5962,7 +5988,7 @@ Swap: 2048M Total, 2048M Free
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 50140 2017-04-09 00:54:08Z brd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 50603 2017-07-29 10:40:20Z bhd $
 -->
 <chapter version="5.0" xml:id="ports">
 
@@ -6919,18 +6945,18 @@ ports-mgmt/pkg
 
       <para>雖然可以同時使用自訂的檔案庫與官方檔案庫，但有時關閉官方檔案庫會有幫助。這可以透過建立一個設定檔覆蓋並關閉官方的設定檔來完成。建立 <filename>/usr/local/etc/pkg/repos/FreeBSD.conf</filename> 包含以下內容：</para>
 
-      <screen xml:lang="en">FreeBSD: {
+      <programlisting xml:lang="en">FreeBSD: {
 	enabled: no
-}</screen>
+}</programlisting>
 
       <para>通常最簡單要提供 poudriere 檔案庫給客戶端的方式是透過 HTTP。安裝一個網頁伺服器來提供套件目錄，通常會像：<filename>/usr/local/poudriere/data/packages/<replaceable>10amd64</replaceable></filename>，其中 <filename>10amd64</filename> 是編譯的名稱。</para>
 
       <para>若要連往套件檔案庫的 URL 是：<literal>http://pkg.example.com/10amd64</literal>，則在 <filename>/usr/local/etc/pkg/repos/custom.conf</filename> 的檔案庫設定檔為：</para>
 
-      <screen xml:lang="en">custom: {
+      <programlisting xml:lang="en">custom: {
 	url: "<replaceable>http://pkg.example.com/10amd64</replaceable>",
 	enabled: yes,
-}</screen>
+}</programlisting>
     </sect2>
   </sect1>
 
@@ -8423,7 +8449,7 @@ EndSection</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 50009 2017-02-25 15:07:23Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 50812 2017-09-09 01:12:46Z bcr $
 -->
 <chapter version="5.0" xml:id="desktop">
   <!--
@@ -8561,7 +8587,12 @@ EndSection</programlisting>
 
       <para>編譯 Port 時使用預設設定選項。</para>
 
-      <para>安裝完成時，啟動 <application>firefox</application>，在網址列輸入 <literal>about:plugins</literal> 並按 <keycap>Enter</keycap> 鍵。 會出現一個頁面列出已安裝的附加元件。 <application><trademark>Java</trademark></application> 附加元件應該會列在其中。</para>
+      <para xml:lang="en">Once installed, start <application>Firefox</application>,
+	enter <literal>about:plugins</literal> in the location bar and
+	press <keycap>Enter</keycap>.  A page listing the installed
+	plugins will be displayed.  The
+	<application><trademark>Java</trademark></application> plugin should be
+	listed.</para>
 
       <para>若瀏覽器無法找到附加元件，每位使用者則須執行以下指令並重新執行瀏覽器：</para>
 
@@ -8587,7 +8618,9 @@ EndSection</programlisting>
 	</step>
 
 	<step>
-	  <para>自 Port 安裝 <package role="port">www/linux-c6-flashplugin11</package> ，受到授權條款的限制，該套件無 Binary 版本。</para>
+	  <para xml:lang="en">Install <package role="port">www/linux-flashplayer</package> from
+	    the port.  Due to licensing restrictions, a package is not
+	    available.</para>
 	</step>
 
 	<step>
@@ -9308,7 +9341,12 @@ EndSection</programlisting>
 
     <indexterm xml:lang="en"><primary>PCI</primary></indexterm>
     <indexterm xml:lang="en"><primary>sound cards</primary></indexterm>
-    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="http://www.FreeBSD.org/releases/11.0R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
+    <para xml:lang="en">Before beginning the configuration, determine the model of
+      the sound card and the chip it uses.  FreeBSD supports a wide
+      variety of sound cards.  Check the supported audio devices
+      list of the <link xlink:href="http://www.FreeBSD.org/releases/11.1R/hardware.html">Hardware
+	Notes</link> to see if the card is supported and which FreeBSD
+      driver it uses.</para>
 
     <indexterm xml:lang="en">
       <primary>kernel</primary>
@@ -10762,7 +10800,7 @@ add path usb/0.2.0 mode 0666 group usb</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/kernelconfig/chapter.xml 49655 2016-11-09 19:15:17Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/kernelconfig/chapter.xml 50592 2017-07-27 21:37:15Z bhd $
 -->
 <chapter version="5.0" xml:id="kernelconfig">
 <!--<chapterinfo>
@@ -10909,10 +10947,9 @@ ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 
 
     <para>在 <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令加上 <option>-k</option> 旗標可提供有用的資訊，例如，這可列出有包含指定裝置品牌或名稱的手冊頁面清單：</para>
 
-    <screen xml:lang="en"><prompt>#</prompt> <userinput>man -k <replaceable>Atheros</replaceable></userinput></screen>
-
-    <programlisting xml:lang="en">ath(4)                   - Atheros IEEE 802.11 wireless network driver
-ath_hal(4)               - Atheros Hardware Access Layer (HAL)</programlisting>
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>man -k <replaceable>Atheros</replaceable></userinput>
+ath(4)                   - Atheros IEEE 802.11 wireless network driver
+ath_hal(4)               - Atheros Hardware Access Layer (HAL)</screen>
 
     <para>準備好硬體清單之後，參考該清單來確認已安裝的硬體驅動程式在編輯自訂核心設定時沒有被移除。</para>
   </sect1>
@@ -12846,7 +12883,7 @@ lp:
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/linuxemu/chapter.xml 50370 2017-06-15 09:08:36Z remko $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/linuxemu/chapter.xml 50605 2017-07-29 20:12:21Z bjk $
 -->
 <chapter version="5.0" xml:id="linuxemu">
 
@@ -12962,7 +12999,10 @@ lp:
 
     <indexterm><primary>核心選項</primary> <secondary>COMPAT_LINUX</secondary></indexterm>
 
-    <para>想要靜態連結 <trademark class="registered">Linux</trademark> Binary 相容性到自訂核心的使用者應加入 <literal>options COMPAT_LINUX</literal> 到自訂核心設定檔。 編譯並安裝新核心的方法，如 <xref linkend="kernelconfig"/> 所述。</para>
+    <para xml:lang="en">Since the Linux binary compatibility layer has gained support
+      for running both 32- and 64-bit Linux binaries (on 64-bit x86 hosts),
+      it is no longer possible to link the emulation functionality statically
+      into a custom kernel.</para>
 
     <sect2 xml:id="linuxemu-libs-manually">
       <title>手動安裝其他程式庫</title>
@@ -14017,7 +14057,7 @@ export PATH</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 49795 2017-01-04 17:41:17Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
 -->
 <chapter version="5.0" xml:id="config-tuning">
 
@@ -14210,7 +14250,7 @@ run_rc_command "$1"</programlisting>
 
     <programlisting xml:lang="en"># /etc/crontab - root's crontab for FreeBSD
 #
-# $FreeBSD$
+# <phrase its:translate="no">$FreeBSD$</phrase>
 # <co xml:id="co-comments"/>
 SHELL=/bin/sh
 PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin <co xml:id="co-env"/>
@@ -14808,7 +14848,7 @@ ifconfig_fxp0_alias7="inet 202.0.75.20 netmask 255.255.255.255"</programlisting>
 
       <para>此設定檔中一行代表一個動作，每一行的格式皆為一個選擇器欄位 (Selector field) 接著一個動作欄位 (Action field)。選擇器欄位的格式為 <replaceable>facility.level</replaceable> 可以用來比對來自 <replaceable>facility</replaceable> 於層級 <replaceable>level</replaceable> 或更高層的日誌訊息，也可以在層級前加入選擇性的比對旗標來更確切的指定記錄的內容。同樣一個動作可以使用多個選擇器欄位並使用分號 (<literal>;</literal>) 來分隔。用 <literal>*</literal> 可以比對任何東西。動作欄位可用來指定傳送日誌訊息的目標，如一個檔案或遠端日誌主機。範例為以下為 FreeBSD 預設的 <filename>syslog.conf</filename>：</para>
 
-      <programlisting xml:lang="en"># $FreeBSD$
+      <programlisting xml:lang="en"># <phrase its:translate="no">$FreeBSD$</phrase>
 #
 #       Spaces ARE valid field separators in this file. However,
 #       other *nix-like systems still insist on using tabs as field
@@ -14888,7 +14928,7 @@ cron.*                                          /var/log/cron
       <para><application>newsyslog</application> 會讀取其設定檔 <filename>/etc/newsyslog.conf</filename> 來決定其要採取的動作，每個要由 <application>newsyslog</application> 所管理的日誌檔案會在此設定檔中設定一行，每一行要說明檔案的擁有者、權限、何時要翻轉該檔案、選用的日誌翻轉旗標，如：壓縮，以及日誌翻轉時要通知的程式。以下為 FreeBSD 的預設設定：</para>
 
       <programlisting xml:lang="en"># configuration file for newsyslog
-# $FreeBSD$
+# <phrase its:translate="no">$FreeBSD$</phrase>
 #
 # Entries which do not specify the '/pid_file' field will cause the
 # syslogd process to be signalled when that log file is rotated.  This
@@ -15305,7 +15345,7 @@ nameserver 147.11.100.30</programlisting>
 
 	<para><filename>/etc/hosts</filename> 是簡單的文字資料庫，會與 <acronym>DNS</acronym> 及 <acronym>NIS</acronym> 一併使用來提供主機名稱與 <acronym>IP</acronym> 位址的對應。可將透過 <acronym>LAN</acronym> 所連結的在地電腦項目加入到這個檔案做最簡單的命名，來替代設定一個 <citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> 伺服器。除此之外 <filename>/etc/hosts</filename> 可以用來提供本地的網際網路名稱記錄，來減少常用名稱向外部 <acronym>DNS</acronym> 伺服器查詢的需求。</para>
 
-	<programlisting xml:lang="en"># $FreeBSD$
+	<programlisting xml:lang="en"># <phrase its:translate="no">$FreeBSD$</phrase>
 #
 #
 # Host Database
@@ -17288,7 +17328,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 50456 2017-07-07 17:33:44Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 50680 2017-08-16 20:40:49Z bhd $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -19383,8 +19423,8 @@ The key's randomart image is:
 
 	<para>要在 Shell 使用 <command>ssh-agent</command>，使用 Shell 做為參數來啟動 <command>ssh-agent</command>。執行 <command>ssh-add</command> 來加入識別碼，然後輸入私鑰的密碼。使用者將可使用 <command>ssh</command> 連線到任何有安裝對應公鑰的主機，例如：</para>
 
-	<screen xml:lang="en"><prompt>%</prompt> ssh-agent <replaceable>csh</replaceable>
-<prompt>%</prompt> ssh-add
+	<screen xml:lang="en"><prompt>%</prompt> <userinput>ssh-agent <replaceable>csh</replaceable></userinput>
+<prompt>%</prompt> <userinput>ssh-add</userinput>
 Enter passphrase for key '/usr/home/user/.ssh/id_rsa':  <co xml:id="co-ssh-agent-passphrase"/>
 Identity added: /usr/home/user/.ssh/id_rsa (/usr/home/user/.ssh/id_rsa)
 <prompt>%</prompt></screen>
@@ -24592,7 +24632,7 @@ fi</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 50083 2017-03-24 17:48:02Z maxim $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
 -->
 
 <chapter version="5.0" xml:id="disks">
@@ -26857,7 +26897,8 @@ Quotas for user test:
 	    <acronym>UFS</acronym> file system, set the sector_size to
 	    2048:</para>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>gbde init /dev/ad4s1c -i -L /etc/gbde/ad4s1c.lock</userinput># $FreeBSD: src/sbin/gbde/template.txt,v 1.1.36.1 2009/08/03 08:13:06 kensmith Exp $
+	  <screen xml:lang="en"><prompt>#</prompt> <userinput>gbde init /dev/ad4s1c -i -L /etc/gbde/ad4s1c.lock</userinput>
+# <phrase its:translate="no">$FreeBSD: src/sbin/gbde/template.txt,v 1.1.36.1 2009/08/03 08:13:06 kensmith Exp $</phrase>
 #
 # Sector size is the smallest unit of data which can be read or written.
 # Making it too small decreases performance and decreases available space.
@@ -29599,7 +29640,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 48889 2016-06-03 18:20:29Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 50784 2017-09-02 10:06:37Z bhd $
 -->
 
 <chapter version="5.0" xml:id="zfs">
@@ -30497,7 +30538,19 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-zpool-import">
       <title>匯入與匯出儲存池</title>
 
-      <para>儲存池在移動到其他系統之前需要做匯出 (<emphasis>Export</emphasis>)，會卸載所有的資料集，然後標記每個裝置為已匯出，為了避免被其他磁碟子系統存取，因此仍會鎖定這些裝置。這個動作讓儲存池可以在支援 <acronym>ZFS</acronym> 的其他機器、其他作業系統做匯入 (<emphasis>Import</emphasis>)，甚至是不同的硬體架構 (有一些注意事項，請參考 <citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。當資料集有被開啟的檔案，可使用 <command> zpool export -f</command> 來強制匯出儲存池，使用這個指令需要小心，資料集是被強制卸載的，因此有可能造成在該資料集開啟檔案的應用程式發生無法預期的結果。</para>
+      <para xml:lang="en">Pools are <emphasis>exported</emphasis> before moving them
+	to another system.  All datasets are unmounted, and each
+	device is marked as exported but still locked so it cannot be
+	used by other disk subsystems.  This allows pools to be
+	<emphasis>imported</emphasis> on other machines, other
+	operating systems that support <acronym>ZFS</acronym>, and
+	even different hardware architectures (with some caveats, see
+	<citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry>).  When a dataset has open files,
+	<command>zpool export -f</command> can be used to force the
+	export of a pool.  Use this with caution.  The datasets are
+	forcibly unmounted, potentially resulting in unexpected
+	behavior by the applications which had open files on those
+	datasets.</para>
 
       <para>匯出未使用的儲存池：</para>
 
@@ -30885,6 +30938,37 @@ NAME    PROPERTY           VALUE              SOURCE
 tank    custom:costcenter  -                  -
 <prompt>#</prompt> <userinput>zfs get all <replaceable>tank</replaceable> | grep <replaceable>custom</replaceable>:<replaceable>costcenter</replaceable></userinput>
 <prompt>#</prompt></screen>
+
+    <sect3 xml:id="zfs-zfs-set-share">
+      <title xml:lang="en">Getting and Setting Share Properties</title>
+
+      <para xml:lang="en">Two commonly used and useful dataset properties are the
+	<acronym>NFS</acronym> and <acronym>SMB</acronym> share
+	options.  Setting these define if and how
+	<acronym>ZFS</acronym> datasets may be shared on the network.
+	At present, only setting sharing via <acronym>NFS</acronym> is
+	supported on FreeBSD.  To get the current status of
+	a share, enter:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs get sharenfs <replaceable>mypool/usr/home</replaceable></userinput>
+NAME             PROPERTY  VALUE    SOURCE
+mypool/usr/home  sharenfs  on       local
+<prompt>#</prompt> <userinput>zfs get sharesmb <replaceable>mypool/usr/home</replaceable></userinput>
+NAME             PROPERTY  VALUE    SOURCE
+mypool/usr/home  sharesmb  off      local</screen>
+
+      <para xml:lang="en">To enable sharing of a dataset, enter:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput> zfs set sharenfs=on <replaceable>mypool/usr/home</replaceable></userinput></screen>
+
+      <para xml:lang="en">It is also possible to set additional options for sharing
+      datasets through <acronym>NFS</acronym>, such as
+      <option>-alldirs</option>, <option>-maproot</option> and
+      <option>-network</option>.  To set additional options to a
+      dataset shared through NFS, enter:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput> zfs set sharenfs="-alldirs,-maproot=<replaceable>root</replaceable>,-network=<replaceable>192.168.1.0/24</replaceable>" <replaceable>mypool/usr/home</replaceable></userinput></screen>
+      </sect3>
     </sect2>
 
     <sect2 xml:id="zfs-zfs-snapshot">
@@ -31033,17 +31117,16 @@ mypool/var/tmp                         262K  93.2G   120K  /var/tmp
 mypool/var/tmp@my_recursive_snapshot    88K      -   152K  -
 mypool/var/tmp@after_cp               53.5K      -   118K  -
 mypool/var/tmp@diff_snapshot              0      -   120K  -
-<prompt>%</prompt> <userinput>ls /var/tmp</userinput>
-passwd          passwd.copy
-<prompt>%</prompt> <userinput>rm /var/tmp/passwd*</userinput>
-<prompt>%</prompt> <userinput>ls /var/tmp</userinput>
-vi.recover
-<prompt>%</prompt></screen>
+<prompt>#</prompt> <userinput>ls /var/tmp</userinput>
+passwd          passwd.copy     vi.recover
+<prompt>#</prompt> <userinput>rm /var/tmp/passwd*</userinput>
+<prompt>#</prompt> <userinput>ls /var/tmp</userinput>
+vi.recover</screen>
 
 	<para>在此時，使用者發現到刪除了太多檔案並希望能夠還原。<acronym>ZFS</acronym> 提供了簡單的方可以取回檔案，便是使用還原 (Rollback)，但這只在有定期對重要的資料使用快照時可用。要拿回檔案並從最後一次快照重新開始，可執行以下指令：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs rollback <replaceable>mypool/var/tmp@diff_snapshot</replaceable></userinput>
-<prompt>%</prompt> <userinput>ls /var/tmp</userinput>
+<prompt>#</prompt> <userinput>ls /var/tmp</userinput>
 passwd          passwd.copy     vi.recover</screen>
 
 	<para>還原操作會將資料集還原為最後一次快照的狀態。這也可以還原到更早之前，有其他在其之後建立的快照。要這麼做時，<acronym>ZFS</acronym> 會發出這個警告：</para>
@@ -31065,7 +31148,7 @@ mypool/var/tmp@diff_snapshot</screen>
 <prompt>#</prompt> <userinput>zfs list -rt snapshot <replaceable>mypool/var/tmp</replaceable></userinput>
 NAME                                   USED  AVAIL  REFER  MOUNTPOINT
 mypool/var/tmp@my_recursive_snapshot     8K      -   152K  -
-<prompt>%</prompt> <userinput>ls /var/tmp</userinput>
+<prompt>#</prompt> <userinput>ls /var/tmp</userinput>
 vi.recover</screen>
 
 	<para>可從 <command>zfs list -t snapshot</command> 的結果來確認 <command>zfs rollback -r</command> 會移除的快照。</para>
@@ -31079,16 +31162,16 @@ vi.recover</screen>
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>zfs get snapdir <replaceable>mypool/var/tmp</replaceable></userinput>
 NAME            PROPERTY  VALUE    SOURCE
 mypool/var/tmp  snapdir   hidden   default
-<prompt>%</prompt> <userinput>ls -a /var/tmp</userinput>
+<prompt>#</prompt> <userinput>ls -a /var/tmp</userinput>
 .               ..              passwd          vi.recover
 <prompt>#</prompt> <userinput>zfs set snapdir=visible <replaceable>mypool/var/tmp</replaceable></userinput>
-<prompt>%</prompt> <userinput>ls -a /var/tmp</userinput>
+<prompt>#</prompt> <userinput>ls -a /var/tmp</userinput>
 .               ..              .zfs            passwd          vi.recover</screen>
 
 	<para>要還原個別檔案到先前的狀態非常簡單，只要從快照中複製檔案到父資料集。在 <filename>.zfs/snapshot</filename> 目錄結構下有一個與先前所做的快照名稱相同的目錄，可以很容易的找到。在下個範例中，我們會示範從隱藏的 <filename>.zfs</filename> 目錄還原一個檔案，透過從含有該檔案的最新版快照複製：</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>rm /var/tmp/passwd</userinput>
-<prompt>%</prompt> <userinput>ls -a /var/tmp</userinput>
+<prompt>#</prompt> <userinput>ls -a /var/tmp</userinput>
 .               ..              .zfs            vi.recover
 <prompt>#</prompt> <userinput>ls /var/tmp/.zfs/snapshot</userinput>
 after_cp                my_recursive_snapshot
@@ -31274,18 +31357,18 @@ mypool@replica2                                 0      -  55.0M  -</screen>
 	  <listitem>
 	    <para>在傳送端系統上：</para>
 
-	    <screen xml:lang="en"><prompt>#</prompt> <command>zfs allow -u someuser send,snapshot <replaceable>mypool</replaceable></command></screen>
+	    <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs allow -u someuser send,snapshot <replaceable>mypool</replaceable></userinput></screen>
 	  </listitem>
 
 	  <listitem>
 	    <para>要掛載儲存池，無權限的使用者必須擁有該目錄且必須允許一般的使用者掛載檔案系統。在接收端系統上：</para>
 
-	    <screen xml:lang="en"><prompt>#</prompt> sysctl vfs.usermount=1
+	    <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl vfs.usermount=1</userinput>
 vfs.usermount: 0 -&gt; 1
-<prompt>#</prompt> echo vfs.usermount=1 &gt;&gt; /etc/sysctl.conf
+<prompt>#</prompt> <userinput>sysrc -f /etc/sysctl.conf vfs.usermount=1</userinput>
 <prompt>#</prompt> <userinput>zfs create <replaceable>recvpool/backup</replaceable></userinput>
 <prompt>#</prompt> <userinput>zfs allow -u <replaceable>someuser</replaceable> create,mount,receive <replaceable>recvpool/backup</replaceable></userinput>
-<prompt>#</prompt> chown <replaceable>someuser</replaceable> <replaceable>/recvpool/backup</replaceable></screen>
+<prompt>#</prompt> <userinput>chown <replaceable>someuser</replaceable> <replaceable>/recvpool/backup</replaceable></userinput></screen>
 	  </listitem>
 	</itemizedlist>
 
@@ -31294,7 +31377,27 @@ vfs.usermount: 0 -&gt; 1
 	<screen xml:lang="en"><prompt>%</prompt> <userinput>zfs snapshot -r <replaceable>mypool/home</replaceable>@<replaceable>monday</replaceable></userinput>
 <prompt>%</prompt> <userinput>zfs send -R <replaceable>mypool/home</replaceable>@<replaceable>monday</replaceable> | ssh <replaceable>someuser@backuphost</replaceable> zfs recv -dvu <replaceable>recvpool/backup</replaceable></userinput></screen>
 
-	<para>替儲存在儲存池 <replaceable>mypool</replaceable> 上的檔案系統資料集 <replaceable>home</replaceable> 製作一個遞迴快照 <replaceable>monday</replaceable>，然後使用 <command>zfs send -R</command> 來傳送包含該資料集及其所有子資料集、快照、複製與設定的串流。輸出會被導向到 <application>SSH</application> 連線的遠端主機 <replaceable>backuphost</replaceable> 上等候輸入的 <command>zfs receive</command>，在此建議使用完整網域名稱或 IP 位置。接收端的機器會寫入資料到 <replaceable>recvpool</replaceable> 儲存池上的 <replaceable>backup</replaceable> 資料集，在 <command>zfs recv</command> 加上 <option>-d</option> 可覆寫在接收端使用相同名稱的快照，加上 <option>-u</option> 可讓檔案系統在接收端不會被掛載，當使用 <option>-v</option>，會顯示更多有關傳輸的詳細資訊，包含已花費的時間及已傳輸的資料量。</para>
+	<para xml:lang="en">A recursive snapshot called
+	  <replaceable>monday</replaceable> is made of the file system
+	  dataset <replaceable>home</replaceable> that resides on the
+	  pool <replaceable>mypool</replaceable>.  Then it is sent
+	  with <command>zfs send -R</command> to include the dataset,
+	  all child datasets, snapshots, clones, and settings in the
+	  stream.  The output is piped to the waiting
+	  <command>zfs receive</command> on the remote host
+	  <replaceable>backuphost</replaceable> through
+	  <application>SSH</application>.  Using a fully qualified
+	  domain name or IP address is recommended.  The receiving
+	  machine writes the data to the
+	  <replaceable>backup</replaceable> dataset on the
+	  <replaceable>recvpool</replaceable> pool.  Adding
+	  <option>-d</option> to <command>zfs recv</command>
+	  overwrites the name of the pool on the receiving side with
+	  the name of the snapshot.  <option>-u</option> causes the
+	  file systems to not be mounted on the receiving side.  When
+	  <option>-v</option> is included, more detail about the
+	  transfer is shown, including elapsed time and the amount of
+	  data transferred.</para>
       </sect3>
     </sect2>
 
@@ -31427,10 +31530,9 @@ pool 2.84G 2.19M 2.83G  0% 1.00x ONLINE -</screen>
 
       <para><literal>DEDUP</literal> 欄位會顯示儲存池的實際去重複率，數值為 <literal>1.00x</literal> 代表資料尚未被去重複。在下一個例子會在前面所建立的去重複儲存池中複製三份 Port 樹到不同的目錄中。</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool list</userinput>
-for d in dir1 dir2 dir3; do
-for&gt; mkdir $d &amp;&amp; cp -R /usr/ports $d &amp;
-for&gt; done</screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>for d in dir1 dir2 dir3; do</userinput>
+&gt; <userinput>mkdir $d &amp;&amp; cp -R /usr/ports $d &amp;</userinput>
+&gt; <userinput>done</userinput></screen>
 
       <para>已經偵測到重複的資料並做去重複：</para>
 
@@ -32304,7 +32406,7 @@ http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 50396 2017-06-23 12:33:07Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 50805 2017-09-07 11:56:16Z mat $
 -->
 <chapter version="5.0" xml:id="virtualization">
 
@@ -32954,8 +33056,24 @@ perm    vboxnetctl 0660</programlisting>
     <sect2 xml:id="virtualization-virtualbox-usb-support">
       <title><trademark>VirtualBox</trademark> USB 支援</title>
 
-      <para><application><trademark>VirtualBox</trademark></application> 擴充包目前不支援 FreeBSD 主端系統，沒有這個擴充包，FreeBSD 主端系統無法傳遞 <acronym>USB</acronym> 埠給客端作業系統。</para>
-    </sect2>
+      <para xml:lang="en"><application><trademark>VirtualBox</trademark></application> can be configured
+      to pass <acronym>USB</acronym> devices through to the guest
+      operating system.  The host controller of the OSE version is
+      limited to emulating <acronym>USB</acronym> 1.1 devices until
+      the extension pack supporting <acronym>USB</acronym> 2.0 and 3.0
+      devices becomes available on FreeBSD.</para>
+
+      <para xml:lang="en">For <application><trademark>VirtualBox</trademark></application> to be
+      aware of <acronym>USB</acronym> devices attached to the
+      machine, the user needs to be a member of the <systemitem class="groupname">operator</systemitem> group.</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod operator -m <replaceable>yourusername</replaceable></userinput></screen>
+
+      <para xml:lang="en">Restart the login session and
+      <application><trademark>VirtualBox</trademark></application> for these changes to take
+      effect, and create <acronym>USB</acronym> filters as
+      necessary.</para>
+      </sect2>
 
     <sect2 xml:id="virtualization-virtualbox-host-dvd-cd-access">
       <title><trademark>VirtualBox</trademark> Host <acronym>DVD</acronym>/<acronym>CD</acronym> 存取</title>
@@ -33073,7 +33191,7 @@ FreeBSD-10.3-RELEASE-amd64-bootonly.iso       100% of  230 MB  570 kBps 06m17s</
 	machine, used to track the running machines.  This example
 	starts the virtual machine in installation mode:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>sh /usr/share/examples/bhyve/vmrun.sh -c <replaceable>4</replaceable> -m <replaceable>1024M</replaceable> -t <replaceable>tap0</replaceable> -d <replaceable>guest.img</replaceable> -i -I <replaceable>FreeBSD-10.3-RELEASE-amd64-bootonly.iso</replaceable> <replaceable>guestname</replaceable></userinput></screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>sh /usr/share/examples/bhyve/vmrun.sh -c <replaceable>1</replaceable> -m <replaceable>1024M</replaceable> -t <replaceable>tap0</replaceable> -d <replaceable>guest.img</replaceable> -i -I <replaceable>FreeBSD-10.3-RELEASE-amd64-bootonly.iso</replaceable> <replaceable>guestname</replaceable></userinput></screen>
 
       <para xml:lang="en">The virtual machine will boot and start the installer.
 	After installing a system in the virtual machine, when the
@@ -33327,7 +33445,7 @@ crw-------   1 root  wheel  0x1a1 Mar 17 12:19 otherguest</screen>
       <para xml:lang="en">A specified virtual machine can be destroyed using
 	<command>bhyvectl</command>:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> bhyvectl --destroy --vm=<replaceable>guestname</replaceable></screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyvectl --destroy --vm=<replaceable>guestname</replaceable></userinput></screen>
     </sect2>
 
     <sect2 xml:id="virtualization-bhyve-onboot">
@@ -34527,7 +34645,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50339 2017-06-08 21:26:05Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50602 2017-07-29 10:36:54Z bhd $
 -->
 <chapter version="5.0" xml:id="updating-upgrading">
 
@@ -35079,8 +35197,8 @@ before running "/usr/sbin/freebsd-update install"</screen>
 
       <para>以下範例使用變數來安裝 <acronym>PDF</acronym> 的匈牙利語文件到特定目錄：</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> cd /usr/ports/misc/freebsd-doc-hu
-<prompt>#</prompt> make -DWITH_PDF DOCBASE=share/doc/freebsd/hu install clean</screen>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/misc/freebsd-doc-hu</userinput>
+<prompt>#</prompt> <userinput>make -DWITH_PDF DOCBASE=share/doc/freebsd/hu install clean</userinput></screen>
 
       <para>文件套件或 Port 可以依 <xref linkend="ports"/> 的說明更新。例如以下指令會使用 <package>ports-mgmt/portmaster</package> 更新已安裝的匈牙利語文件：</para>
 
@@ -39734,7 +39852,7 @@ tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
 -->
 <chapter version="5.0" xml:id="mail">
   <info>
@@ -40071,7 +40189,7 @@ FreeBSD.org mail is handled by 10 mx1.FreeBSD.org</screen>
 	    addresses can be found in the FreeBSD sample configuration,
 	    <filename>/etc/mail/access.sample</filename>:</para>
 
-	  <programlisting xml:lang="en"># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+	  <programlisting xml:lang="en"># <phrase its:translate="no">$FreeBSD$</phrase>
 #
 # Mail relay access control list.  Default is to reject mail unless the
 # destination is local, or listed in /etc/mail/local-host-names
@@ -40406,7 +40524,7 @@ daily_submit_queuerun="NO"</programlisting>
       <para xml:lang="en">The default <filename>/etc/mail/mailer.conf</filename>
 	looks like this:</para>
 
-      <programlisting xml:lang="en"># $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 48529 2016-04-03 18:57:15Z wblock $
+      <programlisting xml:lang="en"># <phrase its:translate="no">$FreeBSD$</phrase>
 #
 # Execute the "real" sendmail program, named /usr/libexec/sendmail/sendmail
 #
@@ -40444,10 +40562,10 @@ newaliases      /usr/local/sbin/sendmail</programlisting>
 
       <programlisting xml:lang="en">sendmail        /usr/local/sbin/ssmtp
 send-mail       /usr/local/sbin/ssmtp
-mailq           /usr/libexec/sendmail/sendmail
-newaliases      /usr/libexec/sendmail/sendmail
-hoststat        /usr/libexec/sendmail/sendmail
-purgestat       /usr/libexec/sendmail/sendmail</programlisting>
+mailq           /usr/local/sbin/ssmtp
+newaliases      /usr/local/sbin/ssmtp
+hoststat        /usr/bin/true
+purgestat       /usr/bin/true</programlisting>
 
       <para xml:lang="en">Once everything is configured, it is recommended to reboot
 	the system.  Rebooting provides the opportunity to ensure that
@@ -41626,7 +41744,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 50143 2017-04-09 01:45:58Z bjk $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -44538,7 +44656,7 @@ freebsd.org. (A)
 	<sect4>
 	  <title xml:lang="en"><filename>/etc/namedb/named.conf</filename></title>
 
-	  <programlisting xml:lang="en">// $FreeBSD$
+	  <programlisting xml:lang="en">// <phrase its:translate="no">$FreeBSD$</phrase>
 //
 // Refer to the named.conf(5) and named(8) man pages, and the documentation
 // in /usr/share/doc/bind9 for more details.
@@ -45291,9 +45409,7 @@ $include Kexample.com.+005+nnnnn.ZSK.key    ; ZSK</programlisting>
 	    located in <filename>example.com.db</filename> would look
 	    similar to</para>
 
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dnssec-signzone -o
-	example.com -k Kexample.com.+005+nnnnn.KSK example.com.db
-	Kexample.com.+005+nnnnn.ZSK.key</userinput></screen>
+	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dnssec-signzone -o example.com -k Kexample.com.+005+nnnnn.KSK example.com.db Kexample.com.+005+nnnnn.ZSK.key</userinput></screen>
 
 	  <para xml:lang="en">The key supplied to the <option>-k</option> argument
 	    is the <acronym>KSK</acronym> and the other key file is
@@ -56125,7 +56241,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bibliography/chapter.xml 49531 2016-10-21 03:32:27Z lwhsu $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bibliography/chapter.xml 50533 2017-07-22 16:48:51Z bcr $
 -->
 <appendix version="5.0" xml:id="bibliography">
 
@@ -56279,8 +56395,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 
       <listitem>
 	<para xml:lang="en"><link xlink:href="http://www.ed.ac.uk/">Edinburgh
-	    University</link> has written an
-	  <link xlink:href="http://unixhelp.ed.ac.uk/">Online
+	    University</link> has written an <link xlink:href="http://www.ed.ac.uk/information-services/help-consultancy/is-skills/catalogue/program-op-sys-catalogue/unix1">Online
 	    Guide</link> for newcomers to the UNIX environment.</para>
       </listitem>
     </itemizedlist>
@@ -59392,19 +59507,19 @@ Comment out for now as only one address
 -->
 
     <sect2 xml:id="pgpkey-security-officer">
-      <title xml:lang="en">Security Officer Team <email>security-officer@FreeBSD.org</email></title>
+      <title>Security Officer Team <email>security-officer@FreeBSD.org</email></title>
       <!-- $FreeBSD: head/share/pgpkeys/security-officer.key 47557 2015-10-14 19:38:09Z delphij $ -->
 <!--
 sh addkey.sh security-officer ED67ECD65DCF6AE7 ;
 -->
-<programlisting role="pgpfingerprint" xml:lang="en"><![CDATA[
+<programlisting role="pgpfingerprint"><![CDATA[
 pub   rsa4096/ED67ECD65DCF6AE7 2013-09-24 [expires: 2018-01-01]
       Key fingerprint = 1CF7 FF6F ADF5 CA9F BE1B  8CB2 ED67 ECD6 5DCF 6AE7
 uid                            FreeBSD Security Officer <security-officer@FreeBSD.org>
 sub   rsa4096/B64357A343D9CBAE 2013-09-24 [expires: 2018-01-01]
 
 ]]></programlisting>
-<programlisting role="pgpkey" xml:lang="en"><![CDATA[
+<programlisting role="pgpkey"><![CDATA[
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBFJBjOYBEADuKnefrbTVFTZf9mITVx1lFAqwDHPRHZeWBr2Vq1B/Y1eKKsen
@@ -59642,18 +59757,18 @@ w0qvg9kVt63A7Etyr7xj/IPpEGURDfD/EhXXn0offWL8+BKcLYp1Tbp9gJe3Ab/F
     </sect2>
 
     <sect2 xml:id="pgpkey-secteam-secretary">
-      <title xml:lang="en">Security Team Secretary <email>secteam-secretary@FreeBSD.org</email></title>
+      <title>Security Team Secretary <email>secteam-secretary@FreeBSD.org</email></title>
       <!-- $FreeBSD: head/share/pgpkeys/secteam-secretary.key 42723 2013-09-27 16:10:32Z des $ -->
 <!--
 sh addkey.sh secteam-secretary 3CB2EAFCC3D6C666;
 -->
-<programlisting role="pgpfingerprint" xml:lang="en"><![CDATA[
+<programlisting role="pgpfingerprint"><![CDATA[
 pub   4096R/3CB2EAFCC3D6C666 2013-09-24 [expires: 2018-01-01]
       Key fingerprint = FA97 AA04 4DF9 0969 D5EF  4ADA 3CB2 EAFC C3D6 C666
 uid                          FreeBSD Security Team Secretary <secteam-secretary@FreeBSD.org>
 sub   4096R/509B26612335EB65 2013-09-24 [expires: 2018-01-01]
 ]]></programlisting>
-<programlisting role="pgpkey" xml:lang="en"><![CDATA[
+<programlisting role="pgpkey"><![CDATA[
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBFJBjIIBEADadvvpXSkdnBOGV2xcsFwBBcSwAdryWuLk6v2VxjwsPcY6Lwqz
@@ -59734,12 +59849,12 @@ lIjBtlclVhaUrE2uLx/yTz2Apbm+GAmD8M0dQ7IYsOFlZNBW9zjgLLCtWDW+p1A=
     </sect2>
 
     <sect2 xml:id="pgpkey-core-secretary">
-      <title xml:lang="en">Core Team Secretary <email>core-secretary@FreeBSD.org</email></title>
+      <title>Core Team Secretary <email>core-secretary@FreeBSD.org</email></title>
       <!-- $FreeBSD: head/share/pgpkeys/core-secretary.key 50463 2017-07-08 16:06:53Z matthew $ -->
 <!--
 sh addkey.sh core-secretary 36A7C05FE1ECF9BB ;
 -->
-<programlisting role="pgpfingerprint" xml:lang="en"><![CDATA[
+<programlisting role="pgpfingerprint"><![CDATA[
 pub   rsa4096/36A7C05FE1ECF9BB 2014-07-09 [SC] [expires: 2018-07-08]
       Key fingerprint = C07B F5E3 10AE 64BF 6120  B0F6 36A7 C05F E1EC F9BB
 uid                            FreeBSD Core Team Secretary <core-secretary@freebsd.org>
@@ -59747,7 +59862,7 @@ uid                            Core Secretary <core-secretary@freebsd.org>
 sub   rsa4096/7B5150C8D7CE5D02 2014-07-09 [E] [expires: 2018-07-08]
 
 ]]></programlisting>
-<programlisting role="pgpkey" xml:lang="en"><![CDATA[
+<programlisting role="pgpkey"><![CDATA[
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBFO9HvEBEADRfuWeoNUwib7ZjNmhg0Kt1kjiGEEosf3O2yMDfYuAXt4De6qK
@@ -59950,19 +60065,19 @@ fF+R3IdOYqfk6hdiQBLK7Xgu/g0sH5IFtx+sUAr+1zksT+ODXkZB1wul
     </sect2>
 
     <sect2 xml:id="pgpkey-portmgr-secretary">
-      <title xml:lang="en">Ports Management Team Secretary <email>portmgr-secretary@FreeBSD.org</email></title>
+      <title>Ports Management Team Secretary <email>portmgr-secretary@FreeBSD.org</email></title>
       <!-- $FreeBSD: head/share/pgpkeys/portmgr-secretary.key 48904 2016-06-09 20:16:47Z rene $ -->
 <!--
 sh addkey.sh portmgr-secretary D8294EC3BBC4D7D5 ;
 -->
-<programlisting role="pgpfingerprint" xml:lang="en"><![CDATA[
+<programlisting role="pgpfingerprint"><![CDATA[
 pub   rsa2048/D8294EC3BBC4D7D5 2012-07-24 [SC]
       Key fingerprint = FB37 45C8 6F15 E8ED AC81  32FC D829 4EC3 BBC4 D7D5
 uid                            FreeBSD Ports Management Team Secretary <portmgr-secretary@FreeBSD.org>
 sub   rsa2048/5CC117965F65CFE7 2012-07-24 [E]
 
 ]]></programlisting>
-<programlisting role="pgpkey" xml:lang="en"><![CDATA[
+<programlisting role="pgpkey"><![CDATA[
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQENBFAOzqYBCACYd+KGv0/DduIRpSEKWZG2yfDILStzWfdaQMD+8zdWihB0x7dd
