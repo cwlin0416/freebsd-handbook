@@ -49,6 +49,18 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
 # 官方文件
 https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/po-translations.html
 
+# 建立翻譯環境
+https://www.freebsd.org/doc/en/books/fdp-primer/po-translations-quick-start.html
+```
+pkg install docproj subversion
+svn checkout https://svn.FreeBSD.org/doc/head ~/doc
+cd ~/doc/zh_TW/books/handbook/
+make po # 建立翻譯檔 zh_TW.po
+poedit zh_TW.po # 翻譯
+make tran # 產生翻譯結果 book.xml
+make FORMATS=html # 將 book.xml 轉為 html
+```
+
 # PO 檔編輯器
 
 ##### Windows, Mac OS X
