@@ -26,11 +26,20 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
     - [ ] 13.10. 監視第三方安全性問題
     - [X] 13.14. 使用 Sudo 分享管理權限
 - [ ] 完成 Part 4 翻譯
+  - [ ] 26. PPP
+    - [ ] 26.4. 在乙太網路使用 PPP (PPPoE)
   - [ ] 28. 網路伺服器
     - [X] 28.8. Apache HTTP 伺服器
     - [X] 28.9. 檔案傳輸協定 (FTP)
     - [X] 28.10. Microsoft® Windows® 用戶端檔案與列印服務 (Samba)
     - [X] 28.11. NTP 時間校對
+  - [ ] 30. 進階網路設定
+    - [ ] 30.1. 概述
+    - [ ] 30.2. 通訊閘與路由
+    - [ ] 30.3. 無線網路
+- [ ] 完成 Part 2 翻譯
+    - [ ] 7.2. 設定音效卡
+    - [ ] 7.4. 影片播放
 
 # 如何翻譯?
 * [FreeBSD Handbook - EN](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) 為操作手冊原文
