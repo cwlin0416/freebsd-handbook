@@ -3,7 +3,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50779 2017-08-31 02:36:49Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51016 2017-10-01 12:11:13Z wosch $
 --><!ENTITY % chapters SYSTEM "chapters.ent">
 <!--
      Creates entities for each chapter in the FreeBSD Handbook. Each entity
@@ -16,12 +16,13 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50783 2017-09-01 14:39:13Z pizzamig $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50919 2017-09-25 00:33:22Z chuck $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
 <!ENTITY pgpkey.adamw SYSTEM "adamw.key">
 <!ENTITY pgpkey.adrian SYSTEM "adrian.key">
+<!ENTITY pgpkey.adridg SYSTEM "adridg.key">
 <!ENTITY pgpkey.ae SYSTEM "ae.key">
 <!ENTITY pgpkey.ahze SYSTEM "ahze.key">
 <!ENTITY pgpkey.ak SYSTEM "ak.key">
@@ -102,6 +103,7 @@
 <!ENTITY pgpkey.ceri SYSTEM "ceri.key">
 <!ENTITY pgpkey.cherry SYSTEM "cherry.key">
 <!ENTITY pgpkey.chinsan SYSTEM "chinsan.key">
+<!ENTITY pgpkey.chuck SYSTEM "chuck.key">
 <!ENTITY pgpkey.cjc SYSTEM "cjc.key">
 <!ENTITY pgpkey.cjh SYSTEM "cjh.key">
 <!ENTITY pgpkey.clement SYSTEM "clement.key">
@@ -132,6 +134,7 @@
 <!ENTITY pgpkey.db SYSTEM "db.key">
 <!ENTITY pgpkey.dbaio SYSTEM "dbaio.key">
 <!ENTITY pgpkey.dbn SYSTEM "dbn.key">
+<!ENTITY pgpkey.dch SYSTEM "dch.key">
 <!ENTITY pgpkey.dchagin SYSTEM "dchagin.key">
 <!ENTITY pgpkey.dcs SYSTEM "dcs.key">
 <!ENTITY pgpkey.dd SYSTEM "dd.key">
@@ -177,6 +180,7 @@
 <!ENTITY pgpkey.fluffy SYSTEM "fluffy.key">
 <!ENTITY pgpkey.flz SYSTEM "flz.key">
 <!ENTITY pgpkey.foxfair SYSTEM "foxfair.key">
+<!ENTITY pgpkey.fsu SYSTEM "fsu.key">
 <!ENTITY pgpkey.gabor SYSTEM "gabor.key">
 <!ENTITY pgpkey.gad SYSTEM "gad.key">
 <!ENTITY pgpkey.gahr SYSTEM "gahr.key">
@@ -275,6 +279,7 @@
 <!ENTITY pgpkey.kevlo SYSTEM "kevlo.key">
 <!ENTITY pgpkey.keymaster SYSTEM "keymaster.key">
 <!ENTITY pgpkey.kib SYSTEM "kib.key">
+<!ENTITY pgpkey.kibab SYSTEM "kibab.key">
 <!ENTITY pgpkey.kmoore SYSTEM "kmoore.key">
 <!ENTITY pgpkey.knu SYSTEM "knu.key">
 <!ENTITY pgpkey.koitsu SYSTEM "koitsu.key">
@@ -290,6 +295,7 @@
 <!ENTITY pgpkey.le SYSTEM "le.key">
 <!ENTITY pgpkey.leeym SYSTEM "leeym.key">
 <!ENTITY pgpkey.ler SYSTEM "ler.key">
+<!ENTITY pgpkey.leres SYSTEM "leres.key">
 <!ENTITY pgpkey.lesi SYSTEM "lesi.key">
 <!ENTITY pgpkey.lev SYSTEM "lev.key">
 <!ENTITY pgpkey.lidl SYSTEM "lidl.key">
@@ -551,6 +557,7 @@
 <!ENTITY pgpkey.wxs SYSTEM "wxs.key">
 <!ENTITY pgpkey.xmj SYSTEM "xmj.key">
 <!ENTITY pgpkey.xride SYSTEM "xride.key">
+<!ENTITY pgpkey.ygy SYSTEM "ygy.key">
 <!ENTITY pgpkey.yoichi SYSTEM "yoichi.key">
 <!ENTITY pgpkey.yongari SYSTEM "yongari.key">
 <!ENTITY pgpkey.yzlin SYSTEM "yzlin.key">
@@ -635,9 +642,9 @@
 
     <author><orgname>FreeBSD 文件計劃</orgname></author>
 
-    <pubdate its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50779 2017-08-31 02:36:49Z wblock $</pubdate>
+    <pubdate its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51016 2017-10-01 12:11:13Z wosch $</pubdate>
 
-    <releaseinfo its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 50779 2017-08-31 02:36:49Z wblock $</releaseinfo>
+    <releaseinfo its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51016 2017-10-01 12:11:13Z wosch $</releaseinfo>
 
     <copyright xml:lang="en">
       <year>1995</year>
@@ -740,16 +747,9 @@
     </legalnotice>
 
     <abstract>
-      <para xml:lang="en">Welcome to FreeBSD! This handbook covers the installation
-	and day to day use of
-	<emphasis>FreeBSD 11.1-RELEASE</emphasis>,
-	<emphasis>FreeBSD 11.0-RELEASE</emphasis>, and
-	<emphasis>FreeBSD 10.3-RELEASE</emphasis>. This book is
-	the result of ongoing work by many individuals.  Some sections
-	might be outdated.  Those interested in helping to update and
-	expand this document should send email to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD documentation project mailing list</link>.</para>
+      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 11.1-RELEASE</emphasis>, <emphasis>FreeBSD 11.0-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.4-RELEASE</emphasis> 的安裝與平日操作的說明。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中，因此部份章節可能尚未仍未完成，如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
 
-      <para>在 <link xlink:href="http://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到本文件的最新版本，舊版文件可從 <uri xlink:href="http://docs.FreeBSD.org/doc/">http://docs.FreeBSD.org/doc/</uri> 取得。本文件也提供各種格式與不同壓縮方式的版本可自 <link xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/doc/">FreeBSD FTP 伺服器</link> 或是其中一個 <link linkend="mirrors-ftp">鏡像網站</link> 下載。 列印出來的實體書面資料可在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
+      <para>在 <link xlink:href="https://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到本文件的最新版本，舊版文件可從 <uri xlink:href="https://docs.FreeBSD.org/doc/">https://docs.FreeBSD.org/doc/</uri> 取得。本文件也提供各種格式與不同壓縮方式的版本可自 <link xlink:href="https://download.freebsd.org/ftp/doc/">FreeBSD FTP 伺服器</link> 或是其中一個 <link linkend="mirrors-ftp">鏡像網站</link> 下載。 列印出來的實體書面資料可在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
   </info>
 
@@ -1315,7 +1315,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 50360 2017-06-11 16:04:49Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
 -->
 <chapter version="5.0" xml:id="introduction">
 
@@ -1751,7 +1751,7 @@
 	</listitem>
 
 	<listitem>
-	  <para><link xlink:href="http://www.pcbsd.org/">TrueOS</link> <indexterm>
+	  <para><link xlink:href="https://www.trueos.org">TrueOS</link> <indexterm>
 	      <primary>TrueOS</primary>
 	    </indexterm> - 訂製版本的 FreeBSD，裝備了給桌面使用者使用的圖型化工具來展示 FreeBSD 強大的功能給所有使用者，專門設計來緩解使用者在 Windows 與 OS X 間的過渡。</para>
 	</listitem>
@@ -2048,7 +2048,7 @@
 	</varlistentry>
       </variablelist>
 
-      <para>此外，可在下列網址找到最新版 (也是更新最頻繁的版本)：<uri xlink:href="http://www.FreeBSD.org/">http://www.FreeBSD.org/</uri>。</para>
+      <para>此外，可在下列網址找到最新版 (也是更新最頻繁的版本)：<uri xlink:href="https://www.FreeBSD.org/">https://www.FreeBSD.org/</uri>。</para>
     </sect2>
   </sect1>
 </chapter>
@@ -2057,7 +2057,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 50186 2017-04-20 10:43:08Z remko $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 50963 2017-09-29 10:44:03Z wosch $
 -->
 
 <chapter version="5.0" xml:id="bsdinstall">
@@ -2186,7 +2186,7 @@
 	<listitem>
 	  <para>桌面電腦與筆記型電腦最常見的處理器類型，運用在近代的系統。<trademark class="registered">Intel</trademark> 稱該類型為 <acronym>Intel64</acronym>，其他製造商則稱該類型為 <acronym>x86-64</acronym>。</para>
 
-	  <para>與 amd64 相容的處理器包含：<trademark>AMD Athlon</trademark>64, <trademark>AMD Opteron</trademark>, 多核心 <trademark class="registered">Intel</trademark> <trademark>Xeon</trademark> 以及 <trademark class="registered">Intel</trademark> <trademark>Core</trademark> 2 與之後的處理器。</para>
+	  <para>與 amd64 相容的處理器範例包含：<trademark>AMD Athlon</trademark>64, <trademark>AMD Opteron</trademark>, 多核心 <trademark class="registered">Intel</trademark> <trademark>Xeon</trademark> 以及 <trademark class="registered">Intel</trademark> <trademark>Core</trademark> 2 與之後的處理器。</para>
 	</listitem>
       </varlistentry>
 
@@ -2306,17 +2306,9 @@
       <step>
 	<title>檢查 FreeBSD 勘誤表</title>
 
-	<para xml:lang="en">Although the FreeBSD Project strives to ensure that
-	  each release of FreeBSD is as stable as possible, bugs
-	  occasionally creep into the process.  On very rare occasions
-	  those bugs affect the installation process.  As these
-	  problems are discovered and fixed, they are noted in the
-	  FreeBSD Errata (<link xlink:href="@@URL_RELPREFIX@@/releases/11.1R/errata.html">http://www.freebsd.org/releases/11.1R/errata.html</link>)
-	  on the FreeBSD web site.  Check the errata before installing to
-	  make sure that there are no problems that might affect the
-	  installation.</para>
+	<para>儘管 FreeBSD 計劃努力確保每個 FreeBSD 發行版能夠儘可能地穩定，但錯誤偶爾還是會悄悄出現，並有極小的可能會發生影響安裝流程的錯誤，當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/11.1R/errata.html">https://www.freebsd.org/releases/11.1R/errata.html</link>)。 安裝前先檢查勘誤表，以確保沒有會影響到安裝的問題。</para>
 
-	<para>所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">http://www.freebsd.org/releases/index.html</link>)。</para>
+	<para>所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">https://www.freebsd.org/releases/index.html</link>)。</para>
       </step>
     </procedure>
 
@@ -3723,7 +3715,7 @@ Starting sshd.</screen>
     </indexterm>
     <para>本節涵蓋基礎的安裝疑難排解，例如一些已有人回報的常見問題。</para>
 
-    <para>查看該 FreeBSD 版本的 Hardware Notes (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">http://www.freebsd.org/releases/index.html</link>) 文件來確認是否支援該硬體。若確定有支援該硬體但仍然卡住或發生其他問題，請依照 <xref linkend="kernelconfig"/> 的指示編譯自訂核心來加入未在 <filename>GENERIC</filename> 核心的裝置。預設的核心會假設大部份的硬體裝置會使用原廠預設的 <acronym>IRQ</acronym>s, <acronym>I/O</acronym> 位址，及 <acronym>DMA</acronym> 通道，若硬體已經被重新設定過，自訂的核心設定檔可以告訴 FreeBSD 到那找到這些裝置。</para>
+    <para>查看該 FreeBSD 版本的 Hardware Notes (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">https://www.freebsd.org/releases/index.html</link>) 文件來確認是否支援該硬體。若確定有支援該硬體但仍然卡住或發生其他問題，請依照 <xref linkend="kernelconfig"/> 的指示編譯自訂核心來加入未在 <filename>GENERIC</filename> 核心的裝置。預設的核心會假設大部份的硬體裝置會使用原廠預設的 <acronym>IRQ</acronym>s, <acronym>I/O</acronym> 位址，及 <acronym>DMA</acronym> 通道，若硬體已經被重新設定過，自訂的核心設定檔可以告訴 FreeBSD 到那找到這些裝置。</para>
 
     <note>
       <para>部份安裝問題可以透過更各種硬體元件的韌體來避免或緩解，特別是主機板。主機板的韌體通常稱為 <acronym>BIOS</acronym>，大部份主機板與電腦製造商會有網站可以取得升級程式與升級資訊。</para>
@@ -5988,7 +5980,7 @@ Swap: 2048M Total, 2048M Free
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 50603 2017-07-29 10:40:20Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
 -->
 <chapter version="5.0" xml:id="ports">
 
@@ -6129,7 +6121,7 @@ Swap: 2048M Total, 2048M Free
 
     <itemizedlist>
       <listitem>
-	<para>FreeBSD 網站有維護一份可搜尋的最新應用程式清單，在 <link xlink:href="@@URL_RELPREFIX@@/ports/index.html">http://www.FreeBSD.org/ports/</link>。 可以依應用程式名稱或軟體分類來搜尋 Port。</para>
+	<para>FreeBSD 網站有維護一份可搜尋的最新應用程式清單，在 <link xlink:href="@@URL_RELPREFIX@@/ports/index.html">https://www.FreeBSD.org/ports/</link>。 可以依應用程式名稱或軟體分類來搜尋 Port。</para>
       </listitem>
 
       <listitem>
@@ -7030,7 +7022,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 50137 2017-04-09 00:31:35Z brd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -7958,7 +7950,7 @@ DisplayManager.requestPort:     0</screen>
       <title xml:lang="en">GNOME</title>
 
       <indexterm xml:lang="en"><primary>GNOME</primary></indexterm>
-      <para><application>GNOME</application> 是一個擁有友善使用者介面的的桌面環境，它包括用於啟動應用程式和顯示狀態的面板、一系列工具與應用程序及一套可讓應用程式更容易進行合作、相互一致的協定。更多有關 FreeBSD <application>GNOME</application> 的訊息可在 <link xlink:href="http://www.FreeBSD.org/gnome">http://www.FreeBSD.org/gnome</link> 取得，該網站包含了有關在 FreeBSD 安裝、設定和管理 <application>GNOME</application> 的額外文件。</para>
+      <para><application>GNOME</application> 是一個擁有友善使用者介面的的桌面環境，它包括用於啟動應用程式和顯示狀態的面板、一系列工具與應用程序及一套可讓應用程式更容易進行合作、相互一致的協定。更多有關 FreeBSD <application>GNOME</application> 的訊息可在 <link xlink:href="https://www.FreeBSD.org/gnome">https://www.FreeBSD.org/gnome</link> 取得，該網站包含了有關在 FreeBSD 安裝、設定和管理 <application>GNOME</application> 的額外文件。</para>
 
       <para>這套桌面環境可以從套件安裝：</para>
 
@@ -8449,7 +8441,7 @@ EndSection</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 50812 2017-09-09 01:12:46Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
 -->
 <chapter version="5.0" xml:id="desktop">
   <!--
@@ -8498,7 +8490,7 @@ EndSection</programlisting>
       <secondary>web</secondary>
     </indexterm>
 
-    <para>在 FreeBSD 中並未預先安裝好網頁瀏覽器。 但在 Port 套件集中的 <link xlink:href="http://www.FreeBSD.org/ports/www.html">www</link> 分類中有許多瀏覽器可以採 Binary 套件安裝或自 Port 套件集編譯的方式安裝。</para>
+    <para>在 FreeBSD 中並未預先安裝好網頁瀏覽器。 但在 Port 套件集中的 <link xlink:href="https://www.FreeBSD.org/ports/www.html">www</link> 分類中有許多瀏覽器可以採 Binary 套件安裝或自 Port 套件集編譯的方式安裝。</para>
 
     <para><application>KDE</application> 和 <application>GNOME</application> 桌面環境都有提供自有的 HTML 瀏覽器。請參考 <xref linkend="x11-wm"/> 來了解更多有關如何設定完整桌面環境的資訊。</para>
 
@@ -8587,12 +8579,7 @@ EndSection</programlisting>
 
       <para>編譯 Port 時使用預設設定選項。</para>
 
-      <para xml:lang="en">Once installed, start <application>Firefox</application>,
-	enter <literal>about:plugins</literal> in the location bar and
-	press <keycap>Enter</keycap>.  A page listing the installed
-	plugins will be displayed.  The
-	<application><trademark>Java</trademark></application> plugin should be
-	listed.</para>
+      <para>安裝完成後，啟動 <application>firefox</application>，在網址列輸入 <literal>about:plugins</literal> 並按 <keycap>Enter</keycap> 鍵，便會出現一個列出已安裝附加元件的頁面，清單中應該要有 <application><trademark>Java</trademark></application> 附加元件。</para>
 
       <para>若瀏覽器無法找到附加元件，每位使用者則須執行以下指令並重新執行瀏覽器：</para>
 
@@ -8618,9 +8605,7 @@ EndSection</programlisting>
 	</step>
 
 	<step>
-	  <para xml:lang="en">Install <package role="port">www/linux-flashplayer</package> from
-	    the port.  Due to licensing restrictions, a package is not
-	    available.</para>
+	  <para>自 Port 安裝 <package role="port">www/linux-flashplayer</package> ，受到授權條款的限制，該套件無 Binary 版本。</para>
 	</step>
 
 	<step>
@@ -8701,7 +8686,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install kwebkitpart</userinput></screen>
 
-      <para>由 Port 套件集安裝：</para>
+      <para>從 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/kwebkitpart</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
@@ -8875,7 +8860,7 @@ EndSection</programlisting>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/graphics/gimp</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para> 在 Port 套件集的 graphics 分類 (<link xlink:href="http://www.FreeBSD.org/ports/graphics.html">freebsd.org/ports/graphics.html</link>) 下也包含了許多 <application>GIMP</application> 相關的附加元件，說明檔及使用手冊。</para>
+      <para>在 Port 套件集的 graphics 分類 (<link xlink:href="https://www.FreeBSD.org/ports/graphics.html">freebsd.org/ports/graphics.html</link>) 下也包含了許多 <application>GIMP</application> 相關的附加元件，說明檔及使用手冊。</para>
 
     </sect2>
 
@@ -8941,7 +8926,7 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install libreoffice</userinput></screen>
 
-      <para>Port 套件集的編輯器分類 (<link xlink:href="http://www.FreeBSD.org/ports/editors.html">freebsd.org/ports/editors.html</link>) 中含有數個 <application>LibreOffice</application> 的語系。安裝在地化套件時，請替換 <literal>libreoffice</literal> 為在地化套件的名稱。</para>
+      <para>Port 套件集的編輯器分類 (<link xlink:href="https://www.FreeBSD.org/ports/editors.html">freebsd.org/ports/editors.html</link>) 中含有數個 <application>LibreOffice</application> 的語系。安裝在地化套件時，請替換 <literal>libreoffice</literal> 為在地化套件的名稱。</para>
 
       <para>套件安裝之後，輸入以下指令來執行 <application>LibreOffice</application>：</para>
 
@@ -8955,7 +8940,7 @@ EndSection</programlisting>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
       <note>
-	<para>要編譯在地化版本，則需 <command>cd</command> 進入想要的語言 Port 目錄。支援的語言可在 Port 套件集的編輯器分類 (<link xlink:href="http://www.FreeBSD.org/ports/editors.html">freebsd.org/ports/editors.html</link>) 中找到。</para>
+	<para>要編譯在地化版本，則需 <command>cd</command> 進入想要的語言 Port 目錄。支援的語言可在 Port 套件集的編輯器分類 (<link xlink:href="https://www.FreeBSD.org/ports/editors.html">freebsd.org/ports/editors.html</link>) 中找到。</para>
       </note>
     </sect2>
   </sect1>
@@ -9240,7 +9225,7 @@ EndSection</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 50124 2017-04-04 13:02:08Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 50846 2017-09-15 10:14:48Z maxim $
 -->
 <chapter version="5.0" xml:id="multimedia">
 
@@ -9341,12 +9326,7 @@ EndSection</programlisting>
 
     <indexterm xml:lang="en"><primary>PCI</primary></indexterm>
     <indexterm xml:lang="en"><primary>sound cards</primary></indexterm>
-    <para xml:lang="en">Before beginning the configuration, determine the model of
-      the sound card and the chip it uses.  FreeBSD supports a wide
-      variety of sound cards.  Check the supported audio devices
-      list of the <link xlink:href="http://www.FreeBSD.org/releases/11.1R/hardware.html">Hardware
-	Notes</link> to see if the card is supported and which FreeBSD
-      driver it uses.</para>
+    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="https://www.FreeBSD.org/releases/11.1R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
 
     <indexterm xml:lang="en">
       <primary>kernel</primary>
@@ -9712,7 +9692,7 @@ pcm7: &lt;HDA Realtek ALC889 PCM #3 Digital&gt; at cad 2 nid 1 on hdac1
 	provides an alternative, command-line <acronym>MP3</acronym>
 	player.  Once installed, specify the <acronym>MP3</acronym>
 	file to play on the command line.  If the system has multiple
-	audio devices, the sound device can also be specifed:</para>
+	audio devices, the sound device can also be specified:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mpg123 <replaceable>-a /dev/dsp1.0 Foobar-GreatestHits.mp3</replaceable></userinput>
 High Performance MPEG 1.0/2.0/2.5 Audio Player for Layers 1, 2 and 3
@@ -10512,7 +10492,7 @@ bktr0: Pinnacle/Miro TV, Philips SECAM tuner.</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install mythtv</userinput></screen>
 
-      <para>或由 Port 套件集安裝：</para>
+      <para>或從 Port 套件集安裝：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/multimedia/mythtv</userinput>
 <prompt>#</prompt> <userinput>make install</userinput></screen>
@@ -17328,7 +17308,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 50680 2017-08-16 20:40:49Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -17544,7 +17524,7 @@ Enter new password:</screen>
 
       <para><firstterm>rootkit</firstterm> 指的是嘗試未經授權取得系統 <systemitem class="username">root</systemitem> 存取權的軟體。一旦安裝之後，這個惡意軟體將可以光明正大的開啟給另一個給攻擊者進入的大門。現實上，一但系統已被 rootkit 滲透且執行了搜索動作之後，該系統就應該從頭重新安裝，因為即使非常謹真的資安或系統工程式也可能會遺漏攻擊者留下的動西。</para>
 
-      <para>rootkit 所做過的事可提供管理者一個非常有用的資訊：一但偵測到，便代表某處已經被滲透，但這類的應用程式躲藏的非常好，本節將會示範一個可以用來偵測 rootkit 的工具，<package>security/rkhunter</package>。</para>
+      <para>rootkit 對管理者而言唯一有幫助的是：一但偵測到，便代表某處已經被滲透，但這類型的應用程式躲藏的非常好，本節將會示範一個可以用來偵測 rootkit 的工具，<package>security/rkhunter</package>。</para>
 
       <para>安裝此套件或 Port 之後，系統便可使用以下指令檢查。該指令提供許多資訊且會需要手動按下 <keycap>ENTER</keycap> 確認：</para>
 
@@ -18309,9 +18289,7 @@ kadmin&gt;<userinput> exit</userinput></screen>
 
       <programlisting xml:lang="en">GSSAPIAuthentication yes</programlisting>
 
-      <para xml:lang="en">After making this change, <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> must be restared
-	for the new configuration to take effect:
-	<command>service sshd restart</command>.</para>
+      <para>做完了這個變更之後，必須重新啟動 <citerefentry><refentrytitle>sshd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來使新的設定值生效：<command>service sshd restart</command>。</para>
     </sect2>
 
     <sect2>
@@ -19814,7 +19792,7 @@ drwxr-xr-x  2 robert  robert  512 Nov 10 11:54 public_html</programlisting>
 
     <programlisting xml:lang="en">Affected package: cups-base-1.1.22.0_1
 Type of problem: cups-base -- HPGL buffer overflow vulnerability.
-Reference: &lt;http://www.FreeBSD.org/ports/portaudit/40a3bca2-6809-11d9-a9e7-0001020eed82.html&gt;
+Reference: &lt;https://www.FreeBSD.org/ports/portaudit/40a3bca2-6809-11d9-a9e7-0001020eed82.html&gt;
 
 1 problem(s) in your installed packages found.
 
@@ -19954,7 +19932,7 @@ b) Execute the following commands as root:
 # patch &lt; /path/to/patch
 
 Recompile the operating system using buildworld and installworld as
-described in &lt;URL:http://www.FreeBSD.org/handbook/makeworld.html&gt;.
+described in &lt;URL:https://www.FreeBSD.org/handbook/makeworld.html&gt;.
 
 Restart the applicable daemons, or reboot the system.
 
@@ -24632,7 +24610,7 @@ fi</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 50846 2017-09-15 10:14:48Z maxim $
 -->
 
 <chapter version="5.0" xml:id="disks">
@@ -26348,7 +26326,7 @@ scsibus1:
       <para>在安全的地方保存這份列印結果與安裝媒體的複本，在緊急還原時可能會需要，接著開機進入安裝媒體並選擇 <literal>Live CD</literal> 以存取救援 Shell (Rescue shell)，這個救援模式可以用來檢視目前系統的狀態，若有需要，可重新格式化磁碟然後自備份還原資料。</para>
 
       <note>
-	<para>FreeBSD/i386 10.3-RELEASE 的安裝媒體未含救援 Shell，針對該版本，可改自 <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso">ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.3/FreeBSD-10.3-RELEASE-i386-livefs.iso</uri> 下載 <acronym>CD</acronym> 映像檔並燒錄。</para>
+	<para>FreeBSD/i386 10.4-RELEASE 的安裝媒體未含救援 Shell，針對該版本，可改自 <uri xlink:href="ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.4/FreeBSD-10.4-RELEASE-i386-livefs.iso">ftp://ftp.FreeBSD.org/pub/FreeBSD/releases/i386/ISO-IMAGES/10.4/FreeBSD-10.4-RELEASE-i386-livefs.iso</uri> 下載 Livefs <acronym>CD</acronym> 映像檔並燒錄。</para>
       </note>
 
       <para>然後，測試救援 Shell 下的備份。記錄下整個程序，將這份記錄隨媒體、列印結果、備份檔一併保存，這份記錄可以避免在緊張壓力下做緊急還原時因不慎造成備份的毀壞。</para>
@@ -27330,7 +27308,7 @@ geli_da2_flags="-k /root/<replaceable>da2.key</replaceable>"</programlisting>
 	</varlistentry>
       </variablelist>
 
-      <para xml:lang="en">This example configures an encryped swap partition using
+      <para xml:lang="en">This example configures an encrypted swap partition using
 	the Blowfish algorithm with a key length of 128 bits and a
 	sectorsize of 4 kilobytes:</para>
 
@@ -29640,7 +29618,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 50784 2017-09-02 10:06:37Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 50846 2017-09-15 10:14:48Z maxim $
 -->
 
 <chapter version="5.0" xml:id="zfs">
@@ -30538,19 +30516,7 @@ errors: No known data errors</screen>
     <sect2 xml:id="zfs-zpool-import">
       <title>匯入與匯出儲存池</title>
 
-      <para xml:lang="en">Pools are <emphasis>exported</emphasis> before moving them
-	to another system.  All datasets are unmounted, and each
-	device is marked as exported but still locked so it cannot be
-	used by other disk subsystems.  This allows pools to be
-	<emphasis>imported</emphasis> on other machines, other
-	operating systems that support <acronym>ZFS</acronym>, and
-	even different hardware architectures (with some caveats, see
-	<citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry>).  When a dataset has open files,
-	<command>zpool export -f</command> can be used to force the
-	export of a pool.  Use this with caution.  The datasets are
-	forcibly unmounted, potentially resulting in unexpected
-	behavior by the applications which had open files on those
-	datasets.</para>
+      <para>儲存池在移動到其他系統之前需要做匯出 (<emphasis>Export</emphasis>)，會卸載所有的資料集，然後標記每個裝置為已匯出，為了避免被其他磁碟子系統存取，因此仍會鎖定這些裝置。這個動作讓儲存池可以在支援 <acronym>ZFS</acronym> 的其他機器、其他作業系統做匯入 (<emphasis>Import</emphasis>)，甚至是不同的硬體架構 (有一些注意事項，請參考 <citerefentry><refentrytitle>zpool</refentrytitle><manvolnum>8</manvolnum></citerefentry>)。當資料集有被開啟的檔案，可使用 <command>zpool export -f</command> 來強制匯出儲存池，使用這個指令需要小心，資料集是被強制卸載的，因此有可能造成在該資料集開啟檔案的應用程式發生無法預期的結果。</para>
 
       <para>匯出未使用的儲存池：</para>
 
@@ -30940,7 +30906,7 @@ tank    custom:costcenter  -                  -
 <prompt>#</prompt></screen>
 
     <sect3 xml:id="zfs-zfs-set-share">
-      <title xml:lang="en">Getting and Setting Share Properties</title>
+      <title>取得與設定共享屬性</title>
 
       <para xml:lang="en">Two commonly used and useful dataset properties are the
 	<acronym>NFS</acronym> and <acronym>SMB</acronym> share
@@ -31377,27 +31343,7 @@ vfs.usermount: 0 -&gt; 1
 	<screen xml:lang="en"><prompt>%</prompt> <userinput>zfs snapshot -r <replaceable>mypool/home</replaceable>@<replaceable>monday</replaceable></userinput>
 <prompt>%</prompt> <userinput>zfs send -R <replaceable>mypool/home</replaceable>@<replaceable>monday</replaceable> | ssh <replaceable>someuser@backuphost</replaceable> zfs recv -dvu <replaceable>recvpool/backup</replaceable></userinput></screen>
 
-	<para xml:lang="en">A recursive snapshot called
-	  <replaceable>monday</replaceable> is made of the file system
-	  dataset <replaceable>home</replaceable> that resides on the
-	  pool <replaceable>mypool</replaceable>.  Then it is sent
-	  with <command>zfs send -R</command> to include the dataset,
-	  all child datasets, snapshots, clones, and settings in the
-	  stream.  The output is piped to the waiting
-	  <command>zfs receive</command> on the remote host
-	  <replaceable>backuphost</replaceable> through
-	  <application>SSH</application>.  Using a fully qualified
-	  domain name or IP address is recommended.  The receiving
-	  machine writes the data to the
-	  <replaceable>backup</replaceable> dataset on the
-	  <replaceable>recvpool</replaceable> pool.  Adding
-	  <option>-d</option> to <command>zfs recv</command>
-	  overwrites the name of the pool on the receiving side with
-	  the name of the snapshot.  <option>-u</option> causes the
-	  file systems to not be mounted on the receiving side.  When
-	  <option>-v</option> is included, more detail about the
-	  transfer is shown, including elapsed time and the amount of
-	  data transferred.</para>
+	<para>替儲存在儲存池 <replaceable>mypool</replaceable> 上的檔案系統資料集 <replaceable>home</replaceable> 製作一個遞迴快照 <replaceable>monday</replaceable>，然後使用 <command>zfs send -R</command> 來傳送包含該資料集及其所有子資料集、快照、複製與設定的串流。輸出會被導向到 <application>SSH</application> 連線的遠端主機 <replaceable>backuphost</replaceable> 上等候輸入的 <command>zfs receive</command>，在此建議使用完整網域名稱或 IP 位置。接收端的機器會寫入資料到 <replaceable>recvpool</replaceable> 儲存池上的 <replaceable>backup</replaceable> 資料集，在 <command>zfs recv</command> 加上 <option>-d</option> 可覆寫在接收端使用相同名稱的快照，加上 <option>-u</option> 可讓檔案系統在接收端不會被掛載，當使用 <option>-v</option>，會顯示更多有關傳輸的詳細資訊，包含已花費的時間及已傳輸的資料量。</para>
       </sect3>
     </sect2>
 
@@ -31506,7 +31452,7 @@ mypool/compressed_dataset  compressratio     1.11x     -
 mypool/compressed_dataset  compression       lz4       local
 mypool/compressed_dataset  logicalused       496G      -</screen>
 
-      <para>資料集目前使用了 449 GB 的空間 (在 used 屬性)。在尚未壓縮前，該資料集應該會使用 496 GB 的空間 (於 <literal>logicallyused</literal> 屬性)，這個結果顯示目前的壓縮比為 1.11:1。</para>
+      <para>資料集目前使用了 449 GB 的空間 (在 used 屬性)。在尚未壓縮前，該資料集應該會使用 496 GB 的空間 (於 <literal>logicalused</literal> 屬性)，這個結果顯示目前的壓縮比為 1.11:1。</para>
 
       <para>壓縮功能在與使用者配額 (<link linkend="zfs-term-userquota">User Quota</link>) 一併使用時可能會產生無法預期的副作用。使用者配額會限制一個使用者在一個資料集上可以使用多少空間，但衡量的依據是以 <emphasis>壓縮後</emphasis> 所使用的空間，因此，若一個使用者有 10 GB 的配額，寫入了 10 GB 可壓縮的資料，使用者將還會有空間儲存額外的資料。若使用者在之後更新了一個檔案，例如一個資料庫，可能有更多或較少的可壓縮資料，那麼剩餘可用的空間量也會因此而改變，這可能會造成奇怪的現象便是，一個使用者雖然沒有增加實際的資料量 (於 <literal>logicalused</literal> 屬性)，但因為更改影響了壓縮率，導致使用者達到配額的上限。</para>
 
@@ -32215,7 +32161,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/filesystems/chapter.xml 48720 2016-04-23 22:16:23Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/filesystems/chapter.xml 50963 2017-09-29 10:44:03Z wosch $
 -->
 <chapter version="5.0" xml:id="filesystems">
   <info>
@@ -32376,7 +32322,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
     <para>XXXTR: Though!  The disks chapter, covers a bit of this and
       devfs under it's USB devices.  It leaves a lot to be desired though,
       see:
-http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
+https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
       It may be better to flesh out that section a bit more.  Add the
       word "camera" to it so that others can easily notice.</para>
   </sect1>
@@ -33069,10 +33015,7 @@ perm    vboxnetctl 0660</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod operator -m <replaceable>yourusername</replaceable></userinput></screen>
 
-      <para xml:lang="en">Restart the login session and
-      <application><trademark>VirtualBox</trademark></application> for these changes to take
-      effect, and create <acronym>USB</acronym> filters as
-      necessary.</para>
+      <para>重新啟動登作階段與 <application><trademark>VirtualBox</trademark></application> 來讓這些變更生效，且建立必要的 <acronym>USB</acronym> 的過濾器。</para>
       </sect2>
 
     <sect2 xml:id="virtualization-virtualbox-host-dvd-cd-access">
@@ -34645,7 +34588,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50602 2017-07-29 10:36:54Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50963 2017-09-29 10:44:03Z wosch $
 -->
 <chapter version="5.0" xml:id="updating-upgrading">
 
@@ -34777,9 +34720,9 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 
     <para>隨時套用安全性更新以及升級到新發佈的作業系統版本對管理一個持續運作的系統是非常重要的任務，FreeBSD 內含可以執行這兩項任務的工具程式，叫做 <command>freebsd-update</command>。</para>
 
-    <para>這個工具程式支援使用 Binary 對 FreeBSD 做安全性與和錯誤更新，不需要手動編譯和安裝修補 (Patch) 或新核心。目前由安全性團隊提供支援的 Binary 更新可用於所有的架構和發行版。支援的發行版清單及各自的支援期限列於 <uri xlink:href="http://www.FreeBSD.org/security/">http://www.FreeBSD.org/security/</uri>。</para>
+    <para>這個工具程式支援使用 Binary 對 FreeBSD 做安全性與和錯誤更新，不需要手動編譯和安裝修補 (Patch) 或新核心。目前由安全性團隊提供支援的 Binary 更新可用於所有的架構和發行版。支援的發行版清單及各自的支援期限列於 <uri xlink:href="https://www.FreeBSD.org/security/">https://www.FreeBSD.org/security/</uri>。</para>
 
-    <para>這個工具程式也支援升級作業系統到次要的發佈版以及升級到另一個發佈版分支。在升級到新的發佈版本前，需先查看該版本的發佈公告，因為發行公告中包含了該發行版本的相關重要資訊。發行公告可自 <uri xlink:href="http://www.FreeBSD.org/releases/">http://www.FreeBSD.org/releases/</uri> 取得。</para>
+    <para>這個工具程式也支援升級作業系統到次要的發佈版以及升級到另一個發佈版分支。在升級到新的發佈版本前，需先查看該版本的發佈公告，因為發行公告中包含了該發行版本的相關重要資訊。發行公告可自 <uri xlink:href="https://www.FreeBSD.org/releases/">https://www.FreeBSD.org/releases/</uri> 取得。</para>
 
     <note>
       <para>如果有使用 <command>crontab</command> 來執行 <citerefentry><refentrytitle>freebsd-update</refentrytitle><manvolnum>8</manvolnum></citerefentry>，則必須在升級作業系統前先關閉。</para>
@@ -35023,11 +34966,11 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <see>Updating and Upgrading</see>
     </indexterm>
 
-    <para>文件是 FreeBSD 作業系統不可或缺的一部份。在最新版本的 FreeBSD 文件可在 FreeBSD 網站 (<link xlink:href="@@URL_RELPREFIX@@/doc/">http://www.freebsd.org/doc/</link>) 取得的同時，也可很簡單的取得 FreeBSD 網站、使用手冊、<acronym>FAQ</acronym> 及文章的本地複本。</para>
+    <para>說明文件是 FreeBSD 作業系統不可或缺的一部份。最新版本的 FreeBSD 文件除了可在 FreeBSD 網站 (<link xlink:href="@@URL_RELPREFIX@@/doc/">https://www.freebsd.org/doc/</link>) 取得，也可很簡單的取得本地的 FreeBSD 網站、使用手冊、<acronym>FAQ</acronym> 及文章副本。</para>
 
     <para>本節將說明如何使用原始碼與 FreeBSD Port 套件集來取得最新版本 FreeBSD 文件本地複本。</para>
 
-    <para>要取得編輯與提出修正文件相關的資訊請參考 FreeBSD 文件計畫入門書 (<link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/books/fdp-primer">http://www.freebsd.org/doc/zh_TW.UTF-8/books/fdp-primer/</link>)。</para>
+    <para>有關編輯與提出修正說明文件的資訊，請參考 FreeBSD 文件計畫入門書 (<link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/fdp-primer">https://www.freebsd.org/doc/en_US.ISO8859-1/books/fdp-primer/</link>)。</para>
 
     <sect2 xml:id="updating-installed-documentation">
       <title>自原始碼更新說明文件</title>
@@ -35165,7 +35108,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/misc/freebsd-doc-en</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para>Port 提供設定選單來指定要編譯與安裝的格式，預設為分頁的 <acronym>HTML</acronym>　(類似 <uri xlink:href="http://www.FreeBSD.org">http://www.FreeBSD.org</uri> 使用的格式) 以及 <acronym>PDF</acronym>。</para>
+      <para>Port 提供設定選單來指定要編譯與安裝的格式，預設會選擇分頁的 <acronym>HTML</acronym> (類似 <uri xlink:href="http://www.FreeBSD.org">http://www.FreeBSD.org</uri> 使用的格式) 以及 <acronym>PDF</acronym>。</para>
 
       <para>此外，編譯文件 Port 時也可指定數個 <command>make</command> 選項，包括：</para>
 
@@ -41744,7 +41687,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 50922 2017-09-25 19:33:51Z bcr $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -45205,7 +45148,7 @@ mail            IN      A       192.168.1.5</programlisting>
 	  <title xml:lang="en">Recursive <acronym>DNS</acronym> Server
 	    Configuration</title>
 
-	  <para>要開啟遞迴 <acronym>DNS</acronym> 伺服器執行查詢 <acronym>DNSSEC</acronym> 的驗証需要對 <filename>named.conf</filename> 做一些修改，在做這更改前，必須先取得根轄區金鑰或信任的錨點，目前 <acronym>BIND</acronym> 不支援檔案格式的根轄區金鑰，因此必須手動轉換為所需的格式，金鑰本身可使用 <application>dig</application> 查詢根轄區來取得，執行</para>
+	  <para>需要對 <filename>named.conf</filename> 做一些修改才能開啟遞迴 <acronym>DNS</acronym> 伺服器執行查詢 <acronym>DNSSEC</acronym> 的驗証，在做這更改前，必須先取得根轄區金鑰或信任的錨點 (Anchor)，目前 <acronym>BIND</acronym> 可用的檔案格式不支援根轄區金鑰 (Root zone key)，因此必須手動轉換為需要的格式，金鑰本身可使用 <application>dig</application> 查詢根轄區來取得，透過執行</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dig +multi +noall +answer DNSKEY . &gt; root.dnskey</userinput></screen>
 
@@ -45230,41 +45173,20 @@ mail            IN      A       192.168.1.5</programlisting>
 
 	  <para>若取得的金鑰與此範例不同不要感到訝異，可能在最後一次更新這些操作指示之後有更改過，這個輸出結果實際上包含了兩組金鑰，在清單中的第一組金鑰，即在 DNSKEY 記錄類型之後有數值 257 的這組，是我們需要的，這個數值代表該金鑰是一個 Secure Entry Point (<acronym role="Secure Entry Point">SEP</acronym>)、俗稱 Key Signing Key (<acronym role="Key Signing Key">KSK</acronym>)。第二組金鑰，數值為 256，這是一個附屬金鑰，俗稱 Zone Signing Key (<acronym role="Zone Signing Key">ZSK</acronym>)。更多有關不同金鑰類型的資訊之後在 <xref linkend="dns-dnssec-auth"/> 會說明。</para>
 
-	  <para xml:lang="en">Now the key must be verified and formatted so that
-	    <acronym>BIND</acronym> can use it.  To verify the key,
-	    generate a <acronym role="Delegation Signer">DS</acronym>
-	    <acronym role="Resource Record">RR</acronym> set.  Create
-	    a file containing these
-	    <acronym role="Resource Record">RR</acronym>s with</para>
+	  <para>現在必須驗証這個金鑰並格式化才可供 <acronym>BIND</acronym> 使用。產生 <acronym role="Delegation Signer">DS</acronym> <acronym role="Resource Record">RR</acronym> 集來驗証這個金鑰，使用以下指令建立一個包含這些 <acronym role="Resource Record">RR</acronym> 的檔案</para>
 
 	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dnssec-dsfromkey -f root.dnskey . &gt; root.ds</userinput></screen>
 
-	  <para xml:lang="en">These records use SHA-1 and SHA-256 respectively, and
-	    should look similar to the following example, where the
-	    longer is using SHA-256.</para>
+	  <para>這些記錄分別使用 SHA-1 與 SHA-256，且如下範例所示，使用 SHA-256 的段落較長。</para>
 
 	  <programlisting xml:lang="en">.  IN DS 19036 8 1
 	B256BD09DC8DD59F0E0F0D8541B8328DD986DF6E
 . IN DS 19036 8 2 49AAC11D7B6F6446702E54A1607371607A1A41855200FD2CE1CDDE32F24E8FB5</programlisting>
 
-	  <para xml:lang="en">The SHA-256 <acronym>RR</acronym> can now be compared
-	    to the digest in <link xlink:href="https://data.iana.org/root-anchors/root-anchors.xml">https://data.iana.org/root-anchors/root-anchors.xml</link>.
-	    To be absolutely sure that the key has not been tampered
-	    with the data in the <acronym>XML</acronym> file should be
-	    verified using a proper <acronym>PGP</acronym> signature.</para>
+	  <para>SHA-256 <acronym>RR</acronym> 現在可以與在 <link xlink:href="https://data.iana.org/root-anchors/root-anchors.xml">https://data.iana.org/root-anchors/root-anchors.xml</link> 中的 digest 比對。要完全確保該金鑰沒有被竄改，<acronym>XML</acronym> 檔案中的資料應使用正確的 <acronym>PGP</acronym> 簽名來驗證。</para>
 	    
 
-	  <para xml:lang="en">Next, the key must be formatted properly.  This
-	    differs a little between <acronym>BIND</acronym> versions
-	    9.6.2 and 9.7 and later.  In version 9.7 support was added
-	    to automatically track changes to the key and update it as
-	    necessary.  This is done using
-	    <literal>managed-keys</literal> as seen in the example
-	    below.  When using the older version, the key is added
-	    using a <literal>trusted-keys</literal> statement and
-	    updates must be done manually.  For
-	    <acronym>BIND</acronym> 9.6.2 the format should look
-	    like:</para>
+	  <para>接著，金鑰必須正確的格式化，<acronym>BIND</acronym> 版本 9.6.2 與 9.7 及之後的版本有一些不同，在版本 9.7 開始支援自動追蹤對金鑰的變更並在需要的時候更新，這可使用 <literal>managed-keys</literal> 如下範例所示來達成。若使用較舊的版本，金鑰必須使用 <literal>trusted-keys</literal> 敘述加入且必須手動更新，供 <acronym>BIND</acronym> 9.6.2 的格式如下：</para>
 
 	  <programlisting xml:lang="en">trusted-keys {
 	"." 257 3 8
@@ -45277,7 +45199,7 @@ mail            IN      A       192.168.1.5</programlisting>
 	QxA+Uk1ihz0=";
 };</programlisting>
 
-	  <para xml:lang="en">For 9.7 the format will instead be:</para>
+	  <para>供 9.7 的格式則為：</para>
 
 	  <programlisting xml:lang="en">managed-keys {
 	"." initial-key 257 3 8
@@ -45290,13 +45212,7 @@ mail            IN      A       192.168.1.5</programlisting>
 	QxA+Uk1ihz0=";
 };</programlisting>
 
-	  <para xml:lang="en">The root key can now be added to
-	    <filename>named.conf</filename> either directly or by
-	    including a file containing the key.  After these steps,
-	    configure <acronym>BIND</acronym> to do
-	    <acronym>DNSSEC</acronym> validation on queries by editing
-	    <filename>named.conf</filename> and adding the following
-	    to the <literal>options</literal> directive:</para>
+	  <para>現在可以直接或透過引用包含金鑰的檔案將根金鑰 (Root key) 加入到 <filename>named.conf</filename>，完成這些步驟後，編輯 <filename>named.conf</filename> 來設定 <acronym>BIND</acronym> 執行 <acronym>DNSSEC</acronym> 在查詢時驗證並加入以下項目到 <literal>options</literal> 指示項目中：</para>
 
 	  <programlisting xml:lang="en">dnssec-enable yes;
 dnssec-validation yes;</programlisting>
@@ -45955,7 +45871,7 @@ AddModule mod_php5.c
 
     <para>在 FreeBSD 上，可以使用 <package>net/samba-smbclient</package> Port 或套件來安裝 <application>Samba</application> 客戶端程式庫，這個客戶端提供了讓 FreeBSD 系統能存取 <acronym>SMB/CIFS</acronym> 在 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 網路中共享的資源。</para>
 
-    <para>FreeBSD 系統也可以透過安裝 <package>net/samba43</package> Port 或套件來設定成 <application>Samba</application> 伺服器，這讓管理者可以在 FreeBSD 系統上建立 <acronym>SMB</acronym>/<acronym>CIFS</acronym> 的共享資源，來讓執行 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 或 <application>Samba</application> 客戶端程式庫的客戶端存取。</para>
+    <para>FreeBSD 系統也可以透過安裝 <package>net/samba46</package> Port 或套件來設定成 <application>Samba</application> 伺服器，這讓管理者可以在 FreeBSD 系統上建立 <acronym>SMB</acronym>/<acronym>CIFS</acronym> 的共享資源，讓執行 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 或 <application>Samba</application> 客戶端程式庫的客戶端能夠存取。</para>
 
     <sect2>
       <title>伺服器設定</title>
@@ -46525,7 +46441,7 @@ iscsictl_flags="-Aa"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 49919 2017-02-04 09:47:56Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/firewalls/chapter.xml 50846 2017-09-15 10:14:48Z maxim $
 -->
 <chapter version="5.0" xml:id="firewalls">
 
@@ -49303,7 +49219,7 @@ ipnat_rules="/etc/ipnat.rules"    # rules definition file for ipnat</programlist
 	<varlistentry>
 	  <term xml:lang="en">TCP_FLAG|ICMP_TYPE</term>
 	  <listitem>
-	    <para xml:lang="en">If <literal>tcp</literal> is specifed as the
+	    <para xml:lang="en">If <literal>tcp</literal> is specified as the
 	      PROTO_TYPE, flags can be specified as letters, where
 	      each letter represents one of the possible
 	      <acronym>TCP</acronym> flags used to determine the state
@@ -49317,7 +49233,7 @@ ipnat_rules="/etc/ipnat.rules"    # rules definition file for ipnat</programlist
 	      <literal>C</literal> (CWN), and
 	      <literal>E</literal> (ECN).</para>
 
-	    <para xml:lang="en">If <literal>icmp</literal> is specifed as the
+	    <para xml:lang="en">If <literal>icmp</literal> is specified as the
 	      PROTO_TYPE, the <acronym>ICMP</acronym> type to match
 	      can be specified.  Refer to <citerefentry><refentrytitle>ipf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for the
 	      allowable types.</para>
@@ -50049,7 +49965,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 50500 2017-07-15 14:36:08Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -50853,7 +50769,7 @@ ifconfig_wlan0="WPA SYNCDHCP"</programlisting>
 	    changed according to the configuration.  A list of
 	    available wireless drivers and supported adapters can be
 	    found in the FreeBSD Hardware Notes, available on
-	    the <link xlink:href="http://www.FreeBSD.org/releases/index.html">Release
+	    the <link xlink:href="https://www.FreeBSD.org/releases/index.html">Release
 	      Information</link> page of the FreeBSD website.  If a
 	    native FreeBSD driver for the wireless device does not
 	    exist, it may be possible to use the <trademark class="registered">Windows</trademark> driver
@@ -56759,7 +56675,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 50383 2017-06-19 13:13:39Z gjb $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 50963 2017-09-29 10:44:03Z wosch $
 -->
 <appendix version="5.0" xml:id="eresources">
 
@@ -58747,6 +58663,17 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	</varlistentry>
 
 	<varlistentry>
+	  <term xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-teaching">freebsd-teaching</link></term>
+
+	  <listitem>
+	    <para xml:lang="en"><emphasis>Teaching with FreeBSD</emphasis></para>
+
+	    <para xml:lang="en">Non technical mailing list discussing teaching
+	      with FreeBSD.</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
 	  <term xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-testing">freebsd-testing</link></term>
 
 	  <listitem>
@@ -58886,7 +58813,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	    <para xml:lang="en">An editorial digest of the messages to this list
 	      might be posted to the FreeBSD website every few months as
 	      part of the Status Reports
-	      <footnote><para xml:lang="en"><uri xlink:href="http://www.freebsd.org/news/status/">http://www.freebsd.org/news/status/</uri></para></footnote>.
+	      <footnote><para xml:lang="en"><uri xlink:href="https://www.freebsd.org/news/status/">https://www.freebsd.org/news/status/</uri></para></footnote>.
 	      Past reports are archived.</para>
 	  </listitem>
 	</varlistentry>
@@ -59143,9 +59070,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
     <para>中央伺服器</para>
     <itemizedlist>
       <listitem>
-        <para xml:lang="en">
-          <link xlink:href="http://www.FreeBSD.org/">http://www.FreeBSD.org/</link>
-        </para>
+        <para><link xlink:href="https://www.FreeBSD.org/">https://www.FreeBSD.org/</link></para>
       </listitem>
     </itemizedlist>
   </listitem>
