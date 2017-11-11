@@ -38,8 +38,9 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
     - [ ] 30.2. 通訊閘與路由
     - [ ] 30.3. 無線網路
 - [ ] 完成 Part 2 翻譯
-    - [ ] 7.2. 設定音效卡
-    - [ ] 7.4. 影片播放
+  - [ ] 7.2. 設定音效卡
+  - [ ] 7.4. 影片播放
+  
 
 # 如何翻譯?
 * [FreeBSD Handbook - EN](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/) 為操作手冊原文
