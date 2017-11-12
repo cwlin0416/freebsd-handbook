@@ -25,6 +25,7 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
     - [X] 13.8. OpenSSH
     - [ ] 13.10. 監視第三方安全性問題
     - [X] 13.14. 使用 Sudo 分享管理權限
+  - [ ] 24. DTrace
 - [ ] 完成 Part 4 翻譯
   - [ ] 26. PPP
     - [ ] 26.4. 在乙太網路使用 PPP (PPPoE)
