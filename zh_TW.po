@@ -1,9 +1,9 @@
-# $FreeBSD: head/zh_TW.UTF-8/books/handbook/zh_TW.po 50316 2017-06-02 18:26:37Z rcyu $
+# $FreeBSD: head/zh_TW.UTF-8/books/handbook/zh_TW.po 51147 2017-10-26 15:25:09Z rcyu $
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2017-10-22 10:34+0800\n"
-"PO-Revision-Date: 2017-10-22 11:43+0800\n"
+"PO-Revision-Date: 2017-11-14 16:14+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -53046,7 +53046,7 @@ msgstr ""
 msgid ""
 "What type of <acronym>RAID</acronym> support is available through "
 "<acronym>GEOM</acronym>."
-msgstr ""
+msgstr "<acronym>GEOM</acronym> 支援了何種 <acronym>RAID</acronym>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35791
@@ -53054,6 +53054,7 @@ msgid ""
 "How to use the base utilities to configure, maintain, and manipulate the "
 "various <acronym>RAID</acronym> levels."
 msgstr ""
+"如何使用基礎工具來設定、維護以及處理各種層級的 <acronym>RAID</acronym>。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35797
@@ -53061,17 +53062,19 @@ msgid ""
 "How to mirror, stripe, encrypt, and remotely connect disk devices through "
 "<acronym>GEOM</acronym>."
 msgstr ""
+"如何透過 <acronym>GEOM</acronym> 來鏡像 (Mirror)、串連 (Stripe)、加密以及遠端"
+"連結磁碟裝置。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35802
 msgid ""
 "How to troubleshoot disks attached to the <acronym>GEOM</acronym> framework."
-msgstr ""
+msgstr "如何排除連結到 <acronym>GEOM</acronym> 框架的硬碟問題。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35811
 msgid "Understand how FreeBSD treats disk devices (<xref linkend=\"disks\"/>)."
-msgstr ""
+msgstr "了解 FreeBSD 會如何處理磁碟裝置 (<xref linkend=\"disks\"/>)。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:35815
@@ -73702,11 +73705,13 @@ msgid ""
 "This section describes how to set up <acronym>PPP</acronym> over Ethernet "
 "(<acronym>PPPoE</acronym>)."
 msgstr ""
+"本節將介紹如何設定乙太網路上的 <acronym>PPP</acronym> (<acronym>PPPoE</"
+"acronym>)。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:50106
 msgid "Here is an example of a working <filename>ppp.conf</filename>:"
-msgstr ""
+msgstr "這裡有一個可以使用的 <filename>ppp.conf</filename> 範例："
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:50109
@@ -73728,7 +73733,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:50121
 msgid "As <systemitem class=\"username\">root</systemitem>, run:"
-msgstr ""
+msgstr "使用 <systemitem class=\"username\">root</systemitem> 執行："
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:50124
@@ -73740,7 +73745,7 @@ msgstr ""
 #. (itstool) path: sect5/para
 #: book.translate.xml:50126 book.translate.xml:63452
 msgid "Add the following to <filename>/etc/rc.conf</filename>:"
-msgstr ""
+msgstr "加入以下內容到 <filename>/etc/rc.conf</filename>："
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:50129
@@ -73764,6 +73769,8 @@ msgid ""
 "connection. Service tags are used to distinguish between different PPPoE "
 "servers attached to a given network."
 msgstr ""
+"有時會需要使用服務標籤 (Service tag) 來建立連線，服務標籤是用來區別指定網路中"
+"的多個 PPPoE 伺服器。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50142
@@ -73771,6 +73778,8 @@ msgid ""
 "Any required service tag information should be in the documentation provided "
 "by the <acronym>ISP</acronym>."
 msgstr ""
+"任何所需的服務標籤資訊應可以在 <acronym>ISP</acronym> 所提供的說明文件中找"
+"到。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50145
@@ -73782,6 +73791,10 @@ msgid ""
 "guimenu> menu from the program. The name of the profile should be listed "
 "there. It is usually <emphasis>ISP</emphasis>."
 msgstr ""
+"最後的手段，可以嘗試安裝 <package>net/rr-pppoe</package> 套件或 Port。注意，"
+"這可能會清除您數據機上的程式並使其無法使用，所以在執行之前請三思。 只需安裝數"
+"據機所附的程式， 然後，進入該程式的 <guimenu>System</guimenu> 選單，在這裡應"
+"該會列出基本資料 (Profile) 的名稱，通常會是 <emphasis>ISP</emphasis>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50154
@@ -73792,6 +73805,10 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for full details. It "
 "should look like this:"
 msgstr ""
+"基本資料 (Profile) 名稱 (即服務標籤) 會用在 <filename>ppp.conf</filename> 中"
+"的 PPPoE 設定項目，提供者部份的 <command>set device</command>。請參考 "
+"<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> 來取得完整資訊，該項目會看起來如下："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50160
@@ -73805,11 +73822,12 @@ msgid ""
 "Do not forget to change <replaceable>xl1</replaceable> to the proper device "
 "for the Ethernet card."
 msgstr ""
+"不要忘記更改 <replaceable>xl1</replaceable> 為實際使用的乙太網路卡裝置。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50165
 msgid "Do not forget to change <replaceable>ISP</replaceable> to the profile."
-msgstr ""
+msgstr "不要忘記更改 <replaceable>ISP</replaceable> 為該基本資料名稱。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50168
@@ -73818,6 +73836,9 @@ msgid ""
 "waldura.com/doc/freebsd/pppoe/\">Cheaper Broadband with FreeBSD on DSL</"
 "link> by Renaud Waldura."
 msgstr ""
+"要取得更多的資訊，請參考 Renaud Waldura 所寫的 <link xlink:href=\"http://"
+"renaud.waldura.com/doc/freebsd/pppoe/\">Cheaper Broadband with FreeBSD on "
+"DSL</link>。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:50174
@@ -73834,6 +73855,8 @@ msgid ""
 "This modem does not follow the PPPoE specification defined in <link xlink:"
 "href=\"http://www.faqs.org/rfcs/rfc2516.html\">RFC 2516</link>."
 msgstr ""
+"這台數據機並未使用 <link xlink:href=\"http://www.faqs.org/rfcs/rfc2516.html"
+"\">RFC 2516</link> 所定義的規格。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:50182
@@ -73842,6 +73865,8 @@ msgid ""
 "must be set. This can be done automatically at boot time by updating "
 "<filename>/etc/sysctl.conf</filename>:"
 msgstr ""
+"為了要讓 FreeBSD 能夠與這個裝置溝通，必須設定 sysctl，這可透過修改 "
+"<filename>/etc/sysctl.conf</filename> 來在開機時自動完成："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:50187
@@ -73852,7 +73877,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:50189
 msgid "or can be done immediately with the command:"
-msgstr ""
+msgstr "或可以使用以下指令立即執行："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:50191
@@ -73868,6 +73893,9 @@ msgid ""
 "\">3Com</trademark> <trademark class=\"registered\">HomeConnect</trademark> "
 "ADSL Modem at the same time."
 msgstr ""
+"不幸的是，因為這是一個全系統的設定，一般的 PPPoE 客戶端或伺服器無法與 "
+"<trademark class=\"registered\">3Com</trademark> <trademark class="
+"\"registered\">HomeConnect</trademark> ADSL 數據機同時使用。"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:50201
@@ -77357,13 +77385,16 @@ msgid ""
 "With <acronym>NFS</acronym>, users and programs can access files on remote "
 "systems as if they were stored locally."
 msgstr ""
+"FreeBSD 支援網路檔案系統 (Network File System, <acronym>NFS</acronym>)，這系"
+"統可讓伺服器分享目錄及檔案給網路上所有的客戶端，有了 <acronym>NFS</acronym>，"
+"使用者與應用程式可以如同存取本地檔案般的存取遠端系統中的檔案。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52869
 msgid ""
 "<acronym>NFS</acronym> has many practical uses. Some of the more common uses "
 "include:"
-msgstr ""
+msgstr "<acronym>NFS</acronym> 非常的實用，常見的用途包含："
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52874
@@ -77371,6 +77402,7 @@ msgid ""
 "Data that would otherwise be duplicated on each client can be kept in a "
 "single location and accessed by clients on the network."
 msgstr ""
+"原來分散在各個客戶端的重覆資料可以儲存在同一個地方讓網路上所有的客戶端存取。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52880
@@ -77379,6 +77411,8 @@ msgid ""
 "filename> directory. Sharing that directory allows for quick access to the "
 "source files without having to download them to each client."
 msgstr ""
+"許多客戶端可能會需要使用 <filename>/usr/ports/distfiles</filename> 目錄，分享"
+"該目錄可讓客戶端快速的找到已經下載過的原始碼檔案，而不必再各別下載一次。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52888
@@ -77388,6 +77422,9 @@ msgid ""
 "Users can log into a client anywhere on the network and have access to their "
 "home directories."
 msgstr ""
+"在大型的網路上，設定一個中央 <acronym>NFS</acronym> 伺服器來儲存所有使用者的"
+"家目錄，通常會讓使用者能更方便的存取資料，使用者可以在網路上的任何一處登入客"
+"戶端都能夠存取自已的家目錄。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52896
@@ -77395,6 +77432,8 @@ msgid ""
 "Administration of <acronym>NFS</acronym> exports is simplified. For example, "
 "there is only one file system where security or backup policies must be set."
 msgstr ""
+"管理 <acronym>NFS</acronym> 的輸出 (Export) 很簡單，只有一個檔案系統需要設定"
+"安全性或備份規則。"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:52902
@@ -77405,6 +77444,9 @@ msgid ""
 "convenient to install software on multiple machines from a centralized "
 "installation media."
 msgstr ""
+"可移除的儲存裝置也可讓其他在網路上的機器存取，這可減少網路上的裝置數量並可提"
+"供可集中管理這些裝置安全性的地方，這會通常會讓需要從集中管理的安裝媒體要安裝"
+"軟體到多台主機上時變的更簡便。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52911
@@ -77414,11 +77456,14 @@ msgid ""
 "order for this to function properly, a few processes have to be configured "
 "and running."
 msgstr ""
+"<acronym>NFS</acronym> 的組成需要有一個伺服器與一或多個客戶端，客戶端可以遠端"
+"存取儲存於伺服器主機上的資料，要讓這個功能能夠正常運作，需要做一些設定後才能"
+"執行。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52916
 msgid "These daemons must be running on the server:"
-msgstr ""
+msgstr "必須在伺服器啟動以下 Daemon："
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:52917
@@ -77462,6 +77507,8 @@ msgid ""
 "The <acronym>NFS</acronym> daemon which services requests from <acronym>NFS</"
 "acronym> clients."
 msgstr ""
+"<acronym>NFS</acronym> daemon 會服務來自 <acronym>NFS</acronym> 客戶端的請"
+"求。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:52956
@@ -77474,6 +77521,8 @@ msgid ""
 "The <acronym>NFS</acronym> mount daemon which carries out requests received "
 "from <application>nfsd</application>."
 msgstr ""
+"<acronym>NFS</acronym> mount daemon 會執行自 <application>nfsd</application> "
+"收到的請求。"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:52963
@@ -77486,6 +77535,8 @@ msgid ""
 "This daemon allows <acronym>NFS</acronym> clients to discover which port the "
 "<acronym>NFS</acronym> server is using."
 msgstr ""
+"此 Daemon 會讓 <acronym>NFS</acronym> 客戶端能夠找到 <acronym>NFS</acronym> "
+"伺服器使用了那一個連結埠。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:52972
@@ -77494,6 +77545,9 @@ msgid ""
 "manvolnum></citerefentry> on the client can improve performance, but is not "
 "required."
 msgstr ""
+"在客戶端執行 <citerefentry><refentrytitle>nfsiod</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> 可以增進效率，但這不是"
+"必要的。"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:52976
@@ -77516,6 +77570,8 @@ msgid ""
 "single line. If no clients are listed in the entry, then any client on the "
 "network can mount that file system."
 msgstr ""
+"<acronym>NFS</acronym> 會共享的檔案系統可在 <filename>/etc/exports</"
+"filename> 指定，在這個檔案的每一行可指定一個要輸出 (Export) 的檔案系統，"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:52992
@@ -77532,6 +77588,11 @@ msgid ""
 "<citerefentry><refentrytitle>exports</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> for the full list of options."
 msgstr ""
+"以下 <filename>/etc/exports</filename> 項目示範要如何輸出檔案系統，這個範例可"
+"以修改為讀者網路實際使用的檔案系統及客戶端名稱。在這個檔案有許多選項可以使"
+"用，但在此處只會介紹一部份，要取得完整的選項清單請參考 "
+"<citerefentry><refentrytitle>exports</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53004
@@ -77540,6 +77601,9 @@ msgid ""
 "named <replaceable>alpha</replaceable>, <replaceable>bravo</replaceable>, "
 "and <replaceable>charlie</replaceable>:"
 msgstr ""
+"這個範例示範如何輸出 <filename>/cdrom</filename> 給三個主機，分稱分別為 "
+"<replaceable>alpha</replaceable>, <replaceable>bravo</replaceable>, and "
+"<replaceable>charlie</replaceable>："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:53010
@@ -77557,6 +77621,11 @@ msgid ""
 "<citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry> if the network does not have a <acronym>DNS</acronym> server."
 msgstr ""
+"<literal>-ro</literal> 旗標會讓檔案系統只能讀取，用來避免客戶端對輸出的檔案系"
+"統做任何的變更，這個範例假設主機名稱已在 <acronym>DNS</acronym> 或在 "
+"<filename>/etc/hosts</filename>。若該網路上沒有 <acronym>DNS</acronym> 伺服器"
+"請參考 <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry>。"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:53020
@@ -77568,6 +77637,11 @@ msgid ""
 "In other words, it will not automatically mount the subdirectories, but will "
 "permit the client to mount the directories that are required as needed."
 msgstr ""
+"接下來的範例會透過 <acronym>IP</acronym> 位址輸出 <filename>/home</filename> "
+"給三個客戶端，這在沒有設定 <acronym>DNS</acronym> 或 <filename>/etc/hosts</"
+"filename> 項目的網路上可使用，<literal>-alldirs</literal> 旗標會讓子目錄可成"
+"為掛載點 (Mount point)，換句話說，這個旗標並不會自動掛載這些子目錄，但可以讓"
+"客戶端在需要時才掛載該目錄。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:53029
@@ -77588,6 +77662,14 @@ msgid ""
 "systemitem> account and will be subject to the access limitations defined "
 "for <systemitem class=\"username\">nobody</systemitem>."
 msgstr ""
+"接下來的範例會輸出 <filename>/a</filename> 來讓兩個不同網域的客戶端能夠存取該"
+"檔案系統，<option>-maproot=root</option> 會允許在遠端系統的 <systemitem "
+"class=\"username\">root</systemitem> 能夠以 <systemitem class=\"username"
+"\">root</systemitem> 寫入資料到輸出的檔案系統。若沒有指定 <literal>-"
+"maproot=root</literal>，客戶端的 <systemitem class=\"username\">root</"
+"systemitem> 使用者則會對應到伺服器的 <systemitem class=\"username\">nobody</"
+"systemitem> 帳號，且將會受限於為 <systemitem class=\"username\">nobody</"
+"systemitem> 所定義的存取限制中。"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:53040
@@ -77602,6 +77684,8 @@ msgid ""
 "<filename>/usr</filename> is a single file system, these entries would be "
 "invalid as both entries specify the same host:"
 msgstr ""
+"一個客戶端在一個檔案系統只能夠被指定一次，例如，若 <filename>/usr</filename> "
+"是一個獨立的檔案系統，以下的項目會是無效的，因為兩個項目都指向了同一個主機："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:53047
@@ -77615,7 +77699,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:53051
 msgid "The correct format for this situation is to use one entry:"
-msgstr ""
+msgstr "在這種情況下應使用一個項目才是正確的格式："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:53054
@@ -77629,6 +77713,8 @@ msgid ""
 "The following is an example of a valid export list, where <filename>/usr</"
 "filename> and <filename>/exports</filename> are local file systems:"
 msgstr ""
+"以下的範例為有效的輸出清單，其中 <filename>/usr</filename> 與 <filename>/"
+"exports</filename> 為本地的檔案系統："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:53060
@@ -77650,6 +77736,8 @@ msgid ""
 "To enable the processes required by the <acronym>NFS</acronym> server at "
 "boot time, add these options to <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"要開啟 <acronym>NFS</acronym> 伺服器在開機時所需的程序，需加入以下選項到 "
+"<filename>/etc/rc.conf</filename>："
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:53073
@@ -77663,7 +77751,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:53077
 msgid "The server can be started now by running this command:"
-msgstr ""
+msgstr "現在便可執行以下指令來啟動伺服器："
 
 #. (itstool) path: sect2/screen
 #. (itstool) path: step/screen
@@ -77681,6 +77769,11 @@ msgid ""
 "started. To make subsequent <filename>/etc/exports</filename> edits take "
 "effect immediately, force <application>mountd</application> to reread it:"
 msgstr ""
+"每當 <acronym>NFS</acronym> 伺服器啟動後，<application>mountd</application> "
+"也會自動啟動，然而 <application>mountd</application> 在啟動後只會讀取 "
+"<filename>/etc/exports</filename>，要讓之後才編輯的 <filename>/etc/exports</"
+"filename> 能夠立即生效的話，可強制 <application>mountd</application> 重新讀取"
+"該檔案："
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:53090
@@ -105755,6 +105848,3 @@ msgstr ""
 "Leslie Lamport 的 <application>LaTeX</application> 或 Sebastian Rahtz 的 "
 "<application>JadeTeX</application> 巨集套件的重要貢獻，本文件的印刷版本將無以"
 "完成。"
-
-#~ msgid "Alternatively, to install from the Ports Collecton:"
-#~ msgstr "或由 Port 套件集安裝："

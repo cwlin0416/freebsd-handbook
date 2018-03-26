@@ -3,7 +3,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51016 2017-10-01 12:11:13Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51261 2017-12-06 23:13:07Z gordon $
 --><!ENTITY % chapters SYSTEM "chapters.ent">
 <!--
      Creates entities for each chapter in the FreeBSD Handbook. Each entity
@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 50919 2017-09-25 00:33:22Z chuck $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 51503 2018-03-19 08:49:28Z vmaffione $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -44,6 +44,7 @@
 <!ENTITY pgpkey.anray SYSTEM "anray.key">
 <!ENTITY pgpkey.antoine SYSTEM "antoine.key">
 <!ENTITY pgpkey.araujo SYSTEM "araujo.key">
+<!ENTITY pgpkey.arichardson SYSTEM "arichardson.key">
 <!ENTITY pgpkey.ariff SYSTEM "ariff.key">
 <!ENTITY pgpkey.art SYSTEM "art.key">
 <!ENTITY pgpkey.arun SYSTEM "arun.key">
@@ -175,6 +176,7 @@
 <!ENTITY pgpkey.fanf SYSTEM "fanf.key">
 <!ENTITY pgpkey.farrokhi SYSTEM "farrokhi.key">
 <!ENTITY pgpkey.feld SYSTEM "feld.key">
+<!ENTITY pgpkey.fernape SYSTEM "fernape.key">
 <!ENTITY pgpkey.fjoe SYSTEM "fjoe.key">
 <!ENTITY pgpkey.flo SYSTEM "flo.key">
 <!ENTITY pgpkey.fluffy SYSTEM "fluffy.key">
@@ -265,6 +267,7 @@
 <!ENTITY pgpkey.jsa SYSTEM "jsa.key">
 <!ENTITY pgpkey.jtl SYSTEM "jtl.key">
 <!ENTITY pgpkey.junovitch SYSTEM "junovitch.key">
+<!ENTITY pgpkey.jwb SYSTEM "jwb.key">
 <!ENTITY pgpkey.jylefort SYSTEM "jylefort.key">
 <!ENTITY pgpkey.kadesai SYSTEM "kadesai.key">
 <!ENTITY pgpkey.kaiw SYSTEM "kaiw.key">
@@ -343,6 +346,7 @@
 <!ENTITY pgpkey.mckusick SYSTEM "mckusick.key">
 <!ENTITY pgpkey.mdf SYSTEM "mdf.key">
 <!ENTITY pgpkey.melifaro SYSTEM "melifaro.key">
+<!ENTITY pgpkey.meta SYSTEM "meta.key">
 <!ENTITY pgpkey.metal SYSTEM "metal.key">
 <!ENTITY pgpkey.mheinen SYSTEM "mheinen.key">
 <!ENTITY pgpkey.mi SYSTEM "mi.key">
@@ -484,6 +488,7 @@
 <!ENTITY pgpkey.sjg SYSTEM "sjg.key">
 <!ENTITY pgpkey.skra SYSTEM "skra.key">
 <!ENTITY pgpkey.skreuzer SYSTEM "skreuzer.key">
+<!ENTITY pgpkey.slavash SYSTEM "slavash.key">
 <!ENTITY pgpkey.slm SYSTEM "slm.key">
 <!ENTITY pgpkey.snb SYSTEM "snb.key">
 <!ENTITY pgpkey.sobomax SYSTEM "sobomax.key">
@@ -538,6 +543,7 @@
 <!ENTITY pgpkey.vg SYSTEM "vg.key">
 <!ENTITY pgpkey.viny SYSTEM "viny.key">
 <!ENTITY pgpkey.vkashyap SYSTEM "vkashyap.key">
+<!ENTITY pgpkey.vmaffione SYSTEM "vmaffione.key">
 <!ENTITY pgpkey.vs SYSTEM "vs.key">
 <!ENTITY pgpkey.vsevolod SYSTEM "vsevolod.key">
 <!ENTITY pgpkey.wblock SYSTEM "wblock.key">
@@ -560,6 +566,7 @@
 <!ENTITY pgpkey.ygy SYSTEM "ygy.key">
 <!ENTITY pgpkey.yoichi SYSTEM "yoichi.key">
 <!ENTITY pgpkey.yongari SYSTEM "yongari.key">
+<!ENTITY pgpkey.yuri SYSTEM "yuri.key">
 <!ENTITY pgpkey.yzlin SYSTEM "yzlin.key">
 <!ENTITY pgpkey.zack SYSTEM "zack.key">
 <!ENTITY pgpkey.zbb SYSTEM "zbb.key">
@@ -642,9 +649,9 @@
 
     <author><orgname>FreeBSD 文件計劃</orgname></author>
 
-    <pubdate its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51016 2017-10-01 12:11:13Z wosch $</pubdate>
+    <pubdate its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51261 2017-12-06 23:13:07Z gordon $</pubdate>
 
-    <releaseinfo its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51016 2017-10-01 12:11:13Z wosch $</releaseinfo>
+    <releaseinfo its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51261 2017-12-06 23:13:07Z gordon $</releaseinfo>
 
     <copyright xml:lang="en">
       <year>1995</year>
@@ -747,7 +754,13 @@
     </legalnotice>
 
     <abstract>
-      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 11.1-RELEASE</emphasis>, <emphasis>FreeBSD 11.0-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.4-RELEASE</emphasis> 的安裝與平日操作的說明。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中，因此部份章節可能尚未仍未完成，如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
+      <para xml:lang="en">Welcome to FreeBSD! This handbook covers the installation
+	and day to day use of
+	<emphasis>FreeBSD 11.1-RELEASE</emphasis> and
+	<emphasis>FreeBSD 10.4-RELEASE</emphasis>. This book is
+	the result of ongoing work by many individuals.  Some sections
+	might be outdated.  Those interested in helping to update and
+	expand this document should send email to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD documentation project mailing list</link>.</para>
 
       <para>在 <link xlink:href="https://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到本文件的最新版本，舊版文件可從 <uri xlink:href="https://docs.FreeBSD.org/doc/">https://docs.FreeBSD.org/doc/</uri> 取得。本文件也提供各種格式與不同壓縮方式的版本可自 <link xlink:href="https://download.freebsd.org/ftp/doc/">FreeBSD FTP 伺服器</link> 或是其中一個 <link linkend="mirrors-ftp">鏡像網站</link> 下載。 列印出來的實體書面資料可在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
@@ -1315,7 +1328,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 51251 2017-12-03 03:03:56Z eadler $
 -->
 <chapter version="5.0" xml:id="introduction">
 
@@ -2028,7 +2041,15 @@
     <sect2>
       <title>其他文件</title>
 
-      <para>所有最近的 FreeBSD 版本在安裝程式 (不是 <citerefentry><refentrytitle>sysinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry> 就是 <citerefentry><refentrytitle>bsdinstall</refentrytitle><manvolnum>8</manvolnum></citerefentry>) 都有提供一個選項在初始系統安裝時可安裝額外的說明文件到 <filename>/usr/local/share/doc/freebsd</filename>。說明文件也可在往後使用套件安裝，詳細說明於 <xref linkend="doc-ports-install-package"/>。您可以使用任何支援 HTML 的瀏覽器進入下列 URL 檢視已安裝在本機的操作手冊：</para>
+      <para xml:lang="en">All supported FreeBSD versions provide an option in the
+	installer to
+	install additional documentation under
+	<filename>/usr/local/share/doc/freebsd</filename> during the
+	initial system setup.  Documentation may also be installed at
+	any later time using packages as described in
+	<xref linkend="doc-ports-install-package"/>.  You may view the
+	locally installed manuals with any HTML capable browser using
+	the following URLs:</para>
 
       <variablelist>
 	<varlistentry>
@@ -3757,7 +3778,7 @@ Starting sshd.</screen>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 50188 2017-04-20 12:50:37Z remko $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/basics/chapter.xml 51390 2018-01-18 14:05:15Z mat $
 -->
 <chapter version="5.0" xml:id="basics">
   <!--
@@ -4895,11 +4916,6 @@ root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd</screen>
 	    </row>
 
 	    <row>
-	      <entry xml:lang="en"><filename>/etc/namedb/</filename></entry>
-	      <entry><citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> 設定檔。</entry>
-	    </row>
-
-	    <row>
 	      <entry xml:lang="en"><filename>/etc/periodic/</filename></entry>
 	      <entry>每日、每週、每月透過 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry>，執行的定期排程 Script，詳情請參閱 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</entry>
 	    </row>
@@ -5980,7 +5996,7 @@ Swap: 2048M Total, 2048M Free
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 51348 2017-12-30 22:56:56Z eadler $
 -->
 <chapter version="5.0" xml:id="ports">
 
@@ -6108,7 +6124,10 @@ Swap: 2048M Total, 2048M Free
     <para>要持續追蹤 Port 的更新可以訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports">FreeBSD Port 郵遞論壇</link> 與 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs">FreeBSD Port 問題郵遞論壇</link>。</para>
 
     <warning>
-      <para>在安裝任何應用程式之前，請先查看 <link xlink:href="http://vuxml.freebsd.org/"/> 是否有與該應用程式相關的安全性問題或輸入 <command>pkg audit -F</command> 來檢查所有已安裝的應用程式是否有已知的漏洞。</para>
+      <para xml:lang="en">Before installing any application, check <link xlink:href="https://vuxml.freebsd.org/"/>
+	for security issues related to the application or type
+	<command>pkg audit -F</command> to check all installed
+	applications for known vulnerabilities.</para>
     </warning>
 
     <para>本章接下來的部份將說明如何在 FreeBSD 使用 Binary 套件及 Port 套件安裝與管理第三方軟體。</para>
@@ -6240,7 +6259,12 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
       <para>FreeBSD 內建啟動 (Bootstrap) 工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。這個工具是設計在 FreeBSD 版本 10.<replaceable>X</replaceable> 之後使用。</para>
 
       <note>
-	<para>不是所有 FreeBSD 版本及架構支援此啟動程序，目前支援的清單列於 <link xlink:href="http://pkg.freebsd.org/"/>，對不支援的版本，必須改透過 Port 套件集或者 Binary 套件來安裝 <application>pkg</application>。</para>
+	<para xml:lang="en">Not all FreeBSD versions and architectures
+	  support this bootstrap process.  The current list is at
+	  <link xlink:href="https://pkg.freebsd.org/"/>.
+	  For other cases,
+	  <application>pkg</application> must instead be installed
+	  from the Ports Collection or as a binary package.</para>
 
       </note>
 
@@ -6550,7 +6574,18 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       <para>下面我們會介紹如何使用 Port 套件集來安裝、移除軟體的基本用法。 <command>make</command> 可用的目標及環境變數詳細說明可參閱 <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry>。</para>
 
       <warning>
-	<para>在編譯任何 Port 套件前，請先確認已經如前章節所敘述之方法更新 Port 套件集。安裝任何第三方軟體皆可能會導致安全性漏洞，建議在安裝前先閱讀 <link xlink:href="http://vuxml.freebsd.org/"/> 了解  Port 已知的安全性問題。或者在每次安裝新 Port 前執行 <command>pkg audit -F</command>。此指令可以設定在每日系統安全性檢查時自動完成安全性稽查以及更新漏洞資料庫。要取得更多資訊，請參考 <citerefentry><refentrytitle>pkg-audit</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
+	<para xml:lang="en">Before compiling any port, be sure to update the Ports
+	  Collection as described in the previous section.  Since
+	  the installation of any third-party software can introduce
+	  security vulnerabilities, it is recommended to first check
+	  <link xlink:href="https://vuxml.freebsd.org/"/>
+	  for known security issues related to the port.  Alternately,
+	  run <command>pkg audit -F</command> before installing a new
+	  port.  This command can be configured to automatically
+	  perform a security audit and an update of the vulnerability
+	  database during the daily security system check.  For more
+	  information, refer to <citerefentry><refentrytitle>pkg-audit</refentrytitle><manvolnum>8</manvolnum></citerefentry> and
+	  <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
       </warning>
 
       <para>使用 Port 套件集會假設您擁有可正常連線的網路，同時也會需要超級使用者的權限。</para>
@@ -7022,7 +7057,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 51437 2018-02-21 18:21:35Z bcr $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -7918,7 +7953,11 @@ EndSection</programlisting>
 
       <para>預設只有同系統的使用者可以使用 <application>XDM</application> 登入。要開啟讓其他系統的使用者可連線到顯示伺服器，需編輯存取控制規則及開啟連線傾聽程式。</para>
 
-      <para>要設定 <application>XDM</application> 傾聽作何遠端的連線，在 <filename>/usr/local/lib/X11/xdm/xdm-config</filename> 中的 <literal>DisplayManager.requestPort</literal> 行前加上 <literal>!</literal> 來註解該行：</para>
+      <para xml:lang="en">To configure <application>XDM</application> to listen for
+	any remote connection, comment out the
+	<literal>DisplayManager.requestPort</literal> line in
+	<filename>/usr/local/etc/X11/xdm/xdm-config</filename> by
+	putting a <literal>!</literal> in front of it:</para>
 
       <screen xml:lang="en">! SECURITY: do not listen for XDMCP or Chooser requests
 ! Comment out this line if you want to manage X terminals with xdm
@@ -8441,7 +8480,7 @@ EndSection</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 51357 2018-01-01 10:07:34Z eadler $
 -->
 <chapter version="5.0" xml:id="desktop">
   <!--
@@ -8564,81 +8603,6 @@ EndSection</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/firefox</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
-
-    <sect3 xml:id="moz-java-plugin">
-      <title>Firefox 與 <trademark>Java</trademark> 附加元件</title>
-
-      <para><application>Firefox</application> 的安裝並不包含 <trademark>Java</trademark> 支援，雖然如此 <package>java/icedtea-web</package> 提供了免費的網頁瀏覽器附加元件來執行 Java applet，此附加元件可以用 Binary  套件安裝：</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install icedtea-web</userinput></screen>
-
-      <para>或由 Port 套件集編譯：</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/java/icedtea-web</userinput>
-<prompt>#</prompt> <userinput>make install clean</userinput></screen>
-
-      <para>編譯 Port 時使用預設設定選項。</para>
-
-      <para>安裝完成後，啟動 <application>firefox</application>，在網址列輸入 <literal>about:plugins</literal> 並按 <keycap>Enter</keycap> 鍵，便會出現一個列出已安裝附加元件的頁面，清單中應該要有 <application><trademark>Java</trademark></application> 附加元件。</para>
-
-      <para>若瀏覽器無法找到附加元件，每位使用者則須執行以下指令並重新執行瀏覽器：</para>
-
-      <screen xml:lang="en"><prompt>%</prompt> <userinput>ln -s /usr/local/lib/IcedTeaPlugin.so \
-  $HOME/.mozilla/plugins/</userinput></screen>
-    </sect3>
-
-    <sect3 xml:id="moz-flash-plugin">
-
-      <title>Firefox 與 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加元件</title>
-
-      <indexterm xml:lang="en">
-	<primary>Flash</primary>
-      </indexterm>
-
-      <para>FreeBSD 並沒有原生的 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加原件。雖然如此，仍可以使用軟體包裝程式來執行 <trademark class="registered">Linux</trademark> 版本 的附加元件。該包裝程式也提供其他瀏覽器附加元件的支援，如 <trademark class="registered">RealPlayer</trademark>。</para>
-
-      <para>要安裝並開啟此附加元件，可執行以下步驟：</para>
-
-      <procedure>
-	<step>
-	  <para>自 Port 安裝 <package role="port">www/nspluginwrapper</package> ，受到授權條款的限制，該套件無 Binary 版本。此 Port 需安裝 <package>emulators/linux_base-c6</package>。</para>
-	</step>
-
-	<step>
-	  <para>自 Port 安裝 <package role="port">www/linux-flashplayer</package> ，受到授權條款的限制，該套件無 Binary 版本。</para>
-	</step>
-
-	<step>
-	  <para>第一次使用附加元件前，每位使用者需要先執行：</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>nspluginwrapper -v -a -i</userinput></screen>
-
-	  <para>當附加元件 Port 完成更新並且重新安裝後，每位使用者需要執行：</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>nspluginwrapper -v -a -u</userinput></screen>
-
-	  <para>開啟瀏覽器並在網址列輸入 <literal>about:plugins</literal> 並按 <keycap>Enter</keycap> 鍵，目前可用的附加元件清單中應會顯示該附加元件。</para>
-	</step>
-
-      </procedure>
-    </sect3>
-
-    <sect3 xml:id="moz-swfdec-flash-plugin">
-      <title>Firefox 與 Swfdec <trademark class="registered">Flash</trademark> 附加元件</title>
-
-      <para><application>Swfdec</application> 是 <trademark class="registered">Flash</trademark> 動畫的解碼程式及繪製程式。<application>Swfdec-Mozilla</application> 是供 <application>Firefox</application> 瀏覽器使用的附加元件，可使用 Swfdec 程式庫來播放 SWF 檔案。</para>
-
-      <para>要安裝套件可：</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install swfdec-plugin</userinput></screen>
-
-      <para>若無套件可用，可自 Port 套件集編譯並安裝該附加元件：</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/swfdec-plugin</userinput>
-<prompt>#</prompt> <userinput>make install clean</userinput></screen>
-
-	<para>重新啟動瀏覽器來啟動此附加元件。</para>
-      </sect3>
     </sect2>
 
     <sect2>
@@ -8661,16 +8625,22 @@ EndSection</programlisting>
 
       <para>要安裝 <trademark class="registered">Linux</trademark> 則替換 <literal>opera</literal> 為 <literal>linux-opera</literal>。</para>
 
-      <para>要安裝 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加元件，需先編譯 <package role="port">www/linux-c6-flashplugin11</package> Port，因受到授權條款限制無法事先做為 Binary 套件。然後安裝 <package role="port">www/opera-linuxplugins</package>。以下範例示範編譯 Port 中的這兩個應用程式。</para>
+      <para xml:lang="en">To install <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> plugin support, first compile
+	the <package role="port">www/linux-flashplayer</package>
+	port.  Licensing restrictions prevent making a package
+	available.  Then install <package role="port">www/opera-linuxplugins</package>.  This example
+	compiles both applications from ports:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/linux-c6-flashplugin11</userinput>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/linux-flashplayer</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput>
 <prompt>#</prompt> <userinput>cd /usr/ports/www/opera-linuxplugins</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
       <para>安裝完成後，開啟瀏覽器檢查附加元件是否存在，在網址列輸入 <literal>opera:plugins</literal> 並按下 <keycap>Enter</keycap> 鍵，便會有清單顯示目前可用的附加元件。</para>
 
-      <para>若要安裝 <application><trademark>Java</trademark></application> 附加元件請依照 <xref linkend="moz-java-plugin"/> 中的指示。</para>
+      <para xml:lang="en">To add the <application><trademark>Java</trademark></application> plugin,
+	follow install
+	<package role="port">java/icedtea-web</package>.</para>
     </sect2>
 
     <sect2>
@@ -8717,33 +8687,19 @@ EndSection</programlisting>
       <note>
 	<para><application>Chromium</application> 的執行檔為 <filename>/usr/local/bin/chrome</filename>，並非 <filename>/usr/local/bin/chromium</filename>。</para>
       </note>
-
-      <sect3 xml:id="chromium-java-plugin">
-	<title>Chromium 與 <trademark>Java</trademark> 附加元件</title>
-
-	<para><application>Chromium</application> 的安裝並不包含 <trademark>Java</trademark> 的支援。要安裝 <trademark>Java</trademark> 附加元件支援，請依照 <xref linkend="moz-java-plugin"/> 的指示操作。</para>
-
-	<para><trademark>Java</trademark> 支援安裝完成後，啟動 <application>Chromium</application> 然後在網址列輸入 <literal>about:plugins</literal>。已安裝的附件元件其中之一應該會有 IcedTea-Web。</para>
-
-	<para>若 <application>Chromium</application> 未顯示 IcedTea-Web 為附件元件，請執行以下指令然後重新啟動網頁瀏覽器：</para>
-
-	<screen xml:lang="en"><prompt>#</prompt> <userinput>mkdir -p /usr/local/share/chromium/plugins
-<prompt>#</prompt> ln -s /usr/local/lib/IcedTeaPlugin.so \
-  /usr/local/share/chromium/plugins/</userinput></screen>
-      </sect3>
-
-      <sect3 xml:id="chromium-flash-plugin">
-	<title>Chromium 與 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加元件</title>
-
-	<para>設定 <application>Chromium</application> 及 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 與 <xref linkend="moz-flash-plugin"/> 中的操作相似，無須額外的設定，因 <application>Chromium</application> 能夠使用部份來自其他瀏覽器的附加元件。</para>
-      </sect3>
     </sect2>
   </sect1>
 
   <sect1 xml:id="desktop-productivity">
     <title>辦工工具</title>
 
-    <para>當開始進行辦公，新的使用者通常會去找好用的辦公室軟體或是好上手的文件處理程式。 雖然有些 <link linkend="x11-wm">桌面環境</link> 像是 <application>KDE</application> 已經提供了辦公軟體組合的套件，FreeBSD 預設未提供任何辦工工具。 不論是否有安裝視窗管理程式，FreeBSD 可安裝多套辦公軟體以及圖型化文件處理程式。</para>
+    <para xml:lang="en">When it comes to productivity, users often look for an
+      office suite or an easy-to-use word processor.  While some
+      <link linkend="x11-wm">desktop environments</link> like
+      <application>KDE</application> provide an office suite, there
+      is no default productivity package.  Several office suites and
+      graphical word processors are available for FreeBSD, regardless
+      of the installed window manager.</para>
 
     <para>本章節元範如何安裝以下熱門的辦工軟體以及說明該應用程式所需的資源、自 Port 編譯的時間或者是否有其他主要相依套件。</para>
 
@@ -9225,7 +9181,7 @@ EndSection</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 50846 2017-09-15 10:14:48Z maxim $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 51486 2018-03-16 02:16:58Z eadler $
 -->
 <chapter version="5.0" xml:id="multimedia">
 
@@ -9679,14 +9635,15 @@ pcm7: &lt;HDA Realtek ALC889 PCM #3 Digital&gt; at cad 2 nid 1 on hdac1
       <title>MP3 播放器</title>
 
       <para xml:lang="en">A popular graphical <acronym>MP3</acronym> player is
-	<application>XMMS</application>.  It supports
+	<application>Audacious</application>.  It supports
 	<application>Winamp</application> skins and additional
 	plugins.  The interface is intuitive, with a playlist, graphic
 	equalizer, and more.  Those familiar with
 	<application>Winamp</application> will find
-	<application>XMMS</application> simple to use.  On FreeBSD,
-	<application>XMMS</application> can be installed from the
-	<package>multimedia/xmms</package> port or package.</para>
+	<application>Audacious</application> simple to use.  On FreeBSD,
+	<application>Audacious</application> can be installed from the
+	<package>multimedia/audacious</package> port or package.
+	Audacious is a descendant of XMMS.</para>
 
       <para xml:lang="en">The <package>audio/mpg123</package> package or port
 	provides an alternative, command-line <acronym>MP3</acronym>
@@ -10471,7 +10428,7 @@ bktr0: Pinnacle/Miro TV, Philips SECAM tuner.</programlisting>
 	Digital Video Broadcasting (<acronym>DVB</acronym>) card
 	supported by <application>webcamd</application> should work
 	with MythTV.  A list of known working cards can be found at
-	<link xlink:href="http://wiki.freebsd.org/WebcamCompat">wiki.freebsd.org/WebcamCompat</link>.
+	<link xlink:href="https://wiki.freebsd.org/WebcamCompat">wiki.freebsd.org/WebcamCompat</link>.
 	Drivers are also available for Hauppauge cards in the
 	<package>multimedia/pvr250</package> and
 	<package>multimedia/pvrxxx</package> ports, but they provide a
@@ -10480,7 +10437,7 @@ bktr0: Pinnacle/Miro TV, Philips SECAM tuner.</programlisting>
 	no packages are available and these two ports must be
 	compiled.</para>
 
-      <para xml:lang="en">The <link xlink:href="http://wiki.freebsd.org/HTPC">wiki.freebsd.org/HTPC</link>
+      <para xml:lang="en">The <link xlink:href="https://wiki.freebsd.org/HTPC">wiki.freebsd.org/HTPC</link>
 	page contains a list of all available <acronym>DVB</acronym>
 	drivers.</para>
     </sect2>
@@ -14037,7 +13994,7 @@ export PATH</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 51390 2018-01-18 14:05:15Z mat $
 -->
 <chapter version="5.0" xml:id="config-tuning">
 
@@ -15238,11 +15195,6 @@ Logging to FILE /var/log/messages</screen>
 	    <row>
 	      <entry xml:lang="en"><filename>/etc/ppp</filename></entry>
 	      <entry>user- 及 kernel-ppp 程式的設定。</entry>
-	    </row>
-
-	    <row>
-	      <entry xml:lang="en"><filename>/etc/namedb</filename></entry>
-	      <entry><citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> 資料的預設位置。<filename>named.conf</filename> 及區域 (Zone) 檔案正常會儲存在此處。</entry>
 	    </row>
 
 	    <row>
@@ -16750,7 +16702,7 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
       <itemizedlist>
 	<listitem>
 	  <para xml:lang="en">The FreeBSD <acronym>ACPI</acronym> Mailing List Archives
-	    (<uri xlink:href="http://lists.freebsd.org/pipermail/freebsd-acpi/">http://lists.freebsd.org/pipermail/freebsd-acpi/</uri>)</para>
+	    (<uri xlink:href="https://lists.freebsd.org/pipermail/freebsd-acpi/">https://lists.freebsd.org/pipermail/freebsd-acpi/</uri>)</para>
 	</listitem>
 
 	<listitem>
@@ -17308,7 +17260,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 51479 2018-03-12 07:34:44Z eadler $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -17500,7 +17452,7 @@ password with characters from at least 3 of these 4 classes, or
 a 10 character long password containing characters from all the
 classes.  Characters that form a common pattern are discarded by
 the check.
-Alternatively, if noone else can see your terminal now, you can
+Alternatively, if no one else can see your terminal now, you can
 pick this as your password: "trait-useful&amp;knob".
 Enter new password:</screen>
 
@@ -19967,7 +19919,7 @@ machine with Subversion installed:
 
 Or visit the following URL, replacing NNNNNN with the revision number:
 
-&lt;URL:http://svnweb.freebsd.org/base?view=revision&amp;revision=NNNNNN&gt;
+&lt;URL:https://svnweb.freebsd.org/base?view=revision&amp;revision=NNNNNN&gt;
 
 VII. References
 
@@ -20236,8 +20188,7 @@ UWWemqWuz3lAZuORQ9KX
       consuming, depending upon the number of users to
       configure.</para>
 
-    <para xml:lang="en">Beginning with FreeBSD 9.0-RELEASE,
-      <command>rctl</command> can be used to provide a more
+    <para xml:lang="en"><command>rctl</command> can be used to provide a more
       fine-grained method for controlling resource limits.  This
       command supports more than user limits as it can also be used to
       set resource constraints on processes and jails.</para>
@@ -20480,11 +20431,9 @@ UWWemqWuz3lAZuORQ9KX
     <sect2>
       <title>開啟並設定資源限制</title>
 
-      <para xml:lang="en">As of FreeBSD 10.2, <command>rctl</command> support is
-	built into the kernel.  Previous supported releases will
-	need to be recompiled using the instructions in <xref linkend="kernelconfig"/>.  Add these lines to either
-	<filename>GENERIC</filename> or a custom kernel configuration
-	file, then rebuild the kernel:</para>
+      <para xml:lang="en">The <varname>kern.racct.enable</varname> tunable must be
+	set to a non-zero value.  Custom kernels require specific
+	configuration:</para>
 
       <programlisting xml:lang="en">options         RACCT
 options         RCTL</programlisting>
@@ -20642,7 +20591,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 <!--
     The FreeBSD Documentation Project
 
-    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 48843 2016-05-23 16:25:18Z wblock $
+    $FreeBSD: head/en_US.ISO8859-1/books/handbook/jails/chapter.xml 51462 2018-03-06 12:55:31Z emaste $
 -->
 <chapter version="5.0" xml:id="jails">
   <info>
@@ -20779,7 +20728,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 
     <para>安裝全部不含核心：</para>
 
-    <screen xml:lang="en"><prompt>#</prompt> <userinput>for <replaceable>sets</replaceable> in BASE PORTS; do tar -xf /mnt/FREEBSD_INSTALL/USR/FREEBSD_DIST/$<replaceable>sets</replaceable>.TXZ -C $DESTDIR ; done</userinput></screen>
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>for set in base ports; do tar -xf /mnt/usr/freebsd-dist/$set.txz -C $DESTDIR ; done</userinput></screen>
 
     <para>依 <citerefentry><refentrytitle>jail</refentrytitle><manvolnum>8</manvolnum></citerefentry> 操作手冊說明的程序建置 Jail：</para>
 
@@ -20819,33 +20768,41 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 
     <procedure>
       <step>
-	<para>要在開機時啟動的 Jail 應加入到 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 檔案中：</para>
+	<para xml:lang="en">Configure jail parameters in
+	  <filename>jail.conf</filename>:</para>
+	<programlisting xml:lang="en"><replaceable>www</replaceable> {
+    host.hostname = <replaceable>www.example.org</replaceable>;           # Hostname
+    ip4.addr = <replaceable>192.168.0.10</replaceable>;                   # IP address of the jail
+    path ="<replaceable>/usr/jail/www</replaceable>";                     # Path to the jail
+    devfs_ruleset = "<replaceable>www_ruleset</replaceable>";             # devfs ruleset
+    mount.devfs;                               # Mount devfs inside the jail
+    exec.start = "/bin/sh /etc/rc";            # Start command
+    exec.stop = "/bin/sh /etc/rc.shutdown";    # Stop command
+}</programlisting>
 
-	<programlisting xml:lang="en">jail_enable="YES"   # Set to NO to disable starting of any jails
-jail_list="<replaceable>www</replaceable>"     # Space separated list of names of jails</programlisting>
+	<para xml:lang="en">Configure jails to start at boot time in
+	  <filename>rc.conf</filename>:</para>
+
+	<programlisting xml:lang="en">jail_enable="YES"   # Set to NO to disable starting of any jails</programlisting>
+
+	<para xml:lang="en">The default startup of jails configured in
+	  <citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>, will run the <filename>/etc/rc</filename>
+	  script of the jail, which assumes the jail is a complete
+	  virtual system.  For service jails, the default startup
+	  command of the jail should be changed, by setting the
+	  <varname>exec.start</varname>
+	  option appropriately.</para>
 
 	<note>
-	  <para>在 <varname>jail_list</varname> 中的 Jail 名稱只允許使用英數字元。</para>
-	</note>
-      </step>
-
-      <step>
-	<para>針對每個列在 <varname>jail_list</varname> 中的 Jail 圴需加入一組 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 設定來描述指定的 Jail：</para>
-
-	<programlisting xml:lang="en">jail_<replaceable>www</replaceable>_rootdir="/usr/jail/www"     # jail's root directory
-jail_<replaceable>www</replaceable>_hostname="<replaceable>www</replaceable>.example.org"  # jail's hostname
-jail_<replaceable>www</replaceable>_ip="192.168.0.10"           # jail's IP address
-jail_<replaceable>www</replaceable>_devfs_enable="YES"          # mount devfs in the jail</programlisting>
-
-	<para><citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>中會假設 Jail 是完整的虛擬系統，預設會啟動 Jail 的 <filename>/etc/rc</filename> Script。針對服務的 Jail 則需設定適當的 <varname>jail_<replaceable>jailname</replaceable>_exec_start</varname> 選項來修改預設啟動的指令。</para>
-
-	<note>
-	  <para>要取得完整可用選項的清單，請參考 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 操作手冊。</para>
+	  <para xml:lang="en">For a full list of available options, please see the
+	    <citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> manual page.</para>
 	</note>
       </step>
     </procedure>
 
-    <para>若該 Jail 已經在 <filename>rc.conf</filename> 中設定，可以用 <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來啟動或停止 Jail：</para>
+    <para xml:lang="en"><citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> can be used to start or stop a jail by hand,
+      if an entry for it exists in
+      <filename>jail.conf</filename>:</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service jail start <replaceable>www</replaceable></userinput>
 <prompt>#</prompt> <userinput>service jail stop <replaceable>www</replaceable></userinput></screen>
@@ -28009,24 +27966,19 @@ esac</programlisting>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">What type of <acronym>RAID</acronym> support is
-	  available through <acronym>GEOM</acronym>.</para>
+	<para><acronym>GEOM</acronym> 支援了何種 <acronym>RAID</acronym>。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">How to use the base utilities to configure, maintain,
-	  and manipulate the various <acronym>RAID</acronym>
-	  levels.</para>
+	<para>如何使用基礎工具來設定、維護以及處理各種層級的 <acronym>RAID</acronym>。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">How to mirror, stripe, encrypt, and remotely connect
-	  disk devices through <acronym>GEOM</acronym>.</para>
+	<para>如何透過 <acronym>GEOM</acronym> 來鏡像 (Mirror)、串連 (Stripe)、加密以及遠端連結磁碟裝置。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">How to troubleshoot disks attached to the
-	  <acronym>GEOM</acronym> framework.</para>
+	<para>如何排除連結到 <acronym>GEOM</acronym> 框架的硬碟問題。</para>
       </listitem>
     </itemizedlist>
 
@@ -28034,7 +27986,7 @@ esac</programlisting>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Understand how FreeBSD treats disk devices (<xref linkend="disks"/>).</para>
+	<para>了解 FreeBSD 會如何處理磁碟裝置 (<xref linkend="disks"/>)。</para>
       </listitem>
 
       <listitem>
@@ -29618,7 +29570,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 50846 2017-09-15 10:14:48Z maxim $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 51460 2018-03-04 18:34:15Z eadler $
 -->
 
 <chapter version="5.0" xml:id="zfs">
@@ -31305,7 +31257,19 @@ mypool@replica2                                 0      -  55.0M  -</screen>
       <sect3 xml:id="zfs-send-ssh">
 	<title>透過 <application>SSH</application> 傳送加密的備份</title>
 
-	<para>透過網路來傳送串流對要遠端備份是相當不錯的方式，但是也有一些缺點，透過網路連結傳送的資料沒有加密，這會讓任何人都可以在未告知傳送使用者的情況下攔截並轉換串流回資料，這是我們所不想見到的情況，特別是在使用網際網路傳送串流到遠端的主機時。<application>SSH</application> 可用來安全的加密要透過網路連線傳送的資料，在 <acronym>ZFS</acronym> 只需要從標準輸出重新導向便可簡單的轉接到 <application>SSH</application>。要在傳送或在遠端系統中維持檔案系統內容在加密的狀態也可考慮使用 <link xlink:href="http://wiki.freebsd.org/PEFS">PEFS</link>。</para>
+	<para xml:lang="en">Sending streams over the network is a good way to keep a
+	  remote backup, but it does come with a drawback.  Data sent
+	  over the network link is not encrypted, allowing anyone to
+	  intercept and transform the streams back into data without
+	  the knowledge of the sending user.  This is undesirable,
+	  especially when sending the streams over the internet to a
+	  remote host.  <application>SSH</application> can be used to
+	  securely encrypt data send over a network connection.  Since
+	  <acronym>ZFS</acronym> only requires the stream to be
+	  redirected from standard output, it is relatively easy to
+	  pipe it through <application>SSH</application>.  To keep the
+	  contents of the file system encrypted in transit and on the
+	  remote system, consider using <link xlink:href="https://wiki.freebsd.org/PEFS">PEFS</link>.</para>
 
 	<para>有一些設定以及安全性注意事項必須先完成，只有對 <command>zfs send</command> 操作必要的步驟才會在此說明，要取得更多有關 <application>SSH</application> 的資訊請參考 <xref linkend="openssh"/>。</para>
 
@@ -31836,7 +31800,8 @@ vm.kmem_size_max="330M"
 vfs.zfs.arc_max="40M"
 vfs.zfs.vdev.cache.size="5M"</programlisting>
 
-	<para>要取得更多詳細的 <acronym>ZFS</acronym> 相關調校的建議清單，請參考 <link xlink:href="http://wiki.freebsd.org/ZFSTuningGuide"/>。</para>
+	<para xml:lang="en">For a more detailed list of recommendations for
+	  <acronym>ZFS</acronym>-related tuning, see <link xlink:href="https://wiki.freebsd.org/ZFSTuningGuide"/>.</para>
       </sect3>
     </sect2>
   </sect1>
@@ -31895,9 +31860,17 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  <row>
 	    <entry xml:id="zfs-term-pool">儲存池 (Pool)</entry>
 
-	    <entry><emphasis>儲存池 (Pool)</emphasis> 是建構 <acronym>ZFS</acronym> 最基礎的單位。一個儲存池可由一個或多個 vdev 所組成，是用來儲存資料的底層裝置。儲存池會被拿來建立一個或多個檔案系統 (資料集 Dataset) 或區塊裝置 (磁碟區 Volume)，這些資料集與磁碟區會共用儲存池的剩餘可用空間。每一個儲存池可由名稱與 <acronym>GUID</acronym> 來辨識。可用的功能會依儲存池上的 <acronym>ZFS</acronym> 版本而有不同。<note>
-		<para>FreeBSD 9.0 與 9.1 支援 <acronym>ZFS</acronym> 版本 28，之後的版本使用 <acronym>ZFS</acronym> 版本 5000 與功能旗標，新的功能旗標 (Feature flags) 系統有更佳的相容性，能夠與其他人實作的 <acronym>ZFS</acronym> 相容。</para>
-	      </note></entry>
+	    <entry xml:lang="en">A storage <emphasis>pool</emphasis> is the most
+	      basic building block of <acronym>ZFS</acronym>.  A pool
+	      is made up of one or more vdevs, the underlying devices
+	      that store the data.  A pool is then used to create one
+	      or more file systems (datasets) or block devices
+	      (volumes).  These datasets and volumes share the pool of
+	      remaining free space.  Each pool is uniquely identified
+	      by a name and a <acronym>GUID</acronym>.  The features
+	      available are determined by the <acronym>ZFS</acronym>
+	      version number on the pool.
+	    </entry>
 	  </row>
 
 	  <row>
@@ -32041,10 +32014,6 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	    <entry>每個資料集都有壓縮 (Compression) 屬性，預設是關閉的，這個屬性可以設定使用以下幾個壓縮演算法的其中一個來壓縮寫入到資料集的新資料。壓縮除了減少空間使用量外，常也會增加讀取與寫入的吞吐量，因為會減少讀取與寫入的資料區塊。 <itemizedlist>
 		<listitem xml:id="zfs-term-compression-lz4">
 		  <para><emphasis><acronym>LZ4</acronym></emphasis> - <acronym>ZFS</acronym> 儲存池版本 5000 (功能旗標) 後所增加，<acronym>LZ4</acronym> 現在是建議的壓縮演算法，在處理可壓縮的資料時 <acronym>LZ4</acronym> 壓縮比 <acronym>LZJB</acronym> 快將近 50%，在處理不可壓縮的資料時快將近三倍，<acronym>LZ4</acronym> 解壓縮也比 <acronym>LZJB</acronym> 將近 80%。在現代的 <acronym>CPU</acronym> 上，<acronym>LZ4</acronym> 經常平均可用 500 MB/s 的速度壓縮，而解壓縮可到達 1.5 GB/s (每個 CPU 核心)。</para>
-
-		  <note>
-		    <para><acronym>LZ4</acronym> 壓縮只在 FreeBSD 9.2 之後可使用。</para>
-		  </note>
 		</listitem>
 
 		<listitem xml:id="zfs-term-compression-lzjb">
@@ -32352,7 +32321,7 @@ https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 50805 2017-09-07 11:56:16Z mat $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 51515 2018-03-25 19:11:48Z eadler $
 -->
 <chapter version="5.0" xml:id="virtualization">
 
@@ -33139,16 +33108,7 @@ FreeBSD-10.3-RELEASE-amd64-bootonly.iso       100% of  230 MB  570 kBps 06m17s</
       <para xml:lang="en">The virtual machine will boot and start the installer.
 	After installing a system in the virtual machine, when the
 	system asks about dropping in to a shell at the end of the
-	installation, choose <guibutton>Yes</guibutton>.  A small
-	change needs to be made to make the system start with a serial
-	console.  Edit <filename>/etc/ttys</filename> and replace the
-	existing <literal>ttyu0</literal> line with:</para>
-
-      <programlisting xml:lang="en">ttyu0   "/usr/libexec/getty 3wire"   xterm  on secure</programlisting>
-
-      <note><para xml:lang="en">Beginning with FreeBSD 9.3-RELEASE and
-	10.1-RELEASE the console is configured
-	automatically.</para></note>
+	installation, choose <guibutton>Yes</guibutton>.</para>
 
       <para xml:lang="en">Reboot the virtual machine.  While rebooting the virtual
 	machine causes <application>bhyve</application> to exit, the
@@ -34588,7 +34548,7 @@ Option "XkbOptions"  "grp:toggle"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 50963 2017-09-29 10:44:03Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/cutting-edge/chapter.xml 51412 2018-02-09 20:33:20Z wblock $
 -->
 <chapter version="5.0" xml:id="updating-upgrading">
 
@@ -35212,6 +35172,94 @@ before running "/usr/sbin/freebsd-update install"</screen>
 
 	<listitem>
 	  <para>積極！很鼓勵 FreeBSD-CURRENT 使用者發表他們對加強哪些功能或是修復哪些錯誤的建議。 如果您在建議時能附上相關程式碼的話， 那真是太棒了！</para>
+	</listitem>
+      </orderedlist>
+    </sect2>
+
+    <sect2 xml:id="stable">
+      <title xml:lang="en">Using FreeBSD-STABLE</title>
+
+      <para xml:lang="en">FreeBSD-STABLE is the development branch from which major
+	releases are made.  Changes go into this branch at a slower
+	pace and with the general assumption that they have first been
+	tested in FreeBSD-CURRENT.  This is <emphasis>still</emphasis> a
+	development branch and, at any given time, the sources for
+	FreeBSD-STABLE may or may not be suitable for general use.  It is
+	simply another engineering development track, not a resource
+	for end-users.  Users who do not have the resources to perform
+	testing should instead run the most recent release of
+	FreeBSD.</para>
+
+      <para xml:lang="en">Those interested in tracking or contributing to the FreeBSD
+	development process, especially as it relates to the next
+	release of FreeBSD, should consider following FreeBSD-STABLE.</para>
+
+      <para xml:lang="en">While the FreeBSD-STABLE branch should compile and run at all
+	times, this cannot be guaranteed.  Since more people run
+	FreeBSD-STABLE than FreeBSD-CURRENT, it is inevitable that bugs and
+	corner cases will sometimes be found in FreeBSD-STABLE that were
+	not apparent in FreeBSD-CURRENT.  For this reason, one should not
+	blindly track FreeBSD-STABLE.  It is particularly important
+	<emphasis>not</emphasis> to update any production servers to
+	FreeBSD-STABLE without thoroughly testing the code in a
+	development or testing environment.</para>
+
+      <para xml:lang="en">To track FreeBSD-STABLE:</para>
+
+      <indexterm xml:lang="en">
+	<primary>-STABLE</primary>
+	  <secondary>using</secondary>
+      </indexterm>
+      <orderedlist>
+	<listitem>
+	  <para xml:lang="en">Join the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> list in order to stay
+	    informed of build dependencies that may appear in
+	    FreeBSD-STABLE or any other issues requiring special
+	    attention.  Developers will also make announcements in
+	    this mailing list when they are contemplating some
+	    controversial fix or update, giving the users a chance to
+	    respond if they have any issues to raise concerning the
+	    proposed change.</para>
+
+	  <para xml:lang="en">Join the relevant <application>svn</application> list
+	    for the branch being tracked.  For example, users
+	    tracking the 9-STABLE branch should join the
+	    <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> list.  This list records the
+	    commit log entry for each change as it is made, along
+	    with any pertinent information on possible
+	    side effects.</para>
+
+	  <para xml:lang="en">To join these lists, go to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link>,
+	    click on the list to subscribe to, and follow the
+	    instructions.  In order to track changes for the whole
+	    source tree, subscribe to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link>.</para>
+	</listitem>
+
+	<listitem>
+	  <para xml:lang="en">To install a new FreeBSD-STABLE system, install the most
+	    recent FreeBSD-STABLE release from the <link linkend="mirrors">FreeBSD mirror sites</link> or use a
+	    monthly snapshot built from FreeBSD-STABLE.  Refer to <link xlink:href="@@URL_RELPREFIX@@/snapshots/">www.freebsd.org/snapshots</link>
+	    for more information about snapshots.</para>
+
+	  <para xml:lang="en">To compile or upgrade to an existing FreeBSD system to
+	    FreeBSD-STABLE, use <link linkend="svn">svn</link>
+	      <indexterm xml:lang="en">
+		<primary>Subversion</primary>
+	      </indexterm> to check out the source for the desired
+	    branch.  Branch names, such as
+	    <literal>stable/9</literal>, are listed at <link xlink:href="@@URL_RELPREFIX@@/releng/">www.freebsd.org/releng</link>.</para>
+	</listitem>
+
+	<listitem>
+	  <para xml:lang="en">Before compiling or upgrading to FreeBSD-STABLE
+	    <indexterm xml:lang="en">
+	      <primary>-STABLE</primary>
+		<secondary>compiling</secondary>
+	    </indexterm>, read <filename>/usr/src/Makefile</filename>
+	    carefully and follow the instructions in <xref linkend="makeworld"/>.  Read the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">FreeBSD-STABLE mailing list</link> and
+	    <filename>/usr/src/UPDATING</filename> to keep up-to-date
+	    on other bootstrapping procedures that sometimes become
+	    necessary on the road to the next release.</para>
 	</listitem>
       </orderedlist>
     </sect2>
@@ -35959,7 +36007,7 @@ Elapsed Times for processes csh,
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 49510 2016-10-13 02:48:24Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 51494 2018-03-17 20:05:02Z eadler $
 -->
 <chapter version="5.0" xml:id="serialcomms">
   <title>序列通訊</title>
@@ -36661,20 +36709,11 @@ Elapsed Times for processes csh,
 	  <para xml:lang="en">For example, to connect from a client system that runs
 	    FreeBSD to the serial connection of another system:</para>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cu -l <replaceable>serial-port-device</replaceable></userinput></screen>
+	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cu -l /dev/cuau<replaceable>N</replaceable></userinput></screen>
 
-	  <para xml:lang="en">Replace <replaceable>serial-port-device</replaceable>
-	    with the device name of the connected serial port.  These
-	    device files are called
-	    <filename>/dev/cuau<replaceable>N</replaceable></filename>
-	    on FreeBSD versions 10.x and higher and
-	    <filename>/dev/cuad<replaceable>N</replaceable></filename>
-	    on FreeBSD versions 9.x and lower.  In either case,
-	    <replaceable>N</replaceable> is the serial port number,
-	    starting from zero.  This means that
+	  <para xml:lang="en">Ports are numbered starting from zero.  This means that
 	    <filename>COM1</filename> is
-	    <filename>/dev/cuau0</filename> or
-	    <filename>/dev/cuad0</filename> in FreeBSD.</para>
+	    <filename>/dev/cuau0</filename>.</para>
 
 	  <para xml:lang="en">Additional programs are available through the Ports
 	    Collection, such as
@@ -39445,11 +39484,9 @@ nameserver <replaceable>y.y.y.y</replaceable></programlisting>
       <secondary>over Ethernet</secondary>
     </indexterm>
 
-    <para xml:lang="en">This section describes how to set up <acronym>PPP</acronym>
-      over Ethernet (<acronym>PPPoE</acronym>).</para>
+    <para>本節將介紹如何設定乙太網路上的 <acronym>PPP</acronym> (<acronym>PPPoE</acronym>)。</para>
 
-    <para xml:lang="en">Here is an example of a working
-      <filename>ppp.conf</filename>:</para>
+    <para>這裡有一個可以使用的 <filename>ppp.conf</filename> 範例：</para>
 
     <programlisting xml:lang="en">default:
   set log Phase tun command # you can add more detailed logging if you wish
@@ -39463,13 +39500,11 @@ name_of_service_provider:
   set login
   add default HISADDR</programlisting>
 
-      <para xml:lang="en">As <systemitem class="username">root</systemitem>,
-	run:</para>
+      <para>使用 <systemitem class="username">root</systemitem> 執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ppp -ddial name_of_service_provider</userinput></screen>
 
-      <para xml:lang="en">Add the following to
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>加入以下內容到 <filename>/etc/rc.conf</filename>：</para>
 
       <programlisting xml:lang="en">ppp_enable="YES"
 ppp_mode="ddial"
@@ -39479,64 +39514,38 @@ ppp_profile="name_of_service_provider"</programlisting>
     <sect2>
       <title>使用 PPPoE 服務標籤</title>
 
-      <para xml:lang="en">Sometimes it will be necessary to use a service tag to
-	establish the connection.  Service tags are used to
-	distinguish between different PPPoE servers attached to a
-	given network.</para>
+      <para>有時會需要使用服務標籤 (Service tag) 來建立連線，服務標籤是用來區別指定網路中的多個 PPPoE 伺服器。</para>
 
-      <para xml:lang="en">Any required service tag information should be in the
-	documentation provided by the <acronym>ISP</acronym>.</para>
+      <para>任何所需的服務標籤資訊應可以在 <acronym>ISP</acronym> 所提供的說明文件中找到。</para>
 
-      <para xml:lang="en">As a last resort, one could try installing the
-	<package>net/rr-pppoe</package> package or port.  Bear in mind
-	however, this may de-program your modem and render it useless,
-	so think twice before doing it.  Simply install the program
-	shipped with the modem.  Then, access the
-	<guimenu>System</guimenu> menu from the program.  The name of
-	the profile should be listed there.  It is usually
-	<emphasis>ISP</emphasis>.</para>
+      <para>最後的手段，可以嘗試安裝 <package>net/rr-pppoe</package> 套件或 Port。注意，這可能會清除您數據機上的程式並使其無法使用，所以在執行之前請三思。 只需安裝數據機所附的程式， 然後，進入該程式的 <guimenu>System</guimenu> 選單，在這裡應該會列出基本資料 (Profile) 的名稱，通常會是 <emphasis>ISP</emphasis>。</para>
 
-      <para xml:lang="en">The profile name (service tag) will be used in the PPPoE
-	configuration entry in <filename>ppp.conf</filename> as the
-	provider part for <command>set device</command>.  Refer to
-	<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> for full details.  It should look like
-	this:</para>
+      <para>基本資料 (Profile) 名稱 (即服務標籤) 會用在 <filename>ppp.conf</filename> 中的 PPPoE 設定項目，提供者部份的 <command>set device</command>。請參考 <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來取得完整資訊，該項目會看起來如下：</para>
 
       <programlisting xml:lang="en">set device PPPoE:<replaceable>xl1</replaceable>:<replaceable>ISP</replaceable></programlisting>
 
-      <para xml:lang="en">Do not forget to change <replaceable>xl1</replaceable> to
-	the proper device for the Ethernet card.</para>
+      <para>不要忘記更改 <replaceable>xl1</replaceable> 為實際使用的乙太網路卡裝置。</para>
 
-      <para xml:lang="en">Do not forget to change <replaceable>ISP</replaceable> to
-	the profile.</para>
+      <para>不要忘記更改 <replaceable>ISP</replaceable> 為該基本資料名稱。</para>
 
-      <para xml:lang="en">For additional information, refer to <link xlink:href="http://renaud.waldura.com/doc/freebsd/pppoe/">Cheaper
-	  Broadband with FreeBSD on DSL</link> by Renaud Waldura.</para>
+      <para>要取得更多的資訊，請參考 Renaud Waldura 所寫的 <link xlink:href="http://renaud.waldura.com/doc/freebsd/pppoe/">Cheaper Broadband with FreeBSD on DSL</link>。</para>
     </sect2>
 
     <sect2 xml:id="ppp-3com">
 
       <title>在 <trademark class="registered">3Com</trademark> <trademark class="registered">HomeConnect</trademark> ADSL Modem Dual Link 使用 PPPoE</title>
 
-      <para xml:lang="en">This modem does not follow the PPPoE specification defined
-	in <link xlink:href="http://www.faqs.org/rfcs/rfc2516.html">RFC
-	  2516</link>.</para>
+      <para>這台數據機並未使用 <link xlink:href="http://www.faqs.org/rfcs/rfc2516.html">RFC 2516</link> 所定義的規格。</para>
 
-      <para xml:lang="en">In order to make FreeBSD capable of communicating with this
-	device, a sysctl must be set.  This can be done automatically
-	at boot time by updating
-	<filename>/etc/sysctl.conf</filename>:</para>
+      <para>為了要讓 FreeBSD 能夠與這個裝置溝通，必須設定 sysctl，這可透過修改 <filename>/etc/sysctl.conf</filename> 來在開機時自動完成：</para>
 
 	<programlisting xml:lang="en">net.graph.nonstandard_pppoe=1</programlisting>
 
-      <para xml:lang="en">or can be done immediately with the command:</para>
+      <para>或可以使用以下指令立即執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl net.graph.nonstandard_pppoe=1</userinput></screen>
 
-      <para xml:lang="en">Unfortunately, because this is a system-wide setting, it
-	is not possible to talk to a normal PPPoE client or server and
-	a <trademark class="registered">3Com</trademark> <trademark class="registered">HomeConnect</trademark> ADSL Modem at the
-	same time.</para>
+      <para>不幸的是，因為這是一個全系統的設定，一般的 PPPoE 客戶端或伺服器無法與 <trademark class="registered">3Com</trademark> <trademark class="registered">HomeConnect</trademark> ADSL 數據機同時使用。</para>
     </sect2>
   </sect1>
 
@@ -41687,7 +41696,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 50922 2017-09-25 19:33:51Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 51406 2018-02-05 09:48:07Z eadler $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -42163,60 +42172,35 @@ server-program-arguments</programlisting>
     </info>
 
     <indexterm xml:lang="en"><primary>NFS</primary></indexterm>
-    <para xml:lang="en">FreeBSD supports the Network File System
-      (<acronym>NFS</acronym>), which allows a server to share
-      directories and files with clients over a network.  With
-      <acronym>NFS</acronym>, users and programs can access files on
-      remote systems as if they were stored locally.</para>
+    <para>FreeBSD 支援網路檔案系統 (Network File System, <acronym>NFS</acronym>)，這系統可讓伺服器分享目錄及檔案給網路上所有的客戶端，有了 <acronym>NFS</acronym>，使用者與應用程式可以如同存取本地檔案般的存取遠端系統中的檔案。</para>
 
-    <para xml:lang="en"><acronym>NFS</acronym> has many practical uses.  Some of
-      the more common uses include:</para>
+    <para><acronym>NFS</acronym> 非常的實用，常見的用途包含：</para>
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Data that would otherwise be duplicated on each client
-	  can be kept in a single location and accessed by clients
-	  on the network.</para>
+	<para>原來分散在各個客戶端的重覆資料可以儲存在同一個地方讓網路上所有的客戶端存取。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Several clients may need access to the
-	  <filename>/usr/ports/distfiles</filename> directory.
-	  Sharing that directory allows for quick access to the
-	  source files without having to download them to each
-	  client.</para>
+	<para>許多客戶端可能會需要使用 <filename>/usr/ports/distfiles</filename> 目錄，分享該目錄可讓客戶端快速的找到已經下載過的原始碼檔案，而不必再各別下載一次。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">On large networks, it is often more convenient to
-	  configure a central <acronym>NFS</acronym> server on which
-	  all user home directories are stored.  Users can log into
-	  a client anywhere on the network and have access to their
-	  home directories.</para>
+	<para>在大型的網路上，設定一個中央 <acronym>NFS</acronym> 伺服器來儲存所有使用者的家目錄，通常會讓使用者能更方便的存取資料，使用者可以在網路上的任何一處登入客戶端都能夠存取自已的家目錄。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Administration of <acronym>NFS</acronym> exports is
-	  simplified.  For example, there is only one file system
-	  where security or backup policies must be set.</para>
+	<para>管理 <acronym>NFS</acronym> 的輸出 (Export) 很簡單，只有一個檔案系統需要設定安全性或備份規則。</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Removable media storage devices can be used by other
-	  machines on the network.  This reduces the number of devices
-	  throughout the network and provides a centralized location
-	  to manage their security.  It is often more convenient to
-	  install software on multiple machines from a centralized
-	  installation media.</para>
+	<para>可移除的儲存裝置也可讓其他在網路上的機器存取，這可減少網路上的裝置數量並可提供可集中管理這些裝置安全性的地方，這會通常會讓需要從集中管理的安裝媒體要安裝軟體到多台主機上時變的更簡便。</para>
       </listitem>
     </itemizedlist>
 
-    <para xml:lang="en"><acronym>NFS</acronym> consists of a server and one or more
-      clients.  The client remotely accesses the data that is stored
-      on the server machine.  In order for this to function properly,
-      a few processes have to be configured and running.</para>
+    <para><acronym>NFS</acronym> 的組成需要有一個伺服器與一或多個客戶端，客戶端可以遠端存取儲存於伺服器主機上的資料，要讓這個功能能夠正常運作，需要做一些設定後才能執行。</para>
 
-    <para xml:lang="en">These daemons must be running on the server:</para>
+    <para>必須在伺服器啟動以下 Daemon：</para>
     <indexterm xml:lang="en">
       <primary>NFS</primary>
 	<secondary>server</secondary>
@@ -42251,29 +42235,23 @@ server-program-arguments</programlisting>
 	  <tbody>
 	    <row>
 	      <entry xml:lang="en"><application>nfsd</application></entry>
-	      <entry xml:lang="en">The <acronym>NFS</acronym> daemon which services
-		requests from <acronym>NFS</acronym> clients.</entry>
+	      <entry><acronym>NFS</acronym> daemon 會服務來自 <acronym>NFS</acronym> 客戶端的請求。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><application>mountd</application></entry>
-	      <entry xml:lang="en">The <acronym>NFS</acronym> mount daemon which
-		carries out requests received from
-		<application>nfsd</application>.</entry>
+	      <entry><acronym>NFS</acronym> mount daemon 會執行自 <application>nfsd</application> 收到的請求。</entry>
 	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><application>rpcbind</application></entry>
-	      <entry xml:lang="en"> This daemon allows <acronym>NFS</acronym>
-		clients to discover which port the
-		<acronym>NFS</acronym> server is using.</entry>
+	      <entry>此 Daemon 會讓 <acronym>NFS</acronym> 客戶端能夠找到 <acronym>NFS</acronym> 伺服器使用了那一個連結埠。</entry>
 	    </row>
 	  </tbody>
 	</tgroup>
       </informaltable>
 
-      <para xml:lang="en">Running <citerefentry><refentrytitle>nfsiod</refentrytitle><manvolnum>8</manvolnum></citerefentry> on the client can improve
-	performance, but is not required.</para>
+      <para>在客戶端執行 <citerefentry><refentrytitle>nfsiod</refentrytitle><manvolnum>8</manvolnum></citerefentry> 可以增進效率，但這不是必要的。</para>
 
       <sect2 xml:id="network-configuring-nfs">
 	<title>設定伺服器</title>
@@ -42283,82 +42261,40 @@ server-program-arguments</programlisting>
 	  <secondary>configuration</secondary>
 	</indexterm>
 
-      <para xml:lang="en">The file systems which the <acronym>NFS</acronym> server
-	will share are specified in <filename>/etc/exports</filename>.
-	Each line in this file specifies a file system to be exported,
-	which clients have access to that file system, and any access
-	options.  When adding entries to this file, each exported file
-	system, its properties, and allowed hosts must occur on a
-	single line.  If no clients are listed in the entry, then any
-	client on the network can mount that file system.</para>
+      <para><acronym>NFS</acronym> 會共享的檔案系統可在 <filename>/etc/exports</filename> 指定，在這個檔案的每一行可指定一個要輸出 (Export) 的檔案系統，</para>
 
       <indexterm xml:lang="en">
 	<primary>NFS</primary>
 	<secondary>export examples</secondary>
       </indexterm>
 
-      <para xml:lang="en">The following <filename>/etc/exports</filename> entries
-	demonstrate how to export file systems.  The examples can be
-	modified to match the file systems and client names on the
-	reader's network.  There are many options that can be used in
-	this file, but only a few will be mentioned here.  See
-	<citerefentry><refentrytitle>exports</refentrytitle><manvolnum>5</manvolnum></citerefentry> for the full list of options.</para>
+      <para>以下 <filename>/etc/exports</filename> 項目示範要如何輸出檔案系統，這個範例可以修改為讀者網路實際使用的檔案系統及客戶端名稱。在這個檔案有許多選項可以使用，但在此處只會介紹一部份，要取得完整的選項清單請參考 <citerefentry><refentrytitle>exports</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
 
-      <para xml:lang="en">This example shows how to export
-	<filename>/cdrom</filename> to three hosts named
-	<replaceable>alpha</replaceable>,
-	<replaceable>bravo</replaceable>, and
-	<replaceable>charlie</replaceable>:</para>
+      <para>這個範例示範如何輸出 <filename>/cdrom</filename> 給三個主機，分稱分別為 <replaceable>alpha</replaceable>, <replaceable>bravo</replaceable>, and <replaceable>charlie</replaceable>：</para>
 
       <programlisting xml:lang="en">/cdrom -ro <replaceable>alpha</replaceable> <replaceable>bravo</replaceable> <replaceable>charlie</replaceable></programlisting>
 
-      <para xml:lang="en">The <literal>-ro</literal> flag makes the file system
-	read-only, preventing clients from making any changes to the
-	exported file system.  This example assumes that the host
-	names are either in <acronym>DNS</acronym> or in
-	<filename>/etc/hosts</filename>.  Refer to <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry> if
-	the network does not have a <acronym>DNS</acronym>
-	server.</para>
+      <para><literal>-ro</literal> 旗標會讓檔案系統只能讀取，用來避免客戶端對輸出的檔案系統做任何的變更，這個範例假設主機名稱已在 <acronym>DNS</acronym> 或在 <filename>/etc/hosts</filename>。若該網路上沒有 <acronym>DNS</acronym> 伺服器請參考 <citerefentry><refentrytitle>hosts</refentrytitle><manvolnum>5</manvolnum></citerefentry>。</para>
 
-      <para xml:lang="en">The next example exports <filename>/home</filename> to
-	three clients by <acronym>IP</acronym> address.  This can be
-	useful for networks without <acronym>DNS</acronym> or
-	<filename>/etc/hosts</filename> entries.  The
-	<literal>-alldirs</literal> flag allows subdirectories to be
-	mount points.  In other words, it will not automatically mount
-	the subdirectories, but will permit the client to mount the
-	directories that are required as needed.</para>
+      <para>接下來的範例會透過 <acronym>IP</acronym> 位址輸出 <filename>/home</filename> 給三個客戶端，這在沒有設定 <acronym>DNS</acronym> 或 <filename>/etc/hosts</filename> 項目的網路上可使用，<literal>-alldirs</literal> 旗標會讓子目錄可成為掛載點 (Mount point)，換句話說，這個旗標並不會自動掛載這些子目錄，但可以讓客戶端在需要時才掛載該目錄。</para>
 
       <programlisting xml:lang="en">/usr/home  -alldirs  10.0.0.2 10.0.0.3 10.0.0.4</programlisting>
 
-      <para xml:lang="en">This next example exports <filename>/a</filename> so that
-	two clients from different domains may access that file
-	system.  The <option>-maproot=root</option> allows <systemitem class="username">root</systemitem> on the remote system to
-	write data on the exported file system as <systemitem class="username">root</systemitem>.  If
-	<literal>-maproot=root</literal> is not specified, the
-	client's <systemitem class="username">root</systemitem> user
-	will be mapped to the server's <systemitem class="username">nobody</systemitem> account and will be
-	subject to the access limitations defined for <systemitem class="username">nobody</systemitem>.</para>
+      <para>接下來的範例會輸出 <filename>/a</filename> 來讓兩個不同網域的客戶端能夠存取該檔案系統，<option>-maproot=root</option> 會允許在遠端系統的 <systemitem class="username">root</systemitem> 能夠以 <systemitem class="username">root</systemitem> 寫入資料到輸出的檔案系統。若沒有指定 <literal>-maproot=root</literal>，客戶端的 <systemitem class="username">root</systemitem> 使用者則會對應到伺服器的 <systemitem class="username">nobody</systemitem> 帳號，且將會受限於為 <systemitem class="username">nobody</systemitem> 所定義的存取限制中。</para>
 
       <programlisting xml:lang="en">/a  -maproot=root  host.example.com box.example.org</programlisting>
 
-      <para xml:lang="en">A client can only be specified once per file system.  For
-	example, if <filename>/usr</filename> is a single file system,
-	these entries would be invalid as both entries specify the
-	same host:</para>
+      <para>一個客戶端在一個檔案系統只能夠被指定一次，例如，若 <filename>/usr</filename> 是一個獨立的檔案系統，以下的項目會是無效的，因為兩個項目都指向了同一個主機：</para>
 
       <programlisting xml:lang="en"># Invalid when /usr is one file system
 /usr/src   client
 /usr/ports client</programlisting>
 
-      <para xml:lang="en">The correct format for this situation is to use one
-	entry:</para>
+      <para>在這種情況下應使用一個項目才是正確的格式：</para>
 
       <programlisting xml:lang="en">/usr/src /usr/ports  client</programlisting>
 
-      <para xml:lang="en">The following is an example of a valid export list, where
-	<filename>/usr</filename> and <filename>/exports</filename>
-	are local file systems:</para>
+      <para>以下的範例為有效的輸出清單，其中 <filename>/usr</filename> 與 <filename>/exports</filename> 為本地的檔案系統：</para>
 
       <programlisting xml:lang="en"># Export src and ports to client01 and client02, but only
 # client01 has root privileges on it
@@ -42369,26 +42305,17 @@ server-program-arguments</programlisting>
 /exports -alldirs -maproot=root      client01 client02
 /exports/obj -ro</programlisting>
 
-      <para xml:lang="en">To enable the processes required by the
-	<acronym>NFS</acronym> server at boot time, add these options
-	to <filename>/etc/rc.conf</filename>:</para>
+      <para>要開啟 <acronym>NFS</acronym> 伺服器在開機時所需的程序，需加入以下選項到 <filename>/etc/rc.conf</filename>：</para>
 
       <programlisting xml:lang="en">rpcbind_enable="YES"
 nfs_server_enable="YES"
 mountd_flags="-r"</programlisting>
 
-      <para xml:lang="en">The server can be started now by running this
-	command:</para>
+      <para>現在便可執行以下指令來啟動伺服器：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service nfsd start</userinput></screen>
 
-      <para xml:lang="en">Whenever the <acronym>NFS</acronym> server is started,
-	<application>mountd</application> also starts automatically.
-	However, <application>mountd</application> only reads
-	<filename>/etc/exports</filename> when it is started.  To make
-	subsequent <filename>/etc/exports</filename> edits take effect
-	immediately, force <application>mountd</application> to reread
-	it:</para>
+      <para>每當 <acronym>NFS</acronym> 伺服器啟動後，<application>mountd</application> 也會自動啟動，然而 <application>mountd</application> 在啟動後只會讀取 <filename>/etc/exports</filename>，要讓之後才編輯的 <filename>/etc/exports</filename> 能夠立即生效的話，可強制 <application>mountd</application> 重新讀取該檔案：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>service mountd reload</userinput></screen>
     </sect2>
@@ -44528,6 +44455,13 @@ freebsd.org. (A)
     <sect2>
       <title>DNS 伺服器設定於 FreeBSD 9.<replaceable>X</replaceable></title>
 
+      <important>
+	<para xml:lang="en">This chapter is only applicable to FreeBSD 9 and before.
+	  <application>BIND9</application> is no longer part of the
+	  base system in FreeBSD 10 and after, where it has been replaced
+	  with <application>unbound</application>.</para>
+      </important>
+
       <para>在 FreeBSD 中，會稱 BIND daemon 為 <application>named</application>。</para>
 
       <informaltable frame="none" pgwide="1">
@@ -46140,22 +46074,13 @@ driftfile /var/db/ntp.drift</programlisting>
       appear in <filename>/dev/</filename> and the device must be
       separately formatted and mounted.</para>
 
-    <para xml:lang="en">Beginning with 10.0-RELEASE, FreeBSD provides a native,
+    <para xml:lang="en">FreeBSD provides a native,
       kernel-based <acronym>iSCSI</acronym> target and initiator.
       This section describes how to configure a FreeBSD system as a
       target or an initiator.</para>
 
     <sect2 xml:id="network-iscsi-target">
       <title>設定 <acronym>iSCSI</acronym> Target</title>
-
-      <note>
-	<para xml:lang="en">The native <acronym>iSCSI</acronym> target is supported
-	  starting with FreeBSD 10.0-RELEASE.  To use
-	  <acronym>iSCSI</acronym> in older versions of FreeBSD, install
-	  a userspace target from the Ports Collection, such as
-	  <package>net/istgt</package>.  This chapter only describes
-	  the native target.</para>
-      </note>
 
       <para xml:lang="en">To configure an <acronym>iSCSI</acronym> target, create
 	the <filename>/etc/ctl.conf</filename> configuration file, add
@@ -49965,7 +49890,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 50968 2017-09-29 10:53:59Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 51461 2018-03-05 15:50:47Z rodrigo $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -51606,8 +51531,7 @@ wlan0: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; mtu 1500
 	      </callout>
 	    </calloutlist>
 
-	    <para xml:lang="en">Add the following to
-	      <filename>/etc/rc.conf</filename>:</para>
+	    <para>加入以下內容到 <filename>/etc/rc.conf</filename>：</para>
 
 	    <programlisting xml:lang="en">wlans_ath0="wlan0"
 ifconfig_wlan0="WPA DHCP"</programlisting>
@@ -53481,6 +53405,7 @@ BEGEMOT-BRIDGE-MIB::begemotBridgeDefaultBridgeIf.0 s bridge2</screen>
 lagg0: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1500
         options=8&lt;VLAN_MTU&gt;
         ether 00:05:5d:71:8d:b8
+        inet 10.0.0.3 netmask 0xffffff00 broadcast 10.0.0.255
         media: Ethernet autoselect
         status: active
         laggproto lacp
@@ -53798,7 +53723,7 @@ ifconfig_<literal>lagg<replaceable>0</replaceable></literal>="up laggproto failo
 	    <acronym>NFS</acronym> by adding the following to
 	    <filename>/etc/exports</filename>:</para>
 
-	  <programlisting xml:lang="en">/b -ro -alldirs</programlisting>
+	  <programlisting xml:lang="en">/b -ro -alldirs -maproot=root</programlisting>
 	</step>
 
 	<step>
@@ -53837,21 +53762,16 @@ ifconfig_<literal>lagg<replaceable>0</replaceable></literal>="up laggproto failo
 	</step>
 
 	<step>
-	  <para xml:lang="en">Rebuild the FreeBSD kernel and userland (refer to <xref linkend="makeworld"/> for more detailed
-	    instructions):</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/src</userinput>
-<prompt>#</prompt> <userinput>make buildworld</userinput>
-<prompt>#</prompt> <userinput>make buildkernel</userinput></screen>
-	</step>
-
-	<step>
-	  <para xml:lang="en">Install FreeBSD into the directory mounted over
-	    <acronym>NFS</acronym>:</para>
-
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>make installworld DESTDIR=${NFSROOTDIR}</userinput>
-<prompt>#</prompt> <userinput>make installkernel DESTDIR=${NFSROOTDIR}</userinput>
-<prompt>#</prompt> <userinput>make distribution DESTDIR=${NFSROOTDIR}</userinput></screen>
+	  <para xml:lang="en">Install the base system into
+		<filename>${NFSROOTDIR}</filename>, either by
+		decompressing the official archives or by rebuilding
+		the FreeBSD kernel and userland (refer to
+		<xref linkend="makeworld"/> for more detailed
+		instructions, but do not forget to add
+		<option>DESTDIR=<replaceable>${NFSROOTDIR}</replaceable></option>
+		when running the
+		<command>make installkernel</command> and
+		<command>make installworld</command> commands.</para>
 	</step>
 
 	<step>
@@ -53925,7 +53845,16 @@ Received 264951 bytes in 0.1 seconds</screen>
 	<filename>/etc</filename> and <filename>/var</filename> will
 	be created and mounted and the contents of the
 	<filename>cpio.gz</filename> files will be copied into
-	them.</para>
+	them.  By default, these file systems have a maximum capacity
+	of 5 megabytes.  If your archives do not fit, which is
+	usually the case for <filename>/var</filename> when binary
+	packages have been installed, request a larger size by putting
+	the number of 512 byte sectors needed (e.g., 5 megabytes
+	is 10240 sectors) in
+	<filename>${NFSROOTDIR}/conf/base/etc/md_size</filename> and
+	<filename>${NFSROOTDIR}/conf/base/var/md_size</filename>
+	files for <filename>/etc</filename> and
+	<filename>/var</filename> file systems respectively.</para>
     </sect2>
 
     <sect2 xml:id="network-pxe-setting-up-dhcp">
@@ -53965,7 +53894,7 @@ Received 264951 bytes in 0.1 seconds</screen>
    next-server <replaceable>192.168.0.1</replaceable> ;
 
    # path of boot loader obtained via tftp
-     filename "<replaceable>FreeBSD/install/boot/pxeboot</replaceable>" ;
+   filename "<replaceable>FreeBSD/install/boot/pxeboot</replaceable>" ;
 
    # pxeboot boot loader will try to NFS mount this directory for root FS
    option root-path "<replaceable>192.168.0.1:/b/tftpboot/FreeBSD/install/</replaceable>" ;
@@ -55065,7 +54994,8 @@ ifconfig_carp0="vhid <replaceable>1</replaceable> advskew <replaceable>100</repl
 ifconfig_carp1="vhid <replaceable>2</replaceable> advskew <replaceable>100</replaceable> pass <replaceable>testpass</replaceable> <replaceable>192.168.1.51/24</replaceable>"</programlisting>
 
       <note>
-	<para xml:lang="en">Preemption is disabled in the GENERIC FreeBSD kernel.  If
+	<para xml:lang="en">Preemption is disabled in the
+	  <filename>GENERIC</filename> FreeBSD kernel.  If
 	  preemption has been enabled with a custom kernel,
 	  <systemitem>hostc.example.org</systemitem> may not release
 	  the <acronym>IP</acronym> address back to the original
@@ -55146,7 +55076,7 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml 50522 2017-07-19 19:48:38Z gjb $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml 51254 2017-12-04 04:16:21Z eadler $
 -->
 <appendix version="5.0" xml:id="mirrors">
   <title>取得 FreeBSD</title>
@@ -55166,7 +55096,7 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
 	  Phone: <phone>+1 925 240-6652</phone>
 	  Fax: <fax>+1 925 674-0821</fax>
 	  Email: <email>info@freebsdmall.com</email>
-	  WWW: <otheraddr xlink:href="http://www.freebsdmall.com/">http://www.freebsdmall.com/</otheraddr>
+	  WWW: <otheraddr xlink:href="https://www.freebsdmall.com">https://www.freebsdmall.com</otheraddr>
 	</address>
       </listitem>
 
@@ -55191,35 +55121,6 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
 	  WWW: <otheraddr xlink:href="http://www.hinner.de/linux/freebsd.html">http://www.hinner.de/linux/freebsd.html</otheraddr>
 	</address>
       </listitem>
-
-<!--
-This site is just showing the Apache test page.
-      <listitem>
-	<address>
-	  Linux Distro UK
-	  <street>42 Wharfedale Road</street>
-	  <city>Margate</city>
-	  <postcode>CT9 2TB</postcode>
-	  <country>United Kingdom</country>
-	  WWW: <otheraddr
-	    xlink:href="https://linux-distro.co.uk/">https://linux-distro.co.uk/</otheraddr>
-	</address>
-      </listitem>
-
-This site doesn't have any products newer than 8.1 which is now EOL'd
-      <listitem>
-	<address>The Linux Emporium
-	  <street>The Techno Centre, Puma Way</street>
-	  <city>Parkside</city>
-	  <postcode>CV1 2TT</postcode>
-	  <country>United Kingdom</country>
-	  Phone: <phone>+44 (0)247 615 8121</phone>
-	  Fax: <fax>+44 1491 837016</fax>
-	  WWW: <otheraddr
-	    xlink:href="http://www.linuxemporium.co.uk/products/bsd/">http://www.linuxemporium.co.uk/products/bsd/</otheraddr>
-	</address>
-      </listitem>
--->
 
       <listitem>
 	<address xml:lang="en">Linux Center
@@ -56675,7 +56576,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 50963 2017-09-29 10:44:03Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 51498 2018-03-18 05:26:49Z eadler $
 -->
 <appendix version="5.0" xml:id="eresources">
 
@@ -56707,7 +56608,7 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
       </listitem>
 
       <listitem>
-	<para xml:lang="en"><link xlink:href="http://planet.freebsd.org/">Planet
+	<para xml:lang="en"><link xlink:href="https://planet.freebsd.org/">Planet
 	  FreeBSD</link> offers an aggregation feed of dozens of blogs
 	  written by FreeBSD developers.  Many developers use this to
 	  post quick notes about what they are working on, new
@@ -56966,6 +56867,11 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	    </row>
 
 	    <row>
+	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-elastic">freebsd-elastic</link></entry>
+	      <entry xml:lang="en">FreeBSD-specific ElasticSearch discussions</entry>
+	    </row>
+
+	    <row>
 	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-embedded">freebsd-embedded</link></entry>
 	      <entry xml:lang="en">Using FreeBSD in embedded applications</entry>
 	    </row>
@@ -57037,6 +56943,11 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hackers">freebsd-hackers</link></entry>
 	      <entry xml:lang="en">General technical discussion</entry>
 	    </row>
+
+	   <row>
+	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-haskell">freebsd-haskell</link></entry>
+	      <entry xml:lang="en">FreeBSD-specific Haskell issues and discussions</entry>
+	   </row>
 
 	    <row>
 	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hardware">freebsd-hardware</link></entry>
@@ -58987,11 +58898,6 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 	  <para xml:lang="en"><link xlink:href="news:fr.comp.os.bsd">fr.comp.os.bsd</link>
 	    (French)</para>
 	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="news:it.comp.os.freebsd">it.comp.os.freebsd</link>
-	    (Italian)</para>
-	</listitem>
       </itemizedlist>
     </sect2>
 
@@ -59035,18 +58941,6 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
       <itemizedlist>
 	<listitem>
 	  <para xml:lang="en"><link xlink:href="news:comp.windows.x">comp.windows.x</link></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="news:comp.windows.x.apps">comp.windows.x.apps</link></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="news:comp.windows.x.announce">comp.windows.x.announce</link></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="news:comp.emulators.ms-windows.wine">comp.emulators.ms-windows.wine</link></para>
 	</listitem>
       </itemizedlist>
     </sect2>
@@ -59356,40 +59250,6 @@ This site doesn't have any products newer than 8.1 which is now EOL'd
 </itemizedlist>
 
   </sect1>
-<!--
-Comment out for now as only one address
-  <sect1 xml:id="eresources-email">
-    <title>Email Addresses</title>
-
-    <para>The following user groups provide &os; related email
-      addresses for their members.  The listed administrator reserves
-      the right to revoke the address if it is abused in any
-      way.</para>
-
-    <informaltable frame="none" pgwide="1">
-      <tgroup cols="4">
-	<thead>
-	  <row>
-	    <entry>Domain</entry>
-	    <entry>Facilities</entry>
-	    <entry>User Group</entry>
-	    <entry>Administrator</entry>
-	  </row>
-	</thead>
-
-	<tbody>
-	  <row>
-	    <entry>ukug.uk.FreeBSD.org</entry>
-	    <entry>Forwarding only</entry>
-	    <entry><email>ukfreebsd@uk.FreeBSD.org</email></entry>
-	    <entry>Lee Johnston
-	      <email>lee@uk.FreeBSD.org</email></entry>
-	  </row>
-	</tbody>
-      </tgroup>
-    </informaltable>
-  </sect1>
-  -->
 </appendix>
 
     
@@ -59433,249 +59293,87 @@ Comment out for now as only one address
 
     <sect2 xml:id="pgpkey-security-officer">
       <title>Security Officer Team <email>security-officer@FreeBSD.org</email></title>
-      <!-- $FreeBSD: head/share/pgpkeys/security-officer.key 47557 2015-10-14 19:38:09Z delphij $ -->
+      <!-- $FreeBSD: head/share/pgpkeys/security-officer.key 51315 2017-12-17 04:41:22Z gordon $ -->
 <!--
-sh addkey.sh security-officer ED67ECD65DCF6AE7 ;
+sh addkey.sh security-officer D39792F49EA7E5C2 ;
 -->
 <programlisting role="pgpfingerprint"><![CDATA[
-pub   rsa4096/ED67ECD65DCF6AE7 2013-09-24 [expires: 2018-01-01]
-      Key fingerprint = 1CF7 FF6F ADF5 CA9F BE1B  8CB2 ED67 ECD6 5DCF 6AE7
+pub   rsa4096/D39792F49EA7E5C2 2017-08-16 [SC] [expires: 2023-01-02]
+      Key fingerprint = FC0E 878A E5AF E788 028D  6355 D397 92F4 9EA7 E5C2
 uid                            FreeBSD Security Officer <security-officer@FreeBSD.org>
-sub   rsa4096/B64357A343D9CBAE 2013-09-24 [expires: 2018-01-01]
+sub   rsa4096/6DD0A349F26ADEFD 2017-08-16 [E] [expires: 2023-01-02]
 
 ]]></programlisting>
 <programlisting role="pgpkey"><![CDATA[
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-mQINBFJBjOYBEADuKnefrbTVFTZf9mITVx1lFAqwDHPRHZeWBr2Vq1B/Y1eKKsen
-BKbK/O/CXaLuGFRn/6Ptvi9eLuWnho88qzaPU1Aa7BFRRiZlN+WrTmaDwdONJnJQ
-p1LTPjqHmLVAkD7mFZe/H8Glxot62zEqY7LrEs+ZuxQ8oI51YKjhGaACvkrFMinO
-09+TDey1fupVH1+yskVKQZo1zp//Hl/IrPbZKfGCxIGePQowZF7YLvl8DKPo4jI5
-KO4tZ1kOPcPL2CqwhuCDy0fpUhrQZBswp6tsGx5mRJxDxfgePRBYDK4tMK+BSVsR
-putIKOZ4zoBf12hYFiJ8Yd7e9cqxTiPa7AhxPbAjppiH7qJ3NJKCXOOp9DcSvrfb
-ymu9cbDIPNwh/LQ1wt3T+U8QkD6a1a2kJL5+mdg03Ny+8Ej8hUyuJOEx+sxLs+JX
-4TS1KRreLzxN7Ak21dNMr8361lB+Uprgi9lOBNLO31TWPABtJhIzwBOhohSqstB9
-w6I2ZsPpLqUp/p9BrWlw6+UfOqNDFILZ0CqL1CyFIyrkjutXrUshqniSc/u1VbTU
-RlIcufZhN3FtW1P6ktUq5ss4dqEh/QZfR1WxBYRMbKXXAN61XO8M2t44I+44DHi7
-jOs1q6jrbfAli1ZGYam/5wjOJkvQ3xemP6SaDKnCKOnPHC45EAt2SEVGywARAQAB
+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
-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
-=mLLk
+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
+=8rds
 -----END PGP PUBLIC KEY BLOCK-----
 ]]></programlisting>
 
