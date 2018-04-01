@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 51503 2018-03-19 08:49:28Z vmaffione $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 51521 2018-03-29 15:50:37Z ericbsd $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -169,6 +169,7 @@
 <!ENTITY pgpkey.ehaupt SYSTEM "ehaupt.key">
 <!ENTITY pgpkey.emaste SYSTEM "emaste.key">
 <!ENTITY pgpkey.emax SYSTEM "emax.key">
+<!ENTITY pgpkey.ericbsd SYSTEM "ericbsd.key">
 <!ENTITY pgpkey.erj SYSTEM "erj.key">
 <!ENTITY pgpkey.erwin SYSTEM "erwin.key">
 <!ENTITY pgpkey.eugen SYSTEM "eugen.key">
@@ -348,6 +349,7 @@
 <!ENTITY pgpkey.melifaro SYSTEM "melifaro.key">
 <!ENTITY pgpkey.meta SYSTEM "meta.key">
 <!ENTITY pgpkey.metal SYSTEM "metal.key">
+<!ENTITY pgpkey.mfechner SYSTEM "mfechner.key">
 <!ENTITY pgpkey.mheinen SYSTEM "mheinen.key">
 <!ENTITY pgpkey.mi SYSTEM "mi.key">
 <!ENTITY pgpkey.mich SYSTEM "mich.key">
