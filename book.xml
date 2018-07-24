@@ -3,7 +3,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51261 2017-12-06 23:13:07Z gordon $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51914 2018-06-27 16:39:34Z gjb $
 --><!ENTITY % chapters SYSTEM "chapters.ent">
 <!--
      Creates entities for each chapter in the FreeBSD Handbook. Each entity
@@ -13,10 +13,11 @@
 
      Chapters should be listed in the order in which they are referenced.
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 47275 2015-08-19 01:55:52Z gjb $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 51744 2018-05-29 17:07:50Z trasz $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 51521 2018-03-29 15:50:37Z ericbsd $ --><!-- PGP keyblocks --><!ENTITY pgpkey.aaron SYSTEM "aaron.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 52022 2018-07-18 21:51:05Z 0mp $ --><!-- PGP keyblocks --><!ENTITY pgpkey.0mp SYSTEM "0mp.key">
+<!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
 <!ENTITY pgpkey.acm SYSTEM "acm.key">
@@ -46,6 +47,7 @@
 <!ENTITY pgpkey.araujo SYSTEM "araujo.key">
 <!ENTITY pgpkey.arichardson SYSTEM "arichardson.key">
 <!ENTITY pgpkey.ariff SYSTEM "ariff.key">
+<!ENTITY pgpkey.arrowd SYSTEM "arrowd.key">
 <!ENTITY pgpkey.art SYSTEM "art.key">
 <!ENTITY pgpkey.arun SYSTEM "arun.key">
 <!ENTITY pgpkey.arundel SYSTEM "arundel.key">
@@ -266,6 +268,7 @@
 <!ENTITY pgpkey.jpaetzel SYSTEM "jpaetzel.key">
 <!ENTITY pgpkey.jrm SYSTEM "jrm.key">
 <!ENTITY pgpkey.jsa SYSTEM "jsa.key">
+<!ENTITY pgpkey.jsm SYSTEM "jsm.key">
 <!ENTITY pgpkey.jtl SYSTEM "jtl.key">
 <!ENTITY pgpkey.junovitch SYSTEM "junovitch.key">
 <!ENTITY pgpkey.jwb SYSTEM "jwb.key">
@@ -298,6 +301,7 @@
 <!ENTITY pgpkey.lbr SYSTEM "lbr.key">
 <!ENTITY pgpkey.le SYSTEM "le.key">
 <!ENTITY pgpkey.leeym SYSTEM "leeym.key">
+<!ENTITY pgpkey.leitao SYSTEM "leitao.key">
 <!ENTITY pgpkey.ler SYSTEM "ler.key">
 <!ENTITY pgpkey.leres SYSTEM "leres.key">
 <!ENTITY pgpkey.lesi SYSTEM "lesi.key">
@@ -315,6 +319,7 @@
 <!ENTITY pgpkey.lth SYSTEM "lth.key">
 <!ENTITY pgpkey.lulf SYSTEM "lulf.key">
 <!ENTITY pgpkey.luoqi SYSTEM "luoqi.key">
+<!ENTITY pgpkey.luporl SYSTEM "luporl.key">
 <!ENTITY pgpkey.lwhsu SYSTEM "lwhsu.key">
 <!ENTITY pgpkey.lx SYSTEM "lx.key">
 <!ENTITY pgpkey.madpilot SYSTEM "madpilot.key">
@@ -432,6 +437,7 @@
 <!ENTITY pgpkey.qingli SYSTEM "qingli.key">
 <!ENTITY pgpkey.rafan SYSTEM "rafan.key">
 <!ENTITY pgpkey.rakuco SYSTEM "rakuco.key">
+<!ENTITY pgpkey.ram SYSTEM "ram.key">
 <!ENTITY pgpkey.ray SYSTEM "ray.key">
 <!ENTITY pgpkey.rcyu SYSTEM "rcyu.key">
 <!ENTITY pgpkey.rdivacky SYSTEM "rdivacky.key">
@@ -477,6 +483,7 @@
 <!ENTITY pgpkey.seanc SYSTEM "seanc.key">
 <!ENTITY pgpkey.secteam-secretary SYSTEM "secteam-secretary.key">
 <!ENTITY pgpkey.security-officer SYSTEM "security-officer.key">
+<!ENTITY pgpkey.sef SYSTEM "sef.key">
 <!ENTITY pgpkey.sem SYSTEM "sem.key">
 <!ENTITY pgpkey.sephe SYSTEM "sephe.key">
 <!ENTITY pgpkey.sepotvin SYSTEM "sepotvin.key">
@@ -513,6 +520,7 @@
 <!ENTITY pgpkey.tdb SYSTEM "tdb.key">
 <!ENTITY pgpkey.theraven SYSTEM "theraven.key">
 <!ENTITY pgpkey.thierry SYSTEM "thierry.key">
+<!ENTITY pgpkey.thj SYSTEM "thj.key">
 <!ENTITY pgpkey.thomas SYSTEM "thomas.key">
 <!ENTITY pgpkey.thompsa SYSTEM "thompsa.key">
 <!ENTITY pgpkey.tijl SYSTEM "tijl.key">
@@ -604,6 +612,7 @@
 <!ENTITY chap.l10n SYSTEM "l10n/chapter.xml">
 <!ENTITY chap.cutting-edge SYSTEM "cutting-edge/chapter.xml">
 <!ENTITY chap.dtrace SYSTEM "dtrace/chapter.xml">
+<!ENTITY chap.usb-device-mode SYSTEM "usb-device-mode/chapter.xml">
 <!-- Part Four --><!ENTITY chap.serialcomms SYSTEM "serialcomms/chapter.xml">
 <!ENTITY chap.ppp-and-slip SYSTEM "ppp-and-slip/chapter.xml">
 <!ENTITY chap.mail SYSTEM "mail/chapter.xml">
@@ -651,9 +660,9 @@
 
     <author><orgname>FreeBSD 文件計劃</orgname></author>
 
-    <pubdate its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51261 2017-12-06 23:13:07Z gordon $</pubdate>
+    <pubdate its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51914 2018-06-27 16:39:34Z gjb $</pubdate>
 
-    <releaseinfo its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51261 2017-12-06 23:13:07Z gordon $</releaseinfo>
+    <releaseinfo its:translate="no">$FreeBSD: head/en_US.ISO8859-1/books/handbook/book.xml 51914 2018-06-27 16:39:34Z gjb $</releaseinfo>
 
     <copyright xml:lang="en">
       <year>1995</year>
@@ -679,6 +688,7 @@
       <year>2015</year>
       <year>2016</year>
       <year>2017</year>
+      <year>2018</year>
       <holder>The FreeBSD Documentation Project</holder>
     </copyright>
 
@@ -756,7 +766,7 @@
     </legalnotice>
 
     <abstract>
-      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 11.1-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.4-RELEASE</emphasis> 的安裝與平日操作的說明。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中，因此部份章節可能尚未仍未完成，如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
+      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 11.2-RELEASE</emphasis>、<emphasis>FreeBSD 11.1-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.4-RELEASE</emphasis> 的安裝與平日操作的說明。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中，因此部份章節可能尚未仍未完成，如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
 
       <para>在 <link xlink:href="https://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到本文件的最新版本，舊版文件可從 <uri xlink:href="https://docs.FreeBSD.org/doc/">https://docs.FreeBSD.org/doc/</uri> 取得。本文件也提供各種格式與不同壓縮方式的版本可自 <link xlink:href="https://download.freebsd.org/ftp/doc/">FreeBSD FTP 伺服器</link> 或是其中一個 <link linkend="mirrors-ftp">鏡像網站</link> 下載。 列印出來的實體書面資料可在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
@@ -1324,7 +1334,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 51251 2017-12-03 03:03:56Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 52032 2018-07-19 17:58:54Z jgh $
 -->
 <chapter version="5.0" xml:id="introduction">
 
@@ -1378,111 +1388,103 @@
 
     <indexterm xml:lang="en"><primary>4.4BSD-Lite</primary></indexterm>
 
-    <para>FreeBSD 是一個從 4.4BSD-Lite 衍生出而能在以 Intel (x86 與 <trademark class="registered">Itanium</trademark>), AMD64, <trademark class="registered">ARM</trademark>, Sun <trademark class="registered">UltraSPARC</trademark> 為基礎的電腦上執行的作業系統。同時，移植到其他平台的工作也在進行中。 對於本計劃歷史的介紹，請看 <link linkend="history">FreeBSD 歷史</link>， 對於 FreeBSD 的最新版本介紹，請看 <link xlink:href="@@URL_RELPREFIX@@/releases">最新的發行版</link>。 若打算對於 FreeBSD 計劃有所貢獻的話 (程式碼、硬體、經費)， 請看 <link xlink:href="@@URL_RELPREFIX@@/doc/zh_TW.UTF-8/articles/contributing/index.html">如何對 FreeBSD 貢獻</link>。</para>
+    <para xml:lang="en">FreeBSD is an Open Source, standards-compliant Unix-like
+      operating system for x86 (both 32 and 64 bit), <trademark class="registered">ARM</trademark>, AArch64,
+      <trademark class="registered">RISC-V</trademark>, <trademark class="registered">MIPS</trademark>, <trademark class="registered">POWER</trademark>, <trademark class="registered">PowerPC</trademark>, and Sun <trademark class="registered">UltraSPARC</trademark>
+      computers.  It provides all the features that are
+      nowadays taken for granted, such as preemptive multitasking,
+      memory protection, virtual memory, multi-user facilities, SMP
+      support, all the Open Source development tools for different
+      languages and frameworks, and desktop features centered around
+      X Window System, KDE, or GNOME.  Its particular strengths
+      are:</para>
+
+    <itemizedlist>
+      <listitem>
+	<para xml:lang="en"><emphasis>Liberal Open Source license</emphasis>,
+	  which grants you rights to freely modify and extend
+	  its source code and incorporate it in both Open Source
+	  projects and closed products without imposing
+	  restrictions typical to copyleft licenses, as well
+	  as avoiding potential license incompatibility
+	  problems.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><emphasis>Strong TCP/IP networking</emphasis>
+	  <indexterm xml:lang="en"> <primary>TCP/IP
+	      networking</primary></indexterm> - FreeBSD
+	  implements industry standard protocols with ever
+	  increasing performance and scalability.  This makes
+	  it a good match in both server, and routing/firewalling
+	  roles - and indeed many companies and vendors use it
+	  precisely for that purpose.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><emphasis>Fully integrated OpenZFS support</emphasis>,
+	  including root-on-ZFS, ZFS Boot Environments, fault
+	  management, administrative delegation, support for jails,
+	  FreeBSD specific documentation, and system installer
+	  support.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><emphasis>Extensive security features</emphasis>,
+	  from the Mandatory Access Control framework to Capsicum
+	  capability and sandbox mechanisms.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><emphasis>Over 30 thousand prebuilt
+	    packages</emphasis> for all supported architectures,
+	  and the Ports Collection which makes it easy to build your
+	  own, customized ones.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><emphasis>Documentation</emphasis> - in addition
+	  to Handbook and books from different authors that cover
+	  topics ranging from system administration to kernel
+	  internals, there are also the <citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></citerefentry> pages, not only
+	  for userspace daemons, utilities, and configuration files,
+	  but also for kernel driver APIs (section 9) and individual
+	  drivers (section 4).</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><emphasis>Simple and consistent repository structure
+	    and build system</emphasis> - FreeBSD uses a single
+	  repository for all of its components, both kernel and
+	  userspace.  This, along with an unified and easy to
+	  customize build system and a well thought out development
+	  process makes it easy to integrate FreeBSD with build
+	  infrastructure for your own product.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><emphasis>Staying true to Unix philosophy</emphasis>,
+	  preferring composability instead of monolithic <quote>all
+	    in one</quote> daemons with hardcoded behavior.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en"><indexterm xml:lang="en"> <primary>binary compatibility</primary>
+	    <secondary>Linux</secondary></indexterm>
+	  <emphasis>Binary compatibility</emphasis> with Linux,
+	  which makes it possible to run many Linux binaries without
+	  the need for virtualisation.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>FreeBSD 系統乃是基於美國加州大學柏克萊分校的電腦系統研究組 (Computer Systems Research Group 也就是 CSRG) 所發行的 4.4BSD-Lite<indexterm>
+	<primary>4.4BSD-Lite</primary>
+      </indexterm> 的開發而來，承襲了 BSD 系統開發的優良傳統。除了由 CSRG 所提供的高品質的成果， 為了提供可處理真正具負荷的工作， FreeBSD 計劃也投入了上千的人時來擴充功能及微調系統以在實際日常的負載情況下獲得最佳的執行效率以及系統的穩定度。FreeBSD 除了提供了與其他開源與商業產品相當的效能與可靠性之外結合了其他產品沒有的尖端功能。</para>
 
     <sect2 xml:id="os-overview">
       <title>FreeBSD 能做什麼？</title>
 
-      <para>FreeBSD 提供給你許多先進功能。這些功能包括：</para>
-
-      <itemizedlist>
-	<listitem>
-	  <para>動態優先權調整的 <emphasis>先佔式多工</emphasis> <indexterm>
-	      <primary>preemptive multitasking</primary>
-	    </indexterm> 能夠確保，即使在系統負擔很重的情況下，程式執行平順並且應用程式與使用者公平地共享資源。</para>
-	</listitem>
-
-	<listitem>
-	  <para><emphasis>多人共用</emphasis><indexterm>
-	      <primary>multi-user facilities</primary>
-	    </indexterm> 代表著許多人可以同時使用一個 FreeBSD 系統來處理各自的事務。 系統的硬體周邊 (如印表機及磁帶機) 也可以讓所有的使用者適當地分享。 也可以針對各別使用者或一群使用者的系統資源，予以設限，以保護系統不致被過度使用。</para>
-	</listitem>
-
-	<listitem>
-	  <para>強大的 <emphasis>TCP/IP 網路</emphasis><indexterm>
-	      <primary>TCP/IP networking</primary>
-	    </indexterm> 功能可支援許多業界標準，如：SCTP、DHCP、NFS、NIS、PPP、SLIP、IPSec、IPv6 的支援，也就是說 FreeBSD 可以容易地跟其他作業系統透過網路共同運作，或是當作企業的伺服器用途 ，例如提供遠端檔案共享 (NFS) 及電子郵件等服務， 或是讓您的企業連上網際網路並提供 WWW、FTP、路由及防火牆 (安全性) 等必備服務。</para>
-	</listitem>
-
-	<listitem>
-	  <para><emphasis>記憶體保護</emphasis> 能確保程式 (或使用者) 不會互相干擾，即使任何程式有不正常的運作，都不會影響其他程式的執行。</para>
-	</listitem>
-
-	<listitem>
-	  <para>業界標準的 <emphasis>X Window 系統</emphasis><indexterm>
-		<primary>X Window System</primary>
-	      </indexterm> (X11R7) 可以在常見的便宜 VGA 顯示卡/螢幕， 提供了圖形化的使用者介面 (GUI)，並且包括了完整的原始程式碼。</para>
-	</listitem>
-
-	<listitem>
-	  <para><indexterm>
-	      <primary>binary compatibility</primary>
-	      <secondary>Linux</secondary>
-	    </indexterm> <indexterm>
-	      <primary>binary compatibility</primary>
-	      <secondary>SCO</secondary>
-	    </indexterm> <indexterm>
-	      <primary>binary compatibility</primary>
-	      <secondary>SVR4</secondary>
-	    </indexterm> <indexterm>
-	      <primary>binary compatibility</primary>
-	      <secondary>BSD/OS</secondary>
-	    </indexterm> <indexterm>
-	      <primary>binary compatibility</primary>
-	      <secondary>NetBSD</secondary>
-	    </indexterm> <emphasis>Binary 相容性</emphasis> 可執行許多其他作業系統 (如： Linux、SCO、SVR4、BSDI 和 NetBSD) 的可執行檔。</para>
-	</listitem>
-
-	<listitem>
-	  <para>數以萬計的 <emphasis>立即可以執行</emphasis> 的應用程式，這些都可透過 FreeBSD 的 <emphasis>Port</emphasis> 及 <emphasis>套件</emphasis> 管理機制來取得。 不再需要費心到網路上到處搜尋所需要的軟體。</para>
-	</listitem>
-
-	<listitem>
-	  <para>在網路上有數以千計 <emphasis>易於移植</emphasis> 的應用程式。FreeBSD 的原始程式碼與許多常見的商業版 <trademark class="registered">UNIX</trademark> 系統都相容， 所以大部分的程式都只需要很少的修改 (或根本不用修改) ，就可以編譯執行。</para>
-	</listitem>
-	<listitem>
-	  <para>依需要換頁的 <emphasis>虛擬記憶體</emphasis><indexterm>
-	      <primary>virtual memory</primary>
-	    </indexterm> 及 <quote>合併式 VM/buffer 快取</quote> 設計，有效的滿足了需使用大量記憶體的程式，同時也能維持與其他使用者的互動。</para>
-	</listitem>
-
-	<listitem>
-	  <para>支援 CPU 的<emphasis>對稱多工處理 (SMP)</emphasis><indexterm>
-	      <primary>Symmetric Multi-Processing
-		(SMP)</primary>
-	    </indexterm>：可以支援多 CPU 的電腦系統。</para>
-	</listitem>
-
-	<listitem>
-	  <para><indexterm>
-	      <primary>compilers</primary>
-	      <secondary>C</secondary>
-	    </indexterm><indexterm>
-	      <primary>compilers</primary>
-	      <secondary>C++</secondary>
-	    </indexterm>完全相容的 <emphasis>C</emphasis>、<emphasis>C++</emphasis> 以及 Fortran 的環境和其他開發工具。 以及其他許多可供進階研發的程式語言也收集在 Port 和套件集。</para>
-	</listitem>
-
-	<listitem>
-	  <para>整個系統都有 <emphasis>原始程式碼</emphasis><indexterm>
-	      <primary>source code</primary>
-	    </indexterm>， 這讓你對作業環境擁有最完全的掌握度。 既然能擁有完全開放的系統，何苦被特定封閉軟體所約束，任廠商擺佈呢？</para>
-	</listitem>
-
-	<listitem>
-	  <para>廣泛且豐富的 <emphasis>線上文件</emphasis>。</para>
-	</listitem>
-
-	<listitem>
-	  <para><emphasis>當然囉，還不止如此！</emphasis></para>
-	</listitem>
-      </itemizedlist>
-
-      <para>FreeBSD 系統乃是基於美國加州大學柏克萊分校的電腦系統研究組 (Computer Systems Research Group 也就是 CSRG) 所發行的 4.4BSD-Lite<indexterm>
-	  <primary>4.4BSD-Lite</primary>
-	</indexterm>，以及基於 BSD 系統開發的優良傳統。 除了由 CSRG 所提供的高品質的成果， 為了提供可處理真正具負荷的工作， FreeBSD 計劃也投入了數千小時以上的細部調整， 以能獲得最好的執行效率以及系統的穩定度。 正當許多商業上的巨人正努力地希望能提供效能及穩定時，FreeBSD 已經具備這樣的特質，並具有其他地方沒有的尖端功能。</para>
-
-      <para>FreeBSD 的運用範圍無限，其實完全限制在你的想像力上。 從軟體的開發到工廠自動化，或是人造衛星上面的天線的方位角度的遠端控制； 這些功能若可以用商用的 <trademark class="registered">UNIX</trademark> 產品來達成， 那麼極有可能使用 FreeBSD 也能辦到！ FreeBSD 也受益於來自於全球各研究中心及大學所開發的數千個高品質的軟體 ，這些通常只需要花費很少的費用或根本就是免費的。 當然也有商業軟體，而且出現的數目是與日俱增。</para>
+      <para>FreeBSD 可運用的範圍只侷限在你的想像力上。從軟體開發到工廠自動化，庫存管理到遠端衛星天線的方位校正；在商用的 <trademark class="registered">UNIX</trademark> 產品上能達到的功能在 FreeBSD 也能夠達到，FreeBSD 也受益上千自世界各地研究中心與大學所開發的高品質應用程式，而這通常只需要極少的花費，甚至沒有。</para>
 
       <para>由於每個人都可以取得 FreeBSD 的原始程式碼， 這個系統可以被量身訂做成能執行任何原本完全無法想像的功能或計劃， 而對於從各廠商取得的作業系統通常沒有辦法這樣地被修改。 以下提供一些人們使用 FreeBSD 的例子：</para>
 
@@ -1577,6 +1579,19 @@
 
       <indexterm><primary>使用者</primary> <secondary>執行 FreeBSD 的大型站台</secondary></indexterm>
 
+      <para xml:lang="en">FreeBSD has been known for its web serving capabilities -
+	sites that run on FreeBSD include
+	<link xlink:href="https://news.ycombinator.com/">Hacker News</link>,
+	<link xlink:href="http://www.netcraft.com/">Netcraft</link>,
+	<link xlink:href="http://www.163.com/">NetEase</link>,
+	<link xlink:href="https://signup.netflix.com/openconnect">Netflix</link>,
+	<link xlink:href="http://www.sina.com/">Sina</link>,
+	<link xlink:href="http://www.sony.co.jp/">Sony Japan</link>,
+	<link xlink:href="http://www.rambler.ru/">Rambler</link>,
+	<link xlink:href="http://www.yahoo.com/">Yahoo!</link>, and
+	<link xlink:href="http://www.yandex.ru/">Yandex</link>.
+      </para>
+
       <para>FreeBSD 先進的功能、成熟的安全性、可預測的發佈週期以及自由的授權條款，讓 FreeBSD 已經被用來做為建立許多商業、開源應用、裝置以及產品的平台，有許多世界上最大的資訊公司使用 FreeBSD：</para>
 
       <itemizedlist>
@@ -1606,22 +1621,15 @@
 	</listitem>
 
 	<listitem>
+	  <para><link xlink:href="https://www.emc.com/isilon">Dell EMC Isilon</link> <indexterm>
+	      <primary>Isilon</primary>
+	    </indexterm> - Isilon 的企業存儲設備以 FreeBSD 為基礎。非常自由的 FreeBSD 授權條款讓 Isilon 整合了它們的智慧財產到整個核心，並專注打造自己的產品，而不是一個作業系統。</para>
+	</listitem>
+
+	<listitem>
 	  <para><link xlink:href="http://www.dell.com/KACE">Dell KACE</link> <indexterm>
 	      <primary>Dell KACE</primary>
 	    </indexterm> - KACE 系統管理設備中運作了 FreeBSD，因為 FreeBSD 的可靠性、可擴展性以及支持其持續發展的社群。</para>
-	</listitem>
-
-	<listitem>
-	  <para><link xlink:href="http://www.experts-exchange.com/">Experts Exchange</link> <indexterm>
-	      <primary>Experts Exchange</primary>
-	    </indexterm> - 所有面對大眾的 Web 伺服器皆由 FreeBSD 驅動，且他們大量使用 Jail 來隔離開發與測試環境，減少了虛擬化的額外開銷。</para>
-	</listitem>
-
-	<listitem>
-	  <para><link xlink:href="http://www.isilon.com/">Isilon</link> <indexterm>
-	      <primary>Isilon</primary>
-	    </indexterm> - Isilon 的企業存儲設備以 FreeBSD 為基礎。非常自由的 FreeBSD 授權條款讓 Isilon 整合了它們的智慧財產到整個核心，並專注打造自己的產品，而不是一個作業系統。</para>
-
 	</listitem>
 
 	<listitem>
@@ -1778,92 +1786,8 @@
 	</listitem>
       </itemizedlist>
 
-      <para>FreeBSD 也同時被用來驅動一些網際網路上的大型網站，包括：</para>
+      <para>維基百科也維護了一份 <link xlink:href="https://en.wikipedia.org/wiki/List_of_products_based_on_FreeBSD">以 FreeBSD 為基礎的產品清單</link>。</para>
 
-      <itemizedlist>
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.yahoo.com/">Yahoo!</link>
-	    <indexterm xml:lang="en">
-	      <primary>Yahoo!</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.yandex.ru/">Yandex</link>
-	    <indexterm xml:lang="en">
-	      <primary>Yandex</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.rambler.ru/">Rambler</link>
-	    <indexterm xml:lang="en">
-	      <primary>Rambler</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.sina.com/">Sina</link>
-	    <indexterm xml:lang="en">
-	      <primary>Sina</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.pair.com/">Pair
-	      Networks</link>
-	    <indexterm xml:lang="en">
-	      <primary>Pair Networks</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.sony.co.jp/">Sony
-	      Japan</link>
-	    <indexterm xml:lang="en">
-	      <primary>Sony Japan</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.netcraft.com/">Netcraft</link>
-	    <indexterm xml:lang="en">
-	      <primary>Netcraft</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="https://signup.netflix.com/openconnect">Netflix</link>
-	    <indexterm xml:lang="en">
-	      <primary>Netflix</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.163.com/">NetEase</link>
-	    <indexterm xml:lang="en">
-	      <primary>NetEase</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.weathernews.com/">Weathernews</link>
-	    <indexterm xml:lang="en">
-	      <primary>Weathernews</primary>
-	    </indexterm></para>
-	</listitem>
-
-	<listitem>
-	  <para xml:lang="en"><link xlink:href="http://www.telehouse.com/">TELEHOUSE
-	      America</link>
-	    <indexterm xml:lang="en">
-	      <primary>TELEHOUSE America</primary>
-	    </indexterm></para>
-	</listitem>
-
-      </itemizedlist>
-
-      <para>還有許多的應用。維基百科也維護了一份 <link xlink:href="http://en.wikipedia.org/wiki/List_of_products_based_on_FreeBSD">以 FreeBSD 為基礎的產品</link>。</para>
     </sect2>
   </sect1>
 
@@ -1998,9 +1922,9 @@
 	  <term>FreeBSD 核心團隊<anchor xml:id="development-core"/></term>
 
 	  <listitem>
-	    <para>如果把 FreeBSD 看成是一家公司的話， <firstterm>FreeBSD 核心團隊 (FreeBSD core team)</firstterm><indexterm>
+	    <para>如果把 FreeBSD 看成是一家公司的話，<firstterm>FreeBSD 核心團隊 (FreeBSD core team)</firstterm><indexterm>
 		<primary>core team</primary>
-	      </indexterm> 就相當於董事會。 核心團隊的主要職責在於確保此計劃有良好的架構，以朝著正確的方向發展。 此外，邀請熱血且負責的軟體開發者加入提交者的行列， 以在若干成員離去時得以補充新血。 目前的核心團隊是在 2014 年 7 月從提交者候選人之中選出來的，這個選舉每兩年會舉辦一次。</para>
+	      </indexterm> 就相當於董事會。 核心團隊的主要職責在於確保此計劃有良好的架構，以朝著正確的方向發展。 此外，邀請熱血且負責的軟體開發者加入提交者的行列， 以在若干成員離去時得以補充新血。 目前的核心團隊是在 2018 年 7 月從提交者候選人之中選出來的，這個選舉每兩年會舉辦一次。</para>
 
 	    <note>
 	      <para>如同多數的開發者，核心團隊大部分成員加入 FreeBSD 開發都是志工性質而已， 並未從本計劃中獲得任何薪酬，所以這只是一個 <quote>承諾</quote> 不應該被誤解為 <quote>保證支援</quote> 才對。 前面用 <quote>董事會</quote> 來舉例可能不是很恰當，或許我們應該說： 他們是一群自願放棄原本的優渥生活、個人其他領域成就， 而選擇投入 FreeBSD 開發的熱血有為者才對！</para>
@@ -2066,7 +1990,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 50963 2017-09-29 10:44:03Z wosch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 51960 2018-07-04 17:04:08Z trasz $
 -->
 
 <chapter version="5.0" xml:id="bsdinstall">
@@ -2134,7 +2058,52 @@
 
     <indexterm><primary>安裝</primary></indexterm>
 
-    <para>自從 FreeBSD 9.0-RELEASE 開始，FreeBSD 提供一個易用，文字介面的安裝程式 <application>bsdinstall</application>。 本章描述如何用 <application>bsdinstall</application> 來安裝 FreeBSD。</para>
+    <para xml:lang="en">There are several different ways of getting FreeBSD to run,
+      depending on the environment.  Those are:</para>
+
+    <itemizedlist>
+      <listitem>
+	<para xml:lang="en">Virtual Machine images, to download and
+	  import on a virtual environment of choice.
+	  These can be downloaded from the
+	  <link xlink:href="https://www.freebsd.org/where.html">Download FreeBSD</link>
+	  page.  There are images for KVM (<quote>qcow2</quote>),
+	  VMWare (<quote>vmdk</quote>), Hyper-V (<quote>vhd</quote>),
+	  and raw device images that are universally supported.
+	  These are not installation images, but rather the
+	  preconfigured (<quote>already installed</quote>) instances,
+	  ready to run and perform post-installation tasks.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en">Virtual Machine images available at Amazon's
+	  <link xlink:href="https://aws.amazon.com/mp/solutions/freebsd/">AWS Marketplace</link>,
+	  <link xlink:href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=freebsd&amp;page=1">Microsoft Azure Marketplace</link>,
+	  and <link xlink:href="https://console.cloud.google.com/launcher/details/freebsd-cloud/freebsd-11">Google Cloud Platform</link>,
+	  to run on their respective hosting services.
+	  For more information on deploying FreeBSD
+	  on Azure please consult the relevant chapter in the
+	  <link xlink:href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-azure">Azure Documentation</link>.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en">SD card images, for embedded systems such
+	  as Raspberry Pi or BeagleBone Black.  These can be
+	  downloaded from the
+	  <link xlink:href="https://www.freebsd.org/where.html">Download FreeBSD</link>
+	  page.  These files must be uncompressed and written
+	  as a raw image to an SD card, from which the board will
+	  then boot.</para>
+      </listitem>
+
+      <listitem>
+	<para xml:lang="en">Installation images, to install FreeBSD on
+	  a hard drive for the usual desktop, laptop, or server
+	  systems.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>接下來的章節會介紹第四種方式，說明如何使用以文字為基礎的安裝程式 <application>bsdinstall</application> 安裝 FreeBSD。</para>
 
     <para>一般來說，本章所寫的安裝說明是針對 <trademark>i386</trademark> 和 <acronym>AMD64</acronym> 架構。如果可以用於其他平台，將會列表說明。 安裝程式和本章所敘述的內容可能會有些微差異，所以請將本章視為通用的指引，而不是完全照著來做。</para>
 
@@ -2315,7 +2284,7 @@
       <step>
 	<title>檢查 FreeBSD 勘誤表</title>
 
-	<para>儘管 FreeBSD 計劃努力確保每個 FreeBSD 發行版能夠儘可能地穩定，但錯誤偶爾還是會悄悄出現，並有極小的可能會發生影響安裝流程的錯誤，當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/11.1R/errata.html">https://www.freebsd.org/releases/11.1R/errata.html</link>)。 安裝前先檢查勘誤表，以確保沒有會影響到安裝的問題。</para>
+	<para>儘管 FreeBSD 計劃努力確保每個 FreeBSD 發行版能夠儘可能地穩定，但錯誤偶爾還是會悄悄出現，並有極小的可能會發生影響安裝流程的錯誤，當這些問題被發現並修正後，會被紀錄在 FreeBSD 網站的 FreeBSD 勘誤表 (<link xlink:href="@@URL_RELPREFIX@@/releases/11.2R/errata.html">https://www.freebsd.org/releases/11.2R/errata.html</link>)。 安裝前先檢查勘誤表，以確保沒有會影響到安裝的問題。</para>
 
 	<para>所有發行版的資訊和勘誤表可以在 FreeBSD 網站的發行資訊找到 (<link xlink:href="@@URL_RELPREFIX@@/releases/index.html">https://www.freebsd.org/releases/index.html</link>)。</para>
       </step>
@@ -7026,7 +6995,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 51437 2018-02-21 18:21:35Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 51980 2018-07-08 12:03:26Z rene $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -7840,7 +7809,7 @@ EndSection</programlisting>
 	    <firstname>Seth</firstname>
 	    <surname>Kingsley</surname>
 	  </personname>
-	  <contrib>Contributed by </contrib>
+	  <contrib>Originally contributed by </contrib>
 	</author>
       </authorgroup>
     </info>
@@ -7859,7 +7828,7 @@ EndSection</programlisting>
 
       <para>更改關 (<literal>off</literal>) 為開 (<literal>on</literal>) 然後儲存編輯。在此項目中的 <literal>ttyv8</literal> 代表 <application>XDM</application> 會在第 9 個虛擬終端機執行。</para>
 
-      <para><application>XDM</application> 的設定目錄位於 <filename>/usr/local/lib/X11/xdm</filename>。此目錄中包含數個可用來更改 <application>XDM</application> 行為與外觀的檔案以及在 <application>XDM</application> 執行時用來設定桌面的一些  Script 及程式，<xref linkend="xdm-config-files"/> 摘要了每個檔案的功能。這些檔案正確的語法與用法在 <citerefentry vendor="xfree86"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> 有說明。</para>
+      <para><application>XDM</application> 的設定目錄位於 <filename>/usr/local/etc/X11/xdm</filename>。此目錄中包含數個可用來更改 <application>XDM</application> 行為與外觀的檔案以及在 <application>XDM</application> 執行時用來設定桌面的一些  Script 及程式，<xref linkend="xdm-config-files"/> 摘要了每個檔案的功能。這些檔案正確的語法與用法在 <citerefentry vendor="xfree86"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> 有說明。</para>
 
       <table frame="none" pgwide="1" xml:id="xdm-config-files">
 	<title>XDM 設定檔</title>
@@ -7890,7 +7859,7 @@ EndSection</programlisting>
 
 	    <row>
 	      <entry xml:lang="en"><filename>Xsession</filename></entry>
-	      <entry>預設的登入階段 Script，使用者登入之後由 <application>XDM</application> 執行。一般每一位使用者都會有自訂的階段 Script 在 <filename>~/.xsession</filename> 來覆蓋此 Script 的設定。</entry>
+	      <entry>預設的登入階段 Script，會在使用者登入之後由 <application>XDM</application> 執行，此處指的是在 <filename>~/.xsession</filename> 中的自訂連線階段 Script。</entry>
 	    </row>
 
 	    <row>
@@ -7928,7 +7897,7 @@ EndSection</programlisting>
 ! Comment out this line if you want to manage X terminals with xdm
 DisplayManager.requestPort:     0</screen>
 
-      <para>儲存編輯並重新啟動 <application>XDM</application>，要限制遠端存取，請看 <filename>/usr/local/lib/X11/xdm/Xaccess</filename> 中的範例項目，並參考 <citerefentry vendor="xfree86"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> 取得進一步資訊。</para>
+      <para>儲存編輯結果並重新啟動 <application>XDM</application>，要限制遠端存取，請看 <filename>/usr/local/etc/X11/xdm/Xaccess</filename> 中的範例項目，並參考 <citerefentry vendor="xfree86"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></citerefentry> 取得進一步資訊。</para>
     </sect2>
   </sect1>
 
@@ -8445,7 +8414,7 @@ EndSection</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 51357 2018-01-01 10:07:34Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/desktop/chapter.xml 51929 2018-06-29 19:36:15Z jbeich $
 -->
 <chapter version="5.0" xml:id="desktop">
   <!--
@@ -8552,7 +8521,7 @@ EndSection</programlisting>
 	<primary><application>Firefox</application></primary>
       </indexterm>
 
-      <para><application>Firefox</application> 是一套已完整植到 FreeBSD 的開放源始碼瀏覽器，它具備符合 HTML 標準的顯示引擎、頁籤瀏覽、彈出視窗封鎖、擴充套件、強化安全性及其他更多功能。<application>Firefox</application> 的基礎使用了 <application>Mozilla</application> 的程式庫。</para>
+      <para><application>Firefox</application> 是一套開源的瀏覽器，它具備符合 HTML 標準的顯示引擎、頁籤瀏覽、彈出視窗封鎖、擴充套件、強化安全性及其他更多功能。<application>Firefox</application> 的基礎使用了 <application>Mozilla</application> 的程式庫。</para>
 
       <para>要安裝最新釋出版本的 <application>Firefox</application> 套件可輸入：</para>
 
@@ -9235,7 +9204,7 @@ EndSection</programlisting>
 
     <indexterm xml:lang="en"><primary>PCI</primary></indexterm>
     <indexterm xml:lang="en"><primary>sound cards</primary></indexterm>
-    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="https://www.FreeBSD.org/releases/11.1R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
+    <para>開始設定之前，必須先知道你的音效卡型號、晶片為何。 FreeBSD 支援許多種音效卡，請檢查支援的音效硬體表 <link xlink:href="https://www.FreeBSD.org/releases/11.2R/hardware.html">Hardware Notes</link>，以確認你的音效卡是否支援以及如何在 FreeBSD 上驅動。</para>
 
     <indexterm xml:lang="en">
       <primary>kernel</primary>
@@ -24509,7 +24478,7 @@ fi</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 50846 2017-09-15 10:14:48Z maxim $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 51815 2018-06-10 19:13:17Z sevan $
 -->
 
 <chapter version="5.0" xml:id="disks">
@@ -24695,9 +24664,17 @@ ada0 recovered</screen>
    79691810    4194236     3  freebsd-swap  (2G)
    83886046   18513921        - free -  (8.8G)</screen>
 
-    <para>分割區只能重設大小到連續的未使用空間。在這個例子磁碟上最後的分割區為交換 (Swap) 分割區，而第二個分割區才是需要重設大小的分割區。交換分割區中只會有暫存的資料，所以可以安全的卸載、刪除，然後在重設其他分割區大小之後再重建。</para>
+    <para>分割區只能在連續的未使用空間上重設大小。在這個例子磁碟上最後的分割區為交換 (Swap) 分割區，而第二個分割區才是需要重設大小的分割區。交換分割區中只有暫存的資料，所以可以安心的卸載、刪除，然後重設第二個分割區大小之後再重建交換分割區。</para>
 
-    <screen xml:lang="en"><prompt>#</prompt> <userinput>swapoff <replaceable>/dev/ada0p3</replaceable></userinput>
+    <para>關閉交換分割區：</para>
+
+    <screen><prompt>#</prompt> <userinput>swapoff <replaceable>/dev/ada0p3</replaceable></userinput></screen>
+
+    <para xml:lang="en">Delete the third partition, specified by the
+      <option>-i</option> flag, from the disk
+      <replaceable>ada0</replaceable>.</para>
+
+    <screen xml:lang="en">
 <prompt>#</prompt> <userinput>gpart delete -i <replaceable>3</replaceable> <replaceable>ada0</replaceable></userinput>
 ada0p3 deleted
 <prompt>#</prompt> <userinput>gpart show <replaceable>ada0</replaceable></userinput>
@@ -24712,9 +24689,9 @@ ada0p3 deleted
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl kern.geom.debugflags=16</userinput></screen>
     </warning>
 
-    <para>重設分割區大小，保留要用來重建交換分割區的大小。這個動作只會修改分割區大小，分割區中的檔案系統會在另一個步驟擴增。</para>
+    <para>重設分割區大小，保留要用來重建交換分割區的大小。要重設大小的分割區可使用 <option>-i</option> 指定，重設的大小可使用 <option>-s</option> 指定，也可選擇性的使用 <option>-a</option> 來控制分割區要對齊的位置。這個動作只會修改分割區大小，分割區中的檔案系統會在另一個步驟擴增。</para>
 
-    <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart resize -i <replaceable>2</replaceable> -a 4k -s <replaceable>47G</replaceable> <replaceable>ada0</replaceable></userinput>
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart resize -i <replaceable>2</replaceable> -s <replaceable>47G</replaceable> -a 4k <replaceable>ada0</replaceable></userinput>
 ada0p2 resized
 <prompt>#</prompt> <userinput>gpart show <replaceable>ada0</replaceable></userinput>
 =&gt;       34  102399933  ada0  GPT  (48G)
@@ -24722,7 +24699,9 @@ ada0p2 resized
         162   98566144     2  freebsd-ufs  (47G)
    98566306    3833661        - free -  (1.8G)</screen>
 
-    <para>重新建立交換分割區：</para>
+    <para xml:lang="en">Recreate the swap partition and activate it.  If no size
+      is specified with <option>-s</option>, all remaining space is
+      used:</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>gpart add -t freebsd-swap -a 4k <replaceable>ada0</replaceable></userinput>
 ada0p3 added
@@ -24735,10 +24714,6 @@ ada0p3 added
 
     <para>擴增 <acronym>UFS</acronym> 檔案系統來使用重設分割區大小之後的新容量：</para>
 
-    <note>
-      <para>只能在 FreeBSD 10.0-RELEASE 或之後的版本擴增運作中的 <acronym>UFS</acronym> 檔案系統，較先前的版本必須將檔案系統卸載。</para>
-    </note>
-
     <screen xml:lang="en"><prompt>#</prompt> <userinput>growfs <replaceable>/dev/ada0p2</replaceable></userinput>
 Device is mounted read-write; resizing will result in temporary write suspension for /.
 It's strongly recommended to make a backup before growing the file system.
@@ -24746,6 +24721,12 @@ OK to grow file system on /dev/ada0p2, mounted on /, from 38GB to 47GB? [Yes/No]
 super-block backups (for fsck -b #) at:
  80781312, 82063552, 83345792, 84628032, 85910272, 87192512, 88474752,
  89756992, 91039232, 92321472, 93603712, 94885952, 96168192, 97450432</screen>
+
+    <para xml:lang="en">If the file system is <acronym>ZFS</acronym>, the resize is
+      triggered by running the <option>online</option> subcommand with
+      <option>-e</option>:</para>
+
+    <screen><prompt>#</prompt> <userinput>zpool online -e <replaceable>zroot</replaceable> <replaceable>/dev/ada0p2</replaceable></userinput></screen>
 
     <para>現在分割區與檔案系統已透過重設大小來使用新增加的磁碟空間。</para>
   </sect1>
@@ -24877,10 +24858,6 @@ da0: &lt;STECH Simple Drive 1.04&gt; s/n WD-WXE508CAN263          detached
     <sect2>
       <title>自動掛載可移除的媒體</title>
 
-      <note>
-	<para>自 FreeBSD 10.2-RELEASE 開始 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 支援自動掛載可移除的媒體。</para>
-      </note>
-
       <para>可以取消註解在 <filename>/etc/auto_master</filename> 中的下行來自動掛載 <acronym>USB</acronym> 裝置：</para>
 
       <screen xml:lang="en">/media		-media		-nosuid</screen>
@@ -24895,7 +24872,7 @@ da0: &lt;STECH Simple Drive 1.04&gt; s/n WD-WXE508CAN263          detached
 
       <para>若 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 以及 <citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 已經正在執行，則需重新載入設定：</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>service automount reload</userinput>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service automount restart</userinput>
 <prompt>#</prompt> <userinput>service devd restart</userinput></screen>
 
       <para>要設定讓 <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</manvolnum></citerefentry> 在開機時啟動可以加入此行到 <filename>/etc/rc.conf</filename>：</para>
@@ -24918,129 +24895,6 @@ da0: &lt;STECH Simple Drive 1.04&gt; s/n WD-WXE508CAN263          detached
       <screen xml:lang="en"><prompt>#</prompt> <userinput>automount -fu</userinput></screen>
 
       <para>這個機制一般會用在記憶卡與 <acronym>USB</acronym> 隨身碟，也可用在任何 Block 裝置，包含光碟機或 <acronym>iSCSI</acronym> <acronym>LUN</acronym>。</para>
-    </sect2>
-
-    <sect2>
-      <title><acronym>USB</acronym> 大容量儲存目標</title>
-
-      <note>
-	<para><citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式是一個在 FreeBSD 12.0 之後才可用的 <acronym>USB</acronym> 裝置模式驅動程式。</para>
-      </note>
-
-      <para xml:lang="en">When running on <acronym>USB</acronym>
-	<acronym>OTG</acronym>-compliant hardware like that built into
-	many embedded boards, the FreeBSD <acronym>USB</acronym> stack
-	can run in <emphasis>device mode</emphasis>.  Device mode
-	makes it possible for the computer to present itself as
-	different kinds	of <acronym>USB</acronym> device classes,
-	including serial ports, network adapters, and mass storage. A
-	<acronym>USB</acronym> host like a laptop or desktop computer
-	is able to access them just like physical
-	<acronym>USB</acronym> devices.</para>
-
-      <para xml:lang="en">The <citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> kernel module allows the
-	<acronym>USB</acronym> stack to switch between host-side and
-	device-side automatically, depending on what is connected to
-	the <acronym>USB</acronym> port.  Connecting a
-	<acronym>USB</acronym> device like a memory stick to the
-	<acronym>USB</acronym> <acronym>OTG</acronym> port causes FreeBSD
-	to switch to host mode. Connecting a <acronym>USB</acronym>
-	host like a computer causes FreeBSD to switch to device
-	mode.</para>
-
-      <para xml:lang="en">What FreeBSD presents to the <acronym>USB</acronym> host
-	depends on the <varname>hw.usb.template</varname> sysctl.  See
-	<citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> for the list of available values.  Note
-	that for the host to notice the configuration change, it must
-	be either physically disconnected and reconnected, or forced
-	to rescan the <acronym>USB</acronym> bus in a system-specific
-	way.  When FreeBSD is running on the host, <citerefentry vendor="current"><refentrytitle>usbconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	<command>reset</command> can be used.  This also must be done
-	after loading <filename>usb_template.ko</filename> if the
-	<acronym>USB</acronym> host was already connected to the
-	<acronym>USB</acronym> <acronym>OTG</acronym> socket.</para>
-
-      <para xml:lang="en">The <varname>hw.usb.template</varname> sysctl
-	is set to 0 by default, making FreeBSD work as a
-	<acronym>USB</acronym> Mass Storage target.  Both
-	<citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> kernel modules must
-	be loaded.  <citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> interfaces to the CTL subsystem,
-	the same one that is used for <acronym>iSCSI</acronym> or
-	Fibre Channel targets.  On the host side,
-	<acronym>USB</acronym> Mass Storage initiators can only access
-	a single <acronym>LUN</acronym>,
-	<acronym>LUN</acronym> 0.</para>
-
-      <para xml:lang="en"><acronym>USB</acronym> Mass Storage does not require the
-	<citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon to be running, although it can be used if
-	desired.  This is different from <acronym>iSCSI</acronym>.
-	Thus, there are two ways to configure the target:
-	<citerefentry><refentrytitle>ctladm</refentrytitle><manvolnum>8</manvolnum></citerefentry>, or <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Both require the
-	<filename>cfumass.ko</filename> kernel module to be loaded.
-	The module can be loaded manually:</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload cfumass</userinput></screen>
-
-      <para xml:lang="en">If <filename>cfumass.ko</filename> has not been built into
-	the kernel, <filename>/boot/loader.conf</filename> can be set
-	to load	the module at boot:</para>
-
-      <programlisting xml:lang="en">cfumass_load="YES"</programlisting>
-
-      <para xml:lang="en">A <acronym>LUN</acronym> can be created without the
-	<citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon:</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>ctladm create -b block -o file=/data/target0</userinput></screen>
-
-      <para xml:lang="en">This presents the contents of the image file
-	<filename>/data/target0</filename> as a <acronym>LUN</acronym>
-	to the <acronym>USB</acronym> host.  The file must exist
-	before executing the command.  To configure the
-	<acronym>LUN</acronym> at system startup, add the command to
-	<filename>/etc/rc.local</filename>.</para>
-
-      <para xml:lang="en"><citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> can also be used to manage
-	<acronym>LUN</acronym>s.  Create
-	<filename>/etc/ctl.conf</filename>, add a line to
-	<filename>/etc/rc.conf</filename> to make sure <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> is
-	automatically started at boot, and then start the
-	daemon.</para>
-
-      <para xml:lang="en">This is an example of a simple
-	<filename>/etc/ctl.conf</filename> configuration file.  Refer
-	to <citerefentry><refentrytitle>ctl.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for a more complete description of the
-	options.</para>
-
-      <programlisting xml:lang="en">target naa.50015178f369f092 {
-	lun 0 {
-		path /data/target0
-		size 4G
-	}
-}</programlisting>
-
-      <para xml:lang="en">The example creates a single target with a single
-	<acronym>LUN</acronym>.  The
-	<literal>naa.50015178f369f092</literal> is a device identifier
-	composed of 32 random hexadecimal digits.  The
-	<literal>path</literal> line defines the full path to a file
-	or zvol backing the <acronym>LUN</acronym>.  That file must
-	exist before starting <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  The second line is
-	optional and specifies the size of the
-	<acronym>LUN</acronym>.</para>
-
-      <para xml:lang="en">To make sure the <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon is started at
-	boot, add this line to
-	<filename>/etc/rc.conf</filename>:</para>
-
-      <programlisting xml:lang="en">ctld_enable="YES"</programlisting>
-
-      <para xml:lang="en">To start <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> now, run this command:</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>service ctld start</userinput></screen>
-
-      <para>當 <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> Daemon 啟動後，它會讀取 <filename>/etc/ctl.conf</filename>，若這個檔案在 Daemon 啟動之後才做修改，要重新載入變更的內容才能立即生效：</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>service ctld reload</userinput></screen>
     </sect2>
   </sect1>
 
@@ -25517,7 +25371,7 @@ scsibus1:
       <listitem>
 	<para xml:lang="en">DVD-R: This was the first <acronym>DVD</acronym>
 	  recordable format available.  The DVD-R standard is defined
-	  by the <link xlink:href="http://www.dvdforum.com/forum.shtml"><acronym>DVD</acronym>
+	  by the <link xlink:href="http://www.dvdforum.org/forum.shtml"><acronym>DVD</acronym>
 	    Forum</link>.  This format is write once.</para>
       </listitem>
 
@@ -25540,9 +25394,10 @@ scsibus1:
 
       <listitem>
 	<para xml:lang="en"><acronym>DVD+RW</acronym>: This is a rewritable format
-	  defined by the <link xlink:href="http://www.dvdrw.com/"><acronym>DVD+RW</acronym>
-	    Alliance</link>.  A <acronym>DVD+RW</acronym> can be
-	  rewritten about 1000 times.</para>
+	  defined by the <link xlink:href="https://en.wikipedia.org/wiki/DVD%2BRW_Alliance">
+	    <acronym>DVD+RW</acronym> Alliance</link>.  A
+	  <acronym>DVD+RW</acronym> can be rewritten about 1000
+	    times.</para>
       </listitem>
 
       <listitem>
@@ -29512,7 +29367,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 51460 2018-03-04 18:34:15Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 51852 2018-06-17 01:48:19Z allanjude $
 -->
 
 <chapter version="5.0" xml:id="zfs">
@@ -31449,8 +31304,10 @@ dedup = 1.05, compress = 1.11, copies = 1.00, dedup * compress / copies = 1.16</
 	    or one half of <acronym>RAM</acronym>, whichever is more.
 	    However, a lower value should be used if the system will
 	    be running any other daemons or processes that may require
-	    memory.  This value can only be adjusted at boot time, and
-	    is set in <filename>/boot/loader.conf</filename>.</para>
+	    memory.  This value can be adjusted at runtime with
+	    <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> and can be set in
+	    <filename>/boot/loader.conf</filename> or
+	    <filename>/etc/sysctl.conf</filename>.</para>
 	</listitem>
 
 	<listitem>
@@ -31463,8 +31320,10 @@ dedup = 1.05, compress = 1.11, copies = 1.00, dedup * compress / copies = 1.16</
 	    involves operations on a large number of files and
 	    directories, or frequent metadata operations, at the cost
 	    of less file data fitting in the <link linkend="zfs-term-arc"><acronym>ARC</acronym></link>.
-	    This value can only be adjusted at boot time, and is set
-	    in <filename>/boot/loader.conf</filename>.</para>
+	    This value can be adjusted at runtime with <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry>
+	    and can be set in
+	    <filename>/boot/loader.conf</filename> or
+	    <filename>/etc/sysctl.conf</filename>.</para>
 	</listitem>
 
 	<listitem>
@@ -31474,8 +31333,10 @@ dedup = 1.05, compress = 1.11, copies = 1.00, dedup * compress / copies = 1.16</
 	    <varname>vfs.zfs.arc_meta_limit</varname>.  Adjust this
 	    value to prevent other applications from pressuring out
 	    the entire <link linkend="zfs-term-arc"><acronym>ARC</acronym></link>.
-	    This value can only be adjusted at boot time, and is set
-	    in <filename>/boot/loader.conf</filename>.</para>
+	    This value can be adjusted at runtime with <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry>
+	    and can be set in
+	    <filename>/boot/loader.conf</filename> or
+	    <filename>/etc/sysctl.conf</filename>.</para>
 	</listitem>
 
 	<listitem>
@@ -31758,16 +31619,6 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	<para xml:lang="en"><link xlink:href="http://docs.oracle.com/cd/E19253-01/819-5461/index.html">Oracle
 	    Solaris <acronym>ZFS</acronym> Administration
 	    Guide</link></para>
-      </listitem>
-
-      <listitem>
-	<para xml:lang="en"><link xlink:href="http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide"><acronym>ZFS</acronym>
-	    Evil Tuning Guide</link></para>
-      </listitem>
-
-      <listitem>
-	<para xml:lang="en"><link xlink:href="http://www.solarisinternals.com/wiki/index.php/ZFS_Best_Practices_Guide"><acronym>ZFS</acronym>
-	    Best Practices Guide</link></para>
       </listitem>
 
       <listitem>
@@ -32240,7 +32091,7 @@ https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 51515 2018-03-25 19:11:48Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 51999 2018-07-12 23:08:19Z jgh $
 -->
 <chapter version="5.0" xml:id="virtualization">
 
@@ -33286,19 +33137,11 @@ crw-------   1 root  wheel  0x1a1 Mar 17 12:19 otherguest</screen>
 	</step>
 
 	<step>
-	  <title xml:lang="en"><filename>/boot/loader.conf</filename></title>
-
-	  <programlisting xml:lang="en">vmm_load="YES"
-nmdm_load="YES"
-if_bridge_load="YES"
-if_tap_load="YES"</programlisting>
-	</step>
-
-	<step>
 	  <title xml:lang="en"><filename>/etc/rc.conf</filename></title>
 
 	  <programlisting xml:lang="en">cloned_interfaces="<replaceable>bridge0</replaceable> <replaceable>tap0</replaceable>"
-ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</replaceable>"</programlisting>
+ifconfig_bridge0="addm <replaceable>igb0</replaceable> addm <replaceable>tap0</replaceable>"
+kld_list="nmdm vmm"</programlisting>
 	</step>
       </procedure>
     </sect2>
@@ -35865,6 +35708,361 @@ Elapsed Times for processes csh,
       the most time in nanoseconds while the
       <function>getpid()</function> system call used the least amount
       of time.</para>
+  </sect1>
+</chapter>
+
+    
+<!--
+     The FreeBSD Documentation Project
+
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/usb-device-mode/chapter.xml 51833 2018-06-15 08:27:41Z trasz $
+-->
+
+<chapter version="5.0" xml:id="usb-device-mode">
+
+  <title xml:lang="en">USB Device Mode / USB OTG</title>
+
+  <sect1 xml:id="usb-device-mode-synopsis">
+    <title>概述</title>
+
+    <info>
+      <authorgroup>
+	<author xml:lang="en">
+	  <personname>
+	    <firstname>Edward Tomasz</firstname>
+	    <surname>Napierala</surname>
+	  </personname>
+	  <affiliation>
+	    <address xml:lang="en">
+	      <email>trasz@FreeBSD.org</email>
+	    </address>
+	  </affiliation>
+	  <contrib>Written by </contrib>
+	</author>
+      </authorgroup>
+    </info>
+
+    <para xml:lang="en">This chapter covers the use of USB Device Mode and USB On
+      The Go (<acronym>USB OTG</acronym>) in FreeBSD.  This includes
+      virtual serial consoles, virtual network interfaces, and
+      virtual USB drives.</para>
+
+    <para xml:lang="en">When running on hardware that supports USB device mode
+      or <acronym>USB OTG</acronym>, like that built into
+      many embedded boards, the FreeBSD <acronym>USB</acronym> stack
+      can run in <emphasis>device mode</emphasis>.  Device mode
+      makes it possible for the computer to present itself as
+      different kinds of <acronym>USB</acronym> device classes,
+      including serial ports, network adapters, and mass storage,
+      or a combination thereof.  A <acronym>USB</acronym> host like
+      a laptop or desktop computer is able to access them just like
+      physical <acronym>USB</acronym> devices.  Device mode is
+      sometimes called the <quote>USB gadget mode</quote>.</para>
+
+    <para xml:lang="en">There are two basic ways the hardware can provide the
+      device mode functionality: with a separate "client port", which
+      only supports the device mode, and with a USB OTG port, which
+      can provide both device and host mode.  For
+      <acronym>USB OTG</acronym> ports, the <acronym>USB</acronym>
+      stack switches between host-side and device-side automatically,
+      depending on what is connected to the port.  Connecting a
+      <acronym>USB</acronym> device like a memory stick to the
+      port causes FreeBSD to switch to host mode.  Connecting a
+      <acronym>USB</acronym> host like a computer causes FreeBSD to
+      switch to device mode.  Single purpose "client ports" always
+      work in device mode.</para>
+
+    <para xml:lang="en">What FreeBSD presents to the <acronym>USB</acronym> host
+      depends on the <varname>hw.usb.template</varname> sysctl.  Some
+      templates provide a single device, such as a serial terminal;
+      others provide multiple ones, which can all be used at the same
+      time.  An example is the template 10, which provides a mass
+      storage device, a serial console, and a network interface.
+      See <citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> for the list of available
+      values.</para>
+
+    <para xml:lang="en">Note that in some cases, depending on the hardware and the
+      hosts operating system, for the host to notice the configuration
+      change, it must be either physically disconnected and
+      reconnected, or forced to rescan the <acronym>USB</acronym>
+      bus in a system-specific way.  When FreeBSD is running on the host,
+      <citerefentry vendor="current"><refentrytitle>usbconfig</refentrytitle><manvolnum>8</manvolnum></citerefentry> <command>reset</command> can be used.
+      This also must be done after loading
+      <filename>usb_template.ko</filename> if the
+      <acronym>USB</acronym> host was already connected to the
+      <acronym>USB</acronym> <acronym>OTG</acronym> socket.</para>
+
+    <para>讀完這章，您將了解︰</para>
+
+    <itemizedlist>
+      <listitem>
+	<para>如何在 FreeBSD 設定 USB 裝置模式。</para>
+      </listitem>
+
+      <listitem>
+	<para>如何在 FreeBSD 設定虛擬序列埠。</para>
+      </listitem>
+
+      <listitem>
+	<para>如何使用各種作業系統連線到虛擬序列埠。</para>
+      </listitem>
+
+      <listitem>
+	<para>如何設定 FreeBSD 使用虛擬 <acronym>USB</acronym> 網路介面。</para>
+      </listitem>
+
+      <listitem>
+	<para>如何設定 FreeBSD 提供一個虛擬 <acronym>USB</acronym> 儲存裝置。</para>
+      </listitem>
+    </itemizedlist>
+  </sect1>
+
+  <sect1 xml:id="usb-device-mode-terminals">
+    <title><acronym>USB</acronym> 虛擬序列埠</title>
+
+    <sect2>
+      <title xml:lang="en">Configuring USB Device Mode Serial Ports</title>
+
+      <para xml:lang="en">Virtual serial port support is provided by templates
+	number 3, 8, and 10.  Note that template 3 works with
+	Microsoft Windows 10 without the need for special drivers
+	and INF files.  Other host operating systems work with all
+	three templates.  Both <citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>umodem</refentrytitle><manvolnum>4</manvolnum></citerefentry>
+	kernel modules must be loaded.</para>
+
+      <para>要開啟 USB 裝置模式序列埠可將這幾行加到 <filename>/etc/ttys</filename>：</para>
+
+      <screen xml:lang="en">ttyU0	"/usr/libexec/getty 3wire"	vt100	onifconsole secure
+ttyU1	"/usr/libexec/getty 3wire"	vt100	onifconsole secure</screen>
+
+      <para>然後加入這些行到 <filename>/etc/devd.conf</filename>：</para>
+
+      <screen xml:lang="en">notify 100 {
+	match "system"		"DEVFS";
+	match "subsystem"	"CDEV";
+	match "type"		"CREATE";
+	match "cdev"		"ttyU[0-9]+";
+	action "/sbin/init q";
+};</screen>
+
+      <para>若 <citerefentry><refentrytitle>devd</refentrytitle><manvolnum>8</manvolnum></citerefentry> 已經正在執行則重新載入設定：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service devd restart</userinput></screen>
+
+      <para>要確保在重新開機後會載入必要的模組及正確的範本，可加入下行到 <filename>/boot/loader.conf</filename>，若檔案不存在則自行建立：</para>
+
+      <screen xml:lang="en">umodem_load="YES"
+hw.usb.template=3</screen>
+
+      <para xml:lang="en">To load the module and set the template without rebooting
+	use:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload umodem</userinput>
+<prompt>#</prompt> <userinput>sysctl hw.usb.template=3</userinput></screen>
+
+    </sect2>
+
+    <sect2>
+      <title xml:lang="en">Connecting to USB Device Mode Serial Ports from
+	FreeBSD</title>
+
+      <para xml:lang="en">To connect to a board configured to provide USB device
+	mode serial ports, connect the USB host, such as a laptop, to
+	the boards USB OTG or USB client port.  Use
+	<command>pstat -t</command> on the host to list the terminal
+	lines.  Near the end of the list you should see a USB serial
+	port, eg "ttyU0".  To open the connection, use:</para>
+
+	<screen><prompt>#</prompt> <userinput>cu -l /dev/ttyU0</userinput></screen>
+
+      <para xml:lang="en">After pressing the Enter key a few times you will see
+	a login prompt.</para>
+    </sect2>
+
+    <sect2>
+      <title xml:lang="en">Connecting to USB Device Mode Serial Ports from
+	macOS</title>
+
+      <para xml:lang="en">To connect to a board configured to provide USB device
+	mode serial ports, connect the USB host, such as a laptop,
+	to the boards USB OTG or USB client port.  To open the
+	connection, use:</para>
+
+	<screen><prompt>#</prompt> <userinput>cu -l /dev/cu.usbmodemFreeBSD1</userinput></screen>
+    </sect2>
+
+    <sect2>
+      <title xml:lang="en">Connecting to USB Device Mode Serial Ports from
+	Linux</title>
+
+      <para xml:lang="en">To connect to a board configured to provide USB device
+	mode serial ports, connect the USB host, such as a laptop,
+	to the boards USB OTG or USB client port.  To open the
+	connection, use:</para>
+
+	<screen><prompt>#</prompt> <userinput>minicom -D /dev/ttyACM0</userinput></screen>
+    </sect2>
+
+    <sect2>
+      <title xml:lang="en">Connecting to USB Device Mode Serial Ports from
+	Microsoft Windows 10</title>
+
+      <para xml:lang="en">To connect to a board configured to provide USB device
+	mode serial ports, connect the USB host, such as a laptop,
+	to the boards USB OTG or USB client port.  To open a
+	connection you will need a serial terminal program, such as
+	<application>PuTTY</application>.  To check the COM port name
+	used by Windows, run Device Manager, expand "Ports (COM &amp;
+	LPT)".  You will see a name similar to "USB Serial Device
+	(COM4)".  Run serial terminal program of your choice, for
+	example <application>PuTTY</application>.  In the
+	<application>PuTTY</application> dialog set "Connection type"
+	to "Serial", type the COMx obtained from Device Manager in the
+	"Serial line" dialog box and click Open.</para>
+    </sect2>
+  </sect1>
+
+  <sect1 xml:id="usb-device-mode-network">
+
+    <title><acronym>USB</acronym> 裝置模式網路介面</title>
+
+    <para xml:lang="en">Virtual network interfaces support is provided by templates
+      number 1, 8, and 10.  Note that none of them works with
+      Microsoft Windows.  Other host operating systems work with all
+      three templates.  Both <citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>if_cdce</refentrytitle><manvolnum>4</manvolnum></citerefentry>
+      kernel modules must be loaded.</para>
+
+    <para>要確保在重新開機後會載入必要的模組及正確的範本，可加入下行到 <filename>/boot/loader.conf</filename>，若檔案不存在則自行建立：</para>
+
+    <screen xml:lang="en">if_cdce_load="YES"
+hw.usb.template=1</screen>
+
+    <para xml:lang="en">To load the module and set the template without rebooting
+      use:</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload if_cdce</userinput>
+<prompt>#</prompt> <userinput>sysctl hw.usb.template=1</userinput></screen>
+  </sect1>
+
+  <sect1 xml:id="usb-device-mode-storage">
+    <title><acronym>USB</acronym> 虛擬儲存裝置</title>
+
+    <note>
+      <para><citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> 驅動程式是一個在 FreeBSD 12.0 之後才可用的 <acronym>USB</acronym> 裝置模式驅動程式。</para>
+    </note>
+
+    <para xml:lang="en">Mass Storage target is provided by templates 0 and 10.
+      Both <citerefentry><refentrytitle>usb_template</refentrytitle><manvolnum>4</manvolnum></citerefentry> and <citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> kernel modules
+      must be loaded.  <citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</manvolnum></citerefentry> interfaces to the CTL
+      subsystem, the same one that is used for
+      <acronym>iSCSI</acronym> or Fibre Channel targets.
+      On the host side, <acronym>USB</acronym> Mass Storage
+      initiators can only access a single <acronym>LUN</acronym>,
+      <acronym>LUN</acronym> 0.</para>
+
+    <sect2>
+      <title xml:lang="en">Configuring USB Mass Storage Target Using the cfumass
+	Startup Script</title>
+
+      <para xml:lang="en">The simplest way to set up a read-only USB storage target
+	is to use the <filename>cfumass</filename> rc script.  To
+	configure it this way, copy the files to be presented to the
+	USB host machine into the <literal>/var/cfumass</literal>
+	directory, and add this line to
+	<filename>/etc/rc.conf</filename>:</para>
+
+      <programlisting xml:lang="en">cfumass_enable="YES"</programlisting>
+
+      <para xml:lang="en">To configure the target without restarting,
+	run this command:</para>
+
+      <screen><prompt>#</prompt> <userinput>service cfumass start</userinput></screen>
+
+      <para xml:lang="en">Differently from serial and network functionality, the
+	template should not be set to 0 or 10 in
+	<filename>/boot/loader.conf</filename>.  This is because the
+	LUN must be set up before setting the template.  The cfumass
+	startup script sets the correct template number automatically
+	when started.</para>
+    </sect2>
+    <sect2>
+      <title xml:lang="en">Configuring USB Mass Storage Using Other Means</title>
+
+      <para xml:lang="en">The rest of this chapter provides detailed description of
+	setting the target without using the cfumass rc file.  This is
+	necessary if eg one wants to provide a writeable LUN.</para>
+
+      <para xml:lang="en"><acronym>USB</acronym> Mass Storage does not require the
+	<citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon to be running, although it can be used if
+	desired.  This is different from <acronym>iSCSI</acronym>.
+	Thus, there are two ways to configure the target:
+	<citerefentry><refentrytitle>ctladm</refentrytitle><manvolnum>8</manvolnum></citerefentry>, or <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  Both require the
+	<filename>cfumass.ko</filename> kernel module to be loaded.
+	The module can be loaded manually:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>kldload cfumass</userinput></screen>
+
+      <para xml:lang="en">If <filename>cfumass.ko</filename> has not been built into
+	the kernel, <filename>/boot/loader.conf</filename> can be set
+	to load the module at boot:</para>
+
+      <programlisting xml:lang="en">cfumass_load="YES"</programlisting>
+
+      <para xml:lang="en">A <acronym>LUN</acronym> can be created without the
+	<citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>ctladm create -b block -o file=/data/target0</userinput></screen>
+
+      <para xml:lang="en">This presents the contents of the image file
+	<filename>/data/target0</filename> as a <acronym>LUN</acronym>
+	to the <acronym>USB</acronym> host.  The file must exist
+	before executing the command.  To configure the
+	<acronym>LUN</acronym> at system startup, add the command to
+	<filename>/etc/rc.local</filename>.</para>
+
+      <para xml:lang="en"><citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> can also be used to manage
+	<acronym>LUN</acronym>s.  Create
+	<filename>/etc/ctl.conf</filename>, add a line to
+	<filename>/etc/rc.conf</filename> to make sure <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> is
+	automatically started at boot, and then start the
+	daemon.</para>
+
+      <para xml:lang="en">This is an example of a simple
+	<filename>/etc/ctl.conf</filename> configuration file.  Refer
+	to <citerefentry><refentrytitle>ctl.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> for a more complete description of the
+	options.</para>
+
+      <programlisting xml:lang="en">target naa.50015178f369f092 {
+	lun 0 {
+		path /data/target0
+		size 4G
+	}
+}</programlisting>
+
+      <para xml:lang="en">The example creates a single target with a single
+	<acronym>LUN</acronym>.  The
+	<literal>naa.50015178f369f092</literal> is a device identifier
+	composed of 32 random hexadecimal digits.  The
+	<literal>path</literal> line defines the full path to a file
+	or zvol backing the <acronym>LUN</acronym>.  That file must
+	exist before starting <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  The second line is
+	optional and specifies the size of the
+	<acronym>LUN</acronym>.</para>
+
+      <para xml:lang="en">To make sure the <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> daemon is started at
+	boot, add this line to
+	<filename>/etc/rc.conf</filename>:</para>
+
+      <programlisting xml:lang="en">ctld_enable="YES"</programlisting>
+
+      <para xml:lang="en">To start <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> now, run this command:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service ctld start</userinput></screen>
+
+      <para>當 <citerefentry><refentrytitle>ctld</refentrytitle><manvolnum>8</manvolnum></citerefentry> Daemon 啟動後，它會讀取 <filename>/etc/ctl.conf</filename>，若這個檔案在 Daemon 啟動之後才做修改，要重新載入變更的內容才能立即生效：</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service ctld reload</userinput></screen>
+    </sect2>
   </sect1>
 </chapter>
 
@@ -41598,7 +41796,7 @@ alternate</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 51406 2018-02-05 09:48:07Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/network-servers/chapter.xml 52015 2018-07-18 02:54:00Z ygy $
 -->
 <chapter version="5.0" xml:id="network-servers">
   <!--
@@ -44180,10 +44378,6 @@ dhcpd_ifaces="dc0"</programlisting>
 
     <para>網域名稱系統 (Domain Name System, <acronym>DNS</acronym>) 是一種協定用來轉換網域名稱為 <acronym>IP</acronym> 位址，反之亦然。<acronym>DNS</acronym> 會協調網際網路上有權的根節點 (Authoritative root)、最上層網域 (Top Level Domain, <acronym>TLD</acronym>) 及其他小規模名稱伺服器來取得結果，而這些伺服器可管理與快取個自的網域資訊。要在系統上做 <acronym>DNS</acronym> 查詢並不需要架設一個名稱伺服器。</para>
 
-    <indexterm xml:lang="en"><primary>BIND</primary></indexterm>
-
-    <para>在 FreeBSD 10，已自基礎系統移除了 Berkeley Internet Name Domain (<acronym>BIND</acronym>)，並替換為 Unbound。Unbound 被設置來做為 FreeBSD 的基礎中的本地快取解析程式。<acronym>BIND</acronym> 仍可以自 Port 套件集取得，名稱為 <package role="port">dns/bind99</package> 或 <package role="port">dns/bind98</package>。在 FreeBSD 9 與較先前的版本，FreeBSD 基礎系統中是內建 <acronym>BIND</acronym>，FreeBSD 的版本提供了增強的安全性功能、新檔案系統配置及自動化 <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></citerefentry> 設置，而 <acronym>BIND</acronym> 是由 <link xlink:href="https://www.isc.org/">Internet Systems Consortium</link> 所維護。</para>
-
     <indexterm xml:lang="en"><primary>resolver</primary></indexterm>
     <indexterm xml:lang="en"><primary>reverse
       <acronym>DNS</acronym></primary></indexterm>
@@ -44214,11 +44408,6 @@ dhcpd_ifaces="dc0"</programlisting>
 	  <row>
 	    <entry>源頭 (Origin)</entry>
 	    <entry>代表某個轄區檔案中所涵蓋的網域。</entry>
-	  </row>
-
-	  <row>
-	    <entry xml:lang="en"><application>named</application>, BIND</entry>
-	    <entry>在 FreeBSD 中對 BIND 名稱伺服器套件的通用稱呼。</entry>
 	  </row>
 
 	  <row>
@@ -44309,9 +44498,7 @@ dhcpd_ifaces="dc0"</programlisting>
     </sect2>
 
     <sect2>
-      <title><acronym>DNS</acronym> 伺服器設定於 FreeBSD 10.0 及之後版本</title>
-
-      <para>於 FreeBSD 10.0，<application>BIND</application> 已被替換為 <application>Unbound</application>，<application>Unbound</application> 只會驗證快取解析程式，若需要有權的 (Authoritative) 伺服器，有很多可在 Port 套件集找到。</para>
+      <title><acronym>DNS</acronym> 伺服器設定</title>
 
       <para><application>Unbound</application> 由 FreeBSD 基礎系統提供，預設只會提供本機的 <acronym>DNS</acronym> 解析，雖然基礎系統的套件可被設定提供本機以外的解析服務，但要解決這樣的需求仍建議安裝 FreeBSD Port 套件集中的 <application>Unbound</application>。</para>
 
@@ -44352,1005 +44539,6 @@ freebsd.org. (A)
                 |---. (DNSKEY keytag: 40926 alg: 8 flags: 256)
                     |---. (DNSKEY keytag: 19036 alg: 8 flags: 257)
 ;; Chase successful</screen>
-    </sect2>
-
-    <sect2>
-      <title>DNS 伺服器設定於 FreeBSD 9.<replaceable>X</replaceable></title>
-
-      <important>
-	<para xml:lang="en">This chapter is only applicable to FreeBSD 9 and before.
-	  <application>BIND9</application> is no longer part of the
-	  base system in FreeBSD 10 and after, where it has been replaced
-	  with <application>unbound</application>.</para>
-      </important>
-
-      <para>在 FreeBSD 中，會稱 BIND daemon 為 <application>named</application>。</para>
-
-      <informaltable frame="none" pgwide="1">
-	<tgroup cols="2">
-	  <thead>
-	    <row>
-	      <entry>檔案</entry>
-	      <entry>說明</entry>
-	    </row>
-	  </thead>
-
-	  <tbody>
-	    <row>
-	      <entry xml:lang="en"><citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry></entry>
-	      <entry>BIND daemon 本身。</entry>
-	    </row>
-
-	    <row>
-	      <entry xml:lang="en"><citerefentry><refentrytitle>rndc</refentrytitle><manvolnum>8</manvolnum></citerefentry></entry>
-	      <entry>名稱伺服器控制工具。</entry>
-	    </row>
-
-	    <row>
-	      <entry xml:lang="en"><filename>/etc/namedb</filename></entry>
-	      <entry>儲存 BIND 轄區 (Zone) 資訊的目錄。</entry>
-	    </row>
-
-	    <row>
-	      <entry xml:lang="en"><filename>/etc/namedb/named.conf</filename></entry>
-	      <entry>Daemon 的設定檔。</entry>
-	    </row>
-	  </tbody>
-	</tgroup>
-      </informaltable>
-
-      <para>依指定轄區在伺服器上設定的方式，與該轄區相關的檔案會存放在 <filename>/etc/namedb</filename> 目錄中的 <filename>master</filename>, <filename>slave</filename> 或 <filename>dynamic</filename> 子目錄，這些檔案中會含有 <acronym>DNS</acronym> 資訊，會在名稱伺服器回覆查詢時使用到。</para>
-
-      <sect3>
-	<title>啟動 BIND</title>
-
-	<indexterm xml:lang="en">
-	  <primary>BIND</primary>
-	  <secondary>starting</secondary>
-	</indexterm>
-
-	<para>由於 BIND 預設已經安裝，要設定它相對簡單。</para>
-
-	<para>預設的 <application>named</application> 設定成只做基本的名稱解析伺服器，運作於 <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></citerefentry> 環境中，並限制只傾聽本地 IPv4 loopback 位址 (127.0.0.1)，若只要使用這個設定啟動伺服器一次可使用以下指令：</para>
-
-	<screen xml:lang="en"><prompt>#</prompt> <userinput>service named onestart</userinput></screen>
-
-	<para>要讓 <application>named</application> 在每次開機都會啟動，可加入下行到 <filename>/etc/rc.conf</filename>：</para>
-
-	<programlisting xml:lang="en">named_enable="YES"</programlisting>
-
-	<para>還有許多 <filename>/etc/namedb/named.conf</filename> 的設定選項以超出本文章的範圍，<application>named</application> 其他在 FreeBSD 上的啟動選項可在 <filename>/etc/defaults/rc.conf</filename> 與在 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中尋找 <literal>named_<replaceable>*</replaceable></literal> 項目，也建議閱讀 <xref linkend="configtuning-rcd"/> 一節。</para>
-      </sect3>
-
-      <sect3>
-	<title>設定檔</title>
-
-	<indexterm xml:lang="en">
-	  <primary>BIND</primary>
-	  <secondary>configuration files</secondary>
-	</indexterm>
-
-	<para><application>named</application> 的設定檔目前儲存在 <filename>/etc/namedb</filename> 目錄中且使用前必須先做修改，除非您只需要它做簡單的解析，這也是需要做最多設定的地方。</para>
-
-	<sect4>
-	  <title xml:lang="en"><filename>/etc/namedb/named.conf</filename></title>
-
-	  <programlisting xml:lang="en">// <phrase its:translate="no">$FreeBSD$</phrase>
-//
-// Refer to the named.conf(5) and named(8) man pages, and the documentation
-// in /usr/share/doc/bind9 for more details.
-//
-// If you are going to set up an authoritative server, make sure you
-// understand the hairy details of how DNS works.  Even with
-// simple mistakes, you can break connectivity for affected parties,
-// or cause huge amounts of useless Internet traffic.
-
-options {
-	// All file and path names are relative to the chroot directory,
-	// if any, and should be fully qualified.
-	directory	"/etc/namedb/working";
-	pid-file	"/var/run/named/pid";
-	dump-file	"/var/dump/named_dump.db";
-	statistics-file	"/var/stats/named.stats";
-
-// If named is being used only as a local resolver, this is a safe default.
-// For named to be accessible to the network, comment this option, specify
-// the proper IP address, or delete this option.
-	listen-on	{ 127.0.0.1; };
-
-// If you have IPv6 enabled on this system, uncomment this option for
-// use as a local resolver.  To give access to the network, specify
-// an IPv6 address, or the keyword "any".
-//	listen-on-v6	{ ::1; };
-
-// These zones are already covered by the empty zones listed below.
-// If you remove the related empty zones below, comment these lines out.
-	disable-empty-zone "255.255.255.255.IN-ADDR.ARPA";
-	disable-empty-zone "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA";
-	disable-empty-zone "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA";
-
-// If you have a DNS server around at your upstream provider, enter
-// its IP address here, and enable the line below.  This will make you
-// benefit from its cache, thus reduce overall DNS traffic in the Internet.
-/*
-	forwarders {
-		127.0.0.1;
-	};
-*/
-
-// If the 'forwarders' clause is not empty the default is to 'forward first'
-// which will fall back to sending a query from your local server if the name
-// servers in 'forwarders' do not have the answer.  Alternatively you can
-// force your name server to never initiate queries of its own by enabling the
-// following line:
-//	forward only;
-
-// If you wish to have forwarding configured automatically based on
-// the entries in /etc/resolv.conf, uncomment the following line and
-// set named_auto_forward=yes in /etc/rc.conf.  You can also enable
-// named_auto_forward_only (the effect of which is described above).
-//	include "/etc/namedb/auto_forward.conf";</programlisting>
-
-	  <para>如同註解所述，要利用上游的快取功能，可以在此啟動 <literal>forwarders</literal>，正常的情況下，名稱伺服器會在網際網路上做遞迴查詢來尋找特定名稱伺服器，直到找到要查詢的答案，開啟快取功能會讓名稱伺服器先查詢上游的名稱伺服器 (或自行設定的名稱伺服器) 來利用該伺服器的快取，若查詢的上游名稱伺服器是有規模營運且快速的名稱伺服器，則開啟此功能是相當值得的。</para>
-
-	  <warning>
-	    <para>在此處使用 <systemitem class="ipaddress">127.0.0.1</systemitem> 會<emphasis>沒有</emphasis>作用，請更改此 <acronym>IP</acronym> 位址為上游的名稱伺服器。</para>
-	  </warning>
-
-	  <programlisting xml:lang="en">	/*
-	   Modern versions of BIND use a random <acronym>UDP</acronym> port for each outgoing
-	   query by default in order to dramatically reduce the possibility
-	   of cache poisoning.  All users are strongly encouraged to utilize
-	   this feature, and to configure their firewalls to accommodate it.
-
-	   AS A LAST RESORT in order to get around a restrictive firewall
-	   policy you can try enabling the option below.  Use of this option
-	   will significantly reduce your ability to withstand cache poisoning
-	   attacks, and should be avoided if at all possible.
-
-	   Replace NNNNN in the example with a number between 49160 and 65530.
-	*/
-	// query-source address * port NNNNN;
-};
-
-// If you enable a local name server, do not forget to enter 127.0.0.1
-// first in your /etc/resolv.conf so this server will be queried.
-// Also, make sure to enable it in /etc/rc.conf.
-
-// The traditional root hints mechanism. Use this, OR the slave zones below.
-zone "." { type hint; file "/etc/namedb/named.root"; };
-
-/*	Slaving the following zones from the root name servers has some
-	significant advantages:
-	1. Faster local resolution for your users
-	2. No spurious traffic will be sent from your network to the roots
-	3. Greater resilience to any potential root server failure/DDoS
-
-	On the other hand, this method requires more monitoring than the
-	hints file to be sure that an unexpected failure mode has not
-	incapacitated your server.  Name servers that are serving a lot
-	of clients will benefit more from this approach than individual
-	hosts.  Use with caution.
-
-	To use this mechanism, uncomment the entries below, and comment
-	the hint zone above.
-
-	As documented at http://dns.icann.org/services/axfr/ these zones:
-	"." (the root), ARPA, IN-ADDR.ARPA, IP6.ARPA, and ROOT-SERVERS.NET
-	are available for AXFR from these servers on IPv4 and IPv6:
-	xfr.lax.dns.icann.org, xfr.cjr.dns.icann.org
-*/
-/*
-zone "." {
-	type slave;
-	file "/etc/namedb/slave/root.slave";
-	masters {
-		192.5.5.241;	// F.ROOT-SERVERS.NET.
-	};
-	notify no;
-};
-zone "arpa" {
-	type slave;
-	file "/etc/namedb/slave/arpa.slave";
-	masters {
-		192.5.5.241;	// F.ROOT-SERVERS.NET.
-	};
-	notify no;
-};
-*/
-
-/*	Serving the following zones locally will prevent any queries
-	for these zones leaving your network and going to the root
-	name servers.  This has two significant advantages:
-	1. Faster local resolution for your users
-	2. No spurious traffic will be sent from your network to the roots
-*/
-// RFCs 1912 and 5735 (and BCP 32 for localhost)
-zone "localhost"	{ type master; file "/etc/namedb/master/localhost-forward.db"; };
-zone "127.in-addr.arpa"	{ type master; file "/etc/namedb/master/localhost-reverse.db"; };
-zone "255.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-
-// RFC 1912-style zone for IPv6 localhost address
-zone "0.ip6.arpa"	{ type master; file "/etc/namedb/master/localhost-reverse.db"; };
-
-// "This" Network (RFCs 1912 and 5735)
-zone "0.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-
-// Private Use Networks (RFCs 1918 and 5735)
-zone "10.in-addr.arpa"	   { type master; file "/etc/namedb/master/empty.db"; };
-zone "16.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "17.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "18.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "19.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "20.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "21.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "22.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "23.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "24.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "25.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "26.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "27.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "28.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "29.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "30.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "31.172.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "168.192.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-
-// Link-local/APIPA (RFCs 3927 and 5735)
-zone "254.169.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-
-// IETF protocol assignments (RFCs 5735 and 5736)
-zone "0.0.192.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-
-// TEST-NET-[1-3] for Documentation (RFCs 5735 and 5737)
-zone "2.0.192.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "100.51.198.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "113.0.203.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-
-// IPv6 Range for Documentation (RFC 3849)
-zone "8.b.d.0.1.0.0.2.ip6.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-
-// Domain Names for Documentation and Testing (BCP 32)
-zone "test" { type master; file "/etc/namedb/master/empty.db"; };
-zone "example" { type master; file "/etc/namedb/master/empty.db"; };
-zone "invalid" { type master; file "/etc/namedb/master/empty.db"; };
-zone "example.com" { type master; file "/etc/namedb/master/empty.db"; };
-zone "example.net" { type master; file "/etc/namedb/master/empty.db"; };
-zone "example.org" { type master; file "/etc/namedb/master/empty.db"; };
-
-// Router Benchmark Testing (RFCs 2544 and 5735)
-zone "18.198.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-zone "19.198.in-addr.arpa" { type master; file "/etc/namedb/master/empty.db"; };
-
-// IANA Reserved - Old Class E Space (RFC 5735)
-zone "240.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "241.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "242.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "243.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "244.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "245.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "246.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "247.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "248.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "249.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "250.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "251.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "252.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "253.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "254.in-addr.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-
-// IPv6 Unassigned Addresses (RFC 4291)
-zone "1.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "3.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "4.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "5.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "6.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "7.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "8.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "9.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "a.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "b.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "c.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "d.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "e.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "0.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "1.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "2.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "3.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "4.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "5.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "6.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "7.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "8.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "9.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "a.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "b.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "0.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "1.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "2.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "3.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "4.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "5.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "6.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "7.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-
-// IPv6 ULA (RFC 4193)
-zone "c.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "d.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-
-// IPv6 Link Local (RFC 4291)
-zone "8.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "9.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "a.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "b.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-
-// IPv6 Deprecated Site-Local Addresses (RFC 3879)
-zone "c.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "d.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "e.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-zone "f.e.f.ip6.arpa"	{ type master; file "/etc/namedb/master/empty.db"; };
-
-// IP6.INT is Deprecated (RFC 4159)
-zone "ip6.int"		{ type master; file "/etc/namedb/master/empty.db"; };
-
-// NB: Do not use the IP addresses below, they are faked, and only
-// serve demonstration/documentation purposes!
-//
-// Example slave zone config entries.  It can be convenient to become
-// a slave at least for the zone your own domain is in.  Ask
-// your network administrator for the IP address of the responsible
-// master name server.
-//
-// Do not forget to include the reverse lookup zone!
-// This is named after the first bytes of the IP address, in reverse
-// order, with ".IN-ADDR.ARPA" appended, or ".IP6.ARPA" for IPv6.
-//
-// Before starting to set up a master zone, make sure you fully
-// understand how DNS and BIND work.  There are sometimes
-// non-obvious pitfalls.  Setting up a slave zone is usually simpler.
-//
-// NB: Do not blindly enable the examples below. :-)  Use actual names
-// and addresses instead.
-
-/* An example dynamic zone
-key "exampleorgkey" {
-	algorithm hmac-md5;
-	secret "sf87HJqjkqh8ac87a02lla==";
-};
-zone "example.org" {
-	type master;
-	allow-update {
-		key "exampleorgkey";
-	};
-	file "/etc/namedb/dynamic/example.org";
-};
-*/
-
-/* Example of a slave reverse zone
-zone "1.168.192.in-addr.arpa" {
-	type slave;
-	file "/etc/namedb/slave/1.168.192.in-addr.arpa";
-	masters {
-		192.168.1.1;
-	};
-};
-*/</programlisting>
-
-	  <para>在 <filename>named.conf</filename> 中，這些為正向與反向轄區的備援 (Slave) 項目範例。</para>
-
-	  <para>每一個要提供的新轄區 (Zone)，都必須在 <filename>named.conf</filename> 加入新轄區的項目。</para>
-
-	  <para>以最簡單的轄區項目 <systemitem class="fqdomainname">example.org</systemitem> 來舉例：</para>
-
-	  <programlisting xml:lang="en">zone "example.org" {
-	type master;
-	file "master/example.org";
-};</programlisting>
-
-	  <para>該轄區的角色為主要 (Master)，使用 <option>type</option> 述敘句來指定，該轄區的資訊會儲存在 <filename>/etc/namedb/master/example.org</filename>，使用 <option>file</option> 述敘句來指定。</para>
-
-	  <programlisting xml:lang="en">zone "example.org" {
-	type slave;
-	file "slave/example.org";
-};</programlisting>
-
-	  <para>若為次要轄區，則會由主要名稱伺服器接收特定轄區的轄區資訊，並儲存到指定的檔案，若主要伺服器故障或無法連線，次要名稱伺服器會有先前接收過的轄區資訊可用來繼續提供服務。</para>
-	</sect4>
-
-	<sect4>
-	  <title>轄區檔案</title>
-
-	  <indexterm xml:lang="en">
-	    <primary>BIND</primary>
-	    <secondary>zone files</secondary>
-	  </indexterm>
-
-	  <para><systemitem class="fqdomainname">example.org</systemitem> 的主要轄區檔範例 (位於 <filename>/etc/namedb/master/example.org</filename>) 如下：</para>
-
-	  <programlisting xml:lang="en">$TTL 3600        ; 1 hour default TTL
-example.org.    IN      SOA      ns1.example.org. admin.example.org. (
-                                2006051501      ; Serial
-                                10800           ; Refresh
-                                3600            ; Retry
-                                604800          ; Expire
-                                300             ; Negative Response TTL
-                        )
-
-; DNS Servers
-                IN      NS      ns1.example.org.
-                IN      NS      ns2.example.org.
-
-; MX Records
-                IN      MX 10   mx.example.org.
-                IN      MX 20   mail.example.org.
-
-                IN      A       192.168.1.1
-
-; Machine Names
-localhost       IN      A       127.0.0.1
-ns1             IN      A       192.168.1.2
-ns2             IN      A       192.168.1.3
-mx              IN      A       192.168.1.4
-mail            IN      A       192.168.1.5
-
-; Aliases
-www             IN      CNAME   example.org.</programlisting>
-
-	  <para>注意，每個有以 <quote>.</quote> 號結尾的主機是完整的主機名稱，也就是說，若沒有以 <quote>.</quote> 結尾則是該源頭 (Origin) 的相對主機名稱。例如 <literal>ns1</literal> 會被轉換成 <literal>ns1.<replaceable>example.org.</replaceable></literal>。</para>
-
-	  <para>轄區檔案的格式如下：</para>
-
-	  <programlisting xml:lang="en">recordname      IN recordtype   value</programlisting>
-
-	  <indexterm xml:lang="en">
-	    <primary><acronym>DNS</acronym></primary>
-	    <secondary>records</secondary>
-	  </indexterm>
-
-	  <para>最常用到的 <acronym>DNS</acronym> 記錄有：</para>
-
-	  <variablelist>
-	    <varlistentry>
-	      <term xml:lang="en">SOA</term>
-
-	      <listitem>
-		<para>開始轄區授權 (Authority)</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en">NS</term>
-
-	      <listitem>
-		<para>一台有權的名稱伺服器</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en">A</term>
-
-	      <listitem>
-		<para>主機位址</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en">CNAME</term>
-
-	      <listitem>
-		<para>別名的正規名稱 (Canonical name)</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en">MX</term>
-
-	      <listitem>
-		<para>郵件交換器 (Mail exchanger)</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en">PTR</term>
-
-	      <listitem>
-		<para>網域名稱指標 (用在反向 <acronym>DNS</acronym>)</para>
-	      </listitem>
-	    </varlistentry>
-	  </variablelist>
-
-	  <programlisting xml:lang="en">example.org. IN SOA ns1.example.org. admin.example.org. (
-                        2006051501      ; Serial
-                        10800           ; Refresh after 3 hours
-                        3600            ; Retry after 1 hour
-                        604800          ; Expire after 1 week
-                        300 )           ; Negative Response TTL</programlisting>
-
-	  <variablelist>
-	    <varlistentry>
-	      <term xml:lang="en"><systemitem class="fqdomainname">example.org.</systemitem></term>
-
-	      <listitem>
-		<para>網域名稱，也同樣是此轄區檔案的源頭 (Origin)。</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en"><systemitem class="fqdomainname">ns1.example.org.</systemitem></term>
-
-	      <listitem>
-		<para>此轄區主要/有權的名稱伺服器。</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en"><literal>admin.example.org.</literal></term>
-
-	      <listitem>
-		<para>此轄區的負責人，將 <quote>@</quote> 取代後的電子郵件位址。 (<email>admin@example.org</email> 會變成 <literal>admin.example.org</literal>)</para>
-	      </listitem>
-	    </varlistentry>
-
-	    <varlistentry>
-	      <term xml:lang="en"><literal>2006051501</literal></term>
-
-	      <listitem>
-		<para>該檔案的序號，每次修改轄區檔案之後應該增加此序號，目前許多管理者會偏好採用 <literal>yyyymmddrr</literal> 格式來編號，如 <literal>2006051501</literal> 代表最後一次修改於 2006 年 5 月 15 號，再後面的 <literal>01</literal> 代表這是在那一天做的第一次修改，序號的編號很重要，因為它會在更新轄區之後用來通知備援 (Slave) 的名稱伺服器。</para>
-	      </listitem>
-	    </varlistentry>
-	  </variablelist>
-
-	  <programlisting xml:lang="en">       IN NS           ns1.example.org.</programlisting>
-
-	  <para>這是一個 NS 項目，每個要有權力能做回覆的名稱伺服器必須具有至少設定一個項目。</para>
-
-	  <programlisting xml:lang="en">localhost       IN      A       127.0.0.1
-ns1             IN      A       192.168.1.2
-ns2             IN      A       192.168.1.3
-mx              IN      A       192.168.1.4
-mail            IN      A       192.168.1.5</programlisting>
-
-	  <para>A 記錄代表主機名稱，以上述例子來說，<systemitem class="fqdomainname">ns1.example.org</systemitem> 會解析為 <systemitem class="ipaddress">192.168.1.2</systemitem>。</para>
-
-	  <programlisting xml:lang="en">                IN      A       192.168.1.1</programlisting>
-
-	  <para>這行會分配 <acronym>IP</acronym> 位址 <systemitem class="ipaddress">192.168.1.1</systemitem> 給目前的源頭 (Origin)，在這個例子為 <systemitem class="fqdomainname">example.org</systemitem>。</para>
-
-	  <programlisting xml:lang="en">www             IN CNAME        @</programlisting>
-
-	  <para>canonical name 記錄通常用來替主機設定別名，在這個例子中 <systemitem>www</systemitem> 是 <quote>master</quote> 主機的別名，其名稱會與網域名稱 <systemitem class="fqdomainname">example.org</systemitem> (<systemitem class="ipaddress">192.168.1.1</systemitem>) 相同。CNAME 不能與其他類型的記錄同時用在一個主機上。</para>
-
-	  <indexterm xml:lang="en">
-	    <primary>MX record</primary>
-	  </indexterm>
-
-	  <programlisting xml:lang="en">               IN MX   10      mail.example.org.</programlisting>
-
-	  <para>MX 記錄用來指定該轄區要負責處理內寄郵件的郵件伺服器，<systemitem class="fqdomainname">mail.example.org</systemitem> 是郵件伺服器的主機名稱，而 10 是該郵件伺服器的優先順序。</para>
-
-	  <para>一個轄區可以有很多台郵件伺服器，每一台使用不同的優先順序 10, 20 以此類推，一台郵件伺服器嘗試要寄件給 <systemitem class="fqdomainname">example.org</systemitem> 會先嘗試優先順序最高的 MX (優先順序數字最低的記錄)，然後第二高的，接著繼續，直到郵件被寄出。</para>
-
-	  <para>in-addr.arpa 轄區檔案 (反向 <acronym>DNS</acronym>) 也使用相同的格式，除了項目要改使用 PTR 而非 A 或 CNAME。</para>
-
-	  <programlisting xml:lang="en">$TTL 3600
-
-1.168.192.in-addr.arpa. IN SOA ns1.example.org. admin.example.org. (
-                        2006051501      ; Serial
-                        10800           ; Refresh
-                        3600            ; Retry
-                        604800          ; Expire
-                        300 )           ; Negative Response TTL
-
-        IN      NS      ns1.example.org.
-        IN      NS      ns2.example.org.
-
-1       IN      PTR     example.org.
-2       IN      PTR     ns1.example.org.
-3       IN      PTR     ns2.example.org.
-4       IN      PTR     mx.example.org.
-5       IN      PTR     mail.example.org.</programlisting>
-
-	  <para>這個檔案會對上述虛擬網域給予 <acronym>IP</acronym> 位置到主機名稱的正確對應表。</para>
-
-	  <para>值得注意的是，所有在 PTR 記錄右邊的名字必須要是完整的 (即以 <quote>.</quote> 結尾)。</para>
-	</sect4>
-      </sect3>
-
-      <sect3>
-	<title>快取名稱伺服器</title>
-
-	<indexterm xml:lang="en">
-	  <primary>BIND</primary>
-	  <secondary>caching name server</secondary>
-	</indexterm>
-
-	<para>快取名稱伺服器是一種主要用來解析遞迴查詢的名稱伺服器，它只會詢問自己的查詢並記住結果供以後使用。</para>
-      </sect3>
-
-      <sect3>
-	<title xml:lang="en"><acronym role="Domain Name Security      Extensions">DNSSEC</acronym></title>
-
-	<indexterm xml:lang="en">
-	  <primary>BIND</primary>
-	  <secondary><acronym>DNS</acronym> security
-	      extensions</secondary>
-	</indexterm>
-
-	<para>網域名稱系統安全性擴充 (Domain Name System Security Extension)，或簡稱 <acronym role="Domain Name Security Extensions">DNSSEC</acronym>，是一套規範，用來保護解析名稱伺服器收到偽造的 <acronym>DNS</acronym> 資料，如：假 <acronym>DNS</acronym> 記錄，利用數位簽章，解析器可以驗証記錄的正確性。注意，<acronym role="Domain Name Security Extensions">DNSSEC</acronym> 只提供透過數位簽署資源記錄 (Resource Records, <acronym role="Resource Record">RR</acronym>) 的方式來確認正確性，這代表它無法保護要前往 <systemitem class="fqdomainname">example.net</systemitem> 但卻跑去 <systemitem class="fqdomainname">example.com</systemitem> 的使用者，<acronym>DNSSEC</acronym> 所做的唯一一件事便是認証資料在傳輸時沒有被竄改。<acronym>DNS</acronym> 的安全性是保護網際網路重要的一步，要取得更進一步有關 <acronym>DNSSEC</acronym> 如何運作的資訊可從相關的 <acronym>RFC</acronym> 文件開始，請參考 <xref linkend="dns-read"/> 清單。</para>
-
-	<para>接下來的章節會示範如何在一台運行 <acronym>BIND</acronym> 9 的有權的 <acronym>DNS</acronym> 伺服器與遞迴 (或快取) <acronym>DNS</acronym> 伺服器開啟 <acronym>DNSSEC</acronym>。雖然所有 <acronym>BIND</acronym> 9 的版本階支援 <acronym>DNSSEC</acronym>，但要能夠在驗証 <acronym>DNS</acronym> 查詢時使用已簽署的根轄區必須使用版本 9.6.2 以上，這是因為較先前的版本缺少必要的演算法來開啟使用根轄區金鑰驗證的功能，強烈建議使用 <acronym>BIND</acronym> 9.7 的最新版本或之後的版本以支援根金鑰的自動自動金鑰更新以及自動確保轄區已簽署與更新簽名為最新版的功能，9.6.2 與 9.7 之後版本的設定會有一些差異，差異點會再特別說明。</para>
-
-	<sect4>
-	  <title xml:lang="en">Recursive <acronym>DNS</acronym> Server
-	    Configuration</title>
-
-	  <para>需要對 <filename>named.conf</filename> 做一些修改才能開啟遞迴 <acronym>DNS</acronym> 伺服器執行查詢 <acronym>DNSSEC</acronym> 的驗証，在做這更改前，必須先取得根轄區金鑰或信任的錨點 (Anchor)，目前 <acronym>BIND</acronym> 可用的檔案格式不支援根轄區金鑰 (Root zone key)，因此必須手動轉換為需要的格式，金鑰本身可使用 <application>dig</application> 查詢根轄區來取得，透過執行</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dig +multi +noall +answer DNSKEY . &gt; root.dnskey</userinput></screen>
-
-	  <para>金鑰會儲存到 <filename>root.dnskey</filename>，其內容應會如下：</para>
-
-	  <programlisting xml:lang="en">. 93910 IN DNSKEY 257 3 8 (
-	AwEAAagAIKlVZrpC6Ia7gEzahOR+9W29euxhJhVVLOyQ
-	bSEW0O8gcCjFFVQUTf6v58fLjwBd0YI0EzrAcQqBGCzh
-	/RStIoO8g0NfnfL2MTJRkxoXbfDaUeVPQuYEhg37NZWA
-	JQ9VnMVDxP/VHL496M/QZxkjf5/Efucp2gaDX6RS6CXp
-	oY68LsvPVjR0ZSwzz1apAzvN9dlzEheX7ICJBBtuA6G3
-	LQpzW5hOA2hzCTMjJPJ8LbqF6dsV6DoBQzgul0sGIcGO
-	Yl7OyQdXfZ57relSQageu+ipAdTTJ25AsRTAoub8ONGc
-	LmqrAmRLKBP1dfwhYB4N7knNnulqQxA+Uk1ihz0=
-	) ; key id = 19036
-. 93910 IN DNSKEY 256 3 8 (
-	AwEAAcaGQEA+OJmOzfzVfoYN249JId7gx+OZMbxy69Hf
-	UyuGBbRN0+HuTOpBxxBCkNOL+EJB9qJxt+0FEY6ZUVjE
-	g58sRr4ZQ6Iu6b1xTBKgc193zUARk4mmQ/PPGxn7Cn5V
-	EGJ/1h6dNaiXuRHwR+7oWh7DnzkIJChcTqlFrXDW3tjt
-) ; key id = 34525</programlisting>
-
-	  <para>若取得的金鑰與此範例不同不要感到訝異，可能在最後一次更新這些操作指示之後有更改過，這個輸出結果實際上包含了兩組金鑰，在清單中的第一組金鑰，即在 DNSKEY 記錄類型之後有數值 257 的這組，是我們需要的，這個數值代表該金鑰是一個 Secure Entry Point (<acronym role="Secure Entry Point">SEP</acronym>)、俗稱 Key Signing Key (<acronym role="Key Signing Key">KSK</acronym>)。第二組金鑰，數值為 256，這是一個附屬金鑰，俗稱 Zone Signing Key (<acronym role="Zone Signing Key">ZSK</acronym>)。更多有關不同金鑰類型的資訊之後在 <xref linkend="dns-dnssec-auth"/> 會說明。</para>
-
-	  <para>現在必須驗証這個金鑰並格式化才可供 <acronym>BIND</acronym> 使用。產生 <acronym role="Delegation Signer">DS</acronym> <acronym role="Resource Record">RR</acronym> 集來驗証這個金鑰，使用以下指令建立一個包含這些 <acronym role="Resource Record">RR</acronym> 的檔案</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dnssec-dsfromkey -f root.dnskey . &gt; root.ds</userinput></screen>
-
-	  <para>這些記錄分別使用 SHA-1 與 SHA-256，且如下範例所示，使用 SHA-256 的段落較長。</para>
-
-	  <programlisting xml:lang="en">.  IN DS 19036 8 1
-	B256BD09DC8DD59F0E0F0D8541B8328DD986DF6E
-. IN DS 19036 8 2 49AAC11D7B6F6446702E54A1607371607A1A41855200FD2CE1CDDE32F24E8FB5</programlisting>
-
-	  <para>SHA-256 <acronym>RR</acronym> 現在可以與在 <link xlink:href="https://data.iana.org/root-anchors/root-anchors.xml">https://data.iana.org/root-anchors/root-anchors.xml</link> 中的 digest 比對。要完全確保該金鑰沒有被竄改，<acronym>XML</acronym> 檔案中的資料應使用正確的 <acronym>PGP</acronym> 簽名來驗證。</para>
-	    
-
-	  <para>接著，金鑰必須正確的格式化，<acronym>BIND</acronym> 版本 9.6.2 與 9.7 及之後的版本有一些不同，在版本 9.7 開始支援自動追蹤對金鑰的變更並在需要的時候更新，這可使用 <literal>managed-keys</literal> 如下範例所示來達成。若使用較舊的版本，金鑰必須使用 <literal>trusted-keys</literal> 敘述加入且必須手動更新，供 <acronym>BIND</acronym> 9.6.2 的格式如下：</para>
-
-	  <programlisting xml:lang="en">trusted-keys {
-	"." 257 3 8
-	"AwEAAagAIKlVZrpC6Ia7gEzahOR+9W29euxhJhVVLOyQbSEW0O8gcCjF
-	FVQUTf6v58fLjwBd0YI0EzrAcQqBGCzh/RStIoO8g0NfnfL2MTJRkxoX
-	bfDaUeVPQuYEhg37NZWAJQ9VnMVDxP/VHL496M/QZxkjf5/Efucp2gaD
-	X6RS6CXpoY68LsvPVjR0ZSwzz1apAzvN9dlzEheX7ICJBBtuA6G3LQpz
-	W5hOA2hzCTMjJPJ8LbqF6dsV6DoBQzgul0sGIcGOYl7OyQdXfZ57relS
-	Qageu+ipAdTTJ25AsRTAoub8ONGcLmqrAmRLKBP1dfwhYB4N7knNnulq
-	QxA+Uk1ihz0=";
-};</programlisting>
-
-	  <para>供 9.7 的格式則為：</para>
-
-	  <programlisting xml:lang="en">managed-keys {
-	"." initial-key 257 3 8
-	"AwEAAagAIKlVZrpC6Ia7gEzahOR+9W29euxhJhVVLOyQbSEW0O8gcCjF
-	FVQUTf6v58fLjwBd0YI0EzrAcQqBGCzh/RStIoO8g0NfnfL2MTJRkxoX
-	bfDaUeVPQuYEhg37NZWAJQ9VnMVDxP/VHL496M/QZxkjf5/Efucp2gaD
-	X6RS6CXpoY68LsvPVjR0ZSwzz1apAzvN9dlzEheX7ICJBBtuA6G3LQpz
-	W5hOA2hzCTMjJPJ8LbqF6dsV6DoBQzgul0sGIcGOYl7OyQdXfZ57relS
-	Qageu+ipAdTTJ25AsRTAoub8ONGcLmqrAmRLKBP1dfwhYB4N7knNnulq
-	QxA+Uk1ihz0=";
-};</programlisting>
-
-	  <para>現在可以直接或透過引用包含金鑰的檔案將根金鑰 (Root key) 加入到 <filename>named.conf</filename>，完成這些步驟後，編輯 <filename>named.conf</filename> 來設定 <acronym>BIND</acronym> 執行 <acronym>DNSSEC</acronym> 在查詢時驗證並加入以下項目到 <literal>options</literal> 指示項目中：</para>
-
-	  <programlisting xml:lang="en">dnssec-enable yes;
-dnssec-validation yes;</programlisting>
-
-	  <para xml:lang="en">To verify that it is actually working use
-	    <application>dig</application> to make a query for a
-	    signed zone using the resolver just configured.  A
-	    successful reply will contain the <literal>AD</literal>
-	    flag to indicate the data was authenticated.  Running a
-	    query such as</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dig @<replaceable>resolver</replaceable> +dnssec se ds </userinput></screen>
-
-	  <para xml:lang="en">should return the <acronym>DS</acronym>
-	    <acronym>RR</acronym> for the <literal>.se</literal> zone.
-	    In the <literal>flags:</literal> section the
-	    <literal>AD</literal> flag should be set, as seen
-	    in:</para>
-
-	  <programlisting xml:lang="en">...
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
-...</programlisting>
-
-	  <para xml:lang="en">The resolver is now capable of authenticating
-	    <acronym>DNS</acronym> queries.</para>
-	</sect4>
-
-	<sect4 xml:id="dns-dnssec-auth">
-	  <title xml:lang="en">Authoritative <acronym>DNS</acronym> Server
-	    Configuration</title>
-
-	  <para xml:lang="en">In order to get an authoritative name server to serve
-	    a <acronym>DNSSEC</acronym> signed zone a little more work
-	    is required.  A zone is signed using cryptographic keys
-	    which must be generated.  It is possible to use only one
-	    key for this.  The preferred method however is to have a
-	    strong well-protected Key Signing Key
-	    (<acronym role="Key Signing Key">KSK</acronym>) that is
-	    not rotated very often and a Zone Signing Key
-	    (<acronym role="Zone Signing Key">ZSK</acronym>) that is
-	    rotated more frequently.  Information on recommended
-	    operational practices can be found in <link xlink:href="http://tools.ietf.org/rfc/rfc4641.txt"><acronym>RFC</acronym>
-	      4641: <acronym>DNSSEC</acronym> Operational
-	      Practices</link>.  Practices regarding the root zone can
-	    be found in <link xlink:href="http://www.root-dnssec.org/wp-content/uploads/2010/06/icann-dps-00.txt"><acronym>DNSSEC</acronym>
-	      Practice Statement for the Root Zone
-	      <acronym>KSK</acronym> operator</link> and <link xlink:href="http://www.root-dnssec.org/wp-content/uploads/2010/06/vrsn-dps-00.txt"><acronym>DNSSEC</acronym>
-	      Practice Statement for the Root Zone
-	    <acronym>ZSK</acronym> operator</link>.  The
-	    <acronym role="Key Signing Key">KSK</acronym> is used to
-	    build a chain of authority to the data in need of
-	    validation and as such is also called a Secure Entry Point
-	    (<acronym role="Secure Entry Point">SEP</acronym>) key.  A
-	    message digest of this key, called a Delegation Signer
-	    (<acronym role="Delegation Signer">DS</acronym>) record,
-	    must be published in the parent zone to establish the
-	    trust chain.  How this is accomplished depends on the
-	    parent zone owner.  The
-	    <acronym role="Zone Signing Key">ZSK</acronym> is used to
-	    sign the zone, and only needs to be published
-	    there.</para>
-
-	  <para xml:lang="en">To enable <acronym>DNSSEC</acronym> for the
-	    <systemitem class="fqdomainname">example.com</systemitem>
-	    zone depicted in previous examples, the first step is to
-	    use <application>dnssec-keygen</application> to generate
-	    the <acronym>KSK</acronym> and <acronym>ZSK</acronym> key
-	    pair.  This key pair can utilize different cryptographic
-	    algorithms.  It is recommended to use RSA/SHA256 for the
-	    keys and 2048 bits key length should be enough.  To
-	    generate the <acronym>KSK</acronym> for
-	    <systemitem class="fqdomainname">example.com</systemitem>,
-	    run</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dnssec-keygen -f KSK -a RSASHA256 -b 2048 -n ZONE example.com</userinput></screen>
-
-	  <para xml:lang="en">and to generate the <acronym>ZSK</acronym>, run</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com</userinput></screen>
-
-	  <para xml:lang="en"><application>dnssec-keygen</application> outputs two
-	    files, the public and the private keys in files named
-	    similar to
-	    <filename>Kexample.com.+005+nnnnn.key</filename> (public)
-	    and <filename>Kexample.com.+005+nnnnn.private</filename>
-	    (private).  The <literal>nnnnn</literal> part of the file
-	    name is a five digit key ID.  Keep track of which key ID
-	    belongs to which key.  This is especially important when
-	    having more than one key in a zone.  It is also possible
-	    to rename the keys.  For each <acronym>KSK</acronym> file
-	    do:</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>mv Kexample.com.+005+nnnnn.key Kexample.com.+005+nnnnn.KSK.key</userinput>
-<prompt>%</prompt> <userinput>mv Kexample.com.+005+nnnnn.private Kexample.com.+005+nnnnn.KSK.private</userinput></screen>
-
-	  <para xml:lang="en">For the <acronym>ZSK</acronym> files, substitute
-	    <literal>KSK</literal> for <literal>ZSK</literal> as
-	    necessary.  The files can now be included in the zone
-	    file, using the <literal>$include</literal> statement.  It
-	    should look something like this:</para>
-
-	  <programlisting xml:lang="en">$include Kexample.com.+005+nnnnn.KSK.key ; KSK
-$include Kexample.com.+005+nnnnn.ZSK.key    ; ZSK</programlisting>
-
-	  <para xml:lang="en">Finally, sign the zone and tell
-	    <acronym>BIND</acronym> to use the signed zone file.  To
-	    sign a zone <application>dnssec-signzone</application> is
-	    used.  The command to sign the zone
-	    <systemitem class="fqdomainname">example.com</systemitem>,
-	    located in <filename>example.com.db</filename> would look
-	    similar to</para>
-
-	  <screen xml:lang="en"><prompt>%</prompt> <userinput>dnssec-signzone -o example.com -k Kexample.com.+005+nnnnn.KSK example.com.db Kexample.com.+005+nnnnn.ZSK.key</userinput></screen>
-
-	  <para xml:lang="en">The key supplied to the <option>-k</option> argument
-	    is the <acronym>KSK</acronym> and the other key file is
-	    the <acronym>ZSK</acronym> that should be used in the
-	    signing.  It is possible to supply more than one
-	    <acronym>KSK</acronym> and <acronym>ZSK</acronym>, which
-	    will result in the zone being signed with all supplied
-	    keys.  This can be needed to supply zone data signed using
-	    more than one algorithm.  The output of
-	    <application>dnssec-signzone</application> is a zone file
-	    with all <acronym>RR</acronym>s signed.  This output will
-	    end up in a file with the extension
-	    <literal>.signed</literal>, such as
-	    <filename>example.com.db.signed</filename>.  The
-	    <acronym role="Delegation Signer">DS</acronym> records
-	    will also be written to a separate file
-	    <filename>dsset-example.com</filename>.  To use this
-	    signed zone just modify the zone directive in
-	    <filename>named.conf</filename> to use
-	    <filename>example.com.db.signed</filename>.  By default,
-	    the signatures are only valid 30 days, meaning that the
-	    zone needs to be resigned in about 15 days to be sure
-	    that resolvers are not caching records with stale
-	    signatures.  It is possible to make a script and a cron
-	    job to do this.  See relevant manuals for details.</para>
-
-	  <para xml:lang="en">Be sure to keep private keys confidential, as with all
-	    cryptographic keys.  When changing a key it is best to
-	    include the new key into the zone, while still signing
-	    with the old one, and then move over to using the new key
-	    to sign.  After these steps are done the old key can be
-	    removed from the zone.  Failure to do this might render
-	    the <acronym>DNS</acronym> data unavailable for a time,
-	    until the new key has propagated through the
-	    <acronym>DNS</acronym> hierarchy.  For more information on
-	    key rollovers and other <acronym>DNSSEC</acronym>
-	    operational issues, see <link xlink:href="http://www.ietf.org/rfc/rfc4641.txt"><acronym>RFC</acronym>
-	      4641: <acronym>DNSSEC</acronym> Operational
-	      practices</link>.</para>
-	</sect4>
-
-	<sect4>
-	  <title xml:lang="en">Automation Using <acronym>BIND</acronym> 9.7 or
-	    Later</title>
-
-	  <para xml:lang="en">Beginning with <acronym>BIND</acronym> version 9.7 a
-	    new feature called <emphasis>Smart Signing</emphasis> was
-	    introduced.  This feature aims to make the key management
-	    and signing process simpler by automating parts of the
-	    task.  By putting the keys into a directory called a
-	    <emphasis>key repository</emphasis>, and using the new
-	    option <literal>auto-dnssec</literal>, it is possible to
-	    create a dynamic zone which will be resigned as needed.
-	    To update this zone use
-	    <application>nsupdate</application> with the new option
-	    <option>-l</option>.  <application>rndc</application> has
-	    also grown the ability to sign zones with keys in the key
-	    repository, using the option <option>sign</option>.  To
-	    tell <acronym>BIND</acronym> to use this automatic signing
-	    and zone updating for <systemitem class="fqdomainname">example.com</systemitem>, add the
-	    following to <filename>named.conf</filename>:</para>
-
-	  <programlisting xml:lang="en">zone example.com {
-	type master;
-	key-directory "/etc/named/keys";
-	update-policy local;
-	auto-dnssec maintain;
-	file "/etc/named/dynamic/example.com.zone";
-};</programlisting>
-
-	  <para xml:lang="en">After making these changes, generate keys for the zone
-	    as explained in <xref linkend="dns-dnssec-auth"/>, put
-	    those keys in the key repository given as the argument to
-	    the <literal>key-directory</literal> in the zone
-	    configuration and the zone will be signed automatically.
-	    Updates to a zone configured this way must be done using
-	    <application>nsupdate</application>, which will take care
-	    of re-signing the zone with the new data added.  For
-	    further details, see <xref linkend="dns-read"/> and the
-	    <acronym>BIND</acronym> documentation.</para>
-	</sect4>
-      </sect3>
-
-      <sect3>
-	<title>安全性</title>
-
-	<para xml:lang="en">Although BIND is the most common implementation of
-	  <acronym>DNS</acronym>, there is always the issue of
-	  security.  Possible and exploitable security holes are
-	  sometimes found.</para>
-
-	<para xml:lang="en">While FreeBSD automatically drops
-	  <application>named</application> into a <citerefentry><refentrytitle>chroot</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	  environment; there are several other security mechanisms in
-	  place which could help to lure off possible
-	  <acronym>DNS</acronym> service attacks.</para>
-
-	<para xml:lang="en">It is always good idea to read
-	  <link xlink:href="http://www.cert.org/">CERT</link>'s
-	  security advisories and to subscribe to the
-	  <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-security-notifications">FreeBSD security notifications mailing list</link> to stay up to date with the
-	  current Internet and FreeBSD security issues.</para>
-
-	<tip>
-	  <para xml:lang="en">If a problem arises, keeping sources up to date and
-	    having a fresh build of <application>named</application>
-	    may help.</para>
-	</tip>
-      </sect3>
-
-      <sect3 xml:id="dns-read">
-	<title>延伸閱讀</title>
-
-	<para xml:lang="en">BIND/<application>named</application> manual pages:
-	  <citerefentry><refentrytitle>rndc</refentrytitle><manvolnum>8</manvolnum></citerefentry> <citerefentry><refentrytitle>named</refentrytitle><manvolnum>8</manvolnum></citerefentry> <citerefentry><refentrytitle>named.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>
-	  <citerefentry><refentrytitle>nsupdate</refentrytitle><manvolnum>1</manvolnum></citerefentry> <citerefentry><refentrytitle>dnssec-signzone</refentrytitle><manvolnum>8</manvolnum></citerefentry>
-	  <citerefentry><refentrytitle>dnssec-keygen</refentrytitle><manvolnum>8</manvolnum></citerefentry></para>
-
-	<itemizedlist>
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="https://www.isc.org/software/bind">Official
-		ISC BIND Page</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="https://www.isc.org/software/guild">Official
-		ISC BIND Forum</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://www.oreilly.com/catalog/dns5/">O'Reilly
-		<acronym>DNS</acronym> and BIND 5th
-		Edition</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://www.root-dnssec.org/documentation/">Root
-		<acronym>DNSSEC</acronym></link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://data.iana.org/root-anchors/draft-icann-dnssec-trust-anchor.html"><acronym>DNSSEC</acronym>
-		Trust Anchor Publication for the Root
-		Zone</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://tools.ietf.org/html/rfc1034">RFC1034
-		- Domain Names - Concepts and Facilities</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://tools.ietf.org/html/rfc1035">RFC1035
-		- Domain Names - Implementation and
-		Specification</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://tools.ietf.org/html/rfc4033">RFC4033
-		- <acronym>DNS</acronym> Security Introduction and
-		Requirements</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://tools.ietf.org/html/rfc4034">RFC4034
-		- Resource Records for the <acronym>DNS</acronym>
-		Security Extensions</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://tools.ietf.org/html/rfc4035">RFC4035
-		- Protocol Modifications for the
-		<acronym>DNS</acronym> Security
-		Extensions</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://tools.ietf.org/html/rfc4641">RFC4641
-		- DNSSEC Operational Practices</link></para>
-	  </listitem>
-
-	  <listitem>
-	    <para xml:lang="en"><link xlink:href="http://tools.ietf.org/html/rfc5011">RFC
-		5011 - Automated Updates of <acronym>DNS</acronym>
-		Security (<acronym>DNSSEC</acronym>
-		Trust Anchors</link></para>
-	  </listitem>
-	</itemizedlist>
-      </sect3>
     </sect2>
   </sect1>
 
@@ -45823,15 +45011,12 @@ directory mask = 0755</programlisting>
 
       <para>要在開機時啟動 <application>Samba</application>，可加入下行到 <filename>/etc/rc.conf</filename>：</para>
 
-      <programlisting xml:lang="en">samba_enable="YES"</programlisting>
-
-      <para>要啟動 Samba4 可使用：</para>
       <programlisting xml:lang="en">samba_server_enable="YES"</programlisting>
 
       <para>要立即啟動 <application>Samba</application>：</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>service samba start</userinput>
-Starting SAMBA: removing stale tdbs :
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service samba_server start</userinput>
+Performing sanity check on Samba configuration: OK
 Starting nmbd.
 Starting smbd.</screen>
 
@@ -45841,7 +45026,7 @@ Starting smbd.</screen>
 
       <para><application>Samba</application> 可以隨時停止，要停止可輸入：</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>service samba stop</userinput></screen>
+      <screen><prompt>#</prompt> <userinput>service samba_server stop</userinput></screen>
 
       <para><application>Samba</application> 是一套擁有能整合 <trademark class="registered">Microsoft</trademark> <trademark class="registered">Windows</trademark> 網路功能的複雜軟體套件，除了在此處說明的基礎設定，要取得更多的功能資訊，請參考 <uri xlink:href="http://www.samba.org">http://www.samba.org</uri>。</para>
     </sect2>
@@ -49792,7 +48977,7 @@ LOG_ERR - packets which have been logged and which can be considered short due t
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 51461 2018-03-05 15:50:47Z rodrigo $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/advanced-networking/chapter.xml 51813 2018-06-10 18:31:35Z sevan $
 -->
 <chapter version="5.0" xml:id="advanced-networking">
   <title>進階網路設定</title>
@@ -54813,13 +53998,15 @@ ifconfig_<replaceable>em0</replaceable>_alias1="inet vhid <replaceable>2</replac
 	the master becomes available again.</para>
 
       <note>
-	<para xml:lang="en">Preemption is disabled by default.  If preemption has
-	  been enabled, <systemitem>hostc.example.org</systemitem>
-	  might not release the virtual <acronym>IP</acronym> address
-	  back to the original master server.  The administrator
+	<para xml:lang="en">If the original master server becomes available again,
+	  <systemitem>hostc.example.org</systemitem>  will not release
+	  the virtual <acronym>IP</acronym> address back to it
+	  automatically.  For this to happen, preemption has to be
+	  enabled.  The feature is disabled by default,
+	  it is controlled via the <citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></citerefentry> variable
+	  <varname>net.inet.carp.preempt</varname>.  The administrator
 	  can force the backup server to return the
-	  <acronym>IP</acronym> address to the master with the
-	  command:</para>
+	  <acronym>IP</acronym> address to the master:</para>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>ifconfig em0 vhid 1 state backup</userinput></screen>
       </note>
@@ -54927,8 +54114,9 @@ ifconfig_carp1="vhid <replaceable>2</replaceable> advskew <replaceable>100</repl
     <indexterm><primary>虛擬 LAN</primary></indexterm>
 
     <para xml:lang="en"><acronym>VLANs</acronym> are a way of virtually dividing up
-      a network into many different subnetworks.  Each will have its
-      own broadcast domain and be isolated from the rest of the
+      a network into many different subnetworks, also referred
+      to as segmenting.  Each segment will have its
+      own broadcast domain and be isolated from other
       <acronym>VLANs</acronym>.</para>
 
     <para>在 FreeBSD 上，要使用 <acronym>VLANs</acronym> 必須有網路卡驅動程式的支援，要查看那些驅動程式支援 vlan，請參考 <citerefentry><refentrytitle>vlan</refentrytitle><manvolnum>4</manvolnum></citerefentry> 操作手冊。</para>
@@ -54939,7 +54127,7 @@ ifconfig_carp1="vhid <replaceable>2</replaceable> advskew <replaceable>100</repl
 
     <para xml:lang="en">To configure <acronym>VLANs</acronym> at run time, with a
       <acronym>NIC</acronym> of <literal>em0</literal> and a
-      <acronym>VLAN</acronym> tag of <systemitem>5</systemitem>.  The
+      <acronym>VLAN</acronym> tag of <systemitem>5</systemitem> the
       command would look like this:</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>ifconfig <replaceable>em0.5</replaceable> create vlan <replaceable>5</replaceable> vlandev <replaceable>em0</replaceable> inet 192.168.20.20/24</userinput></screen>
@@ -54966,6 +54154,37 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
       <literal>vlans_<replaceable>em0</replaceable></literal>
       field and adding an additional line configuring the network on
       that <acronym>VLAN</acronym> tag's interface.</para>
+
+    <para xml:lang="en">It is useful to assign a symbolic name to an interface so
+      that when the associated hardware is changed, only a few
+      configuration variables need to be updated.  For example,
+      security cameras need to be run over VLAN 1 on
+      <literal>em0</literal>.  Later, if the <literal>em0</literal>
+      card is replaced with a card that uses the <citerefentry><refentrytitle>ixgb</refentrytitle><manvolnum>4</manvolnum></citerefentry> driver,
+      all references to <literal>em0.1</literal> will not have to
+      change to <literal>ixgb0.1</literal>.</para>
+
+    <para xml:lang="en">To configure <acronym>VLAN</acronym>
+      <systemitem>5</systemitem>, on the
+      <acronym>NIC</acronym> <literal>em0</literal>, assign the
+      interface name <literal>cameras</literal>, and assign the
+      interface an IP address of <systemitem class="ipaddress"><replaceable>192.168.20.20</replaceable></systemitem>
+      with a <systemitem class="netmask">24</systemitem>-bit prefix,
+      use this command:</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>ifconfig <replaceable>em0.5</replaceable> create vlan <replaceable>5</replaceable> vlandev <replaceable>em0</replaceable> name <replaceable>cameras</replaceable> inet <replaceable>192.168.20.20/24</replaceable></userinput></screen>
+
+    <para xml:lang="en">For an interface named <literal>video</literal>, use the
+    following:</para>
+
+    <screen xml:lang="en"><prompt>#</prompt> <userinput>ifconfig <replaceable>video.5</replaceable> create vlan <replaceable>5</replaceable> vlandev <replaceable>video</replaceable> name <replaceable>cameras inet 192.168.20.20/24</replaceable></userinput></screen>
+
+  <para>要在開機時套用變更可加入下行到 <filename>/etc/rc.conf</filename>：</para>
+
+  <programlisting xml:lang="en">vlans_<replaceable>video</replaceable>="<replaceable>camera</replaceable>"
+create_args_<replaceable>camera</replaceable>="vlan <replaceable>5</replaceable>"
+ifconfig_<replaceable>camera</replaceable>="inet <replaceable>192.168.20.20/24</replaceable>"</programlisting>
+
   </sect1>
 </chapter>
 
@@ -54978,7 +54197,7 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml 51254 2017-12-04 04:16:21Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mirrors/chapter.xml 51776 2018-06-05 11:03:19Z eadler $
 -->
 <appendix version="5.0" xml:id="mirrors">
   <title>取得 FreeBSD</title>
@@ -55815,7 +55034,7 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
   <sect1 xml:id="mirrors-rsync">
     <title>使用 <application>rsync</application></title>
 
-    <para>這些站台讓 FreeBSD 可透過 rsync 通訊協定取得。<application>rsync</application> 工具運作的方式類似 <citerefentry><refentrytitle>rcp</refentrytitle><manvolnum>1</manvolnum></citerefentry> 指令，但有更多的選項可用，且使用 rsync 遠端更新協定，該協定只會傳輸兩個檔案集之間的差異，所以能夠大大的加快在網路上同步的速度，這對大多數 FreeBSD <acronym>FTP</acronym> 伺服器的鏡像站非常有用。<application>rsync</application> 在許多作業系統上也可以使用，在 FreeBSD 上請參考 <package>net/rsync</package> Port 或使用套件。</para>
+    <para>這些站台讓 FreeBSD 可透過 rsync 通訊協定取得。<application>rsync</application> 工具只會傳輸兩個檔案集之間的差異，這對大多數 FreeBSD <acronym>FTP</acronym> 伺服器的鏡像站非常有用。<application>rsync</application> 在許多作業系統上也可以使用，在 FreeBSD 上請參考 <package>net/rsync</package> Port 或使用套件。</para>
 
     <variablelist>
       <varlistentry>
@@ -56478,7 +55697,7 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 51498 2018-03-18 05:26:49Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 51972 2018-07-06 15:15:08Z philip $
 -->
 <appendix version="5.0" xml:id="eresources">
 
@@ -56669,6 +55888,11 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
 	      <entry xml:lang="en">Where to send test messages instead of to
 		one of the actual lists</entry>
 	    </row>
+
+	    <row>
+	      <entry><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-women">freebsd-women</link></entry>
+	      <entry xml:lang="en">FreeBSD advocacy for women</entry>
+	    </row>
 	  </tbody>
 	</tgroup>
       </informaltable>
@@ -56795,6 +56019,11 @@ ifconfig_<replaceable>em0</replaceable>_<replaceable>5</replaceable>="inet 192.1
 	      <entry xml:lang="en">Porting <application>Enlightenment</application>
 		and <application>Enlightenment</application>
 		applications</entry>
+	    </row>
+
+	    <row>
+	      <entry><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-erlang">freebsd-erlang</link></entry>
+	      <entry xml:lang="en">FreeBSD-specific Erlang discussions</entry>
 	    </row>
 
 	    <row>
@@ -59375,215 +58604,72 @@ lIjBtlclVhaUrE2uLx/yTz2Apbm+GAmD8M0dQ7IYsOFlZNBW9zjgLLCtWDW+p1A=
 
     <sect2 xml:id="pgpkey-core-secretary">
       <title>Core Team Secretary <email>core-secretary@FreeBSD.org</email></title>
-      <!-- $FreeBSD: head/share/pgpkeys/core-secretary.key 50463 2017-07-08 16:06:53Z matthew $ -->
+      <!-- $FreeBSD: head/share/pgpkeys/core-secretary.key 51944 2018-07-02 11:07:44Z jrm $ -->
 <!--
-sh addkey.sh core-secretary 36A7C05FE1ECF9BB ;
+sh addkey.sh core-secretary 0CB403E4E95B96EC ;
 -->
 <programlisting role="pgpfingerprint"><![CDATA[
-pub   rsa4096/36A7C05FE1ECF9BB 2014-07-09 [SC] [expires: 2018-07-08]
-      Key fingerprint = C07B F5E3 10AE 64BF 6120  B0F6 36A7 C05F E1EC F9BB
+pub   rsa2048/0CB403E4E95B96EC 2018-06-30 [SC] [expires: 2020-06-29]
+      Key fingerprint = 9F02 836F 50D3 AD5A B75A  C588 0CB4 03E4 E95B 96EC
 uid                            FreeBSD Core Team Secretary <core-secretary@freebsd.org>
-uid                            Core Secretary <core-secretary@freebsd.org>
-sub   rsa4096/7B5150C8D7CE5D02 2014-07-09 [E] [expires: 2018-07-08]
+sub   rsa2048/133C3338A5B95A60 2018-06-30 [E] [expires: 2020-06-29]
+      Key fingerprint = FA37 B8AA C667 C3AA D310  751D 133C 3338 A5B9 5A60
 
 ]]></programlisting>
 <programlisting role="pgpkey"><![CDATA[
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-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
-=+zKf
+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
+=5VKx
 -----END PGP PUBLIC KEY BLOCK-----
 ]]></programlisting>
 
@@ -59681,7 +58767,7 @@ O8MgMjzGhlE=
   </part>
   
 <!--
-    $FreeBSD: head/en_US.ISO8859-1/share/xml/glossary.ent 48270 2016-02-27 01:40:36Z jgh $
+    $FreeBSD: head/en_US.ISO8859-1/share/xml/glossary.ent 51781 2018-06-06 05:45:24Z eadler $
 
     FreeBSD Glossary Terms
 	Please keep this file sorted alphabetically/ASCIIly by glossterm.
@@ -60651,11 +59737,6 @@ O8MgMjzGhlE=
     </glossentry>
 
     <glossentry>
-      <glossterm xml:lang="en">MFP4</glossterm>
-      <glosssee otherterm="mfp4-glossary"/>
-    </glossentry>
-
-    <glossentry>
       <glossterm xml:lang="en">MFS</glossterm>
       <glosssee otherterm="mfs-glossary"/>
     </glossentry>
@@ -60736,16 +59817,6 @@ O8MgMjzGhlE=
       <glossdef subject="FreeBSD">
 	<para xml:lang="en">To merge functionality or a patch from a repository HEAD
 	  to an earlier branch.</para>
-      </glossdef>
-    </glossentry>
-
-    <glossentry xml:id="mfp4-glossary">
-      <glossterm xml:lang="en">Merge From Perforce</glossterm>
-      <acronym xml:lang="en">MFP4</acronym>
-      <glossdef subject="FreeBSD">
-	<para xml:lang="en">To merge functionality or a patch from the Perforce
-	  repository to the -CURRENT branch.</para>
-	<glossseealso otherterm="perforce-glossary"/>
       </glossdef>
     </glossentry>
 
@@ -60912,11 +59983,6 @@ O8MgMjzGhlE=
     <title xml:lang="en">P</title>
 
     <glossentry>
-      <glossterm xml:lang="en">p4</glossterm>
-      <glosssee otherterm="perforce-glossary"/>
-    </glossentry>
-
-    <glossentry>
       <glossterm xml:lang="en">PAE</glossterm>
       <glosssee otherterm="pae-glossary"/>
     </glossentry>
@@ -61017,20 +60083,6 @@ O8MgMjzGhlE=
       <acronym xml:lang="en">PAP</acronym>
       <glossdef>
         <para/>
-      </glossdef>
-    </glossentry>
-
-    <glossentry xml:id="perforce-glossary">
-      <glossterm xml:lang="en">Perforce</glossterm>
-      <glossdef>
-	<para xml:lang="en">A source code control product made by
-	  <link xlink:href="http://www.perforce.com/">Perforce Software</link>.
-	  Although not open source, its use
-	  is free of charge to open-source projects such as FreeBSD.</para>
-
-	<para xml:lang="en">Some FreeBSD developers use a Perforce repository as a staging
-	  area for code that is considered too experimental for the
-	  -CURRENT branch.</para>
       </glossdef>
     </glossentry>
 
