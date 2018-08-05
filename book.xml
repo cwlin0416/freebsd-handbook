@@ -756,13 +756,7 @@
     </legalnotice>
 
     <abstract>
-      <para xml:lang="en">Welcome to FreeBSD! This handbook covers the installation
-	and day to day use of
-	<emphasis>FreeBSD 11.1-RELEASE</emphasis> and
-	<emphasis>FreeBSD 10.4-RELEASE</emphasis>. This book is
-	the result of ongoing work by many individuals.  Some sections
-	might be outdated.  Those interested in helping to update and
-	expand this document should send email to the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD documentation project mailing list</link>.</para>
+      <para>歡迎使用 FreeBSD！ 本使用手冊涵蓋範圍包括了 <emphasis>FreeBSD 11.1-RELEASE</emphasis> 與 <emphasis>FreeBSD 10.4-RELEASE</emphasis> 的安裝與平日操作的說明。 這份使用手冊是很多人的集體創作，而且仍然『持續不斷』的進行中，因此部份章節可能尚未仍未完成，如果您有興趣協助本計畫的話，請寄電子郵件至 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">FreeBSD 文件專案郵遞論壇</link>。</para>
 
       <para>在 <link xlink:href="https://www.FreeBSD.org/">FreeBSD 網站</link> 可以找到本文件的最新版本，舊版文件可從 <uri xlink:href="https://docs.FreeBSD.org/doc/">https://docs.FreeBSD.org/doc/</uri> 取得。本文件也提供各種格式與不同壓縮方式的版本可自 <link xlink:href="https://download.freebsd.org/ftp/doc/">FreeBSD FTP 伺服器</link> 或是其中一個 <link linkend="mirrors-ftp">鏡像網站</link> 下載。 列印出來的實體書面資料可在 <link xlink:href="http://www.freebsdmall.com/">FreeBSD 商城</link> 購買。 此外，您可在 <link xlink:href="@@URL_RELPREFIX@@/search/index.html">搜尋頁面</link> 中搜尋本文件或其他文件的資料。</para>
     </abstract>
@@ -2043,15 +2037,7 @@
     <sect2>
       <title>其他文件</title>
 
-      <para xml:lang="en">All supported FreeBSD versions provide an option in the
-	installer to
-	install additional documentation under
-	<filename>/usr/local/share/doc/freebsd</filename> during the
-	initial system setup.  Documentation may also be installed at
-	any later time using packages as described in
-	<xref linkend="doc-ports-install-package"/>.  You may view the
-	locally installed manuals with any HTML capable browser using
-	the following URLs:</para>
+      <para>所有支援的 FreeBSD 版本在安裝程式都有提供一個選項可在初始系統安裝時安裝額外的說明文件到 <filename>/usr/local/share/doc/freebsd</filename>。您也可以之後再使用套件安裝說明文件，詳細說明於 <xref linkend="doc-ports-install-package"/>。您可以使用任何支援 HTML 的瀏覽器進入下列 URL 檢視已安裝在本機的操作手冊：</para>
 
       <variablelist>
 	<varlistentry>
@@ -6126,10 +6112,7 @@ Swap: 2048M Total, 2048M Free
     <para>要持續追蹤 Port 的更新可以訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports">FreeBSD Port 郵遞論壇</link> 與 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-ports-bugs">FreeBSD Port 問題郵遞論壇</link>。</para>
 
     <warning>
-      <para xml:lang="en">Before installing any application, check <link xlink:href="https://vuxml.freebsd.org/"/>
-	for security issues related to the application or type
-	<command>pkg audit -F</command> to check all installed
-	applications for known vulnerabilities.</para>
+      <para>在安裝任何應用程式之前，請先查看 <link xlink:href="https://vuxml.freebsd.org/"/> 是否有與該應用程式相關的安全性問題或輸入 <command>pkg audit -F</command> 來檢查所有已安裝的應用程式是否有已知的漏洞。</para>
     </warning>
 
     <para>本章接下來的部份將說明如何在 FreeBSD 使用 Binary 套件及 Port 套件安裝與管理第三方軟體。</para>
@@ -6261,12 +6244,7 @@ Info:   Lists information about open files (similar to fstat(1))</screen>
       <para>FreeBSD 內建啟動 (Bootstrap) 工具可用來下載並安裝 <application>pkg</application> 及其操作手冊。這個工具是設計在 FreeBSD 版本 10.<replaceable>X</replaceable> 之後使用。</para>
 
       <note>
-	<para xml:lang="en">Not all FreeBSD versions and architectures
-	  support this bootstrap process.  The current list is at
-	  <link xlink:href="https://pkg.freebsd.org/"/>.
-	  For other cases,
-	  <application>pkg</application> must instead be installed
-	  from the Ports Collection or as a binary package.</para>
+	<para>不是所有 FreeBSD 版本及架構支援此啟動程序，目前支援的清單列於 <link xlink:href="https://pkg.freebsd.org/"/>，對不支援的版本，必須改透過 Port 套件集或者 Binary 套件來安裝 <application>pkg</application>。</para>
 
       </note>
 
@@ -6576,18 +6554,7 @@ Deinstalling ca_root_nss-3.15.1_1... done</screen>
       <para>下面我們會介紹如何使用 Port 套件集來安裝、移除軟體的基本用法。 <command>make</command> 可用的目標及環境變數詳細說明可參閱 <citerefentry><refentrytitle>ports</refentrytitle><manvolnum>7</manvolnum></citerefentry>。</para>
 
       <warning>
-	<para xml:lang="en">Before compiling any port, be sure to update the Ports
-	  Collection as described in the previous section.  Since
-	  the installation of any third-party software can introduce
-	  security vulnerabilities, it is recommended to first check
-	  <link xlink:href="https://vuxml.freebsd.org/"/>
-	  for known security issues related to the port.  Alternately,
-	  run <command>pkg audit -F</command> before installing a new
-	  port.  This command can be configured to automatically
-	  perform a security audit and an update of the vulnerability
-	  database during the daily security system check.  For more
-	  information, refer to <citerefentry><refentrytitle>pkg-audit</refentrytitle><manvolnum>8</manvolnum></citerefentry> and
-	  <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>.</para>
+	<para>在編譯任何 Port 套件前，請先確認已經如前章節所敘述之方法更新 Port 套件集。安裝任何第三方軟體皆可能會導致安全性漏洞，建議在安裝前先閱讀 <link xlink:href="https://vuxml.freebsd.org/"/> 了解  Port 已知的安全性問題。或者在每次安裝新 Port 前執行 <command>pkg audit -F</command>。此指令可以設定在每日系統安全性檢查時自動完成安全性稽查以及更新漏洞資料庫。要取得更多資訊，請參考 <citerefentry><refentrytitle>pkg-audit</refentrytitle><manvolnum>8</manvolnum></citerefentry> 及 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>。</para>
       </warning>
 
       <para>使用 Port 套件集會假設您擁有可正常連線的網路，同時也會需要超級使用者的權限。</para>
@@ -7955,11 +7922,7 @@ EndSection</programlisting>
 
       <para>預設只有同系統的使用者可以使用 <application>XDM</application> 登入。要開啟讓其他系統的使用者可連線到顯示伺服器，需編輯存取控制規則及開啟連線傾聽程式。</para>
 
-      <para xml:lang="en">To configure <application>XDM</application> to listen for
-	any remote connection, comment out the
-	<literal>DisplayManager.requestPort</literal> line in
-	<filename>/usr/local/etc/X11/xdm/xdm-config</filename> by
-	putting a <literal>!</literal> in front of it:</para>
+      <para>要設定 <application>XDM</application> 傾聽任何遠端的連線，在 <filename>/usr/local/lib/X11/xdm/xdm-config</filename> 中的 <literal>DisplayManager.requestPort</literal> 行前加上 <literal>!</literal> 來註解該行：</para>
 
       <screen xml:lang="en">! SECURITY: do not listen for XDMCP or Chooser requests
 ! Comment out this line if you want to manage X terminals with xdm
@@ -8627,11 +8590,7 @@ EndSection</programlisting>
 
       <para>要安裝 <trademark class="registered">Linux</trademark> 則替換 <literal>opera</literal> 為 <literal>linux-opera</literal>。</para>
 
-      <para xml:lang="en">To install <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> plugin support, first compile
-	the <package role="port">www/linux-flashplayer</package>
-	port.  Licensing restrictions prevent making a package
-	available.  Then install <package role="port">www/opera-linuxplugins</package>.  This example
-	compiles both applications from ports:</para>
+      <para>要安裝 <trademark class="registered">Adobe</trademark> <trademark class="registered">Flash</trademark> 附加元件，需先編譯 <package role="port">www/linux-c6-flashplugin11</package> Port，因受到授權條款限制無法事先做為 Binary 套件。然後安裝 <package role="port">www/opera-linuxplugins</package>。以下範例示範編譯 Port 中的這兩個應用程式：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/www/linux-flashplayer</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput>
@@ -8640,9 +8599,7 @@ EndSection</programlisting>
 
       <para>安裝完成後，開啟瀏覽器檢查附加元件是否存在，在網址列輸入 <literal>opera:plugins</literal> 並按下 <keycap>Enter</keycap> 鍵，便會有清單顯示目前可用的附加元件。</para>
 
-      <para xml:lang="en">To add the <application><trademark>Java</trademark></application> plugin,
-	follow install
-	<package role="port">java/icedtea-web</package>.</para>
+      <para>若要安裝 <application><trademark>Java</trademark></application> 附加元件請依照 <package role="port">java/icedtea-web</package> 中的指示。</para>
     </sect2>
 
     <sect2>
@@ -8695,13 +8652,7 @@ EndSection</programlisting>
   <sect1 xml:id="desktop-productivity">
     <title>辦工工具</title>
 
-    <para xml:lang="en">When it comes to productivity, users often look for an
-      office suite or an easy-to-use word processor.  While some
-      <link linkend="x11-wm">desktop environments</link> like
-      <application>KDE</application> provide an office suite, there
-      is no default productivity package.  Several office suites and
-      graphical word processors are available for FreeBSD, regardless
-      of the installed window manager.</para>
+    <para>當開始進行辦公，新的使用者通常會去找好用的辦公室軟體或是好上手的文件處理程式。 雖然有些 <link linkend="x11-wm">桌面環境</link> 像是 <application>KDE</application> 已經提供了辦公室軟體，但視窗管理程式一般沒有預設的辦公套件，FreeBSD 提供了各種辦公室軟體與圖型化文件處理程式可選用。</para>
 
     <para>本章節元範如何安裝以下熱門的辦工軟體以及說明該應用程式所需的資源、自 Port 編譯的時間或者是否有其他主要相依套件。</para>
 
@@ -20770,8 +20721,7 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
 
     <procedure>
       <step>
-	<para xml:lang="en">Configure jail parameters in
-	  <filename>jail.conf</filename>:</para>
+	<para>在 <filename>jail.conf</filename> 設定 Jail 的參數：</para>
 	<programlisting xml:lang="en"><replaceable>www</replaceable> {
     host.hostname = <replaceable>www.example.org</replaceable>;           # Hostname
     ip4.addr = <replaceable>192.168.0.10</replaceable>;                   # IP address of the jail
@@ -20782,29 +20732,19 @@ jail:httpd:memoryuse:deny=2G/jail</programlisting>
     exec.stop = "/bin/sh /etc/rc.shutdown";    # Stop command
 }</programlisting>
 
-	<para xml:lang="en">Configure jails to start at boot time in
-	  <filename>rc.conf</filename>:</para>
+	<para>在 <filename>rc.conf</filename> 設定開機時啟動 Jail：</para>
 
 	<programlisting xml:lang="en">jail_enable="YES"   # Set to NO to disable starting of any jails</programlisting>
 
-	<para xml:lang="en">The default startup of jails configured in
-	  <citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>, will run the <filename>/etc/rc</filename>
-	  script of the jail, which assumes the jail is a complete
-	  virtual system.  For service jails, the default startup
-	  command of the jail should be changed, by setting the
-	  <varname>exec.start</varname>
-	  option appropriately.</para>
+	<para>若 Jail 是一個完整的虛擬系統，Jail 預設啟動的程式可在 <citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 設定，便會在 Jail 中執行 <filename>/etc/rc</filename> Script。對於服務型的 Jail，則需透過設定 <varname>exec.start</varname> 選項來更改預設的啟動指令。</para>
 
 	<note>
-	  <para xml:lang="en">For a full list of available options, please see the
-	    <citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> manual page.</para>
+	  <para>要取得完整可用的選項清單，請參考 <citerefentry><refentrytitle>jail.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 操作手冊。</para>
 	</note>
       </step>
     </procedure>
 
-    <para xml:lang="en"><citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> can be used to start or stop a jail by hand,
-      if an entry for it exists in
-      <filename>jail.conf</filename>:</para>
+    <para>若該 Jail 已經在 <filename>jail.conf</filename> 中設定，可以用 <citerefentry><refentrytitle>service</refentrytitle><manvolnum>8</manvolnum></citerefentry> 來啟動或停止 Jail：</para>
 
     <screen xml:lang="en"><prompt>#</prompt> <userinput>service jail start <replaceable>www</replaceable></userinput>
 <prompt>#</prompt> <userinput>service jail stop <replaceable>www</replaceable></userinput></screen>
@@ -31259,19 +31199,7 @@ mypool@replica2                                 0      -  55.0M  -</screen>
       <sect3 xml:id="zfs-send-ssh">
 	<title>透過 <application>SSH</application> 傳送加密的備份</title>
 
-	<para xml:lang="en">Sending streams over the network is a good way to keep a
-	  remote backup, but it does come with a drawback.  Data sent
-	  over the network link is not encrypted, allowing anyone to
-	  intercept and transform the streams back into data without
-	  the knowledge of the sending user.  This is undesirable,
-	  especially when sending the streams over the internet to a
-	  remote host.  <application>SSH</application> can be used to
-	  securely encrypt data send over a network connection.  Since
-	  <acronym>ZFS</acronym> only requires the stream to be
-	  redirected from standard output, it is relatively easy to
-	  pipe it through <application>SSH</application>.  To keep the
-	  contents of the file system encrypted in transit and on the
-	  remote system, consider using <link xlink:href="https://wiki.freebsd.org/PEFS">PEFS</link>.</para>
+	<para>透過網路來傳送串流對要遠端備份是相當不錯的方式，但是也有一些缺點，透過網路連結傳送的資料沒有加密，這會讓任何人都可以在未告知傳送使用者的情況下攔截並轉換串流回資料，這是我們所不想見到的情況，特別是在使用網際網路傳送串流到遠端的主機時。<application>SSH</application> 可用來安全的加密要透過網路連線傳送的資料，在 <acronym>ZFS</acronym> 只需要從標準輸出重新導向便可簡單的轉接到 <application>SSH</application>。要在傳送或在遠端系統中維持檔案系統內容在加密的狀態也可考慮使用 <link xlink:href="https://wiki.freebsd.org/PEFS">PEFS</link>。</para>
 
 	<para>有一些設定以及安全性注意事項必須先完成，只有對 <command>zfs send</command> 操作必要的步驟才會在此說明，要取得更多有關 <application>SSH</application> 的資訊請參考 <xref linkend="openssh"/>。</para>
 
@@ -31802,8 +31730,7 @@ vm.kmem_size_max="330M"
 vfs.zfs.arc_max="40M"
 vfs.zfs.vdev.cache.size="5M"</programlisting>
 
-	<para xml:lang="en">For a more detailed list of recommendations for
-	  <acronym>ZFS</acronym>-related tuning, see <link xlink:href="https://wiki.freebsd.org/ZFSTuningGuide"/>.</para>
+	<para>要取得更多詳細的 <acronym>ZFS</acronym> 相關調校的建議清單，請參考 <link xlink:href="https://wiki.freebsd.org/ZFSTuningGuide"/>。</para>
       </sect3>
     </sect2>
   </sect1>
@@ -31862,17 +31789,7 @@ vfs.zfs.vdev.cache.size="5M"</programlisting>
 	  <row>
 	    <entry xml:id="zfs-term-pool">儲存池 (Pool)</entry>
 
-	    <entry xml:lang="en">A storage <emphasis>pool</emphasis> is the most
-	      basic building block of <acronym>ZFS</acronym>.  A pool
-	      is made up of one or more vdevs, the underlying devices
-	      that store the data.  A pool is then used to create one
-	      or more file systems (datasets) or block devices
-	      (volumes).  These datasets and volumes share the pool of
-	      remaining free space.  Each pool is uniquely identified
-	      by a name and a <acronym>GUID</acronym>.  The features
-	      available are determined by the <acronym>ZFS</acronym>
-	      version number on the pool.
-	    </entry>
+	    <entry><emphasis>儲存池 (Pool)</emphasis> 是建構 <acronym>ZFS</acronym> 最基礎的單位。一個儲存池可由一個或多個 vdev 所組成，是用來儲存資料的底層裝置。儲存池會被拿來建立一個或多個檔案系統 (資料集 Dataset) 或區塊裝置 (磁碟區 Volume)，這些資料集與磁碟區會共用儲存池的剩餘可用空間。每一個儲存池可由名稱與 <acronym>GUID</acronym> 來辨識。可用的功能會依儲存池上的 <acronym>ZFS</acronym> 版本而有不同。</entry>
 	  </row>
 
 	  <row>
@@ -35179,7 +35096,7 @@ before running "/usr/sbin/freebsd-update install"</screen>
     </sect2>
 
     <sect2 xml:id="stable">
-      <title xml:lang="en">Using FreeBSD-STABLE</title>
+      <title>使用 FreeBSD-STABLE</title>
 
       <para xml:lang="en">FreeBSD-STABLE is the development branch from which major
 	releases are made.  Changes go into this branch at a slower
@@ -35206,12 +35123,9 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	FreeBSD-STABLE without thoroughly testing the code in a
 	development or testing environment.</para>
 
-      <para xml:lang="en">To track FreeBSD-STABLE:</para>
+      <para>若要追蹤 FreeBSD-STABLE：</para>
 
-      <indexterm xml:lang="en">
-	<primary>-STABLE</primary>
-	  <secondary>using</secondary>
-      </indexterm>
+      <indexterm><primary>-STABLE</primary> <secondary>使用</secondary></indexterm>
       <orderedlist>
 	<listitem>
 	  <para xml:lang="en">Join the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">freebsd-stable</link> list in order to stay
@@ -35223,18 +35137,9 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	    respond if they have any issues to raise concerning the
 	    proposed change.</para>
 
-	  <para xml:lang="en">Join the relevant <application>svn</application> list
-	    for the branch being tracked.  For example, users
-	    tracking the 9-STABLE branch should join the
-	    <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> list.  This list records the
-	    commit log entry for each change as it is made, along
-	    with any pertinent information on possible
-	    side effects.</para>
+	  <para>加入相關的 <application>svn</application> 郵遞論壇來追蹤分支，例如，追蹤 9-STABLE 分支的使用者應該加入 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-stable-9">svn-src-stable-9</link> 郵遞論壇，該郵遞論壇會記錄每次所做的變更提交記錄及相關可能造成副作用的資訊。</para>
 
-	  <para xml:lang="en">To join these lists, go to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link>,
-	    click on the list to subscribe to, and follow the
-	    instructions.  In order to track changes for the whole
-	    source tree, subscribe to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link>.</para>
+	  <para>要加入這些郵遞論壇，請前往 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo">http://lists.FreeBSD.org/mailman/listinfo</link> 點選要訂閱的郵遞論壇，並依照網頁指示的步驟操作。要追蹤整個原始碼樹的變更可訂閱 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/svn-src-all">svn-src-all</link> 郵遞論壇。</para>
 	</listitem>
 
 	<listitem>
@@ -35253,15 +35158,10 @@ before running "/usr/sbin/freebsd-update install"</screen>
 	</listitem>
 
 	<listitem>
-	  <para xml:lang="en">Before compiling or upgrading to FreeBSD-STABLE
-	    <indexterm xml:lang="en">
+	  <para>在編譯或升級到 FreeBSD-STABLE <indexterm>
 	      <primary>-STABLE</primary>
 		<secondary>compiling</secondary>
-	    </indexterm>, read <filename>/usr/src/Makefile</filename>
-	    carefully and follow the instructions in <xref linkend="makeworld"/>.  Read the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">FreeBSD-STABLE mailing list</link> and
-	    <filename>/usr/src/UPDATING</filename> to keep up-to-date
-	    on other bootstrapping procedures that sometimes become
-	    necessary on the road to the next release.</para>
+	    </indexterm> 前，請仔細地閱讀 <filename>/usr/src/Makefile</filename> 並依照 <xref linkend="makeworld"/> 的指示操作。 閱讀 <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-stable">FreeBSD-STABLE 郵遞論壇</link> 以及 <filename>/usr/src/UPDATING</filename> 來了解升級的相關資訊，有時會含有升級下一個發行版的必要資訊。</para>
 	</listitem>
       </orderedlist>
     </sect2>
@@ -36711,7 +36611,7 @@ Elapsed Times for processes csh,
 	  <para xml:lang="en">For example, to connect from a client system that runs
 	    FreeBSD to the serial connection of another system:</para>
 
-	  <screen xml:lang="en"><prompt>#</prompt> <userinput>cu -l /dev/cuau<replaceable>N</replaceable></userinput></screen>
+	  <screen><prompt>#</prompt> <userinput>cu -l /dev/cuau<replaceable>N</replaceable></userinput></screen>
 
 	  <para xml:lang="en">Ports are numbered starting from zero.  This means that
 	    <filename>COM1</filename> is
