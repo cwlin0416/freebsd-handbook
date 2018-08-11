@@ -100,6 +100,7 @@ pkg install poedit
 若您是使用 POEdit 編輯，請記得做以下設定：
 1. 取消"勺選保留既有檔案的格式化處理方式"
 2. 換行位置設為 79 並採用 Unix 列結尾
+
 ![poedit](images/poedit-setting.png)
 
 # 翻譯名詞對照表
