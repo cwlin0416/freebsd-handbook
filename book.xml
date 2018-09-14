@@ -1388,16 +1388,7 @@
 
     <indexterm xml:lang="en"><primary>4.4BSD-Lite</primary></indexterm>
 
-    <para xml:lang="en">FreeBSD is an Open Source, standards-compliant Unix-like
-      operating system for x86 (both 32 and 64 bit), <trademark class="registered">ARM</trademark>, AArch64,
-      <trademark class="registered">RISC-V</trademark>, <trademark class="registered">MIPS</trademark>, <trademark class="registered">POWER</trademark>, <trademark class="registered">PowerPC</trademark>, and Sun <trademark class="registered">UltraSPARC</trademark>
-      computers.  It provides all the features that are
-      nowadays taken for granted, such as preemptive multitasking,
-      memory protection, virtual memory, multi-user facilities, SMP
-      support, all the Open Source development tools for different
-      languages and frameworks, and desktop features centered around
-      X Window System, KDE, or GNOME.  Its particular strengths
-      are:</para>
+    <para>FreeBSD 是一套開源、符合標準的類 Unix 作業系統，能在 x86 (同時支援 32 及 64 位元), <trademark class="registered">ARM</trademark>, AArch64, <trademark class="registered">RISC-V</trademark>, <trademark class="registered">MIPS</trademark>, <trademark class="registered">POWER</trademark>, <trademark class="registered">PowerPC</trademark> 以及 Sun <trademark class="registered">UltraSPARC</trademark> 電腦上執行。它提供了現代作業系統所應具備的所有功能，例如先佔式多工、記憶體保護、虛擬記憶體、多人共用、對稱多工處理 (SMP)、各種針對不同語言和框架的開源開發工具以及以 X Window 系統、KDE 及 GNOME 為主的桌面功能。它的特點有：</para>
 
     <itemizedlist>
       <listitem>
