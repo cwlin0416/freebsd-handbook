@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-07-24 21:42+0800\n"
-"PO-Revision-Date: 2018-07-24 23:09+0800\n"
+"POT-Creation-Date: 2018-04-01 21:09+0800\n"
+"PO-Revision-Date: 2018-08-05 19:24+0800\n"
 "Last-Translator: Chien Wei Lin <cwlin0416@gmail.com>\n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -44992,6 +44992,9 @@ msgid ""
 "security requirements of the network before using in a production "
 "environment."
 msgstr ""
+"本節展示在 <acronym>MAC</acronym> 環境下實現 <application>Nagios</"
+"application>網路監控系統的所需步驟。這表示即使本範例仍需管理員權限來測試，在"
+"生產環境下使用前，該實現的規則須符合網路安全要求。"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:30608
