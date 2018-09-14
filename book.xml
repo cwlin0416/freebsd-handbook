@@ -16,7 +16,7 @@
      $FreeBSD: head/en_US.ISO8859-1/books/handbook/chapters.ent 51744 2018-05-29 17:07:50Z trasz $
 --><!ENTITY chap.preface SYSTEM "preface/preface.xml">
 <!ENTITY % pgpkeys SYSTEM "../../../share/pgpkeys/pgpkeys.ent">
-<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 52022 2018-07-18 21:51:05Z 0mp $ --><!-- PGP keyblocks --><!ENTITY pgpkey.0mp SYSTEM "0mp.key">
+<!-- $FreeBSD: head/share/pgpkeys/pgpkeys.ent 52199 2018-09-04 18:03:54Z kbowling $ --><!-- PGP keyblocks --><!ENTITY pgpkey.0mp SYSTEM "0mp.key">
 <!ENTITY pgpkey.aaron SYSTEM "aaron.key">
 <!ENTITY pgpkey.ache SYSTEM "ache.key">
 <!ENTITY pgpkey.achim SYSTEM "achim.key">
@@ -243,6 +243,7 @@
 <!ENTITY pgpkey.jhay SYSTEM "jhay.key">
 <!ENTITY pgpkey.jhb SYSTEM "jhb.key">
 <!ENTITY pgpkey.jhibbits SYSTEM "jhibbits.key">
+<!ENTITY pgpkey.jhixson SYSTEM "jhixson.key">
 <!ENTITY pgpkey.jilles SYSTEM "jilles.key">
 <!ENTITY pgpkey.jim SYSTEM "jim.key">
 <!ENTITY pgpkey.jinmei SYSTEM "jinmei.key">
@@ -279,6 +280,7 @@
 <!ENTITY pgpkey.kan SYSTEM "kan.key">
 <!ENTITY pgpkey.karels SYSTEM "karels.key">
 <!ENTITY pgpkey.kato SYSTEM "kato.key">
+<!ENTITY pgpkey.kbowling SYSTEM "kbowling.key">
 <!ENTITY pgpkey.ken SYSTEM "ken.key">
 <!ENTITY pgpkey.kensmith SYSTEM "kensmith.key">
 <!ENTITY pgpkey.keramida SYSTEM "keramida.key">
@@ -464,6 +466,7 @@
 <!ENTITY pgpkey.romain SYSTEM "romain.key">
 <!ENTITY pgpkey.royger SYSTEM "royger.key">
 <!ENTITY pgpkey.rpaulo SYSTEM "rpaulo.key">
+<!ENTITY pgpkey.rpokala SYSTEM "rpokala.key">
 <!ENTITY pgpkey.rrs SYSTEM "rrs.key">
 <!ENTITY pgpkey.rstone SYSTEM "rstone.key">
 <!ENTITY pgpkey.ru SYSTEM "ru.key">
@@ -1334,7 +1337,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 52032 2018-07-19 17:58:54Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/introduction/chapter.xml 52072 2018-08-02 10:35:36Z eadler $
 -->
 <chapter version="5.0" xml:id="introduction">
 
@@ -1388,7 +1391,7 @@
 
     <indexterm xml:lang="en"><primary>4.4BSD-Lite</primary></indexterm>
 
-    <para>FreeBSD 是一套開源、符合標準的類 Unix 作業系統，能在 x86 (同時支援 32 及 64 位元), <trademark class="registered">ARM</trademark>, AArch64, <trademark class="registered">RISC-V</trademark>, <trademark class="registered">MIPS</trademark>, <trademark class="registered">POWER</trademark>, <trademark class="registered">PowerPC</trademark> 以及 Sun <trademark class="registered">UltraSPARC</trademark> 電腦上執行。它提供了現代作業系統所應具備的所有功能，例如先佔式多工、記憶體保護、虛擬記憶體、多人共用、對稱多工處理 (SMP)、各種針對不同語言和框架的開源開發工具以及以 X Window 系統、KDE 及 GNOME 為主的桌面功能。它的特點有：</para>
+    <para>FreeBSD 是一套開源、符合標準的類 Unix 作業系統，能在 x86 (同時支援 32 及 64 位元), <trademark class="registered">ARM</trademark>, AArch64, <trademark class="registered">RISC-V</trademark>, <trademark class="registered">MIPS</trademark>, <trademark class="registered">POWER</trademark>, <trademark class="registered">PowerPC</trademark> 以及 Sun <trademark class="registered">UltraSPARC</trademark> 電腦上執行。它提供了現代作業系統所應具備的所有功能，例如先佔式多工、記憶體保護、虛擬記憶體、多人共用、對稱多工處理 (SMP)、各種針對不同語言和框架的開源開發工具以及以 X Window 系統、KDE 及 GNOME 為主的桌面功能。它的特色有：</para>
 
     <itemizedlist>
       <listitem>
@@ -1485,9 +1488,7 @@
 
 	  <itemizedlist>
 	    <listitem>
-	      <para>全球資訊網伺服器<indexterm>
-		  <primary>web servers</primary>
-		</indexterm> (標準的或更安全的 [SSL])</para>
+	      <para xml:lang="en">Web servers</para>
 	    </listitem>
 
 	    <listitem>
@@ -1509,12 +1510,15 @@
 	    </listitem>
 
 	    <listitem>
-	      <para><indexterm>
+	      <para xml:lang="en">
+		<indexterm xml:lang="en">
 		  <primary>electronic mail</primary>
 		  <see>email</see>
-		</indexterm><indexterm>
+		</indexterm>
+		<indexterm xml:lang="en">
 		  <primary>email</primary>
-		</indexterm> 電子郵件伺服器</para>
+		</indexterm>
+		Email servers</para>
 	    </listitem>
 
 	    <listitem>
@@ -1981,7 +1985,7 @@
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 51960 2018-07-04 17:04:08Z trasz $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bsdinstall/chapter.xml 52159 2018-08-19 12:09:31Z bcr $
 -->
 
 <chapter version="5.0" xml:id="bsdinstall">
@@ -2054,37 +2058,35 @@
 
     <itemizedlist>
       <listitem>
-	<para xml:lang="en">Virtual Machine images, to download and
-	  import on a virtual environment of choice.
-	  These can be downloaded from the
-	  <link xlink:href="https://www.freebsd.org/where.html">Download FreeBSD</link>
-	  page.  There are images for KVM (<quote>qcow2</quote>),
-	  VMWare (<quote>vmdk</quote>), Hyper-V (<quote>vhd</quote>),
-	  and raw device images that are universally supported.
-	  These are not installation images, but rather the
-	  preconfigured (<quote>already installed</quote>) instances,
-	  ready to run and perform post-installation tasks.</para>
+	<para xml:lang="en">Virtual Machine images, to download and import on a
+	  virtual environment of choice.  These can be downloaded from
+	  the <link xlink:href="https://www.freebsd.org/where.html">Download
+	    FreeBSD</link> page.  There are images for KVM
+	  (<quote>qcow2</quote>), VMWare (<quote>vmdk</quote>),
+	  Hyper-V (<quote>vhd</quote>), and raw device images that are
+	  universally supported.  These are not installation images,
+	  but rather the preconfigured (<quote>already
+	    installed</quote>) instances, ready to run and perform
+	  post-installation tasks.</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">Virtual Machine images available at Amazon's
-	  <link xlink:href="https://aws.amazon.com/mp/solutions/freebsd/">AWS Marketplace</link>,
-	  <link xlink:href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=freebsd&amp;page=1">Microsoft Azure Marketplace</link>,
-	  and <link xlink:href="https://console.cloud.google.com/launcher/details/freebsd-cloud/freebsd-11">Google Cloud Platform</link>,
-	  to run on their respective hosting services.
-	  For more information on deploying FreeBSD
-	  on Azure please consult the relevant chapter in the
-	  <link xlink:href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-azure">Azure Documentation</link>.</para>
+	<para xml:lang="en">Virtual Machine images available at Amazon's <link xlink:href="https://aws.amazon.com/mp/solutions/freebsd/">AWS
+	    Marketplace</link>, <link xlink:href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=freebsd&amp;page=1">Microsoft
+	    Azure Marketplace</link>, and <link xlink:href="https://console.cloud.google.com/launcher/details/freebsd-cloud/freebsd-11">Google
+	    Cloud Platform</link>, to run on their respective hosting
+	  services.  For more information on deploying FreeBSD on Azure
+	  please consult the relevant chapter in the <link xlink:href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-azure">Azure
+	    Documentation</link>.</para>
       </listitem>
 
       <listitem>
-	<para xml:lang="en">SD card images, for embedded systems such
-	  as Raspberry Pi or BeagleBone Black.  These can be
-	  downloaded from the
-	  <link xlink:href="https://www.freebsd.org/where.html">Download FreeBSD</link>
-	  page.  These files must be uncompressed and written
-	  as a raw image to an SD card, from which the board will
-	  then boot.</para>
+	<para xml:lang="en">SD card images, for embedded systems such as Raspberry
+	  Pi or BeagleBone Black.  These can be downloaded from the
+	  <link xlink:href="https://www.freebsd.org/where.html">Download
+	    FreeBSD</link> page.  These files must be uncompressed and
+	  written as a raw image to an SD card, from which the board
+	  will then boot.</para>
       </listitem>
 
       <listitem>
@@ -2310,7 +2312,7 @@
 	<listitem>
 	  <para><literal>-memstick.img</literal>：這個檔案含有所有安裝 FreeBSD 所需的檔案，包含原始碼及 Port 套件集。這個檔案應依據以下操作指示寫入到 <acronym>USB</acronym> 隨身碟使用。</para>
 	</listitem>
-	
+
 	<listitem>
 	  <para><literal>-mini-memstick.img</literal>：類似 <literal>-bootonly.iso</literal>，但不含安裝檔 (可依所要下載)，安裝時需要網際網路連線，可依 <xref linkend="bsdinstall-usb"/> 的說明將此檔案寫入至 <acronym>USB</acronym> 隨身碟。</para>
 	</listitem>
@@ -5944,7 +5946,7 @@ Swap: 2048M Total, 2048M Free
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 51348 2017-12-30 22:56:56Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/ports/chapter.xml 52134 2018-08-16 13:18:30Z bcr $
 -->
 <chapter version="5.0" xml:id="ports">
 
@@ -6656,7 +6658,7 @@ The deinstallation will free 229 kB
       </important>
 
       <sect3 xml:id="ports-upgrading-tools">
-	<title>升級與管理 Port 的工具</title>
+	<title xml:lang="en">Tools to Upgrade and Manage Ports</title>
 
 	<indexterm><primary>ports</primary> <secondary>upgrading-tools</secondary></indexterm>
 
@@ -6986,7 +6988,7 @@ ports-mgmt/pkg
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 51980 2018-07-08 12:03:26Z rene $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/x11/chapter.xml 52111 2018-08-12 08:39:16Z sevan $
 -->
 <chapter version="5.0" xml:id="x11">
   <!--
@@ -7950,9 +7952,7 @@ hald_enable="YES"</programlisting>
 
       <para>第三種方法是使用 <application>XDM</application> 做為顯示管理程式，在這個方法需要建立一個可執行的 <filename>~/.xsession</filename>：</para>
 
-      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo "#!/bin/sh" &gt; ~/.xsession</userinput>
-<prompt>%</prompt> <userinput>echo "exec /usr/local/bin/gnome-session" &gt;&gt; ~/.xsession</userinput>
-<prompt>%</prompt> <userinput>chmod +x ~/.xsession</userinput></screen>
+      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo "exec /usr/local/bin/gnome-session" &gt; ~/.xsession</userinput></screen>
     </sect2>
 
     <sect2 xml:id="x11-wm-kde">
@@ -7995,9 +7995,7 @@ hald_enable="YES"</programlisting>
 
       <para>第三種啟動 <application>KDE</application> 的方式是透過 <application>XDM</application>，要使用這個方法需要建立一個可執行的 <filename>~/.xsession</filename> 如下：</para>
 
-      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo "#!/bin/sh" &gt; ~/.xsession</userinput>
-<prompt>%</prompt> <userinput>echo "exec /usr/local/bin/startkde" &gt;&gt; ~/.xsession</userinput>
-<prompt>%</prompt> <userinput>chmod +x ~/.xsession</userinput></screen>
+      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo "exec /usr/local/bin/startkde" &gt; ~/.xsession</userinput></screen>
 
       <para>啟動 <application>KDE</application> 之後，請參考內建的說明系統來取得更多有關如何使用各種選單及應用程式的資訊。</para>
     </sect2>
@@ -8016,15 +8014,28 @@ hald_enable="YES"</programlisting>
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cd /usr/ports/x11-wm/xfce4</userinput>
 <prompt>#</prompt> <userinput>make install clean</userinput></screen>
 
-      <para>不像 <application>GNOME</application> 或 <application>KDE</application>，<application>Xfce</application> 並沒有自己的登入管理程式，要由指令列啟動 <application>Xfce</application> 需輸入 <command>startx</command>，在這之前需先加入其項目到 <filename>~/.xinitrc</filename>：</para>
+      <para xml:lang="en"><application>Xfce</application> uses
+	<application>D-Bus</application> for a message bus.  This
+	application is automatically installed as dependency of
+	<application>Xfce</application>.  Enable it in
+	<filename>/etc/rc.conf</filename> so it will be started when
+	the system boots:</para>
 
-      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo "exec /usr/local/bin/startxfce4 --with-ck-launch" &gt; ~/.xinitrc</userinput></screen>
+      <programlisting xml:lang="en">dbus_enable="YES"</programlisting>
+
+      <para xml:lang="en">Unlike <application>GNOME</application> or
+	<application>KDE</application>,
+	<application>Xfce</application> does not provide its own login
+	manager.  In order to start <application>Xfce</application>
+	from the command line by typing <command>startx</command>,
+	first create <filename>~/.xinitrc</filename> with this
+	command:</para>
+
+      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo ". /usr/local/etc/xdg/xfce4/xinitrc" &gt; ~/.xinitrc</userinput></screen>
 
       <para>另一種方式是使用 <application>XDM</application>，要設定這個方式需建立一個可執行的 <filename>~/.xsession</filename>：</para>
 
-      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo "#!/bin/sh" &gt; ~/.xsession</userinput>
-<prompt>%</prompt> <userinput>echo "exec /usr/local/bin/startxfce4 --with-ck-launch" &gt;&gt; ~/.xsession</userinput>
-<prompt>%</prompt> <userinput>chmod +x ~/.xsession</userinput></screen>
+      <screen xml:lang="en"><prompt>%</prompt> <userinput>echo ". /usr/local/etc/xdg/xfce4/xinitrc" &gt; ~/.xsession</userinput></screen>
     </sect2>
   </sect1>
 
@@ -9094,7 +9105,7 @@ EndSection</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 51486 2018-03-16 02:16:58Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/multimedia/chapter.xml 52152 2018-08-17 21:25:58Z bcr $
 -->
 <chapter version="5.0" xml:id="multimedia">
 
@@ -10377,7 +10388,7 @@ bktr0: Pinnacle/Miro TV, Philips SECAM tuner.</programlisting>
 
       <para xml:lang="en">Finally, start the backend:</para>
 
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>echo 'mythbackend_enable="YES"' &gt;&gt; /etc/rc.conf</userinput>
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>sysrc mythbackend_enable=yes</userinput>
 <prompt>#</prompt> <userinput>service mythbackend start</userinput></screen>
     </sect2>
   </sect1>
@@ -10650,7 +10661,7 @@ add path usb/0.2.0 mode 0666 group usb</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/kernelconfig/chapter.xml 50592 2017-07-27 21:37:15Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/kernelconfig/chapter.xml 52157 2018-08-19 11:58:01Z bcr $
 -->
 <chapter version="5.0" xml:id="kernelconfig">
 <!--<chapterinfo>
@@ -10822,7 +10833,19 @@ ath_hal(4)               - Atheros Hardware Access Layer (HAL)</screen>
 
     <para>若 <filename>/usr/src/</filename> 目錄不存在或者是空的，代表尚未安裝。原始碼可以使用 <application>Subversion</application> 並依據 <xref linkend="svn"/> 中的操作說明來安裝。</para>
 
-    <para>完成原始碼完成後，需檢查 <filename>/usr/src/sys</filename> 內的檔案。該目錄內包含數個子目錄，這些子目錄中包了支援的硬體架構 (Architecture) 如下：<filename>amd64</filename>, <filename>i386</filename>, <filename>ia64</filename>, <filename>pc98</filename>, <filename>powerpc</filename> 以及 <filename>sparc64</filename>。在指定架構目錄中的內容只對該架構有效，其餘部份的程式碼與硬體架構無關，可通用所有平台。每個支援的硬體架構中會有 <filename>conf</filename> 子目錄，裡面含有供該架構使用的 <filename>GENERIC</filename> 核心設定檔。</para>
+    <para xml:lang="en">Once source is installed, review the contents of
+      <filename>/usr/src/sys</filename>.  This directory contains a
+      number of subdirectories, including those which represent the
+      following supported architectures: <filename>amd64</filename>,
+      <filename>i386</filename>, <filename>ia64</filename>,
+      <filename>powerpc</filename>, and
+      <filename>sparc64</filename>.  Everything inside a particular
+      architecture's directory deals with that architecture only and
+      the rest of the code is machine independent code common to all
+      platforms.  Each supported architecture has a
+      <filename>conf</filename> subdirectory which contains the
+      <filename>GENERIC</filename> kernel configuration file for that
+      architecture.</para>
 
     <para>請不要直接對 <filename>GENERIC</filename> 檔案做編輯。複製該檔案為另一個名稱，並對複製出來的檔案做編輯，習慣上檔名會全部使用大寫字元。當維護多台安裝不同的硬體的 FreeBSD 機器時，將檔名後方加上機器的主機名稱 (Host name) 是個不錯的方法。以下範例使用 <literal>amd64</literal> 架構的 <filename>GENERIC</filename> 設定檔建立了一個複本名稱為 <filename>MYKERNEL</filename>：</para>
 
@@ -13907,7 +13930,7 @@ export PATH</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 51390 2018-01-18 14:05:15Z mat $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/config/chapter.xml 52159 2018-08-19 12:09:31Z bcr $
 -->
 <chapter version="5.0" xml:id="config-tuning">
 
@@ -16598,8 +16621,8 @@ debug.acpi.level="ACPI_LV_ERROR"</programlisting>
       <para xml:lang="en">Most FreeBSD developers watch the <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-current">FreeBSD-CURRENT mailing list</link>, but one should
 	submit problems to <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-acpi">freebsd-acpi</link> to be sure it is seen.  Be
 	patient when waiting for a response.  If the bug is not
-	immediately apparent, submit a <acronym>PR</acronym> using
-	<citerefentry><refentrytitle>send-pr</refentrytitle><manvolnum>1</manvolnum></citerefentry>.  When entering a <acronym>PR</acronym>,
+	immediately apparent, submit a bug report.
+	When entering a <acronym>PR</acronym>,
 	include the same information as requested above.  This helps
 	developers to track the problem and resolve it.  Do not send a
 	<acronym>PR</acronym> without emailing <link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-acpi">freebsd-acpi</link> first as
@@ -17173,7 +17196,7 @@ bitmap_name="/boot/<replaceable>splash.bin</replaceable>"</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 51479 2018-03-12 07:34:44Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/security/chapter.xml 52158 2018-08-19 11:58:47Z bcr $
 -->
 <chapter version="5.0" xml:id="security">
 
@@ -20034,7 +20057,7 @@ UWWemqWuz3lAZuORQ9KX
       <screen xml:lang="en"><prompt>#</prompt> <userinput>touch /var/account/acct</userinput>
 <prompt>#</prompt> <userinput>chmod 600 /var/account/acct</userinput>
 <prompt>#</prompt> <userinput>accton /var/account/acct</userinput>
-<prompt>#</prompt> <userinput>echo 'accounting_enable="YES"' &gt;&gt; /etc/rc.conf</userinput></screen>
+<prompt>#</prompt> <userinput>sysrc accounting_enable=yes</userinput></screen>
 
       <para xml:lang="en">Once enabled, accounting will begin to track information
 	such as <acronym>CPU</acronym> statistics and executed
@@ -23359,12 +23382,7 @@ test: biba/low</screen>
       <primary>Nagios in a MAC Jail</primary>
     </indexterm>
 
-    <para xml:lang="en">This section demonstrates the steps that are needed to
-      implement the <application>Nagios</application> network
-      monitoring system in a <acronym>MAC</acronym> environment.  This
-      is meant as an example which still requires the administrator to
-      test that the implemented policy meets the security requirements
-      of the network before using in a production environment.</para>
+    <para>本節展示在 <acronym>MAC</acronym> 環境下實現 <application>Nagios</application>網路監控系統的所需步驟。這表示即使本範例仍需管理員權限來測試，在生產環境下使用前，該實現的規則須符合網路安全要求。</para>
 
     <para xml:lang="en">This example requires <option>multilabel</option> to be set
       on each file system.  It also assumes that
@@ -24469,7 +24487,7 @@ fi</programlisting>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 51815 2018-06-10 19:13:17Z sevan $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/disks/chapter.xml 52077 2018-08-02 16:53:27Z bcr $
 -->
 
 <chapter version="5.0" xml:id="disks">
@@ -26128,9 +26146,10 @@ scsibus1:
 	on <filename>/mnt</filename>:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mdconfig -f <replaceable>diskimage.iso</replaceable> -u <replaceable>0</replaceable></userinput>
-<prompt>#</prompt> <userinput>mount /dev/md<replaceable>0</replaceable> <replaceable>/mnt</replaceable></userinput></screen>
+<prompt>#</prompt> <userinput>mount -t cd9660 /dev/md<replaceable>0</replaceable> <replaceable>/mnt</replaceable></userinput></screen>
 
-      <para xml:lang="en">If a unit number is not specified with
+      <para xml:lang="en">Notice that <option>-t cd9660</option> was used to mount
+	an ISO format.  If a unit number is not specified with
 	<option>-u</option>, <command>mdconfig</command> will
 	automatically allocate an unused memory device and output
 	the name of the allocated unit, such as
@@ -27710,7 +27729,7 @@ esac</programlisting>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/geom/chapter.xml 48893 2016-06-04 11:47:58Z bhd $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/geom/chapter.xml 52153 2018-08-17 21:34:10Z bcr $
 
 -->
 <chapter version="5.0" xml:id="geom">
@@ -27918,7 +27937,7 @@ Done.</screen>
 	  adding a line to
 	  <filename>/boot/loader.conf</filename>:</para>
 
-	<screen xml:lang="en"><prompt>#</prompt> <userinput>echo 'geom_stripe_load="YES"' &gt;&gt; /boot/loader.conf</userinput></screen>
+	<screen xml:lang="en"><prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf geom_stripe_load=YES</userinput></screen>
       </step>
     </procedure>
   </sect1>
@@ -29358,7 +29377,7 @@ ufsid/486b6fc16926168e     N/A  ad4s1f</screen>
     
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 51852 2018-06-17 01:48:19Z allanjude $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/zfs/chapter.xml 52203 2018-09-05 18:51:27Z bhd $
 -->
 
 <chapter version="5.0" xml:id="zfs">
@@ -30126,8 +30145,8 @@ config:
 
 errors: No known data errors
 <prompt>#</prompt> <userinput>zpool list</userinput>
-NAME     SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
-healer   960M  92.5K   960M     0%  1.00x  ONLINE  -</screen>
+NAME     SIZE  ALLOC   FREE   CKPOINT  EXPANDSZ   FRAG   CAP  DEDUP  HEALTH  ALTROOT
+healer   960M  92.5K   960M         -         -     0%    0%  1.00x  ONLINE  -</screen>
 
       <para>將部份需要使用自我修復功能來保護的重要資料複製到該儲存池，建立一個儲存池的校驗碼供稍後做比較時使用。</para>
 
@@ -30161,7 +30180,7 @@ SHA1 (/healer) = 2753eff56d77d9a536ece6694bf0a82740344d1f</screen>
           attempt was made to correct the error.  Applications are unaffected.
   action: Determine if the device needs to be replaced, and clear the errors
           using 'zpool clear' or replace the device with 'zpool replace'.
-     see: http://www.sun.com/msg/ZFS-8000-9P
+     see: http://illumos.org/msg/ZFS-8000-4J
     scan: none requested
   config:
 
@@ -30190,7 +30209,7 @@ status: One or more devices has experienced an unrecoverable error.  An
             attempt was made to correct the error.  Applications are unaffected.
 action: Determine if the device needs to be replaced, and clear the errors
             using 'zpool clear' or replace the device with 'zpool replace'.
-   see: http://www.sun.com/msg/ZFS-8000-9P
+   see: http://illumos.org/msg/ZFS-8000-4J
   scan: scrub in progress since Mon Dec 10 12:23:30 2012
         10.4M scanned out of 67.0M at 267K/s, 0h3m to go
         9.63M repaired, 15.56% done
@@ -30213,7 +30232,7 @@ status: One or more devices has experienced an unrecoverable error.  An
         attempt was made to correct the error.  Applications are unaffected.
 action: Determine if the device needs to be replaced, and clear the errors
              using 'zpool clear' or replace the device with 'zpool replace'.
-   see: http://www.sun.com/msg/ZFS-8000-9P
+   see: http://illumos.org/msg/ZFS-8000-4J
   scan: scrub repaired 66.5M in 0h2m with 0 errors on Mon Dec 10 12:26:25 2012
 config:
 
@@ -30957,9 +30976,9 @@ usr/home/joe        1.3G    128k    1.3G     0%    /usr/home/joe</screen>
       <para>以下例子將示範使用兩個儲存池來做 <acronym>ZFS</acronym> 備份：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool list</userinput>
-NAME    SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
-backup  960M    77K   896M     0%  1.00x  ONLINE  -
-mypool  984M  43.7M   940M     4%  1.00x  ONLINE  -</screen>
+NAME    SIZE  ALLOC   FREE   CKPOINT  EXPANDSZ   FRAG   CAP  DEDUP  HEALTH  ALTROOT
+backup  960M    77K   896M         -         -     0%    0%  1.00x  ONLINE  -
+mypool  984M  43.7M   940M         -         -     0%    4%  1.00x  ONLINE  -</screen>
 
       <para>名為 <replaceable>mypool</replaceable> 的儲存池為主要的儲存池，資料會定期寫入與讀取的位置。第二個儲存池 <replaceable>backup</replaceable> 用來待命 (Standby)，萬一主要儲存池無法使用時可替換。注意，<acronym>ZFS</acronym> 並不會自動做容錯移轉 (Fail-over)，必須要由系統管理者在需要的時候手動完成。快照會用來提供一個與檔系統一致的版本來做備份，<replaceable>mypool</replaceable> 的快照建立之後，便可以複製到 <replaceable>backup</replaceable> 儲存池，只有快照可以做備份，最近一次快照之後所做的變更不會含在內容裡面。</para>
 
@@ -30978,9 +30997,9 @@ You must redirect standard output.</screen>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zfs send <replaceable>mypool</replaceable>@<replaceable>backup1</replaceable> &gt; <replaceable>/backup/backup1</replaceable></userinput>
 <prompt>#</prompt> <userinput>zpool list</userinput>
-NAME    SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
-backup  960M  63.7M   896M     6%  1.00x  ONLINE  -
-mypool  984M  43.7M   940M     4%  1.00x  ONLINE  -</screen>
+NAME    SIZE  ALLOC   FREE   CKPOINT  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+backup  960M  63.7M   896M         -         -     0%     6%  1.00x  ONLINE  -
+mypool  984M  43.7M   940M         -         -     0%     4%  1.00x  ONLINE  -</screen>
 
       <para><command>zfs send</command> 會傳輸在快照 <replaceable>backup1</replaceable> 中所有的資料到儲存池 <replaceable>backup</replaceable>。可以使用 <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></citerefentry> 排程來自動完成建立與傳送快照的動作。</para>
 
@@ -30993,9 +31012,9 @@ total estimated size is 50.1M
 TIME        SENT   SNAPSHOT
 
 <prompt>#</prompt> <userinput>zpool list</userinput>
-NAME    SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
-backup  960M  63.7M   896M     6%  1.00x  ONLINE  -
-mypool  984M  43.7M   940M     4%  1.00x  ONLINE  -</screen>
+NAME    SIZE  ALLOC   FREE   CKPOINT  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+backup  960M  63.7M   896M         -         -     0%     6%  1.00x  ONLINE  -
+mypool  984M  43.7M   940M         -         -     0%     4%  1.00x  ONLINE  -</screen>
 
       <sect3 xml:id="zfs-send-incremental">
 	<title>漸進式備份</title>
@@ -31008,9 +31027,9 @@ NAME                    USED  AVAIL  REFER  MOUNTPOINT
 mypool@replica1         5.72M      -  43.6M  -
 mypool@replica2             0      -  44.1M  -
 <prompt>#</prompt> <userinput>zpool list</userinput>
-NAME    SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
-backup  960M  61.7M   898M     6%  1.00x  ONLINE  -
-mypool  960M  50.2M   910M     5%  1.00x  ONLINE  -</screen>
+NAME    SIZE  ALLOC   FREE   CKPOINT  EXPANDSZ   FRAG   CAP  DEDUP  HEALTH  ALTROOT
+backup  960M  61.7M   898M         -         -     0%    6%  1.00x  ONLINE  -
+mypool  960M  50.2M   910M         -         -     0%    5%  1.00x  ONLINE  -</screen>
 
 	<para>會建立一個名為 <replaceable>replica2</replaceable> 的第二個快照，這個快照只中只會含有目前與前次快照 <replaceable>replica1</replaceable> 之間檔案系統所做的變更。使用 <command>zfs send -i</command> 並指定要用來產生漸進備份串流的快照，串流中只會含有做過更改的資料。這個動作只在接收端已經有初始快照時才可用。</para>
 
@@ -31020,9 +31039,9 @@ total estimated size is 5.02M
 TIME        SENT   SNAPSHOT
 
 <prompt>#</prompt> <userinput>zpool list</userinput>
-NAME    SIZE  ALLOC   FREE    CAP  DEDUP  HEALTH  ALTROOT
-backup  960M  80.8M   879M     8%  1.00x  ONLINE  -
-mypool  960M  50.2M   910M     5%  1.00x  ONLINE  -
+NAME    SIZE  ALLOC   FREE   CKPOINT  EXPANDSZ   FRAG  CAP  DEDUP  HEALTH  ALTROOT
+backup  960M  80.8M   879M         -         -     0%   8%  1.00x  ONLINE  -
+mypool  960M  50.2M   910M         -         -     0%   5%  1.00x  ONLINE  -
 
 <prompt>#</prompt> <userinput>zfs list</userinput>
 NAME                         USED  AVAIL  REFER  MOUNTPOINT
@@ -31211,8 +31230,8 @@ mypool/compressed_dataset  logicalused       496G      -</screen>
       <para>只有要被寫入到儲存池的新資料才會做去重複的動作，先前已被寫入到儲存池的資料不會因此啟動了這個選項而做去重複。查看已開啟去重複屬性的儲存池會如下：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool list</userinput>
-NAME  SIZE ALLOC  FREE CAP DEDUP HEALTH ALTROOT
-pool 2.84G 2.19M 2.83G  0% 1.00x ONLINE -</screen>
+NAME  SIZE ALLOC  FREE   CKPOINT  EXPANDSZ   FRAG   CAP   DEDUP   HEALTH   ALTROOT
+pool 2.84G 2.19M 2.83G         -         -     0%    0%   1.00x   ONLINE   -</screen>
 
       <para><literal>DEDUP</literal> 欄位會顯示儲存池的實際去重複率，數值為 <literal>1.00x</literal> 代表資料尚未被去重複。在下一個例子會在前面所建立的去重複儲存池中複製三份 Port 樹到不同的目錄中。</para>
 
@@ -31223,8 +31242,8 @@ pool 2.84G 2.19M 2.83G  0% 1.00x ONLINE -</screen>
       <para>已經偵測到重複的資料並做去重複：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>zpool list</userinput>
-NAME SIZE  ALLOC FREE CAP DEDUP HEALTH ALTROOT
-pool 2.84G 20.9M 2.82G 0% 3.00x ONLINE -</screen>
+NAME SIZE  ALLOC  FREE   CKPOINT  EXPANDSZ   FRAG  CAP   DEDUP   HEALTH   ALTROOT
+pool 2.84G 20.9M 2.82G         -         -     0%   0%   3.00x   ONLINE   -</screen>
 
       <para><literal>DEDUP</literal> 欄位顯示有 <literal>3.00x</literal> 的去重複率，這代表已偵測到多份複製的 Port 樹資料並做了去重複的動作，且只會使用第三份資料所佔的空間。去重複能節省空間的潛力可以非常巨大，但會需要消耗大量的記憶體來持續追蹤去重複的資料區塊。</para>
 
@@ -32082,7 +32101,7 @@ https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/usb-disks.html
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 51999 2018-07-12 23:08:19Z jgh $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/virtualization/chapter.xml 52161 2018-08-19 14:57:39Z sevan $
 -->
 <chapter version="5.0" xml:id="virtualization">
 
@@ -32733,20 +32752,36 @@ perm    vboxnetctl 0660</programlisting>
       <title><trademark>VirtualBox</trademark> USB 支援</title>
 
       <para xml:lang="en"><application><trademark>VirtualBox</trademark></application> can be configured
-      to pass <acronym>USB</acronym> devices through to the guest
-      operating system.  The host controller of the OSE version is
-      limited to emulating <acronym>USB</acronym> 1.1 devices until
-      the extension pack supporting <acronym>USB</acronym> 2.0 and 3.0
-      devices becomes available on FreeBSD.</para>
+	to pass <acronym>USB</acronym> devices through to the guest
+	operating system.  The host controller of the OSE version is
+	limited to emulating <acronym>USB</acronym> 1.1 devices until
+	the extension pack supporting <acronym>USB</acronym> 2.0 and
+	3.0 devices becomes available on FreeBSD.</para>
 
-      <para xml:lang="en">For <application><trademark>VirtualBox</trademark></application> to be
-      aware of <acronym>USB</acronym> devices attached to the
-      machine, the user needs to be a member of the <systemitem class="groupname">operator</systemitem> group.</para>
+      <para xml:lang="en">For <application><trademark>VirtualBox</trademark></application> to be aware of
+	<acronym>USB</acronym> devices attached to the machine, the
+	user needs to be a member of the <systemitem class="groupname">operator</systemitem> group.</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pw groupmod operator -m <replaceable>yourusername</replaceable></userinput></screen>
 
+      <para xml:lang="en">Then, add the following to
+       <filename>/etc/devfs.rules</filename>, or create this file if
+       it does not exist yet:</para>
+
+      <programlisting xml:lang="en">[system=10]
+add path 'usb/*' mode 0660 group operator</programlisting>
+
+      <para xml:lang="en">To load these new rules, add the following to
+       <filename>/etc/rc.conf</filename>:</para>
+
+      <programlisting xml:lang="en">devfs_system_ruleset="system"</programlisting>
+
+      <para xml:lang="en">Then, restart devfs:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>service devfs restart</userinput></screen>
+
       <para>重新啟動登作階段與 <application><trademark>VirtualBox</trademark></application> 來讓這些變更生效，且建立必要的 <acronym>USB</acronym> 的過濾器。</para>
-      </sect2>
+    </sect2>
 
     <sect2 xml:id="virtualization-virtualbox-host-dvd-cd-access">
       <title><trademark>VirtualBox</trademark> Host <acronym>DVD</acronym>/<acronym>CD</acronym> 存取</title>
@@ -32981,16 +33016,16 @@ grub&gt; <userinput>boot</userinput></screen>
 	that are not supported by the other loaders.</para>
 
       <para xml:lang="en">In order to make use of the <acronym>UEFI</acronym>
-        support in <application>bhyve</application>, first obtain the
-        <acronym>UEFI</acronym> firmware images.  This can be done
-	by installing <package>sysutils/bhyve-firmware</package>
-	port or package.</para>
+	support in <application>bhyve</application>, first obtain the
+	<acronym>UEFI</acronym> firmware images.  This can be done by
+	installing <package>sysutils/bhyve-firmware</package> port or
+	package.</para>
 
-      <para xml:lang="en">With the firmware in place, add the flags
-	<option>-l bootrom,<replaceable>/path/to/firmware</replaceable></option>
-	to your <application>bhyve</application> command line.
-	The actual <application>bhyve</application> command may look
-	like this:</para>
+      <para xml:lang="en">With the firmware in place, add the flags <option>-l
+	  bootrom,<replaceable>/path/to/firmware</replaceable></option>
+	to your <application>bhyve</application> command line.  The
+	actual <application>bhyve</application> command may look like
+	this:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -AHP -s 0:0,hostbridge -s 1:0,lpc \
 -s 2:0,virtio-net,<replaceable>tap1</replaceable> -s 3:0,virtio-blk,<replaceable>./disk.img</replaceable> \
@@ -32999,8 +33034,8 @@ grub&gt; <userinput>boot</userinput></screen>
 <replaceable>guest</replaceable></userinput></screen>
 
       <para xml:lang="en"><package>sysutils/bhyve-firmware</package> also contains a
-	<acronym>CSM</acronym>-enabled firmware, to boot guests with no
-	<acronym>UEFI</acronym> support in legacy
+	<acronym>CSM</acronym>-enabled firmware, to boot guests with
+	no <acronym>UEFI</acronym> support in legacy
 	<acronym>BIOS</acronym> mode:</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>bhyve -AHP -s 0:0,hostbridge -s 1:0,lpc \
@@ -33013,12 +33048,13 @@ grub&gt; <userinput>boot</userinput></screen>
     <sect2 xml:id="virtualization-bhyve-framebuffer">
       <title>供 <application>bhyve</application> 客端用的圖型化 <acronym>UEFI</acronym> Framebuffer </title>
 
-      <para xml:lang="en">The <acronym>UEFI</acronym> firmware support is particularly
-	useful with predominantly graphical guest operating systems
-	such as Microsoft <trademark class="registered">Windows</trademark>.</para>
+      <para xml:lang="en">The <acronym>UEFI</acronym> firmware support is
+	particularly useful with predominantly graphical guest
+	operating systems such as Microsoft <trademark class="registered">Windows</trademark>.</para>
 
       <para xml:lang="en">Support for the UEFI-GOP framebuffer may also be enabled
-	with the <option>-s 29,fbuf,tcp=<replaceable>0.0.0.0:5900</replaceable></option>
+	with the <option>-s
+	  29,fbuf,tcp=<replaceable>0.0.0.0:5900</replaceable></option>
 	flags.  The framebuffer resolution may be configured with
 	<option>w=<replaceable>800</replaceable></option> and
 	<option>h=<replaceable>600</replaceable></option>, and
@@ -33201,21 +33237,20 @@ kld_list="nmdm vmm"</programlisting>
     <sect2 xml:id="virtualization-host-xen-dom0-setup">
       <title xml:lang="en"><trademark>Xen</trademark> Dom0 Control Domain Setup</title>
 
-      <para xml:lang="en">The <package>emulators/xen</package> package works with
-	FreeBSD 11 amd64 binary snapshots and equivalent systems
-	built from source.  This example assumes VNC output for
-	unprivileged domains which is accessed from a another system
-	using a tool such as <package>net/tightvnc</package>.</para>
-
-      <para xml:lang="en">Install <package>emulators/xen</package>:</para>
-
-      <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install xen</userinput></screen>
+      <para xml:lang="en">Users of FreeBSD 11 should install the
+	<package>emulators/xen-kernel47</package> and
+	<package>sysutils/xen-tools47</package> packages that are
+	based on Xen version 4.7.  Systems running on FreeBSD-CURRENT
+	with at least revision r336475 or higher, can use Xen 4.11
+	provided by <package>emulators/xen-kernel411</package> and
+	<package>sysutils/xen-tools411</package>, respectively.</para>
 
       <para xml:lang="en">Configuration files must be edited to prepare the host
-	for the Dom0 integration.  An entry to
-	<filename>/etc/sysctl.conf</filename> disables the limit on
-	how many pages of memory are allowed to be wired.  Otherwise,
-	DomU VMs with higher memory requirements will not run.</para>
+	for the Dom0 integration after the Xen packages are installed.
+	An entry to <filename>/etc/sysctl.conf</filename> disables the
+	limit on how many pages of memory are allowed to be wired.
+	Otherwise, DomU VMs with higher memory requirements will not
+	run.</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysrc -f /etc/sysctl.conf vm.max_wired=-1</userinput></screen>
 
@@ -33248,9 +33283,18 @@ kld_list="nmdm vmm"</programlisting>
 	console is also activated and logging options are
 	defined.</para>
 
+      <para xml:lang="en">The following command is used for Xen 4.7 packages:</para>
+
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf hw.pci.mcfg=0</userinput>
 <prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_kernel="/boot/xen"</userinput>
 <prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_cmdline="dom0_mem=<replaceable>8192M</replaceable> dom0_max_vcpus=<replaceable>4</replaceable> dom0pvh=1 console=com1,vga com1=115200,8n1 guest_loglvl=all loglvl=all"</userinput></screen>
+
+      <para xml:lang="en">For Xen versions 4.11 and higher, the following command
+	should be used instead:</para>
+
+      <screen xml:lang="en"><prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf hw.pci.mcfg=0</userinput>
+<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_kernel="/boot/xen"</userinput>
+<prompt>#</prompt> <userinput>sysrc -f /boot/loader.conf xen_cmdline="dom0_mem=<replaceable>8192M</replaceable> dom0_max_vcpus=<replaceable>4</replaceable> dom0=pvh console=com1,vga com1=115200,8n1 guest_loglvl=all loglvl=all"</userinput></screen>
 
 	<para xml:lang="en">Log files that <trademark>Xen</trademark> creates for the Dom0 and DomU VMs
 	  are stored in <filename>/var/log/xen</filename>.  This
@@ -35354,7 +35398,7 @@ that might make this chapter too large.
 -->
 <!--
      The FreeBSD Documentation Project
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/dtrace/chapter.xml 47550 2015-10-14 00:16:22Z junovitch $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/dtrace/chapter.xml 52071 2018-08-01 17:16:29Z sevan $
 -->
 <!-- XXXTR: Should probably put links and resources here.  I'm
         nervous about this chapter as it may require a partial
@@ -35555,8 +35599,8 @@ makeoptions	WITH_CTF=1</programlisting>
       language of DTrace.  This language is called the D language
       and it is very similar to C++.  An in depth discussion of the
       language is beyond the scope of this document.  It is
-      extensively discussed at <uri xlink:href="http://wikis.oracle.com/display/DTrace/Documentation">http://wikis.oracle.com/display/DTrace/Documentation</uri>.</para>
-  </sect1>
+      covered extensively in the <uri xlink:href="http://www.dtrace.org/guide">Illumos Dynamic
+	Tracing Guide</uri>.</para></sect1>
 
   <sect1 xml:id="dtrace-using">
     <title>使用 DTrace</title>
@@ -36098,7 +36142,7 @@ hw.usb.template=1</screen>
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 51494 2018-03-17 20:05:02Z eadler $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/serialcomms/chapter.xml 52153 2018-08-17 21:34:10Z bcr $
 -->
 <chapter version="5.0" xml:id="serialcomms">
   <title>序列通訊</title>
@@ -37864,7 +37908,7 @@ raisechar=^^</programlisting>
 	    console, issue the following command as the
 	    superuser:</para>
 
-	  <screen xml:lang="en"><prompt>#</prompt> echo 'console="comconsole"' &gt;&gt; /boot/loader.conf</screen>
+	  <screen xml:lang="en"><prompt>#</prompt> sysrc -f /boot/loader.conf console=comconsole</screen>
 	</step>
 
 	<step>
@@ -39895,7 +39939,7 @@ tun0: flags=8051&lt;UP,POINTOPOINT,RUNNING,MULTICAST&gt; mtu 1500
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 50808 2017-09-08 14:20:54Z wblock $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/mail/chapter.xml 52155 2018-08-19 07:19:18Z eadler $
 -->
 <chapter version="5.0" xml:id="mail">
   <info>
@@ -40957,7 +41001,7 @@ freefall		MX	20	who.cdrom.com</programlisting>
     <itemizedlist>
       <listitem>
 	<para xml:lang="en">The computer is a desktop machine that needs to use
-	  programs such as <citerefentry><refentrytitle>send-pr</refentrytitle><manvolnum>1</manvolnum></citerefentry>, using the
+	  programs such as <citerefentry><refentrytitle>mail</refentrytitle><manvolnum>1</manvolnum></citerefentry>, using the
 	  <acronym>ISP</acronym>'s mail relay.</para>
       </listitem>
 
@@ -55170,7 +55214,7 @@ ifconfig_<replaceable>camera</replaceable>="inet <replaceable>192.168.20.20/24</
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bibliography/chapter.xml 50533 2017-07-22 16:48:51Z bcr $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/bibliography/chapter.xml 52088 2018-08-08 06:18:00Z eadler $
 -->
 <appendix version="5.0" xml:id="bibliography">
 
@@ -55311,15 +55355,6 @@ ifconfig_<replaceable>camera</replaceable>="inet <replaceable>192.168.20.20/24</
 	<para xml:lang="en">An Italian <link xlink:href="@@URL_RELPREFIX@@/doc/it_IT.ISO8859-15/books/unix-introduction/index.html">translation</link>
 	  of this document is available as part of the FreeBSD Italian
 	  Documentation Project.</para>
-      </listitem>
-
-      <listitem>
-	<para xml:lang="en"><link xlink:href="http://www.jp.FreeBSD.org/">Jpman
-	    Project, Japan FreeBSD Users Group</link>.  <link xlink:href="http://www.pc.mycom.co.jp/FreeBSD/urm.html">FreeBSD
-	    User's Reference Manual</link> (Japanese translation).
-	  <link xlink:href="http://www.pc.mycom.co.jp/">Mainichi
-	    Communications Inc.</link>, 1998.  ISBN4-8399-0088-4
-	  P3800E.</para>
       </listitem>
 
       <listitem>
@@ -55688,7 +55723,7 @@ ifconfig_<replaceable>camera</replaceable>="inet <replaceable>192.168.20.20/24</
 <!--
      The FreeBSD Documentation Project
 
-     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 51972 2018-07-06 15:15:08Z philip $
+     $FreeBSD: head/en_US.ISO8859-1/books/handbook/eresources/chapter.xml 52159 2018-08-19 12:09:31Z bcr $
 -->
 <appendix version="5.0" xml:id="eresources">
 
@@ -55963,6 +55998,18 @@ ifconfig_<replaceable>camera</replaceable>="inet <replaceable>192.168.20.20/24</
 	    </row>
 
 	    <row>
+	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/dev-ci">dev-ci</link></entry>
+	      <entry xml:lang="en">Build and test reports from the Continuous
+		Integration servers</entry>
+	    </row>
+
+	    <row>
+	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/dev-reviews">dev-reviews</link></entry>
+	      <entry xml:lang="en">Notifications of the FreeBSD review
+		system</entry>
+	    </row>
+
+	    <row>
 	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc">freebsd-doc</link></entry>
 	      <entry xml:lang="en">Creating FreeBSD related documents</entry>
 	    </row>
@@ -56066,10 +56113,11 @@ ifconfig_<replaceable>camera</replaceable>="inet <replaceable>192.168.20.20/24</
 	      <entry xml:lang="en">General technical discussion</entry>
 	    </row>
 
-	   <row>
+	    <row>
 	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-haskell">freebsd-haskell</link></entry>
-	      <entry xml:lang="en">FreeBSD-specific Haskell issues and discussions</entry>
-	   </row>
+	      <entry xml:lang="en">FreeBSD-specific Haskell issues and
+		discussions</entry>
+	    </row>
 
 	    <row>
 	      <entry xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/freebsd-hardware">freebsd-hardware</link></entry>
@@ -56924,6 +56972,29 @@ ifconfig_<replaceable>camera</replaceable>="inet <replaceable>192.168.20.20/24</
 	      desktop.  It is primarily a place for desktop porters
 	      and users to discuss issues and improve FreeBSD's desktop
 	      support.</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/dev-ci">dev-ci</link></term>
+	  <listitem>
+	    <para xml:lang="en"><emphasis>Continuous Integration reports of build
+		and test results</emphasis></para>
+
+	    <para xml:lang="en">All Continuous Integration reports of build and test
+	      results</para>
+	  </listitem>
+	</varlistentry>
+
+	<varlistentry>
+	  <term xml:lang="en"><link xlink:href="http://lists.FreeBSD.org/mailman/listinfo/dev-reviews">dev-reviews</link></term>
+	  <listitem>
+	    <para xml:lang="en"><emphasis>Notifications of work in progress in
+		FreeBSD's review tool</emphasis></para>
+
+	    <para xml:lang="en">Automated notifications of work in progress for
+	      review in FreeBSD's review tools, including
+	      patches.</para>
 	  </listitem>
 	</varlistentry>
 
