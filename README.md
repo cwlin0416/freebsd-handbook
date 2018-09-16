@@ -18,9 +18,14 @@ FreeBSD 文件計劃開始採用 GNU gettext 的方式來執行翻譯，GNU gett
   - [X] 19. Z 檔案系統 (ZFS)
   - [X] 11. 設定與調校
   - [X] 12. FreeBSD 開機程序
+  - [ ] 15. 
+    - [ ] 15.7.1. 建立不安全的使用者類別 by @duidae
+    - [ ] 15.7.2. 設定使用者 by @duidae
+    - [ ] 15.7.3. 建立關聯檔 (Context File) by @duidae
   - [X] 23. 更新與升級 FreeBSD
     - [X] 23.6. 重新編譯 World
   - [ ] 13. 安全性
+    - [ ] 13.6. OpenSSL
     - [X] 13.3. 一次性密碼
     - [X] 13.8. OpenSSH
     - [ ] 13.10. 監視第三方安全性問題
