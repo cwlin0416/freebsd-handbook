@@ -45460,10 +45460,7 @@ Starting smbd.</screen>
 
       <para>在 FreeBSD，內建的 <application>ntpd</application> 可用來同步系統的時間，<application>Ntpd</application> 要使用 <citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中的變數以及下一節會詳細說明的 <filename>/etc/ntp.conf</filename> 來設定。</para>
 
-      <para xml:lang="en"><application>Ntpd</application> communicates with its network
-        peers using UDP packets.  Any firewalls between your machine and
-	its NTP peers must be configured to allow UDP packets in and out
-	on port 123.</para>
+      <para><application>Ntpd</application> 與網路中各節點的通訊採用 UDP 封包，在伺服器與 NTP 各節點間的防火牆必須設定成可允許進/出埠 123 的 UDP 封包。</para>
 
       <sect3>
 	<title><filename>/etc/ntp.conf</filename> 檔</title>
@@ -45472,33 +45469,11 @@ Starting smbd.</screen>
 	  <secondary>ntp.conf</secondary>
 	</indexterm>
 
-	<para xml:lang="en"><application>Ntpd</application> reads
-	  <filename>/etc/ntp.conf</filename>
-	  to determine which <acronym>NTP</acronym> servers to query.
-	  Choosing several <acronym>NTP</acronym> servers is recommended
-	    in case one of the servers becomes unreachable or its clock proves
-	    unreliable.  As <application>ntpd</application> receives responses,
-	    it favors reliable servers over the less reliable ones.  The servers
-	    which are queried can be local to the network, provided by an
-	    <acronym>ISP</acronym>, or selected from an <link xlink:href="http://support.ntp.org/bin/view/Servers/WebHome">
-	      online list of publicly accessible <acronym>NTP</acronym>
-	      servers</link>.
-	    When choosing a public <acronym>NTP</acronym> server, select one
-	    that is geographically close and review its usage policy.  The
-	    <literal>pool</literal> configuration keyword selects one or more
-	    servers from a pool of servers.  An <link xlink:href="http://support.ntp.org/bin/view/Servers/NTPPoolServers">
-	      online list of publicly accessible <acronym>NTP</acronym>
-	      pools</link>
-	    is available, organized by geographic area.  In addition, FreeBSD
-	    provides a project-sponsored pool,
-	    <literal>0.freebsd.pool.ntp.org</literal>.</para>
+	<para><application>Ntpd</application> 會讀取 <filename>/etc/ntp.conf</filename> 來得知要從那些 <acronym>NTP</acronym> 伺服器查詢時間，建議可設定多個 <acronym>NTP</acronym> 伺服器，來避免萬一其中一個伺服器無法連線或是時間不可靠的問題，當 <application>ntpd</application> 收到回應，它會偏好先採用較可信賴的伺服器。查詢的伺服器可以是來自本地網路的 <acronym>ISP</acronym> 所提供，也可從<link xlink:href="http://support.ntp.org/bin/view/Servers/WebHome">線上可公開存取的<acronym>NTP</acronym> 伺服器清單</link>中挑選，您可以選擇一個離您地理位置較近的伺服器並閱讀它的使用規則。也有 <link xlink:href="http://support.ntp.org/bin/view/Servers/NTPPoolServers">可公開存取的 <acronym>NTP</acronym> 池線上清單</link>可用，由一個地理區域所組織，除此之外 FreeBSD 提供了計劃贊助的伺服器池，<literal>0.freebsd.pool.ntp.org</literal>。</para>
 
 	<example>
 	  <title><filename>/etc/ntp.conf</filename> 範例</title>
-	  <para xml:lang="en">This is a simple example of an <filename>ntp.conf</filename>
-	    file.  It can safely be used as-is; it contains the recommended
-	    <literal>restrict</literal> options for operation on a
-	    publicly-accessible network connection.</para>
+	  <para>這份簡單的 <filename>ntp.conf</filename> 範例檔可以放心的使用，其中包含了建議的 <literal>restrict</literal> 選項可避免伺服器被公開存取。</para>
 	  <programlisting xml:lang="en">
 # Disallow ntpq control/query access.  Allow peers to be added only
 # based on pool and server statements in this file.
@@ -45521,35 +45496,11 @@ leapfile "/var/db/ntpd.leap-seconds.list"</programlisting></example>
 
 	<para>這個檔案的格式在 <citerefentry><refentrytitle>ntp.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 有詳細說明，以下的說明僅快速的帶過以上範例檔有用到的一些關鍵字。</para>
 
-	<para xml:lang="en">By default, an <acronym>NTP</acronym> server is accessible
-	  to any network host.  The <literal>restrict</literal> keyword
-	  controls which systems can access the server.  Multiple
-	  <literal>restrict</literal> entries are supported, each one
-	  refining the restrictions given in previous statements.  The
-	  values shown in the example grant the local system full query
-	  and control access, while allowing remote systems only the
-	  ability to query the time.  For more details, refer to the
-	  <literal>Access Control Support</literal> subsection of
-	  <citerefentry><refentrytitle>ntp.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>.</para>
+	<para>預設 <acronym>NTP</acronym> 伺服器是可以被任何網路主機所存取，<literal>restrict</literal> 關鍵字可以控制有那些系統可以存取伺服器。<literal>restrict</literal> 支援設定多項，每一項可再更進一步調整前面所做的設定。範例中的設定授權本地系統有完整的查詢及控制權限，而遠端系統只有查詢時間的權限。要了解更詳細的資訊請參考 <citerefentry><refentrytitle>ntp.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry> 中的 <literal>Access Control Support</literal> 一節。</para>
 
-	<para xml:lang="en">The <literal>server</literal> keyword specifies a single
-	  server to query.  The file can contain multiple server keywords,
-	  with one server listed on each line.  The <literal>pool</literal>
-	  keyword specifies a pool of servers.
-	  <application>Ntpd</application> will add one or more
-	  servers from this pool as needed to reach the number of peers
-	  specified using the <literal>tos minclock</literal> value.  The
-	  <literal>iburst</literal> keyword directs
-	  <application>ntpd</application> to perform a burst of eight quick
-	  packet exchanges with a server when contact is first established,
-	  to help quickly synchronize system time.</para>
+	<para><literal>server</literal> 關鍵字可指定要查詢的伺服器，設定檔中可以使用多個 server 關鍵字，一個伺服器列一行。<literal>pool</literal> 關鍵字可指定伺服器池，<application>Ntpd</application> 會加入該伺服器池中的一或多台伺服器，直到數量滿足 <literal>tos minclock</literal> 的設定。<literal>iburst</literal> 關鍵字會指示 <application>ntpd</application> 在建立連線時執行 8 連發快速封包交換，可以更快的同步系統時間。</para>
 
-	<para xml:lang="en">The <literal>leapfile</literal> keyword specifies the location
-	  of a file containing information about leap seconds.  The file is
-	  updated automatically by <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry>.  The file location
-	  specified by this keyword must match the location set in the
-	  <literal>ntp_db_leapfile</literal> variable in
-	  <filename>/etc/rc.conf</filename>.</para>
+	<para><literal>leapfile</literal> 關鍵字用來指定含有閏秒 (Leap second) 資訊的檔案位置，該檔案是由 <citerefentry><refentrytitle>periodic</refentrytitle><manvolnum>8</manvolnum></citerefentry> 自動更新。這個關鍵字指定的檔案位置必須與 <filename>/etc/rc.conf</filename> 中設定的 <literal>ntp_db_leapfile</literal> 相同。</para>
       </sect3>
 
       <sect3>
@@ -45561,87 +45512,45 @@ leapfile "/var/db/ntpd.leap-seconds.list"</programlisting></example>
 
 	<screen xml:lang="en"><prompt>#</prompt> <userinput>service ntpd start</userinput></screen>
 
-	<para xml:lang="en">Only <literal>ntpd_enable</literal> must be set to use ntpd.
-	The <filename>rc.conf</filename> variables listed below may also be
-	set as needed.</para>
+	<para>要使用 ntpd 必須設定 <literal>ntpd_enable</literal>，以下所列的 <filename>rc.conf</filename> 變數可視所需請況設定。</para>
 
-	<para xml:lang="en">Set <literal>ntpd_sync_on_start=YES</literal> to allow
-	  <application>ntpd</application> to step the clock any amount, one
-	  time at startup.  Normally <application>ntpd</application> will
-	  log an error message and exit if the clock is off by more than
-	  1000 seconds.  This option is especially useful on systems without
-	  a battery-backed realtime clock.</para>
+	<para>設定 <literal>ntpd_sync_on_start=YES</literal> 可讓 <application>ntpd</application> 可以在系統啟動時一次同步任何差距的時間，正常情況若時鐘的差距超過 1000 秒便會記錄錯誤並且中止。這個設定項目在沒有電池備援的時鐘上特別有用。</para>
 
-	<para xml:lang="en">Set <literal>ntpd_oomprotect=YES</literal> to protect the
-	  <application>ntpd</application> daemon from being killed by
-	  the system attempting to recover from an Out Of Memory
-	  (<acronym>OOM</acronym>) condition.</para>
+	<para>設定 <literal>ntpd_oomprotect=YES</literal> 可保護 <application>ntpd</application> daemon 被系統中止並嘗試從記憶體不足 (Out Of Memory, <acronym>OOM</acronym>) 的情況恢復運作。</para>
 
-        <para xml:lang="en">Set <literal>ntpd_config=</literal> to the location of
-	  an alternate <filename>ntp.conf</filename> file.</para>
+        <para>設定 <literal>ntpd_config=</literal> 可更改 <filename>ntp.conf</filename> 檔案的位置。</para>
 
-	<para xml:lang="en">Set <literal>ntpd_flags=</literal> to contain any other
-	  <application>ntpd</application> flags as needed, but avoid using
-	  these flags which are managed internally by
-	  <filename>/etc/rc.d/ntpd</filename>:
-	  <itemizedlist spacing="compact">
-	    <listitem><para xml:lang="en">
-	      <literal>-p</literal> (pid file location)</para></listitem>
-	    <listitem><para xml:lang="en">
-	      <literal>-c</literal> (set <literal>ntpd_config=</literal>
-	      instead)</para></listitem>
+	<para>設定 <literal>ntpd_flags=</literal> 可設定使用任何其他所需 <application>ntpd</application> 參數，但要避免使用由 <filename>/etc/rc.d/ntpd</filename> 內部控管的參數如下：<itemizedlist spacing="compact">
+	    <listitem><para><literal>-p</literal> (pid 檔案位置)</para></listitem>
+	    <listitem><para><literal>-c</literal> (改用<literal>ntpd_config=</literal> 設定)</para></listitem>
 	  </itemizedlist></para>
       </sect3>
 
       <sect3>
-	<title><application>Ntpd</application> 與無權限的 <literal>ntpd</literal> 使用者</title>
+	<title>使用無特權的 <literal>ntpd</literal> 使用者執行 <application>Ntpd</application></title>
 
-	<para xml:lang="en"><application>Ntpd</application> on FreeBSD can start and
-	  run as an unpriveleged user.  Doing so requires the
-	  <citerefentry><refentrytitle>mac_ntpd</refentrytitle><manvolnum>4</manvolnum></citerefentry> policy module.  The
-	  <filename>/etc/rc.d/ntpd</filename> startup script first
-	  examines the NTP configuration.  If possible, it loads the
-	  <literal>mac_ntpd</literal> module, then starts
-	  <application>ntpd</application> as unpriveleged user
-	  <literal>ntpd</literal> (user id 123).
-	  To avoid problems with file and directory access, the startup
-	  script will not automatically start
-	  <application>ntpd</application> as <literal>ntpd</literal>
-	  when the configuration contains any file-related options.</para>
+	<para>在 FreeBSD 上的 <application>Ntpd</application> 現在可以使用無特權的使用者啟動並執行，要達到這個功能需要 <citerefentry><refentrytitle>mac_ntpd</refentrytitle><manvolnum>4</manvolnum></citerefentry> 規則模組。<filename>/etc/rc.d/ntpd</filename> 啟動 Script 會先檢查 NTP 的設定，若可以的話它會載入 <literal>mac_ntpd</literal> 模組，然後以無特權的使用者 <literal>ntpd</literal> (user id 123) 來啟動 <application>ntpd</application>。為了避免檔案與目錄存取權限的問題，當設定中有任何檔案相關的選項時，啟動 Script 不會自動以 <literal>ntpd</literal> 身份啟動 <application>ntpd</application>。</para>
 
-	<para xml:lang="en">The presence of any of the following in
-	  <literal>ntpd_flags</literal> requires manual configuration
-	  as described below to run as the <literal>ntpd</literal> user:
-	  <itemizedlist spacing="compact">
-	    <listitem><para xml:lang="en">-f or --driftfile</para></listitem>
-	    <listitem><para xml:lang="en">-i or --jaildir</para></listitem>
-	    <listitem><para xml:lang="en">-k or --keyfile</para></listitem>
-	    <listitem><para xml:lang="en">-l or --logfile</para></listitem>
-	    <listitem><para xml:lang="en">-s or --statsdir</para></listitem>
+	<para>在 <literal>ntpd_flags</literal> 若出現以下任何參數則需要以最下面的方式手動設定才能以 <literal>ntpd</literal> 使用者的身份執行：<itemizedlist spacing="compact">
+	    <listitem><para>-f 或 --driftfile</para></listitem>
+	    <listitem><para>-i 或 --jaildir</para></listitem>
+	    <listitem><para>-k 或 --keyfile</para></listitem>
+	    <listitem><para>-l 或 --logfile</para></listitem>
+	    <listitem><para>-s 或 --statsdir</para></listitem>
 	  </itemizedlist></para>
 
-	<para xml:lang="en">The presence of any of the following keywords in
-	  <filename>ntp.conf</filename> requires manual configuration
-	  as described below to run as the <literal>ntpd</literal> user:
-	  <itemizedlist spacing="compact">
-	    <listitem><para xml:lang="en">crypto</para></listitem>
-	    <listitem><para xml:lang="en">driftfile</para></listitem>
-	    <listitem><para xml:lang="en">key</para></listitem>
-	    <listitem><para xml:lang="en">logdir</para></listitem>
-	    <listitem><para xml:lang="en">statsdir</para></listitem>
+	<para>在 <filename>ntp.conf</filename> 若出現以下任何關鍵字則需要以最下面的方式手動設定才能以 <literal>ntpd</literal> 使用者的身份執行：<itemizedlist spacing="compact">
+	    <listitem><para>crypto</para></listitem>
+	    <listitem><para>driftfile</para></listitem>
+	    <listitem><para>key</para></listitem>
+	    <listitem><para>logdir</para></listitem>
+	    <listitem><para>statsdir</para></listitem>
 	    </itemizedlist></para>
 
-	<para xml:lang="en">To manually configure <application>ntpd</application>
-	  to run as user <literal>ntpd</literal> you must:
-	  <itemizedlist mark="none" spacing="compact">
-	    <listitem><para xml:lang="en">Ensure that the <literal>ntpd</literal>
-	      user has access to all the files and directories specified
-	      in the configuration.</para></listitem>
-	    <listitem><para xml:lang="en">Arrange for the <literal>mac_ntpd</literal>
-	      module to be loaded or compiled into the kernel.  See
-	      <citerefentry><refentrytitle>mac_ntpd</refentrytitle><manvolnum>4</manvolnum></citerefentry> for details.</para></listitem>
-	    <listitem><para xml:lang="en">Set <literal>ntpd_user="ntpd"</literal> in
-	      <filename>/etc/rc.conf</filename></para></listitem>
+	<para>要手動設定以使用者 <literal>ntpd</literal> 身份執行 <application>ntpd</application> 你必須要做以下事：<itemizedlist mark="none" spacing="compact">
+	    <listitem><para>確保 <literal>ntpd</literal> 使用者有權限存取所有在設定檔中指定的檔案與目錄。</para></listitem>
+	    <listitem><para>讓 <literal>mac_ntpd</literal> 模組載入或編譯至核心，請參考 <citerefentry><refentrytitle>mac_ntpd</refentrytitle><manvolnum>4</manvolnum></citerefentry> 取得詳細資訊。</para></listitem>
+	    <listitem><para>在 <filename>/etc/rc.conf</filename> 中設定 <literal>ntpd_user="ntpd"</literal></para></listitem>
 	  </itemizedlist></para>
       </sect3>
     </sect2>
