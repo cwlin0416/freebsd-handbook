@@ -44248,62 +44248,40 @@ result: 0 Success
 
       <indexterm xml:lang="en"><primary>LDAP Server</primary></indexterm>
 
-      <para xml:lang="en">FreeBSD does not provide a built-in <acronym>LDAP</acronym>
-	server.  Begin the configuration by installing <package role="port">net/openldap-server</package> package or
-	port:</para>
+      <para>FreeBSD 並未提供內建的 <acronym>LDAP</acronym> 伺服器，要開始設定前請先安裝 <package role="port">net/openldap-server</package> 套件或 Port：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install openldap-server</userinput></screen>
 
-      <para xml:lang="en">There is a large set of default options enabled in the
-	<link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/linux-users/software.html">
-	  package</link>.  Review them by running
-	<command>pkg info openldap-server</command>.  If they are not
-	sufficient (for example if SQL support is needed), please
-	consider recompiling the port using the appropriate <link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using.html">framework</link>.</para>
+      <para>在<link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/articles/linux-users/software.html">套件</link>中已開啟了許多的預設選項，可以透過執行 <command>pkg info openldap-server</command> 來查看已開啟的選項，若有不足的地方 (例如需要開啟 SQL 的支援)，請考慮使用適當的<link xlink:href="@@URL_RELPREFIX@@/doc/en_US.ISO8859-1/books/handbook/ports-using.html">方式</link>重新編譯該 Port。</para>
 
       <para>安裝程序會建立目錄 <filename>/var/db/openldap-data</filename> 來儲存資料，同時需要建立儲存憑證的目錄：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mkdir /usr/local/etc/openldap/private</userinput></screen>
 
-      <para>下一個階段是設定憑証機構 (Certificate authority)。以下指令必須在 <filename>/usr/local/etc/openldap/private</filename> 下執行，這很重要是由於檔案權限須要被限制且其他使用者不應有這些檔案的存取權限，更多有關憑証的詳細資訊以及相關的參數可在 <xref linkend="openssl"/> 中找到。要建立憑証授權，需先輸人這個指令並依提示作業：</para>
+      <para>接下來是設定憑証機構 (Certificate authority)。以下指令必須在 <filename>/usr/local/etc/openldap/private</filename> 下執行，這很重要是由於檔案權限須要被限制且其他使用者不應有這些檔案的存取權限，更多有關憑証的詳細資訊以及相關的參數可在 <xref linkend="openssl"/> 中找到。要建立憑証授權，需先輸人這個指令並依提示操作：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl req -days <replaceable>365</replaceable> -nodes -new -x509 -keyout ca.key -out ../ca.crt</userinput></screen>
 
-      <para>提示輸入的項目<emphasis>除了</emphasis>通用名稱 (<literal>Common Name</literal>) 外其他是可以一樣的，這個項目必須使用與系統主機名稱 <emphasis>不同</emphasis> 的名稱。若這是一個自行簽署的憑証 (Self signed certificate)，則在憑証機構 <literal>CA</literal> 的前面加上主機名稱。</para>
+      <para>提示輸入的項目<emphasis>除了</emphasis>通用名稱 (<literal>Common Name</literal>) 外其他是可以一樣的，這個項目必須使用跟系統主機名稱 <emphasis>不同</emphasis> 的名稱。若這是一個自行簽署的憑証 (Self signed certificate)，則在憑証機構 <literal>CA</literal> 的前面加上主機名稱。</para>
 
-      <para>接下來的工作是建立一個憑証簽署的請求及私鑰。請輸入以下指令然後依提示操作：</para>
+      <para>接下來的工作是建立一個伺服器的憑証簽署請求與一個私鑰。請輸入以下指令然後依提示操作：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl req -days <replaceable>365</replaceable> -nodes -new -keyout server.key -out server.csr</userinput></screen>
 
-      <para>在憑証產生程序的過程中請確認 <literal>Common Name</literal> 屬性設定正確。Certificate Signing Request 必須經過 Certificate Authority 簽署後才會成為有效的憑証：</para>
+      <para>在憑証產生程序的過程中請確認 <literal>Common Name</literal> 屬性設定正確。憑証簽署請求 (Certificate Signing Request) 必須經過憑証機構簽署後才會成為有效的憑証：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl x509 -req -days <replaceable>365</replaceable> -in server.csr -out ../server.crt -CA ../ca.crt -CAkey ca.key -CAcreateserial</userinput></screen>
 
-      <para>在憑証產生程序的最後一步是產生並簽署用戶憑証：</para>
+      <para>在憑証產生程序的最後一步是產生並簽署客戶端憑証：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl req -days <replaceable>365</replaceable> -nodes -new -keyout client.key -out client.csr</userinput>
 <prompt>#</prompt> <userinput>openssl x509 -req -days 3650 -in client.csr -out ../client.crt -CA ../ca.crt -CAkey ca.key</userinput></screen>
 
       <para>記得當提示時要使用同樣的 <literal>Common Name</literal> 屬性。完成之後，請確認執行的指令產生了 8 個新檔案。</para>
 
-      <para xml:lang="en">The daemon running the OpenLDAP server is
-	<filename>slapd</filename>.  Its configuration is performed
-	through <filename>slapd.ldif</filename>: the old
-	<filename>slapd.conf</filename> has been deprecated by
-	OpenLDAP.</para>
+      <para>OpenLDAP 伺服器所執行的 Daemon 為 <filename>slapd</filename>，OpenLDAP 是透過 <filename>slapd.ldif</filename> 來做設定， OpenLDAP 官方已停止採用舊的 <filename>slapd.conf</filename> 格式。</para>
 
-      <para xml:lang="en"><link xlink:href="http://www.openldap.org/doc/admin24/slapdconf2.html">Configuration
-	  examples</link> for <filename>slapd.ldif</filename> are
-	available and can also be found in
-	<filename>/usr/local/etc/openldap/slapd.ldif.sample</filename>.
-	Options are documented in slapd-config(5).  Each section
-	of <filename>slapd.ldif</filename>, like all the other LDAP
-	attribute sets, is uniquely identified through a DN.  Be sure
-	that no blank lines are left between the
-	<literal>dn:</literal> statement and the desired end of the
-	section.  In the following example, TLS will be used to
-	implement a secure channel.  The first section represents the
-	global configuration:</para>
+      <para>這裡有些 <filename>slapd.ldif</filename> 的 <link xlink:href="http://www.openldap.org/doc/admin24/slapdconf2.html">設定檔範例</link> 可以使用，同時您也可以在 <filename>/usr/local/etc/openldap/slapd.ldif.sample</filename> 找到範例資訊。相關可用的選項在 slapd-config(5) 文件會有說明。<filename>slapd.ldif</filename> 的每個段落，如同其他 LDAP 屬性設定一樣會透過獨一無二 DN 來辨識，並請確保 <literal>dn:</literal> 描述與其相關屬性之間沒有空行。以下的範例中會實作一個使用 TLS 的安全通道，首先是全域的設定：</para>
 
       <programlisting xml:lang="en">#
 # See slapd-config(5) for details on configuration options.
@@ -44325,18 +44303,9 @@ olcTLSCACertificateFile: /usr/local/etc/openldap/ca.crt
 olcTLSProtocolMin: 3.1
 olcTLSVerifyClient: never</programlisting>
 
-      <para xml:lang="en">The Certificate Authority, server certificate and server
-	private key files must be specified here.  It is recommended
-	to let the clients choose the security cipher and omit option
-	<literal>olcTLSCipherSuite</literal> (incompatible with TLS
-	clients other than <filename>openssl</filename>).  Option
-	<literal>olcTLSProtocolMin</literal> lets the server require a
-	minimum security level: it is recommended.  While
-	verification is mandatory for the server, it is not for the
-	client: <literal>olcTLSVerifyClient: never</literal>.</para>
+      <para>這個檔案中必須指定憑証機構 (Certificate Authority)、伺服器憑証 (Server Certificate) 與伺服器私鑰 (Server Private Key)，建議可讓客戶端決定使用的安全密碼 (Security Cipher)，略過 <literal>olcTLSCipherSuite</literal> 選項 (此選項不相容 <filename>openssl</filename> 以外的 TLS 客戶端)。選項 <literal>olcTLSProtocolMin</literal> 讓伺服器可要求一個安全等級的最低限度，建議使用。伺服器有進行驗証的必要，但客戶端並不需要，因此可設定 <literal>olcTLSVerifyClient: never</literal>。</para>
 
-      <para xml:lang="en">The second section is about the backend modules and can be
-	configured as follows:</para>
+      <para>第二個部份是設定後端要採用的模組有那些，可使用以下方式設定：</para>
 
       <programlisting xml:lang="en">#
 # Load dynamic backend modules:
@@ -44352,9 +44321,7 @@ olcModuleload:	back_mdb.la
 #olcModuleload:	back_passwd.la
 #olcModuleload:	back_shell.la</programlisting>
 
-      <para xml:lang="en">The third section is devoted to load the needed
-	<literal>ldif</literal> schemas to be used by the databases:
-	they are essential.</para>
+      <para>第三個部份要載入資料庫所需的 <literal>ldif</literal> 綱要 (Schema)，這個動作是必要的。</para>
 
       <programlisting xml:lang="en">dn: cn=schema,cn=config
 objectClass: olcSchemaConfig
@@ -44365,7 +44332,7 @@ include: file:///usr/local/etc/openldap/schema/cosine.ldif
 include: file:///usr/local/etc/openldap/schema/inetorgperson.ldif
 include: file:///usr/local/etc/openldap/schema/nis.ldif</programlisting>
 
-      <para xml:lang="en">Next, the frontend configuration section:</para>
+      <para>接下來是前端設定的部份：</para>
 
       <programlisting xml:lang="en"># Frontend settings
 #
@@ -44399,10 +44366,7 @@ olcAccess: to * by * read
 olcPasswordHash: {SSHA}
 # {SSHA} is already the default for olcPasswordHash</programlisting>
 
-      <para xml:lang="en">Another section is devoted to the <emphasis>configuration
-	  backend</emphasis>, the only way to later access the
-	OpenLDAP server configuration is as a global
-	super-user.</para>
+      <para>再來是<emphasis>設定後端</emphasis>的部份，之後唯一能夠存取 OpenLDAP 伺服器設定的方式是使用全域超級使用者。</para>
 
       <programlisting xml:lang="en">dn: olcDatabase={0}config,cn=config
 objectClass: olcDatabaseConfig
@@ -44410,16 +44374,9 @@ olcDatabase: {0}config
 olcAccess: to * by * none
 olcRootPW: {SSHA}iae+lrQZILpiUdf16Z9KmDmSwT77Dj4U</programlisting>
 
-      <para xml:lang="en">The default administrator username is
-	<literal>cn=config</literal>.  Type
-	<filename>slappasswd</filename> in a shell, choose a password
-	and use its hash in <literal>olcRootPW</literal>.  If this
-	option is not specified now, before
-	<filename>slapd.ldif</filename> is imported, no one will be
-	later able to modify the
-	<emphasis>global configuration</emphasis> section.</para>
+      <para>預設的管理者使用者名稱是 <literal>cn=config</literal>，可在 Shell 中輸入 <filename>slappasswd</filename>，決定要使用的密碼並將其產生的編碼放到 <literal>olcRootPW</literal> 欄位中。若這個選項在這時沒有設定好，在匯入 <filename>slapd.ldif</filename> 之後將沒有任何人有辦法修改<emphasis>全域的設定</emphasis>。</para>
 
-      <para xml:lang="en">The last section is about the database backend:</para>
+      <para>最後一個部份是有關資料庫後端的設定：</para>
 
       <programlisting xml:lang="en">#######################################################################
 # LMDB database definitions
@@ -44443,25 +44400,11 @@ olcDbDirectory:	/var/db/openldap-data
 # Indices to maintain
 olcDbIndex: objectClass eq</programlisting>
 
-      <para xml:lang="en">This database hosts the <emphasis>actual
-	  contents</emphasis> of the <acronym>LDAP</acronym>
-	directory.  Types other than <literal>mdb</literal> are
-	available.  Its super-user, not to be confused with the global
-	one, is configured here: a (possibly custom) username in
-	<literal>olcRootDN</literal> and the password hash in
-	<literal>olcRootPW</literal>; <filename>slappasswd</filename>
-	can be used as before.</para>
+      <para>這裡指定的資料庫即<emphasis>實際用來保存</emphasis> <acronym>LDAP</acronym> 目錄的資料，也可以使用 <literal>mdb</literal> 以外的項目，資料庫的超級使用者可在這裡設定 (與全域的超級使用者是不同的東西)：<literal>olcRootDN</literal>　需填寫使用者名稱 (可自訂)，<literal>olcRootPW</literal> 需填寫該使用者編碼後的密碼，將密碼編碼可使用 <filename>slappasswd</filename> 如同前面所述。</para>
 
-      <para xml:lang="en">This <link xlink:href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=tree;f=tests/data/regressions/its8444;h=8a5e808e63b0de3d2bdaf2cf34fecca8577ca7fd;hb=HEAD">repository</link>
-	contains four examples of <filename>slapd.ldif</filename>.  To
-	convert an existing <filename>slapd.conf</filename> into
-	<filename>slapd.ldif</filename>, refer to <link xlink:href="http://www.openldap.org/doc/admin24/slapdconf2.html">this
-	  page</link> (please note that this may introduce some
-	unuseful options).</para>
+      <para>這裡有個<link xlink:href="http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=tree;f=tests/data/regressions/its8444;h=8a5e808e63b0de3d2bdaf2cf34fecca8577ca7fd;hb=HEAD">檔案庫</link>內有四個 <filename>slapd.ldif</filename> 的範例，要將現有的 <filename>slapd.conf</filename> 轉換成 <filename>slapd.ldif</filename> 格式，可參考<link xlink:href="http://www.openldap.org/doc/admin24/slapdconf2.html">此頁</link> (注意，這裡面的說明也會介紹一些不常用的選項)。</para>
 
-      <para xml:lang="en">When the configuration is completed,
-	<filename>slapd.ldif</filename> must be placed in an empty
-	directory.  It is recommended to create it as:</para>
+      <para>當設定完成之後，需將 <filename>slapd.ldif</filename> 放在一個空的目錄當中，建議如以下方式建立：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>mkdir /usr/local/etc/openldap/slapd.d/</userinput></screen>
 
@@ -44469,13 +44412,11 @@ olcDbIndex: objectClass eq</programlisting>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>/usr/local/sbin/slapadd -n0 -F /usr/local/etc/openldap/slapd.d/ -l /usr/local/etc/openldap/slapd.ldif</userinput></screen>
 
-      <para xml:lang="en">Start the <filename>slapd</filename> daemon:</para>
+      <para>啟動 <filename>slapd</filename> Daemon：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>/usr/local/libexec/slapd -F /usr/local/etc/openldap/slapd.d/</userinput></screen>
 
-      <para xml:lang="en">Option <literal>-d</literal> can be used for debugging,
-	as specified in slapd(8).  To verify that the server is
-	running and working:</para>
+      <para>選項 <literal>-d</literal> 可以用來除錯使用，如同 slapd(8) 中所說明的，若要檢驗伺服器是否正常執行與運作可以：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ldapsearch -x -b '' -s base '(objectclass=*)' namingContexts</userinput>
 # extended LDIF
@@ -44497,30 +44438,19 @@ result: 0 Success
 # numResponses: 2
 # numEntries: 1</screen>
 
-      <para xml:lang="en">The server must still be trusted.  If that has never been
-	done before, follow these instructions.  Install the OpenSSL
-	package or port:</para>
+      <para>伺服器端仍必須受到信任，若在此之前未做過這個動作，請依照以下指示操作。安裝 OpenSSL 套件或 Port：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg install openssl</userinput></screen>
 
-      <para xml:lang="en">From the directory where <filename>ca.crt</filename> is
-	stored (in this example,
-	<filename>/usr/local/etc/openldap</filename>), run:</para>
+      <para>進入 <filename>ca.crt</filename> 所在的目錄 (以這邊使用的例子來說則是 <filename>/usr/local/etc/openldap</filename>)，執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>c_rehash .</userinput></screen>
 
-      <para xml:lang="en">Both the CA and the server certificate are now correctly
-	recognized in their respective roles.  To verify this, run
-	this command from the <filename>server.crt</filename>
-	directory:</para>
+      <para>現在 CA 與伺服器憑証可以依其用途被辨識，可進入 <filename>server.crt</filename> 所在的目錄執行以下指令來檢查：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>openssl verify -verbose -CApath . server.crt</userinput></screen>
 
-      <para xml:lang="en">If <filename>slapd</filename> was running, restart it.  As
-	stated in <filename>/usr/local/etc/rc.d/slapd</filename>, to
-	properly run <filename>slapd</filename> at boot the
-	following lines must be added to
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>若 <filename>slapd</filename> 已正在執行，就重新啟動它。如同 <filename>/usr/local/etc/rc.d/slapd</filename> 所述，要讓 <filename>slapd</filename> 開機時可正常執行，須要加入以下行到 <filename>/etc/rc.conf</filename>：</para>
 
       <programlisting xml:lang="en">lapd_enable="YES"
 slapd_flags='-h "ldapi://%2fvar%2frun%2fopenldap%2fldapi/
@@ -44528,18 +44458,9 @@ ldap://0.0.0.0/"'
 slapd_sockets="/var/run/openldap/ldapi"
 slapd_cn_config="YES"</programlisting>
 
-      <para xml:lang="en"><filename>slapd</filename> does not provide debugging at
-	boot.  Check <filename>/var/log/debug.log</filename>,
-	<filename>dmesg -a</filename> and
-	<filename>/var/log/messages</filename> for this
-	purpose.</para>
+      <para>開機啟動 <filename>slapd</filename> 並不會提供除錯的功能，您可以檢查 <filename>/var/log/debug.log</filename>, <filename>dmesg -a</filename> 及 <filename>/var/log/messages</filename> 檢確認是否有正常運作。</para>
 
-      <para xml:lang="en">The following example adds the group
-	<literal>team</literal> and the user <literal>john</literal>
-	to the <systemitem class="systemname">domain.example</systemitem>
-	<acronym>LDAP</acronym> database, which is still empty.
-	First, create the file
-	<filename>domain.ldif</filename>:</para>
+      <para>以下範例會新增群組 <literal>team</literal> 及使用者 <literal>john</literal> 到 <systemitem class="systemname">domain.example</systemitem> <acronym>LDAP</acronym> 資料庫，而該資料庫目前是空的。首先要先建立 <filename>domain.ldif</filename> 檔：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cat domain.ldif</userinput>
 dn: dc=domain,dc=example
@@ -44577,54 +44498,30 @@ homeDirectory: /home/john/
 loginShell: /usr/bin/bash
 userPassword: secret</screen>
 
-      <para xml:lang="en">See the OpenLDAP documentation for more details.  Use
-	<filename>slappasswd</filename> to replace the plain text
-	password <literal>secret</literal> with a hash in
-	<literal>userPassword</literal>.  The path specified as
-	<literal>loginShell</literal> must exist in all the systems
-	where <literal>john</literal> is allowed to login.  Finally,
-	use the <literal>mdb</literal> administrator to modify the
-	database:</para>
+      <para>請查看 OpenLDAP 說明文件取得更詳細的資訊，使用 <filename>slappasswd</filename> 來將純文字的密碼 <literal>secret</literal> 更改為已編碼的型式來填寫 <literal>userPassword</literal> 欄位。在 <literal>loginShell</literal> 所指定的路徑，必須在所有可讓 <literal>john</literal> 登入的系統中存在。最後是使用 <literal>mdb</literal> 管理者修改資料庫：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ldapadd -W -D "cn=mdbadmin,dc=domain,dc=example" -f domain.ldif</userinput></screen>
 
-      <para xml:lang="en">Modifications to the <emphasis>global
-	  configuration</emphasis> section can only be performed by
-	the global super-user.  For example, assume that the option
-	<literal>olcTLSCipherSuite: HIGH:MEDIUM:SSLv3</literal> was
-	initially specified and must now be deleted.  First, create a
-	file that contains the following:</para>
+      <para>要修改<emphasis>全域設定</emphasis>只能使用全域的超及使用者。例如，假設一開始採用了 <literal>olcTLSCipherSuite: HIGH:MEDIUM:SSLv3</literal> 選項，但最後想要把它移除，可以建立一個有以下內容的檔案：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>cat <replaceable>global_mod</replaceable></userinput>
 dn: cn=config
 changetype: modify
 delete: olcTLSCipherSuite</screen>
 
-      <para xml:lang="en">Then, apply the modifications:</para>
+      <para>然後套用修改內容：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ldapmodify -f global_mod -x -D "cn=config" -W</userinput></screen>
 
-      <para xml:lang="en">When asked, provide the password chosen in the
-	<emphasis>configuration backend</emphasis> section.  The
-	username is not required: here, <literal>cn=config</literal>
-	represents the DN of the database section to be modified.
-	Alternatively, use <literal>ldapmodify</literal> to delete a
-	single line of the database, <literal>ldapdelete</literal> to
-	delete a whole entry.</para>
+      <para>當提示輸入密碼時，提供當時在<emphasis>設定後端</emphasis>一節所設定的密碼，在這裡無須填寫使用者名稱，<literal>cn=config</literal> 代表要修改資料庫資料的位置。也可以使用 <literal>ldapmodify</literal> 刪除其中一行屬性，或是 <literal>ldapdelete</literal> 刪除整筆資料。</para>
 
-      <para xml:lang="en">If something goes wrong, or if the global super-user
-	cannot access the configuration backend, it is possible to
-	delete and re-write the whole configuration:</para>
+      <para>若有問題無法正常執行，或是全域的超級使用者無法存取後端的設定，可以刪除並重建整個後端設定：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>rm -rf /usr/local/etc/openldap/slapd.d/</userinput></screen>
 
-      <para xml:lang="en"><filename>slapd.ldif</filename> can then be edited and
-	imported again.  Please, follow this procedure only when no
-	other solution is available.</para>
+      <para>可以修改 <filename>slapd.ldif</filename> 後再重新匯入一次。請注意，這個步驟只在沒有其他方式可用時才使用。</para>
 
-      <para xml:lang="en">This is the configuration of the server only.  The same
-	machine can also host an LDAP client, with its own separate
-	configuration.</para>
+      <para>本章節的設定說明只針對伺服器端的部份，在同一台主機中也可以同時有安裝 LDAP 客戶端但需要額外做設定。</para>
     </sect2>
   </sect1>
 
