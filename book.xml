@@ -39742,11 +39742,9 @@ nameserver <replaceable>y.y.y.y</replaceable></programlisting>
       <secondary>over Ethernet</secondary>
     </indexterm>
 
-    <para xml:lang="en">This section describes how to set up <acronym>PPP</acronym>
-      over Ethernet (<acronym>PPPoE</acronym>).</para>
+    <para>本節介紹如何設定在 乙太網路使用 <acronym>PPP</acronym> (<acronym>PPPoE</acronym>)。</para>
 
-    <para xml:lang="en">Here is an example of a working
-      <filename>ppp.conf</filename>:</para>
+    <para>以下有一個可用的的 <filename>ppp.conf</filename> 範例：</para>
 
     <programlisting xml:lang="en">default:
   set log Phase tun command # you can add more detailed logging if you wish
@@ -39760,13 +39758,11 @@ name_of_service_provider:
   set login
   add default HISADDR</programlisting>
 
-      <para xml:lang="en">As <systemitem class="username">root</systemitem>,
-	run:</para>
+      <para>以 <systemitem class="username">root</systemitem> 身份執行：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>ppp -ddial name_of_service_provider</userinput></screen>
 
-      <para xml:lang="en">Add the following to
-	<filename>/etc/rc.conf</filename>:</para>
+      <para>將以下參數加到 <filename>/etc/rc.conf</filename>：</para>
 
       <programlisting xml:lang="en">ppp_enable="YES"
 ppp_mode="ddial"
@@ -39776,64 +39772,38 @@ ppp_profile="name_of_service_provider"</programlisting>
     <sect2>
       <title>使用 PPPoE 服務標籤</title>
 
-      <para xml:lang="en">Sometimes it will be necessary to use a service tag to
-	establish the connection.  Service tags are used to
-	distinguish between different PPPoE servers attached to a
-	given network.</para>
+      <para>有時需要使用服務標籤 (Service Tag) 才能建立連線，服務標籤用來區別不同網路要各自連線的 PPPoE 伺服器。</para>
 
-      <para xml:lang="en">Any required service tag information should be in the
-	documentation provided by the <acronym>ISP</acronym>.</para>
+      <para>所需的服務標籤資訊應該會在 <acronym>ISP</acronym> 所提供的文件中說明。</para>
 
-      <para xml:lang="en">As a last resort, one could try installing the
-	<package>net/rr-pppoe</package> package or port.  Bear in mind
-	however, this may de-program your modem and render it useless,
-	so think twice before doing it.  Simply install the program
-	shipped with the modem.  Then, access the
-	<guimenu>System</guimenu> menu from the program.  The name of
-	the profile should be listed there.  It is usually
-	<emphasis>ISP</emphasis>.</para>
+      <para>最後的手段是嘗試安裝 <package>net/rr-pppoe</package> 套件或 Port。但是請注意，這可能會解除安裝數據機中的程式並使其無法運作，所以請三思而為。只需要安裝數據機所提供的程式，然後由該程式進入 <guimenu>System</guimenu> 選單，基本資料 (Profile name) 的名稱應該會列出來，通常是 <emphasis>ISP</emphasis> 的名稱。</para>
 
-      <para xml:lang="en">The profile name (service tag) will be used in the PPPoE
-	configuration entry in <filename>ppp.conf</filename> as the
-	provider part for <command>set device</command>.  Refer to
-	<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> for full details.  It should look like
-	this:</para>
+      <para>基本資料名稱 (Profile Name) 即服務標籤，會被用在 <filename>ppp.conf</filename> 中的 PPPoE 設定項目，<command>set device</command> 的提供商 (Provider) 部份。請參考 <citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></citerefentry> 以取得詳細說明，結果應如下：</para>
 
       <programlisting xml:lang="en">set device PPPoE:<replaceable>xl1</replaceable>:<replaceable>ISP</replaceable></programlisting>
 
-      <para xml:lang="en">Do not forget to change <replaceable>xl1</replaceable> to
-	the proper device for the Ethernet card.</para>
+      <para>別忘記更改 <replaceable>xl1</replaceable> 為乙太網路卡的裝置名稱。</para>
 
-      <para xml:lang="en">Do not forget to change <replaceable>ISP</replaceable> to
-	the profile.</para>
+      <para>別忘記更改 <replaceable>ISP</replaceable> 為基本資料名稱。</para>
 
-      <para xml:lang="en">For additional information, refer to <link xlink:href="http://renaud.waldura.com/doc/freebsd/pppoe/">Cheaper
-	  Broadband with FreeBSD on DSL</link> by Renaud Waldura.</para>
+      <para>要取得更進一步資訊，請參考 Renaud Waldura 所著的 <link xlink:href="http://renaud.waldura.com/doc/freebsd/pppoe/">Cheaper Broadband with FreeBSD on DSL</link>。</para>
     </sect2>
 
     <sect2 xml:id="ppp-3com">
 
       <title>在 <trademark class="registered">3Com</trademark> <trademark class="registered">HomeConnect</trademark> ADSL Modem Dual Link 使用 PPPoE</title>
 
-      <para xml:lang="en">This modem does not follow the PPPoE specification defined
-	in <link xlink:href="http://www.faqs.org/rfcs/rfc2516.html">RFC
-	  2516</link>.</para>
+      <para>這台數據機並不採用 <link xlink:href="http://www.faqs.org/rfcs/rfc2516.html">RFC 2516</link> 所定義的規格。</para>
 
-      <para xml:lang="en">In order to make FreeBSD capable of communicating with this
-	device, a sysctl must be set.  This can be done automatically
-	at boot time by updating
-	<filename>/etc/sysctl.conf</filename>:</para>
+      <para>為了要讓 FreeBSD 能夠與這台裝置通訊，必須設定 sysctl，這可以透過更新 <filename>/etc/sysctl.conf</filename> 來讓開機時自動設定。</para>
 
 	<programlisting xml:lang="en">net.graph.nonstandard_pppoe=1</programlisting>
 
-      <para xml:lang="en">or can be done immediately with the command:</para>
+      <para>或可以執行以下指令立即更改：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>sysctl net.graph.nonstandard_pppoe=1</userinput></screen>
 
-      <para xml:lang="en">Unfortunately, because this is a system-wide setting, it
-	is not possible to talk to a normal PPPoE client or server and
-	a <trademark class="registered">3Com</trademark> <trademark class="registered">HomeConnect</trademark> ADSL Modem at the
-	same time.</para>
+      <para>不幸的是，由於這是一個全系統的設定，這可能導致一般 PPPoE 客戶端或伺服器無法與 <trademark class="registered">3Com</trademark> <trademark class="registered">HomeConnect</trademark> ADSL 數據機同時使用。</para>
     </sect2>
   </sect1>
 
@@ -45547,7 +45517,7 @@ leapfile "/var/db/ntpd.leap-seconds.list"</programlisting></example>
 	    <listitem><para>statsdir</para></listitem>
 	    </itemizedlist></para>
 
-	<para>要手動設定以使用者 <literal>ntpd</literal> 身份執行 <application>ntpd</application> 你必須要做以下事：<itemizedlist mark="none" spacing="compact">
+	<para>要手動設定以使用者 <literal>ntpd</literal> 身份執行 <application>ntpd</application> 你必須：<itemizedlist mark="none" spacing="compact">
 	    <listitem><para>確保 <literal>ntpd</literal> 使用者有權限存取所有在設定檔中指定的檔案與目錄。</para></listitem>
 	    <listitem><para>讓 <literal>mac_ntpd</literal> 模組載入或編譯至核心，請參考 <citerefentry><refentrytitle>mac_ntpd</refentrytitle><manvolnum>4</manvolnum></citerefentry> 取得詳細資訊。</para></listitem>
 	    <listitem><para>在 <filename>/etc/rc.conf</filename> 中設定 <literal>ntpd_user="ntpd"</literal></para></listitem>
@@ -51596,8 +51566,7 @@ wlan0: flags=8843&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; mtu 1500
 	      </callout>
 	    </calloutlist>
 
-	    <para xml:lang="en">Add the following to
-	      <filename>/etc/rc.conf</filename>:</para>
+	    <para>將以下參數加到 <filename>/etc/rc.conf</filename>：</para>
 
 	    <programlisting xml:lang="en">wlans_ath0="wlan0"
 ifconfig_wlan0="WPA DHCP"</programlisting>
