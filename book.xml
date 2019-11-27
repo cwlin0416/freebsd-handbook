@@ -6276,45 +6276,29 @@ The autoremoval will free 723 kB
 Proceed with autoremoval of packages [y/N]: <userinput>y</userinput>
 Deinstalling ca_root_nss-3.15.1_1... done</screen>
 
-      <para xml:lang="en">Packages installed as dependencies are
-	called <emphasis>automatic</emphasis> packages.  Non-automatic
-	packages, i.e the packages that were explicity installed not
-	as a dependency to another package, can be listed
-	using:</para>
+      <para>因為相依所安裝的套件稱作 <emphasis>自動 (Automatic)</emphasis> 套件，而非自動套件即套件被安裝的原因不是因為其他套件所相依，可以使用以下方式查詢：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg prime-list</userinput>
 nginx
 openvpn
 sudo</screen>
 
-      <para xml:lang="en"><command>pkg prime-list</command> is an alias command
-	declared in <filename>/usr/local/etc/pkg.conf</filename>.
-	There are many others that can be used to query the package
-	database of the system.  For instance, command
-	<command>pkg prime-origins</command> can be used to get the
-	origin port directory of the list mentioned above:</para>
+      <para><command>pkg prime-list</command> 是一個別名指令，定義在 <filename>/usr/local/etc/pkg.conf</filename>，尚還有許多其他相關指令可以用來查詢系統的套件資料庫，例如，指令 <command>pkg prime-origins</command> 可用來取得上述清單的來源 Port 目錄：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg prime-origins</userinput>
 www/nginx
 security/openvpn
 security/sudo</screen>
 
-      <para xml:lang="en">This list can be used to rebuild all packages
-	installed on a system using build tools such as <package>
-	ports-mgmt/poudriere</package> or <package>
-	ports-mgmt/synth</package>.</para>
+      <para>這份清單可以用來重新編譯所有安裝在系統中的套件，使用 <package> ports-mgmt/poudriere</package> 或 <package> ports-mgmt/synth</package> 這類的編譯工具。</para>
 
-    <para xml:lang="en">Marking an installed package as automatic can be
-      done using:</para>
+    <para>要將一個安裝好的套件註記成為 "自動" 可以用：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg set -A 1 devel/cmake</userinput></screen>
 
-      <para xml:lang="en">Once a package is a leaf package and is marked
-	as automatic, it gets selected by
-	<command>pkg autoremove</command>.</para>
+      <para>當套件為末端套件 (Leaf Package) 且被註記為 "自動"，則會被 <command>pkg autoremove</command> 挑選出來。</para>
 
-      <para xml:lang="en">Marking an installed package as <emphasis>not</emphasis>
-	automatic can be done using:</para>
+      <para>要註記一個安裝好的套件為 "<emphasis>非</emphasis>自動" 可以用：</para>
 
       <screen xml:lang="en"><prompt>#</prompt> <userinput>pkg set -A 0 devel/cmake</userinput></screen>
 
